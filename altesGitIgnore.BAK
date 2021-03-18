@@ -1,0 +1,16 @@
+includes/zielgruppe.tex
+*.aux
+*.toc
+*.log
+*.dvi
+*.ps
+*.ilg
+*.ind
+*.blg
+*.bbl
+*.idx
+*.out
+*~
+*.gz
+includes/kapitel/K_AA/kapitel - Verknüpfung.lnk
+skripts/*/*.pdf
