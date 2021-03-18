@@ -1,0 +1,67 @@
+
+%% 2019 07 04 Ph. G. Freimann
+%%
+
+\section{Exponentialgleichungen\TALS{ ...}}\index{Gleichungen!Exponentialgleichungen}
+\sectuntertitel{$P\neq NP ?$}
+
+\theorieGESO{199}{12}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item Exponentialgleichungen
+  \item logarithmische Gleichungen \GESO{(\cite{marthaler17} S. 203
+    Kap. 12.2)}
+\item Exp-Vergleich
+\item Logarithmen mit $\ln()$
+\TALS{\item Exponentialgleichungen mit Parametern}
+\end{itemize}
+
+\subsection{Exponentialgleichung}
+Bei einer \textbf{Exponentialgleichung} kommt die gesuchte Größe im
+Exponenten (von Potenze) vor. Beispiel:
+
+$$5^x = 32$$
+
+Typischerweise werden diese Gleichungen gelöst, indem auf beiden
+Seiten mit dem 5er Logarithmus logarithmiert wird:
+
+\begin{beispiel}{andere Basen}{beispiel_andere_basen}
+$$x=\log_5(32) \approx 2.15338$$
+
+Es können jedoch auch Logarithmen zu anderen Basen verwendet werden:
+
+\begin{tabular}{rccl}
+  \             & $5^x$           &=&    32          \\
+  $\Rightarrow$ & $\log(5^x)$     &=&  $\log(32)$     \\
+  $\Rightarrow$ & $x\cdot\log(5)$ &=&  $\log(32)$     \\
+  $\Rightarrow$ & $x$             &=&  $\frac{\log(32)}{\log(5)} = \log_5(32) \approx 2.15338$ 
+\end{tabular}
+\end{beispiel}
+\newpage
+
+\begin{rezept}{Exponentialgleichung lösen}{rezept_allgemeine_exponentialgleichung}
+  $$8^{x-1}=7^{x+2}$$
+  \TRAINER{
+  Erst mal auf beiden Seiten logarithmieren, mit einem Logarithmus zu beliebiger Basis:
+  $$\log(8^{x-1})=\log(7^{x+2})$$
+  $$(x-1)\cdot{}\log(8)=(x+2)\cdot{}\log(7)$$
+  ausmultiplizieren
+  $$\log(8)x-\log(8)=\log(7)x+2\log(7)$$
+  und $x$ auf eine Seite bringen
+  $$\log(8)x-\log(7)x = 2\log(7)+\log(8)$$
+  ausklammern
+  $$x(\log(8)-\log(7)) = 2\log(7)+\log(8)$$
+  und durch die Klammer $(\log(8)-\log(7))$ teilen
+  $$x = \frac{2\log(7)+\log(8)}{\log(8)-\log(7)}\approx 44.718$$}
+  \noTRAINER{\mmPapier{10.8}}
+\end{rezept}
+
+
+\GESO{Siehe auch \cite{marthaler17} Seite 200 im roten Kasten.}
+
+\subsection*{Aufgaben}
+\TALSAadB{???}{???}
+\GESOAadB{206}{2. a) d) g) h) 3. a) b) c) d) f) 4. a) - h) 9. 10.}
+

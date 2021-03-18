@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="113.8344mm"
+   height="113.72906mm"
+   viewBox="0 0 113.8344 113.72906"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="gluecksrad75deg.svg"
+   inkscape:export-filename="/home/phi/gitmat/includes/thema/geso/stoch/img/gluecksrad75deg.png"
+   inkscape:export-xdpi="600"
+   inkscape:export-ydpi="600">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="308.66851"
+     inkscape:cy="241.85243"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1824"
+     inkscape:window-height="1059"
+     inkscape:window-x="48"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-53.572987,-92.655066)">
+    <path
+       style="fill:#a41f7f;fill-opacity:0.58798284;stroke:#240071;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path10"
+       sodipodi:type="arc"
+       sodipodi:cx="110.48878"
+       sodipodi:cy="149.5208"
+       sodipodi:rx="55.916523"
+       sodipodi:ry="55.862583"
+       sodipodi:start="6.1535972"
+       sodipodi:end="4.9095289"
+       d="M 165.93645,142.30192 A 55.916523,55.862583 0 0 1 134.33644,200.04815 55.916523,55.862583 0 0 1 69.637166,187.66516 55.916523,55.862583 0 0 1 61.637713,122.33986 55.916523,55.862583 0 0 1 121.44089,94.740229 L 110.48878,149.5208 Z" />
+    <path
+       style="fill:#27c362;fill-opacity:0.56652359;stroke:#240071;stroke-width:1.91615748;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path822"
+       sodipodi:type="arc"
+       sodipodi:cx="110.49173"
+       sodipodi:cy="149.51819"
+       sodipodi:rx="56.002007"
+       sodipodi:ry="55.928646"
+       sodipodi:start="4.9111871"
+       sodipodi:end="6.1562849"
+       d="m 121.55164,94.691077 a 56.002007,55.928646 0 0 1 44.49178,47.748773 l -55.55169,7.07834 z" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:18.68581009px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#daffb1;fill-opacity:1;stroke:none;stroke-width:0.02802872"
+       x="103.42406"
+       y="176.89536"
+       id="text826"
+       transform="scale(1.0541685,0.94861494)"><tspan
+         sodipodi:role="line"
+         id="tspan824"
+         x="103.42406"
+         y="176.89536"
+         style="text-align:center;text-anchor:middle;fill:#daffb1;fill-opacity:1;stroke-width:0.02802872">Verlust</tspan><tspan
+         sodipodi:role="line"
+         x="103.42406"
+         y="200.25262"
+         style="text-align:center;text-anchor:middle;fill:#daffb1;fill-opacity:1;stroke-width:0.02802872"
+         id="tspan828">285⁰</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:9.63764668px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.01445647"
+       x="127.83196"
+       y="138.54124"
+       id="text826-3"
+       transform="scale(1.0800581,0.92587613)"><tspan
+         sodipodi:role="line"
+         id="tspan824-6"
+         x="127.83196"
+         y="138.54124"
+         style="text-align:center;text-anchor:middle;stroke-width:0.01445647">Gewinn</tspan><tspan
+         sodipodi:role="line"
+         x="127.83196"
+         y="150.5883"
+         style="text-align:center;text-anchor:middle;stroke-width:0.01445647"
+         id="tspan828-7">75⁰</tspan></text>
+  </g>
+</svg>

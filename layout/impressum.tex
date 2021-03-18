@@ -1,0 +1,74 @@
+%% \author
+\renewcommand{\author}{Autor mit renewcommand author in 'bbw.sty' definieren.}
+%% \author
+\newcommand{\grafikautor}{Grafikautor mit renewcommand author in 'bbw.sty' definieren.}
+%%E-Mail des Autohrs
+\newcommand{\authoremail}{Autor E-Mail mit renewcommand «authoremail» in 'bbw.sty' erstellen.}
+%% \erstellungsdatum
+\newcommand{\erstellungsdatum}{Datum mit renewcommand erstellungsdatum in 'bbw.sty' definieren.}
+%% Version des Dokumentes
+\newcommand{\docversion}{Version mit renewcommand docversion in 'bbw.sty' definieren.}
+%% \doctitel
+\newcommand{\doctitel}{Titel mit renewcommand doctitel in 'bbw.sty' festlegen.}
+
+%% \fachthema
+\newcommand{\fachthema}{Fachthema via renewcommand in 'bbw.sty' überschreiben.}%
+%% \untertitel
+%%\newcommand{\untertitel}{Untertitel via renewcommand 'untertitel' in 'bbw.sty' überschreiben.}
+\newcommand{\untertitel}{\fachthema{}}
+
+\newcommand{\rechte}{\textbf{Rechte}
+ Diese Unterlagen sind Allgemeingut. Jegliches Kopieren (auch
+ auszugsweise) ist gestattet und im Zusammenhang mit Ausbildung auch erw\"unscht.
+ Einzig der/die Originalautor(en) und der Dokumenttitel sollten f\"ur
+ R\"uckfragen und Verbesserungen bei jeder Kopie mit angegeben werden.}%
+
+
+
+%IMPRESSUM 
+\newcommand{\impressum}{
+
+\section*{Impressum}%
+
+\vspace{8mm}%
+ 
+\paragraph{Präambel} Eine geschlechtsneutrale Bezeichnung von
+  Personen oder eine Bezeichnung verschiedener Geschlechter wurde
+  weitgehend vermieden,
+  um die Lesbarkeit des vorliegenden Dokuments zu erleichtern.
+  Alle Leser sind selbstverständlich gleichermaßen angesprochen.
+
+  \vspace{8mm}
+
+\rechte{}%
+
+\vspace{7mm}
+
+\copyright{} \author{}\ (Inhalt: \erstellungsdatum{}, Druck: \today{})
+
+
+Version: \docversion{}
+
+Grafik: \grafikautor{}
+
+Editiert durch: GNU Emacs 26.3
+
+Verleger: \LaTeX{} pdfTeX 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian)
+
+\TRAINER{URL zur Quelle des Skripts: http://gitea.freimann.eu:3001\\
+(Zugang bei Philipp verlangen)}
+
+\noTRAINER{\vspace{2mm}}
+
+(Feedback an \texttt{\authoremail{}})
+
+\noTRAINER{\vspace{14mm}}
+
+\textbf{Über den Autor} Ph. G. Freimann studierte an der Universität Zürich
+Mathematik, Informatik und Physik. Von den Lieblingsfächern im
+Gymnasium waren Mathematik und Deutsch seine drei gutesten.
+
+\newpage
+
+
+}% END impressum

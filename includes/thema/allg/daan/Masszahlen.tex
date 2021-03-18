@@ -1,0 +1,126 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+
+\section{Maßzahlen/Kennzahlen}\index{Maßzahlen}\index{Kennzahlen}
+\sectuntertitel{Im Vatikan leben pro Quadratkilometer 2.27 Päpste.}
+
+\theorieGESO{389}{25}
+\theorieTALS{253}{4.3}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item Lagemaße\index{Lagemaß}
+\item Streumaße\index{Streumaß}
+\TALS{\item bivariate Daten / Streudiagramm\index{Streudiagramm}}
+\TALS{\item Univariate vs. bivariate Daten}
+\end{itemize}
+
+
+\subsection{Lagekennzahlen/Lagemaße}\index{Lagemaß}\index{Lagekennzahl}
+\begin{itemize}
+\item Mittelwert\index{Mittelwert} ($\mittelwert{x}$) = arithmetisches Mittel
+\item Median\index{Median} ($\mediantilde{x}$ oder $X_{\textrm{MED}}$) = mittlerer Wert des geordneten Datensatzes (auch Zentralwert genannt)
+\item Modus\index{Modus} ($x_{\textrm{mod}}$) = häufigster
+  auftretender Wert
+\item Maximum
+\item Minimum
+\end{itemize}
+
+\subsection{Streumaße}\index{Streumaß}
+
+Auftrag: Münzwurf. Eine Münze wird 20 Mal geworfen. Wie oft zeigt sie Kopf? Wiederholen Sie dieses Experiment mit der Klasse so oft, bis eine klare Grafik (Säulendiagramm) entsteht.
+
+
+\begin{itemize}
+\item Standardabweichung\index{Standardabweichung}\GESO{\cite{marthaler17} S. 396 Kap. 25.2}
+
+\item Quartil\index{Quartil}: Q1 = Median der unteren Hälfte, Q3 =
+  Median der oberen Hälfte
+
+\item Interquartilsabstand (IQR\footnote{IQR=Inter Quartil
+    Range})\index{IQR} = Q3 - Q1
+
+\item Spannweite\index{Spannweite} = Maximum - Minimum
+
+\end{itemize}
+
+\subsubsection{Standardabweichung}\index{Standardabweichung}
+Die Standardabweichung gibt ein Maß an, wie weit die einzelnen Werte
+vom Mittelwert $\mittelwert{x}$ abweichen\GESO{ (S. \cite{marthaler17}
+  S. 396 Kap. 25.2)}\footnote{Dabei wird ein spezieller «Mittelwert»
+  eingeführt.}.
+Die Standardabweichung einer Stichprobe wird mit $\textrm{SD}$ oder
+mit $s$ abgekürzt. Es gilt für die Standardabweichung einer
+\textbf{Stichprobe}:
+$$s = \sqrt{\frac{\sum_{i=1}^n(x_i-\mittelwert{x})^2}{n-1}}$$
+
+Die Einführung in das Summenzeichen ist im Anhang zu finden \totalref{Summenzeichen}.
+
+Bemerkung am Rande: Mit $\sigma$ (kleines Sigma) wird die
+Standardabweichung der \textbf{Grundgesamtheit} ermittelt (falls diese
+bekannt ist):
+$$\sigma = \sqrt{\frac{\sum_{i=1}^n(x_i-\mittelwert{x})^2}{n}}$$
+Dabei wird lediglich $n$ statt $n-1$ im Nenner der Summe verwendet. Da
+die Standardabweichung aber sowieso kein robustes Streumaß ist, kann
+dieser Unterschied meist vernachlässigt werden. Die Standardabweichung ist hingegen ein gutes Maß, um normalverteilte Stichproben oder Erhebungen miteinander zu vergleichen. 
+
+\newpage
+\subsubsection{Robustheit}\index{robust}
+Zusammenfassend können wir unsere Kennzahlen wie folgt klassifizieren:
+
+\begin{tabular}{|c|c|c|}
+  \hline
+   & Lagemaß & Streumaß \\
+  \hline
+  \textbf{robust} &
+  \begin{minipage} [t] {0.4\textwidth}
+    \begin{itemize}
+    \item Median $\mediantilde{x}$
+    \item Modus $x_{\textrm{mod}}$
+    \item Quartile Q1 bzw. Q3
+    \item (Ausreißerschwellen)
+  \end{itemize} \end{minipage}
+  & \begin{minipage} [t] {0.4\textwidth}
+    \begin{itemize}
+    \item Interquartilsabstand (IQR)
+  \end{itemize} \end{minipage} \\
+  \hline
+  nicht robust & \begin{minipage} [t] {0.4\textwidth}
+    \begin{itemize}
+    \item Mittelwert (Durchschnitt) $\overline{x}$
+    \item Minimum (min) und
+    \item Maximum (max)
+  \end{itemize} \end{minipage} & \begin{minipage} [t] {0.4\textwidth}
+    \begin{itemize}
+    \item Standardabweichung $\sigma$
+    \item Spannweite (max - min)
+  \end{itemize} \end{minipage} \\
+  \hline
+  \end{tabular} 
+
+Dabei bedeutes «\textbf{robust}», dass das Maß sich bei Ausreißern oder Mess- bzw. Übertragungsfehlern kaum ändert. Nicht robuste Kennzahlen werden können durch einen einzelnen Ausreißer schon stark variieren.
+
+
+
+\subsection{Bivariate Daten/Streudiagramm}\index{bivariate
+  Daten}\index{Daten!bivariate}\index{Streudiagramm}
+\theorieGESO{386}{24.6}
+Bisher hatten wir ausschließlich eine einzelne Datenreihe
+betrachtet. 
+Bei \textbf{bi}variaten Daten, werden zwei Merkmale der selben Stichprobe miteinander verglichen (\zB beim Bierfest die Haarlänge mit dem Bierkonsum oder die Schuhgröße mit dem Einkommen). Bivariate Daten werden meist in Streudiagrammen\index{Streudiagramm} dargestellt:
+
+
+\bbwCenterGraphic{5cm}{allg/daan/img/streudia.jpg}
+
+Abbildung aus \cite{marthaler17}.
+
+
+\subsection*{Aufgaben}
+\GESOAadB{408ff}{38. 39. 40. 41. 45. 47. 48. 49.}
+\TALSAadB{255}{952. 953. 954.}
+
+
+%\TALSAadB{???}{???}%% Keine bivariate Daten?
+

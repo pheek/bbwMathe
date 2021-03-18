@@ -1,0 +1,36 @@
+\subsection{Drei Unbekannte}\index{Drei unbekannte!Gleichungssysteme}\index{Lineare Gleichungssysteme!mit drei Unbekannten}\index{Gleichungssysteme!lineare mit drei Unbekannten}
+Das Additionsverfahren funktioniert auch mit mehr als zwei unbekannten. Betrachten wir dazu das folgende lineare Gleichungssystem:
+
+\gleichungDD{2x -3y +4z}{33}{3x+2y-z}{-5}{5x-y-5z}{-12}
+
+Zunächst eliminieren wir die Variable $x$. Dazu erzeugen wir die Gleichung (IV), indem wir die erste Gleichung mit 3 und die zweite Gleichung mit 2 multiplizieren und danach die Gleichungen voneinander abziehen.
+
+(IV)
+
+\TNT{3.6}{\gleichungZZ{6x-9y+12z}{99}{6x + 4y -2z}{-10}
+  Daraus ergibt sich (IV):
+  $$-13y + 14z = 109$$
+}%%
+
+Analog mit Gleichung (II)$\cdot{}5$ und (III)$\cdot{}3$:
+
+(V)
+
+\TNT{3.6}{\gleichungZZ{15x+10y-5z}{-25}{15x-3y-15z}{-36}
+  Daraus ergibt sich (V):
+  $$-13y + 10z = 11$$
+}
+\newpage
+Gleichung (IV) und (V) enthalten nur noch zwei Variable und können nach einem gewohnten Verfahren gelöst werden:
+
+\TNT{6.0}{\gleichungZZ{-13y + 14z}{109}{13y+10z}{11}
+  und somit $24z = 120$ und schließlich $z=5$. Dieses $z$ setzen wir in Gleichung (V) ein:
+  $$-13y + 10\cdot{}(5) = 11$$
+  und wir erhalten $y=-3$
+
+  Zuletzt $z=5$ und $y=-3$ einsetzen in die Gleichung (I):
+  $$2\cdot{}x -3\cdot{}(-3) + 4\cdot{}(5) = 33$$
+  was uns zu $x=2$ bringt.
+
+  $$\mathbb{L}_{(x;y;z)} = \{(2; -3; 5)\}$$
+}%% END TNT

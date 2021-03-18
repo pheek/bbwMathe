@@ -1,0 +1,131 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+
+\section{Potenz- und Wurzelgleichungen\TALS{ ...}}\index{Gleichungen!mit Potenzen}\index{Potenzgleichungen}\index{Wurzelgleichungen}\index{Gleichungen!mit Wurzeln}
+
+\theorieGESO{191}{11}
+%%\theorieTALS{}{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item Potenzgleichungen
+\item Wurzelgleichungen
+\end{itemize}
+
+
+\input{allg/gleichungen/Ueberblick}
+
+\subsection{Potenzgleichung}\index{Potenzgleichungen}
+Eine Gleichung, bei der die gesuchte Größe $x$ als Basis in einer Potenz
+vorkommt, nennen wir
+\textbf{Potenzgleichung}\footnote{Potenzgleichungen sind nicht zu
+  verwechseln mit Exponentialgleichungen, bei denen das $x$ im
+  Exponenten steht: $5^{2x-1}=7$}. Im folgenden Beispiel kommt $x$ in
+der 5-ten Potenz vor:
+
+$$x^5 = 1024$$
+
+Typischerweise löst man diese Gleichungen mit der $n$-ten Wurzel.
+
+\begin{tabular}{rccl}
+  \             & $x^5$           &=& 1024             \\
+  $\Rightarrow$ & $\sqrt[5]{x^5}$ &=& $\sqrt[5]{1024}$ \\
+  $\Rightarrow$ & $x$             &=& $4$ 
+\end{tabular}
+
+\subsubsection{Vorzeichen}
+Vorischt ist geboten bei negativen Zahlen. Gerade Exponenten (2, 4, 6,
+8, ...) zwingen die Potenz immer dazu, positiv zu werden. Beispiel:
+
+$$x^6 > 0$$
+
+Wohingegen ungerade Exponenten das Vorzeichen der Basis
+beibehalten. Beispiel
+$$(-3)^5 = - (3^5)$$
+
+Beachten Sie die folgenden «Spezialfälle»:
+
+\begin{tabular}{|c|l|}
+  \hline
+  $x^2 = 4$& $\mathbb{L}_x=\{-2; +2\}$ \\
+  \hline
+  $x^3 = -8$& $\mathbb{L}_x=\{-2\}$ \\
+  \hline
+  $x^6 = -5$& $\mathbb{L}_x=\{\,\}$ \\
+  \hline
+  $x^7 = -5$& $\mathbb{L}_x=\{-\sqrt[7]{5}\}$ \\
+  \hline
+  \end{tabular} 
+
+\newpage
+\subsection{Wurzelgleichungen}\index{Wurzelgleichung}
+Kommt in der Gleichung die Gesuchte unter der Wurzel vor, so sprechen
+wir von einer \textbf{Wurzelgleichung}. Einführungsbeispiel
+
+
+$$\sqrt[5]{x}=6$$
+
+
+Dies löst man indem man beide Seiten der Gleichung potenziert:
+
+\begin{tabular}{rccl}
+  \             & $\sqrt[5]{x}$   &=&     6      \\
+  $\Rightarrow$ & $(\sqrt[5]x)^5$ &=&  $6^5$     \\
+  $\Rightarrow$ & $x$             &=& $7\,776$ 
+\end{tabular}
+
+
+Lösen Sie das folgende Musterbeispiel:
+$$\sqrt{x}+1=2x$$
+\TRAINER{Das obige Beispiel von M. Rohner zeigt viele Sackgassen und Dinge, auf die man noch achten muss.}
+\platzFuerBerechnungen{8.4}
+\TRAINER{
+  $$\sqrt{x}=2x-1$$ quadrieren:
+  $$x=4x^2-4x+1$$
+  $$0=4x^2-5x+1$$
+  $$x_{1,2}=\frac{+5 \pm \sqrt{25-16}}{8}$$
+  $$\mathbb{L}_x={1}$$, denn $\frac{1}{4}$ ist eine durchs Quadrieren erschienene Scheinlösung.}
+
+
+\GESO{Lösungsverfahren im buch \cite{marthaler17} Seite 192 im roten
+  Kasten.}
+
+\textbf{Achtung}: Beim Radizieren oder Potenzieren auf beiden Seiten
+einer Gleichung können (Schein)lösungen hinzukommen \GESO{Bsp. S.191
+  im \cite{marthaler17}} oder es können Lösungen verschwinden.
+\newpage
+
+
+
+\subsection{Rationale Exponenten}\index{Exponenten!rationale}\index{Wurzeln}
+
+Anstelle von $x^{\frac{1}{n}}$ hatten wir auch $\sqrt[n]{x}$
+geschrieben.
+Somit können wir auch rationale Exponenten ($x^{\frac{3}{4}}  = \sqrt[4]{x^{3}} = (\sqrt[4]x)^3$) verwenden:
+
+Mit anderen Worten: Eine Wurzelgleichung ist nichts anderes als eine
+Potenzgleichung mit rationalen Exponenten.
+
+\noTRAINER{$x^{\frac{3}{4}} = 125$
+  \\%%
+  \mmPapier{5.2}%%
+}%%
+\TRAINER{%%
+\begin{tabular}{rccl}
+  \             & $x^{\frac{3}{4}}$               &=&   125                \\
+  $\Rightarrow$ & $(x^{\frac{3}{4}})^\frac{4}{3}$  &=& $(125)^\frac{4}{3}$  \\
+  $\Rightarrow$ & $x^{\frac{3}{4}\cdot\frac{4}{3}}$                         &=& $(\sqrt[3]{125})^4$  \\
+  $\Rightarrow$ & $x^1$                           &=& $5^4$  \\
+  $\Rightarrow$ & $x$                           &=& $625$  
+\end{tabular}
+\vspace{3cm}
+}%%
+
+
+\subsection{Aufgaben}
+\TALSAadB{???}{???}
+\GESOAadB{71 (Exponentenvergleich)}{44}
+\GESOAadB{196 (Wurzelgleichungen)}{2. 3. a)-f)  4. a) c) d) e) f)
+  5. a) c) 6. b)  7. d) 8. c) d) und Textaufgabe 10.}

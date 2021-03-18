@@ -1,0 +1,248 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%% 2020 Systematik verbessert
+%%
+
+\section{Lineare Funktionen}\index{Funktion!lineare}
+\index{affin-lineare Funktionen}\label{lineare_funktionen}
+\sectuntertitel{$f: \mathbb{R} \rightarrow \mathbb{R}$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item Begriff «Lineare Funktion»
+\item Darstellungen (Wertetabelle, Funktionsgleichung, Graph)
+\item Charakteristische Punkte\index{Punkt!charakteristischer}
+  \begin{itemize}
+  \item
+    y-Achsenabschnitt (Ordinatenabschnitt)
+  \item Nullstelle
+  \end{itemize}
+\item Steigung
+\TALS{\item Taschenrechner: Darstellung von Graphen}
+\end{itemize}
+
+Theorie:
+\TALS{(\cite{frommenwiler17alg} S.170 (Kap. 3.3))}
+\GESO{(\cite{marthaler17}       S.237 (Kap. 14))}
+\newpage
+
+\subsection{Beispiel einer linearen Funktion}
+Zeichnen Sie den Graphen der Funktion $f: y= -0.5x + 1$ in ein rechtwinkliges Koordinatensystem:
+
+\bbwGraph{-4}{4}{-1}{4}{
+  \TRAINER{\bbwFunc{-0.5*\x + 1}{-3:3}}
+}%% end bbwGraph
+
+%%\noTRAINER{\bbwGraph{-4}{4}{-1}{4}{}}
+%%\TRAINER{\bbwFunction{-4}{4}{-1}{4}{-0.5*\x + 1}{-3:3}}
+
+\GESO{
+  \paragraph{Punkte mit dem Taschenrechner}: Mit der ``TABLE''-Funktion auf Ihrem Taschenrechner lassen sich Wertetabellen ganz einfach erstellen.
+  Füllen Sie eine Wertetabelle zur Funktion $f: y=\frac{3}{4}x  - 1.5$ aus und zeichnen Sie die Gerade ein ein rechtwinkliges Koordinatensystem:
+
+  \begin{tabular}{l|c|c|c|c|c|c|c}
+    $x$ & -2 & -1 & 0 & 1 & 2 & 3 \\
+    $y$ & \LoesungsRaum{-3}   & \LoesungsRaum{-2.25}   & \LoesungsRaum{-1.5}  & \LoesungsRaum{-0.75}  & \LoesungsRaum{0}  &  \LoesungsRaum{0.75} \\
+  \end{tabular}
+
+
+  \bbwGraph{-4}{4}{-4}{2}{
+    \TRAINER{\bbwFunc{0.75*\x - 1.5}{-2.5:3.5}}
+  }%% END bbw Graph
+  %%\noTRAINER{\bbwGraph{-4}{4}{-4}{2}{}}
+  %%\TRAINER{\bbwFunction{-4}{4}{-4}{2}{0.75*\x - 1.5}{-2.5:3.5}}
+  
+   \newpage
+}
+
+
+
+\subsection{Definition der linearen Funktion}\index{Lineare Funktion!Definition}
+Eine Funktion $f: x\mapsto f(x)$ von $\mathbb{R}$ nach $\mathbb{R}$ heißt
+\textbf{linear}\index{lineare Funktion}, wenn sie in der Grundform
+$$f(x) = y=a\cdot{}x + b$$
+mit $a$ und $b$ in $\mathbb{R}$ dargestellt werden kann.
+
+Beispiele:
+
+
+$$f(x) = y = 4x + 1.5$$
+(Hier ist $a=4$ und $b=1.5$.)
+
+$$f(x) = y = -x$$
+(Hier ist $a=-1$ und $b=0$.)
+
+$$f(x) = y = -0.6$$
+(Hier ist $a=0$ und $b=-0.6$.)
+
+Ist $a=0$, so sprechen wir auch von der konstanten Funktion.
+\newpage
+
+
+
+\subsection{Charakteristische Punkte}\index{Punkte!charakteristische}\index{charakteristische Punkte}
+Jede lineare\footnote{
+  Die linearen Funktionen werden eingeteilt in die \textbf{Proportionalitäten} für $b=0$ und in die \textbf{affinen Abbildungen} für $b\ne{}0$.} Funktion schneidet irgendwo die beiden\footnote{Ausnahme: Konstante. Eine Konstante $y=b$ schneidet nur die $y$-Achse. Der Spezalfall $y=0$ \textbf{ist} die $x$-Achse.} Achsen. Zeichnen Sie die Funktion $f: y=\frac{1}{2}x  +3$ und notieren Sie die Punkte, wo die x- bzw. die y-Achse von unserer Geraden geschnitten wird:
+
+\vspace{1cm}
+
+Wertetabelle:
+\begin{tabular}{c|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}}
+   x  & & & & & \\
+  \hline
+   y  & & & & & \\
+  \end{tabular} 
+
+
+\bbwGraph{-7}{7}{-2}{5}{}
+\newpage
+
+\subsubsection{$y$-Achsenabschnitt}\index{$y$-Achsenabschnitt}\index{Achsenabschnitt!y-}\index{Ordinatenabschnitt}
+\begin{definition}{$y$-Achsenabschnitt}{}
+  Der Parameter $b$ wird $y$-Achsenabschnitt
+(oder Ordinatenabschnitt\index{Ordinatenabschnitt}\footnote{Die $y$-Koordinate wird auch
+    Ordinate\index{Ordinate} genannt.}) genannt.
+  
+Dieser gibt an, in welcher «Höhe» die Gerade die y-Achse schneidet.
+\end{definition}
+
+Wir erhalten den $y$-Achsenabschnitt, indem wir das Funktionsargument $x$
+gleich Null (0) setzen: $x=0$.
+
+Somit wird
+$$y=ax+b$$
+$$y=a\cdot{}0+b$$
+$$y=b$$
+Was uns zeigt, dass der  Punkt $P(0|b)$ der Geraden immer auf der $y$-Achse liegt.
+
+\newpage
+
+
+\subsubsection{Nullstelle}\index{Nullstelle}
+Suchen wir nun $f(x)=y=0$, so lesen wir dies in obiger Grafik etwa bei $x=-6$ ab.
+
+\begin{definition}{Nullstelle}{}
+  Eine \textbf{Nullstelle} gibt an, an welchen Stellen der Funktionsgraph die $x$-Achse schneidet.
+  \end{definition}
+
+Die Nullstelle einer linearen Funktion in ihrer Grundform ist nichts anderes als die Lösung der linearen Gleichung in ihrer Grundform. Nämlich:
+
+a) Lineare Gleichung $ax+b=0$
+
+Gesucht $x$:
+
+$$x = \frac{-b}{a}  $$
+
+b) Lineare Funktion $f: y=ax+b$
+
+Gesucht Nullstelle $x_0$ bei $y_0=0$:
+
+$$N(x_0|y_0) = N\left( \frac{-b}{a}\,\, \bigg|\,\, 0 \right) $$
+
+\newpage
+
+
+\subsubsection{Steigung}\index{Steigung|textbf}
+  \includegraphics[width=4.5cm]{tals/trig1/img/starkeSteigung.jpg}
+
+Der Parameter $a$ wird Steigung der Geraden genannt. Dies entspricht
+dem $y$-Anstieg\footnote{Bei negativem $a$ sprechen wir von «Gefälle»,
+  Abstieg, Neigung, Senkung, ...} der Geraden pro Einheit in $x$-Richtung ($e_x$):
+
+
+%% Steigungsgraph: Eins nach rechts -> a noch oben (oder -a nach unten)
+\bbwGraph{-4}{4}{-3}{4}{
+	\draw[thick] (-4,-2.5) -- (4, 3.5);
+	\draw[thick,color=blue] (1, 1.25) -- (2  , 1.25);
+	\draw[thick,color=blue] (1, 1.25) -- (1.5, 1.25) node[anchor=north]{${\color{blue}1}$};
+	\draw[thick,color=red ] (2, 1.25) -- (2, 2   );
+	\draw[thick,color=red ] (2, 1.25) -- (2, 1.625   ) node[anchor=west ]{${\color{red}a}$ };
+}
+
+\newpage
+
+
+Steigt die Gerade in $x$-Richtung an, so ist ${\color{blue}a}$ positiv (${\color{blue}a>0}$);
+fällt die Gerade in $x$-Richtung ab, so ist ${\color{red}a}$ negativ (${\color{red}a<0}$).
+
+%% Steigungsgraph: Eins nach rechts -> a noch oben (oder -a nach unten)
+\bbwGraph{-4}{4}{-3}{4}{
+	\draw[thick,color=blue] (-4, -1) -- (4  , 3);
+	\draw[thick,color=blue] (4, 3) node[anchor=north]{${\color{blue}+}$};
+	\draw[thick,color=red ] (-3.5, 2) -> (4, -2);
+	\draw[thick,color=red ] (4, -2) node[anchor=west ]{${\color{red}-}$ };
+}
+
+Die Steigung $a$ kann aus \textbf{jedem} Steigungsdreieck berechnet werden,
+wozu einfach zwei Punkte auf der Geraden zu verwenden sind:
+
+%% Steigungsgraph: Eins nach rechts -> a noch oben (oder -a nach unten)
+\bbwGraph{-4}{4}{-3}{4}{
+	\draw[thick] (-4,-11/5) -- (4, 13/5);
+	\draw[thick,color=blue] (-2, -1) -- (3,-1);
+	\draw[thick,color=blue] (1, -1.1) node[anchor=north]{${\color{blue}H}$};
+  
+	\draw[thick,color=red] (3, -1) -- (3,2);
+	\draw[thick,color=red] (3, 1.1) node[anchor=west]{${\color{red}V}$};
+
+  \bbwDot{-2,-1}{black}{north}{}
+  \bbwDot{3,2}{black}{north}{}
+  \bbwDot{3,-1}{black}{north}{}
+}
+\newpage
+
+\begin{rezept}{finden der Geradensteigung}{}
+Die Steigung $a$ ist:
+$$a=\frac{{\color{red}V}}{{\color{blue}H}}$$
+«Vau durch Haa, das gibt das Ahh!»
+\end{rezept}
+
+
+\subsection*{Aufgaben}
+\GESOAadB{250ff}{5. a) (1) und b) (1) 6. a) b) 7. a) 8. a) 10.}
+
+\newpage
+
+
+\subsection{Referenzaufgaben}\index{Lineare
+  Funktion!Referenzaufgaben}\index{Referenzaufgaben zu linearen Funktionen}
+
+
+\input{allg/funktionen/ReferenzaufgabeParallele}
+\newpage
+
+\input{allg/funktionen/ReferenzaufgabeEinPunktGegeben}
+\newpage
+
+\input{allg/funktionen/ReferenzaufgabeGeradeDurchZweiPunkte}
+\newpage
+
+
+
+\TALS{\input{tals/fct1/ReferenzaufgabeAbstand1}
+\newpage}
+
+
+\subsection{Lineare Gleichungen visualisieren}\index{Gleichungen!visualisieren}\index{Visualisierung von Gleichungen}
+Wir gehen von der linearen\footnote{Eine Gleichung, bzw. ein Term
+  heißt «linear», wenn die Variable ($x$) nur in der ersten Potenz vorkommt.} Gleichung $$4x-5+3x -18 + 16x = 0$$ aus.
+
+Schreiben wir dies als Funktion in $x$, so können wir folgende Funktion definieren:
+$$f(x): x \mapsto y = 4x-5+3x-18+16x$$
+Stellen wir diese Funktion nun graphisch dar, so ergibt sich folgendes
+Bild:
+
+\raisebox{-1cm}{\includegraphics[width=7cm]{allg/funktionen/img/FunktionsplotAusGleichung.png}}
+
+Die Lösung obiger Gleichung kann nun auf der $x$-Achse ungefähr bei $x=1.0$ abgelesen werden.
+
+\TALSAadB{171ff}{601. a) b) c) e) f) 602. b) c) d) 603. b) c)
+ 604. 605. a) c) e) 606. a) c) 607. c) d) g) 608. a) 609. a) 610. a)
+ 611. a) 613. a) 616. c) 622. Flächen: 626. 628. und 629.}
+\GESOAadB{252ff}{13. a) d), 14. a) c), 15. a) c), 16. a), 18. a), 19., 23. a) c) e) 25. a) (Optional: 30.) 34. a) b), und 35}
+\GESO{\newpage}
+
+
+\GESO{\input{allg/funktionen/AusAltenMaturapruefungenGESO}}
+

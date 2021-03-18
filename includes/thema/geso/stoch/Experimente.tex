@@ -1,0 +1,278 @@
+%%
+%% Stochastik Grundlagen
+%% 2020 - 08 - 03 φ
+%%
+
+\subsection{Zufallsexperimente}\index{Experiment}\index{Zufallsexperimente}
+
+\subsubsection{Laplace-Experiment}\index{Experiment!Laplace}\index{Laplace-Experiment}
+Ein fairer Spielwürfel wird geworfen. Jede Seite hat genau die selbe
+Wahrscheinlichkeit. Wie groß ist nun die Wahrscheinlichkeit, mit einem
+Wurf eine Augensumme von mehr als vier zu werfen?
+
+\TNT{2.4}{Glückliche Ereignisse: 5 und 6 (\textbf{zwei} Stück). Alle möglichen Ergebnisse: 1 bis 6 (\textbf{sechs} Stück). Wahrscheinlichkeit = $\frac{2}{6}=\frac13$}
+
+Dabei handelt es sich um ein klassisches Laplace-Experiment:
+\begin{itemize}
+\item Jeder einzelne Ausgang (Ergebnis) hat die selbe Wahrscheinlichkeit
+      (hier $p = \frac{1}{6}$).
+\item Die Wahrscheinlichkeit, dass ein Ereignis (hier $E = \epsdice{5}$
+oder $\epsdice{6}$) eintritt, wird berechnet mit $P(E)
+= \frac{\textrm{Anzahl gewünschte Ergebnisse}}{\textrm{Anzahl
+mögliche Ergebnisse}}$.
+
+Hier $P(\epsdice{5}\cup\epsdice{6}) = \frac{2}{6}$.
+\end{itemize}
+
+Kein Laplace-Experiment ist \zB das Werfen eines gezinkten Würfels,
+bei dem die Augenzahl 6 häufiger auftritt, als die anderen Augenzahlen.
+
+\subsection*{Aufgaben}
+\aufgabenfarbe{Kompendium: Kap. 5.2 Aufg. 1. - 4.}
+
+\newpage
+
+\subsubsection{Bernoulli-Experiment}\index{Experiment!Bernoulli}\index{Bernoulli-Experiment}
+Ein mehrfacher Münzwurf mit einer Münze ist ein typisches Bernoulli Experiment,
+denn
+
+\begin{itemize}
+\item Das Experiment wird $n$-mal durchgeführt.
+\item Das Einzelexperiment hat genau zwei Ausgänge: Erfolg/Misserfolg.
+\item Jedes Einzelexperiment hat für die erfolgreichen Ausgänge die gleiche
+      Wahrscheinlichkeit $p$ (somit ist die Wahrscheinlichkeit $q$ für den
+      Misserfolg gleich $1-p$).
+\item Die Einzelexperimente sind voneinander unabhängig.
+\end{itemize}
+
+Typischerweise sind wir bei Bernoulli-Experimenten an der
+Zufallsvariable $X$ interessiert, welche angibt, wie oft ein Erfolg
+eingetreten ist: $X$ hat also die Werte 0, 1, 2, 3, 4, ..., $n$.
+
+\textbf{Kein} Bernoulli-Experiment ist beispielsweise das Ziehen von zwei Bällen aus
+einer Urne mit drei gelben und sechs orangefarbenen Bällen ohne diese
+jeweils zurückzulegen; denn dabei verändern sich die
+Wahrscheinlichkeiten der verbleibenden Bälle nach jedem Herausnehmen.
+
+\paragraph{Beispiele von Bernoulli-Experimenten}
+
+\begin{itemize}
+\item
+In einer Urne liegen zehn Bälle: vier blaue und sechs grüne. Ein
+Einzelexperiment besteht darin, genau eine Kugel zu ziehen, die Farbe
+zu notieren und die Kugel sogleich wieder zurückzulegen.
+Das Gesamtexperiment besteht darin, fünf Einzelexperimente
+durchzuführen. Jedesmal ist die Wahrscheinlichkeit einen blauen Ball
+zu erwischen  gleich groß und wir sprechen von einem Bernoulli-Experiment.
+\end{itemize}
+
+Es müssen aber nicht immer Würfel, Münzen oder Kugeln in Urnen sein:
+
+\begin{itemize}
+\item
+Ein Basketballspieler trifft mit einer Wahrscheinlichkeit von 70\%
+($p=0.7$). Der Spieler wirft vier Mal. Somit ist $q=0.3$ und $n=4$.
+\end{itemize}
+\newpage
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Baumdiagramme}\index{Baumdiagramm!Stochastik}
+(Einstufige und Mehrstufige Experimente)
+
+(S. Youtube Videso dazu: Einfach-Mathe!)
+
+Um Wahrscheinlichkeiten aufzuzeichnen bietet sich das Baumdiagramm an.
+Dabei zeichnet man einen «Baum» von links-nach-rechts oder wie in der Informatik üblich von oben nach unten.
+
+Zu den Ästen schreibt man deren Wahrscheinlichkeiten.
+
+Man beginnt bei der Wurzel und für jeden möglichen Ausgang zeichnet man einen Ast. Dabei gelten die folgenden Gesetze:
+
+\begin{gesetz}{Summenregel}{}\index{Summenregel!Baumdiagramm}
+Alle von einem Knoten ausgehenden Äste haben in der Summe die Wahrscheinlichkeit 1 (= 100\%).
+\end{gesetz}
+
+\begin{gesetz}{Produktregel}{}\index{Produktregel!Baumdiagramm}
+Alle Wahrscheinlichkeiten von der Wurzel bis zum Endknoten werden aufmultipliziert, um die Endwahrscheinlichkeit (am Endknoten) zu erhalten.
+\end{gesetz}
+
+\newpage
+\subsubsection{Einstiegsbeispiel Baumdiagramm}
+\bbwCenterGraphic{4cm}{geso/stoch/img/gluecksrad75deg}
+An einem Glücksrad wird gedreht. $75\degre$ erzielen sofort einen Gewinn. Die anderen $285\degre$ geben einen Verlust an. Zum Glück darf ich am Rad drei mal drehen. Das Spiel endet entweder beim ersten Gewinn oder aber spätestens nach drei maligem Drehen.
+
+Wie groß ist die Wahrscheinlichkeit, bei diesem Spiel zu gewinnen?
+
+Zeichnen Sie dazu das Baumdiagramm, das bei jedem ``Sieg'' sofort endet und
+maximal drei Stufen tief geht.
+
+\TNT{8}{Einseitiger entarteter Baum mit Sieg = 75/360 und Verlust = 285/360. Drei Mal Verlust bei $\left(\frac{285}{360}\right)^3 \approx 49.6\%$}
+
+
+\newpage
+
+
+\subsubsection{Referenzaufgaben}
+
+\paragraph{Mindestens zwei Sechser} Ein Würfel wird dreimal hintereinander geworfen.
+
+a) Wie groß ist die Wahrscheinlichkeit, dass mindestens zwei Sechser dabei sind?
+
+b) Wie groß ist die Wahrscheinlichkeit, dass genau zwei Sechser dabei sind?
+
+Zeichnen Sie das zugehörige Baumdiagramm:
+
+\TNT{10}{\vspace{10cm}}
+\newpage
+
+
+\paragraph{Urne ohne zurücklegen} In einer Urne liegen drei grüne, zwei blaue und eine rote Kugel. Ich ziehe blind (Urne) zwei Kugeln hintereinander, ohne diese wieder zurückzulegen.
+
+Wie groß ist die Wahrscheinilchkeit, dass genau eine blaue Kugel dabei ist?
+
+Zeichnen Sie das zugehörige Baumdiagramm:
+
+\TNT{10}{\vspace{10cm}}
+\newpage
+
+\paragraph{Ziege}\index{Ziege} Heidi und Peter spielen mit einem Würfel um eine Ziege.
+
+Sie vereinbaren folgende Regeln:
+
+\begin{enumerate}
+\item Die Ziege erhält sofort, wer eine 5 oder eine 6 würfelt.
+\item Zuerst würfelt Heidi, dann (falls Heidi noch nicht gewonnen hat) Peter, dann allenfalls noch einmal Heidi.
+\item Ist nach drei Würfen noch nichts entschieden, dann erhält Peter die Ziege.
+\end{enumerate}
+
+
+Zeichnen Sie das zugehörige Baumdiagramm:
+
+\TNT{10}{\vspace{10cm}}
+
+\subsection*{Aufgaben}
+Einstufige Zufallsexperimente:
+
+\aufgabenfarbe{Kompendium: Kap. 5.4 Aufg. 9., 10.}
+
+Mehrstufige Zufallsexperimente:
+
+\aufgabenfarbe{Kompendium: Kap.  5.5.2 Aufg. 17 - 23}
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Binomialverteilung}
+
+Einstiegsvideo: ``EinfachMathe!'' (S. Wiki-Lernvideos)
+
+Bei der Binomialverteilung handelt es sich um ein
+Bernoulli-Experimetes
+in einem mehrstufigen Baum. Dabei interessiert
+uns, wie groß die Wahrscheinlichkeit ist, dass von den beiden
+möglichen Ausgängen einer davon $k$ mal auftritt.
+
+Wie groß ist die Wahrscheinlichkeit mit einem Würfel bei fünfmaligem
+Werfen drei Mal die Zahlen 1 oder 2 zu erreichen.
+
+Dabei legen wir fest:
+\begin{itemize}
+\item
+  $n$ = Anzahl mögliche Durchführungen; hier 5
+\item
+  $k$ = Anzahl der gewüntschten ``Treffer''; hier 3, denn wir wollen 3
+mal eine 1 oder eine 2 werfen
+\item
+  $p$ = Wahrscheinlichkeit, dass wir eine 1 oder eine 2 werfen, hier
+  also wie beim Laplace-Experiment: $p=\frac62=\frac13$
+\end{itemize}
+
+Nun gilt
+
+\begin{gesetz}{Bernouilli-Formel}{}
+  $$P(X=k) = {{n}\choose {k}}\cdot{}p^k\cdot{}p^{n-k}$$
+\end{gesetz}
+
+In obigem Beispiel ergibt sich:
+$$P(X=3) =
+{{5}\choose {3}} \cdot{}\left(\frac13\right)^3\cdot{}\left(\frac13\right)^{5-3}
+\approx{} 0.04115 = 4.115\%$$
+\newpage
+
+
+\subsection*{Aufgaben}
+Bernoulli-Ketten:
+
+\aufgabenfarbe{Kompendium: 5.5.4 Aufg. 28. und 29.}
+
+Minimale und maximale Ergebnisse bei Bernoulli-Ketten:
+
+\aufgabenfarbe{Kompendium: Kap. 5.7. Aufg. 36. und 37.}
+\newpage
+
+
+
+\subsection{Hypergeometrische Verteilung}
+In einer Urne liegen sieben Kugeln. Drei davon sind Treffer (grün) und vier davon sind Nieten (schwarz).
+Wir dürfen zwei Kuglen blind herausnehmen (ohne diese wieder zurückzulegen).
+
+\bbwCenterGraphic{5cm}{geso/stoch/img/Urne3T4N.png}
+
+Wie groß ist nun die Wahrscheinlichkeit
+\begin{itemize}
+\item keinen Treffer zu erzielen ($k=0$),
+\item genau einen Treffer zu erzielen ($k=1$) oder
+\item beide Treffer zu erzielen ($k=2$)?
+\end{itemize}
+
+Diese Wahrscheinlichkeiten können wir nun einerseits durch ein Baumdiagramm lösen, indem wir die Treffer mit \textbf{T} und die Nieten mit \textbf{N} bezeichnen:
+
+\noTRAINER{\mmPapier{7.2}}
+\TRAINER{
+\bbwCenterGraphic{7cm}{geso/stoch/img/Baum2aus3T4N.png}
+}
+
+Somit erhalten wir für zwei Treffer ($k=2$) eine Wahrscheinlichkeit von $\frac{6}{42}$; für einen Treffer ($k=1$) die Summe aus $\frac{12}{42}$ und nochmals $\frac{12}{42}$ also total $\frac{24}{42}$ und schlussendlich für keinen Treffer ($k=0$) die Wahrscheinlichkeit $\frac{12}{42}$.
+Die Summe aller Wahrscheinlichkeiten muss dann immer gleich 1.0 (100\%) sein.
+\newpage
+
+
+
+Andererseits gibt es dazu auch eine Formel:
+
+$$h(k|N;M;n) := P(X=k) = \frac{ {M\choose k} \cdot{} {{N-M}\choose {n-k}}}{{N \choose n}}$$
+
+Dabei bezeichnen
+\begin{itemize}
+\item $N$ die Anzahl Elemente in der Urne (hier $N = 7$)
+\item $M$ die Anzahl der möglichen Treffer in der Urne. Hier die Anzahl der grünen Kugeln (also $M = 3$)
+\item $n$ die Anzahl der herausgezogenen Kugeln (hier $n = 2$)
+\item $k$ die Anzahl der gewünschten bzw. zu erreichenden Treffer. Hier \zB null, einen oder zwei.
+\end{itemize}
+\newpage
+
+
+Daraus werden die folgenden Werte berechnet:
+
+\begin{itemize}
+\item $N-M$ die Anzahl der möglichen Nieten in der Urne. Hier die Anzahl der schwarzen Kugeln (also $N-M = 4$)
+\item $n-k$ die Anzahl der Nieten, mit anderen Worten, der nicht gewünschten Kugeln.
+\item $M\choose k$ die Anzahl der Möglichkeiten $k$ Elemente aus $M$ Trefferkugeln zu erzielen. Ist \zB $k=1$ und $M=3$, so haben wir drei Varianten, eine Trefferkugel zu erzielen.
+\item ${N-M}\choose {n-k}$ Die Anzahl Möglichkeiten $n-k$ (erhaltene Nietenanzahl) aus den möglichen Nieten zu wählen. Ist \zB $k=1$, so haben wir vier Varianten, eine Niete gezogen zu haben.
+\item ${M\choose k} \cdot{} {{N-M}\choose {n-k}}$ die Anzahl der Möglichkeiten $k$ Treffer und $n-k$ Nieten zu ziehen. Ist \zB $k=1$, so haben wir hier $3\cdot{}4$, also zwölf Möglichkeiten, genau einen Treffer und genau eine Niete zu erhalten.
+\item $N \choose n$ die Anzahl der Möglichkeiten zwei ($n$) Elemente
+  aus sieben ($N$) Elementen auszuwählen. Dies ist der übliche
+  Binomialkoeffizient\footnote{Taschenrechner: \fbox{$nCr$} (nCr, nicht nPr wählen)}.
+\item $P(X=k)$ ist die Wahrscheinlichkeit, genau $k$ Treffer zu erzielen.
+\item $h(k|N;M;n)$ ist eine andere Notation der hypergeometrischen Verteilung, indem $k$, $N$, $M$ und $n$ explizit angegeben werden. Hier \zB für genau einen gewünschten Treffer aus obiger Urne (7 Kugeln drei Treffer) mit dem Ziehen von zwei Kugeln: $h(1|7;3;2)=\frac{{3 \choose 1} \cdot{} {{7-3}\choose {2-1}  }   }{{ 7 \choose 2 }}=\frac{12}{21}$
+\end{itemize}
+
+\subsection*{Aufgaben}
+
+\aufgabenfarbe{Kompendium: Kapitel 5.5.3 Aufgaben 24 - 27}
+\newpage
+

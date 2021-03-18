@@ -1,0 +1,322 @@
+%%
+%% 2020 - 08 -03 φ
+%%
+\newpage
+\section{Kombinatorik}
+Die Kombinatorik befasst sich damit, wie viele Möglichkeiten für
+verschiedene Konstellationen zur Wahl stehen.
+
+Als Einstiegsbeispiel dient die folgende Wanderung:
+
+\vspace{5mm}
+
+\bbwGraphic{12cm}{geso/stoch/img/wanderung.png}
+
+Auf wie viele Arten kann der Wanderer von Wesen (im Westen) nach Obertal (im Osten) gelangen, wenn er ausschließlich von West nach Ost wandern will?
+
+Die Antwort kann durch Abzählen (oder eine Kombination von Abzählen und Multiplizieren) gefunden werden:
+
+\TNT{2.4}{$3\cdot{}(1+(2\cdot3) + 3) = 24$ Möglichkeiten. Mögliche
+  Erklärung: Bis «L» sind 3 Wege offen. Bis «R» sind total 3*2 + 1,
+  also sieben Wege möglich. Um nach «O» zu gelangen sind nun 7*3 + die
+  drei Wege ab Lisibach und dann direkt, also total 24 Wege möglich. Parallele Wege werden addiert;
+  serielle Wegmöglichkeiten multiplizieren sich.}
+
+\newpage
+\subsection{Variation mit Wiederholung (Produktregel)}
+Ein Zahlenschloss hat vier Ringe und auf jedem Ring sind die Zahlen
+von 0 - 5 einstellbar. Also pro Ring sechs Möglichkeiten.
+Wie viele Variationen gibt es im ganzen für dieses Zahlenschloss?
+
+\TNT{4.8}{
+Jeder Ring hat 6 Möglichkeiten. Somit habe ich am 1. Ring sechs
+Varianten. Für jede dieser Varianten habe ich für den 2. Ring auch
+sechs Varianten. Insgesamt also
+
+$n$ = Anzahl Elemente der Auswahl (hier 6 Ziffern)
+
+$k$ = Anzahl geordnete auszuwählende Elemente (hier 4 Rineg)
+
+$N$ = Anzahl Variationen
+
+$$N = n^k = 6^4$$
+}
+
+Dieses Experiment entspricht im Urnenmodell dem...
+\begin{gesetz}{...Ziehen mit zurücklegen}{}
+Beim Urnenmodell \textbf{«Ziehen mit Zurücklegen»} kann jeder Zug unabhängig vom
+vorangehenden wieder alle Werte annehmen. Die \textbf{Reihenfolge} der gewählten Kugeln ist hier \textbf{wesentlich}. Für $k$ Züge aus genau $n$
+Kugeln, die alle verschieden sind, gibt es $N$ Möglichkeiten:
+$$N = n^k$$
+\end{gesetz}
+
+\begin{definition}{Variation}{}\index{Variation}
+Eine \textbf{Variation} ist eine geordnete Stichprobe.
+\end{definition}
+
+\subsection*{Aufgaben}
+\aufgabenfarbe{Kompendium Kap. 5.5.1 Aufg. 16. a}
+\newpage
+
+
+\subsection{Permutationen (Fakultät)}\index{Permutation}\index{Fakultäten}
+Lateinisch «permutare» = vertauschen
+
+Hanna und Igor fahren Bus. Die beiden für sie reservierten Plätze sind
+nebeneinander, doch nur einer davon ist ein Fensterplatz. Auf wie
+viele Arten können sich die beiden Personen auf die beiden Plätze
+verteilen?
+
+\TNT{2.4}{Genau auf zwei Arten: Entweder ist
+Hanna am Fenster, oder Igor.\vspace{12mm}}
+
+Das Problem ist etwas komplizierter, wenn nun Hanna, Igor mit Jana
+eine Flugreise machen. Die drei reservierten Plätze sind wieder
+nebeneinander. Ein Platz ist am Fenster, einer zum Gang und der dritte
+Platz ist zwischen den beiden anderen. Auf wie viele Arten können nun
+Hanna, Igor und Jana ihre Plätze wählen?
+
+\TNT{3.6}{6 Varianten. Jede der drei Personen
+am Fenster ergibt drei Hauptvarianten, dann jede der verbleibenden
+beiden zum Gang hin; Ergo: $3\cdot{}2$}
+
+Machen Sie die selbe Überlegung noch mit vier Personen\footnote{Ach ja: Die vierte Person ist Karl.} und vier
+Plätzen...
+
+\TNT{2.8}{24 = 4!\vspace{28mm}}
+
+... und mit fünf Plätzen und fünf Personen\footnote{Die fünfte Person heißt übrigens Lena, auch wenn es für die Berechnung keine Rolle spielt.}.
+
+\TNT{3.2}{120 = 5!\vspace{30mm}}
+\newpage
+
+\subsubsection{Fakultät als Operation}\index{Fakultät}
+Ganz allgemein gilt: Bei $n$ Personen auf $n$ Plätzen gibt es
+$n\cdot{} (n-1) \cdot{} (n-2) \cdot{} (n-3) \cdot{} (n-4) \cdot{}
+... \cdot{} 2 \cdot{} 1$ Möglichkeiten.
+
+Diese Rechnung ist im Taschenrechner unter der Operation ``Fakultät''
+bekannt und wird üblicherweise mit der Taste \fbox{n!} bezeichnet. Auf
+Ihrem Rechner ist es die Taste \tiprobutton{ncrnpr}.
+
+Berechnen Sie die Fakultät von 3, 4, 5 und 20 mit dem Taschenrechner.
+
+\TNT{3.2}{\vspace{32mm}}
+
+Auf wie viele Arten können Sie sich als Klasse in Ihre Bänke
+verteilen? Machen Sie die Überlegung so, wie es aussehen würde, wenn es keine leeren Plätze gäbe.
+
+\TNT{5.2}{Wenn es keine leeren Plätze hat, entspricht die Anzahl der
+Möglichkeiten der Fakultät. $n$ = Anzahl Schüler = Anzahl Plätze, dann
+gilt $n!$ = Anzahl Mögliche Sitzordnungen.
+\vspace{32mm}
+}
+
+\begin{gesetz}{}{}
+Im Urnenmodell entspricht die Fakultät einer Urne mit $n$ Kugeln, die
+alle verschieden sind. Alle $n$ Kugeln werden gezogen. Wie viele
+Reihenfolgen sind möglich?
+$$N = n\cdot{} (n-1) \cdot{} (n-2) \cdot{} (n-3) \cdot{}
+(n-4) \cdot{} ... \cdot{} 3\cdot{} 2 \cdot{} 1 = n!$$
+\end{gesetz}
+
+\subsection*{Aufgaben}
+\aufgabenfarbe{Kompendium Kap. 5.5.1 Aufg. 15}
+\newpage
+
+
+\subsection{Variation ohne Zurücklegen}\index{Variation!ohne Zurücklegen}
+Stellen wir uns vor, wir können sechs Kunstbände (Bücher) in ein schmales
+Regal stellen. Mehr geht nicht, weniger wollen wir nicht.
+Nun haben wir 10 Bücher zur Auswahl. Auf wie viele Arten können wir nun sechs Bücher in unser Regal einordnen?
+
+\TNT{6}{
+Für das erste Buch haben wir zehn Möglichkeiten. Wenn das Buch da mal steht, haben wir für das zweit Buch nur noch neun Möglichkeiten.
+Schlussendlich bleiben $N$-Mögilchkeiten:
+$$N=10\cdot{}9\cdot 8\cdot 7\cdot 6\cdot 5 = \frac{10\cdot 9\cdot 8\cdot 7\cdot 6\cdot 5\cdot 4\cdot 3\cdot 2\cdot 1}{4\cdot 3\cdot 2\cdot 1} = \frac{10!}{4!}$$
+\vspace{20mm}
+}%% END TNT
+
+Oder als Formel:
+\begin{gesetz}{Ohne Zurücklegen / Reihenfolge Wesentlich}{}
+Es seien
+$n = $ Anzahl Elemente der Auswahl (oben die Anzahl der Bücher)\\
+$k = $ Anzahl auszuwählende geordnete Elemente (die Anzahl Plätze im Regal)\\
+$N = $ Anzahl der Möglichkeiten\\
+
+$$N =\frac{n!}{(n-k)!}$$
+\end{gesetz}
+
+\begin{bemerkung}{}{}
+Wenn wir alle $n$ Elemente geordnet auswählen, so erhalten wir
+$\frac{n!}{(n-n)!} = n!$, was dem bereits bekannten Spezialfall der \textbf{Permutation}
+entspricht.
+\end{bemerkung}
+
+
+\begin{bemerkung}{}{}
+Wenn wir 3 Plätze für 5 Personen haben, so sind die 5 Personen die $n$
+Elemente zu Auswahl und die 3 (geordneten) Plätze ist unser $k$.
+
+Wenn wir jedoch 5 Plätze haben und 3 Personen wählen darauf ihre
+Position, so sind die 5 Plätze unsere $n$ Elemente aus denen jede
+Person ($k=3$) eine Platznummer wählen kann.
+\end{bemerkung}
+\newpage
+
+\begin{gesetz}{Variation ohne Wiederholung}{}
+Bei $n$ Elementen zur Auswahl und $k$ ausgewählten geordneten
+Elementen, ist immer
+$$n > k.$$
+\end{gesetz}
+
+
+Wie viele Möglichkeiten hat eine Klasse mit $n$ Lernenden, sich auf
+$n+1$ Plätze zu verteilen?
+
+\TNT{2.4}{Hier stellt man sich einfach einen ``Phantom-Schüler'' vor,
+der Unsichtbar auf den leeren Bank sitzt. Somit gilt auch hier: Die
+Anzahl der Möglichen Sitzordnungen = Fakultät der leeren Plätze = $(n+1)!$.}
+
+Wie viele Sitzordnungen sind möglich, wenn es zwei oder mehr freie Plätze gibt?
+
+\TNT{5.2}{Hier gibt es grundsätzlich zwei Betrachtungsweisen.
+
+a) Wir stellen uns vor, dass wir $p$ Plätze haben. Davon bleiben $f$
+frei. Nun zählen wir alle Schüler und die ``Phantomschüler'' zusammen, das ergibt
+gerade die $p$ Plätze. Hier gibt es also $p!$ Varianten. Die $f$
+Phantomschüler setzen sich aber auch für alle Variationen mit realen
+Schülern auf $f!$ verschiedene Varianten hin. Somit müssen wir diese
+Varianten wieder wegdividieren. Es bleiben total $\frac{p!}{f!}$ Varianten.
+
+b) Wir stellen uns die Sitzbänke nummeriert vor und legen für jeden der
+$n$ Nummern eine Kugel in eine Urne. Die $k$ Schüler stellen wir der Reihe
+nach hin, und jede/r darf der Reihe nach eine Kugel (somit seine
+Platznummer) auswählen. Somit verbleiben $n-k$ Kugeln in der Urne und
+hier gilt das \textbf{Ziehen ohne Zurücklegen mit wesentlicher
+Reihenfolge}:
+
+Varianten = $\frac{n!}{(n-k)!}$.
+
+}
+
+
+\subsection*{Aufgaben}
+\aufgabenfarbe{Kompendium: Aufg. 16. b}
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+
+\subsection{Kombinationen}\index{Kombination}
+Im Folgenden betrachten wir die Familie G. aus W.:
+\begin{itemize}
+\item Mutter, klein, dunkelhaarig
+\item Vater, groß, blond
+\item 1. Kind: Tochter, groß, blond, Teenager
+\item 2. Kind: Sohn, klein, blond, Teenager
+\item 3. Kind: Tochter, klein, dunkelhaarig (noch kein Teenager)
+\end{itemize}
+
+Die Familie hat gemerkt, dass es meist nicht nötig ist, alle Namen
+aufzuzählen, wenn eine Teilmenge der Familie angesprochen werden soll:
+
+\begin{itemize}
+\item «Heute kochen die blonden»
+\item «Die großen dürfen heute ausnahmsweise länger aufbleiben»
+\item ...
+\end{itemize}
+
+\newpage
+Beantworten Sie die folgenden Fragestellungen:
+\begin{itemize}
+\item Wie viele solcher ``Teilmengen'', solcher \textbf{Kombinationen}, bestehend aus genau \textbf{drei} Familienmitgliedern sind möglich?
+
+\TNT{1.6}{10\vspace{10mm}}
+
+\item Suchen Sie zu zweit für jede «Dreiergruppe» der Familie G. eine
+treffende Bezeichnung.
+
+\TNT{4.4}{
+  die drei ältesten,
+  Mutter und Männer (M\&Ms),
+  keine Teenager,
+  Mutter und Teenager,
+  die «Damen»,
+  die blonden,
+  Vater und Töchter,
+  Vater und beide Jüngsten,
+  die Kinder,
+  Vater und Teenager
+  \vspace{30mm}
+}% END TNT
+
+\item Wie viele solcher ``Teilmengen'' gibt es in der
+fünfköpfigen Familie im ganzen?
+\item Wie viele Teilmengen wären möglich in einer sechsköpfigen,
+bzw. siebenköpfigen Familie?
+\end{itemize}
+
+Die Anzahl der Möglichkeiten, drei Elemente aus einer Menge mit total
+fünf Elementen auszuwählen wird in der Mathematik mit dem
+Binomialkoeffizienten angegeben:
+
+$${5\choose 3} = 10$$
+
+Berechnet wird dies mit der Fakultät (Anzahl der Permutationen), indem
+alle fünf Elemente permutiert werden. Wir erhalten so zu viele
+Möglichkeiten. Wir dividieren die Zahl durch die Anzahl aller Permutationen der
+gewählten Personen, aber auch durch die Anzahl aller Permutationen der
+nicht gewählten Personen:
+
+$${5\choose 3} = \frac{5!}{3!\cdot{} 2!}$$
+\newpage
+
+\begin{definition}{Kombination}{}\index{Kombination!Definition}
+Eine \textbf{Kombination} ist eine \textbf{un}geordnete Stichprobe.
+\end{definition}
+
+Wenn die Reihenfolge der Elemente keine Rolle spielt, gilt ganz
+allgemein:
+
+Die Anzahl der Möglichkeiten $k$ Elemente aus einer Grundgesamtheit
+von $n$ Elementen auszuwählen ist gleich
+
+\begin{definition}{Binomialkoeffizient}{}\index{Binomialkoeffizient!Definition}
+$${n\choose k} = \frac{n!}{k!(n-k)!}$$
+\end{definition}
+
+Diese Zahl wird Binomialkoeffizient genannt und kann mit dem
+Taschenrechner einfach
+mittels \tiprobutton{ncrnpr}\footnote{Mehrmaliges Drücken der Taste:
+Wählen Sie ``nCr'', nicht ``nPr''.}
+berechnet werden.
+
+Berechnen Sie gleich mit dem Taschenrechner
+\begin{itemize}
+\item $5\choose 3$\TRAINER{ = 10}
+\item $5\choose 2$ (begründe) \TRAINER{  = 10, denn 3 Auswählen ist gleich
+wie zwei nicht wählen!}
+\item Swiss LOTTO ${42\choose 6} \cdot{} {6 \choose 1}$ \TRAINER{$ = 31\,474\,716$}
+\end{itemize}
+
+\begin{bemerkung}{}{}
+Zur Begründung: Stellen Sie die $n$ Elemente in eine Reihe. Dazu gibt
+es $n!$ Möglichkeiten. Nun dividieren wir die Vertauschungen der
+gewählten Elemente ($k!$) und die Vertauschungen der nicht gewählten
+Elemente $(n-k)!$ davon weg, es bleibt $\frac{n!}{k!(n-k)!}$.
+\end{bemerkung}
+
+\begin{gesetz}{}{}
+Im Urnenmodell entspricht der Binomialkoeffizient dem Ziehen von $k$ Kugeln aus einer
+Urne mit $n$ verschiedenen Kugeln. Die Reihenfolge der gewählten
+Kugeln ist hier nicht relevant.
+\end{gesetz}
+
+\subsection*{Aufgaben}
+%%\aufgabenfarbe{Kompendium: Kap. 5.2 Aufg. 1 - 4}
+
+\aufgabenfarbe{Kompendium: Kap. 5.5.1 Aufg. 11., 12., 13., 14.*}
+\newpage

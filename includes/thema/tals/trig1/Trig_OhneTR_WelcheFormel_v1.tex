@@ -1,0 +1,37 @@
+%%
+%% Trigonometrie aufgaben ohne Rechner
+%% Finde die richtige zugehörige Formel
+%%
+
+\begin{frage}[1]
+  In einem \textbf{rechtwinkligen} Dreieck ist die Kathete a 3.9cm lang und der Winkel $\alpha$ misst $37.4^\circ$.
+  
+\begin{center}
+  \includegraphics[width=5cm]{P_TRIG/img/Dreieck374_39.png}
+\end{center}
+Wie berechnet sich nun die Hypothenuse $c$?
+
+
+%% #1: Lösung true false
+%% #2: Formel
+\newcommand{\MCTrigFrage}[2]{\ifstrequal{#1}{true}{\TRAINER{x}\noTRAINER{$\Box$}}{$\Box$} #2}
+
+\begin{tabular}{|c|c|c|}
+  \hline
+  \MCTrigFrage{true}{$c=3.9\cdot{}\sin(37.4)$} &%
+  \MCTrigFrage{false}{$c=\frac{\sin(37.4)}{3.9}$} &%
+  \MCTrigFrage{false}{$c=\frac{3.9}{\sin(37.4)}$}\\%
+  \hline
+  \MCTrigFrage{false}{$c=3.9\cdot{}\cos(37.4)$} &%
+  \MCTrigFrage{false}{$c=\frac{\cos(37.4)}{3.9}$} &%
+  \MCTrigFrage{false}{$c=\frac{3.9}{\cos(37.4)}$}\\%
+  \hline
+  \MCTrigFrage{false}{$c=3.9\cdot{}\tan(37.4)$} &%
+  \MCTrigFrage{false}{$c=\frac{\tan(37.4)}{3.9}$} &%
+  \MCTrigFrage{false}{$c=\frac{3.9}{\tan(37.4)}$}\\%
+  \hline
+\end{tabular}
+
+\platzFuerBerechnungen{3.2}
+
+\end{frage}%

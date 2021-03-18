@@ -1,0 +1,147 @@
+\section{Berührende Graphen}\index{Graphen!berührende}\index{berührende Graphen}
+
+\textbf{Einführungsbeispiel}
+
+
+Gegeben ist die Parabel $f: y=\frac{1}{2}x^2 -2x +3$ und von einer
+Geraden $g$ ist die Steigung $a =\frac12$ gegeben.
+
+Gesucht ist von der Geraden $g$ der $y$-Achsenabschnitt so, dass die
+Gerade die Parabel tangiert; also genau in einem Punkt berührt.
+
+Wo (in welchem Punkt $P=(x_P|y_P)$) tangiert also die Gerade $g$ die Parabel $f$?
+
+In der folgenden Skizze sind drei mögliche Geraden mit Steigung
+$\frac{1}{2}$ gezeichnet. Nur eine \textit{tangiert} die Parabel.
+
+\bbwGraph{-2}{6}{-2}{6}{
+  \draw[thick,color=blue,variable=\x,domain=-1:5] plot ({\x}, {0.5*\x*\x - 2*\x + 3}); 
+  \draw[color=red,variable=\x,domain=-1:5] plot ({\x},{0.5*\x + 1});
+  \draw[color=red,variable=\x,domain=-1:5] plot ({\x},{0.5*\x - 1.5});
+  \draw[color=cyan,thick,variable=\x,domain=-1:6] plot ({\x},{0.5*\x  -0.125});
+  \bbwDot{2.5, 1.125}{green}{north}{P}
+}
+
+Lösungsidee: Wähle als Parameter den Achsenabschnitt $b$ (der Geraden)
+und berechne die Schnittpunkte mit $f(x) = g(x)$. Nur für ein $b$ gibt
+es genau eine Lösung (Diskriminante = 0). Den $x$-Wert dieses
+Schnittpunkts nennen wir $x_P$:
+
+\TNT{3.2}{
+\begin{tabular}{rclr}
+$f(x_P)$                   & $=$ & $g(x_P)$                            & \\
+$\frac{1}{2} x_P^2 - 2x_P + 3$ & $=$ & $\frac{1}{2}x_P + b$                  & \\
+$0$                        & $=$ & $\frac{1}{2}x_P^2 - 2.5x_P + 3 - b$ & (I)\\
+\end{tabular}
+}%% END TNT
+\newpage
+
+Die Diskriminante $D=B^2 - 4AC$ muss gleich 0 sein; mit
+
+\TNT{5.2}{
+$A = \frac{1}{2}$, $B = -2.5$ und $C = 3-b$.
+
+$$D=0=B^2-4AC = 6.25 -4\cdot{}\frac{1}{2}(3-b)$$
+$$\Longrightarrow 6.25 = 6-2b$$
+$$\Longrightarrow b=-\frac{1}{8}$$
+
+$$\Longrightarrow g: y=\frac{1}{2}x - \frac{1}{8}$$
+}%% END TNT
+  
+Für den Schnittpunkt müssen wir nun nur doch das gefundene $b$ ($b =
+-\frac{1}{8}$) in die Gleichung (I) einsetzen:
+
+$$0 = \frac{1}{2}x_P^2 - 2.5x_P +3 - \frac{1}{8}$$
+
+Da die Gleichung in $x_P$ die Diskriminante 0 hat, ist die Lösung
+einfach $x_P = \frac{-B}{2A}$ mit $A = \frac{1}{2}$ und
+$B=-2.5$. Somit erhalten wir sofort $x_P = 2.5$. Für das $y_P$
+brauchen wir das $x_P$ nur in $f$ oder in $g$ einzusetzen und
+erhalten $y_P =\frac{9}{8}$. Der gesuchte Berührungspunkt $S$ lautet
+also:
+
+$$P = \left(\frac{5}{2}\middle|\frac{9}{8}\right)$$
+
+\TRAINER{(Je nach Zeit wäre 699. a) noch eine Vorzeigeaufgabe.)}
+
+\subsection{Aufgaben}
+\TRAINER{Achtung bei 702., dass nicht das Gleichungssystem bereits
+  nach dem Gleichsetzen der Kurven aufgestellt wird. Erst nach dem
+  Null-Setzen der Diskriminante erhalten wir eine gültige Gleichung
+  für das Gleichuugssystem.}
+\TALSAadB{190}{698., 702., 703., 705.}
+\newpage
+
+
+\subsection{Grenzwerte und Steigungsfunktion (Optional)}
+
+Wie macht das ein CAS, dass es den tiefsten bzw. den höchsten Punkt
+einer Funktion bestimmen kann? Hier ein Erklärungsversuch am Beispiel
+der quadratischen Funktion.
+Betrachten wir die allgemeine quadratische Funktion $$p: y=ax^2 + bx +
+c$$
+Mit dem selben $a$ und dem selben $b$ kann ich eine Gerdade $s$
+definieren, die ich die \textbf{Steigungsfunktion} nenne:
+$$s: y= 2ax+b$$
+
+Diese Steigungsfunktion $s$ gibt in jedem Punkt $x$ die Steigung der
+Parabel $p$ an.
+
+\begin{beispiel}{Parabel}{}
+  Gegeben ist die Parabel $p: y=2.5x^2 - 3x + 6.5$. Wo hat diese Parabel
+  ihren Tiefpunkt? Im Scheitelpunkt $x_S =
+  \frac{-b}{2a} = \frac{-(-3)}{2\cdot{}2.5}$. Dies ist gleichzeitig die Nullstelle der
+  Steigungsfunktion $s: y= 2\cdot{}2.5x - 3$.
+
+  Wir können damit aber auch die Steigung in einem ganz anderen Punkt
+  \zB für $x=10$ berechnen. Die Parabel $p$ hat an der Stelle $x=10$
+  die Steigung, die durch die Steigungsfunktion im Punkt $10$
+  ermittelt wird: $s(10) = 2\cdot{}10\cdot{2.5} - 3 = 47$.
+  
+\end{beispiel}
+
+\begin{beispiel}{Gerade gesucht}{}
+Gegeben ist die Parabel $p: y=4x^2 -6x + 3$. Gesucht ist die Gerade
+$g: y=ax+b$, sodass die Gerade die Parabel bei $x=7$ berührt.
+
+\begin{enumerate}
+\item Die Steigungsfunktion $s$ lautet: $s: y=2\cdot{}4x - 6$
+\item Für $x=7$ hat die Steigungsfunktion den Wert 50, und somit hat
+  die Parabel bei $x=7$ die Steigung 50.
+\item Um den Berührungspunkt $B$ zu finden, setzen wir 7 diesen in $p$
+  ein: $p(7)= 4\cdot{}49-6\cdot{}7+3 = 157$; und somit $B=(\LoesungsRaum{7}|\LoesungsRaum{157})$.
+\item Die gesuchte Gerade $g: y=ax+b$ hat also auch die Steigung 50
+  und verläuft durch den Berührungspuntk $B=(7|157)$. Also
+  $157=50\cdot{}7+b$. Somit ist das gesuchte $b = 157-50\cdot{}7=-193$
+  und die gesuchte Funktionsgleichung der Geraden lautet: $y = 50x-193$
+  \end{enumerate}
+\end{beispiel}
+\newpage
+
+
+
+\subsubsection{Beweis der Steigungsfunktion}
+
+Betrachten wir auf auf der $x$-Achse zwei benachbarte Punkte $x$ und
+$x+\Delta$. Die Funktionswerte lauten $f(x)$ und $f(x+\Delta)$. Die
+\textbf{Steigung} kann nun für eine Gerade bestimmt werden durch:
+
+\bbwCenterGraphic{7cm}{tals/fct3/img/Steigungsfunktion.jpg}
+
+$$\frac{f(x+\Delta) - f(x)}{\Delta}$$
+
+Dies gilt für eine Parabel $p: y=ax^2+bx+c$ näherungsweise auch:
+$$\frac{f(x+\Delta)-f(x)}{\Delta} = \frac{(a(x+\Delta)^2 + b(x+\Delta)
+  + c) - (ax^2 + bx +c)}{\Delta}=2ax+a\Delta+b$$
+
+Wenn wir nun das $\Delta$ gegen Null gehen lassen, also immer kleinere
+Werte einsetzen, so verschwidet der Term $a\Delta$ fast und unsere
+Formel stimmt annähernd --- jedoch präzise genug, um dies als Beweis
+gelten zu lassen.
+
+Ein anderer Beweis wäre die Tangente effektiv einzusetzen und diese so
+zu wählen, dass es genau einen Schnittpunkt gibt, was wieder darauf
+zurückführt, dass die Diskriminante = Null gesetzt werden muss. Dann
+sind wir exakt, aber der Beweis ist ungleich aufwändiger.
+\newpage
+

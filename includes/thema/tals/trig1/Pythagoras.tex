@@ -1,0 +1,48 @@
+%% Einbinden in Trigo: Rechtwinkliges Dreieck, aber auch
+%% in Planimetrie: Satz des Pythagoras
+%%
+%% Hier:
+%%   * Allgemeine Form
+%%   * Höhensatz
+%%   Nicht dabei:
+%5     -Sinus/Cosinus/Tangens (dies ist nur in Trigo)
+%5     -Höhensatz (der kommt nur bei der Planimetrie)
+
+
+
+%% Load this only once (the first occurence)!
+%% see here: https://tex.stackexchange.com/questions/195157/is-there-any-analog-to-pragma-once-in-latex
+\ifcsname XX_Pythagoras.tex\endcsname
+  \expandafter\endinput
+\fi
+\expandafter\gdef\csname XX_Pythagoras.tex\endcsname{loaded}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Satz des Pythagoras (Repetition)}\index{Pythagoras!Satz des|textbf}\index{Satz des Pythagoras|textbf}
+
+\fbox{\parbox{\textwidth}{
+$$a^2 + b^2 = c^2$$
+}}
+
+\TNT{7.6}{Platz für graphischen Beweis\vspace{3cm}}
+
+\ifisTRAINER{\newpage}\fi%%
+\subsection{Höhensatz}\index{Höhensatz}
+
+Im rechtwinkligen Dreieck gilt:
+$$h^2=p\cdot{}q$$
+
+Beweise:
+
+\TNT{6.4}{Beweis mit Pythagoras: $h^2 = a^2 - p^2$ und $h^2 = b^2 -
+  q^2$.\\
+Somit gilt
+$2h^2 = a^2 + b^2 - p^2 - q^2 = c^2 - p^2 - q^2 = (p+q)^2 -p^2 - q^2 =
+  p^2 +2pq + q^2 - p^2 - q^2 = 2pq$\\
+Daraus folgt:$$h^2=pq$$ Nun brauchen wir nur noch auf beiden Seiten die
+Wurzel zu ziehen.
+
+Beweis mit Ähnlichkeit: $p:h = h:q$, somit folgt der Satz automatisch.}

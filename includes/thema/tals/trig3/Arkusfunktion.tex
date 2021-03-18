@@ -1,0 +1,105 @@
+%% Trigonometrie III
+%% Arkusfunktionen
+%% 2020 - 12 - 21 φ@bbw.ch
+
+\section{Arkusfunktionen}\index{Arkusfunktionen}
+
+
+
+\subsection{Arcussinus}
+Auf die Umkehrungen der Sinus-, Cosinus- und Tangensbeziehungen können
+als Funktionen aufgefasst werden.
+
+Berechnen Sie von einigen ArcSin-Verhältnissen den zugehörigen Winkel
+(also \zB $\arcsin(0.5)$...) und tragen Sie die Werte ins folgende
+Koordinatensystem im Bogenmaß ein:
+
+\noTRAINER{\bbwCenterGraphic{8cm}{tals/trig3/img/py_system.png}}
+\TRAINER{\bbwCenterGraphic{8cm}{tals/trig3/img/arcsin.png}}
+
+Geben Sie den Definitionsbereich Arcus-Sinus-Funktion an:
+
+$$\mathbb{D} = \LoesungsRaum{[-1; 1]}$$
+
+Geben Sie den Wertebereich der Arcus-Sinus-Funktion einmal im Bogenmaß,
+einmal im Gradmaß an:
+$$\mathbb{W} = \LoesungsRaum{[-\frac{\pi}{2}; \frac{\pi}{2}]}  =  \LoesungsRaum{[-90\degre; 90\degre]}$$
+\newpage
+
+\subsection{Arccuscosinus}
+Zeichnen Sie die Umkehrfunktion des Cosinus und geben Sie Definitionsbereich an.
+
+\noTRAINER{\bbwCenterGraphic{8cm}{tals/trig3/img/py_system.png}}
+\TRAINER{\bbwCenterGraphic{8cm}{tals/trig3/img/arcsin.png}}
+
+
+$$\mathbb{D} = \LoesungsRaum{[-1; 1]}$$
+
+Geben Sie den Wertebereich der Arcus-Sinus-Funktion einmal im Bogenmaß,
+einmal im Gradmaß an:
+$$\mathbb{W} = \LoesungsRaum{[0; \pi]}  =  \LoesungsRaum{[0; 180\degre]}$$
+\newpage
+
+
+\subsection{Arcustangens}
+Zeichnen Sie die Umkehrfunktion des Tangens (im Bogenmaß) und geben Sie Definitionsbereich an.
+
+\noTRAINER{\bbwCenterGraphic{8cm}{tals/trig3/img/py_system.png}}
+\TRAINER{\bbwCenterGraphic{8cm}{tals/trig3/img/arcsin.png}}
+
+
+$$\mathbb{D} = \LoesungsRaum{\mathbb{R}}$$
+
+Geben Sie den Wertebereich der Arcus-Sinus-Funktion einmal im Bogenmaß,
+einmal im Gradmaß an:
+$$\mathbb{W} = \LoesungsRaum{]-\frac{\pi}{2}; \frac{\pi}{2}[}  =
+\LoesungsRaum{]-90\degre; 90\degre[}$$
+
+Beachten Sie, dass im Wertebereich $\mathbb{W}$ die Grenzen ($-90\degre$
+und $+90\degre$) nicht enthalten sind. Warum ist das so?
+\newpage
+
+
+\subsubsection{Für Applikationsentwickler\LoesungsRaum{\,($\mathrm{atan2}()$)}}
+
+Wir betrachten ein kleines Computerspiel, bei dem von einer
+Abschussrampe im Punkt $O=(0|0)$ in einem Winkel $\varphi$ ein Geschoss
+abgeschossen wird (siehe folgende beiden Graphiken). Die Längen sind
+in Einheiten von \texttt{px}\footnote{Ein \texttt{px} ist ein
+  sog. \textit{picture element} und ist ursprünglich die kleinste adressierbare
+  Einheit auf dem Computerdisplay.} gegeben.
+
+\begin{tabular}{p{11cm}c}
+\textbf{Problem I}: Gegeben ist ein Winkel von $107\degre$ von der
+Abschussrampe aus gesehen und gesucht sind die Koordinaten des Punktes
+$P=(x_P|y_P)$, der in der Entfernung von 350 [px].
+&
+\raisebox{-4cm}{\includegraphics[width=5cm]{tals/trig3/img/atan2PunktGesucht.jpg}}\\
+\end{tabular}
+
+Lösung: $P=( \LoesungsRaumLang{350\cdot{}\cos(107\degre)\approx{}-102} | \LoesungsRaumLang{350\cdot{}\sin(107\degre)\approx{}335})$
+
+
+\begin{tabular}{p{11cm}c}
+\textbf{Problem II}: Gegeben ist neben dem Ursprung $O = (0 | 0)$ ein
+weiterer Punkt $P(x_P|y_P)$. In welchem Winkel $\varphi$ befindet sich
+$P$ von $O$ aus gesehen? Gesucht ist der Winkel $\varphi$ im
+mathematisch positiven Sinne.
+
+&
+\raisebox{-4cm}{\includegraphics[width=5cm]{tals/trig3/img/atan2WinkelGesucht.jpg}}\\
+\end{tabular}
+
+Beispiele und Lösung:
+
+\begin{tabular}{l|l|l}
+  Punkt          & Winkel                  & allgemeine Formel? \\ \hline
+  $P(+10 |  60)$ & $\varphi = \LoesungsRaum{80.5\degre}$  & $\varphi=\LoesungsRaum{\arctan(\frac{y}{x})}$ \\ \hline
+  $P(-10 |  60)$ & $\varphi = \LoesungsRaum{99.46\degre}$ & $\varphi=\LoesungsRaum{90\degre - \arctan(\frac{y}{x})}$ \\ \hline
+  $P(  0 |  70)$ & $\varphi = \LoesungsRaum{90\degre}$    & $\varphi=$\LoesungsRaum{Sonderfall, sonst Division durch 0} \\ \hline
+  $P(-20 |   0)$ & $\varphi = \LoesungsRaum{180\degre}$   & $\varphi=\LoesungsRaum{\arctan(\frac{y}{x}) + 180\degre}$ \\ \hline
+  $P(x_P | y_P)$ & allgemeiner Fall?      & $\varphi=\LoesungsRaum{\textrm{arctan2}(y, x)}$\\ \hline
+\end{tabular}
+
+
+

@@ -1,0 +1,62 @@
+%%
+%% Meta: Die häufigsten Fehler in der Algebra: Grundlagen.
+%%
+
+\input{bbwSeite}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usepackage{amssymb} 
+\usepackage{cancel}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+
+\renewcommand{\metaHeaderLine}{Arbeitsblatt}
+\renewcommand{\arbeitsblattTitel}{Finde den Fehler}
+
+\begin{document}%%
+\arbeitsblattHeader{}
+\textbf{Die häufigsten Fehler}
+
+Die untenstehenden Fehler sind die häufigsten Fehlerquellen. Finden Sie sie und lernen Sie daraus.
+
+\newcommand{\noteSpace}{\noTRAINER{\rule{0pt}{6.5ex}}}
+
+\begin{tabular}{p{5cm}|p{12cm}}
+
+1. $-(a-b-c) = a+b+c$     & \noteSpace{}\TRAINER{Das $+$ ging vergessen}\\
+\hline
+
+2. $(a+b)^2 = a^2 + b^2$ & \noteSpace{}\TRAINER{$binomische Formeln!$}\\
+\hline
+
+3. $\frac{a-b}{-c} \cdot \,\frac{-y}{-x+z} = \frac{a-b\cdot\,
+-y}{-c\cdot{}\,-x+z}$ & \noteSpace{}\TRAINER{Klammern vergessen!
+«$\cdot{}\,-$» ist ein Morsezeichen («$\cdot{}\,-$» steh für den
+Buchstaben ``A''), kein mathematisches Symbol}\\
+
+\hline
+4. $\frac{a-b}{b-a} = \frac{a-b}{(-1)
+\cdot{} (b-a)} = \frac{a-b}{-b+a} = \frac{a-b}{a-b} = 1$ & \noteSpace{}\TRAINER{Mit $(-1)$ multipliziert,
+statt erweitert}\\
+
+
+
+\hline
+5. $a^3 + a^4 = a^7$ & \noteSpace{}\TRAINER{Aber: $a^3 cdot{}a^4 = a^7$}\\
+
+%\renewcommand\CancelColor{\color{red}}
+
+\hline
+6. $\frac{a+b}{a-b} = \frac{a\Ccancel[red]{+b}}{a\Ccancel[red]{-b}} =\frac{a}{a} = 1$ & \noteSpace{}\TRAINER{Aus Summen kürzen nur die Dummen}\\
+
+\hline
+7. $ab\cdot{}cb = b\cdot(ac)$ & \noteSpace{}\TRAINER{Aus Produkten
+ausklammern? Geht nicht. Und auch: Wozu denn? Ist ja schon faktorisiert. }\\
+
+\hline
+8. $10-(a + b) = -10a -10b$ & \noteSpace{}\TRAINER{$10-(a+b) \ne -10(a+b)$}\\
+
+
+
+\end{tabular}
+\end{document}

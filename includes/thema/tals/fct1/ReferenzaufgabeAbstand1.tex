@@ -1,0 +1,63 @@
+\subsubsection{Referenzaufgabe: Abstand}\index{Abstand!zwischen Punkt und Gerade}
+
+Gegeben ist ein Punkt $P(2|3)$ und eine Gerade $f: y=\frac{1}{4}x-1$. Gesucht ist der Abstand des Punktes $P$ zu $f$.
+
+\newcommand{\vorgehensTitelchen}[1]{\textbf{\color{brown}#1
+\\
+}}
+
+Wie ist der Abstand zwischen einem Punkt und einer Geraden wohl definiert?
+
+\vorgehensTitelchen{1. Skizze}
+\bbwGraph{-1}{6}{-2}{4}{
+ \bbwDot{2,3}{blue}{west}{P}
+      \bbwLine{-1,-1.25}{5,0.25}{green}
+    \TRAINER{
+    \bbwLine{2,3}{3,-1}{red}}
+  }
+Suchen Sie in obiger Skizze den Abstand und messen Sie ihn.
+
+
+\vorgehensTitelchen{2. Senkrechte ($g\perp f$)}
+
+\TNT{1.2}{
+  $g: y = ax + b$ mit $a = -4$ (negativer Kehrwert aus $f$). Ergo:
+  $g: y = -4x + b$
+}
+
+\vorgehensTitelchen{3. $g$ durch $P$ ($P\in g$)}
+
+\TNT{2.8}{Kernidee: Punkt in Funktionsgleichung einsetzen:
+
+  $P(2|3)$ in $y=-4x+b$ einsetzen: $3 = -4\cdot(2) + b$
+
+  Daraus errechnen wir $b = 11$. Und es folgt
+$$g: y= -4x+11$$}
+
+\newcommand\mussgleich{\mathrel{\stackrel{\makebox[0pt]{\mbox{\normalfont{\tiny{!}}}}}{=}}}
+
+\vorgehensTitelchen{4. Schnittpunkt S ($S := g\cap f$)}
+
+\TNT{3.2}{Idee: Beide Funktionsterme gleichsetzen, denn $S(x_s|y_s)$ muss auf beiden Geraden liegen:
+  $$g(x_s) = y_s = f(x_s)$$
+  $$-4x_s + 11 \mussgleich{} \frac{1}{4}x_s - 1$$
+  ausrechnen lassen
+$\Rightarrow x_s = \frac{48}{17}\approx 2.82 \Rightarrow y_s=-\frac{5}{17}\approx -0.294 \Rightarrow S(\frac{48}{17}|\frac{-5}{17}) $}
+\noTRAINER{\newpage}
+
+\vorgehensTitelchen{5. Abstand mit Pythagoras ($\left|\overline{PS}\right|$)}
+
+\TNT{3.6}{$P(2|3), S(\frac{48}{17}|\frac{-5}{17}) \Rightarrow \sqrt{(2-\frac{48}{17})^2 + (3-\frac{-5}{17})^2}=\frac{4\sqrt{17}}{17}\approx 3.3955 $}
+\newpage
+
+\TALS{
+\subsubsection{TI nSpire}
+Wie sieht das mit dem CAS-fähigen Taschenrechner TI nSpire aus? Hier
+ein Beispiel einer Geraden $f1: y=\frac{4}{3}-2$ und dem Punkt
+$P(-1|5)$.
+
+\leserluft{}
+
+\bbwCenterGraphic{17cm}{allg/funktionen/img/AbstandGeradeZuPunkt.png}
+\newpage
+}%% END TALS

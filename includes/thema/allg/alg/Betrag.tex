@@ -1,0 +1,121 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+
+\subsection{Betrag}\index{Betrag}\index{Absolutbetrag}
+%%\sectuntertitel{Absolut? Abstand?}
+\sectuntertitel{Wo ist negativ positiv? Beim Alkohol-Test!}
+\TRAINER{Video Mathe-Mann}
+
+\theorieTALS{9}{1.1.2}
+\theorieGESO{15}{1.2}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+  \item Symbol
+  \item Bedeutung als Abstand
+  \TALS{\item Gleichungen mit Betrag lösen}
+\end{itemize}
+
+
+\begin{definition}{Betrag}{definition_betrag}\index{Betrag}\index{Absolutbetrag}
+  Unter dem \textbf{Betrag} oder \textbf{Absolutbetrag} einer Zahl versteht man deren (positiven)
+  \textbf{Abstand}\index{Abstand} zum Nullpunkt. Das Symbol zum Betrag sind zwei
+  senkrechte Striche:\index{$\mid\cdot \mid$ s. Betrag(-striche)}\\
+  $|a| := a$, wenn $a$ positiv\\
+  bzw.\\
+  $|a| = -a$ falls $a$ negativ.
+\end{definition}
+
+\begin{bemerkung}{}{}
+Mit $|a - b|$ wird der Abstand der Zahlen $a$ und $b$ berechnet. Ist
+nämlich $b > a$, so ist die Differenz negativ und wird mit dem
+$| \cdot{} |$-Symbol ins Positive gekehrt.
+\end{bemerkung}
+
+\begin{bemerkung}
+  Einfach zum Merken: Dem Abstand zwischen zwei Punkten ist egal, in
+  welche Richtung er gemessen wird. So liegt Zürich genauso weit von
+  Bern entfernt, wie Bern von Zürich entfernt ist. Somit gilt $|a - b| = |b - a|$.
+\end{bemerkung}
+\newpage
+
+
+\subsection{Beispiele}
+
+
+\TALS{
+Für welche Zahlen $x \in \mathbb{R}$ gilt
+
+$|4| = x$ \TRAINER{$x=4$}%
+
+$|4| = -x$ \TRAINER{$x=-4$}%
+
+$|-4| = x$ \TRAINER{$x=4$}
+
+$|-4| = -x$ \TRAINER{$x=-4$}
+
+
+$|x| = 4$ \TRAINER{$\mathbb{L}_x=\{4, -4\}$}%
+
+$|x| = -4$ \TRAINER{$\mathbb{L}_x=\{\}$}%
+
+$|-x| = 4$ \TRAINER{$\mathbb{L}_x=\{4, -4\}$}%
+
+$|-x| = -4$ \TRAINER{$\mathbb{L}_x=\{\}$}%
+}
+
+\GESO{
+$|4| = \LoesungsRaum{4}$%
+
+$|-4| = \LoesungsRaum{4}$%
+
+  aber:
+  
+$-|4| = \LoesungsRaum{-4}$%
+
+$-|-4| = \LoesungsRaum{-4}$%
+
+$|8-5| = \LoesungsRaum{3}$%
+
+$|5 -8| = \LoesungsRaum{3}$%
+
+  Achtung:
+
+  $|-5-8| = \LoesungsRaum{13}$
+
+  $|5+8| = \LoesungsRaum{13}$
+
+  
+${\big|}|6| - |-10|{\big|} = \LoesungsRaum{4}$%
+
+}
+
+Theorieaufgabe:
+$$\big\vert 7 - \left\vert -3 \right\vert \big\vert - |-7-3|$$
+
+\TNT{2.4}{%%
+  $ = | 7 - (3) | - | (-7 - 3)|$ \\
+  $ =| 4 |       - | -10 |$ \\
+  $ = 4 - (+10)$ \\
+  $= -6$
+}%% END TNT
+
+\TALS{%
+  2. Beispiel:
+
+  Für welche $x$ gilt folgendes:
+  $$|x - 3| = 8$$
+
+\TNT{2.4}{%%
+  Erste Lösung: Welche Zahlen haben von 3 den Abstand 8? Lsg.:
+  11 und -5. Formal: 1. Fall $x-3 > 0$, dann ist $x-3=8$ und somit
+  $x_1=11$; 2. Fall $x-3 <=0$, dann ist $-(x-3)=8$ und somit $x_2=-5$
+}% END TNT
+}% 2. Beispiel Theorieaufgabe TALS
+
+
+\subsection*{Aufgaben}
+\TALSAadB{9}{5-7}
+\GESOAadB{23}{14. a) b) c) f) 15. a) 17. a) 18. a)}

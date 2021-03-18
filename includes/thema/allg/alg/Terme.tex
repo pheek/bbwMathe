@@ -1,0 +1,150 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+\newpage
+\section{Terme}\index{Term}
+\sectuntertitel{Römische Bäder?}
+
+\theorieTALS{10}{1.1.3}
+\theorieGESO{17}{1.3}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+ \item Termanalyse (Summe, Differenz, Produkt, Quotient, Potenz)
+ \item Hierarchie der Terme (Vorrangregeln)
+ \item Termumformungen
+ \item Ausmultiplizieren
+\end{itemize}
+\newpage
+
+\subsection{Term}\index{Term}
+\begin{definition}{Term}{definition_term}
+  Ein \textbf{Term} ist entweder
+  \begin{itemize}
+  \item ein Atom (eine Zahl (\zB{} $4.86$) oder  eine Variable (\zB{}
+  $a$, $x$))
+  \item ein Klammerausdruck (\zB{} \fbox{({\color{green}T})}, inkl.  Wurzeln \fbox{$\sqrt{\color{green}T}$})\footnote{Dabei wird der
+  horizontale Strich wie eine Klammer aufgefasst.}
+%%  \item weitere \TALS{Monome\index{Monom}}\GESO{Summanden (Teile einer Summe)}:
+%%    \begin{itemize}
+   \item eine \textbf{Potenz}\index{Potenz}\footnote{Als Exponent darf ein beliebiger Term eingesetzt werden, wohingegen als Basis lediglich Atome oder Klammerausdrücke verwendet werden dürfen, wegen der Verwechslungsgefahr.} (\fbox{${\color{green}T_1}^{\color{green}T_2}$} \zB{} $a^3$, $(2a - 4)^{x+2}$)
+    \item  ein Bruchterm\footnote{Wie bei der Wurzel, dient der Bruchstrich als Klammerpaar: $\frac{U}{V}=(U):(V)$} (\fbox{$\frac{\color{green}T_1}{\color{green}T_2}$} \zB{} $\frac{2^x}{x^2}$)
+    \item ein implizites \textbf{Produkt}\footnote{Ein implizites Produkt ist mit Koeffizienten angereicherter Ausdruck \textbf{ohne} Multiplikationsszeichen.} (\zB{} ${\color{red}4a}{\color{green}T}$)\footnote{Tritt eine Zahl auf, so ist diese immer ganz links zu schreiben. Zahlen rechts von Ausdrücken werden mit einem Multiplikationszeichen versehen ($\cdot$).}
+    \item ein explizites \textbf{Produkt}\index{Produkt} ($\cdot$;  ${\color{green}T_1}\cdot {\color{green}T_2}$ \zB{} $a\cdot(-1)$) bzw. ein expliziter \textbf{Quotient}\index{Quotient} ($:$, $/$, $\div$; $6a\cdot3b$ bzw. ${\color{green}T_1}:{\color{green}T_2}$ \zB{} $36m^2:12m^2$)
+%%    \end{itemize}
+  \item eine \textbf{Summe}\index{Summe} (bzw. \textbf{Differenz}\index{Differenz}) von \TALS{Monomen}\GESO{Summanden\index{Summand}}
+  (Zum Beispiel bilden die folgenden
+  vier «Pakete» eine Differenz):\\
+  $-4x^2 + \frac{3a+b}{x} + \sqrt{5y^2-6} - 5t:2t$
+
+    \end{itemize}
+(In obiger Aufzählung hat der am höchsten stehende Term die größte
+«Bindungskraft». Beispiel «Punkt vor Strich».)
+\end{definition}
+
+\textbf{Gegenbeispiele}
+Keine Terme sind \zB{}: $x \cdot{}-8$, $\sqrt{+^2}$, $4+*($, $\frac{7}{+}$, $\frac{(a+b}{-c-d)}$.
+
+Generell werden die fünf wichtigsten Termarten in die folgenden drei Kategorien eingeteilt:
+\begin{itemize}
+\item Potenz
+\item Produkt und Quotient
+\item Summe und Differenz
+\end{itemize}
+
+
+\newpage
+
+\subsubsection{Vorrangregeln}\index{Vorrangregeln}
+\GESO{
+Es gilt Punkt vor Strich. Daneben bindet ein Exponent (\zB $5^8$) noch
+stärker. Am stärksten binden Klammern oder horizontale Linien
+(Bruchstrich, Wurzelzeichen).
+}
+\TRAINER{\TALS{
+Im Compilerbau (Schreiben einer Programmiersprache) werden die
+folgenden Vorrangregeln verwendet:
+
+\begin{itemize}
+\item Term :== Summand \{'+'|'-' Summand\}*\\
+\TRAINER{$4a^3 - 6\cdot az^{(7+b)} : \sin(30)$}
+
+\item Summand :== ExpilziterFaktor \{'$\cdot$'|'/' ExpliziterFaktor\}*\\
+\TRAINER{$4a^3$, $6 \cdot az^{(7+b)} : \sin(30)$}
+
+\item ExpliziterFaktor :== Faktor \{Faktor\}*\\
+\TRAINER{$4a^3$, $6$, $az^{(7+b)}$, $\sin(30)$}
+
+\item Faktor :== SkalarOderKlammerausdruck \{${\,}^{Term}$\}?\\
+\TRAINER{$4$, $a^3$, $6$, $a$, $z^{(7+b)}$, $\sin(30)$}
+
+\item SkalarOderKlammerausdruck :== Zahl |
+           Variable |
+           $\sqrt[Term]{Term)}$ | 
+           '(' Term ')' |
+           $\frac{Term}{Term}$|
+           \textit{Funktionsname} '(' Term ')'\\
+\TRAINER{$4$, $a$, $3$, $6$, $a$, $z$, $(7+b)$, $\sin(30)$}
+
+\item \textit{Funktionsname} := 'sin', 'cos', 'tan', 'log', 'lg', 'ln', ....
+\end{itemize}
+}}
+
+\TALS{
+\textbf{Achtung} Bei zusammengeschriebenen Faktoren (\zB $ab$) bindet
+           die Multiplikation stärker als beim expliziten verwenden
+           des Multiplikationszeichens (\zB $a\cdot{}b$). Beispiel
+           $a\cdot bm = a\cdot (b\cdot m)$.
+
+Gleich ein Beispiel, wo dies eine Rolle spielt:
+$$111x : 37x = (111x) : (37x) = 3$$
+Aber
+$$111\cdot x : 37\cdot x = ((111 \cdot x) : 37) \cdot x = 3x^2$$
+}%% END TALS
+
+
+\newpage
+\subsubsection{Terme mit Namen}
+Oft gibt man Termen Namen, um sie einfacher identifizieren und
+bezeichnen zu können. So könnte \zB die Oberfläche einer
+Konservendose mit $A$ (Area) wie folgt bezeichnet werden, wenn $r$ den
+Radius bzw. $h$ die Höhe bezeichnen:
+
+$$A(r, h) = r^2\pi + r^2\pi + 2r\pi{}h$$
+
+Dabei ist $A$ der Name des Terms und $r$ bzw. $h$ sind die Parameter.
+\vspace{3mm}
+\begin{beispiel}{Werte einsetzen}{beispiel_terme_werte_einsetzen}
+  Wir betrachten den Term $T({\color{red}a}, {\color{blue}x}) = 5{\color{red}a}{\color{blue}x} - {\color{red}a} + 7$.
+
+  Nun gilt, dass für jeden Parameter im Term (hier ${\color{red}a}$
+  bzw. ${\color{blue}x}$) jede Zahl eingesetzt
+  werden kann.
+
+  $T({\color{red}2}, {\color{blue}3}) = 5\cdot{}{\color{red}2}\cdot{\color{blue}3} - {\color{red}2} + 7$
+
+  Es können auch Terme anstelle der Parameter eingesetzt werden:
+
+  $T({\color{red}2y}, {\color{blue}z-4}) = 5\cdot({\color{red}2y})\cdot({\color{blue}z-4}) - {\color{red}2y} + 7$
+\end{beispiel}
+
+Achtung: Ersetzen Sie dabei die Parameter durch die
+entsprechenden Klammerausdrücke: \fbox{$z-4$}
+$\rightarrow$ \fbox{$(z-4)$}.
+
+\subsubsection{Übungsbeispiel}
+$T(b, y) = 7y^2 - 4by$
+
+Wir berechnen
+
+$T(4, -2) = $ \noTRAINER{.......................................................}\TRAINER{$T(4, -2)=7\cdot (-2)^2 - 4\cdot 4 \cdot (-2) = 28+32 = 60$}
+
+und
+
+$T(x, 2b) = $ \noTRAINER{.........................................................}\TRAINER{$=T(x, 2b) = 7(2b)^2 - 4\cdot x \cdot (2b) = 28b^2 - 8bx =
+  4b (7b-2x)$}
+\subsection*{Aufgaben}
+\TALSAadB{11}{8,9}
+\GESOAadB{24ff}{21., 22., 24., 26. a) c), 25., 27. a) 28., 29.}
+\newpage

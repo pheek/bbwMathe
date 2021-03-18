@@ -1,0 +1,190 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+\newpage
+\section{Wurzeln}\index{Wurzeln}
+\sectuntertitel{Was soll's denn sein: Radi, Radieschen, Rande, Rübe, Räbe, Rettich, ...?}
+
+\theorieGESO{5}{78}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item Quadratwurzeln, Kubikwurzeln
+\item allgemeine $n$-te Wurzeln
+\item Rechengesetze
+\item Rationale (gebrochene) Exponenten
+\end{itemize}
+
+\subsection{Definition}%%
+
+\begin{definition}{Quadratwurzel}{definition_quadratwurzel}
+Mit $\sqrt{\vphantom{b} \,\,}$ bezeichnen wir die
+Quadratwurzel\index{Quadratwurzel}.
+\end{definition}
+
+
+\begin{tabular}{p{11cm}c}
+%% vphantom{b}: Höhe des Buchstabens «b»
+Das Symbol $\sqrt{\vphantom{b} \,\,}$
+bezeichnet ein stilisiertes {\textit{kleines}} {\huge{r}} und steht für
+  (lat.) \textit{radix}, die Wurzel.
+
+& \bbwGraphicRaise{-22mm}{3.5cm}{allg/alg/potenzen_wurzeln/img/rasiidli.png}\\
+
+ \end{tabular}
+ 
+Für $a$ in $\mathbb{R}_0^{+}$ gilt
+
+$$\sqrt{a^2} = a$$
+$$(\sqrt{a})^2 = a$$
+
+\TALS{
+Für $a$ in $\mathbb{R}$ gilt
+
+$$\sqrt{a\cdot a} = |a|$$
+$$\left(\sqrt{|a|}\right)^2 = |a|$$
+}
+
+\newpage
+\subsection{Multiplikation, Division}
+
+\begin{center}
+\fbox{\parbox{5cm}{
+\begin{tabular}{rcl}
+$\sqrt{\vphantom{b}a}\cdot{\sqrt{b}}$ & $=$ & $\sqrt{\vphantom{b}a\cdot{b}}$\\
+
+
+$\frac{\sqrt{\vphantom{b}a}}{\sqrt{b}}$ & $=$ & $\sqrt{\frac{\vphantom{b}a}{b}}$\\
+\end{tabular}
+}%% END parbox%%
+}%% END fBox
+\end{center}
+
+
+\noTRAINER{$\sqrt{\vphantom{b}a}\cdot\sqrt{b} =$
+\\
+\mmPapier{3.2}}%% END noTRAINER
+\TRAINER{${\color{blue}\sqrt{\mathstrut a}\cdot\sqrt{b}} = \sqrt{({\color{blue}\sqrt{a}\cdot\sqrt{b}})^2} =
+  \sqrt{\sqrt{a}\cdot\sqrt{b}\cdot\sqrt{a}\cdot\sqrt{b}} =
+  \sqrt{\sqrt{a}\cdot\sqrt{a}\cdot\sqrt{b}\cdot\sqrt{b}} =
+  \sqrt{a \cdot b}$
+\\
+Die erste Gleichung gilt, wenn ich den ganzen Ausdruck links quadriere
+und danach davon die Wurzel ziehe.
+\vspace{1.5cm}
+}%% end TRAINER
+\newpage
+
+
+
+\subsection{$n$-te Wurzel}\index{n-te@$n$-te Wurzel}
+
+\begin{verse}
+\textit{«En-te Wurzel»}:
+\bbwCenterGraphic{35mm}{allg/alg/potenzen_wurzeln/img/Ente_Wurzel}
+\end{verse}
+
+Wir wissen bereits, dass
+$$3^2 = 9 \textrm{ heißt } \sqrt{9} = 3$$
+und
+$$x^2 = 100 \textrm{ somit } x=\pm\sqrt{100} = \pm 10.$$
+
+Doch wenn wir nun
+$$x^3 = 1000$$
+vor uns haben? Wie kommen wir auf das $x$?
+
+\TNT{1.6}{Dazu gibt es die dritte Wurzel:
+$$\sqrt[3]{1000} = 3$$
+}
+
+
+Was bedeutet $\sqrt[3]{8}$? Schätzen Sie und prüfen Sie nach (allenfalls auch mit dem Taschenrechner):
+
+\TNT{1.6}{Verwenden Sie die n-te Wurzel Funktion des Taschenrechners.}
+
+Bestimmen Sie die Lösungsmenge der folgenden Gleichung:
+$$x^4 = 81$$
+\TNT{1.6}{%%
+$x^4 = 81$ heißt, $x=\pm \sqrt[4]{81} = \pm 3$
+}%% end TNT
+
+
+\newpage
+\begin{definition}{$n$-te Wurzel}{definition_n_te_wurzel}
+Mit $\sqrt[n]{a}$ bezeichnen wir die $n$\textbf{-te Wurzel} aus $a$; das heißt
+$$\sqrt[n]{a} = x \Rightarrow x^n = a$$
+\end{definition}
+
+
+Allgemein gilt:
+
+$$\sqrt[n]{a^n} = \left(\sqrt[n]a\right)^n = a$$
+
+\begin{bemerkung}{}{}
+Bei Potenzgleichungen mit geraden Exponenten sind in der Regel zwei Lösungen vorhanden:
+$$x^n = a \Leftrightarrow x = \pm \sqrt[n]{a} \textrm{ falls } n \textrm{ gerade und } a \textrm{ positiv}$$
+
+$$x^n = a \Leftrightarrow x = \sqrt[n]{a} \textrm{ falls } n \textrm{ ungerade}$$
+\end{bemerkung}
+
+\begin{bemerkung}{}{}
+Den Wurzelexponenten $n=2$ lassen wir üblicherweise weg:
+
+$$\sqrt[2]{a} = \sqrt{a}$$
+\end{bemerkung}
+\newpage
+
+
+\subsection{Rationale Exponenten}\index{rationale Exponenten}
+
+Voraussetzung sind die beiden folgenden Gesetze:
+$$(x^m)^n = x^{m\cdot n}\ \ \textrm{und}\ \ \left(\sqrt[n]{a}\right)^n = a$$
+
+Für $a > 0$ gilt somit:
+
+\begin{gesetz}{}{}
+\begin{center}
+  $a^{\frac{1}{n}} = \sqrt[n]{a}$
+\end{center}
+\end{gesetz}
+
+
+Denn: $\sqrt[n]{a} = \left(\sqrt[n]{a}\right)^1 =
+\left(\sqrt[n]{a}\right)^{n\cdot{}\frac{1}{n}} =
+\left(\left(\sqrt[n]{a}\right)^n\right)^\frac{1}{n} = a^\frac{1}{n}$
+
+
+
+Es gelten die üblichen Potenzgesetze\GESO{\footnote{S. 81 \cite{marthaler17}}} nun auch für die $n$-ten
+Wurzeln.
+
+
+\textbf{Beispiel:}
+\begin{center}
+  \fbox{$\sqrt[m]{\sqrt[n]{a}} = \sqrt[m\cdot n]{a}$}
+\end{center}
+
+
+$$\sqrt[m]{\sqrt[n]{a}} =
+\sqrt[m]{a^\frac{1}{n}}
+= (a^{\frac{1}{n}})^{\frac{1}{m}} =
+a^{\frac{1}{n}\cdot\frac{1}{m}} = a^{\frac{1}{m\cdot n}} =
+\sqrt[m\cdot n]{a}$$
+
+
+ Beispiel: (Bsp. $\sqrt[3]{\sqrt[2]{64}} =
+    \sqrt[3]{8} = 2 = \sqrt[6]{64} = \sqrt[3\cdot2]{64}$)
+
+
+\GESO{Die Rechengesetze für $n$-te Wurzeln sind im Buch
+  \cite{marthaler17} auf Seite 82 zu finden.}
+
+
+\subsection{Aufgaben}
+\TALSAadB{???}{???}
+\GESOAadB{85 ff}{8. a) b) c) d) f) 9. a) b) e) 10. a) c) f) 11. a) e)
+  g) i) 12. a) b) d) 13. a) b) 14. b) e) f) i) 16. a) c) d) 17. a) b)
+  19. a) d) i) 20. a) c) 21. a) c) 22. a) c) e) 24. a)}
+  ... und die Aufgaben im Aufgabenblatt Potenzgesetze unter \texttt{olat.bbw.ch}.
+\newpage

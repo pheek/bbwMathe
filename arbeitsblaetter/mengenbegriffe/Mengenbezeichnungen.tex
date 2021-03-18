@@ -1,0 +1,74 @@
+%%
+%% 2019 11 25 Ph. Freimann
+%%
+
+\input{bbwSeite}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amssymb} %% für \blacktriangleright
+\renewcommand{\metaHeaderLine}{Theorieblatt}
+\renewcommand{\arbeitsblattTitel}{Mengenbezeichnungen}
+
+\begin{document}%%
+\arbeitsblattHeader{}
+
+\section{Zahlmengen}
+Wir bezeichnen als
+
+\begin{tabular}{lcl}
+  $\mathbb{N}$ &=& Natürliche Zahlen: $\{1, 2, 3, 4, ...\}$ \\
+  $\mathbb{Z}$ &=& Ganze Zahlen: $\{..., -4, -3, -2, -1, 0, 1, 2, 3, 4, ...\}$ \\
+  $\mathbb{Q}$ &=& Rationale Zahlen: Alle Brüche = $\{\frac{a}{b} |
+  a\in\mathbb{Z}\textrm{\, und\, } b\in\mathbb{N}\}$ \\
+  $\mathbb{R}$ &=& Alle reelen Zahlen\\
+\end{tabular}
+
+Einschränkungen: Ein hochgestelltes Minus- bzw Pluszeichen ($-$, $+$)
+schränkt die Menge auf negative bzw positive Zahlen ein. Ebenso eine
+tiefgestellte Null ($0$) sagt, dass die Zahl Null explizit mit
+eingeschlossen ist. Beispiele:
+
+\begin{tabular}{lcl}
+  $\mathbb{Z}^{-}$ &=& $\{-1, -2, -3, -4, ...\}$ \\
+  $\mathbb{Q}^{+}$ &=& $\{x\in \mathbb{Q} | x > 0\}$ \\
+  $\mathbb{Q}^{+}_0$ &=& $\{x\in \mathbb{Q} | x \ge 0\}$ \\
+  $\mathbb{R}\backslash{}\{0\}$ &=& $\{x\in \mathbb{R} | x \ne 0\}$ \\
+\end{tabular}
+
+Dies gilt analog für $\mathbb{R}^{-}$ etc.
+
+\section{Definitionsmenge für Terme}
+
+\begin{tabular}{lclcp{10cm}}
+  $\mathbb{D}$ &=& Definitionsmenge &=& Menge aller Zahlen, für die ein Term definiert ist.\\
+\end{tabular}
+
+Beispiel $\mathbb{D}(\frac{1}{\sqrt{x}}) = R^{+}$.
+
+\section{Mengenbezeichnungen bei Gleichungen}
+\begin{tabular}{lclcp{10cm}}
+  $\mathbb{G}$ &=& Grundmenge &=& Menge aller Zahlen, welche für die Lösung zugelassen sind (typischerweise gilt $\mathbb{G}=\mathbb{R}$). \\
+  $\mathbb{D}$ &=& Definitionsmenge &=& Diejenige Teilmenge von
+                                        $\mathbb{G}$ für welche die Terme der Gleichung definiert sind\\
+   & & & &  ($\mathbb{D}=\mathbb{D}(\textrm{Term links})\cap\mathbb{D}(\textrm{Term rechts})$).\\
+
+   $\mathbb{L}$ bzw. $\mathbb{L}_x$ &=& Lösungsmenge &=& Alle Zahlen
+  aus D, welche die Gleichung lösen.\\
+
+  $\mathbb{L}_x$ &=&$\{\}$ &:& Leere Menge: Es gibt keine Zahlen
+  (aus $\mathbb{D}$), welche die Gleichung lösen (\zB{} $x+2=x$).\\
+
+  $\mathbb{L}_x$ &=&$\{0\}$ &:& Einzelne Zahl: Nur eine Zahl löst die
+  Gleichung (hier \zB{} $6+5x-10=3x+6x-4$).\\
+
+ $\mathbb{L}_x$ &=&$\{3, -2\}$ &:& Einzelne Zahlen: Nur einzelne
+  Zahlen lösen die Gleichung (hier \zB{} $x^2-x=6$).\\
+
+  $\mathbb{L}_x$ &=& $\mathbb{R}$ &:& Alle Zahlen lösen die Gleichung
+  (\zB{} $2x+x=4x-x$).\\
+
+\end{tabular}
+
+
+\end{document}

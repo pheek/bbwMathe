@@ -1,0 +1,99 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+
+\section{Winkel am Einheitskreis}\index{Einheitskreis|textbf}
+\sectuntertitel{Wie groß ist eigentlich der Einheitskreis?}
+
+\theorieTALSGeom{101}{2.2.1}
+\theorieGESO{????}{????}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item Einheitskreis
+\item Werte exakt ablesen
+\item Grad- und Bogenmaß
+\end{itemize}
+
+
+\subsection{Sinus als Verhältnis}\index{Sinus!als Verhältnis}
+Egal, wie groß der Einheitskreis gewählt wird, der $\sin{}$ eines
+gegebenen Winkels $\phi$ ist immer gleich lang, denn er wird im Maß
+des Kreises angegeben. Der $\sin{}$, liegt immer zwischen -1 und
++1. Dies stimmt auch für den $\cos{}$.
+
+
+\subsection{Tangens}\index{Tangens!im Einheitskreis}
+
+\definecolor{qqwuqq}{rgb}{0,0.79,0}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{qqzzzz}{rgb}{0,0.6,0.6}
+\definecolor{ffwwqq}{rgb}{1,0.4,0}
+\definecolor{qqccww}{rgb}{0,0.8,0.4}
+\definecolor{uququq}{rgb}{0.25,0.25,0.25}
+\definecolor{xdxdff}{rgb}{0.49,0.49,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=2.5cm,y=2.5cm]
+\draw[->,color=black] (-1.5,0) -- (1.5,0);
+\foreach \x in {-1.5,-1,-0.5,0.5,1}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->,color=black] (0,-1.5) -- (0,1.5);
+\foreach \y in {-1.5,-1,-0.5,0.5,1}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-1.5,-1.5) rectangle (1.5,1.5);
+\draw [shift={(0,0)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (0:0.28) arc (0:46.14:0.28) -- cycle;
+\draw(0,0) circle (2.5cm);
+\draw [domain=-1.5:1.5] plot(\x,{(-0-0.72*\x)/-0.69});
+\draw (0.69,-1.5) -- (0.69,1.5);
+\draw (1,-1.5) -- (1,1.5);
+\draw (1.12,0.6) node[anchor=north west] {t};
+\draw (0.50,0.32) node[anchor=north west] {s};
+\draw (0.30,0.21) node[anchor=north west] {c};
+\draw [line width=1.2pt,color=qqccww] (1,1.04)-- (1,0);
+\draw [line width=1.2pt,color=ffwwqq] (0.69,0.72)-- (0.69,0);
+\draw [line width=1.6pt,color=qqzzzz] (0.69,0)-- (0,0);
+\begin{scriptsize}
+\fill [color=xdxdff] (0.69,0.72) circle (1.5pt);
+\draw[color=xdxdff] (0.49,0.71) node {$P$};
+\fill [color=uququq] (0.69,0) circle (1.5pt);
+\draw[color=uququq] (0.8,0.12) node {$Xp$};
+\fill [color=uququq] (1,1.04) circle (1.5pt);
+\draw[color=uququq] (1.22,0.95) node {$Yp$};
+\fill [color=qqqqff] (0,0) circle (1.5pt);
+\draw(0.20,0.09) node {$\Phi$};
+\end{scriptsize}
+\end{tikzpicture}
+
+
+Ähnlichkeit: 
+Betrachten wir in obigem Bild die Strecke $t$ (von der $x$-Achse zum
+Punkt $Y_P$, so sehen wir, dass sie genau das Verhältnis angibt, das
+auch zwischen den Strecken $s$ und $c$ vorliegt. 
+Somit können wir den Tangens definieren als
+
+$$\tan(\phi) = t$$
+
+Ebenso gilt:
+$$\tan(\phi) = t = \frac{t}{1} =  \frac{s}{c} = \frac{\sin(\phi)}{\cos(\phi)}$$
+
+\subsection{Zwei Winkel}
+Zu jedem $\sin()$-, $\cos()$- und $\tan()$-Wert existieren im
+Einheitskreis je zwei Winkel (also Winkel zwischen $0^{\circ{}}$ und
+$360^{\circ{}}$). Berechnen Sie je die beiden Winkel ($\gamma_1, \gamma_2$,
+$\sigma_1, \sigma_2$ und $\tau_1, \tau_2$) für die folgenden Werte mit Hilfe des
+Einheitskreises:
+
+
+\begin{tabular}{|c|c|c|}
+  $\cos(\gamma)=\frac{\sqrt{3}}{2}$ & $\sin(\sigma) = \frac{-\sqrt{2}}{2}$ & $\tan(\tau) = -1$\\
+\end{tabular}
+
+\TRAINER{Lösungen: $\gamma = 30; 330$, $\sigma = 225;315$ und $\tau=135;315$.}
+
+\subsection*{Aufgaben}
+\TALSGeomAadB{101}{83.  84. 85. a) b) c) d)}
+%% \GESOAadB{????}{????} %% GESO haben noch keine Geometrie
+
+\newpage
+\input{tals/trig2/Bogenmass}

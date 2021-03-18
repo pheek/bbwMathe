@@ -1,0 +1,77 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+
+\section{Exponentialfunktionen}\index{Funktion!Exponentialfunktion}\index{Exponentialfunktionen}
+\sectuntertitel{Go viral!}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item Definition Exponentialfunktion
+\item Koeffizienten interpretieren
+\item Graph: Symmetrien, Polstellen, Asymptoten, Schnittpunkte mit Achsen
+\item Basiswechsel
+\end{itemize}
+
+\TALS{(\cite{frommenwiler17alg} S.215 (Kap. 3.10))}
+\GESO{(\cite{marthaler17}       S.322 (Kap. 19))}
+
+
+
+
+\subsection{Einstiegsbeispiel}
+
+(Einstiegscomics «Donald Duck» im OLAT)
+\newpage
+
+
+
+
+
+\begin{definition}{Exponentialfunktion}{}\index{Exponentialfunktion!Definition}
+Eine Funktion der Form $$f(x): x \mapsto y = a^x$$ heißt \textbf{Exponentialfunktion}.
+\end{definition}
+
+Der Parameter $a$ gibt den Wachstumsfaktor pro Zeiteinheit $e_x$ an.
+ Oft wird die Zeitachse auch mit $t$ statt $x$ bezeichnet $t$ steht für \textit{time}.
+
+
+\subsubsection{Allgemeine Form der Exponentialfunktion}
+
+Obige Exponentialfunktion hat für den Wert $x=0$ immer den $y$-Wert = 1. Da dies in der Praxis aber meist nicht der Fall ist, gib es die folgende \textbf{allgemeine Form der Exponentialfunktion}:
+
+\begin{center}\fbox{$f: y = c\cdot{}a^x$}\end{center}
+
+Dabei ist $c$ der Startwert zum Zeitpunkt $x$ = 0.
+
+\bbwCenterGraphic{8cm}{allg/funktionen/img/exp/c_faktor.png}
+\newpage
+
+
+
+\subsubsection{Verschiebung und Streckung}
+
+Eine Verschiebung der Exponentialfunktion in der Zeit ($x$-Richtung) kann auch in Form einer Veränderung der Startfaktors $c$ umgeschrieben werden.
+
+Verschieben wir \zB $$y=2^x$$ um fünf Einheiten nach rechts, so liest sich die neue Funktionsgleichung wie folgt:
+$$y=2^{x-5}.$$
+
+(Zeichnen Sie in \texttt{geogebra.org} a) $y=2^x$ und b) $y=2^{x-5}$.)
+
+Dies kann jedoch auch umgeschrieben werden:
+
+$$2^{x-5} = 2^x \cdot{} 2^{-5} = 2^{-5} \cdot{} 2^x = \frac{1}{2^5} \cdot{} 2^x =
+\frac{1}{32}\cdot{}2^x$$
+
+\bbwCenterGraphic{8cm}{allg/funktionen/img/exp/verschiebung_gleich_Streckung.png}
+Bildlegende: Eine Verschiebung ($x$-Richtung) der Exponentialfunktion entpsricht einer Stauchug ($y$-Richtung) der selben Exponentialfunktion.
+
+\TALS{Es gilt hier $$a^{x-b}=\frac{a^x}{k}$$ mit
+$k=a^b$ und mit $b=\log_a(k)$.}
+
+
+\subsection*{Aufgaben}
+\TALSAadB{215ff}{809-830}
+\GESOAadB{335ff}{11. a) b), 15. a) b) [Zeichnen mit \texttt{geogebra.org}], 17. a) b) e), 22. a) b), 23. d), 25. a) b)}
+\newpage

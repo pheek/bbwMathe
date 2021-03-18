@@ -1,0 +1,41 @@
+%% Philipp G Freimann Juli 2019 für die BBW
+%% Phi BBW-Vorlage für Arbeitsblätter (LaTeX)
+%% 2019 - 08 - 18
+
+%% %% %% %%
+
+%%  In den Dokumenten können die folgenden Attribute überschrieben werden:
+
+\newcommand{\metaHeaderLine}{HeaderLine mit $\backslash{}$ metaHeaderLine überschreiben}%%
+
+%% \thema
+\newcommand{\arbeitsblattTitel}{Pruefungsthema mit renewcommand arbeitsblattTitel überschreiben.}%%
+
+%%%%%%%%%%%%%%%%%%%%%%% P A C K A G E S %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[paper=a4paper,margin=17mm]{geometry}%%
+
+\input{bbwUsePackages}%%
+
+\usepackage{tgheros}%% Font TeX Gyre Heros für Titel (font code qhv)
+
+%% damit die Punktezal schon geschrieben werden kann, obschon
+%% Die Punkte erst während dem Dokument zusammengetragen werden:
+
+\input{bbwLayout}%%
+\input{bbwMakros}%%
+\input{matheMakros}%%
+
+%% LAYOUT FUER ARBEITSBLAETTER %%
+\headheight12mm%%
+
+%%%%%%%%%%%%%%%  H E A D E R   &   F O O T E R %%%%%%%%%%%%%%%%%%%%
+
+%% Headers
+\fancyhf[HL]{\makebox{\includegraphics[width=30mm]{logos/bbw.pdf}}}%%
+\fancyhf[HC]{\metaHeaderLine{}}%%
+\fancyhf[FR]{\tiny{fp @ bbw (\today{})}}%%
+
+\newcommand{\arbeitsblattHeader}{%%
+  \begin{center}%%
+    {\Large \fontfamily{qhv}\selectfont \arbeitsblattTitel{}}%%
+\end{center}}%%

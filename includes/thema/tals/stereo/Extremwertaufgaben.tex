@@ -1,0 +1,103 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+\section{Extremwertaufgaben}\index{Extremwertaufgaben}
+\sectuntertitel{Was für einen maximal ist, ist für den andern minimal}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\theorieTALSGeom{173}{3.5}
+
+\subsection*{Lernziele}
+
+
+\begin{itemize}
+\item Minima und Maxima von Parabeln mittels Scheitelpunkt
+\item Taschenrechner 
+\end{itemize}
+
+ \cite{frommenwiler17alg}
+
+ Parabeln: S. 192ff (Kap. 3.4.8)
+
+  Und Kap. 3.13. 3 (S. 242ff) ab Aufg. 914.
+
+\newpage
+\subsection{Einstiegsbeispiel Parabel}
+Die Funktion $f: y = 4x + 3x^2 - 6$ hat ein Extremum (Minimum oder
+Maximum). Wo liegt dieses? Handelt es sich um ein Minimum oder ein Maximum?
+
+\noTRAINER{\platzFuerBerechnungen{5.2}}
+\TRAINER{
+  \begin{enumerate}
+  \item Quadratische Funktion in die Grundform $y=ax^2 + bx + c$
+    bringen:
+    $$y = 3x^2 + 4x -6$$
+  \item $x$-Koordinate des Scheitelpunktes bestimmen $x_S =
+    \frac{-b}{2a}$:
+    $$x_s = \frac{-b}{2a}= \frac{-4}{2\cdot{}3} = -\frac{2}{3}$$
+  \item Den zugehörigen Funktionswert $y = f(x)$ durch Einsetzen
+    bestimmen:
+    $$y_s = 3x_S^2 + 4x_S - 6 = 3\left(-\frac{2}{3}\right)^2 +
+    4\left(-\frac{2}{3}\right) - 6 = - \frac{22}{3}$$
+  \end{enumerate}
+  Es handelt sich um ein Minimum, denn der Parameter $a$ (vor dem
+  $x^2$) ist positiv; somit ist die Parabel nach oben geöffnet.
+}
+
+\subsection*{Aufgaben}
+Ohne Taschenrechner:
+
+\TALSAadB{192ff}{715., 716., 717., 178.*, 720., 721. und 722.}
+\newpage
+
+
+\subsection{Einstigsbeispiel Taschenrechner}
+Gegeben ist die Funktion
+$$f: y = 0.1 x^3 + 0.07 x^2 - 0.8 x + 2$$
+
+Wir suchen diejenige positive $x$-Position, wo die Funktion am kleinsten ist.
+
+Vorgehen:
+\begin{enumerate}
+\item Neues «Graph» Fenster mit dem TI-$n$spire CX II-T erstellen
+\item $f1()$ definieren : $f1(x) := 0.1 x^3 + 0.07 x^2 - 0.8 x + 2$
+\item Funktion zeichnen lassen
+\item Menu -> Analyze Graph -> Minimum suchen
+\item Untere Schranke bei ca. 0 und obere Schranke bei ca. 2-3 anwählen.
+\item Lesen Sie das Resultat bei $x\approx 1.42$ und $y\approx 1.29$ ab.
+  \item Mehr Ziffern gefällig? Unter Menu: [9] Einstellungen: Angezeigte Ziffern auf \zB «Fließ 5» umstellen.
+\end{enumerate}
+
+\bbwCenterGraphic{6.5cm}{tals/fct2/img/minimumNSpire.png}
+
+\subsubsection{«von Hand»}\index{fMin()!nSpire}\index{nSpire!fMin()}
+Das Funktionsminimum kann auch im «notes» berechnet werden. Vorteil: Hier können Zwischenresultate weiterverwendet werden. Nachteil, man sieht von vornherein nicht, wo die Maxima und Minima in etwa sind:
+
+\bbwCenterGraphic{7cm}{tals/fct2/img/fMin.png}
+
+\newpage
+
+\subsection{Blechdose}
+In eine Konservendose (Zylinderform) passt genau ein Liter Zwiebelsuppe. Gesucht ist das Verhältnis von Radius $r$ zur Höhe $h$, sodass die Oberfläche (Blechmenge) möglichst klein wird.
+
+Das Volumen $V$ berechnet sich aus
+
+$$V = r^2\pi\cdot{}h$$
+Da das Volumen V = 1 (Liter) ist, gilt für die Höhe:
+$$h = \frac{1}{r^2\pi}$$
+Die Oberfläche $A$ berechnet sich aus Deckel+Boden+Mantel:
+$$A=r^2\pi + r^2\pi + 2r\pi\cdot{}h$$
+Wenn wir die Höhe $h$ aus dem Volumen hier einsetzen, erhalten wir für die Oberfläche:
+$$A=2r\pi\left(r+\frac{1}{r^2\pi}\right)$$
+
+Betrachten Sie $A$ in Abhängigkeit von $r$ und finden Sie mit einem
+Computeraglebra-System erst
+\begin{itemize}
+\item
+  den optimalen Radius $r=\LoesungsRaum{0.542}\textrm{dm}$ und dann
+\item
+  die minimale Oberfläche $A= \LoesungsRaum{5.54}\textrm{dm}^2$.
+\end{itemize}
+
+\subsection*{Aufgaben}
+
+\TALSAadB{242}{915. a) b) c) [ohne Wertebereiche], 927., 916., 917., 918., 919., 922., 923., 925., 926., 928., ...}

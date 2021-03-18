@@ -1,0 +1,151 @@
+%% Philipp G Freimann Juli 2019 für die BBW
+%% Phi BBW-Vorlage für Mathematische Dokumente (LaTeX)
+%% 2019 - 07 - 11
+
+%% %% %% %%
+
+%%  In den Dokumenten können die folgenden Attribute überschrieben werden:
+
+%% \thema
+\newcommand{\pruefungsThema}{Pruefungsthema mit renewcommand «pruefungsThema» überschreiben.}
+%% \klasse
+\newcommand{\klasse}{klasse mit renewcommand «klasse» überschreiben.}
+%% \pruefungsNummer
+\newcommand{\pruefungsNummer}{Pruefungsnummer mit renewcommand «pruefungsNummer» überschreiben.}
+\newcommand{\pruefungsTeil}{}%% Prüfungsteil mit renewcommand «pruefungsTeil» überschreiben}
+%% \datum
+\newcommand{\pruefungsDatum}{Pruefungsdatum mit renewcommand «pruefungsDatum» überschreiben.}
+\newcommand{\pruefungsVorgabeZeit}{Pruefungsvorgabezeit mit renewcommand «pruefungsVorgabeZeit» überschreiben.}
+\newcommand{\pruefungsHilfsmittel}{\colorbox{red}{Pruefungshilfsmittel mit renewcommand «pruefungsHilfsmittel» überschreiben.}}
+
+
+\newcommand{\unloesbarkeitsklausel}{Es ist möglich, wenn auch i.\,d.\,R. nur bei Gleichungen vorgesehen, dass vereinzelte Aufgaben nicht lösbar sind.}
+
+\newcommand{\loesungswegsklausel}{
+  
+\textit{Lösungswege können zur Bewertung herangezogen werden.}\footnote{\unloesbarkeitsklausel{}}
+}
+
+\newcommand{\kommunikationsausschluss}{
+
+\textit{Keine Kommunikation\footnote{Handy, Smartwatch, Pad, Laptop,
+    ... Zuwiderhandlung kann zu disziplinarischen Maßnahmen führen.} untereinander!}}
+
+\newcommand{\vielGlueck}{
+
+\textit{Viel Glück!}}
+
+\newcommand{\defaultHiflsmittelOhneRechner}{Erlaubt
+  sind Schreibzeug, sowie alle Unterlagen in Papierform «open
+  book».
+
+  Der Taschenrechner darf \textbf{nicht} verwendet
+  werden. \kommunikationsausschluss{}\loesungswegsklausel{}\vielGlueck{}}
+
+\newcommand{\defaultHiflsmittelMitRechner}{Erlaubt
+  sind Schreibzeug, sowie alle Unterlagen in Papierform «open
+  book».
+
+  Der Taschenrechner \textbf{darf verwendet}
+  werden. \kommunikationsausschluss{}\loesungswegsklausel{}\vielGlueck{}}
+
+%%%%%%%%%%%%%%%%%%%%%%% P A C K A G E S %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[paper=a4paper,margin=17mm]{geometry}
+
+\input{bbwUsePackages}
+
+%% damit die Punktezal schon geschrieben werden kann, obschon
+%% Die Punkte erst während dem Dokument zusammengetragen werden:
+\usepackage{totcount}
+
+
+\input{bbwLayout}
+\input{bbwMakros}
+\input{matheMakros}
+
+%% LAYOUT FUER PRUEFUNGEN %%
+\headheight2pt
+
+%%%%%%%%%%%%%%%  H E A D E R   &   F O O T E R %%%%%%%%%%%%%%%%%%%%
+
+%% Oben (Header) linke Seite
+%\fancyhf[HLE]{\makebox{\includegraphics[width=36mm]{logos/bbwBreit.pdf}}} 
+%\fancyhf[HCE]{\parttitle}
+%% Oben (Header) rechte Seite
+\fancyhf[HL]{\makebox{\includegraphics[width=36mm]{logos/bbwBreit.pdf}}}
+\noTRAINER{\fancyhf[HC]{\pruefungsNummer{}. Prüfung: \pruefungsThema{} - \klasse}}
+\TRAINER{\fancyhf[HC]{\colorbox{red}{\pruefungsNummer{}. Prüfung: \pruefungsThema{} - \klasse}}}
+\fancyhf[FR]{\tiny{fp @ bbw (Druck: \today{})}}
+%% Unten (Footer)
+%\fancyhf[FCE]{\fachthema:\ \doctitel}
+%\fancyhf[FLE,FRO]{\thepage{}/\pageref{LastPage}}
+%\fancyhf[FCO]{BBW: Abteilung 6 BMS}
+
+\newcounter{frageCounter}
+\setcounter{frageCounter}{1}
+
+%%\newenvironment{fragn}{%%
+%%  \arabic{frageCounter}\stepcounter{frageCounter}%%
+%%  \begin{tabular}{p{169mm}}%%
+%%  \hline\\%%
+%%}{\end{tabular}}
+
+%%\newenvironment{frageXXX}[2][def]{(#1,#2)\begingroup}{\endgroup}
+
+%%\newcommand{\leserluft}{\vspace{2mm}}
+
+\newcounter{tmpCounter}
+\newenvironment{frage}[1][def]{%%
+\setcounter{tmpCounter}{#1}%%
+\addtocounter{maxpunkte}{\value{tmpCounter}}%%
+\begingroup
+
+%% Multicolumn nur wichtig, damit die Ränder hier nicht angezeigt werden.
+\begin{tabular}{|p{168mm}|}%%
+\multicolumn{1}{l}{\textbf{Aufgabe\ \arabic{frageCounter}\stepcounter{frageCounter}%%
+\,\,[\arabic{tmpCounter} Pkt.]:}}\\ %%
+\hline{}%\textbf{Aufgabe\ \arabic{frageCounter}\stepcounter{frageCounter}%%
+%\,\,[\arabic{tmpCounter} Pkt.]}%%
+
+}{\\%%
+  \hline\end{tabular}\noTRAINER{\parbox[c]{20mm}{{\ ......}\\*{\-\ Pkt.}}}\vspace{4mm}\endgroup}
+
+%\newcommand{\fragexx}[1]{%%
+%\begin{tabular}{p{172mm}}%%
+%\hline\\%%
+%\end{tabular}\\%%
+%%\nextFrageNummer{}%%
+%{#1}}%%
+
+%  \\
+%\begin{tabular}{p{14cm}}\hline\\%%
+%\end{tabular}
+%\nextFrageNummer{}
+%{#1}}%%
+\newtotcounter{maxpunkte}
+\newcommand{\pruefungsIntro}{\setcounter{maxpunkte}{0}%%
+\begin{tabular}{|lcllcp{34mm}|}%%
+\hline%%
+  Thema                             &:& \pruefungsThema{}         & Prüfungsdatum           &: & \pruefungsDatum{}                      \\%%
+  Prüfungsnummer                    &:& \pruefungsNummer{}        & Prüfungsteil            &: & \pruefungsTeil{}                       \\%%
+  Klasse                            &:& \klasse{}                 & Nachprf.-\,Datum        &: &  .........................             \\%%
+  \textbf{Vorname}                  &:& \noTRAINER{.........................}\TRAINER{{\color{red}Lehrer/Lösungen}} & \textbf{Familienname}   &: & .........................\\%%
+  Vorgabezeit                       &:& \pruefungsVorgabeZeit{}   & \                       &\ & \                                      \\%%
+  Punkte (Max.\,\total{maxpunkte})  &:& ......................... & Note                    &: & .........................              \\%%
+\hline%%
+\end{tabular}%%
+\vspace{1mm}\\%%
+\textbf{Hilfsmittel}: \pruefungsHilfsmittel{}\\%%
+%%\textit{Lösungswege können zur Bewertung herangezogen werden.}\\%%
+\vspace{-1mm}%%
+\setcounter{maxpunkte}{0}%%
+\TRAINER{
+  \begin{center}\Huge{\color{red}Lösungen}\end{center}
+  \newpage
+}%%
+}%%
+
+%% Wahr/Falsch Boxen
+%% Aufruf \wahrbox{wahr}, falls das Resultat wahr ist
+%% Aufruf \wahrbox{falsch}, falls ``falsch'' angegeben werden muss.
+\newcommand{\wahrbox}[1]{($\Box$ wahr; $\Box$ falsch)\TRAINER{#1}}%%

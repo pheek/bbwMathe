@@ -1,0 +1,227 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+
+\section{Zahlen}
+\sectuntertitel{Im 15. Jahrhundert --- genauer im Jahre 1413 --- am
+  zwölften elften um zehn Uhr neun haben acht der sieben Schlauesten
+  gesagt: ``So sechs wie wir fünf gibt's keine vier mehr, denn wir
+  drei sind die zwei einzigen Nullen.``}
+
+Einführende Youtube Videos: \texttt{youtu.be/9JgcETAN65c} und \texttt{youtu.be/tPfnEByx9r0}
+
+\theorieTALS{8}{1.1}
+\theorieGESO{13}{1.1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+	\item Zahlmengen $\mathbb{N}$, $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$
+  \item Näherungswerte, Signifikante Ziffern, Runden
+  \item Wissenschaftliche Notation
+  \item Ordnungsrelationen ($=$, $<$, $>$, $\leq$, $\geq$)
+  \item Betrag
+\end{itemize}
+
+
+\subsection{Die natürlichen Zahlen ($\mathbb{N}$)}\index{Zahlen!natürliche}
+
+\begin{definition}{natürliche Zahlen}{definition_natuerliche_zahlen}
+  Natürliche Zahlen $\mathbb{N}$ sind ganze positive Zahlen: ${1, 2, 3, 4, 5, ....}$.
+\end{definition}
+
+\begin{bemerkung}{}{}
+  Selten wird auch die Menge ${0, 1, 2, 3, 4, ...}$ als die Menge
+  der natürlichen Zahlen bezeichnet. Wir bezeichnen diese Menge dann mit $\mathbb{N}_0$.
+
+  \TALS{%%
+  Wenn Verwechslungen relevant würden, verwenden wir manchmal
+  \begin{itemize}  
+\item $\mathbb{N}^{\ast}$ oder $\mathbb{N}\backslash\{0\}$ für die Zahlen $\{1, 2, 3, 4, 5, ...\}$
+  und
+\item $\mathbb{N}_0$ für die Zahlen $\{0, 1, 2, 3, 4, ...\}$.
+  \end{itemize}}%% END TALS
+
+\end{bemerkung}
+\newpage
+
+
+\subsection{Ganze Zahlen ($\mathbb{Z}$)}
+\begin{definition}{ganze Zahlen}{definition_ganze_zahlen}
+
+  Mit $\mathbb{Z}$ bezeichnen wir alle ganzen Zahlen, sowohl die
+  positiven ($\mathbb{N}$), wie auch die negativen.
+  \end{definition}
+
+$$\mathbb{Z} = \{..., -3, -2, -1, 0, 1, 2, 3,  4, ... \}$$
+
+\subsubsection{Zahlenstrahl / Zahlengerade}\index{Zahlenstrahl}
+
+\begin{center}
+\raisebox{-1cm}{\includegraphics[width=13cm]{allg/alg/img/Zahlenstrahl.png}}
+\end{center}
+
+Der Zahlenstrahl hat den Startpunkt 0 (Null)\footnote{... manchmal  den Startpuntk 1 ...}, wohingegen die
+Zahlengerade auf beiden Seiten uneingeschränkt weiterläuft.
+
+\subsection{Rationale Zahlen ($\mathbb{Q}$)}
+\index{Zahlen!rationale}\index{rationale Zahlen}
+
+\begin{definition}{rationale Zahlen}{}
+Zahlen, welche sich als Bruch mit ganzen Zahlen schreiben lassen,
+werden als \textbf{rationale Zahlen} bezeichnet.
+
+
+$$\mathbb{Q} =\left\{ q = \frac{a}{b} \mid a \in \mathbb{Z}, b \in \mathbb{N}\backslash\{0\}\right\}$$
+\end{definition}
+
+\subsubsection{Dezimalbrüche}\index{Dezimalbruch}
+Jeder Bruch bestehend aus ganzen Zahlen ($\frac{a}{b}$) lässt sich als
+abbrechender oder periodischer Dezimalbruch schreiben. Beispiel:
+
+$$\frac{5}{70} = 0.0\overline{714285}$$
+
+Dasselbe gilt umgekehrt. Für abbrechende Dezimalbrüche ist dies
+trivial:
+$$47.386 = \frac{47\,386}{1\,000}$$
+
+Für periodische, nicht abbrechende Dezimalbrüche sieht die Sache etwas komplizierter aus,
+gilt jedoch auch:
+
+$$0.\overline{7} = 0.777... = 7: 9 = \frac{7}{9}$$
+
+\TRAINER{Bem.: $\frac{1}{9} = 0.111\overline{1}$, $\frac{1}{99} = 0.0101\overline{01}$, $\frac{1}{999} = 0.001001\overline{001}$, ...}
+
+%%\GESOAadB{22}{7. a) b) c) d) e)}
+\newpage
+
+
+\subsection{Runden}\index{runden}
+In der Regel sind wir bei Dezimalbrüchen nicht an allen auftretenden
+Stellen interessiert, sondern begnügen uns mit einer Näherung.
+
+\subsubsection{Dezimale (Nachkommastelle)}\index{Dezimale}\index{Nachkommastelle}
+Als Dezimale, Dezimalstelle oder Nachkommastelle werden die Stellen \textbf{nach} dem Komma bezeichnet.
+Runden auf die vierte \textbf{Dezimale} (= vierte \textbf{Nachkommastelle}):
+$$ 36.4699432 \approx  \TALS{.......}\GESO{.......}$$
+$$ 36.4699618 \approx\TALS{.......}\GESO{.......}$$
+\TRAINER{36.4699 bzw 36.4700}
+\textbf{Vorsicht} bei Zahlen nahe an Null. So wird die Zahl
+$$0.002468$$ beim Runden auf vier Dezimalen wie folgt gerundet:
+$$0.0025$$
+\newpage
+
+
+\subsubsection{Signifikante Ziffern}\index{Ziffern!signifikante}\index{signifikante Ziffern}
+Beim Runden auf vier Dezmalstellen geht oft wichtige Informtaion verloren...
+$$ 0.0001849 \approx  0.0002$$
+... oder es wird weiter unnötiges angegeben...
+$$ 684553 \textrm{\ Einwohner} \approx  684553.0000 \textrm{\ Einwohner}$$
+
+Für physikalische Messgrößen reichen oft vier
+signifikante\index{signifikante Ziffer}
+Ziffern. Dies ist nicht zu verwechseln mit vier Nachkommastellen\index{Nachkommastelle}.
+
+
+\begin{rezept}{Signifikante Ziffern}{}
+  Beim Runden auf vier \textbf{signifikante Ziffern} wird
+  \begin{itemize}
+  \item  von links nach rechts die erste von Null verschiedene Ziffer gesucht. Dies ist die
+    erste signifikannte Ziffer.
+  \item
+    Danach werden die nächsten drei Ziffern
+  genommen, egal ob sie Null sind oder nicht. Diese vier Ziffern
+  bilden die vier signifikanten Ziffern. 
+\item
+  Die 5 Ziffer wird nur noch
+  zum Auf- oder Abrunden verwendet.
+  \end{itemize}
+\end{rezept}
+
+Runden Sie auf vier \textbf{signifikante} Ziffern
+
+$$36.4699432 \approx \LoesungsRaum{36.47}$$
+$$36.9952831 \approx \LoesungsRaum{37.00}$$
+$$30009.78   \approx \LoesungsRaum{30010}$$
+$$0.0439899  \approx \LoesungsRaum{0.04399}$$
+\newpage
+
+  
+\subsubsection{Wissenschaftliche Notation}\index{Notation!wissenschaftliche}\label{wissenschaftlicheNotation}
+Bei Zahlen größer als 10 können wir einer Zahl manchmal nicht ansehen, wie viel Stellen denn nun signifikant sind.
+
+$$ 679946 \textrm{\ Einwohner} \approx  680000 \textrm{\ Einwohner}$$
+$$ 680023 \textrm{\ Einwohner} \approx  680000 \textrm{\ Einwohner}$$
+
+Daher bietet sich die wissenschaftliche Notation an.\footnote{Die
+\textbf{wissenschaftliche Notation} wird vorwiegend für sehr große
+aber auch für Zahlen sehr nahe an Null verwendet.}
+Bei der wissenschaftlichen Notation wird die erste signifikante Ziffer
+vor das Komma geschrieben. Nach dem Komma stehen \textbf{alle} weiteren signifikanten Stellen.
+Zuletzt wird die Zahl mit Zehnerpotenzen
+($10^{n}: n \in \mathbb{Z}$) «an die richtige Stelle» gerückt:
+
+$$64\,038.6  = 6.40386 \cdot 10^{ 4}\approx 6.40 \cdot 10^{ 4}$$
+$$0.00463640 = 4.63640 \cdot 10^{-3}\approx 4.64 \cdot 10^{-3}$$
+
+Dabei bezeichnen negative Exponenten die Zehntel, Hundertstel, etc.
+Erst in der wissenschaftlichen Notation können wir die signifikanten Stellen auch bei gerundeten Zahlen größer als 10 effektiv ablesen.
+
+\TALS{S. \cite{frommenwiler17alg} S. 40 Kap. 1.5.5}
+
+
+\paragraph{Taschenrechner} Auf Taschenrechnern oder in
+Programmiersprachen wird die Exponentialschreibweise i.\,d.\,R. mit dem
+Buchstaben «e» angegeben. Also «e$n$» anstelle von «$\cdot10^{n}$». Beispiele:
+
+$5\,000 = 5\, \cdot 10^{3} = 5\mathrm{e}3$
+
+$0.063 = 6.3\, \cdot 10^{-2} = 6.3\mathrm{e-}2$
+\newpage
+
+\subsection{Irrationale und reelle Zahlen ($\mathbb{R}$)}\index{Zahlen!reelle}
+
+  Zahlen auf der Zahlengerade, welche nicht als Bruch $\pm\frac{a}{b}$ mit $a$, $b$
+$\in \mathbb{N}$ dargestellt werden können, werden als
+\textbf{irrational} bezeichnet.
+
+Wichtigste Vertreter:
+
+\begin{center}
+\raisebox{-3.9cm}{\includegraphics[width=6.5cm]{allg/alg/img/IrrationaleZahlen.png}}
+\index{Pi, Kreiszahl}\index{$\sqrt{2}$ Wurzel aus zwei}\index{$\pi$ (Kreiszahl)}
+\end{center}
+
+\begin{definition}{Reelle Zahl}{}
+Die Vereinigungsmenge der rationalen ($\mathbb{Q}$) und der irrationalen Zahlen
+nennen wir die \textbf{reellen} Zahlen und bezeichnen die Menge mit $\mathbb{R}$.
+\end{definition}
+
+Es gilt:
+
+\begin{gesetz}{Zahlmengen Beziehungen}{}
+$$\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} $$
+\end{gesetz}
+
+Dass $\pi$ oder $\sqrt{2}$ irrational sind, ist nicht trivial. Daher
+noch zwei Vertreter irrationaler Zahlen, bei denen sofort klar ist,
+dass es sich nicht um periodische Dezimalbrüche handelt:
+\begin{itemize}
+\item $0.10 100 100010000100000100000010000000...$
+\item $0.12345678910111213141516 ... 9899100101102103104 ... $
+\end{itemize}
+\newpage
+
+
+\subsection*{Aufgaben zum Kapitel Zahlmengen}
+\GESOAadB{22ff}{5., 6.}
+\TALSAadB{13}{14-18}
+
+%%\TRAINER{
+%%\subsection{Mengenlehre}
+%%\begin{itemize}
+%%\item Venn-Diagramme
+%%\item Mengenoperationen
+%%\item Zahlmengen
+%%\end{itemize}
+%%}

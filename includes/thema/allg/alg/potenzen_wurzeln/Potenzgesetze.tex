@@ -1,0 +1,111 @@
+\newcommand{\aaaa}{a\cdot a \cdot a \cdot{} ... \cdot a}
+\newcommand{\bbbb}{b\cdot b \cdot b \cdot{} ... \cdot b}
+
+\newpage
+\subsection{Potenzen, Definitionen und Gesetze}\index{Potenzen}
+
+\subsubsection{Einführungsbeispiele}
+Die sieben verschiedenen schweizer Münzen werden nacheinander geworfen
+und es wird notiert, welcher Wurf Zahl oder «Kopf» aufweist. Dieses
+Experiment wird einige Male wiederholt, bis man sich die Frage stellt:
+Wie viele mögliche Ausgänge hat das Experiment?
+
+\TNT{4.0}{$$2^7 = 128$$}
+
+Berechen Sie
+$$5^3$$
+
+\TNT{2.8}{125}
+
+Vereinfachen Sie:
+
+$$a^5\cdot(ab)^3\cdot{}(2c)^{2+3}$$
+
+\TNT{3.2}{$$32a^8b^3c^5$$}
+
+\newpage
+
+\begin{definition}{Potenz}{}\index{Potenz}
+Unter der $n$-ten \textbf{Potenz} verstehen wir eine $n$-malige Multiplikaiton mit demselben Faktor:
+$$a^2 = a\cdot a$$
+$$a^n = \underbrace{\aaaa}_{n\, \textrm{Faktoren}}$$
+\end{definition}
+Dabei bezeichnen
+
+
+\bbwCenterGraphic{9cm}{allg/alg/potenzen_wurzeln/img/Potenzbegriff.png}
+
+%\begin{itemize}
+% \item Potenz\index{Potenz}: $a^n$
+% \item Exponent\index{Exponent}: $n$
+% \item Basis\index{Basis}: $a$
+%\end{itemize}
+
+
+\subsubsection{gleiche Basis}\index{Potenzen!Gesetze}
+
+\begin{itemize}
+ \item \fbox{$a^m\cdot a^n = a^{m+n}$}
+
+   Begründung:
+
+   \TNT{2.4}{
+   \TALS{$a^m\cdot a^n =
+    \underbrace{{\underbrace{\aaaa}_{m\textrm{-mal}}}\cdot{\underbrace{\aaaa}_{n\textrm{-mal}}}}_{m+n\textrm{-mal}}
+    = a^{m+n}$}
+   \GESO{$7^3\cdot{} 7^5 = (7\cdot{}7\cdot{}7)\cdot{}(7\cdot{}7\cdot{}7\cdot{}7\cdot{}7)=7^8$}%%
+}%% END TNT
+
+   
+   \item \fbox{$a^m : a^n = \frac{a^m}{a^n}= a^{m-n}$}
+     
+     Begründung:
+
+     \TNT{2.4}{%
+     \TALS{$a^m :  a^n =
+    \underbrace{{\underbrace{\aaaa}_{m\textrm{-mal}}} : {\underbrace{\aaaa}_{n\textrm{-mal}}}}_{m+n\textrm{-mal}}
+    = a^{m-n}$}
+     \GESO{
+  Kürzen: 
+   $7^5 :  7^3 = \frac{7^5}{7^3} =
+  \frac{7\cdot{}7\cdot{}7\cdot{}7\cdot{}7}{7\cdot{}7\cdot{}7} = 7^2 =
+  7^{5-3}$}
+     }%% END TNT
+
+  
+\item \fbox{$(a^n)^m = a^{n\cdot{}m} = (a^m)^n$}
+
+  Begründung:
+
+  \TNT{2.4}{Beispiel $(a^4)^3$ vorrechnen \vspace{12mm}}%%
+  
+\end{itemize}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{gleiche Exponenten}
+
+\begin{itemize}
+\item \fbox{$a^n \cdot{} b^n  = (ab)^n$}
+  
+  Begründung
+
+  \TNT{2.4}{
+    \TALS{$a^n\cdot b^n
+= \underbrace{\aaaa}_{n\textrm{-mal}}\underbrace{\bbbb}_{n\textrm{-mal}}
+= \underbrace{ab\cdot ab\cdot ... \cdot ab}_{n\textrm{-mal}} =
+(ab)^n$}%%
+   \GESO{\zB $7^3 \cdot 5^3 = (7\cdot{}7\cdot{}7) \cdot{}
+     5\cdot{}5\cdot{}5 = (7\cdot{}5)\cdot{} (7\cdot{}5)\cdot{} (7\cdot{}5) =(7\cdot{}5)^3$}
+}%% end TRAINER
+   
+\item \fbox{$\frac{a^n}{b^n} = \left(\frac{a}{b}\right)^n$} (Gilt ganz analog.)
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Aber Vorsicht}
+
+$$a^2 + b^2 \ne ???$$
+

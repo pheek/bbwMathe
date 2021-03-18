@@ -1,0 +1,196 @@
+%%
+%% 2019 07 11 Ph. G. Freimann
+%%
+
+\section{Logarithmen}\index{Logarithmus}
+\sectuntertitel{Wer hat noch andere Basen?}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item andere Basis
+\item Basiswechsel
+\item Logarithmengesetze II
+\end{itemize}
+\newpage
+
+\subsection{Andere Basis als Basis 10}\index{Logarithmus!beliebige Basis}
+
+Wir können bereits $$x^5=32$$ lösen, indem wir beidseitig die 5. Wurzel ziehen: $$x = \sqrt[5]{x^5} = \sqrt[5]{32} = 2$$
+
+Ebenso können wir Probleme mit der Unbekannten im Exponenten lösen, wenn die Basis 10 beträgt: Das Problem $10^x = 1000$ können wir mit Logarithmen lösen: $$\lg(1000) = \lg(10^3) = 3$$
+
+Aber wie lösen wir so ein Problem:
+
+$$2^x = 128$$
+
+Die Lösung ist ein Logarithmus mit anderer Basis als 10, sodass «Zweierlogarithmus» von $(2^x) = x$.
+
+Und den gibt es:
+$$\log_2(2^x) = x$$
+Somit können wir das Problem $2^x=128$ lösen (mit Logarithmentabellen oder heute mit dem Taschenrechner):
+
+$$x = \log_2(2^x) = \log_2(128) = \LoesungsRaum{7}$$
+
+Es gilt allgemein
+
+\begin{center}
+  \fbox{$\log_a(a^x) = x .$}
+\end{center}
+\newpage
+
+\subsubsection{Rechengesetze}
+
+\GESO{Weitere Rechengesetze im Buch \cite{marthaler17} ab Seite 97:}
+Allgemeine Basis $a$:
+
+
+\textbf{Definition}:
+$b:=\log{}_a(c) \Leftrightarrow a^b=c$
+
+\TNT{2.4}{Beispiel $2^4 = 16$, d.\,h. $\log_2(16)=4 $.\vspace{1cm}}
+
+
+
+\textbf{1. Gesetz}:
+
+$$x=\log{}_a(a^x)$$
+
+\TNT{2.4}{Beispiel $2^4 = 16$, d.\,h. $\log_2(16)=4 $.\vspace{1cm}}
+
+
+\textbf{2. Gesetz}:
+
+$$y=a^{\log{}_a(y)}$$
+
+\TNT{2.4}{Beispiel $128=2^{\log_2(128)} = 2^{\log_2(2^7)} = 2^7$.\vspace{1cm}}
+
+
+\textbf{3. Gesetz}:
+
+$$\log_a(a)=1$$
+
+\TNT{2.4}{Denn: $\log_a(a) = \log_a(a^1)$ Bsp:  $\lg(10) = \lg(10^1)$.\vspace{1cm}}
+
+\newpage
+
+
+
+\textbf{4. Gesetz}:
+
+$$\log{}_a(1)=0$$
+
+\TNT{2.4}{Bsp.: $\log_{10}(1) = \lg(1) = \lg(10^0) = 0$.\vspace{1cm}}
+
+
+\textbf{5. Gesetz}:
+
+$$\log_a(u\cdot{}v)=\log_a(u) + \log_a(v)$$
+
+\TNT{2.4}{Bsp.:  $\log_2(8\cdot 32) = \log_2(2^3 \cdot 2^5) = \log_2(2^{3+5}) = 3+5 = \log_2(2^3) + \log_2(2^5) $.\vspace{1cm}}
+
+
+\textbf{6. und 7. Gesetz}:
+
+$$\log_a\left(\frac{u}{v}\right)=\log_a(u) - \log_a(v)$$
+$$\log_a(u^k)=k\cdot{}\log_a(u)$$
+
+
+\TRAINER{Gilt analog zu Gesetz 5 (ohne Beispiel)}
+\noTRAINER{\vspace{10mm}}
+
+
+\textbf{8. Gesetz}:
+
+
+$$\log_a\left(\frac{1}{v}\right)=-\log_a(v)$$
+
+\TNT{2.4}{Bsp.:  $\log_2(8^2) = \log_2((2^3)^2) = \log_2(2^6) = 6 = 2 \cdot  3 = 2 \cdot \log_2(2^3) = 2 \cdot \log_2(8)$.\vspace{1cm}}
+
+\TALS{
+\textbf{9. Gesetz}:
+
+$$a^x = b^{x\cdot{}\log_b(a)}$$
+
+\TNT{2.4}{Wir ersetzen im 2. Gesetz $y$ durch $a^x$ und $a$ durch $b$:
+  $$y = b^{\log_b(y)} \longrightarrow  a^x = b^{\log_b(a^x)} =
+  b^{x\cdot{}\log_b(a)}$$} %% END TNT
+}%% END TALS
+\newpage
+
+
+
+\subsubsection{Spezielle Basen}
+Der Zweierlogarithmus wird vor allem in der Informatik benutzt. Wie viel Bit brauche ich, um 200 Zustände abzubilden?
+
+$2^x = 200$
+
+Lösung:
+
+
+\TNT{2.4}{
+$\log_2(200) \approx 7.64$, d.\,h. ich benötige 8 Bit, um 200 Zustände abzubilden.
+}
+
+
+\subsubsection{Basiswechsel}
+$$\log_a(x) = \frac{\lg(x)}{\lg(a)} = \frac{\log_b(x)}{\log_b(a)}$$
+
+Begründung:
+
+\TNT{2.4}{
+\GESO{$\log_5(32)=x \Longleftrightarrow 5^x=32$\\
+    Daher: $\log(5^x) = \log(32) \Longleftrightarrow
+    x\log(5)=\log(32) \Longleftrightarrow x=\frac{\log(32)}{\log(5)} =
+    \log_5(32)$} %% END GSEO
+\TALS{Beweis: $\log_a(b)=x \Longleftrightarrow a^x=b$\\
+    Daher: $\log(a^x) = \log(b) \Longleftrightarrow
+    x\log(a)=\log(b) \Longleftrightarrow x=\frac{\log(b)}{\log(a)} =
+    \log_a(b)$} %% END TALS
+}%% END TNT
+\newpage
+
+
+\subsubsection{Die Eulersche Konstante}\index{$e$, die Eulersche Konstante}
+
+Die Basis $e$ ($e$ = Eulersche\footnote{Leonhard Euler (1707-1783)} Konstante $e\approx 2.7182817246$) wird vor allem bei Wachstums- und Zerfallsprozessen verwendet.
+
+Die Zahl $e$ ist in mehrerer Hinsicht spannend:
+
+\paragraph{Logarithmus Naturalis:}\index{Logarithmus Naturalis} Da die
+Zahl $e$ bei exponentiellen Prozessen eine sehr große Rolle spielt,
+darf die Eulersche Zahl $e$, $e^x$ und $\log_e(x)$ auch auf keinem Rechner fehlen. Der $\log_e()$ hat dabei sogar einen eigenen Namen erhalten:
+$\ln()$ steht für «Logarithmus Naturalis».
+
+\begin{center}
+  \fbox{$\ln() := \log_e()$ = \textit{\textbf{Logarithmus Naturalis}}}
+\end{center}
+
+\paragraph{Logarithmentabellen}
+Wenn ich auf einem Taschenrechner lediglich $\ln()$ und $e^x$ zur Verfügung habe\footnote{Oder ich habe, wie früher, nur eine Logarithmentabelle.} und dennoch $\log_a(c)$ oder $a^x$ berechnen will, so kann ich dies einfach mit einer Transformation zur Basis $e$ vollbringen:
+
+$$a^x = e^{x\cdot{}\ln(a)}$$
+$$\log_a(c) = \frac{\ln(c)}{\ln(a)}$$
+
+\newpage
+
+
+
+%%\TALS{(\cite{frommenwiler17alg} S.??? (Kap. ???))}
+%%\GESO{(\cite{marthaler17}       S.??? (Kap. ???))}
+
+\subsection*{Aufgaben}
+\TALSAadB{???}{???}
+
+Andere Basis:
+
+\GESOAadB{103ff}{8. a) b) c) f), 9., 10. a), 13. a) f), 14. a) g),
+  15. a) c) d) e) f), 16. a) c) d) e), 17. a) b) c) }
+
+Gesetze:
+
+\GESOAadB{105ff}{21. a) c) e), 22. a) b), 24. a), 25. a) }
+
+Taschenrechner:
+
+\GESOAadB{106}{29.}

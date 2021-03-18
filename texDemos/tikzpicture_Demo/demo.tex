@@ -1,0 +1,100 @@
+%%
+%% Meta: Boxplot erstellen. Viele Beispiele
+%%
+
+\input{bbwSeite}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\metaHeaderLine}{Einführung Trainer}
+\renewcommand{\arbeitsblattTitel}{Demo Latex Beispiele zu Koordinatensystemen}
+
+\begin{document}%%
+\arbeitsblattHeader{}
+
+\section{Demos in tikzpicture}
+
+Zu den folgenden Graphiken werden lediglich die bbw-tex-Layouts verwendet.
+
+Die Befehle zur Erzeugung der Graphiken sind jeweils gleich darunter angegeben.
+
+\subsection{Punkte und Stecken}
+Mit bbw-Makros sind Stecken und Punkte im Koordinatensystem einfach zu zeichnen.
+
+\bbwGraph{-2}{3}{-1}{3}{%%
+ \bbwLine{-1,2}{2,1}{blue}%%
+ \bbwDot{-1,2}{red}{east}{A}%%
+ \bbwDot{2,1}{green}{west}{B}%%
+ \bbwDot{1,2}{blue}{south}{C}%%
+}%%
+
+\begin{verbatim}
+\bbwGraph{-2}{3}{-1}{3}{
+ \bbwLine{-1,2}{2,1}{blue}
+ \bbwDot{-1,2}{red}{east}{A}
+ \bbwDot{2,1}{green}{west}{B}
+ \bbwDot{1,2}{blue}{south}{C}
+}
+\end{verbatim}
+
+
+\newpage
+\subsection{Mischen mit TikzPictures}
+Neben den bbw-Makros kann jeder tikz-draw-Befehl verwendet werden. Beachte das abschließende Semikonon (Strichpunkt ;) am Ende der Zeilen.
+
+\bbwGraph{-3}{2}{-4}{3}{
+ \bbwLine{-2,-1}{-2.5,2}{blue}
+ \bbwLine{-1,0}{2,3}{red}
+ \draw[thin,color=green] (-1,1)--(1,-4);
+ \draw[thin] (0,1) circle(1.5);
+ \draw [-{Latex[]},thick] (0,1) -- (1.3,0.3);
+ \draw (0.76,0.76) node{$r$};
+}
+\begin{verbatim}
+\bbwGraph{-3}{2}{-4}{3}{
+ \bbwLine{-2,-1}{-2.5,2}{blue}
+ \bbwLine{-1,0}{2,3}{red}
+ \draw[thin,color=green] (-1,1)--(1,-4);
+ \draw[thin] (0,1) circle(1.5);
+ \draw [-{Latex[]},thick] (0,1) -- (1.3,0.3);
+ \draw (0.76,0.76) node{$r$};
+}
+\end{verbatim}
+\newpage
+
+\subsection{Beliebige Funktionen}
+%%       xmin,xmax,ymin,ymax,fct,domain
+\bbwFunction{-3}{2}{-2}{5}{-\x*\x - \x + 4.5}{-2.5:1.5}
+\begin{verbatim}
+\bbwFunction{-3}{2}{-2}{5}{-\x*\x - \x + 4.5}{-2.5:1.5}
+\end{verbatim}
+
+Bei Funktionen sind die ersten vier Koordinaten die Grenzen des Koordinatensystems. \texttt{\{(-2.5:1.5)\}} hingegen bezeichnet den Definitonsbereich der Funktion.
+Bemerkung: Eine \texttt{\\bbwFunction} benötigt
+keine \texttt{bbwGraph}-Umgebung.
+\newpage
+
+Gleich noch ein Beispiel:
+
+\bbwFunction{-1}{11}{-6}{4}{ln(-1+\x)}{1.005:11}
+\begin{verbatim}
+\bbwFunction{-1}{11}{-6}{4}{ln(-1+\x)}{1.005:11}
+\end{verbatim}
+\newpage
+
+
+\subsection{Mehrere Funktionen im selben Graph}
+Der Befehl \texttt{bbwFunc} kennzeichnet eine einzelne Funktion
+innerhalb einer \texttt{bbwGraph}-Umgebung:
+
+\bbwGraph{-4}{4}{-2}{2}{
+  \bbwFunc{\x*0.2}{-3:3}
+  \bbwFuncC{\x*0.1 + 0.5}{-3:3}{red}
+}
+\begin{verbatim}
+\bbwGraph{-4}{4}{-2}{2}{
+  \bbwFunc{\x*0.2}{-3:3}
+  \bbwFuncC{\x*0.1 + 0.5}{-3:3}{red}
+}
+\end{verbatim}
+
+\end{document}

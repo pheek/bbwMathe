@@ -1,0 +1,66 @@
+\subsection{Taschenrechner}\index{Taschenrechner!Gleichungssysteme}
+Lineare Gleichungssysteme sind so zentral, dass viele heutige Taschenrechner diese lösen kann.
+
+\gleichungZZ{3a + 2b}{3.10}{4a + 5b}{6.00}
+
+\GESO{Suchen Sie \tiprobutton{2nd}\tiprobutton{tan_sys-solv} und geben Sie die Zahlen 3, 2, 3.10, 4, 5 bzw. 6.00 in die entsprechenden Felder ein.}
+\TALS{Definieren Sie das Gleichungssystem gls:=\{3a+2b=3.1, 4a+5b=6.0\}. Dies können Sie nun einfach mit solve(gls,\{a, b\}) auflösen lassen.}
+
+\GESO{
+\begin{bemerkung}{}{}
+  Die Variable beim TI-30 PRO müssen bei 2x2-Gleichungssytemen $x$ und $y$  heißen.
+\end{bemerkung}
+}
+
+\GESO{
+  \subsubsection{Eingabe negativer Zahlen}
+  Lösen Sie das folgende Gleichungssystem mit dem Taschenrechner.
+
+  \gleichungZZ{-4x + (-8)y}{16}{3x-5y}{32}
+
+  Beachten Sie die Eingabe negativer Zahlen auf dem TI 30 Pro
+  MathPrint. Das negative Vorzeichen wird mit \tiprobutton{neg} eingegeben,
+  wohingegen die Subtraktion mit dem einfachen \tiprobutton{minus} eingegeben wird.
+
+  \TNT{2}{Lösung: $x=4$, $y=-4$.}
+
+}
+
+\GESO{
+\aufgabenfarbe{  
+  Prüfen Sie mit diesem Wissen von Seite 150ff die Resultate von Aufgabe 7. g) [$x=\frac{42}{61}$ und $y=\frac{60}{61}$], 7. b) [$x=\frac52$ und $y=-\frac{15}{2}$] 8. a) [$x=2$ und $y=6$] und 8. b) [$x=-2$ und $y=2$]
+}}
+
+\newpage
+
+
+\subsection{Spezialfälle}
+\textbf{TYP A:} Keine Lösung
+
+Bestimmen Sie die Lösungsmenge des folgenden linearen Gleichungssystems:
+
+\gleichungZZ{\frac{-9}{5}x + \frac{11}{5} y}{0.8}{-2.7 x + \frac{33}{10}y}{1}
+
+Die Gleichung hat keine Lösung. Geometrisch kann man sich das so vorstellen, dass es sich um zwei Geradengleichungen handelt, welche zwei Parallele darstellen.
+
+$$\mathbb{L}_{(x;y)} = \{\}$$
+
+\textbf{TYP B:} Beliebig viele Lösungen (lineare Abhängigkeit)
+
+Bestimmen Sie die Lösungsmenge des folgenden linearen Gleichungssystems:
+
+\gleichungZZ{\frac{9}{2}x - 2.4y}{2.1}{3x-\frac{8}{5}y}{1.4}
+
+Hier gibt es unendlich viele Lösungen. Für jedes $x$ kann ich aus der ersten Gleichung ein $y$ berechnen. Doch beim Einsetzen in die 2. Gleichung erhalte ich keine neue Information.
+Geometrisch handelt es sich bei beiden Gleichungen um ein und dieselbe Gerade: Jeder Punkt auf der Geraden löst also beide Gleichungen.
+
+$$\mathbb{L}_{(x;y)} = \{(x;y)| x\in \mathbb{R} \land{} y = \frac{15}{8} \cdot{} x - \frac78\}$$
+\TRAINER{$y = \frac{9x-4.2}{4.8}$ ist die Funktionsgleichung beider Geraden.}
+
+\subsection*{Aufgaben}
+\TALSAadB{125ff}{382. 383., 389. a) 410. a), 411. a) b)}
+\GESOAadB{150ff}{Falls nötig zuerst in Grundform bringen. Schreiben Sie $x$, $y$ und $z$ streng untereinander. Danach mit Taschenrechner lösen: 18. a) b) c) und e) 21. b) c) e)}
+\GESO{Optionale Aufgaben zu linearen Funktionen mit Taschenrechner:
+\GESOAadB{253}{24. b) c) d)  25. a)}
+}
+\newpage

@@ -1,0 +1,47 @@
+%%
+%% Meta: Master Document
+%% GESO 1jährig
+%%
+
+\input{bbwPrintHeader}
+\usepackage{bbw}
+
+\renewcommand{\author}{Philipp G. Freimann}
+\renewcommand{\grafikautor}{Ph. G. Freimann}
+\renewcommand{\authoremail}{philipp.freimann@bbw.ch}
+\renewcommand{\erstellungsdatum}{16. März 2021}
+\renewcommand{\docversion}{0.2.5 (\LaTeX{})}
+
+\renewcommand{\doctitel}{Wahrscheinlichkeitsrechnung}
+\renewcommand{\fachthema}{Experimente und statistisches Schließen}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\include{linkverzeichnis}
+
+\ptitlepage
+\newpage
+
+
+%% Lineare Gleichungssysteme
+\input{geso/stoch/AllGESO}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{anhang}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%\linkVerzeichnis{}%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage\mbox{}
+%\blankOddPage{}%
+%\include{texlife-bibtex-extra}
+
+\bibliography{bibAll.bib}{}\label{literatur}
+
+\printindex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+\end{document}

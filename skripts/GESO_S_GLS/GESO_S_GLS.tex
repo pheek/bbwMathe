@@ -1,0 +1,48 @@
+%%
+%% Meta: Master Document
+%% GESO 1jährig
+%%
+
+\input{bbwPrintHeader}
+\usepackage{bbw}
+
+\renewcommand{\author}{Philipp G. Freimann}
+\renewcommand{\grafikautor}{Ph. G. Freimann}
+\renewcommand{\authoremail}{philipp.freimann@bbw.ch}
+\renewcommand{\erstellungsdatum}{4. März 2021}
+\renewcommand{\docversion}{0.2.4 (\LaTeX{})}
+
+%%\renewcommand{\modulnummer}{Arithmetik und Algebra I}
+\renewcommand{\doctitel}{Lineare Gleichungssysteme}
+\renewcommand{\fachthema}{Lösungsmethoden}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\include{linkverzeichnis}
+
+\ptitlepage
+\newpage
+
+
+%% Lineare Gleichungssysteme
+\input{geso/gls/AllGESO}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{anhang}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%\linkVerzeichnis{}%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage\mbox{}
+%\blankOddPage{}%
+%\include{texlife-bibtex-extra}
+
+\bibliography{bibAll.bib}{}\label{literatur}
+
+\printindex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+\end{document}
