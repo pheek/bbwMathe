@@ -8,5 +8,7 @@ clone:
 
 git clone https://github.com/pheek/bbwMathe
 
-Die Relativen Pfade für das Kompilieren der LaTeX-Quellen sind in den
+Die relativen Pfade für das Kompilieren der LaTeX-Quellen sind in den
 make-files beschrieben.
+
+Insbesondere muss das Verzeichnis "includes/thema", aber auch das Verzeichnis "layout" im LaTeX-Pfad integriert sein.
