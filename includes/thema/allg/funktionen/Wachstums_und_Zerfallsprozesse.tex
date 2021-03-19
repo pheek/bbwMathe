@@ -88,7 +88,6 @@ Die allgemeine Formel für exponentielle Prozesse lautet:
 $$f(t) = y = c\cdot{}a^{\frac{t}{\tau}}$$
 
 
-
 Dabei sind
 \begin{itemize}
 \item $c$ der Anfangsbestand zum Zeitpunkt $t$ = 0.
@@ -107,35 +106,42 @@ Dabei sind
 \end{itemize}
 \newpage
 
-\subsection{Referenzaufgabe}
-Die Bevölkerung Irlands wächst Jedes Jahr um 4\% (Quelle\footnote{Quelle: https://www.mathebibel.de/verdopplungszeit}). Wann hat sich die Bevölkerung vedoppelt?
+\subsection{Referenzaufgabe}\index{Irland!Bevölkerungswachstum}
+Irland hatte 1990 3.5 Mio. Einwohner. Im Jahr 2019 waren es bereits 4.9 Mio.
 
-\TNT{12}{Ansatz: $f(t) = f(0) \cdot a^{\frac{t}{\tau}}$ mit $\tau = 1$. $\tau$ ist immer = 1, wenn der Wachstumsfaktor der charakteristischen Zeit 1 (hier 1 Jahr) entspricht. Also
+\textbf{Frage 1}: Was prognostizieren Sie für das Jahr 2025, wenn Sie von einem exponentiellen Wachstum ausgehen?
 
-  $f(t) = f(0) \cdot a^t$.
+\TNT{12}{
+  1. Skizze:Ersichtlich: $\tau$, 1990, 2019, 3.5 und 4.9 (Rest irrelevant)
+  
+  Ansatz: Zeitpunkt $t_1 = 1990$, somit $m_1 = 3.5$ (Mio.). Analog Zeitpunkt $t_2 = 2019$ somit $m_2 = 4.9$ (Mio).
+  Das $\tau= 29$ Jahre und das zugehörige $a$ ist $\frac{4.9}{3.5}$. $a$ abspeichern!
 
-  Dabei ist $f(0)$ der Anfangsbestand.
+  Uns fehlt noch das $c$.
 
-  Der Wachstumsfaktor ist 1.04 (= 100\% + 4\% = 1 + $\frac{4}{100}$).
+  Es gilt nun im Jahr 1990 ($=t_1$): $3.5 = f(1990) = c\cdot{} \left(a\right)^\frac{t_1}{\tau} = c\cdot{} a^\frac{1990}{26}$
 
-  Somit ist der Bestand nach $t$ Jahren $f(t) = f(0) \cdot 1.04^{t}$.
+  Somit ist $$c = \frac{3.5}{  a^\frac{1990}{29}  } \approx 3.3\cdot{}10^{-10}$$
 
-  Die Bevölkerung hat sich verdoppelt, wenn $f(t) = f(0) \cdot 2$, also wenn $1.04^t = 2$ ist.
+  Dieses Resultat $c$ abspeichern!
 
-  Diese Exponentialgleichung kann durch Logarithmieren gelöst werden:
-
-  $$1.04^t = 2$$
-  $$\ln(1.04^t) = \ln(2)$$
-  $$t\cdot{}\ln(1.04) = \ln(2)$$
-  $$t = \frac{\ln(2)}{\ln(1.04)}\approx{17.7[Jahre]}$$
-
-  Voraussichtlich verdoppelt sich (bei ungebremstem Wachstum) die Bevölkerung von Irland innerhalb von 17 bis 18 Jahren.
-
-  BESSERES BEISPIEL, wo $\tau$ auch eine Rolle spielt!
-
-  1990 hatte Irland 3.5 Mio EW, 2019 waren es 4.9 Mio. Was prognoszieren Sie füxr 2025 (lsg. 5.25 Mio)?
-}%% END Trainer
+  Nun können wir die Prognose für 2025 einfach berechnen: $f(2025) = c\cdot{}a^\frac{2025}{29}$, denn wir haben ja $a$ und $c$ bereits im Rechner gespeichert.
+}%% ENT TNT
 \newpage
+
+\textbf{Frage 2}: In wie vielen Jahren hat sich die Bevölkerung verdoppelt?
+
+\TNT{12}{
+  Halbwertszeit sei $T$. Ansatz: $a^\frac{t}{29} = 2^\frac{t}{T}$ und somit (auf beiden Seiten die $t$-te Wurtzel:
+
+  $a^\frac{1}{29} = 2^\frac{1}{T}$ (Nun beidseitig $\log_a$.)
+
+  $\frac{1}{29} = \frac1T \cdot{}\log_a(2)$ (Nun den Kehrwert)
+
+  $29 = T \cdot{} \frac{1}{\log_a(2)}$ (und noch mal $\log_a(2)$)
+
+  $T = 29 \cdot{} \log_a(2) \approx 59$ Jahre
+}%% END Trainer
 
 \subsection*{Aufgaben}
 \TALSAadB{221ff}{831 - 839}
@@ -161,7 +167,7 @@ Um wie viel nehmen sie ...
 \item ... alle 7 Tage zu?
 \item In wie vielen Tagen verdreifachen sie sich?
 \item Wie sieht es mit der Basis $e$ aus? Mit welchem $b$ kann man die
-  Zunahme als $f(t) = e^{b\cdot{}t}$ angeben?
+  Zunahme als $f(t) = c \cdot{} e^{b\cdot{}t}$ angeben?
 \end{enumerate}
 
 \begin{center}\fbox{
@@ -213,9 +219,10 @@ ad. 3.: $a_2 = 3$ (verdreifachen):
 
 ad. 4.: $a^\frac{t}5 = e^{b\cdot{}t}$ (Basis $e$):
 \TNT{5.2}{
-  $2^\frac15 = e^{b}$ (beidseitig $\ln()$:
+  $2^\frac15 = e^{b}$ (beidseitig $\ln()$):
 
-$\ln(2^\frac15) = b\cdot \ln(e) = b\cdot 1 = b \approx 0.1386$
+  $\ln(2^\frac15) = b\cdot \ln(e) = b\cdot 1 = b \approx 0.1386$ und somit:
+  $$f(t) \approx c\cdot{} e^{0.1386\cdot{} t}$$
 }%% END TNT
 
 \newpage

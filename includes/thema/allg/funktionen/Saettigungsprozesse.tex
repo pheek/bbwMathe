@@ -105,6 +105,11 @@ Dabei ist:
 
 
 \subsection{Begrenztes Wachstum}
+\subsubsection{Einstiegsbeispiel 1: Eistee}
+Das Aufwärmen von Eistee von $5\degre$ Kühlschranktemperatur auf $20\degre$ Zimmertemperatur ist ein klassisches «Begrenztes Wachstum» (mit gespiegelter Exponentialfunktion).
+
+\TNT{5.2}{Skizze}
+
 \subsubsection{Einstiegsbeispiel}
 \begin{center}
 \raisebox{-1cm}{\includegraphics[width=8cm]{allg/funktionen/img/saettigung/batterien.png}}
@@ -118,6 +123,8 @@ Wenn wir 9V an die Batterie anlegen, so wird die Batterie geladen.
 Die Batterie lädt sich umso rascher, je \textit{leerer} sie ist.
 
 Die Batterie lädt sich umso langsamer, je \textit{voller} sie ist.
+
+
 \newpage
 
 \subsubsection{Allgemeine Form des begrenzten Wachstums}
@@ -177,9 +184,9 @@ Meistens ist $m_1$ zum Zeitpunkt $t=0$ bekannt und somit ist $c=m_1$ (manchmal a
 \subsection{Referenzaufgaben}
 
 \subsubsection{Berechnung am Batterie-Beispiel}\index{Batterie}
-Unsere Batterie weist  zum Zeitpunkt $t_0$ vier Volt auf. Nach sechs Stunden zeigt die Messung sieben Volt. Wir wissen, dass die Sättigungsgrenze bei neun Volt liegt.
+Eine Batterie weist zum Zeitpunkt $t_0$ vier Volt auf. Nach sechs Stunden am Ladegerät zeigt die Messung sieben Volt. Wir wissen, dass die Sättigungsgrenze (Ladespannung) bei neun Volt liegt.
 
-Zeichnen Sie die gegebenen Größen in ein Koordinatensystem ein und zeichnen Sie bei neun Volt eine horizontale Beschränkugslinie (\zB 1V = 1 Häus'chen in $y$-Richtung; 1h = 1 Häus'chen in $x$-Richtung).
+Zeichnen Sie die gegebenen Größen in ein Koordinatensystem ein und markieren Sie bei neun Volt eine horizontale Beschränkugslinie (\zB 1V = 1 Häus'chen in $y$-Richtung; 1h = 1 Häus'chen in $x$-Richtung).
 
 
 \mmPapier{4.4}
@@ -187,23 +194,22 @@ Zeichnen Sie die gegebenen Größen in ein Koordinatensystem ein und zeichnen Si
 \textbf{Frage 1}: Wie lautet die Formel $f(t) = ...$ der Sättigungskurve?
 
 \noTRAINER{$m_1 = ..........................$}
-\TRAINER{$m_1 = 9 - 4 = 5$}
+\TRAINER{$c = m_1 = 9 - 4 = 5$}
 
 \noTRAINER{$m_2 = ..........................$}
 \TRAINER{$m_2 = 9 - 7 = 2$}
 
 \noTRAINER{$a = .........................$}
-\TRAINER{$a=\frac{m_2}{m_2} = \frac{2}{5} = 0.4$}
-
-\noTRAINER{$c = .........................$}
-\TRAINER{$c = m_1 = 5$}
+\TRAINER{$a=\frac{m_2}{m_2} = \frac{2}{5}$}
 
 \noTRAINER{$\tau = .........................$}
 \TRAINER{$\tau = 6$ ($e_x$ = eine Stunde)}
 
 
 \noTRAINER{$f(t) = S - c\cdot{}a^{\frac{t}{\tau}} = ..... - .....\cdot{}(.....)^{\frac{-t}{.....}}$}
-\TRAINER{$f(t) = S - c\cdot{}a^{\frac{t}{\tau}} = 9 - 5\cdot{}(0.4)^{\frac{t}{6}}$}
+\TRAINER{$f(t) = S - c\cdot{}a^{\frac{t}{\tau}} = 9 - 5\cdot{}(\frac{2}{5})^{\frac{t}{6}}$}
+
+\TRAINER{Probe für $t=0$ und $t=6$ sind mit dem Stehenlassen von $a$ als Bruch nun sehr einfach.}
 \newpage
 
 \textbf{Frage 2}: Wann wird die Batterie zu 99\% geladen sein?
