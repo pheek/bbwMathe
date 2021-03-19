@@ -1,4 +1,9 @@
 ## Core latex/pdflatex auxiliary files:
+
+includes/zielgruppe.tex
+
+skripts/*/*.pdf
+
 *.aux
 *.lof
 *.log
@@ -11,6 +16,9 @@
 *.cb
 *.cb2
 .*.lb
+
+## GZ:
+*.gz
 
 ## Intermediate documents:
 *.dvi
