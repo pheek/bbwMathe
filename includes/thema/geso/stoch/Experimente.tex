@@ -194,13 +194,18 @@ mal eine 1 oder eine 2 werfen
 Nun gilt
 
 \begin{gesetz}{Bernouilli-Formel}{}
-  $$P(X=k) = {{n}\choose {k}}\cdot{}p^k\cdot{}p^{n-k}$$
+  $$P(X=k) = {{n}\choose {k}}\cdot{}p^k\cdot{}(1-p)^{n-k}$$
 \end{gesetz}
 
 In obigem Beispiel ergibt sich:
 $$P(X=3) =
 {{5}\choose {3}} \cdot{}\left(\frac13\right)^3\cdot{}\left(\frac13\right)^{5-3}
 \approx{} 0.04115 = 4.115\%$$
+
+Dies kann mit dem Taschenrechner gelöst werden:
+
+\tiprobutton{data_stat-reg-distr} : \texttt{DISTR} :  4:Binomialpdf :
+\texttt{SINGLE} : dann $n$ bein $n$, $p$ bei $p$ und $k$ bei $x$ eintragen.
 \newpage
 
 
