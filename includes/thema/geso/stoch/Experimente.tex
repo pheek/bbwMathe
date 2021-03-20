@@ -6,6 +6,8 @@
 \subsection{Zufallsexperimente}\index{Experiment}\index{Zufallsexperimente}
 
 \subsubsection{Laplace-Experiment}\index{Experiment!Laplace}\index{Laplace-Experiment}
+Nach Pierre-Simon Laplace (1749-1827).
+
 Ein fairer Spielwürfel wird geworfen. Jede Seite hat genau die selbe
 Wahrscheinlichkeit. Wie groß ist nun die Wahrscheinlichkeit, mit einem
 Wurf eine Augensumme von mehr als vier zu werfen?
@@ -32,57 +34,26 @@ bei dem die Augenzahl 6 häufiger auftritt, als die anderen Augenzahlen.
 
 \newpage
 
-\subsubsection{Bernoulli-Experiment}\index{Experiment!Bernoulli}\index{Bernoulli-Experiment}
-Ein mehrfacher Münzwurf mit einer Münze ist ein typisches Bernoulli Experiment,
-denn
-
-\begin{itemize}
-\item Das Experiment wird $n$-mal durchgeführt.
-\item Das Einzelexperiment hat genau zwei Ausgänge: Erfolg/Misserfolg.
-\item Jedes Einzelexperiment hat für die erfolgreichen Ausgänge die gleiche
-      Wahrscheinlichkeit $p$ (somit ist die Wahrscheinlichkeit $q$ für den
-      Misserfolg gleich $1-p$).
-\item Die Einzelexperimente sind voneinander unabhängig.
-\end{itemize}
-
-Typischerweise sind wir bei Bernoulli-Experimenten an der
-Zufallsvariable $X$ interessiert, welche angibt, wie oft ein Erfolg
-eingetreten ist: $X$ hat also die Werte 0, 1, 2, 3, 4, ..., $n$.
-
-\textbf{Kein} Bernoulli-Experiment ist beispielsweise das Ziehen von zwei Bällen aus
-einer Urne mit drei gelben und sechs orangefarbenen Bällen ohne diese
-jeweils zurückzulegen; denn dabei verändern sich die
-Wahrscheinlichkeiten der verbleibenden Bälle nach jedem Herausnehmen.
-
-\paragraph{Beispiele von Bernoulli-Experimenten}
-
-\begin{itemize}
-\item
-In einer Urne liegen zehn Bälle: vier blaue und sechs grüne. Ein
-Einzelexperiment besteht darin, genau eine Kugel zu ziehen, die Farbe
-zu notieren und die Kugel sogleich wieder zurückzulegen.
-Das Gesamtexperiment besteht darin, fünf Einzelexperimente
-durchzuführen. Jedesmal ist die Wahrscheinlichkeit einen blauen Ball
-zu erwischen  gleich groß und wir sprechen von einem Bernoulli-Experiment.
-\end{itemize}
-
-Es müssen aber nicht immer Würfel, Münzen oder Kugeln in Urnen sein:
-
-\begin{itemize}
-\item
-Ein Basketballspieler trifft mit einer Wahrscheinlichkeit von 70\%
-($p=0.7$). Der Spieler wirft vier Mal. Somit ist $q=0.3$ und $n=4$.
-\end{itemize}
-\newpage
-
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Baumdiagramme}\index{Baumdiagramm!Stochastik}
 (Einstufige und Mehrstufige Experimente)
 
 \TRAINER{(S. Youtube Videso dazu: Einfach-Mathe!)}
+
+\subsubsection{Einstiegsbeispiel Baumdiagramm}
+\bbwCenterGraphic{4cm}{geso/stoch/img/gluecksrad75deg}
+An einem Glücksrad wird gedreht. $75\degre$ erzielen sofort einen Gewinn. Die anderen $285\degre$ geben einen Verlust an. Zum Glück darf ich am Rad drei mal drehen. Das Spiel endet entweder beim ersten Gewinn oder aber spätestens nach dreimaligem Drehen.
+
+Wie groß ist die Wahrscheinlichkeit, bei diesem Spiel zu gewinnen?
+
+Zeichnen Sie dazu das Baumdiagramm, das bei jedem ``Sieg'' sofort endet und
+maximal drei Stufen tief geht.
+
+\TNT{8}{Einseitiger entarteter Baum mit Sieg = 75/360 und Verlust = 285/360. Drei Mal Verlust bei $\left(\frac{285}{360}\right)^3 \approx 49.6\%$}
+
+
+\newpage
 
 Um Wahrscheinlichkeiten aufzuzeichnen bietet sich das Baumdiagramm an.
 Dabei zeichnet man einen «Baum» von links-nach-rechts oder wie in der Informatik üblich von oben nach unten.
@@ -98,19 +69,6 @@ Alle von einem Knoten ausgehenden Äste haben in der Summe die Wahrscheinlichkei
 \begin{gesetz}{Produktregel}{}\index{Produktregel!Baumdiagramm}
 Alle Wahrscheinlichkeiten von der Wurzel bis zum Endknoten werden aufmultipliziert, um die Endwahrscheinlichkeit (am Endknoten) zu erhalten.
 \end{gesetz}
-
-\newpage
-\subsubsection{Einstiegsbeispiel Baumdiagramm}
-\bbwCenterGraphic{4cm}{geso/stoch/img/gluecksrad75deg}
-An einem Glücksrad wird gedreht. $75\degre$ erzielen sofort einen Gewinn. Die anderen $285\degre$ geben einen Verlust an. Zum Glück darf ich am Rad drei mal drehen. Das Spiel endet entweder beim ersten Gewinn oder aber spätestens nach drei maligem Drehen.
-
-Wie groß ist die Wahrscheinlichkeit, bei diesem Spiel zu gewinnen?
-
-Zeichnen Sie dazu das Baumdiagramm, das bei jedem ``Sieg'' sofort endet und
-maximal drei Stufen tief geht.
-
-\TNT{8}{Einseitiger entarteter Baum mit Sieg = 75/360 und Verlust = 285/360. Drei Mal Verlust bei $\left(\frac{285}{360}\right)^3 \approx 49.6\%$}
-
 
 \newpage
 
@@ -169,6 +127,53 @@ Mehrstufige Zufallsexperimente:
 
 \TRAINER{Einstiegsvideo: ``EinfachMathe!'' (S. Wiki-Lernvideos)}
 
+
+\subsubsection{Bernoulli-Experiment}\index{Experiment!Bernoulli}\index{Bernoulli-Experiment}
+Ein mehrfacher Münzwurf mit einer Münze ist ein typisches
+Bernoulli\footnote{Jakob I Bernoulli, Schweizer Mathematiker,
+  1654-1705} Experiment, d. h.:
+
+\begin{itemize}
+\item Das Experiment wird $n$-mal durchgeführt.
+\item Das Einzelexperiment hat genau zwei Ausgänge: Erfolg/Misserfolg.
+\item Jedes Einzelexperiment hat für die erfolgreichen Ausgänge die gleiche
+      Wahrscheinlichkeit $p$ (somit ist die Wahrscheinlichkeit $q$ für den
+      Misserfolg gleich $1-p$).
+\item Die Einzelexperimente sind voneinander unabhängig.
+\end{itemize}
+
+Typischerweise sind wir bei Bernoulli-Experimenten an der
+Zufallsvariable $X$ interessiert, welche angibt, wie oft ein Erfolg
+eingetreten ist: $X$ hat also die Werte 0, 1, 2, 3, 4, ..., $n$.
+
+\textbf{Kein} Bernoulli-Experiment ist beispielsweise das Ziehen von zwei Bällen aus
+einer Urne mit drei gelben und sechs orangefarbenen Bällen ohne diese
+jeweils zurückzulegen; denn dabei verändern sich die
+Wahrscheinlichkeiten der verbleibenden Bälle nach jedem Herausnehmen.
+
+\paragraph{Beispiele von Bernoulli-Experimenten}
+
+\begin{itemize}
+\item
+In einer Urne liegen zehn Bälle: vier blaue und sechs grüne. Ein
+Einzelexperiment besteht darin, genau eine Kugel zu ziehen, die Farbe
+zu notieren und die Kugel sogleich wieder zurückzulegen.
+Das Gesamtexperiment besteht darin, fünf Einzelexperimente
+durchzuführen. Jedesmal ist die Wahrscheinlichkeit einen blauen Ball
+zu erwischen  gleich groß und wir sprechen von einem Bernoulli-Experiment.
+\end{itemize}
+
+Es müssen aber nicht immer Würfel, Münzen oder Kugeln in Urnen sein:
+
+\begin{itemize}
+\item
+Ein Basketballspieler trifft mit einer Wahrscheinlichkeit von 70\%
+($p=0.7$). Der Spieler wirft vier Mal. Somit ist $q=0.3$ und $n=4$.
+\end{itemize}
+\newpage
+
+
+\subsubsection{Formel zur Binomialverteilung}
 Bei der Binomialverteilung handelt es sich um ein
 Bernoulli-Experimetes
 in einem mehrstufigen Baum. Dabei interessiert
