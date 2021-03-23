@@ -45,73 +45,70 @@ Es gilt allgemein
 Allgemeine Basis $a$:
 
 
-\textbf{Definition}:
-$b:=\log{}_a(c) \Leftrightarrow a^b=c$
+\begin{definition}{Logarithmus zu allgemeiner Basis}{}
+  
+$$ a^b=c \Leftrightarrow: b = \log{}_a(c) $$
+\end{definition}
 
 \TNT{2.4}{Beispiel $2^4 = 16$, d.\,h. $\log_2(16)=4 $.\vspace{1cm}}
 
 
-
-\textbf{1. Gesetz}:
-
-$$x=\log{}_a(a^x)$$
-
-\TNT{2.4}{Beispiel $2^4 = 16$, d.\,h. $\log_2(16)=4 $.\vspace{1cm}}
-
-
-\textbf{2. Gesetz}:
-
-$$y=a^{\log{}_a(y)}$$
-
-\TNT{2.4}{Beispiel $128=2^{\log_2(128)} = 2^{\log_2(2^7)} = 2^7$.\vspace{1cm}}
-
-
-\textbf{3. Gesetz}:
-
+\begin{bemerkung}{}{}
 $$\log_a(a)=1$$
-
+\end{bemerkung}
 \TNT{2.4}{Denn: $\log_a(a) = \log_a(a^1)$ Bsp:  $\lg(10) = \lg(10^1)$.\vspace{1cm}}
 
-\newpage
 
+\begin{bemerkung}{}{}
+$$x=\log{}_a(a^x)$$
+\end{bemerkung}
+\TNT{2.4}{Beispiel $2^4 = 16$, d.\,h. $\log_2(16)=4 $.\vspace{1cm}}
 
+\TALS{
+\begin{bemerkung}{}{}
+$$y=a^{\log{}_a(y)}$$
+\end{bemerkung}
+\TNT{2.4}{Beispiel $128=2^{\log_2(128)} = 2^{\log_2(2^7)} = 2^7$.\vspace{1cm}}
+}%% END TALS
 
-\textbf{4. Gesetz}:
-
+\begin{bemerkung}{}{}
+  
 $$\log{}_a(1)=0$$
-
+\end{bemerkung}
 \TNT{2.4}{Bsp.: $\log_{10}(1) = \lg(1) = \lg(10^0) = 0$.\vspace{1cm}}
+\GESO{\newpage}
 
 
-\textbf{5. Gesetz}:
-
+\begin{bemerkung}{}{}  
 $$\log_a(u\cdot{}v)=\log_a(u) + \log_a(v)$$
+\TALS{$$\log_a\left(\frac{u}{v}\right)=\log_a(u) - \log_a(v)$$}
+\end{bemerkung}
 
 \TNT{2.4}{Bsp.:  $\log_2(8\cdot 32) = \log_2(2^3 \cdot 2^5) = \log_2(2^{3+5}) = 3+5 = \log_2(2^3) + \log_2(2^5) $.\vspace{1cm}}
 
 
-\textbf{6. und 7. Gesetz}:
-
-$$\log_a\left(\frac{u}{v}\right)=\log_a(u) - \log_a(v)$$
+Aus obigem Gesetz zur Addition folgt unmittelbar die 
+\begin{gesetz}{Potenzregel}{}
 $$\log_a(u^k)=k\cdot{}\log_a(u)$$
-
-
-\TRAINER{Gilt analog zu Gesetz 5 (ohne Beispiel)}
-\noTRAINER{\vspace{10mm}}
-
-
-\textbf{8. Gesetz}:
-
-
-$$\log_a\left(\frac{1}{v}\right)=-\log_a(v)$$
-
-\TNT{2.4}{Bsp.:  $\log_2(8^2) = \log_2((2^3)^2) = \log_2(2^6) = 6 = 2 \cdot  3 = 2 \cdot \log_2(2^3) = 2 \cdot \log_2(8)$.\vspace{1cm}}
+\end{gesetz}
+\TNT{2.4}{
+  $\log(5^3) = \log(5\cdot 5\cdot 5) = \log(5)+\log(5)+\log(5) =
+  3\cdot \log(5)$
+}%% END TNT
 
 \TALS{
-\textbf{9. Gesetz}:
+\begin{bemerkung}{}{}
+$$\log_a\left(\frac{1}{v}\right)=-\log_a(v)$$
+\end{bemerkung}
 
+\TNT{2.4}{Bsp.:  $\log_2(8^2) = \log_2((2^3)^2) = \log_2(2^6) = 6 = 2
+  \cdot  3 = 2 \cdot \log_2(2^3) = 2 \cdot \log_2(8)$.\vspace{1cm}}%% END TNT
+}%% END TALS
+
+\TALS{
+\begin{bemerkung}{}{}
 $$a^x = b^{x\cdot{}\log_b(a)}$$
-
+\end{bemerkung}
 \TNT{2.4}{Wir ersetzen im 2. Gesetz $y$ durch $a^x$ und $a$ durch $b$:
   $$y = b^{\log_b(y)} \longrightarrow  a^x = b^{\log_b(a^x)} =
   b^{x\cdot{}\log_b(a)}$$} %% END TNT
