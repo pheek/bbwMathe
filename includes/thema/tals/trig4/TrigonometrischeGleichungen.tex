@@ -4,75 +4,6 @@
 
 \section{Trigonometrische Gleichungen}\index{trigonometrische Gleichungen}\index{Gleichungen!trigonometrische}
 
-\subsection{Einstiegsbeispiel}
-Das folgende Beispiel stammt 1:1 aus dem Lehrplan:
-
-Lösen Sie die folgende Gleichung im Definitionsbreich $x \in \mathbb{D} = [ -\pi, 3\pi[$ und finden Sie die Lösungsmenge für $x$:
-
-$$\cos\left(2x+\frac{\pi}{9}\right) = 0.5$$
-
-\begin{bemerkung}{}{}
-  Ist ein $\cos$, $\sin$ oder $\tan$ gesucht, so müssen wir uns immer zuerst überlegen, ob wir die Größen im Grad- oder im Bogenmaß vor uns haben. Eine Aufgabe im Stil $$0.75 = \sin(x + 2\pi + 40\degre + 1.5)$$ wird hier nicht behandelt, da bei $1.5$ nicht klar ist, ob es sich nun um eine Zahl im Grad- oder im Bogenmaß handelt.
-  \end{bemerkung}
-
-Die Einstigsaufgabe liest sich im Gradmaß also folgendermaßen:
-
-$$\cos\left(2x+20\degre\right) = 0.5$$
-
-Die Gleichung hat offensichtlich periodische Lösungen, welche wir entweder am Einheitskreis, mittels der Cosinus-Funktion oder mit dem Taschenrechner herausfinden und schlussendlich auf den vorgegebenen Definitionsbereich einschränken müssen.
-\newpage
-
-
-\textbf{Lösungsidee:} Substitution:
-Wir setzen $y := 2x + \frac{\pi}{9}$ und erhalten somit:
-$$\cos(y) = 0.5.$$
-
-Aus dem Einheitskreis lesen wir die Lösung für $y$ bei $y_1=60\degre = \frac{\pi}{3}$ und bei $y_2=300\degre = \frac{5\pi}{3}$ ab. Nun sind aber alle periodischen Erweiterungen dieser beiden Lösungen auch Lösungen der Gleichnug:
-
-$$y \in \left\{\frac{\pi}{3} + z\cdot{}2\pi: z\in\mathbb{Z}\right\} \cup \left\{\frac{5\pi}{3}+ z\cdot{}2\pi: z\in\mathbb{Z}\right\}$$
-
-Beachten Sie, dass $n$ in $\mathbb{Z}$ liegt, also auch negative Lösungen sind zugelassen.
-
-Bei einer Substitution dürfen wir die Rücksubstitution nicht vergessen! Wie lautet nun unser $x$, wenn wir das $y$ 
-
-Für $y_1$ erhalten wir: $y_1= 2x_1 + \frac{\pi}{9}$ und somit $\frac{\pi}{3} + z\cdot{}2\pi = 2x_1 + \frac{\pi}{9}$. Durch Abziehen von $\frac{\pi}{9}$ und Teilen durch 2 erhalten wir (mit $z\in\mathbb{Z}$)
-
-$$x_1 = \frac{\pi}{9} + z\cdot{}\pi.$$
-
-Analog für $x_2$: $y_2 = 2x_2 + \frac{\pi}{9}$ und somit $\frac{5\pi}{3} + z\cdot{}2\pi = 2x_2 + \frac{\pi}{9}$. Ebenfalls durch Abziehen von $\frac{\pi}{9}$ und halbieren ergibt sich
-
-$$x_2 = \frac{7\pi}{9} + z\cdot{}\pi.$$
-
-Als allerletztes gilt es noch durch «Abzählen» herauszufinden, welche der Lösungen im vorgegebenen derfinitionsbereich $\mathbb{D} = [-\pi, 3\pi[$ liegen:
-
-    Für $x_1$ sind dies $\frac{\pi}{9} - \pi$, $\frac{\pi}{9}$, $\frac{\pi}{9} + \pi$ und $\frac{\pi}{9} + 2\pi$.
-
-    Für $x_2$ sind dies $\frac{7\pi}{9} - \pi$, $\frac{7\pi}{9}$, $\frac{7\pi}{9} + \pi$ und $\frac{7\pi}{9} + 2\pi$.
-   
-Zusammengefasst:
-\begin{itemize}
-    \item Substitution
-    \item Lösen, Ablesen
-    \item periodische Lösungen angeben
-    \item Rücksubstitution
-    \item Lösung durch «Abzählen» auf Definitionsbereich einschränken
-\end{itemize}
-\newpage
-
-\subsection{Taschenrechner}
-Freilich kann mit dem Taschenrechner die Gleichung aus dem
-Einstiegsbeispiel $$\cos(2x+\frac{\pi}{9})=0.5$$ relativ einfach gelöst werden:
-
-Mit der Eingabe des Definitionsbereichs (domain) «dom» ...
-$$\mathbb{D} =  [ -\pi, 3\pi[$$
-... und der Gleichung «gls» ...
-$$\cos\left(2x+\frac{\pi}{9}\right) = 0.5$$
-
-... erhalten wir die selben acht Lösungen.
-    
-\bbwCenterGraphic{8cm}{tals/trig4/img/nspire1.png}
-\newpage
-
 \subsection{Trigonometrische Beziehungen}
 Es gelten diverse Beziehungen zwischen $\sin$, $\cos$ und $\tan$. Die
 wichtigste kennen wir bereits aus von den Definitionen:
@@ -90,6 +21,8 @@ $$\tan(\varphi) = \frac{\textrm{Gegenkathete von
 \frac{\frac{\textrm{Gegenkathete von }
     \varphi}{\textrm{Hypotenuse}}}{\frac{\textrm{Ankathete von }\varphi}{\textrm{Hypotenuse}}}
 =\frac{\sin(\varphi)}{\cos(\varphi)}$$
+\newpage
+
 
 Ebenso kann mit dem Satz des Pythagoras im Einheitskreis leicht
 gezeigt werden, dass gilt:
@@ -107,6 +40,18 @@ gezeigt werden, dass gilt:
 Daher merken wir uns:
 \begin{bemerkung}{}{}
   $\sin^2+\cos^2 = 1$
-  \end{bemerkung}
+\end{bemerkung}
+
+\begin{bemerkung}{}{}
+
+  \begin{tabular}{p{6cm}p{2cm}p{6cm}}
+    \fbox{$\sin^2(\varphi) = \sin(\varphi)\cdot\sin(\varphi)$} & Aber: & \fbox{$\sin(\varphi^2) = \sin(\varphi\cdot\varphi)$}\\
+    \end{tabular}
+  
+\end{bemerkung}
+
+
 \subsection*{Aufgaben}
+%% Lösungon bei Michael Rohner im Skript.
+\TALSGeomAadB{124}{182., 183., 185., 186., 187., 189., 190., 192., 193.,}
 \TALSAadB{234ff}{885.ff}
