@@ -223,6 +223,22 @@ Boxplots können direkt online erstellt werden. Zum Beispiel hier:\\
 \texttt{http://www.alcula.com/calculators/statistics/box-plot/}
 Obige Abbildung stammt jedoch aus \cite{frommenwiler17alg}.
 
+\begin{beispiel}{Boxplot erstellen}{}
+  Gegeben sind die folgenden Daten auf einer Intervallskala:\\
+  7, 19, 9, 32, 9, 11, 13, 15, 15
+\end{beispiel}
+
+\begin{rezept}{}{}
+  \begin{enumerate}
+  \item Kennzahlen (min\TRAINER{=7}, max\TRAINER{=32}, Median\TRAINER{=13}, Q1\footnote{Q1 = untere Quartilsgrenze\index{Quartil}}\TRAINER{=9}, Q3\footnote{Q3=obere Quartilsgrenze}\TRAINER{=17} und IQR\footnote{IQR = engl. interquartil-range. Deutsch: Interquartilsabstand = Q3 - Q1=8}) bestimmen; entweder durch Sortieren oder mit dem Taschenrechner.
+  \item Skala (\noTRAINER{min..max}\TRAINER{min=7...max=32}) und Box zeichnen und Ausreißerschwellen bei $1.5\cdot$IQR andeuten\TRAINER{UAS=9-12=-3; OAS=17+12=29}.
+  \item Ausreißer einzeichnen.
+  \item Whisker einzeichenen: Minimum und Maximum innerhalb der Ausreißerschwellen: Hier bei \noTRAINER{.....}\TRAINER{7} und \noTRAINER{.....}\TRAINER{19}
+  \item Ausreißerschwellen ausradieren
+    \end{enumerate}
+  \end{rezept}
+\newpage
+
 \subsection*{Aufgaben}
 \TALSAadB{264ff}{979. 980. 983. 984. 985. 989.}
 \aufgabenfarbe{Aufgabenblatt im OLAT}
