@@ -190,6 +190,7 @@ Erstellt online mit
 
 \subsubsection{Erfolgskriterien für ein gutes Histogramm}
 \begin{itemize}
+\item Histogramme benötigen quantitative Daten.\footnote{Rein nominale oder rein ordinale Daten reichen hier nicht aus, da die Abstände hier relevant sind.}
 \item Die $y$-Achse zeigt die Anzahlen und beginnt bei Null (0).
 \item Es hat für einen guten Überblick fünf bis zwanzig Säulen.
 \item Alle Säulen berühren sich und sind gleich breit.
@@ -231,12 +232,16 @@ Obige Abbildung stammt jedoch aus \cite{frommenwiler17alg}.
 \begin{rezept}{}{}
   \begin{enumerate}
   \item Kennzahlen (min\TRAINER{=7}, max\TRAINER{=32}, Median\TRAINER{=13}, Q1\footnote{Q1 = untere Quartilsgrenze\index{Quartil}}\TRAINER{=9}, Q3\footnote{Q3=obere Quartilsgrenze}\TRAINER{=17} und IQR\footnote{IQR = engl. interquartil-range. Deutsch: Interquartilsabstand = Q3 - Q1=8}) bestimmen; entweder durch Sortieren oder mit dem Taschenrechner.
-  \item Skala (\noTRAINER{min..max}\TRAINER{min=7...max=32}) und Box zeichnen und Ausreißerschwellen bei $1.5\cdot$IQR andeuten\TRAINER{UAS=9-12=-3; OAS=17+12=29}.
-  \item Ausreißer einzeichnen.
-  \item Whisker einzeichenen: Minimum und Maximum innerhalb der Ausreißerschwellen: Hier bei \noTRAINER{.....}\TRAINER{7} und \noTRAINER{.....}\TRAINER{19}
+  \item Skala (\noTRAINER{min..max}\TRAINER{min=7...max=32}) und Box zeichnen.
+  \item
+    Ausreißerschwellen bei $1.5\cdot$IQR andeuten\TRAINER{UAS=9-12=-3; OAS=17+12=29} und Ausreißer einzeichnen. Ausreißer liegen weiter weg als die Ausreißerschwellen.
+  \item Whisker einzeichenen: Minimum und Maximum innerhalb der Ausreißerschwellen (oder darauf): Hier bei \noTRAINER{.....}\TRAINER{7} und \noTRAINER{.....}\TRAINER{19}
   \item Ausreißerschwellen ausradieren
     \end{enumerate}
-  \end{rezept}
+\end{rezept}
+
+Bemerkung: Die wichtigsten Kenngrößen für den Boxplot können mit dem Taschenrechner berechnet werden. Lassen Sie sich von Ihrer Lehrperson ein Beispiel vorrechnen.
+
 \newpage
 
 \subsection*{Aufgaben}
