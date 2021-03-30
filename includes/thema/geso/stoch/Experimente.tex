@@ -62,12 +62,18 @@ Zu den Ästen schreibt man deren Wahrscheinlichkeiten.
 
 Man beginnt bei der Wurzel und für jeden möglichen Ausgang zeichnet man einen Ast. Dabei gelten die folgenden Gesetze:
 
-\begin{gesetz}{Summenregel}{}\index{Summenregel!Baumdiagramm}
+
+
+\begin{gesetz}{Produktregel/Pfadregel}{}\index{Produktregel!Baumdiagramm}\index{Pfadregel!Baumdiagramm}
+Alle Wahrscheinlichkeiten von der Wurzel bis zum Endknoten werden aufmultipliziert, um die Endwahrscheinlichkeit (am Endknoten) zu erhalten.
+\end{gesetz}
+
+\begin{gesetz}{Summenregel I}{}\index{Summenregel!Baumdiagramm}
 Alle von einem Knoten ausgehenden Äste haben in der Summe die Wahrscheinlichkeit 1 (= 100\%).
 \end{gesetz}
 
-\begin{gesetz}{Produktregel}{}\index{Produktregel!Baumdiagramm}
-Alle Wahrscheinlichkeiten von der Wurzel bis zum Endknoten werden aufmultipliziert, um die Endwahrscheinlichkeit (am Endknoten) zu erhalten.
+\begin{gesetz}{Summenregel II}{}
+Alle Endwahrscheinlichkeiten (bei den Endknoten\footnote{Endknoten werden auch als Blätter des Baumes bezeichnet.}) zusammen addiert ergeben in der Summe die Wahrscheinlichkeit 1 (= 100\%).
 \end{gesetz}
 
 \newpage
@@ -83,7 +89,12 @@ b) Wie groß ist die Wahrscheinlichkeit, dass genau zwei Sechser dabei sind?
 
 Zeichnen Sie das zugehörige Baumdiagramm:
 
-\TNT{10}{\vspace{10cm}}
+\TNT{14}{Lösung mit Baum oder s. Binomialvertelung.
+
+  a) mindestens 2 Sechser: $\frac2{27}$
+
+  b) genau zwei Secheser: $\frac{5}{72}$
+\vspace{10cm}}
 \newpage
 
 
@@ -93,7 +104,8 @@ Wie groß ist die Wahrscheinilchkeit, dass genau eine blaue Kugel dabei ist?
 
 Zeichnen Sie das zugehörige Baumdiagramm:
 
-\TNT{10}{\vspace{10cm}}
+\TNT{14}{Lösung: $P(E)=\frac8{15}$\vspace{13cm}}
+  
 \newpage
 
 \paragraph{Ziege}\index{Ziege} Heidi und Peter spielen mit einem Würfel um eine Ziege.
@@ -109,7 +121,7 @@ Sie vereinbaren folgende Regeln:
 
 Zeichnen Sie das zugehörige Baumdiagramm:
 
-\TNT{10}{\vspace{10cm}}
+\TNT{14}{\vspace{14cm}}
 
 \subsection*{Aufgaben}
 
