@@ -32,16 +32,20 @@ Machen Sie Beispiele von periodischen Vorgängen
 \subsection{Sinus-, Cosinusfunktionen}
 Sinus, Cosinus und Tangens können nicht nur als Verhältnisse angesehen
 werden, sondern auch als Funktionen abgebildet werden.
-Zeichnen Sie zu jedem Winkel von $0\degre - 360\degre$ den zugehörigen
+Zeichnen Sie zu jedem Winkel von $-90\degre - 450\degre$ den zugehörigen
 \textbf{Sinus}-Wert ins folgende Koordinatensystem:
 
-\bbwCenterGraphic{10cm}{tals/trig3/img/coordSystem0-450.png}
+\noTRAINER{\trigsysD}\TRAINER{\trigsysDsin}
+
+%%\bbwCenterGraphic{10cm}{tals/trig3/img/coordSystem0-450.png}
 
 
-Zeichnen Sie zu jedem Winkel von $0\degre - 360\degre$ den zugehörigen
+Zeichnen Sie zu jedem Winkel von $-90\degre - 450\degre$ den zugehörigen
 \textbf{Cosinus}-Wert ins folgende Koordinatensystem:
 
-\bbwCenterGraphic{10cm}{tals/trig3/img/coordSystem0-450.png}
+\noTRAINER{\trigsysD}\TRAINER{\trigsysDcos}
+%%\bbwCenterGraphic{10cm}{tals/trig3/img/coordSystem0-450.png}
+
 \newpage
 
 \subsection{Tangensfunktion}
@@ -70,10 +74,39 @@ Wertebereiche an:
 \subsection{Amplitude, Frequenz und Phase}\index{Amplitude}\index{Frequenz}\index{Phase}
 Zeichnen Sie die folgende Funktion ins Koordinatensystem:
 
-$$y = 0.7 \cdot \sin(1.5\cdot(x - 20\degre))$$
+$$y = f(x) = 0.7 \cdot \sin(1.5\cdot(x - 20\degre))$$
+
+\trigsysD{}
+%%\bbwCenterGraphic{10cm}{tals/trig3/img/coordSystem0-450.png}
+
+Wir beginnen mit Winkeln, die wir kennen! Wir kennen den $\sin()$ von
+$$\sin(0\degre)  = 0  $$
+$$\sin(30\degre) = 0.5$$
+$$\sin(90\degre) = 1  $$
+
+Wir wollen also erreichen, dass der Term $(1.5\cdot(x-20\degre))$
+entweder $0\degre$, $30\degre$ oder $90\degre$ ist, dann können
+wir $f(x) := 0.7\cdot\sin(1.5\cdot(x-20\degre))$ einfach berechnen.
+
+\begin{itemize}
+\item  $0.7\cdot\sin(0\degre) = 0.7\cdot\sin(1.5\cdot(x-20\degre))$:
+  Löse $0\degre = 1.5\cdot(x-20\degre)$
+  $$\longrightarrow x=20\degre$$
+  Somit ist $f(20\degre) = 0.7\cdot{}\sin(0\degre) = 0$.
+\item  $0.7\cdot\sin(30\degre) = 0.7\cdot\sin(1.5\cdot(x-20\degre))$:
+  Löse $30\degre = 1.5\cdot(x-20\degre)$
+  $$\longrightarrow 40\degre$$
+  Somit ist $f(40\degre) = 0.7\cdot{}\sin(30\degre) = 0.7\cdot{}0.5 = 0.35$.
+\item  $0.7\cdot\sin(90\degre) = 0.7\cdot\sin(1.5\cdot(x-20\degre))$:
+  Löse $90\degre = 1.5\cdot(x-20\degre)$
+  $$\longrightarrow 80\degre$$
+  Somit ist $f(80\degre) = 0.7\cdot{}\sin(90\degre) = 0.7\cdot{}1 = 0.7$.
+\end{itemize}
+Die anderen Winkel folgen durch Symmetrieüberlegungen.
 
 
-\bbwCenterGraphic{10cm}{tals/trig3/img/coordSystem0-450.png}
+
+\newpage
 Was fällt Ihnen auf?
 \TNT{3.2}{
   Die Funktion hat eine Amplitude von 0.7
@@ -84,30 +117,31 @@ Was fällt Ihnen auf?
 }
 \newpage
 
-Sie möchten die Sinusfunktion um 50\% in $y$-Richtung strecken und um
+Sie möchten die \textbf{Sinusfunktion} um 50\% in $y$-Richtung strecken und um
 $30\degre$ nach rechts verschieben.
 
 a) Wie sieht die Funktion aus?
 
-
-\bbwCenterGraphic{10cm}{tals/trig3/img/coordSystem0-450.png}
+\trigsysC{}
+%%\bbwCenterGraphic{10cm}{tals/trig3/img/coordSystem0-450.png}
 
 
 b) Wie lautet die Funktionsgleichung
 
 $$y = \LoesungsRaum{1.5 \cdot{} sin(x - 30\degre)}$$
-\newpage
 
-Sie möchten die Cosinusfunktion so verändern, dass sich die
+
+Sie möchten die \textbf{Cosinusfunktion} so verändern, dass sich die
 Nullstellen nicht mehr bei $-90\degre$, $90\degre$, $270\degre$
-etc. befinden, sonedern bei $60\degre$, $-60\degre$, $180\degre$
+etc. befinden, sondern bei $60\degre$, $-60\degre$, $180\degre$
 etc. also bei $60\degre \pm$ Vielfachen von
 $120\degre$. Nullstellenmenge = $\{60\degre\pm n\cdot{}120\degre:
 n\in\mathbb{N}\}$
 
 Machen sie eine Skizze
 
-\bbwCenterGraphic{10cm}{tals/trig3/img/coordSystem0-450.png}
+\trigsysD{}
+%%\bbwCenterGraphic{10cm}{tals/trig3/img/coordSystem0-450.png}
 
 Wie lautet die Funktionsgleichnug?
 
