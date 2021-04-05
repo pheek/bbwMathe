@@ -42,6 +42,62 @@ Maximum). Wo liegt dieses? Handelt es sich um ein Minimum oder ein Maximum?
   Es handelt sich um ein Minimum, denn der Parameter $a$ (vor dem
   $x^2$) ist positiv; somit ist die Parabel nach oben geöffnet.
 }
+\newpage
+\subsection{Extremwertaufgaben lösen}
+Am Beispiel einer Himmelslaterne\footnote{Mit «Himmelslaternen» meine ich hier diese selbstgebastelten Heißluftbalone aus Seidenpapier, die mit Spiritus betrieben werden.} soll gezeigt werden, wie dessen Oberfläche unter einer Nebenbedinung (zur Verfügung steht nur eine begrenzte Länge an Holz für die Holzstangen) maximiert wird.
+
+Problemstellung. Eine quaderförmige Himmelslaterne (mit quadratischer Grundfläche) ist unten offen und an Decke und an den vier Seitenwänden mit Seidenpapier augefüllt. Alle zwölf Kanten sind dabei mit einem festen Holzgestell stabilisiert, wobei wir diesmal nur eine acht Meter lange Holzleiste zur Verfügung haben, die wir in die zwölf Kanten aufteilen müssen.
+
+Wie sollen wir die Laterne bauen, dass die Seidenpapier-Oberfläche (vier Seiten und Deckel) möglichst groß wird?
+
+Hier ist Platz für eine Skizze:
+
+\mmPapier{8}
+
+\newpage
+
+\subsubsection{Rezept}
+  \begin{enumerate}
+  \item \textbf{Zielgröße} festlegen: Dies ist hier die zu maximierende Oberfläche. Also sind die gesuchten Variable die Höhe $h$ und die Quadratseite $x$. Die zu maximierende Fläche ist
+    \TNT{2.4}{$$F(x) = x^2 + 4\cdot{}x\cdot{}h$$\vspace{2cm}}
+    
+
+  \item \textbf{Nebenbedingung} berücksichtigen (identifizieren und danach umformen). Die Nebenbedingung hier ist, dass wir nur beschränktes Material an Stabilisierungsstangen (Holz) zur Verfügung haben (8m).
+    Es gilt also
+    \TNT{2.4}{$$8 = 8x+4h$$\vspace{2cm}}
+    Somit kann $h$ aus $x$ berechnet werden:
+    \TNT{2.4}{$$h=2-2x$$\vspace{2cm}}
+
+  \item \textbf{Zielfunktion} definieren. Unsere Zielgröße $F(x)$ kann nun vollständig durch $x$ definiert werden, indem wir die Nebenbedingung $h=2-2x$ in die ursprünglich definierte Zielgröße einsetzen:\
+    \TNT{2.4}{$$F(x) = x^2 + 4\cdot{}x\cdot{}(2-2x)$$\vspace{2cm}}
+    \newpage
+    
+  \item \textbf{Maximieren/Minimieren} Die Zielfunktion ist hier eine quadratische Funktion, deren Maximum einfach mit Taschenrechner oder Scheitelpunkt bestimmt werden kann. Ich zeige hier die
+    Scheitelpunkts-Lösung:
+    \TNT{3.2}{$$F(x) = -7x^2 + 8x$$\vspace{2cm}}
+
+    Diese Funktion wird maximiert, indem das $x_S$ des Scheitelpunktes $S=(x_s|y_S)$ besitmmt wird. (Wir erinnern uns: $x_S = \frac{-b}{2a}$.) Somit ist hier $x_S = \frac{-8}{2\cdot{}(-7)} = \frac47$. Dies ist gleichzeitig auch unser gesuchtes $x$.
+
+  \item \textbf{Zweite Größe bestimmen} Die zweite Größe kann hier entweder die Oberfläche, oder die Höhe der Laterne sein. Wir berechnen beides:
+
+    \TNT{3.2}{$$h = 2-2x = 2-\frac47 = \frac67 [\textrm{m}]$$
+    $$F(x) = y_S = x^2 + 4\cdot{}x\cdot{}h = \frac{112}{49} [\textrm{m}^2]$$}
+    
+  \end{enumerate}
+\newpage
+  \begin{rezept}{Maximierungsaufgaben}{}
+    \begin{enumerate}
+    \item Zielgröße festlegen
+    \item Nebenbedingungen berücksichtigen
+    \item Zielfunktion definieren
+    \item Maximieren bzw. minimieren
+    \item Zweite Größe bestimmen
+      \end{enumerate}
+\end{rezept}
+  
+
+
+
 
 \subsection*{Aufgaben}
 Ohne Taschenrechner:
