@@ -55,6 +55,7 @@ maximal drei Stufen tief geht.
 
 \newpage
 
+\subsection{Pfad- und Summenregel}
 Um Wahrscheinlichkeiten aufzuzeichnen bietet sich das Baumdiagramm an.
 Dabei zeichnet man einen «Baum» von links-nach-rechts oder wie in der Informatik üblich von oben nach unten.
 
@@ -73,8 +74,12 @@ Alle von einem Knoten ausgehenden Äste haben in der Summe die Wahrscheinlichkei
 \end{gesetz}
 
 \begin{gesetz}{Summenregel II}{}
-Alle Endwahrscheinlichkeiten (bei den Endknoten\footnote{Endknoten werden auch als Blätter des Baumes bezeichnet.}) zusammen addiert ergeben in der Summe die Wahrscheinlichkeit 1 (= 100\%).
+Alle Endwahrscheinlichkeiten (bei den Endknoten\footnote{Endknoten werden auch als Blätter des Baumes bezeichnet.}) zusammen addiert, ergeben in der Summe die Wahrscheinlichkeit 1 (= 100\%).
 \end{gesetz}
+
+\begin{gesetz}{Summenregel III}{}
+  Um die Wahrscheinlichkeit eines Ereignisses zu berechnen, werden alle Wahrscheinlichkeiten derjenigen Endknoten zusammengezählt, derer Ereignis zum gewünschten Ergebnis gehören.
+  \end{gesetz}
 
 \newpage
 
@@ -89,11 +94,15 @@ b) Wie groß ist die Wahrscheinlichkeit, dass genau zwei Sechser dabei sind?
 
 Zeichnen Sie das zugehörige Baumdiagramm:
 
-\TNT{14}{Lösung mit Baum oder s. Binomialvertelung.
+\TNT{14}{
+\bbwCenterGraphic{15cm}{geso/stoch/img/mind2sechser.png}
 
-  a) mindestens 2 Sechser: $\frac2{27}$
 
-  b) genau zwei Secheser: $\frac{5}{72}$
+  Lösung mit Baum oder s. Binomialvertelung.
+
+  a) mindestens 2 Sechser: $\frac2{27}\approx 0.07407$
+
+  b) genau zwei Secheser: $\frac{5}{72}\approx 0.06944$
 \vspace{10cm}}
 \newpage
 
@@ -104,7 +113,10 @@ Wie groß ist die Wahrscheinilchkeit, dass genau eine blaue Kugel dabei ist?
 
 Zeichnen Sie das zugehörige Baumdiagramm:
 
-\TNT{14}{Lösung: $P(E)=\frac8{15}$\vspace{13cm}}
+\TNT{14}{
+\bbwCenterGraphic{15cm}{geso/stoch/img/UrneBaum.png}
+  
+  Lösung: $P(E)=\frac8{15}=0.5333...$\vspace{13cm}}
   
 \newpage
 
@@ -119,9 +131,15 @@ Sie vereinbaren folgende Regeln:
 \end{enumerate}
 
 
-Zeichnen Sie das zugehörige Baumdiagramm:
+Zeichnen Sie das zugehörige Baumdiagramm und entscheiden Sie, ob es sich um ein faires Spiel handelt:
 
-\TNT{14}{\vspace{14cm}}
+\TNT{14}{\bbwCenterGraphic{15cm}{geso/stoch/img/HeidiPeter.png}
+
+Peter gewinnt also mit $\frac29 + \frac8{28} = \frac{14}{27}$, was etwas mehr als 50\% ausmacht. Das Spiel ist nicht fair, denn wer als 2. würfeln darf, hat eine leicht höhere Gewinnchanche.}
+\newpage
+
+
+
 
 \subsection*{Aufgaben}
 
@@ -201,7 +219,7 @@ Dabei legen wir fest:
 mal eine 1 oder eine 2 werfen
 \item
   $p$ = Wahrscheinlichkeit, dass wir eine 1 oder eine 2 werfen, hier
-  also wie beim Laplace-Experiment: $p=\frac62=\frac13$
+  also wie beim Laplace-Experiment: $p=\frac26=\frac13$
 \end{itemize}
 
 Nun gilt
@@ -247,7 +265,7 @@ Wie groß ist nun die Wahrscheinlichkeit
 \item beide Treffer zu erzielen ($k=2$)?
 \end{itemize}
 
-Diese Wahrscheinlichkeiten können wir nun einerseits durch ein Baumdiagramm lösen, indem wir die Treffer mit \textbf{T} und die Nieten mit \textbf{N} bezeichnen:
+Diese Wahrscheinlichkeiten können wir nun einerseits durch ein Baumdiagramm lösen, indem wir die Treffer mit \textbf{\color{green}T} und die Nieten mit \textbf{\color{red}N} bezeichnen:
 
 \noTRAINER{\mmPapier{7.2}}
 \TRAINER{
