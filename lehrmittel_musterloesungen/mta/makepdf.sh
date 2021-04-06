@@ -6,7 +6,7 @@
 # author phi@freimann.eu
 # date   2019-07-11
 
-export ARTICLE_FILE_NAME="MTA_S181_A7e_fp"
+export ARTICLE_FILE_NAME="MTA_S157_A044_fp"
 export ZIELGRUPPE="GESO"
 #export ZIELGRUPPE="TRAINER_GESO"
 
