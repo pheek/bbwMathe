@@ -158,25 +158,33 @@ Mehrstufige Zufallsexperimente:
 \subsubsection{Bernoulli-Experiment}\index{Experiment!Bernoulli}\index{Bernoulli-Experiment}
 Ein mehrfaches Drehen am Glücksrad ist ein typisches
 Bernoulli\footnote{Jakob I Bernoulli, Schweizer Mathematiker,
-  1654-1705} Experiment, d. h.:
+  1654-1705} Experiment, d.\,h.:
 
+\begin{definition}{Bernoulli-Experiment}{}
 \begin{itemize}
-\item Das Experiment wird $n$-mal durchgeführt.
+\item Das Experiment wird $n$-mal durchgeführt\footnote{Daher wird dieser
+Bernoulli-Prozess manchmal auch Bernoulli-Kette genannt. Quelle
+\texttt{www.wikipedia.org} 2021-04-08}.
 \item Das Einzelexperiment hat genau zwei Ausgänge: Erfolg/Misserfolg.
 \item Jedes Einzelexperiment hat für die erfolgreichen Ausgänge die gleiche
       Wahrscheinlichkeit $p$ (somit ist die Wahrscheinlichkeit $q$ für den
       Misserfolg gleich $1-p$).
 \item Die Einzelexperimente sind voneinander unabhängig.
 \end{itemize}
+\end{definition}
 
+\begin{bemerkung}{Bernoulli-Experiment}{}
 Typischerweise sind wir bei Bernoulli-Experimenten an der
 Zufallsvariable $X$ interessiert, welche angibt, wie oft ein Erfolg
 eingetreten ist: $X$ hat also die Werte 0, 1, 2, 3, 4, ..., $n$.
+\end{bemerkung}
 
 \textbf{Kein} Bernoulli-Experiment ist beispielsweise das Ziehen von zwei Bällen aus
 einer Urne mit drei gelben und sechs orangefarbenen Bällen ohne diese
 jeweils zurückzulegen; denn dabei verändern sich die
 Wahrscheinlichkeiten der verbleibenden Bälle nach jedem Herausnehmen.
+\newpage
+
 
 \paragraph{Beispiele von Bernoulli-Experimenten}
 
@@ -188,57 +196,107 @@ zu notieren und die Kugel sogleich wieder zurückzulegen.
 Das Gesamtexperiment besteht darin, fünf Einzelexperimente
 durchzuführen. Jedesmal ist die Wahrscheinlichkeit einen blauen Ball
 zu erwischen  gleich groß und wir sprechen von einem Bernoulli-Experiment.
-\end{itemize}
 
+\item Mehrfaches Drehen am Glücksrad.
+
+\item Mehrfaches Würfeln mit einem Spielwüfel, bei dem wir
+  interessiert sind, wie oft eine Augenzahl kleiner als 3 geworfen wurde.
+  
+\item
 Es müssen aber nicht immer Würfel, Münzen oder Kugeln in Urnen sein:
 
-\begin{itemize}
-\item
 Ein Basketballspieler trifft mit einer Wahrscheinlichkeit von 70\%
 ($p=0.7$). Der Spieler wirft vier Mal. Somit ist $q=0.3$ und $n=4$.
+
+
 \end{itemize}
 \newpage
 
 
 \subsubsection{Formel zur Binomialverteilung}
 Bei der Binomialverteilung handelt es sich um ein
-Bernoulli-Experimetes
+Bernoulli-Experiment
 in einem mehrstufigen Baum. Dabei interessiert
 uns, wie groß die Wahrscheinlichkeit ist, dass von den beiden
 möglichen Ausgängen einer davon $k$ mal auftritt.
 
-Wie groß ist die Wahrscheinlichkeit mit einem Würfel bei fünfmaligem
-Werfen drei Mal die Zahlen 1 oder 2 zu erreichen.
+Wie groß ist die Wahrscheinlichkeit mit einem Würfel bei siebenmaligem
+Werfen fünf Mal eine der Zahlen 1 oder 2 zu erreichen.
 
 Dabei legen wir fest:
 \begin{itemize}
 \item
-  $n$ = Anzahl mögliche Durchführungen; hier 5
+  $n$ = Anzahl mögliche Durchführungen; hier 7
 \item
-  $k$ = Anzahl der gewüntschten ``Treffer''; hier 3, denn wir wollen 3
-mal eine 1 oder eine 2 werfen
+  $k$ = Anzahl der gewüntschten ``Treffer''; hier 5, denn wir wollen fünf
+Mal eine 1 oder eine 2 werfen
 \item
   $p$ = Wahrscheinlichkeit, dass wir eine 1 oder eine 2 werfen, hier
-  also wie beim Laplace-Experiment: $p=\frac26=\frac13$
+  also wie beim Laplace-Experiment: $p=\frac26$
 \end{itemize}
 
 Nun gilt
 
-\begin{gesetz}{Bernouilli-Formel}{}
+\begin{gesetz}{Bernouill-Formel (Binomialverteilung)}{}
   $$P(X=k) = {{n}\choose {k}}\cdot{}p^k\cdot{}(1-p)^{n-k}$$
 \end{gesetz}
 
 In obigem Beispiel ergibt sich:
-$$P(X=3) =
-{{5}\choose {3}} \cdot{}\left(\frac13\right)^3\cdot{}\left(1-\frac13\right)^{5-3}
-\approx{} 0.1646 = 16.46\%$$
+$$P(X=5) =
+{{7}\choose {5}}
+\cdot{}\left(\frac26\right)^5\cdot{}\left(1-\frac26\right)^{7-5}$$
 
 Dies kann mit dem Taschenrechner gelöst werden:
+Entweder direkt ...
 
-\tiprobutton{data_stat-reg-distr} : \texttt{DISTR} :  4:Binomialpdf :
-\texttt{SINGLE} : dann $n$ bein $n$, $p$ bei $p$ und $k$ bei $x$ eintragen.
+$$( 7 \textrm{\,\,nCr\,\,} 5 ) *\left(\frac26\right)^5 *
+\left(1-\frac26\right)^{7-5} = \frac{27}{729} \approx 0.03841$$
+
+... oder aber mit der eingespeicherten Formel bei
+\tiprobutton{data_stat-reg-distr} und dort unter \texttt{DISTR: 4
+  Binomialpdf: SINGLE} dann $n=7$ bei $n$, $p=\frac26$ bei $p$ und
+$k=5$ bei $x$ eintragen ($\approx 0.03841$).
 \newpage
+\subsubsection{Kumulierte Wahrscheinlichkeit}
 
+Basketballspieler «Basil Ballisti» trifft mit einer
+Wahrscheinlichkeit von 85\%.
+
+Die Wahrscheinlichkeit, dass er genau 17 Mal trifft, kennen wir
+bereits von der Binomialverteilung (Bernoulli-Experiment):
+
+$$P(E=17) = {20 \choose 17}\cdot 0.85^{17}\cdot 0.15^{3} $$
+Dabei bezeichnet $E$ das Ereignis ``siebzehn Treffer in den 20 Würfen''.
+
+
+Wie groß ist nun die Wahrscheinlichkeit, dass er bei 20 Würfen
+\textbf{maximal} 17 getroffen hat?
+
+Lösung: Wir summieren alle Wahrscheinlichkeiten auf, bei denen er
+während seinen 20 Würfen
+keinen Treffer, einen Treffer, zwei Treffer, ... bis zu 17 Treffer
+erzielt. Dies nennen wir die kumulierte\footnote{«Kumulieren» von
+  lat. cumulus = anhäufen.} Wahrscheinlichkeit\index{Wahrscheinlichkeit!kumulierte}:
+
+$$P(E\le 17) = P(E=0) + P(E=1) + P(E=2) + ... + P(E=16) + P(E=17)$$
+
+Diese Summe
+$$P(X\le 17) = \sum_{k=0}^{17} {20 \choose k} \cdot 0.85^k \cdot 0.15^{20-k}$$
+können wir anders schreiben und sofort mit dem
+Taschenrechner lösen:
+
+$$\sum_{x=0}^{17}\left(( 20 \textrm{\,\,nCr\,\,} x ) * 0.85^x *
+0.15^{20-x}\right) \approx 0.5951$$
+
+
+Doch auch hierzu gibt es eine eingespeicherte Formel
+bei
+\tiprobutton{data_stat-reg-distr} und dort unter \texttt{DISTR: 5
+  Binomialpcf: SINGLE} dann $n=20$ bei $n$, $p=0.85$ bei $p$ und
+$k=17$ bei $x$ eintragen ($\approx 0.5951$).
+
+
+\newpage
 
 \subsection*{Aufgaben}
 Bernoulli-Ketten:

@@ -335,10 +335,23 @@ Dabei bezeichnen
 \end{itemize}
 
 \subsubsection{Binomialverteilung}
-Die Formel ${n choose k}p^k\cdot{}(1-p)^{n-k}$ kann unter der \tiprobutton{data_stat-reg-distr} -Taste gefunden werden:
+Die Formel
+$$P(E = k) = {n \choose k}\cdot{}p^k\cdot{}(1-p)^{n-k}$$
+kann direkt mit \texttt{nCr} eingegeben werden.
+
+Doch eine Abkürzung kann unter der \tiprobutton{data_stat-reg-distr}-Taste gefunden werden:
 
 \tiprobutton{data_stat-reg-distr}: \texttt{DISTR} :  4:Binomialpdf :
 \texttt{SINGLE} : dann $n$ bein $n$, $p$ bei $p$ und $k$ bei $x$ eintragen.
+
+Auch kumuliert:
+
+ $$P(E \le k) = \sum_{i=0}^{k}{n \choose i}\cdot{}p^i\cdot{}(1-p)^{n-i}$$
+
+\tiprobutton{data_stat-reg-distr}: \texttt{DISTR} :  4:Binomialcdf :
+\texttt{SINGLE} : dann $n$ bein $n$, $p$ bei $p$ und $k$ bei $x$ eintragen.
+
+     
 
 
 \newpage
