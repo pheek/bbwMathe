@@ -2,8 +2,7 @@
 \usepackage{mciteplus}
 
 \usepackage[dvipsnames]{xcolor}
-\usepackage{pgfplots}
-\pgfplotsset{width=10cm,compat=1.9}
+
 \usepackage{pgfplotstable}
 \usepackage{tikz}
 \usepackage{tkz-euclide} %% Grid
@@ -87,3 +86,8 @@
     urlcolor=cyan,
     bookmarks=true,
 }
+
+%% bugtracker (part of pgfplots) should be loaded AFTER "hyperref"
+%% See: https://texblog.net/hyperref/ AND https://tex.stackexchange.com/questions/16268/warning-with-footnotes-namehfootnote-xx-has-been-referenced-but-does-not-exi
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
