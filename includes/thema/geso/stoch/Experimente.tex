@@ -262,14 +262,13 @@ $k=5$ bei $x$ eintragen ($\approx 0.03841$).
 Basketballspieler «Basil Ballisti» trifft mit einer
 Wahrscheinlichkeit von 85\%.
 
-Die Wahrscheinlichkeit, dass er genau 17 Mal trifft, kennen wir
+Die Wahrscheinlichkeit, dass er von 20 Würfen genau 17 Mal trifft, kennen wir
 bereits von der Binomialverteilung (Bernoulli-Experiment):
 
-$$P(E=17) = {20 \choose 17}\cdot 0.85^{17}\cdot 0.15^{3} $$
+$$P(E=17) = {20 \choose 17}\cdot 0.85^{17}\cdot (1-0.85)^{20-17} =  {20 \choose 17}\cdot 0.85^{17}\cdot (0.15)^{3}$$
 Dabei bezeichnet $E$ das Ereignis ``siebzehn Treffer in den 20 Würfen''.
 
-
-Wie groß ist nun die Wahrscheinlichkeit, dass er bei 20 Würfen
+Wie groß ist nun aber die Wahrscheinlichkeit, dass er bei 20 Würfen
 \textbf{maximal} 17 getroffen hat?
 
 Lösung: Wir summieren alle Wahrscheinlichkeiten auf, bei denen er
