@@ -33,6 +33,8 @@ Die Laufvariable erhöht ihren Wert für jeden Summanden um 1 (eins).
 \begin{beispiel}{}{}
 $${\color{green}\sum_{{\color{orange}s}={\color{blue}5}}^{{\color{blue}8}}{\color{black}(3{\color{orange}s}-4)}} = (3 \cdot{\color{blue}5} - 4) {\color{green}+} (3 \cdot{\color{blue}6} - 4) {\color{green}+} (3 \cdot {\color{blue}7} - 4) {\color{green}+} (3 \cdot {\color{blue}8} - 4)$$
 \end{beispiel}
+\newpage
+
 
 \textbf{Aber:}
 
@@ -64,7 +66,7 @@ $$\sum_{i=0}^{n-1}x^i(x-1)=\LoesungsRaum{x^n-1}$$
 %%der Variable $z$ wandert, wenn auch die rechte Schreibweise eher unüblich ist:
 %%$$\sum_{z=1}^{5}{z} = \sum_{z=1}^{z=5}{z}$$
 
-\subsubsection{Indizes, Mittelwert}
+\subsubsection{Mittelwert, Indizes}
 Im Zusammenhang Indizes ($i$) (\zB bei Datenreihen) wird meist diese
 Notation benutzt.
 
@@ -87,9 +89,11 @@ oder ganz allgemein für $n$ Datensätze. Der Mittelwert der $n$
 Datensätze ist der $n$-te Teil der Summe über alle $x_i$ für $i$
 gleich eins bis $n$:
 
+\begin{gesetz}{Mittelwert}{}
 $$\mittelwert{x} = \frac{1}{n}\cdot{}\sum_{i=1}^{n}{x_i}$$
+\end{gesetz}
 
-Hierbei ist:
-$$\frac{1}{n}\cdot{}\sum_{i=1}^{n}{x_i} = \frac{1}{n}\cdot{}(x_1 + x_2 + x_3 + \dots + x_n)$$
+Ausgeschrieben:
+$$\mittelwert{x} = \frac{1}{n}\cdot{}\sum_{i=1}^{n}{x_i} = \frac{1}{n}\cdot{}(x_1 + x_2 + x_3 + \dots + x_n)$$
 
 \newpage
