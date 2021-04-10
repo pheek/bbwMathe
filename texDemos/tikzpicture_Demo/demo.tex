@@ -97,4 +97,70 @@ innerhalb einer \texttt{bbwGraph}-Umgebung:
 }
 \end{verbatim}
 
+
+\subsection{Koordinatensysteme beliebig}
+%\coordSysBBW{4mm}{-5}{5}{-2}{2}{$\varphi$}{2}{cos(\x*50)}{
+%\foreach \x [evaluate=\x as \degree using int(\x*90)] in {-3,-2,-1,1,2,3,4,5}{ 
+%   \draw (\x *18mm, 1pt) -- (\x * 18mm, -1pt) node[anchor = north] {$\degree^\circ$};
+%   }  
+%}
+
+\coordSysBBWFlex{4mm}{-6}{10}{-2}{2}{\varphi}{2*cos(\x*50)}{
+  \foreach \x [evaluate=\x as \degree using int(\x*90)] in {-3,-2,-1,1,2,3,4,5}{ 
+    \draw (\x *18mm, 1pt) -- (\x * 18mm, -1pt) node[anchor = north] {$\degree^\circ$};
+  }
+   
+  \foreach \y in {-1,1} {
+     \draw (1pt, \y *2cm) -- (-1pt, \y *2cm) node[anchor = east] {$\y$};
+  }
+}%% end coordSysBBW
+\begin{verbatim}
+\coordSysBBWFlex{4mm}{-6}{10}{-2}{2}{\varphi}{2*cos(\x*50)}{
+  \foreach \x [evaluate=\x as \degree using int(\x*90)] in {-3,-2,-1,1,2,3,4,5}{ 
+    \draw (\x *18mm, 1pt) -- (\x * 18mm, -1pt) node[anchor = north] {$\degree^\circ$};
+  }
+   
+  \foreach \y in {-1,1} {
+     \draw (1pt, \y *2cm) -- (-1pt, \y *2cm) node[anchor = east] {$\y$};
+  }
+}%% end coordSysBBW
+
+\end{verbatim}
+
+\trigsysA{}
+\begin{verbatim}
+\trigsysA{}
+\end{verbatim}
+
+\trigsysB{}
+\begin{verbatim}
+\trigsysB{}
+\end{verbatim}
+
+\trigsysC{}
+\begin{verbatim}
+\trigsysC{}
+\end{verbatim}
+
+\trigsysD{}
+\begin{verbatim}
+\trigsysD{}
+\end{verbatim}
+
+\trigsysDsin{}
+\begin{verbatim}
+\trigsysDsin{}
+\end{verbatim}
+
+\trigsysDcos{}
+\begin{verbatim}
+\trigsysDcos{}
+\end{verbatim}
+
+$$0.7\cdot{}\sin(1.5\cdot{}(x-20\degre))$$
+\trigsysDFct{1.4*sin(1.5*(\x*50-20))}
+\begin{verbatim}
+\trigsysDFct{1.4*sin(1.5*(\x*50-20))}
+\end{verbatim}
+
 \end{document}

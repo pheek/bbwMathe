@@ -115,89 +115,85 @@
 %%     y   von    -1 ...   1
 %%
 
-\newcommand{\trigsysA}{
+%% coordSysBBWFlex
+%% Flexibles Koordinatensystem mit Pfeilen und Pfeilbeschriftung, aber
+%% noch ohne "ticks".
+%% #1   : Rastergröße
+%% #2-#5: Größe des Rasters in cm
+%% #6   : Beschriftung in x-Richtung (in y-Richtung ist es immer y
+%% #7   : Zu zeichnende Funktion
+%% #8   : Ticks oder was sonst noch komplexeres in die Grafik muss
+\newcommand{\coordSysBBWFlex}[8]{
 \begin{tikzpicture}
-\draw[step = 0.5 cm, cyan!20 , very thin] (-1, -4) grid ( 13, 4);
-\draw[thick, ->] (-1,0) -- (13,0) node[anchor = north west] {$\phi$};
-\draw[thick, ->] (0,-4) -- (0,4) node[anchor = south east] {$y$};
+\draw[step = #1,  thin, cyan!20] (#2, #4) grid (#3, #5);
+\draw[thick, ->] (#2,0) -- (#3,0) node[anchor = west] {$#6$};
+\draw[thick, ->] (0,#4) -- (0,#5) node[anchor = south] {$y$};
+\draw[domain=#2:#3,smooth,samples=200,variable=\x,gray!30] plot ({\x},{#7});
+#8;
+\end{tikzpicture}
+}%% end coordSysBBW
 
-\foreach \x [evaluate=\x as \degree using int(\x*30)] in {1,...,12}{ 
-   \draw (\x cm, 1pt) -- (\x cm, -1pt) node[anchor = north] {$\degree^\circ$};
-   }
-\foreach \y in {-3,-2,-1,1,2,3}
+%% Koordinatensystem von 0 - 360 Grad (y -Ricthung -1 bis 1
+%% Die Funktion kann mit dem 1. Parameter eingegeben werden
+\newcommand{\trigsysAFct}[1]{
+\coordSysBBWFlex{0.5cm}{-1}{13}{-4}{4}{\varphi}{#1}{
+  \foreach \x [evaluate=\x as \degree using int(\x*30)] in {1,...,12}{ 
+    \draw (\x cm, 1pt) -- (\x cm, -1pt) node[anchor = north] {$\degree^\circ$};
+  }
+  \foreach \y in {-3,-2,-1,1,2,3}{
    \draw (1pt, \y cm) -- (-1pt, \y cm) node[anchor = east] {$\y$};
-\end{tikzpicture}}%% END Definition
+  }
+}
+}%% end trigsysC
 
-\newcommand{\trigsysB}{\begin{tikzpicture}\draw[step = 0.5 cm, cyan!20 , very thin] (-1, -4) grid ( 13, 4);
-\draw[thick, ->] (-1,0) -- (13,0) node[anchor = north west] {$\phi$};
-\draw[thick, ->] (0,-4) -- (0,4) node[anchor = south east] {$y$};
+%% Leeres Koordinatensystem (fct = 0)
+\newcommand{\trigsysA}{\trigsysAFct{0}}
 
-\foreach \x [evaluate=\x as \degree using int(\x*30)] in {1,...,12}{ 
-   \draw (\x cm, 1pt) -- (\x cm, -1pt) node[anchor = north] {$\degree^\circ$};
-   }
-\foreach \y in {-1,1}
+
+%% Koordinatensystem von -270 bis 450 Grad. In y-Richtung von -2 bis 2
+%% Funktion wird mit #1-Parameter angegeben
+\newcommand{\trigsysBFct}[1]{
+\coordSysBBWFlex{0.5cm}{-1}{13}{-4}{4}{\varphi}{#1}{
+  \foreach \x [evaluate=\x as \degree using int(\x*30)] in {1,...,12}{ 
+    \draw (\x cm, 1pt) -- (\x cm, -1pt) node[anchor = north] {$\degree^\circ$};
+  }
+  \foreach \y in {-1,1}{
    \draw (1pt, \y *3cm) -- (-1pt, \y *3cm) node[anchor = east] {$\y$};
+  }
+}
+}%% end trigsysC
 
-\end{tikzpicture}}%% END Definition
+%% Leeres B-System
+\newcommand{\trigsysB}{\trigsysBFct{0}}
 
-\newcommand{\trigsysC}{
-\begin{tikzpicture}
-\draw[step = 0.2 cm, very thin, cyan!20] (-6, -2.5) grid ( 10, 2.5);
-\draw[thick, ->] (-6,0) -- (10,0) node[anchor = north west] {$\phi$};
-\draw[thick, ->] (0,-2.5) -- (0,2.5) node[anchor = south east] {$y$};
 
-\foreach \x [evaluate=\x as \degree using int(\x*90)] in {-3,-2,-1,1,2,3,4,5}{ 
+%% Wie B-SYstem, jedoch in y-Richtung von -1 bis +1
+\newcommand{\trigsysCFct}[1]{
+\coordSysBBWFlex{0.2cm}{-6}{10}{-2.5}{2.5}{\varphi}{#1}{
+  \foreach \x [evaluate=\x as \degree using int(\x*90)] in {-3,-2,-1,1,2,3,4,5}{ 
    \draw (\x *18mm, 1pt) -- (\x * 18mm, -1pt) node[anchor = north] {$\degree^\circ$};
-   }
+  }
    
-\foreach \y in {-2,-1,1,2}
-   \draw (1pt, \y cm) -- (-1pt, \y cm) node[anchor = east] {$\y$};
-\end{tikzpicture}}%% END Definition
+  \foreach \y in {-2,-1,1,2}{
+    \draw (1pt, \y cm) -- (-1pt, \y cm) node[anchor = east] {$\y$};
+  }
+}
+}%% end trigsysC
 
-\newcommand{\trigsysD}{
-\begin{tikzpicture}
-\draw[step = 0.2 cm, very thin, cyan!20] (-6, -2.5) grid ( 10, 2.5);
-\draw[thick, ->] (-6,0) -- (10,0) node[anchor = north west] {$\phi$};
-\draw[thick, ->] (0,-2.5) -- (0,2.5) node[anchor = south east] {$y$};
+\newcommand{\trigsysC}{\trigsysCFct{0}}
 
-\foreach \x [evaluate=\x as \degree using int(\x*90)] in {-3,-2,-1,1,2,3,4,5}{ 
+
+\newcommand{\trigsysDFct}[1]{
+\coordSysBBWFlex{0.2cm}{-6}{10}{-2.5}{2.5}{\varphi}{#1}{
+ \foreach \x [evaluate=\x as \degree using int(\x*90)] in {-3,-2,-1,1,2,3,4,5}{ 
    \draw (\x *18mm, 1pt) -- (\x * 18mm, -1pt) node[anchor = north] {$\degree^\circ$};
-   }
-   
-\foreach \y in {-1,1}
+  }   
+  \foreach \y in {-1,1}
    \draw (1pt, \y *2cm) -- (-1pt, \y *2cm) node[anchor = east] {$\y$};
-\end{tikzpicture}}%% END Definition
+  }
+} %% end command: trig sys D cos()
 
 
-\newcommand{\trigsysDsin}{
-\begin{tikzpicture}
-\draw[step = 0.2 cm, very thin, cyan!20] (-6, -2.5) grid ( 10, 2.5);
-\draw[thick, ->] (-6,0) -- (10,0) node[anchor = north west] {$\phi$};
-\draw[thick, ->] (0,-2.5) -- (0,2.5) node[anchor = south east] {$y$};
-
-\foreach \x [evaluate=\x as \degree using int(\x*90)] in {-3,-2,-1,1,2,3,4,5}{ 
-   \draw (\x *18mm, 1pt) -- (\x * 18mm, -1pt) node[anchor = north] {$\degree^\circ$};
-   }
-   
-\foreach \y in {-1,1}
-   \draw (1pt, \y *2cm) -- (-1pt, \y *2cm) node[anchor = east] {$\y$};
-
-\draw[domain=-6:10,smooth,samples=200,variable=\x,gray!30] plot ({\x},{2*sin(\x*50)});
-\end{tikzpicture}}%% END Definition
-
-\newcommand{\trigsysDcos}{
-\begin{tikzpicture}
-\draw[step = 0.2 cm, very thin, cyan!20] (-6, -2.5) grid ( 10, 2.5);
-\draw[thick, ->] (-6,0) -- (10,0) node[anchor = north west] {$\phi$};
-\draw[thick, ->] (0,-2.5) -- (0,2.5) node[anchor = south east] {$y$};
-
-\foreach \x [evaluate=\x as \degree using int(\x*90)] in {-3,-2,-1,1,2,3,4,5}{ 
-   \draw (\x *18mm, 1pt) -- (\x * 18mm, -1pt) node[anchor = north] {$\degree^\circ$};
-   }
-   
-\foreach \y in {-1,1}
-   \draw (1pt, \y *2cm) -- (-1pt, \y *2cm) node[anchor = east] {$\y$};
-
-\draw[domain=-6:10,smooth,samples=200,variable=\x,gray!30] plot ({\x},{2*cos(\x*50)});
-\end{tikzpicture}}%% END Definition
-
+\newcommand{\trigsysDcos}{\trigsysDFct{2*cos(\x*50)}}
+\newcommand{\trigsysDsin}{\trigsysDFct{2*sin(\x*50)}}
+\newcommand{\trigsysD}{\trigsysDFct{0}}
