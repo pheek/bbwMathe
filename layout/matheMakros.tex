@@ -149,14 +149,6 @@
 %% Leeres Koordinatensystem (fct = 0)
 \newcommand{\trigsysA}{\trigsysAFct{0}}
 
-<<<<<<< HEAD
-\newcommand{\trigsysD}{
-\begin{tikzpicture}
-\draw[step = 0.2 cm, very thin, cyan!20] (-6, -2.5) grid ( 10, 2.5);
-\draw[thick, ->] (-6,0) -- (10,0) node[anchor = north west] {$\varphi$};
-\draw[thick, ->] (0,-2.5) -- (0,2.5) node[anchor = south east] {$y$};
-=======
->>>>>>> fcebe2b9c443b87073aae81e00fe0961f33a7883
 
 %% Koordinatensystem von -270 bis 450 Grad. In y-Richtung von -2 bis 2
 %% Funktion wird mit #1-Parameter angegeben
@@ -174,14 +166,6 @@
 %% Leeres B-System
 \newcommand{\trigsysB}{\trigsysBFct{0}}
 
-<<<<<<< HEAD
-\newcommand{\trigsysDsin}{
-\begin{tikzpicture}
-\draw[step = 0.2 cm, very thin, cyan!20] (-6, -2.5) grid ( 10, 2.5);
-\draw[thick, ->] (-6,0) -- (10,0) node[anchor = north west] {$\varphi$};
-\draw[thick, ->] (0,-2.5) -- (0,2.5) node[anchor = south east] {$y$};
-=======
->>>>>>> fcebe2b9c443b87073aae81e00fe0961f33a7883
 
 %% Wie B-SYstem, jedoch in y-Richtung von -1 bis +1
 \newcommand{\trigsysCFct}[1]{
@@ -198,14 +182,6 @@
 
 \newcommand{\trigsysC}{\trigsysCFct{0}}
 
-<<<<<<< HEAD
-\newcommand{\trigsysDcos}{
-\begin{tikzpicture}
-\draw[step = 0.2 cm, very thin, cyan!20] (-6, -2.5) grid ( 10, 2.5);
-\draw[thick, ->] (-6,0) -- (10,0) node[anchor = north west] {$\varphi$};
-\draw[thick, ->] (0,-2.5) -- (0,2.5) node[anchor = south east] {$y$};
-=======
->>>>>>> fcebe2b9c443b87073aae81e00fe0961f33a7883
 
 \newcommand{\trigsysDFct}[1]{
 \coordSysBBWFlex{0.2cm}{-6}{10}{-2.5}{2.5}{\varphi}{#1}{
@@ -221,3 +197,5 @@
 \newcommand{\trigsysDcos}{\trigsysDFct{2*cos(\x*50)}}
 \newcommand{\trigsysDsin}{\trigsysDFct{2*sin(\x*50)}}
 \newcommand{\trigsysD}{\trigsysDFct{0}}
+
+
