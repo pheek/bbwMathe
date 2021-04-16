@@ -65,10 +65,10 @@ Wertebereiche an:
   Funktion & Definitionsbereich $\mathbb{D}$ & Wertebereich
   $\mathbb{W}$ & Nullstellen\\ \hline
   $\sin()$ & \TRAINER{$\mathbb{R}$} & \TRAINER{$[-1,1]$} &
-  \TRAINER{$0+  z\cdot{}180\degre| z\in\mathbb{Z}$} \\ \hline
+  \TRAINER{$z\cdot{}180\degre| z\in\mathbb{Z}$} \\ \hline
   $\cos()$ & \TRAINER{$\mathbb{R}$} & \TRAINER{$[-1,1]$}& \TRAINER{$90+  z\cdot{}180\degre| z\in\mathbb{Z}$}\\ \hline
   $\tan()$ & \TRAINER{$\mathbb{R}\backslash\{90\degre +
-    z\cdot{}180\degre| z\in\mathbb{Z} \}$} & \TRAINER{$\mathbb{R}$} & \TRAINER{$0+ z\cdot{}180\degre| z\in\mathbb{Z}$}\\ \hline
+    z\cdot{}180\degre| z\in\mathbb{Z} \}$} & \TRAINER{$\mathbb{R}$} & \TRAINER{$z\cdot{}180\degre| z\in\mathbb{Z}$}\\ \hline
 \end{tabular}
 
 \begin{bemerkung}{}{}
@@ -87,8 +87,8 @@ Danach betrachten wir die folgende Funktion:
 
 $$y = f(x) = 0.7 \cdot \sin(1.5\cdot(x - 20\degre))$$
 
-\renewcommand{\bbwFunctionColour}{gray!30}
-\noTRAINER{\trigsysDsin{}}\TRAINER{\trigsysDFct{2*0.7*sin(1.5*(50*\x-20))}}
+\renewcommand{\bbwFunctionColour}{gray!30}\noTRAINER{\trigsysDsin{}}
+\renewcommand{\bbwFunctionColour}{blue}\TRAINER{\trigsysDFct{2*0.7*sin(1.5*(50*\x-20))}}
 
 Zum Skizzieren beginnen wir mit uns bekannten Winkeln. Winkeln also, bei denen wir die Sinus-Werte bereits kennen:
 
@@ -141,20 +141,24 @@ $30\degre$ nach rechts verschieben.
 
 a) Wie sieht die Funktion aus?
 
-\trigsysDsin{}
+\renewcommand{\bbwFunctionColour}{gray!30}\noTRAINER{\trigsysDsin{}}
+\renewcommand{\bbwFunctionColour}{blue}\TRAINER{\trigsysDFct{3*sin(\x*50-30)}}
+
 %%\bbwCenterGraphic{10cm}{tals/trig3/img/coordSystem0-450.png}
 
 b) Wie lautet die Funktionsgleichung
 
 $$y = \LoesungsRaum{1.5 \cdot{} \sin(x - 30\degre)}$$
 
+
+
 2. Sie möchten die Sinusfunktion so verschieben, dass sich die neuen Nullstellen bei
 $-90\degre$, $90\degre$, $270\degre$, ... befinden.
 
 a) Wie sieht die Funktion aus?
 
-\noTRAINER{\trigsysD{}}
-\TRAINER{\trigsysDcos{}}
+\noTRAINER{\renewcommand\bbwFunctionColour{gray!30}\trigsysDsin{}}
+\TRAINER{\renewcommand\bbwFunctionColour{blue}\trigsysDcos{}}
 
 b) was fällt Ihnen auf?
 
