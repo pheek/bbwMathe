@@ -59,12 +59,14 @@ Eine weitere Möglichkeit Gleichungen mit mehreren Unbekannten zu lösen ist das
 
   \begin{rezept}{Rechengesetz Additionsverfahren}{gesetz_additionsverfahren}
     Eine beliebige Variable wird gewählt und danach beide Gleichungen so multipliziert,
-    dass die Zahl vor den Variablen gleich werden. Dies geht immer mit
-    dem kleinsten gemeinsamen Vielfachen (kgV); kann aber auch mit
+    dass die Zahl vor dieser Variable in beiden Gleichungen gleich werden.
+
+    Dies funktioniert
+    immer mittels kleinstem gemeinsamen Vielfachem (kgV); kann aber auch mit
     einem beliebigen Vielfachen beider Zahlen erreicht werden.
   \end{rezept}
 
-Wir wählen einfach so in obigem Beispile die Variable $a$ und multiplizieren die obere Gleichung mit 4 und die untere mit 3 und
+Wir wählen \zB in obigem Beispiel die Variable $a$ und multiplizieren die obere Gleichung mit 4 und die untere mit 3 und
 erhalten:
 
 \TNT{2.8}{\gleichungZZ{12a + 8b}{12.40}{12a + 15b}{18.00}}
@@ -208,13 +210,14 @@ Schritten}, das Sie bereits aus dem Kapitel zu linearn Gleichungen kennen\totalr
 
 
 
-\subsubsection{Ziffern-Aufgaben}
+\subsubsection{Ziffern-Aufgaben /
+  Rest-Aufgaben}\index{Rest!Textaufgaben mit Divisionsrest}\index{Divisionsrest}
 
 \paragraph{Ziffern-Tauschen}: Eine zweistellige Zahl $z$ ist
 gesucht. Die Quersumme sei 9. Wenn ich hingegen zur Zahl 45 addiere,
 so erhalte ich dasselbe, wie wenn ich der Zahl ihre Ziffern tausche.
 
-\TNT{6.4}{
+\TNT{10.4}{
   Die Variable sind die Ziffern! Sinnvoll: $x$ = Zehnerziffer, $y$= Einerziffer.
   Somit ist die Quersumme = $x+y$.
   Die Zahl ist aber nicht(!) $xy$, das wäre ja $x\cdot{}y$. Die Zahl ist
@@ -227,22 +230,30 @@ so erhalte ich dasselbe, wie wenn ich der Zahl ihre Ziffern tausche.
   \gleichungZZ{9x-9y}{-45}{x+y}{9}
   Taschenrechner: $x=2$ und $y=7$. Somit ist die Zahl $z=27$.
 }%% END TNT
+\newpage
 
 
+\paragraph{Rest-Aufgaben}\index{Divisionsrest}\index{teilen mit Rest}:
 
-\paragraph{Rest-Aufgaben}: Eine Zahl $x$ ergibt beim Teilen durch 5
-das Resultat 3 mit Rest 2. Wie lautet die Zahl?
-\TNT{5.2}{Was bedeutet «Teilen mit Rest»\index{Rest!teilen mit}\index{teilen mit Rest}?
+\TRAINER{17:5 = 3 Rest 2 Was heißt das? Das heißt: 3*5 + 2 = 17!}
+
+Was bedeutet «Teilen mit Rest»\index{Rest!teilen mit}\index{teilen mit
+  Rest}?
+
+\TNT{7.2}{
+
   $$x : 5 = 3 \textrm{ Rest } 2 \Longleftrightarrow   3\cdot{} 5 + 2 = x $$
   Ergo $x=17$.
-
-  Allgemein: $$A : B = C \textrm{ Rest } R \Longleftrightarrow B\cdot{}C + R = A$$
-
-  Refernezaufgabe: Wenn wir eine Zahl durch 15 teilen, so erhalten wir
-  8 Rest 4.
-  \TNT{2.4}{$$15\cdot{}8 + 4 = z = 124$$}
 }%% end TNT
 
+\begin{gesetz}{Teilen mit Rest}{}
+  Für $R<B$ (Rest $R$ kleiner als Divisor $B$) gilt:
+  $$A : B = C \textrm{ Rest } R \Longleftrightarrow B\cdot{}C + R = A$$
+  \end{gesetz}
+
+  Referenzaufgabe: Wenn wir eine Zahl durch 15 teilen, so erhalten wir
+  8 Rest 4.
+  \TNT{2.4}{$$15\cdot{}8 + 4 = z = 124$$}
 
 
 \TALS{\subsection*{Aufgaben}
