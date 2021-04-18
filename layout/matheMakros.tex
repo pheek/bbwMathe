@@ -123,14 +123,16 @@
 %% #6   : Beschriftung in x-Richtung (in y-Richtung ist es immer y
 %% #7   : Zu zeichnende Funktion
 %% #8   : Ticks oder was sonst noch komplexeres in die Grafik muss
+\newcommand{\bbwFunctionColour}{blue}
 \newcommand{\coordSysBBWFlex}[8]{
 \begin{tikzpicture}
 \draw[step = #1,  thin, cyan!20] (#2, #4) grid (#3, #5);
 \draw[thick, ->] (#2,0) -- (#3,0) node[anchor = west] {$#6$};
 \draw[thick, ->] (0,#4) -- (0,#5) node[anchor = south] {$y$};
-\draw[domain=#2:#3,smooth,samples=200,variable=\x,gray!30] plot ({\x},{#7});
+\draw[domain=#2:#3,smooth,samples=200,variable=\x,\bbwFunctionColour] plot ({\x},{#7});
 #8;
 \end{tikzpicture}
+\renewcommand{\bbwFunctionColour}{blue}
 }%% end coordSysBBW
 
 %% Koordinatensystem von 0 - 360 Grad (y -Ricthung -1 bis 1
