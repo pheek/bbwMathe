@@ -10,12 +10,20 @@ Einstiegsüberlegung: Von einem Winkel $\varphi$ ist gerade einmal sein Sinuswer
 
 
 \TNT{6.4}{Hier gibt es unendlich viele Lösungen. Im Bereich 0 bis 90$\degre$ sind es jedoch genau zwei Lösungen: 1. Lösung: $\varphi=\arcsin(0.6) \approx 36.87$ und 2. Lösung: $\varphi = 180\degre - \arcsin(0.6) \approx{} 143.13$}
+
+Mit dem Taschenrechner haben Sie zwei Varianten diesen Winkel zu berechnen:
+
+A) \texttt{arcsin(0.6)}
+
+B) \texttt{solve(0.6=sin(x), x)}
+
+Was fällt Ihnen bei den Löusngen auf?
 \newpage
 
 
 
 \subsection{Arcussinus}
-Auf die Umkehrungen der Sinus-, Cosinus- und Tangensbeziehungen können
+Auch die Umkehrungen der Sinus-, Cosinus- und Tangensbeziehungen können
 als Funktionen aufgefasst werden.
 
 Berechnen Sie von einigen \textbf{characteristischen}
@@ -23,33 +31,48 @@ ArcSin-Verhältnissen den zugehörigen Winkel und tragen Sie die Werte ins folge
 Koordinatensystem im Bogenmaß ein:
 
 \begin{tabular}{l|c|r}
-$sin(0\degre)$ &=& $\LoesungsRaum{0}$\\\hline
-$sin(\LoesungsRaum{30\degre})$ &=& $\LoesungsRaum{0.5}$\\\hline
-$sin(\LoesungsRaum{45\degre})$ &=& $\LoesungsRaum{\frac{\sqrt{2}}{2}}$\\\hline
-$sin(\LoesungsRaum{60\degre})$ &=& $\LoesungsRaum{\frac{\sqrt{3}}{2}}$\\\hline
-$sin(\LoesungsRaum{90\degre})$ &=& $\LoesungsRaum{\frac{\sqrt{4}}{2} = 1}$\\\hline
-$sin(\LoesungsRaum{-30\degre})$ &=& $\LoesungsRaum{-0.5}$
+$\sin(0\degre)$ &=& $\LoesungsRaum{0}$\\\hline
+$\sin(\LoesungsRaum{30\degre})$ &=& $\LoesungsRaum{0.5}$\\\hline
+$\sin(\LoesungsRaum{45\degre})$ &=& $\LoesungsRaum{\frac{\sqrt{2}}{2}}$\\\hline
+$\sin(\LoesungsRaum{60\degre})$ &=& $\LoesungsRaum{\frac{\sqrt{3}}{2}}$\\\hline
+$\sin(\LoesungsRaum{90\degre})$ &=& $\LoesungsRaum{\frac{\sqrt{4}}{2} = 1}$\\\hline
+$\sin(\LoesungsRaum{-30\degre})$ &=& $\LoesungsRaum{-0.5}$
 \end{tabular}
 
 \noTRAINER{\bbwCenterGraphic{8cm}{tals/trig3/img/py_system.png}}
 \TRAINER{\bbwCenterGraphic{8cm}{tals/trig3/img/arcsin.png}}
 
-Geben Sie den Definitionsbereich Arcus-Sinus-Funktion an:
+Geben Sie den Definitionsbereich der Arcus-Sinus-Funktion an:
 
 $$\mathbb{D} = \LoesungsRaum{\left[-1; 1\right]}$$
 
 Geben Sie den Wertebereich der Arcus-Sinus-Funktion einmal im Bogenmaß,
 einmal im Gradmaß an:
 $$\mathbb{W} = \LoesungsRaum{\left[-\frac{\pi}{2}; \frac{\pi}{2}\right]}  =  \LoesungsRaum{[-90\degre; 90\degre]}$$
+\newpage
 
 
-\TALSGeomAadB{102ff}{85. a) c) e) f) g) und h)}
+\subsection*{Aufgaben}
+
+Vorzeigeaufgabe: Für welche(n) Winkel $\varphi$ gilt \fbox{$\sin(\varphi) = -\sin(-41.7\degre)$}?
+
+\TRAINER{Lösung: $\varphi = 41.7\degre$ und $180\degre-41.7\degre=139.3\degre$ und alle periodischen Vielfachen: $\varphi\pm n\cdot{}360\degre$}
+
+\trigsysDsin{}
+
+Mit Taschenrechner:
+
+\TALSGeomAadB{102ff}{85. a) c)}
+
+Ohne Taschenrechner\footnote{Für die Grundlagenfachprüfung müssen Sie solche Aufgaben lösen können}:
+
+\TALSGeomAadB{102ff}{85. e) f) g) und h)}
 
 
 \newpage
 
 \subsection{Arccuscosinus}
-Zeichnen Sie die Umkehrfunktion des Cosinus und geben Sie Definitionsbereich an.
+Zeichnen Sie die Umkehrfunktion des Cosinus und geben Sie den Definitionsbereich an.
 
 \noTRAINER{\bbwCenterGraphic{8cm}{tals/trig3/img/py_system.png}}
 \TRAINER{\bbwCenterGraphic{8cm}{tals/trig3/img/arccos.png}}
@@ -61,7 +84,7 @@ Geben Sie den Wertebereich der Arcus-Sinus-Funktion einmal im Bogenmaß,
 einmal im Gradmaß an:
 $$\mathbb{W} = \LoesungsRaum{[0; \pi]}  =  \LoesungsRaum{[0; 180\degre]}$$
 
-
+\subsection*{Aufgaben}
 \TALSGeomAadB{102ff}{86. b) c) und e)}
 
 
@@ -69,7 +92,7 @@ $$\mathbb{W} = \LoesungsRaum{[0; \pi]}  =  \LoesungsRaum{[0; 180\degre]}$$
 
 
 \subsection{Arcustangens}
-Zeichnen Sie die Umkehrfunktion des Tangens (im Bogenmaß) und geben Sie Definitionsbereich an.
+Zeichnen Sie die Umkehrfunktion des Tangens (im Bogenmaß) und geben Sie den Definitionsbereich an.
 
 \noTRAINER{\bbwCenterGraphic{8cm}{tals/trig3/img/py_system.png}}
 \TRAINER{\bbwCenterGraphic{8cm}{tals/trig3/img/arctan.png}}
@@ -79,21 +102,15 @@ $$\mathbb{D} = \LoesungsRaum{\mathbb{R}}$$
 
 Geben Sie den Wertebereich der Arcus-Sinus-Funktion einmal im Bogenmaß,
 einmal im Gradmaß an:
-$$\mathbb{W} = \LoesungsRaum{\left]-\frac{\pi}{2}; \frac{\pi}{2}\right[}  =
-\LoesungsRaum{\left]-90\degre; 90\degre\right[}$$
+$$\mathbb{W} = \LoesungsRaum{\left]-\frac{\pi}{2}; \frac{\pi}{2}\right[}  = \LoesungsRaum{\left]-90\degre; 90\degre\right[}$$
 
 Beachten Sie, dass im Wertebereich $\mathbb{W}$ die Grenzen ($-90\degre$und $+90\degre$) nicht enthalten sind. Warum ist das so?
 
 \subsection*{Aufgaben}
 Im Geometrie-Buch; doch diesmal anhand der Funktionsgraphen und nicht (nur) am Einheitskreis.
 
-<<<<<<< HEAD
-Vorzeigeaufgabe: S. 102: Aufg. 85. b)
-
-\TALSGeomAadB{102ff}{85. a) c) e) f) g) und h), 86. b) c) und e), 87. a) und c)}
-=======
+\subsection*{Aufgaben}
 \TALSGeomAadB{102ff}{87. a) und c)}
->>>>>>> cadda2929f7fef61482aa8b2e20f21a8c4fdaffe
 
 \newpage
 
