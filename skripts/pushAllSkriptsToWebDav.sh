@@ -13,7 +13,9 @@ if [ -d "/mnt/${BBW_WEBDAV_PATH}/lehrperson" ] ; then
 		echo "found mountpath at /mnt/${BBW_WEBDAV_PATH}"
 else
 		echo "${BBW_WEBDAV_PATH} not mounted??? exiting..."
-		exit
+		echo "mounting ..."
+.		/home/phi/bin/net/bbw_up_webdav.sh
+#   exit
 fi
 
 
