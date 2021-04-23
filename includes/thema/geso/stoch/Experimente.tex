@@ -12,9 +12,9 @@ Ein fairer Spielwürfel wird geworfen. Jede Seite hat genau die selbe
 Wahrscheinlichkeit. Wie groß ist nun die Wahrscheinlichkeit, mit einem
 Wurf eine Augensumme von mehr als vier zu werfen?
 
-\TNT{2.4}{Glückliche Ereignisse: 5 und 6 (\textbf{zwei} Stück). Alle möglichen Ergebnisse: 1 bis 6 (\textbf{sechs} Stück). Wahrscheinlichkeit = $\frac{2}{6}=\frac13$}
+\TNT{2.4}{Günstige Ereignisse: 5 und 6 (\textbf{zwei} Stück). Alle möglichen Ergebnisse: 1 bis 6 (\textbf{sechs} Stück). Wahrscheinlichkeit = $\frac{2}{6}=\frac13$}
 
-Dabei handelt es sich um ein klassisches Laplace-Experiment:
+Dabei handelt es sich um ein Laplace-Experiment:
 \begin{itemize}
 \item Jeder einzelne Ausgang (Ergebnis) hat die selbe Wahrscheinlichkeit
       (hier $p = \frac{1}{6}$).
@@ -26,8 +26,14 @@ mögliche Ergebnisse}}$.
 Hier $P(\epsdice{5}\cup\epsdice{6}) = \LoesungsRaum{\frac{2}{6}}$.
 \end{itemize}
 
+\begin{definition}{Laplace Experiment}{}
+  Zufallsexperimente, deren Elementarereignisse alle gleich wahrscheinlich sind, werden als
+  \textbf{Laplace-Experimente} bezeichnet.
+\end{definition}
+
+
 Kein Laplace-Experiment ist \zB das Werfen eines gezinkten Würfels,
-bei dem die Augenzahl 6 häufiger auftritt, als die anderen Augenzahlen.
+bei dem die Augenzahl 6 häufiger auftritt als die anderen Augenzahlen.
 
 \subsection*{Aufgaben}
 \aufgabenfarbe{Kompendium: Kap. 5.2 Aufg. 1. - 3.}
@@ -37,9 +43,9 @@ bei dem die Augenzahl 6 häufiger auftritt, als die anderen Augenzahlen.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Baumdiagramme}\index{Baumdiagramm!Stochastik}
-(Einstufige und Mehrstufige Experimente)
+(Einstufige und mehrstufige Experimente)
 
-\TRAINER{(S. Youtube Videso dazu: Einfach-Mathe!)}
+\TRAINER{(S. Youtube Videos dazu: Einfach-Mathe!)}
 
 \subsubsection{Einstiegsbeispiel: Glücksrad}
 \bbwCenterGraphic{4cm}{geso/stoch/img/gluecksrad75deg}
@@ -57,7 +63,7 @@ maximal drei Stufen tief geht.
 \newpage
 
 \subsection{Pfad- und Summenregel}
-Um Wahrscheinlichkeiten aufzuzeichnen bietet sich das Baumdiagramm an.
+Um Wahrscheinlichkeiten aufzuzeichnen, bietet sich das Baumdiagramm an.
 Dabei zeichnet man einen «Baum» von links-nach-rechts oder wie in der Informatik üblich von oben nach unten.
 
 Zu den Ästen schreibt man deren Wahrscheinlichkeiten.
@@ -100,16 +106,16 @@ Zeichnen Sie das zugehörige Baumdiagramm:
 \bbwCenterGraphic{15cm}{geso/stoch/img/mind2sechser.png}
 
 
-  Lösung mit Baum oder s. Binomialverteilung.
+  Lösung mit Baum oder  Binomialverteilung.
 
-  a) mindestens 2 Sechser: $\frac2{27}\approx 0.07407$
+  a) mindestens zwei Sechser: $\frac2{27}\approx 0.07407$
 
   b) genau zwei Sechser: $\frac{5}{72}\approx 0.06944$
 \vspace{10cm}}
 \newpage
 
 
-\paragraph{Urne ohne zurücklegen} In einer Urne liegen drei grüne, zwei blaue und eine rote Kugel. Ich ziehe blind (Urne) zwei Kugeln hintereinander, ohne diese wieder zurückzulegen.
+\paragraph{Urne ohne Zurücklegen} In einer Urne liegen drei grüne, zwei blaue und eine rote Kugel. Ich ziehe blind (Urne) zwei Kugeln hintereinander, ohne diese wieder zurückzulegen.
 
 Wie groß ist die Wahrscheinlichkeit, dass genau eine blaue Kugel dabei ist?
 
@@ -137,7 +143,7 @@ Zeichnen Sie das zugehörige Baumdiagramm und entscheiden Sie, ob es sich um ein
 
 \TNT{14}{\bbwCenterGraphic{15cm}{geso/stoch/img/HeidiPeter.png}
 
-Peter gewinnt also mit $\frac29 + \frac8{28} = \frac{14}{27}$, was etwas mehr als 50\% ausmacht. Das Spiel ist nicht fair, denn wer als 2. würfeln darf, hat eine leicht höhere Gewinnchance.}
+Peter gewinnt also mit $\frac29 + \frac8{28} = \frac{14}{27}$, was etwas mehr als 50\% ausmacht. Das Spiel ist nicht fair, denn wer als zweiter würfeln darf, hat eine leicht höhere Gewinnchance.}
 \newpage
 
 
@@ -159,8 +165,8 @@ Mehrstufige Zufallsexperimente:
 
 \subsubsection{Bernoulli-Experiment}\index{Experiment!Bernoulli}\index{Bernoulli-Experiment}
 Ein mehrfaches Drehen am Glücksrad ist ein typisches
-Bernoulli\footnote{Jakob I Bernoulli, Schweizer Mathematiker,
-  1654-1705} Experiment, d.\,h.:
+Bernoulli-Experiment\footnote{Jakob I Bernoulli, Schweizer Mathematiker,
+  1654-1705}, d.\,h.:
 
 \begin{definition}{Bernoulli-Experiment}{}
 \begin{itemize}
@@ -196,13 +202,13 @@ In einer Urne liegen zehn Kugeln: vier blaue und sechs grüne. Ein
 Einzelexperiment besteht darin, genau eine Kugel zu ziehen, die Farbe
 zu notieren und die Kugel sogleich wieder zurückzulegen.
 Das Gesamtexperiment besteht darin, fünf Einzelexperimente
-durchzuführen. Jedesmal ist die Wahrscheinlichkeit eine blaue Kugel
-zu erwischen gleich groß und wir sprechen von einem Bernoulli-Experiment.
+durchzuführen. Jedesmal ist die Wahrscheinlichkeit, eine blaue Kugel
+zu erwischen, gleich groß und wir sprechen von einem Bernoulli-Experiment.
 
 \item Mehrfaches Drehen am Glücksrad.
 
 \item Mehrfaches Würfeln mit einem Spielwürfel, bei dem wir
-  interessiert sind, wie oft eine Augenzahl kleiner als 3 geworfen wurde.
+  interessiert sind, wie oft eine Augenzahl kleiner als 3 geworfen wird.
   
 \item
 Es müssen aber nicht immer Würfel, Münzen oder Kugeln in Urnen sein:
@@ -220,9 +226,9 @@ Bei der Binomialverteilung handelt es sich um ein
 Bernoulli-Experiment
 in einem mehrstufigen Baum. Dabei interessiert
 uns, wie groß die Wahrscheinlichkeit ist, dass von den beiden
-möglichen Ausgängen einer davon $k$ mal auftritt.
+möglichen Ausgängen einer davon $k$-mal auftritt.
 
-Wie groß ist die Wahrscheinlichkeit mit einem Würfel bei siebenmaligem
+Wie groß ist die Wahrscheinlichkeit, mit einem Würfel bei siebenmaligem
 Werfen fünf Mal eine der Zahlen 1 oder 2 zu erreichen.
 
 Dabei legen wir fest:

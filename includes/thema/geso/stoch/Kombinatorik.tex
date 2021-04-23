@@ -148,7 +148,7 @@ Regal stellen. Mehr geht nicht, weniger wollen wir nicht.
 Nun haben wir 10 Bücher zur Auswahl. Auf wie viele Arten können wir nun sechs Bücher in unser Regal einordnen?
 
 \TNT{6}{
-Für das erste Buch haben wir zehn Möglichkeiten. Wenn das Buch da mal steht, haben wir für das zweit Buch nur noch neun Möglichkeiten.
+Für das erste Buch haben wir zehn Möglichkeiten. Wenn das Buch da mal steht, haben wir für das zweite Buch nur noch neun Möglichkeiten.
 Schlussendlich bleiben $N$-Möglichkeiten:
 $$N=10\cdot{}9\cdot 8\cdot 7\cdot 6\cdot 5 = \frac{10\cdot 9\cdot 8\cdot 7\cdot 6\cdot 5\cdot 4\cdot 3\cdot 2\cdot 1}{4\cdot 3\cdot 2\cdot 1} = \frac{10!}{4!}$$
 \vspace{20mm}
@@ -182,24 +182,41 @@ $\frac{n!}{(n-n)!} = n!$, was dem bereits bekannten Spezialfall der \textbf{Perm
 entspricht.
 \end{bemerkung}
 
-\begin{bemerkung}{}{}
-Wenn wir 3 Plätze für 5 Personen haben, so sind die 5 Personen die $n$
-Elemente zu Auswahl und die 3 (geordneten) Plätze ist unser $k$.
-
-Wenn wir jedoch 5 Plätze haben und 3 Personen wählen darauf ihre
-Position, so sind die 5 Plätze unsere $n$ Elemente aus denen jede
-Person ($k=3$) eine Platznummer wählen kann.
-\end{bemerkung}
 
 \GESO{%%
 \begin{bemerkung}{}{}
-Die Variation ohne zurücklegen kann mit dem Taschenrechner mit «nPr» erreicht werden.
+Die Variation ohne Zurücklegen kann mit dem Taschenrechner mit «nPr» erreicht werden.
 Eine Rangliste von 3 Skifahrern (1., 2. und 3. Platz) aus 20
 Mitfahrenden ist also $$\frac{20!}{(20-3)!}\TRAINER{=6840}$$ und kann auf dem
 Taschenrechner mit der Taste «nPr» \tiprobutton{ncrnpr} erreicht
 werden\footnote{Die Taste muss dabei drei Mal gedrückt werden!}.
 \end{bemerkung}
 }%%% end GESO
+
+\newpage
+\begin{bemerkung}{«Plätze» ist nicht gleich «Stühle»}{}
+Nicht immer sind die zur Verfügung stehenden Objekte die Personen und nicht immer wird die Reihenfolge wird durch Stühle festgesetzt:
+
+
+\begin{tabular}{|p{59mm}|c|p{59mm}|}\hline
+\includegraphics[width=5cm]{geso/stoch/img/fuenfPersonenAufDreiStuehle.png} & $n=5,k=3$ & \includegraphics[width=5cm]{geso/stoch/img/dreiPersonenAufFuenfStuehle.png}\\\hline
+Hier sind fünf Personen \textbf{zur Auswahl}, somit ist $n=5$. Die Ordnung wird als Reihenfolge der Stühle betrachtet $(k=3)$ &$N={5 \choose 3}$&
+Hier sind fünf Stühle \textbf{zur Auswahl}, somit ist $n=5$. Die Ordnung wird als Reihenfolge der Personen (1. Person auf Stuhl B) betrachtet.$(k=3)$\\\hline
+Im Urnenmodell bezeichnen fünf Kugeln die fünf Personen und ich ziehe \textbf{der Reihe nach} drei heraus, die ich in eben dieser Reihenfolge auf die Stühle setze. &
+\raisebox{-2cm}{\includegraphics[width=3cm]{geso/stoch/img/urneFuenfKugeln.png}}&
+Im Urnenmodell bezeichnen fünf Kugeln die fünf Stühle und ich ziehe \textbf{der Reihe nach} drei heraus, die ich in eben dieser Reihenfolge den Personen zuordne.\\\hline
+Es wäre eine andere Problemstellung, für die 1. Person drei mögliche Stühle, für die 2. Person zwei Stühle und für die 3. Person den 3. verbleibenden Stuhl auszuwählen. Hier käme Person 4 und 5 gar nie zum Sitzen und das Problem beschränkt sich auf die Permutationen von 3 (also 3!).&&\\\hline
+\end{tabular}
+
+\leserluft
+
+Das $n$ ist immer die größere der beiden Zahlen: $n > k$
+
+\end{bemerkung}
+
+
+
+
 \newpage
 
 \begin{gesetz}{Variation ohne Wiederholung}{}
@@ -213,7 +230,7 @@ Wie viele Möglichkeiten hat eine Klasse mit $n$ Lernenden, sich auf
 $n+1$ Plätze zu verteilen?
 
 \TNT{2.4}{Hier stellt man sich einfach einen ``Phantom-Schüler'' vor,
-der Unsichtbar auf den leeren Bank sitzt. Somit gilt auch hier: Die
+der unsichtbar auf der leeren Bank sitzt. Somit gilt auch hier: Die
 Anzahl der Möglichen Sitzordnungen = Fakultät der leeren Plätze = $(n+1)!$.}
 
 Wie viele Sitzordnungen sind möglich, wenn es zwei oder mehr freie Plätze gibt?
@@ -262,8 +279,8 @@ Die Familie hat gemerkt, dass es meist nicht nötig ist, alle Namen
 aufzuzählen, wenn eine Teilmenge der Familie angesprochen werden soll:
 
 \begin{itemize}
-\item «Heute kochen die blonden»
-\item «Die großen dürfen heute ausnahmsweise länger aufbleiben»
+\item «Heute kochen die Blonden»
+\item «Die Großen dürfen heute ausnahmsweise länger aufbleiben»
 \item ...
 \end{itemize}
 
@@ -278,7 +295,7 @@ Beantworten Sie die folgenden Fragestellungen:
 treffende Bezeichnung.
 
 \TNT{4.4}{
-  die drei ältesten,
+  die drei Ältesten,
   Mutter und Männer (M\&Ms),
   keine Teenager,
   Mutter und Teenager,
@@ -292,13 +309,13 @@ treffende Bezeichnung.
 }% END TNT
 
 \item Wie viele solcher ``Teilmengen'' gibt es in der
-fünfköpfigen Familie im ganzen?
+fünfköpfigen Familie im Ganzen?
 \item Wie viele Teilmengen wären möglich in einer sechsköpfigen,
 bzw. siebenköpfigen Familie?
 \end{itemize}
 
 Die Anzahl der Möglichkeiten, drei Elemente aus einer Menge mit total
-fünf Elementen auszuwählen wird in der Mathematik mit dem
+fünf Elementen auszuwählen, wird in der Mathematik mit dem
 Binomialkoeffizienten angegeben:
 
 $${5\choose 3} = 10$$
@@ -319,12 +336,21 @@ Eine \textbf{Kombination} ist eine \textbf{un}geordnete Stichprobe.
 Wenn die Reihenfolge der Elemente keine Rolle spielt, gilt ganz
 allgemein:
 
-Die Anzahl der Möglichkeiten $k$ Elemente aus einer Grundgesamtheit
-von $n$ Elementen auszuwählen ist gleich
+Die Anzahl der Möglichkeiten, $k$ Elemente aus einer Grundgesamtheit
+von $n$ Elementen auszuwählen, ist gleich
 
 \begin{definition}{Binomialkoeffizient}{}\index{Binomialkoeffizient!Definition}
 $${n\choose k} = \frac{n!}{k!(n-k)!}$$
 \end{definition}
+
+Berechnen Sie gleich:
+\begin{itemize}
+\item $5\choose 3$\TRAINER{ = 10}
+\item $5\choose 2$ (begründe) \TRAINER{  = 10, denn 3 Auswählen ist gleich
+wie zwei nicht wählen!}
+\item Swiss LOTTO (ohne den Stern) ${42\choose 6}$ \TRAINER{$ = 5\,245\,786$}
+\end{itemize}
+
 
 Diese Zahl wird Binomialkoeffizient genannt und kann mit dem
 Taschenrechner einfach
@@ -332,13 +358,6 @@ mittels \tiprobutton{ncrnpr}\footnote{Zweimaliges Drücken der Taste:
 Wählen Sie für den Binomialkoeffizienten ``nCr'', nicht ``nPr''.}
 berechnet werden.
 
-Berechnen Sie gleich mit dem Taschenrechner
-\begin{itemize}
-\item $5\choose 3$\TRAINER{ = 10}
-\item $5\choose 2$ (begründe) \TRAINER{  = 10, denn 3 Auswählen ist gleich
-wie zwei nicht wählen!}
-\item Swiss LOTTO ${42\choose 6} \cdot{} {6 \choose 1}$ \TRAINER{$ = 31\,474\,716$}
-\end{itemize}
 
 \begin{bemerkung}{}{}
 Zur Begründung: Stellen Sie die $n$ Elemente in eine Reihe. Dazu gibt
@@ -352,9 +371,15 @@ Im Urnenmodell entspricht der Binomialkoeffizient dem Ziehen von $k$ Kugeln aus 
 Urne mit $n$ verschiedenen Kugeln. Die Reihenfolge der gewählten
 Kugeln ist hier nicht relevant.
 \end{gesetz}
+\newpage
+
+\subsection{Referenzaufgabe Euromillions}
+Beim Glücksspiel «Euromillions» werden fünf aus 50 Zahlen und zwei aus zwölf Sternen angekreuzt. Auf wie viel Arten ist dies Möglich?
+
+\TNT{2.4}{${50 \choose 5} \cdot {12 \choose 2} = 139\,838\,160$}
 
 \subsection*{Aufgaben}
 %%\aufgabenfarbe{Kompendium: Kap. 5.2 Aufg. 1 - 4}
 
-\aufgabenfarbe{Kompendium: Kap. 5.5.1 Aufg. 11., 12., 13., 14.*}
+\aufgabenfarbe{Kompendium S. 46: Kap. 5.5.1 Aufg. 11., 12., 13., 14.*}
 \newpage
