@@ -78,23 +78,43 @@ $$\log{}_a(1)=0$$
 \TNT{2.4}{Bsp.: $\log_{10}(1) = \lg(1) = \lg(10^0) = 0$.\vspace{1cm}}
 \GESO{\newpage}
 
+\TALS{
+  \begin{gesetz}{}{} 
+  $$\log_a(u\cdot{}v)=\log_a(u) + \log_a(v)$$
+  $$\log_a\left(\frac{u}{v}\right)=\log_a(u) - \log_a(v)$$
+  \end{gesetz}%%
+  \TNT{3.2}{Beweis s. Video ph. freimann in den Wikis}
+} %% END TALS
 
-\begin{bemerkung}{}{}  
-$$\log_a(u\cdot{}v)=\log_a(u) + \log_a(v)$$
-\TALS{$$\log_a\left(\frac{u}{v}\right)=\log_a(u) - \log_a(v)$$}
-\end{bemerkung}
 
-\TNT{2.4}{Bsp.:  $\log_2(8\cdot 32) = \log_2(2^3 \cdot 2^5) = \log_2(2^{3+5}) = 3+5 = \log_2(2^3) + \log_2(2^5) $.\vspace{1cm}}
+\TALS{Daraus ergibt sich folgende Potenzregel}
 
-
-Aus obigem Gesetz zur Addition folgt unmittelbar die 
 \begin{gesetz}{Potenzregel}{}
 $$\log_a(u^k)=k\cdot{}\log_a(u)$$
 \end{gesetz}
-\TNT{2.4}{
-  $\log(5^3) = \log(5\cdot 5\cdot 5) = \log(5)+\log(5)+\log(5) =
-  3\cdot \log(5)$
+\TNT{3.2}{
+  Voraussetzung:
+  \begin{itemize}
+  \item $(I)\,\,\,\,\,\,\,\, \, (10^m)^n = 10^{m\cdot{}n}$
+  \item $(II)\,\,\,\,\,\,\, \lg(10^x) = x$
+  \end{itemize}
+  Beweis am Beispiel:
+  $\lg(100^7) = \lg((10^2)^7) {\stackrel{(I)}{=}} \lg(10^{2\cdot{}7}) =
+  \lg(10^{7\cdot{} 2}) {\stackrel{(II)}{=}} 7\cdot{} 2 {\stackrel{(II)}{=}} 7\cdot{}
+  \lg(10^2) = 7\cdot{}\lg(100)$
 }%% END TNT
+
+\GESO{
+  \begin{bemerkung}{}{} 
+  $$\log_a(u\cdot{}v)=\log_a(u) + \log_a(v)$$
+  \end{bemerkung}%%
+  \TNT{2.4}{Bsp.:  $\log_2(8\cdot 32) = \log_2(2^3 \cdot 2^5) =
+    \log_2(2^{3+5}) = 3+5 = \log_2(2^3) + \log_2(2^5) = \log_2(8) + \log_2(32)$.\vspace{1cm}}
+} %% END GESO
+
+
+
+
 
 \TALS{
 \begin{bemerkung}{}{}
