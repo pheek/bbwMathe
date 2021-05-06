@@ -1,4 +1,4 @@
-#!/bin/bash.sh
+#!/bin/bash
 # clean all generated files (except the pdf)
 # 2019-07-07
 # philipp.freimann@bbw.ch
