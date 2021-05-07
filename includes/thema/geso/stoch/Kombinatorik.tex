@@ -55,6 +55,30 @@ $$N = n^k$$
 \begin{definition}{Variation}{}\index{Variation}
 Eine \textbf{Variation} ist eine geordnete Stichprobe.
 \end{definition}
+\newpage
+
+\subsection*{Referenzaufgabe Zahlenschloss}
+Ein Zahlenschloss wie eben soll gebaut werden. Dabei hat jeder Ring
+die Ziffern von 0 bis 6 (also insgesamt 7 Ziffern).
+Das Schloss soll mindestens 20\,000 Variationen anbieten. Wie viele
+Ringe muss ich nehmen?
+
+\TNT{9.6}{
+Hier ist die Anzahl Ringe (also das $k$) unbekannt. Gegeben sind
+
+$$n=7$$
+$$N\ge{}20\,000$$
+Die Formel lautet
+$$N\ge{}n^k$$
+$$20\,000\ge{}7^k$$
+Wo wären die beiden Terme gleich?
+$$20\,000 = 7^k$$
+Durch Logarithmieren erhalten wir:
+$$k = \log_7(20\,000)\approx 5.089$$
+Damit müssen wir mind \textbf{6 Ringe} einsetzen, denn bei 5 Ringen erhalten
+wir erst 16\,807 Variationen.
+}%% END TNT
+
 
 \subsection*{Aufgaben}
 \aufgabenfarbe{Kompendium S. 46 Kap. 5.5.1 Aufg. 16. a)}
