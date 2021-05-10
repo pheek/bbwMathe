@@ -16,8 +16,9 @@
 
 \subsection{Einführung}
 
-Betrachten Sie die beiden folgenden Vektoren ${\color{blue} \vec{a}}$ und
-${\color{red}\vec{b}}$, welche beide durch mehrere Repräsentanten eingezeichnet sind:
+Betrachten Sie die beiden folgenden (freien) Vektoren ${\color{blue} \vec{a}}$ und
+${\color{red}\vec{b}}$, welche beide durch mehrere Repräsentanten\index{Repräsentant!Vector}
+(Vertreter\index{Vertreter!Vector}) eingezeichnet sind:
 
 \bbwGraph{-4}{7}{-3}{3}{
 \bbwLetter{3.5,3}{\vec{a}}{blue}
@@ -30,7 +31,7 @@ ${\color{red}\vec{b}}$, welche beide durch mehrere Repräsentanten eingezeichnet
 \draw [->,red] (-1,-2) --(-2,0);
 \draw [->,red] (2.5,-0.5) --(1.5,1.5);
 \draw [->,red] (5,-3) --(4,-1);
-
+\draw [->,red] (7,0.5) --(6,2.5);
 }%% END bbwGraph
 
 Tragen Sie die fehlenden Werte in die Tabelle ein\footnote{Der
@@ -41,10 +42,70 @@ Tragen Sie die fehlenden Werte in die Tabelle ein\footnote{Der
                  & ${\color{blue}\vec{a}}$   & ${\color{red}\vec{b}}$   \\\hline
   $x$-Komponente & \LoesungsRaumLang{3}      & \LoesungsRaumLang{-1}    \\\hline
   $y$-Komponente & \TRAINER{1}               & \TRAINER{2}              \\\hline
-  Länge          & \TRAINER{$\sqrt{10}$}     & \TRAINER{$\sqrt{5}$}     \\\hline
+  Betrag\index{Betrag!eines Vektors} (=Länge) & \TRAINER{$\sqrt{10}$}     & \TRAINER{$\sqrt{5}$}     \\\hline
   math. pos. Winkel  & \TRAINER{$\arctan{}\left(\frac13\right)\approx
     18.43\degre$} & \TRAINER{$90\degre +
     \arctan{}\left(\frac12\right)\approx 116.6\degre$}               \\\hline
 \end{tabular}
 \platzFuerBerechnungen{3.2}
+\newpage
+\subsection{Vektorbegriff}
+\begin{definition}{Vektor}{}
+  Ein \textbf{Vektor} besteht aus einer Länge und einer Richtung.
+\end{definition}
+
+\subsubsection{Notation}\index{Notation!Vector}\index{Vector!Notation}
+
+Ein Vektor wird entweder mit einem Pfeil über dem Buchstaben
+${\color{blue}\vec{a}}$ oder aber mit einem Pfeil über der zwei
+Punkebezeichnungen ${\color{red}\overrightarrow{{PQ}}}$ angegeben:
+
+\bbwGraph{-3}{6}{-1}{3}{
+\bbwLetter{2,2}{\vec{a}}{blue}
+\draw [->,blue] (1,1) -- (4,2);
+
+\bbwLetter{-1.5,1}{P}{red}
+\bbwLetter{-2.5,3}{Q}{red}
+\draw [->,red] (-1,1) --(-2,3);
+}%% END bbwGraph
+\newpage
+
+\subsubsection{Betrag (Länge) von Vektoren}
+\theorieTALSGeom{176}{4.1}
+Die Länge der Vectoren wird mittels «Pythagoras» berechnet
+
+Sei $\vec{a} = \begin{pmatrix} 3\\ 1\end{pmatrix}
+  = \begin{pmatrix}x_a\\y_a\end{pmatrix}$. Somit ist die Länge von
+    $\vec{a}$ wie folgt zu berechnen:
+
+    \begin{gesetz}{Betrag (Länge)}{}
+      Länge von $\vec{a}$ =
+
+      $$|\vec{a}| = \sqrt{x_a^2 + y_a^2}$$
+      \end{gesetz}
+    Notationen:
+
+    \begin{definition}{Länge}{}
+      Ein Vector $\vec{a}$ von Punkt $A$ nach $B$ hat den Betrag (= Länge)
+
+      $$a = |\vec{a}| = \overline{AB} = \left|\overrightarrow{AB}\right|$$
+    \end{definition}
+
+    \TALSGeomAadB{178}{2., 5., 6.}
+\newpage
+    
+\subsection{Elementare Vektoroperationen}
+\theorieTALSGeom{178}{4.2}
+
+\subsubsection{Addition}
+
+\subsubsection{Subtraktion}
+\newpage
+
+\subsubsection{Skalarmultiplikation}
+\theorieTALSGeom{178}{4.2}
+\begin{definition}{Skalar}{}
+  Vektoren haben eine Länge und eine Richtung. Eine Größe ohne
+  Richtung aber mit einem Betrag nennen wir \textbf{Skalar}. 
+\end{definition}
 \newpage
