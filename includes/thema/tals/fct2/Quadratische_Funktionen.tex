@@ -338,16 +338,18 @@ $$y = \frac{1}{2}x^2 - x + 3.5$$
 \TALS{\subsection*{Aufgaben}}
 \TALSAadB{187ff}{676. a) c), 682., 684.}
 \newpage
+
+
 \subsection{Computer Algebra Systeme (CAS)}\index{CAS}
 Das eben gezeigte Beispiel wird in der Praxis meist nicht von Hand,
 sondern mit einem Computer-Algebra-System, kurz CAS, gelöst:
 
 \paragraph{Aufgabenstellung}
-Gegeben sind drei Punkte (1|3), (2|3.5) und (-3|11).
+Gegeben sind wieder drei Punkte (1|3), (2|3.5) und (-3|11).
 Gesucht ist die Parabel $y = ax^2 + bx + c$, welche durch die drei
 Punkte geht.
 
-Dies wird mit dem \tinspire wie folgt gelöst:
+Dies wird mit dem \tinspire{} wie folgt gelöst:
 \begin{itemize}
 \item Definiere die Funktionsgleichung mit
   Parametern\footnote{\tinspire Regel: $ax\ne a\cdot{} x$}:\\
@@ -383,11 +385,15 @@ $$0 = 3.1(x-5)(x+6)$$
 so wird die Gleichung genau dann wahr, wenn (mind.) einer der beiden Klammerausdrücke rechts
 gleich Null ist. Die Parabelöffnung (hier 3.1) kann dabei beliebig variieren und ist (neben den Nullstellen) der einzige Parameter.
 
-Die allgemeine Form lautet
+Die Nullstellenform lautet
 
-\begin{center}\fbox{$y = a(x-x_{0_1})\cdot{}(x-x_{0_2}),$}\end{center}
+\begin{gesetz}{}{}
 
-wobei $x_{0_1}$ und $x_{0_2}$ die Nullstellen der Parabel bezeichnen. 
+  $$y = a(x-x_1)\cdot{}(x-x_2)$$
+
+  \end{gesetz}
+
+wobei $x_1$ und $x_2$ die Nullstellen der Parabel bezeichnen. 
 \newpage
 
 
@@ -423,9 +429,9 @@ Scheitelpunkt?
 \TNT{4.4}{CAS: bei $x_S = 4$ und $y_S= 5$; völlig irrelevant ist die 3.6.}
 
 Ist eine quadratische Funktion in der Form
-\begin{center}
-\fbox{$y = a(x-x_S)^2 + y_S$}
-  \end{center}
+\begin{gesetz}{}{}
+$$y = a(x-x_S)^2 + y_S$$
+\end{gesetz}
 gegeben, so sprechen wir von der \textbf{Scheitelform} oder Scheitelpunktsform.
 Das liegt daran, dass diese Parabel ihren Scheitelpunkt bei
 $(x_S|y_S)$ hat.

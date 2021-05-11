@@ -345,17 +345,21 @@ Die Summe aller Wahrscheinlichkeiten muss dann immer gleich 1.0 (100\%) sein.
 
 
 
-Andererseits gibt es dazu auch eine Formel:
+Andererseits gibt es dazu auch eine Formel.
 
-$$h(k|N;M;n) := P(X=k) = \frac{ {M\choose k} \cdot{} {{N-M}\choose {n-k}}}{{N \choose n}}$$
-
-Dabei bezeichnen
+Es seien:
 \begin{itemize}
 \item $N$ die Anzahl Elemente in der Urne (hier $N = 7$)
 \item $M$ die Anzahl der möglichen Treffer in der Urne. Hier die Anzahl der grünen Kugeln (also $M = 3$)
 \item $n$ die Anzahl der herausgezogenen Kugeln (hier $n = 2$)
 \item $k$ die Anzahl der gewünschten bzw. zu erreichenden Treffer. Hier \zB null, einen oder zwei.
 \end{itemize}
+\begin{gesetz}{}{}
+$$h(k|N;M;n) := P(X=k) = \frac{ {M\choose k} \cdot{} {{N-M}\choose {n-k}}}{{N \choose n}}$$
+\end{gesetz}
+
+Im Beispiel, wenn ich genau einen Treffer ($k=1$) mit zwei Ziehungen ($n=2$) aus einer Urne mit sieben Kugeln ($N=7$) mit drei möglichen Treffern ($M=3$) erhalten will:
+$$h(k|N;M;n) = \frac{ {M\choose k} \cdot{} {{N-M}\choose {n-k}}}{{N \choose n}} = \frac{ {3\choose 1} \cdot{} {{7-3}\choose {2-1}}}{{7 \choose 2}} = \frac{24}{42} = \frac47 \approx 0.57$$
 \newpage
 
 
@@ -376,6 +380,6 @@ Daraus werden die folgenden Werte berechnet:
 
 \subsection*{Aufgaben}
 
-\aufgabenfarbe{Kompendium: Kapitel 5.5.3 Aufgaben 24 - 27}
+\aufgabenfarbe{Kompendium: Kapitel 5.5.3 Aufgaben 25., 26., 24. und optional 27.}
 \newpage
 
