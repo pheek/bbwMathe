@@ -1,1 +1,1 @@
-../../../../../arbeitsblaetter/clean.sh
+../../../../../layout/clean.sh

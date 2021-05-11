@@ -54,6 +54,8 @@ $$\mathbb{W} = \LoesungsRaum{\left[-\frac{\pi}{2}; \frac{\pi}{2}\right]}  =  \Lo
 
 \subsection*{Aufgaben}
 
+Im Geometrie-Buch; doch diesmal anhand der Funktionsgraphen und nicht (nur) am Einheitskreis.
+
 Vorzeigeaufgabe: Für welche(n) Winkel $\varphi$ gilt \fbox{$\sin(\varphi) = -\sin(-41.7\degre)$}?
 
 \TRAINER{Lösung: $\varphi = 41.7\degre$ und $180\degre-41.7\degre=139.3\degre$ und alle periodischen Vielfachen: $\varphi\pm n\cdot{}360\degre$}
@@ -85,7 +87,10 @@ einmal im Gradmaß an:
 $$\mathbb{W} = \LoesungsRaum{[0; \pi]}  =  \LoesungsRaum{[0; 180\degre]}$$
 
 \subsection*{Aufgaben}
-\TALSGeomAadB{102ff}{86. b) c) und e)}
+Mit Taschenrechner:
+\TALSGeomAadB{102ff}{86. b)}
+Ohne Taschenrechner:
+\TALSGeomAadB{102ff}{86. c) und e)}
 
 
 \newpage
@@ -107,11 +112,10 @@ $$\mathbb{W} = \LoesungsRaum{\left]-\frac{\pi}{2}; \frac{\pi}{2}\right[}  = \Loe
 Beachten Sie, dass im Wertebereich $\mathbb{W}$ die Grenzen ($-90\degre$und $+90\degre$) nicht enthalten sind. Warum ist das so?
 
 \subsection*{Aufgaben}
-Im Geometrie-Buch; doch diesmal anhand der Funktionsgraphen und nicht (nur) am Einheitskreis.
-
-\subsection*{Aufgaben}
-\TALSGeomAadB{102ff}{87. a) und c)}
-
+Mit Taschenrechner:
+\TALSGeomAadB{102ff}{87. a)}
+Ohne Taschenrechner:
+\TALSGeomAadB{102ff}{87. c)}
 \newpage
 
 
@@ -153,5 +157,12 @@ Beispiele und Lösung:
   $P=(-10 |  60)$ & $\varphi = \LoesungsRaum{99.46\degre}$ & $\varphi=\LoesungsRaum{90\degre - \arctan(\frac{y}{x})}$ \\ \hline
   $P=(  0 |  70)$ & $\varphi = \LoesungsRaum{90\degre}$    & $\varphi=$\LoesungsRaum{Sonderfall, sonst Division durch 0} \\ \hline
   $P=(-20 |   0)$ & $\varphi = \LoesungsRaum{180\degre}$   & $\varphi=\LoesungsRaum{\arctan(\frac{y}{x}) + 180\degre}$ \\ \hline
-  $P=(x_P | y_P)$ & allgemeiner Fall?      & $\varphi=\LoesungsRaum{\textrm{\textbf{atan2}}(y, x)}$\\ \hline
+  $P=(x_P | y_P)$ & allgemeiner Fall?      & $\varphi=\LoesungsRaum{\textrm{\textbf{atan2}}(\textbf{y}, \textbf{x})}$\\ \hline
 \end{tabular}
+
+\TNT{2.8}{
+Beispiel unter \texttt{html-css-js.com}: im HTML-Fenster: \texttt{<p
+  id='test'/>} und im javascript-Fenster:
+
+\texttt{document.getElementById('test').innerHTML = 180 * Math.atan2(10, 5) / Math.PI;}%%
+}%% END TNT

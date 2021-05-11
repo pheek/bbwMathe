@@ -1,0 +1,104 @@
+
+\subsubsection{Negative Exponenten}
+Für sinnvolle Rechengesetze (s. oben) müsste auch gelten:
+
+\vspace{4mm}
+
+\TRAINER{$a^5 \cdot a^{(-2)} = a^{5 + (-2)} = a^3$}%%
+\noTRAINER{$a^5 \cdot a^{(-2)} = ....................................................$}%%
+
+\vspace{4mm}
+
+Dies gilt, wenn wir $a^{-2}$ als $\frac{1}{a^{2}}$ definieren.
+
+\begin{definition}{}{}
+$$a^{-n} := 1 : \underbrace{a : a : a : ... : a}_{n \textrm{\ Divisoren}}$$
+\end{definition}
+
+\begin{itemize}
+	\item \fbox{$a^{-n} = \frac{1}{a^{+n}} = \left(\frac{1}{a}\right)^n$}   
+
+  Begründung:
+
+  \TNT{2.4}{
+     \TALS{Wir wissen schon: $a^{m-n} = a^m : a^n = a^m\cdot{}\frac{1}{a^n}$   und es soll gelten:
+       $a^{m-n} = a^m\cdot{} a^{-n}$ Beide Gleichungen gleichsetzen:
+       $\Longrightarrow a^{m}\cdot{} \frac{1}{a^n} = a^m\cdot{} a^{-n} $ Beide Seiten durch $a^m$ teilen:
+     $\frac{1}{a^n}=a^{-n}$}
+     \GESO{$a^5\cdot{} a^{-2} = a^{5+(-2)} = a^3$ daraus folgt
+       (beide Seiten durch $a^5$ teilen)\\
+       $a^{-2} = \frac{a^3}{a^5} = \frac{a^3 : a^3}{a^5 : a^3} = \frac{1}{a^2}$
+     }%% end GESO
+}%% END TRAINER
+
+   
+   Analog:
+	\item \fbox{$a^{n} = \frac{1}{a^{-n}} = \left(\frac{1}{a}\right)^{-n}$}   
+
+
+  \item \fbox{$\left(\frac{a}{b}\right)^{-n} = \left(\frac{b}{a}\right)^{+n}$}
+    
+    \TALS{ Begründung
+
+      \TNT{2.4}{$\left( \frac{b}{a} \right)^n  =
+       \left(b \cdot{} \frac{1}{a} \right)^n =
+       b^n \cdot \left(\frac{1}{a}\right)^n =
+       \left(\frac{1}{b}\right)^{-n} \cdot{} a^{-n} =
+       \left(\frac{1}{b}\cdot{}a\right)^{-n} =
+       \left(\frac{a}{b}\right)^{-n} 
+       $}} %% END TALS
+
+
+\end{itemize}
+
+Nun gilt:
+
+\TRAINER{$a^5 \cdot a^{(-2)} = a^5 \cdot \frac{1}{a^2} =\frac{a\cdot a\cdot a\cdot a\cdot a}{ a\cdot a}$}
+
+\noTRAINER{$a^5 \cdot a^{(-2)} = ......................................................$}
+
+%%$$\left(\frac{1}{a}\right)^{-n} = \frac{1}{\left(\frac{1}{a}\right)^n} = a^n$$
+\newpage
+
+
+
+\subsubsection{Null}
+
+Ebenso müsste $a^5 \cdot a^0 = a^{5+0} = a^5$ gelten. Dies ist aber
+nur möglich, wenn wir $a^0 := 1$ definieren ($a\ne 0$).
+
+\begin{definition}{Exponent Null}{} Für alle Basen $a \in \mathbb{R}\backslash\{0\}$ gilt:
+\begin{center}
+\fbox{$a^0 := 1$}
+\end{center}
+\end{definition}
+
+Zweite Begründung wenn die Rechengesetze gelten sollten: $a^0 = a^{1-1} = \frac{a^1}{a^1} = 1$
+
+%\textbf{Rechengesetze zusammengefasst:}
+
+%\begin{itemize}
+%\item  $\frac{a^m}{a^n} = a^{m-n}$ (Dies gilt auch wenn $n > m$.)
+ 
+%\item $a^{-n} := a^{0-n}=\frac{a^0}{a^n} = \frac{1}{a^n} = \left(\frac{1}{a}\right)^n$
+
+%\item
+%$\left(\frac{1}{a}\right)^{-n} = \frac{1}{\left(\frac{1}{a}\right)^n} = a^n$
+
+
+%\item $\left(\frac{a}{b}\right)^{-n} = \left(\frac{b}{a}\right)^{+n}$ gilt daher auch. 
+%\end{itemize}
+
+\subsection{Aufgaben}
+
+\TALS{Potenzen:}\TALSAadB{32ff}{Von Hand: 79. a) 82. a) 83. b) 86.b)
+91. a) l) 94. c) f) 96. h) 101. a)\\
+Von Hand \textbf{und} Taschenrechner (TR): 103. a)\\
+Von Hand: 103. b)\\
+TR: 103. c) 106. h)}
+
+\GESOAadB{68ff}{18. c), 19. b), 20. h), 25. f), 26. b), 31. b),
+  34. b), 38. c) e), 41. e), 44. i)}
+
+Optional: \GESOAadB{72ff}{51. (Koch)}
+\newpage

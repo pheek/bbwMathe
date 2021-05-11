@@ -7,13 +7,19 @@ echo "OLAT_MOUNT_POINTS:: ${OLAT_MOUNT_POINTS} ::"
 
 BBW_WEBDAV_PATH=`ls -l /mnt/ | grep "${OLAT_MOUNT_POINTS}" | grep "6_MAT_Ressourcen/\$" | awk '{print $9}'`
 
-echo "BBW_WEBDAV_PATH:: ${BBW_WEBDAV_PATH} ::"
+echo "BBW_WEBDAV_PATH hier gefunden:  ${BBW_WEBDAV_PATH} ::"
 
 if [ -d "/mnt/${BBW_WEBDAV_PATH}/lehrperson" ] ; then
 		echo "found mountpath at /mnt/${BBW_WEBDAV_PATH}"
 else
 		echo "${BBW_WEBDAV_PATH} not mounted??? exiting..."
-		exit
+		echo "mounting ..."
+    sudo /home/phi/bin/net/bbw_up_webdav.sh
+ 
+    OLAT_MOUNT_POINTS=`mount | grep olat | awk '{print $3}'`
+    BBW_WEBDAV_PATH=`ls -l /mnt/ | grep "${OLAT_MOUNT_POINTS}" | grep "6_MAT_Ressourcen/\$" | awk '{print $9}'`
+
+#   exit
 fi
 
 
