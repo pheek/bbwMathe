@@ -23,12 +23,13 @@ oder $\epsdice{6}$) eintritt, wird berechnet mit $P(E)
 = \frac{\textrm{Anzahl gewünschte Ergebnisse}}{\textrm{Anzahl
 mögliche Ergebnisse}}$.
 
-Hier $P(\epsdice{5}\cup\epsdice{6}) = \LoesungsRaum{\frac{2}{6}}$.
+Hier $P(\{\epsdice{5}\}\cup\{\epsdice{6}\}) = \frac{\left|\left\{\epsdice{5}, \epsdice{6}\right\}\right|}{|\Omega|}= \frac{|E|}{|\Omega|}=\LoesungsRaum{\frac{2}{6}}$.
 \end{itemize}
 
 \begin{definition}{Laplace Experiment}{}
   Zufallsexperimente, deren Elementarereignisse alle gleich wahrscheinlich sind, werden als
-  \textbf{Laplace-Experimente} bezeichnet.
+  \textbf{Laplace-Experimente} bezeichnet. Die Wahrscheinlichkeit berechnet sich wie folgt:
+  $$P(E) = \frac{|E|}{|\Omega|}$$
 \end{definition}
 
 
@@ -56,7 +57,7 @@ Wie groß ist die Wahrscheinlichkeit, bei diesem Spiel zu gewinnen?
 Zeichnen Sie dazu das Baumdiagramm, das bei jedem ``Sieg'' sofort endet und
 maximal drei Stufen tief geht.
 
-\TNT{8}{Einseitiger entarteter Baum mit Sieg = 75/360 und Verlust = 285/360. Drei Mal Verlust bei $\left(\frac{285}{360}\right)^3 \approx 49.6\%$}
+\TNT{8}{Einseitiger entarteter Baum mit Sieg = 75/360 und Verlust = 285/360. Drei Mal Verlust bei $\left(\frac{285}{360}\right)^3 \approx 49.6\%$; somit Gewinn beim Gegenereignis $1-\left(\frac{285}{360}\right)^3\approx{} 50.38\%$.}
 
 \TRAINER{\bbwCenterGraphic{8cm}{geso/stoch/img/Rad75Baum.png}}
 
@@ -319,7 +320,7 @@ $k=17$ bei $x$ eintragen ($\approx 0.5951$).
 
 
 
-\subsection{Hypergeometrische Verteilung}
+\subsection{Hypergeometrische Verteilung}\index{Verteilung!Hypergeometrische}\index{Hypergeometrische Verteilung}
 In einer Urne liegen sieben Kugeln. Drei davon sind Treffer (grün) und vier davon sind Nieten (schwarz).
 Wir dürfen zwei Kugeln blind herausnehmen (ohne diese wieder zurückzulegen).
 
@@ -345,7 +346,7 @@ Die Summe aller Wahrscheinlichkeiten muss dann immer gleich 1.0 (100\%) sein.
 
 
 
-Andererseits gibt es dazu auch eine Formel.
+Andererseits gibt es dazu auch eine Formel, die \textbf{hypergeometrische Verteilung}\footnote{Die Folgeglieder der \textit{geometrischen Verteilung} $P(X=k) = p\cdot{}q^{k-1}$ verhalten sich wie eine geometrische Reihe (die Quotienten von zwei Folgegliedern $P(X=k) : P(X=k+1)$ sind jeweils konstant). Da die hier betrachtete Verteilung noch rascher ``abfällt'', wie die \textit{gemoetrische Verteilung}, so sprechen wir hier von 'textbf{hyper}geometrisch.}.
 
 Es seien:
 \begin{itemize}
