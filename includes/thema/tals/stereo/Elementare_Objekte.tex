@@ -5,12 +5,12 @@
 
 \subsection*{Lernziele}
 \begin{itemize}
-\item Zylinder
+\item allgemeiner Zylinder
   \begin{itemize}
   \item Prisma
   \item Kreiszylinder
     \end{itemize}
-\item Kegel
+\item Konus (verallgemeinerter Kegel)
   \begin{itemize}
   \item Pyramide
   \item Kreiskegel
@@ -19,21 +19,52 @@
   \item Kugel
 \end{itemize}
 \newpage
+\subsection{Überblick über die betrachteten Körper}\index{Prisma}\index{Kreiszylinder}\index{Pyramide}\index{Kreiskegel}\index{Kugel}\index{Kouns}
 
-\subsection{Zylinder (inkl. Prisma)}\index{Zylinder}\index{Prisma}
+\bbwCenterGraphic{16cm}{tals/stereo/img/Ueberblick.png}
+
+Bemerkungen: Auch wenn es beliebige allgemeine Zylider oder Kegel
+gibt, betrachten wir nur solche, welche als Grundfläche ein Polygon
+(Vieleck) oder einen Kreis aufweisen.
+
+Die folgenden Begriffe werden für die Berechnungen benötigt:
+
+\begin{tabular}{|l|l|p{12cm}|}
+  \hline
+  Kürzel & Begriff& Bemerkung\\\hline
+  $r$  & Radius & (bei Kreiszylinder, Kreiskegel und Kugel)\\\hline
+  $G$  & Grundfläche & (nicht vorhhanden bei der Kugel)\\\hline
+  $h$  & Höhe & Die Höhe steht senkrecht zur Grundfläche und reicht bis zur Deckfläche oder bis zur Spitze\\\hline
+  $D$  & Deckfläche & verschwindet beim Konus\\\hline
+  $M$  & Mantelfläche & Summe aller Seitenflächen ohne Grund- und Deckfläche\\\hline
+  $S$  & Oberfläche & Summe von Grund-, Deck- und Mantelfläche\\\hline
+  $V$  & Volumen & \\\hline
+  \end{tabular} 
+
+\newpage
+\subsection{Allgemeiner Zylinder (Prisma und Zylinder)}\index{Zylinder}\index{Prisma}
 Spezialfälle: Quader und Würfel
 
-\begin{gesetz}{Volumen Zylinder (inkl. Prisma)}{}
-  
-  $V$ = Volumen
-  
-  $G$ = Grundfläche
+\begin{gesetz}{Volumen Zylinder (inkl. Prisma)}{}\index{Volumen!Zylinder ink. Prisma}
 
-  $h$ = Höhe
-  $$V = G\cdot{}h$$
-  \end{gesetz}
+  $V$ = Volumen\\
+  $G$ = Grundfläche\\
+  $h$ = Höhe\\
+  \begin{center}\fbox{$V = G\cdot{}h$}\end{center}
+\end{gesetz}
 
-\theorieTALS{141}{????}
+\begin{gesetz}{Oberfläche Zylinder (inkl. Prisma)}{}\index{Oberfläche!Zylinder inkl. Prisma}
+
+  $S$ = Oberfläche (manchmal als $O$ bezeichnet)\\
+  $G$ = Grundfläche\\
+  $D$ = Deckfläche (Es gilt: $D=G$)\\
+  $h$ = Höhe\\
+  $M$ = Mantelfläche = $h \cdot{} \textrm{Umfang der Grundfläche}$\\
+  \begin{center}\fbox{$S = G + D + M  = 2\cdot{}G + M$}\end{center}
+\end{gesetz}
+
+Prisma: \theorieTALS{141}{3.2.1}\\
+Kreiszylinder: \theorieTALS{158}{3.3.1}
 
 \subsection*{Aufgaben}
 Prisma:
@@ -43,8 +74,28 @@ Prisma:
 Kreiszylinder:
 \TALSAadB{158ff}{136}
 \newpage
+\subsection{Quader und Würfel}
+Die beiden speziellsten Prismen sind der Quader und der Würfel.
 
-\subsection{Kegel (inkl. Pyramide)}\index{Kegel}\index{Pyramide}
+Für ein Quader mit den Seitenlängen $a$, $b$ und $c$ gilt:
+
+\begin{gesetz}{}{}\\
+  Volumen $V = G\cdot{} h = a\cdot{}b\cdot{}c$\\
+  Oberfläche $S=2\cdot{}G + M = 2\cdot{}ab + ac + bc + ac + bc = 2\cdot{}(ab + ac + bc)$\\
+  Raumdiagonale $d = \sqrt{a^2 + b^2 + c^2}$
+\end{gesetz}
+
+Im Spezialfall «Würfel» gilt $a=b=c$:
+\begin{gesetz}{}{}\\
+  Volumen $V = G\cdot{} h = a^3$\\
+  Oberfläche $S=2\cdot{}G + M = 6\cdot{}a^2$\\
+  Raumdiagonale $d = \sqrt{3\cdot{}a^2} = a\cdot{}\sqrt{3}$
+\end{gesetz}
+
+
+\newpage
+
+\subsection{Konus (Pyramide und Kreiskegel)}\index{Kegel}\index{Kreiskegel}\index{Pyramide}\index{Konus}
 
 \TRAINER{Einstiegsvideo: Beweis der 1/3 Formel auf Youtube (s. Wiki).}
 
@@ -60,7 +111,7 @@ Dahschur erbaut.}
 \end{center}
 
 
-\begin{gesetz}{Volumen Kegel (inkl. Pyramide)}{}
+\begin{gesetz}{Volumen Konus (Pyramide und Kreiskegel)}{}
   
   $V$ = Volumen
   
@@ -73,13 +124,7 @@ Dahschur erbaut.}
 \subsection*{Aufgaben}
 Pyramide:
 \TALSAadB{146ff}{80. und 86.}
-Kegel:
+Kreiskegel:
 \TALSAadB{158ff}{216.}
 \newpage
 
-\subsection{Kegel- und Pyramidenstumpf}
-\TRAINER{Optional?}
-coming soon...
-\subsection*{Aufgaben}
-\TALSAadB{146ff}{105}
-\newpage
