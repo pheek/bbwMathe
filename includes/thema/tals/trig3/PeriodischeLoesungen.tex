@@ -73,16 +73,29 @@ Als allerletztes gilt es noch durch «Abzählen» herauszufinden, welche der Lö
 \end{rezept}%%
 \newpage
 
-\subsection{Taschenrechner}
-Freilich kann mit dem Taschenrechner die Gleichung aus dem
-Einstiegsbeispiel $$\cos(2x+\frac{\pi}{9})=0.5$$ relativ einfach gelöst werden:
 
-Mit der Eingabe des Definitionsbereichs (domain) «dom» ...
-$$\mathbb{D} =  [ -\pi, 3\pi[$$
-... und der Gleichung «gls» ...
-$$\cos\left(2x+\frac{\pi}{9}\right) = 0.5$$
+\subsubsection{Referenzaufgabe}
+Berechnen Sie $x$ im Intervall $[0,2\pi]$ der Gleichung
+$$\sin(3x+\frac{\pi}{3}) = -\frac{\sqrt{3}}{2}$$
+\TNT{18}{
+  1. Subs
+  titution: $y:=3x+\frac{\pi}{3}$\\
+  2. $\sin(y)=\frac{-\sqrt{3}}{2}$\\
+  Daraus lesen wir $y$ bei $240\degre$ und bei $300\degre$ ab. Oder im
+  Bogenmaß: $y=\frac43\pi$ oder $y\frac53\pi$\\
+  3. Periodische Lösungen:
+  $y_1 = \frac43\pi + n\cdot{}2\pi$ und $y_2=\frac53\pi +
+  n\cdot{}2\pi$\\
+  4. Resub\\
+  $$y_1: \frac{4\pi}3 + n\cdot{}2\pi = 3x + \frac{\pi}3$$
+  Daraus ergibt sich $x_1$:
+  $$x_1 = \frac{\pi}3(1+2n)$$
+  $$y_2: \frac{5\pi}3 + n\cdot{}2\pi = 3x + \frac{\pi}3$$
+  Daraus ergibt sich $x_2$:
+  $$x_1 = \frac{2\pi}9(2+3n)$$
+  5. Einschränken auf $[0;2\pi]$:
+  $$x\in\{\frac{\pi}3, \pi, \frac{5\pi}{3}, \frac{4\pi}9,
+  \frac{10\pi}{9}, \frac{16\pi}{9}\}$$
 
-... erhalten wir die selben acht Lösungen.
-    
-\bbwCenterGraphic{8cm}{tals/trig4/img/nspire1.png}%%
+}%% END TNT
 \newpage
