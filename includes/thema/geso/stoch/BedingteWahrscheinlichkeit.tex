@@ -26,4 +26,66 @@ Die \textbf{Bedingte Wahrscheinlichkeit} oder \textit{konditionale
 eingetreten ist.
   \end{definition}
 
+\begin{definition}{}{}
+  Mit
+  $$P(A | B)$$
+  bezeichnen wir die Wahrscheinlichkeit, dass das Ereigins $A$
+  eintritt \textbf{unter der Bedingung}, dass das Ereignis $B$ bereits
+  eingetroffen ist.
+\end{definition}
+\newpage
+
+
+\subsection{Beispiel und Referenzaufgabe}
+Betrachten wir die folgende Kontingenztafel:
+
+  \begin{tabular}{|l|r|r|r|r|}\hline
+                 & Test positiv (P) & Test negativ (N)& Total & relativ (\%) \\\hline
+    krank (K)        & 95           & 2            & 97    & 78.9 \%      \\\hline    
+    gesund (G)    & 4            & 22           & 26    & 21.2 \%      \\\hline
+    Total        & 99           & 24           & 123   &  --- \%      \\\hline
+    relativ (\%) & 80.5\%       &19.5\%        & ---   &   100\%      \\\hline
+
+    \end{tabular} 
+Dabei wurden 24 Personen von 123 negativ getestet: $P(N) =
+\frac{24}{123}\approx 19.5\%$.
+Wenn ich die negativen Tests nun aber nur bei den kranken Personen
+(total 97) betrachte, so erhalte ich
+$$P(N|K) = \frac{P(N\cap K}{P(B)} = \frac{2}{97} \approx 2.06\%$$
+
+Dabei ist $A\cap B$ dasjenige Ereignis, bei dem $A$ \textbf{und} $B$
+eintritt; in obigen Beispiel: Alle Personen, die sowohl negativ
+getestet (N), sowie auch krank (K) sind.
+
+\begin{gesetz}{bedingte Wahrscheinlichkeit}{}
+  Es gilt
+  $$P(A|B) = \frac{P(A\cap B)}{P(B)}$$
+\end{gesetz}
+
+Berechnen Sie für die obige Tafel die folgenden Wahrscheinlichkeiten:
+
+\begin{tabular}{cc}
+$P(K) = \LoesungsRaum{\frac{97}{123} \approx{} 78.9\%}$&
+$P(G) = \LoesungsRaum{\frac{26}{123} \approx{} 21.1\%}$\\
+$P(P) = \LoesungsRaum{\frac{99}{123} \approx{} 80.5\%}$&
+$P(N) = \LoesungsRaum{\frac{24}{123} \approx{} 19.5\%}$\\
+
+
+$P(P\cap K) = \LoesungsRaum{\frac{95}{123} \approx{} 77.2\%}$&
+$P(P\cap G) = \LoesungsRaum{\frac{4}{123}  \approx{} 3.25\%}$\\
+$P(N\cap K) = \LoesungsRaum{\frac{2}{123}  \approx{} 1.63\%}$&
+$P(N\cap G) = \LoesungsRaum{\frac{22}{123} \approx{} 17.9\%}$\\
+
+$P(P|K) = \LoesungsRaum{\frac{95}{97} \approx{} 97.9\%}$&
+$P(K|P) = \LoesungsRaum{\frac{95}{99} \approx{} 96.0\%}$\\
+
+$P(P|G) = \LoesungsRaum{\frac{4}{26} \approx{} 15.4\%}$&
+$P(G|P) = \LoesungsRaum{\frac{4}{99} \approx{} 4.04\%}$\\
+
+$P(N|K) = \LoesungsRaum{\frac{2}{97} \approx{} 0.0208\%}$&
+$P(K|N) = \LoesungsRaum{\frac{2}{24} \approx{} 8.33\%}$\\
+
+$P(N|G) = \LoesungsRaum{\frac{22}{26} \approx{}  84.6\%}$&
+$P(G|N) = \LoesungsRaum{\frac{22}{24} \approx{} 91.7\%}$\\
+\end{tabular}
 \newpage
