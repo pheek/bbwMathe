@@ -46,16 +46,21 @@ Betrachten wir die folgende Kontingenztafel:
     Total        & 99           & 24           & 123   &  --- \%      \\\hline
     relativ (\%) & 80.5\%       &19.5\%        & ---   &   100\%      \\\hline
 
-    \end{tabular} 
+  \end{tabular}
+  
 Dabei wurden 24 Personen von 123 negativ getestet: $P(N) =
 \frac{24}{123}\approx 19.5\%$.
 Wenn ich die negativen Tests nun aber nur bei den kranken Personen
 (total 97) betrachte, so erhalte ich
-$$P(N|K) = \frac{P(N\cap K}{P(B)} = \frac{2}{97} \approx 2.06\%$$
+$$P(N|K) = \frac{P(N\cap K)}{P(B)} = \frac{2}{97} \approx 2.06\%.$$
 
-Dabei ist $A\cap B$ dasjenige Ereignis, bei dem $A$ \textbf{und} $B$
-eintritt; in obigen Beispiel: Alle Personen, die sowohl negativ
-getestet (N), sowie auch krank (K) sind.
+\begin{definition}{}{}
+$$A\cap B$$ ist dasjenige Ereignis, bei dem $A$ \textbf{und} $B$
+gleichzeitig zutrifft.
+\end{definition}
+
+In obigen Beispiel: $N\cap K$ sin alle Personen, die sowohl negativ
+getestet (N), sowie auch krank (K) sind (also 2 Personen).
 
 \begin{gesetz}{bedingte Wahrscheinlichkeit}{}
   Es gilt
@@ -64,7 +69,7 @@ getestet (N), sowie auch krank (K) sind.
 
 Berechnen Sie für die obige Tafel die folgenden Wahrscheinlichkeiten:
 
-\begin{tabular}{cc}
+\begin{tabular}{rr}
 $P(K) = \LoesungsRaum{\frac{97}{123} \approx{} 78.9\%}$&
 $P(G) = \LoesungsRaum{\frac{26}{123} \approx{} 21.1\%}$\\
 $P(P) = \LoesungsRaum{\frac{99}{123} \approx{} 80.5\%}$&
