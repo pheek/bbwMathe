@@ -11,13 +11,13 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="201.43764mm"
-   height="70.883469mm"
-   viewBox="0 0 201.43764 70.883469"
+   height="63.613743mm"
+   viewBox="0 0 201.43764 63.613743"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="Ueberblick.svg"
-   inkscape:export-filename="/home/phi/bitmap.png"
+   inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Ueberblick.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300">
   <defs
@@ -55,13 +55,13 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
      inkscape:cx="417.47186"
-     inkscape:cy="159.41678"
+     inkscape:cy="159.41677"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1824"
-     inkscape:window-height="1059"
-     inkscape:window-x="48"
+     inkscape:window-width="3792"
+     inkscape:window-height="2135"
+     inkscape:window-x="1920"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      fit-margin-top="0"
@@ -84,7 +84,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-3.9253857,-64.538908)">
+     transform="translate(-3.9253857,-71.808632)">
     <path
        style="fill:url(#radialGradient831);fill-opacity:1;stroke:#001804;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path815"
@@ -295,7 +295,7 @@
        xml:space="preserve"
        style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        x="12.322215"
-       y="78.0299"
+       y="76.707558"
        id="text982"
        inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Ueberblick.png"
        inkscape:export-xdpi="300"
@@ -303,7 +303,7 @@
          sodipodi:role="line"
          id="tspan980"
          x="12.322215"
-         y="78.0299"
+         y="76.707558"
          style="stroke-width:0.26458332">allgemeiner Zylinder</tspan></text>
     <text
        xml:space="preserve"
@@ -349,27 +349,6 @@
          style="stroke-width:0.26458332">Pyramide</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Italic';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="120.30131"
-       y="69.210457"
-       id="text998"
-       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Ueberblick.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300"><tspan
-         sodipodi:role="line"
-         id="tspan996"
-         x="120.30131"
-         y="69.210457"
-         style="text-align:center;text-anchor:middle;stroke-width:0.26458332">Konus</tspan><tspan
-         sodipodi:role="line"
-         x="121.18325"
-         y="78.0299"
-         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
-         id="tspan1000">(echter Keglen in <tspan
-   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Italic';text-align:center;text-anchor:middle"
-   id="tspan1002">ℝ</tspan>³) </tspan></text>
-    <text
-       xml:space="preserve"
        style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        x="177.61052"
        y="133.89964"
@@ -396,5 +375,19 @@
          x="127.26334"
          y="133.37048"
          style="stroke-width:0.26458332">Kreiskegel</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="92.967026"
+       y="76.707558"
+       id="text982-7"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Ueberblick.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan980-5"
+         x="92.967026"
+         y="76.707558"
+         style="stroke-width:0.26458332">allgemeiner Kegel</tspan></text>
   </g>
 </svg>

@@ -25,7 +25,7 @@
 
 Bemerkungen: Auch wenn es beliebige allgemeine Zylider oder Kegel
 gibt, betrachten wir nur solche, welche als Grundfläche ein Polygon
-(Vieleck) oder einen Kreis aufweisen.
+(Vieleck) oder einen Kreis aufweisen.\footnote{Der allgemeine Kegel wird auch als Konus oder «echter Kegel in $\mathbb{R}^3$» bezeichnet.}
 
 Die folgenden Begriffe werden für die Berechnungen benötigt:
 
@@ -72,26 +72,30 @@ Prisma:
 \TALSAadB{142ff}{32., 33., 57. und 60.}
 
 Kreiszylinder:
-\TALSAadB{158ff}{136}
+\TALSGeomAadB{158ff}{136}
 \newpage
 \subsection{Quader und Würfel}
 Die beiden speziellsten Prismen sind der Quader und der Würfel.
 
 Für ein Quader mit den Seitenlängen $a$, $b$ und $c$ gilt:
 
-\begin{gesetz}{}{}\\
-  Volumen $V = G\cdot{} h = a\cdot{}b\cdot{}c$\\
-  Oberfläche $S=2\cdot{}G + M = 2\cdot{}ab + ac + bc + ac + bc = 2\cdot{}(ab + ac + bc)$\\
-  Raumdiagonale $d = \sqrt{a^2 + b^2 + c^2}$
-\end{gesetz}
 
-Im Spezialfall «Würfel» gilt $a=b=c$:
+Im Spezialfall «Würfel» gilt:
 \begin{gesetz}{}{}\\
   Volumen $V = G\cdot{} h = a^3$\\
   Oberfläche $S=2\cdot{}G + M = 6\cdot{}a^2$\\
   Raumdiagonale $d = \sqrt{3\cdot{}a^2} = a\cdot{}\sqrt{3}$
 \end{gesetz}
 
+Der beliebige Quader hat die Seiten $a$, $b$ und $c$:
+\begin{gesetz}{}{}\\
+  Volumen $V = G\cdot{} h = (a\cdot{}b)\cdot{}h = a\cdot{}b\cdot{}c$\\
+  Oberfläche $S=2\cdot{}G + M = 2\cdot{}ab + ac + bc + ac + bc = 2\cdot{}(ab + ac + bc)$\\
+  Raumdiagonale $d = \sqrt{a^2 + b^2 + c^2}$
+\end{gesetz}
+
+\subsection*{Aufgaben}
+\TALSGeomAadB{139}{21. d)}
 
 \newpage
 
@@ -166,9 +170,26 @@ Pyramide:
   $m$ = Mantellinie = $\sqrt{h^2 + r^2}$
   
   $M$ = Mantelfläche = $\frac{2r\pi \cdot{} m}2$
+
   
   $$S = G + M$$
 \end{gesetz}
+
+
+\begin{gesetz}{Volumen eines Kreiskegels}{}
+
+  $V$ = Volumen
+
+  $r$ = Radius der Grundfläche
+  
+  $G$ = Grundfläche = $r^2\pi$
+
+  $h$ = Höhe
+
+  $$V = \frac13\cdot{} G\cdot{}h = \frac13 \cdot{} \pi r^2 \cdot{} h$$
+\end{gesetz}
+
+
 
 \begin{bemerkung}{}{}
   Wir unterscheiden beim Kreiskegel die Winkel
