@@ -45,7 +45,7 @@ $$N = n^k = 6^4$$
 }
 
 Dieses Experiment entspricht im Urnenmodell dem...
-\begin{gesetz}{...Ziehen mit zurücklegen}{}
+\begin{gesetz}{...Ziehen mit Zurücklegen}{}
 Beim Urnenmodell \textbf{«Ziehen mit Zurücklegen»} kann jeder Zug unabhängig vom
 vorangehenden wieder alle Werte annehmen. Die \textbf{Reihenfolge} der gewählten Kugeln ist hier \textbf{wesentlich}. Für $k$ Züge aus genau $n$
 Kugeln, die alle verschieden sind, gibt es $N$ Möglichkeiten:
@@ -237,12 +237,14 @@ Wie viele Sitzordnungen sind möglich, wenn es zwei oder mehr freie Plätze gibt
 
 \TNT{5.2}{Hier gibt es grundsätzlich zwei Betrachtungsweisen.
 
-a) Wir stellen uns vor, dass wir $p$ Plätze haben. Davon bleiben $f$
+a) Wir stellen uns vor, dass wir $n$ Plätze haben. Davon bleiben $f$
 frei. Nun zählen wir alle Schüler und die ``Phantomschüler'' zusammen, das ergibt
-gerade die $p$ Plätze. Hier gibt es also $p!$ Varianten. Die $f$
+gerade die $n$ Plätze. Hier gibt es also $n!$ Varianten. Die $f$
 Phantomschüler setzen sich aber auch für alle Variationen mit realen
 Schülern auf $f!$ verschiedene Varianten hin. Somit müssen wir diese
-Varianten wieder wegdividieren. Es bleiben total $\frac{p!}{f!}$ Varianten.
+Varianten wieder wegdividieren. Es bleiben total $\frac{n!}{f!}$ Varianten.
+
+Varianten = $\frac{n!}{(n-k)!} = \frac{n!}{f!}$ mit $f = n-k$ (= Anzahl der «Phantomschüler»).
 
 b) Wir stellen uns die Sitzbänke nummeriert vor und legen für jeden der
 $n$ Nummern eine Kugel in eine Urne. Die $k$ Schüler stellen wir der Reihe
@@ -251,16 +253,17 @@ Platznummer) auswählen. Somit verbleiben $n-k$ Kugeln in der Urne und
 hier gilt das \textbf{Ziehen ohne Zurücklegen mit wesentlicher
 Reihenfolge}:
 
+
 Varianten = $\frac{n!}{(n-k)!}$.
 
-}
+}%% END TNT
 \newpage
 
 \begin{bemerkung}{«Plätze» ist nicht gleich «Stühle»}{}
-Nicht immer sind die zur Verfügung stehenden Objekte die Personen und nicht immer wird die Reihenfolge wird durch Stühle festgesetzt:
+Nicht immer sind die zur Verfügung stehenden Objekte die Personen und nicht immer wird die Reihenfolge durch die Plätze (Sühle) festgesetzt:
 
 
-\begin{tabular}{|p{57mm}|c|p{57mm}|}\hline
+\begin{tabular}{|p{62mm}|c|p{55mm}|}\hline
 \includegraphics[width=5cm]{geso/stoch/img/fuenfPersonenAufDreiStuehle.png}
 & \raisebox{20mm}{\parbox{40mm}{$$n=5$$ $$k=3$$}} & \includegraphics[width=5cm]{geso/stoch/img/dreiPersonenAufFuenfStuehle.png}\\\hline
 Hier sind fünf Personen \textbf{zur Auswahl}, somit ist $n=5$. Die Ordnung wird als Reihenfolge der Stühle betrachtet $(k=3)$. &\raisebox{-10mm}{$N=\frac{5!}{(5-3)!}$}&
@@ -270,12 +273,12 @@ betrachtet $(k=3)$.\\\hline
 Im Urnenmodell bezeichnen fünf Kugeln die fünf Personen und ich ziehe \textbf{der Reihe nach} drei heraus, die ich in eben dieser Reihenfolge auf die Stühle setze. &
 \raisebox{-35mm}{\includegraphics[width=3cm]{geso/stoch/img/urneFuenfKugeln.png}}&
 Im Urnenmodell bezeichnen fünf Kugeln die fünf Stühle und ich ziehe \textbf{der Reihe nach} drei heraus, die ich in eben dieser Reihenfolge den Personen zuordne.\\\hline
-Es wäre eine andere Problemstellung, für die 1. Person drei mögliche Stühle, für die 2. Person zwei Stühle und für die 3. Person den 3. verbleibenden Stuhl auszuwählen. Hier käme Person 4 und 5 gar nie zum Sitzen und das Problem beschränkt sich auf die Permutationen von 3 (also 3!).&&\\\hline
+Es wäre eine andere Problemstellung, für die 1. Person drei mögliche Stühle, für die 2. Person zwei Stühle und für die 3. Person den 3. verbleibenden Stuhl auszuwählen. Hier kämen die Personen 4 und 5 gar nie zum Sitzen und das Problem würde sich auf die Permutationen von 3 (also 3!) beschränken.&&\\\hline
 \end{tabular}
 
 \leserluft
 
-Das $n$ ist immer die größere der beiden Zahlen: $n > k$
+Konvention: Das $n$ ist immer die größere der beiden Zahlen: $n > k$
 
 \end{bemerkung}
 \newpage
