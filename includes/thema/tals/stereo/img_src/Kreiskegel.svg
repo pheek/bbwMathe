@@ -9,16 +9,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="201.43764mm"
-   height="63.613743mm"
-   viewBox="0 0 201.43764 63.613743"
+   width="45.502613mm"
+   height="41.161556mm"
+   viewBox="0 0 45.502614 41.161556"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    sodipodi:docname="Kreiskegel.svg"
-   inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Ueberblick.png"
-   inkscape:export-xdpi="300"
-   inkscape:export-ydpi="300">
+   inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Kreiskegel.png"
+   inkscape:export-xdpi="599.98999"
+   inkscape:export-ydpi="599.98999">
   <defs
      id="defs2">
     <marker
@@ -60,8 +60,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.959798"
-     inkscape:cx="616.10392"
-     inkscape:cy="70.084957"
+     inkscape:cx="156.80416"
+     inkscape:cy="49.61419"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -90,7 +90,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-3.9253857,-71.808632)">
+     transform="translate(-125.44845,-86.171899)">
     <g
        id="g1032"
        transform="translate(-11.04946,3.1274619e-6)"
@@ -176,7 +176,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Termes Math';-inkscape-font-specification:'TeX Gyre Termes Math';fill:#7b693e;fill-opacity:1;stroke:#7b6a3e;stroke-width:0.11882243;stroke-opacity:1">h</tspan></text>
     <g
        id="g10662"
-       transform="matrix(0.67816436,0,0,0.80738985,30.428397,23.9314)"
+       transform="matrix(0.67816436,0,0,0.80738985,31.36384,22.194148)"
        style="fill:#ea693e;fill-opacity:1;stroke:#ff6a3e;stroke-opacity:1"
        inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Pyramide.png"
        inkscape:export-xdpi="599.98999"

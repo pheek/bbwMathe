@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="201.43764mm"
-   height="63.613743mm"
-   viewBox="0 0 201.43764 63.613743"
+   width="34.510838mm"
+   height="47.223152mm"
+   viewBox="0 0 34.510838 47.223153"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="225.0378"
-     inkscape:cy="159.41677"
+     inkscape:zoom="3.959798"
+     inkscape:cx="167.08455"
+     inkscape:cy="84.077119"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -59,11 +59,11 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-3.9253857,-71.808632)">
+     transform="translate(-3.9253857,-80.110302)">
     <g
        id="g1019"
        transform="matrix(1,0,0,0.85862176,0,19.318239)"
-       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Ueberblick.png"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/AllgemeinesPrisma.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300">
       <path
@@ -112,19 +112,5 @@
          d="m 33.639558,70.932404 2.65e-4,9.487239"
          style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     </g>
-    <text
-       xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="9.3981752"
-       y="133.22304"
-       id="text986"
-       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Ueberblick.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300"><tspan
-         sodipodi:role="line"
-         id="tspan984"
-         x="9.3981752"
-         y="133.22304"
-         style="stroke-width:0.26458332">Prisma</tspan></text>
   </g>
 </svg>

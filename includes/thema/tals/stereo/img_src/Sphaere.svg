@@ -112,7 +112,7 @@
        sodipodi:end="4.7099024"
        sodipodi:open="true"
        d="M 110.18003,81.263223 A 17.639788,18.708866 0 0 1 127.75481,100.012 17.639788,18.708866 0 0 1 110.10452,118.68082 17.639788,18.708866 0 0 1 92.475287,99.989628 17.639788,18.708866 0 0 1 110.0712,81.263154"
-       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Ueberblick.png"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Sphaere.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <text
@@ -121,7 +121,10 @@
        x="160.71465"
        y="91.601776"
        id="text12769"
-       transform="matrix(0.895377,0,-0.37145327,1.116848,0,0)"><tspan
+       transform="matrix(0.895377,0,-0.37145327,1.116848,0,0)"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Sphaere.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          sodipodi:role="line"
          id="tspan12767"
          x="160.71465"
@@ -131,14 +134,20 @@
        style="fill:none;stroke:#000000;stroke-width:0.16928872;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
        d="m 110.39504,100.21496 -16.393796,0.84016"
        id="path12771"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Sphaere.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.78186083px;line-height:1.25;font-family:'TeX Gyre Chorus';-inkscape-font-specification:'TeX Gyre Chorus';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05420495"
        x="138.22426"
        y="103.6757"
        id="text12769-1"
-       transform="matrix(1.0355305,0,-0.42959691,0.9656886,0,0)"><tspan
+       transform="matrix(1.0355305,0,-0.42959691,0.9656886,0,0)"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Sphaere.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          sodipodi:role="line"
          id="tspan12767-2"
          x="138.22426"
@@ -155,7 +164,10 @@
        sodipodi:start="5.9522185"
        sodipodi:end="5.9517647"
        sodipodi:open="true"
-       d="m 126.5667,98.74478 a 17.461145,3.2740517 0 0 1 -10.8375,4.16017 17.461145,3.2740517 0 0 1 -22.188225,-2.03161 17.461145,3.2740517 0 0 1 10.832465,-4.160634 17.461145,3.2740517 0 0 1 22.19068,2.030669" />
+       d="m 126.5667,98.74478 a 17.461145,3.2740517 0 0 1 -10.8375,4.16017 17.461145,3.2740517 0 0 1 -22.188225,-2.03161 17.461145,3.2740517 0 0 1 10.832465,-4.160634 17.461145,3.2740517 0 0 1 22.19068,2.030669"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Sphaere.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <path
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:0.2, 0.4;stroke-dashoffset:0;stroke-opacity:1"
        id="path12811-9"
@@ -167,6 +179,9 @@
        sodipodi:start="5.9522185"
        sodipodi:end="5.9517647"
        sodipodi:open="true"
-       d="m 116.21535,93.854595 a 6.3389187,18.454313 0 0 1 -3.93434,23.448955 6.3389187,18.454313 0 0 1 -8.05499,-11.45126 6.3389187,18.454313 0 0 1 3.93251,-23.451557 6.3389187,18.454313 0 0 1 8.05588,11.445943" />
+       d="m 116.21535,93.854595 a 6.3389187,18.454313 0 0 1 -3.93434,23.448955 6.3389187,18.454313 0 0 1 -8.05499,-11.45126 6.3389187,18.454313 0 0 1 3.93251,-23.451557 6.3389187,18.454313 0 0 1 8.05588,11.445943"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Sphaere.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
   </g>
 </svg>

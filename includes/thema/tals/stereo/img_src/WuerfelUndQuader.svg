@@ -9,13 +9,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="176.15671mm"
-   height="56.584465mm"
-   viewBox="0 0 176.15671 56.584465"
+   width="141.76088mm"
+   height="56.081264mm"
+   viewBox="0 0 141.76088 56.081264"
    version="1.1"
    id="svg1051"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="WuerfelUndQuader.svg">
+   sodipodi:docname="WuerfelUndQuader.svg"
+   inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/WuerfelUndQuader.png"
+   inkscape:export-xdpi="599.98999"
+   inkscape:export-ydpi="599.98999">
   <defs
      id="defs1045" />
   <sodipodi:namedview
@@ -27,7 +30,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
      inkscape:cx="170.21202"
-     inkscape:cy="-18.008568"
+     inkscape:cy="-19.910428"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -59,7 +62,10 @@
      transform="translate(-24.279357,-47.993461)">
     <g
        id="g1639"
-       transform="matrix(0.53231718,0,0,0.60117386,11.372171,39.037492)">
+       transform="matrix(0.53231718,0,0,0.60117386,11.372171,39.037492)"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/WuerfelUndQuader.png"
+       inkscape:export-xdpi="599.98999"
+       inkscape:export-ydpi="599.98999">
       <path
          inkscape:connector-curvature="0"
          id="path1596"
@@ -103,7 +109,10 @@
     </g>
     <g
        id="g1639-2"
-       transform="matrix(1.0937043,0,0,0.49627084,66.622379,49.208161)">
+       transform="matrix(0.72842483,0,0,0.54380561,75.549299,44.541962)"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/WuerfelUndQuader.png"
+       inkscape:export-xdpi="599.98999"
+       inkscape:export-ydpi="599.98999">
       <path
          inkscape:connector-curvature="0"
          id="path1596-9"
@@ -149,25 +158,31 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.16155624px;line-height:1.25;font-family:times-new-roman;-inkscape-font-specification:times-new-roman;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09526458"
        x="66.613953"
-       y="75.967369"
+       y="75.026299"
        id="text1682"
-       transform="scale(1.0988899,0.91000927)"><tspan
+       transform="scale(1.0988899,0.91000927)"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/WuerfelUndQuader.png"
+       inkscape:export-xdpi="599.98999"
+       inkscape:export-ydpi="599.98999"><tspan
          sodipodi:role="line"
          id="tspan1680"
          x="66.613953"
-         y="75.967369"
+         y="75.026299"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre DejaVu Math';-inkscape-font-specification:'TeX Gyre DejaVu Math';stroke-width:0.09526458">a</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.16155624px;line-height:1.25;font-family:times-new-roman;-inkscape-font-specification:times-new-roman;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09526458"
-       x="118.68782"
-       y="114.77737"
+       x="106.04723"
+       y="114.2244"
        id="text1686"
-       transform="scale(1.0988899,0.91000927)"><tspan
+       transform="scale(1.0988899,0.91000927)"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/WuerfelUndQuader.png"
+       inkscape:export-xdpi="599.98999"
+       inkscape:export-ydpi="599.98999"><tspan
          sodipodi:role="line"
          id="tspan1684"
-         x="118.68782"
-         y="114.77737"
+         x="106.04723"
+         y="114.2244"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre DejaVu Math';-inkscape-font-specification:'TeX Gyre DejaVu Math';stroke-width:0.09526458">a</tspan></text>
     <text
        xml:space="preserve"
@@ -175,7 +190,10 @@
        x="36.016277"
        y="114.2244"
        id="text1690"
-       transform="scale(1.0988899,0.91000927)"><tspan
+       transform="scale(1.0988899,0.91000927)"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/WuerfelUndQuader.png"
+       inkscape:export-xdpi="599.98999"
+       inkscape:export-ydpi="599.98999"><tspan
          sodipodi:role="line"
          id="tspan1688"
          x="36.016277"
@@ -184,38 +202,47 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.16155624px;line-height:1.25;font-family:times-new-roman;-inkscape-font-specification:times-new-roman;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09526458"
-       x="62.591942"
-       y="104.24337"
+       x="60.923717"
+       y="105.16214"
        id="text1694"
-       transform="scale(1.0988899,0.91000927)"><tspan
+       transform="scale(1.0988899,0.91000927)"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/WuerfelUndQuader.png"
+       inkscape:export-xdpi="599.98999"
+       inkscape:export-ydpi="599.98999"><tspan
          sodipodi:role="line"
          id="tspan1692"
-         x="62.591942"
-         y="104.24337"
+         x="60.923717"
+         y="105.16214"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre DejaVu Math';-inkscape-font-specification:'TeX Gyre DejaVu Math';stroke-width:0.09526458">a</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.16155624px;line-height:1.25;font-family:times-new-roman;-inkscape-font-specification:times-new-roman;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09526458"
-       x="177.17564"
-       y="81.028175"
+       x="145.87512"
+       y="75.026299"
        id="text1698"
-       transform="scale(1.0988899,0.91000927)"><tspan
+       transform="scale(1.0988899,0.91000927)"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/WuerfelUndQuader.png"
+       inkscape:export-xdpi="599.98999"
+       inkscape:export-ydpi="599.98999"><tspan
          sodipodi:role="line"
          id="tspan1696"
-         x="177.17564"
-         y="81.028175"
+         x="145.87512"
+         y="75.026299"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre DejaVu Math';-inkscape-font-specification:'TeX Gyre DejaVu Math';stroke-width:0.09526458">c</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.16155624px;line-height:1.25;font-family:times-new-roman;-inkscape-font-specification:times-new-roman;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09526458"
-       x="166.36589"
-       y="109.73104"
+       x="142.37456"
+       y="105.16214"
        id="text1702"
-       transform="scale(1.0988899,0.91000927)"><tspan
+       transform="scale(1.0988899,0.91000927)"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/WuerfelUndQuader.png"
+       inkscape:export-xdpi="599.98999"
+       inkscape:export-ydpi="599.98999"><tspan
          sodipodi:role="line"
          id="tspan1700"
-         x="166.36589"
-         y="109.73104"
+         x="142.37456"
+         y="105.16214"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre DejaVu Math';-inkscape-font-specification:'TeX Gyre DejaVu Math';stroke-width:0.09526458">b</tspan></text>
   </g>
 </svg>
