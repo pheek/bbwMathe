@@ -1,7 +1,5 @@
 \section{Kugel}\index{Kugel}
 
-\TRAINER{Video Volumen/Oberflächenformel: \texttt{https://www.youtube.com/watch?v=jQoHp\_P8Y0A}}
-
 \theorieTALSGeom{166}{3.3.3}
 
 \subsection*{Lernziele}
@@ -14,7 +12,66 @@
 \item Kugelhaube (Klaotte)
 \item Kugelschicht
 \end{itemize}
+\newpage
+
+\subsection{Kugelkörper}
+
+\bbwCenterGraphic{5cm}{tals/stereo/img/Sphaere.png}
+
+\begin{definition}{Kugel}{}\index{Kugel}\index{Sphäre}\index{Vollkugel}
+  Die Menge aller Punkte, welche von einem Punkt $M$ (dem \textbf{Mittelpunkt}) den selben Abstand ($r$ = Radius) haben, nennen wir die \textbf{Kugelfläche}, \textbf{Kugeloberfläche} oder \textbf{Sphäre}.
+  Ist das Innere der Kugel mitgemeint, so sprechen wir vom \textbf{Kugelkörper} oder von der \textbf{Vollkugel}.
+\end{definition}
+\newpage
+
+\subsection{Kugelvolumen}\index{Volumen!Kugel}\index{Kugel!Volumen}
+
+\TRAINER{Video Volumen/Oberflächenformel:\\\texttt{https://www.youtube.com/watch?v=jQoHp\_P8Y0A}}
+
+\begin{gesetz}{Volumen}{}
+
+  $V$ = Volumen der Kugel
+
+  $r$ = Radius der Kugel
+
+  $$V = \frac43\cdot{}\pi\cdot{}r^3$$
+  \end{gesetz}
+
+Herleitung:\\
+\TNT{16}{
+  Zeiche eine Halbkugel. (Lasse rechts Platz.)
+
+  Wähle beliebige Höhe $h$ in beiden Figuren.
+
+  Damit entsteht eine Kreisfläche mit Radius $a$, wobei nach Pythagoras gilt:
+  $$a^2 + h^2 = r^2$$
+  und somit
+  $$a^2 = r^2 - h^2$$
+  Der \textbf{Flächeninhalt} dieses Kreises (auf Höhe $h$ ist $\pi a^2$ = $\pi (r^2 - h^2)$ und somit $\pi r^2 = \pi h^2$.
+
+  Somit ist der Flächeninhalt aber auch ein Kreisring mit Außenradius $r$ und Innenhardius $h$.
+
+  Wenn wir das in jeder Höhe machen, entsteht ein Vergleichskörper, der aus einem Kreiszylinder mit ausgeschnittenem Kreiskegel besteht.
+
+  Volumen Halbkugel = (dank Cavalieri) Volumen Vergeichskörper = Volumen Kreszylinder - Volumen Kreiskegel = $r^2\pi r - \frac13 r^2\pi r = \frac23 r^3 \pi $
+
+  Somit ist das Volumen der ganzen Kugel = 2 $\cdot$ Volumen Halbkugel = $V = \frac43\pi r^3$.
+
+  
+}%% END TNT
+\newpage
+
+
+\subsection{Kugeloberfläche}
+\begin{gesetz}{Oberfläche}{}
+
+  $S$ = Oberfläche der Sphäre (Surface)
+
+  $r$ = Radius der Kugel
+
+  $$S = 4\cdot{}\pi\cdot{}r^2$$
+  \end{gesetz}
 
 \subsection*{Aufgaben}
-\TALSGeomAadB{167}{181}
+\TALSGeomAadB{167}{177., 179., 180. (Pyramide in Kugel), 181. (Zylinder in Kugel), 182. (Kugel in Kegel) und 200. (Kugelschale)}
 \newpage

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="201.43764mm"
+   height="63.613743mm"
+   viewBox="0 0 201.43764 63.613743"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="Kreiskegel.svg"
+   inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Ueberblick.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path3172"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#7b6a3e;fill-opacity:1;fill-rule:evenodd;stroke:#7b6a3e;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path3175"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#7b6a3e;fill-opacity:1;fill-rule:evenodd;stroke:#7b6a3e;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="616.10392"
+     inkscape:cy="70.084957"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="3724"
+     inkscape:window-height="2093"
+     inkscape:window-x="66"
+     inkscape:window-y="20"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-3.9253857,-71.808632)">
+    <g
+       id="g1032"
+       transform="translate(-11.04946,3.1274619e-6)"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Ueberblick.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <g
+         transform="translate(58.208333,-7.5595238)"
+         id="g974">
+        <path
+           style="fill:none;fill-opacity:1;stroke:#001804;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path903-7-5"
+           sodipodi:type="arc"
+           sodipodi:cx="96.195282"
+           sodipodi:cy="129.68214"
+           sodipodi:rx="17.773424"
+           sodipodi:ry="5.0781207"
+           sodipodi:start="6.2059069"
+           sodipodi:end="3.1561316"
+           sodipodi:open="true"
+           d="m 113.91566,129.29011 a 17.773424,5.0781207 0 0 1 -8.12521,4.66657 17.773424,5.0781207 0 0 1 -18.233439,0.16347 17.773424,5.0781207 0 0 1 -9.133275,-4.51183" />
+        <path
+           style="fill:none;fill-opacity:1;stroke:#001804;stroke-width:0.25361627;stroke-miterlimit:4;stroke-dasharray:0.25361627, 0.50723254;stroke-dashoffset:0;stroke-opacity:1"
+           id="path903-7-3-6"
+           sodipodi:type="arc"
+           sodipodi:cx="96.195282"
+           sodipodi:cy="-129.38857"
+           sodipodi:rx="17.777773"
+           sodipodi:ry="4.6647258"
+           sodipodi:start="6.2059069"
+           sodipodi:end="3.1561316"
+           sodipodi:open="true"
+           d="m 113.92,-129.74869 a 17.777773,4.6647258 0 0 1 -8.1272,4.28668 17.777773,4.6647258 0 0 1 -18.237903,0.15017 17.777773,4.6647258 0 0 1 -9.135509,-4.14454"
+           transform="scale(1,-1)" />
+      </g>
+      <path
+         inkscape:connector-curvature="0"
+         id="path978"
+         d="m 136.63207,122.04879 16.82626,-35.581529 18.66566,35.263319"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <path
+       transform="matrix(0.99986742,0,0,1.0621441,42.000247,-4.5247082)"
+       sodipodi:type="inkscape:offset"
+       inkscape:radius="0"
+       inkscape:original="M 100.42383 85.673828 L 125.80273 85.673828 L 100.42383 85.673828 z "
+       style="fill:none;stroke:#7b6a3e;stroke-width:0.25525007;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.25525007, 0.51050014;stroke-dashoffset:0;stroke-opacity:1"
+       id="path9738"
+       d="m 100.42383,85.673828 h 25.3789 z"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Pyramide.png"
+       inkscape:export-xdpi="599.98999"
+       inkscape:export-ydpi="599.98999" />
+    <path
+       style="fill:none;stroke:#7b6a3e;stroke-width:0.25388476;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.25388477, 0.50776956;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 144.27851,121.66194 h 22.03544"
+       id="path9740"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="599.98999"
+       inkscape:export-ydpi="599.98999"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Pyramide.png" />
+    <path
+       style="fill:none;stroke:#7b6a3e;stroke-width:0.27309188;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Lstart);marker-end:url(#Arrow1Lend)"
+       d="m 163.62123,87.03557 -0.0945,34.2249"
+       id="path9748"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="599.98999"
+       inkscape:export-ydpi="599.98999"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Pyramide.png" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.67439365px;line-height:1.25;font-family:'TeX Gyre Termes Math';-inkscape-font-specification:'TeX Gyre Termes Math';letter-spacing:0px;word-spacing:0px;fill:#7b693e;fill-opacity:1;stroke:#7b6a3e;stroke-width:0.11882243;stroke-opacity:1"
+       x="143.39822"
+       y="124.26909"
+       id="text9816"
+       transform="scale(1.142548,0.87523678)"
+       inkscape:export-xdpi="599.98999"
+       inkscape:export-ydpi="599.98999"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Pyramide.png"><tspan
+         sodipodi:role="line"
+         id="tspan9814"
+         x="143.39822"
+         y="124.26909"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Termes Math';-inkscape-font-specification:'TeX Gyre Termes Math';fill:#7b693e;fill-opacity:1;stroke:#7b6a3e;stroke-width:0.11882243;stroke-opacity:1">h</tspan></text>
+    <g
+       id="g10662"
+       transform="matrix(0.67816436,0,0,0.80738985,30.428397,23.9314)"
+       style="fill:#ea693e;fill-opacity:1;stroke:#ff6a3e;stroke-opacity:1"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Pyramide.png"
+       inkscape:export-xdpi="599.98999"
+       inkscape:export-ydpi="599.98999">
+      <text
+         inkscape:export-ydpi="599.98999"
+         inkscape:export-xdpi="599.98999"
+         transform="scale(1.1775923,0.84919033)"
+         id="text9816-8"
+         y="129.51085"
+         x="119.20406"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.29884338px;line-height:1.25;font-family:'TeX Gyre Termes Math';-inkscape-font-specification:'TeX Gyre Termes Math';letter-spacing:0px;word-spacing:0px;fill:#ea693e;fill-opacity:1;stroke:#ff6a3e;stroke-width:0.11530165;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Termes Math';-inkscape-font-specification:'TeX Gyre Termes Math';fill:#ea693e;fill-opacity:1;stroke:#ff6a3e;stroke-width:0.11530165;stroke-opacity:1"
+           y="129.51085"
+           x="119.20406"
+           id="tspan9814-9"
+           sodipodi:role="line">m</tspan></text>
+    </g>
+    <path
+       style="fill:#ea693e;fill-opacity:1;stroke:#ff6a3e;stroke-width:0.29211438;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.29211437, 0.58422876;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 131.42003,125.91095 142.398,86.469072"
+       id="path9738-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="599.98999"
+       inkscape:export-ydpi="599.98999"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Pyramide.png" />
+  </g>
+</svg>

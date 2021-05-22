@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="46.390282mm"
+   height="41.910915mm"
+   viewBox="0 0 46.390282 41.910915"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="Pyramide.svg"
+   inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Ueberblick.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path3172"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#7b6a3e;fill-opacity:1;fill-rule:evenodd;stroke:#7b6a3e;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path3175"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#7b6a3e;fill-opacity:1;fill-rule:evenodd;stroke:#7b6a3e;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="126.81843"
+     inkscape:cy="-1.4603531"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="3724"
+     inkscape:window-height="2093"
+     inkscape:window-x="66"
+     inkscape:window-y="20"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-82.575854,-85.422542)">
+    <g
+       id="g933"
+       transform="matrix(1,0,0,0.89987771,-32.593422,13.652024)"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Pyramide.png"
+       inkscape:export-xdpi="599.98999"
+       inkscape:export-ydpi="599.98999">
+      <path
+         inkscape:connector-curvature="0"
+         id="path852"
+         d="m 115.28274,107.06696 29.48214,-4.91369 -7.37054,5.10268 11.90625,6.99256 -20.22172,11.90625 z"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.26458332, 0.52916663;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path889"
+         d="M 131.36297,80.244411 115.28274,107.06696"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path891"
+         d="m 129.07887,126.15476 2.2841,-45.910349 17.93762,34.004099"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path893"
+         d="M 144.76488,102.15327 131.36297,80.244409"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path895"
+         d="M 137.39434,107.25595 131.36297,80.244409"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.26458332, 0.52916663;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path897"
+         d="m 115.28274,107.06696 13.79613,19.0878 20.22172,-11.90625"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path901"
+         d="m 144.76488,102.15327 -1.30796,0.90928"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.69672394px;line-height:1.25;font-family:'TeX Gyre Termes Math';-inkscape-font-specification:'TeX Gyre Termes Math';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.10028179"
+       x="125.85291"
+       y="86.286446"
+       id="text10579"
+       transform="matrix(0.90920828,0.22058209,-0.18771244,1.0543173,0,0)"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Pyramide.png"
+       inkscape:export-xdpi="599.98999"
+       inkscape:export-ydpi="599.98999"><tspan
+         sodipodi:role="line"
+         id="tspan10577"
+         x="125.85291"
+         y="86.286446"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Termes Math';-inkscape-font-specification:'TeX Gyre Termes Math';stroke-width:0.10028179">G</tspan></text>
+    <path
+       sodipodi:type="inkscape:offset"
+       inkscape:radius="0"
+       inkscape:original="M 100.42383 85.673828 L 125.80273 85.673828 L 100.42383 85.673828 z "
+       style="fill:none;stroke:#7b6a3e;stroke-width:0.25525007;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.25525007, 0.51050014;stroke-dashoffset:0;stroke-opacity:1"
+       id="path9738"
+       d="m 100.42383,85.673828 h 25.3789 z"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Pyramide.png"
+       inkscape:export-xdpi="599.98999"
+       inkscape:export-ydpi="599.98999" />
+    <path
+       style="fill:none;stroke:#7b6a3e;stroke-width:0.22323933;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.22323933, 0.44647866;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 106.23458,118.8037 h 18.09561"
+       id="path9740"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="599.98999"
+       inkscape:export-ydpi="599.98999"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Pyramide.png" />
+    <path
+       style="fill:none;stroke:#7b6a3e;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Lstart);marker-end:url(#Arrow1Lend)"
+       d="m 121.63711,86.203251 -0.0945,32.222469"
+       id="path9748"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="599.98999"
+       inkscape:export-ydpi="599.98999"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Pyramide.png" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.29884338px;line-height:1.25;font-family:'TeX Gyre Termes Math';-inkscape-font-specification:'TeX Gyre Termes Math';letter-spacing:0px;word-spacing:0px;fill:#7b693e;fill-opacity:1;stroke:#7b6a3e;stroke-width:0.11530165;stroke-opacity:1"
+       x="103.4783"
+       y="125.60342"
+       id="text9816"
+       transform="scale(1.1775923,0.84919033)"
+       inkscape:export-xdpi="599.98999"
+       inkscape:export-ydpi="599.98999"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Pyramide.png"><tspan
+         sodipodi:role="line"
+         id="tspan9814"
+         x="103.4783"
+         y="125.60342"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Termes Math';-inkscape-font-specification:'TeX Gyre Termes Math';fill:#7b693e;fill-opacity:1;stroke:#7b6a3e;stroke-width:0.11530165;stroke-opacity:1">h</tspan></text>
+    <g
+       id="g10662"
+       transform="matrix(0.67816436,0,0,0.80738984,-11.917902,12.660447)"
+       style="fill:#ea693e;fill-opacity:1;stroke:#ff6a3e;stroke-opacity:1"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Pyramide.png"
+       inkscape:export-xdpi="599.98999"
+       inkscape:export-ydpi="599.98999">
+      <text
+         inkscape:export-ydpi="599.98999"
+         inkscape:export-xdpi="599.98999"
+         transform="scale(1.1775923,0.84919033)"
+         id="text9816-8"
+         y="129.51085"
+         x="119.20406"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.29884338px;line-height:1.25;font-family:'TeX Gyre Termes Math';-inkscape-font-specification:'TeX Gyre Termes Math';letter-spacing:0px;word-spacing:0px;fill:#ea693e;fill-opacity:1;stroke:#ff6a3e;stroke-width:0.11530165;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Termes Math';-inkscape-font-specification:'TeX Gyre Termes Math';fill:#ea693e;fill-opacity:1;stroke:#ff6a3e;stroke-width:0.11530165;stroke-opacity:1"
+           y="129.51085"
+           x="119.20406"
+           id="tspan9814-9"
+           sodipodi:role="line">h</tspan></text>
+      <text
+         inkscape:export-ydpi="599.98999"
+         inkscape:export-xdpi="599.98999"
+         transform="scale(1.1655972,0.85792932)"
+         id="text9816-7"
+         y="131.89117"
+         x="126.44363"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.87563038px;line-height:1.25;font-family:'TeX Gyre Termes Math';-inkscape-font-specification:'TeX Gyre Termes Math';letter-spacing:0px;word-spacing:0px;fill:#ea693e;fill-opacity:1;stroke:#ff6a3e;stroke-width:0.08320903;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Termes Math';-inkscape-font-specification:'TeX Gyre Termes Math';fill:#ea693e;fill-opacity:1;stroke:#ff6a3e;stroke-width:0.08320903;stroke-opacity:1"
+           y="131.89117"
+           x="126.44363"
+           id="tspan9814-3"
+           sodipodi:role="line">S</tspan></text>
+    </g>
+    <path
+       style="fill:#ea693e;fill-opacity:1;stroke:#ff6a3e;stroke-width:0.25525007;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.25525007, 0.51050015;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 87.903467,116.28733 98.769548,85.862181"
+       id="path9738-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="599.98999"
+       inkscape:export-ydpi="599.98999"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/stereo/img/Pyramide.png" />
+  </g>
+</svg>
