@@ -37,17 +37,17 @@ a) Berechnen Sie die $y$-Koordinaten der Schnittpunkte $A$ und $B$.
 b)Berechnen Sie den Steigungswinkel der Geraden $g$.
 
 
-c) $f$ hat im Intervall $[0; \pi]$ die beiden Nullstellen $x_1$ und $x_2$2x. Berechnen Sie die Funktionsgleichung der Parabel $p$ mit den Nullstellen $x_1$ und $x_2$, die die $y$-Achse bei $y=10$ schneidet. Geben Sie $p$ in der Nullstellenform an.
+c) $f$ hat im Intervall $[0; \pi]$ die beiden Nullstellen $x_1$ und $x_2$. Berechnen Sie die Funktionsgleichung der Parabel $p$ mit den Nullstellen $x_1$ und $x_2$, die die $y$-Achse bei $y=10$ schneidet. Geben Sie $p$ in der Nullstellenform an.
 
-\TNT{14}{
+\TNT{16}{
   Vorbereitung neues «Problem» im Taschenrechner
 
   $$f(x) := 3\cdot{} \sin(2x+5)$$
   
-  a) (Braucht die Gerade noch nicht)
+  \textbf{a)} (Braucht die Gerade noch nicht)
   Berechne (im Bogenmaß) $f(-2) = 3\cdot{}\sin(1) \approx 2.524$ und $f(2) = 3\cdot{} \sin(9) \approx 1.236$
 
-  b) Definiere
+  \textbf{b)} Definiere
   $$g(x) := a\cdot{}x+b$$
   $$gls:=\{ f(-2)=g(-2)  ; f(2) = g(2)\}$$
   $$ \textrm{solve} (gls;\{a, b\})$$
@@ -60,8 +60,17 @@ c) $f$ hat im Intervall $[0; \pi]$ die beiden Nullstellen $x_1$ und $x_2$2x. Ber
 
   rad: $\varphi = \arctan\left(\frac{3\cdot{}(\sin(9)-\sin(1))}4\right) \approx -0.3115 \textrm{ rad }$
 
-  Grad: $\varphi = \arctan\left(\frac{3\cdot{}(\sin\left(\frac{9\cdot{}180}{\pi}\right)-\sin\left(\frac{1\cdot{}180}{\pi})\right)}4\right) \approx -0.3115 \textrm{ rad }$
-  
+  Grad: $\varphi = \arctan\left(\frac{3\cdot{}\left(\sin\left(\frac{9\cdot{}180}{\pi}\right)-\sin\left(\frac{1\cdot{}180}{\pi}\right)\right)}4\right) \approx -0.3115 \textrm{ rad }$
+
+
+  \textbf{c)} Die Nullstellen werden typischerweise mit $\textrm{\texttt{solve}} (f(x)=0, x)$ gelöst:
+
+  $$x_1\approx{} 0.6416 \textrm{ und } x_2\approx{} 2.212$$
+  Somit lautet die Funktionsgleichung in Nullstellenform:
+
+  $$f(x) = a(x-x_1)\cdot{}(x-x_2)\approx{} a(x-0.6416)\cdot{}(x-2.212)$$
+  Das $a$ kann mit folgender Gleichung gefunden werden:
+  $$p(x) := a\cdot{}(x-0.6416)\cdot{}(x-2.212); \textrm{\texttt{solve}} (p(0)=10; a); a\approx{}7.045$$
 }%% END TNT
 \newpage
 
