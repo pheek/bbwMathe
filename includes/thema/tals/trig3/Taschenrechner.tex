@@ -26,6 +26,42 @@ $$\cos\left(2x+\frac{\pi}{9}\right) = 0.5$$
 
 \newpage
 
+\subsection{Referenzaufgabe Tageslänge}\index{Tageslänge}
+(Aus Maturitätsprüfung 2019 Serie 1 Teil 2 Aufgabe 6.)
+
+Die Zeitspanne zwischen Sonnenauf\index{Sonnenaufgang}- und Sonnenuntergang\index{Sonnenuntergang} verändert sich im Laufe eines Jahres.
+In München kann die Zeitspanne $T(x)$ in Stunden am $x$-ten Tag des Jahres näherungsweise durch die Funktion
+
+$$T(x) = a\cdot{}\cos\left( 2\pi\cdot{}\frac{x-172}{365}\right) + c\textrm{, Cosinusfunktion im Bogenmass}$$
+
+modelliert werden.
+
+Am 81. Tag misst die Zeitspanne 12 Stunden und am 249. Tag 13 Stunden.
+
+a) Berechnen Sie die Koeffizienten $a$ und $c$ der Funktionsgleichung.
+
+b)  Berechnen Sie $x$ so, dass die Zeitspanne 14 Stunden misst.
+
+c)  Erstellen Sie eine qualitative Skizze für 1 Jahr à 365 Tage.
+
+\TNT{14.8}{
+  Vorbereitung im Taschenrechner: Definiere $T(x)$:
+  $$T(x) := a\cdot{}\cos\left(2\pi\cdot{}\frac{x-172}{365}\right) + c$$
+
+  a) Löse das Gleichungssystem mittels \texttt{solve(gls, \{a, c\})}:
+
+  \gleichungZZ{T(81)}{12}{T(249)}{13}
+  
+   Dies liefert $a\approx{}4.192$ und $c\approx{}11.98$
+
+  b) Füge dem Gleichungssystem $T(x)=14$ als Gleichung hinzu und schränke den Definitionsbereich mit $|$ ein:
+    $$\textrm{\texttt{solve}}(\{T(81)=12;T(249)=13;T(x)=14\},\{a,c,x\})|x>0 \textrm{ AND } x<365$$
+    Dies liefert für $x\approx{110.0}$ oder $x=234.1$.
+
+    c) $x$-Achse von 0 bis 365 und $y$-Achse = $T(x)$; hier die vier bekannten Punkte eintragen.
+    Lösung s. Maturaprüfung 2019 Serie 1 Teil 2 Aufgabe 6.
+}%% END TNT
+\newpage
 
 \subsection{Referenzaufgabe alte Maturaprüfung}
 (Aus der Maturaprüfung Grundlagenfach 2020 Januar Teil 2 Aufgabe 1.)
@@ -73,39 +109,3 @@ c) $f$ hat im Intervall $[0; \pi]$ die beiden Nullstellen $x_1$ und $x_2$. Berec
   $$p(x) := a\cdot{}(x-0.6416)\cdot{}(x-2.212); \textrm{\texttt{solve}} (p(0)=10; a); a\approx{}7.045$$
 }%% END TNT
 \newpage
-
-\subsection{Referenzaufgabe Tageslänge}\index{Tageslänge}
-(Aus Maturitätsprüfung 2019 Serie 1 Teil 2 Aufgabe 6.)
-
-Die Zeitspanne zwischen Sonnenauf\index{Sonnenaufgang}- und Sonnenuntergang\index{Sonnenuntergang} verändert sich im Laufe eines Jahres.
-In München kann die Zeitspanne $T(x)$ in Stunden am $x$-ten Tag des Jahres näherungsweise durch die Funktion
-
-$$T(x) = a\cdot{}\cos\left( 2\pi\cdot{}\frac{x-172}{365}\right) + c\textrm{, Cosinusfunktion im Bogenmass}$$
-
-modelliert werden.
-
-Am 81. Tag misst die Zeitspanne 12 Stunden und am 249. Tag 13 Stunden.
-
-a) Berechnen Sie die Koeffizienten $a$ und $c$ der Funktionsgleichung.
-
-b)  Berechnen Sie $x$ so, dass die Zeitspanne 14 Stunden misst.
-
-c)  Erstellen Sie eine qualitative Skizze für 1 Jahr à 365 Tage.
-
-\TNT{14.8}{
-  Vorbereitung im Taschenrechner: Definiere $T(x)$:
-  $$T(x) := a\cdot{}\cos\left(2\pi\cdot{}\frac{x-172}{365}\right) + c$$
-
-  a) Löse das Gleichungssystem mittels \texttt{solve(gls, \{a, c\})}:
-
-  \gleichungZZ{T(81)}{12}{T(249)}{13}
-  
-   Dies liefert $a\approx{}4.192$ und $c\approx{}11.98$
-
-  b) Füge dem Gleichungssystem $T(x)=14$ als Gleichung hinzu und schränke den Definitionsbereich mit $|$ ein:
-    $$\textrm{\texttt{solve}}(\{T(81)=12;T(249)=13;T(x)=14\},\{a,c,x\})|x>0 \textrm{ AND } x<365$$
-    Dies liefert für $x\approx{110.0}$ oder $x=234.1$.
-
-    c) $x$-Achse von 0 bis 365 und $y$-Achse = $T(x)$; hier die vier bekannten Punkte eintragen.
-    Lösung s. Maturaprüfung 2019 Serie 1 Teil 2 Aufgabe 6.
-}%% END TNT
