@@ -15,8 +15,8 @@
 Freilich kann mit dem Taschenrechner die Gleichung aus dem
 Einstiegsbeispiel $$\cos\left(2x+\frac{\pi}{9}\right)=0.5$$ relativ einfach gelöst werden:
 
-Mit der Eingabe des Definitionsbereichs (domain) «dom» ...
-$$\mathbb{D} =  [ -\pi, 3\pi[$$
+Mit der Eingabe eines Definitionsbereichs (domain) «dom»\footnote{Die Einschränkung auf den Definitionsbereich kann der Taschenrechner rasch ausführen; daher ist dieser hier evtl. bewusst etwas größer gewählt, als im Einstiegsbeispiel.}  ...
+$$\mathbb{D} =  [ -\pi , 3\pi]$$
 ... und der Gleichung «gls» ...
 $$\cos\left(2x+\frac{\pi}{9}\right) = 0.5$$
 
@@ -27,8 +27,8 @@ $$\cos\left(2x+\frac{\pi}{9}\right) = 0.5$$
 \newpage
 
 
-\subsection{Referenzaufgabe}
-(Aus der Maturaprüfung Grundlagenfach 2020 Teil 2)
+\subsection{Referenzaufgabe alte Maturaprüfung}
+(Aus der Maturaprüfung Grundlagenfach 2020 Januar Teil 2 Aufgabe 1.)
 
 Der Graph der Funktion $f: y=3\cdot{}\sin(2x+5)$ ($x$ im Bogenmass)  wird von der Geraden $g$ in den beiden Punkten $A=(-2|...)$ und $B=(2|...)$ geschnitten.
 
@@ -62,4 +62,41 @@ c) $f$ hat im Intervall $[0; \pi]$ die beiden Nullstellen $x_1$ und $x_2$2x. Ber
 
   Grad: $\varphi = \arctan\left(\frac{3\cdot{}(\sin\left(\frac{9\cdot{}180}{\pi}\right)-\sin\left(\frac{1\cdot{}180}{\pi})\right)}4\right) \approx -0.3115 \textrm{ rad }$
   
+}%% END TNT
+\newpage
+
+\subsection{Referenzaufgabe Tageslänge}\index{Tageslänge}
+(Aus Maturitätsprüfung 2019 Serie 1 Teil 2 Aufgabe 6.)
+
+Die Zeitspanne zwischen Sonnenauf\index{Sonnenaufgang}- und Sonnenuntergang\index{Sonnenuntergang} verändert sich im Laufe eines Jahres.
+In München kann die Zeitspanne $T(x)$ in Stunden am $x$-ten Tag des Jahres näherungsweise durch die Funktion
+
+$$T(x) = a\cdot{}\cos\left( 2\pi\cdot{}\frac{x-172}{365}\right) + c\textrm{, Cosinusfunktion im Bogenmass}$$
+
+modelliert werden.
+
+Am 81. Tag misst die Zeitspanne 12 Stunden und am 249. Tag 13 Stunden.
+
+a) Berechnen Sie die Koeffizienten $a$ und $c$ der Funktionsgleichung.
+
+b)  Berechnen Sie $x$ so, dass die Zeitspanne 14 Stunden misst.
+
+c)  Erstellen Sie eine qualitative Skizze für 1 Jahr à 365 Tage.
+
+\TNT{14.8}{
+  Vorbereitung im Taschenrechner: Definiere $T(x)$:
+  $$T(x) := a\cdot{}\cos\left(2\pi\cdot{}\frac{x-172}{365}\right) + c$$
+
+  a) Löse das Gleichungssystem mittels \texttt{solve(gls, \{a, c\})}:
+
+  \gleichungZZ{T(81)}{12}{T(249)}{13}
+  
+   Dies liefert $a\approx{}4.192$ und $c\approx{}11.98$
+
+  b) Füge dem Gleichungssystem $T(x)=14$ als Gleichung hinzu und schränke den Definitionsbereich mit $|$ ein:
+    $$\textrm{\texttt{solve}}(\{T(81)=12;T(249)=13;T(x)=14\},\{a,c,x\})|x>0 \textrm{ AND } x<365$$
+    Dies liefert für $x\approx{110.0}$ oder $x=234.1$.
+
+    c) $x$-Achse von 0 bis 365 und $y$-Achse = $T(x)$; hier die vier bekannten Punkte eintragen.
+    Lösung s. Maturaprüfung 2019 Serie 1 Teil 2 Aufgabe 6.
 }%% END TNT
