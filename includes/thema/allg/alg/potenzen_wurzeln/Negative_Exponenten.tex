@@ -1,41 +1,56 @@
 \subsubsection{Negative Exponenten}
-Für sinnvolle Rechengesetze (s. oben) müsste auch gelten:
+\sectuntertitel{Nicht für alle ist die Potenzrechtung \textit{positiv}.}
+Wir kennen bereits das Rechengesetz für positive Exponenten:
 
-\vspace{4mm}
+$$a^5\cdot{}a^2 = a^{5+2} = a^7$$
 
-\TRAINER{$a^5 \cdot a^{(-2)} = a^{5 + (-2)} = a^3$}%%
-\noTRAINER{$a^5 \cdot a^{(-2)} = ....................................................$}%%
+Sinnvoll wäre die folgende Erweiterung auf negative
+Exponenten:\\\TRAINER{Damit die Rechengesetze weiterhin gelten.}
+$$a^5\cdot{}a^{-2} = a^{5+(-2)} = a^3$$
 
-\vspace{4mm}
+Dividieren wir obige Gleichung beidseitig durch $a^5$, so erhalten wir
+folgende sinnvolle Definition:
 
-Dies gilt, wenn wir $a^{-2}$ als $\frac{1}{a^{2}}$ definieren.
+\TNT{3.2}{
+Wir wollen erreichen, dass gilt: $a^5\cdot{}a^{-2} \stackrel{!}{=}a^3$
+
+Wir dividieren durch $a^5$ beidseitig: $a^{-2} = \frac{a^3}{a^5} = \frac{1}{a^2}$
+
+Mit dieser Herleitung von $a^-2 = \frac1{a^2}$ gilt: $a^5\cdot{}a^{-2} = a^5\cdot{}\frac1{a^2} = a^3$
+}%% END TNT
 
 \begin{definition}{}{}
-$$a^{-n} := 1 : \underbrace{a : a : a : ... : a}_{n \textrm{\ Divisoren}}$$
+$$a^{-n} := \frac{1}{a^n}$$
 \end{definition}
 
-\begin{itemize}
-	\item \fbox{$a^{-n} = \frac{1}{a^{+n}} = \left(\frac{1}{a}\right)^n$}   
+\begin{bemerkung}{}{}
+$$\frac{1}{a^n}= 1 : \underbrace{a : a : a : ... : a}_{n \textrm{\ Divisoren}}$$
+\end{bemerkung}
 
-  Begründung:
+\begin{gesetz}{}{}
+$a^{-n} = \left(\frac1a\right)^n$
+\end{gesetz}
+Begründung:
 
-  \TNT{2.4}{
-     \TALS{Wir wissen schon: $a^{m-n} = a^m : a^n = a^m\cdot{}\frac{1}{a^n}$   und es soll gelten:
-       $a^{m-n} = a^m\cdot{} a^{-n}$ Beide Gleichungen gleichsetzen:
-       $\Longrightarrow a^{m}\cdot{} \frac{1}{a^n} = a^m\cdot{} a^{-n} $ Beide Seiten durch $a^m$ teilen:
-     $\frac{1}{a^n}=a^{-n}$}
-     \GESO{$a^5\cdot{} a^{-2} = a^{5+(-2)} = a^3$ daraus folgt
-       (beide Seiten durch $a^5$ teilen)\\
-       $a^{-2} = \frac{a^3}{a^5} = \frac{a^3 : a^3}{a^5 : a^3} = \frac{1}{a^2}$
-     }%% end GESO
-}%% END TRAINER
+\TNT{4.4}{$a^{-n} = \frac1{a^n}
+= \frac1{\underbrace{a\cdot{}a\cdot{}a\cdot{}...\cdot{}a}_{n \textrm{\ Faktoren}}}
+= \underbrace{\frac1a\cdot{}\frac1a\cdot{}\frac1a\cdot{}...\cdot{}\frac1a}_{n \textrm{\ Faktoren}}
+= \left(\frac1a\right)^n$
+}%% END TNT
+\newpage
+Ganz analog gilt:
 
-   
-   Analog:
-	\item \fbox{$a^{n} = \frac{1}{a^{-n}} = \left(\frac{1}{a}\right)^{-n}$}   
+\begin{gesetz}{}{}
+$a^{n} = \frac{1}{a^{-n}} = \left(\frac{1}{a}\right)^{-n}$
+\end{gesetz}
+\TRAINER{Begründung: Setze für $a$ den Kehrwert $\frac1a$ ein.}
 
+Und ebenso für beliebige Brüche:
 
-  \item \fbox{$\left(\frac{a}{b}\right)^{-n} = \left(\frac{b}{a}\right)^{+n}$}
+\begin{gesetz}{}{}
+$\left(\frac{a}{b}\right)^{-n} = \left(\frac{b}{a}\right)^{+n}$
+\end{gesetz}
+
     
     \TALS{ Begründung
 
@@ -56,10 +71,6 @@ $$a^{-n} := 1 : \underbrace{a : a : a : ... : a}_{n \textrm{\ Divisoren}}$$
        \left(\frac{1}{5}\cdot{}2\right)^{-3} =
        \left(\frac{2}{5}\right)^{-3} 
        $}} %% END TNT END GESO
-
-
-
-\end{itemize}
 
 %%$$\left(\frac{1}{a}\right)^{-n} = \frac{1}{\left(\frac{1}{a}\right)^n} = a^n$$
 \newpage
