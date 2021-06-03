@@ -102,46 +102,53 @@ Stellen interessiert, sondern begnügen uns mit einer Näherung.
 \subsubsection{Dezimale (Nachkommastelle)}\index{Dezimale}\index{Nachkommastelle}
 Als Dezimale, Dezimalstelle oder Nachkommastelle werden die Stellen \textbf{nach} dem Komma bezeichnet.
 Runden auf die vierte \textbf{Dezimale} (= vierte \textbf{Nachkommastelle}):
-$$ 36.4699432 \approx  \TALS{.......}\GESO{.......}$$
-$$ 36.4699618 \approx\TALS{.......}\GESO{.......}$$
-\TRAINER{36.4699 bzw 36.4700}
+$$ 36.4699432 \approx  \LoesungsRaum{36.4699}$$
+$$ 36.4699618 \approx  \LoesungsRaum{36.4700}$$
 \textbf{Vorsicht} bei Zahlen nahe an Null. So wird die Zahl
-$$0.002468$$ beim Runden auf vier Dezimalen wie folgt gerundet:
+$$0.002468$$ beim Runden auf vier Dezimale wie folgt gerundet:
 $$0.0025$$
+
+Runden Sie auf vier Dezimale:
+
+\begin{tabular}{rcl}
+  55.55555      &$\approx$& \LoesungsRaum{55.5556}\\
+  8.55695       &$\approx$& \LoesungsRaum{8.5570}\\
+  3.3339499     &$\approx$& \LoesungsRaum{3.3339}\\
+  1000.0001     &$\approx$& \LoesungsRaum{1000.0001}\\
+  10\,000.00001 &$\approx$& \LoesungsRaum{10\.000.0000}\\
+  -6.99999      &$\approx$& \LoesungsRaum{-7.0000}\\
+  0.000044445   &$\approx$& \LoesungsRaum{0.0000}\\
+\end{tabular}
+
+\TRAINER{Das letzte Beispiel zeigt, dass so oft wichtige Information
+  verloren geht. Daher wird sinnvollerweise meist auf signifikante Stellen, und nicht
+  auf Dezimale gerundet.}
 \newpage
 
 
-\subsubsection{Signifikante Ziffern}\index{Ziffern!signifikante}\index{signifikante Ziffern}\index{Stellen!signifikante}
-Beim Runden auf vier Dezimalstellen geht oft wichtige Information verloren...
-$$ 0.0001849 \approx  0.0002$$
-... oder es wird weiter unnötiges angegeben...
-$$ 684553 \textrm{\ Einwohner} \approx  684553.0000 \textrm{\ Einwohner}$$
-
-Für physikalische Messgrößen reichen oft vier
-signifikante
-Ziffern. Dies ist nicht zu verwechseln mit vier Nachkommastellen\index{Nachkommastelle}.
-
-
-\begin{rezept}{Signifikante Ziffern}{}
-  Beim Runden auf vier \textbf{signifikante Ziffern} wird
+\begin{rezept}{Auf signifikante Ziffern runden}{}
+  
+  Beim Runden auf \textbf{vier signifikante Ziffern} wird
   \begin{itemize}
   \item  von links nach rechts die erste von Null verschiedene Ziffer gesucht. Dies ist die
     erste signifikante Ziffer.
   \item
     Danach werden die nächsten drei Ziffern
   genommen, egal ob sie Null sind oder nicht. 
-\item   Diese vier Ziffern
-  bilden die vier signifikanten Ziffern.
+\item   Mit diesen drei Ziffern bilden die Ziffern zusammen die vier
+  signifikanten Ziffern.
 \item  Die 5. Ziffer wird nur noch zum Auf- oder Abrunden verwendet.
   \end{itemize}
 \end{rezept}
 
-Runden Sie auf vier \textbf{signifikante} Ziffern
+Geben Sie vier \textbf{signifikante} Ziffern an und runden Sie wenn nötig:
 
 $$36.4699432 \approx \LoesungsRaum{36.47}$$
 $$36.9952831 \approx \LoesungsRaum{37.00}$$
 $$30009.78   \approx \LoesungsRaum{30010}$$
 $$0.0439899  \approx \LoesungsRaum{0.04399}$$
+$$1\,000\,000 \approx \LoesungsRaum{1\,000\,000}$$
+$$0.00001    \approx \LoesungsRaum{0.00001000}$$
 \newpage
 
   
