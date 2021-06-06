@@ -3,72 +3,98 @@
 \textbf{Einführungsbeispiel}
 
 
-Gegeben ist die Parabel $f: y=\frac{1}{2}x^2 -2x +3$ und von einer
-Geraden $g$ ist die Steigung $a =\frac12$ gegeben.
+Gegeben ist die Parabel $f: y=\frac{1}{4}x^2 -\frac12x +\frac14$ und von einer
+Geraden $g$ ist der $y$-Achsenabschnitt $b = -2$ gegeben.
 
-Gesucht ist von der Geraden $g$ der $y$-Achsenabschnitt so, dass die
+Gesucht ist von der Geraden $g$ die Steigung $a$ so, dass die
 Gerade die Parabel tangiert; also genau in einem Punkt berührt.
 
-Wo (in welchem Punkt $P=(x_P|y_P)$) tangiert also die Gerade $g$ die Parabel $f$?
+Wo (in welchem Punkt $S=(x_S|y_S)$) tangiert also die Gerade $g$ die Parabel $f$?
 
-In der folgenden Skizze sind drei mögliche Geraden mit Steigung
-$\frac{1}{2}$ gezeichnet. Nur eine \textit{tangiert} die Parabel.
+In der folgenden Skizze sind drei mögliche Geraden mit $y$-Achsenabschnitt
+$-2$ gezeichnet. Nur eine dieser drei Geraden \textit{tangiert} die Parabel.
 
-\bbwGraph{-2}{6}{-2}{6}{
-  \draw[thick,color=blue,variable=\x,domain=-1:5] plot ({\x}, {0.5*\x*\x - 2*\x + 3}); 
-  \draw[color=red,variable=\x,domain=-1:5] plot ({\x},{0.5*\x + 1});
-  \draw[color=red,variable=\x,domain=-1:5] plot ({\x},{0.5*\x - 1.5});
-  \draw[color=cyan,thick,variable=\x,domain=-1:6] plot ({\x},{0.5*\x  -0.125});
-  \bbwDot{2.5, 1.125}{green}{north}{P}
+\bbwGraph{-4}{4}{-3}{5}{
+  \draw[thick,color=blue,variable=\x,domain=-3.5:4] plot ({\x},   {0.25*\x*\x -0.5*\x + 0.25});
+
+  \draw[color=red,variable=\x,domain=-3:5] plot ({\x},{2*\x -2});
+  \draw[color=red,variable=\x,domain=-3:5] plot ({\x},{0.5*\x - 2});
+  \draw[color=cyan,thick,variable=\x,domain=-3:5] plot ({\x},{1*\x  -2});
+
+  \bbwDot{3, 1}{green}{north}{S}
+
+  %%%\draw[thick,color=blue,variable=\x,domain=-1:5] plot ({\x}, {0.5*\x*\x - 2*\x + 3}); 
+  %%\draw[color=red,variable=\x,domain=-1:5] plot ({\x},{0.5*\x + 1});
+  %%\draw[color=red,variable=\x,domain=-1:5] plot ({\x},{0.5*\x - 1.5});
+  %%\draw[color=cyan,thick,variable=\x,domain=-1:6] plot ({\x},{0.5*\x  -0.125});
+  %%\bbwDot{2.5, 1.125}{green}{north}{P}
 }
-
-Lösungsidee: Wähle als Parameter den Achsenabschnitt $b$ (der Geraden)
-und berechne die Schnittpunkte mit $f(x) = g(x)$. Nur für ein $b$ gibt
+\newpage
+\textbf{Lösungsidee}: Wähle als Parameter die Steigung $a$  (der Geraden)
+und berechne die Schnittpunkte mit $f(x) = g(x)$. Nur für ein $a$ gibt
 es genau eine Lösung (Diskriminante = 0). Den $x$-Wert dieses
-Schnittpunkts nennen wir $x_P$:
+Schnittpunkts nennen wir $x_S$:
 
 \TNT{3.2}{
+ 
 \begin{tabular}{rclr}
-$f(x_P)$                   & $=$ & $g(x_P)$                            & \\
-$\frac{1}{2} x_P^2 - 2x_P + 3$ & $=$ & $\frac{1}{2}x_P + b$                  & \\
-$0$                        & $=$ & $\frac{1}{2}x_P^2 - 2.5x_P + 3 - b$ & (I)\\
+$f(x_S)$                      & $=$ & $g(x_S)$                              & \\
+$\frac14x^2-\frac12x+\frac14$ & $=$ & $ax-2$                                & \\
+$0$                           & $=$ & $\frac14x^2+(-\frac12-a)-\frac94$     & (I)\\
 \end{tabular}
+\vspace{10mm}
 }%% END TNT
 
-\TRAINER{Das Beispiel hat den Nachteil, dass hier das $X_P$ sofort
-  durch $X_P=\frac{-B\pm\sqrt{D}}{2A}\frac{-B\pm\sqrt{0}}{2A} =
-  \frac{-(-2.5)}{2\cdot{}\frac12} = 2.5$ gefunden werden kann. Leider
-  habe ich kein Beispiel gefunden, das nur eine Lösung hat, und der
-  gesuchte Parameter dennoch in $B$ oder $A$ der quadratischen
-  Gleichung vorkommt.}
-\newpage
-
-Die Diskriminante $D=B^2 - 4AC$ muss gleich 0 sein; mit
+Die Diskriminante $D=B^2 - 4AC$ muss gleich 0 sein. 
 
 \TNT{7.2}{
-$A = \frac{1}{2}$, $B = -2.5$ und $C = 3-b$.
+$A = \frac14$, $B = -\frac12-a$ und $C = \frac{-9}4$.
 
-$$D=0=B^2-4AC = 6.25 -4\cdot{}\frac{1}{2}(3-b)$$
-$$\Longrightarrow 6.25 = 6-2b$$
-$$\Longrightarrow b=-\frac{1}{8}$$
-
-$$\Longrightarrow g: y=\frac{1}{2}x - \frac{1}{8}$$
+  $$D=0=B^2-4AC = (-\frac12-a)^2  - (4\cdot{}A\cdot{}C)$$
+  $$0 = (a^2+a+\frac14) - (4\cdot\frac14\cdot{}\frac{-9}4)$$
+$$\Longrightarrow 0 = a^2 + a - 2$$
+$$\Longrightarrow a_1 = 1 \textrm{ und  } a_2 = -2$$
+\vspace{40mm}
 }%% END TNT
-  
-Für den Schnittpunkt müssen wir nun nur doch das gefundene $b$ ($b =
--\frac{1}{8}$) in die Gleichung (I) einsetzen:
+\newpage
 
-$$0 = \frac{1}{2}x_P^2 - 2.5x_P +3 - \frac{1}{8}$$
+Für den \textbf{Schnittpunkt} müssen wir nun nur doch das gefundene
+$a$ in die Gleichung (I) einsetzen ($a_1=1$):
 
-Da die Gleichung in $x_P$ die Diskriminante 0 hat, ist die Lösung
-einfach $x_P = \frac{-B}{2A}$ mit $A = \frac{1}{2}$ und
-$B=-2.5$. Somit erhalten wir sofort $x_P = 2.5$. Für das $y_P$
-brauchen wir das $x_P$ nur in $f$ oder in $g$ einzusetzen und
-erhalten $y_P =\frac{9}{8}$. Der gesuchte Berührungspunkt $S$ lautet
-also:
+\TNT{6}{
+$S_1: a_1 = 1:$
+$$0 = \frac14x^2+ (-\frac12 - 1) - \frac94$$
+  $$\Longrightarrow x_1 = \frac{\frac32\pm\sqrt{D}}{2\cdot{}\frac14} = \frac32 : \frac12= 3$$
 
-$$P = \left(\frac{5}{2}\middle|\frac{9}{8}\right)$$
+Bem. Der Term $\sqrt{D}$ kann weggelassen werden, denn $D$ wurde ja so
+konstruiert, dass $D=0$ sei.
 
+
+Das $y$ finden wir einfach durch Einsetzen von $x$ in den
+Funktionsterm der Geradengleichnug.
+
+$$y_1 = a_1x_1 - 2 = 1\cdot{}3-2 = 1$$
+und somit ist
+$$S_1 = (3 | 1)$$
+}%% END TNT
+
+
+
+Zweiter \textbf{Schnittpunkt} ($a_2 = -2$):
+
+
+\TNT{6}{
+$S_2: a_2 = -2:$
+$$0 = \frac14x^2+ (-\frac12 - (-2)) - \frac94$$
+$$\Longrightarrow x_2 = \frac{-\frac32\pm\sqrt{D}}{2\cdot{}\frac14} = -\frac32 : \frac12= -3$$
+
+
+$$y_2 = a_2x_2+b = -2\cdot{}3-2 = 4$$
+und somit ist
+$$S_2 = (-3 | 4)$$
+
+}%% END TNT
+\newpage
 \TRAINER{(Je nach Zeit wäre 699. a) noch eine Vorzeigeaufgabe.)}
 
 \subsection{Aufgaben}
