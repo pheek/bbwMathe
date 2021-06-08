@@ -85,7 +85,75 @@ $$3.4729\textbf{6}44 \approx 3.4730$$
 \hrulefill
 
 \subsection{Signifikante Stellen}
-...
+Die Zählung der signifikanten Stellen einer Zahl beginnt (von links) mit der ersten von Null verschiedenen Ziffer. Ab hier zählen alle Ziffern, auch die 0, bis zur verlangten Rundungsstelle.
+
+\subsection{Wissenschaftlicher Schreibweise}
+Für große, aber auch für Zahlen sehr nahe an 0, wird die Wissenschaftliche Schreibweise vorgezogen. Dabei steht vor dem Dezimalpunkt immer genau eine Ziffer:
+
+\begin{tabular}{lcccr}
+Zahl  & & wissenschaftl. & & TR: \tiprobutton{EE} \\
+1400  &=& $1.4\cdot{}10^3$ &=& 1.4E3\\
+0.004 &=& $4\cdot{}10^{-3}$ &=&4E-3\\
+\end{tabular}
+
+\section{Potenzen}
+Für Basis $a\ne 0$ und $r\in\mathbb{Q}$ gilt:
+
+\begin{tabular}{cc}
+$a^0=1,$ & $a^{-n} = \frac1{a^n},$  \\
+$\left(\frac{a}b\right)^{-n} = \left(\frac{b}a\right)^n,$ & $a^{\frac{m}n} = \sqrt[n]{a^m}$\\
+ \end{tabular} 
+
+\subsection{gleiche Basis}
+\begin{tabular}{cc}
+$a^m\cdot{}a^n = a^{m+n},$ & $a^m:a^n=a^{m-n},$ \\
+$\left(a^m\right)^n = a^{m\cdot{}n}$ &\\
+ \end{tabular} 
+
+\subsection{gleicher Exponent}
+
+\begin{tabular}{cc}
+$a^n\cdot{}b^n = (ab)^n,$ & $\left(\frac{a}b\right)^n = \frac{a^n}{b^n}$\\
+ \end{tabular}
+ 
+
+\subsection{Vorzeichen}
+Fall: Sei $n$ gerade:
+
+\begin{tabular}{cc}
+ $-(a^n) = -a^n,$ & aber: $(-a)^n = +a^n$\\
+ \end{tabular} 
+
+Fall: Sei $n$ \textbf{un}gerade:
+
+\begin{tabular}{cc}
+ $-(a^n) = -a^n,$ & aber: $(-a)^n = -a^n$\\
+ \end{tabular} 
+
+
+\section{Logarithmen}
+
+\begin{definition}{$\log$}{}
+Für $a>0, a\ne 1$ sei
+
+$$\log_a{}(z)=x \Longleftrightarrow{} a^x = z$$
+\end{definition}
+$a$ = Basis, $z$ = Numerus (stets > 0), $x$ = Logarithmus (= Exponent in der Potenzschreibweise)
+
+Logarithmen sind Exponente n zu einer fest gewählten Basis.
+
+\begin{gesetz}{}{}
+$$\log_a(u^n) = n\cdot{}\log_a(u)$$
+\end{gesetz}
+
+
+
+
+
+
+
+
+
 \end{multicols}
 
 \end{document}
