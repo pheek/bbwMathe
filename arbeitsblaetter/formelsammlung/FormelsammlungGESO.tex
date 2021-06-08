@@ -1,0 +1,91 @@
+%%
+%% Meta: TI nSpire Einführung
+%%       Ziel: Damit die Grundoperationen damit durchgeführt werden können.
+%%             Damit man sich an den Rechner gewöhnt.
+%%
+
+\input{bbwSeite}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amssymb} %% für \blacktriangleright
+\renewcommand{\metaHeaderLine}{Formelsammlung GESO}
+\renewcommand{\arbeitsblattTitel}{Abschlussprüfung V. 0.0.0 2021-06-08 fp}
+
+\begin{document}%%
+\arbeitsblattHeader{}
+ \begin{multicols}{2}
+
+\section{Zahlmengen}
+%% Benutze
+%%\columnbreak
+%% für harten Break
+
+$\mathbb{N} = \{1,2, ...\}  $ = Natürliche Zahlen\\
+$\mathbb{Z} = \{..., -2, -1, 0, 1,2, ...\}  $ = Natürliche Zahlen\\
+$\mathbb{Q} = \{\frac{a}b | a\in \mathbb{Z}, b\in\mathbb{N}\}$ Menge der Brüche (\textbf{rationale} Zahlen)\\
+$\mathbb{R} = \{..., -2, ..., -1, ...., 0,
+\frac12, 1,...,\sqrt{2},...,2, e,\\
+..., 3, ..., \pi, ...\}  $ = \textbf{reelle} Zahlen = alle Zahlen auf der Zahlengerade\\
+
+Eine natürliche Zahl heißt Primzahl, wenn sie genau zwei Teiler hat (Eins und sich selbst). $\mathbb{P} = \{2, 3, 5, 7, 11, 13, ...\}$
+
+\hrulefill
+
+\section{Algebra}
+\subsection{Binomische Formeln}
+
+$$(a+b)^2 = a^2+2ab + b^2$$
+$$(a-b)^2=a^2-2ab+b^2$$
+$$(a+b)\cdot(a-b) = a^2 - b^2$$
+
+\hrulefill
+
+\subsection{Vertauschte Differenz}
+(-1 ausklammern)
+
+$(b-a)=(-1)\cdot{}(h-b)$
+
+Beispiel:
+
+$$\frac{x}{a-b} +  \frac{y}{b-a} = \frac{x}{a-b} + \frac{-y}{a-b} = \frac{x-y}{a-b}$$
+
+\hrulefill
+
+\subsection{Summenzeichen}
+$$\sum_{k=1}^n{T(k)} = T(1) + T(2) + ... + T(n)$$
+Beispiel
+
+$$\sum_{i=3}^7{i^2} = 3^2 + 4^2 + 5^2 + 6^2 + 7^2$$
+
+Taschenrechner: \tiprobutton{math} 4
+
+
+\hrulefill
+
+\subsection{(Absolut)betrag einer Zahl}
+
+$|a| = a$ falls $a \ge 0$
+
+$|a| = (-1)\cdot{}a$ falls $a < 0$
+
+
+\section{Dezimalzahlen}
+\subsection{Runden}
+Dezimalen sind die Stellen nach dem Komma.
+Runden auf $n$ Dezimalen: betrachte die $(n+1)$-te Dezimale und runde auf, wenn diese $\ge 5$.
+
+Beispiel
+
+3.4729\textbf{6}44 auf vier Dezimalen, so ist die 5. Dezimale (hier die Ziffer 6) zu beachten:
+
+$$3.4729\textbf{6}44 \approx 3.4730$$
+(Alle vier Dezimalen sind anzugeben.)
+
+\hrulefill
+
+\subsection{Signifikante Stellen}
+...
+\end{multicols}
+
+\end{document}
