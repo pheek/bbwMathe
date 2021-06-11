@@ -12,6 +12,9 @@
 \renewcommand{\metaHeaderLine}{Formelsammlung GESO}
 \renewcommand{\arbeitsblattTitel}{Abschlussprüfung V. 0.0.0 2021-06-08 fp}
 
+\titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
+\titlespacing*{\subsection}{0pt}{0.1\baselineskip}{0.1\baselineskip}
+
 \begin{document}%%
 \arbeitsblattHeader{}
  \begin{multicols}{2}
@@ -22,7 +25,7 @@
 %% für harten Break
 
 $\mathbb{N} = \{1,2, ...\}  $ = Natürliche Zahlen\\
-$\mathbb{Z} = \{..., -2, -1, 0, 1,2, ...\}  $ = Natürliche Zahlen\\
+$\mathbb{Z} = \{..., -2, -1, 0, 1,2, ...\}  $ = Ganze Zahlen\\
 $\mathbb{Q} = \{\frac{a}b | a\in \mathbb{Z}, b\in\mathbb{N}\}$ Menge der Brüche (\textbf{rationale} Zahlen)\\
 $\mathbb{R} = \{..., -2, ..., -1, ...., 0,
 \frac12, 1,...,\sqrt{2},...,2, e,\\
@@ -87,7 +90,7 @@ $$3.4729\textbf{6}44 \approx 3.4730$$
 \subsection{Signifikante Stellen}
 Die Zählung der signifikanten Stellen einer Zahl beginnt (von links) mit der ersten von Null verschiedenen Ziffer. Ab hier zählen alle Ziffern, auch die 0, bis zur verlangten Rundungsstelle.
 
-\subsection{Wissenschaftlicher Schreibweise}
+\subsection{Wissenschaftliche Schreibweise}
 Für große, aber auch für Zahlen sehr nahe an 0, wird die Wissenschaftliche Schreibweise vorgezogen. Dabei steht vor dem Dezimalpunkt immer genau eine Ziffer:
 
 \begin{tabular}{lcccr}
@@ -205,7 +208,7 @@ $$x = \frac{3a-7b}{5-2c}$$
 \subsection{num-solv}
 Der Taschenrechner löst Gleichungen mit Zahlen nach $x$ auf:
 
-$5^x = 100 -x$, dann \tiprobutton{sin_num-solv} $x\approx{}2.843$
+$5^x = 100 -x$, dann \tiprobutton{2nd}\tiprobutton{sin_num-solv} $x\approx{}2.843$
 
 
 \end{multicols}
@@ -233,7 +236,7 @@ Wie vorgehen?
 	\hline
 	Einfache Zahlen            & $x^2 -2x + 1= 0$           & $a$-$b$-$c$--Formel (Mitternachtsformel) oder faktorisieren $x^2-2x+1=(x-1)^2$ und danach jeden einzelnen Faktor $=0$ setzen.\\
 	\hline
-	Komplizierte Zahlen        & $7.3x^2 - 8x - 3.4 = 0$       & Taschenrechner \tiprobutton{cos_poly-solv}             \\
+	Komplizierte Zahlen        & $7.3x^2 - 8x - 3.4 = 0$       & Taschenrechner \tiprobutton{2nd}\tiprobutton{cos_poly-solv}             \\
 	\hline
 	Variable (Parameter)       & $7.3x^2 - cx + 2.6=0$         & $a$-$b$-$c$-Formel (Mitternachtsformel) \\
 	\hline
@@ -267,11 +270,170 @@ oder so:
 $$7^x=105 \Rightarrow \log(7^x)=\log(105) \Rightarrow$$
 $$x\cdot{}\log(7)=\log(105) \Rightarrow x=\frac{\log(105)}{\log(7)} = \frac{\lg(105)}{\lg(7)}$$
 
+\begin{gesetz}{Exponentialgleichung}{}
+$$a^x=b \Rightarrow{} x=\log_a(b) = \frac{\lg(b)}{\lg(a)}$$
+\end{gesetz}
+
+\subsection{Lineare Gleichungssysteme}
+Erst in \textbf{Grundform} bringen und dann
+\gleichungZZ{5x+7y}{19}{16x -13y}{-4}
+mit Taschenrechner \tiprobutton{2nd}\tiprobutton{tan_sys-solv} lösen.
+
+Verfahren
+\begin{itemize}
+\item Einsetzungsverfahren
+\item Additionsverfahren
+\item Gleichsetzungsverfahren
+\item Graphische Lösung mit zwei Geradengleichungen
+\item Substitution
+\end{itemize}
 
 
+\section{Funktionen}
+
+Eine reelle Funktion ordnet jeder Zahl $x$ aus der Definitionsmenge
+$\mathbb{D}$ genau eine Zahl $y$ aus einer Wertemenge
+$\mathbb{W} \subset \mathbb{R}$ zu:
 
 
+\section{Lineare Funktionen}
+Explizite Form:
+$$g: y = f(x) = a\cdot{}x + b$$
 
+\bbwCenterGraphic{8cm}{img/lineareFunktion.png}
+$a$ = Steigung = $\frac{V}{H}=\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1}$
+Zwei Geraden sind \textbf{parallel}, wenn ihre Steigungen gleich sind.
+
+$b$ = $y$-Achsenabschnitt (=Ordinatenabschnitt)
+
+
+\subsection{Nullstelle} einer Funktion: $y=0$ setzen und nach $x$
+auf\/lösen.
+
+Bsp.: $y=7x+4$ Nullstelle: $0 = 7x+4$, d.\,h. $x_0=\frac{-4}{7}$
+
+\subsection{Ordinatenabschnitt}
+\textbf{Schnittpunkt mit der $y$-Achse}: $x=0$ setzen.
+
+Bsp.: $y=7x+4$ Achsenabschnitt = Schnittpunkt mit der $y$-Achse heißt
+$x=0$. Also $y=7\cdot{}0 + 4 = 4$. Somit liegt der Schnittpuntk bei $(0|4)$.
+
+
+\subsection{Schnittpunkt zweier Geraden}
+Gegeben: $g: y=ax+b$ und $h: y=cx+d$.
+
+Gleichsetzen:
+
+\gleichungZZ{y}{ax+b}{y}{cx+d}
+Finde $x_S$ des Schnittpunktes $S=(x_S|y_S)$
+$$ax+b = cx+d$$
+
+\subsection{Mittelpunkt $M$ einer Strerke $AB$}
+Gegeben $A=(x_A|y_A)$ und $B=(x_B|y_B)$
+
+Gesucht Mittelpunkt $M=(x_M|y_M)$
+
+Lösung Mittelwert $x$ und $y$ separat:
+
+$$x_M = \frac{x_A+x_B}2; y_M=\frac{y_A+y_B}2$$
+
+\subsection{Horizontale Gerade}
+
+$g: y=ax+b$ ist horizontal, wenn die Steigung $a$ wegfällt ($a=0$).
+
+$$g:  y=0\cdot{}x+b \Rightarrow y=b$$
+
+\subsection{Zweipunkte Aufgabe}
+Gesucht Gerade $g: y=ax+b$ durch zwei gegebene Punkte $A=(x_A|y_A)$
+und $B=(x_B|y_B)$.
+
+\textbf{Variante 1}: Steigung $a = \frac{V}H
+= \frac{y_B-y_A}{x_B-x_A}$ berechnen und einen der beiden Punkte in
+$y=ax+b$ einsetzen, um $b$ zu finden.
+
+\textbf{Variante 2}: Gleichungssystem nach $a$ und $b$ auf\/lösen:
+\gleichungZZ{y_A}{a\cdot{}x_A+b}{y_B}{a\cdot{}x_B + b}
+
+
+\section{Potenzfunktionen}
+Grundform:
+$$y=ax^z$$
+$z\in\mathbb{Z}\backslash\{0,1\} = \{...-2, -1, 2, 3, 4, ...\}$
+
+$z>0$: Parabeln
+
+$z<0$: Hyperbeln
+
+$z$ gerade: Gespiegelt an der $y$-Achse
+
+$z$ ungerade: Gespiegelt am Ursprung $O=(0|0)$
+
+$a>0$: gerade Parabel nach oben geöffnet bzw. Hyperbel oder ungerade
+Parabel im Quadranten I und III
+
+$a<0$: gerade Parabel nach unten geöffnet bzw. Hyperbel oder ungerade
+Parabel im Quadranten II und IV
+
+\bbwCenterGraphic{8cm}{img/potenzFunktionen.png}
+
+\subsection{Quadratische Funktion}
+$$y=ax^2$$
+$a$ heißt Öffnung ($a<0$: Die Parabel ist nach unten geöffnet)
+$a=1$ oder $a=-1$: Normalparabel
+
+
+\section{Exponentialfunktionen}
+
+Grundform:
+\begin{gesetz}{Exponentialfunktion}{}
+$$f(t) = b\cdot{}a^{\frac{t}{\tau}}$$
+$b$ = Startwert bei $t_0=0$\\
+\,\,\,\, = $y$-Achsenabschnitt\\
+$a$ = Vervielfältigungsfaktor ($a\in\mathbb{R}^{+}$)\\\
+$a>0$: Wachstumsrate\\
+$a<0$: Zerfallsrate\\
+$\tau$ = Beobachtungsintervall zu $a$
+\end{gesetz}
+Beispiel: Die Algen mit Startwert von $3\textrm{m}^2$ vervierfachen
+sich alle fünf Tage: $b=3$, $a=4$, $\tau=5$
+$$f(t)= 3\cdot{}4^\frac{t}{5}$$
+
+\subsection{Halbwertszeit}
+$\frac12 b = f(t) = b\cdot{}a^{\frac{t}{\tau}}$
+$$t_{\frac12} = \tau\cdot{}\log_a(\frac12)$$
+
+\subsection{Sättigungsfunktionen}
+
+\section{Datenanalyse}
+
+\subsection{Skalen}
+
+\subsection{Lagemaße}
+
+\subsection{Streumaße}
+
+\subsection{Diagramme}
+
+\subsubsection{Histogramm}
+
+\subsubsection{Streudiagramm}
+
+\subsubsection{Boxplot}
+
+
+\section{Stochastik}
+
+\subsection{Kombinatorik}
+\end{multicols}
+
+\subsection*{Überblick}
+\bbwCenterGraphic{15cm}{img/Kombinatorik.png}
+
+
+\begin{multicols}{2}
+
+
+\subsection{Wahrscheinlichkeit}
 
 
 \end{multicols}
