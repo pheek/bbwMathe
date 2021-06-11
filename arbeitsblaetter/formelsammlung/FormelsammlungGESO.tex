@@ -146,6 +146,126 @@ Logarithmen sind Exponente n zu einer fest gewählten Basis.
 $$\log_a(u^n) = n\cdot{}\log_a(u)$$
 \end{gesetz}
 
+\subsection{Spezielle Werte}
+\begin{tabular}{ccc}
+$\log_a(1)=0$ & $\lg(10) = 1$ & $\ln(e) = 1$
+\end{tabular} 
+
+\section{Textaufgaben}
+
+\subsection{Geschwindigkeitsaufgaben}
+\fbox{$\frac{s}{v \cdot{}t}$} (Einheiten kompatibel wählen!)
+
+\subsection{Leistungsaufgaben}
+Bei $x$ Stunden für die ganze Arbeit:
+
+Bruchteil Arbeit pro h = Leistung
+
+Leistung = $\frac{1 \textrm{ [Arbeit]}}{x \textrm{ [Stunde]}}$
+
+\subsection{Restaufgaben}
+$$A:B = C \textrm{ Rest } R \Longleftrightarrow{}  C\cdot{}B+R = A$$
+
+\subsection{Zinseszins}
+\begin{itemize}
+\item $K_0$ = Startkapital; $K_n$ = Endkapital
+\item $p$ = Zinssatz (in \%); $f = \frac{p}{100}$ = Zinsfaktor
+(Wachstumsfaktor); $p<0$, so ist $f$ der Zerfallsfaktor
+\end{itemize}
+$$K_n = K_0 \cdot{} \left( 1+\frac{p}{100} \right)^n = K_0\cdot{}f^n$$
+
+\subsubsection{Beispiele}
+$$p = 2.5\% \Longleftrightarrow{} f = 1.025$$
+$$p = -3\% \Longleftrightarrow{} f = 0.97$$
+
+
+
+\section{Gleichungen}
+
+\subsection{Bruchgleichungen}
+Immer Definitionsbereich $\mathbb{D}$ überlegen: Nenner (unten) darf
+nicht 0 werden.
+
+Bsp.: $$\frac5{x+2}=\frac{7+x^2}{x-3} \Leftrightarrow{} \mathbb{D}_x=\mathbb{R}\backslash{}\{-3, 2\}$$
+
+Schlusskontrolle!
+
+
+
+\subsection{Lineare Gleichugen}
+$$5x-3a = 2cx-7b$$
+1. Alle $x$ nach links, übriges rechts:
+$$5x - 2cx = 3a-7b$$
+2. $x$ ausklammern
+$$x\cdot{}(5-2c) = 3a-7b$$
+3. Durch Klammer teilen
+$$x = \frac{3a-7b}{5-2c}$$
+
+
+\subsection{num-solv}
+Der Taschenrechner löst Gleichungen mit Zahlen nach $x$ auf:
+
+$5^x = 100 -x$, dann \tiprobutton{sin_num-solv} $x\approx{}2.843$
+
+
+\end{multicols}
+
+
+\subsection{quadratische Gleichungen}
+\textbf{Grundform}: $ax^2 + bx+c = 0$
+
+\textbf{Lösungsformel} $x_{1,2}\frac{-b \pm \sqrt{b^2-4ac}}{2a}$
+
+\textbf{Diskriminante} $D = b^2-4ac$:\\
+$D>0$: Zwei Lösungen
+$D=0$: Eine Lösung
+$D<0$: keine Lösung
+
+Wie vorgehen?
+
+\begin{tabular}{|p{44mm}|p{53mm}|p{64mm}|}
+	\hline
+	Spezialfall $b=0$               & $5x^2 = 3$                   & Durch 5 dividieren, dann positive und negative Wurzel ziehen.\\
+	\hline
+	Spezialfall $c=0$               & $3x^2 = 5x$                   & Fallunterscheidung $x$ = 0 und $x \ne 0$\\
+	\hline
+	Bereits faktorisiert       & $(x-4.6 + b)\cdot{}(x+a) = 0$ & Lösungen hier $x_1=4.6-b$ und $x_2 = -a$\\
+	\hline
+	Einfache Zahlen            & $x^2 -2x + 1= 0$           & $a$-$b$-$c$--Formel (Mitternachtsformel) oder faktorisieren $x^2-2x+1=(x-1)^2$ und danach jeden einzelnen Faktor $=0$ setzen.\\
+	\hline
+	Komplizierte Zahlen        & $7.3x^2 - 8x - 3.4 = 0$       & Taschenrechner \tiprobutton{cos_poly-solv}             \\
+	\hline
+	Variable (Parameter)       & $7.3x^2 - cx + 2.6=0$         & $a$-$b$-$c$-Formel (Mitternachtsformel) \\
+	\hline
+	Komplexe Terme im Quadrat  & $3(x-6)^2 - 17(x-6)  = 0$     & Substitution                            \\
+	\hline
+\end{tabular}
+
+
+\begin{multicols}{2}
+
+
+\section{Gleichungen mit Exponenten}
+\subsection{Potenzgleichungen}
+
+$$x^a=c \leftrightarrow x=\sqrt[a]{c}$$
+
+Allgemein
+
+$$x^{\frac{a}b} = c \Longrightarrow{}  x=c^{\frac{b}a}$$
+
+\subsection{Exponentialgleichungen}
+\textbf{Fall 1} Exponentenvergleich. Bsp.:
+
+$$5^4=125^x \Rightarrow{} 5^4=(5^3)^x=5^{3x} \Rightarrow{}$$
+$$ 4=3x \Rightarrow x=\frac43$$
+
+\textbf{Fall 2} Logarithmen. Bsp.:
+
+$$7^x=105 \Rightarrow x=\log_7(105)$$
+oder so:
+$$7^x=105 \Rightarrow \log(7^x)=\log(105) \Rightarrow$$
+$$x\cdot{}\log(7)=\log(105) \Rightarrow x=\frac{\log(105)}{\log(7)} = \frac{\lg(105)}{\lg(7)}$$
 
 
 
