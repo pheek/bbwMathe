@@ -10,7 +10,7 @@
 
 \usepackage{amssymb} %% für \blacktriangleright
 \renewcommand{\metaHeaderLine}{Formelsammlung GESO}
-\renewcommand{\arbeitsblattTitel}{Abschlussprüfung V. 0.0.0 2021-06-08 fp}
+\renewcommand{\arbeitsblattTitel}{Version 0.0.1 2021-06-12 fp}
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
 \titlespacing*{\subsection}{0pt}{0.1\baselineskip}{0.1\baselineskip}
@@ -26,9 +26,8 @@
 
 $\mathbb{N} = \{1,2, ...\}  $ = Natürliche Zahlen\\
 $\mathbb{Z} = \{..., -2, -1, 0, 1,2, ...\}  $ = Ganze Zahlen\\
-$\mathbb{Q} = \{\frac{a}b | a\in \mathbb{Z}, b\in\mathbb{N}\}$ Menge der Brüche (\textbf{rationale} Zahlen)\\
-$\mathbb{R} = \{..., -2, ..., -1, ...., 0,
-\frac12, 1,...,\sqrt{2},...,2, e,\\
+$\mathbb{Q} = \{\frac{a}b | a\in \mathbb{Z}, b\in\mathbb{N}\}$ = Rationale Zahlen (Brüche)\\
+$\mathbb{R} = \{..., -1, ..., 0, ... \frac12, ..., \sqrt{2}, ..., e,\\
 ..., 3, ..., \pi, ...\}  $ = \textbf{reelle} Zahlen = alle Zahlen auf der Zahlengerade\\
 
 Eine natürliche Zahl heißt Primzahl, wenn sie genau zwei Teiler hat (Eins und sich selbst). $\mathbb{P} = \{2, 3, 5, 7, 11, 13, ...\}$
@@ -42,8 +41,6 @@ $$(a+b)^2 = a^2+2ab + b^2$$
 $$(a-b)^2=a^2-2ab+b^2$$
 $$(a+b)\cdot(a-b) = a^2 - b^2$$
 
-\hrulefill
-
 \subsection{Vertauschte Differenz}
 (-1 ausklammern)
 
@@ -52,8 +49,6 @@ $(b-a)=(-1)\cdot{}(h-b)$
 Beispiel:
 
 $$\frac{x}{a-b} +  \frac{y}{b-a} = \frac{x}{a-b} + \frac{-y}{a-b} = \frac{x-y}{a-b}$$
-
-\hrulefill
 
 \subsection{Summenzeichen}
 $$\sum_{k=1}^n{T(k)} = T(1) + T(2) + ... + T(n)$$
@@ -64,19 +59,18 @@ $$\sum_{i=3}^7{i^2} = 3^2 + 4^2 + 5^2 + 6^2 + 7^2$$
 Taschenrechner: \tiprobutton{math} 4
 
 
-\hrulefill
-
 \subsection{(Absolut)betrag einer Zahl}
 
 $|a| = a$ falls $a \ge 0$
 
 $|a| = (-1)\cdot{}a$ falls $a < 0$
 
+\hrulefill
 
 \section{Dezimalzahlen}
 \subsection{Runden}
 Dezimalen sind die Stellen nach dem Komma.
-Runden auf $n$ Dezimalen: betrachte die $(n+1)$-te Dezimale und runde auf, wenn diese $\ge 5$.
+Runden auf $n$ Dezimalen: betrachte die nächste Ziffer und runde auf, wenn diese $\ge 5$.
 
 Beispiel
 
@@ -85,26 +79,27 @@ Beispiel
 $$3.4729\textbf{6}44 \approx 3.4730$$
 (Alle vier Dezimalen sind anzugeben.)
 
-\hrulefill
-
 \subsection{Signifikante Stellen}
 Die Zählung der signifikanten Stellen einer Zahl beginnt (von links) mit der ersten von Null verschiedenen Ziffer. Ab hier zählen alle Ziffern, auch die 0, bis zur verlangten Rundungsstelle.
 
+Bsp.: 30.896 auf \textbf{vier} sig. Stellen = 30.90\\
+(4. Ziffer stehen lassen, auch wenn = 0)
+
 \subsection{Wissenschaftliche Schreibweise}
-Für große, aber auch für Zahlen sehr nahe an 0, wird die Wissenschaftliche Schreibweise vorgezogen. Dabei steht vor dem Dezimalpunkt immer genau eine Ziffer:
+Für große, aber auch für Zahlen sehr nahe an 0, wird die wissenschaftliche Schreibweise vorgezogen. Dabei steht vor dem Dezimalpunkt immer genau eine Ziffer:
 
 \begin{tabular}{lcccr}
 Zahl  & & wissenschaftl. & & TR: \tiprobutton{EE} \\
 1400  &=& $1.4\cdot{}10^3$ &=& 1.4E3\\
 0.004 &=& $4\cdot{}10^{-3}$ &=&4E-3\\
 \end{tabular}
-
+\hrulefill
 \section{Potenzen}
-Für Basis $a\ne 0$ und $r\in\mathbb{Q}$ gilt:
+Für Basis $a\ne 0, b\ne 0$ und $r, s\in\mathbb{Q}$ gilt:
 
 \begin{tabular}{cc}
-$a^0=1,$ & $a^{-n} = \frac1{a^n},$  \\
-$\left(\frac{a}b\right)^{-n} = \left(\frac{b}a\right)^n,$ & $a^{\frac{m}n} = \sqrt[n]{a^m}$\\
+$a^0=1,$ & $a^{-r} = \frac1{a^r},$  \\
+$\left(\frac{a}b\right)^{-r} = \left(\frac{b}a\right)^r,$ & $a^{\frac{r}s} = \sqrt[s]{a^r}$\\
  \end{tabular}
 
 \begin{rezept}{«Kielholen»}{}{}
@@ -121,47 +116,49 @@ $\left(a^m\right)^n = a^{m\cdot{}n}$ &\\
 \subsection{gleicher Exponent}
 
 \begin{tabular}{cc}
-$a^n\cdot{}b^n = (ab)^n,$ & $\left(\frac{a}b\right)^n = \frac{a^n}{b^n}$\\
+$a^n\cdot{}b^n = (ab)^n,$ & $\frac{a^n}{b^n} =\left(\frac{a}b\right)^n $\\
  \end{tabular}
  
 
 \subsection{Vorzeichen}
-Fall: Sei $n$ gerade:
+Fall: $n$ \textbf{gerade}:
 
 \begin{tabular}{cc}
  $-(a^n) = -a^n,$ & aber: $(-a)^n = +a^n$\\
  \end{tabular} 
 
-Fall: Sei $n$ \textbf{un}gerade:
+Fall: $n$ \textbf{un}gerade:
 
 \begin{tabular}{cc}
  $-(a^n) = -a^n,$ & aber: $(-a)^n = -a^n$\\
  \end{tabular} 
 
-
+\hrulefill
 \section{Logarithmen}
 
 \begin{definition}{$\log$}{}
-Für $a>0, a\ne 1$ sei
+Für $a>0, a\ne 1$ ist
 
 $$\log_a{}(z)=x \Longleftrightarrow{} a^x = z$$
 \end{definition}
 $a$ = Basis, $z$ = Numerus (stets > 0), $x$ = Logarithmus (= Exponent in der Potenzschreibweise)
 
-Logarithmen sind Exponente n zu einer fest gewählten Basis.
+Logarithmen sind Exponenten zu einer fest gewählten Basis.
 
 \begin{gesetz}{}{}
-$$\log_a(u^n) = n\cdot{}\log_a(u)$$
+$$\log_a(b^x) = x\cdot{}\log_a(b)$$
 \end{gesetz}
 
 \subsection{Spezielle Werte}
 \begin{tabular}{ccc}
-$\log_a(1)=0$ & $\lg(10) = 1$ & $\ln(e) = 1$
+$\log(1)=0$     &               &\\
+$\log_a(a) = 1$ & $\lg(10) = 1$ & $\ln(e) = 1$\\
 \end{tabular} 
 
 \subsection{$n$-te Wurzel}
 $\sqrt[n]{a} := \left(a\right)^\frac1n$
 
+\hrulefill
 \section{Textaufgaben}
 
 \subsection{Geschwindigkeitsaufgaben}
@@ -190,20 +187,20 @@ $$p = 2.5\% \Longleftrightarrow{} f = 1.025$$
 $$p = -3\% \Longleftrightarrow{} f = 0.97$$
 
 
-
+\hrulefill
 \section{Gleichungen}
 
 \subsection{Bruchgleichungen}
 Immer Definitionsbereich $\mathbb{D}$ überlegen: Nenner (unten) darf
 nicht 0 werden.
 
-Bsp.: $$\frac5{x+2}=\frac{7+x^2}{x-3} \Leftrightarrow{} \mathbb{D}_x=\mathbb{R}\backslash{}\{-3, 2\}$$
+Bsp.: $$\frac5{x+2}=\frac{7+x}{x-3} \Leftrightarrow{} \mathbb{D}_x=\mathbb{R}\backslash{}\{-3, 2\}$$
 
 Schlusskontrolle!
 
 
 
-\subsection{Lineare Gleichugen}
+\subsection{Lineare Gleichungen}
 $$5x-3a = 2cx-7b$$
 1. Alle $x$ nach links, übriges rechts:
 $$5x - 2cx = 3a-7b$$
@@ -216,20 +213,22 @@ $$x = \frac{3a-7b}{5-2c}$$
 \subsection{num-solv}
 Der Taschenrechner löst Gleichungen mit Zahlen nach $x$ auf:
 
-$5^x = 100 -x$, dann \tiprobutton{2nd}\tiprobutton{sin_num-solv} $x\approx{}2.843$
+$5^x = 100 -x$; verwende \tiprobutton{2nd}\tiprobutton{sin_num-solv} $x\approx{}2.843$
 
 
 \end{multicols}
 
 
 \subsection{quadratische Gleichungen}
+\begin{gesetz}{Lösungsformel}{}
 \textbf{Grundform}: $ax^2 + bx+c = 0$
 
-\textbf{Lösungsformel} $x_{1,2}\frac{-b \pm \sqrt{b^2-4ac}}{2a}$
+$$x_{1,2}\frac{-b \pm \sqrt{b^2-4ac}}{2a}$$
+\end{gesetz}
 
-\textbf{Diskriminante} $D = b^2-4ac$:\\
-$D>0$: Zwei Lösungen
-$D=0$: Eine Lösung
+\textbf{Diskriminante} $D = b^2-4ac$:
+$D>0$: Zwei Lösungen;
+$D=0$: Eine Lösung;
 $D<0$: keine Lösung
 
 Wie vorgehen?
@@ -256,14 +255,15 @@ Wie vorgehen?
 \begin{multicols}{2}
 
 
-\section{Gleichungen mit Exponenten}
-\subsection{Potenzgleichungen}
+\subsection{Gleichungen mit Exponenten}
+\subsubsection{Potenzgleichungen}
 
-$$x^a=c \leftrightarrow x=\sqrt[a]{c}$$
+$$x^a=c \Leftrightarrow x=\sqrt[a]{c}$$
 
 Allgemein
 
-$$x^{\frac{a}b} = c \Longrightarrow{}  x=c^{\frac{b}a}$$
+$$x^{\frac{a}b} = c \Leftrightarrow{}
+x=c^{\frac{b}a} = \sqrt[a]{c^b} = \left(\sqrt[a]c\right)^b$$
 
 \subsection{Exponentialgleichungen}
 \textbf{Fall 1} Exponentenvergleich. Bsp.:
@@ -275,8 +275,10 @@ $$ 4=3x \Rightarrow x=\frac43$$
 
 $$7^x=105 \Rightarrow x=\log_7(105)$$
 oder so:
-$$7^x=105 \Rightarrow \log(7^x)=\log(105) \Rightarrow$$
-$$x\cdot{}\log(7)=\log(105) \Rightarrow x=\frac{\log(105)}{\log(7)} = \frac{\lg(105)}{\lg(7)}$$
+$$7^x=105 \Rightarrow$$
+$$ \log(7^x)=\log(105) \Rightarrow$$
+$$x\cdot{}\log(7)=\log(105) \Rightarrow$$
+$$ x=\frac{\log(105)}{\log(7)} = \frac{\lg(105)}{\lg(7)}$$
 
 \begin{gesetz}{Exponentialgleichung}{}
 $$a^x=b \Rightarrow{} x=\log_a(b) = \frac{\lg(b)}{\lg(a)}$$
@@ -296,26 +298,28 @@ Verfahren
 \item Substitution
 \end{itemize}
 
-
+\hrulefill
 \section{Funktionen}
 
-Eine reelle Funktion ordnet jeder Zahl $x$ aus der Definitionsmenge
-$\mathbb{D}$ genau eine Zahl $y$ aus einer Wertemenge
-$\mathbb{W} \subset \mathbb{R}$ zu:
+Eine Funktion ordnet jeder Zahl aus einem Definitionsbereich
+$\mathbb{D}$ genau eine Zahl aus einem Wertevorrat (=Zielmenge) (meist
+$\mathbb{R}$)
+zu. Die \textit{getroffenen} Funktionswerte bilden den Wertebereich
+(= Bildmenge) $\mathbb{W}$.
 
-
+\hrulefill
 \section{Lineare Funktionen}
 Explizite Form:
 $$g: y = f(x) = a\cdot{}x + b$$
 
 \bbwCenterGraphic{8cm}{img/lineareFunktion.png}
-$a$ = Steigung = $\frac{V}{H}=\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1}$
+$a$ = Steigung = $\frac{V}{H}=\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1}$.\\
 Zwei Geraden sind \textbf{parallel}, wenn ihre Steigungen gleich sind.
 
 $b$ = $y$-Achsenabschnitt (=Ordinatenabschnitt)
 
 
-\subsection{Nullstelle} einer Funktion: $y=0$ setzen und nach $x$
+\subsection{Nullstelle...} ...einer Funktion: $y=0$ setzen und nach $x$
 auf\/lösen.
 
 Bsp.: $y=7x+4$ Nullstelle: $0 = 7x+4$, d.\,h. $x_0=\frac{-4}{7}$
@@ -323,8 +327,9 @@ Bsp.: $y=7x+4$ Nullstelle: $0 = 7x+4$, d.\,h. $x_0=\frac{-4}{7}$
 \subsection{Ordinatenabschnitt}
 \textbf{Schnittpunkt mit der $y$-Achse}: $x=0$ setzen.
 
-Bsp.: $y=7x+4$ Achsenabschnitt = Schnittpunkt mit der $y$-Achse heißt
-$x=0$. Also $y=7\cdot{}0 + 4 = 4$. Somit liegt der Schnittpuntk bei $(0|4)$.
+Bsp.: $y=7x+4$ Achsenabschnitt = Schnittpunkt mit der $y$-Achse:
+$x=0$.\\
+Also $y=7\cdot{}0 + 4 = 4$. Somit liegt der Schnittpunkt bei $(0|4)$.
 
 
 \subsection{Schnittpunkt zweier Geraden}
@@ -335,8 +340,8 @@ Gleichsetzen:
 \gleichungZZ{y}{ax+b}{y}{cx+d}
 Finde $x_S$ des Schnittpunktes $S=(x_S|y_S)$
 $$ax+b = cx+d$$
-
-\subsection{Mittelpunkt $M$ einer Strerke $AB$}
+$$x_S = \frac{d-b}{a-c}$$
+\subsection{Mittelpunkt $M$ einer Strecke $AB$}
 Gegeben $A=(x_A|y_A)$ und $B=(x_B|y_B)$
 
 Gesucht Mittelpunkt $M=(x_M|y_M)$
@@ -351,9 +356,9 @@ $g: y=ax+b$ ist horizontal, wenn die Steigung $a$ wegfällt ($a=0$).
 
 $$g:  y=0\cdot{}x+b \Rightarrow y=b$$
 
-\subsection{Zweipunkte Aufgabe}
+\subsection{Zweipunkte Aufgaben}
 Gesucht Gerade $g: y=ax+b$ durch zwei gegebene Punkte $A=(x_A|y_A)$
-und $B=(x_B|y_B)$.
+und $B=(x_B|y_B)$
 
 \textbf{Variante 1}: Steigung $a = \frac{V}H
 = \frac{y_B-y_A}{x_B-x_A}$ berechnen und einen der beiden Punkte in
@@ -363,7 +368,7 @@ $y=ax+b$ einsetzen, um $b$ zu finden.
 \gleichungZZ{y_A}{a\cdot{}x_A+b}{y_B}{a\cdot{}x_B + b}
 
 
-\section{Potenzfunktionen}
+\subsection{Potenzfunktionen}
 Grundform:
 $$y=ax^z$$
 $z\in\mathbb{Z}\backslash\{0,1\} = \{...-2, -1, 2, 3, 4, ...\}$
@@ -389,7 +394,7 @@ $$y=ax^2$$
 $a$ heißt Öffnung ($a<0$: Die Parabel ist nach unten geöffnet)
 $a=1$ oder $a=-1$: Normalparabel
 
-
+\hrulefill
 \section{Exponentialfunktionen}
 \begin{gesetz}{Exponentialfunktion}{}
 $$f(t) = b\cdot{}a^t$$
@@ -397,6 +402,7 @@ $b$ = Anfangswert bei $t_0=0$; $b=f(0)$\\
 \phantom{$b$} = $y$-Achsenabschnitt\\
 $a$ = Vervielfältigungsfaktor ($a\in\mathbb{R}^{+}$)\\\
 $a>0$: Wachstumsrate\\
+$a<0$: Zerfallsrate
 \end{gesetz}
 
 
@@ -407,8 +413,21 @@ $a$ = Wachstums(/Zerfalls)rate im Zeitraum $\tau$
 \end{rezept}
 
 Beispiel: Die Algen mit Startwert von $3\textrm{m}^2$ vervierfachen
-sich alle fünf Tage: $b=3$, $a=4$, $\tau=5$
+sich alle fünf Tage:\\
+$b=3$, $a=4$, $\tau=5$
 $$f(t)= 3\cdot{}4^\frac{t}{5}$$
+
+\subsubsection{Werte Rechnen}
+\begin{itemize}
+\item
+Wert zum Zeitpunkt 25 Tage: Wert einsetzen:\\
+$f(25) = 3\cdot{}4^\frac{25}{5}$
+
+\item
+Tage rechnen bei Vorgegebenem Wert (z. B. $30m^2$):\\
+Löse die Exponentialgleichung nach $t$ auf:\\
+$$30 = 3\cdot{}4^{\frac{t}{5}}$$
+\end{itemize}
 
 \subsection{Halbwertszeit}
 $\frac12 \cdot{} b = f(t) = b\cdot{}a^{\frac{t}{\tau}}$
@@ -419,38 +438,341 @@ $2\cdot{}b = f(t) = b\cdot{}a^{\frac{t}{\tau}}$
 $$t_{2} = \tau\cdot{}\log_a(2)$$
 
 \subsection{Sättigungsfunktionen}
+\begin{gesetz}{Beschränkter Zerfall}{}
+$$f(t) = c + b\cdot{}a^\frac{t}\tau$$
+$c$ = Sättigungsgrenze\\
+$a<1$ = Zerfallsrate\\
+$b$ = Sättigungsdefizit bei $t=0$
+\end{gesetz}
 
+\begin{gesetz}{Beschränktes Wachstum}{}
+$$f(t) = c - b\cdot{}a^\frac{t}\tau$$
+$c$ = Sättigungsgrenze\\
+$a<0$ = Zerfallsrate\\
+$b$ = Sättigungsdefizit bei $t=0$
+\end{gesetz}
+
+\begin{bemerkung}{Sättigungsdefizit}{}
+
+$b$ = Sättigungsdefizit bei $t=0$.\\
+$b\cdot{}a^\frac{t}\tau$ = Sättigungsdefizit zur Zeit $t$
+\end{bemerkung}
+
+\end{multicols}
+
+\hrulefill
 \section{Datenanalyse}
 
 \subsection{Skalen}
+\bbwCenterGraphic{16cm}{allg/daan/img/Datentypen.png}
+
+
+
+
+
+\begin{multicols}{2}
 
 \subsection{Lagemaße}
+\subsubsection{Durchschnitt}
+= Mittelwert = arithmetisches Mittel
+
+\begin{definition}{Mittelwert}{}
+$$\overline{x} = \frac{x_1 + x_2 + x_3 + ... + x_n}{n}$$
+\end{definition}
+
+\subsubsection{Median}
+Der Median ist der Wert in der Mitte der geordneten Datenreihe. Ist
+die Anzahl Werte gerade, so wird der Mittelwert der beiden in der
+Mitte stehenden Werte genommen.
+\begin{definition}{Median}{}
+
+Der Median $\mediantilde{x} = x_{\textrm{MED}}$ heißt auch Zentralwert
+\end{definition}
+
+\subsubsection{Quartil}
+
+\begin{rezept}{Quartile}{}
+
+Die Quartilsgrenzen $Q_1$ bzw. $Q_3$ sind die Mediane der linken,
+bzw. rechten Datenhälfte (nachdem der eine Zentralwert entfernt
+wurde).
+
+Am einfachsten mit dem Taschenrechner:
+
+Dateneingabe: \tiprobutton{data}
+
+Auswertung: \tiprobutton{data_stat-reg-distr}
+\end{rezept}
+
+\subsubsection{Modus}
+Der am häufigsten auftretende Wert wird als Modus bezeichnet.
+
+Manchmal ist dies nicht eindeutig, dann sprechen wir von einer
+Multimodalen Verteilung.
+
+\subsubsection{Maximum, Minimum}
+Maximum bzw. Minimum sind höchste bzw. kleinste Datenwerte: Die Ausreißer
+zählen hier mit!
 
 \subsection{Streumaße}
+\subsubsection{Spannweite}
+Die Spannweite $R$ (Range) ist nichts anderes als das Maximum minus
+das Minimum.
+
+\subsubsection{Interquartilsabstand}
+Der Abstand zwischen $Q_1$ und $Q_3$ wird als Quartilsdifferenz oder
+englisch \textit{Interquartil-range} = \textbf{IQR} bezeichnet.
+
+\subsubsection{Standardabweichung}
+Mit $\sigma$ bzw. $S$ wird die Standardabweichung bezeichnet. Sie
+zeigt die Wendepunkte der Normalverteilung an.
+
+$\sigma$ = Standardabweichung der Grundgesamtheit
+
+$S$ = Standardabweichung einer gemessenen Stichprobe
+
+Die Standardabweichung wird auch mit dem Taschenrechner
+unter \tiprobutton{data_stat-reg-distr} gefunden.
 
 \subsection{Diagramme}
+\subsubsection{Balken / Kuchen}
+\begin{definition}{Relative Häufigkeit}{}
+
+$n$ = Anzahl Werte
+
+$h_i$ = Absolute Häufigkeit des Merkmals $i$
+
+$f_i = \frac{h_i}n$ = relative Häufigkeit
+
+$p_i = f_i\cdot{}100\%$ = prozentuale Häufigkeit
+
+$\varphi_i = f_i\cdot{}360\degre$ = Zentriwinkel im Kuchendiagramm
+\end{definition}
+
+
 
 \subsubsection{Histogramm}
+\bbwCenterGraphic{8cm}{img/histogramm.png}
+\begin{itemize}
+\item Alle Balken sind gleich breit
+\item Alle Balken berühren sich
+\item Die Höhe der Balken wird durch die Häufigkeit der entsprechenden
+Balken festgelegt
+\item Werte auf Balkengrenzen werden immer rechts mitgezählt
+\end{itemize}
 
 \subsubsection{Streudiagramm}
+\bbwCenterGraphic{8cm}{img/streudiagramm.png}
 
+\newpage
 \subsubsection{Boxplot}
+Vorgehen
+\begin{enumerate}
+\item Daten in TR eingeben \tiprobutton{data}...
+\item ... und mit \tiprobutton{data_stat-reg-distr} auslesen.
+\item Median, und Quartile einzeichnen
+\item IQR (=QD in der Grafik) := Q3-Q1 rechnen
+\item IQR mit 1.5 multiplizieren
+\item $f_u = Q_3 + 1.5\cdot{}\textrm{IQR}$ und $f_o=Q_1 - 1.5\cdot{}\textrm{IQR}$ (ausradierbar) als
+Ausreißerschwellen fein markieren (gehören nicht zum Boxplot)
+\item Alle Ausreißer mit Ring oder Stern einzeichnen.
+\item Whisker (entfernteste Werte innerhalb der Ausreißerschwellen)
+einzeichnen.
+\item Boxdekoration horizontale Linien einzeichnen.
+\end{enumerate}
+\bbwCenterGraphic{8cm}{img/boxplot.png}
 
 
+\hrulefill
 \section{Stochastik}
 
 \subsection{Kombinatorik}
+
+\subsubsection{Produktregel}
+Hat eine zweistufige Situation zunächst $k_1$ Möglichkeiten, gefolgt
+von $k_2$ Möglichkeiten, so hat man insgesamt $k_1\cdot{}k_2$
+Möglichkeiten. Dies ist auf beliebig viele Stufen verallgemeinerbar.
+
+\subsubsection{Permutationen (Sitzordnungen)}
+
+Bei $n$ Elementen gibt es $n!$ Permutationen:
+
+$$n! = n\cdot{}(n-1)\cdot{}(n-2)\cdot{}(n-3)\cdot{} ... \cdot{}2\cdot{}1$$
+
+Bei Null Elementen gibt es nur eine Variation: $0! = 1$
+
+
+\subsubsection{Variation mit Wiederholung}
+Variation = Reihenfolge wesentlich
+
+Mit Wiederholung = mit Zurücklegen
+
+Gegeben: $n$ Elemente und $k$-malige Auswahl
+(\zB Zahlenschloss)
+
+Total $n^k$ Möglichkeiten
+
+\subsubsection{Variation ohne Wiederholung}
+$k$ Kugeln aus einer Urne mit $n$ Kugeln ziehen (ohne Zurücklegen)
+
+Total $\frac{n!}{(n-k)!}$ Möglichkeiten. Taschenrechner: \texttt{nPr}. 
+
+\subsubsection{Kombination ohne Wiederholung}
+Kombination = Reihenfolgen \textbf{nicht} wesentlich
+
+Beispiele:
+
+\begin{itemize}
+\item Aus $n$ Kästchen $k$ Kästchen ankreuzen
+\item Eine Delegation von $k$ Personen aus einer Klasse von $n$
+Personen wählen.
+\item $k$ Elemente aus $n$ unterscheidbaren Elementen wählen und diese
+auf $k$ ununterscheidbare Plätze verteilen.
+\item $k$ Kugeln aus einer Urne mit $n$ unterscheidbaren Kugeln
+auswählen; die Reihenfolge der Auswahl spielt keine Rolle.
+\end{itemize}
+
+Wähle $k$ Elemente aus $n$ Elementen ohne Zurücklegen und ohne
+Beachten der Reihenfolge:
+
+ ${n\choose k} = \frac{n!}{k!\cdot{}(n-k)!}$ Möglichkeiten
+
+Taschenrechner: \textbf{nCr}
+
+
+
 \end{multicols}
+
+
+
 
 \subsection*{Überblick}
 \bbwCenterGraphic{15cm}{img/Kombinatorik.png}
+\hrulefill
 
 
 \begin{multicols}{2}
 
 
 \subsection{Wahrscheinlichkeit}
+\subsubsection{Grundbegriffe}
 
+\textbf{Ergebnismenge} $\Omega$: Menge der möglichen Ergebnisse
+(Ausgänge) eines Zufallsversuchs. Beispiel die sechs Würfelergebnise
+eines Spielwürfels: $\Omega = \{\epsdice{1}, \epsdice{2}, \epsdice{3},
+..., \epsdice{6}\}$
+
+\textbf{Ereignis} $A$: Eine Teilmenge von $\Omega$. Beispiel: Eine
+ungerade Zahl zu werfen: $A  = \{\epsdice{1}, \epsdice{3}, \epsdice{5}\}$
+
+\textbf{Gegenereignis} $\overline{A} = \Omega \backslash A$ =
+Gegenmenge von $A$ = «nicht» $A$. Es gilt $A \cup \overline{A} = \Omega$
+
+\textbf{Elementarereignis}: Ereignis bestehend aus einem einzigen
+Ergebnis aus $\Omega$. Beispiel: $E_1$ = Wirf eine \textbf{Eins}: $E_1
+= \{\epsdice{1}\}$.
+
+
+\subsection{Elementare Wahrscheinlichkeit}
+Die Wahrscheinlichkeit des \textbf{Gegenereignisses} von $E$ ist
+$$P(\overline{E}) = 1- P(E)$$
+Bei Aufgaben wie «... mindestens eins ...» ist das Arbeiten mit der
+Gegenwahrscheinlichkeit häufig einfacher.
+
+Ereignisse sind voneinander \textbf{unabhängig}, wenn sie keine
+gleichen Ergebnisse aufweisen.
+$$A \textrm{ unabhängig von } B \Leftrightarrow A\cap B=\{\}$$
+
+Für voneinander \textbf{unabhängige} Ergebnisse 
+gilt:
+
+$$P(A\textrm{ «oder» }B) = P(A\cup B) = P(A) + P(B)$$
+
+\subsubsection{Baumdiagramme}
+
+\textbf{Pfadregel}:
+Entlang eines Pfades (Äste hintereinander) multiplizieren sich die
+Wahrscheinlichkeiten.
+
+\textbf{Summenregeln}:
+\begin{itemize}
+\item Alle von einem Knoten ausgehenden Wahrscheinlichkeiten haben in
+der Summe 100\%, also $P=1.0$.
+\item Die Wahrscheinlichkeit des gesuchten Ereignisses ist gleich der
+Summe der zugehörigen Pfadwahrscheinlichkeiten (aller gewünschten Endergebnisse).
+\end{itemize}
+
+
+
+
+\subsubsection{Laplace-Wahrscheinlichkeit}
+Sind alle möglichen Ergebnisse eines Zufallsversuchs gleich
+wahrscheinlich, so ist die Wahrscheinlichkeit $P(E)$ für das Ereignis
+$E$ wie folgt zu berechnen:
+
+$$P(E) = \frac{|E|}{|\Omega|}$$
+In Worten:
+$$P(E) = \frac{\textrm{Anzahl aller Ergebnisse
+im Ereignis
+}E}{\textrm{Anzahl aller Ergebnisse in }\Omega}$$
+
+
+\subsubsection{Bernoulli-Modell}
+\begin{gesetz}{Bernoulli}{}
+$$P(X=k) = {n \choose k}\cdot{}p^k\cdot{}(1-p)^{n-k}$$
+Taschenrechner
+unter \tiprobutton{data_stat-reg-distr} \textbf{\texttt{binomialpdf}} wählen.
+
+$n$ = Anzahl Züge\\
+$p$ = Wahrscheinlichkeit des Treffers\\
+$k$ = \textbf{genaue} gewünschte Anzahl Treffer
+
+An jeder Verzweigung im Baum sind Treffer und Niete gleich
+wahrscheinlich.
+
+Im Urnenmodell: Mit Zurücklegen.
+\end{gesetz}
+
+\subsubsection{Kumulierte Wahrscheinlichkeit}
+
+\begin{gesetz}{Kumulierter Bernoulli}{}
+$$P(X\le k) = \sum_{i=0}^{k}{n \choose i}\cdot{}p^i\cdot{}(1-p)^{n-i}$$
+Taschenrechner
+unter \tiprobutton{data_stat-reg-distr} \textbf{\texttt{binomialcdf}} wählen.
+
+$n$ = Anzahl Züge\\
+$p$ = Wahrscheinlichkeit des Treffers\\
+$k$ = \textbf{maximal} gewünschte Anzahl Treffer
+\end{gesetz}
+
+\subsubsection{Hypergeometrische Verteilung}
+Bei
+\begin{itemize}
+\item $N$ Elementen (Kugeln),
+\item $M$ möglichen Treffern,
+\item $n$ gezogenen Elementen (Kugeln) und 
+\item $k$ gewünschten Treffern
+\end{itemize}
+ergibt sich eine Wahrscheinlichkeit (genau $k$ Treffer zu ziehen) von:
+
+$$P(X=k) = \frac{ {M \choose k} \cdot {{N-M}  \choose {n-k}} }{{N \choose n}}$$
+
+
+
+\subsubsection{Kontingenztafel}
+Vierfeld-Tafeln=Kontingenztafeln mit 4 Feldern.
+
+Man hat zwei Merkmale, A und B. Jedes Merkmal kann nur zwei Werte
+annehmen (+ / -). Dies ergibt vier Möglichkeiten. Die Vierfeldtafel
+enthält die absoluten oder die relativen Häufigkeiten der vier
+Kombinationen der Merkmalswerte.
+
+Zudem werden noch die Randsummen notiert.
+
+\bbwCenterGraphic{8cm}{img/kontingenztafel.png}
+
+\subsubsection{Bedingte Wahrscheinlichkeit}
+... coming soon ...
 
 \end{multicols}
 
