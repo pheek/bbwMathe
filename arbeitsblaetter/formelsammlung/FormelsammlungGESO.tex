@@ -105,7 +105,12 @@ Für Basis $a\ne 0$ und $r\in\mathbb{Q}$ gilt:
 \begin{tabular}{cc}
 $a^0=1,$ & $a^{-n} = \frac1{a^n},$  \\
 $\left(\frac{a}b\right)^{-n} = \left(\frac{b}a\right)^n,$ & $a^{\frac{m}n} = \sqrt[n]{a^m}$\\
- \end{tabular} 
+ \end{tabular}
+
+\begin{rezept}{«Kielholen»}{}{}
+Exponenten vertauschen ihr Vorzeichen beim Übertreten des Bruchstrichs:
+$$\frac{a^{-3}b^2}{c^5d^{-6}} = \frac{b^2d^6}{a^3c^5}$$
+\end{rezept}
 
 \subsection{gleiche Basis}
 \begin{tabular}{cc}
@@ -153,6 +158,9 @@ $$\log_a(u^n) = n\cdot{}\log_a(u)$$
 \begin{tabular}{ccc}
 $\log_a(1)=0$ & $\lg(10) = 1$ & $\ln(e) = 1$
 \end{tabular} 
+
+\subsection{$n$-te Wurzel}
+$\sqrt[n]{a} := \left(a\right)^\frac1n$
 
 \section{Textaufgaben}
 
@@ -383,24 +391,32 @@ $a=1$ oder $a=-1$: Normalparabel
 
 
 \section{Exponentialfunktionen}
-
-Grundform:
 \begin{gesetz}{Exponentialfunktion}{}
-$$f(t) = b\cdot{}a^{\frac{t}{\tau}}$$
-$b$ = Startwert bei $t_0=0$\\
-\,\,\,\, = $y$-Achsenabschnitt\\
+$$f(t) = b\cdot{}a^t$$
+$b$ = Anfangswert bei $t_0=0$; $b=f(0)$\\
+\phantom{$b$} = $y$-Achsenabschnitt\\
 $a$ = Vervielfältigungsfaktor ($a\in\mathbb{R}^{+}$)\\\
 $a>0$: Wachstumsrate\\
-$a<0$: Zerfallsrate\\
-$\tau$ = Beobachtungsintervall zu $a$
 \end{gesetz}
+
+
+\begin{rezept}{Intervall-Skalierung}{}
+$$f(t) = b\cdot{}a^{\frac{t}{\tau}}$$
+$\tau$ = Beobachtungsintervall zu $a$\\
+$a$ = Wachstums(/Zerfalls)rate im Zeitraum $\tau$
+\end{rezept}
+
 Beispiel: Die Algen mit Startwert von $3\textrm{m}^2$ vervierfachen
 sich alle fünf Tage: $b=3$, $a=4$, $\tau=5$
 $$f(t)= 3\cdot{}4^\frac{t}{5}$$
 
 \subsection{Halbwertszeit}
-$\frac12 b = f(t) = b\cdot{}a^{\frac{t}{\tau}}$
+$\frac12 \cdot{} b = f(t) = b\cdot{}a^{\frac{t}{\tau}}$
 $$t_{\frac12} = \tau\cdot{}\log_a(\frac12)$$
+
+\subsection{Verdopplungszeit}
+$2\cdot{}b = f(t) = b\cdot{}a^{\frac{t}{\tau}}$
+$$t_{2} = \tau\cdot{}\log_a(2)$$
 
 \subsection{Sättigungsfunktionen}
 
