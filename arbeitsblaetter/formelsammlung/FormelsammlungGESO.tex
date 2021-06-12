@@ -6,9 +6,10 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{amssymb} %% für \blacktriangleright
+%%\usepackage{amssymb} %% für \blacktriangleright
+\usepackage{makecell}
 \renewcommand{\metaHeaderLine}{Formelsammlung GESO}
-\renewcommand{\arbeitsblattTitel}{Version 0.0.1 2021-06-12 fp}
+\renewcommand{\arbeitsblattTitel}{Version 0.0.2 2021-06-12 fp}
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
 \titlespacing*{\subsection}{0pt}{0.1\baselineskip}{0.1\baselineskip}
@@ -21,7 +22,7 @@
 %% Benutze
 %%\columnbreak
 %% für harten Break
-
+\begin{definition}{}{}
 $\mathbb{N} = \{1,2, ...\}  $ = Natürliche Zahlen\\
 $\mathbb{Z} = \{..., -2, -1, 0, 1,2, ...\}  $ = Ganze Zahlen\\
 $\mathbb{Q} = \{\frac{a}b | a\in \mathbb{Z}, b\in\mathbb{N}\}$ = Rationale Zahlen (Brüche)\\
@@ -29,15 +30,18 @@ $\mathbb{R} = \{..., -1, ..., 0, ... \frac12, ..., \sqrt{2}, ..., e,\\
 ..., 3, ..., \pi, ...\}  $ = \textbf{reelle} Zahlen = alle Zahlen auf der Zahlengerade\\
 
 Eine natürliche Zahl heißt Primzahl, wenn sie genau zwei Teiler hat (Eins und sich selbst). $\mathbb{P} = \{2, 3, 5, 7, 11, 13, ...\}$
+\end{definition}
 
 \hrulefill
 
 \section{Algebra}
-\subsection{Binomische Formeln}
+%%\subsection{Binomische Formeln}
 
+\begin{gesetz}{Binomische Formeln}{}
 $$(a+b)^2 = a^2+2ab + b^2$$
 $$(a-b)^2=a^2-2ab+b^2$$
 $$(a+b)\cdot(a-b) = a^2 - b^2$$
+\end{gesetz}
 
 \subsection{Vertauschte Differenz}
 (-1 ausklammern)
@@ -95,17 +99,6 @@ Zahl  & & wissenschaftl. & & TR: \tiprobutton{EE} \\
 \hrulefill
 
 \section{Potenzen}
-Für Basis $a\ne 0, b\ne 0$ und $r, s\in\mathbb{Q}$ gilt:
-
-\begin{tabular}{cc}
-$a^0=1,$ & $a^{-r} = \frac1{a^r},$  \\
-$\left(\frac{a}b\right)^{-r} = \left(\frac{b}a\right)^r,$ & $a^{\frac{r}s} = \sqrt[s]{a^r}$\\
- \end{tabular}
-
-\begin{rezept}{«Kielholen»}{}{}
-Exponenten vertauschen ihr Vorzeichen beim Übertreten des Bruchstrichs:
-$$\frac{a^{-3}b^2}{c^5d^{-6}} = \frac{b^2d^6}{a^3c^5}$$
-\end{rezept}
 
 \subsection{gleiche Basis}
 \begin{tabular}{cc}
@@ -133,10 +126,32 @@ Fall: $n$ \textbf{un}gerade:
  $-(a^n) = -a^n,$ & aber: $(-a)^n = -a^n$\\
  \end{tabular} 
 
+
+\begin{gesetz}{Potenzen}{}
+
+Für Basis $a\ne 0, b\ne 0$ und $r, s\in\mathbb{Q}$ gilt:
+
+\begin{tabular}{cc}
+$a^0=1,$ & $a^{-r} = \frac1{a^r},$  \\
+$\left(\frac{a}b\right)^{-r} = \left(\frac{b}a\right)^r,$ & $a^{\frac{r}s} = \sqrt[s]{a^r}$\\
+ \end{tabular}
+\end{gesetz}
+
+\begin{rezept}{«Kielholen»}{}{}
+Exponenten vertauschen ihr Vorzeichen beim Übertreten des Bruchstrichs:
+$$\frac{a^{-3}b^2}{c^5d^{-6}} = \frac{b^2d^6}{a^3c^5}$$
+\end{rezept}
+
+
+\subsection{$n$-te Wurzel}
+$\sqrt[n]{a} := \left(a\right)^\frac1n$
+
+
 \hrulefill
 \section{Logarithmen}
 
 \begin{definition}{$\log$}{}
+
 Für $a>0, a\ne 1$ ist
 
 $$\log_a{}(z)=x \Longleftrightarrow{} a^x = z$$
@@ -154,9 +169,6 @@ $$\log_a(b^x) = x\cdot{}\log_a(b)$$
 $\log(1)=0$     &               &\\
 $\log_a(a) = 1$ & $\lg(10) = 1$ & $\ln(e) = 1$\\
 \end{tabular} 
-
-\subsection{$n$-te Wurzel}
-$\sqrt[n]{a} := \left(a\right)^\frac1n$
 
 \hrulefill
 \section{Textaufgaben}
@@ -250,6 +262,10 @@ Wie vorgehen?
 	Komplexe Terme im Quadrat  & $3(x-6)^2 - 17(x-6)  = 0$     & Substitution                            \\
 	\hline
 \end{tabular}
+
+\mmPapier{4}
+
+\newpage
 
 
 \begin{multicols}{2}
@@ -367,8 +383,9 @@ $y=ax+b$ einsetzen, um $b$ zu finden.
 \textbf{Variante 2}: Gleichungssystem nach $a$ und $b$ auf\/lösen:
 \gleichungZZ{y_A}{a\cdot{}x_A+b}{y_B}{a\cdot{}x_B + b}
 
+\hrulefill
 
-\subsection{Potenzfunktionen}
+\section{Potenzfunktionen}
 Grundform:
 $$y=ax^z$$
 $z\in\mathbb{Z}\backslash\{0,1\} = \{...-2, -1, 2, 3, 4, ...\}$
@@ -508,7 +525,7 @@ Auswertung: \tiprobutton{data_stat-reg-distr}
 Der am häufigsten auftretende Wert wird als Modus bezeichnet.
 
 Manchmal ist dies nicht eindeutig, dann sprechen wir von einer
-Multimodalen Verteilung.
+multimodalen Verteilung.
 
 \subsubsection{Maximum, Minimum}
 Maximum bzw. Minimum sind höchste bzw. kleinste Datenwerte: Die Ausreißer
@@ -536,9 +553,17 @@ unter \tiprobutton{data_stat-reg-distr} gefunden.
 
 \subsubsection{Robustheit}
 
-\TRAINER{... hier Tabelle einbauen, wie im Skript $\varphi$ ...
-
-... coming soon...}
+\begin{tabular}{|c|c|c|}\hline
+   & Lage- & Streumaß\\\hline
+ \multirow{4}{*}{\rotatebox{90}{robust}}  & Median $\mediantilde{x}$ & IQR \\
+    & Modus $x_{mod}$ & \\
+    & Quartile ($Q_1$,$Q_3$) & \\
+    & (Ausreißerschwellen) & \\\hline
+ \multirow{3}{*}{\rotatebox{90}{«fragil»}}  & Mittelwert
+ $\overline{x}$ & Standardabweichung\\
+    & Minimum & Spannweite\\
+    & Maximum & \\\hline
+ \end{tabular}
 
 \subsection{Diagramme}
 \subsubsection{Balken / Kuchen}
@@ -570,7 +595,7 @@ Balken festgelegt
 \subsubsection{Streudiagramm}
 \bbwCenterGraphic{8cm}{img/streudiagramm.png}
 
-\newpage
+
 \subsubsection{Boxplot}
 Vorgehen
 \begin{enumerate}
@@ -778,7 +803,41 @@ Zudem werden noch die Randsummen notiert.
 \bbwCenterGraphic{8cm}{img/kontingenztafel.png}
 
 \subsubsection{Bedingte Wahrscheinlichkeit}
-\TRAINER{... coming soon ...}
+
+\begin{definition}{Bedingte Wahrscheinlichkeit}{}
+Mit
+$$P(A|B)$$
+Wird die Wahrscheinlichkeit von $A$ angegeben, unter der Bedingung,
+dass das Ereignis $B$ bereits eingetroffen ist.
+\end{definition}
+
+Beispiel:
+
+\begin{tabular}{c|c|c|c}
+             & gesund (G)& krank (K)& $\Sigma$ \\\hline
+weiblich (W) &        30 &       40 &       70 \\\hline
+männlich (M) &        25 &       35 &       60 \\\hline
+$\Sigma$     &        55 &       75 &      130 \\\hline
+ \end{tabular}
+
+\textbf{Normale Wahrscheinlichkeit}\\
+«Wie groß ist die Wahrscheinlichkeit,gesund (G) zu sein?»
+$$P(G) = \frac{|G|}{|\Omega|} = \frac{55}{130}$$
+
+\textbf{Wahrscheinlichkeit der Schnittmenge}\\
+«Wie groß ist die Wahrscheinlichkeit, eine weibliche gesunde Person zu
+treffen?»
+$$P(G\cap W) = \frac{|G\cap W|}{|\Omega|} = \frac{30}{130}$$
+
+\textbf{Bedingte Wahrscheinlichkeit}\\
+«Wie groß ist die Wahrscheinlichkeit, unter den Gesunden, eine weibliche Person zu
+treffen?»
+$$P(W | G) = \frac{|W\cap G|}{|G|} = \frac{30}{55}$$
+«Wie groß ist die wahrscheinlichkeit, unter den weiblichen Personen, 
+eine gesunde Person zu treffen?»
+$$P(G | W) = \frac{|G \cap W|}{|W|} = \frac{30}{70}$$
+
+
 
 \end{multicols}
 
