@@ -8,8 +8,8 @@
 
 %%\usepackage{amssymb} %% für \blacktriangleright
 \usepackage{makecell}
-\renewcommand{\metaHeaderLine}{Formelsammlung GESO}
-\renewcommand{\arbeitsblattTitel}{Version 0.0.2 2021-06-12 fp}
+\renewcommand{\metaHeaderLine}{Formelsammlung GESO (v 0.0.3 2021-06-13 fp)}
+\renewcommand{\arbeitsblattTitel}{Formelsammlung}
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
 \titlespacing*{\subsection}{0pt}{0.1\baselineskip}{0.1\baselineskip}
@@ -23,13 +23,14 @@
 %%\columnbreak
 %% für harten Break
 \begin{definition}{}{}
-$\mathbb{N} = \{1,2, ...\}  $ = Natürliche Zahlen\\
-$\mathbb{Z} = \{..., -2, -1, 0, 1,2, ...\}  $ = Ganze Zahlen\\
-$\mathbb{Q} = \{\frac{a}b | a\in \mathbb{Z}, b\in\mathbb{N}\}$ = Rationale Zahlen (Brüche)\\
-$\mathbb{R} = \{..., -1, ..., 0, ... \frac12, ..., \sqrt{2}, ..., e,\\
-..., 3, ..., \pi, ...\}  $ = \textbf{reelle} Zahlen = alle Zahlen auf der Zahlengerade\\
+Die Zahlmengen heißen
 
-Eine natürliche Zahl heißt Primzahl, wenn sie genau zwei Teiler hat (Eins und sich selbst). $\mathbb{P} = \{2, 3, 5, 7, 11, 13, ...\}$
+$\mathbb{N} = \{1,2, ...\}  $ \textbf{natürlich}\\
+$\mathbb{Z} = \{..., -2, -1, 0, 1,2, ...\}  $ \textbf{ganz}\\
+$\mathbb{Q} = \{\frac{a}b | a\in \mathbb{Z}, b\in\mathbb{N}\}$ \textbf{rational}\\
+$\mathbb{R} = \{..., -1, ..., 0, ... \frac12, ..., \sqrt{2}, ..., e, ... \pi, ...\}  $ \textbf{reell} (alle Zahlen auf der Zahlengerade)\\
+
+Eine natürliche Zahl heißt \textbf{Prim}zahl, wenn sie genau zwei Teiler hat (Eins und sich selbst).\\ $\mathbb{P} = \{2, 3, 5, 7, 11, 13, ...\}$
 \end{definition}
 
 \hrulefill
@@ -87,7 +88,7 @@ Die Zählung der signifikanten Stellen einer Zahl beginnt (von links) mit der er
 Bsp.: 30.896 auf \textbf{vier} sig. Stellen = 30.90\\
 (4. Ziffer stehen lassen, auch wenn = 0)
 
-\subsection{Wissenschaftliche Schreibweise}
+\subsection{Wissenschaftliche Notation}
 Für große, aber auch für Zahlen sehr nahe an 0, wird die wissenschaftliche Schreibweise vorgezogen. Dabei steht vor dem Dezimalpunkt immer genau eine Ziffer:
 
 \begin{tabular}{lcccr}
@@ -95,10 +96,38 @@ Zahl  & & wissenschaftl. & & TR: \tiprobutton{EE} \\
 1400  &=& $1.4\cdot{}10^3$ &=& 1.4E3\\
 0.004 &=& $4\cdot{}10^{-3}$ &=&4E-3\\
 \end{tabular}
+\end{multicols}
 
-\hrulefill
+\mmPapier{1.2}
+
+\newpage
+
+\begin{multicols}{2}
+
+\section{Bruchterme}
+\subsection{Faktorisieren}
+\begin{rezept}{}{}
+\begin{enumerate}
+\item gemeinsame Faktoren ausklammern
+$$\frac{ax+ay}{bx+by} =\frac{a(x+y)}{b(x+y)} = \frac{a}b$$
+\item Teilsummen ausklammern
+$$3(7r+6) - b(7r+6) = (3-b)(7r+6)$$
+\item Binomische Formeln
+$$x^2-1 = (x-1)(x+1)$$
+\item Zweiklammeransatz
+$$x^2+2x-15 = (x+5)(x-3)$$
+\end{enumerate}
+\end{rezept}
 
 \section{Potenzen}
+\begin{definition}{Potenz}{}
+$$a^n := \underbrace{a\cdot{}a\cdot{}a\cdot{}...\cdot{}a}_{n\textrm{ Faktoren}}$$
+$$7^3=7\cdot{}7\cdot{}7=343$$
+$7^3$ Potenz\\
+$7$ Basis\\
+$3$ Exponent\\
+$343$ Potenzwert\\
+\end{definition}
 
 \subsection{gleiche Basis}
 \begin{tabular}{cc}
@@ -131,9 +160,8 @@ Fall: $n$ \textbf{un}gerade:
 
 Für Basis $a\ne 0, b\ne 0$ und $r, s\in\mathbb{Q}$ gilt:
 
-\begin{tabular}{cc}
-$a^0=1,$ & $a^{-r} = \frac1{a^r},$  \\
-$\left(\frac{a}b\right)^{-r} = \left(\frac{b}a\right)^r,$ & $a^{\frac{r}s} = \sqrt[s]{a^r}$\\
+\begin{tabular}{ccc}
+$a^0=1,$ & $a^{-r} = \frac1{a^r},$ & $\left(\frac{a}b\right)^{-r} = \left(\frac{b}a\right)^r$ \\
  \end{tabular}
 \end{gesetz}
 
@@ -145,7 +173,9 @@ $$\frac{a^{-3}b^2}{c^5d^{-6}} = \frac{b^2d^6}{a^3c^5}$$
 
 \subsection{$n$-te Wurzel}
 $\sqrt[n]{a} := \left(a\right)^\frac1n$
-
+\begin{gesetz}{}{}
+$$a^{\frac{r}s} = \sqrt[s]{a^r}$$
+\end{gesetz}
 
 \hrulefill
 \section{Logarithmen}
@@ -166,11 +196,12 @@ $$\log_a(b^x) = x\cdot{}\log_a(b)$$
 
 \subsection{Spezielle Werte}
 \begin{tabular}{ccc}
-$\log(1)=0$     &               &\\
+$\log(1)=0$     &    $\lg(1000)=3$           &\\
 $\log_a(a) = 1$ & $\lg(10) = 1$ & $\ln(e) = 1$\\
 \end{tabular} 
 
-\hrulefill
+\newpage
+
 \section{Textaufgaben}
 
 \subsection{Geschwindigkeitsaufgaben}
@@ -199,18 +230,7 @@ $$p = 2.5\% \Longleftrightarrow{} f = 1.025$$
 $$p = -3\% \Longleftrightarrow{} f = 0.97$$
 
 
-\hrulefill
 \section{Gleichungen}
-
-\subsection{Bruchgleichungen}
-Immer Definitionsbereich $\mathbb{D}$ überlegen: Nenner (unten) darf
-nicht 0 werden.
-
-Bsp.: $$\frac5{x+2}=\frac{7+x}{x-3} \Leftrightarrow{} \mathbb{D}_x=\mathbb{R}\backslash{}\{-3, 2\}$$
-
-Schlusskontrolle!
-
-
 
 \subsection{Lineare Gleichungen}
 $$5x-3a = 2cx-7b$$
@@ -228,10 +248,21 @@ Der Taschenrechner löst Gleichungen mit Zahlen nach $x$ auf:
 $5^x = 100 -x$; verwende \tiprobutton{2nd}\tiprobutton{sin_num-solv} $x\approx{}2.843$
 
 
+
+\subsection{Bruchgleichungen}
+Immer Definitionsbereich $\mathbb{D}$ überlegen: Nenner (unten) darf
+nicht 0 werden.
+
+Bsp.: $$\frac5{x+2}=\frac{7+x}{x-3} \Leftrightarrow{} \mathbb{D}_x=\mathbb{R}\backslash{}\{-3, 2\}$$
+
+Schlusskontrolle!
+
+
 \end{multicols}
+\mmPapier{6}
+\newpage
 
-
-\subsection{quadratische Gleichungen}
+\subsection{Quadratische Gleichungen}
 \begin{gesetz}{Lösungsformel}{}
 \textbf{Grundform}: $ax^2 + bx+c = 0$
 
@@ -263,15 +294,15 @@ Wie vorgehen?
 	\hline
 \end{tabular}
 
-\mmPapier{4}
+%%\mmPapier{4}
 
-\newpage
+%%\newpage
 
 
 \begin{multicols}{2}
 
 
-\subsection{Gleichungen mit Exponenten}
+\subsection{Gleichungen mit Potenzen}
 \subsubsection{Potenzgleichungen}
 
 $$x^a=c \Leftrightarrow x=\sqrt[a]{c}$$
@@ -299,6 +330,12 @@ $$ x=\frac{\log(105)}{\log(7)} = \frac{\lg(105)}{\lg(7)}$$
 \begin{gesetz}{Exponentialgleichung}{}
 $$a^x=b \Rightarrow{} x=\log_a(b) = \frac{\lg(b)}{\lg(a)}$$
 \end{gesetz}
+
+
+
+  
+\newpage
+
 
 \subsection{Lineare Gleichungssysteme}
 Erst in \textbf{Grundform} bringen und dann
@@ -390,19 +427,19 @@ Grundform:
 $$y=ax^z$$
 $z\in\mathbb{Z}\backslash\{0,1\} = \{...-2, -1, 2, 3, 4, ...\}$
 
-$z>0$: Parabeln
+$z>0$: Parabeln (obere vier Graphen)
 
-$z<0$: Hyperbeln
+$z<0$: Hyperbeln (untere vier Graphen)
 
 $z$ gerade: Gespiegelt an der $y$-Achse
 
 $z$ ungerade: Gespiegelt am Ursprung $O=(0|0)$
 
-$a>0$: gerade Parabel nach oben geöffnet bzw. Hyperbel oder ungerade
-Parabel im Quadranten I und III
+Ist $a>0$ (grün) so sind Parabeln mit geraden Exponenten nach oben geöffnet bzw. Hyperbeln oder ungerade
+Parabeln im Quadranten I und III.
 
-$a<0$: gerade Parabel nach unten geöffnet bzw. Hyperbel oder ungerade
-Parabel im Quadranten II und IV
+Ist $a<0$ (rot/orange) so sind Parabeln mit geraden Exponenten nach unten geöffnet bzw. Hyperbeln oder ungerade
+Parabeln im Quadranten II und IV.
 
 \bbwCenterGraphic{8cm}{img/potenzFunktionen.png}
 
@@ -410,8 +447,17 @@ Parabel im Quadranten II und IV
 $$y=ax^2$$
 $a$ heißt Öffnung ($a<0$: Die Parabel ist nach unten geöffnet)
 $a=1$ oder $a=-1$: Normalparabel
+\end{multicols}
 
-\hrulefill
+\mmPapier{6}
+
+
+
+
+\newpage
+
+\begin{multicols}{2}
+
 \section{Exponentialfunktionen}
 \begin{gesetz}{Exponentialfunktion}{}
 $$f(t) = b\cdot{}a^t$$
@@ -434,10 +480,10 @@ sich alle fünf Tage:\\
 $b=3$, $a=4$, $\tau=5$
 $$f(t)= 3\cdot{}4^\frac{t}{5}$$
 
-\subsubsection{Werte Rechnen}
+\subsubsection{Werte rechnen}
 \begin{itemize}
 \item
-Wert zum Zeitpunkt 25 Tage: Wert einsetzen:\\
+Wert zum Zeitpunkt 25 Tage: Wert in Funktionsterm einsetzen:\\
 $f(25) = 3\cdot{}4^\frac{25}{5}$
 
 \item
@@ -448,7 +494,7 @@ $$30 = 3\cdot{}4^{\frac{t}{5}}$$
 
 \subsection{Halbwertszeit}
 $\frac12 \cdot{} b = f(t) = b\cdot{}a^{\frac{t}{\tau}}$
-$$t_{\frac12} = \tau\cdot{}\log_a(\frac12)$$
+$$t_{\frac12} = \tau\cdot{}\log_a\left(\frac12\right)$$
 
 \subsection{Verdopplungszeit}
 $2\cdot{}b = f(t) = b\cdot{}a^{\frac{t}{\tau}}$
@@ -457,16 +503,18 @@ $$t_{2} = \tau\cdot{}\log_a(2)$$
 \subsection{Sättigungsfunktionen}
 \begin{gesetz}{Beschränkter Zerfall}{}
 $$f(t) = c + b\cdot{}a^\frac{t}\tau$$
-$c$ = Sättigungsgrenze\\
-$a<1$ = Zerfallsrate\\
-$b$ = Sättigungsdefizit bei $t=0$
+$c$: Sättigungsgrenze\\
+$a<1$: Zerfallsrate\\
+$b$: Sättigungsdefizit bei $t=0$\\
+$c+b$ = Startwert 
 \end{gesetz}
 
 \begin{gesetz}{Beschränktes Wachstum}{}
 $$f(t) = c - b\cdot{}a^\frac{t}\tau$$
-$c$ = Sättigungsgrenze\\
-$a<0$ = Zerfallsrate\\
-$b$ = Sättigungsdefizit bei $t=0$
+$c$: Sättigungsgrenze\\
+$a<0$: Zerfallsrate\\
+$b$: Sättigungsdefizit bei $t=0$\\
+$c-b$: Startwert
 \end{gesetz}
 
 \begin{bemerkung}{Sättigungsdefizit}{}
@@ -482,7 +530,7 @@ $b\cdot{}a^\frac{t}\tau$ = Sättigungsdefizit zur Zeit $t$
 
 \subsection{Skalen}
 \bbwCenterGraphic{16cm}{allg/daan/img/Datentypen.png}
-
+\vspace{5mm}
 
 
 
@@ -612,9 +660,13 @@ einzeichnen.
 \item Boxdekoration horizontale Linien einzeichnen.
 \end{enumerate}
 \bbwCenterGraphic{8cm}{img/boxplot.png}
+\end{multicols}
 
+\mmPapier{4}
 
-\hrulefill
+\newpage
+
+\begin{multicols}{2}
 \section{Stochastik}
 
 \subsection{Kombinatorik}
@@ -689,15 +741,19 @@ Taschenrechner: \textbf{nCr}
 \subsubsection{Grundbegriffe}
 
 \textbf{Ergebnismenge} $\Omega$: Menge der möglichen Ergebnisse
-(Ausgänge) eines Zufallsversuchs. Beispiel die sechs Würfelergebnise
-eines Spielwürfels: $\Omega = \{\epsdice{1}, \epsdice{2}, \epsdice{3},
-..., \epsdice{6}\}$
+(Ausgänge) eines Zufallsversuchs.\\
+Beispiel: Die sechs Würfelergebnise
+eines Spielwürfels: $\Omega = \{\epsdice{1}, \epsdice{2}, \epsdice{3}, \epsdice{4}, \epsdice{5}, \epsdice{6}\}$
 
 \textbf{Ereignis} $A$: Eine Teilmenge von $\Omega$. Beispiel: Eine
 ungerade Zahl zu werfen: $A  = \{\epsdice{1}, \epsdice{3}, \epsdice{5}\}$
 
 \textbf{Gegenereignis} $\overline{A} = \Omega \backslash A$ =
-Gegenmenge von $A$ = «nicht» $A$. Es gilt $A \cup \overline{A} = \Omega$
+\textit{Gegenmenge}
+
+$\overline{A}$ sprich «nicht» $A$.
+
+Es gilt $A \cup \overline{A} = \Omega$
 
 \textbf{Elementarereignis}: Ereignis bestehend aus einem einzigen
 Ergebnis aus $\Omega$. Beispiel: $E_1$ = Wirf eine \textbf{Eins}: $E_1
@@ -719,6 +775,9 @@ gilt:
 
 $$P(A\textrm{ «oder» }B) = P(A\cup B) = P(A) + P(B)$$
 
+
+\newpage
+
 \subsubsection{Baumdiagramme}
 
 \textbf{Pfadregel}:
@@ -736,27 +795,32 @@ Summe der zugehörigen Pfadwahrscheinlichkeiten (aller gewünschten Endergebniss
 
 
 
-\subsubsection{Laplace-Wahrscheinlichkeit}
+\subsection{Laplace-Wahrscheinlichkeit}
 Sind alle möglichen Ergebnisse eines Zufallsversuchs gleich
 wahrscheinlich, so ist die Wahrscheinlichkeit $P(E)$ für das Ereignis
 $E$ wie folgt zu berechnen:
 
+\begin{gesetz}{}{}
 $$P(E) = \frac{|E|}{|\Omega|}$$
+\end{gesetz}
+
 In Worten:
 $$P(E) = \frac{\textrm{Anzahl aller Ergebnisse
 im Ereignis
 }E}{\textrm{Anzahl aller Ergebnisse in }\Omega}$$
 
 
-\subsubsection{Bernoulli-Modell}
+\subsection{Bernoulli-Modell}
 \begin{gesetz}{Bernoulli}{}
+
+$k$ = \textbf{genaue} gewünschte Anzahl Treffer
+
 $$P(X=k) = {n \choose k}\cdot{}p^k\cdot{}(1-p)^{n-k}$$
 Taschenrechner
 unter \tiprobutton{data_stat-reg-distr} \textbf{\texttt{binomialpdf}} wählen.
 
 $n$ = Anzahl Züge\\
 $p$ = Wahrscheinlichkeit des Treffers\\
-$k$ = \textbf{genaue} gewünschte Anzahl Treffer
 
 An jeder Verzweigung im Baum sind Treffer und Niete gleich
 wahrscheinlich.
@@ -766,17 +830,20 @@ Im Urnenmodell: Mit Zurücklegen.
 
 \subsubsection{Kumulierte Wahrscheinlichkeit}
 
-\begin{gesetz}{Kumulierter Bernoulli}{}
+\begin{gesetz}{kumuliert}{}
+
+$k$ = \textbf{maximal} gewünschte Anzahl Treffer
+
+
 $$P(X\le k) = \sum_{i=0}^{k}{n \choose i}\cdot{}p^i\cdot{}(1-p)^{n-i}$$
 Taschenrechner
 unter \tiprobutton{data_stat-reg-distr} \textbf{\texttt{binomialcdf}} wählen.
 
 $n$ = Anzahl Züge\\
 $p$ = Wahrscheinlichkeit des Treffers\\
-$k$ = \textbf{maximal} gewünschte Anzahl Treffer
 \end{gesetz}
 
-\subsubsection{Hypergeometrische Verteilung}
+\subsection{Hypergeometrische Verteilung}
 Bei
 \begin{itemize}
 \item $N$ Elementen (Kugeln),
@@ -784,13 +851,13 @@ Bei
 \item $n$ gezogenen Elementen (Kugeln) und 
 \item $k$ gewünschten Treffern
 \end{itemize}
-ergibt sich eine Wahrscheinlichkeit (genau $k$ Treffer zu ziehen) von:
+ergibt sich eine Wahrscheinlichkeit (genau $k$ Treffer zu ziehen) von
 
-$$P(X=k) = \frac{ {M \choose k} \cdot {{N-M}  \choose {n-k}} }{{N \choose n}}$$
+$$P(X=k) = \frac{ {M \choose k} \cdot {{N-M}  \choose {n-k}} }{{N \choose n}}.$$
 
 
-
-\subsubsection{Kontingenztafel}
+\newpage
+\subsection{Kontingenztafel}
 Vierfeld-Tafeln=Kontingenztafeln mit 4 Feldern.
 
 Man hat zwei Merkmale, A und B. Jedes Merkmal kann nur zwei Werte
@@ -802,7 +869,7 @@ Zudem werden noch die Randsummen notiert.
 
 \bbwCenterGraphic{8cm}{img/kontingenztafel.png}
 
-\subsubsection{Bedingte Wahrscheinlichkeit}
+\subsection{Bedingte Wahrscheinlichkeit}
 
 \begin{definition}{Bedingte Wahrscheinlichkeit}{}
 Mit
@@ -814,28 +881,26 @@ dass das Ereignis $B$ bereits eingetroffen ist.
 Beispiel:
 
 \begin{tabular}{c|c|c|c}
-             & gesund (G)& krank (K)& $\Sigma$ \\\hline
-weiblich (W) &        30 &       40 &       70 \\\hline
-männlich (M) &        25 &       35 &       60 \\\hline
-$\Sigma$     &        55 &       75 &      130 \\\hline
+           & gesund (G)& krank (K)& $\Sigma$ \\\hline
+Frauen (F) &        30 &       40 &       70 \\\hline
+Männer (M) &        25 &       35 &       60 \\\hline
+$\Sigma$   &        55 &       75 &      130 \\\hline
  \end{tabular}
 
 \textbf{Normale Wahrscheinlichkeit}\\
-«Wie groß ist die Wahrscheinlichkeit,gesund (G) zu sein?»
+«Wie groß ist hier die Wahrscheinlichkeit,gesund (G) zu sein?»
 $$P(G) = \frac{|G|}{|\Omega|} = \frac{55}{130}$$
 
 \textbf{Wahrscheinlichkeit der Schnittmenge}\\
-«Wie groß ist die Wahrscheinlichkeit, eine weibliche gesunde Person zu
-treffen?»
-$$P(G\cap W) = \frac{|G\cap W|}{|\Omega|} = \frac{30}{130}$$
+«Wie groß ist hier die Wahrscheinlichkeit, eine gesunde Frau anzutreffen treffen?»
+$$P(G\cap F) = \frac{|G\cap F|}{|\Omega|} = \frac{30}{130}$$
 
 \textbf{Bedingte Wahrscheinlichkeit}\\
-«Wie groß ist die Wahrscheinlichkeit, unter den Gesunden, eine weibliche Person zu
-treffen?»
-$$P(W | G) = \frac{|W\cap G|}{|G|} = \frac{30}{55}$$
-«Wie groß ist die wahrscheinlichkeit, unter den weiblichen Personen, 
-eine gesunde Person zu treffen?»
-$$P(G | W) = \frac{|G \cap W|}{|W|} = \frac{30}{70}$$
+«Wie groß ist die Wahrscheinlichkeit, unter den Gesunden, eine Frau anzutreffen?»
+$$P(F | G) = \frac{|F\cap G|}{|G|} = \frac{30}{55}$$
+«Wie groß ist die wahrscheinlichkeit, unter den Frauen eine gesunde Person zu treffen?»
+$$P(G | F) = \frac{|G \cap F|}{|F|} = \frac{30}{70}$$
+
 
 
 
