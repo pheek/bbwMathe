@@ -8,11 +8,14 @@
 
 %%\usepackage{amssymb} %% für \blacktriangleright
 \usepackage{makecell}
-\renewcommand{\metaHeaderLine}{Formelsammlung GESO (v 0.0.4 2021-06-13 fp)}
+\renewcommand{\metaHeaderLine}{Formelsammlung GESO (v 0.0.5 2021-06-13 fp)}
 \renewcommand{\arbeitsblattTitel}{Formelsammlung}
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
 \titlespacing*{\subsection}{0pt}{0.1\baselineskip}{0.1\baselineskip}
+
+%% Force column-break
+\newcommand{\forceCB}{\vfill\null\columnbreak}
 
 \begin{document}%%
 \arbeitsblattHeader{}
@@ -31,7 +34,7 @@ $\mathbb{Z} = \{..., -2, -1, 0, 1,2, ...\}$                   \textbf{ganz}\\
 $\mathbb{Q} = \{\frac{a}b|a\in \mathbb{Z},b\in\mathbb{N}\}$   \textbf{rational} (Brüche)\\
 $\mathbb{R} = \{..., -1, ..., 0, ... \frac12, ..., \sqrt{2}, ..., e, ... \pi, ...\}  $ \textbf{reell} (alle Zahlen auf der Zahlengerade)\\
 
-Eine natürliche Zahl heißt \textbf{Prim}zahl, wenn sie genau zwei Teiler hat (Eins und sich selbst).\\ $\mathbb{P} = \{2, 3, 5, 7, 11, 13, ...\}$
+\textbf{Prim}zahl: hat genau zwei Teiler (Eins und sich selbst):\\ $\mathbb{P} = \{2, 3, 5, 7, 11, 13, ...\}$
 \end{definition}
 
 \hrulefill%% hrulefill vor allen neuen "sections" auf derselben Seite
@@ -53,6 +56,8 @@ Beispiel:
 
 $$\frac{x}{a-b} +  \frac{y}{b-a} = \frac{x}{a-b} + \frac{-y}{a-b} = \frac{x-y}{a-b}$$
 
+%% Forced column break
+\forceCB
 \subsection{Summenzeichen}
 $$\sum_{k=1}^n{T(k)} = T(1) + T(2) + ... + T(n)$$
 Beispiel
@@ -88,6 +93,7 @@ Die Zählung der signifikanten Stellen einer Zahl beginnt (von links) mit der er
 Bsp.: 30.896 auf \textbf{vier} sig. Stellen = 30.90\\
 (4. Ziffer stehen lassen, auch wenn = 0)
 
+\forceCB{}%%
 \subsection{Wissenschaftliche Notation}
 Für große, aber auch für Zahlen sehr nahe an 0, wird die wissenschaftliche Schreibweise vorgezogen. Dabei steht vor dem Dezimalpunkt immer genau eine Ziffer:
 
@@ -96,13 +102,8 @@ Zahl  & & wissenschaftl. & & TR: \tiprobutton{EE} \\
 1400  &=& $1.4\cdot{}10^3$ &=& 1.4E3\\
 0.004 &=& $4\cdot{}10^{-3}$ &=&4E-3\\
 \end{tabular}
-\end{multicols}
 
-\mmPapier{1.2}
-
-\newpage
-
-\begin{multicols}{2}
+\hrulefill
 
 \section{Bruchterme}
 \subsection{Faktorisieren}
@@ -116,8 +117,12 @@ $$3(7r+6) - b(7r+6) = (3-b)(7r+6)$$
 $$x^2-1 = (x-1)(x+1)$$
 \item Zweiklammeransatz
 $$x^2+2x-15 = (x+5)(x-3)$$
+Die Faktoren für den Zweiklammeransatz können mit dem Taschenrechner
+gefunden werden: a) \texttt{poly-solv} \tiprobutton{cos_poly-solv}
+oder b) \texttt{PFactor} \tiprobutton{math}\tiprobutton{4}
 \end{enumerate}
 \end{rezept}
+
 
 \section{Potenzen}
 \begin{definition}{Potenz}{}
@@ -170,11 +175,11 @@ Exponenten vertauschen ihr Vorzeichen beim Übertreten des Bruchstrichs:
 $$\frac{a^{-3}b^2}{c^5d^{-6}} = \frac{b^2d^6}{a^3c^5}$$
 \end{rezept}
 
-
+\forceCB{}
 \subsection{$n$-te Wurzel}
 $\sqrt[n]{a} := \left(a\right)^\frac1n$
 \begin{gesetz}{}{}
-$$a^{\frac{r}s} = \sqrt[s]{a^r}$$
+$$a^{\frac{r}s} = \sqrt[s]{a^r} = \left(\sqrt[s]a\right)^r$$
 \end{gesetz}
 
 \hrulefill
@@ -198,10 +203,10 @@ $$\log_a(b^x) = x\cdot{}\log_a(b)$$
 \begin{tabular}{ccc}
 $\log(1)=0$     &    $\lg(1000)=3$           &\\
 $\log_a(a) = 1$ & $\lg(10) = 1$ & $\ln(e) = 1$\\
-\end{tabular} 
+\end{tabular}
 
-\newpage
 
+\hrulefill
 \section{Textaufgaben}
 
 \subsection{Geschwindigkeitsaufgaben}
@@ -229,7 +234,7 @@ $$K_n = K_0 \cdot{} \left( 1+\frac{p}{100} \right)^n = K_0\cdot{}f^n$$
 $$p = 2.5\% \Longleftrightarrow{} f = 1.025$$
 $$p = -3\% \Longleftrightarrow{} f = 0.97$$
 
-
+\hrulefill
 \section{Gleichungen}
 
 \subsection{Lineare Gleichungen}
@@ -250,17 +255,20 @@ $5^x = 100 -x$; verwende \tiprobutton{2nd}\tiprobutton{sin_num-solv} $x\approx{}
 
 
 \subsection{Bruchgleichungen}
+\begin{rezept}{}{}
+\begin{itemize}
+\item
 Immer Definitionsbereich $\mathbb{D}$ überlegen: Nenner (unten) darf
 nicht 0 werden.
 
 Bsp.: $$\frac5{x+2}=\frac{7+x}{x-3} \Leftrightarrow{} \mathbb{D}_x=\mathbb{R}\backslash{}\{-3, 2\}$$
-
-Schlusskontrolle!
-
+\item Faktorisieren und Kürzen vor dem
+\item Hauptnenner finden
+\item Schlusskontrolle!
+\end{itemize}
+\end{rezept}
 
 \end{multicols}
-\mmPapier{6}
-\newpage
 
 \subsection{Quadratische Gleichungen}
 \begin{gesetz}{Lösungsformel}{}
@@ -298,7 +306,7 @@ Wie vorgehen?
 
 %%\newpage
 
-
+\newpage
 \begin{multicols}{2}
 
 
@@ -310,7 +318,7 @@ $$x^a=c \Leftrightarrow x=\sqrt[a]{c}$$
 Allgemein
 
 $$x^{\frac{a}b} = c \Leftrightarrow{}
-x=c^{\frac{b}a} = \sqrt[a]{c^b} = \left(\sqrt[a]c\right)^b$$
+x=c^{\frac{b}a} = \sqrt[a]{c^b}$$
 
 \subsection{Exponentialgleichungen}
 \textbf{Fall 1} Exponentenvergleich. Bsp.:
@@ -330,11 +338,6 @@ $$ x=\frac{\log(105)}{\log(7)} = \frac{\lg(105)}{\lg(7)}$$
 \begin{gesetz}{Exponentialgleichung}{}
 $$a^x=b \Rightarrow{} x=\log_a(b) = \frac{\lg(b)}{\lg(a)}$$
 \end{gesetz}
-
-
-
-  
-\newpage
 
 
 \subsection{Lineare Gleichungssysteme}
@@ -358,7 +361,7 @@ Eine Funktion ordnet jeder Zahl aus einem Definitionsbereich
 $\mathbb{D}$ genau eine Zahl aus einem Wertevorrat (=Zielmenge) (meist
 $\mathbb{R}$)
 zu. Die \textit{getroffenen} Funktionswerte bilden den Wertebereich
-(= Bildmenge) $\mathbb{W}$.
+$\mathbb{W}$ (= Bildmenge).
 
 \hrulefill
 \section{Lineare Funktionen}
@@ -394,6 +397,10 @@ Gleichsetzen:
 Finde $x_S$ des Schnittpunktes $S=(x_S|y_S)$
 $$ax+b = cx+d$$
 $$x_S = \frac{d-b}{a-c}$$
+
+Danach $y_S$ durch Einsetzen in eine der Gleichungen:
+$$y_S = a\cdot{}x_S + b$$
+
 \subsection{Mittelpunkt $M$ einer Strecke $AB$}
 Gegeben $A=(x_A|y_A)$ und $B=(x_B|y_B)$
 
@@ -413,7 +420,7 @@ $$g:  y=0\cdot{}x+b \Rightarrow y=b$$
 Gesucht Gerade $g: y=ax+b$ durch zwei gegebene Punkte $A=(x_A|y_A)$
 und $B=(x_B|y_B)$
 
-\textbf{Variante 1}: Steigung $a = \frac{V}H
+\textbf{Variante 1}: Steigung $a = \frac{V}H = \frac{\Delta y}{\Delta x}
 = \frac{y_B-y_A}{x_B-x_A}$ berechnen und einen der beiden Punkte in
 $y=ax+b$ einsetzen, um $b$ zu finden.
 
@@ -435,29 +442,22 @@ $z$ gerade: Gespiegelt an der $y$-Achse
 
 $z$ ungerade: Gespiegelt am Ursprung $O=(0|0)$
 
-Ist $a>0$ (grün) so sind Parabeln mit geraden Exponenten nach oben geöffnet bzw. Hyperbeln oder ungerade
+Ist ${\color{green}a>0}$ so sind Parabeln mit geraden Exponenten nach oben geöffnet bzw. Hyperbeln oder ungerade
 Parabeln im Quadranten I und III.
 
-Ist $a<0$ (rot/orange) so sind Parabeln mit geraden Exponenten nach unten geöffnet bzw. Hyperbeln oder ungerade
+Ist ${\color{red}a<0}$ so sind Parabeln mit geraden Exponenten nach unten geöffnet bzw. Hyperbeln oder ungerade
 Parabeln im Quadranten II und IV.
 
 \bbwCenterGraphic{8cm}{img/potenzFunktionen.png}
 
+\forceCB
 \subsection{Quadratische Funktion}
 $$y=ax^2$$
 $a$ heißt Öffnung ($a<0$: Die Parabel ist nach unten geöffnet)
+
 $a=1$ oder $a=-1$: Normalparabel
-\end{multicols}
 
-\mmPapier{6}
-
-
-
-
-\newpage
-
-\begin{multicols}{2}
-
+\hrulefill
 \section{Exponentialfunktionen}
 \begin{gesetz}{Exponentialfunktion}{}
 $$f(t) = b\cdot{}a^t$$
@@ -529,9 +529,8 @@ $b\cdot{}a^\frac{t}\tau$ = Sättigungsdefizit zur Zeit $t$
 \section{Datenanalyse}
 
 \subsection{Skalen}
-\bbwCenterGraphic{16cm}{allg/daan/img/Datentypen.png}
+\bbwCenterGraphic{15cm}{allg/daan/img/Datentypen.png}
 \vspace{5mm}
-
 
 
 
@@ -546,12 +545,12 @@ $$\overline{x} = \frac{x_1 + x_2 + x_3 + ... + x_n}{n}$$
 \end{definition}
 
 \subsubsection{Median}
-Der Median ist der Wert in der Mitte der geordneten Datenreihe. Ist
-die Anzahl Werte gerade, so wird der Mittelwert der beiden in der
-Mitte stehenden Werte genommen.
 \begin{definition}{Median}{}
+Der \textbf{Median} (Zentralwert) ist der Wert in der Mitte der geordneten Datenreihe. Ist
+die Anzahl Werte gerade, so wird der Mittelwert der beiden in der
+«mittleren» Werte genommen.
 
-Der Median $\mediantilde{x} = x_{\textrm{MED}}$ heißt auch Zentralwert
+Sympol: $\mediantilde{x} = x_{\textrm{MED}}$
 \end{definition}
 
 \subsubsection{Quartil}
@@ -585,7 +584,8 @@ Die Spannweite $R$ (Range) ist nichts anderes als das Maximum minus
 das Minimum.
 
 \subsubsection{Interquartilsabstand}
-Der Abstand zwischen $Q_1$ und $Q_3$ wird als Quartilsdifferenz oder
+Der Abstand zwischen $Q_1$ und $Q_3$ wird als
+Quartilsdifferenz \textbf{QD} oder
 englisch \textit{Interquartil-range} = \textbf{IQR} bezeichnet.
 
 \subsubsection{Standardabweichung}
@@ -679,9 +679,11 @@ Möglichkeiten. Dies ist auf beliebig viele Stufen verallgemeinerbar.
 
 \subsubsection{Permutationen (Sitzordnungen)}
 
-Bei $n$ Elementen gibt es $n!$ Permutationen:
+Bei $n$ Elementen gibt es $n!$ Permutationen (=Vertauschungen):
 
+\begin{definition}{}{}
 $$n! = n\cdot{}(n-1)\cdot{}(n-2)\cdot{}(n-3)\cdot{} ... \cdot{}2\cdot{}1$$
+\end{definition}
 
 Bei Null Elementen gibt es nur eine Variation: $0! = 1$
 
@@ -723,6 +725,14 @@ Beachten der Reihenfolge:
 
 Taschenrechner: \textbf{nCr}
 
+\subsubsection{Kombination mit Wiederholung}
+Werden $k$ Elemente gewählt und die Reihenfolge ist nicht wesentlich
+(Kombination) und dennoch dürfen die Elemente mehrfach gewählt werden
+(mit Wiederholung / mit Zurücklegen), so gibt es
+
+$${n+k-1 \choose k} \textrm { Möglichkeiten}$$ 
+
+\TRAINER{Ist das ein Lernziel?}
 
 
 \end{multicols}
@@ -790,7 +800,10 @@ Wahrscheinlichkeiten.
 \item Alle von einem Knoten ausgehenden Wahrscheinlichkeiten haben in
 der Summe 100\%, also $P=1.0$.
 \item Die Wahrscheinlichkeit des gesuchten Ereignisses ist gleich der
-Summe der zugehörigen Pfadwahrscheinlichkeiten (aller gewünschten Endergebnisse).
+Summe der zugehörigen Pfadwahrscheinlichkeiten (aller gewünschten
+Endergebnisse).
+\item Die Wahrscheinlichkeit aller Endknoten aufaddiert ergibt auch
+100\% = 1.
 \end{itemize}
 
 
@@ -844,20 +857,20 @@ $n$ = Anzahl Züge\\
 $p$ = Wahrscheinlichkeit des Treffers\\
 \end{gesetz}
 
+\forceCB
 \subsection{Hypergeometrische Verteilung}
-Bei
+Gegeben:
 \begin{itemize}
 \item $N$ Elementen (Kugeln),
 \item $M$ möglichen Treffern,
 \item $n$ gezogenen Elementen (Kugeln) und 
 \item $k$ gewünschten Treffern
 \end{itemize}
-ergibt sich eine Wahrscheinlichkeit (genau $k$ Treffer zu ziehen) von
+Wahrscheinlichkeit \textbf{genau} $k$ Treffer zu ziehen:
 
 $$P(X=k) = \frac{ {M \choose k} \cdot {{N-M}  \choose {n-k}} }{{N \choose n}}.$$
 
 
-\newpage
 \subsection{Kontingenztafel}
 Vierfeld-Tafeln=Kontingenztafeln mit 4 Feldern.
 
