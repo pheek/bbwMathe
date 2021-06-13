@@ -16,7 +16,8 @@
 
 \begin{document}%%
 \arbeitsblattHeader{}
- \begin{multicols}{2}
+
+\begin{multicols}{2}%%
 
 \section{Zahlmengen}
 %% Benutze
@@ -25,18 +26,17 @@
 \begin{definition}{}{}
 Die Zahlmengen heißen
 
-$\mathbb{N} = \{1,2, ...\}  $ \textbf{natürlich}\\
-$\mathbb{Z} = \{..., -2, -1, 0, 1,2, ...\}  $ \textbf{ganz}\\
-$\mathbb{Q} = \{\frac{a}b | a\in \mathbb{Z}, b\in\mathbb{N}\}$ \textbf{rational}\\
+$\mathbb{N} = \{1,2, ...\}$                                   \textbf{natürlich}\\
+$\mathbb{Z} = \{..., -2, -1, 0, 1,2, ...\}$                   \textbf{ganz}\\
+$\mathbb{Q} = \{\frac{a}b|a\in \mathbb{Z},b\in\mathbb{N}\}$   \textbf{rational} (Brüche)\\
 $\mathbb{R} = \{..., -1, ..., 0, ... \frac12, ..., \sqrt{2}, ..., e, ... \pi, ...\}  $ \textbf{reell} (alle Zahlen auf der Zahlengerade)\\
 
 Eine natürliche Zahl heißt \textbf{Prim}zahl, wenn sie genau zwei Teiler hat (Eins und sich selbst).\\ $\mathbb{P} = \{2, 3, 5, 7, 11, 13, ...\}$
 \end{definition}
 
-\hrulefill
+\hrulefill%% hrulefill vor allen neuen "sections" auf derselben Seite
 
 \section{Algebra}
-%%\subsection{Binomische Formeln}
 
 \begin{gesetz}{Binomische Formeln}{}
 $$(a+b)^2 = a^2+2ab + b^2$$
@@ -600,7 +600,8 @@ Die Standardabweichung wird auch mit dem Taschenrechner
 unter \tiprobutton{data_stat-reg-distr} gefunden.
 
 \subsubsection{Robustheit}
-
+Verändert sich der Wert eines statistischen Maßes nicht, wenn sich ein Ausreißer
+weiter ins Extreme bewegt, so sprechen wir von einem \textbf{robusten} Maß.
 \begin{tabular}{|c|c|c|}\hline
    & Lage- & Streumaß\\\hline
  \multirow{4}{*}{\rotatebox{90}{robust}}  & Median $\mediantilde{x}$ & IQR \\
