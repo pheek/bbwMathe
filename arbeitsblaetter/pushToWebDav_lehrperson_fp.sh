@@ -104,5 +104,7 @@ cp -f ./tr_ti30_geso_einfuehrung/TR_TI30_GESO_Einfuehrung_TRAINER_GESO.pdf  "${B
 cp -f ./tr_ti30_geso_wichtige_befehle/TR_TI30_GESO_Wichtige_Befehle.pdf  "${BBW_WEBDAV_PATH}/5_Buecher_Lehrmittel_Taschenrechner/Taschenrechner/TI30_PRO_MathPrint/TR_TI30_GESO_Wichtige_Befehle.pdf"
 
 
+echo "Copyiing Formelsammlung"
+cp -f ./formelsammlung/FormelsammlungGESO_GESO.pdf  "${BBW_WEBDAV_PATH}/3_Pruefungen/e_Formelsammlungen/GESO_BBW/Formelsammlung.pdf"
 
 
