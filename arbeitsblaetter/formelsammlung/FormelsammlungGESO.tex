@@ -8,12 +8,16 @@
 
 %%\usepackage{amssymb} %% für \blacktriangleright
 \usepackage{makecell}
-\renewcommand{\metaHeaderLine}{Formelsammlung GESO (v 0.0.5 2021-06-13 fp)}
+\renewcommand{\metaHeaderLine}{Formelsammlung GESO (v 0.0.6 2021-06-14 fp)}
 \renewcommand{\arbeitsblattTitel}{Formelsammlung}
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
 \titlespacing*{\subsection}{0pt}{0.1\baselineskip}{0.1\baselineskip}
 
+
+%% Benutze
+%%\columnbreak
+%% für harten Break:
 %% Force column-break
 \newcommand{\forceCB}{\vfill\null\columnbreak}
 
@@ -23,9 +27,6 @@
 \begin{multicols}{2}%%
 
 \section{Zahlmengen}
-%% Benutze
-%%\columnbreak
-%% für harten Break
 \begin{definition}{}{}
 Die Zahlmengen heißen
 
@@ -255,17 +256,24 @@ $5^x = 100 -x$; verwende \tiprobutton{2nd}\tiprobutton{sin_num-solv} $x\approx{}
 
 
 \subsection{Bruchgleichungen}
-\begin{rezept}{}{}
-\begin{itemize}
-\item
-Immer Definitionsbereich $\mathbb{D}$ überlegen: Nenner (unten) darf
-nicht 0 werden.
+
+\begin{definition}{Definitinosbereich}{}
+
+\textbf{Definitionsbereich} $\mathbb{D}$: welche Werte dürfen in einen Term eingesetzt werden
+
+Bsp. Nenner darf nicht Null werden:
 
 Bsp.: $$\frac5{x+2}=\frac{7+x}{x-3} \Leftrightarrow{} \mathbb{D}_x=\mathbb{R}\backslash{}\{-3, 2\}$$
-\item Faktorisieren und Kürzen vor dem
-\item Hauptnenner finden
+\end{definition}
+
+\begin{rezept}{}{}
+\begin{enumerate}
+\item Definitionsbereich $\mathbb{D}$ finden
+\item Faktorisieren und Kürzen, dann...
+\item ... Hauptnenner finden,
+\item lösen und 
 \item Schlusskontrolle!
-\end{itemize}
+\end{enumerate}
 \end{rezept}
 
 \end{multicols}
@@ -274,7 +282,7 @@ Bsp.: $$\frac5{x+2}=\frac{7+x}{x-3} \Leftrightarrow{} \mathbb{D}_x=\mathbb{R}\ba
 \begin{gesetz}{Lösungsformel}{}
 \textbf{Grundform}: $ax^2 + bx+c = 0$
 
-$$x_{1,2}\frac{-b \pm \sqrt{b^2-4ac}}{2a}$$
+$$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$
 \end{gesetz}
 
 \textbf{Diskriminante} $D = b^2-4ac$:
@@ -442,11 +450,13 @@ $z$ gerade: Gespiegelt an der $y$-Achse
 
 $z$ ungerade: Gespiegelt am Ursprung $O=(0|0)$
 
-Ist ${\color{green}a>0}$ so sind Parabeln mit geraden Exponenten nach oben geöffnet bzw. Hyperbeln oder ungerade
-Parabeln im Quadranten I und III.
+Ist ${\color{green}a>0}$ (links in der Graphik) so sind Graphen mit
+geraden Exponenten nach oben geöffnet bzw. mit ungeraden Exponenten im
+Quadranten I und III.
 
-Ist ${\color{red}a<0}$ so sind Parabeln mit geraden Exponenten nach unten geöffnet bzw. Hyperbeln oder ungerade
-Parabeln im Quadranten II und IV.
+Ist ${\color{red}a<0}$ (rechts in der Graphik) so sind Graphen mit
+geraden Exponenten nach unten geöffnet bzw. mit ungeraden exponenten
+im Quadranten II und IV.
 
 \bbwCenterGraphic{8cm}{img/potenzFunktionen.png}
 
@@ -653,7 +663,7 @@ Vorgehen
 \item Median, und Quartile einzeichnen
 \item IQR (=QD in der Grafik) := Q3-Q1 rechnen
 \item IQR mit 1.5 multiplizieren
-\item $f_u = Q_3 + 1.5\cdot{}\textrm{IQR}$ und $f_o=Q_1 - 1.5\cdot{}\textrm{IQR}$ (ausradierbar) als
+\item $f_u = Q_1 - 1.5\cdot{}\textrm{IQR}$ und $f_o=Q_3 + 1.5\cdot{}\textrm{IQR}$ (ausradierbar) als
 Ausreißerschwellen fein markieren (gehören nicht zum Boxplot)
 \item Alle Ausreißer mit Ring oder Stern einzeichnen.
 \item Whisker (entfernteste Werte innerhalb der Ausreißerschwellen)
@@ -916,8 +926,21 @@ $$P(F | G) = \frac{|F\cap G|}{|G|} = \frac{30}{55}$$
 $$P(G | F) = \frac{|G \cap F|}{|F|} = \frac{30}{70}$$
 
 
-
-
 \end{multicols}
+
+
+%% Leerseiten für Notizen
+\newpage
+Eigene Notizen...
+
+\mmPapier{22}
+\newpage
+\mmPapier{22}
+
+\vspace{5mm}
+
+Fehler Gefunden? \texttt{philipp.freimann@bbw.ch}
+
+
 
 \end{document}
