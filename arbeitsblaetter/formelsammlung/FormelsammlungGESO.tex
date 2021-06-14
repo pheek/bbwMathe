@@ -8,7 +8,7 @@
 
 %%\usepackage{amssymb} %% für \blacktriangleright
 \usepackage{makecell}
-\renewcommand{\metaHeaderLine}{Formelsammlung GESO (v 0.0.9 2021-06-14 fp)}
+\renewcommand{\metaHeaderLine}{Formelsammlung GESO (v 0.0.10 2021-06-14 fp)}
 \renewcommand{\arbeitsblattTitel}{Formelsammlung}
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
@@ -51,7 +51,7 @@ $$(a+b)\cdot(a-b) = a^2 - b^2$$
 \subsection*{Vertauschte Differenz}
 (-1 ausklammern)
 
-$(b-a)=(-1)\cdot{}(h-b)$
+$(b-a)=(-1)\cdot{}(a-b)$
 
 Beispiel:
 
@@ -70,9 +70,9 @@ Taschenrechner: \tiprobutton{math} 4
 
 \subsection*{(Absolut)betrag einer Zahl}
 
-$|a| = a$ falls $a \ge 0$
+$|7| = 7$
 
-$|a| = (-1)\cdot{}a$ falls $a < 0$
+$|-5| = 5$
 
 \hrulefill
 
@@ -165,7 +165,7 @@ Fall: $n$ \textbf{un}gerade:
  \end{tabular} 
 
 
-\begin{gesetz*}{Potenzen}{}
+\begin{gesetz*}{negative Exponenten}{}
 
 Für Basis $a\ne 0, b\ne 0$ und $r, s\in\mathbb{Q}$ gilt:
 
@@ -208,20 +208,24 @@ $$\log_a(b^x) = x\cdot{}\log_a(b)$$
 $\log(1)=0$     &    $\lg(1000)=3$           &\\
 $\log_a(a) = 1$ & $\lg(10) = 1$ & $\ln(e) = 1$\\
 \end{tabular}
-
+\begin{gesetz*}{Basiswechsel}{}
+$$\log_a(b) = \frac{\lg(b)}{\lg(a)} = \frac{\ln(b)}{\ln(a)}$$
+\end{gesetz*}
 
 \hrulefill
 \section*{Textaufgaben}
 
 \subsection*{Geschwindigkeitsaufgaben}
-\fbox{$\frac{s}{v \cdot{}t}$} (Einheiten kompatibel wählen!)
+\fbox{$s = v\cdot{} t$} (Einheiten kompatibel wählen!)
 
 \subsection*{Leistungsaufgaben}
 Bei $x$ Stunden für die ganze Arbeit:
 
-Bruchteil Arbeit pro h = Leistung
+Bruchteil Arbeit pro Stunde = Leistung
 
 Leistung = $\frac{1 \textrm{ [Arbeit]}}{x \textrm{ [Stunde]}}$
+
+Physik: Leistung = $\frac{1 \textrm{ [Joule]}}{x \textrm{ [Sekunde]}} = [Watt]$
 
 \subsection*{Restaufgaben}
 $$A:B = C \textrm{ Rest } R \Longleftrightarrow{}  C\cdot{}B+R = A$$
@@ -229,7 +233,7 @@ $$A:B = C \textrm{ Rest } R \Longleftrightarrow{}  C\cdot{}B+R = A$$
 \subsection*{Zinseszins}
 \begin{itemize}
 \item $K_0$ = Startkapital; $K_n$ = Endkapital
-\item $p$ = Zinssatz (in \%); $f = \frac{p}{100}$ = Zinsfaktor
+\item $p$ = Zinssatz (in \%); $f = 1+\frac{p}{100}$ = Zinsfaktor
 (Wachstumsfaktor); $p<0$, so ist $f$ der Zerfallsfaktor
 \end{itemize}
 $$K_n = K_0 \cdot{} \left( 1+\frac{p}{100} \right)^n = K_0\cdot{}f^n$$
@@ -266,7 +270,7 @@ $5^x = 100 -x$; verwende \tiprobutton{2nd}\tiprobutton{sin_num-solv} $x\approx{}
 
 Bsp. Nenner darf nicht Null werden:
 
-Bsp.: $$\frac5{x+2}=\frac{7+x}{x-3} \Leftrightarrow{} \mathbb{D}_x=\mathbb{R}\backslash{}\{-3, 2\}$$
+Bsp.: $$\frac5{x+2}=\frac{7+x}{x-3} \Leftrightarrow{} \mathbb{D}_x=\mathbb{R}\backslash{}\{-2, 3\}$$
 \end{definition*}
 
 \begin{rezept*}{}{}
@@ -291,7 +295,7 @@ $$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$
 \textbf{Diskriminante} $D = b^2-4ac$:
 $D>0$: Zwei Lösungen;
 $D=0$: Eine Lösung;
-$D<0$: keine Lösung
+$D<0$: Keine Lösung
 
 
 Taschenrechner \tiprobutton{2nd}\tiprobutton{cos_poly-solv}\\
@@ -323,7 +327,7 @@ oder so:
 $$7^x=105 \Rightarrow$$
 $$ \log(7^x)=\log(105) \Rightarrow$$
 $$x\cdot{}\log(7)=\log(105) \Rightarrow$$
-$$ x=\frac{\log(105)}{\log(7)} = \frac{\lg(105)}{\lg(7)}$$
+$$ x=\frac{\log(105)}{\log(7)}$$
 
 \begin{gesetz*}{Exponentialgleichung}{}
 $$a^x=b \Rightarrow{} x=\log_a(b) = \frac{\lg(b)}{\lg(a)}$$
@@ -349,7 +353,7 @@ Verfahren
 \section*{Funktionen}
 
 Eine Funktion ordnet jeder Zahl aus einem Definitionsbereich
-$\mathbb{D}$ genau eine Zahl aus einem Wertevorrat (=Zielmenge) (meist
+$\mathbb{D}$ \textbf{genau} eine Zahl aus einem Wertevorrat (=Zielmenge) (meist
 $\mathbb{R}$)
 zu. Die \textit{getroffenen} Funktionswerte bilden den Wertebereich
 $\mathbb{W}$ (= Bildmenge).
@@ -457,8 +461,8 @@ $$f(t) = b\cdot{}a^t$$
 $b$ = Anfangswert bei $t_0=0$; $b=f(0)$\\
 \phantom{$b$} = $y$-Achsenabschnitt\\
 $a$ = Vervielfältigungsfaktor ($a\in\mathbb{R}^{+}$)\\\
-$a>0$: Wachstumsrate\\
-$a<0$: Zerfallsrate
+$a>1$: Wachstumsrate\\
+$0<a<1$: Zerfallsrate
 \end{gesetz*}
 
 
@@ -488,11 +492,11 @@ $$30 = 3\cdot{}4^{\frac{t}{5}}$$
 \subsection*{Basis $e$}
 \begin{gesetz*}{Basis $e$}{}
 
-$$c+b\cdot{}a^t = c + b\cdot{}e^{mx} \textrm{ mit } m = \ln(a)$$
+$$c+b\cdot{}a^x = c + b\cdot{}e^{mx} \textrm{ mit } m = \ln(a)$$
 
 bzw.
 
-$$c+b\cdot{}a^\frac{t}\tau = c+b\cdot{}e^{mx} \textrm{ mit } m=\ln(a^\frac1\tau)$$
+$$c+b\cdot{}a^\frac{x}\tau = c+b\cdot{}e^{mx} \textrm{ mit } m=\ln(a^\frac1\tau)$$
 
 \end{gesetz*}
 
@@ -508,7 +512,7 @@ $$t_{2} = \tau\cdot{}\log_a(2)$$
 \begin{gesetz*}{Beschränkter Zerfall}{}
 $$f(t) = c + b\cdot{}a^\frac{t}\tau$$
 $c$: Sättigungsgrenze\\
-$a<1$: Zerfallsrate\\
+$0<a<1$: Zerfallsrate\\
 $b$: Sättigungsdefizit bei $t=0$\\
 $c+b$ = Startwert 
 \end{gesetz*}
@@ -516,7 +520,7 @@ $c+b$ = Startwert
 \begin{gesetz*}{Beschränktes Wachstum}{}
 $$f(t) = c - b\cdot{}a^\frac{t}\tau$$
 $c$: Sättigungsgrenze\\
-$a<0$: Zerfallsrate\\
+$0<a<1$: Zerfallsrate\\
 $b$: Sättigungsdefizit bei $t=0$\\
 $c-b$: Startwert
 \end{gesetz*}
@@ -533,11 +537,11 @@ $b\cdot{}a^\frac{t}\tau$ = Sättigungsdefizit zur Zeit $t$
 \section*{Datenanalyse}
 
 \subsection*{Skalen}
-\bbwCenterGraphic{15cm}{img/FlowchartSkalentyp.pdf}
+\bbwCenterGraphic{15cm}{img/DatenanalyseSkalentypen.eps}
 \vspace{5mm}
 
 
-
+\hrulefill
 \begin{multicols}{2}
 
 \subsection*{Lagemaße}
@@ -584,7 +588,7 @@ zählen hier mit!
 
 \subsection*{Streumaße}
 \subsubsection*{Spannweite}
-Die Spannweite $R$ (Range) ist nichts anderes als das Maximum minus
+Die Spannweite $R$ (Range) ist das Maximum minus
 das Minimum.
 
 \subsubsection*{Interquartilsabstand}
@@ -644,7 +648,7 @@ $\varphi_i = f_i\cdot{}360\degre$ = Zentriwinkel im Kuchendiagramm
 \item Alle Balken sind gleich breit
 \item Alle Balken berühren sich
 \item Die Höhe der Balken wird durch die Häufigkeit der entsprechenden
-Balken festgelegt
+Werte festgelegt
 \item Werte auf Balkengrenzen werden immer rechts mitgezählt
 \end{itemize}
 
@@ -656,7 +660,7 @@ Balken festgelegt
 Vorgehen
 \begin{enumerate}
 \item Daten in TR eingeben \tiprobutton{data}...
-\item ... und mit \tiprobutton{data_stat-reg-distr} auslesen.
+\item ... und mit \tiprobutton{2nd} \tiprobutton{data_stat-reg-distr} auslesen.
 \item Median, und Quartile einzeichnen
 \item IQR (=QD in der Grafik) := Q3-Q1 rechnen
 \item IQR mit 1.5 multiplizieren
@@ -879,7 +883,7 @@ Wahrscheinlichkeit \textbf{genau} $k$ Treffer zu ziehen:
 $$P(X=k) = \frac{ {M \choose k} \cdot {{N-M}  \choose {n-k}} }{{N \choose n}}.$$
 
 
-\subsection*{Kontingenztafel}
+\subsection*{Vierfeldtafeln}
 Vierfeld-Tafeln=Kontingenztafeln mit 4 Feldern.
 
 Man hat zwei Merkmale, A und B. Jedes Merkmal kann nur zwei Werte
