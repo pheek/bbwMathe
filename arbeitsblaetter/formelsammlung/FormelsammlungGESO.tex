@@ -8,7 +8,7 @@
 
 %%\usepackage{amssymb} %% für \blacktriangleright
 \usepackage{makecell}
-\renewcommand{\metaHeaderLine}{Formelsammlung GESO (v 0.0.7 2021-06-14 fp)}
+\renewcommand{\metaHeaderLine}{Formelsammlung GESO (v 0.0.8 2021-06-14 fp)}
 \renewcommand{\arbeitsblattTitel}{Formelsammlung}
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
@@ -58,7 +58,7 @@ Beispiel:
 $$\frac{x}{a-b} +  \frac{y}{b-a} = \frac{x}{a-b} + \frac{-y}{a-b} = \frac{x-y}{a-b}$$
 
 %% Forced column break
-\forceCB
+%%\forceCB
 \subsection*{Summenzeichen}
 $$\sum_{k=1}^n{T(k)} = T(1) + T(2) + ... + T(n)$$
 Beispiel
@@ -94,7 +94,7 @@ Die Zählung der signifikanten Stellen einer Zahl beginnt (von links) mit der er
 Bsp.: 30.896 auf \textbf{vier} sig. Stellen = 30.90\\
 (4. Ziffer stehen lassen, auch wenn = 0)
 
-\forceCB{}%%
+%%\forceCB{}%%
 \subsection*{Wissenschaftliche Notation}
 Für große, aber auch für Zahlen sehr nahe an 0, wird die wissenschaftliche Schreibweise vorgezogen. Dabei steht vor dem Dezimalpunkt immer genau eine Ziffer:
 
@@ -103,6 +103,9 @@ Zahl  & & wissenschaftl. & & TR: \tiprobutton{EE} \\
 1400  &=& $1.4\cdot{}10^3$ &=& 1.4E3\\
 0.004 &=& $4\cdot{}10^{-3}$ &=&4E-3\\
 \end{tabular}
+
+
+\forceCB
 
 \hrulefill
 
@@ -171,18 +174,18 @@ $a^0=1,$ & $a^{-r} = \frac1{a^r},$ & $\left(\frac{a}b\right)^{-r} = \left(\frac{
  \end{tabular}
 \end{gesetz*}
 
-\begin{rezept*}{«Kielholen»}{}{}
+\begin{rezept*}{}{}{}
 Exponenten vertauschen ihr Vorzeichen beim Übertreten des Bruchstrichs:
 $$\frac{a^{-3}b^2}{c^5d^{-6}} = \frac{b^2d^6}{a^3c^5}$$
 \end{rezept*}
 
-\forceCB{}
 \subsection*{$n$-te Wurzel}
 $\sqrt[n]{a} := \left(a\right)^\frac1n$
 \begin{gesetz*}{}{}
 $$a^{\frac{r}s} = \sqrt[s]{a^r} = \left(\sqrt[s]a\right)^r$$
 \end{gesetz*}
 
+\forceCB
 \hrulefill
 \section*{Logarithmen}
 
@@ -290,33 +293,12 @@ $D>0$: Zwei Lösungen;
 $D=0$: Eine Lösung;
 $D<0$: keine Lösung
 
-Wie vorgehen?
 
-\begin{tabular}{|p{44mm}|p{53mm}|p{64mm}|}
-	\hline
-	Spezialfall $b=0$               & $5x^2 = 3$                   & Durch 5 dividieren, dann positive und negative Wurzel ziehen.\\
-	\hline
-	Spezialfall $c=0$               & $3x^2 = 5x$                   & Fallunterscheidung $x$ = 0 und $x \ne 0$\\
-	\hline
-	Bereits faktorisiert       & $(x-4.6 + b)\cdot{}(x+a) = 0$ & Lösungen hier $x_1=4.6-b$ und $x_2 = -a$\\
-	\hline
-	Einfache Zahlen            & $x^2 -2x + 1= 0$           & $a$-$b$-$c$--Formel (Mitternachtsformel) oder faktorisieren $x^2-2x+1=(x-1)^2$ und danach jeden einzelnen Faktor $=0$ setzen.\\
-	\hline
-	Komplizierte Zahlen        & $7.3x^2 - 8x - 3.4 = 0$       & Taschenrechner \tiprobutton{2nd}\tiprobutton{cos_poly-solv}             \\
-	\hline
-	Variable (Parameter)       & $7.3x^2 - cx + 2.6=0$         & $a$-$b$-$c$-Formel (Mitternachtsformel) \\
-	\hline
-	Komplexe Terme im Quadrat  & $3(x-6)^2 - 17(x-6)  = 0$     & Substitution                            \\
-	\hline
-\end{tabular}
+Taschenrechner \tiprobutton{2nd}\tiprobutton{cos_poly-solv}\\
 
-%%\mmPapier{4}
+\hrulefill
 
-%%\newpage
-
-\newpage
 \begin{multicols}{2}
-
 
 \subsection*{Gleichungen mit Potenzen}
 \subsubsection*{Potenzgleichungen}
@@ -362,7 +344,8 @@ Verfahren
 \item Substitution
 \end{itemize}
 
-\hrulefill
+\forceCB
+
 \section*{Funktionen}
 
 Eine Funktion ordnet jeder Zahl aus einem Definitionsbereich
@@ -435,7 +418,7 @@ $y=ax+b$ einsetzen, um $b$ zu finden.
 \textbf{Variante 2}: Gleichungssystem nach $a$ und $b$ auf\/lösen:
 \gleichungZZ{y_A}{a\cdot{}x_A+b}{y_B}{a\cdot{}x_B + b}
 
-\hrulefill
+\forceCB
 
 \section*{Potenzfunktionen}
 Grundform:
@@ -502,6 +485,17 @@ Löse die Exponentialgleichung nach $t$ auf:\\
 $$30 = 3\cdot{}4^{\frac{t}{5}}$$
 \end{itemize}
 
+\subsection*{Basis $e$}
+\begin{gesetz*}{Basis $e$}{}
+
+$$c+b\cdot{}a^t = c + b\cdot{}e^{mx} \textrm{ mit } m = \ln(a)$$
+
+bzw.
+
+$$c+b\cdot{}a^\frac{t}\tau = c+b\cdot{}e^{mx} \textrm{ mit } m=\ln(a^\frac1\tau)$$
+
+\end{gesetz*}
+
 \subsection*{Halbwertszeit}
 $\frac12 \cdot{} b = f(t) = b\cdot{}a^{\frac{t}{\tau}}$
 $$t_{\frac12} = \tau\cdot{}\log_a\left(\frac12\right)$$
@@ -539,7 +533,7 @@ $b\cdot{}a^\frac{t}\tau$ = Sättigungsdefizit zur Zeit $t$
 \section*{Datenanalyse}
 
 \subsection*{Skalen}
-\bbwCenterGraphic{15cm}{allg/daan/img/Datentypen.png}
+\bbwCenterGraphic{15cm}{img/FlowchartSkalentyp.pdf}
 \vspace{5mm}
 
 
@@ -750,8 +744,8 @@ $${n+k-1 \choose k} \textrm { Möglichkeiten}$$
 
 
 
-\subsection*{Überblick}
-\bbwCenterGraphic{15cm}{img/Kombinatorik.png}
+\subsection*{Überblick Auswahlprobleme}
+\bbwCenterGraphic{17cm}{img/Kombinatorik.pdf}
 \hrulefill
 
 
