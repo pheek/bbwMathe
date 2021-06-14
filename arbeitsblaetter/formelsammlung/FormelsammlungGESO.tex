@@ -8,7 +8,7 @@
 
 %%\usepackage{amssymb} %% für \blacktriangleright
 \usepackage{makecell}
-\renewcommand{\metaHeaderLine}{Formelsammlung GESO (v 0.0.10 2021-06-14 fp)}
+\renewcommand{\metaHeaderLine}{Formelsammlung GESO (v 0.0.12 2021-06-14 fp)}
 \renewcommand{\arbeitsblattTitel}{Formelsammlung}
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
@@ -484,7 +484,7 @@ Wert zum Zeitpunkt 25 Tage: Wert in Funktionsterm einsetzen:\\
 $f(25) = 3\cdot{}4^\frac{25}{5}$
 
 \item
-Tage rechnen bei vorgegebenem Wert (z. B. $30m^2$):\\
+Tage rechnen bei vorgegebenem Wert (\zB $30m^2$):\\
 Löse die Exponentialgleichung nach $t$ auf:\\
 $$30 = 3\cdot{}4^{\frac{t}{5}}$$
 \end{itemize}
@@ -558,7 +558,7 @@ Der \textbf{Median} (Zentralwert) ist der Wert in der Mitte der geordneten Daten
 die Anzahl Werte gerade, so wird der Mittelwert der beiden in der
 «mittleren» Werte genommen.
 
-Sympol: $\mediantilde{x} = x_{\textrm{MED}}$
+Symbol: $\mediantilde{x} = x_{\textrm{MED}}$
 \end{definition*}
 
 \subsubsection*{Quartil}
@@ -661,17 +661,17 @@ Vorgehen
 \begin{enumerate}
 \item Daten in TR eingeben \tiprobutton{data}...
 \item ... und mit \tiprobutton{2nd} \tiprobutton{data_stat-reg-distr} auslesen.
-\item Median, und Quartile einzeichnen
-\item IQR (=QD in der Grafik) := Q3-Q1 rechnen
+\item {\color{orange} Median ($\mediantilde{x} = x_{\textrm{MED}}$)}, und Quartile ({\color{blue}$Q_1$},{\color{green}$Q_3$})einzeichnen
+\item IQR := {\color{green}Q3}-{\color{blue}Q1} rechnen
 \item IQR mit 1.5 multiplizieren
-\item $f_u = Q_1 - 1.5\cdot{}\textrm{IQR}$ und $f_o=Q_3 + 1.5\cdot{}\textrm{IQR}$ (ausradierbar) als
-Ausreißerschwellen fein markieren (gehören nicht zum Boxplot)
-\item Alle Ausreißer mit Ring oder Stern einzeichnen.
+\item {\color{red} untere Ausreißerschwelle\\ uAs}$ = Q_1 -
+1.5\cdot{}\textrm{IQR}$\\ und {\color{red} obere Ausreißerschwelle\\ oAs} $=Q_3 + 1.5\cdot{}\textrm{IQR}$\\ (ausradierbar) fein markieren (gehören nicht zum Boxplot)
+\item Alle Ausreißer mit Ring $\circ$ oder Stern $\star$ einzeichnen.
 \item Whisker (entfernteste Werte innerhalb der Ausreißerschwellen)
 einzeichnen.
 \item Boxdekoration horizontale Linien einzeichnen.
 \end{enumerate}
-\bbwCenterGraphic{8cm}{img/boxplot.png}
+\bbwCenterGraphic{8cm}{img/Boxplot.pdf}
 \TRAINER{Bessere Graphik}
 \end{multicols}
 
