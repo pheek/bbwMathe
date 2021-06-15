@@ -8,7 +8,7 @@
 
 %%\usepackage{amssymb} %% für \blacktriangleright
 \usepackage{makecell}
-\renewcommand{\metaHeaderLine}{Formelsammlung GESO (v 0.0.14 2021-06-15 fp)}
+\renewcommand{\metaHeaderLine}{Formelsammlung GESO (v 0.0.15 2021-06-15 fp)}
 \renewcommand{\arbeitsblattTitel}{Formelsammlung}
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
@@ -45,7 +45,9 @@ $\mathbb{R} = \{..., -1, ..., 0, ... \frac12, ..., \sqrt{2}, ..., e, ... \pi, ..
 \begin{gesetz*}{Binomische Formeln}{}
 $$(a+b)^2 = a^2+2ab + b^2$$%%
 $$(a-b)^2=a^2-2ab+b^2$$%%
-$$(a+b)\vphantom{(a+b)^2}\cdot(a-b) = a^2 - b^2$$
+$$(a+b)\cdot(a-b) = a^2 - b^2$$
+Bsp.:
+$$1-x^2 = (1-x)\cdot{}(1+x)$$
 \end{gesetz*}
 
 \subsection*{Vertauschte Differenz}
@@ -89,22 +91,23 @@ Runden auf $4$ Dezimalen: betrachte die nächste Ziffer und runde auf, falls die
 
 Beispiel
 
-$$3.4729\textbf{\color{red}6}44 \approx 3.4730$$
-$$0.00314\approx 0.0031$$
+$$3.\textbf{\color{ForestGreen}4729}\textbf{\color{red}6}44 \approx 3.\textbf{\color{ForestGreen}4730}$$
+$$0.\textbf{\color{ForestGreen}0031}\textbf{\color{red}4}\approx 0.\textbf{\color{ForestGreen}0031}$$
 (Alle vier Dezimalen sind anzugeben.)
 
 \subsection*{Signifikante Stellen}
-Führende Nullen zählen nicht, nachfolgende Nullen zählen:
+Führende Nullen zählen nicht, nachfolgende Nullen
+zählen. Bsp. \textbf{\color{ForestGreen}drei} signifikante Stellen:
 
-248 cm = 2.48 m = 0.00248 km
+\textbf{\color{ForestGreen}208} cm = \textbf{\color{ForestGreen}2.08} m = 0.00\textbf{\color{ForestGreen}208} km
 
-Bsp.: \textbf{Vier} signifikante Stellen:
+Bsp.: Runden auf \textbf{\color{ForestGreen}vier} signifikante Stellen:
 
-24866 cm $\approx$ \textbf{248.6} cm
+\textbf{\color{ForestGreen}208.6}\textbf{\color{red}6} cm $\approx$ \textbf{\color{ForestGreen}208.7} cm
 
-0.0020866 km $\approx$ 0.00\textbf{2087} km
+0.00\textbf{\color{ForestGreen}2086}\textbf{\color{red}6} km $\approx$ 0.00\textbf{\color{ForestGreen}2087} km
 
-30.896 = \textbf{30.90}
+\textbf{\color{ForestGreen}30.89}\textbf{\color{red}6} = \textbf{\color{ForestGreen}30.90}
 
 (4. Ziffer stehen lassen, auch wenn = 0)
 
@@ -233,7 +236,7 @@ $$\log_a(b) = \frac{\lg(b)}{\lg(a)} = \frac{\ln(b)}{\ln(a)}$$
 
 \hrulefill
 \section*{Textaufgaben}
-
+\TRAINER{Meiner Meinung nach erst bei Gleichungen...}
 \subsection*{Geschwindigkeitsaufgaben}
 \fbox{$s = v\cdot{} t$} (Einheiten kompatibel wählen!)
 
@@ -248,7 +251,7 @@ Physik: Leistung = $\frac{\textrm{[Joule]}}{\textrm{[Sekunde]}} = [\textrm{Watt}
 
 \subsection*{Restaufgaben}
 $$A:B = C \textrm{ Rest } R \Longleftrightarrow{}  C\cdot{}B+R = A$$
-\TRAINER{Noch stehen gelassen, da im Kompendium oder in alter Prüfung gesichtet.}
+\TRAINER{Rest: Noch stehen gelassen, da im Kompendium oder in alter Prüfung gesichtet.}
 
 
 \subsection*{Zinseszins}
@@ -267,7 +270,7 @@ $$p = -3\% \Longleftrightarrow{}  a = 0.97 $$
 \section*{Gleichungen}
 
 \subsection*{Lineare Gleichungen}
-\TRAINER{Wollne wir so viele Beispile???}
+\TRAINER{Wollen wir so viele Beispiele???}
 $$5x-3a = 2cx-7b$$
 1. Alle $x$ nach links, übriges rechts:
 $$5x - 2cx = 3a-7b$$
