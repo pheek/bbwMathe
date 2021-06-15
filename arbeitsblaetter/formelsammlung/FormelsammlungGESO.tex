@@ -8,7 +8,7 @@
 
 %%\usepackage{amssymb} %% für \blacktriangleright
 \usepackage{makecell}
-\renewcommand{\metaHeaderLine}{Formelsammlung GESO (v 0.0.13 2021-06-14 fp)}
+\renewcommand{\metaHeaderLine}{Formelsammlung GESO (v 0.0.14 2021-06-15 fp)}
 \renewcommand{\arbeitsblattTitel}{Formelsammlung}
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
@@ -43,13 +43,13 @@ $\mathbb{R} = \{..., -1, ..., 0, ... \frac12, ..., \sqrt{2}, ..., e, ... \pi, ..
 \section*{Algebra}
 
 \begin{gesetz*}{Binomische Formeln}{}
-$$(a+b)^2 = a^2+2ab + b^2$$
-$$(a-b)^2=a^2-2ab+b^2$$
-$$(a+b)\cdot(a-b) = a^2 - b^2$$
+$$(a+b)^2 = a^2+2ab + b^2$$%%
+$$(a-b)^2=a^2-2ab+b^2$$%%
+$$(a+b)\vphantom{(a+b)^2}\cdot(a-b) = a^2 - b^2$$
 \end{gesetz*}
 
 \subsection*{Vertauschte Differenz}
-(-1 ausklammern)
+($-1$ ausklammern)
 
 $(b-a)=(-1)\cdot{}(a-b)$
 
@@ -85,30 +85,37 @@ $$-3(-7) = +21$$
 
 \section*{Dezimalzahlen}
 \subsection*{Runden}
-Dezimalen sind die Stellen nach dem Komma.
-Runden auf $n$ Dezimalen: betrachte die nächste Ziffer und runde auf, wenn diese $\ge 5$.
+Runden auf $4$ Dezimalen: betrachte die nächste Ziffer und runde auf, falls diese {\color{red}Ziffer} $\ge 5$.
 
 Beispiel
 
-3.4729\textbf{6}44 auf vier Dezimalen, so ist die 5. Dezimale (hier die Ziffer 6) zu beachten:
-
-$$3.4729\textbf{6}44 \approx 3.4730$$
+$$3.4729\textbf{\color{red}6}44 \approx 3.4730$$
+$$0.00314\approx 0.0031$$
 (Alle vier Dezimalen sind anzugeben.)
 
 \subsection*{Signifikante Stellen}
-Die Zählung der signifikanten Stellen einer Zahl beginnt (von links) mit der ersten von Null verschiedenen Ziffer. Ab hier zählen alle Ziffern, auch die 0, bis zur verlangten Rundungsstelle.
+Führende Nullen zählen nicht, nachfolgende Nullen zählen:
 
-Bsp.: 30.896 auf \textbf{vier} sig. Stellen = 30.90\\
+248 cm = 2.48 m = 0.00248 km
+
+Bsp.: \textbf{Vier} signifikante Stellen:
+
+24866 cm $\approx$ \textbf{248.6} cm
+
+0.0020866 km $\approx$ 0.00\textbf{2087} km
+
+30.896 = \textbf{30.90}
+
 (4. Ziffer stehen lassen, auch wenn = 0)
 
 %%\forceCB{}%%
 \subsection*{Wissenschaftliche Notation}
-Für große, aber auch für Zahlen sehr nahe an 0, wird die wissenschaftliche Schreibweise vorgezogen. Dabei steht vor dem Dezimalpunkt immer genau eine Ziffer:
+Für große, aber auch für Zahlen sehr nahe an 0, wird die wissenschaftliche Schreibweise vorgezogen. Dabei steht vor dem Dezimalpunkt immer \textbf{\color{blue}genau eine Ziffer}:
 
 \begin{tabular}{lcccr}
 Zahl  & & wissenschaftl. & & TR: \tiprobutton{EE} \\
-1400  &=& $1.4\cdot{}10^3$ &=& 1.4E3\\
-0.004 &=& $4\cdot{}10^{-3}$ &=&4E-3\\
+3400  &=& $\textbf{\color{blue}3}.4\cdot{}10^3$ &=& {\textbf{\color{blue}3}}.4E3\\
+0.004 &=& $\textbf{\color{blue}4}\cdot{}10^{-3}$ &=&\textbf{\color{blue}4}E-3\\
 \end{tabular}
 
 
@@ -118,6 +125,8 @@ Zahl  & & wissenschaftl. & & TR: \tiprobutton{EE} \\
 
 \section*{Bruchterme}
 \subsection*{Faktorisieren}
+
+
 \begin{rezept*}{}{}
 \begin{enumerate}
 \item gemeinsame Faktoren ausklammern
@@ -126,6 +135,7 @@ $$\frac{ax+ay}{bx+by} =\frac{a(x+y)}{b(x+y)} = \frac{a}b$$
 $$3(7r+6) - b(7r+6) = (3-b)(7r+6)$$
 \item Binomische Formeln
 $$x^2-1 = (x-1)(x+1)$$
+$$4b^2-9c^2=(2b+3c)(2b-3c)$$
 \item Zweiklammeransatz
 $$x^2+2x-15 = (x+5)(x-3)$$
 Die Faktoren für den Zweiklammeransatz können mit dem Taschenrechner
@@ -154,7 +164,7 @@ $\left(a^m\right)^n = a^{m\cdot{}n}$ &\\
 \subsection*{gleicher Exponent}
 
 \begin{tabular}{cc}
-$a^n\cdot{}b^n = (ab)^n,$ & $\frac{a^n}{b^n} =\left(\frac{a}b\right)^n $\\
+$a^n\cdot{}b^n = (a\cdot{}b)^n,$ & $\frac{a^n}{b^n} =\left(\frac{a}b\right)^n $\\
  \end{tabular}
  
 
@@ -174,10 +184,10 @@ Fall: $n$ \textbf{un}gerade:
 
 \begin{gesetz*}{negative Exponenten}{}
 
-Für Basis $a\ne 0, b\ne 0$ und $r, s\in\mathbb{Q}$ gilt:
+Für Basis $a\ne 0, b\ne 0$ und $m \in\mathbb{Q}$ gilt:
 
 \begin{tabular}{ccc}
-$a^0=1,$ & $a^{-r} = \frac1{a^r},$ & $\left(\frac{a}b\right)^{-r} = \left(\frac{b}a\right)^r$ \\
+$a^0=1,$ & $a^{-m} = \frac1{a^m},$ & $\left(\frac{a}b\right)^{-m} = \left(\frac{b}a\right)^m$ \\
  \end{tabular}
 \end{gesetz*}
 
@@ -189,7 +199,7 @@ $$\frac{a^{-3}b^2}{c^5d^{-6}} = \frac{b^2d^6}{a^3c^5}$$
 \subsection*{$n$-te Wurzel}
 $\sqrt[n]{a} := \left(a\right)^\frac1n$
 \begin{gesetz*}{}{}
-$$a^{\frac{r}s} = \sqrt[s]{a^r} = \left(\sqrt[s]a\right)^r$$
+$$a^{\frac{m}n} = \sqrt[n]{a^m} = \left(\sqrt[n]a\right)^m$$
 \end{gesetz*}
 
 \forceCB
@@ -207,13 +217,15 @@ $a$ = Basis, $z$ = Numerus (stets > 0), $x$ = Logarithmus (= Exponent in der Pot
 Logarithmen sind Exponenten zu einer fest gewählten Basis.
 
 \begin{gesetz*}{}{}
+$$\log_a(u\cdot v) = \log_a(u) + \log_a(v)$$
+$$\log_a(u : v) = \log_a(u) - \log_a(v)$$
 $$\log_a(b^x) = x\cdot{}\log_a(b)$$
 \end{gesetz*}
 
 \subsection*{Spezielle Werte}
 \begin{tabular}{ccc}
-$\log(1)=0$     &    $\lg(1000)=3$           &\\
-$\log_a(a) = 1$ & $\lg(10) = 1$ & $\ln(e) = 1$\\
+$\log(1)=0$     &    $\lg(10) = 1$ & $\lg(1000)=3$           \\
+$\lg(0.01)=-2$ & $\log_a(a) = 1$   & $\ln(e) = 1$\\
 \end{tabular}
 \begin{gesetz*}{Basiswechsel}{}
 $$\log_a(b) = \frac{\lg(b)}{\lg(a)} = \frac{\ln(b)}{\ln(a)}$$
@@ -236,30 +248,33 @@ Physik: Leistung = $\frac{\textrm{[Joule]}}{\textrm{[Sekunde]}} = [\textrm{Watt}
 
 \subsection*{Restaufgaben}
 $$A:B = C \textrm{ Rest } R \Longleftrightarrow{}  C\cdot{}B+R = A$$
+\TRAINER{Noch stehen gelassen, da im Kompendium oder in alter Prüfung gesichtet.}
+
 
 \subsection*{Zinseszins}
 \begin{itemize}
 \item $K_0$ = Startkapital; $K_n$ = Endkapital
-\item $p$ = Zinssatz (in \%); $f = 1+\frac{p}{100}$ = Zinsfaktor
-(Wachstumsfaktor); $p<0$, so ist $f$ der Zerfallsfaktor
+\item $p$ = Zinssatz (in \%); $a = 1+\frac{p}{100}$ = Zinsfaktor
+(Wachstumsfaktor); $p<0$, so ist $a$ der Zerfallsfaktor
 \end{itemize}
-$$K_n = K_0 \cdot{} \left( 1+\frac{p}{100} \right)^n = K_0\cdot{}f^n$$
+$$K_n = K_0 \cdot{} \left( 1+\frac{p}{100} \right)^n = K_0\cdot{}a^n$$
 
 \subsubsection*{Beispiele}
-$$p = 2.5\% \Longleftrightarrow{} f = 1.025$$
-$$p = -3\% \Longleftrightarrow{} f = 0.97$$
+$$p = 2.5\% \Longleftrightarrow{} a = 1.025$$
+$$p = -3\% \Longleftrightarrow{}  a = 0.97 $$
 
 \hrulefill
 \section*{Gleichungen}
 
 \subsection*{Lineare Gleichungen}
+\TRAINER{Wollne wir so viele Beispile???}
 $$5x-3a = 2cx-7b$$
 1. Alle $x$ nach links, übriges rechts:
 $$5x - 2cx = 3a-7b$$
-2. $x$ ausklammern
-$$x\cdot{}(5-2c) = 3a-7b$$
+2. $x$ \textbf{\color{red}ausklammern}
+$$x\cdot{}{\color{red}(5-2c)} = 3a-7b$$
 3. Durch Klammer teilen
-$$x = \frac{3a-7b}{5-2c}$$
+$$x = \frac{3a-7b}{{\color{red}5-2c}}$$
 
 
 \subsection*{num-solv}
@@ -271,7 +286,7 @@ $5^x = 100 -x$; verwende \tiprobutton{2nd}\tiprobutton{sin_num-solv} $x\approx{}
 
 \subsection*{Bruchgleichungen}
 
-\begin{definition*}{Definitinosbereich}{}
+\begin{definition*}{}{}
 
 \textbf{Definitionsbereich} $\mathbb{D}$: welche Werte dürfen in einen Term eingesetzt werden
 
@@ -325,12 +340,17 @@ $$ 4=3x \Rightarrow x=\frac43$$
 
 \textbf{Fall 2} Logarithmen. Bsp.:
 
-$$7^x=105 \Rightarrow x=\log_7(105)$$
-oder so:
-$$7^x=105 \Rightarrow$$
-$$ \log(7^x)=\log(105) \Rightarrow$$
-$$x\cdot{}\log(7)=\log(105) \Rightarrow$$
-$$ x=\frac{\log(105)}{\log(7)}$$
+$$5\cdot{}7^x=105 \Leftrightarrow 7^x=21 \Rightarrow x=\log_7(21)$$
+oder so (mit Zehnerlogarithmus $(\lg)$):
+$$5\cdot{}7^x=105 \Rightarrow$$
+$$7^x=21 \Rightarrow$$
+$$ \lg(7^x)=\lg(21) \Rightarrow$$
+$$x\cdot{}\lg(7)=\lg(21) \Rightarrow$$
+$$ x=\frac{\lg(21)}{\lg(7)}$$
+
+\begin{rezept}{Taschenrechner}{}
+$\lg$ auf Taschenrechner: «\texttt{log(}» mit der \tiprobutton{ln_log}-Taste (2$\times$ drücken)
+\end{rezept}
 
 \begin{gesetz*}{Exponentialgleichung}{}
 $$a^x=b \Rightarrow{} x=\log_a(b) = \frac{\lg(b)}{\lg(a)}$$
@@ -348,12 +368,20 @@ Verfahren
 \item Additionsverfahren
 \item Gleichsetzungsverfahren
 \item Graphische Lösung mit zwei Geradengleichungen
-\item Substitution
+\item Substitution:
 \end{itemize}
+
+\subsection*{Substitution}
+für Bruchgleichungssysteme:
+
+\gleichungZZ{\frac1{x+1} + \frac3{y-2}}{66}{\frac2{x+1} + \frac5{y-2}}{16}
+Substituiere $a:=\frac1{x+1}$ und $b:=\frac1{y-2}$:
+\gleichungZZ{a + 3b}{66}{2a + 5b}{16}
 
 \forceCB
 
 \section*{Funktionen}
+\TRAINER{Brauchen wir diese Definition???}
 
 Eine Funktion ordnet jeder Zahl aus einem Definitionsbereich
 $\mathbb{D}$ \textbf{genau} eine Zahl aus einem Wertevorrat (=Zielmenge) (meist
@@ -389,15 +417,8 @@ Also $y=7\cdot{}0 + 4 = 4$. Somit liegt der Schnittpunkt bei $(0|4)$.
 \subsection*{Schnittpunkt zweier Geraden}
 Gegeben: $g: y=ax+b$ und $h: y=cx+d$.
 
-Gleichsetzen:
+Gleichsetzen: $ax+b = cx+d$
 
-\gleichungZZ{y}{ax+b}{y}{cx+d}
-Finde $x_S$ des Schnittpunktes $S=(x_S|y_S)$
-$$ax+b = cx+d$$
-$$x_S = \frac{d-b}{a-c}$$
-
-Danach $y_S$ durch Einsetzen in eine der Gleichungen:
-$$y_S = a\cdot{}x_S + b$$
 
 \subsection*{Mittelpunkt $M$ einer Strecke $AB$}
 Gegeben $A=(x_A|y_A)$ und $B=(x_B|y_B)$
@@ -480,17 +501,6 @@ sich alle fünf Tage:\\
 $b=3$, $a=4$, $\tau=5$
 $$f(t)= 3\cdot{}4^\frac{t}{5}$$
 
-\subsubsection*{Werte rechnen}
-\begin{itemize}
-\item
-Wert zum Zeitpunkt 25 Tage: Wert in Funktionsterm einsetzen:\\
-$f(25) = 3\cdot{}4^\frac{25}{5}$
-
-\item
-Tage rechnen bei vorgegebenem Wert (\zB $30m^2$):\\
-Löse die Exponentialgleichung nach $t$ auf:\\
-$$30 = 3\cdot{}4^{\frac{t}{5}}$$
-\end{itemize}
 
 \subsection*{Basis $e$}
 \begin{gesetz*}{Basis $e$}{}
@@ -540,7 +550,9 @@ $b\cdot{}a^\frac{t}\tau$ = Sättigungsdefizit zur Zeit $t$
 \section*{Datenanalyse}
 
 \subsection*{Skalen}
-\bbwCenterGraphic{15cm}{img/DatenanalyseSkalentypen.eps}
+\bbwCenterGraphic{15cm}{img/Skalentyp.pdf}
+\TRAINER{Mir fehlt hier noch das Beisipiel «Anzahl» bei Verhältnsisskala.}
+%%\bbwCenterGraphic{15cm}{img/DatenanalyseSkalentypen.eps}
 \TRAINER{Stetig/Diskret?}
 \TRAINER{Mögliche Diagramm-Arten?}
 \vspace{5mm}
@@ -550,11 +562,11 @@ $b\cdot{}a^\frac{t}\tau$ = Sättigungsdefizit zur Zeit $t$
 \begin{multicols}{2}
 
 \subsection*{Lagemaße}
-\subsubsection*{Durchschnitt}
-= Mittelwert = arithmetisches Mittel
+\subsubsection*{Mittelwert}
+(= Durchschnitt = arithmetisches Mittel)
 
 \begin{definition*}{Mittelwert}{}
-$$\overline{x} = \frac{x_1 + x_2 + x_3 + ... + x_n}{n}$$
+$$\overline{x} = \frac{x_1 + x_2 + x_3 + ... + x_n}{n}= \frac{\sum_{k=1}^nx_n}n$$
 \end{definition*}
 
 \subsubsection*{Median}
@@ -602,12 +614,12 @@ Quartilsdifferenz \textbf{QD} oder
 englisch \textit{Interquartil-range} = \textbf{IQR} bezeichnet.
 
 \subsubsection*{Standardabweichung}
-Mit $\sigma$ bzw. $S$ wird die Standardabweichung bezeichnet. Sie
+Mit $\sigma$ bzw. $s$ wird die Standardabweichung bezeichnet. Sie
 zeigt die Wendepunkte der Normalverteilung an.
 
 $\sigma$ = Standardabweichung der Grundgesamtheit
 
-$S$ = Standardabweichung einer gemessenen Stichprobe
+$s$ = Standardabweichung einer gemessenen Stichprobe \TRAINER{Taschenrechner großes S}
 
 Die Standardabweichung wird auch mit dem Taschenrechner
 unter \tiprobutton{data_stat-reg-distr} gefunden.
@@ -645,7 +657,7 @@ $\varphi_i = f_i\cdot{}360\degre$ = Zentriwinkel im Kuchendiagramm
 
 
 \subsubsection*{Histogramm}
-\bbwCenterGraphic{8cm}{img/histogramm.png}
+\bbwCenterGraphic{8cm}{img/Histogramm.pdf}
 
 \TRAINER{Bessere Grafik!!!}
 
@@ -657,9 +669,6 @@ Werte festgelegt
 \item Werte auf Balkengrenzen werden immer rechts mitgezählt
 \end{itemize}
 
-\subsubsection*{Streudiagramm}
-\bbwCenterGraphic{8cm}{img/streudiagramm.png}
-\TRAINER{Lernziel?}
 
 \subsubsection*{Boxplot}
 Vorgehen
@@ -679,13 +688,7 @@ einzeichnen.
 \end{enumerate}
 \bbwCenterGraphic{8cm}{img/Boxplot.pdf}
 
-\end{multicols}
 
-\mmPapier{4}
-
-\newpage
-
-\begin{multicols}{2}
 \section*{Stochastik}
 
 \subsection*{Kombinatorik}
@@ -694,6 +697,8 @@ einzeichnen.
 Hat eine zweistufige Situation zunächst $k_1$ Möglichkeiten, gefolgt
 von $k_2$ Möglichkeiten, so hat man insgesamt $k_1\cdot{}k_2$
 Möglichkeiten. Dies ist auf beliebig viele Stufen verallgemeinerbar.
+
+\TRAINER{Christian: Besipiel T-Shirts? Was war damit gemeint?}
 
 \subsubsection*{Permutationen (Sitzordnungen)}
 
@@ -706,53 +711,6 @@ $$n! = n\cdot{}(n-1)\cdot{}(n-2)\cdot{}(n-3)\cdot{} ... \cdot{}2\cdot{}1$$
 Bei Null Elementen gibt es nur eine Variation: $0! = 1$
 
 
-\subsubsection*{Variation mit Wiederholung}
-Variation = Reihenfolge wesentlich
-
-Mit Wiederholung = mit Zurücklegen
-
-Gegeben: $n$ Elemente und $k$-malige Auswahl
-(\zB Zahlenschloss)
-
-Total $n^k$ Möglichkeiten
-
-\subsubsection*{Variation ohne Wiederholung}
-$k$ Kugeln aus einer Urne mit $n$ Kugeln ziehen (ohne Zurücklegen)
-
-Total $\frac{n!}{(n-k)!}$ Möglichkeiten. Taschenrechner: \texttt{nPr}. 
-
-\subsubsection*{Kombination ohne Wiederholung}
-Kombination = Reihenfolgen \textbf{nicht} wesentlich
-
-Beispiele:
-
-\begin{itemize}
-\item Aus $n$ Kästchen $k$ Kästchen ankreuzen
-\item Eine Delegation von $k$ Personen aus einer Klasse von $n$
-Personen wählen.
-\item $k$ Elemente aus $n$ unterscheidbaren Elementen wählen und diese
-auf $k$ ununterscheidbare Plätze verteilen.
-\item $k$ Kugeln aus einer Urne mit $n$ unterscheidbaren Kugeln
-auswählen; die Reihenfolge der Auswahl spielt keine Rolle.
-\end{itemize}
-
-Wähle $k$ Elemente aus $n$ Elementen ohne Zurücklegen und ohne
-Beachten der Reihenfolge:
-
- ${n\choose k} = \frac{n!}{k!\cdot{}(n-k)!}$ Möglichkeiten
-
-Taschenrechner: \textbf{nCr}
-
-\subsubsection*{Kombination mit Wiederholung}
-Werden $k$ Elemente gewählt und die Reihenfolge ist nicht wesentlich
-(Kombination) und dennoch dürfen die Elemente mehrfach gewählt werden
-(mit Wiederholung / mit Zurücklegen), so gibt es
-
-$${n+k-1 \choose k} \textrm { Möglichkeiten}$$ 
-
-\TRAINER{Ist das ein Lernziel?}
-
-
 \end{multicols}
 
 
@@ -760,7 +718,9 @@ $${n+k-1 \choose k} \textrm { Möglichkeiten}$$
 
 \subsection*{Überblick Auswahlprobleme}
 \bbwCenterGraphic{17cm}{img/Kombinatorik.pdf}
+
 \hrulefill
+
 
 
 \begin{multicols}{2}
@@ -805,8 +765,6 @@ gilt:
 $$P(A\textrm{ «oder» }B) = P(A\cup B) = P(A) + P(B)$$
 
 
-\newpage
-
 \subsubsection*{Baumdiagramme}
 
 \textbf{Pfadregel}:
@@ -829,7 +787,7 @@ Endergebnisse).
 
 \subsection*{Laplace-Wahrscheinlichkeit}
 Sind alle möglichen Ergebnisse eines Zufallsversuchs gleich
-wahrscheinlich, so ist die Wahrscheinlichkeit $P(E)$ für das Ereignis
+wahrscheinlich (fairer Würfel), so ist die Wahrscheinlichkeit $P(E)$ für das Ereignis
 $E$ wie folgt zu berechnen:
 
 \begin{gesetz*}{}{}
@@ -877,16 +835,16 @@ $p$ = Wahrscheinlichkeit des Treffers\\
 
 \forceCB
 \subsection*{Hypergeometrische Verteilung}
-Gegeben:
+Gegeben Kugeln in einer Urne:
 \begin{itemize}
-\item $N$ Elementen (Kugeln),
-\item $M$ möglichen Treffern,
-\item $n$ gezogenen Elementen (Kugeln) und 
-\item $k$ gewünschten Treffern
+\item $N$ mögliche Nieten
+\item $T$ mögliche Treffer
+\item $t$ gewünschte Treffer
+\item $n$ «gewünschte» Nieten ($n$+$t$ = gezogene Elemente)
 \end{itemize}
-Wahrscheinlichkeit \textbf{genau} $k$ Treffer zu ziehen:
+Wahrscheinlichkeit \textbf{genau} $t$ Treffer zu ziehen:
 
-$$P(X=k) = \frac{ {M \choose k} \cdot {{N-M}  \choose {n-k}} }{{N \choose n}}.$$
+$$P(X=k) = \frac{ {T \choose t} \cdot {N  \choose n} }{{T+N \choose t+n}}.$$
 
 
 \subsection*{Vierfeldtafeln}
@@ -942,6 +900,8 @@ $$P(G | F) = \frac{|G \cap F|}{|F|} = \frac{30}{70}$$
 Eigene Notizen...
 
 \mmPapier{22}
+\newpage
+\mmPapier{24}
 \newpage
 \mmPapier{22}
 
