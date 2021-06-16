@@ -2,17 +2,32 @@
 %% Meta: Formelsammlung GESO BBW
 %%
 
+
+
 \input{bbwSeite}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%\usepackage{amssymb} %% für \blacktriangleright
 \usepackage{makecell}
-\renewcommand{\metaHeaderLine}{Formelsammlung (v 0.0.18 2021-06-16 fp)}
+\renewcommand{\metaHeaderLine}{Formelsammlung (v 0.0.19 2021-06-16 fp)}
 \renewcommand{\arbeitsblattTitel}{Formelsammlung GeSo}
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
 \titlespacing*{\subsection}{0pt}{0.1\baselineskip}{0.1\baselineskip}
+
+
+
+%%% MODERN:
+\renewcommand{\rmdefault}{phv} % Arial
+\renewcommand{\sfdefault}{phv} % Arial
+\definecolor{fsgray}{HTML}{eeeeee}
+\renewcommand{\rezeptFarbe}{fsgray}
+%%\renewcommand{\definitionFarbe}{fsgray}
+\renewcommand{\gesetzFarbe}{fsgray}
+\renewcommand{\beispielFarbe}{fsgray}
+\renewcommand{\bemerkungFarbe}{fsgray}
+%%% END MODERN
 
 
 %% Benutze
@@ -144,8 +159,8 @@ $$4b^2-9c^2=(2b+3c)(2b-3c)$$
 \item Zweiklammeransatz
 $$x^2+2x-15 = (x+5)(x-3)$$
 Die Faktoren für den Zweiklammeransatz können mit dem Taschenrechner
-gefunden werden: a) \texttt{poly-solv} \tiprobutton{cos_poly-solv}
-oder b) \texttt{PFactor} \tiprobutton{math}\tiprobutton{4}
+gefunden werden:\\ a) \texttt{poly-solv} \tiprobutton{cos_poly-solv}
+oder\\ b) \texttt{PFactor} \tiprobutton{math}\tiprobutton{4}
 \end{enumerate}
 \end{rezept*}
 

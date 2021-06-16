@@ -158,6 +158,16 @@ z.\,B.
 
 %%%%%%%%%%%%%%%%%%%%%% B B W - M a t h e   F a r b c o d e s  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
 
+\newcommand{\rezeptFarbe}{red}
+\newcommand{\definitionFarbe}{yellow}
+\newcommand{\gesetzFarbe}{green}
+\newcommand{\beispielFarbe}{orange}
+\newcommand{\bemerkungFarbe}{orange}
+
+%% Falls gewünscht übersteuren
+%  \definecolor{xyz}{HTML}{eeff66}
+%  \renewcommand{\beispielFarbe}{xyz}
+%
 
 
 %% Theorem-Styles
@@ -171,13 +181,14 @@ z.\,B.
    }{#4}}
 
 
+
 %% Farben für rezept, definition und gesetz von Marthale übernommen.
 %% Verwendung mit * unterbindet die Nummerierung \begin{gesetz*}{Blah}{xy} ...\end {gesetz*}
-\theoremlayoutdefinition{rezept}{Rezept}{red}{R}
-\theoremlayoutdefinition{definition}{Definition}{yellow}{D}
-\theoremlayoutdefinition{gesetz}{Gesetz}{green}{G}
-\theoremlayoutdefinition{beispiel}{Beispiel}{orange}{B}
-\theoremlayoutdefinition{bemerkung}{Bemerkung}{orange}{M}
+\theoremlayoutdefinition{rezept}{Rezept}{\rezeptFarbe}{R}
+\theoremlayoutdefinition{definition}{Definition}{\definitionFarbe}{D}
+\theoremlayoutdefinition{gesetz}{Gesetz}{\gesetzFarbe}{G}%% was green
+\theoremlayoutdefinition{beispiel}{Beispiel}{\beispielFarbe}{B}
+\theoremlayoutdefinition{bemerkung}{Bemerkung}{\bemerkungFarbe}{M}
 
 
 %% AadB = Aufgaben aus dem Buch
