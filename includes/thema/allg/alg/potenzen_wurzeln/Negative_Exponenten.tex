@@ -41,9 +41,36 @@ Begründung:
 Ganz analog gilt:
 
 \begin{gesetz}{}{}
-$a^{n} = \frac{1}{a^{-n}} = \left(\frac{1}{a}\right)^{-n}$
+$\frac{1}{a^{-n}} = \left(\frac{1}{a}\right)^{-n}=a^n$
 \end{gesetz}
-\TRAINER{Begründung: Setze für $a$ den Kehrwert $\frac1a$ ein.}
+Begründung:
+\TNT{4}{
+\GESO{Beispiel. Nach Definition gilt:
+
+$$\left(\frac1{10}\right)^{-3}  = \frac1{\left(\frac1{10}\right)^3}  = \frac1{10^{-3}} = \frac1{0.001} = 1000 = 10^3$$
+
+\vspace{2cm}
+}%% end GESO
+\TALS{
+Es gilt für alle $a$ (nach Definition):
+$$a^{-n} = \left(\frac1a\right)^n$$
+Somit gilt das auch anstelle von $a$ für $\frac1b$:
+
+$$\left(\frac1b\right)^{-n} = \left(\frac1{\frac1b}\right)^n = b^n$$
+}%% END TALS
+}%% END TNT
+
+
+Rechenbeispiel:
+
+Wurm «Wurli» schaft 3 cm pro Sekunde (= $3 \cdot{} 10^-2 $ m pro Sekunde). Wie lange braucht «Wurli» für 12 m?
+\TNT{2.4}{
+$$t = \frac{s}v = \frac{12[ \textrm{m}]}{3 \frac{[\textrm{cm}]}{[\textrm{s}]}} =  \frac{4[ \textrm{m}]}{1 \frac{[\textrm{cm}]}{[\textrm{s}]}} =
+ \frac{4[ \textrm{m}]}{10^{-2}\frac{[\textrm{m}]}{[\textrm{s}]}} = 4\cdot{} 10^2 [\textrm{s}] = 400 [\textrm{s}]\approx 6-7 Min.$$
+}%% END TNT
+
+
+
 
 Und ebenso für beliebige Brüche:
 
@@ -117,4 +144,12 @@ TR: 103. c) 106. h)}
   38. c) e), 41. e), 43. c), 44. d) e) f) h) i)}
 
 Optional: \GESOAadB{72ff}{51. (Koch)}
+
+
+\begin{rezept*}{«Kielholen»}{}{}
+Exponenten vertauschen ihr Vorzeichen beim Übertreten des Bruchstrichs:
+$$\frac{a^{-3}b^2}{c^5d^{-6}} = \frac{b^2d^6}{a^3c^5}$$
+\end{rezept*}
+
+
 \newpage
