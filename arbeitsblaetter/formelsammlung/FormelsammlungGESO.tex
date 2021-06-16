@@ -8,8 +8,8 @@
 
 %%\usepackage{amssymb} %% für \blacktriangleright
 \usepackage{makecell}
-\renewcommand{\metaHeaderLine}{Formelsammlung GESO (v 0.0.16 2021-06-16 fp)}
-\renewcommand{\arbeitsblattTitel}{Formelsammlung}
+\renewcommand{\metaHeaderLine}{Formelsammlung (v 0.0.18 2021-06-16 fp)}
+\renewcommand{\arbeitsblattTitel}{Formelsammlung GeSo}
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
 \titlespacing*{\subsection}{0pt}{0.1\baselineskip}{0.1\baselineskip}
@@ -25,6 +25,13 @@
 \arbeitsblattHeader{}
 
 \begin{multicols}{2}%%
+
+\TRAINER{Generelle Fragen:\\
+Fehlen Lernziele?\\
+Sind Lernziele zu viel?\\
+Sind Beispiele zu viel/zu wenig?\\
+Hat es genügend Platz für die SuS (Schülerinnen und Schüler) für weitere Notizen/Beispiele/Rezepte/Vorgehen?\\
+}
 
 \section*{Zahlmengen}
 \begin{definition*}{}{}
@@ -92,7 +99,7 @@ Runden auf $4$ Dezimalen: betrachte die nächste Ziffer und runde auf, falls die
 Beispiel
 
 $$3.\textbf{\color{ForestGreen}4729}\textbf{\color{red}6}44 \approx 3.\textbf{\color{ForestGreen}4730}$$
-$$0.\textbf{\color{ForestGreen}0031}\textbf{\color{red}4}\approx 0.\textbf{\color{ForestGreen}0031}$$
+$$70.\textbf{\color{ForestGreen}0031}\textbf{\color{red}4}\approx 70.\textbf{\color{ForestGreen}0031}$$
 (Alle vier Dezimalen sind anzugeben.)
 
 \subsection*{Signifikante Stellen}
@@ -106,8 +113,8 @@ Bsp.: Runden auf \textbf{\color{ForestGreen}vier} signifikante Stellen:
 \textbf{\color{ForestGreen}208.6}\textbf{\color{red}6} cm $\approx$ \textbf{\color{ForestGreen}208.7} cm
 
 0.00\textbf{\color{ForestGreen}2086}\textbf{\color{red}6} km $\approx$ 0.00\textbf{\color{ForestGreen}2087} km
-
-\textbf{\color{ForestGreen}30.89}\textbf{\color{red}6} = \textbf{\color{ForestGreen}30.90}
+x
+\textbf{\color{ForestGreen}30.89}\textbf{\color{red}6} $\approx$ \textbf{\color{ForestGreen}30.90}
 
 (4. Ziffer stehen lassen, auch wenn = 0)
 
@@ -120,11 +127,6 @@ Zahl  & & wissenschaftl. & & TR: \tiprobutton{EE} \\
 3400  &=& $\textbf{\color{blue}3}.4\cdot{}10^3$ &=& {\textbf{\color{blue}3}}.4E3\\
 0.004 &=& $\textbf{\color{blue}4}\cdot{}10^{-3}$ &=&\textbf{\color{blue}4}E-3\\
 \end{tabular}
-
-
-\forceCB
-
-\hrulefill
 
 \section*{Bruchterme}
 \subsection*{Faktorisieren}
@@ -203,10 +205,10 @@ $$\frac{a^{-3}b^2}{c^5d^{-6}} = \frac{b^2d^6}{a^3c^5}$$
 $\sqrt[n]{a} := \left(a\right)^\frac1n$
 \begin{gesetz*}{}{}
 $$a^{\frac{m}n} = \sqrt[n]{a^m} = \left(\sqrt[n]a\right)^m$$
-\end{gesetz*}
-
-\forceCB
-\hrulefill
+\end{gesetz*}%%
+%%
+\forceCB%%
+%%\hrulefill
 \section*{Logarithmen}
 
 \begin{definition*}{$\log$}{}
@@ -233,39 +235,6 @@ $\lg(0.01)=-2$ & $\log_a(a) = 1$   & $\ln(e) = 1$\\
 \begin{gesetz*}{Basiswechsel}{}
 $$\log_a(b) = \frac{\lg(b)}{\lg(a)} = \frac{\ln(b)}{\ln(a)}$$
 \end{gesetz*}
-
-\hrulefill
-\section*{Textaufgaben}
-\TRAINER{Meiner Meinung nach erst bei Gleichungen...}
-\subsection*{Geschwindigkeitsaufgaben}
-\fbox{$s = v\cdot{} t$} (Einheiten kompatibel wählen!)
-
-\subsection*{Leistungsaufgaben}
-Bei $x$ Zeiteinheiten für die ganze Arbeit:
-
-Leistung = Arbeit pro Zeiteinheit
-
-Leistung = $\frac{1 \textrm{ [Arbeit]}}{x \textrm{ [Zeiteinheiten]}}$
-
-Physik: Leistung = $\frac{\textrm{[Joule]}}{\textrm{[Sekunde]}} = [\textrm{Watt}]$
-
-\subsection*{Restaufgaben}
-$$A:B = C \textrm{ Rest } R \Longleftrightarrow{}  C\cdot{}B+R = A$$
-\TRAINER{Rest: Noch stehen gelassen, da im Kompendium oder in alter Prüfung gesichtet.}
-
-
-\subsection*{Zinseszins}
-\begin{itemize}
-\item $K_0$ = Startkapital; $K_n$ = Endkapital
-\item $p$ = Zinssatz (in \%); $a = 1+\frac{p}{100}$ = Zinsfaktor
-(Wachstumsfaktor); $p<0$, so ist $a$ der Zerfallsfaktor
-\end{itemize}
-$$K_n = K_0 \cdot{} \left( 1+\frac{p}{100} \right)^n = K_0\cdot{}a^n$$
-
-\subsubsection*{Beispiele}
-$$p = 2.5\% \Longleftrightarrow{} a = 1.025$$
-$$p = -3\% \Longleftrightarrow{}  a = 0.97 $$
-
 \hrulefill
 \section*{Gleichungen}
 
@@ -380,6 +349,41 @@ für Bruchgleichungssysteme:
 \gleichungZZ{\frac1{x+1} + \frac3{y-2}}{66}{\frac2{x+1} + \frac5{y-2}}{16}
 Substituiere $a:=\frac1{x+1}$ und $b:=\frac1{y-2}$:
 \gleichungZZ{a + 3b}{66}{2a + 5b}{16}
+
+
+
+\hrulefill
+\section*{Textaufgaben}
+\TRAINER{Meiner Meinung nach erst bei Gleichungen...}
+\subsection*{Geschwindigkeitsaufgaben}
+\fbox{$s = v\cdot{} t$} (Einheiten kompatibel wählen!)
+
+\subsection*{Leistungsaufgaben}
+Bei $x$ Zeiteinheiten für die ganze Arbeit:
+
+Leistung = Arbeit pro Zeiteinheit
+
+Leistung = $\frac{1 \textrm{ [Arbeit]}}{x \textrm{ [Zeiteinheiten]}}$
+
+Physik: Leistung = $\frac{\textrm{[Joule]}}{\textrm{[Sekunde]}} = [\textrm{Watt}]$
+
+\subsection*{Restaufgaben}
+$$A:B = C \textrm{ Rest } R \Longleftrightarrow{}  C\cdot{}B+R = A$$
+\TRAINER{Rest: Noch stehen gelassen, da im Kompendium oder in alter Prüfung gesichtet.}
+
+
+\subsection*{Zinseszins}
+\begin{itemize}
+\item $K_0$ = Startkapital; $K_n$ = Endkapital
+\item $p$ = Zinssatz (in \%); $a = 1+\frac{p}{100}$ = Zinsfaktor
+(Wachstumsfaktor); $p<0$, so ist $a$ der Zerfallsfaktor
+\end{itemize}
+$$K_n = K_0 \cdot{} \left( 1+\frac{p}{100} \right)^n = K_0\cdot{}a^n$$
+
+\subsubsection*{Beispiele}
+$$p = 2.5\% \Longleftrightarrow{} a = 1.025$$
+$$p = -3\% \Longleftrightarrow{}  a = 0.97 $$
+
 
 \forceCB
 
@@ -557,7 +561,7 @@ $b\cdot{}a^\frac{t}\tau$ = Sättigungsdefizit zur Zeit $t$
 \section*{Datenanalyse}
 
 \subsection*{Skalen}
-\bbwCenterGraphic{15cm}{img/Skalentyp.pdf}
+\bbwCenterGraphic{17cm}{img/Skalentyp.pdf}
 \TRAINER{Mir fehlt hier noch das Beisipiel «Anzahl» bei Verhältnsisskala.}
 %%\bbwCenterGraphic{15cm}{img/DatenanalyseSkalentypen.eps}
 \TRAINER{Stetig/Diskret?}
@@ -908,13 +912,11 @@ Eigene Notizen...
 
 \mmPapier{22}
 \newpage
-\mmPapier{24}
-\newpage
 \mmPapier{22}
 
 \vspace{5mm}
 
-Fehler Gefunden? \texttt{philipp.freimann@bbw.ch}
+Fehler gefunden? \texttt{philipp.freimann@bbw.ch}
 
 
 
