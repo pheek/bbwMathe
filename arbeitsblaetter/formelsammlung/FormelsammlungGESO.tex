@@ -10,7 +10,7 @@
 
 %%\usepackage{amssymb} %% für \blacktriangleright
 \usepackage{makecell}
-\renewcommand{\metaHeaderLine}{Formelsammlung (v 0.0.20 2021-06-17 fp)}
+\renewcommand{\metaHeaderLine}{Formelsammlung (v 0.0.21 2021-06-17 fp)}
 \renewcommand{\arbeitsblattTitel}{Formelsammlung GeSo}
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
@@ -870,16 +870,16 @@ $p$ = Wahrscheinlichkeit des Treffers\\
 
 \forceCB
 \subsection*{Hypergeometrische Verteilung}
-Gegeben Kugeln in einer Urne:
+Gegeben $N+T$ Kugeln in einer Urne. Herausgezogen werden $n+t$:
 \begin{itemize}
-\item $N$ mögliche Nieten
-\item $T$ mögliche Treffer
+\item $T$ Anzahl aller Treffer
+\item $N$ Anzahl aller Nieten
 \item $t$ gewünschte Treffer
-\item $n$ «gewünschte» Nieten ($n$+$t$ = gezogene Elemente)
+\item $n$ «gewünschte» Nieten
 \end{itemize}
 Wahrscheinlichkeit \textbf{genau} $t$ Treffer zu ziehen:
 
-$$P(X=k) = \frac{ {T \choose t} \cdot {N  \choose n} }{{T+N \choose t+n}}.$$
+$$P(X=t) = \frac{ {T \choose t} \cdot {N  \choose n} }{{T+N \choose t+n}}.$$
 
 
 \subsection*{Vierfeldtafeln}
