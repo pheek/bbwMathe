@@ -41,29 +41,58 @@ Begründung:
 Ganz analog gilt:
 
 \begin{gesetz}{}{}
-$\frac{1}{a^{-n}} = \left(\frac{1}{a}\right)^{-n}=a^n$
+$\frac{1}{a^{-n}} =a^n$
 \end{gesetz}
 Begründung:
-\TNT{4}{
-\GESO{Beispiel. Nach Definition gilt:
+\TNT{8}{
 
-$$\left(\frac1{10}\right)^{-3}  = \frac1{\left(\frac1{10}\right)^3}  = \frac1{10^{-3}} = \frac1{0.001} = 1000 = 10^3$$
+
+Beispiel:
+
+$$\frac1{10^{-3}} = \frac1{0.001} = 1000 = 10^3$$
+
+\TALS{TALS:}
+Beweis: Definition hinschreiben und auf beiden Seiten den Kehrwert bilden:
+
+$$a^{-n} = \frac1{a^n}$$
+
+$$\frac1{a^{-n}} = a^n$$
 
 \vspace{2cm}
-}%% end GESO
-\TALS{
-Es gilt für alle $a$ (nach Definition):
-$$a^{-n} = \left(\frac1a\right)^n$$
-Somit gilt das auch anstelle von $a$ für $\frac1b$:
-
-$$\left(\frac1b\right)^{-n} = \left(\frac1{\frac1b}\right)^n = b^n$$
-}%% END TALS
 }%% END TNT
 
 
+
+\begin{gesetz}{}{}
+$\left(\frac{1}{a}\right)^{-n}=a^n$
+\end{gesetz}
+Begründung:
+\TNT{8}{
+Zahlenbeispiel (erster Schritt nach Definition):
+$$\left(\frac1{10}\right)^{-3}  = \frac1{\left(\frac1{10}\right)^3}  = \frac1{0.001} = 1000 = 10^3$$
+
+\TALS{TALS:}
+
+Beweis: Nach Definition gilt für alle $n$:
+
+$$x^{-n} = \frac1{x^n}$$
+
+Somit gilt es auch, wenn wir anstelle von $x$ den Term $\frac1a$ einsetzen:
+
+$$\left(\frac1a\right)^{-n} = \frac1{\frac1{a^n}} = a^n$$
+
+
+\vspace{2cm}
+
+}%% END TNT
+
+
+
+
+\newpage
 Rechenbeispiel:
 
-Wurm «Wurli» schaft 3 cm pro Sekunde (= $3 \cdot{} 10^-2 $ m pro Sekunde). Wie lange braucht «Wurli» für 12 m?
+Wurm «Wurli» schaft 3 cm pro Sekunde (= $3 \cdot{} 10^{-2} $ m pro Sekunde). Wie lange braucht «Wurli» für 12 m?
 \TNT{2.4}{
 $$t = \frac{s}v = \frac{12[ \textrm{m}]}{3 \frac{[\textrm{cm}]}{[\textrm{s}]}} =  \frac{4[ \textrm{m}]}{1 \frac{[\textrm{cm}]}{[\textrm{s}]}} =
  \frac{4[ \textrm{m}]}{10^{-2}\frac{[\textrm{m}]}{[\textrm{s}]}} = 4\cdot{} 10^2 [\textrm{s}] = 400 [\textrm{s}]\approx 6-7 Min.$$
