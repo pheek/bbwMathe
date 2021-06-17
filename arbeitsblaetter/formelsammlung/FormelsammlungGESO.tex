@@ -10,7 +10,7 @@
 
 %%\usepackage{amssymb} %% für \blacktriangleright
 \usepackage{makecell}
-\renewcommand{\metaHeaderLine}{Formelsammlung (v 0.0.19 2021-06-16 fp)}
+\renewcommand{\metaHeaderLine}{Formelsammlung (v 0.0.20 2021-06-17 fp)}
 \renewcommand{\arbeitsblattTitel}{Formelsammlung GeSo}
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
@@ -64,6 +64,11 @@ $\mathbb{R} = \{..., -1, ..., 0, ... \frac12, ..., \sqrt{2}, ..., e, ... \pi, ..
 
 \section*{Algebra}
 
+\subsection*{Grundrechenarten}
+$$3-(-7) = +10$$
+aber
+$$-3(-7) = +21$$
+
 \begin{gesetz*}{Binomische Formeln}{}
 $$(a+b)^2 = a^2+2ab + b^2$$%%
 $$(a-b)^2=a^2-2ab+b^2$$%%
@@ -84,12 +89,18 @@ $$\frac{x}{a-b} +  \frac{y}{b-a} = \frac{x}{a-b} + \frac{-y}{a-b} = \frac{x-y}{a
 %% Forced column break
 %%\forceCB
 \subsection*{Summenzeichen}
-$$\sum_{k=1}^n{T(k)} = T(1) + T(2) + ... + T(n)$$
+%%$$\color{orange}\sum_{\color{blue}k=1}^{\color{blue}n} {{\color{ForestGreen}T}(k)} = {\color{ForestGreen}T}({\color{blue}1}) {\color{orange}+} {\color{ForestGreen}T}({\color{blue}2}) {\color{orange}+} ... {\color{orange}+} {\color{ForestGreen}T}({\color{blue}n})$$
+
+  $${\color{green}\sum_{{\color{orange}k}{{\color{green}{\color{black}=}\color{blue}1}}}^{\color{blue}n\color{green}}}
+  {\color{orange}T(}{{\color{red}k}}{\color{orange})} = {\color{orange}T(}{\color{blue}1}{\color{orange})} {\color{green}+} {\color{orange}T(}{\color{blue}2}{\color{orange})} {\color{green}+}
+  ... {\color{green}+} {\color{orange}T(}{\color{blue}n}{\color{orange})}$$
+
 Beispiel
 
-$$\sum_{i=3}^7{i^2} = 3^2 + 4^2 + 5^2 + 6^2 + 7^2$$
+  $${\color{green}\sum_{{\color{red}n}{{\color{green}{\color{black}=}\color{blue}3}}}^{\color{blue}5\color{green}}}  {\color{red}n}^{{\color{orange}7}} = {\color{blue}3}^{\color{orange}7} {\color{green}+} {\color{blue}4}^{\color{orange}7} {\color{green}+} {\color{blue}5}^{\color{orange}7}$$
 
-Taschenrechner: \tiprobutton{math} 4
+
+Taschenrechner: \tiprobutton{math} 4 \texttt{ sum}
 
 
 \subsection*{(Absolut)betrag einer Zahl}
@@ -99,11 +110,6 @@ $|7| = 7$
 $|-5| = 5$
 
 \TRAINER{Intervall-Schreibweise? \zB $a\in[0;1[$}
-
-\subsection*{Grundrechenarten}
-$$3-(-7) = +10$$
-aber
-$$-3(-7) = +21$$
 
 \hrulefill
 
@@ -175,18 +181,18 @@ $3$ Exponent\\
 $343$ Potenzwert\\
 \end{definition*}
 
-\subsection*{gleiche Basis}
+\begin{gesetz*}{gleiche\,Basis}{}
 \begin{tabular}{cc}
 $a^m\cdot{}a^n = a^{m+n},$ & $a^m:a^n=a^{m-n},$ \\
 $\left(a^m\right)^n = a^{m\cdot{}n}$ &\\
  \end{tabular} 
+\end{gesetz*}
 
-\subsection*{gleicher Exponent}
-
+\begin{gesetz*}{gleicher\,Exponent}{}
 \begin{tabular}{cc}
 $a^n\cdot{}b^n = (a\cdot{}b)^n,$ & $\frac{a^n}{b^n} =\left(\frac{a}b\right)^n $\\
  \end{tabular}
- 
+\end{gesetz*}
 
 \subsection*{Vorzeichen}
 Fall: $n$ \textbf{gerade}:
@@ -248,7 +254,7 @@ $\log(1)=0$     &    $\lg(10) = 1$ & $\lg(1000)=3$           \\
 $\lg(0.01)=-2$ & $\log_a(a) = 1$   & $\ln(e) = 1$\\
 \end{tabular}
 \begin{gesetz*}{Basiswechsel}{}
-$$\log_a(b) = \frac{\lg(b)}{\lg(a)} = \frac{\ln(b)}{\ln(a)}$$
+$$\log_{\color{ForestGreen}a}({\color{red}b}) = \frac{\lg({\color{red}b})}{\lg({\color{ForestGreen}a})} = \frac{\ln({\color{red}b})}{\ln({\color{ForestGreen}a})}$$
 \end{gesetz*}
 \hrulefill
 \section*{Gleichungen}
@@ -347,7 +353,7 @@ $$a^x=b \Rightarrow{} x=\log_a(b) = \frac{\lg(b)}{\lg(a)}$$
 \subsection*{Lineare Gleichungssysteme}
 Erst in \textbf{Grundform} bringen und dann
 \gleichungZZ{5x+7y}{19}{16x -13y}{-4}
-mit Taschenrechner \tiprobutton{2nd}\tiprobutton{tan_sys-solv} lösen.
+mit Taschenrechner «\texttt{sys-solv}» \tiprobutton{2nd}\tiprobutton{tan_sys-solv} lösen.
 
 Verfahren
 \begin{itemize}
@@ -359,11 +365,13 @@ Verfahren
 \end{itemize}
 
 \subsection*{Substitution}
-für Bruchgleichungssysteme:
+Beispiel Bruchgleichungssysteme:
 
-\gleichungZZ{\frac1{x+1} + \frac3{y-2}}{66}{\frac2{x+1} + \frac5{y-2}}{16}
-Substituiere $a:=\frac1{x+1}$ und $b:=\frac1{y-2}$:
-\gleichungZZ{a + 3b}{66}{2a + 5b}{16}
+\gleichungZZ{{\color{ForestGreen}\frac1{x+1}} + {\color{orange}\frac3{y-2}}}{66}{{\color{ForestGreen}\frac2{x+1}} + {\color{orange}\frac5{y-2}}}{16}
+Substituiere
+${\color{ForestGreen}a}:={\color{ForestGreen}\frac1{x+1}}$ und
+${\color{orange}b} : ={\color{orange}\frac1{y-2}}$:
+\gleichungZZ{{\color{ForestGreen}a} + 3{\color{orange}b}}{66}{2{\color{ForestGreen}a} + 5{\color{orange}b}}{16}
 
 
 
@@ -481,7 +489,7 @@ $z>0$: Parabeln (obere vier Graphen)
 
 $z<0$: Hyperbeln (untere vier Graphen)
 
-\TRAINER{Hier noch die Hyperbel einbauen}
+\bbwCenterGraphic{8cm}{PotenzFkt1overx3x5.pdf}
 
 $z$ gerade: Gespiegelt an der $y$-Achse
 
@@ -577,7 +585,6 @@ $b\cdot{}a^\frac{t}\tau$ = Sättigungsdefizit zur Zeit $t$
 
 \subsection*{Skalen}
 \bbwCenterGraphic{17cm}{img/Skalentyp.pdf}
-\TRAINER{Mir fehlt hier noch das Beisipiel «Anzahl» bei Verhältnsisskala.}
 %%\bbwCenterGraphic{15cm}{img/DatenanalyseSkalentypen.eps}
 \TRAINER{Stetig/Diskret?}
 \TRAINER{Mögliche Diagramm-Arten?}
@@ -660,7 +667,7 @@ weiter ins Extreme bewegt, so sprechen wir von einem \textbf{robusten} Maß.
     & Quartile ($Q_1$,$Q_3$) & \\
     & (Ausreißerschwellen) & \\\hline
  \multirow{3}{*}{\rotatebox{90}{«fragil»}}  & Mittelwert
- $\overline{x}$ & Standardabweichung\\
+ $\overline{x}$ & Standardabw.: $\sigma$\\
     & Minimum & Spannweite\\
     & Maximum & \\\hline
  \end{tabular}
@@ -714,7 +721,9 @@ einzeichnen.
 \end{enumerate}
 \bbwCenterGraphic{8cm}{img/Boxplot.pdf}
 
-
+\end{multicols}
+\bbwCenterGraphic{18cm}{BoxplotMitStreudiagramm.pdf}
+\begin{multicols}{2}
 \section*{Stochastik}
 
 \subsection*{Kombinatorik}
