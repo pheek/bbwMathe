@@ -8,7 +8,7 @@
 
 %%\usepackage{amssymb} %% für \blacktriangleright
 \usepackage{makecell}
-\renewcommand{\metaHeaderLine}{Formelsammlung (v 0.0.23 2021-06-19 fp)}
+\renewcommand{\metaHeaderLine}{Formelsammlung (v 0.0.24 2021-06-19 fp)}
 \renewcommand{\arbeitsblattTitel}{Formelsammlung GeSo}
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
@@ -50,6 +50,10 @@ $\mathbb{R} = \{..., -1, ..., 0, ... \frac12, ..., \sqrt{2}, ..., e, ... \pi, ..
 
 \textbf{Prim}zahl: hat genau zwei Teiler (Eins und sich selbst):\\ $\mathbb{P} = \{2, 3, 5, 7, 11, 13, ...\}$
 \end{definition*}
+
+$$\mathbb{P} \subset \mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}$$
+
+\TRAINER{$|\mathbb{N}| = |\mathbb{Q}|$ aber $|\mathbb{Q}| \ne |\mathbb{R}|$} 
 
 \hrulefill%% hrulefill vor allen neuen "sections" auf derselben Seite
 
@@ -886,6 +890,9 @@ $n$ = Anzahl Züge\\
 $p$ = Wahrscheinlichkeit des Treffers\\
 \end{gesetz*}
 Bei \textbf{minimal} arbeite mit \textbf{Gegenereignis}.
+
+\textbf{Achtung}: Gegenereignis von «minimal 4 Mal» = «maximal 3 Mal».
+$$P(\overline{\textrm{min. 4}\times}) = 1 - P(\textrm{max. 3}\times)$$
 
 \forceCB
 \subsection*{Hypergeometrische Verteilung}
