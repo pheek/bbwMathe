@@ -42,7 +42,7 @@ unten beschränkt.
 2. Idee: verschiebe die Skala um 20 Einheiten nach unten. Nun
 funktioniert es: $f(t) = 55\cdot{}\left(\frac{41}{55}\right)^{\frac{t}{3}}$
 
-3. Verschiebe wieder zurück: ACHTUNG: Das $c$ ist nun jedoch das
+3. Verschiebe wieder zurück: ACHTUNG: Das $b$ ist nun jedoch das
 sog. Sättigungs\textbf{manko}\index{Sättigungsmanko} zum Zeitpunkt $t_0=0$ und \textbf{nicht} mehr der Startwert! 
 
 $$f(t) = 20 + 55\cdot{}\left(\frac{41}{55}\right)^{\frac{t}{3}}$$
@@ -70,25 +70,27 @@ $$t=3\cdot{}\frac{\ln\left(\frac{17}{55}\right)}{\left(\frac{41}{55}\right)} \ap
 \end{center}
 
 Die Grundform eines begrenzten Zerfalls ist ein normaler
-exponentieller Zerfall ($y=a^{t}$, $0<a<1$), der in $y$-Richtung um eine Sättigungsgrenze $S$ verschoben ist:
+exponentieller Zerfall ($y=a^{t}$, $0<a<1$), der in $y$-Richtung um eine Sättigungsgrenze $c$ verschoben ist:
 
-
-$$f(t) = S + c\cdot{}a^{\frac{t}{\tau}}$$
+\begin{definition}{gesättigter Zerfall}{}
+$$f(t) = c + b\cdot{}a^{\frac{t}{\tau}}$$
+\end{definition}
 
 Dabei ist:
 \begin{itemize}
-	\item $S$: Die Sättigungsgrenze\index{Sättigungsgrenze} (Sättigungswert). Dies ist die Annäherungskonstante oder der Asymtotenwert: Tiefer kann die Funktion nicht fallen.
+  \item $c+b = f(0) = y$-Achsenabschnitt = Startwert
+	\item $c$: Die Sättigungsgrenze\index{Sättigungsgrenze} (Sättigungswert). Dies ist die Annäherungskonstante oder der Asymtotenwert: Tiefer kann die Funktion nicht fallen.
 
 	\item $m$:  Sättigungsmanko\index{Sättigungsmanko}\index{Manko!Sättigung}. Wie viel fehlt, bis zur
-    Sättigungsgrenze: $m = f(t) - S$. Das Sättigungs\textbf{manko} nimmt exponentiell ab.
-	\item $c$: Die \textbf{Abweichung} zu $S$ zum Zeitpunkt $t=0$. Der
-    Anfangswert ist somit $f(0) = S + c$; mit anderen Worten: $c$ ist das
+    Sättigungsgrenze: $m = f(t) - c$. Das Sättigungs\textbf{manko} nimmt exponentiell ab.
+	\item $b$: Die \textbf{Abweichung} zu $c$ zum Zeitpunkt $t=0$. Der
+    Anfangswert ist somit $f(0) = c + b$; mit anderen Worten: $b$ ist das
     \textbf{Sättigungsmanko} zum Zeitpunkt $t_0 = 0$.
 	\item $\tau$: Die Zeit zwischen zwei typischen Beobachtungszeitpunkten wird
     mit $\tau$ («tau») bezeichnet\footnote{$\tau$ entspricht der
       Halbwertszeit beim exponentiellen Zerfall: Halbiert sich das
       Sättigungsmanko ($f(t)-S$) in der Zeit $\tau$, so ist $a=\frac12$.}.
-    \item $a=\frac{m_2}{m_1}$: Der Faktor der Veränderung des
+    \item $a=\frac{m}{b}=\frac{f(\tau)-c}{f(0)-c}$: Der Faktor der Veränderung des
       Sättigungsmankos.
 \end{itemize}
 
@@ -96,7 +98,7 @@ Dabei ist:
 \GESOAadB{359}{35. und 36.}
 \GESO{\aufgabenfarbe{Kompendium S. 33 Kap. 3.4.2 Aufg. 48 (Achtung: Das
   Kompendium verwendet andere Buchstaben als hier im Skript und im
-  Buch \cite{marthaler17}; das dortige $a$ ist unser $c$ und das dortige $c$ ist unser $S$.)}}
+  Buch \cite{marthaler17}; das dortige $a$ ist unser $b$.)}}
 
 
 
@@ -136,21 +138,23 @@ Die Grundform der des begrenzten Wachstums ist ein exponentieller Zerfall\totalr
 der an der $x$-Achse gespiegelt und in $y$-Richtung
 verschoben ist:
 
-$$f(t) =S - c\cdot{} a^{\frac{t}{\tau}}$$
+\begin{definition}{Zerfall}{}
+$$f(t) =c - b\cdot{} a^{\frac{t}{\tau}}$$
+\end{definition}
 
 Wie erwähnt, wird die Funktion in der Praxis gestreckt, bzw. verschoben; die folgenden Merkmale sind wichtig:
 
 \begin{itemize}
-	\item $S$: Sättigungsgrenze. Dies ist die Annäherungskonstante oder der Asymtotenwert. Höher kann die Funktion nicht steigen.
+	\item $c$: Sättigungsgrenze. Dies ist die Annäherungskonstante oder der Asymtotenwert. Höher kann die Funktion nicht steigen.
 
 	\item $m$ ist das Sättigungsmanko\index{Sättigungsmanko}. Wie viel fehlt, bis zur
-    Sättigungsgrenze: $m = S - f(t)$. Auch hier nimmt das  Sättigungs\textbf{manko} exponentiell ab.
+    Sättigungsgrenze: $m = c - f(t)$. Auch hier nimmt das  Sättigungs\textbf{manko} exponentiell ab.
 	\item $c$: Die Abweichung des Funktionsgraphen zu $S$ zum Zeitpunkt $t=0$. Der
-    Anfangswert ist somit $f(0) = S - c$.
+    Anfangswert ist somit $f(0) = c - b$.
 	\item $\tau$: Die Zeit zwischen zwei typischen Beobachtungszeitpunkten wird
     mit $\tau$ («tau») bezeichnet\footnote{$\tau$ entspricht der
-      Halbwertszeit beim exponentiellen Zerfall: Halbiert sich das Sättigungsmanko ($S-f(t)$) in der Zeit $\tau$, so ist $a = \frac12$.}.
-    \item $a=\frac{m_2}{m_1}$ Faktor der Veränderung des Sättigungsmankos.
+      Halbwertszeit beim exponentiellen Zerfall: Halbiert sich das Sättigungsmanko ($c-f(t)$) in der Zeit $\tau$, so ist $a = \frac12$.}.
+    \item $a=\frac{m}{b}=\frac{c-f(\tau)}{c-f(0)}$ Faktor der Veränderung des Sättigungsmankos.
 \end{itemize}
 \newpage
 
@@ -159,17 +163,17 @@ Wie erwähnt, wird die Funktion in der Praxis gestreckt, bzw. verschoben; die fo
 \begin{bemerkung}{}{}
   Für das Sättigungsmanko gilt:
 
-$$m = m(t) = S-f(t) = S- \left(S-c\cdot{}a^{\frac{t}{\tau}}\right) = + c\cdot{}a^{\frac{t}{\tau}}$$
+$$m = m(t) = c - f(t) = c - \left(c-b\cdot{}a^{\frac{t}{\tau}}\right) = + b\cdot{}a^{\frac{t}{\tau}}$$
 
 und somit:
 
-$$m_0 = m(0) = c\cdot{}a^0 = c$$
+$$m_0 = m(0) = b\cdot{}a^0 = b$$
 \end{bemerkung}
 
 \begin{bemerkung}{}{}
 Das $a$ kann aus zwei \textbf{beliebigen} Sättigungsmankos berechnet werden (die um die
 Zeitdifferenz $\tau$ auseinander liegen):
-$$\frac{m_2}{m_1} = \frac{c\cdot{}a^{\frac{t_2}{\tau}}}{c\cdot{}
+$$\frac{m_2}{m_1} = \frac{b\cdot{}a^{\frac{t_2}{\tau}}}{b\cdot{}
   a^{\frac{t_1}{\tau}}} = a^{\frac{t_2}{\tau}} : a^{\frac{t_1}{\tau}} =
 a^{\frac{t_2-t_1}{\tau}} = a^{\frac{\tau}{\tau}} = a$$
 \end{bemerkung}
