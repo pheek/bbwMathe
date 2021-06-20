@@ -13,8 +13,8 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="c_faktor.svg"
-   inkscape:export-filename="/home/phi/git/mathe/includes/thema/allg/funktionen/img/exp/c_faktor.png"
+   sodipodi:docname="b_faktor.svg"
+   inkscape:export-filename="/home/phi/matgit/includes/thema/allg/funktionen/img/exp/b_faktor.png"
    inkscape:export-xdpi="600"
    inkscape:export-ydpi="600">
   <defs
@@ -135,7 +135,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.0618357"
-     inkscape:cx="-104.70778"
+     inkscape:cx="121.27887"
      inkscape:cy="225.9639"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -228,6 +228,6 @@
          id="tspan927"
          x="47.872894"
          y="141.25877"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:times;-inkscape-font-specification:'times Italic';stroke-width:0.22128101">c</tspan></text>
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:times;-inkscape-font-specification:'times Italic';stroke-width:0.22128101">b</tspan></text>
   </g>
 </svg>
