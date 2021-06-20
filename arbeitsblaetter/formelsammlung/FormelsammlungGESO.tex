@@ -8,7 +8,7 @@
 
 %%\usepackage{amssymb} %% für \blacktriangleright
 \usepackage{makecell}
-\renewcommand{\metaHeaderLine}{Formelsammlung (v 0.0.25 2021-06-20 fp)}
+\renewcommand{\metaHeaderLine}{Formelsammlung (v 0.0.26 2021-06-20 fp)}
 \renewcommand{\arbeitsblattTitel}{Formelsammlung GeSo}
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
@@ -79,14 +79,14 @@ $(b-a)=(-1)\cdot{}(a-b)$
 
 Beispiel:
 
-$$\frac{x}{a-b} +  \frac{y}{b-a} = \frac{x}{a-b} + \frac{-y}{a-b} = \frac{x-y}{a-b}$$
+$\frac{x}{a-b} +  \frac{y}{b-a} = \frac{x}{a-b} + \frac{-y}{a-b} = \frac{x-y}{a-b}$
 
 %% Forced column break
 %%\forceCB
 \subsection*{Summenzeichen}
 %%$$\color{orange}\sum_{\color{blue}k=1}^{\color{blue}n} {{\color{ForestGreen}T}(k)} = {\color{ForestGreen}T}({\color{blue}1}) {\color{orange}+} {\color{ForestGreen}T}({\color{blue}2}) {\color{orange}+} ... {\color{orange}+} {\color{ForestGreen}T}({\color{blue}n})$$
 
-  $${\color{green}\sum_{{\color{orange}k}{{\color{green}{\color{black}=}\color{blue}1}}}^{\color{blue}n\color{green}}}
+  $${\color{green}\sum_{{\color{red}k}{{\color{green}{\color{black}=}\color{blue}1}}}^{\color{blue}n\color{green}}}
   {\color{orange}T(}{{\color{red}k}}{\color{orange})} = {\color{orange}T(}{\color{blue}1}{\color{orange})} {\color{green}+} {\color{orange}T(}{\color{blue}2}{\color{orange})} {\color{green}+}
   ... {\color{green}+} {\color{orange}T(}{\color{blue}n}{\color{orange})}$$
 
@@ -100,9 +100,7 @@ Taschenrechner: \tiprobutton{math} 4 \texttt{ sum}
 
 \subsection*{(Absolut)betrag einer Zahl}
 
-$|7| = 7$
-
-$|-5| = 5$
+$|7| = 7$;  \hfill{ } $|-5| = 5$; \hfill{} $-|6|=-6$; \hfill{} $-|-4| = -4$
 
 \TRAINER{Intervall-Schreibweise? \zB $a\in[0;1[$}
 
@@ -114,8 +112,11 @@ Runden auf \textbf{\color{ForestGreen}vier}  Dezimalen: betrachte die nächste Z
 
 Beispiel
 
-$$3.\textbf{\color{ForestGreen}4729}\textbf{\color{red}6}44 \approx 3.\textbf{\color{ForestGreen}4730}$$
-$$70.\textbf{\color{ForestGreen}0031}\textbf{\color{red}4}998\approx 70.\textbf{\color{ForestGreen}0031}$$
+$3.\textbf{\color{ForestGreen}4729}\textbf{\color{red}6}44 \approx
+3.\textbf{\color{ForestGreen}4730}$; \hfill{ }
+$70.\textbf{\color{ForestGreen}0031}\textbf{\color{red}4}998\approx
+70.\textbf{\color{ForestGreen}0031}$
+
 (Alle vier Dezimalen sind anzugeben.)
 
 \subsection*{Signifikante Stellen}
@@ -221,7 +222,7 @@ $$\frac{a^{-3}b^2}{c^5d^{-6}} = \frac{b^2d^6}{a^3c^5}$$
 \end{rezept*}
 
 \subsection*{$n$-te Wurzel}
-$\sqrt[n]{a} := \left(a\right)^\frac1n$
+$\sqrt[n]{a} := \left(a\right)^\frac1n$\hfill{}Bsp.: $8^{\frac13}=\sqrt[3]{8}=2$
 \begin{gesetz*}{}{}
 $$a^{\frac{m}n} = \sqrt[n]{a^m} = \left(\sqrt[n]a\right)^m$$
 \end{gesetz*}%%
@@ -259,6 +260,7 @@ $$\log_{\color{ForestGreen}a}({\color{red}b}) = \frac{\lg({\color{red}b})}{\lg({
 \section*{Gleichungen}
 
 \subsection*{Lineare Gleichungen}
+\TRAINER{Ist das Beispiel nötig? Sollen sie selbst?}
 \TRAINER{Wollen wir so viele Beispiele???}
 $$5x-3a = 2cx-7b$$
 1. Alle $x$ nach links, übriges rechts:
@@ -316,8 +318,7 @@ Taschenrechner \tiprobutton{2nd}\tiprobutton{cos_poly-solv}\\
 
 \hrulefill
 
-\subsection*{Gleichungen mit Potenzen}
-\subsubsection*{Potenzgleichungen}
+\subsection*{Potenzgleichungen}
 
 $$x^a=c \Leftrightarrow x=\sqrt[a]{c}$$
 
@@ -329,7 +330,7 @@ x=c^{\frac{b}a} = \sqrt[a]{c^b}$$
 \subsection*{Exponentialgleichungen}
 \textbf{Fall 1} Exponentenvergleich. Bsp.:
 
-$$5^4=125^x \Rightarrow{} 5^4=(5^3)^x=5^{3x} \Rightarrow{}$$
+$$5^4=125^x \Rightarrow{} 5^4=(5^3)^x \Rightarrow{} 5^4=5^{3x} \Rightarrow{}$$
 $$ 4=3x \Rightarrow x=\frac43$$
 
 \textbf{Fall 2} Logarithmen. Bsp.:
@@ -379,7 +380,6 @@ Dann: Rücksubstitution
 
 \hrulefill
 \section*{Textaufgaben}
-\TRAINER{Meiner Meinung nach erst bei Gleichungen...}
 \subsection*{Geschwindigkeitsaufgaben}
 \fbox{$s = v\cdot{} t$} (Einheiten kompatibel wählen!)
 
@@ -414,10 +414,8 @@ $$p = -3\% \Longleftrightarrow{}  a = 0.97 $$
 \TRAINER{Brauchen wir diese Definition???}
 
 Eine Funktion ordnet jeder Zahl aus einem Definitionsbereich
-$\mathbb{D}$ \textbf{genau} eine Zahl aus einem Wertevorrat (=Zielmenge) (meist
-$\mathbb{R}$)
-zu. Die \textit{getroffenen} Funktionswerte bilden den Wertebereich
-$\mathbb{W}$ (= Bildmenge).
+$\mathbb{D}$ \textbf{genau} eine Zahl aus einem Wertevorrat
+$\mathbb{W}$ (=Zielmenge) (meist $\mathbb{R}$) zu.
 
 \hrulefill
 \section*{Lineare Funktionen}
@@ -513,15 +511,7 @@ Ist ${\color{red}a<0}$ (rechts in der Graphik) so sind Graphen mit
 geraden Exponenten nach unten geöffnet bzw. mit ungeraden exponenten
 im Quadranten II und IV.
 
-\begin{samepage}
-\textbf{Gerade} Exponenten (Achsenspiegelung):
-\bbwCenterGraphic{8cm}{img/potenzFunktionenGerade.png}
-\end{samepage}
-\newpage
-\begin{samepage}
-\textbf{Un}gerade Exponenten (Punktspiegelung):
-\bbwCenterGraphic{8cm}{img/potenzFunktionenUngerade.png}
-\end{samepage}
+ \includegraphics[width=4cm]{img/potenzFunktionenGerade.png}\hfill{}\includegraphics[width=4cm]{img/potenzFunktionenUngerade.png}
 
 
 \hrulefill  
@@ -544,6 +534,7 @@ $0<a<1$: Zerfallsrate
 
 Wachstum:
 \bbwCenterGraphic{8.5cm}{allg/funktionen/img/exp/exponentielles_wachstum.png}
+Zerfall:
 \bbwCenterGraphic{7.5cm}{allg/funktionen/img/exp/exponentieller_zerfall.png}
 \begin{rezept*}{Beobachtungsintervall}{}
 $$f(t) = {\color{blue}b}\cdot{}{\color{red}a}^{\frac{t}{\color{ForestGreen}\tau}}$$
@@ -557,8 +548,7 @@ $$f(t)= {\color{blue}3}\cdot{}{\color{red}4}^\frac{t}{\color{ForestGreen}5}$$
 \end{rezept*}
 
 
-\subsection*{Basis $e$}
-\begin{gesetz*}{Basis $e$}{}
+\begin{gesetz*}{Basis $e$ Zeitvariable oft $x$}{}
 
 $$c+b\cdot{}a^x = c + b\cdot{}e^{mx} \textrm{ mit } m = \ln(a)$$
 
@@ -657,7 +647,7 @@ Auswertung: \tiprobutton{data_stat-reg-distr}
 Der am häufigsten auftretende Wert wird als Modus bezeichnet.
 
 Manchmal ist dies nicht eindeutig, dann sprechen wir von einer
-multimodalen Verteilung.
+\textbf{multimodalen} Verteilung. Bei zwei Modi von \textbf{bimodal}.
 
 \subsubsection*{Maximum, Minimum}
 Maximum bzw. Minimum sind höchste bzw. kleinste Datenwerte: Die Ausreißer
