@@ -8,7 +8,7 @@
 
 %%\usepackage{amssymb} %% für \blacktriangleright
 \usepackage{makecell}
-\renewcommand{\metaHeaderLine}{Formelsammlung (v 0.0.24 2021-06-19 fp)}
+\renewcommand{\metaHeaderLine}{Formelsammlung (v 0.0.25 2021-06-20 fp)}
 \renewcommand{\arbeitsblattTitel}{Formelsammlung GeSo}
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
@@ -489,13 +489,17 @@ $z\in\mathbb{Z}\backslash\{0,1\} = \{...-2, -1, 2, 3, 4, ...\}$
 $z>0$: Parabeln
 
 \bbwCenterGraphic{8cm}{PotenzFktx2x4.pdf}
+\TRAINER{Klarer beschriften, welche Funktion zu was und keine
+Überlappungen: Insb. die Zeichen 3 und = liegen jetzt übereinander.}
+
 
 $z<0$: Hyperbeln
 
 \bbwCenterGraphic{8cm}{PotenzFkt1overx3x5.pdf}
 
 
-\TRAINER{Braucht es hier noch mehr Geraden \textbf{mit} Kooridinatensystem? Reichen die folgenden qualitativen Graphiken?}
+\TRAINER{Braucht es hier noch mehr Geraden \textbf{mit}
+Kooridinatensystem? Reichen nicht die folgenden qualitativen Graphiken?}
 
 $z$ gerade: Gespiegelt an der $y$-Achse
 
@@ -510,10 +514,10 @@ geraden Exponenten nach unten geöffnet bzw. mit ungeraden exponenten
 im Quadranten II und IV.
 
 \begin{samepage}
-Gerade Exponenten (Achsenspiegelung):
+\textbf{Gerade} Exponenten (Achsenspiegelung):
 \bbwCenterGraphic{8cm}{img/potenzFunktionenGerade.png}
 \end{samepage}
-
+\newpage
 \begin{samepage}
 \textbf{Un}gerade Exponenten (Punktspiegelung):
 \bbwCenterGraphic{8cm}{img/potenzFunktionenUngerade.png}
@@ -542,15 +546,15 @@ Wachstum:
 \bbwCenterGraphic{8.5cm}{allg/funktionen/img/exp/exponentielles_wachstum.png}
 \bbwCenterGraphic{7.5cm}{allg/funktionen/img/exp/exponentieller_zerfall.png}
 \begin{rezept*}{Beobachtungsintervall}{}
-$$f(t) = b\cdot{}a^{\frac{t}{\tau}}$$
-$\tau$ = Beobachtungsintervall zu $a$\\
-$a$ = Wachstums(/Zerfalls)rate im Zeitraum $\tau$
-\end{rezept*}
+$$f(t) = {\color{blue}b}\cdot{}{\color{red}a}^{\frac{t}{\color{ForestGreen}\tau}}$$
+$\color{ForestGreen}\tau$ = Beobachtungsintervall zu $\color{red}a$\\
+$\color{red}a$ = Wachstums(/Zerfalls)rate im Zeitraum $\color{ForestGreen}\tau$
 
-Beispiel: Die Algen mit Startwert von $3 \textrm{m}^2$ vervierfachen
-sich alle fünf Tage:\\
-$b=3$, $a=4$, $\tau=5$
-$$f(t)= 3\cdot{}4^\frac{t}{5}$$
+Beispiel: Die Algen mit Startwert von ${\color{blue}3} \textrm{ m}^2$ ver{\color{red}vier}fachen
+sich alle {\color{ForestGreen}fünf} Tage:\\
+${\color{blue}b}={\color{blue}3}$, ${\color{red}a}={\color{red}4}$, ${\color{ForestGreen}\tau}={\color{ForestGreen}5}$
+$$f(t)= {\color{blue}3}\cdot{}{\color{red}4}^\frac{t}{\color{ForestGreen}5}$$
+\end{rezept*}
 
 
 \subsection*{Basis $e$}
@@ -560,7 +564,8 @@ $$c+b\cdot{}a^x = c + b\cdot{}e^{mx} \textrm{ mit } m = \ln(a)$$
 
 bzw.
 
-$$c+b\cdot{}a^\frac{x}\tau = c+b\cdot{}e^{mx} \textrm{ mit } m=\ln(a^\frac1\tau)$$
+$$c+b\cdot{}a^\frac{x}\tau = c+b\cdot{}e^{mx} \textrm{ mit }
+m=\ln(a^\frac1\tau) = \frac1\tau \cdot{}\ln(a)$$
 
 \end{gesetz*}
 
@@ -597,7 +602,7 @@ $c-b$: Startwert
 \begin{bemerkung*}{Sättigungsdefizit}{}
 
 $b$ = Sättigungsdefizit bei $t=0$.\\
-$b\cdot{}a^\frac{t}\tau$ = Sättigungsdefizit zur Zeit $t$
+$b\cdot{}a^\frac{t}\tau = m_t$ = Sättigungsdefizit zur Zeit $t$
 \end{bemerkung*}
 
 \end{multicols}
@@ -991,4 +996,11 @@ Ganz am Schluss:
 
 Fehler gefunden? \texttt{philipp.freimann@bbw.ch}
 
+{\footnotesize Quelltext dieser Formelsammlung:\\
+\texttt{https://github.com/pheek/bbwMathe/tree/main/arbeitsblaetter/formelsammlung}}
+
 \end{document}
+
+
+
+
