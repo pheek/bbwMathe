@@ -6,10 +6,16 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+%% Hintergrundfarbe in tabular
+%%\usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
+
 %%\usepackage{amssymb} %% für \blacktriangleright
 \usepackage{makecell}
-\renewcommand{\metaHeaderLine}{Formelsammlung (v 0.0.26 2021-06-20 fp)}
-\renewcommand{\arbeitsblattTitel}{Formelsammlung GeSo}
+
+
+\renewcommand{\metaHeaderLine}{Formelsammlung (v 0.0.27 DRAFT 2021-06-20 fp)}
+\renewcommand{\arbeitsblattTitel}{Formelsammlung GeSo (working Draft)}
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
 \titlespacing*{\subsection}{0pt}{0.1\baselineskip}{0.1\baselineskip}
@@ -95,7 +101,7 @@ Beispiel
   $${\color{green}\sum_{{\color{red}n}{{\color{green}{\color{black}=}\color{blue}3}}}^{\color{blue}5\color{green}}}  {\color{red}n}^{{\color{orange}7}} = {\color{blue}3}^{\color{orange}7} {\color{green}+} {\color{blue}4}^{\color{orange}7} {\color{green}+} {\color{blue}5}^{\color{orange}7}$$
 
 
-Taschenrechner: \tiprobutton{math} 4 \texttt{ sum}
+Taschenrechner (\texttt{sum}): \tiprobutton{math}\tiprobutton{5}
 
 
 \subsection*{(Absolut)betrag einer Zahl}
@@ -582,7 +588,7 @@ $c+b$ = Startwert
 \begin{gesetz*}{Beschränktes Wachstum}{}
 $$f(t) = c - b\cdot{}a^\frac{t}\tau$$
 $c$: Sättigungsgrenze\\
-$0<a<1$: Zerfallsrate\\
+$0<a<1$: Wachstumssrate\\
 $b$: Sättigungsdefizit bei $t=0$\\
 $c-b$: Startwert
 \end{gesetz*}
@@ -592,7 +598,7 @@ $c-b$: Startwert
 \begin{bemerkung*}{Sättigungsdefizit}{}
 
 $b$ = Sättigungsdefizit bei $t=0$.\\
-$b\cdot{}a^\frac{t}\tau = m_t$ = Sättigungsdefizit zur Zeit $t$
+$b\cdot{}a^\frac{t}\tau = m(t)$ = Sättigungsdefizit zur Zeit $t$
 \end{bemerkung*}
 
 \end{multicols}
@@ -640,7 +646,7 @@ Am einfachsten mit dem Taschenrechner:
 
 Dateneingabe: \tiprobutton{data}
 
-Auswertung: \tiprobutton{data_stat-reg-distr}
+Auswertung: \tiprobutton{2nd}\tiprobutton{data_stat-reg-distr}\tiprobutton{2}
 \end{rezept*}
 
 \subsubsection*{Modus}
@@ -954,6 +960,33 @@ $$P(G | F) = \frac{\textrm{\#Gesunde Frauen}}{\textrm{\#Frauen}}= \frac{|G \cap 
 %% Leerseiten für Notizen
 \newpage
 
+%% TASCHENRECHNER
+
+\section*{Taschenrechner}
+
+\begin{tabular}{cc}
+
+
+\raisebox{-35mm}{\includegraphics[width=35mm]{img/tiprobuttonimages/ti30C.png}}
+&
+
+\begin{tabular}{c|p{10cm}}\hline
+\cellcolor[HTML]{8888ee}math         & \cellcolor[HTML]{8888ee} Summenzeichen $\Sigma$ \\\hline
+\cellcolor[HTML]{88ee88}data         & \cellcolor[HTML]{88ee88} Datenreihe für Boxplot auswerten (arithmetisches Mittel, Median, Quartilsgrenzen, Standardabweichung...)\\
+\cellcolor[HTML]{88ee88}             & \cellcolor[HTML]{88ee88} data: Zahlen eigeben, stat-reg/ditr, 1-VAR STATS anwählen und calc drücken\\
+\cellcolor[HTML]{88ee88}Distr        & \cellcolor[HTML]{88ee88} Bernoulliformel (4: Binomialpdf)\\
+\cellcolor[HTML]{88ee88}             & \cellcolor[HTML]{88ee88} Kumulierte: (5: Binomial\textbf{c}df)\\\hline
+\cellcolor[HTML]{eeee88}poly-solv    & \cellcolor[HTML]{eeee88} Quadratische Gleichungen in Grundform $ax^2+bx+c=0$\\\hline
+\cellcolor[HTML]{eebb88}sys-solv     & \cellcolor[HTML]{eebb88} Lineare Gleichungssysteme\\\hline
+\cellcolor[HTML]{bb88ff}table        & \cellcolor[HTML]{bb88ff} Wertetabelle für lineare Gleichungen, lineare Funktionen, diverse Funktionen\\\hline
+\cellcolor[HTML]{ddaa88}Kombinatorik & \cellcolor[HTML]{ddaa88} Fakultät: {\color{red}\textbf{!}}\\
+\cellcolor[HTML]{ddaa88}             & \cellcolor[HTML]{ddaa88} $n \choose k$: Tippe $n$ nCr $k$\\\hline
+\cellcolor[HTML]{bbaa88}Logarithmen  & \cellcolor[HTML]{bbaa88} log = Zehnerlogarithmus ($\lg$)\\
+\cellcolor[HTML]{bbaa88}             & \cellcolor[HTML]{bbaa88} ln  = Log. zur Basis $e$\\
+\cellcolor[HTML]{bbaa88}             & \cellcolor[HTML]{bbaa88} 3x drücken = log zu beliebiger Basis\\\hline
+\end{tabular}\\
+\end{tabular}
+
 
 \TRAINER{Generelle Fragen:\\
 Fehlen Lernziele?\\
@@ -977,8 +1010,8 @@ Ganz am Schluss:
 
 \noTRAINER{Eigene Notizen...}
 
-\noTRAINER{\mmPapier{22}}
-\TRAINER{\mmPapier{15}}
+\noTRAINER{\mmPapier{11.2}}
+\TRAINER{\mmPapier{7.2}}
 \newpage
 \mmPapier{22}
 
