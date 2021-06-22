@@ -14,12 +14,11 @@
 \usepackage{makecell}
 
 
-\renewcommand{\metaHeaderLine}{Formelsammlung (v 0.0.27 DRAFT 2021-06-20 fp)}
+\renewcommand{\metaHeaderLine}{Formelsammlung (v 0.0.28 DRAFT 2021-06-22 fp)}
 \renewcommand{\arbeitsblattTitel}{Formelsammlung GeSo (working Draft)}
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
 \titlespacing*{\subsection}{0pt}{0.1\baselineskip}{0.1\baselineskip}
-
 
 
 %%% MODERN:
@@ -89,41 +88,43 @@ Zahl  & & wissenschaftl. & & TR: \tiprobutton{EE} \\
 \end{tabular}
 
 
-\hrulefill
+\forceCB
 \section*{Algebra}
 \subsection*{Hierarchie der Rechenoperationen}
 «Klapopustri»
 (1.) Klammern, (2.) Potenzen, (3.) Punktoperationen, (4.)Strichoperationen
 \subsubsection*{Termarten}
-$a+3$= Summe\\
-$5-b$= Differenz\\
-$3a$= Produkt\\
-$7:b$= Quotient\\
-$a^3$= Potenz\\
-
-\subsection*{Grundrechenarten}
-
-\textbf{Assoziativgesetz}: $(a+b)+c = a+(b+c)$ und $(a\cdot{}b)\cdot{}c = a\cdot{}(b\cdot{}c)$\\
-\textbf{Kommutativgesetz}: $a+b = b+a$ und $a\cdot{}b= b\cdot{}a$\\
-\textbf{Distributivgesetz}: $a\cdot{}(x+y) = a\cdot{}x + a\cdot{}y$\\
-
-\textbf{Vorzeichen}
-
-$(+2)\cdot(+3)=+6$;
-$(-2)\cdot(-3)=+6$;
-$(+2)\cdot(-3)=-6$;
-$(-2)\cdot(+3)=-6$
-
-%%$$\fbox{+}\fbox{+} = \fbox{+}$$
-%%$$\fbox{-}\fbox{-} = \fbox{+}$$
-%%$$\fbox{+}\fbox{-} = \fbox{-}$$
-%%$$\fbox{-}\fbox{+} = \fbox{-}$$
+$a+3 = $ \, Summe\\
+$5-b = $ \, Differenz\\
+$3a  = $ \, Produkt\\
+$7:b = $ \, Quotient\\
+$a^3 = $ \, Potenz\\
 
 \textbf{Achtung}
 
 Differenzterm:  $3-(-7) = +10$
 
 Produktterm:$-3(-7) = +21$
+
+
+\subsection*{Grundrechenarten}
+
+\textbf{Assoziativgesetz}: $(a+b)+c = a+(b+c)$ und $(a\cdot{}b)\cdot{}c = a\cdot{}(b\cdot{}c)$\\
+\textbf{Kommutativgesetz}: $a+b = b+a$ und $a\cdot{}b= b\cdot{}a$\\
+\textbf{Distributivgesetz}: $a\cdot{}(x\pm y) = a\cdot{}x \pm a\cdot{}y$\\
+
+\textbf{Vorzeichen}
+
+$(+2)\cdot(+3)=+6$\\
+$(-2)\cdot(-3)=+6$\\
+$(+2)\cdot(-3)=-6$\\
+$(-2)\cdot(+3)=-6$\\
+
+%%$$\fbox{+}\fbox{+} = \fbox{+}$$
+%%$$\fbox{-}\fbox{-} = \fbox{+}$$
+%%$$\fbox{+}\fbox{-} = \fbox{-}$$
+%%$$\fbox{-}\fbox{+} = \fbox{-}$$
+
 
 \subsection*{Binomische Formeln}
 $$(a+b)^2 = a^2+2ab + b^2$$%%
@@ -166,7 +167,7 @@ oder\\ b) \texttt{PFactor} \tiprobutton{math}\tiprobutton{4}
 %% Forced column break
 %%\forceCB
 
-
+\hrulefill
 \section*{Potenzen}
 \begin{definition*}{Potenz}{}
 $$a^n := \underbrace{a\cdot{}a\cdot{}a\cdot{}...\cdot{}a}_{n\textrm{ Faktoren}}$$
@@ -240,7 +241,7 @@ Logarithmen sind Exponenten zu einer fest gewählten Basis.
 $$\log_a(u\cdot v) = \log_a(u) + \log_a(v)$$
 $$\log_a(u : v) = \log_a(u) - \log_a(v)$$
 $$\log_a(b^x) = x\cdot{}\log_a(b)$$
-$$\log_a(b) = \frac{...}{...} = \frac{}{}$$ \TRAINER{Wieder Farbig}
+$$\log_{\color{ForestGreen}a}({\color{red}b}) = \frac{\lg({\color{ForestGreen}a})}{\lg({\color{red}b})} = \frac{\ln({\color{ForestGreen}a})}{\ln({\color{red}b})}$$
 \end{gesetz*}
 
 
@@ -249,16 +250,11 @@ $$\log_a(b) = \frac{...}{...} = \frac{}{}$$ \TRAINER{Wieder Farbig}
 \section*{Gleichungen}
 
 \subsection*{Lineare Gleichungen}
-\TRAINER{Ist das Beispiel nötig? Sollen sie selbst?}
-\TRAINER{Wollen wir so viele Beispiele???}
-$$5x-3a = 2cx-7b$$
-1. Alle $x$ nach links, übriges rechts:
-$$5x - 2cx = 3a-7b$$
-2. $x$ \textbf{\color{red}ausklammern}
-$$x\cdot{}{\color{red}(5-2c)} = 3a-7b$$
-3. Durch Klammer teilen
-$$x = \frac{3a-7b}{{\color{red}5-2c}}$$
 
+Grundform:
+$$a\cdot{}x = b$$
+Lösung
+$$x = \frac{-b}{a}$$
 
 \subsection*{num-solv}
 Der Taschenrechner löst Gleichungen mit Zahlen nach $x$ auf:
@@ -288,8 +284,7 @@ Bsp.: $$\frac5{x+2}=\frac{7+x}{x-3} \Leftrightarrow{} \mathbb{D}_x=\mathbb{R}\ba
 \end{enumerate}
 \end{rezept*}
 
-
-\forceCB
+%% \forceCB
 \subsection*{Quadratische Gleichungen}
 \begin{gesetz*}{Lösungsformel}{}
 \textbf{Grundform}: $ax^2 + bx+c = 0$
@@ -301,9 +296,6 @@ $$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$
 $D>0\Rightarrow$ Zwei Lösungen;\\
 $D=0\Rightarrow$ Eine Lösung;\\
 $D<0\Rightarrow$ Keine Lösung
-
-
-Taschenrechner \tiprobutton{2nd}\tiprobutton{cos_poly-solv}\\
 
 \hrulefill
 
@@ -318,29 +310,29 @@ $$x^\frac1b=c \Leftrightarrow x=c^b$$
 
 $$x^{\frac{a}b} = c \Leftrightarrow{}
 x=c^{\frac{b}a} = \sqrt[a]{c^b}$$
-
+\forceCB
 \subsection*{Exponentialgleichungen}
-\textbf{Fall 1} Exponentenvergleich. Bsp.:
-
+\subsubsection*{mit Exponentenvregleich}
 
 $$5^4 = 5^{2x+1} \Longrightarrow  4=2x+1$$
 
+\subsubsection*{durch Logarithmieren}
+$$a^x=b \Rightarrow{} x=\log_a(b) = \frac{\lg(b)}{\lg(a)}$$
 
-\textbf{Fall 2} Logarithmen. Bsp.:
-
-$$5\cdot{}7^x=105 \Leftrightarrow 7^x=21 \Rightarrow x=\log_7(21)$$
+Beispiel
+$$7^x=15 \Rightarrow x=\log_7(15)$$
 oder so (mit Zehnerlogarithmus $(\lg)$):
 $$7^x=15 \Rightarrow$$
-$$x=\log_7(15)$$
+$$\lg(7^x) = \lg(15) \Rightarrow x\cdot{}\lg(7) = \lg(15) \Rightarrow$$
+$$x=\frac{\lg(15)}{\lg(7)}$$
 
-\subsection*{Exponentialgleichung}
-$$a^x=b \Rightarrow{} x=\log_a(b) = \frac{\lg(b)}{\lg(a)}$$
+
 
 
 \subsection*{Lineare Gleichungssysteme}
 Erst in \textbf{Grundform} bringen und dann
 \gleichungZZ{5x+7y}{19}{16x -13y}{-4}
-mit Taschenrechner «\texttt{sys-solv}» \tiprobutton{2nd}\tiprobutton{tan_sys-solv} lösen.
+mit Taschenrechner lösen.
 
 \subsection*{Substitution}
 Beispiel Bruchgleichungssysteme:
@@ -406,10 +398,10 @@ Zwei Geraden sind \textbf{parallel}, wenn ihre Steigungen gleich sind.
 
 $b$ = $y$-Achsenabschnitt (=Ordinatenabschnitt)
 
-\subsection*{Achsenschnittpunkte}
-\subsubsection*{Nullstelle...} $x_0$ = Schnittstelle mit der $x$-Achse ($y$ null setzen und auf\/lösen).
+\subsection*{Achsenschnittpunkte...}
+\subsubsection*{...Nullstelle} $x_0$ = Schnittstelle mit der $x$-Achse ($y$ null setzen und auf\/lösen).
 
-\subsubsection*{Schnittpunkt mit der $y$-Achse}
+\subsubsection*{...Schnittpunkt mit der $y$-Achse}
 $x=0$ setzen.
 
 Bsp.: $y=7x+4$ Achsenabschnitt = Schnittpunkt mit der $y$-Achse:
@@ -461,12 +453,16 @@ $z\in\mathbb{Z}\backslash\{0,1\} = \{...-2, -1, 2, 3, 4, ...\}$
 
 $z>0$: Parabeln
 
+%%\bbwCenterGraphic{8cm}{PotenzFkt.pdf}
+
 \bbwCenterGraphic{8cm}{PotenzFktx2x4.pdf}
-\TRAINER{Klarer beschriften, welche Funktion zu was und keine
-Überlappungen: Insb. die Zeichen 3 und = liegen jetzt übereinander.}
+
+\bbwCenterGraphic{8cm}{PotenzFktx3x5.pdf}
 
 
 $z<0$: Hyperbeln
+
+\bbwCenterGraphic{8cm}{PotenzFkt1overx2x4.pdf}
 
 \bbwCenterGraphic{8cm}{PotenzFkt1overx3x5.pdf}
 
@@ -509,8 +505,11 @@ $0<a<1$: Zerfallsrate
 
 Wachstum:
 \bbwCenterGraphic{8.5cm}{allg/funktionen/img/exp/exponentielles_wachstum.png}
-Zerfall:
-\bbwCenterGraphic{7.5cm}{allg/funktionen/img/exp/exponentieller_zerfall.png}
+Zerfall: $0<a<1$
+
+%%\bbwCenterGraphic{7.5cm}{allg/funktionen/img/exp/exponentieller_zerfall.png}
+
+
 \begin{rezept*}{Beobachtungsintervall}{}
 $$f(t) = {\color{blue}b}\cdot{}{\color{red}a}^{\frac{t}{\color{ForestGreen}\tau}}$$
 $\color{ForestGreen}\tau$ = Beobachtungsintervall zu $\color{red}a$\\
@@ -530,7 +529,7 @@ $$c+b\cdot{}a^x = c + b\cdot{}e^{mx} \textrm{ mit } m = \ln(a)$$
 bzw.
 
 $$c+b\cdot{}a^\frac{x}\tau = c+b\cdot{}e^{mx} \textrm{ mit }
-m=\ln(a^\frac1\tau) = \frac1\tau \cdot{}\ln(a)$$
+m=\ln\left(a^\frac1\tau\right) = \frac1\tau \cdot{}\ln(a)$$
 
 \subsection*{Halbwertszeit}
 $\frac12 \cdot{} b = f(t) = b\cdot{}a^{\frac{t}{\tau}}$
@@ -541,26 +540,23 @@ $2\cdot{}b = f(t) = b\cdot{}a^{\frac{t}{\tau}}$
 $$t_{2} = \tau\cdot{}\log_a(2)$$
 
 \subsection*{Sättigungsfunktionen}
-\begin{gesetz*}{Beschränkter Zerfall}{}
-$$f(t) = c + b\cdot{}a^\frac{t}\tau$$
+
+
+\bbwCenterGraphic{7.5cm}{img/ExpFunktionBeschraenktesWachstum.pdf}
+
+\subsubsection*{Beschränktes Wachstum (Zerfall)}
+
+$$f(t) = c \pm{} b\cdot{}a^\frac{t}\tau$$
+
 $c$: Sättigungsgrenze\\
+$+$: Zerfall\\
+$-$: Wachstum\\
 $0<a<1$: Zerfallsrate\\
+$a>1$: Wachstumsrate\\
 $b$: Sättigungsdefizit bei $t=0$\\
-$c+b$ = Startwert 
-\end{gesetz*}
+$c\pm b$ = Startwert 
 
 
-\bbwCenterGraphic{7.5cm}{allg/funktionen/img/saettigung/saettigungskurveDown.png}
-
-\begin{gesetz*}{Beschränktes Wachstum}{}
-$$f(t) = c - b\cdot{}a^\frac{t}\tau$$
-$c$: Sättigungsgrenze\\
-$0<a<1$: Wachstumssrate\\
-$b$: Sättigungsdefizit bei $t=0$\\
-$c-b$: Startwert
-\end{gesetz*}
-
-\bbwCenterGraphic{7.5cm}{allg/funktionen/img/saettigung/saettigungskurve.png}
 
 \begin{bemerkung*}{Sättigungsdefizit}{}
 
@@ -609,11 +605,7 @@ Die Quartilsgrenzen $Q_1$ bzw. $Q_3$ sind die Mediane der linken,
 bzw. rechten Datenhälfte (nachdem der eine Zentralwert entfernt
 wurde).
 
-Am einfachsten mit dem Taschenrechner:
-
-Dateneingabe: \tiprobutton{data}
-
-Auswertung: \tiprobutton{2nd}\tiprobutton{data_stat-reg-distr}\tiprobutton{2}
+Am einfachsten mit dem Taschenrechner.
 \end{rezept*}
 
 \subsubsection*{Modus}
@@ -698,7 +690,7 @@ $\varphi_i = f_i\cdot{}360\degre$ = Zentriwinkel im Kuchendiagramm
 
 \subsubsection*{Histogramm}
 \bbwCenterGraphic{8cm}{img/Histogramm.pdf}
-\TRAINER{Ersetze «Sportler*innen» durch «Clubmitglieder»}
+\TRAINER{Entferne «Sportler*innen»}
 
 \begin{itemize}
 \item Alle Balken sind gleich breit
@@ -709,27 +701,32 @@ Werte festgelegt
 \end{itemize}
 
 
-\subsubsection*{Boxplot}
-Vorgehen
-\begin{enumerate}
-\item Daten in TR eingeben \tiprobutton{data}...
-\item ... und mit \tiprobutton{2nd} \tiprobutton{data_stat-reg-distr} auslesen.
-\item {\color{orange} Median ($\mediantilde{x} = x_{\textrm{MED}}$)},
-und Quartile ({\color{blue}$Q_1$}, {\color{green}$Q_3$})einzeichnen
-\item IQR := {\color{green}Q3}-{\color{blue}Q1} rechnen
-\item IQR mit 1.5 multiplizieren
-\item {\color{red} untere Ausreißerschwelle\\ uAs} $ = Q_1 -
-1.5\cdot{}\textrm{IQR}$\\ und {\color{red} obere Ausreißerschwelle\\ oAs} $=Q_3 + 1.5\cdot{}\textrm{IQR}$\\ (ausradierbar) fein markieren (gehören nicht zum Boxplot)
-\item Alle Ausreißer mit Ring $\circ$ oder Stern $\star$ einzeichnen.
-\item Whisker (entfernteste Werte innerhalb der Ausreißerschwellen)
-einzeichnen.
-\item Boxdekoration horizontale Linien einzeichnen.
-\end{enumerate}
-\bbwCenterGraphic{8cm}{img/Boxplot.pdf}
+%Vorgehen
+%\begin{enumerate}
+%\item Daten in TR eingeben \tiprobutton{data}...
+%\item ... und mit \tiprobutton{2nd} \tiprobutton{data_stat-reg-distr} auslesen.
+%\item {\color{orange} Median ($\mediantilde{x} = x_{\textrm{MED}}$)},
+%und Quartile ({\color{blue}$Q_1$}, {\color{green}$Q_3$})einzeichnen
+%\item IQR := {\color{green}Q3}-{\color{blue}Q1} rechnen
+%\item IQR mit 1.5 multiplizieren
+%\item {\color{red} untere Ausreißerschwelle\\ uAs} $ = Q_1 -
+%1.5\cdot{}\textrm{IQR}$\\ und {\color{red} obere Ausreißerschwelle\\ oAs} $=Q_3 + 1.5\cdot{}\textrm{IQR}$\\ (ausradierbar) fein markieren (gehören nicht zum Boxplot)
+%\item Alle Ausreißer mit Ring $\circ$ oder Stern $\star$ einzeichnen.
+%\item Whisker (entfernteste Werte innerhalb der Ausreißerschwellen)
+%einzeichnen.
+%\item Boxdekoration horizontale Linien einzeichnen.
+%\end{enumerate}
+%\bbwCenterGraphic{8cm}{img/Boxplot.pdf}
 
 \end{multicols}
+
+\subsubsection*{Boxplot}
+
 \bbwCenterGraphic{18cm}{BoxplotMitStreudiagramm.pdf}
-\TRAINER{Ersetze «Sportler*innen» durch «Clubmitglieder»}
+\TRAINER{Entferne «Sportler*innen»}
+
+\hrulefill
+
 \begin{multicols}{2}
 \section*{Stochastik}
 
@@ -740,8 +737,14 @@ Hat eine zweistufige Situation zunächst $k_1$ Möglichkeiten, gefolgt
 von $k_2$ Möglichkeiten, so hat man insgesamt $k_1\cdot{}k_2$
 Möglichkeiten. Dies ist auf beliebig viele Stufen verallgemeinerbar.
 
-\bbwCenterGraphic{8cm}{img/KombinatorikMultiplikation.pdf}
-\TRAINER{Ersetze «Ein:e Schüler:in» durch «Andrea»}
+\begin{tabular}{cp{4.5cm}}
+\raisebox{-5cm}{\includegraphics[width=3.5cm]{img/KombinatorikMultiplikation.pdf}} &
+Andrea hat drei verschiedene Hosen und vier verschiedene Pullover.
+Es gibt somit $3\times4$ mögliche Kombinationen.\\
+\end{tabular}
+
+%%\bbwCenterGraphic{3cm}{img/KombinatorikMultiplikation.pdf}
+%%\TRAINER{Ersetze «Ein:e Schüler:in» durch «Andrea»}
 
 \subsubsection*{Permutationen (Sitzordnungen)}
 
@@ -877,7 +880,7 @@ Bei \textbf{minimal} arbeite mit \textbf{Gegenereignis}.
 \textbf{Achtung}: Gegenereignis von «minimal 4 Mal» = «maximal 3 Mal».
 $$P(X \ge 4) = 1 - P(X < 4) = 1-P(X\le 3)$$
 
-\forceCB
+
 \subsection*{Hypergeometrische Verteilung}
 Gegeben $N+T$ Kugeln in einer Urne. Herausgezogen werden $n+t$:
 \begin{itemize}
@@ -979,6 +982,8 @@ Hat es genügend Platz für die SuS (Schülerinnen und Schüler) für weitere No
 Ganz am Schluss:
 
 * Zeilenumbrüche
+
+* Einzüge (0pt bei Aufzählungen und Nummerierungen)
 
 * Absatz-Umbrüche
 
