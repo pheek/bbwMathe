@@ -14,7 +14,7 @@
 \usepackage{makecell}
 
 
-\renewcommand{\metaHeaderLine}{Formelsammlung (v 0.0.28 DRAFT 2021-06-22 fp)}
+\renewcommand{\metaHeaderLine}{Formelsammlung (v 0.0.29 DRAFT 2021-06-22 fp)}
 \renewcommand{\arbeitsblattTitel}{Formelsammlung GeSo (working Draft)}
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
@@ -94,11 +94,13 @@ Zahl  & & wissenschaftl. & & TR: \tiprobutton{EE} \\
 «Klapopustri»
 (1.) Klammern, (2.) Potenzen, (3.) Punktoperationen, (4.)Strichoperationen
 \subsubsection*{Termarten}
-$a+3 = $ \, Summe\\
-$5-b = $ \, Differenz\\
-$3a  = $ \, Produkt\\
-$7:b = $ \, Quotient\\
-$a^3 = $ \, Potenz\\
+\begin{tabular}{rcl}
+$a+3$ &=& Summe\\
+$5-b$ &=& Differenz\\
+$3a$  &=& Produkt\\
+$7:b$ &=& Quotient\\
+$a^3$ &=& Potenz
+\end{tabular}
 
 \textbf{Achtung}
 
@@ -241,7 +243,7 @@ Logarithmen sind Exponenten zu einer fest gewählten Basis.
 $$\log_a(u\cdot v) = \log_a(u) + \log_a(v)$$
 $$\log_a(u : v) = \log_a(u) - \log_a(v)$$
 $$\log_a(b^x) = x\cdot{}\log_a(b)$$
-$$\log_{\color{ForestGreen}a}({\color{red}b}) = \frac{\lg({\color{ForestGreen}a})}{\lg({\color{red}b})} = \frac{\ln({\color{ForestGreen}a})}{\ln({\color{red}b})}$$
+$$\log_{\color{ForestGreen}a}({\color{red}b}) = \frac{\lg({\color{red}b})}{\lg({\color{ForestGreen}a})} = \frac{\ln({\color{red}b})}{\ln({\color{ForestGreen}a})}$$
 \end{gesetz*}
 
 
@@ -492,7 +494,8 @@ $a$ heißt Öffnung ($a<0$: Die Parabel ist nach unten geöffnet)
 
 $a=1$ oder $a=-1$: Normalparabel
 
-\forceCB
+\hrulefill
+
 \section*{Exponentialfunktionen}
 \begin{definition*}{Exponentialfunktion}{}
 $$f(t) = b\cdot{}a^t$$
@@ -891,7 +894,7 @@ Gegeben $N+T$ Kugeln in einer Urne. Herausgezogen werden $n+t$:
 \end{itemize}
 Wahrscheinlichkeit \textbf{genau} $t$ Treffer zu ziehen:
 
-$$P(X=t) = \frac{ {T \choose t} \cdot {N  \choose n} }{{T+N \choose t+n}}.$$
+$$P(X=t) = \frac{ {T \choose t} \cdot {N  \choose n} }{{T+N \choose t+n}}$$
 
 
 \subsection*{Vierfeldtafeln}
@@ -926,17 +929,17 @@ $\Sigma$   &        55 &       75 &      130 \\\hline
 
 \textbf{Normale Wahrscheinlichkeit}\\
 «Wie groß ist hier die Wahrscheinlichkeit, gesund (G) zu sein?»
-$$P(G) = \frac{\textrm{\#Gesunde}}{\textrm{\#Alle}} = \frac{|G|}{|\Omega|} = \frac{55}{130}$$
+$$P(G) = \frac{\textrm{\#Gesunde}}{\textrm{\#Alle}} =  \frac{55}{130}$$
 
 \textbf{Wahrscheinlichkeit der Schnittmenge}\\
 «Wie groß ist hier die Wahrscheinlichkeit, eine gesunde Frau anzutreffen treffen?»
-$$P(G\cap F) = \frac{\textrm{\#Gesunde Frauen}}{\textrm{\#Alle}}=\frac{|G\cap F|}{|\Omega|} = \frac{30}{130}$$
+$$P(G\cap F) = \frac{\textrm{\#Gesunde Frauen}}{\textrm{\#Alle}}= \frac{30}{130}$$
 
 \textbf{Bedingte Wahrscheinlichkeit}\\
 «Wie groß ist die Wahrscheinlichkeit, unter den Gesunden eine Frau anzutreffen?»
-$$P(F | G) = \frac{\textrm{\#Gesunde Frauen}}{\textrm{\#Gesunde}} = \frac{|F\cap G|}{|G|} = \frac{30}{55}$$
+$$P(F | G) = \frac{\textrm{\#Gesunde Frauen}}{\textrm{\#Gesunde}} =  \frac{30}{55}$$
 «Wie groß ist die wahrscheinlichkeit, unter den Frauen eine gesunde Person zu treffen?»
-$$P(G | F) = \frac{\textrm{\#Gesunde Frauen}}{\textrm{\#Frauen}}= \frac{|G \cap F|}{|F|} = \frac{30}{70}$$
+$$P(G | F) = \frac{\textrm{\#Gesunde Frauen}}{\textrm{\#Frauen}}=  \frac{30}{70}$$
 
 
 \end{multicols}
@@ -998,8 +1001,7 @@ Ganz am Schluss:
 
 \noTRAINER{Eigene Notizen...}
 
-\noTRAINER{\mmPapier{11.2}}
-\TRAINER{\mmPapier{7.2}}
+\mmPapier{22}
 \newpage
 \mmPapier{22}
 
