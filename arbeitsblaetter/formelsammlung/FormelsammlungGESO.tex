@@ -53,13 +53,9 @@ $\mathbb{N} = \{1,2, ...\}$                                   \textbf{natürlich
 $\mathbb{Z} = \{..., -2, -1, 0, 1,2, ...\}$                   \textbf{ganz}\\
 $\mathbb{Q} = \{\frac{a}b|a\in \mathbb{Z},b\in\mathbb{N}\}$   \textbf{rational} (Brüche)\\
 $\mathbb{R} = \{..., -1, ..., 0, ... \frac12, ..., \sqrt{2}, ..., e, ... \pi, ...\}  $ \textbf{reell} (alle Zahlen auf der Zahlengerade)\\
-
-\textbf{Prim}zahl: hat genau zwei Teiler (Eins und sich selbst):\\ $\mathbb{P} = \{2, 3, 5, 7, 11, 13, ...\}$
 \end{definition*}
 
-$$\mathbb{P} \subset \mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}$$
-
-\TRAINER{$|\mathbb{N}| = |\mathbb{Q}|$ aber $|\mathbb{Q}| \ne |\mathbb{R}|$} 
+$$\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}$$
 
 \hrulefill%% hrulefill vor allen neuen "sections" auf derselben Seite
 
@@ -82,17 +78,6 @@ zählen. Bsp. \textbf{\color{ForestGreen}drei} signifikante Stellen:
 
 \textbf{\color{ForestGreen}208} cm = \textbf{\color{ForestGreen}2.08} m = 0.00\textbf{\color{ForestGreen}208} km
 
-Bsp.: Runden auf \textbf{\color{ForestGreen}vier} signifikante Stellen:
-
-\textbf{\color{ForestGreen}208.6}\textbf{\color{red}6} cm $\approx$ \textbf{\color{ForestGreen}208.7} cm
-
-0.00\textbf{\color{ForestGreen}2086}\textbf{\color{red}6} km $\approx$ 0.00\textbf{\color{ForestGreen}2087} km
-
-
-\textbf{\color{ForestGreen}30.89}\textbf{\color{red}6} $\approx$ \textbf{\color{ForestGreen}30.90}
-
-(4. Ziffer stehen lassen, auch wenn = 0)
-
 %%\forceCB{}%%
 \subsection*{Wissenschaftliche Notation}
 Für große, aber auch für Zahlen sehr nahe an 0, wird die wissenschaftliche Schreibweise vorgezogen. Dabei steht vor dem Dezimalpunkt immer \textbf{\color{blue}genau eine Ziffer}:
@@ -106,41 +91,69 @@ Zahl  & & wissenschaftl. & & TR: \tiprobutton{EE} \\
 
 \hrulefill
 \section*{Algebra}
+\subsection*{Hierarchie der Rechenoperationen}
+«Klapopustri»
+(1.) Klammern, (2.) Potenzen, (3.) Punktoperationen, (4.)Strichoperationen
+\subsubsection*{Termarten}
+$a+3$= Summe\\
+$5-b$= Differenz\\
+$3a$= Produkt\\
+$7:b$= Quotient\\
+$a^3$= Potenz\\
 
 \subsection*{Grundrechenarten}
-$$3-(-7) = +10$$
-aber
-$$-3(-7) = +21$$
 
-\begin{gesetz*}{Binomische Formeln}{}
+\textbf{Assoziativgesetz}: $(a+b)+c = a+(b+c)$ und $(a\cdot{}b)\cdot{}c = a\cdot{}(b\cdot{}c)$\\
+\textbf{Kommutativgesetz}: $a+b = b+a$ und $a\cdot{}b= b\cdot{}a$\\
+\textbf{Distributivgesetz}: $a\cdot{}(x+y) = a\cdot{}x + a\cdot{}y$\\
+
+\textbf{Vorzeichen}
+
+$(+2)\cdot(+3)=+6$;
+$(-2)\cdot(-3)=+6$;
+$(+2)\cdot(-3)=-6$;
+$(-2)\cdot(+3)=-6$
+
+%%$$\fbox{+}\fbox{+} = \fbox{+}$$
+%%$$\fbox{-}\fbox{-} = \fbox{+}$$
+%%$$\fbox{+}\fbox{-} = \fbox{-}$$
+%%$$\fbox{-}\fbox{+} = \fbox{-}$$
+
+\textbf{Achtung}
+
+Differenzterm:  $3-(-7) = +10$
+
+Produktterm:$-3(-7) = +21$
+
+\subsection*{Binomische Formeln}
 $$(a+b)^2 = a^2+2ab + b^2$$%%
 $$(a-b)^2=a^2-2ab+b^2$$%%
 $$(a-b)\cdot(a+b) = a^2 - b^2$$
-Bsp.:
-$$1-x^2 = (1-x)\cdot{}(1+x)$$
-\end{gesetz*}
-\
+
 \subsection*{(Absolut)betrag einer Zahl}
 
-$|7| = 7$;  \hfill{ } $|-5| = 5$; \hfill{} $-|6|=-6$; \hfill{} $-|-4| = -4$
+$|\pm7| = 7$
 
 \TRAINER{Intervall-Schreibweise? \zB $a\in[0;1[$}
-
-\forceCB
 
 \section*{Bruchterme}
 \subsection*{Faktorisieren}
 
-
-\begin{rezept*}{}{}
 \begin{enumerate}
-\item gemeinsame Faktoren ausklammern
-$$\frac{ax+ay}{bx+by} =\frac{a(x+y)}{b(x+y)} = \frac{a}b$$
-\item Teilsummen ausklammern
+\item gemeinsame Faktoren ausklammern:
+\begin{itemize}
+\item Zahlen und Variable:
+$$ax + ay = a(x+y)$$
+\item
+Teilsummen ausklammern
 $$3(7r+6) - b(7r+6) = (3-b)(7r+6)$$
+\item ($-1$ ausklammern)
+$$(b-a)=(-1)\cdot{}(a-b)$$
+\end{itemize}
+
 \item Binomische Formeln
 $$x^2-1 = (x-1)(x+1)$$
-$$4b^2-9c^2=(2b+3c)(2b-3c)$$
+$$4b^2 -12bc + 9c^2=(2b-3c)^2$$
 \item Zweiklammeransatz
 $$x^2+2x-15 = (x+5)(x-3)$$
 Die Faktoren für den Zweiklammeransatz können mit dem Taschenrechner
@@ -149,16 +162,6 @@ oder\\ b) \texttt{PFactor} \tiprobutton{math}\tiprobutton{4}
 
 \textbf{\color{red}Achte auf Vorzeichen!}
 \end{enumerate}
-\end{rezept*}
-
-\subsection*{Vertauschte Differenz}
-($-1$ ausklammern)
-
-$(b-a)=(-1)\cdot{}(a-b)$
-
-Beispiel:
-
-$\frac{x}{a-b} +  \frac{y}{b-a} = \frac{x}{a-b} + \frac{-y}{a-b} = \frac{x-y}{a-b}$
 
 %% Forced column break
 %%\forceCB
@@ -168,24 +171,21 @@ $\frac{x}{a-b} +  \frac{y}{b-a} = \frac{x}{a-b} + \frac{-y}{a-b} = \frac{x-y}{a-
 \begin{definition*}{Potenz}{}
 $$a^n := \underbrace{a\cdot{}a\cdot{}a\cdot{}...\cdot{}a}_{n\textrm{ Faktoren}}$$
 $$7^3=7\cdot{}7\cdot{}7=343$$
-$7^3$ Potenz\\
-$7$ Basis\\
-$3$ Exponent\\
-$343$ Potenzwert\\
+
+Spezialfall:
+$a^0=1$
 \end{definition*}
 
-\begin{gesetz*}{gleiche\,Basis}{}
+\subsection*{gleiche Basis}
 \begin{tabular}{cc}
 $a^m\cdot{}a^n = a^{m+n},$ & $a^m:a^n=a^{m-n},$ \\
 $\left(a^m\right)^n = a^{m\cdot{}n}$ &\\
  \end{tabular} 
-\end{gesetz*}
 
-\begin{gesetz*}{gleicher\,Exponent}{}
+\subsection*{gleicher\,Exponent}
 \begin{tabular}{cc}
 $a^n\cdot{}b^n = (a\cdot{}b)^n,$ & $\frac{a^n}{b^n} =\left(\frac{a}b\right)^n $\\
  \end{tabular}
-\end{gesetz*}
 
 \subsection*{Vorzeichen}
 Fall: $n$ \textbf{gerade}:
@@ -201,14 +201,13 @@ Fall: $n$ \textbf{un}gerade:
  \end{tabular} 
 
 
-\begin{gesetz*}{negative Exponenten}{}
+\subsection*{negative Exponenten}
 
 Für Basis $a\ne 0, b\ne 0$ und $m \in\mathbb{Q}$ gilt:
 
-\begin{tabular}{ccc}
-$a^0=1,$ & $a^{-m} = \frac1{a^m},$ & $\left(\frac{a}b\right)^{-m} = \left(\frac{b}a\right)^m$ \\
+\begin{tabular}{cc}
+$a^{-m} = \frac1{a^m},$ & $\left(\frac{a}b\right)^{-m} = \left(\frac{b}a\right)^m$ \\
  \end{tabular}
-\end{gesetz*}
 
 \begin{rezept*}{}{}{}
 Exponenten vertauschen ihr Vorzeichen beim Übertreten des Bruchstrichs:
@@ -217,9 +216,10 @@ $$\frac{a^{-3}b^2}{c^5d^{-6}} = \frac{b^2d^6}{a^3c^5}$$
 
 \subsection*{$n$-te Wurzel}
 $\sqrt[n]{a} := \left(a\right)^\frac1n$\hfill{}Bsp.: $8^{\frac13}=\sqrt[3]{8}=2$
-\begin{gesetz*}{}{}
+
 $$a^{\frac{m}n} = \sqrt[n]{a^m} = \left(\sqrt[n]a\right)^m$$
-\end{gesetz*}%%
+$$\sqrt[n]{\sqrt[m]{a}}   = \left((a)^\frac1m \right)^\frac1n = a^\frac1{nm}$$
+
 %%
 
 %%\forceCB%%
@@ -240,16 +240,11 @@ Logarithmen sind Exponenten zu einer fest gewählten Basis.
 $$\log_a(u\cdot v) = \log_a(u) + \log_a(v)$$
 $$\log_a(u : v) = \log_a(u) - \log_a(v)$$
 $$\log_a(b^x) = x\cdot{}\log_a(b)$$
+$$\log_a(b) = \frac{...}{...} = \frac{}{}$$ \TRAINER{Wieder Farbig}
 \end{gesetz*}
 
-\subsection*{Spezielle Werte}
-\begin{tabular}{ccc}
-$\log(1)=0$     &    $\lg(10) = 1$ & $\lg(1000)=3$           \\
-$\lg(0.01)=-2$ & $\log_a(a) = 1$   & $\ln(e) = 1$\\
-\end{tabular}
-\begin{gesetz*}{Basiswechsel}{}
-$$\log_{\color{ForestGreen}a}({\color{red}b}) = \frac{\lg({\color{red}b})}{\lg({\color{ForestGreen}a})} = \frac{\ln({\color{red}b})}{\ln({\color{ForestGreen}a})}$$
-\end{gesetz*}
+
+
 \hrulefill
 \section*{Gleichungen}
 
@@ -302,10 +297,10 @@ Bsp.: $$\frac5{x+2}=\frac{7+x}{x-3} \Leftrightarrow{} \mathbb{D}_x=\mathbb{R}\ba
 $$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$
 \end{gesetz*}
 
-\textbf{Diskriminante} $D = b^2-4ac$:
-$D>0$: Zwei Lösungen;
-$D=0$: Eine Lösung;
-$D<0$: Keine Lösung
+\textbf{Diskriminante} $D = b^2-4ac$\\
+$D>0\Rightarrow$ Zwei Lösungen;\\
+$D=0\Rightarrow$ Eine Lösung;\\
+$D<0\Rightarrow$ Keine Lösung
 
 
 Taschenrechner \tiprobutton{2nd}\tiprobutton{cos_poly-solv}\\
@@ -316,7 +311,10 @@ Taschenrechner \tiprobutton{2nd}\tiprobutton{cos_poly-solv}\\
 
 $$x^a=c \Leftrightarrow x=\sqrt[a]{c}$$
 
-Allgemein
+$$x^\frac1b=c \Leftrightarrow x=c^b$$
+
+
+
 
 $$x^{\frac{a}b} = c \Leftrightarrow{}
 x=c^{\frac{b}a} = \sqrt[a]{c^b}$$
@@ -324,26 +322,19 @@ x=c^{\frac{b}a} = \sqrt[a]{c^b}$$
 \subsection*{Exponentialgleichungen}
 \textbf{Fall 1} Exponentenvergleich. Bsp.:
 
-$$5^4=125^x \Rightarrow{} 5^4=(5^3)^x \Rightarrow{} 5^4=5^{3x} \Rightarrow{}$$
-$$ 4=3x \Rightarrow x=\frac43$$
+
+$$5^4 = 5^{2x+1} \Longrightarrow  4=2x+1$$
+
 
 \textbf{Fall 2} Logarithmen. Bsp.:
 
 $$5\cdot{}7^x=105 \Leftrightarrow 7^x=21 \Rightarrow x=\log_7(21)$$
 oder so (mit Zehnerlogarithmus $(\lg)$):
-$$5\cdot{}7^x=105 \Rightarrow$$
-$$7^x=21 \Rightarrow$$
-$$ \lg(7^x)=\lg(21) \Rightarrow$$
-$$x\cdot{}\lg(7)=\lg(21) \Rightarrow$$
-$$ x=\frac{\lg(21)}{\lg(7)}$$
+$$7^x=15 \Rightarrow$$
+$$x=\log_7(15)$$
 
-\begin{rezept}{Taschenrechner}{}
-$\lg$ auf Taschenrechner: «\texttt{log(}» mit der \tiprobutton{ln_log}-Taste (2$\times$ drücken)
-\end{rezept}
-
-\begin{gesetz*}{Exponentialgleichung}{}
+\subsection*{Exponentialgleichung}
 $$a^x=b \Rightarrow{} x=\log_a(b) = \frac{\lg(b)}{\lg(a)}$$
-\end{gesetz*}
 
 
 \subsection*{Lineare Gleichungssysteme}
@@ -351,23 +342,16 @@ Erst in \textbf{Grundform} bringen und dann
 \gleichungZZ{5x+7y}{19}{16x -13y}{-4}
 mit Taschenrechner «\texttt{sys-solv}» \tiprobutton{2nd}\tiprobutton{tan_sys-solv} lösen.
 
-Verfahren
-\begin{itemize}
-\item Einsetzungsverfahren
-\item Additionsverfahren
-\item Gleichsetzungsverfahren
-\item Graphische Lösung mit zwei Geradengleichungen
-\item Substitution:
-\end{itemize}
-
 \subsection*{Substitution}
 Beispiel Bruchgleichungssysteme:
 
-\gleichungZZ{{\color{ForestGreen}\frac1{x+1}} + {\color{orange}\frac3{y-2}}}{66}{{\color{ForestGreen}\frac2{x+1}} + {\color{orange}\frac5{y-2}}}{16}
+\gleichungZZ{{\color{ForestGreen}\frac1{x+1}} + {\color{red}\frac3{y-2}}}{66}{{\color{ForestGreen}\frac2{x+1}} + {\color{red}\frac5{y-2}}}{16}
 Substituiere
 ${\color{ForestGreen}a}:={\color{ForestGreen}\frac1{x+1}}$ und
-${\color{orange}b} : ={\color{orange}\frac1{y-2}}$:
-\gleichungZZ{{\color{ForestGreen}a} + 3{\color{orange}b}}{66}{2{\color{ForestGreen}a} + 5{\color{orange}b}}{16}
+${\color{red}b} : ={\color{orange}\frac1{y-2}}$:
+
+\TRAINER{Formel zurückholen phi}
+\gleichungZZ{{\color{ForestGreen}a} + 3{\color{red}b}}{66}{2{\color{ForestGreen}a} + 5{\color{red}b}}{16}
 
 Dann: Rücksubstitution
 
@@ -387,7 +371,7 @@ Leistung = $\frac{1 \textrm{ [Arbeit]}}{x \textrm{ [Zeiteinheiten]}}$
 Physik: Leistung = $\frac{\textrm{[Joule]}}{\textrm{[Sekunde]}} = [\textrm{Watt}]$
 
 \subsection*{Restaufgaben}
-$$A:B = C \textrm{ Rest } R \Longleftrightarrow{}  C\cdot{}B+R = A$$
+$$A:B = C \textrm{ Rest } R \Longleftrightarrow{} \frac{A-R}B=C \Longleftrightarrow{}  C\cdot{}B+R = A $$
 \TRAINER{Restaufgaben: Noch stehen gelassen, da im Kompendium oder in alter Prüfung gesichtet.}
 
 
@@ -413,7 +397,7 @@ $\mathbb{W}$ (=Zielmenge) (meist $\mathbb{R}$) zu.
 
 \hrulefill
 \section*{Lineare Funktionen}
-Explizite Form:
+
 $$g: y = f(x) = a\cdot{}x + b$$
 
 \bbwCenterGraphic{8cm}{img/lineareFunktion.png}
@@ -422,14 +406,11 @@ Zwei Geraden sind \textbf{parallel}, wenn ihre Steigungen gleich sind.
 
 $b$ = $y$-Achsenabschnitt (=Ordinatenabschnitt)
 
+\subsection*{Achsenschnittpunkte}
+\subsubsection*{Nullstelle...} $x_0$ = Schnittstelle mit der $x$-Achse ($y$ null setzen und auf\/lösen).
 
-\subsection*{Nullstelle...} ...einer Funktion: $y=0$ setzen und nach $x$
-auf\/lösen.
-
-Bsp.: $y=7x+4$ Nullstelle: $0 = 7x+4$, d.\,h. $x_0=\frac{-4}{7}$
-
-\subsection*{Ordinatenabschnitt}
-\textbf{Schnittpunkt mit der $y$-Achse}: $x=0$ setzen.
+\subsubsection*{Schnittpunkt mit der $y$-Achse}
+$x=0$ setzen.
 
 Bsp.: $y=7x+4$ Achsenabschnitt = Schnittpunkt mit der $y$-Achse:
 $x=0$.\\
@@ -453,7 +434,7 @@ $$x_M = \frac{x_A+x_B}2; y_M=\frac{y_A+y_B}2$$
 
 \subsection*{Horizontale Gerade}
 
-$g: y=ax+b$ ist horizontal, wenn die Steigung $a$ wegfällt ($a=0$).
+$g: y=ax+b$ ist horizontal, wenn die Steigung $a$ Null ist.
 
 $$g:  y=0\cdot{}x+b \Rightarrow y=b$$
 
@@ -505,7 +486,7 @@ Ist ${\color{red}a<0}$ (rechts in der Graphik) so sind Graphen mit
 geraden Exponenten nach unten geöffnet bzw. mit ungeraden Exponenten
 im Quadranten II und IV.
 
- \includegraphics[width=4cm]{allg/funktionen/img/potenzfct/potenzFunktionenGerade.png}\hfill{}\includegraphics[width=4cm]{allg/funktionen/img/potenzfct/potenzFunktionenUngerade.png}
+%% \includegraphics[width=4cm]{allg/funktionen/img/potenzfct/potenzFunktionenGerade.png}\hfill{}\includegraphics[width=4cm]{allg/funktionen/img/potenzfct/potenzFunktionenUngerade.png}
 
 
 \hrulefill  
@@ -542,7 +523,7 @@ $$f(t)= {\color{blue}3}\cdot{}{\color{red}4}^\frac{t}{\color{ForestGreen}5}$$
 \end{rezept*}
 
 
-\begin{gesetz*}{Basis $e$ Zeitvariable oft $x$}{}
+\subsection*{Basis $e$ Zeitvariable oft $x$}
 
 $$c+b\cdot{}a^x = c + b\cdot{}e^{mx} \textrm{ mit } m = \ln(a)$$
 
@@ -550,8 +531,6 @@ bzw.
 
 $$c+b\cdot{}a^\frac{x}\tau = c+b\cdot{}e^{mx} \textrm{ mit }
 m=\ln(a^\frac1\tau) = \frac1\tau \cdot{}\ln(a)$$
-
-\end{gesetz*}
 
 \subsection*{Halbwertszeit}
 $\frac12 \cdot{} b = f(t) = b\cdot{}a^{\frac{t}{\tau}}$
@@ -847,8 +826,6 @@ Endergebnisse).
 \end{itemize}
 
 
-
-
 \subsection*{Laplace-Wahrscheinlichkeit}
 Sind alle möglichen Ergebnisse eines Zufallsversuchs gleich
 wahrscheinlich (fairer Würfel), so ist die Wahrscheinlichkeit $P(E)$ für das Ereignis
@@ -898,7 +875,7 @@ $p$ = Wahrscheinlichkeit des Treffers\\
 Bei \textbf{minimal} arbeite mit \textbf{Gegenereignis}.
 
 \textbf{Achtung}: Gegenereignis von «minimal 4 Mal» = «maximal 3 Mal».
-$$P(\overline{\textrm{min. 4}\times}) = 1 - P(\textrm{max. 3}\times)$$
+$$P(X \ge 4) = 1 - P(X < 4) = 1-P(X\le 3)$$
 
 \forceCB
 \subsection*{Hypergeometrische Verteilung}
@@ -983,6 +960,7 @@ $$P(G | F) = \frac{\textrm{\#Gesunde Frauen}}{\textrm{\#Frauen}}= \frac{|G \cap 
 \cellcolor[HTML]{88ee88}             & \cellcolor[HTML]{88ee88} Kumulierte: (5: Binomial\textbf{c}df)\\\hline
 \cellcolor[HTML]{eeee88}poly-solv    & \cellcolor[HTML]{eeee88} Quadratische Gleichungen in Grundform $ax^2+bx+c=0$\\\hline
 \cellcolor[HTML]{eebb88}sys-solv     & \cellcolor[HTML]{eebb88} Lineare Gleichungssysteme\\\hline
+\cellcolor[HTML]{cccccc}num-solv     & \cellcolor[HTML]{cccccc} Gleichungen mit Zahlen nach $x$ auf\/lösen\\\hline
 \cellcolor[HTML]{bb88ff}table        & \cellcolor[HTML]{bb88ff} Wertetabelle für lineare Gleichungen, lineare Funktionen, diverse Funktionen\\\hline
 \cellcolor[HTML]{ddaa88}Kombinatorik & \cellcolor[HTML]{ddaa88} Fakultät: {\color{red}\textbf{!}}\\
 \cellcolor[HTML]{ddaa88}             & \cellcolor[HTML]{ddaa88} $n \choose k$: Tippe $n$ nCr $k$\\\hline
