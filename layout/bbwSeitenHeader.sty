@@ -11,6 +11,8 @@
 %% \thema
 \newcommand{\arbeitsblattTitel}{Pruefungsthema mit renewcommand arbeitsblattTitel überschreiben.}%%
 
+\newcommand{\shortAuthor}{fp @ bbw.ch}
+
 %%%%%%%%%%%%%%%%%%%%%%% P A C K A G E S %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[paper=a4paper,margin=17mm]{geometry}%%
 
@@ -33,7 +35,7 @@
 %% Headers
 \fancyhf[HL]{\makebox{\includegraphics[width=30mm]{logos/bbw.pdf}}}%%
 \fancyhf[HC]{\metaHeaderLine{}}%%
-\fancyhf[FR]{\tiny{fp @ bbw (\today{})}}%%
+\fancyhf[FR]{\tiny{\shortAuthor{} (\today{})}}%%
 
 \newcommand{\arbeitsblattHeader}{%%
   \begin{center}%%

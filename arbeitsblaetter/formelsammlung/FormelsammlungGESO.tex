@@ -2,6 +2,8 @@
 %% Meta: Formelsammlung GESO BBW
 %%
 
+\newcommand{\versionsnummerFoSa}{2021-06-22 0.0.33}
+
 \input{bbwSeite}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -13,13 +15,18 @@
 %%\usepackage{amssymb} %% für \blacktriangleright
 \usepackage{makecell}
 
+\renewcommand{\shortAuthor}{fp he @ bbw.ch}
 
-\renewcommand{\metaHeaderLine}{Formelsammlung (v 0.0.29 DRAFT 2021-06-22 fp)}
-\renewcommand{\arbeitsblattTitel}{Formelsammlung GeSo (working Draft)}
+\renewcommand{\metaHeaderLine}{Formelsammlung (GESO 2021 BBW)}
+
+\renewcommand{\arbeitsblattTitel}{Formelsammlung für die gesundheitlich-soziale BMS (working Draft)}
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
 \titlespacing*{\subsection}{0pt}{0.1\baselineskip}{0.1\baselineskip}
 
+
+%% Listen nicht einrücken:
+\setlist[itemize]{leftmargin=*}
 
 %%% MODERN:
 \renewcommand{\rmdefault}{phv} % Arial
@@ -263,6 +270,21 @@ Der Taschenrechner löst Gleichungen mit Zahlen nach $x$ auf:
 
 $5^x = 100 -x$; verwende \tiprobutton{2nd}\tiprobutton{sin_num-solv} $x\approx{}2.843$
 
+%% \forceCB
+\subsection*{Quadratische Gleichungen}
+\begin{gesetz*}{Lösungsformel}{}
+\textbf{Grundform}: $ax^2 + bx+c = 0$
+
+$$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$
+\end{gesetz*}
+
+\textbf{Diskriminante} $D = b^2-4ac$\\
+$D>0\Rightarrow$ Zwei Lösungen;\\
+$D=0\Rightarrow$ Eine Lösung;\\
+$D<0\Rightarrow$ Keine Lösung
+
+\hrulefill
+
 
 
 \subsection*{Bruchgleichungen}
@@ -285,21 +307,6 @@ Bsp.: $$\frac5{x+2}=\frac{7+x}{x-3} \Leftrightarrow{} \mathbb{D}_x=\mathbb{R}\ba
 \item Schlusskontrolle!
 \end{enumerate}
 \end{rezept*}
-
-%% \forceCB
-\subsection*{Quadratische Gleichungen}
-\begin{gesetz*}{Lösungsformel}{}
-\textbf{Grundform}: $ax^2 + bx+c = 0$
-
-$$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$
-\end{gesetz*}
-
-\textbf{Diskriminante} $D = b^2-4ac$\\
-$D>0\Rightarrow$ Zwei Lösungen;\\
-$D=0\Rightarrow$ Eine Lösung;\\
-$D<0\Rightarrow$ Keine Lösung
-
-\hrulefill
 
 \subsection*{Potenzgleichungen}
 
@@ -449,38 +456,42 @@ $y=ax+b$ einsetzen, um $b$ zu finden.
 
 \begin{definition*}{Potenzfunktion}{}
 Grundform:
-$$y=ax^z$$
-$z\in\mathbb{Z}\backslash\{0,1\} = \{...-2, -1, 2, 3, 4, ...\}$
+$$y=ax^m$$
+$m\in\mathbb{Z}\backslash\{0,1\} = \{...-2, -1, 2, 3, 4, ...\}$
 \end{definition*}
 
-$z>0$: Parabeln
+$m>0$: Parabeln
 
 %%\bbwCenterGraphic{8cm}{PotenzFkt.pdf}
+$m$ gerade
 
 \bbwCenterGraphic{8cm}{PotenzFktx2x4.pdf}
 
+$m$ ungerade
 \bbwCenterGraphic{8cm}{PotenzFktx3x5.pdf}
 
 
-$z<0$: Hyperbeln
+$m<0$: Hyperbeln
 
+$m$ gerade
 \bbwCenterGraphic{8cm}{PotenzFkt1overx2x4.pdf}
 
+$m$ ungerade
 \bbwCenterGraphic{8cm}{PotenzFkt1overx3x5.pdf}
 
 
 \TRAINER{Braucht es hier noch mehr Geraden \textbf{mit}
 Kooridinatensystem? Reichen nicht die folgenden qualitativen Graphiken?}
 
-$z$ gerade: Gespiegelt an der $y$-Achse
+$m$ gerade: Gespiegelt an der $y$-Achse
 
-$z$ ungerade: Gespiegelt am Ursprung $O=(0|0)$
+$m$ ungerade: Gespiegelt am Ursprung $O=(0|0)$
 
-Ist ${\color{green}a>0}$ (links in der Graphik) so sind Graphen mit
+Ist ${\color{green}a>0}$ so sind Graphen mit
 geraden Exponenten nach oben geöffnet bzw. mit ungeraden Exponenten im
 Quadranten I und III.
 
-Ist ${\color{red}a<0}$ (rechts in der Graphik) so sind Graphen mit
+Ist ${\color{red}a<0}$ so sind Graphen mit
 geraden Exponenten nach unten geöffnet bzw. mit ungeraden Exponenten
 im Quadranten II und IV.
 
@@ -1003,17 +1014,19 @@ Ganz am Schluss:
 
 \mmPapier{22}
 \newpage
-\mmPapier{22}
+\mmPapier{20}
 
 \vspace{5mm}
 
-Fehler gefunden? \texttt{philipp.freimann@bbw.ch}
+Fehler gefunden? \texttt{philipp.freimann@bbw.ch / christian.hersberger@bbw.ch}
+%%v 0.0.29 DRAFT 2021-06-22 fp)}
 
+\TRAINER{
 {\footnotesize Quelltext dieser Formelsammlung:\\
 \texttt{https://github.com/pheek/bbwMathe/tree/main/arbeitsblaetter/formelsammlung}}
 
+{\footnotesize Version \versionsnummerFoSa{}}
+}%% END TRAINER
+
+
 \end{document}
-
-
-
-
