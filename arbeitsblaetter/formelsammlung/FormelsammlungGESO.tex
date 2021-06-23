@@ -71,10 +71,10 @@ Runden auf \textbf{\color{ForestGreen}vier}  Dezimalen: betrachte die nächste Z
 
 Beispiel
 
-$3.\textbf{\color{ForestGreen}4729}\textbf{\color{red}6}44 \approx
-3.\textbf{\color{ForestGreen}4730}$; \hfill{ }
-$70.\textbf{\color{ForestGreen}0031}\textbf{\color{red}4}998\approx
-70.\textbf{\color{ForestGreen}0031}$
+$3.\mathbf{\color{ForestGreen}4729}\mathbf{\color{red}6}44 \approx
+3.\mathbf{\color{ForestGreen}4730}$; \hfill{ }
+$70.\mathbf{\color{ForestGreen}0031}\mathbf{\color{red}4}998\approx
+70.\mathbf{\color{ForestGreen}0031}$
 
 (Alle vier Dezimalen sind anzugeben.)
 
@@ -82,7 +82,7 @@ $70.\textbf{\color{ForestGreen}0031}\textbf{\color{red}4}998\approx
 Führende Nullen zählen nicht, nachfolgende Nullen
 zählen. Bsp. \textbf{\color{ForestGreen}drei} signifikante Stellen:
 
-\textbf{\color{ForestGreen}208} cm = \textbf{\color{ForestGreen}2.08} m = 0.00\textbf{\color{ForestGreen}208} km
+$$\mathbf{\color{ForestGreen}208} \textrm{ cm} = \mathbf{\color{ForestGreen}2.08} \textrm{ m} = 0.00\mathbf{\color{ForestGreen}208} \textrm{ km}$$
 
 %%\forceCB{}%%
 \subsection*{Wissenschaftliche Notation}
@@ -90,8 +90,8 @@ Für große, aber auch für Zahlen sehr nahe an 0, wird die wissenschaftliche Sc
 
 \begin{tabular}{lcccr}
 Zahl  & & wissenschaftl. & & TR: \tiprobutton{EE} \\
-3400  &=& $\textbf{\color{blue}3}.4\cdot{}10^3$ &=& {\textbf{\color{blue}3}}.4E3\\
-0.004 &=& $\textbf{\color{blue}4}\cdot{}10^{-3}$ &=&\textbf{\color{blue}4}E-3\\
+3400  &=& $\mathbf{\color{blue}3}.4\cdot{}10^3$ &=& \textbf{\color{blue}3}.4E3\\
+0.004 &=& $\mathbf{\color{blue}4}\cdot{}10^{-3}$ &=& \textbf{\color{blue}4}E-3\\
 \end{tabular}
 
 
@@ -224,11 +224,11 @@ Exponenten vertauschen ihr Vorzeichen beim Übertreten des Bruchstrichs:
 $$\frac{a^{-3}b^2}{c^5d^{-6}} = \frac{b^2d^6}{a^3c^5}$$
 \end{rezept*}
 
-\subsection*{$n$-te Wurzel}
+\subsection*{$n$te Wurzel}
 $\sqrt[n]{a} := \left(a\right)^\frac1n$\hfill{}Bsp.: $8^{\frac13}=\sqrt[3]{8}=2$
 
 $$a^{\frac{m}n} = \sqrt[n]{a^m} = \left(\sqrt[n]a\right)^m$$
-$$\sqrt[n]{\sqrt[m]{a}}   = \left((a)^\frac1m \right)^\frac1n = a^\frac1{nm}$$
+$$\sqrt[n]{\sqrt[m]{a}}   = \left((a)^\frac1m \right)^\frac1n = a^\frac1{nm} = \sqrt[m]{\sqrt[n]{a}}  $$
 
 %%
 
@@ -349,7 +349,7 @@ Beispiel Bruchgleichungssysteme:
 \gleichungZZ{{\color{ForestGreen}\frac1{x+1}} + {\color{red}\frac3{y-2}}}{66}{{\color{ForestGreen}\frac2{x+1}} + {\color{red}\frac5{y-2}}}{16}
 Substituiere
 ${\color{ForestGreen}a}:={\color{ForestGreen}\frac1{x+1}}$ und
-${\color{red}b} : ={\color{orange}\frac1{y-2}}$:
+${\color{red}b} : ={\color{red}\frac1{y-2}}$:
 
 \TRAINER{Formel zurückholen phi}
 \gleichungZZ{{\color{ForestGreen}a} + 3{\color{red}b}}{66}{2{\color{ForestGreen}a} + 5{\color{red}b}}{16}
@@ -402,13 +402,13 @@ $\mathbb{W}$ (=Zielmenge) (meist $\mathbb{R}$) zu.
 $$g: y = f(x) = a\cdot{}x + b$$
 
 \bbwCenterGraphic{8cm}{img/FunktionenLineareEinfuehrung.pdf}
-$a$ = Steigung = $\frac{V}{H}=\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1}$.\\
+Steigung \fbox{$a = \frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1}$}.\\
 Zwei Geraden sind \textbf{parallel}, wenn ihre Steigungen gleich sind.
 
 $b$ = $y$-Achsenabschnitt (=Ordinatenabschnitt)
 
 \subsection*{Achsenschnittpunkte...}
-\subsubsection*{...Nullstelle} $x_0$ = Schnittstelle mit der $x$-Achse ($y$ null setzen und auf\/lösen).
+\subsubsection*{...Nullstelle} $x_0 = \frac{-b}{a}$ = Schnittstelle mit der $x$-Achse ($y$ null setzen und auf\/lösen).
 
 \subsubsection*{...Schnittpunkt mit der $y$-Achse}
 $x=0$ setzen.
@@ -424,7 +424,7 @@ Gegeben: $g: y=ax+b$ und $h: y=cx+d$.
 Gleichsetzen: $ax+b = cx+d$
 
 
-\subsection*{Mittelpunkt $M$ einer Strecke $AB$}
+\subsection*{Mittelpunkt $M$ einer Strecke $\overline{AB}$}
 Gegeben $A=(x_A|y_A)$ und $B=(x_B|y_B)$
 
 Gesucht Mittelpunkt $M=(x_M|y_M)$
@@ -443,8 +443,7 @@ $$g:  y=0\cdot{}x+b \Rightarrow y=b$$
 Gesucht Gerade $g: y=ax+b$ durch zwei gegebene Punkte $A=(x_A|y_A)$
 und $B=(x_B|y_B)$
 
-\textbf{Variante 1}: Steigung $a = \frac{V}H = \frac{\Delta y}{\Delta x}
-= \frac{y_B-y_A}{x_B-x_A}$ berechnen und einen der beiden Punkte in
+\textbf{Variante 1}: Steigung $a$ berechnen und einen der beiden Punkte in
 $y=ax+b$ einsetzen, um $b$ zu finden.
 
 \textbf{Variante 2}: Gleichungssystem nach $a$ und $b$ auf\/lösen:
@@ -599,7 +598,7 @@ $b\cdot{}a^\frac{t}\tau = m(t)$ = Sättigungsdefizit zur Zeit $t$
 (= Durchschnitt = arithmetisches Mittel)
 
 \begin{definition*}{Mittelwert}{}
-$$\overline{x} = \frac{x_1 + x_2 + x_3 + ... + x_n}{n}= \frac{\sum_{k=1}^nx_n}n$$
+$$\overline{x} = \frac{x_1 + x_2 + x_3 + ... + x_n}{n}=  \frac1n\sum_{k=1}^nx_n$$
 \end{definition*}
 
 \subsubsection*{Median}
@@ -966,14 +965,14 @@ $$P(G | F) = \frac{\textrm{\#Gesunde Frauen}}{\textrm{\#Frauen}}=  \frac{30}{70}
 \begin{tabular}{cc}
 
 
-\raisebox{-35mm}{\includegraphics[width=35mm]{img/tiprobuttonimages/ti30C.png}}
+\raisebox{-45mm}{\includegraphics[width=45mm]{img/tiprobuttonimages/ti30C.png}}
 &
 
-\begin{tabular}{c|p{10cm}}\hline
+\begin{tabular}{c|p{90mm}}\hline
 \cellcolor[HTML]{8888ee}math         & \cellcolor[HTML]{8888ee} Summenzeichen $\Sigma$ \\\hline
 \cellcolor[HTML]{88ee88}data         & \cellcolor[HTML]{88ee88} Datenreihe für Boxplot auswerten (arithmetisches Mittel, Median, Quartilsgrenzen, Standardabweichung...)\\
 \cellcolor[HTML]{88ee88}             & \cellcolor[HTML]{88ee88} data: Zahlen eigeben, stat-reg/ditr, 1-VAR STATS anwählen und calc drücken\\
-\cellcolor[HTML]{88ee88}Distr        & \cellcolor[HTML]{88ee88} Bernoulliformel (4: Binomialpdf)\\
+\cellcolor[HTML]{88ee88}Distr        & \cellcolor[HTML]{88ee88} Bernoulliformel (4: Binomial\textbf{p}df)\\
 \cellcolor[HTML]{88ee88}             & \cellcolor[HTML]{88ee88} Kumulierte: (5: Binomial\textbf{c}df)\\\hline
 \cellcolor[HTML]{eeee88}poly-solv    & \cellcolor[HTML]{eeee88} Quadratische Gleichungen in Grundform $ax^2+bx+c=0$\\\hline
 \cellcolor[HTML]{eebb88}sys-solv     & \cellcolor[HTML]{eebb88} Lineare Gleichungssysteme\\\hline
