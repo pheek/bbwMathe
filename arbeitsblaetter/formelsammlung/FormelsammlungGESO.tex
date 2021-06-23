@@ -2,7 +2,7 @@
 %% Meta: Formelsammlung GESO BBW
 %%
 
-\newcommand{\versionsnummerFoSa}{2021-06-22 0.1.1}
+\newcommand{\versionsnummerFoSa}{2021-06-23 0.1.2}
 
 \input{bbwSeite}
 
@@ -23,6 +23,9 @@
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
 \titlespacing*{\subsection}{0pt}{0.1\baselineskip}{0.1\baselineskip}
+
+%% Millimeterpapier (2.8mm) für Notizen \mmPap
+\newcommand{\mmPap}[1]{\mmPapierZwei{#1}{8.4}}
 
 
 %% Listen nicht einrücken:
@@ -89,9 +92,9 @@ $$\mathbf{\color{ForestGreen}208} \textrm{ cm} = \mathbf{\color{ForestGreen}2.08
 Für große, aber auch für Zahlen sehr nahe an 0, wird die wissenschaftliche Schreibweise vorgezogen. Dabei steht vor dem Dezimalpunkt immer \textbf{\color{blue}genau eine Ziffer}:
 
 \begin{tabular}{lcccr}
-Zahl  & & wissenschaftl. & & TR: \tiprobutton{EE} \\
-3400  &=& $\mathbf{\color{blue}3}.4\cdot{}10^3$ &=& \textbf{\color{blue}3}.4E3\\
-0.004 &=& $\mathbf{\color{blue}4}\cdot{}10^{-3}$ &=& \textbf{\color{blue}4}E-3\\
+Zahl    & & wissenschaftl. & & TR: \tiprobutton{EE} \\
+$3400$  &=& $\mathbf{\color{blue}3}.4\cdot{}10^3$ &=& \textbf{\color{blue}3}.4E3\\
+$0.004$ &=& $\mathbf{\color{blue}4}\cdot{}10^{-3}$ &=& \textbf{\color{blue}4}E-3\\
 \end{tabular}
 
 
@@ -99,7 +102,8 @@ Zahl  & & wissenschaftl. & & TR: \tiprobutton{EE} \\
 \section*{Algebra}
 \subsection*{Hierarchie der Rechenoperationen}
 «Klapopustri»
-(1.) Klammern, (2.) Potenzen, (3.) Punktoperationen, (4.)Strichoperationen
+(1.) Klammern, (2.) Potenzen, (3.) Punktoperationen, (4.) Strichoperationen
+\TRAINER{Wurzelterme?}
 \subsubsection*{Termarten}
 \begin{tabular}{rcl}
 $a+3$ &=& Summe\\
@@ -113,7 +117,7 @@ $a^3$ &=& Potenz
 
 Differenzterm:  $3-(-7) = +10$
 
-Produktterm:$-3(-7) = +21$
+Produktterm:\, $-3\cdot{}(-7) = +21$
 
 
 \subsection*{Grundrechenarten}
@@ -136,9 +140,13 @@ $(-2)\cdot(+3)=-6$\\
 
 
 \subsection*{Binomische Formeln}
-$$(a+b)^2 = a^2+2ab + b^2$$%%
-$$(a-b)^2=a^2-2ab+b^2$$%%
-$$(a-b)\cdot(a+b) = a^2 - b^2$$
+\begin{tabular}{lcl}
+ $(a+b)^2$  & =  & $a^2 + 2ab + b^2$ \\
+ $(a-b)^2$  & =  & $a^2 - 2ab + b^2$ \\
+ $(a+b)(a-b)$  & =  & $a^2 - b^2$ \\
+
+  \end{tabular} 
+
 
 \subsection*{(Absolut)betrag einer Zahl}
 
@@ -146,7 +154,11 @@ $|+7| = 7$ \hfill $|-7| = 7$
 
 \TRAINER{Intervall-Schreibweise? \zB $a\in[0;1[$}
 
-\section*{Bruchterme}
+
+\forceCB
+    \section*{Bruchterme}
+    $\frac{a}b = a : b$ \hfill $\frac{a}b : \frac{x}y = \frac{a}b\cdot{}\frac{y}x = \frac{ay}{bx}$
+    
 \subsection*{Faktorisieren}
 
 \begin{enumerate}
@@ -176,14 +188,15 @@ oder\\ b) \texttt{PFactor} \tiprobutton{math}\tiprobutton{4}
 %% Forced column break
 %%\forceCB
 
-\hrulefill
+
+\mmPap{5.2}
+
+\forceCB
 \section*{Potenzen}
 \begin{definition*}{Potenz}{}
 $$a^n := \underbrace{a\cdot{}a\cdot{}a\cdot{}...\cdot{}a}_{n\textrm{ Faktoren}}$$
-$$7^3=7\cdot{}7\cdot{}7=343$$
-
-Spezialfall:
-$a^0=1$
+$$a^{-n} := \frac1{a^n}$$
+  $$a^0 := 1$$
 \end{definition*}
 
 \subsection*{gleiche Basis}
@@ -219,10 +232,9 @@ Für Basis $a\ne 0, b\ne 0$ und $m \in\mathbb{Q}$ gilt:
 $a^{-m} = \frac1{a^m},$ & $\left(\frac{a}b\right)^{-m} = \left(\frac{b}a\right)^m$ \\
  \end{tabular}
 
-\begin{rezept*}{}{}{}
 Exponenten vertauschen ihr Vorzeichen beim Übertreten des Bruchstrichs:
 $$\frac{a^{-3}b^2}{c^5d^{-6}} = \frac{b^2d^6}{a^3c^5}$$
-\end{rezept*}
+
 
 \subsection*{$n$te Wurzel}
 $\sqrt[n]{a} := \left(a\right)^\frac1n$\hfill{}Bsp.: $8^{\frac13}=\sqrt[3]{8}=2$
@@ -238,11 +250,10 @@ $$\sqrt[n]{\sqrt[m]{a}}   = \left((a)^\frac1m \right)^\frac1n = a^\frac1{nm} = \
 
 \begin{definition*}{$\log$}{}
 
-Für $a>0, a\ne 1$ ist
+Für $a>0, a\ne 1, z>0$ ist
 
 $$\log_a{}(z)=x \Longleftrightarrow{} a^x = z$$
 \end{definition*}
-$a$ = Basis, $z$ = Numerus (stets > 0), $x$ = Logarithmus (= Exponent in der Potenzschreibweise)
 
 Logarithmen sind Exponenten zu einer fest gewählten Basis.
 
@@ -262,7 +273,8 @@ $$\log_{\color{ForestGreen}a}({\color{red}b}) = \frac{\lg({\color{red}b})}{\lg({
 
 Grundform:
 $$a\cdot{}x = b$$
-Lösung
+\TRAINER{ev Beispiel: $2x+1= 2x+5$}
+Lösung \TRAINER{ev Lösung weglassen? Warum}
 $$x = \frac{-b}{a}$$
 
 \subsection*{num-solv}
@@ -279,9 +291,9 @@ $$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$
 \end{gesetz*}
 
 \textbf{Diskriminante} $D = b^2-4ac$\\
-$D>0\Rightarrow$ Zwei Lösungen;\\
-$D=0\Rightarrow$ Eine Lösung;\\
-$D<0\Rightarrow$ Keine Lösung
+$D>0\Longrightarrow$ Zwei Lösungen;\\
+$D=0\Longrightarrow$ Eine Lösung;\\
+$D<0\Longrightarrow$ Keine Lösung
 
 \hrulefill
 
@@ -298,15 +310,7 @@ Bsp. Nenner darf nicht Null werden:
 Bsp.: $$\frac5{x+2}=\frac{7+x}{x-3} \Leftrightarrow{} \mathbb{D}_x=\mathbb{R}\backslash{}\{-2, 3\}$$
 \end{definition*}
 
-\begin{rezept*}{}{}
-\begin{enumerate}
-\item Definitionsbereich $\mathbb{D}$ finden
-\item Faktorisieren und kürzen, dann...
-\item ... Hauptnenner finden,
-\item lösen und 
-\item Schlusskontrolle!
-\end{enumerate}
-\end{rezept*}
+\hrulefill
 
 \subsection*{Potenzgleichungen}
 
@@ -319,7 +323,7 @@ $$x^\frac1b=c \Leftrightarrow x=c^b$$
 
 $$x^{\frac{a}b} = c \Leftrightarrow{}
 x=c^{\frac{b}a} = \sqrt[a]{c^b}$$
-\forceCB
+
 \subsection*{Exponentialgleichungen}
 \subsubsection*{mit Exponentenvregleich}
 
@@ -327,13 +331,6 @@ $$5^4 = 5^{2x+1} \Longrightarrow  4=2x+1$$
 
 \subsubsection*{durch Logarithmieren}
 $$a^x=b \Rightarrow{} x=\log_a(b) = \frac{\lg(b)}{\lg(a)}$$
-
-Beispiel
-$$7^x=15 \Rightarrow x=\log_7(15)$$
-oder so (mit Zehnerlogarithmus $(\lg)$):
-$$7^x=15 \Rightarrow$$
-$$\lg(7^x) = \lg(15) \Rightarrow x\cdot{}\lg(7) = \lg(15) \Rightarrow$$
-$$x=\frac{\lg(15)}{\lg(7)}$$
 
 
 
@@ -351,7 +348,6 @@ Substituiere
 ${\color{ForestGreen}a}:={\color{ForestGreen}\frac1{x+1}}$ und
 ${\color{red}b} : ={\color{red}\frac1{y-2}}$:
 
-\TRAINER{Formel zurückholen phi}
 \gleichungZZ{{\color{ForestGreen}a} + 3{\color{red}b}}{66}{2{\color{ForestGreen}a} + 5{\color{red}b}}{16}
 
 Dann: Rücksubstitution
@@ -369,10 +365,10 @@ Leistung = Arbeit pro Zeiteinheit
 
 Leistung = $\frac{1 \textrm{ [Arbeit]}}{x \textrm{ [Zeiteinheiten]}}$
 
-Physik: Leistung = $\frac{\textrm{[Joule]}}{\textrm{[Sekunde]}} = [\textrm{Watt}]$
+Physik: Leistung = $\frac{\textrm{[Joule]}}{\textrm{[Sekunde]}} = [\textrm{Watt}]$ \TRAINER{Watt ev weglassen?}
 
 \subsection*{Restaufgaben}
-$$A:B = C \textrm{ Rest } R \Longleftrightarrow{} \frac{A-R}B=C \Longleftrightarrow{}  C\cdot{}B+R = A $$
+$$A:B = C \textrm{ Rest } R \Leftrightarrow{} \frac{A-R}B\TRAINER{??? =C \Leftrightarrow{}  C\cdot{}B+R = A}$$
 \TRAINER{Restaufgaben: Noch stehen gelassen, da im Kompendium oder in alter Prüfung gesichtet.}
 
 
@@ -384,7 +380,7 @@ $$A:B = C \textrm{ Rest } R \Longleftrightarrow{} \frac{A-R}B=C \Longleftrightar
 \end{itemize}
 $$K_n = K_0 \cdot{} \left( 1+\frac{p}{100} \right)^n = K_0\cdot{}a^n$$
 
-\subsubsection*{Beispiele}
+Beispiele:
 $$p = 2.5\% \Longleftrightarrow{} a = 1.025$$
 $$p = -3\% \Longleftrightarrow{}  a = 0.97 $$
 
@@ -451,6 +447,7 @@ $y=ax+b$ einsetzen, um $b$ zu finden.
 
 \hrulefill
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Potenzfunktionen}
 
 \begin{definition*}{Potenzfunktion}{}
@@ -458,6 +455,21 @@ Grundform:
 $$y=ax^m$$
 $m\in\mathbb{Z}\backslash\{0,1\} = \{...-2, -1, 2, 3, 4, ...\}$
 \end{definition*}
+
+\TRAINER{Noch eine Graphik zu den Transformtaionen von Graphen?}
+
+$m$ gerade: Achsensymmetrisch ($y$-Achse)
+
+$m$ ungerade: Punktsymmetrisch (Ursprung $O=(0|0)$)
+
+Ist ${\color{green}a>0}$, so sind Graphen mit
+geraden Exponenten nach oben geöffnet bzw. mit ungeraden Exponenten im
+Quadranten I und III.
+
+Ist ${\color{red}a<0}$, so sind Graphen mit
+geraden Exponenten nach unten geöffnet bzw. mit ungeraden Exponenten
+im Quadranten II und IV.
+
 
 $m>0$: Parabeln
 
@@ -479,21 +491,6 @@ $m$ ungerade
 \bbwCenterGraphic{8cm}{PotenzFkt1overx3x5.pdf}
 
 
-\TRAINER{Braucht es hier noch mehr Geraden \textbf{mit}
-Kooridinatensystem? Reichen nicht die folgenden qualitativen Graphiken?}
-
-$m$ gerade: Symmetrisch zur $y$-Achse
-
-$m$ ungerade: Symmetrisch zum Ursprung $O=(0|0)$
-
-Ist ${\color{green}a>0}$, so sind Graphen mit
-geraden Exponenten nach oben geöffnet bzw. mit ungeraden Exponenten im
-Quadranten I und III.
-
-Ist ${\color{red}a<0}$, so sind Graphen mit
-geraden Exponenten nach unten geöffnet bzw. mit ungeraden Exponenten
-im Quadranten II und IV.
-
 %% \includegraphics[width=4cm]{allg/funktionen/img/potenzfct/potenzFunktionenGerade.png}\hfill{}\includegraphics[width=4cm]{allg/funktionen/img/potenzfct/potenzFunktionenUngerade.png}
 
 
@@ -509,15 +506,16 @@ $a=1$ oder $a=-1$: Normalparabel
 \section*{Exponentialfunktionen}
 \begin{definition*}{Exponentialfunktion}{}
 $$f(t) = b\cdot{}a^t$$
-$b$ = Anfangswert bei $t_0=0$; $b=f(0)$\\
+$b$ $\rightarrow$ Anfangswert bei $t=0$; $b=f(0)$\\
 \phantom{$b$} = $y$-Achsenabschnitt\\
-$a$ = Vervielfältigungsfaktor ($a\in\mathbb{R}^{+}$)\\\
-$a>1$: Wachstumsrate\\
-$0<a<1$: Zerfallsrate
+$a$ $\rightarrow$ Vervielfältigungsfaktor ($a\in\mathbb{R}^{+}$)\\\
+$a>1$ $\rightarrow$ Wachstumsrate\\
+$0<a<1$ $\rightarrow$ Zerfallsrate
 \end{definition*}
 
 Wachstum:
 \bbwCenterGraphic{8.5cm}{allg/funktionen/img/exp/exponentielles_wachstum.png}
+\TRAINER{ev $m$ durch $ab$ ersetzen.}
 Zerfall: $0<a<1$
 
 %%\bbwCenterGraphic{7.5cm}{allg/funktionen/img/exp/exponentieller_zerfall.png}
@@ -537,20 +535,20 @@ $$f(t)= {\color{blue}3}\cdot{}{\color{red}4}^\frac{t}{\color{ForestGreen}5}$$
 
 \subsection*{Basis $e$ Zeitvariable oft $x$}
 
-$$c+b\cdot{}a^x = c + b\cdot{}e^{mx} \textrm{ mit } m = \ln(a)$$
+$$c+b\cdot{}a^x = c + b\cdot{}e^{mx}$$ $\textrm{ mit } m = \ln(a)$
 
 bzw.
 
-$$c+b\cdot{}a^\frac{x}\tau = c+b\cdot{}e^{mx} \textrm{ mit }
-m=\ln\left(a^\frac1\tau\right) = \frac1\tau \cdot{}\ln(a)$$
+$$c+b\cdot{}a^\frac{x}\tau = c+b\cdot{}e^{mx}$$ $\textrm{ mit }
+m=\ln\left(a^\frac1\tau\right) = \frac1\tau \cdot{}\ln(a)$
 
 \subsection*{Halbwertszeit}
 $\frac12 \cdot{} b = f(t) = b\cdot{}a^{\frac{t}{\tau}}$
-$$t_{\frac12} = \tau\cdot{}\log_a\left(\frac12\right)$$
+$$t= \tau\cdot{}\log_a\left(\frac12\right)$$
 
 \subsection*{Verdopplungszeit}
 $2\cdot{}b = f(t) = b\cdot{}a^{\frac{t}{\tau}}$
-$$t_{2} = \tau\cdot{}\log_a(2)$$
+$$t = \tau\cdot{}\log_a(2)$$
 
 \subsection*{Sättigungsfunktionen}
 
@@ -559,7 +557,8 @@ $$t_{2} = \tau\cdot{}\log_a(2)$$
 
 \subsubsection*{Beschränktes Wachstum (Zerfall)}
 
-$$f(t) = c \pm{} b\cdot{}a^\frac{t}\tau$$
+$$f(t) = c + b\cdot{}a^\frac{t}\tau$$
+$$f(t) = c - b\cdot{}a^\frac{t}\tau$$
 
 $c$: Sättigungsgrenze\\
 $+$: Zerfall\\
@@ -567,7 +566,7 @@ $-$: Wachstum\\
 $0<a<1$: Zerfallsrate\\
 $a>1$: Wachstumsrate\\
 $b$: Sättigungsdefizit bei $t=0$\\
-$c\pm b$ = Startwert 
+$c \pm b$: Startwert 
 
 
 
@@ -617,8 +616,6 @@ Symbol: $\mediantilde{x} = x_{\textrm{MED}}$
 Die Quartilsgrenzen $Q_1$ bzw. $Q_3$ sind die Mediane der linken,
 bzw. rechten Datenhälfte (nachdem der eine Zentralwert entfernt
 wurde).
-
-Am einfachsten mit dem Taschenrechner.
 \end{rezept*}
 
 \subsubsection*{Modus}
@@ -639,18 +636,15 @@ das Minimum.
 \subsubsection*{Interquartilsabstand}
 Der Abstand zwischen $Q_1$ und $Q_3$ wird als
 Quartilsdifferenz \textbf{QD} oder
-englisch \textit{Interquartil-range} = \textbf{IQR} bezeichnet.
+englisch \textit{Inter quartil range} = \textbf{IQR} bezeichnet.
 
 \subsubsection*{Standardabweichung}
-Mit $\sigma$ bzw. $s$ wird die Standardabweichung bezeichnet. Sie
-zeigt die Wendepunkte der Normalverteilung an.
+Mit $\sigma$ bzw. $s$ wird die Standardabweichung bezeichnet.
 
 $\sigma$ = Standardabweichung der Grundgesamtheit
 
 $s$ = Standardabweichung einer gemessenen Stichprobe \TRAINER{Taschenrechner großes S}
 
-Die Standardabweichung wird auch mit dem Taschenrechner
-unter \tiprobutton{data_stat-reg-distr} gefunden.
 
 \subsubsection*{Robustheit}
 Verändert sich der Wert eines statistischen Maßes nicht, wenn sich ein Ausreißer
@@ -706,11 +700,11 @@ $\varphi_i = f_i\cdot{}360\degre$ = Zentriwinkel im Kuchendiagramm
 \TRAINER{Entferne «Sportler*innen»}
 
 \begin{itemize}
-\item Alle Balken sind gleich breit
-\item Alle Balken berühren sich
-\item Die Höhe der Balken wird durch die Häufigkeit der entsprechenden
-Werte festgelegt
-\item Werte auf Balkengrenzen werden immer rechts mitgezählt
+\item Alle Balken sind gleich breit.
+\item Alle Balken berühren sich.
+\item Die Höhe der Balken wird durch die (abs. / rel.) Häufigkeit der entsprechenden
+Werte festgelegt.
+\item Werte auf Balkengrenzen werden immer rechts mitgezählt.
 \end{itemize}
 
 
@@ -767,8 +761,7 @@ Bei $n$ Elementen gibt es $n!$ Permutationen (=Vertauschungen):
 $$n! = n\cdot{}(n-1)\cdot{}(n-2)\cdot{}(n-3)\cdot{} ... \cdot{}2\cdot{}1$$
 \end{definition*}
 
-Bei Null Elementen gibt es nur eine Variation: $0! = 1$
-
+\TRAINER{Beispiel Mississippi ???}
 
 \end{multicols}
 
@@ -777,7 +770,7 @@ Bei Null Elementen gibt es nur eine Variation: $0! = 1$
 
 \subsection*{Überblick Auswahlprobleme}
 \bbwCenterGraphic{17cm}{img/Kombinatorik.pdf}
-
+\TRAINER{Credtids to José???}
 \hrulefill
 
 
@@ -847,14 +840,8 @@ Sind alle möglichen Ergebnisse eines Zufallsversuchs gleich
 wahrscheinlich (fairer Würfel), so ist die Wahrscheinlichkeit $P(E)$ für das Ereignis
 $E$ wie folgt zu berechnen:
 
-$$P(E) = \frac{\textrm{Anzahl aller Ergebnisse in
-}E}{\textrm{Anzahl aller Ergebnisse in }\Omega}$$
-
-
-\begin{gesetz*}{}{}
-$$P(E) = \frac{|E|}{|\Omega|}$$
-\end{gesetz*}
-
+$$P(E) = \frac{\textrm{Anzahl Ergebnisse in
+}E}{\textrm{Anzahl Ergebnisse in }\Omega}$$
 
 
 \subsection*{Bernoulli-Modell}
@@ -863,8 +850,7 @@ $$P(E) = \frac{|E|}{|\Omega|}$$
 $k$ = \textbf{genaue} gewünschte Anzahl Treffer
 
 $$P(X=k) = {n \choose k}\cdot{}p^k\cdot{}(1-p)^{n-k}$$
-Taschenrechner:  \textbf{\texttt{binomialpdf}} bei
-\tiprobutton{data_stat-reg-distr} wählen.
+Taschenrechner:  \textbf{\texttt{binomialpdf}}
 
 $n$ = Anzahl Züge\\
 $p$ = Wahrscheinlichkeit des Treffers\\
@@ -883,7 +869,7 @@ $k$ = \textbf{maximal} gewünschte Anzahl Treffer
 
 
 $$P(X\le k) = \sum_{i=0}^{k}{n \choose i}\cdot{}p^i\cdot{}(1-p)^{n-i}$$
-Taschenrechner: \textbf{\texttt{binomialcdf}} bei \tiprobutton{data_stat-reg-distr} wählen.
+Taschenrechner: \textbf{\texttt{binomialcdf}}
 
 $n$ = Anzahl Züge\\
 $p$ = Wahrscheinlichkeit des Treffers\\
@@ -939,17 +925,17 @@ $\Sigma$   &        55 &       75 &      130 \\\hline
 
 \textbf{Normale Wahrscheinlichkeit}\\
 «Wie groß ist hier die Wahrscheinlichkeit, gesund (G) zu sein?»
-$$P(G) = \frac{\textrm{\#Gesunde}}{\textrm{\#Alle}} =  \frac{55}{130}$$
+$$P(G) = \frac{\textrm{Anzahl Gesunde}}{\textrm{Alle}} =  \frac{55}{130}$$
 
 \textbf{Wahrscheinlichkeit der Schnittmenge}\\
 «Wie groß ist hier die Wahrscheinlichkeit, eine gesunde Frau anzutreffen treffen?»
-$$P(G\cap F) = \frac{\textrm{\#Gesunde Frauen}}{\textrm{\#Alle}}= \frac{30}{130}$$
+$$P(G\cap F) = \frac{\textrm{\ Anzahl gesunde Frauen}}{\textrm{Alle}}= \frac{30}{130}$$
 
 \textbf{Bedingte Wahrscheinlichkeit}\\
 «Wie groß ist die Wahrscheinlichkeit, unter den Gesunden eine Frau anzutreffen?»
-$$P(F | G) = \frac{\textrm{\#Gesunde Frauen}}{\textrm{\#Gesunde}} =  \frac{30}{55}$$
+$$P(F | G) = \frac{\textrm{Anzahl gesunde Frauen}}{\textrm{Anzahl Gesunde}} =  \frac{30}{55}$$
 «Wie groß ist die wahrscheinlichkeit, unter den Frauen eine gesunde Person zu treffen?»
-$$P(G | F) = \frac{\textrm{\#Gesunde Frauen}}{\textrm{\#Frauen}}=  \frac{30}{70}$$
+$$P(G | F) = \frac{\textrm{Anzahl gesunde Frauen}}{\textrm{Anzahl Frauen}}=  \frac{30}{70}$$
 
 
 \end{multicols}
