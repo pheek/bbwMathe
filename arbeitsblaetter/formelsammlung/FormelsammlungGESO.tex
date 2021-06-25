@@ -2,7 +2,7 @@
 %% Meta: Formelsammlung GESO BBW
 %%
 
-\newcommand{\versionsnummerFoSa}{2021-06-23 0.1.4}
+\newcommand{\versionsnummerFoSa}{2021-06-25 0.1.5}
 
 \input{bbwSeite}
 
@@ -50,6 +50,7 @@
 \newcommand{\forceCB}{\vfill\null\columnbreak}
 
 \begin{document}%%
+
 \arbeitsblattHeader{}
 
 \begin{multicols}{2}%%
@@ -106,18 +107,18 @@ $0.004$ &=& $\mathbf{\color{blue}4}\cdot{}10^{-3}$ &=& \textbf{\color{blue}4}E-3
 \TRAINER{Wurzelterme?}
 \subsubsection*{Termarten}
 \begin{tabular}{rcl}
-$a+3x$ &=& Summe\\
-$5b^2-b$ &=& Differenz\\
-$(8-x)(3-a)$  &=& Produkt\\
-$7:(b+1)$ &=& Quotient\\
-$(3x)^4$ &=& Potenz
+$a+3x$        && Summe\\
+$5b^2-b$      && Differenz\\
+$(8-x)(3-a)$  && Produkt\\
+$7:(b+1)$     && Quotient\\
+$(3x)^4$      && Potenz
 \end{tabular}
 
 \textbf{Achtung}
 
 Differenzterm:  $3-(-7) = +10$
 
-Produktterm:\, $-3\cdot{}(-7) = +21$
+Produktterm:\, $-3(-7) = +21$
 
 
 \subsection*{Grundrechenarten}
@@ -283,7 +284,7 @@ Der Taschenrechner löst Gleichungen mit Zahlen nach $x$ auf:
 
 $5^x = 100 -x$; verwende \tiprobutton{2nd}\tiprobutton{sin_num-solv} $x\approx{}2.843$
 
-\mmPap{3.2}
+\mmPap{4.4}
 \forceCB
 \subsection*{Quadratische Gleichungen}
 
@@ -297,26 +298,15 @@ $D>0\Longrightarrow$ Zwei Lösungen;\\
 $D=0\Longrightarrow$ Eine Lösung;\\
 $D<0\Longrightarrow$ Keine Lösung
 
-\hrulefill
-
-
 
 \subsection*{Bruchgleichungen}
 
-\begin{definition*}{}{}
-
 \textbf{Definitionsbereich} $\mathbb{D}$: Welche Werte dürfen in einen Term eingesetzt werden
 
-Bsp. Nenner darf nicht Null werden:
+Bsp.: Nenner darf nicht Null werden:
 
-Bsp.: $$\frac5{x+2}=\frac{7+x}{x-3} \Leftrightarrow{} \mathbb{D}_x=\mathbb{R}\backslash{}\{-2, 3\}$$
-\end{definition*}
+$$\frac5{x+2}=\frac{7+x}{x-3} \Leftrightarrow{} \mathbb{D}_x=\mathbb{R}\backslash{}\{-2, 3\}$$
 
-
-\mmPap{10}
-
-
-\forceCB
 \subsection*{Potenzgleichungen}
 
 $$x^a=c \Leftrightarrow x=\sqrt[a]{c}$$
@@ -336,8 +326,6 @@ $$5^4 = 5^{2x+1} \Longrightarrow  4=2x+1$$
 
 \subsubsection*{durch Logarithmieren}
 $$a^x=b \Rightarrow{} x=\log_a(b) = \frac{\lg(b)}{\lg(a)}$$
-
-\mmPap{10}
 
 \forceCB
 
@@ -359,7 +347,7 @@ ${\color{red}b} : ={\color{red}\frac1{y-2}}$:
 
 Dann: Rücksubstitution
 
-\mmPap{10}
+\mmPap{14}
 
 \forceCB
 
@@ -393,7 +381,7 @@ Beispiele:
 $$p = 2.5\% \Longleftrightarrow{} a = 1.025$$
 $$p = -3\% \Longleftrightarrow{}  a = 0.97 $$
 
-\mmPap{6}
+\mmPap{7.6}
 
 \forceCB
 \section*{Funktionen}
@@ -456,16 +444,22 @@ $y=ax+b$ einsetzen, um $b$ zu finden.
 \textbf{Variante 2}: Gleichungssystem nach $a$ und $b$ auf\/lösen:
 \gleichungZZ{y_A}{a\cdot{}x_A+b}{y_B}{a\cdot{}x_B + b}
 
+\mmPap{10}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\mmPap{6}
-
 \forceCB
-
 \section*{Potenzfunktionen}
 
+\subsection*{Quadratische Funktion}
+$$y=ax^2$$
+$a$ heißt Öffnung ($a<0$: Die Parabel ist nach unten geöffnet)
+
+$a=1$ oder $a=-1$: Normalparabel
+%% Fülle, damit nicht vertikal auseinandergezogen
+\vspace*{\fill}
+
+\subsection*{Grundform Potenzfunktion}
 \begin{definition*}{Potenzfunktion}{}
-Grundform:
 $$y=ax^m$$
 $m\in\mathbb{Z}\backslash\{0,1\} = \{...-2, -1, 2, 3, 4, ...\}$
 \end{definition*}
@@ -474,50 +468,34 @@ $m\in\mathbb{Z}\backslash\{0,1\} = \{...-2, -1, 2, 3, 4, ...\}$
 
 $m$ gerade: Achsensymmetrisch ($y$-Achse)
 
-$m$ ungerade: Punktsymmetrisch (Ursprung $O=(0|0)$)
+$m$ ungerade: Punktsymmetrisch am Ursprung $O=(0|0)$
 
-Ist ${\color{green}a>0}$, so sind Graphen mit
-geraden Exponenten nach oben geöffnet bzw. mit ungeraden Exponenten im
-Quadranten I und III.
+%%Ist ${\color{green}a>0}$, so sind Graphen mit
+%%geraden Exponenten nach oben geöffnet bzw. mit ungeraden Exponenten im
+%%Quadranten I und III.
 
-Ist ${\color{red}a<0}$, so sind Graphen mit
-geraden Exponenten nach unten geöffnet bzw. mit ungeraden Exponenten
-im Quadranten II und IV.
+Ist ${\color{red}a<0}$, so werden Graphen der folgenden Funktionen an der $x$-Achse gespiegelt.
 
+\end{multicols}
 
-$m>0$: Parabeln
+\begin{tabular}{cc}
+$m$ > 0: Parabel ($m$ gerade) & $m$ > 0: Parabel ($m$ ungerade)\\   %%\bbwCenterGraphic{8cm}{PotenzFkt.pdf}
+  \includegraphics[width=8cm]{PotenzFktx2x4.pdf} &
+  \includegraphics[width=8cm]{PotenzFktx3x5.pdf}\\
 
-%%\bbwCenterGraphic{8cm}{PotenzFkt.pdf}
-$m$ gerade
-
-\bbwCenterGraphic{8cm}{PotenzFktx2x4.pdf}
-
-$m$ ungerade
-\bbwCenterGraphic{8cm}{PotenzFktx3x5.pdf}
-
-
-$m<0$: Hyperbeln
-
-$m$ gerade
-\bbwCenterGraphic{8cm}{PotenzFkt1overx2x4.pdf}
-
-$m$ ungerade
-\bbwCenterGraphic{8cm}{PotenzFkt1overx3x5.pdf}
-
+$m<0$: Hyperbel  ($m$ gerade) & $m<0$: Hyperbel ($m$ ungerade)\\
+  \includegraphics[width=8cm]{PotenzFkt1overx2x4.pdf}&
+  \includegraphics[width=8cm]{PotenzFkt1overx3x5.pdf}\\
+  \end{tabular}
 
 %% \includegraphics[width=4cm]{allg/funktionen/img/potenzfct/potenzFunktionenGerade.png}\hfill{}\includegraphics[width=4cm]{allg/funktionen/img/potenzfct/potenzFunktionenUngerade.png}
 
 
-\hrulefill  
-\subsection*{Quadratische Funktion}
-$$y=ax^2$$
-$a$ heißt Öffnung ($a<0$: Die Parabel ist nach unten geöffnet)
+%%\hrulefill  
+\newpage
 
-$a=1$ oder $a=-1$: Normalparabel
+\begin{multicols}2
 
-
-\mmPap{18}
-\forceCB
 \section*{Exponentialfunktionen}
 \begin{definition*}{Exponentialfunktion}{}
 $$f(t) = b\cdot{}a^t$$
@@ -625,12 +603,9 @@ Symbol: $\mediantilde{x} = x_{\textrm{MED}}$
 
 \subsubsection*{Quartil}
 
-\begin{rezept*}{Quartile}{}
-
 Die Quartilsgrenzen $Q_1$ bzw. $Q_3$ sind die Mediane der linken,
 bzw. rechten Datenhälfte (nachdem der eine Zentralwert entfernt
 wurde).
-\end{rezept*}
 
 \subsubsection*{Modus}
 Der am häufigsten auftretende Wert wird als Modus bezeichnet.
@@ -759,11 +734,9 @@ Hat eine zweistufige Situation zunächst $k_1$ Möglichkeiten, gefolgt
 von $k_2$ Möglichkeiten, so hat man insgesamt $k_1\cdot{}k_2$
 Möglichkeiten. Dies ist auf beliebig viele Stufen verallgemeinerbar.
 
-\begin{tabular}{cp{4.5cm}}
-\raisebox{-5cm}{\includegraphics[width=3.5cm]{img/KombinatorikMultiplikation.pdf}} &
+\begin{tabular}{p{5cm}c}
 Andrea hat drei verschiedene Hosen und vier verschiedene Pullover.
-Es gibt somit $3\times4$ mögliche Kombinationen.\\
-\end{tabular}
+Es gibt somit $3\times4$ mögliche Kombinationen.&\raisebox{-3.5cm}{\includegraphics[width=3cm]{img/KombinatorikMultiplikation.pdf}}\end{tabular}
 
 %%\bbwCenterGraphic{3cm}{img/KombinatorikMultiplikation.pdf}
 %%\TRAINER{Ersetze «Ein:e Schüler:in» durch «Andrea»}
@@ -912,7 +885,7 @@ Wahrscheinlichkeit \textbf{genau} $t$ Treffer zu ziehen:
 
 $$P(X=t) = \frac{ {T \choose t} \cdot {N  \choose n} }{{T+N \choose t+n}}$$
 
-\mmPap{4}
+\mmPap{5.2}
 
 \forceCB
 
@@ -929,7 +902,7 @@ Zudem werden noch die Randsummen notiert.
 \bbwCenterGraphic{8cm}{img/kontingenztafel.png}
 
 
-\mmPap{10}
+\mmPap{14}
 \forceCB
 \subsection*{Bedingte Wahrscheinlichkeit}
 
