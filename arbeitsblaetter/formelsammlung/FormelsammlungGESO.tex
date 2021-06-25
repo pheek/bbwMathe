@@ -2,7 +2,7 @@
 %% Meta: Formelsammlung GESO BBW
 %%
 
-\newcommand{\versionsnummerFoSa}{2021-06-25 0.1.5}
+\newcommand{\versionsnummerFoSa}{2021-06-25 0.1.6}
 
 \input{bbwSeite}
 
@@ -365,7 +365,8 @@ Leistung = $\frac{1 \textrm{ [Arbeit]}}{x \textrm{ [Zeiteinheiten]}}$
 Physik: Leistung = $\frac{\textrm{[Joule]}}{\textrm{[Sekunde]}} = [\textrm{Watt}]$ \TRAINER{Watt ev weglassen?}
 
 \subsection*{Restaufgaben}
-$$A:B = C \textrm{ Rest } R \Leftrightarrow{} \frac{A-R}B\TRAINER{??? =C \Leftrightarrow{}  C\cdot{}B+R = A}$$
+$$A:B = C \textrm{ Rest } R \Leftrightarrow{}
+\frac{A-R}B=C\TRAINER{??? \Leftrightarrow{}  C\cdot{}B+R = A}$$
 \TRAINER{Restaufgaben: Noch stehen gelassen, da im Kompendium oder in alter Prüfung gesichtet.}
 
 
@@ -687,7 +688,6 @@ $\varphi_i = f_i\cdot{}360\degre$ = Zentriwinkel im Kuchendiagramm
 \subsubsection*{Histogramm}
 \bbwCenterGraphic{8cm}{img/Histogramm.pdf}
 \TRAINER{Entferne «Sportler*innen»}
-\TRAINER{«Schritte zum Boxplot als Fließtext daneben. Ist einfacher zum Bereinigen.}
 
 \begin{itemize}
 \item Alle Balken sind gleich breit.
@@ -718,7 +718,12 @@ Werte festgelegt.
 \end{multicols}
 
 \subsubsection*{Boxplot}
-
+\TRAINER{«Schritte zum Boxplot als Fließtext daneben. Ist einfacher zum Bereinigen.}
+Schritte zum Boxplot:\\
+Fühler (Whisker) werden auf $1.5\times\textrm{IQR}$ begrenzt (= Ausreißerschwellen),
+danach nach \textit{innen} gehen: Fühler sind die von der Box
+entferntesten Nicht-Ausreißer ({\color{blue}blau}). Ausreißer
+({\color{red} rot}) werden markiert.
 \bbwCenterGraphic{18cm}{BoxplotMitStreudiagramm.pdf}
 \TRAINER{Entferne «Sportler*innen»}
 
