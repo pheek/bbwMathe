@@ -91,20 +91,3 @@ cp -f ./sin_cos_tan/einheitskreise/Einheitskreis_TALS.pdf ${BBW_WEBDAV_PATH}/leh
 cp -f ./sin_cos_tan/einheitskreis/EinheitskreisB_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig2/Einheitskreis/Einheitskreis.pdf
 cp -f ./sin_cos_tan/uebungenAblesen/*.pdf                 ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig2/Einheitskreis/
 
-echo "Arbeitsblätter für die Fachschaft (Fachschaftsordner)"
-
-echo "copying Taschenrechner (TALS)"
-cp -f ./tr_nspire_tals_einfuehrung/TR_NSPIRE_TALS_Einfuehrung_TALS.pdf "${BBW_WEBDAV_PATH}/5_Buecher_Lehrmittel_Taschenrechner/Taschenrechner/TI Nspire CX CAS/TR_NSPIRE_TALS_Einfuehrung_Schueler.pdf"
-cp -f ./tr_nspire_tals_einfuehrung/TR_NSPIRE_TALS_Einfuehrung_TRAINER_TALS.pdf "${BBW_WEBDAV_PATH}/5_Buecher_Lehrmittel_Taschenrechner/Taschenrechner/TI Nspire CX CAS/TR_NSPIRE_TALS_Einfuehrung_TRAINER.pdf"
-
-
-echo "copying Taschenrechner (GESO)"
-cp -f ./tr_ti30_geso_einfuehrung/TR_TI30_GESO_Einfuehrung_GESO.pdf  "${BBW_WEBDAV_PATH}/5_Buecher_Lehrmittel_Taschenrechner/Taschenrechner/TI30_PRO_MathPrint/TR_TI30_GESO_Einfuehrung_Schueler.pdf"
-cp -f ./tr_ti30_geso_einfuehrung/TR_TI30_GESO_Einfuehrung_TRAINER_GESO.pdf  "${BBW_WEBDAV_PATH}/5_Buecher_Lehrmittel_Taschenrechner/Taschenrechner/TI30_PRO_MathPrint/TR_TI30_GESO_Einfuehrung_Trainer.pdf"
-cp -f ./tr_ti30_geso_wichtige_befehle/TR_TI30_GESO_Wichtige_Befehle.pdf  "${BBW_WEBDAV_PATH}/5_Buecher_Lehrmittel_Taschenrechner/Taschenrechner/TI30_PRO_MathPrint/TR_TI30_GESO_Wichtige_Befehle.pdf"
-
-
-echo "Copyiing Formelsammlung"
-cp -f ./formelsammlung/FormelsammlungGESO_GESO.pdf  "${BBW_WEBDAV_PATH}/3_Pruefungen/e_Formelsammlungen/GESO_BBW/Formelsammlung.pdf"
-
-
