@@ -2,7 +2,7 @@
 %% Meta: Formelsammlung GESO BBW
 %%
 
-\newcommand{\versionsnummerFoSa}{2021-06-26 0.1.8}
+\newcommand{\versionsnummerFoSa}{2021-06-27 0.1.9}
 
 \input{bbwSeite}
 
@@ -97,6 +97,8 @@ Zahl    & & wissenschaftl. & & TR: \tiprobutton{EE} \\
 $3400$  &=& $\mathbf{\color{blue}3}.4\cdot{}10^3$ &=& \textbf{\color{blue}3}.4E3\\
 $0.004$ &=& $\mathbf{\color{blue}4}\cdot{}10^{-3}$ &=& \textbf{\color{blue}4}E-3\\
 \end{tabular}
+\TRAINER{Intervall-Schreibweise? \zB $a\in[0;1[$}
+
 
 
 \forceCB
@@ -123,9 +125,10 @@ Produktterm:\, $-3(-7) = +21$
 
 \subsection*{Grundrechenarten}
 
-\textbf{Assoziativgesetz}: $(a+b)+c = a+(b+c)$ und $(a\cdot{}b)\cdot{}c = a\cdot{}(b\cdot{}c)$\\
-\textbf{Kommutativgesetz}: $a+b = b+a$ und $a\cdot{}b= b\cdot{}a$\\
-\textbf{Distributivgesetz}: $a\cdot{}(x\pm y) = a\cdot{}x \pm a\cdot{}y$\\
+\textbf{Assoziativgesetz}:\\ $(a+b)+c = a+(b+c)$ und\\ $(a\cdot{}b)\cdot{}c = a\cdot{}(b\cdot{}c)$\\
+\textbf{Kommutativgesetz}:\\ $a+b = b+a$ und\\ $a\cdot{}b= b\cdot{}a$\\
+\textbf{Distributivgesetz}:\\ $a\cdot{}(x+ y) = a\cdot{}x + a\cdot{}y$
+und $a\cdot{}(x - y) = a\cdot{}x - a\cdot{}y$\\
 
 \textbf{Vorzeichen}
 
@@ -145,18 +148,14 @@ $(-2)\cdot(+3)=-6$\\
  $(a+b)^2$  & =  & $a^2 + 2ab + b^2$ \\
  $(a-b)^2$  & =  & $a^2 - 2ab + b^2$ \\
  $(a+b)(a-b)$  & =  & $a^2 - b^2$ \\
-
   \end{tabular} 
 
+\subsection*{(Absolut)betrag einer Zahl}%%
+%%
+\hfill\, $|+7| = 7$ \hfill\, $|-7| = 7$ \hfill\, %%
 
-\subsection*{(Absolut)betrag einer Zahl}
-
-$|+7| = 7$ \hfill $|-7| = 7$
-
-\TRAINER{Intervall-Schreibweise? \zB $a\in[0;1[$}
-
-
-\forceCB
+%%\forceCB%%
+%%
     \section*{Bruchterme}
     $\frac{a}b = a : b$ \hfill $\frac{a}b : \frac{x}y = \frac{a}b\cdot{}\frac{y}x = \frac{ay}{bx}$
     
@@ -244,8 +243,11 @@ $\sqrt[n]{a} := \left(a\right)^\frac1n$\hfill{}Bsp.: $8^{\frac13}=\sqrt[3]{8}=2$
 $$a^{\frac{m}n} = \sqrt[n]{a^m} = \left(\sqrt[n]a\right)^m$$
 $$\sqrt[n]{\sqrt[m]{a}}   = \left((a)^\frac1m \right)^\frac1n = a^\frac1{nm} = \sqrt[m]{\sqrt[n]{a}}  $$
 
-%%
+$$\sqrt[n]{a\cdot{}b} = \sqrt[n]a \cdot \sqrt[n]b$$
 
+$$\sqrt[n]{a\cdot{}\sqrt[m]b} =   \sqrt[n]a \cdot \sqrt[n m]b$$
+%%
+ 
 %%\forceCB%%
 \forceCB
 \section*{Logarithmen}
@@ -309,15 +311,13 @@ $$\frac5{x+2}=\frac{7+x}{x-3} \Leftrightarrow{} \mathbb{D}_x=\mathbb{R}\backslas
 
 \subsection*{Potenzgleichungen}
 
-$$x^a=c \Leftrightarrow x=\sqrt[a]{c}$$
+\begin{tabular}{rcl}
+$x^a=c$ & $\Leftrightarrow$ & $x=\sqrt[a]{c}$\\
 
-$$x^\frac1b=c \Leftrightarrow x=c^b$$
+$x^\frac1b=c$&$\Leftrightarrow$&$x=c^b$\\
 
-
-
-
-$$x^{\frac{a}b} = c \Leftrightarrow{}
-x=c^{\frac{b}a} = \sqrt[a]{c^b}$$
+$x^{\frac{a}b} = c$&$\Leftrightarrow{}$&$x=c^{\frac{b}a} = \sqrt[a]{c^b}$\\
+\end{tabular}
 
 \subsection*{Exponentialgleichungen}
 \subsubsection*{mit Exponentenvregleich}
@@ -465,8 +465,6 @@ $$y=ax^m$$
 $m\in\mathbb{Z}\backslash\{0,1\} = \{...-2, -1, 2, 3, 4, ...\}$
 \end{definition*}
 
-\TRAINER{Noch eine Graphik zu den Transformtaionen von Graphen?}
-
 $m$ gerade: Achsensymmetrisch ($y$-Achse)
 
 $m$ ungerade: Punktsymmetrisch am Ursprung $O=(0|0)$
@@ -507,12 +505,19 @@ $m<0$: Hyperbel  ($m$ gerade) & $m<0$: Hyperbel ($m$ ungerade)\\
   
 \section*{Exponentialfunktionen}
 \begin{definition*}{Exponentialfunktion}{}
+
+  
 $$f(t) = b\cdot{}a^t$$
-$b$ $\rightarrow$ Anfangswert bei $t=0$; $b=f(0)$\\
-\phantom{$b$} = $y$-Achsenabschnitt\\
-$a$ $\rightarrow$ Vervielfältigungsfaktor ($a\in\mathbb{R}^{+}$)\\\
-$a>1$ $\rightarrow$ Wachstumsrate\\
-$0<a<1$ $\rightarrow$ Zerfallsrate
+
+  \begin{tabular}{rl}
+   $b$  & Startwert bei $t=0$; $b=f(0)$\\
+        & \phantom{$b$} = $y$-Achsenabschn.\\
+   $a$  & Wachstumsfaktor ($a\in\mathbb{R}^{+}$)\\\
+   $a>1$&Wachstumsrate\\
+$0<a<1$ &Zerfallsrate\\
+  \end{tabular}
+
+  
 \end{definition*}
 
 Wachstum:
@@ -537,12 +542,14 @@ $$f(t)= {\color{blue}3}\cdot{}{\color{red}4}^\frac{t}{\color{ForestGreen}5}$$
 
 \subsection*{Basis $e$ Zeitvariable oft $x$}
 
-$$c+b\cdot{}a^x = c + b\cdot{}e^{mx}$$ $\textrm{ mit } m = \ln(a)$
+$$c+b\cdot{}a^x = c + b\cdot{}e^{mx}$$ $\textrm{ mit } m = \ln(a)
+\,\,(\textrm{bzw. } a = e^m)$
 
 bzw.
 
 $$c+b\cdot{}a^\frac{x}\tau = c+b\cdot{}e^{mx}$$ $\textrm{ mit }
-m=\ln\left(a^\frac1\tau\right) = \frac1\tau \cdot{}\ln(a)$
+m=\ln\left(a^\frac1\tau\right) = \frac1\tau \cdot{}\ln(a)
+\,\,(\textrm{bzw.} a = e^{m\tau})$
 
 \subsection*{Halbwertszeit}
 $\frac12 \cdot{} b = f(t) = b\cdot{}a^{\frac{t}{\tau}}$
@@ -559,18 +566,17 @@ $$t = \tau\cdot{}\log_a(2)$$
 
 \subsubsection*{Beschränktes Wachstum (Zerfall)}
 
-$$f(t) = c + b\cdot{}a^\frac{t}\tau$$
-$$f(t) = c - b\cdot{}a^\frac{t}\tau$$
+\begin{tabular}{lcr}
+  Wachstum & & Zerfall\\
+$f(t) = c - b\cdot{}a^\frac{t}\tau$ &  & $f(t) = c + b\cdot{}a^\frac{t}\tau$ \\
+  \multicolumn{3}{c}{$c$: Sättigungsgrenze}\\
 
-$c$: Sättigungsgrenze\\
-$+$: Zerfall\\
-$-$: Wachstum\\
-$0<a<1$: Zerfallsrate\\
-$a>1$: Wachstumsrate\\
-$b$: Sättigungsdefizit bei $t=0$\\
-$c \pm b$: Startwert 
-
-
+ Wachstumsrate: &&Zerfallsrate:\\
+ $0<a<1$ &&  $0<a<1$\\
+ 
+ \multicolumn{3}{c}{Startwert:}\\
+ $c-b$ & & $c+b$\\
+\end{tabular}
 
 \begin{bemerkung*}{Sättigungsdefizit}{}
 
@@ -727,9 +733,12 @@ Werte festgelegt.
 
 \subsubsection*{Boxplot}
 \TRAINER{«Schritte zum Boxplot als Fließtext
-  daneben. Ausreißerschwellen {\color{ForestGreen}grün} im Diagramm. Dann im Text auch}
+  daneben. Ausreißerschwellen {\color{ForestGreen}grün} im
+  Diagramm. Dann im Text auch. Ausreißerschwellen ist ein Begriff von
+  Frommenwiler, nicht von Marthaler.}%% END TRAINER
 Schritte zum Boxplot:\\
-Fühler (Whisker) werden auf $1.5\times\textrm{IQR}$ begrenzt (= Ausreißerschwellen),
+Fühler (Whisker) werden auf $1.5\times\textrm{IQR}$ begrenzt (=
+Ausreißerschwellen ({\color{ForestGreen}grün NOCH TODO...})),
 danach nach \textit{innen} gehen: Fühler sind die von der Box
 entferntesten Nicht-Ausreißer ({\color{blue}blau}). Ausreißer
 ({\color{red} rot}) werden markiert.
@@ -763,7 +772,7 @@ Bei $n$ Elementen gibt es $n!$ Permutationen (=Vertauschungen):
 $$n! = n\cdot{}(n-1)\cdot{}(n-2)\cdot{}(n-3)\cdot{} ... \cdot{}2\cdot{}1$$
 \end{definition*}
 
-\TRAINER{Beispiel Mississippi ???}
+\TRAINER{Beispiel Mississippi ?Was ist damit gemeint? $\frac{11!}{4!4!2!}$}
 
 
 \noTRAINER{\mmPap{8}}
@@ -775,6 +784,8 @@ $$n! = n\cdot{}(n-1)\cdot{}(n-2)\cdot{}(n-3)\cdot{} ... \cdot{}2\cdot{}1$$
 \subsection*{Überblick Auswahlprobleme}
 \bbwCenterGraphic{17cm}{img/Kombinatorik.pdf}
 \TRAINER{Credtids to José???}
+\TRAINER{ev ${{\color{blue}n} \choose {\color{red}k}} = ...$ vor die Grafik im text}
+
 \hrulefill
 
 
@@ -788,10 +799,10 @@ $$n! = n\cdot{}(n-1)\cdot{}(n-2)\cdot{}(n-3)\cdot{} ... \cdot{}2\cdot{}1$$
 \textbf{Ergebnismenge} $\Omega$: Menge der möglichen Ergebnisse
 (Ausgänge) eines Zufallsversuchs.\\
 Beispiel: Die sechs Würfelergebnise
-eines Spielwürfels: $\Omega = \{\epsdice{1}, \epsdice{2}, \epsdice{3}, \epsdice{4}, \epsdice{5}, \epsdice{6}\}$
+eines Spielwürfels: $\Omega = \left\{\epsdice{1}, \epsdice{2}, \epsdice{3}, \epsdice{4}, \epsdice{5}, \epsdice{6}\right\}$
 
 \textbf{Ereignis} $A$: Eine Teilmenge von $\Omega$. Beispiel: Eine
-ungerade Zahl zu werfen: $A  = \{\epsdice{1}, \epsdice{3}, \epsdice{5}\}$
+ungerade Zahl zu werfen: $A  = \left\{\epsdice{1}, \epsdice{3}, \epsdice{5}\right\}$
 
 \textbf{Gegenereignis} $\overline{A} = \Omega \backslash A$ =
 \textit{Gegenmenge}
@@ -802,7 +813,7 @@ Es gilt $A \cup \overline{A} = \Omega$
 
 \textbf{Elementarereignis}: Ereignis bestehend aus einem einzigen
 Ergebnis aus $\Omega$. Beispiel: $E_1$ = Wirf eine \textbf{Eins}: $E_1
-= \{\epsdice{1}\}$.
+= \left\{\epsdice{1}\right\}$.
 
 
 \subsection*{Elementare Wahrscheinlichkeit}
@@ -898,9 +909,9 @@ Wahrscheinlichkeit \textbf{genau} $t$ Treffer zu ziehen:
 
 $$P(X=t) = \frac{ {T \choose t} \cdot {N  \choose n} }{{T+N \choose t+n}}$$
 
-\mmPap{5.2}
+\noTRAINER{\mmPap{5.2}}
 
-\forceCB
+\noTRAINER{\forceCB}
 
 \subsection*{Vierfeldtafeln}
 Vierfeld-Tafeln=Kontingenztafeln mit 4 Feldern.
@@ -915,8 +926,8 @@ Zudem werden noch die Randsummen notiert.
 \bbwCenterGraphic{8cm}{img/kontingenztafel.png}
 
 
-\mmPap{14}
-\forceCB
+\noTRAINER{\mmPap{14}
+\forceCB} %% END No Trainer
 \subsection*{Bedingte Wahrscheinlichkeit}
 
 \begin{definition*}{Bedingte Wahrscheinlichkeit}{}
@@ -975,7 +986,7 @@ $$P(G | F) = \frac{\textrm{Anzahl gesunde Frauen}}{\textrm{Anzahl Frauen}}=  \fr
 \cellcolor[HTML]{eeee88}poly-solv    & \cellcolor[HTML]{eeee88} Quadratische Gleichungen in Grundform $ax^2+bx+c=0$\\\hline
 \cellcolor[HTML]{eebb88}sys-solv     & \cellcolor[HTML]{eebb88} Lineare Gleichungssysteme\\\hline
 \cellcolor[HTML]{cccccc}num-solv     & \cellcolor[HTML]{cccccc} Gleichungen mit Zahlen nach $x$ auf\/lösen\\\hline
-\cellcolor[HTML]{bb88ff}table        & \cellcolor[HTML]{bb88ff} Wertetabelle für lineare Gleichungen, lineare Funktionen, diverse Funktionen\\\hline
+\cellcolor[HTML]{aa44ee}table        & \cellcolor[HTML]{aa44ee} Wertetabelle für lineare Gleichungen, lineare Funktionen, diverse Funktionen\\\hline
 \cellcolor[HTML]{ddaa88}Kombinatorik & \cellcolor[HTML]{ddaa88} Fakultät: {\color{red}\textbf{!}}\\
 \cellcolor[HTML]{ddaa88}             & \cellcolor[HTML]{ddaa88} $n \choose k$: Tippe $n$ nCr $k$\\\hline
 \cellcolor[HTML]{bbaa88}Logarithmen  & \cellcolor[HTML]{bbaa88} log = Zehnerlogarithmus ($\lg$)\\
