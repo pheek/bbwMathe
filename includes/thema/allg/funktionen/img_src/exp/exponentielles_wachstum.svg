@@ -12,9 +12,9 @@
    viewBox="0 0 140.42603 76.157264"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="exponentielles_wachstum.svg"
-   inkscape:export-filename="/home/phi/git/mathe/includes/thema/allg/funktionen/img/exp/exponentielles_wachstum.png"
+   inkscape:export-filename="/home/phi/matgit/includes/thema/allg/funktionen/img/exp/exponentielles_wachstum.png"
    inkscape:export-xdpi="600"
    inkscape:export-ydpi="600">
   <defs
@@ -134,15 +134,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.0618357"
-     inkscape:cx="245.72262"
-     inkscape:cy="64.137993"
+     inkscape:zoom="2.1236714"
+     inkscape:cx="180.61377"
+     inkscape:cy="73.101576"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1824"
-     inkscape:window-height="1059"
-     inkscape:window-x="48"
+     inkscape:window-width="3792"
+     inkscape:window-height="2135"
+     inkscape:window-x="1920"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      showguides="false"
@@ -159,7 +159,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -326,28 +326,6 @@
     <text
        xml:space="preserve"
        style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:1.25;font-family:Grey;-inkscape-font-specification:'Grey Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="126.84061"
-       y="129.13171"
-       id="text1155"><tspan
-         sodipodi:role="line"
-         id="tspan1153"
-         x="126.84061"
-         y="129.13171"
-         style="stroke-width:0.26458332">mmm</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:1.25;font-family:Grey;-inkscape-font-specification:'Grey Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="126.59142"
-       y="132.49557"
-       id="text1159"><tspan
-         sodipodi:role="line"
-         id="tspan1157"
-         x="126.59142"
-         y="132.49557"
-         style="stroke-width:0.26458332">n</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:1.25;font-family:Grey;-inkscape-font-specification:'Grey Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        x="144.65665"
        y="109.69603"
        id="text1181"><tspan
@@ -477,19 +455,19 @@
          style="opacity:1;fill:#ca0101;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
     <g
-       id="g1217"
-       transform="translate(-7.7470448,5.2617212)">
+       id="g980"
+       transform="matrix(0.88707721,0,0,1.1107083,-33.077269,57.164692)">
       <text
          id="text929-3"
-         y="122.38789"
-         x="126.7635"
+         y="63.629467"
+         x="171.41942"
          style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.85122013px;line-height:1.25;font-family:times;-inkscape-font-specification:'times Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.22128101"
          xml:space="preserve"><tspan
            style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:times;-inkscape-font-specification:'times Italic';stroke-width:0.22128101"
-           y="122.38789"
-           x="126.7635"
+           y="63.629467"
+           x="171.41942"
            id="tspan927-5"
-           sodipodi:role="line">m = f(  )</tspan></text>
+           sodipodi:role="line">ab = f(   ) = m</tspan></text>
       <path
          d="m 91.869141,156.99805 c -0.08467,0.16933 -0.242277,0.26367 -0.44336,0.26367 -0.761997,0 -1.29269,-0.0527 -2.054687,-0.0527 -0.952497,0 -1.375543,0.41329 -1.671875,1.20704 h 0.232422 c 0.148166,-0.3175 0.446355,-0.53907 0.710937,-0.53907 0.232833,0 0.71875,0.0312 0.71875,0.0312 -0.148166,0.60325 -0.804687,2.7311 -0.804687,3.22852 0,0.47625 0.392574,0.77148 0.847656,0.77148 0.96308,0 1.290923,-0.69844 1.544922,-1.49218 l -0.222657,-0.084 c -0.116416,0.43392 -0.45471,1.19531 -1.015624,1.19531 -0.211666,0 -0.31836,-0.12622 -0.31836,-0.33789 0,-0.14816 0.04197,-0.47583 0.105469,-0.6875 l 0.708984,-2.57226 c 1.18533,0 1.6736,-0.11673 1.853516,-0.93164 z"
          id="text1004-6"
@@ -497,7 +475,7 @@
          inkscape:original="M 91.869141 156.99805 C 91.784474 157.16738 91.626864 157.26172 91.425781 157.26172 C 90.663784 157.26172 90.133091 157.20898 89.371094 157.20898 C 88.418597 157.20898 87.995551 157.62227 87.699219 158.41602 L 87.931641 158.41602 C 88.079807 158.09852 88.377996 157.87695 88.642578 157.87695 C 88.875411 157.87695 89.361328 157.9082 89.361328 157.9082 C 89.213162 158.51145 88.556641 160.6393 88.556641 161.13672 C 88.556641 161.61297 88.949215 161.9082 89.404297 161.9082 C 90.367377 161.9082 90.69522 161.20976 90.949219 160.41602 L 90.726562 160.33203 C 90.610146 160.76595 90.271852 161.52734 89.710938 161.52734 C 89.499272 161.52734 89.392578 161.40112 89.392578 161.18945 C 89.392578 161.04129 89.434547 160.71362 89.498047 160.50195 L 90.207031 157.92969 C 91.392361 157.92969 91.880631 157.81296 92.060547 156.99805 L 91.869141 156.99805 z "
          inkscape:radius="0"
          sodipodi:type="inkscape:offset"
-         transform="translate(61.753675,-39.042548)" />
+         transform="translate(109.38441,-98.358854)" />
     </g>
     <path
        style="fill:none;stroke:#48c5c9;stroke-width:0.0912004;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
