@@ -75,7 +75,7 @@ $$\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}$$
 
 \section*{Dezimalzahlen}
 \subsection*{Runden}
-Runden auf \textbf{\color{ForestGreen}vier}  Dezimalen: Betrachte die nächste Ziffer und runde auf, falls diese {\color{red}Ziffer} $\ge 5$.
+Bsp.: Runden auf \textbf{\color{ForestGreen}vier}  Dezimalen: Betrachte die nächste Ziffer und runde auf, falls diese {\color{red}Ziffer} $\ge 5$.
 
 Beispiel
 
@@ -128,10 +128,11 @@ Produktterm:\, $-3(-7) = +21$
 
 \subsection*{Grundrechenarten}
 
-\textbf{Assoziativgesetz}:\\ $(a+b)+c = a+(b+c)$ und\\ $(a\cdot{}b)\cdot{}c = a\cdot{}(b\cdot{}c)$\\
-\textbf{Kommutativgesetz}:\\ $a+b = b+a$ und\\ $a\cdot{}b= b\cdot{}a$\\
-\textbf{Distributivgesetz}:\\ $a\cdot{}(x+ y) = a\cdot{}x + a\cdot{}y$
-und $a\cdot{}(x - y) = a\cdot{}x - a\cdot{}y$\\
+\textbf{Assoziativgesetz}:\\ $(a+b)+c = a+(b+c)$,\\ $(a\cdot{}b)\cdot{}c = a\cdot{}(b\cdot{}c)$\\
+\textbf{Kommutativgesetz}:\\ $a+b = b+a$,\\ $a\cdot{}b= b\cdot{}a$\\
+\textbf{Distributivgesetz}:
+
+$a\cdot{}(x+ y) = a\cdot{}x + a\cdot{}y$,\phantom{ and } $a\cdot{}(x - y) = a\cdot{}x - a\cdot{}y$
 
 \textbf{Vorzeichen}
 
@@ -160,7 +161,7 @@ $(-2)\cdot(+3)=-6$\\
 %%\forceCB%%
 %%
     \section*{Bruchterme}
-    $\frac{a}b = a : b$ \hfill $\frac{a}b : \frac{x}y = \frac{a}b\cdot{}\frac{y}x = \frac{ay}{bx}$
+    $\frac{a}b = a : b$,\phantom{ and }  $\frac{a}b : \frac{x}y = \frac{a}b\cdot{}\frac{y}x = \frac{ay}{bx}$
     
 \subsection*{Faktorisieren}
 
@@ -478,12 +479,12 @@ Ist ${\color{blue}a<0}$, so werden Graphen der folgenden Funktionen an der $x$-A
 
 \begin{tabular}{cc}
 $m$ > 0: Parabel ($m$ gerade) & $m$ > 0: Parabel ($m$ ungerade)\\   %%\bbwCenterGraphic{8cm}{PotenzFkt.pdf}
-  \includegraphics[width=8cm]{PotenzFktx2x4.pdf} &
-  \includegraphics[width=8cm]{PotenzFktx3x5.pdf}\\
+  \includegraphics[width=7cm]{PotenzFktx2x4.pdf} &
+  \includegraphics[width=7cm]{PotenzFktx3x5.pdf}\\
 
 $m<0$: Hyperbel  ($m$ gerade) & $m<0$: Hyperbel ($m$ ungerade)\\
-  \includegraphics[width=8cm]{PotenzFkt1overx2x4.pdf}&
-  \includegraphics[width=8cm]{PotenzFkt1overx3x5.pdf}
+  \includegraphics[width=7cm]{PotenzFkt1overx2x4.pdf}&
+  \includegraphics[width=7cm]{PotenzFkt1overx3x5.pdf}
   \end{tabular}
 
 %% \includegraphics[width=4cm]{allg/funktionen/img/potenzfct/potenzFunktionenGerade.png}\hfill{}\includegraphics[width=4cm]{allg/funktionen/img/potenzfct/potenzFunktionenUngerade.png}
@@ -498,16 +499,18 @@ $m<0$: Hyperbel  ($m$ gerade) & $m<0$: Hyperbel ($m$ ungerade)\\
   Der Faktor $a$ in $y=a\cdot{}x^z$ streckt die Funktion in $x$-Richtung, bzw. spiegelt die Funktion an der $x$-Achse.
   \bbwCenterGraphic{8cm}{PotenzFktTransformation.pdf}
 
-\noTRAINER{\mmPap{13.2}
-  
-  \forceCB}%% END NO TRAINER
+  \hrulefill
   
 \section*{Wachstumsmodelle}
 
-Lineares Wachstum:
+\textbf{Lineares Wachstum}
 $$f(t) = a\cdot t + b$$
-Exponentielles Wachstum:
+Bei linearem Wachstum wird pro Zeiteinheit der selbe Wert $a$ \textbf{addiert}.
+
+\textbf{Exponentielles Wachstum}
+
 $$f(t) = b\cdot{}a^t$$
+Bei exponentiellem Wachstum wird pro Zeiteinheit mit dem selben Wert $a$ \textbf{multipliziert}.
 
   \begin{tabular}{rl}
    $b$  & Startwert bei $t=0$; $b=f(0)$\\
@@ -524,8 +527,7 @@ $$f(t) = b\cdot{}a^t$$
 \TRAINER{ev. in der Grafik $m$ durch $ab$ ersetzen.
 
 }
-Wachstum: $a>1$\\
-Beim Zerfall gilt: $0<a<1$
+Wachstum: $a>1$, Zerfall: $0<a<1$
 
 %%\bbwCenterGraphic{7.5cm}{allg/funktionen/img/exp/exponentieller_zerfall.png}
 
@@ -558,12 +560,10 @@ m=\ln\left(a^\frac1\tau\right) = \frac1\tau \cdot{}\ln(a)
 \,\,(\textrm{bzw. } a = e^{m\tau})$
 
 \subsection*{Halbwertszeit}
-$\frac12 \cdot{} b = f(t) = b\cdot{}a^{\frac{t}{\tau}}$
-$$t= \tau\cdot{}\log_a\left(\frac12\right)$$
+$\frac12 \cdot{} b = f(t) = b\cdot{}a^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t= \tau\cdot{}\log_a\left(\frac12\right)$
 
 \subsection*{Verdopplungszeit}
-$2\cdot{}b = f(t) = b\cdot{}a^{\frac{t}{\tau}}$
-$$t = \tau\cdot{}\log_a(2)$$
+$2\cdot{}b = f(t) = b\cdot{}a^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t = \tau\cdot{}\log_a(2)$
 
 \subsection*{Sättigungsfunktionen}
 
@@ -575,18 +575,17 @@ $$t = \tau\cdot{}\log_a(2)$$
 \begin{tabular}{lcr}
   Wachstum & & Zerfall\\
 $f(t) = c - b\cdot{}a^\frac{t}\tau$ &  & $f(t) = c + b\cdot{}a^\frac{t}\tau$ \\
-  \multicolumn{3}{c}{$c$: Sättigungsgrenze}\\
-
- Wachstumsrate: &&Zerfallsrate:\\
- $0<a<1$ &&  $0<a<1$\\
- 
  \multicolumn{3}{c}{Startwert:}\\
  $c-b$ & & $c+b$
 \end{tabular}
 
-\textbf{Sättigungsdefizit}
-$b$ = Differenz zu $c$ bei $t=0$.\\
-$b\cdot{}a^\frac{t}\tau = m(t)$ = Sättigungsdefizit zur Zeit $t$
+$c$: Sättigungsgrenze\\
+$a<0<1$: Zerfallsrate
+
+
+%%\textbf{Sättigungsdefizit}
+%%$b$ = Differenz zu $c$ bei $t=0$.\\
+%%$b\cdot{}a^\frac{t}\tau = m(t)$ = Sättigungsdefizit zur Zeit $t$
 
 \end{multicols}
 
@@ -697,11 +696,13 @@ Taschenrechner (\texttt{sum}): \tiprobutton{math}\tiprobutton{5}
 \begin{tcolorbox}[colback=white]
   \textbf{Relative Häufigkeit}\\
 \begin{tabular}{lcl}
-$n$   &=& Anzahl Werte\\
-$h_i$ &=* Absolute Häufigkeit des Merkmals $i$\\
-$f_i = \frac{h_i}n$ &=& relative Häufigkeit\\
-$p_i = f_i\cdot{}100\%$ &=& prozentuale Häufigkeit\\
-  $\varphi_i = f_i\cdot{}360\degre$ &=& Zentriwinkel im Kuchendiagramm
+$n$   &$=$& Anzahl Werte\\
+$h_i$ &$=$& Absolute Häufigkeit\\
+      & & des Merkmals $i$\\
+$f_i = \frac{h_i}n$ &$=$& relative Häufigkeit\\
+$p_i = f_i\cdot{}100\%$ &$=$& prozentuale Häufigkeit\\
+$\varphi_i = f_i\cdot{}360\degre$ &$=$& Zentriwinkel im\\
+      & &Kuchendiagramm
   \end{tabular}
 \end{tcolorbox}
 
@@ -714,7 +715,7 @@ $p_i = f_i\cdot{}100\%$ &=& prozentuale Häufigkeit\\
 \begin{itemize}
 \item Alle Balken sind gleich breit.
 \item Alle Balken berühren sich.
-\item Die Höhe der Balken wird durch die (abs. / rel.) Häufigkeit der entsprechenden
+\item Die Höhe der Balken wird durch die (absolute / relative) Häufigkeit der entsprechenden
 Werte festgelegt.
 \item Werte auf Balkengrenzen werden immer rechts mitgezählt.
 \end{itemize}
@@ -749,7 +750,7 @@ Fühler (Whisker) werden auf $1.5\cdot\textrm{IQR}$ begrenzt ({\color{blue} Ausr
 danach nach \textit{\color{ForestGreen}innen} gehen: Fühler sind die von der Box
 entferntesten Nicht-Ausreißer ({\color{ForestGreen}grün}). Ausreißer
 ({\color{red} rot}) werden markiert.
-\bbwCenterGraphic{18cm}{BoxplotMitStreudiagramm2.pdf}
+\bbwCenterGraphic{18cm}{BoxplotMitStreudiagramm3.pdf}
 %%\TRAINER{Entferne «Sportler*innen»}
 
 \hrulefill
@@ -777,17 +778,21 @@ Bei $n$ Elementen gibt es $n!$ Permutationen (=Vertauschungen):
 
 \begin{tcolorbox}[colback=white]
   \textbf{Fakultät}\\
-$$n! = n\cdot{}(n-1)\cdot{}(n-2)\cdot{}(n-3)\cdot{} ... \cdot{}2\cdot{}1$$
+  $$n! = n\cdot{}(n-1)\cdot{}(n-2)\cdot{}(n-3)\cdot{} ... \cdot{}2\cdot{}1$$
+  $$1! = 1\phantom{xxx}0! = 1$$
 \end{tcolorbox}
 
-«Mississippi»-Formel: Wie viele Wörter sind mit den Buchstaben des Wortes «Mississippi» bildbar? Sind einige Bucchstaben gleich, so reduziert sich die Anzahl der Möglichkeiten.
-$$N = \frac{11!}{4!4!2!}$$
+\def\missifarbig{M{\color{ForestGreen}i}{\color{red}ss}{\color{ForestGreen}i}{\color{red}ss}{\color{ForestGreen}i}{\color{cyan}pp}{\color{ForestGreen}i}}
+«\missifarbig»-Formel: Wie viele verschiedene Wörter sind mit den Buchstaben des Wortes «\missifarbig» bildbar? Sind einige Buchstaben gleich, so reduziert sich die Anzahl der Möglichkeiten.
+$$N = \frac{11!}{{\color{ForestGreen}4}!{\color{red}4}!{\color{cyan}2}!}$$
 
 \end{multicols}
+\newpage
+
 
 \subsection*{Überblick Auswahlprobleme}
+$$\textrm{Binomialkoeffizient:} {{\color{blue}n}\choose {\color{red}k}} :=\frac{{\color{blue}n}!}{({\color{blue}n}-{\color{red}k})!\cdot {\color{blue}n}!}\phantom{etwas Platz lassen} {n\choose 0}= {n\choose n}= 1$$
 \bbwCenterGraphic{17cm}{img/Kombinatorik.pdf}
-\TRAINER{ev ${{\color{blue}n} \choose {\color{red}k}} = ...$ vor die Grafik im text}
 
 \hrulefill
 
@@ -818,7 +823,7 @@ Es gilt $A \cup \overline{A} = \Omega$
 Ergebnis aus $\Omega$. Beispiel: $E_1$ = Wirf eine \textbf{Eins}: $E_1
 = \left\{\epsdice{1}\right\}$.
 
-
+\forceCB
 \subsection*{Elementare Wahrscheinlichkeit}
 Die Wahrscheinlichkeit des \textbf{Gegenereignisses} von $E$ ist
 $$P(\overline{E}) = 1- P(E)$$
@@ -834,7 +839,7 @@ gilt:
 
 $$P(A\textrm{ «oder» }B) = P(A\cup B) = P(A) + P(B)$$
 
-
+\forceCB
 \subsubsection*{Baumdiagramme}
 
 \textbf{Pfadregel}:
@@ -853,6 +858,7 @@ Wahrscheinlichkeiten.
 Summe der zugehörigen Pfadwahrscheinlichkeiten (aller gewünschten
 Endergebnisse), also $P=1.0$
 \end{itemize}
+\bbwCenterGraphic{8cm}{img/WahrscheinlichkeitBaumdiagramm.pdf}
 
 
 \subsection*{Laplace-Wahrscheinlichkeit}
@@ -902,7 +908,7 @@ Bei \textbf{minimal} arbeite mit \textbf{Gegenereignis}.
 \textbf{Achtung}: Gegenereignis von «minimal 4 Mal» = «maximal 3 Mal».
 $$P(X \ge 4) = 1 - P(X < 4) = 1-P(X\le 3)$$
 
-
+\forceCB
 \subsection*{Hypergeometrische Verteilung}
 Gegeben $N+T$ Kugeln in einer Urne. Herausgezogen werden $n+t$:
 \begin{itemize}
@@ -915,9 +921,6 @@ Wahrscheinlichkeit \textbf{genau} $t$ Treffer zu ziehen:
 
 $$P(X=t) = \frac{ {T \choose t} \cdot {N  \choose n} }{{T+N \choose t+n}}$$
 
-\noTRAINER{\mmPap{5.2}}
-
-\noTRAINER{\forceCB}
 
 \subsection*{Vierfeldtafeln}
 Vierfeld-Tafeln=Kontingenztafeln mit 4 Feldern.
@@ -932,8 +935,6 @@ Zudem werden noch die Randsummen notiert.
 \bbwCenterGraphic{8cm}{img/kontingenztafel.png}
 
 
-\noTRAINER{\mmPap{14}
-\forceCB} %% END No Trainer
 \subsection*{Bedingte Wahrscheinlichkeit}
 
 \begin{tcolorbox}[colback=white]
