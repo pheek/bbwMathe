@@ -2,7 +2,7 @@
 %% Meta: Formelsammlung GESO BBW
 %%
 
-\newcommand{\versionsnummerFoSa}{2021-06-28 0.2.1}
+\newcommand{\versionsnummerFoSa}{2021-06-28 0.2.2}
 
 \input{bbwSeite}
 
@@ -66,7 +66,9 @@
 $\mathbb{N} = \{1,2, ...\}$                                   \textbf{natürlich}\\
 $\mathbb{Z} = \{..., -2, -1, 0, 1,2, ...\}$                   \textbf{ganz}\\
 $\mathbb{Q} = \{\frac{a}b|a\in \mathbb{Z},b\in\mathbb{N}\}$   \textbf{rational} (Brüche)\\
-$\mathbb{R} = \{..., -1, ..., 0, ... \frac12, ..., \sqrt{2}, ..., e, ... \pi, ...\}  $ \textbf{reell} (alle Zahlen auf der Zahlengeraden)
+$\mathbb{R} = \{..., -\frac12, ..., 0, ..., \sqrt{2}, ..., e,
+... \pi, ...\}$\,\textbf{reell}\\
+%%\phantom{$\mathbb{R}$} $=$ \textbf{reell}
 \end{tcolorbox}
 
 $$\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}$$
@@ -75,9 +77,9 @@ $$\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}$$
 
 \section*{Dezimalzahlen}
 \subsection*{Runden}
-Bsp.: Runden auf \textbf{\color{ForestGreen}vier}  Dezimalen: Betrachte die nächste Ziffer und runde auf, falls diese {\color{red}Ziffer} $\ge 5$.
-
-Beispiel
+Bsp.: Runden auf \textbf{\color{ForestGreen}vier}  Dezimalen:
+Betrachte die nächste Ziffer und runde auf, falls diese
+{\color{red}Ziffer} $\ge 5$. Bsp.:
 
 $3.\mathbf{\color{ForestGreen}4729}\mathbf{\color{red}6}44 \approx
 3.\mathbf{\color{ForestGreen}4730}$; \hfill{ }
@@ -110,13 +112,13 @@ $0.004$ &=& $\mathbf{\color{blue}4}\cdot{}10^{-3}$ &=& \textbf{\color{blue}4}E-3
 «Klapopustri»
 (1.) Klammern, (2.) Wurzeln/Potenzen, (3.) Punktoperationen, (4.) Strichoperationen
 
+\textbf{Termarten}
+
 \subsubsection*{Termarten}
-\begin{tabular}{rcl}
-$a+3x$        && Summe\\
-$5b^2-b$      && Differenz\\
-$(8-x)(3-a)$  && Produkt\\
-$7:(b+1)$     && Quotient\\
-$(3x)^4$      && Potenz
+\begin{tabular}{rclrcl}
+$a+3x$        && Summe   & $5b^2-b$      && Differenz\\
+$x(3-a)$  && Produkt & $7:(b+1)$     && Quotient\\
+$(3x)^4$      && Potenz  &&&
 \end{tabular}
 
 \textbf{Achtung}
@@ -453,7 +455,8 @@ $y=ax+b$ einsetzen, um $b$ zu finden.
 
 \subsection*{Quadratische Funktion}
 $$y=ax^2$$
-$a$ heißt Öffnung ($a<0$: Die Parabel ist nach unten geöffnet)
+$a$ heißt Öffnung\\
+($a<0$: Die Parabel ist nach unten geöffnet)
 
 $a=1$ oder $a=-1$: Normalparabel
 %% Fülle, damit nicht vertikal auseinandergezogen
@@ -783,7 +786,8 @@ Bei $n$ Elementen gibt es $n!$ Permutationen (=Vertauschungen):
 \end{tcolorbox}
 
 \def\missifarbig{M{\color{ForestGreen}i}{\color{red}ss}{\color{ForestGreen}i}{\color{red}ss}{\color{ForestGreen}i}{\color{cyan}pp}{\color{ForestGreen}i}}
-«\missifarbig»-Formel: Wie viele verschiedene Wörter sind mit den Buchstaben des Wortes «\missifarbig» bildbar? Sind einige Buchstaben gleich, so reduziert sich die Anzahl der Möglichkeiten.
+«\missifarbig»-Formel: Sind einige Buchstaben gleich, so reduziert
+sich die Anzahl der Möglichkeiten. Wie viele verschiedene Wörter sind mit den Buchstaben des Wortes «\missifarbig» bildbar?
 $$N = \frac{11!}{{\color{ForestGreen}4}!{\color{red}4}!{\color{cyan}2}!}$$
 
 \end{multicols}
