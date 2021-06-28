@@ -549,4 +549,54 @@
      y="345.75409"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:arial;-inkscape-font-specification:arial;stroke-width:0.47067708">Körpergröße in cm</tspan></text>
 
-</g></svg>
+
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.20555496px;line-height:1.25;font-family:arial;-inkscape-font-specification:arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.47067708"
+   x="385.53867"
+   y="220.71931"
+   id="text5208-3"
+   transform="scale(1.0670281,0.93718244)"><tspan
+     sodipodi:role="line"
+     id="tspan5206-6"
+     x="385.53867"
+     y="220.71931"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:arial;-inkscape-font-specification:arial;stroke-width:0.47067708">Q1</tspan></text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.20555496px;line-height:1.25;font-family:arial;-inkscape-font-specification:arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.47067708"
+   x="673.62048"
+   y="220.52321"
+   id="text5208-3-7"
+   transform="scale(1.0670281,0.93718244)"><tspan
+     sodipodi:role="line"
+     id="tspan5206-6-5"
+     x="673.62048"
+     y="220.52321"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:arial;-inkscape-font-specification:arial;stroke-width:0.47067708">Q3</tspan></text>
+<g
+   id="g1254"
+   transform="matrix(0.62315769,0,0,0.8218136,262.57722,29.266455)"><text
+     transform="scale(0.997247,1.0027606)"
+     id="text5208-3-3"
+     y="145.00671"
+     x="625.19159"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.67521858px;line-height:1.25;font-family:arial;-inkscape-font-specification:arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26883015"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:arial;-inkscape-font-specification:arial;stroke-width:0.26883015"
+       y="145.00671"
+       x="625.19159"
+       id="tspan5206-6-56"
+       sodipodi:role="line">MED</tspan></text>
+<text
+     id="text1248"
+     y="126.71201"
+     x="589.97571"
+     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.76605225px;line-height:1.25;font-family:times;-inkscape-font-specification:'times Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.80405676"
+     xml:space="preserve"><tspan
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:times;-inkscape-font-specification:'times Italic';stroke-width:0.80405676"
+       y="126.71201"
+       x="589.97571"
+       id="tspan1246"
+       sodipodi:role="line">x</tspan></text>
+</g></g></svg>
