@@ -2,7 +2,7 @@
 %% Meta: Formelsammlung GESO BBW
 %%
 
-\newcommand{\versionsnummerFoSa}{2021-06-28 0.2.2}
+\newcommand{\versionsnummerFoSa}{2021-06-29 0.2.3}
 
 \input{bbwSeite}
 
@@ -15,7 +15,7 @@
 %%\usepackage{amssymb} %% für \blacktriangleright
 \usepackage{makecell}
 
-\renewcommand{\shortAuthor}{fp he @ bbw.ch}
+\renewcommand{\shortAuthor}{fp he @ bbw.ch [\versionsnummerFoSa{}]}
 
 \renewcommand{\metaHeaderLine}{Formelsammlung (GESO \noTRAINER{2021}\TRAINER{\versionsnummerFoSa{}} BBW)}
 
@@ -90,9 +90,9 @@ $70.\mathbf{\color{ForestGreen}0031}\mathbf{\color{red}4}998\approx
 
 \subsection*{Signifikante Stellen}
 Führende Nullen zählen nicht, nachfolgende Nullen
-zählen. Bsp. \textbf{\color{ForestGreen}drei} signifikante Stellen:
+zählen. Bsp. \textbf{\color{ForestGreen}vier} signifikante Stellen:
 
-$$\mathbf{\color{ForestGreen}208} \textrm{ cm} = \mathbf{\color{ForestGreen}2.08} \textrm{ m} = 0.00\mathbf{\color{ForestGreen}208} \textrm{ km}$$
+$$\mathbf{\color{ForestGreen}208.0} \textrm{ cm} = \mathbf{\color{ForestGreen}2.080} \textrm{ m} = 0.00\mathbf{\color{ForestGreen}2080} \textrm{ km}$$
 
 %%\forceCB{}%%
 \subsection*{Wissenschaftliche Notation}
@@ -114,11 +114,10 @@ $0.004$ &=& $\mathbf{\color{blue}4}\cdot{}10^{-3}$ &=& \textbf{\color{blue}4}E-3
 
 \textbf{Termarten}
 
-\subsubsection*{Termarten}
-\begin{tabular}{rclrcl}
-$a+3x$        && Summe   & $5b^2-b$      && Differenz\\
-$x(3-a)$  && Produkt & $7:(b+1)$     && Quotient\\
-$(3x)^4$      && Potenz  &&&
+\begin{tabular}{rlrl}
+$a+3x$  &Summe  & $5b^2-b$ & Differenz\\
+$x(3-a)$&Produkt& $7:(b+1)$& Quotient\\
+$(3x)^4$&Potenz &          &
 \end{tabular}
 
 \textbf{Achtung}
@@ -160,9 +159,8 @@ $(-2)\cdot(+3)=-6$\\
 %%
 \hfill\, $|+7| = 7$ \hfill\, $|-7| = 7$ \hfill\, %%
 
-%%\forceCB%%
-%%
-    \section*{Bruchterme}
+\forceCB%%
+\section*{Bruchterme}
     $\frac{a}b = a : b$,\phantom{ and }  $\frac{a}b : \frac{x}y = \frac{a}b\cdot{}\frac{y}x = \frac{ay}{bx}$
     
 \subsection*{Faktorisieren}
@@ -185,8 +183,7 @@ $$x^2-1 = (x-1)(x+1)$$
 $$4b^2 -12bc + 9c^2=(2b-3c)^2$$
 \item Zweiklammeransatz
 $$x^2+2x-15 = (x+5)(x-3)$$
-Die Faktoren für den Zweiklammeransatz können mit dem Taschenrechner
-gefunden werden:\\ a) \texttt{poly-solv} \tiprobutton{cos_poly-solv}
+Faktoren mit Taschenrechner:\\ a) \texttt{poly-solv} \tiprobutton{cos_poly-solv}
 oder\\ b) \texttt{PFactor} \tiprobutton{math}\tiprobutton{4}
 
 \textbf{\color{red}Achte auf Vorzeichen!}
@@ -281,7 +278,7 @@ $$\log_{\color{ForestGreen}a}({\color{red}b}) = \frac{\lg({\color{red}b})}{\lg({
 
 \subsection*{Lineare Gleichungen}
 
-\textbf{Beispiele} ($x$ Unbekannte)
+\textbf{Beispiele} ($x$ ist die Unbekannte)
 $$2x+1= 2x+5$$
 $$a^2x-b=b^2x+a$$
 
@@ -291,15 +288,16 @@ Der Taschenrechner löst Gleichungen mit Zahlen nach $x$ auf:
 
 $5^x = 100 -x$; verwende \tiprobutton{2nd}\tiprobutton{sin_num-solv} $x\approx{}2.843$
 
-\mmPap{4.4}
+\mmPap{5.6}
 \forceCB
 \subsection*{Quadratische Gleichungen}
 
 \textbf{Grundform}: $ax^2 + bx+c = 0$
 
-\textbf{Lösungsformel}:
-$$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$
-
+\begin{tcolorbox}[colback=white]
+  \textbf{Lösungsformel}
+  $$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$
+\end{tcolorbox}
 \textbf{Diskriminante} $D = b^2-4ac$\\
 $D>0\Longrightarrow$ Zwei Lösungen;\\
 $D=0\Longrightarrow$ Eine Lösung;\\
@@ -316,11 +314,11 @@ $$\frac5{x+2}=\frac{7+x}{x-3} \Leftrightarrow{} \mathbb{D}_x=\mathbb{R}\backslas
 
 \subsection*{Potenzgleichungen}
 
-  \TRAINER{ev nur letztes gesetz: $x^a = c$ und $x^\frac1b =c$ sind darin enthalten.  }
+  \TRAINER{ev. nur letztes Gesetz: $x^a = c$ und $x^\frac1b =c$ sind darin enthalten.  }
 
 \begin{tabular}{rcl}
 $x^a=c$ & $\Leftrightarrow$ & $x=\sqrt[a]{c}$\\
-$x^\frac1b=c$&$\Leftrightarrow$&$x=c^b$\\
+%%$x^\frac1b=c$&$\Leftrightarrow$&$x=c^b$\\
 $x^{\frac{a}b} = c$&$\Leftrightarrow{}$&$x=c^{\frac{b}a} = \sqrt[a]{c^b}$
 \end{tabular}
 
@@ -332,7 +330,8 @@ $$5^4 = 5^{2x+1} \Longrightarrow  4=2x+1$$
 \subsubsection*{durch Logarithmieren}
 $$a^x=b \Rightarrow{} x=\log_a(b) = \frac{\lg(b)}{\lg(a)}$$
 
-\mmPap{4.4}
+\noTRAINER{\mmPap{5.6}}
+
 
 \forceCB
 
@@ -482,12 +481,12 @@ Ist ${\color{blue}a<0}$, so werden Graphen der folgenden Funktionen an der $x$-A
 
 \begin{tabular}{cc}
 $m$ > 0: Parabel ($m$ gerade) & $m$ > 0: Parabel ($m$ ungerade)\\   %%\bbwCenterGraphic{8cm}{PotenzFkt.pdf}
-  \includegraphics[width=7cm]{PotenzFktx2x4.pdf} &
-  \includegraphics[width=7cm]{PotenzFktx3x5.pdf}\\
+  \includegraphics[width=8cm]{PotenzFktx2x4.pdf} &
+  \includegraphics[width=8cm]{PotenzFktx3x5.pdf}\\
 
 $m<0$: Hyperbel  ($m$ gerade) & $m<0$: Hyperbel ($m$ ungerade)\\
-  \includegraphics[width=7cm]{PotenzFkt1overx2x4.pdf}&
-  \includegraphics[width=7cm]{PotenzFkt1overx3x5.pdf}
+  \includegraphics[width=8cm]{PotenzFkt1overx2x4.pdf}&
+  \includegraphics[width=8cm]{PotenzFkt1overx3x5.pdf}
   \end{tabular}
 
 %% \includegraphics[width=4cm]{allg/funktionen/img/potenzfct/potenzFunktionenGerade.png}\hfill{}\includegraphics[width=4cm]{allg/funktionen/img/potenzfct/potenzFunktionenUngerade.png}
@@ -531,6 +530,8 @@ Bei exponentiellem Wachstum wird pro Zeiteinheit mit dem selben Wert $a$ \textbf
 
 }
 Wachstum: $a>1$, Zerfall: $0<a<1$
+
+\noTRAINER{\mmPap{6.4}}
 
 %%\bbwCenterGraphic{7.5cm}{allg/funktionen/img/exp/exponentieller_zerfall.png}
 
@@ -592,7 +593,7 @@ $a<0<1$: Zerfallsrate
 
 \end{multicols}
 
-\mmPapier{6}
+\mmPapier{8}
 
 \newpage
 \section*{Datenanalyse}
