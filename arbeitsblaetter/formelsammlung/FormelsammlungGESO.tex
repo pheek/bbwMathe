@@ -2,7 +2,13 @@
 %% Meta: Formelsammlung GESO BBW
 %%
 
-\newcommand{\versionsnummerFoSa}{2021-06-29 0.2.3}
+\newcommand{\versionsDatumFoSa}{2021-06-29}
+
+%% ID (ca. alle jahre), Subversion: Größere Änderungen, Revision: Jede
+%% Umstellung/Korrektur/Typos
+\newcommand{\versionIdSubRev}{0.2.5}
+
+\newcommand{\versionsnummerFoSa}{\versionsDatumFoSa{} \versionIdSubRev}
 
 \input{bbwSeite}
 
@@ -19,7 +25,7 @@
 
 \renewcommand{\metaHeaderLine}{Formelsammlung (GESO \noTRAINER{2021}\TRAINER{\versionsnummerFoSa{}} BBW)}
 
-\renewcommand{\arbeitsblattTitel}{Formelsammlung für die gesundheitlich-soziale BMS (working Draft)}
+\renewcommand{\arbeitsblattTitel}{Formelsammlung --- gesundheitlich-soziale BMS\TRAINER{ (V \versionIdSubRev)}}
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
 \titlespacing*{\subsection}{0pt}{0.1\baselineskip}{0.1\baselineskip}
@@ -55,8 +61,6 @@
 
 \begin{document}%%
 
-\TRAINER{Alle Definitions-Boxen weg. Höchstens Trauerrand.}
-
 \arbeitsblattHeader{}
 
 \begin{multicols}{2}%%
@@ -69,7 +73,7 @@ $\mathbb{N} = \{1,2, ...\}$                                   \textbf{natürlich
 $\mathbb{Z} = \{..., -2, -1, 0, 1,2, ...\}$                   \textbf{ganz}\\
 $\mathbb{Q} = \{\frac{a}b|a\in \mathbb{Z},b\in\mathbb{N}\}$   \textbf{rational} (Brüche)\\
 $\mathbb{R} = \{..., -\frac12, ..., 0, ..., \sqrt{2}, ..., e,
-... \pi, ...\}$\,\textbf{reell}\\
+... \pi, ...\}$\,\textbf{reell}%%
 %%\phantom{$\mathbb{R}$} $=$ \textbf{reell}
 \end{tcolorbox}
 
@@ -411,9 +415,10 @@ $b$ = $y$-Achsenabschnitt (=Ordinatenabschnitt)
 
 \subsection*{Achsenschnittpunkte}
 
-\textbf{Nullstelle}: Schnittstelle mit der $x$-Achse:\\ $y$ null setzen und auf\/lösen.
+\textbf{Nullstelle}: Schnittstelle mit der $x$-Achse:\\
+$y=0$ setzen und $x$ ausrechnen.
 
-\textbf{Schnittpunkt mit der $y$-Achse}: 
+\textbf{Schnittpunkt mit der $y$-Achse}:\\
 $x=0$ setzen und $y$ ausrechnen.
 
 
@@ -500,7 +505,7 @@ $m<0$: Hyperbel  ($m$ gerade) & $m<0$: Hyperbel ($m$ ungerade)\\
 \begin{multicols}2
 
   \subsection*{Transformationen}
-  Der Faktor $a$ in $y=a\cdot{}x^z$ streckt die Funktion in $x$-Richtung, bzw. spiegelt die Funktion an der $x$-Achse.
+  Der Faktor $a$ in $y=a\cdot{}x^z$ streckt die Funktion in $y$-Richtung, bzw. spiegelt die Funktion an der $x$-Achse.
   \bbwCenterGraphic{8cm}{PotenzFktTransformation.pdf}
 
   \hrulefill
@@ -518,12 +523,11 @@ Bei exponentiellem Wachstum wird pro Zeiteinheit mit dem selben Wert $a$ \textbf
 
   \begin{tabular}{rl}
    $b$  & Startwert bei $t=0$; $b=f(0)$\\
-        & \phantom{$b$} = $y$-Achsenabschn.\\
+        & \phantom{$b$} = $y$-Achsenabschnitt\\
    $a$  & beschreibt das Wachstum
   \end{tabular}
 
   \bbwCenterGraphic{8cm}{ExpFktVergleichMitLinearemWachstum.pdf}
-  \TRAINER{f(x) noch durch f(t) ersetzen.}
 
   \subsection*{Exponentialfunktionen}
 %%\bbwCenterGraphic{8.5cm}{allg/funktionen/img/exp/exponentielles_wachstum.png}
@@ -548,23 +552,31 @@ $$f(t)= {\color{blue}3}\cdot{}{\color{red}4}^\frac{t}{\color{FarnFarbe}5}$$
 \end{tcolorbox}
 
 
-\subsection*{Basis $e$ Zeitvariable oft $x$}
+\subsection*{Norm: Basis $e$, Zeitvariable $x$}
 
-$$y=c+b\cdot{}a^x = c + b\cdot{}e^{mx}$$ $\textrm{ mit } m = \ln(a)
-\,\,(\textrm{bzw. } a = e^m)$
+$$y=c+b\cdot{}a^x = c + b\cdot{}e^{mx}$$
 
-bzw.
+$\textrm{mit } m = \ln(a)\,\,\textrm{ oder } a = e^m$
 
-$$y=c+b\cdot{}a^\frac{x}\tau = c+b\cdot{}e^{mx}$$ $\textrm{ mit }
-m=\ln\left(a^\frac1\tau\right) = \frac1\tau \cdot{}\ln(a)
-\,\,(\textrm{bzw. } a = e^{m\tau})$
+\vspace{2mm}
+
+Und mit Zeitintervall $\tau$:
+
+$$y=c+b\cdot{}a^\frac{x}\tau = c+b\cdot{}e^{mx}$$
+
+$\textrm{mit } m=\ln\left(a^\frac1\tau\right) = \frac1\tau \cdot{}\ln(a) \,\,\textrm{ oder } a = e^{m\tau}$
 
 \subsection*{Halbwertszeit}
 $\frac12 \cdot{} b = f(t) = b\cdot{}a^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t= \tau\cdot{}\log_a\left(\frac12\right)$
 
 \subsection*{Verdopplungszeit}
 $2\cdot{}b = f(t) = b\cdot{}a^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t = \tau\cdot{}\log_a(2)$
-\forceCB
+
+\mmPap{5.6}%
+\forceCB%
+
+
+
 \subsection*{Sättigungsfunktionen}
 
 
@@ -578,12 +590,12 @@ $2\cdot{}b = f(t) = b\cdot{}a^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phant
 \textbf{Sättigungsgrenze}: $c$
 
 \textbf{Wachstum}:
-$$f(t) = c-ba^\frac{t}\tau$$
+$$f(t) = c-b\cdot{}a^\frac{t}\tau$$
 $$f(0) = c-b$$
-\textbf{Zerfall}:
-$$f(t) = c+ba^\frac{t}\tau$$
-$$f(0) = c+b$$
 
+\textbf{Zerfall}:
+$$f(t) = c+b\cdot{}a^\frac{t}\tau$$
+$$f(0) = c+b$$
 
 %%\textbf{Sättigungsdefizit}
 %%$b$ = Differenz zu $c$ bei $t=0$.\\
@@ -591,7 +603,7 @@ $$f(0) = c+b$$
 
 \end{multicols}
 
-\mmPapier{8}
+\mmPapier{14}
 
 \newpage
 \section*{Datenanalyse}
@@ -638,8 +650,15 @@ Manchmal ist dies nicht eindeutig, dann sprechen wir von einer
 \textbf{multimodalen} Verteilung. Bei zwei Modi von \textbf{bimodal}.
 
 \subsubsection*{Maximum, Minimum}
+
 Maximum bzw. Minimum sind höchste bzw. kleinste Datenwerte: Die Ausreißer
 zählen mit!
+
+\noTRAINER{\mmPap{5.2}}%
+\TRAINER{}%
+%
+\forceCB%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 
 \subsection*{Streumaße}
 \subsubsection*{Spannweite}
@@ -656,7 +675,7 @@ Mit $\sigma$ bzw. $s$ wird die Standardabweichung bezeichnet.
 
 $\sigma$ = Standardabweichung der Grundgesamtheit
 
-$s$ = Standardabweichung einer gemessenen Stichprobe \TRAINER{Taschenrechner großes S}
+$s$ = Standardabweichung einer gemessenen Stichprobe
 
 
 \subsubsection*{Robustheit}
@@ -690,9 +709,9 @@ Beispiel
 
 Taschenrechner (\texttt{sum}): \tiprobutton{math}\tiprobutton{5}
 
-\mmPap{8}
-
-\forceCB
+\mmPap{2}%
+%
+\forceCB%
 \subsection*{Diagramme}
 \subsubsection*{Balken / Kuchen}
 \begin{tcolorbox}[colback=white]
@@ -712,7 +731,6 @@ $\varphi_i = f_i\cdot{}360\degre$ &$=$& Zentriwinkel im\\
 
 \subsubsection*{Histogramm}
 \bbwCenterGraphic{8cm}{img/Histogramm.pdf}
-\TRAINER{Entferne «Sportler*innen»}
 
 \begin{itemize}
 \item Alle Balken sind gleich breit und berühren sich.
@@ -787,7 +805,7 @@ Bei $n$ Elementen gibt es $n!$ Permutationen (=Vertauschungen):
 \end{tcolorbox}
 
 \def\missifarbig{M{\color{FarnFarbe}i}{\color{red}ss}{\color{FarnFarbe}i}{\color{red}ss}{\color{FarnFarbe}i}{\color{cyan}pp}{\color{FarnFarbe}i}}
-«\missifarbig»-Formel: Sind einige Buchstaben gleich, so reduziert
+«\missifarbig»-Formel: Sind einige Elemente gleich, so reduziert
 sich die Anzahl der Möglichkeiten. Wie viele verschiedene Wörter sind mit den Buchstaben des Wortes «\missifarbig» bildbar?
 $$N = \frac{11!}{{\color{FarnFarbe}4}!\cdot{}{\color{red}4}!\cdot{}{\color{cyan}2}!}$$
 
@@ -846,13 +864,20 @@ $$P(A\textrm{ «oder» }B) = P(A\cup B) = P(A) + P(B)$$
 
 \forceCB
 \subsubsection*{Baumdiagramme}
+Bsp.: Zwei Mal eine \textit{unfaire} Münze werfen
+\bbwCenterGraphic{75mm}{img/WahrscheinlichkeitBaumdiagramm.pdf}
 
-\bbwCenterGraphic{8cm}{img/WahrscheinlichkeitBaumdiagramm.pdf}
-
-Wahrscheinlichkeiten entlang eines Pfades werden multipliziert (grün)
+Wahrscheinlichkeiten {\color{FarnFarbe}entlang} eines Pfades werden {\color{FarnFarbe}multipliziert}:
 $$P(KK) = 0.6\cdot0.6=0.36$$
-Wahrscheinlichkeiten verschiedener (rot) Pfade werden addiert.
-$$P(KK oder ZZ) = P(KK) + P(ZZ) =0.6\cdot0.6 + 0.4\cdot0.4$$
+
+Wahrscheinlichkeiten {\color{red}verschiedener} Pfade werden
+{\color{red}addiert}:
+
+\begin{tabular}{rcl}
+${\color{red}P}({\color{FarnFarbe}KK} \textrm{\color{red} oder } {\color{blue}ZZ})$ &=&
+  $P({\color{FarnFarbe}KK}) {\color{red}+} P({\color{blue}ZZ})$\\
+  &=&${\color{FarnFarbe}0.6\cdot0.6} {\color{red}+} {\color{blue}0.4\cdot0.4}$
+\end{tabular}
 
 \subsection*{Laplace-Wahrscheinlichkeit}
 Sind alle möglichen Ergebnisse eines Zufallsversuchs gleich
@@ -869,18 +894,19 @@ $$P(E) = \frac{\textrm{Anzahl Ergebnisse in
 \textbf{Bernoulli}\\
 $k$ = \textbf{genaue} gewünschte Anzahl Treffer
 
-$$P(X=k) = {n \choose k}\cdot{}p^k\cdot{}(1-p)^{n-k}$$
-Taschenrechner:  \textbf{\texttt{binomialpdf}}
+$P(X=k) = {n \choose k}\cdot{}p^k\cdot{}(1-p)^{n-k}$
 
 $n$ = Anzahl Züge\\
-$p$ = Wahrscheinlichkeit des Treffers\\
+$p$ = Wahrscheinlichkeit des Treffers
 
 An jeder Verzweigung im Baum sind Treffer und Niete gleich
 wahrscheinlich.
 
 Im Urnenmodell: Mit Zurücklegen.
-\end{tcolorbox}
 
+Taschenrechner:  \textbf{\texttt{binomialpdf}}
+\end{tcolorbox}%%
+\forceCB%
 \subsubsection*{Kumulierte Wahrscheinlichkeit}
 
 \begin{tcolorbox}[colback=white]
@@ -889,10 +915,10 @@ $k$ = \textbf{maximal} gewünschte Anzahl Treffer
 
 
 $$P(X\le k) = \sum_{i=0}^{k}{n \choose i}\cdot{}p^i\cdot{}(1-p)^{n-i}$$
-Taschenrechner: \textbf{\texttt{binomialcdf}}
 
 $n$ = Anzahl Züge\\
 $p$ = Wahrscheinlichkeit des Treffers\\
+Taschenrechner: \textbf{\texttt{binomialcdf}}
 \end{tcolorbox}
 
 
@@ -901,7 +927,7 @@ Bei \textbf{minimal} arbeite mit \textbf{Gegenereignis}.
 \textbf{Achtung}: Gegenereignis von «minimal 4 Mal» = «maximal 3 Mal».
 $$P(X \ge 4) = 1 - P(X < 4) = 1-P(X\le 3)$$
 
-\forceCB
+
 \subsection*{Hypergeometrische Verteilung}
 Gegeben $N+T$ Kugeln in einer Urne. Herausgezogen werden $n+t$:
 \begin{itemize}
@@ -913,7 +939,8 @@ Gegeben $N+T$ Kugeln in einer Urne. Herausgezogen werden $n+t$:
 Wahrscheinlichkeit \textbf{genau} $t$ Treffer zu ziehen:
 
 $$P(X=t) = \frac{ {T \choose t} \cdot {N  \choose n} }{{T+N \choose t+n}}$$
-
+\mmPap{4}%
+\forceCB%
 
 \subsection*{Vierfeldtafeln}
 Vierfeld-Tafeln=Kontingenztafeln mit 4 Feldern.
@@ -937,6 +964,8 @@ $$P(A|B)$$
 Wird die Wahrscheinlichkeit von $A$ angegeben, unter der Bedingung,
 dass das Ereignis $B$ bereits eingetroffen ist.
 \end{tcolorbox}
+\mmPap{10.4}%
+\forceCB%
 
 Beispiel:
 
@@ -961,6 +990,8 @@ $$P(F | G) = \frac{\textrm{Anzahl gesunde Frauen}}{\textrm{Anzahl Gesunde}} =  \
 «Wie groß ist die Wahrscheinlichkeit, unter den Frauen eine gesunde Person zu treffen?»
 $$P(G | F) = \frac{\textrm{Anzahl gesunde Frauen}}{\textrm{Anzahl Frauen}}=  \frac{30}{70}$$
 
+\mmPap{8}
+
 
 \end{multicols}
 
@@ -981,9 +1012,11 @@ $$P(G | F) = \frac{\textrm{Anzahl gesunde Frauen}}{\textrm{Anzahl Frauen}}=  \fr
 \begin{tabular}{c|c|p{80mm}}\hline
 \tiprobutton{math}         &math              & Summenzeichen $\Sigma$ \\\hline
 \tiprobutton{data}         &data              & Daten eingeben\\
-                           &\texttt{stat-reg} & 1-VAR STATS anwählen und calc drücken für Standardabweichung, Q1, Q3, Median etc.\\
-                           &\texttt{distr}    & Bernoulliformel (4: Binomial\textbf{p}df)\\
-                           &                  & Kumulierte: (5: Binomial\textbf{c}df)\\\hline
+                           &\texttt{stat-reg} & 1-VAR STATS anwählen
+und \texttt{calc} drücken für Standardabweichung, Q1, Q3, Median, Min,
+Max, Mittelwert etc.\\
+                           &\texttt{distr}    & Bernoulliformel $\rightarrow$ 4: Binomial\textbf{p}df\\
+                           &                  & Kumuliert $\rightarrow$ 5: Binomial\textbf{c}df\\\hline
 \tiprobutton{cos_poly-solv}&\texttt{poly-solv}&  Quadratische Gleichungen in Grundform $ax^2+bx+c=0$\\\hline
 \tiprobutton{tan_sys-solv} &\texttt{sys-solv} &  Lineare Gleichungssysteme\\\hline
 \tiprobutton{sin_num-solv} &\texttt{num-solv} &  Gleichungen mit Zahlen nach $x$ auf\/lösen\\\hline
@@ -993,8 +1026,8 @@ $$P(G | F) = \frac{\textrm{Anzahl gesunde Frauen}}{\textrm{Anzahl Frauen}}=  \fr
 \tiprobutton{ln_log}       &  Logarithmen     &  log = Zehnerlogarithmus ($\lg$)\\
                            &                  &  ln  = Log. zur Basis $e$\\
                            &                  &  3x drücken = log zu beliebiger Basis\\\hline
-\tiprobutton{sto_recall}   & Werte speichern  &  Erst \texttt{sto} drücken, danach können die Variable gespeichert werden (\tiprobutton{xyzabcd}). \\\hline
-\tiprobutton{xyzabcd}      &                  & gespeichert und wieder ausgelesen und verwendet werden.
+\tiprobutton{sto_recall}   & Werte speichern  &  Erst \texttt{sto} drücken, danach können die Variablen gespeichert werden (\tiprobutton{xyzabcd}). \\\hline
+\tiprobutton{xyzabcd}      &                  & Benutzen und Auslesen der Variablen.
 \end{tabular}
 \end{tabular}
 
@@ -1021,17 +1054,18 @@ Ganz am Schluss:
 
 }
 
-
-
-\noTRAINER{\vspace{15mm}}
-Eigene Notizen
-
-\noTRAINER{\mmPapier{5.2}}
-
+%
+\noTRAINER{\vspace{15mm}}%
+Eigene Notizen\\
+%
+\noTRAINER{\mmPapier{6.8}}%
+%
 \newpage
 
-\mmPapier{20}
 
+\noTRAINER{\mmPapier{22}}%
+\TRAINER{\mmPapier{20}}%
+%
 \vspace{5mm}
 
 Fehler gefunden? \texttt{philipp.freimann@bbw.ch / christian.hersberger@bbw.ch}
