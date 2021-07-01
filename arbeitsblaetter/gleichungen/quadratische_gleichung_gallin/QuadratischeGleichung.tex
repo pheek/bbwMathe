@@ -27,56 +27,36 @@ Aufgabe. Vereinfachen Sie die Wurzeln so, dass
 $\sqrt{50}=\sqrt{2 \cdot 25} =5 \sqrt{2}$)
 \end{enumerate}
 
-\newcommand{\noteSpace}{\noTRAINER{\rule{0pt}{6.5ex}}}
+\newcounter{nuemmerli}
+%\newcommand{\noteSpace}{\noTRAINER{\rule{0pt}{6.5ex}}}
+\newcommand{\noteSpace}{\noTRAINER{\mmPapier{4}}}
 
-\begin{tabular}{p{5cm}|p{12cm}}
+\newcommand{\quadGleichung}[4]{
+\TRAINER{\hrulefill\\}%%
+\par
+\needspace{4\baselineskip}
+\begin{samepage}
+\stepcounter{nuemmerli}(\thenuemmerli. )\,\,\,\, #1\\
+\noTRAINER{\mmPapier{#2}}\TRAINER{{\color{black}#3}
+{\color{blue}#4}}\\
+\end{samepage}
 
-1. $x^2 = 4$     & \noteSpace{}\TRAINER{$x_{1,2}=\pm 2$ Wurzel ziehen}\\
-\hline
+}%% end quadGleichnug
 
-2. $x^2 - 3 = 0$ & \noteSpace{}\TRAINER{$x_{1,2}=\pm \sqrt{3}$ Drei
-auf die andere Seite nehmen.}\\
-\hline
+\quadGleichung{$x^2=4$}{4}{$x_{1,2}=\pm 2$}{Wurzel ziehen, negativ und positives beachten}
+\quadGleichung{$x^2-3 = 0$}{3.2}{$x_{1,2}=\pm \sqrt{3}$}{Drei auf die andere Seite nehmen.}
+\quadGleichung{$2x^2 - 1 = 0$}{6}{$x_{1,2}=\pm \frac{\sqrt{2}}{2}$}{}
+\quadGleichung{$x^2 = 6$}{2}{$x_{1,2}= \pm\sqrt{6}$}{}
+\quadGleichung{$(x+2)^2 = 6$}{4}{$x_{1,2}=-2\pm\sqrt{6}$}{}
+\quadGleichung{$x^2 -6x+9 = \frac{25}{4}$}{4}{$x_{1,2}=3\pm\frac{5}{2}$}{}
+\quadGleichung{$x^2-6x=31$}{6}{$x_{1,2}=3\pm\sqrt{40}$}{}
+\quadGleichung{$x^2 +4x = - \frac{7}{4}$}{6}{$x_{1,2}=-2\pm\frac{3}{2}$}{}
+\quadGleichung{$x^2 - \frac{2}{3}x = -\frac{1}{9}$}{6}{$x_{1,2}=\frac{1}{3}$}{Mit $\frac{1}{9}$ quadratisch ergänzen.}
+\quadGleichung{$x^2 - 3x =  - \frac{25}{4}$}{4}{$\mathbb{L}_x=\{\}$}{}
+\quadGleichung{$2x^2 +4x-7 = 0$}{10}{$x_{1,2}=-1\pm\frac{3\sqrt{2}}{2}$}{}
+\quadGleichung{$\frac{1}{6}x^2 - \frac{1}{4}x - \frac{1}{6}  = 0$}{12}{$x_{1,2}=-\frac{1}{2}, 2$}{Quadratisch ergänzen mit $\frac{9}{16}$}
+\quadGleichung{$x^2 +2px + q = 0$}{10}{$x_{1,2}=-p\pm\sqrt{p^2-q}$}{}\noTRAINER{\newpage}
+\quadGleichung{ $ax^2 +bx + c = 0$}{12}{$x_{1,2}=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$}{}
 
-3. $2x^2 - 1 = 0$ & \noteSpace{}\TRAINER{$x_{1,2}=\pm \frac{\sqrt{2}}{2}$}\\
-\hline
-
-4. $x^2 = 6$ & \noteSpace{}\TRAINER{$x_{1,2}= \pm\sqrt{6}$ }\\
-\hline
-
-5. $(x+2)^2 = 6$ & \noteSpace{}\TRAINER{$x_{1,2}=-2\pm\sqrt{6}$ }\\
-\hline
-
-6. $x^2 -6x+9 = \frac{25}{4}$ & \noteSpace{}\TRAINER{$x_{1,2}=3\pm\frac{5}{2}$ }\\
-\hline
-
-7. $x^2-6x=31$ & \noteSpace{}\TRAINER{$x_{1,2}=3\pm\sqrt{40}$ }\\
-\hline
-
-8. $x^2 +4x = - \frac{7}{4}$ & \noteSpace{}\TRAINER{$x_{1,2}=-2\pm\frac{3}{2}$ }\\
-\hline
-
-9. $x^2 - \frac{2}{3}x = -\frac{1}{9}$
-& \noteSpace{}\TRAINER{$x_{1,2}=\frac{1}{3}$  Mit $\frac{1}{9}$
-quadratisch ergänzen.}\\
-\hline
-
-10. $x^2 - 3x =  - \frac{25}{4}$ & \noteSpace{}\TRAINER{$\mathbb{L}_x=\{\}$ }\\
-\hline
-
-11. $2x^2 +4x-7 = 0$ & \noteSpace{}\TRAINER{$x_{1,2}=-1\pm\frac{3\sqrt{2}}{2}$ }\\
-\hline
-
-12. $\frac{1}{6}x^2 - \frac{1}{4}x - \frac{1}{6}  = 0$
-& \noteSpace{}\TRAINER{$x_{1,2}=-\frac{1}{2}, 2$
-Quadratisch ergänzen mit $\frac{9}{16}$}\\
-\hline
-
-13. $x^2 +2px + q = 0$ & \noteSpace{}\TRAINER{$x_{1,2}=-p\pm\sqrt{p^2-q}$ }\\
-\hline
-
-14. $ax^2 +bx + c = 0$ & \noteSpace{}\TRAINER{$x_{1,2}=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$ }\\
-\hline
-\end{tabular}
 
 \end{document}
