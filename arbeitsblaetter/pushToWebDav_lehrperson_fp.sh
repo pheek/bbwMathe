@@ -60,9 +60,17 @@ echo "Copying Quadratische Gleichungen ABC-Finden (ALLG)"
 cp -f ./gleichungen/quadratischeGleichungenABC_finden/abc_finden_ALLG.pdf          ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/abc_finden/abc_finden.pdf
 cp -f ./gleichungen/quadratischeGleichungenABC_finden/abc_finden_TRAINER_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/abc_finden/abc_loesungen.pdf
 
+
+#### GEHT DAS NUN?
 echo "Copying Quadratische Gleichungen 14-Schritte nach Gallin (ALLG)"
-cp -f ./gleichungen/quadratische_gleichung_gallin/QuadratischeGleichung_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/14Schritte/QuadratischeGleichung.pdf
+cp -f ./gleichungen/quadratische_gleichung_gallin/QuadratischeGleichung_ALLG.pdf          ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/14Schritte/QuadratischeGleichung.pdf
 cp -f ./gleichungen/quadratische_gleichung_gallin/QuadratischeGleichung_TRAINER_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/14Schritte/QuadratischeGleichung.mitLoesungen.pdf
+
+#echo "Copying Quadratische Gleichungen 14-Schritte nach Gallin (ALLG)"
+#cp -f ./gleichungen/quadratische_gleichung_gallin/QuadratischeGleichung_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/14Schritte/QuadratischeGleichung.pdf
+#cp -f ./gleichungen/quadratische_gleichung_gallin/QuadratischeGleichung_TRAINER_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/14Schritte/QuadratischeGleichung.mitLoesungen.pdf
+
+
 
 echo "Copiing Quadratische funktionen Arbeitsblatt Formne"
 cp -f ./funktionen_quadratische_formen/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/fct2/formen
