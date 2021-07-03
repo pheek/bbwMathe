@@ -218,29 +218,56 @@ Erstellt online mit
 \theorieGESO{385}{24.5}
 \theorieTALS{263}{4.5}
 
-\bbwCenterGraphic{12cm}{allg/daan/img/boxplot.jpg}
+%%\bbwCenterGraphic{12cm}{allg/daan/img/BoxplotMitStreudiagramm3.pdf}
+\bbwCenterGraphic{18cm}{allg/daan/img/BoxplotMitStreudiagramm3.png}
 
-Boxplots können direkt online erstellt werden. Zum Beispiel hier:\\
-\texttt{http://www.alcula.com/calculators/statistics/box-plot/}
-Obige Abbildung stammt jedoch aus \cite{frommenwiler17alg}.
+%%Boxplots können direkt online erstellt werden. Zum Beispiel hier:\\
+\TRAINER{Online: \texttt{http://www.alcula.com/calculators/statistics/box-plot/}}
+
+
+
+\begin{rezept}{}{}
+  \begin{enumerate}
+  \item Kennzahlen (min, max, Q1\footnote{Q1 = untere Quartilsgrenze},
+    Median, Q3\footnote{Q3 = obere Quartilsgrenze}) besitmmen (Sortieren
+    oder TR\footnote{Die wichtigsten Kenngrößen für den Boxplot können mit dem Taschenrechner berechnet werden. Lassen Sie sich von Ihrer Lehrperson ein Beispiel vorrechnen.})
+  \item IQR\footnote{IQR = inter quartile range} := Q3 - Q1
+    berechnen. (IQR = Boxbreite)
+  \item Skala und Box zeichnen
+  \item Ausreißerschwellen bei $1.5\cdot$IQR andeuten.
+  \item Von den Ausreßerschwellen \textit{nach außen} gehen und
+    Ausreißer einzeichnen
+  \item \textit{Nach innen} gehen und Whisker suchen.
+      \item Ausreißerschwellen ausradieren
+    \end{enumerate}
+\end{rezept}
+\newpage
 
 \begin{beispiel}{Boxplot erstellen}{}
   Gegeben sind die folgenden Daten auf einer Intervallskala:\\
   7, 19, 9, 32, 9, 11, 13, 15, 15
 \end{beispiel}
 
-\begin{rezept}{}{}
-  \begin{enumerate}
-  \item Kennzahlen (min\TRAINER{=7}, max\TRAINER{=32}, Median\TRAINER{=13}, Q1\footnote{Q1 = untere Quartilsgrenze\index{Quartil}}\TRAINER{=9}, Q3\footnote{Q3=obere Quartilsgrenze}\TRAINER{=17} und IQR\footnote{IQR = engl. interquartil-range. Deutsch: Interquartilsabstand = Q3 - Q1=8}) bestimmen; entweder durch Sortieren oder mit dem Taschenrechner.
-  \item Skala (\noTRAINER{min..max}\TRAINER{min=7...max=32}) und Box zeichnen.
-  \item
-    Ausreißerschwellen bei $1.5\cdot$IQR andeuten\TRAINER{UAS=9-12=-3; OAS=17+12=29} und Ausreißer einzeichnen. Ausreißer liegen weiter weg als die Ausreißerschwellen.
-  \item Whisker einzeichnen: Minimum und Maximum innerhalb der Ausreißerschwellen (oder darauf): Hier bei \noTRAINER{.....}\TRAINER{7} und \noTRAINER{.....}\TRAINER{19}
-  \item Ausreißerschwellen ausradieren
-    \end{enumerate}
-\end{rezept}
+1. Kennzahlen:
 
-Bemerkung: Die wichtigsten Kenngrößen für den Boxplot können mit dem Taschenrechner berechnet werden. Lassen Sie sich von Ihrer Lehrperson ein Beispiel vorrechnen.
+\TNT{4}{min = 7, max=32, median = 13, q1 = 9, q3 = 17\\ IQR = Q3-Q1 =
+  8}
+
+2. IQR rechenen = \LoesungsRaumLang{17-9 = 8}
+
+3. Skala und Box zeichnen
+\TNT{2}{Hier kommt die Box hin auf einer Skala von 7 bis  32.}
+
+4. Ausreißerschwellen rechnen und andeuten
+
+\TNT{4}{Untere: q1 - 1.5 IQR = 9 - 1.5 IQR = 9-12 = -3\\
+        Obere: q3+ + 1.5 IQR = 17 + 1.5 IQR = 17 + 12 = 29}
+
+5. \textit{Nach außen} gehen und Ausreißer einzeichnen.
+
+6. \textit{Nach innen} gehen und die Whisker suchen.
+
+7. Ausreißerschwellen ausradieren
 
 \newpage
 
