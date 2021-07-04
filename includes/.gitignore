@@ -1,1 +1,3 @@
 zielgruppe.tex
+#Ignoriere generierte PDFs:
+*.pdf

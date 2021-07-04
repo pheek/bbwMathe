@@ -329,9 +329,9 @@ Wir dürfen zwei Kugeln blind herausnehmen (ohne diese wieder zurückzulegen).
 
 Wie groß ist nun die Wahrscheinlichkeit
 \begin{itemize}
-\item keinen Treffer zu erzielen ($k=0$),
-\item genau einen Treffer zu erzielen ($k=1$) oder
-\item beide Treffer zu erzielen ($k=2$)?
+\item beide Treffer zu erzielen ($t=2$),
+\item genau einen Treffer zu erzielen ($t=1$) oder
+\item gar keinen Treffer zu erzielen ($t=0$)?
 \end{itemize}
 
 Diese Wahrscheinlichkeiten können wir nun einerseits durch ein Baumdiagramm lösen, indem wir die Treffer mit \textbf{\color{green}T} und die Nieten mit \textbf{\color{red}N} bezeichnen:
@@ -341,44 +341,50 @@ Diese Wahrscheinlichkeiten können wir nun einerseits durch ein Baumdiagramm lö
 \bbwCenterGraphic{7cm}{geso/stoch/img/Baum2aus3T4N.png}
 }
 
-Somit erhalten wir für zwei Treffer ($k=2$) eine Wahrscheinlichkeit von $\frac{6}{42}$; für einen Treffer ($k=1$) die Summe aus $\frac{12}{42}$ und nochmals $\frac{12}{42}$ also total $\frac{24}{42}$ und schlussendlich für keinen Treffer ($k=0$) die Wahrscheinlichkeit $\frac{12}{42}$.
+Somit erhalten wir für zwei Treffer ($t=2$) eine Wahrscheinlichkeit von $\frac{6}{42}$; für einen Treffer ($t=1$) die Summe aus $\frac{12}{42}$ und nochmals $\frac{12}{42}$ also total $\frac{24}{42}$ und schlussendlich für keinen Treffer ($t=0$) die Wahrscheinlichkeit $\frac{12}{42}$.
 Die Summe aller Wahrscheinlichkeiten muss dann immer gleich 1.0 (100\%) sein.
 \newpage
 
-
-
-Andererseits gibt es dazu auch eine Formel, die \textbf{hypergeometrische Verteilung}\footnote{Die Folgeglieder der \textit{geometrischen Verteilung} $P(X=k) = p\cdot{}q^{k-1}$ verhalten sich wie eine geometrische Reihe (die Quotienten von zwei Folgegliedern $P(X=k) : P(X=k+1)$ sind jeweils konstant). Da die hier betrachtete Verteilung noch rascher ``abfällt'', wie die \textit{gemoetrische Verteilung}, so sprechen wir hier von 'textbf{hyper}geometrisch.}.
+Andererseits gibt es dazu auch eine Formel, die \textbf{hypergeometrische Verteilung}\footnote{Die Folgeglieder der \textit{geometrischen Verteilung} $P(X=t) = p\cdot{}q^{t-1}$ verhalten sich wie eine geometrische Reihe (die Quotienten von zwei Folgegliedern $P(X=t) : P(X=t+1)$ sind jeweils konstant). Da die hier betrachtete Verteilung noch rascher ``abfällt'', wie die \textit{gemoetrische Verteilung}, so sprechen wir hier von 'textbf{hyper}geometrisch.}.
 
 Es seien:
 \begin{itemize}
-\item $N$ die Anzahl Elemente in der Urne (hier $N = 7$)
-\item $M$ die Anzahl der möglichen Treffer in der Urne. Hier die Anzahl der grünen Kugeln (also $M = 3$)
-\item $n$ die Anzahl der herausgezogenen Kugeln (hier $n = 2$)
-\item $k$ die Anzahl der gewünschten bzw. zu erreichenden Treffer. Hier \zB null, einen oder zwei.
+\item $T$ die Anzahl der Treffer in der Urne. Hier die Anzahl der grünen Kugeln (also $T = 3$)
+\item $N$ die Anzahl der Nieten in der Urne. Hier die Anzahl schwarze Kugeln ($N=4$)
+\item $T+N$ die Anzahl Elemente (Treffer + Nieten) in der Urne (hier $T+N = 7$)
+
+\item $t$ die Anzahl der gewünschten bzw. zu erreichenden Treffer. Hier \zB $t=2$.
+  
+\item $n$ die Anzahl «gewünschten» Nieten (hier z. B. $n = 0$)
+\item $t+n$ die Anzahl total herausgezogener Kugeln (hier $t+n=2+0=2$)
 \end{itemize}
 \begin{gesetz}{}{}
-$$h(k|N;M;n) := P(X=k) = \frac{ {M\choose k} \cdot{} {{N-M}\choose {n-k}}}{{N \choose n}}$$
+$$P(X=t) = \frac{ {T\choose t} \cdot{} {{N}\choose {n}}}{{{T+N} \choose {t+n}}}$$
 \end{gesetz}
+\textbf{Beispiele} mit obigen sieben Kugeln (drei Treffer und vier
+Nieten)
+$$T=3, N=4, T+N=7$$
 
-Im Beispiel, wenn ich genau einen Treffer ($k=1$) mit zwei Ziehungen ($n=2$) aus einer Urne mit sieben Kugeln ($N=7$) mit drei möglichen Treffern ($M=3$) erhalten will:
-$$h(k|N;M;n) = \frac{ {M\choose k} \cdot{} {{N-M}\choose {n-k}}}{{N \choose n}} = \frac{ {3\choose 1} \cdot{} {{7-3}\choose {2-1}}}{{7 \choose 2}} = \frac{24}{42} = \frac47 \approx 0.57$$
+\textbf{Beispiel 1}: Ich will bei beiden gezogenen Kugeln je einen Treffer:
+
+($t=2$) mit zwei Ziehungen ($t+n=2$), somit keine Niete ($n=0$).
+Wir erhalten:
+
+$$P(t=2) = \frac{ {T\choose t} \cdot{} {{N}\choose {n}}}{{{T+N}
+    \choose {t+n}}} = \frac{ {3\choose 2} \cdot{} {{4}\choose {0}}}{{7
+    \choose 2}} = \frac{3\cdot{}1}{21} = \frac17 \approx 0.14$$
+
+\textbf{Beispiel 2}: Ich will bei beiden gezogenen Kuglen genau einen Treffer:
+
+($t=1$) mit zwei Ziehungen ($t+n=2$), somit eine Niete ($n=1$).
+Wir erhalten:
+
+$$P(t=1) = \frac{ {T\choose t} \cdot{} {{N}\choose {n}}}{{{T+N}
+    \choose {t+n}}} = \frac{ {3\choose 1} \cdot{} {{4}\choose {1}}}{{7
+    \choose 2}} = \frac{3\cdot{4}}{21} = \frac{12}{21} \approx 0.57$$
+
+
 \newpage
-
-
-Daraus werden die folgenden Werte berechnet:
-
-\begin{itemize}
-\item $N-M$ die Anzahl der möglichen Nieten in der Urne. Hier die Anzahl der schwarzen Kugeln (also $N-M = 4$)
-\item $n-k$ die Anzahl der gezogenen Nieten, mit anderen Worten, der erhaltenen aber nicht gewünschten Kugeln.
-\item $M\choose k$ die Anzahl der Möglichkeiten $k$ Elemente aus $M$ Trefferkugeln zu erzielen. Ist \zB $k=1$ und $M=3$, so haben wir drei Varianten, eine Trefferkugel zu erzielen.
-\item ${N-M}\choose {n-k}$ Die Anzahl Möglichkeiten $n-k$ (erhaltene Nietenanzahl) aus den möglichen Nieten zu wählen. Ist \zB $k=1$, so haben wir vier Varianten, eine Niete gezogen zu haben.
-\item ${M\choose k} \cdot{} {{N-M}\choose {n-k}}$ die Anzahl der Möglichkeiten $k$ Treffer und $n-k$ Nieten zu ziehen. Ist \zB $k=1$, so haben wir hier $3\cdot{}4$, also zwölf Möglichkeiten, genau einen Treffer und genau eine Niete zu erhalten.
-\item $N \choose n$ die Anzahl der Möglichkeiten zwei ($n$) Elemente
-  aus sieben ($N$) Elementen auszuwählen. Dies ist der übliche
-  Binomialkoeffizient\footnote{Taschenrechner: \fbox{$nCr$} (nCr, nicht nPr wählen)}.
-\item $P(X=k)$ ist die Wahrscheinlichkeit, genau $k$ Treffer zu erzielen.
-\item $h(k|N;M;n)$ ist eine andere Notation der hypergeometrischen Verteilung, indem $k$, $N$, $M$ und $n$ explizit angegeben werden. Hier \zB für genau einen gewünschten Treffer aus obiger Urne (7 Kugeln drei Treffer) mit dem Ziehen von zwei Kugeln: $h(1|7;3;2)=\frac{{3 \choose 1} \cdot{} {{7-3}\choose {2-1}  }   }{{ 7 \choose 2 }}=\frac{12}{21}$
-\end{itemize}
 
 \subsection*{Aufgaben}
 
