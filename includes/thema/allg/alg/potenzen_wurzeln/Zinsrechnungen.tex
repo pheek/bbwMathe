@@ -23,8 +23,8 @@ ist die umgekehrte Reihenfolge schlauer? \TRAINER{Lsg: 216.10}
 
 \subsubsection{100\% = 1}
 Beispiel $3\%$ Zins auf Kapital $K_0$:\\
-Zins = $\frac{K_0}{100}\cdot 3 = K_0 \cdot 0.03$\\
-Neues Kapital $K_1 = K_0 + K_0\cdot 0.03 = K_0(1+0.03) = K_0\cdot{}(1.03)$
+Zins = $\frac{K_0}{100}\cdot 3 = K_0\cdot{}\frac1{100}\cdot{3} = K_0 \cdot 0.03$\\
+Neues Kapital $K_1 = K_0 + K_0\cdot 0.03 = K_0\cdot{}(1+0.03) = K_0\cdot{}(1.03)$
 
 %Um von einer Ausgangsgröße 100\% zu berechnen, kann einfach der Faktor
 %1.0 genommen werden. Ebenso kann der Faktor 0.03 genommen werden, um
@@ -56,26 +56,21 @@ mit
 
 \begin{center}\fbox{$a := 1 + \frac{p}{100}.$}\end{center}
 
-\begin{tabular}{lcl|l}
-  \textit{Zeichen}  & &   \textit{Bedeutung}   & \textit{Beispiel}\\%%
+\begin{tabular}{l|l|l}
+  \textit{Zeichen}  &   \textit{Bedeutung}   & \textit{Beispiel}\\%%
 \hline%%
- $K_0$             &=&   Startkapital         & 100.-  [CHF]\\
- $n$               &=&   Laufzeit in Jahren   & 30  [Jahre]\\
- $p$               &=&   Zinsfuß              & 2  [\%]\\
- $a:= 100\% + p\%$ = $1+\frac{p}{100}$ &=&   Zinsfaktor          & hier: $a=1.02$\\
-$K_n = K_0\cdot{}a^n$     &=&   Kapital nach $n$ Jahren         & $100 \cdot{} 1.02^{30}\approx{} 181.14$ [CHF]\\%%
-\hline\\%%
+ $K_0$             &   Startkapital         & 1\,000.-  [CHF]\\
+ $p$               &   Zinsfuß              & 2  [\%]\\
+ $a:= 100\% + p\%$ = $1+\frac{p}{100}$ &   Zinsfaktor          & hier: $a=1.02$\\
+ $n$               &   Laufzeit in Jahren   & 30  [Jahre]\\
+$K_n = K_0\cdot{}a^n$     &   Kapital nach $n$ Jahren         & $1000 \cdot{} 1.02^{30}$\LoesungsRaumLang{$\approx{} 1\,811.36$ [CHF]}
 \end{tabular}
 
-Zeigen Sie, dass gilt
-
-$$K_1 = K_0 + \frac{K_0}{100}\cdot{} p = K_0 \cdot{} \left(1+\frac{p}{100}\right) = K_0 \cdot{} a$$
-
-... und ...:
+Beispielsweise gilt:
 
 $$K_2 = K_0 \cdot{} a^2$$
 
-\TNT{4.0}{Beweis: $K_0$ ausklammern. \vspace{3cm}}
+\TNT{4.0}{Beweis: $K_2 = a\cdot{}K_1 = a\cdot(a\cdot{}K_0)$ \vspace{3cm}}
 
 Bemerkung: Die Zinseszinsformel beschreibt ein exponentielles Wachstum.
 \newpage
@@ -121,6 +116,7 @@ Füllen Sie die folgende Tabelle aus:
 
 \begin{tabular}{c|c|c|c} 
   Anzahl Teile  & Faktor                      & Formel          & Endkapital \\ \hline
+  $1$           & $2^1$                      & $(1+1)^1$ & $= K_0 \cdot{} 2 $ \\ \hline
   $2$           & $1.5^2$                      & $(1+\frac12)^2$ & $= K_0 \cdot{} 2.25 $ \\ \hline
   $4$           & $1.25^4$                  & $(1+\frac14)^4$ & $\approx K_0 \cdot{} 2.4414 $ \\ \hline
   $5$           & $\LoesungsRaum{1.2^5}$  & $\LoesungsRaum{(1+\frac14)^2}$ & $\LoesungsRaum{= K_0 \cdot{} 2.48832} $ \\ \hline
