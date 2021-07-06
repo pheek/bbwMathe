@@ -13,7 +13,7 @@
 \item Textaufgaben mit Zins und Zinseszins
 \end{itemize}
 
-\subsection{Der Zins als Faktor}\index{Zins}
+\subsection{Einstiegsaufgabe}
 Einstiegsaufgabe:
 Ein Händler gibt Ihnen auf eine Ware von 234.50 CHF einen Jugend-Rabatt von
 5\%, wenn Sie ihren BMS-Ausweis zeigen. Wenn Sie in bar bezahlen, erhalten Sie
@@ -21,31 +21,60 @@ einen weiteren Rabatt von 3\%. Ist es für Sie nun schlauer, zuerst den
 Jugend-Rabatt (5\%) und danach den Bar-Rabatt(\%) einzufordern oder
 ist die umgekehrte Reihenfolge schlauer? \TRAINER{Lsg: 216.10}
 
-\subsubsection{100\% = 1}
-Beispiel $3\%$ Zins auf Kapital $K_0$:\\
-Zins = $\frac{K_0}{100}\cdot 3 = K_0\cdot{}\frac1{100}\cdot{3} = K_0 \cdot 0.03$\\
-Neues Kapital $K_1 = K_0 + K_0\cdot 0.03 = K_0\cdot{}(1+0.03) = K_0\cdot{}(1.03)$
+\subsection{Zins als Faktor}\index{Zins}
+\textbf{100\% = 1}:
+
+Beispiel $2\%$ Zins auf Kapital CHF $1\,000.-$:\\
+
+\begin{tabular}{l|l|l}
+  \textit{Variable}  &   \textit{Bedeutung}   & \textit{Beispiel}\\%%
+\hline%%
+ $K_0$             &   Startkapital         & 1\,000.-  [CHF]\\\hline
+
+
+ $p$               &   Zinsfuß              & 2  [\%]\\\hline
+
+                   & Zins & $\frac{K_0}{100[\%]}\cdot{}2[\%] =
+                   K_0 \cdot{} \frac2{100} = $\\
+                   & & $K_0\cdot 0.02$ \\\hline
+
+$K_1$            & neues Kapital  &   $K_0+$ Zins $=$ \\
+                 &    &   $K_0+K_0\cdot{}0.02 = $ \\
+                 &    &   $K_0\cdot(1+0.02) = $\\
+                 &    &   $K_0\cdot{}1.02$\\
+\end{tabular}
+\newpage
+
 
 %Um von einer Ausgangsgröße 100\% zu berechnen, kann einfach der Faktor
 %1.0 genommen werden. Ebenso kann der Faktor 0.03 genommen werden, um
 %3\% der Größe zu berechnen. Ein Anwachsen eines Kapitals um 3\% ist
 %also nichts anderes als das multiplizieren mit dem Faktor 1.03.
 
-\subsubsection{Zinseszins}\index{Zinseszins}
+\subsection{Zinseszins}\index{Zinseszins}
+
+\TRAINER{EinstiegsComics Donald Duck im OLAT}
+
+
 Beim Zinseszins, wird bei jeder weiteren Verzinsung der bereits
 erhaltene Zins weiterverzinst. Beispiel 2\%:
+
+
 
 CHF 100.- $\rightarrow$ 102.-- $\rightarrow$ 104.04 $\rightarrow$
 106.1208
 
+$$K_2 = {\color{ForestGreen}K_1}\cdot{}1.02 = ({\color{ForestGreen}K_0\cdot{}1.02})\cdot{}1.02 = K_0\cdot{}1.02^2$$
+
 Bei 2\% kann also jedesmal mit einem \textbf{Verzinsungsfaktor} von
 1.02 multipliziert werden.
+
+\TRAINER{
 Nach 1000 Jahren wachsen unsere CHF 100.-- also auf $100 *
 1.02^{1000}$ an\footnote{Dies entspricht einem Faktor von fast 400 Millionen}. 
-\newpage
+}
 
-
-\subsection{Zinsformel}\index{Zins und Zinseszins}
+\subsubsection{Zinsformel}\index{Zins und Zinseszins}
 \TRAINER{Hinweis an die Lehrperson:Insbesondere BM2 gut behandeln, denn der Stoff ist ev. in der Sekundarschule nicht behandelt worden (Sek B) oder es liegt generell zu weit zurück.}
 
 Bei gegebenem Startkapital $K_0$ und gegebenem Zinsfuß $p$ (in \%) kann das Endkapital $K_n$ nach $n$ Jahren wie folgt berechnet werden:
@@ -56,23 +85,13 @@ mit
 
 \begin{center}\fbox{$a := 1 + \frac{p}{100}.$}\end{center}
 
-\begin{tabular}{l|l|l}
-  \textit{Zeichen}  &   \textit{Bedeutung}   & \textit{Beispiel}\\%%
-\hline%%
- $K_0$             &   Startkapital         & 1\,000.-  [CHF]\\
- $p$               &   Zinsfuß              & 2  [\%]\\
- $a:= 100\% + p\%$ = $1+\frac{p}{100}$ &   Zinsfaktor          & hier: $a=1.02$\\
- $n$               &   Laufzeit in Jahren   & 30  [Jahre]\\
-$K_n = K_0\cdot{}a^n$     &   Kapital nach $n$ Jahren         & $1000 \cdot{} 1.02^{30}$\LoesungsRaumLang{$\approx{} 1\,811.36$ [CHF]}
-\end{tabular}
-
 Beispielsweise gilt:
 
 $$K_2 = K_0 \cdot{} a^2$$
 
 \TNT{4.0}{Beweis: $K_2 = a\cdot{}K_1 = a\cdot(a\cdot{}K_0)$ \vspace{3cm}}
 
-Bemerkung: Die Zinseszinsformel beschreibt ein exponentielles Wachstum.
+\TRAINER{Bemerkung: Die Zinseszinsformel beschreibt ein exponentielles Wachstum.}
 \newpage
 
 \subsubsection{Zinsbeispiele}
@@ -99,7 +118,16 @@ Berechnen Sie:
 \end{itemize}
 \newpage
 
-\subsubsection{Momentanverzinsung}\index{Momentanverzinsung}
+\GESO{\subsection*{Aufgaben}}
+\TALSAadB{???}{???}
+
+\GESOAadB{207}{10. a)} %% die anderen setzen Lograithmen voraus! und 12.}
+
+\GESOAadB{207}{9. a) und 11. a)}
+\GESOAadB{355}{13.}
+\newpage
+
+\subsubsection{Momentanverzinsung (optional)}\index{Momentanverzinsung}
 (auch stetige Verzinsung)\index{Verzinsung!stetige}
 Wird ein Kapital zu 100\% verzinst, so wächst unser Kapital auf 200\%
 an. Wenn wir das Kapital jedoch zweimal zu 50\%
@@ -136,11 +164,3 @@ Bildlegende: Leonhard Euler (1707-1783) auf der Schweizer Zehnernote.
 $$e \approx 2.71828182746$$
 \end{definition}
 \newpage
-
-\GESO{\subsection*{Aufgaben}}
-\TALSAadB{???}{???}
-
-\GESOAadB{207}{10. a)} %% die anderen setzen Lograithmen voraus! und 12.}
-
-\GESOAadB{207}{9. a) und 11. a)}
-\GESOAadB{355}{13.}
