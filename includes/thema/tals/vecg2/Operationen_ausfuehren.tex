@@ -11,3 +11,81 @@
 
 
 Coming soon...
+\newpage
+
+
+\subsection{Skalarprodukt}
+
+\theorieTALSGeom{201}{4.5}
+
+\bbwCenterGraphic{5cm}{tals/vecg2/img/skalarprodukt.png}
+
+Herleitung:
+
+\TNT{12}{
+  $\vec{b} + \vec{c} = \vec{a}$
+
+  $\Longrightarrow   \vec{c} = \vec{a} - \vec{b}$
+
+  $\Longrightarrow   c_x = a_x - b_x \textrm{ und } c_y = a_y - b_y$
+
+  $a = |\vec{a}|, b=|\vec{b}| \textrm{ und } c = |\vec{c}|$
+
+  Pythagoras:
+  $c = \sqrt{c_x^2 + c_y^2}$ und somit $c^2 = c_x^2 + c_y^2$
+
+  $a_x-b_x$ anstelle von $c_x$ einsetzen (analog $y$):
+
+  $c^2 = (a_x-b_x)^2 + (a_y - b_y)^2$
+
+  Wir erinnern an den Cosinussatz: $c^2 = a^2 + b^2 -
+  2ab\cdot{}\cos(\gamma)$
+
+  Setzen wir obiges $c^2$ ein, so erhalten wir:
+
+  $(a_x-b_x)^2 + (a_y-b_y)^2 = \overbrace{a_x^2 + a_y^2}^{|\vec{a}|^2=a^2}
+  + \overbrace{b_x^2 + b_y^2}^{b^2} - 2ab\cdot{}\cos(\gamma)$
+
+  links Ausmultiplizieren
+  
+  $a_x^2 - 2a_xb_x +b_x^2 + a_y^2 - 2a_yb_y + b_y^2 = a_x^2 + a_y^2 +
+  b_x^2 + b_y^2 - 2ab\cdot{}\cos(\gamma)$
+
+  nun beginnte der Spaß mit dem Wegstreichen:
+
+  $-2a_xb_x - 2a_yb_y = -2ab\cdot{}\cos(\gamma)$
+}
+
+\begin{definition}{Skalarprodukt}{}
+  $$\vec{a\vphantom{b}}\circ\vec{b} := a_x\cdot{}b_x + a_y \cdot{} b_y$$
+\end{definition}
+
+\newpage
+
+
+\begin{gesetz}{Skalarprodukt}{}
+  $$\vec{a\vphantom{b}} \circ \vec{b} = |\vec{a\vphantom{b}}| \cdot{} |\vec{b}| \cdot{} \cos(\gamma)$$
+bzw. ($a=|\vec{a}|$)
+  $$\vec{a\vphantom{b}} \circ \vec{b} = a \cdot{} b \cos(\gamma)$$
+\end{gesetz}
+
+\begin{gesetz}{Skalarprodukt}{}
+  $$\cos(\gamma) = \frac{\vec{a\vphantom{b}}\circ\vec{b}}{a\cdot b}$$
+  bzw.:
+  $$\gamma = \arccos{} \left(\frac{\vec{a\vphantom{b}}\circ\vec{b}}{a\cdot b}\right)$$
+  
+\end{gesetz}
+
+\begin{bemerkung}{}{}
+  Genau dann, wenn zwei Vektoren $\vec{a}$ und $\vec{b}$ senkrecht
+  zueinander stehen, ist das Skalarprodukt null.
+
+  $$\gamma=90\degre   \Longleftrightarrow  \vec{a\vphantom{b}}\circ\vec{b}=0$$
+  \end{bemerkung}
+
+
+\subsection*{Aufgaben}
+\TALSGeomAadB{202}{102. a) d) e), 103. a) c), 104. a) c), 106. a),
+  107. a), 108., 109., 110. a), 113.}
+
+\newpage
