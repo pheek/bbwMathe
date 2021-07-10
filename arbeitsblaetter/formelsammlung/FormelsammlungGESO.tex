@@ -2,11 +2,11 @@
 %% Meta: Formelsammlung GESO BBW
 %%
 
-\newcommand{\versionsDatumFoSa}{2021-07-06}
+\newcommand{\versionsDatumFoSa}{2021-07-10}
 
-%% ID (ca. alle jahre), Subversion: Größere Änderungen, Revision: Jede
+%% ID (ca. alle jahre), Subversion: Grössere Änderungen, Revision: Jede
 %% Umstellung/Korrektur/Typos
-\newcommand{\versionIdSubRev}{0.2.7}
+\newcommand{\versionIdSubRev}{0.2.8}
 
 \newcommand{\versionsnummerFoSa}{\versionsDatumFoSa{} \versionIdSubRev}
 
@@ -25,7 +25,7 @@
 
 \renewcommand{\metaHeaderLine}{Formelsammlung (GESO \noTRAINER{2021}\TRAINER{\versionsnummerFoSa{}} BBW)}
 
-\renewcommand{\arbeitsblattTitel}{Formelsammlung --- gesundheitlich-soziale BMS\TRAINER{ (V \versionIdSubRev)}}
+\renewcommand{\arbeitsblattTitel}{Formelsammlung --- gesundheitlich-soziale BM\TRAINER{ (V \versionIdSubRev)}}
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
 \titlespacing*{\subsection}{0pt}{0.1\baselineskip}{0.1\baselineskip}
@@ -67,13 +67,13 @@
 
 \section*{Zahlmengen}
 \begin{tcolorbox}[colback=white]
-\textbf{Definition}: Die Zahlmengen heißen
+\textbf{Definition}: Die Zahlmengen heissen
 
-$\mathbb{N} = \{1,2, ...\}$                                   \textbf{natürlich}\\
-$\mathbb{Z} = \{..., -2, -1, 0, 1,2, ...\}$                   \textbf{ganz}\\
+$\mathbb{N} = \{1, 2, 3, ...\}$                                   \textbf{natürlich}\\
+$\mathbb{Z} = \{..., -2, -1, 0, 1, 2, ...\}$                   \textbf{ganz}\\
 $\mathbb{Q} = \{\frac{a}b|a\in \mathbb{Z},b\in\mathbb{N}\}$   \textbf{rational} (Brüche)\\
 $\mathbb{R} = \{..., -\frac12, ..., 0, ..., \sqrt{2}, ..., e,
-... \pi, ...\}$\,\textbf{reell}%%
+..., \pi, ...\}$\,\textbf{reell}%%
 %%\phantom{$\mathbb{R}$} $=$ \textbf{reell}
 \end{tcolorbox}
 
@@ -102,7 +102,7 @@ $$\mathbf{\color{FarnFarbe}208.0} \textrm{ cm} = \mathbf{\color{FarnFarbe}2.080}
 
 %%\forceCB{}%%
 \subsection*{Wissenschaftliche Notation}
-Für große, aber auch für Zahlen sehr nahe an 0, wird die wissenschaftliche Schreibweise vorgezogen. Dabei steht vor dem Dezimalpunkt immer \textbf{\color{blue}genau eine Ziffer}:
+Für grosse, aber auch für Zahlen sehr nahe an 0, wird die wissenschaftliche Schreibweise vorgezogen. Dabei steht vor dem Dezimalpunkt immer \textbf{\color{blue}genau eine Ziffer}:
 
 \begin{tabular}{lcccr}
 Zahl    & & wissenschaftl. & & TR: \tiprobutton{EE} \\
@@ -169,6 +169,23 @@ $(-2)\cdot(+3)=-6$\\
 \hfill\, $|+7| = 7$ \hfill\, $|-7| = 7$ \hfill\, %%
 
 \forceCB%%
+
+\subsection*{Summenzeichen}
+%%$$\color{orange}\sum_{\color{blue}k=1}^{\color{blue}n} {{\color{FarnFarbe}T}(k)} = {\color{FarnFarbe}T}({\color{blue}1}) {\color{orange}+} {\color{FarnFarbe}T}({\color{blue}2}) {\color{orange}+} ... {\color{orange}+} {\color{FarnFarbe}T}({\color{blue}n})$$
+
+  $${\color{FarnFarbe}\sum_{{\color{red}k}{{\color{FarnFarbe}{\color{black}=}\color{blue}1}}}^{\color{blue}n\color{FarnFarbe}}}
+  {\color{orange}T(}{{\color{red}k}}{\color{orange})} = {\color{orange}T(}{\color{blue}1}{\color{orange})} {\color{FarnFarbe}+} {\color{orange}T(}{\color{blue}2}{\color{orange})} {\color{FarnFarbe}+}
+  ... {\color{FarnFarbe}+} {\color{orange}T(}{\color{blue}n}{\color{orange})}$$
+
+Beispiel
+
+  $${\color{FarnFarbe}\sum_{{\color{red}n}{{\color{FarnFarbe}{\color{black}=}\color{blue}3}}}^{\color{blue}5\color{FarnFarbe}}}  {\color{red}n}^{{\color{orange}7}} = {\color{blue}3}^{\color{orange}7} {\color{FarnFarbe}+} {\color{blue}4}^{\color{orange}7} {\color{FarnFarbe}+} {\color{blue}5}^{\color{orange}7}$$
+
+\TRAINER{TR nur am Schluss?}
+%%Taschenrechner (\texttt{sum}): \tiprobutton{math}\tiprobutton{5}
+
+
+
 \section*{Bruchterme}
     $\frac{a}b = a : b$,\phantom{ and }  $\frac{a}b : \frac{x}y = \frac{a}b\cdot{}\frac{y}x = \frac{ay}{bx}$
     
@@ -192,24 +209,26 @@ $$x^2-1 = (x-1)(x+1)$$
 $$4b^2 -12bc + 9c^2=(2b-3c)^2$$
 \item Zweiklammeransatz
 $$x^2+2x-15 = (x+5)(x-3)$$
+
+\TRAINER{ev nur am Schulss bei TR:}
 Faktoren mit Taschenrechner:\\ a) \texttt{poly-solv} \tiprobutton{cos_poly-solv}
-oder\\ b) \texttt{PFactor} \tiprobutton{math}\tiprobutton{4}
+oder\\ b) \texttt{Pfactor} \tiprobutton{math}\tiprobutton{4}
 
 \textbf{\color{red}Achte auf Vorzeichen!}
 \end{enumerate}
+
+
 
 %% Forced column break
 %%\forceCB
 
 
-\mmPap{5.2}
-
 \forceCB
 \section*{Potenzen}
 \begin{tcolorbox}[colback=white]
-$$a^n := \underbrace{a\cdot{}a\cdot{}a\cdot{}...\cdot{}a}_{n\textrm{ Faktoren}}$$
-$$a^{-n} := \frac1{a^n}$$
-  $$a^0 := 1$$
+$$a^n = \underbrace{a\cdot{}a\cdot{}a\cdot{}...\cdot{}a}_{n\textrm{ Faktoren}}$$
+$$a^{-n} = \frac1{a^n}$$
+  $$a^0 = 1$$
 \end{tcolorbox}
 
 \subsection*{gleiche Basis}
@@ -250,7 +269,7 @@ $$\frac{a^{-3}b^2}{c^5d^{-6}} = \frac{b^2d^6}{a^3c^5}$$
 
 
 \subsection*{$n$te Wurzel}
-$\sqrt[n]{a} := \left(a\right)^\frac1n$\hfill{}Bsp.: $8^{\frac13}=\sqrt[3]{8}=2$
+$\sqrt[n]{a} = \left(a\right)^\frac1n$\hfill{}Bsp.: $8^{\frac13}=\sqrt[3]{8}=2$
 
 $$a^{\frac{m}n} = \sqrt[n]{a^m} = \left(\sqrt[n]a\right)^m$$
 $$\sqrt[n]{\sqrt[m]{a}}   = \left((a)^\frac1m \right)^\frac1n = a^\frac1{nm} = \sqrt[m]{\sqrt[n]{a}}  $$
@@ -267,13 +286,13 @@ $$\sqrt[n]{a\cdot{}b} = \sqrt[n]{\vphantom{b}a} \cdot \sqrt[n]b$$
   \textbf{Definition Logarithmus}\\
   Für $a>0, a\ne 1, z>0$ ist
 
-$$\log_a{}(z)=x \Longleftrightarrow{} a^x = z$$
+$$\log_a{}(z)=x \Longleftrightarrow{} a^x = z$$\TRAINER{ev. BASIS $b$?}
 \end{tcolorbox}
 
 Logarithmen sind Exponenten zu einer fest gewählten Basis.
 
 \begin{tcolorbox}[colback=white]
-\textbf{Gesetze}
+\textbf{Gesetze}\TRAINER{ev. nur 3. Gesetz, andere sind kein Lernziel}
 $$\log_a(u\cdot v) = \log_a(u) + \log_a(v)$$
 $$\log_a(u : v) = \log_a(u) - \log_a(v)$$
 $$\log_a(b^x) = x\cdot{}\log_a(b)$$
@@ -292,12 +311,7 @@ $$2x+1= 2x+5$$
 $$a^2x-b=b^2x+a$$
 
 
-\subsection*{num-solv}
-Der Taschenrechner löst Gleichungen mit Zahlen nach $x$ auf:
-
-$5^x = 100 -x$; verwende \tiprobutton{2nd}\tiprobutton{sin_num-solv} $x\approx{}2.843$
-
-\mmPap{5.6}
+\mmPap{4}
 \forceCB
 \subsection*{Quadratische Gleichungen}
 
@@ -315,7 +329,7 @@ $D<0\Longrightarrow$ Keine Lösung
 
 \subsection*{Bruchgleichungen}
 
-\textbf{Definitionsbereich} $\mathbb{D}$: Welche Werte dürfen in einen Term eingesetzt werden
+\textbf{Definitionsbereich} $\mathbb{D}$: Welche Werte dürfen in die Terme eingesetzt werden?
 
 Bsp.: Nenner darf nicht Null werden:
 
@@ -339,9 +353,13 @@ $$5^4 = 5^{2x+1} \Longrightarrow  4=2x+1$$
 \subsubsection*{durch Logarithmieren}
 $$a^x=b \Rightarrow{} x=\log_a(b) = \frac{\lg(b)}{\lg(a)}$$
 
-\noTRAINER{\mmPap{5.6}}
 
+\subsection*{num-solv}
+Der Taschenrechner löst Gleichungen mit Zahlen nach $x$ auf:
 
+\TRAINER{ev alle TR Knöpfe auf letzter Seite?\\}
+$5^x = 100 -x$; verwende \tiprobutton{2nd}\tiprobutton{sin_num-solv} $x\approx{}2.843$
+%%\noTRAINER{\mmPap{3.6}}
 \forceCB
 
 
@@ -355,7 +373,7 @@ Beispiel Bruchgleichungssysteme:
 
 \gleichungZZ{{\color{FarnFarbe}\frac1{x+1}} + {\color{red}\frac3{y-2}}}{66}{{\color{FarnFarbe}\frac2{x+1}} + {\color{red}\frac5{y-2}}}{16}
 Substituiere
-${\color{FarnFarbe}a}:={\color{FarnFarbe}\frac1{x+1}}$ und
+${\color{FarnFarbe}a}={\color{FarnFarbe}\frac1{x+1}}$ und
 ${\color{red}b} : ={\color{red}\frac1{y-2}}$:
 
 \gleichungZZ{{\color{FarnFarbe}a} + 3{\color{red}b}}{66}{2{\color{FarnFarbe}a} + 5{\color{red}b}}{16}
@@ -408,7 +426,7 @@ Eine Funktion ist eine {\color{red} eindeutige Zuordnung}. Dabei wird jedem {\co
 \hrulefill
 \section*{Lineare Funktionen}
 
-$$g: y = f(x) = a\cdot{}x + b$$
+$$g\-:\,\,\,\,\, y = f(x) = a\cdot{}x + b$$
 
 \bbwCenterGraphic{8cm}{img/FunktionenLineareEinfuehrung.pdf}
 Steigung \fbox{$a = \frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1}$}.\\
@@ -416,38 +434,44 @@ Zwei Geraden sind \textbf{parallel}, wenn ihre Steigungen gleich sind.
 
 $b$ = $y$-Achsenabschnitt (=Ordinatenabschnitt)
 
+
+\subsubsection*{Horizontale Gerade}
+
+$g\-:\,\,\, y=ax+b$ ist horizontal, wenn die Steigung $a$ Null ist.
+
+$$g\-:\,\,\,  y=0\cdot{}x+b \Rightarrow y=b$$
+\forceCB
+
+
 \subsection*{Achsenschnittpunkte}
 
 \textbf{Nullstelle}: Schnittstelle mit der $x$-Achse:\\
 $y=0$ setzen und $x$ ausrechnen.
+
+
 
 \textbf{Schnittpunkt mit der $y$-Achse}:\\
 $x=0$ setzen und $y$ ausrechnen.
 
 
 \subsection*{Schnittpunkt zweier Geraden}
-Gegeben: $g: y=ax+b$ und $h: y=cx+d$.
+Gegeben: $g\-:\,\,\, y=ax+b$ und $h\-:\,\,\, y=cx+d$.
 
 Gleichsetzen: $ax+b = cx+d$
 
 
-\subsection*{Mittelpunkt $M$ einer Strecke $\overline{AB}$}
-Gegeben: $A=(x_A|y_A)$ und $B=(x_B|y_B)$
+%%\subsection*{Mittelpunkt $M$ einer Strecke $\overline{AB}$}
+%%Gegeben: $A=(x_A|y_A)$ und $B=(x_B|y_B)$
 
-Gesucht: Mittelpunkt $M=(x_M|y_M)$
+%%Gesucht: Mittelpunkt $M=(x_M|y_M)$
 
-Lösung Mittelwert $x$ und $y$ separat:
+%%Lösung Mittelwert $x$ und $y$ separat:
 
-$$x_M = \frac{x_A+x_B}2; y_M=\frac{y_A+y_B}2$$
+%%$$x_M = \frac{x_A+x_B}2; y_M=\frac{y_A+y_B}2$$
 
-\subsection*{Horizontale Gerade}
-
-$g: y=ax+b$ ist horizontal, wenn die Steigung $a$ Null ist.
-
-$$g:  y=0\cdot{}x+b \Rightarrow y=b$$
 
 \subsection*{Zweipunkte Aufgaben}
-Gesucht Gerade $g: y=ax+b$ durch zwei gegebene Punkte $A=(x_A|y_A)$
+Gesucht Gerade $g\-: \,\,\, y=ax+b$ durch zwei gegebene Punkte $A=(x_A|y_A)$
 und $B=(x_B|y_B)$
 
 \textbf{Variante 1}: Steigung $a$ berechnen und einen der beiden Punkte in
@@ -464,7 +488,7 @@ $y=ax+b$ einsetzen, um $b$ zu finden.
 
 \subsection*{Quadratische Funktion}
 $$y=ax^2$$
-$a$ heißt Öffnung\\
+$a$ heisst Formfaktor («Öffnung» bei $ax^\mathbf{2}$)\\
 ($a<0$: Die Parabel ist nach unten geöffnet)
 
 $a=1$ oder $a=-1$: Normalparabel
@@ -473,13 +497,13 @@ $a=1$ oder $a=-1$: Normalparabel
 
 \begin{tcolorbox}[colback=white]
   \textbf{Grundform der Potenzfunktion}
-$$y=ax^m$$
-$m\in\mathbb{Z}\backslash\{0,1\} = \{...-2, -1, 2, 3, 4, ...\}$
+$$y=ax^z$$
+$z\in\mathbb{Z}\backslash\{0,1\} = \{...-2, -1, 2, 3, 4, ...\}$
 \end{tcolorbox}
 
-$m$ gerade: Achsensymmetrisch ($y$-Achse)
+$z$ gerade: Achsensymmetrisch ($y$-Achse)
 
-$m$ ungerade: Punktsymmetrisch (Ursprung $O=(0|0)$)
+$z$ ungerade: Punktsymmetrisch (Ursprung $O=(0|0)$)
 
 %%Ist ${\color{green}a>0}$, so sind Graphen mit
 %%geraden Exponenten nach oben geöffnet bzw. mit ungeraden Exponenten im
@@ -490,11 +514,11 @@ Ist ${\color{blue}a<0}$, so werden Graphen der folgenden Funktionen an der $x$-A
 \end{multicols}
 
 \begin{tabular}{cc}
-$m$ > 0: Parabel ($m$ gerade) & $m$ > 0: Parabel ($m$ ungerade)\\   %%\bbwCenterGraphic{8cm}{PotenzFkt.pdf}
+$z$ > 0: Parabel ($z$ gerade) & $z$ > 0: Parabel ($z$ ungerade)\\   %%\bbwCenterGraphic{8cm}{PotenzFkt.pdf}
   \includegraphics[width=8cm]{PotenzFktx2x4.pdf} &
   \includegraphics[width=8cm]{PotenzFktx3x5.pdf}\\
 
-$m<0$: Hyperbel  ($m$ gerade) & $m<0$: Hyperbel ($m$ ungerade)\\
+$z<0$: Hyperbel  ($z$ gerade) & $z<0$: Hyperbel ($z$ ungerade)\\
   \includegraphics[width=8cm]{PotenzFkt1overx2x4.pdf}&
   \includegraphics[width=8cm]{PotenzFkt1overx3x5.pdf}
   \end{tabular}
@@ -507,7 +531,7 @@ $m<0$: Hyperbel  ($m$ gerade) & $m<0$: Hyperbel ($m$ ungerade)\\
 
 \begin{multicols}2
 
-  \subsection*{Transformationen}
+  \subsection*{Skalierung / Spiegelung}
   Der Faktor $a$ in $y=a\cdot{}x^z$ streckt die Funktion in $y$-Richtung, bzw. spiegelt die Funktion an der $x$-Achse.
   \bbwCenterGraphic{8cm}{PotenzFktTransformation.pdf}
 
@@ -610,8 +634,7 @@ $$f(0) = c+b$$
 
 \newpage
 \section*{Datenanalyse}
-
-\subsection*{Skalen}
+\TRAINER{Ist das Lernziel?}
 \bbwCenterGraphic{17cm}{img/Skalentyp.pdf}
 %%\bbwCenterGraphic{15cm}{img/DatenanalyseSkalentypen.eps}
 \TRAINER{Stetig/Diskret?}
@@ -622,7 +645,7 @@ $$f(0) = c+b$$
 \hrulefill
 \begin{multicols}{2}
 
-\subsection*{Lagemaße}
+\subsection*{Lagemasse}
 \subsubsection*{Mittelwert}
 (= Durchschnitt = arithmetisches Mittel)
 
@@ -634,7 +657,7 @@ $$\overline{x} = \frac{x_1 + x_2 + x_3 + ... + x_n}{n}=  \frac{\sum\limits_{k=1}
 
 
 Der \textbf{Median} (Zentralwert) ist der Wert in der Mitte der geordneten Datenreihe. Ist
-die Anzahl Werte gerade, so wird der Mittelwert der beiden in der
+die Anzahl Werte gerade, so wird der Mittelwert der beiden
 «mittleren» Werte genommen.
 
 Symbol: $\mediantilde{x} = x_{\textrm{MED}}$
@@ -646,7 +669,7 @@ Die Quartilsgrenzen $Q_1$ bzw. $Q_3$ sind die Mediane der linken,
 bzw. rechten Datenhälfte (nachdem der eine Zentralwert entfernt
 wurde).
 
-\subsubsection*{Modus}
+\subsubsection*{Modus\TRAINER{, Modalwert?}}
 Der am häufigsten auftretende Wert wird als Modus bezeichnet.
 
 Manchmal ist dies nicht eindeutig, dann sprechen wir von einer
@@ -654,7 +677,7 @@ Manchmal ist dies nicht eindeutig, dann sprechen wir von einer
 
 \subsubsection*{Maximum, Minimum}
 
-Maximum bzw. Minimum sind höchste bzw. kleinste Datenwerte: Die Ausreißer
+Maximum bzw. Minimum sind höchste bzw. kleinste Datenwerte: Die Ausreisser
 zählen mit!
 
 \noTRAINER{\mmPap{5.2}}%
@@ -663,7 +686,7 @@ zählen mit!
 \forceCB%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 
-\subsection*{Streumaße}
+\subsection*{Streumasse}
 \subsubsection*{Spannweite}
 Die Spannweite $R$ (Range) ist das Maximum minus
 das Minimum.
@@ -682,15 +705,15 @@ $s$ = Standardabweichung einer gemessenen Stichprobe
 
 
 \subsubsection*{Robustheit}
-Verändert sich der Wert eines statistischen Maßes nicht, wenn sich ein Ausreißer
-weiter ins Extreme bewegt, so sprechen wir von einem \textbf{robusten} Maß.
+Verändert sich der Wert eines statistischen Masses nicht, wenn sich ein Ausreisser
+weiter ins Extreme bewegt, so sprechen wir von einem \textbf{robusten} Mass.
 
 %\begin{tabular}{|c|c|c|}\hline
-%   & Lage- & Streumaß\\\hline
+%   & Lage- & Streumass\\\hline
 % \multirow{4}{*}{\rotatebox{90}{robust}}  & Median $\mediantilde{x}$ & IQR \\
 %    & Modus $x_{mod}$ & \\
 %    & Quartile ($Q_1$,$Q_3$) & \\
-%    & (Ausreißerschwellen) & \\\hline
+%    & (Ausreisserschwellen) & \\\hline
 % \multirow{3}{*}{\rotatebox{90}{«fragil»}}  & Mittelwert
 % $\overline{x}$ & Standardabw.: $\sigma$\\
 %    & Minimum & Spannweite\\
@@ -698,25 +721,15 @@ weiter ins Extreme bewegt, so sprechen wir von einem \textbf{robusten} Maß.
 % & Maximum & \\\hline
 % \end{tabular}
 
-\subsection*{Summenzeichen}
-%%$$\color{orange}\sum_{\color{blue}k=1}^{\color{blue}n} {{\color{FarnFarbe}T}(k)} = {\color{FarnFarbe}T}({\color{blue}1}) {\color{orange}+} {\color{FarnFarbe}T}({\color{blue}2}) {\color{orange}+} ... {\color{orange}+} {\color{FarnFarbe}T}({\color{blue}n})$$
-
-  $${\color{FarnFarbe}\sum_{{\color{red}k}{{\color{FarnFarbe}{\color{black}=}\color{blue}1}}}^{\color{blue}n\color{FarnFarbe}}}
-  {\color{orange}T(}{{\color{red}k}}{\color{orange})} = {\color{orange}T(}{\color{blue}1}{\color{orange})} {\color{FarnFarbe}+} {\color{orange}T(}{\color{blue}2}{\color{orange})} {\color{FarnFarbe}+}
-  ... {\color{FarnFarbe}+} {\color{orange}T(}{\color{blue}n}{\color{orange})}$$
-
-Beispiel
-
-  $${\color{FarnFarbe}\sum_{{\color{red}n}{{\color{FarnFarbe}{\color{black}=}\color{blue}3}}}^{\color{blue}5\color{FarnFarbe}}}  {\color{red}n}^{{\color{orange}7}} = {\color{blue}3}^{\color{orange}7} {\color{FarnFarbe}+} {\color{blue}4}^{\color{orange}7} {\color{FarnFarbe}+} {\color{blue}5}^{\color{orange}7}$$
-
-
-Taschenrechner (\texttt{sum}): \tiprobutton{math}\tiprobutton{5}
 
 \mmPap{2}%
 %
 \forceCB%
 \subsection*{Diagramme}
 \subsubsection*{Balken / Kuchen}
+\begin{tabular}{cc}
+ \includegraphics[width=4cm]{img/balkendiagramm.png} &  \includegraphics[width=3cm]{img/kuchendiagramm.png}\\
+  \end{tabular}
 \begin{tcolorbox}[colback=white]
   \textbf{Relative Häufigkeit}\\
 \begin{tabular}{lcl}
@@ -724,9 +737,9 @@ $n$   &$=$& Anzahl Werte\\
 $h_i$ &$=$& Absolute Häufigkeit\\
       & & des Merkmals $i$\\
 $f_i = \frac{h_i}n$ &$=$& relative Häufigkeit\\
-$p_i = f_i\cdot{}100\%$ &$=$& prozentuale Häufigkeit\\
-$\varphi_i = f_i\cdot{}360\degre$ &$=$& Zentriwinkel im\\
-      & &Kuchendiagramm
+$p_i = f_i\cdot{}100\%$ &$=$& prozentuale Häufigkeit%%\\
+%%$\varphi_i = f_i\cdot{}360\degre$ &$=$& Zentriwinkel im\\
+%%      & &Kuchendiagramm
   \end{tabular}
 \end{tcolorbox}
 
@@ -752,10 +765,10 @@ Werte festgelegt.
 %und Quartile ({\color{blue}$Q_1$}, {\color{FarnFarbe}$Q_3$})einzeichnen
 %\item IQR := {\color{FarnFarbe}Q3}-{\color{blue}Q1} rechnen
 %\item IQR mit 1.5 multiplizieren
-%\item {\color{red} untere Ausreißerschwelle\\ uAs} $ = Q_1 -
-%1.5\cdot{}\textrm{IQR}$\\ und {\color{red} obere Ausreißerschwelle\\ oAs} $=Q_3 + 1.5\cdot{}\textrm{IQR}$\\ (ausradierbar) fein markieren (gehören nicht zum Boxplot)
-%\item Alle Ausreißer mit Ring $\circ$ oder Stern $\star$ einzeichnen.
-%\item Whisker (entfernteste Werte innerhalb der Ausreißerschwellen)
+%\item {\color{red} untere Ausreisserschwelle\\ uAs} $ = Q_1 -
+%1.5\cdot{}\textrm{IQR}$\\ und {\color{red} obere Ausreisserschwelle\\ oAs} $=Q_3 + 1.5\cdot{}\textrm{IQR}$\\ (ausradierbar) fein markieren (gehören nicht zum Boxplot)
+%\item Alle Ausreisser mit Ring $\circ$ oder Stern $\star$ einzeichnen.
+%\item Whisker (entfernteste Werte innerhalb der Ausreisserschwellen)
 %einzeichnen.
 %\item Boxdekoration horizontale Linien einzeichnen.
 %\end{enumerate}
@@ -766,14 +779,14 @@ Werte festgelegt.
 
 \newpage
 \subsubsection*{Boxplot}
-%%\TRAINER{«Schritte zum Boxplot als Fließtext
-%%  daneben. Ausreißerschwellen {\color{blue}blau} im
-%%  Diagramm. Dann im Text auch. Ausreißerschwellen ist ein Begriff von
+%%\TRAINER{«Schritte zum Boxplot als Fliesstext
+%%  daneben. Ausreisserschwellen {\color{blue}blau} im
+%%  Diagramm. Dann im Text auch. Ausreisserschwellen ist ein Begriff von
 %%  Frommenwiler, nicht von Marthaler.}%% END TRAINER
 Schritte zum Boxplot:\\
-Fühler (Whisker) werden auf max. $1.5\cdot\textrm{IQR}$ begrenzt ({\color{blue} Ausreißerschwellen blau}),
+Fühler (Whisker) werden auf max. $1.5\cdot\textrm{IQR}$ begrenzt ({\color{blue} Ausreisserschwellen blau}),
 danach nach \textit{\color{FarnFarbe}innen} gehen: Fühler sind die von der Box
-entferntesten Nicht-Ausreißer ({\color{FarnFarbe}grün}). Ausreißer
+entferntesten Nicht-Ausreisser ({\color{FarnFarbe}grün}). Ausreisser
 ({\color{red} rot}) werden markiert.
 \bbwCenterGraphic{18cm}{boxplot4.png}
 %%\TRAINER{Entferne «Sportler*innen»}
@@ -786,13 +799,16 @@ entferntesten Nicht-Ausreißer ({\color{FarnFarbe}grün}). Ausreißer
 \subsection*{Kombinatorik}
 
 \subsubsection*{Produktregel}
+
+\begin{tabular}{p{5cm}c}
+Bsp.: Andrea hat drei verschiedene Hosen und vier verschiedene Pullover.
+Es gibt somit $3\cdot{}4$ mögliche Kombinationen.&\raisebox{-3.5cm}{\includegraphics[width=3cm]{img/KombinatorikMultiplikation.pdf}}\end{tabular}
+
+
 Hat eine zweistufige Situation zunächst $k_1$ Möglichkeiten, gefolgt
 von $k_2$ Möglichkeiten, so hat man insgesamt $k_1\cdot{}k_2$
 Möglichkeiten. Dies ist auf beliebig viele Stufen verallgemeinerbar.
 
-\begin{tabular}{p{5cm}c}
-Andrea hat drei verschiedene Hosen und vier verschiedene Pullover.
-Es gibt somit $3\cdot{}4$ mögliche Kombinationen.&\raisebox{-3.5cm}{\includegraphics[width=3cm]{img/KombinatorikMultiplikation.pdf}}\end{tabular}
 
 %%\bbwCenterGraphic{3cm}{img/KombinatorikMultiplikation.pdf}
 %%\TRAINER{Ersetze «Ein:e Schüler:in» durch «Andrea»}
@@ -817,7 +833,7 @@ $$N = \frac{11!}{{\color{FarnFarbe}4}!\cdot{}{\color{red}4}!\cdot{}{\color{cyan}
 
 
 \subsection*{Überblick Auswahlprobleme}
-$$\textrm{Binomialkoeffizient:} {{\color{blue}n}\choose {\color{red}k}} :=\frac{{\color{blue}n}!}{({\color{blue}n}-{\color{red}k})!\cdot {\color{blue}n}!}\phantom{etwas Platz lassen} {n\choose 0}= {n\choose n}= 1$$
+$$\textrm{Binomialkoeffizient:} {{\color{blue}n}\choose {\color{red}k}} =\frac{{\color{blue}n}!}{({\color{blue}n}-{\color{red}k})!\cdot {\color{blue}n}!}\phantom{etwas Platz lassen} {n\choose 0}= {n\choose n}= 1$$
 \bbwCenterGraphic{17cm}{img/Kombinatorik.pdf}
 
 \hrulefill
@@ -891,7 +907,7 @@ $$P(E) = \frac{\textrm{Anzahl Ergebnisse in
 }E}{\textrm{Anzahl Ergebnisse in }\Omega}$$
 
 
-\subsection*{Bernoulli-Modell}
+\subsection*{Binomialverteilung (Bernoulli)}
 
 \begin{tcolorbox}[colback=white]
 \textbf{Bernoulli}\\
@@ -910,7 +926,7 @@ Im Urnenmodell: Mit Zurücklegen.
 Taschenrechner:  \textbf{\texttt{binomialpdf}}
 \end{tcolorbox}%%
 \forceCB%
-\subsubsection*{Kumulierte Wahrscheinlichkeit}
+\subsubsection*{Kumulierte Binomialverteilung}
 
 \begin{tcolorbox}[colback=white]
 
@@ -931,7 +947,7 @@ Bei \textbf{minimal} arbeite mit \textbf{Gegenereignis}.
 $$P(X \ge 4) = 1 - P(X < 4) = 1-P(X\le 3)$$
 
 
-\subsection*{Hypergeometrische Verteilung}
+\subsection*{Hypergeometrische Verteilung (Lottomodell)}
 Gegeben $N+T$ Kugeln in einer Urne. Herausgezogen werden $n+t$:
 \begin{itemize}
 \item $T$ Anzahl aller Treffer
@@ -980,17 +996,17 @@ $\Sigma$   &        55 &       75 &      130 \\\hline
  \end{tabular}
 
 \textbf{Normale Wahrscheinlichkeit}\\
-«Wie groß ist hier die Wahrscheinlichkeit, gesund (G) zu sein?»
+«Wie gross ist hier die Wahrscheinlichkeit, gesund (G) zu sein?»
 $$P(G) = \frac{\textrm{Anzahl Gesunde}}{\textrm{Alle}} =  \frac{55}{130}$$
 
 \textbf{Wahrscheinlichkeit der Schnittmenge}\\
-«Wie groß ist hier die Wahrscheinlichkeit, eine gesunde Frau anzutreffen treffen?»
+«Wie gross ist hier die Wahrscheinlichkeit, eine gesunde Frau anzutreffen treffen?»
 $$P(G\cap F) = \frac{\textrm{\ Anzahl gesunde Frauen}}{\textrm{Alle}}= \frac{30}{130}$$
 
 \textbf{Bedingte Wahrscheinlichkeit}\\
-«Wie groß ist die Wahrscheinlichkeit, unter den Gesunden eine Frau anzutreffen?»
+«Wie gross ist die Wahrscheinlichkeit, unter den Gesunden eine Frau anzutreffen?»
 $$P(F | G) = \frac{\textrm{Anzahl gesunde Frauen}}{\textrm{Anzahl Gesunde}} =  \frac{30}{55}$$
-«Wie groß ist die Wahrscheinlichkeit, unter den Frauen eine gesunde Person zu treffen?»
+«Wie gross ist die Wahrscheinlichkeit, unter den Frauen eine gesunde Person zu treffen?»
 $$P(G | F) = \frac{\textrm{Anzahl gesunde Frauen}}{\textrm{Anzahl Frauen}}=  \frac{30}{70}$$
 
 \mmPap{8}

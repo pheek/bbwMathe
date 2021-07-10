@@ -15,7 +15,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="skalarprodukt.svg">
+   sodipodi:docname="skalarprodukt.svg"
+   inkscape:export-filename="/home/phi/bitmap.png"
+   inkscape:export-xdpi="600"
+   inkscape:export-ydpi="600">
   <defs
      id="defs2">
     <marker
@@ -133,7 +136,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6"
-     inkscape:cx="108.66282"
+     inkscape:cx="123.29691"
      inkscape:cy="66.877942"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -169,19 +172,28 @@
        d="m 115.86139,80.695674 16.24129,31.095996"
        id="path1174"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/vecg2/img/skalarprodukt.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-3)"
        d="M 82.788473,110.17782 115.86139,80.695674"
        id="path1174-7"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/vecg2/img/skalarprodukt.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-5)"
        d="m 82.788473,110.17782 49.314207,1.61385"
        id="path1174-5"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/vecg2/img/skalarprodukt.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
     <path
        style="fill:none;fill-opacity:1;stroke:#000001;stroke-width:0.26800245;stroke-miterlimit:4;stroke-dasharray:0.26800245, 0.26800245;stroke-dashoffset:0;stroke-opacity:1"
        id="path3597"
@@ -192,13 +204,19 @@
        sodipodi:ry="15.317485"
        sodipodi:start="5.6163439"
        sodipodi:end="0.029577143"
-       d="m 93.328978,100.70384 a 13.414077,15.317485 0 0 1 2.867707,9.92696 l -13.40821,-0.45298 z" />
+       d="m 93.328978,100.70384 a 13.414077,15.317485 0 0 1 2.867707,9.92696 l -13.40821,-0.45298 z"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/vecg2/img/skalarprodukt.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
     <text
        xml:space="preserve"
        style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman,  Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        x="96.478424"
        y="105.36607"
-       id="text3607"><tspan
+       id="text3607"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/vecg2/img/skalarprodukt.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
          sodipodi:role="line"
          id="tspan3605"
          x="96.478424"
@@ -206,7 +224,10 @@
          style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman,  Italic';stroke-width:0.26458332">γ</tspan></text>
     <g
        id="g5274"
-       transform="translate(5.1026786,3.6380208)">
+       transform="translate(5.1026786,3.6380208)"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/vecg2/img/skalarprodukt.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
       <text
          id="text3611"
          y="91.61718"
@@ -227,7 +248,10 @@
     </g>
     <g
        transform="translate(20.831105,24.748527)"
-       id="g5032-9">
+       id="g5032-9"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/vecg2/img/skalarprodukt.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
       <text
          id="text3611-1"
          y="92.42038"
@@ -248,7 +272,10 @@
     </g>
     <g
        transform="translate(35.1942,3.4873656)"
-       id="g5032-9-3">
+       id="g5032-9-3"
+       inkscape:export-filename="/home/phi/matgit/includes/thema/tals/vecg2/img/skalarprodukt.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
       <text
          id="text3611-1-6"
          y="92.42038"
