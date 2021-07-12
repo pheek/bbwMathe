@@ -31,8 +31,13 @@ Einführendes Youtube Video: \texttt{youtu.be/ZywdPuXR0S0}
 \TALS{\item Linearfaktoren}
 \TALS{\item Substitution}
 \end{itemize}
+\newpage
 
-Al-Chwarizmis Buch (
+\bbwCenterGraphic{6cm}{allg/gleichungen/img/AlKhwarizmiBriefmarke.png}
+Bildlegende: Al Khwarizmi auf einer russischen Briefmarke zum 1200jährigen Gedenken.
+
+
+Al-Khwarizmis Buch (
 al-Kit\={a}b al-muhta\d{s}ar f\={i} \d{h}is\={a}b al-gabr wa-\'{}l-muq\={a}bala) \textit{über die Rechenverfahren durch Ergänzen und
 Ausgleichen} trägt zum Namen «Algebra» bei. In seinem Buch wird die
 Quadratische Gleichung in allen Varianten gelöst.
@@ -41,22 +46,25 @@ Quadratische Gleichung in allen Varianten gelöst.
 \subsection{Einstiegsbeispiele}
 $$x^2=50$$
 
-\TNT{2}{$x=\pm\sqrt{50} = \pm 5\sqrt2$}
+\TNT{2}{$x=\pm\sqrt{50} = \pm 5\sqrt2$ \vspace{15mm}}
 
 $$(x+5)^2=50$$
 
-\TNT{4}{$x+5=\pm\sqrt{50} \Rightarrow x = \pm\sqrt{50} - 5$, danach unbedingt Probe vorzeigen.}
+\TNT{4}{$x+5=\pm\sqrt{50} \Rightarrow x = \pm\sqrt{50} - 5$, danach unbedingt Probe vorzeigen.\vspace{32mm}}
 
 %%\TRAINER{Normalform $x^2 +5x +6 = 0 \rightarrow (x+2)(x+3)=0$}
 %%\newpage
 
-\TALS{\input{tals/gl2/QuadratischeGleichungenSpezialfaelle}}
+\subsection*{Aufgaben}
+\aufgabenfarbe{Aufgabenblatt im OLAT (Gallin) bis Aufgabe 7}
 
-\aufgabenfarbe{Einstieg mit separatem Aufgabenblatt}
+\TALS{\newpage
+\input{tals/gl2/QuadratischeGleichungenSpezialfaelle}}%% END TALS
+
 \newpage
 
 
-\subsection{Quadratische Ergänzung}\index{quadratische Ergänzung}\index{Ergänzung!quadratische}
+\subsection{Quadratische Ergänzung (optional)}\index{quadratische Ergänzung}\index{Ergänzung!quadratische}
 Normalform:
 $$3x^2 - 11x - 4 = 0$$
 
@@ -102,10 +110,15 @@ so ist die Lösung durch die folgende Formel bestimmt:
 
 $$x_{1,2}=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 \end{gesetz}
+
+
 \newpage
 
-\subsubsection{Beweis der abc-Formel}\index{Mitternachtsformel!Beweis}\index{abc-Formel!Beweis}
-\TRAINER{nach dorfuchs: [$-c$] [$\cdot{}4a$] [$+b^2$] [TU: bin. Formel] [$\pm\sqrt{\,\,}$] [$-b$] [$/2a$]}
+\subsubsection{Beweis der abc-Formel (optional)}\index{Mitternachtsformel!Beweis}\index{abc-Formel!Beweis}
+\TRAINER{nach dorfuchs: [$-c$] [$\cdot{}4a$] [$+b^2$] [TU:
+    bin. Formel] [$\pm\sqrt{\,\,}$] [$-b$] [$/2a$]}
+\TRAINER{oder hier einfach das VIDEO von Dorfuchs zeigen; ca. 3
+  min.}%% END TRAINER
 
 \TNT{16}{%%
 \begin{tabular}{c|c|c}
@@ -166,6 +179,20 @@ $\mathbb{L}_x = \{1 - 2\sqrt{2}; 1+2\sqrt{2}\}$ & & $\mathbb{L}_x = \{\frac{-b-\
   $\mathbb{L}_x = \{1; 2\}$
   }%% END TRAINER
 \end{rezept}
+
+\subsection*{Aufgaben}
+\aufgabenfarbe{Blatt $a$-$b$-$c$-Finden (OLAT)}
+
+
+\TALSAadB{95ff}{269. a), 275. a) b) d), 276. a) b) f)}%%
+
+\GESOAadB{181}{3. a) e) 4. e) [mit Probe] 5. a) e) 6. d) 7. a) e)
+  8. a) b) d) e) i) 9. c) 10. b) e) 11. c) f)}
+
+Wer fertig ist:\\
+\aufgabenfarbe{Weiter im Blatt im OLAT (Gallin)}
+
+
 \newpage
 
 
@@ -203,9 +230,8 @@ Mit der Diskriminante ist eine einfache \textbf{Fallunterscheidung} möglich:
 
 \GESO{
   \subsection*{Aufgaben}
-Vorzeigeaufgabe: S.181: 13. b)%%
-\GESOAadB{182}{3. a) e) 4. e) [mit Probe] 5. a) e) 6. d) 7. a) e)
-  8. a) b) d) e) i) 9. c) 10. b) e) 11. c) f) 13. a) [falls 13. b) vorgezeigt]}
+  Vorzeigeaufgabe: S.182: 13. b) und S. 183.: 16. c)%%
+  \GESOAadB{182ff}{13. a), 16. c)}
 }%% END GESO
 
 \newpage
@@ -286,12 +312,5 @@ sind oft sinnvoller. Hier ein Versuch eines Überblicks:
            beschränken & $7.3x^2 - cx + 2.6 = 	0$     & 	Diskriminante mit Taschenrechner Null setzen.\\
 	\hline
 \end{tabular} 
-}
-\newpage
-
-\TALS{\subsection*{Aufgaben}
-\TALSAadB{95ff}{265. a) c) e) 266. a) d) 267. e) 269. a) 275. a)
-276. a) b) f)}%%
-\TALSAadB{99ff (Substitution)}{283. a) b) f) 282. a) f) 284. a)}
 }
 \newpage
