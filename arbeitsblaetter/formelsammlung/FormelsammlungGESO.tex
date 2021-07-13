@@ -2,11 +2,30 @@
 %% Meta: Formelsammlung GESO BBW
 %%
 
-\newcommand{\versionsDatumFoSa}{2021-07-10}
+\newif\ifisHECH
+\newif\ifisRLP
+
+%%\isHECHtrue
+\isRLPtrue
+
+%% Für Schreibweise mit a,b,c (Hersberger Christian)
+\newcommand\HECH[1]{%%
+{%%
+\ifisHECH{#1}%%
+\fi
+}}%%
+%% Für Rahmenlehrplan
+\newcommand\RLP[1]{%%
+{%%
+\ifisRLP{#1}%%
+\fi
+}}%%
+
+\newcommand{\versionsDatumFoSa}{2021-07-12}
 
 %% ID (ca. alle jahre), Subversion: Grössere Änderungen, Revision: Jede
 %% Umstellung/Korrektur/Typos
-\newcommand{\versionIdSubRev}{0.2.8}
+\newcommand{\versionIdSubRev}{0.2.9}
 
 \newcommand{\versionsnummerFoSa}{\versionsDatumFoSa{} \versionIdSubRev}
 
@@ -271,10 +290,12 @@ $$\frac{a^{-3}b^2}{c^5d^{-6}} = \frac{b^2d^6}{a^3c^5}$$
 \subsection*{$n$te Wurzel}
 $\sqrt[n]{a} = \left(a\right)^\frac1n$\hfill{}Bsp.: $8^{\frac13}=\sqrt[3]{8}=2$
 
+\begin{tcolorbox}[colback=white]
 $$a^{\frac{m}n} = \sqrt[n]{a^m} = \left(\sqrt[n]a\right)^m$$
 $$\sqrt[n]{\sqrt[m]{a}}   = \left((a)^\frac1m \right)^\frac1n = a^\frac1{nm} = \sqrt[m]{\sqrt[n]{a}}  $$
 
 $$\sqrt[n]{a\cdot{}b} = \sqrt[n]{\vphantom{b}a} \cdot \sqrt[n]b$$
+\end{tcolorbox}
 
 %%$$\sqrt[n]{a\cdot{}\sqrt[m]b} =   \sqrt[n]{\vphantom{b}a} \cdot \sqrt[n m]b$$
 %%
@@ -426,7 +447,8 @@ Eine Funktion ist eine {\color{red} eindeutige Zuordnung}. Dabei wird jedem {\co
 \hrulefill
 \section*{Lineare Funktionen}
 
-$$g\-:\,\,\,\,\, y = f(x) = a\cdot{}x + b$$
+\HECH{$$g\-:\,\,\,\,\, y = f(x) = a\cdot{}x + b$$}
+\RLP{$$g\-:\,\,\,\,\, y = f(x) = m\cdot{}x + q$$}
 
 \bbwCenterGraphic{8cm}{img/FunktionenLineareEinfuehrung.pdf}
 Steigung \fbox{$a = \frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1}$}.\\
