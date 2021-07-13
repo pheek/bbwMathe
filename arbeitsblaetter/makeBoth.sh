@@ -21,6 +21,11 @@ if [ -f './GESO.flag' ] ; then
 	export ZIELGRUPPE="GESO"
 fi
 
+if [ -f './HECH.flag' ] ; then
+		export ZIELGRUPPE="HECH"
+fi
+
+
 export MAKE_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )
 
 if [ -f '../../layout/makeBoth.sh' ] ; then
