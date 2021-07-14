@@ -2,14 +2,16 @@
 %% Meta: Formelsammlung GESO BBW
 %%
 
+%% Für Schreibweise mit a,b,c (Hersberger Christian)
 \newif\ifisHECH
 \newif\ifisRLP
 
-%% Steuere später über das File "HECH.flag"
+%% Steuere später über das File "VERSION.sty"
 %%\isHECHtrue %% f(x) = ax+b
-\isRLPtrue %%f(x) = mx+q
+%%\isRLPtrue %%f(x) = mx+q
 
-%% Für Schreibweise mit a,b,c (Hersberger Christian)
+\input{VERSION.sty}
+
 \newcommand\HECH[1]{%%
 {%%
 \ifisHECH{#1}%%
@@ -22,11 +24,11 @@
 \fi
 }}%%
 
-\newcommand{\versionsDatumFoSa}{2021-07-13}
+\newcommand{\versionsDatumFoSa}{2021-07-14}
 
 %% ID (ca. alle jahre), Subversion: Grössere Änderungen, Revision: Jede
 %% Umstellung/Korrektur/Typos
-\newcommand{\versionIdSubRev}{0.3.0}
+\newcommand{\versionIdSubRev}{0.3.2}
 
 \newcommand{\versionsnummerFoSa}{\versionsDatumFoSa{} \versionIdSubRev}
 
@@ -113,11 +115,12 @@ $70.\mathbf{\color{FarnFarbe}0031}\mathbf{\color{red}4}998\approx
 
 (Alle vier Dezimalen sind anzugeben.)
 
-\subsection*{Signifikante Stellen}
+\HECH{\subsection*{Signifikante Stellen}
 Führende Nullen zählen nicht, nachfolgende Nullen
 zählen. Bsp. \textbf{\color{FarnFarbe}vier} signifikante Stellen:
 
 $$\mathbf{\color{FarnFarbe}208.0} \textrm{ cm} = \mathbf{\color{FarnFarbe}2.080} \textrm{ m} = 0.00\mathbf{\color{FarnFarbe}2080} \textrm{ km}$$
+}%% END HECH
 
 %%\forceCB{}%%
 \subsection*{Wissenschaftliche Notation}
@@ -132,7 +135,8 @@ $0.004$ &=& $\mathbf{\color{blue}4}\cdot{}10^{-3}$ &=& \textbf{\color{blue}4}E-3
 \hrulefill
 \section*{Algebra}
 \subsection*{Hierarchie der Rechenoperationen}
-(1.) Klammern, (2.) Wurzeln/Potenzen, (3.) Punktoperationen, (4.) Strichoperationen
+(1.) Klammern, (2.) Wurzeln/Potenzen,\\
+(3.) Punktoperationen, (4.) Strichoperationen
 
 \textbf{Termarten}
 
@@ -148,14 +152,15 @@ Differenzterm:  $3-(-7) = +10$
 
 Produktterm:\, $-3(-7) = +21$
 
-Produkt: $$2\cdot(x\cdot{}y) = 2(xy) = 2xy$$
+Produkt mit Produkt: $2\cdot(x\cdot{}y) = 2(xy) = 2xy$
 
-\textbf{Aber}: Distributivgesetz: $2\cdot(x+y)=2x+2y$
+Produkt mit Summe: $2\cdot(x+y)=2x+2y$
 
 Potenzterme: $(-3)^2 = 9$ aber $-3^2 = -9$
 
-
+\forceCB
 Vorzeichen im Taschenrechner:\\
+\vspace{3mm}\\
 \tiprobutton{7}\tiprobutton{minus}\tiprobutton{2}$=7-2= 5$\\
 \tiprobutton{7}\tiprobutton{neg}\tiprobutton{2}$=7(-2)=7\cdot{}(-2)= -14$
 
@@ -206,15 +211,20 @@ $$ax + ay = a(x+y)$$
 \item
 Teilsummen ausklammern
 $$3(7r+6) - b(7r+6) = (3-b)(7r+6)$$
+\begin{tabular}{rcl}
+$ac+bc+ad+bd$ &=& $(a+b)c+(b+b)d$ \\
+              &=& $(a+b)(c+d)$
+\end{tabular}              
+
 \item $(-1)$ ausklammern
   $$(b-a)=(-1)\cdot{}(a-b)$$
   $$(b-a)^2 = \left((-1)\cdot{}(a-b)\right)^2 = (a-b)^2$$
 \end{itemize}
 
-\item Binomische Formeln anwenden
+\item Binomische Formeln anwenden:
 $$x^2-1 = (x-1)(x+1)$$
 $$4b^2 -12bc + 9c^2=(2b-3c)^2$$
-\item Zweiklammeransatz bilden
+\item Zweiklammeransatz bilden:
 $$x^2+2x-15 = (x+5)(x-3)$$
 
 \end{enumerate}
@@ -320,11 +330,13 @@ $$e \approx 2.71828 \textrm{ = Eulersche Konstante}$$
 
 
 \begin{tcolorbox}[colback=white]
-\textbf{Gesetze}\TRAINER{ev. nur 3. Gesetz, andere sind kein Lernziel}
 \HECH{$$\log_a(u\cdot v) = \log_a(u) + \log_a(v)$$}
 \HECH{$$\log_a(u : v) = \log_a(u) - \log_a(v)$$}
-$$\log_a(b^x) = x\cdot{}\log_a(b)$$
-$$\log_{\color{FarnFarbe}a}({\color{red}b}) = \frac{\lg({\color{red}b})}{\lg({\color{FarnFarbe}a})} = \frac{\ln({\color{red}b})}{\ln({\color{FarnFarbe}a})}$$
+
+\HECH{$$\log_a(b^x) = x\cdot{}\log_a(b)$$
+$$\log_{\color{FarnFarbe}a}({\color{red}b}) = \frac{\lg({\color{red}b})}{\lg({\color{FarnFarbe}a})} = \frac{\ln({\color{red}b})}{\ln({\color{FarnFarbe}a})}$$}
+\RLP{$$\log_b(a^x) = x\cdot{}\log_b(a)$$
+$$\log_{\color{FarnFarbe}b}({\color{red}a}) = \frac{\lg({\color{red}a})}{\lg({\color{FarnFarbe}b})} = \frac{\ln({\color{red}a})}{\ln({\color{FarnFarbe}b})}$$}
 \end{tcolorbox}
 
 
@@ -336,7 +348,7 @@ $$\log_{\color{FarnFarbe}a}({\color{red}b}) = \frac{\lg({\color{red}b})}{\lg({\c
 
 Beispiel mit Parametern:
 $$a^2x-b=b^2x+a$$
-$$x\textrm{auf eine Seite\, } \Longrightarrow a^2x -b^2x = a+b$$
+$$x\textrm{ auf eine Seite\, } \Longrightarrow a^2x -b^2x = a+b$$
 $$x\textrm{ ausklammern }\Longrightarrow (a^2-b^2)x= a+b$$
 $$\Longrightarrow x= \frac{a+b}{a^2-b^2} = \frac{a+b}{(a-b)(a+b)}=\frac{1}{a-b}$$
 
@@ -376,7 +388,7 @@ $$\frac5{x+2}=\frac{7+x}{x-3} \Leftrightarrow{} \mathbb{D}_x=\mathbb{R}\backslas
 
 \subsection*{Potenzgleichungen}
 
-  \TRAINER{ev. nur letztes Gesetz: $x^a = c$ und $x^\frac1b =c$ sind darin enthalten.  }
+%%  \TRAINER{ev. nur letztes Gesetz: $x^a = c$ und $x^\frac1b =c$ sind darin enthalten.  }
 
 \begin{tabular}{rcl}
 $x^a=c$ & $\Leftrightarrow$ & $x=\sqrt[a]{c}$\\
@@ -399,13 +411,14 @@ $x^5=32$ & $\Longrightarrow$ & $\mathbb{L}_x=\{+2\}  $ \\
 $$5^4 = 5^{2x+1} \Longrightarrow  4=2x+1$$
 
 \subsubsection*{durch Logarithmieren}
-$$a^x=b \Rightarrow{} x=\log_a(b) = \frac{\lg(b)}{\lg(a)}$$
+\HECH{$$a^x=b \Rightarrow{} x=\log_a(b) = \frac{\lg(b)}{\lg(a)}$$}
+\RLP{$$b^x=a \Rightarrow{} x=\log_b(a) = \frac{\lg(a)}{\lg(b)}$$}
 
 
 \subsection*{Lineare Gleichungssysteme}
 Erst in \textbf{Grundform} bringen:
 \gleichungZZ{5x+7y}{19}{6x -3y}{57}
-Danach Lösen mit
+Danach lösen mit
 \begin{itemize}
 \item Additionsverfahren
 \item Einsetzungsverfahren
@@ -483,8 +496,13 @@ $\mathbb{D}$} eindeutig ein {\color{blue}y} aus der
 \HECH{$$g\-:\,\,\,\,\, y = f(x) = a\cdot{}x + b$$}
 \RLP{$$g\-:\,\,\,\,\, y = f(x) = m\cdot{}x + q$$}
 
+\RLP{\TRAINER{Formel in Grafik ersetzen durch $mx+q$}}
 \bbwCenterGraphic{8cm}{img/FunktionenLineareEinfuehrung.pdf}
-Steigung \fbox{\HECH{$a$}\RLP{$m$}$ = \frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1}$}.\\
+Steigung:
+
+\fbox{\HECH{$a$}\RLP{$m$}$ = \frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1}$}\\
+
+
 Zwei Geraden sind \textbf{parallel}, wenn ihre Steigungen gleich sind.
 
 $\HECH{b}\RLP{q}$ = $y$-Achsenabschnitt (=Ordinatenabschnitt)
@@ -572,7 +590,7 @@ Ist ${\color{blue}a<0}$, so werden Graphen der obigen Funktionen an der $x$-Achs
 
 %% \includegraphics[width=4cm]{allg/funktionen/img/potenzfct/potenzFunktionenGerade.png}\hfill{}\includegraphics[width=4cm]{allg/funktionen/img/potenzfct/potenzFunktionenUngerade.png}
   \subsection*{Streckung / Spiegelung}
-  Der Faktor $a$ in $y=a\cdot{}x^z$ streckt die Funktion in $y$-Richtung, bzw. spiegelt die Funktion an der $x$-Achse.
+  Der Faktor $a$ in $y=a\cdot{}x^k$ streckt die Funktion in $y$-Richtung, bzw. spiegelt die Funktion an der $x$-Achse.
   \bbwCenterGraphic{73mm}{PotenzFktTransformation.pdf}
 
 
@@ -601,7 +619,8 @@ Bei exponentiellem Wachstum wird pro Zeiteinheit mit dem selben Wert $\HECH{a}\R
 
 $$A_0 = A(0) = f(0); A_t = A(t) = f(t)$$
 
-  \bbwCenterGraphic{8cm}{ExpFktVergleichMitLinearemWachstum.pdf}
+\HECH{\bbwCenterGraphic{8cm}{ExpFktVergleichMitLinearemWachstum.pdf}}
+
 
   \subsection*{Exponentialfunktionen}
 %%\bbwCenterGraphic{8.5cm}{allg/funktionen/img/exp/exponentielles_wachstum.png}
@@ -625,14 +644,15 @@ sich alle {\color{FarnFarbe}fünf} Tage:\\
 ${\color{blue}\HECH{b}\RLP{a}}={\color{blue}3}$, ${\color{red}\HECH{a}\RLP{q}}={\color{red}4}$, ${\color{FarnFarbe}\tau}={\color{FarnFarbe}5}$
 $$f(t)= {\color{blue}3}\cdot{}{\color{red}4}^\frac{t}{\color{FarnFarbe}5}$$
 \end{tcolorbox}
+\RLP{\bbwCenterGraphic{8cm}{ExponentialfctAQ.png}}
 
 
 \subsection*{Basis $e$, Zeitvariable $x$}
 $e$ = Eulersche Konstante $\approx 2.71828$
-\HECH{$$y=c + b\cdot{}a^x$$ oder
+\HECH{$$y=c + b\cdot{}a^x$$ entspricht
 $$y=c + b\cdot{}e^{mx}$$}
 
-\RLP{$$y=c + a\cdot{}q^x$$ oder
+\RLP{$$y=c + a\cdot{}q^x$$ entspricht
 $$y=c + a\cdot{}e^{bx}$$}
 
 \HECH{$\textrm{mit } m = \ln(a)\,\,\textrm{ oder } a = e^m$}
@@ -640,16 +660,19 @@ $$y=c + a\cdot{}e^{bx}$$}
 
 \vspace{2mm}
 
+\hrulefill
+
 Und mit Zeitintervall $\tau$:
 
-\HECH{$$y=c+b\cdot{}a^\frac{x}\tau$$ oder
+\HECH{$$y=c+b\cdot{}a^\frac{x}\tau$$ entspricht
 $$y=c+b\cdot{}e^{mx}$$}
-\RLP{$$y=c+a\cdot{}q^\frac{x}\tau$$ oder
+\RLP{$$y=c+a\cdot{}q^\frac{x}\tau$$ entspricht
 $$y=c+a\cdot{}e^{bx}$$}
 
 \HECH{$\textrm{mit } m=\ln\left(a^\frac1\tau\right) = \frac1\tau \cdot{}\ln(a) \,\,\textrm{ oder } a = e^{m\tau}$}
 \RLP{$\textrm{mit } b=\ln\left(q^\frac1\tau\right) = \frac1\tau \cdot{}\ln(q) \,\,\textrm{ oder } q = e^{b\tau}$}
 
+\hrulefill
 \subsection*{Halbwertszeit}
 \HECH{$\frac12 \cdot{} b = f(t) = b\cdot{}a^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t= \tau\cdot{}\log_a\left(\frac12\right)$}
 \RLP{$\frac12 \cdot{} a = f(t) = a\cdot{}q^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t= \tau\cdot{}\log_q\left(\frac12\right)$}
@@ -658,7 +681,7 @@ $$y=c+a\cdot{}e^{bx}$$}
 \HECH{$2\cdot{}b = f(t) = b\cdot{}a^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t = \tau\cdot{}\log_a(2)$}
 \RLP{$2\cdot{}a = f(t) = a\cdot{}q^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t = \tau\cdot{}\log_q(2)$}
 
-\mmPap{5.6}%
+%%\mmPap{5.6}%
 \forceCB%
 
 
@@ -696,28 +719,23 @@ $$f(0) = c+a$$}
 
 \end{multicols}
 
-\mmPapier{14}
+%%\mmPapier{14}
 
 \newpage
 \section*{Datenanalyse}
-\TRAINER{Ist das Lernziel?}
-\bbwCenterGraphic{17cm}{img/Skalentyp.pdf}
+\HECH{\bbwCenterGraphic{17cm}{img/Skalentyp.pdf}
+\vspace{5mm}}%% END  HECH
 %%\bbwCenterGraphic{15cm}{img/DatenanalyseSkalentypen.eps}
-\TRAINER{Stetig/Diskret?}
-\TRAINER{Mögliche Diagramm-Arten?}
-\vspace{5mm}
+\HECH{\hrulefill}
 
-
-\hrulefill
 \begin{multicols}{2}
 
 \subsection*{Lagemasse}
 \subsubsection*{Mittelwert}
 (= Durchschnitt = arithmetisches Mittel)
 
-
-$$\overline{x} = \frac{x_1 + x_2 + x_3 + ... + x_n}{n}=  \frac{\sum\limits_{k=1}^nx_n}n$$
-
+$$\overline{x} = \frac{x_1 + x_2 + x_3 + ... +
+x_n}{n}=  \frac{\sum\limits_{k=1}^nx_n}n$$
 
 \subsubsection*{Median}
 
@@ -746,9 +764,6 @@ Manchmal ist dies nicht eindeutig, dann sprechen wir von einer
 Maximum bzw. Minimum sind höchste bzw. kleinste Datenwerte: Die Ausreisser
 zählen mit!
 
-\noTRAINER{\mmPap{5.2}}%
-\TRAINER{}%
-%
 \forceCB%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 
@@ -856,7 +871,8 @@ Fühler (Whisker) werden auf max. $1.5\cdot\textrm{IQR}$ begrenzt ({\color{blue}
 danach nach \textit{\color{FarnFarbe}innen} gehen: Fühler sind die von der Box
 entferntesten Nicht-Ausreisser ({\color{FarnFarbe}grün}). Ausreisser
 ({\color{red} rot}) werden markiert.
-\bbwCenterGraphic{18cm}{boxplotPhi.png}
+\RLP{\bbwCenterGraphic{18cm}{boxplotPhi.png}}
+\HECH{\bbwCenterGraphic{18cm}{boxplot4.png}}
 %%\TRAINER{Entferne «Sportler*innen»}
 
 \hrulefill
@@ -892,11 +908,23 @@ Bei $n$ Elementen gibt es $n!$ Permutationen (=Vertauschungen):
   $$1! = 1\phantom{xxx}0! = 1$$
 \end{tcolorbox}
 
+
+
+\def\missifarbig{M{\color{FarnFarbe}i}{\color{red}ss}{\color{FarnFarbe}i}{\color{red}ss}{\color{FarnFarbe}i}{\color{cyan}pp}{\color{FarnFarbe}i}}
+
+«\missifarbig»-Formel: Sind bei einer Permutation (Vertauschung) einige Elemente gleich, so reduziert
+sich die Anzahl der Möglichkeiten. Wie viele verschiedene Wörter sind mit den Buchstaben des Wortes «\missifarbig» bildbar?
+$$N = \frac{11!}{{\color{FarnFarbe}4}!\cdot{}{\color{red}4}!\cdot{}{\color{cyan}2}!}$$
+
+
+
+
 \end{multicols}
 \newpage
 
 
 \subsection*{Überblick Auswahlprobleme / Anzahl Möglichkeiten $N$ }
+
 $$\textrm{Binomialkoeffizient:} {{\color{blue}n}\choose
 {\color{red}k}}
 =\frac{{\color{blue}n}!}{({\color{blue}n}-{\color{red}k})!\cdot
@@ -904,13 +932,8 @@ $$\textrm{Binomialkoeffizient:} {{\color{blue}n}\choose
 n}= 1$$
 
 \TRAINER{nCr in der Grafik raus, da bei TR. Dafür immer $N=$ vor die Formeln.}
-\bbwCenterGraphic{17cm}{img/Kombinatorik.pdf}
-
-
-\def\missifarbig{M{\color{FarnFarbe}i}{\color{red}ss}{\color{FarnFarbe}i}{\color{red}ss}{\color{FarnFarbe}i}{\color{cyan}pp}{\color{FarnFarbe}i}}
-«\missifarbig»-Formel: Sind einige Elemente gleich, so reduziert
-sich die Anzahl der Möglichkeiten. Wie viele verschiedene Wörter sind mit den Buchstaben des Wortes «\missifarbig» bildbar?
-$$N = \frac{11!}{{\color{FarnFarbe}4}!\cdot{}{\color{red}4}!\cdot{}{\color{cyan}2}!}$$
+\RLP{\bbwCenterGraphic{17cm}{img/Kombinatorik2.pdf}}
+\HECH{\bbwCenterGraphic{17cm}{img/Kombinatorik.pdf}}
 
 \hrulefill
 
@@ -941,7 +964,7 @@ Es gilt $A \cup \overline{A} = \Omega$
 Ergebnis aus $\Omega$. Beispiel: $E_1$ = Wirf eine \textbf{Eins}: $E_1
 = \left\{\epsdice{1}\right\}$.
 
-
+\forceCB
 
 
 \subsection*{Laplace-Wahrscheinlichkeit}
@@ -972,12 +995,6 @@ ${\color{red}P}({\color{FarnFarbe}KK} \textrm{\color{red} oder } {\color{blue}ZZ
 
 
 \subsection*{Elementare Wahrscheinlichkeit}
-
-Die Wahrscheinlichkeit des \textbf{Gegenereignisses} von $E$ ist
-$$P(\overline{E}) = 1- P(E)$$
-Bei Aufgaben wie «... mindestens eins ...» ist das Arbeiten mit der
-Gegenwahrscheinlichkeit häufig einfacher.
-
 Ereignisse sind voneinander \textbf{unabhängig}, wenn sie keine
 gleichen Ergebnisse aufweisen.
 $$A \textrm{ unabhängig von } B \Leftrightarrow A\cap B=\{\}$$
@@ -987,7 +1004,27 @@ gilt:
 
 $$P(A\textrm{ «oder» }B) = P(A\cup B) = P(A) + P(B)$$
 
+Die Wahrscheinlichkeit des \textbf{Gegenereignisses} von $E$ ist
+$$P(\overline{E}) = 1- P(E)$$
+
+Bei Aufgaben wie «... mindestens eins ...» ist das Arbeiten mit der
+Gegenwahrscheinlichkeit häufig einfacher.
+
+\textbf{Beispiel}: Das Gegenteil von «Ballspieler trifft minimal vier Mal»
+ist «Ballspieler trifft maximal drei Mal»:
+
+$$P(X \ge 4) = 1 - P(X < 4) = 1-P(X\le 3)$$
+
+Gegenereignis von «minimal 4 Mal» = «maximal 3 Mal».
+
+
 \subsection*{Binomialverteilung (Bernoulli)}
+
+Voraussetzung: 
+An jeder Verzweigung im Baum sind Treffer und Niete gleich
+wahrscheinlich.
+Dies entspricht in obiger Tabelle «mit Zurücklegen».
+
 
 \begin{tcolorbox}[colback=white]
 \textbf{Bernoulli}\\
@@ -997,11 +1034,6 @@ $P(X=k) = {n \choose k}\cdot{}p^k\cdot{}(1-p)^{n-k}$
 
 $n$ = Anzahl Züge\\
 $p$ = Wahrscheinlichkeit des Treffers
-
-An jeder Verzweigung im Baum sind Treffer und Niete gleich
-wahrscheinlich.
-Dies entspricht in obiger Tabelle «mit Zurücklegen».
-
 Taschenrechner:  \textbf{\texttt{binomialpdf}}
 \end{tcolorbox}%%
 
@@ -1009,6 +1041,7 @@ Beispiel: Ein Ballspieler trifft mit 35\% Wahrscheinlichkeit
 ($p=0.35$). Wie groß ist die Wahrscheinlichkeit, dass er mit 20 Würfen
 ($n=20$) genau vier Mal ($k=4$) trifft?
 
+Lösung: \texttt{binomialpdf} $\Longrightarrow 7.38\%$
 
 
 
@@ -1027,17 +1060,7 @@ Taschenrechner: \textbf{\texttt{binomialcdf}}
 \end{tcolorbox}
 
 
-Bei \textbf{minimal} arbeite mit \textbf{Gegenereignis}.
-
-\textbf{Achtung}: Das Gegenteil von «Ballspieler trifft minimal vier Mal»
-ist «Ballspieler trifft maximal drei Mal»:
-
-$$P(X \ge 4) = 1 - P(X < 4) = 1-P(X\le 3)$$
-
-Gegenereignis von «minimal 4 Mal» = «maximal 3 Mal».
-
-
-\subsection*{Hypergeometrische Verteilung (Lottomodell)}
+\subsection*{Hypergeometrische Verteilung\\ (Lottomodell)}
 \begin{tcolorbox}[colback=white]
 Gegeben $N+T$ Kugeln in einer Urne. Herausgezogen werden $n+t$:
 \begin{itemize}
@@ -1070,8 +1093,8 @@ $\mu$ gibt den auf lange Sicht zu erwartenden Mittelwert der
 Zufallsgrösse an:
 
 \begin{tabular}{cp{5cm}}
-\hline
-\fbox{$\mu=\sum_{i=1}^n x_i\cdot{}p_i$} & $x_i$ = $i$-ter Wert der
+\hline\\
+\raisebox{-4mm}{\fbox{$\mu=\sum\limits_{i=1}^n x_i\cdot{}p_i$}} & $x_i$ = $i$-ter Wert der
 Zufallsgröße. $p_i$ = Wahrscheinlichkeit  $P(X=x_i)$\\
  \hline
  \end{tabular}
@@ -1155,9 +1178,10 @@ Max, Mittelwert etc.\\
                            &                  &  (Auch für Zweiklammeransatz)\\\hline
 \tiprobutton{tan_sys-solv} &\texttt{sys-solv} &  Lineare Gleichungssysteme\\\hline
 \tiprobutton{sin_num-solv} &\texttt{num-solv} &  Gleichungen ($7^x=3^{2x+1}$) mit Zahlen nach $x$ auf\/lösen (hier $x\approx{}-4.37$).\\\hline
-\tiprobutton{table}        & table            &  Wertetabelle für lineare Gleichungen, lineare Funktionen, diverse Funktionen\\\hline
+\tiprobutton{table}        & table            &  Wertetabelle für diverse Funktionen: Lineare Fct., Potenzfct., Exponentialfct.\\\hline
 \tiprobutton{ncrnpr}       &Kombinatorik      &  Fakultät: {\color{red}\textbf{!}}\\
-                           &                  &  $n \choose k$: Tippe $n$ nCr $k$\\\hline
+                           &                  &  $n \choose k$: Tippe $n$ nCr $k$\\
+                           &                  &  $\left(\frac{n!}{(n-k)!}\right)$: Tippe $n$ nPr $k$\\\hline
 \tiprobutton{ln_log}       &  Logarithmen     &  log = Zehnerlogarithmus ($\lg$)\\
                            &                  &  ln  = Log. zur Basis $e$\\
                            &                  &  3x drücken = log zu beliebiger Basis\\\hline
@@ -1192,7 +1216,7 @@ Ganz am Schluss:
 \noTRAINER{\vspace{15mm}}%
 Eigene Notizen\\
 %
-\noTRAINER{\mmPapier{4}}%
+%%\noTRAINER{\mmPapier{4}}%
 %
 \newpage
 

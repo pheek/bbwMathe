@@ -35,4 +35,6 @@ cp -f ./tr_ti30_geso_wichtige_befehle/TR_TI30_GESO_Wichtige_Befehle.pdf  "${BBW_
 echo "Copyiing Formelsammlung"
 cp -f ./formelsammlung/FormelsammlungGESO_GESO.pdf  "${BBW_WEBDAV_PATH}/3_Pruefungen/e_Formelsammlungen/GESO_BBW/daily/FormelsammlungGESO_Daily.pdf"
 cp -f ./formelsammlung/FormelsammlungGESO_TRAINER_GESO.pdf  "${BBW_WEBDAV_PATH}/3_Pruefungen/e_Formelsammlungen/GESO_BBW/daily/Working_Draft.pdf"
+cp -f ./formelsammlung/FormelsammlungGESO_HECH.pdf  "${BBW_WEBDAV_PATH}/3_Pruefungen/e_Formelsammlungen/GESO_BBW/daily/FormelsammlungGESO_Daily_hech.pdf"
+cp -f ./formelsammlung/FormelsammlungGESO_HECH_TRAINER.pdf  "${BBW_WEBDAV_PATH}/3_Pruefungen/e_Formelsammlungen/GESO_BBW/daily/Working_Draft_hech.pdf"
 
