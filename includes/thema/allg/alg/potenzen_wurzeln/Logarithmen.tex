@@ -126,7 +126,8 @@ $$a^x = b^{x\cdot{}\log_b(a)}$$
 
 
 
-\subsubsection{Spezielle Basen}
+%% Zweierlog ist nur TALS
+\TALS{\subsubsection{Spezielle Basen}
 Der Zweierlogarithmus wird vor allem in der Informatik benutzt. Wie viel Bit brauche ich, um 200 Zustände abzubilden?
 
 $2^x = 200$
@@ -136,7 +137,10 @@ Lösung:
 
 \TNT{2.4}{
 $\log_2(200) \approx 7.64$, d.\,h. ich benötige 8 Bit, um 200 Zustände abzubilden.
-}
+}%%
+}%% END TALS
+
+
 
 
 \subsubsection{Basiswechsel}\index{Basiswechsel!Logarithmen}
@@ -157,6 +161,12 @@ Begründung:
     x\log(a)=\log(b) \Longleftrightarrow x=\frac{\log(b)}{\log(a)} =
     \log_a(b)$} %% END TALS
 }%% END TNT
+
+\GESO{
+  Drücken Sie $\log_3(17)$ durch den Zehnerlogarithmus $\lg{}$ aus:
+  \TNT{2}{$$\log_3(17) = \frac{\lg(17)}{\lg(3)}$$}%% END TNT
+}%% END GESO
+
 \newpage
 
 
@@ -191,15 +201,10 @@ $$\log_a(c) = \frac{\ln(c)}{\ln(a)}$$
 \subsection*{Aufgaben}
 \TALSAadB{???}{???}
 
-Andere Basis:
+
+\GESO{Andere Basis (Vieles ist mit dem Taschenrechner lösbar):}
 
 \GESOAadB{103ff}{8. a) b) c) f), 9., 10. a), 13. a) f), 14. a) g),
-  15. a) c) d) e) f), 16. a) c) d) e), 17. a) b) c) }
+  15. a) c) d) e) f), 16. a) c) d) e), 17. a) b) c), 18. a) c) e) h) i)}
 
-Gesetze:
-
-\GESOAadB{105ff}{21. a) c) e), 22. a) b), 24. a), 25. a) }
-
-Taschenrechner:
-
-\GESOAadB{106}{29.}
+\GESOAadB{106}{33.}

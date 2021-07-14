@@ -24,26 +24,38 @@ Exponenten (von Potenzen) vor. Beispiel:
 
 $$5^x = 32$$
 
-Typischerweise werden diese Gleichungen gelöst, indem auf beiden
-Seiten mit dem 5er Logarithmus logarithmiert wird:
+Typischerweise werden diese Gleichungen gelöst, indem die Definition
+des Logarithmus angewendet wird.
 
-\begin{beispiel}{andere Basen}{beispiel_andere_basen}
-$$x=\log_5(32) \approx 2.15338$$
+\begin{rezept}{Exponentialgleichung}{}
+$$5^x=32 \Longleftrightarrow x=\log_5(32) \Longrightarrow x \approx 2.15338$$
 
-Es können jedoch auch Logarithmen zu anderen Basen verwendet werden:
-
-\begin{tabular}{rccl}
-  \             & $5^x$           &=&    32          \\
-  $\Rightarrow$ & $\log(5^x)$     &=&  $\log(32)$     \\
-  $\Rightarrow$ & $x\cdot\log(5)$ &=&  $\log(32)$     \\
-  $\Rightarrow$ & $x$             &=&  $\frac{\log(32)}{\log(5)} = \log_5(32) \approx 2.15338$ 
-\end{tabular}
-\end{beispiel}
+Die Lösung kann dann auch mit Logarithmen zur Basis 10 angegeben
+werden:
+$$x = \log_5(32) = \frac{\lg(32)}{\lg(5)}$$
+\end{rezept}
 \newpage
 
 \begin{rezept}{Exponentialgleichung lösen}{rezept_allgemeine_exponentialgleichung}
   $$8^{x-1}=7^{x+2}$$
   \TRAINER{
+
+    \GESO{
+      1. Zuerst die Summen in den Exponenten wegbringen:
+      $$8^x\cdot{}8^{-1} = 7^x\cdot{}7^2$$
+      2. Jetzt alle Potenzen mit $x$ auf eine Seite bringen:
+      $$\frac{8^x}{7^x} = \frac{7^2}{8^{-1}}$$
+      3. Vereinfachen und als Potenz in $x$ schreiben:
+      $$\left(\frac87\right)^x = 7^2\cdot{}8$$
+      4. Definition Logarithmus anwenden ($a^x=b \Leftrightarrow x=\log_a(b)$):
+      $$x = \log_{\frac87}(7^2\cdot{}8) \approx{} 44.718$$
+      (5.) Dies kann (falls gefragt) mit Zehnerlogarithmen geschrieben
+      werden:
+      $$x = \frac{\lg(7^2\cdot{}8)}{\lg(\frac87)} \approx 44.718$$
+      
+    }%% END GESO
+    
+\TALS{    
   Erst mal auf beiden Seiten logarithmieren, mit einem Logarithmus zu beliebiger Basis:
   $$\log(8^{x-1})=\log(7^{x+2})$$
   $$(x-1)\cdot{}\log(8)=(x+2)\cdot{}\log(7)$$
@@ -55,6 +67,7 @@ Es können jedoch auch Logarithmen zu anderen Basen verwendet werden:
   $$x(\log(8)-\log(7)) = 2\log(7)+\log(8)$$
   und durch die Klammer $(\log(8)-\log(7))$ teilen
   $$x = \frac{2\log(7)+\log(8)}{\log(8)-\log(7)}\approx 44.718$$}
+  }%% END TALS
   \noTRAINER{\mmPapier{10.8}}
 \end{rezept}
 
