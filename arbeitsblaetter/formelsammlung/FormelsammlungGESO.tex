@@ -7,11 +7,11 @@
 
 %% ID (ca. alle jahre), Subversion: Grössere Änderungen, Revision: Jede
 %% Umstellung/Korrektur/Typos
-\newcommand{\versionIdSubRev}{0.3.3}
+\newcommand{\versionIdSubRev}{0.3.4}
 
 \newcommand{\versionsnummerFoSa}{\versionsDatumFoSa{} \versionIdSubRev}
 
-%% Für Schreibweise mit a,b,c (Hersberger Christian)
+%% Für Schreibweise mit a,b,c (Hersberger Christian [HECH])
 \newif\ifisHECH
 \newif\ifisRLP
 
@@ -24,14 +24,14 @@
 \newcommand\HECH[1]{%%
 {%%
 \ifisHECH{#1}%%
-\fi
-}}%%
-%% Für Rahmenlehrplan
+\fi%%
+}}%% End New Command HECH
+%% Für Rahmenlehrplan (RLP)
 \newcommand\RLP[1]{%%
 {%%
 \ifisRLP{#1}%%
-\fi
-}}%%
+\fi%%
+}}%% End New Command RLP
 
 
 
@@ -41,9 +41,7 @@
 
 
 %% Hintergrundfarbe in tabular
-%%\usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
 
-%%\usepackage{amssymb} %% für \blacktriangleright
 \usepackage{makecell}
 
 \renewcommand{\shortAuthor}{fp he @ bbw.ch [\versionsnummerFoSa{}]}
@@ -58,14 +56,13 @@
 %% Millimeterpapier (2.8mm) für Notizen \mmPap
 \newcommand{\mmPap}[1]{\mmPapierZwei{#1}{8.4}}
 
-
 %% Listen nicht einrücken:
 \setlist[itemize]{leftmargin=*}
 
-
 \definecolor{FarnFarbe}{HTML}{4f8f00}
 
-%%% MODERN:
+%%% MODERN, falls Rezepte, Gesetze und Definitionen, wie im Marthaler
+%%% verwendet werden sollten:
 \definecolor{none}{HTML}{eeeeee}
 \renewcommand{\rmdefault}{phv} % Arial
 \renewcommand{\sfdefault}{phv} % Arial
@@ -78,17 +75,27 @@
 %%% END MODERN
 
 
-%% Benutze
-%%\columnbreak
+%% Benutze «\columnbreak»
 %% für harten Break:
 %% Force column-break
 \newcommand{\forceCB}{\vfill\null\columnbreak}
 
-\begin{document}%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+                                              \begin{document}%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \arbeitsblattHeader{}
 
 \begin{multicols}{2}%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%               Zahlen / Runden                      %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 
 %%\section*{Zahlmengen}
 %%\begin{tcolorbox}[colback=white]
@@ -111,10 +118,8 @@ Bsp.: Runden auf \textbf{\color{FarnFarbe}vier}  Dezimalen:
 Betrachte die nächste Ziffer und runde auf, falls diese
 {\color{red}Ziffer} $\ge 5$. Bsp.:
 
-$3.\mathbf{\color{FarnFarbe}4729}\mathbf{\color{red}6}44 \approx
-3.\mathbf{\color{FarnFarbe}4730}$; \hfill{ }
-$70.\mathbf{\color{FarnFarbe}0031}\mathbf{\color{red}4}998\approx
-70.\mathbf{\color{FarnFarbe}0031}$
+$3.\mathbf{\color{FarnFarbe}4729}\mathbf{\color{red}6}44 \approx 3.\mathbf{\color{FarnFarbe}4730}$; \hfill{ }
+$70.\mathbf{\color{FarnFarbe}0031}\mathbf{\color{red}4}998\approx 70.\mathbf{\color{FarnFarbe}0031}$
 
 (Alle vier Dezimalen sind anzugeben.)
 
@@ -135,7 +140,11 @@ $3400$  &=& $\mathbf{\color{blue}3}.4\cdot{}10^3$ &=& \textbf{\color{blue}3}.4E3
 $0.004$ &=& $\mathbf{\color{blue}4}\cdot{}10^{-3}$ &=& \textbf{\color{blue}4}E-3
 \end{tabular}
 
-\hrulefill
+\hrulefill%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%               Algebra                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
 \section*{Algebra}
 \subsection*{Hierarchie der Rechenoperationen}
 (1.) Klammern, (2.) Wurzeln/Potenzen,\\
@@ -254,6 +263,9 @@ Beispiel
 %%\forceCB
 
 \hrulefill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%               Potenzen                             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Potenzen}
 \begin{tcolorbox}[colback=white]
 \bbwCenterGraphic{5cm}{img/Potenzbegriff.png}
@@ -315,6 +327,9 @@ $$\sqrt[n]{a\cdot{}b} = \sqrt[n]{\vphantom{b}a} \cdot \sqrt[n]b$$
  
 %%\forceCB%%
 \hrulefill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%               Logarithmen                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Logarithmen}
 \begin{tcolorbox}[colback=white]
   \textbf{Definition Logarithmus}\\
@@ -344,7 +359,10 @@ $$\log_{\color{FarnFarbe}b}({\color{red}a}) = \frac{\lg({\color{red}a})}{\lg({\c
 
 
 
-\forceCB
+\forceCB\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%               Gleichungen                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Gleichungen}
 
 \subsection*{Lineare Gleichungen}
@@ -451,6 +469,9 @@ $$b=1=\frac{1}{y-2} \Longrightarrow  y=3$$
 
 
 \forceCB
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%               Textaufgaben                         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Textaufgaben}
 \subsection*{Geschwindigkeitsaufgaben}
 \fbox{$s = v\cdot{} t$} (Einheiten kompatibel wählen!)\\
@@ -483,6 +504,9 @@ $$p = -3\% \Longleftrightarrow{}  a = 0.97 $$
 
 
 \forceCB
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%               Funktionen                           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Funktionen}
 
 Eine Funktion ist eine {\color{red} eindeutige Zuordnung}. Dabei wird
@@ -494,7 +518,7 @@ $\mathbb{D}$} eindeutig ein {\color{blue}y} aus der
 
 
 \hrulefill
-\section*{Lineare Funktionen}
+\subsection*{Lineare Funktionen}
 
 \HECH{$$g\-:\,\,\,\,\, y = f(x) = a\cdot{}x + b$$}
 \RLP{$$g\-:\,\,\,\,\, y = f(x) = m\cdot{}x + q$$}
@@ -562,7 +586,7 @@ $y=\HECH{ax+b}\RLP{mx+q}$ einsetzen, um $\HECH{b}\RLP{q}$ zu finden.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\section*{Potenzfunktionen}
+\subsection*{Potenzfunktionen}
 
 \begin{tabular}{cc}
 $z$ > 0: Parabel ($z$ gerade) & $z$ > 0: Parabel ($z$ ungerade)\\   %%\bbwCenterGraphic{8cm}{PotenzFkt.pdf}
@@ -602,8 +626,9 @@ Ist ${\color{blue}a<0}$, so werden Graphen der obigen Funktionen an der $x$-Achs
 
 %%\hrulefill  
 \forceCB
-
-  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%               Wachstumsmodelle                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Wachstumsmodelle}
 
 \textbf{Lineares Wachstum}
@@ -627,8 +652,7 @@ $$A_0 = A(0) = f(0); A_t = A(t) = f(t)$$
 \HECH{\bbwCenterGraphic{8cm}{ExpFktVergleichMitLinearemWachstumHECH.pdf}}
 \RLP{\bbwCenterGraphic{8cm}{ExpFktVergleichMitLinearemWachstumRLP.pdf}}
 
-
-  \subsection*{Exponentialfunktionen}
+\subsection*{Exponentialfunktionen}
 %%\bbwCenterGraphic{8.5cm}{allg/funktionen/img/exp/exponentielles_wachstum.png}
 \begin{tcolorbox}[colback=white]$$y=f(t) = \HECH{b}\RLP{a}\cdot{}{\HECH{a}\RLP{q}}^t$$\end{tcolorbox}
 
@@ -728,6 +752,9 @@ $$f(0) = c+a$$}
 %%\mmPapier{14}
 
 \newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%               Datenanalyse                         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Datenanalyse}
 \HECH{\bbwCenterGraphic{17cm}{img/Skalentyp.pdf}
 \vspace{5mm}}%% END  HECH
@@ -884,6 +911,9 @@ entferntesten Nicht-Ausreisser ({\color{FarnFarbe}grün}). Ausreisser
 \hrulefill
 
 \begin{multicols}{2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%    Kombinatorik / Wahrscheinlichkeit (Stochastik)  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Stochastik}
 
 \subsection*{Kombinatorik}
@@ -937,7 +967,6 @@ $$\textrm{Binomialkoeffizient:} {{\color{blue}n}\choose
 {\color{blue}n}!}\phantom{etwas Platz lassen} {n\choose 0}= {n\choose
 n}= 1$$
 
-\TRAINER{nCr in der Grafik raus, da bei TR. Dafür immer $N=$ vor die Formeln.}
 \RLP{\bbwCenterGraphic{17cm}{img/KombinatorikRLP.pdf}}
 \HECH{\bbwCenterGraphic{17cm}{img/KombinatorikHECH.pdf}}
 
@@ -999,31 +1028,6 @@ ${\color{red}P}({\color{FarnFarbe}KK} \textrm{\color{red} oder } {\color{blue}ZZ
 \end{tabular}
  
 
-
-\subsection*{Elementare Wahrscheinlichkeit}
-Ereignisse sind voneinander \textbf{unabhängig}, wenn sie keine
-gleichen Ergebnisse aufweisen.
-$$A \textrm{ unabhängig von } B \Leftrightarrow A\cap B=\{\}$$
-
-Für voneinander \textbf{unabhängige} Ergebnisse 
-gilt:
-
-$$P(A\textrm{ «oder» }B) = P(A\cup B) = P(A) + P(B)$$
-
-Die Wahrscheinlichkeit des \textbf{Gegenereignisses} von $E$ ist
-$$P(\overline{E}) = 1- P(E)$$
-
-Bei Aufgaben wie «... mindestens eins ...» ist das Arbeiten mit der
-Gegenwahrscheinlichkeit häufig einfacher.
-
-\textbf{Beispiel}: Das Gegenteil von «Ballspieler trifft minimal vier Mal»
-ist «Ballspieler trifft maximal drei Mal»:
-
-$$P(X \ge 4) = 1 - P(X < 4) = 1-P(X\le 3)$$
-
-Gegenereignis von «minimal 4 Mal» = «maximal 3 Mal».
-
-
 \subsection*{Binomialverteilung (Bernoulli)}
 
 Voraussetzung: 
@@ -1033,18 +1037,15 @@ Dies entspricht in obiger Tabelle «mit Zurücklegen».
 
 
 \begin{tcolorbox}[colback=white]
-\textbf{Bernoulli}\\
-$k$ = \textbf{genaue} gewünschte Anzahl Treffer
-
-$P(X=k) = {n \choose k}\cdot{}p^k\cdot{}(1-p)^{n-k}$
-
+$$P(X=k) = {n \choose k}\cdot{}p^k\cdot{}(1-p)^{n-k}$$
+$k$ = \textbf{genaue} gewünschte Anzahl Treffer\\
 $n$ = Anzahl Züge\\
-$p$ = Wahrscheinlichkeit des Treffers
+$p$ = Wahrscheinlichkeit des Treffers\\
 Taschenrechner:  \textbf{\texttt{binomialpdf}}
 \end{tcolorbox}%%
 
 Beispiel: Ein Ballspieler trifft mit 35\% Wahrscheinlichkeit
-($p=0.35$). Wie groß ist die Wahrscheinlichkeit, dass er mit 20 Würfen
+($p=0.35$). Wie gross ist die Wahrscheinlichkeit, dass er mit 20 Würfen
 ($n=20$) genau vier Mal ($k=4$) trifft?
 
 Lösung: \texttt{binomialpdf} $\Longrightarrow 7.38\%$
@@ -1054,12 +1055,8 @@ Lösung: \texttt{binomialpdf} $\Longrightarrow 7.38\%$
 \subsubsection*{Kumulierte Binomialverteilung}
 
 \begin{tcolorbox}[colback=white]
-
-$k$ = \textbf{maximal} gewünschte Anzahl Treffer
-
-
 $$P(X\le k) = \sum_{i=0}^{k}{n \choose i}\cdot{}p^i\cdot{}(1-p)^{n-i}$$
-
+$k$ = \textbf{maximal} gewünschte Anzahl Treffer\\
 $n$ = Anzahl Züge\\
 $p$ = Wahrscheinlichkeit des Treffers\\
 Taschenrechner: \textbf{\texttt{binomialcdf}}
@@ -1081,6 +1078,35 @@ $$P(X=t) = \frac{ {T \choose t} \cdot {N  \choose n} }{{T+N \choose t+n}}$$
 
 \end{tcolorbox}
 
+
+
+\subsection*{Elementare Wahrscheinlichkeit}
+Ereignisse sind voneinander \textbf{unabhängig}, wenn sie keine
+gleichen Ergebnisse aufweisen.
+$$A \textrm{ unabhängig von } B \Leftrightarrow A\cap B=\{\}$$
+
+Für voneinander \textbf{unabhängige} Ergebnisse 
+gilt:
+
+$$P(A\textrm{ «oder» }B) = P(A\cup B) = P(A) + P(B)$$
+
+\forceCB
+
+\subsubsection*{Gegenwahrscheinlichkeit}
+Die Wahrscheinlichkeit des \textbf{Gegenereignisses} von $E$ ist
+$$P(\overline{E}) = 1- P(E)$$
+
+Bei Aufgaben wie «... mindestens eins ...» ist das Arbeiten mit der
+Gegenwahrscheinlichkeit häufig einfacher.
+
+\textbf{Beispiel}: Das Gegenteil von «Ballspieler trifft minimal vier Mal»
+ist «Ballspieler trifft maximal drei Mal»:
+
+$$P(X \ge 4) = 1 - P(X < 4) = 1-P(X\le 3)$$
+
+Gegenereignis von «minimal 4 Mal» = «maximal 3 Mal».
+
+
 \subsection*{Zufallsgrössen, Zufallsvariable $\mathbf{X}$}
 
 (mit endlich vielen Werten $x_i$)
@@ -1101,7 +1127,7 @@ Zufallsgrösse an:
 \begin{tabular}{cp{5cm}}
 \hline\\
 \raisebox{-4mm}{\fbox{$\mu=\sum\limits_{i=1}^n x_i\cdot{}p_i$}} & $x_i$ = $i$-ter Wert der
-Zufallsgröße. $p_i$ = Wahrscheinlichkeit  $P(X=x_i)$\\
+Zufallsgrösse. $p_i$ = Wahrscheinlichkeit  $P(X=x_i)$\\
  \hline
  \end{tabular}
 
@@ -1160,8 +1186,9 @@ $$P(G | F) = \frac{\textrm{Anzahl gesunde Frauen}}{\textrm{Anzahl Frauen}}=  \fr
 %% Leerseiten für Notizen
 \newpage
 
-%% TASCHENRECHNER
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%               Taschenrechner                       %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Taschenrechner}
 
 \begin{tabular}{cc}
@@ -1214,6 +1241,10 @@ Ganz am Schluss:
 %%\noTRAINER{\mmPapier{4}}%
 %
 \newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%           Notizen                        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Eigene Notizen\\
 
