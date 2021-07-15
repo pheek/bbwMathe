@@ -1,5 +1,6 @@
 %%
 %% Meta: Formelsammlung GESO BBW
+%% 2021 fp @ bbw.ch
 %%
 
 %% Für Schreibweise mit a,b,c (Hersberger Christian)
@@ -9,9 +10,9 @@
 %% Steuere später über das File "VERSION.sty"
 %%\isHECHtrue %% f(x) = ax+b
 %%\isRLPtrue %%f(x) = mx+q
-
 \input{VERSION.sty}
 
+%% Kommandos zur Vereinfachun des Einbindens der beiden Versionen
 \newcommand\HECH[1]{%%
 {%%
 \ifisHECH{#1}%%
@@ -23,6 +24,7 @@
 \ifisRLP{#1}%%
 \fi
 }}%%
+
 
 \newcommand{\versionsDatumFoSa}{2021-07-14}
 
@@ -496,8 +498,10 @@ $\mathbb{D}$} eindeutig ein {\color{blue}y} aus der
 \HECH{$$g\-:\,\,\,\,\, y = f(x) = a\cdot{}x + b$$}
 \RLP{$$g\-:\,\,\,\,\, y = f(x) = m\cdot{}x + q$$}
 
-\RLP{\TRAINER{Formel in Grafik ersetzen durch $mx+q$}}
-\bbwCenterGraphic{8cm}{img/FunktionenLineareEinfuehrung.pdf}
+
+\RLP{\bbwCenterGraphic{8cm}{img/FunktionenLineareEinfuehrungRLP.pdf}}
+\HECH{\bbwCenterGraphic{8cm}{img/FunktionenLineareEinfuehrungHECH.pdf}}
+
 Steigung:
 
 \fbox{\HECH{$a$}\RLP{$m$}$ = \frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1}$}\\
@@ -619,7 +623,8 @@ Bei exponentiellem Wachstum wird pro Zeiteinheit mit dem selben Wert $\HECH{a}\R
 
 $$A_0 = A(0) = f(0); A_t = A(t) = f(t)$$
 
-\HECH{\bbwCenterGraphic{8cm}{ExpFktVergleichMitLinearemWachstum.pdf}}
+\HECH{\bbwCenterGraphic{8cm}{ExpFktVergleichMitLinearemWachstumHECH.pdf}}
+\RLP{\bbwCenterGraphic{8cm}{ExpFktVergleichMitLinearemWachstumRLP.pdf}}
 
 
   \subsection*{Exponentialfunktionen}
@@ -871,8 +876,8 @@ Fühler (Whisker) werden auf max. $1.5\cdot\textrm{IQR}$ begrenzt ({\color{blue}
 danach nach \textit{\color{FarnFarbe}innen} gehen: Fühler sind die von der Box
 entferntesten Nicht-Ausreisser ({\color{FarnFarbe}grün}). Ausreisser
 ({\color{red} rot}) werden markiert.
-\RLP{\bbwCenterGraphic{18cm}{boxplotPhi.png}}
-\HECH{\bbwCenterGraphic{18cm}{boxplot4.png}}
+\RLP{\bbwCenterGraphic{18cm}{boxplotRLP.png}}
+\HECH{\bbwCenterGraphic{18cm}{boxplotHECH.png}}
 %%\TRAINER{Entferne «Sportler*innen»}
 
 \hrulefill
@@ -932,8 +937,8 @@ $$\textrm{Binomialkoeffizient:} {{\color{blue}n}\choose
 n}= 1$$
 
 \TRAINER{nCr in der Grafik raus, da bei TR. Dafür immer $N=$ vor die Formeln.}
-\RLP{\bbwCenterGraphic{17cm}{img/Kombinatorik2.pdf}}
-\HECH{\bbwCenterGraphic{17cm}{img/Kombinatorik.pdf}}
+\RLP{\bbwCenterGraphic{17cm}{img/KombinatorikRLP.pdf}}
+\HECH{\bbwCenterGraphic{17cm}{img/KombinatorikHECH.png}}
 
 \hrulefill
 
@@ -1191,35 +1196,25 @@ Max, Mittelwert etc.\\
 \end{tabular}
 
 \TRAINER{Generelle Fragen:\\
-Fehlen Lernziele?\\
-Sind Lernziele zu viel?\\
+Fehlen Lernziele? Sind Lernziele zu viel?\\
 Sind Beispiele zu viel/zu wenig?\\
 Hat es genügend Platz für die SuS (Schülerinnen und Schüler) für weitere Notizen/Beispiele/Rezepte/Vorgehen?\\
 Ganz am Schluss:
 
 * Rechtschreibeprogramm
+* Zeilenumbrüche und Einzüge (0pt bei Aufzählungen und Nummerierungen)
 
-* Zeilenumbrüche
-
-* Einzüge (0pt bei Aufzählungen und Nummerierungen)
-
-* Absatz-Umbrüche
-
-* Seitenumbrüche
-
-* Notizraster für eigene Notizen
-
-
+* Absatz-Umbrüche / Seitenumbrüche
 }
 
 %
 \noTRAINER{\vspace{15mm}}%
-Eigene Notizen\\
 %
 %%\noTRAINER{\mmPapier{4}}%
 %
 \newpage
 
+Eigene Notizen\\
 
 \noTRAINER{\mmPapier{22}}%
 \TRAINER{\mmPapier{20}}%
