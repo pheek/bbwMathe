@@ -14,7 +14,7 @@ Coming soon...
 \newpage
 
 
-\subsection{Skalarprodukt}
+\subsection{Skalarprodukt}\index{Skalarprodukt}
 
 \theorieTALSGeom{201}{4.5}
 
@@ -23,9 +23,7 @@ Coming soon...
 Herleitung:
 
 \TNT{12}{
-  $\vec{b} + \vec{c} = \vec{a}$
-
-  $\Longrightarrow   \vec{c} = \vec{a} - \vec{b}$
+  $\vec{b} + \vec{c} = \vec{a} \Longrightarrow   \vec{c} = \vec{a} - \vec{b}$
 
   $\Longrightarrow   c_x = a_x - b_x \textrm{ und } c_y = a_y - b_y$
 
@@ -34,42 +32,47 @@ Herleitung:
   Pythagoras:
   $c = \sqrt{c_x^2 + c_y^2}$ und somit $c^2 = c_x^2 + c_y^2$
 
-  $a_x-b_x$ anstelle von $c_x$ einsetzen (analog $y$):
+  $a_x-b_x$ anstelle von $c_x$ einsetzen (analog $c_y=a_y-b_y$):
 
   $c^2 = (a_x-b_x)^2 + (a_y - b_y)^2$
 
   Wir erinnern an den Cosinussatz: $c^2 = a^2 + b^2 -
   2ab\cdot{}\cos(\gamma)$
 
-  Setzen wir obiges $c^2$ ein, so erhalten wir:
+  Setzen wir beide Gleichungen gleich (via $c^2$), so erhalten wir:
+
+  $(a_x-b_x)^2 + (a_y-b_y)^2 = a^2 + b^2 - 2ab\cdot{}\cos(\gamma)$
 
   $(a_x-b_x)^2 + (a_y-b_y)^2 = \overbrace{a_x^2 + a_y^2}^{|\vec{a}|^2=a^2}
   + \overbrace{b_x^2 + b_y^2}^{b^2} - 2ab\cdot{}\cos(\gamma)$
 
-  links Ausmultiplizieren
+  jetzt links ausmultiplizieren:
   
   $a_x^2 - 2a_xb_x +b_x^2 + a_y^2 - 2a_yb_y + b_y^2 = a_x^2 + a_y^2 +
   b_x^2 + b_y^2 - 2ab\cdot{}\cos(\gamma)$
 
-  nun beginnte der Spaß mit dem Wegstreichen:
+  nun beginnt der Spaß mit dem Wegstreichen:
 
   $-2a_xb_x - 2a_yb_y = -2ab\cdot{}\cos(\gamma)$
-}
 
-\begin{definition}{Skalarprodukt}{}
+  und somit:
+  }
+
+\begin{gesetz}{}{}
+  Mit $a = |\vec{a}|$ und $b = |\vec{b}|$ gilt:\\
+  $a_x\cdot{}b_x + a_y\cdot{}b_y = a\cdot{}b\cdot{}\cos(\gamma)$
+\end{gesetz}
+  \newpage
+
+Nach obigem Gesetz sind die beiden folgenden Definitionen identisch:
+\begin{definition}{Skalarprodukt}{}\index{Skalarprodukt}
   $$\vec{a\vphantom{b}}\circ\vec{b} := a_x\cdot{}b_x + a_y \cdot{} b_y$$
+oder mit $a=|\vec{a}|$, $b=|\vec{b}|$ und $\gamma$ = Zwischenwinkel:
+  $$\vec{a\vphantom{b}}\circ\vec{b} := a\cdot{}b\cdot{}\cos({\gamma})$$
 \end{definition}
 
-\newpage
 
-
-\begin{gesetz}{Skalarprodukt}{}
-  $$\vec{a\vphantom{b}} \circ \vec{b} = |\vec{a\vphantom{b}}| \cdot{} |\vec{b}| \cdot{} \cos(\gamma)$$
-bzw. ($a=|\vec{a}|$)
-  $$\vec{a\vphantom{b}} \circ \vec{b} = a \cdot{} b \cdot{} \cos(\gamma)$$
-\end{gesetz}
-
-\begin{gesetz}{Skalarprodukt}{}
+\begin{gesetz}{Winkel und Skalarprodukt}{}\index{Skalarprodukt!Zwischenwinkel}
   $$\cos(\gamma) = \frac{\vec{a\vphantom{b}}\circ\vec{b}}{a\cdot b}$$
   bzw.:
   $$\gamma = \arccos{} \left(\frac{\vec{a\vphantom{b}}\circ\vec{b}}{a\cdot b}\right)$$
