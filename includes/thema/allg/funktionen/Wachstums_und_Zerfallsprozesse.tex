@@ -380,3 +380,32 @@ Mit $a = \frac{m_2}{m_1}$ und $d := \frac{m_1}{m_2} = \frac{1}{a}$, gilt
 
 \newpage
 
+\subsection{Halbwertszeit, Verdopplungszeit}\index{Halbwertszeit}\index{Verdopplungszeit}
+
+Die Zeitspanne, in der sich eine Menge halbiert, nenne wir
+\textbf{Halbwertszeit}\footnote{Die Halbwertszeit wird inbesondere
+  beim radioaktiven Zerfall verwendet: nach wie vielen Jahren strahlt
+  ein Stoff nur noch die Hälfte.}.
+
+Aus $\frac12b = f(t_{0.5}) = b\cdot{}a^{\frac{t_{0.5}}{\tau}}$
+folgt\TRAINER{ beidseitig durch $b$ teilen und dann $log_a$}:
+
+\begin{gesetz}{Halbwertzszeit}{}
+  $$t_{0.5} = \tau\cdot{}\log_a\left(\frac12\right)$$
+\end{gesetz}
+
+Beispiel: Ein Stoff nimmt innerhalb von sieben Tagen auf 80\% ab. Wie
+groß ist seine Halbwertszeit $t_{0.5}$?
+
+\TNT{5.2}{$\tau=7$ und $a = 0.8$. Somit
+$$t_{0.5} = 7\cdot{} \log_{0.8}\left(\frac12\right)\approx 21.74
+  [\textrm{Tage}]$$
+\vspace{2cm}}
+
+
+Analog gilt das Gesetz zur Verdopplung (s. obiges Beispiel Bevölkerung Irlands):
+\begin{gesetz}{Halbwertzszeit}{}
+  $$t_2 = \tau\cdot{}\log_a(2)$$
+\end{gesetz}
+
+\newpage
