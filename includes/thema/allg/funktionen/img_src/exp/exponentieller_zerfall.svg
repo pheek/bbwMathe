@@ -114,7 +114,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -451,7 +451,7 @@
          style="opacity:1;fill:#ca0101;fill-opacity:1;stroke:none;stroke-width:0.01356946;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
     <g
-       id="g2737">
+       id="g1081">
       <text
          id="text941"
          y="141.53114"
@@ -462,16 +462,16 @@
            y="141.53114"
            x="123.59309"
            id="tspan939"
-           sodipodi:role="line">m = f(    )</tspan></text>
+           sodipodi:role="line"> f(    )</tspan></text>
       <text
          id="text1004-1"
-         y="141.64554"
-         x="144.47972"
+         y="141.99792"
+         x="132.14616"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:Grey;-inkscape-font-specification:Grey;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
          xml:space="preserve"><tspan
            style="stroke-width:0.26458332"
-           y="141.64554"
-           x="144.47972"
+           y="141.99792"
+           x="132.14616"
            id="tspan1002-9"
            sodipodi:role="line">𝜏</tspan></text>
     </g>

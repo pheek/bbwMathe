@@ -110,7 +110,7 @@ Dabei sind
 
 Bemerkung: 
 \TNT{2.4}{
-$\frac{m}b=\frac{f(t)}{f(0)}=\frac{b\cdot{}a^{\frac{t}{\tau}}}{b\cdot{}a^{\frac0{\tau}}}
+$\frac{f(\tau)}{f(0)}=\frac{b\cdot{}a^{\frac{t}{\tau}}}{b\cdot{}a^{\frac0{\tau}}}
   = a^{\frac{t}{\tau} -\frac{0}{\tau}} = a^{\frac{t-0}{\tau}}
   = a^{\frac{\tau}{\tau}} = a$}%% END TNT
 
@@ -319,7 +319,7 @@ Zeichnen Sie die Funktionen $f: y=2^x$, $g: y=2^{-x}$ und $h: y=\left(\frac12\ri
   \TRAINER{\bbwLetter{1.5,4}{2^x}{blue}}
   \TRAINER{\bbwLetter{-3,4}{2^{-x}=\left(\frac{1}{2}\right)^x}{red}}
 }
-
+\newpage
 Die allgemeine Formel für Zerfallsprozesse lautet:
 
 \begin{definition}{Zerfall}{}
@@ -332,7 +332,7 @@ Dabei sind
 \begin{itemize}
 \item $c$ der Anfangsbestand zum Zeitpunkt $t$ = 0.
 \item $\tau$ ist die Zeitspanne zwischen zwei typischen Beobachtungszeitpunkten (Zum Beispiel zwischen Wert und dessen Halbierung).
-\item $a=\frac{m}{b}=\frac{f(\tau)}{f(0)}$ ist der Abnahmefaktor ($0<a<1$) zwischen zwei Beobachtungszeitpunkten (im Abstand von $\tau$). Bei Halbierungsprozessen \zB wäre $a=0.5$.
+\item $a=\frac{f(\tau)}{f(0)}$ ist der Abnahmefaktor ($0<a<1$) zwischen zwei Beobachtungszeitpunkten (im Abstand von $\tau$). Bei Halbierungsprozessen \zB wäre $a=0.5$.
 \end{itemize}
 
 \begin{bemerkung}{Wachstum vs. Zerfall}{}
@@ -346,9 +346,13 @@ Dabei sind
     \end{itemize}
   
   \end{bemerkung}
+\newpage
 
-\subsubsection{Umkehrung}
-Anstelle eines  positiven Exponenten ($\frac{+t}{\tau}$) kann genauso gut der Kehrwert des Faktors $a$ genommen werden. Dann wird der Exponent negativ, dafür wird die Basis $> 1$.
+\subsubsection{Umkehrung (Optional)}
+Anstelle eines  positiven Exponenten ($\frac{+t}{\tau}$) kann genauso
+gut der Kehrwert des Faktors $a$ genommen werden. Dann wird der
+Exponent negativ, dafür wird die Basis $> 1$. Seien $m_1$ bzw. $m_2$
+zwei Beobachtungswerte.
 
 Mit $a = \frac{m_2}{m_1}$ und $d := \frac{m_1}{m_2} = \frac{1}{a}$, gilt
 
