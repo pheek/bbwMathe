@@ -10,7 +10,7 @@
 \end{itemize}
 
 \theorieTALSGeom{178}{4.2}
-
+\newpage
 
 \subsection{Addition}\index{Addition!von Vektoren}
 
@@ -23,27 +23,45 @@ werden. Im Bild: $\vec{c} = \vec{a} + \vec{b}$
 \bbwLetter{5,1}{\vec{b}}{red}
 \draw [->,red] (4,2) --(5,-1);
 \bbwLetter{3,0.5}{\vec{c}}{ForestGreen}
-\draw [->,green] (1,1) --(5,-1);
+\draw [->,ForestGreen] (1,1) --(5,-1);
 }%% END bbwGraph
+
+\subsection*{Aufgaben}
+... coming soon ...
+
 \newpage
 
 
-\subsection{Gegenvektor}\index{Gegenvektor}
+\subsection{Gegenvektor}\index{Gegenvektor}\index{inverser Vektor}
 
-
-\subsubsection{Gegenvektor}\index{Gegenvektor}
 \begin{definition}{Gegenvektor}{}
   Ein Vektor mit der selben Länge, aber in entgegengesetzter Richtung
-  heißt \textbf{Gegenvektor}.
+  heißt \textbf{Gegenvektor} oder \textbf{inverser Vektor}.
 
   Der Gegenvektor zu $\vec{v}$ wird mit $-\vec{v}$ bezeichnet.
 \end{definition}
 
+\begin{bemerkung}{Gegenvektor}{}
+  Für den Gegenvektor $(-\vec{a})$ zum Vektor $\vec{a}$ gilt:
+  $$\vec{a} + (-\vec{a}) = \vec{0}$$
+Wobei $\vec{0}$ den Nullvektor bezeichnet, der keine Länge aufweist.
+  
+\end{bemerkung}
 
+\bbwGraph{-1}{7}{-2}{3.5}{
+\bbwLetter{2,2}{\vec{a}}{blue}
+\draw [->,blue] (1,1) -- (4,2);
+\bbwLetter{3,-1}{(\vec{-a})}{ForestGreen}
+\draw [->,ForestGreen] (5,-1) --(2,-2);
+}%% END bbwGraph
+
+
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Subtraktion}\index{Subtraktion!von Vektoren}
 
-
-\subsubsection{Subtraktion}\index{Subtraktion!von Vektoren}
 Die Subtraktion ist die Addition des Gegenvektors:
 
 \begin{definition}{Subtraktion von Vektoren}{}
@@ -52,17 +70,115 @@ Die Subtraktion ist die Addition des Gegenvektors:
 
 \begin{bemerkung}{}{}
   $$\vec{a} + \vec{b} = \vec{c} \Longleftrightarrow \vec{a} = \vec{c} - \vec{b}$$
-  \end{bemerkung}
+\end{bemerkung}
+
+Zeigen Sie geometrisch, dass gilt $\vec{c} - \vec{b} = \vec{c} +
+(-\vec{b})$.
+
+\TNT{7.2}{
+\bbwGraph{-1}{7}{-2}{3.5}{
+\bbwLetter{2,2}{\vec{a}}{blue}
+\draw [->,blue] (1,1) -- (4,2);
+\bbwLetter{5,1}{\vec{b}}{red}
+\draw [->,red] (4,2) --(5,-1);
+\bbwLetter{3,0.5}{\vec{c}}{ForestGreen}
+\draw [->,green] (1,1) --(5,-1);
+}%% END bbwGraph
+
+Grafik: Es gilt:e $\vec{a} = \vec{c} - \vec{b} = \vec{c} + (-\vec{b})$.
+}%% END TNT
 
 \subsection*{Aufgaben}
-\TALSGeomAadB{179ff}{6., 9., 10. a) c) i)., 12., 47., 48.}
+\TALSGeomAadB{179ff}{6., 9., 10. a) c) i)., 47., 48.}
 \newpage
 
 
-\subsubsection{Multiplikation mit Skalar}
+\subsubsection{Multiplikation mit einem Skalar}\index{Skalarmultiplikation}
 \theorieTALSGeom{178}{4.2}
 \begin{definition}{Skalar}{}
   Vektoren haben eine Länge und eine Richtung. Eine Größe ohne
   Richtung aber mit einem Betrag nennen wir \textbf{Skalar}. 
 \end{definition}
+
+\begin{beispiel}{Skalarmultiplikation}{}
+  Anstelle von
+  $$\vec{a}+\vec{a}+\vec{a}+\vec{a}+\vec{a}$$
+  schreiben wir
+  $$5\cdot{}\vec{a}$$
+\end{beispiel}
+
+\begin{definition}{Skalarmultiplikation}{}
+  $$n\cdot{}\vec{a} = \underbrace{\vec{a} + \vec{a} + ... + \vec{a}}_{n \textrm{ Summanden}}$$
+\end{definition}
+
+\begin{definition}{Skalarmultiplikation}{}
+  Für $k$ in $\mathbb{R}$ ist $k\cdot{}\vec{a}$ ein Vektor mit
+  folgenden Eigenschaften.
+
+  \begin{itemize}
+  \item $k>0$, so zeigen $k\cdot{}\vec{a}$ und $\vec{a}$ in die selbe Richtung.
+  \item $k<0$, so zeigen $k\cdot{}\vec{a}$ und $\vec{a}$ in die entgegengesetzte Richtung.
+  \item Die Länge von $k\cdot{}\vec{a}$ ist das $k$-Fache der Länge
+    von $\vec{a}$: $$|k\cdot{}\vec{a}| = |k|\cdot{}|\vec{a}|$$
+   \end{itemize}
+\end{definition}
+
+\begin{definition}{kollinear}{}\index{kollinear}
+
+  Zwei Vektoren $\vec{a\vphantom{b}}$ und $\vec{b}$ heißen \textbf{kollinear}, wenn es ein
+  $k\in\mathbb{R}$ gibt, sodass
+  $$\vec{a\vphantom{b}} = k\cdot{}\vec{b}$$
+  \end{definition}
+
 \newpage
+
+
+\subsection{Nullvektor}\index{Nullvektor}
+\sectuntertitel{Kommt ein Nullvektor zum Psychiater: ``... ich bin so orientierungslos!''}
+
+Der \textbf{Nullvektor} hat keine Länge und somit auch keine
+Richtung. Der Nullvektor beschreibt \zB die Bewegungs (inklusive
+Richtung) eines stehenden Fahrzeuges.
+Das stehende Fahrzeug kann theoretsich eine Richtung (Ausrichtung des
+Fahrzeugs) haben, da es jedoch keine ``Fahrtrichtung'' hat, spielt die
+Ausrichtung keine Rolle.
+
+\newpage
+
+\subsection{Zerlegung von Vektoren}\index{Vektoren!zerlegen}\index{Zerlegung von Vektoren}
+
+Sind zwei Vektoren $\vec{a}$ und $\vec{b}$ gegeben, so kann im
+allgemeinen Fall ein
+dritter Vektor $\vec{c}$ als sog. Linearkombination der beiden
+gegebenen Vektoren angegeben werden:
+
+\begin{gesetz}{Linearkombination}{}
+
+  Gegeben $\vec{a}$ und $\vec{b}$.
+
+  Gegeben $\vec{c}$.
+
+  Gesucht $t$ und $s$ mit
+
+  $$\vec{c} = t\cdot{}\vec{a} + s\cdot{}\vec{b}$$
+\end{gesetz}
+
+\textbf{Beispiel}
+
+\bbwGraph{-1}{8}{-1}{5}{
+\bbwLetter{3,1.5}{\vec{a}}{blue}
+\draw [->,blue] (1,2) -- (5,2);
+\bbwLetter{1,4}{\vec{b}}{blue}
+\draw [->,blue] (1,2) -> (3,4);
+\bbwLetter{6.5,3}{\vec{c}}{ForestGreen}
+\draw [->,ForestGreen] (6,2) -- (6,4);
+}%% END bbwGraph
+
+In obigem Beispiel ist $\vec{c} = -\frac12 \vec{a} + \vec{b}$.
+
+In welchen Fällen ist eine solche Zerlegung nicht möglich nicht möglich?
+
+\subsection*{Aufgaben}
+
+
+\TALSGeomAadB{180ff}{12., 13., 14., 16. und 17.}
