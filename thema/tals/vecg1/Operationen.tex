@@ -176,15 +176,39 @@ gegebenen Vektoren angegeben werden:
 
 In obigem Beispiel ist
 
-\TNT{2.4}{
+\TNT{5.2}{
 	$\frac12 \vec{a\vphantom{b}} + \vec{c}  = \vec{b}$
   
 	und somit
 
 	$\vec{c} = -\frac12 \vec{a\vphantom{b}} + \vec{b}$.
 }%% END TNT
+\newpage
 
 In welchen Fällen ist eine solche Zerlegung nicht möglich nicht möglich?
+
+\TNT{10}{
+Die Zerlegung ist nicht möglich, wenn $\vec{a}$ parallel zu $\vec{b}$
+ist. Es sei denn, $\vec{c}$ ist auch parallel, dann gibt es unendlich
+viele Lösungeen.
+
+Begründung Gleichungssystem:
+  
+  $$\vec{c} = t\cdot{}\vec{a\vphantom{b}} + s\cdot{}\vec{b}$$ heißt:
+  \gleichungZZ{c_x}{t\cdot{}a_x + s\cdot{}b_x}{c_y}{t\cdot{}a_y +
+    s\cdot{}b_y}
+
+  Die Lösung ist
+
+  $$\det{} = a_xb_y - a_yb_x$$
+
+  $$s = \frac{a_xc_y - a_yc_x}{\det}$$
+  und
+  $$t = \frac{b_yc_x - b_xc_y}{\det}$$
+
+  Ist $det$ (= Determinate) = Null, so gibt es keine (oder keine
+  eindeutige) Zerlegung.
+}
 
 \subsection*{Aufgaben}
 
