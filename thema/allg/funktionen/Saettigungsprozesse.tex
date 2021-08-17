@@ -7,7 +7,10 @@
   \item Funktionsterm bei gegebenen Randbedingungen 
 \end{itemize}
 
-Bei beschränktem Wachstum ist die Änderungsrate typischerweise proportional zum sog. \textbf{Sättigungsmanko}\index{Sättigungsmanko}\index{Manko!der Sättigung}. Als Sättigungsmanko bezeichnet man die Differenz zwischen dem aktuellen Wert und dem absolut möglichen Wert.
+Bei beschränktem Wachstum ist die Änderungsrate typischerweise
+proportional zum
+sog. \textbf{Sättigungsdefizit}\index{Sättigungsdefizit}\index{Defizit
+der Sättígung} (auch \index{Sättigungsmanko}\index{Manko!der Sättigung}). Als Sättigungsmanko bezeichnet man die Differenz zwischen dem aktuellen Wert und dem absolut möglichen Wert.
 
 Mit anderen Worten: Je weiter weg der aktuelle Wert vom erreichbaren Wert ist, umso rascher ist die Zunahme (bzw. die Abnahme bei beschränktem Zerfall).
 
@@ -43,7 +46,7 @@ unten beschränkt.
 funktioniert es: $f(t) = 55\cdot{}\left(\frac{41}{55}\right)^{\frac{t}{3}}$
 
 3. Verschiebe wieder zurück: ACHTUNG: Das $b$ ist nun jedoch das
-sog. Sättigungs\textbf{manko}\index{Sättigungsmanko} zum Zeitpunkt $t_0=0$ und \textbf{nicht} mehr der Startwert! 
+sog. Sättigungs\textbf{defizit}\index{Sättigungsdefizit} zum Zeitpunkt $t_0=0$ und \textbf{nicht} mehr der Startwert! 
 
 $$f(t) = 20 + 55\cdot{}\left(\frac{41}{55}\right)^{\frac{t}{3}}$$
 
@@ -81,17 +84,17 @@ Dabei ist:
   \item $c+b = f(0) = y$-Achsenabschnitt = Startwert
 	\item $c$: Die Sättigungsgrenze\index{Sättigungsgrenze} (Sättigungswert). Dies ist die Annäherungskonstante oder der Asymtotenwert: Tiefer kann die Funktion nicht fallen.
 
-	\item $m$:  Sättigungsmanko\index{Sättigungsmanko}\index{Manko!Sättigung}. Wie viel fehlt, bis zur
-    Sättigungsgrenze: $m = f(t) - c$. Das Sättigungs\textbf{manko} nimmt exponentiell ab.
+	\item $m$:  Sättigungsdefizit\index{Sättigungsdefizit}\index{Defizit!Sättigung}. Wie viel fehlt, bis zur
+    Sättigungsgrenze: $m = f(t) - c$. Das Sättigungs\textbf{defizit} nimmt exponentiell ab.
 	\item $b$: Die \textbf{Abweichung} zu $c$ zum Zeitpunkt $t=0$. Der
     Anfangswert ist somit $f(0) = c + b$; mit anderen Worten: $b$ ist das
-    \textbf{Sättigungsmanko} zum Zeitpunkt $t_0 = 0$.
+    \textbf{Sättigungsdefizit} zum Zeitpunkt $t_0 = 0$.
 	\item $\tau$: Die Zeit zwischen zwei typischen Beobachtungszeitpunkten wird
     mit $\tau$ («tau») bezeichnet\footnote{$\tau$ entspricht der
       Halbwertszeit beim exponentiellen Zerfall: Halbiert sich das
-      Sättigungsmanko ($f(t)-S$) in der Zeit $\tau$, so ist $a=\frac12$.}.
+      Sättigungsdefizit ($f(t)-S$) in der Zeit $\tau$, so ist $a=\frac12$.}.
     \item $a=\frac{m}{b}=\frac{f(\tau)-c}{f(0)-c}$: Der Faktor der Veränderung des
-      Sättigungsmankos.
+      Sättigungdefizites.
 \end{itemize}
 
 \subsection*{Aufgaben}
@@ -147,21 +150,21 @@ Wie erwähnt, wird die Funktion in der Praxis gestreckt, bzw. verschoben; die fo
 \begin{itemize}
 	\item $c$: Sättigungsgrenze. Dies ist die Annäherungskonstante oder der Asymtotenwert. Höher kann die Funktion nicht steigen.
 
-	\item $m$ ist das Sättigungsmanko\index{Sättigungsmanko}. Wie viel fehlt, bis zur
-    Sättigungsgrenze: $m = c - f(t)$. Auch hier nimmt das  Sättigungs\textbf{manko} exponentiell ab.
+	\item $m$ ist das Sättigungsdefizit\index{Sättigungsdefizit}. Wie viel fehlt, bis zur
+    Sättigungsgrenze: $m = c - f(t)$. Auch hier nimmt das  Sättigungs\textbf{defizit} exponentiell ab.
 	\item $c$: Die Abweichung des Funktionsgraphen zu $S$ zum Zeitpunkt $t=0$. Der
     Anfangswert ist somit $f(0) = c - b$.
 	\item $\tau$: Die Zeit zwischen zwei typischen Beobachtungszeitpunkten wird
     mit $\tau$ («tau») bezeichnet\footnote{$\tau$ entspricht der
-      Halbwertszeit beim exponentiellen Zerfall: Halbiert sich das Sättigungsmanko ($c-f(t)$) in der Zeit $\tau$, so ist $a = \frac12$.}.
-    \item $a=\frac{m}{b}=\frac{c-f(\tau)}{c-f(0)}$ Faktor der Veränderung des Sättigungsmankos.
+      Halbwertszeit beim exponentiellen Zerfall: Halbiert sich das Sättigungsdefizit ($c-f(t)$) in der Zeit $\tau$, so ist $a = \frac12$.}.
+    \item $a=\frac{m}{b}=\frac{c-f(\tau)}{c-f(0)}$ Faktor der Veränderung des Sättigungsdefizit.
 \end{itemize}
 \newpage
 
 
 \subsubsection{Bemerkungen}
 \begin{bemerkung}{}{}
-  Für das Sättigungsmanko gilt:
+  Für das Sättigungsdefizit gilt:
 
 $$m = m(t) = c - f(t) = c - \left(c-b\cdot{}a^{\frac{t}{\tau}}\right) = + b\cdot{}a^{\frac{t}{\tau}}$$
 
@@ -171,7 +174,7 @@ $$m_0 = m(0) = b\cdot{}a^0 = b$$
 \end{bemerkung}
 
 \begin{bemerkung}{}{}
-Das $a$ kann aus zwei \textbf{beliebigen} Sättigungsmankos berechnet werden (die um die
+Das $a$ kann aus zwei \textbf{beliebigen} Sättigungsdefizit-Werten berechnet werden (die um die
 Zeitdifferenz $\tau$ auseinander liegen):
 $$\frac{m_2}{m_1} = \frac{b\cdot{}a^{\frac{t_2}{\tau}}}{b\cdot{}
   a^{\frac{t_1}{\tau}}} = a^{\frac{t_2}{\tau}} : a^{\frac{t_1}{\tau}} =
@@ -255,7 +258,7 @@ at (= 0.2 at über Normaldruck) aufzupumpen.
 Nach wie vielen Sekunden muss gestoppt werden, damit der Reifen
 optimal gepumpt ist?
 
-\TNT{8}{Das Sättigungsmanko schwindet von $m_1=3-1=2$ bis $m_2=3-1.2=1.8$
+\TNT{8}{Das Sättigungsdefizit schwindet von $m_1=3-1=2$ bis $m_2=3-1.2=1.8$
 innerhalb der ersten $10s = \tau$. Die Sättigungsgrenze liegt bei
 $S=3$. Unsere (Exponential)basis $a$ ist somit $1.8 / 2$, was uns
 liefert:
