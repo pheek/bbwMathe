@@ -109,9 +109,9 @@ $$\sqrt{12\cdot{} a^3} = \sqrt{3\cdot{} 4 \cdot{} a \cdot{} a^2}
 \end{verse}
 
 Wir wissen bereits, dass
-$$3^2 = 9 \textrm{ heißt } \sqrt{9} = 3$$
-und
-$$x^2 = 100 \textrm{ somit } x=\pm\sqrt{100} = \pm 10.$$
+$$3^2 = 9 \textrm{ heißt } \sqrt{9} = 3.$$
+
+
 
 Doch wenn wir nun
 $$x^3 = 1000$$
@@ -126,11 +126,6 @@ Was bedeutet $\sqrt[3]{8}$? Schätzen Sie und prüfen Sie nach (allenfalls auch 
 
 \TNT{1.6}{Verwenden Sie die n-te Wurzel Funktion des Taschenrechners.}
 
-Bestimmen Sie die Lösungsmenge der folgenden Gleichung:
-$$x^4 = 81$$
-\TNT{1.6}{%%
-$x^4 = 81$ heißt, $x=\pm \sqrt[4]{81} = \pm 3$
-}%% end TNT
 
 
 \newpage
@@ -139,23 +134,21 @@ Mit $\sqrt[n]{a}$ bezeichnen wir die $n$\textbf{-te Wurzel} aus $a$; das heißt
 $$\sqrt[n]{a} = x \Rightarrow x^n = a$$
 \end{definition}
 
+\begin{beispiel}{Dritte Wurzel}{}
+$$\sqrt[3]{1000} = 10 \textrm{ , denn } 10^3 = 1000$$
+\end{beispiel}
+
 \begin{gesetz}{}{}
 $$\sqrt[n]{a^n} = \left(\sqrt[n]a\right)^n = a$$
 \end{gesetz}
 
 
-\begin{bemerkung}{}{}
-Bei Potenzgleichungen mit geraden Exponenten sind in der Regel zwei Lösungen vorhanden:
-$$x^n = a \Leftrightarrow x = \pm \sqrt[n]{a} \textrm{ falls } n \textrm{ gerade und } a \textrm{ positiv}$$
-
-$$x^n = a \Leftrightarrow x = \sqrt[n]{a} \textrm{ falls } n \textrm{ ungerade}$$
-\end{bemerkung}
-
-\begin{bemerkung}{}{}
+\begin{definition}{}{}
 Den Wurzelexponenten $n=2$ lassen wir üblicherweise weg:
 
-$$\sqrt[2]{a} = \sqrt{a}$$
-\end{bemerkung}
+$$\sqrt{a} := \sqrt[2]{a} = \sqrt{a}$$
+\end{definition}
+
 \newpage
 
 
@@ -175,7 +168,14 @@ Denn: $\sqrt[n]{a} = \left(\sqrt[n]{a}\right)^1 =
 \left(\sqrt[n]{a}\right)^{n\cdot{}\frac{1}{n}} =
 \left(\left(\sqrt[n]{a}\right)^n\right)^\frac{1}{n} = a^\frac{1}{n}$
 
-
+\begin{beispiel}{}{}
+Es gilt
+$$\sqrt[3]{a} \cdot{}\sqrt[3]{a} \cdot{}\sqrt[3]{a} = a = a^1 =
+a^{\frac13 +\frac13 +\frac13} = a^\frac13 \cdot{} a^\frac13 \cdot
+a^\frac13$$
+Somit ist
+$$\sqrt[3]{a} = a^\frac13$$
+\end{beispiel}
 
 Es gelten die üblichen Potenzgesetze\GESO{\footnote{S. 81 \cite{marthaler17}}} nun auch für die $n$-ten
 Wurzeln.
@@ -192,14 +192,14 @@ $$\sqrt[m]{\sqrt[n]{a}} =
 a^{\frac{1}{n}\cdot\frac{1}{m}} = a^{\frac{1}{m\cdot n}} =
 \sqrt[m\cdot n]{a}$$
 
-
- Beispiel: (Bsp. $\sqrt[3]{\sqrt[2]{64}} =
-    \sqrt[3]{8} = 2 = \sqrt[6]{64} = \sqrt[3\cdot2]{64}$)
-
+\begin{beispiel}{}{}
+$\sqrt[3]{\sqrt[2]{64}} =
+    \sqrt[3]{8} = 2 = \sqrt[6]{64} = \sqrt[3\cdot2]{64}$
+\end{beispiel}
 
 \GESO{Die Rechengesetze für $n$-te Wurzeln sind im Buch
   \cite{marthaler17} auf Seite 82 zu finden.}
-
+\newpage
 
 \subsection{Aufgaben}
 \TALSAadB{???}{???}
@@ -207,5 +207,6 @@ a^{\frac{1}{n}\cdot\frac{1}{m}} = a^{\frac{1}{m\cdot n}} =
 10. g), 11. a) e)
   g) i), 12. a) b) d), 13. a) b), 16. a) c) d), 17. a) b),
   19. a) d) i), 20. a) c), 21. a) c), 22. a) c) e), 24. a)}
-\aufgabenfarbe{  ... und die Aufgaben im Aufgabenblatt Potenzgesetze unter \texttt{olat.bbw.ch}}
+\aufgabenfarbe{  ... und die Aufgaben im Aufgabenblatt Potenzgesetze
+  unter \texttt{olat.bbw.ch}, dort Kap. 1.5}
 \newpage
