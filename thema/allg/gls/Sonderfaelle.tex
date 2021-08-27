@@ -1,0 +1,36 @@
+\subsection{Sonderfälle (Fallunterscheidung)}\index{Fallunterscheidung!Gleichungssysteme}\index{Sonderfälle!Gleichungssysteme}\index{Lineare Gleichungssysteme!Sonderfälle, Fallunterscheidung}
+
+Berechnen Sie die Lösung für $(x,y)$ in Abhängigkeit von $m$ und $n$:
+
+\gleichungZZ{ax+ay}{1}{x-ay}{-1}
+
+\TNT{5.2}{
+  Additionsverfahren:
+  
+  $$ax+x=0$$
+  $$x(a+1)=0 | : (a+1) \textrm{ falls } a+1\ne 0$$
+  $$\Longrightarrow x=0, y=\frac1a$$
+  Lösung für $a+1=0$: $x$ ist beliebig ($x=\lambda$) und somit $y=-\lambda - 1$.
+
+  Lösung für $a=0$: $0=1$ und somit $\mathbb{L}_{(x,y)} = \{\}$
+
+}%% END TNT
+
+
+\subsection*{Aufgabe}
+Berechnen Sie die Lösung für $(x,y)$ in Abhängigkeit von $m$ und $n$:
+
+\gleichungZZ{2mx+y}{3}{-x-y}{n}
+
+\TNT{5.2}{
+  Nach dem Additionsverfahren steht da:
+  $$2mx-x=3+n$$
+  Lösung: 
+  $$(x,y) = \left(\frac{n+3}{2m-1} ,\frac{3+2nm}{1-2m} \right)$$
+  für $2m-1\ne 0$!
+  Wäre $2m-1 = 0$, so gäbe es mit $n=-3$ unendlich viele Lösungen.
+}%% END TNT
+
+
+\subsection*{Aufgaben}
+\TALSAadB{128}{398. a) b) c) d)}
