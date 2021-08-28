@@ -1,4 +1,4 @@
-%% TALS Polarkoordinaten
+%% Vektoren in Koordinatensystemen
 %% 2020 - 12 - 25 ph. g. freimann @bbw.ch
 
 \section{Koordinatensysteme}
@@ -62,6 +62,8 @@ $\vec{b} = \left( \TRAINER{-1}\noTRAINER{\,\,\,\,\,} \atop \TRAINER{2} \right)$
 
 
 
+\input{tals/vecg1/Taschenrechner}
+\newpage
 
 \subsection{Länge im kartesischen Koordinatensystem}
 
@@ -93,9 +95,8 @@ Sei $\vec{a}  = \begin{pmatrix}x_a\\y_a\end{pmatrix}$. Somit ist die Länge von
 
       \texttt{norm(a)}
     \end{bemerkung}
+
 \newpage
-
-
 
 \subsection{Polarkoordinaten}\index{Polarkoordinaten}
 \sectuntertitel{Opposite of a polarbear? A cartesian bear!}
@@ -105,21 +106,21 @@ Sei $\vec{a}  = \begin{pmatrix}x_a\\y_a\end{pmatrix}$. Somit ist die Länge von
 \newpage
 
 Anstelle der $x$- und der $y$-Komponente können wir mit dem selben
-Informtaionsgehalt auch den Winkel ($\varphi$)
+Informationsgehalt auch den Winkel ($\varphi$)
 (in mathematisch positiver Richtung) und die Länge ($r$) eines Vektors
 angeben.
 
 \bbwCenterGraphic{10cm}{tals/vecg1/img/polar.png}
 
 Dieser Winkel wird im mathematisch positiven Sinne ab der $x$-Achse
-angegeben. Der Vector
+angegeben. Der Vektor
 $\begin{pmatrix}0\\1\end{pmatrix}$ hat somit den Winkel $90\degre$.
   \begin{definition}{Polarkoordinaten}{}
     Vektoren in Polarkoordinaten werden in der Reihenfolge (Länge |
     Winkel) angegeben:
     $$\vec{a} = (2 | 60\degre) = \left(1\atop \sqrt{3}\right)$$
     \end{definition}
-  \begin{bemerkung}{Nullvektor}{}\index{Nullvekttor}
+  \begin{bemerkung}{Nullvektor}{}\index{Nullvektor}
     Der Nullvektor hat keine Richtung.
     \end{bemerkung}
   \newpage
@@ -132,7 +133,7 @@ $\begin{pmatrix}0\\1\end{pmatrix}$ hat somit den Winkel $90\degre$.
   Transformation aus Polarkoordinaten relativ einfach:
   \begin{rezept}{Transformation «polar» nach «kartesisch»}{}
 
-    Gegegben:  Winkel $\varphi$ und Länge $r$
+    Gegeben:  Winkel $\varphi$ und Länge $r$
 
     Gesucht: $x$ und $y$ in kartesischen Koordinaten
 
@@ -176,6 +177,34 @@ Rechnen Sie in Polarkoordinaten um:
 
 \TNT{5.2}{\vspace{5.2cm}}
 
+\newpage
+\subsubsection{Drei Schwimmer im Taschenrechner}
+Mit dem Taschenrechner wird unsere Einstiegs-Aufgabe mit den drei
+Schwimmern stark vereinfacht. Wir geben die Geschwindigkeit und
+Richtung des Schwimmers in Polarkoordinaten an
+(\textbf{\texttt{schwimmera}}).
+
+Die Geschwindigkeit und Richtung des Flusses können wir auch in kartesischen
+Koordinaten angeben (\texttt{\textbf{fluss}}).
+
+Der resultierende Vektor aus Schwimmer und Fluss ist einfach
+die Summe der beiden Vektoren.
+
+Wir suchen nun also ein Vielfaches ($t$) der resultierenden
+Geschwindigkeit, sodass in $y$-Richtung gerade die 0.2 km erreicht
+wird. Die «Verschiebung» am anderen Ufer in $x$-Richtung bezeichnen
+wir einfach mit $x$.
+
+\bbwCenterGraphic{12cm}{tals/vecg1/img/TR_DreiSchwimmer.png}
+
+\begin{bemerkung}{}{}
+  Auch wenn es nur eine Gleichung mit zwei Unbekannten ist, dürfen wir
+  nicht vergessen, das Vektoren in der Ebene aus zwei Komponenten
+  bestehen, somit haben wir genau genommen auch ein lineares
+  Gleichungssystem mit zwei Gleichungen und zwei Unbekannten zu lösen.
+  \end{bemerkung}
+\newpage
+  
 \subsection*{Aufgaben}
 \TALSAadB{181ff}{18., 21. und 24.}
 
