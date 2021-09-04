@@ -177,8 +177,8 @@ Um wie viel nehmen sie ...
 \item ... alle 15 Tage zu?
 \item ... alle 7 Tage zu?
 \item In wie vielen Tagen verdreifachen sie sich?
-\item Wie sieht es mit der Basis $e$ aus? Mit welchem $b$ kann man die
-  Zunahme als $f(t) = b \cdot{} e^{b\cdot{}t}$ angeben?
+\item Wie sieht es mit der Basis $e$ aus? Mit welchem $m$ kann man die
+  Zunahme als $f(t) = b \cdot{} e^{m\cdot{}t}$ angeben?
 \end{enumerate}
 
 \begin{center}\fbox{
@@ -196,12 +196,11 @@ Es gilt:
 
   \begin{center}\fbox{\fbox{$a^{\frac{1}{\tau}} =     a_2^{\frac{1}{\tau_2}} = e^{m}$}}\end{center}
 
-  
-  
+ 
   $a=$ Wachstumsfaktor\\
   $\tau=$ Beobachtungszeitraum\\
   $e=$ Eulersche Konstante (2.718...)
-  $m=\frac1\tau\cdot{}\ln(a)$
+  $m=\frac1\tau\cdot{}\ln(a) = \frac1{\tau_2}\cdot{}\ln(a_2)$
 \end{gesetz}
 \newpage
 
@@ -231,11 +230,11 @@ ad. 3.: $a_2 = 3$ (verdreifachen):
   verdreifachen sich ca. alle 8 Tage.
 }%% end TNT
 
-ad. 4.: $a^\frac{t}5 = e^{b\cdot{}t}$ (Basis $e$):
+ad. 4.: $a^\frac{t}5 = e^{m\cdot{}t}$ (Basis $e$):
 \TNT{5.2}{
-  $2^\frac15 = e^{b}$ (beidseitig $\ln()$):
+  $2^\frac15 = e^{m}$ (beidseitig $\ln()$):
 
-  $\ln(2^\frac15) = b\cdot \ln(e) = b\cdot 1 = b \approx 0.1386$ und somit:
+  $\ln(2^\frac15) = m\cdot \ln(e) = m\cdot 1 = m \approx 0.1386$ und somit:
   $$f(t) \approx b\cdot{} e^{0.1386\cdot{} t}$$
 }%% END TNT
 
@@ -408,7 +407,7 @@ $$t_{0.5} = 7\cdot{} \log_{0.8}\left(\frac12\right)\approx 21.74
 
 
 Analog gilt das Gesetz zur Verdopplung (s. obiges Beispiel Bevölkerung Irlands):
-\begin{gesetz}{Halbwertzszeit}{}
+\begin{gesetz}{Verdopplungszeit}{}
   $$t_2 = \tau\cdot{}\log_a(2)$$
 \end{gesetz}
 

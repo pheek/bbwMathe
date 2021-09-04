@@ -30,20 +30,27 @@ Einführende Youtube Videos: \texttt{youtu.be/9JgcETAN65c} und \texttt{youtu.be/
   Natürliche Zahlen $\mathbb{N}$ sind ganze positive Zahlen: ${1, 2, 3, 4, 5, ....}$.
 \end{definition}
 
-\begin{bemerkung}{}{}
+\TALS{
+  \begin{bemerkung}{Null}{}
   Selten wird auch die Menge ${0, 1, 2, 3, 4, ...}$ als die Menge
-  der natürlichen Zahlen bezeichnet. Wir bezeichnen diese Menge dann mit $\mathbb{N}_0$.
+  der natürlichen Zahlen bezeichnet. Wenn die Unterscheidung
+  wesentlich ist, verzichten wir auf die Schreibweise $\mathbb{N}$ und
+  verwenden
 
-  \TALS{%%
-  Wenn Verwechslungen relevant würden, verwenden wir manchmal
-  \begin{itemize}  
-\item $\mathbb{N}^{\ast}$ oder $\mathbb{N}\backslash\{0\}$ für die Zahlen $\{1, 2, 3, 4, 5, ...\}$
-  und
-\item $\mathbb{N}_0$ für die Zahlen $\{0, 1, 2, 3, 4, ...\}$.
-  \end{itemize}}%% END TALS
+  $$\mathbb{N}_0 = \mathbb{N}^\ast = \{0, 1, 2, 3, 4, ...\}$$
+  bzw.
+  $$\mathbb{N}\backslash\{0\} = \{1, 2, 3, 4, ...\}.$$
+  \end{bemerkung}
+}%% END TALS
 
-\end{bemerkung}
-\newpage
+Mit natürlichen Zahlen können wir beliebig
+\begin{itemize}
+\item \textbf{addieren} ($+$)  und
+\item \textbf{multiplizieren} ($\cdot{}$).
+\end{itemize}
+
+
+\TALS{\newpage}
 
 
 \subsection{Ganze Zahlen ($\mathbb{Z}$)}
@@ -55,6 +62,13 @@ Einführende Youtube Videos: \texttt{youtu.be/9JgcETAN65c} und \texttt{youtu.be/
 
 $$\mathbb{Z} = \{..., -3, -2, -1, 0, 1, 2, 3,  4, ... \}$$
 
+Zusätzlich zu den natürlichen Zahlen können wir nun eine
+\begin{itemize}
+\item \textbf{Subtraktion} ($-$)
+  \end{itemize}
+uneingeschränkt durchführen.
+
+\TALS{
 \subsubsection{Zahlenstrahl / Zahlengerade}\index{Zahlenstrahl}
 
 \begin{center}
@@ -62,7 +76,7 @@ $$\mathbb{Z} = \{..., -3, -2, -1, 0, 1, 2, 3,  4, ... \}$$
 \end{center}
 
 Der Zahlenstrahl hat den Startpunkt 0 (Null)\footnote{... manchmal  den Startpunkt 1 ...}, wohingegen die
-Zahlengerade auf beiden Seiten uneingeschränkt weiterläuft.
+Zahlengerade auf beiden Seiten uneingeschränkt weiterläuft.}%% END TALS
 \newpage
 
 
@@ -78,9 +92,12 @@ $$\mathbb{Q} =\left\{ q = \frac{a}{b} \,\,\, \middle| \,\,\, a \in \mathbb{Z}, b
 \end{definition}
 
 \subsubsection{Dezimalbrüche}\index{Dezimalbruch}
-Jeder Bruch bestehend aus ganzen Zahlen ($\frac{a}{b}$) lässt sich als
+Jeder Bruch ($\frac{a}{b}$\TRAINER{  $a, b \in \mathbb{Z}, b\ne 0$}) lässt sich als
 abbrechender oder periodischer Dezimalbruch schreiben. Beispiel:
 
+Abbrechend:
+$$\frac{175}{8} = 21.875$$
+Periodisch:
 $$\frac{5}{70} = 0.0\overline{714285}$$
 
 Dasselbe gilt umgekehrt. Für abbrechende Dezimalbrüche ist dies
@@ -102,8 +119,8 @@ $$0.\overline{13} = 0.131313... = 13: 99 = \frac{13}{99}$$
 In der Regel sind wir bei Dezimalbrüchen nicht an allen auftretenden
 Stellen interessiert, sondern begnügen uns mit einer Näherung.
 
-\subsubsection{Dezimale (Nachkommastelle)}\index{Dezimale}\index{Nachkommastelle}
-Als Dezimale, Dezimalstelle oder Nachkommastelle werden die Stellen \textbf{nach} dem Komma bezeichnet.
+\subsubsection{Dezimalen (Nachkommastellen)}\index{Dezimale}\index{Nachkommastelle}
+Als Dezimalen, Dezimalstellen oder Nachkommastellen werden die Stellen \textbf{nach} dem Komma bezeichnet.
 Runden auf die vierte \textbf{Dezimale} (= vierte \textbf{Nachkommastelle}):
 $$ 36.4699432 \approx  \LoesungsRaum{36.4699}$$
 $$ 36.4699618 \approx  \LoesungsRaum{36.4700}$$

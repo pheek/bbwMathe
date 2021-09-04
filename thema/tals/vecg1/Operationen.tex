@@ -17,7 +17,7 @@
 Zwei Vektoren werden addiert, indem sie hintereinander gelegt
 werden. Im Bild: $\vec{c} = \vec{a} + \vec{b}$
 
-\bbwGraph{-1}{7}{-2}{3.5}{
+\bbwGraphLeer{-1}{7}{-2}{3.5}{
 \bbwLetter{2,2}{\vec{a}}{blue}
 \draw [->,blue] (1,1) -- (4,2);
 \bbwLetter{5,1}{\vec{b}}{red}
@@ -29,6 +29,26 @@ werden. Im Bild: $\vec{c} = \vec{a} + \vec{b}$
 \subsection*{Aufgaben}
 \TALSGeomAadB{179}{7.}
 
+\newpage
+
+\subsection{Nullvektor}\index{Nullvektor}
+\sectuntertitel{Kommt ein Nullvektor zum Psychiater: ``... ich bin so orientierungslos!''}
+
+Der \textbf{Nullvektor} hat keine Länge und somit auch keine
+Richtung. Der Nullvektor beschreibt \zB die Bewegungs (inklusive
+Richtung) eines stehenden Fahrzeuges.
+Das stehende Fahrzeug kann theoretsich eine Richtung (Ausrichtung des
+Fahrzeugs) haben, da es jedoch keine ``Fahrtrichtung'' hat, spielt die
+Ausrichtung keine Rolle.
+
+\begin{definition}{Nullvektor}{}
+  Der Nullvektor wird mit
+  $$\vec{0}$$
+  bezeichnet.
+
+  Der Nullvektor hat weder Länge noch Richtung.
+  
+  \end{definition}
 \newpage
 
 
@@ -44,11 +64,10 @@ werden. Im Bild: $\vec{c} = \vec{a} + \vec{b}$
 \begin{bemerkung}{Gegenvektor}{}
   Für den Gegenvektor $(-\vec{a})$ zum Vektor $\vec{a}$ gilt:
   $$\vec{a} + (-\vec{a}) = \vec{0}$$
-Wobei $\vec{0}$ den Nullvektor bezeichnet, der keine Länge aufweist.
   
 \end{bemerkung}
 
-\bbwGraph{-1}{7}{-2}{3.5}{
+\bbwGraphLeer{-1}{7}{-2}{3.5}{
 \bbwLetter{2,2}{\vec{a}}{blue}
 \draw [->,blue] (1,1) -- (4,2);
 \bbwLetter{3,-1}{(\vec{-a})}{ForestGreen}
@@ -76,7 +95,7 @@ Zeigen Sie geometrisch, dass gilt $\vec{c\vphantom{b}} - \vec{b} = \vec{c\vphant
 (-\vec{b})$.
 
 \TNT{7.2}{
-\bbwGraph{-1}{7}{-2}{3.5}{
+\bbwGraphLeer{-1}{7}{-2}{3.5}{
 \bbwLetter{2,2}{\vec{a}}{blue}
 \draw [->,blue] (1,1) -- (4,2);
 \bbwLetter{5,1}{\vec{b}}{red}
@@ -123,7 +142,7 @@ Grafik: Es gilt:e $\vec{a} = \vec{c} - \vec{b} = \vec{c} + (-\vec{b})$.
    \end{itemize}
 \end{definition}
 
-\begin{definition}{kollinear}{}\index{kollinear}
+\begin{definition}{kollinear}{}\index{kollinear}\label{linearkombination}
 
   Zwei Vektoren $\vec{a\vphantom{b}}$ und $\vec{b}$ heißen \textbf{kollinear}, wenn es ein
   $k\in\mathbb{R}$ gibt, sodass
@@ -132,18 +151,6 @@ Grafik: Es gilt:e $\vec{a} = \vec{c} - \vec{b} = \vec{c} + (-\vec{b})$.
 
 \newpage
 
-
-\subsection{Nullvektor}\index{Nullvektor}
-\sectuntertitel{Kommt ein Nullvektor zum Psychiater: ``... ich bin so orientierungslos!''}
-
-Der \textbf{Nullvektor} hat keine Länge und somit auch keine
-Richtung. Der Nullvektor beschreibt \zB die Bewegungs (inklusive
-Richtung) eines stehenden Fahrzeuges.
-Das stehende Fahrzeug kann theoretsich eine Richtung (Ausrichtung des
-Fahrzeugs) haben, da es jedoch keine ``Fahrtrichtung'' hat, spielt die
-Ausrichtung keine Rolle.
-
-\newpage
 
 \subsection{Zerlegung von Vektoren}\index{Vektoren!zerlegen}\index{Zerlegung von Vektoren}
 
@@ -165,7 +172,7 @@ gegebenen Vektoren angegeben werden:
 
 \textbf{Beispiel}
 
-\bbwGraph{-1}{8}{-1}{5}{
+\bbwGraphLeer{-1}{8}{-1}{5}{
 \bbwLetter{3,1.5}{\vec{a}}{blue}
 \draw [->,blue] (1,2) -- (5,2);
 \bbwLetter{1.5,3.5}{\vec{b}}{blue}
@@ -194,23 +201,6 @@ In welchen Fällen ist eine solche Zerlegung nicht möglich nicht möglich?
 Die Zerlegung ist nicht möglich, wenn $\vec{a}$ parallel zu $\vec{b}$
 ist. Es sei denn, $\vec{c}$ ist auch parallel, dann gibt es unendlich
 viele Lösungeen.
-
-Begründung Gleichungssystem:
-  
-  $$\vec{c} = t\cdot{}\vec{a\vphantom{b}} + s\cdot{}\vec{b}$$ heißt:
-  \gleichungZZ{c_x}{t\cdot{}a_x + s\cdot{}b_x}{c_y}{t\cdot{}a_y +
-    s\cdot{}b_y}
-
-  Die Lösung (\zB mittels Einsetz-Verfahren) ist
-
-  $$\det{} = a_xb_y - a_yb_x$$
-
-  $$s = \frac{a_xc_y - a_yc_x}{\det}$$
-  und
-  $$t = \frac{b_yc_x - b_xc_y}{\det}$$
-
-  Ist $det$ (= Determinate) = Null, so gibt es keine (oder keine
-  eindeutige) Zerlegung.
 }
 
 \subsection*{Aufgaben}

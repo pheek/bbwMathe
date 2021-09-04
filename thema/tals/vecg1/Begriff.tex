@@ -69,7 +69,7 @@ Ein Vektor wird entweder mit einem Pfeil über dem Buchstaben
 ${\color{blue}\vec{a}}$ oder aber mit einem Pfeil über der zwei
 Punkebezeichnungen ${\color{red}\overrightarrow{{PQ}}}$ angegeben:
 
-\bbwGraph{-3}{6}{-1}{3}{
+\bbwGraphLeer{-3}{6}{-1}{3}{
 \bbwLetter{2,2}{\vec{a}}{blue}
 \draw [->,blue] (1,1) -- (4,2);
 
@@ -103,7 +103,7 @@ Betrachten Sie die beiden folgenden (freien) Vektoren ${\color{blue} \vec{a}}$ u
 ${\color{red}\vec{b}}$, welche beide durch mehrere Repräsentanten\index{Repräsentant!Vektor}
 (Vertreter\index{Vertreter!Vektor}) eingezeichnet sind:
 
-\bbwGraph{-4}{7}{-3}{3}{
+\bbwGraphLeer{-4}{7}{-3}{3}{
 \bbwLetter{3.5,3}{\vec{a}}{blue}
 \draw [->,blue] (1,1) -- (4,2);
 \draw [->,blue] (2,2) -- (5,3);
@@ -117,20 +117,8 @@ ${\color{red}\vec{b}}$, welche beide durch mehrere Repräsentanten\index{Repräs
 \draw [->,red] (7,0.5) --(6,2.5);
 }%% END bbwGraph
 
-Tragen Sie die fehlenden Werte in die Tabelle ein\footnote{Der
-  mathematisch positive Winkel wird ab der $x$-Achse im
-  Gegenuhrzeigersinn gemessen.}:
-
-\begin{tabular}{|c|c|c|}\hline
-                 & ${\color{blue}\vec{a}}$   & ${\color{red}\vec{b}}$   \\\hline
-  $x$-Komponente & \LoesungsRaumLang{3}      & \LoesungsRaumLang{-1}    \\\hline
-  $y$-Komponente & \TRAINER{1}               & \TRAINER{2}              \\\hline
-  Betrag\index{Betrag!eines Vektors} (=Länge) & \TRAINER{$\sqrt{10}$}     & \TRAINER{$\sqrt{5}$}     \\\hline
-  math. pos. Winkel  & \TRAINER{$\arctan{}\left(\frac13\right)\approx
-    18.43\degre$} & \TRAINER{$90\degre +
-    \arctan{}\left(\frac12\right)\approx 116.6\degre$}               \\\hline
-\end{tabular}
-\platzFuerBerechnungen{3.2}
+Alle {\color{red} roten} Repräsentanten bezeichnen ein und denselben
+\textbf{freien} Vektor. (Ananlog gilt das für den {\color{blue} blauen} freien Vektor.)
 
 \subsection*{Aufgaben}\
 \TALSGeomAadB{178ff}{2.}
@@ -138,51 +126,21 @@ Tragen Sie die fehlenden Werte in die Tabelle ein\footnote{Der
 \newpage
 
 
-\subsection{Betrag}\index{Betrag!eines Vektors}
+\subsection{Betrag (Länge) von Vektoren}\index{Betrag!eines Vektors}
+
+
+\theorieTALSGeom{176}{4.1}
 
 \begin{definition}{Vektor}{}
   Ein \textbf{Vektor} besteht aus einer Länge und einer Richtung.
 \end{definition}
 
 
-
-
-
-\subsubsection{Betrag (Länge) von Vektoren}
-\theorieTALSGeom{176}{4.1}
-Die Länge der Vektoren wird mittels «Pythagoras» berechnet
-
-Sei $\vec{a}  = \begin{pmatrix}x_a\\y_a\end{pmatrix}$. Somit ist die Länge von
-    $\vec{a}$ wie folgt zu berechnen:
-
-    \begin{gesetz}{Betrag, Länge}{}
-      Betrag von $\vec{a}$ := Länge von $\vec{a}$
-
-      $$a = |\vec{a}| = \sqrt{x_a^2 + y_a^2}$$
-      \end{gesetz}
-    Notationen:
-
-    \begin{beispiel}{}{}
-      $$ \vec{a}= \begin{pmatrix} 3\\ 1\end{pmatrix}$$
-        $$|\vec{a}| = \sqrt{3^2+1^2} = \sqrt{10}\approx 3.162$$
-      \end{beispiel}
-    
     \begin{definition}{Länge}{}
       Ein Vektor $\vec{a}$ von Punkt $A$ nach $B$ hat den Betrag (= Länge)
 
       $$a = |\vec{a}| = \overline{AB} = \left|\overrightarrow{AB}\right|$$
     \end{definition}
-
-    \begin{bemerkung}{}{}
-      Im Taschenrechner werden die Vektoren mit eckigen Klammern
-      definiert:
-
-      \texttt{a := [3; 1]}
-
-      Die Länge (Betrag) wird mit dem Befehl \texttt{norm} ermittelt:
-
-      \texttt{norm(a)}
-    \end{bemerkung}
         
 \subsection*{Aufgaben}    
     \TALSGeomAadB{178}{5., 6., 8., 46. a) c) und d)}
