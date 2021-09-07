@@ -26,44 +26,54 @@ eingeführt. Zur Erinnerung:\totalref{wissenschaftlicheNotation}.
 }\fi{}%% END ALL IN ONE
 \newpage
 
-\subsection{Definition Zehnerlogarithmus}\index{Logarithmus!Definition Zehnerlogarithmus}
-$${\color{blue}10}^{\color{red}3} = {\color{green}1000}$$
+\subsection{Definition Zehnerlogarithmus}\index{Logarithmus!Definition
+  Zehnerlogarithmus}
 
-$$\sqrt[{\color{red}3}]{{\color{green}1000}} = {\color{blue}10}$$
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{cc|cc}
+  \hline
+  Potenz               & ${\color{blue}10}^{\color{red}3} = {\color{ForestGreen}x}$     & ${\color{ForestGreen}x}=\LoesungsRaumLang{{\color{blue}10}\cdot{}{\color{blue}10}\cdot{}{\color{blue}10} = {\color{ForestGreen}1000}}$ & Potenzwert \\\hline
+  Potenzgleichung      & ${\color{blue}x}^{\color{red}3}  = {\color{ForestGreen}1000}$  & ${\color{blue}x}=\LoesungsRaumLang{\sqrt[{\color{red}3}]{{\color{ForestGreen}1000}}       = {\color{blue}10}}$   & 3. Wurzel  \\\hline
+  Exponentialgleichung & ${\color{blue}10}^{\color{red}x} = {\color{ForestGreen}1000}$  & ${\color{red}x}=\LoesungsRaumLang{\lg(1000) = {\color{red}3}}$                                  & Logarithmus \\\hline
+  \end{tabular} 
+\renewcommand{\arraystretch}{1}
 
-$${\color{blue}\lg}({\color{green}1000}) = {\color{red}3}$$
+\vspace{5mm}
 
 Allgemein für ${\color{red}z}\in \mathbb{Z}$:
 
-\begin{center}
-  \fbox{\fbox{{$\lg({\color{green} 10^z}) = {\color{red} z}$}}}
-\end{center}
+\begin{definition}{Logarithmus = Exponent}{}
+  $$\lg({\color{green} 10^z}) = {\color{red} z}$$
+\end{definition}
 
 
 Definition für $r\in\mathbb{R}, p \in \mathbb{R}^{+}\backslash\{0\}$:
-\begin{definition}{}{}
+\begin{definition}{Logarithmus zur Basis 10}{}
   \begin{center}
-    ${\color{red}r} = {\color{blue}\lg}({\color{green}p})$
-    $:\Leftrightarrow$
-    ${\color{blue}10}^{\color{red}r}={\color{green}p}$
+    ${\color{red}r} = {\color{blue}\lg}({\color{ForestGreen}p})$
+    $\Longleftrightarrow$
+    ${\color{blue}10}^{\color{red}r}={\color{ForestGreen}p}$
     \end{center}
 \end{definition}
 
-Der Logarithmus ist der Exponent des Potenzwertes.
+\begin{bemerkung}{}{}\index{Logarithmus!Definition}
+  Der \textbf{Logarithmus} (hier $\color{red}r$) eines Potenzwertes
+  (hier $\color{ForestGreen}p$) ist der Exponent ($\color{red}r$) in der
+  Potenzschreibweise (${\color{blue}10}^{\color{red}r}$); und somit die \textbf{Umkehrung des Potenzierens}.
+\end{bemerkung}
 
-(Die Wurzel ist die Basis des Potenzwertes.)
-
+\newpage
+\subsubsection{Logarithmus der Wurzel}
+War erinnern uns: $$\sqrt{10} = 10^\frac12$$
 \begin{beispiel}{Logarithmus der
     Wurzel}{beispiel_logarithmus_der_wurzel}
-  Es gilt wegen den Gesetzen zu rationalen Exponenten:\\
-$10^{\frac12} = \sqrt{10} \approx 3.1627$
 
-  Und daraus folgt direkt $\lg(\sqrt{10}) = 0.5$.
+  Daraus folgt direkt $\lg(\sqrt{10}) =\lg(10^\frac12)  = 0.5$.
 \end{beispiel}
 
 \subsubsection{Notation}
 Der Zehnerlogarithmus $\lg()$ wird oft auch explizit mit der Basis 10
-angegeben; dann wird anstelle von $\lg()$ $\log_{10}()$ geschrieben:
+angegeben; dann wird $\log_{10}(\,\,)$ anstelle von $\lg(\,\,)$ geschrieben:
 
 \begin{center}
 \fbox{$\lg = \log_{10}$ }
@@ -71,6 +81,8 @@ angegeben; dann wird anstelle von $\lg()$ $\log_{10}()$ geschrieben:
 
 \begin{bemerkung}{Taschenrechner}{}
   Auf vielen Taschenrechnern steht einfach $\log$ anstatt $\lg$.
+
+  \tiprobutton{ln_log}
   \end{bemerkung}
 \newpage
 
@@ -85,7 +97,7 @@ $\lg(10) = 1$
 $\lg(1) = 0$
 \end{gesetz}
 
-\subsubsection{Multiplikatiosgesetz (optional)}
+\subsubsection{Multiplikatiosgesetz\GESO{ (optional)}}
 \begin{gesetz}{}{}
   $\lg(r\cdot s) = \lg(r) + \lg(s)$
 \end{gesetz}
