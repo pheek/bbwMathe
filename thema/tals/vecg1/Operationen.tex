@@ -26,8 +26,16 @@ werden. Im Bild: $\vec{c} = \vec{a} + \vec{b}$
 \draw [->,ForestGreen] (1,1) --(5,-1);
 }%% END bbwGraph
 
+\begin{gesetz}{Kommutativgesetz}{}\index{Kommutativgesetz!Vektoren}
+
+  Für Vektoren gilt das Kommutativgesetz:
+  $$\vec{a\vphantom{b}} + \vec{b} = \vec{b} + vec{a\vphantom{b}}$$
+  \end{gesetz}
+
 \subsection*{Aufgaben}
-\TALSGeomAadB{179}{7.}
+\TALSGeomAadB{179}{5., 6. Teile (1) (3) (5) und (7), 8. und 7. a) d)}
+
+
 
 \newpage
 
@@ -48,7 +56,12 @@ Ausrichtung keine Rolle.
 
   Der Nullvektor hat weder Länge noch Richtung.
   
-  \end{definition}
+\end{definition}
+
+\begin{bemerkung}{}{}
+  Der Nullvektor ist neutral gegenüber der Addition:
+  $$\vec{a} + \vec{0}  = \vec{a}$$
+\end{bemerkung}
 \newpage
 
 
@@ -108,7 +121,7 @@ Grafik: Es gilt:e $\vec{a} = \vec{c} - \vec{b} = \vec{c} + (-\vec{b})$.
 }%% END TNT
 
 \subsection*{Aufgaben}
-\TALSGeomAadB{179ff}{9., 10. a) c) i)., 47. und 48.}
+\TALSGeomAadB{179ff}{6. (2) und (4), 7. b) c) 9. und 10. a) c) i)}
 \newpage
 
 
@@ -148,7 +161,8 @@ Grafik: Es gilt:e $\vec{a} = \vec{c} - \vec{b} = \vec{c} + (-\vec{b})$.
   $k\in\mathbb{R}$ gibt, sodass
   $$\vec{a\vphantom{b}} = k\cdot{}\vec{b}$$
   \end{definition}
-
+\subsubsection*{Aufgaben}
+\TALSAadB{179}{7. e) und f)}
 \newpage
 
 
@@ -176,26 +190,32 @@ gegebenen Vektoren angegeben werden:
 \bbwLetter{3,1.5}{\vec{a}}{blue}
 \draw [->,blue] (1,2) -- (5,2);
 \bbwLetter{1.5,3.5}{\vec{b}}{blue}
-\draw [->,blue] (1,2) -> (3,3.999);
+\draw [->,blue] (1,2) -> (2.5,3.999);
 \bbwLetter{6.5,3}{\vec{c}}{ForestGreen}
-\draw [->,ForestGreen] (6,2) -- (6,4);
+\draw [->,ForestGreen] (6,2) -- (6,4.5);
 }%% END bbwGraph
 
 In obigem Beispiel ist
 
 \TNT{5.2}{
-	$\frac12 \vec{a\vphantom{b}} + \vec{c}  = \vec{b}$
+	$\frac38 \vec{a\vphantom{b}} + \frac45 \vec{c}  = \vec{b}$
   
 	und somit
 
-	$\vec{c} = -\frac12 \vec{a\vphantom{b}} + \vec{b}$.
+	$\frac45 \vec{c} = -\frac38 \vec{a\vphantom{b}} + \vec{b}$
+
+  Mittels Division mit $\frac45$ erhalten wir $\vec{c}$:
+
+  $\vec{c} = -\frac{15}{32}\vec{a\vphantom{b}} + \frac54 \vec{b}$
+
+  .
 
   Geometrisch: Setze zwei Parallele zu $\vec{a}$ und $\vec{b}$ durch
   die Enden von $\vec{c}$.
 }%% END TNT
 \newpage
 
-In welchen Fällen ist eine solche Zerlegung nicht möglich nicht möglich?
+In welchen Fällen ist eine solche Zerlegung nicht möglich?
 
 \TNT{10}{
 Die Zerlegung ist nicht möglich, wenn $\vec{a}$ parallel zu $\vec{b}$
