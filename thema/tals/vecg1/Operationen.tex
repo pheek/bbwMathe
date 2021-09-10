@@ -29,11 +29,11 @@ werden. Im Bild: $\vec{c} = \vec{a} + \vec{b}$
 \begin{gesetz}{Kommutativgesetz}{}\index{Kommutativgesetz!Vektoren}
 
   Für Vektoren gilt das Kommutativgesetz:
-  $$\vec{a\vphantom{b}} + \vec{b} = \vec{b} + vec{a\vphantom{b}}$$
+  $$\vec{a\vphantom{b}} + \vec{b} = \vec{b} + \vec{a\vphantom{b}}$$
   \end{gesetz}
 
 \subsection*{Aufgaben}
-\TALSGeomAadB{179}{5., Nr. 6. Teile (1) (3) (5) und (7) und Nr. 7. a) d)}
+\TALSGeomAadB{179}{5., Nr. 6. Teile (1) (3) (5) und (6) und Nr. 7. a) d)}
 
 
 
@@ -55,8 +55,11 @@ Ausrichtung keine Rolle.
   bezeichnet.
 
   Der Nullvektor hat weder Länge noch Richtung.
-  
 \end{definition}
+
+\begin{gesetz}{}{}
+  $$\overrightarrow{AA} = \vec{0}$$
+  \end{gesetz}
 
 \begin{bemerkung}{}{}
   Der Nullvektor ist neutral gegenüber der Addition:
@@ -111,10 +114,10 @@ Die Subtraktion ist die Addition des Gegenvektors:
 \end{definition}
 
 \begin{bemerkung}{}{}
-  $$\vec{a\vphantom{b}} + \vec{b} = \vec{c\vphantom{b}} \Longleftrightarrow \vec{a\vphantom{b}} = \vec{c\vphantom{b}} - \vec{b}$$
+  $$\vec{a\vphantom{x}} + \vec{b} = \vec{a\vphantom{b}} \Longleftrightarrow \vec{x\vphantom{b}} = \vec{a\vphantom{b}} - \vec{b}$$
 \end{bemerkung}
 
-Zeigen Sie geometrisch, dass gilt $\vec{c\vphantom{b}} - \vec{b} = \vec{c\vphantom{b}} +
+Gemoetrisch: $\vec{a\vphantom{b}} - \vec{b} = \vec{a\vphantom{b}} +
 (-\vec{b})$.
 
 \TNT{7.2}{
@@ -127,7 +130,8 @@ Zeigen Sie geometrisch, dass gilt $\vec{c\vphantom{b}} - \vec{b} = \vec{c\vphant
 \draw [->,green] (1,1) --(5,-1);
 }%% END bbwGraph
 
-Grafik: Es gilt:e $\vec{a} = \vec{c} - \vec{b} = \vec{c} + (-\vec{b})$.
+Grafik: Es gilt: $\vec{x} + \vec{b} = \vec{a}$ und das heißt $\vec{x}
+= \vec{a} - \vec{b}$.
 }%% END TNT
 
 \subsection*{Aufgaben}
@@ -164,6 +168,17 @@ Grafik: Es gilt:e $\vec{a} = \vec{c} - \vec{b} = \vec{c} + (-\vec{b})$.
     von $\vec{a}$: $$|k\cdot{}\vec{a}| = |k|\cdot{}|\vec{a}|$$
    \end{itemize}
 \end{definition}
+
+\begin{beispiel}{Brüche}{}
+  Wegen
+  $$\frac12\vec{a} + \frac12\vec{a} = \vec{a}$$
+  gilt, dass auch Brüche oder sog. negative Zahlen als Skalar
+  verwendet werden können.
+\end{beispiel}
+
+\newpage
+
+\subsubsection{Kollinear}
 
 \begin{definition}{kollinear}{}\index{kollinear}\label{linearkombination}
 
