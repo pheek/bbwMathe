@@ -34,10 +34,8 @@ $$\frac{4.6}{9.45} = \frac{4.6 \cdot{}100}{9.45\cdot{}100} =
 \frac{460}{945}$$
 
 Erweitern mit Minus 1:
-$$\frac{a}{-b}
-=\frac{(-1)}{(-1)} \cdot{}\frac{a}{(-b)}
-= \frac{(-1)a}{(-1)(-b)}
-= \frac{-a}{b}$$
+$$\frac{a-b}{b-a} = \frac{(-1)\cdot(a-b)}{(-1)\cdot(b-a)}
+= \frac{(-1)\cdot(a-b)}{a-b} = -1$$
 
 \begin{rezept}{}{}
 
@@ -53,13 +51,30 @@ muss ich erst faktorisieren!\\
 \end{rezept}
 
 \begin{beispiel}{}{}
-$$\frac{ax^2 - a}{(a^2+1)(ax+a)}= \frac{a\cdot{}(x^2-1)}{(a^2+1)\cdot{}a\cdot{}(x-1)}=\frac{a\cdot{}(x+1)\cdot{}(x-1)}{(a^2+1)\cdot{}a\cdot{}(x+1)}=\frac{x-1}{a^2+1} $$
+$$\frac{ax^2 - a}{(a^2+1)(ax+a)}= \frac{a\cdot{}(x^2-1)}{(a^2+1)\cdot{}a\cdot{}(x+1)}=\frac{a\cdot{}(x+1)\cdot{}(x-1)}{(a^2+1)\cdot{}a\cdot{}(x+1)}=\frac{x-1}{a^2+1} $$
 \end{beispiel}
+\newpage
+
+\subsection{Definitionsmenge}\index{Definitinosmenge!Bruchterme}
+
+\begin{definition}{Definitionsmenge}{}
+Die Menge aller Zahlen, die für die Variable in einem Bruch eingesetzt
+werden darf, nennen wir die \textbf{Definitionsmenge}.
+\end{definition}
+
+\renewcommand{\arraystretch}3
+\begin{tabular}{c|c|c}%%
+Bruch         & Was darf nicht eingesetzt werden? & Definitionsmenge \\\hline
+$\frac1x$     & \TRAINER{0}                       & $\mathbb{R}\backslash\{0\}$\\\hline  
+$\frac1{2-x}$ & \TRAINER{2}                       & $\mathbb{R}\backslash\{2\}$\\\hline
+$\frac{x}{(x-5)(x+3)}$ & \TRAINER{-3, 5}                       &
+$\mathbb{R}\backslash\{-3, 5\}$\\\hline
+\end{tabular}
+\renewcommand{\arraystretch}1
 
 \GESO{\subsection*{Aufgaben}
-\GESOAadB{48ff}{5. d) 6. a) 7. a) b) 8. b) d) f) 9. a) c) h) 10. b)
-11. a) c) d) e) f) (Optional 12.) 13. a) c) e) 14. a) c) 15. a) b) c)
-16. b)}%
+\GESOAadB{48ff}{5. d) 6. a) 7. a) 8. b) 9. c) h) 10. b)
+11. a) c) d) e) f) (Optional 12.) 13. a))}%
 
 \GESOAadB{48ff}{2. d) 3. c) d)}%
 }
@@ -100,12 +115,38 @@ Seite 51. nach diesem Verfahren.}}}.
 	\item kürzen
 \end{enumerate}
 \end{rezept}
+\newpage
 
-\GESO{
-\TRAINER{Vorzeigeaufgabe}\noTRAINER{Einstigesaufgabe} nach obigem
-	Verfahren:
-  \GESOAadB{51ff}{25. c)}
-}%% END GESO
+Vorzeigeaufgabe nach obigem Verfahren:
+
+$$\frac{2r}{r^2-9} + \frac{15}{30-10r}$$
+\TNT{20}{
+Einzelbrüche faktorisieren
+$$\frac{2r}{(r+3)(r-3)} + \frac{3\cdot{}5}{10\cdot{}(3-r)}$$
+
+Kürzen
+$$\frac{2r}{(r+3)(r-3)} + \frac{3}{2\cdot{}(3-r)}$$
+
+Hauptnenner (HN): $2(r+s)(r-3)$
+
+Auf Hauptnenner erweitern:
+$$\frac{2\cdot{}2r}{HN} + \frac{3\cdot{}(-1)\cdot{}(r+3)}{HN}$$
+
+Selber Bruchstrich
+$$\frac{2\cdot{}2r + 3\cdot{}(-1)\cdot{}(r+3)}{HN}$$
+Zähler ausmultiplizieren
+$$\frac{4r -3r - 9}{HN}$$
+Zähler Zusammenfassen und vereinfachen
+$$\frac{r - 9}{HN}$$
+
+Schritt 7 und 8 entfällt hier\GESO{ (Weitere Beispiele im Buch S. 44
+oben)}.
+
+Hauptnenner (HN) ausschreiben:
+$$\frac{r-9}{2(r+3)(r-3)}$$
+}
+
+\newpage
 
 \GESO{\subsection*{Aufgaben}}
 
@@ -113,6 +154,10 @@ Seite 51. nach diesem Verfahren.}}}.
 \GESOAadB{49ff}{17. c) d), 18., 19. c) e), 20. e),
 21. b) f), 22. d) f), 23. a) b) g) h) 24. a) 25. a) b) 26. c) d)}%
 } %% END GESO
+\newpage
+
+
+
 
 \subsubsection{Multiplikation von Bruchtermen}
 
@@ -121,8 +166,21 @@ $$\frac{a}{b}\cdot\frac{x}{y} = \frac{a\cdot x}{b\cdot y} = \frac{ax}{by}$$
 \end{gesetz}
 
 Merksatz:
-«mal = von\footnote{Bei Bruchtermen, Prozentzahlen und Häufigkeitsfaktoren kann man das «von» als Multiplikation auffassen. $20\% \textrm{ von } 67 = 0.2 \cdot{} 67$; aber auch $\frac{1}{3} \textrm{ von } 53 = \frac{1}{3}\cdot{5}=\frac{5}{3}$. Dies stimmt jedoch nur bei Brüchen, Prozentzahlen und Häufigkeitsfaktoren: Bei Anzahlen, metrischen Werten und dergleichen ist dann das «von» durch eine Division zu ersetzen und wir erhalten dann den Bruch (bzw. Prozentsatz). Beispiel: Drei von fünf Kindern heißt $\frac{3}{5} = 60\% = 0.6$.}»:
-$\frac{1}{4} \cdot \frac{3}{5}$ = $\frac{1}{4}$ mal $\frac{3}{5}$ = $\frac{1}{4}$ von $\frac{3}{5}$.
+«mal = von\footnote{Bei Bruchtermen, Prozentzahlen und
+Häufigkeitsfaktoren kann man das «von» als Multiplikation
+auffassen. $20\% \textrm{ von } 67 = 0.2 \cdot{} 67$; aber auch
+$\frac{1}{3} \textrm{ von } 53
+= \frac{1}{3}\cdot{5}=\frac{5}{3}$. Dies stimmt jedoch nur bei
+Brüchen, Prozentzahlen und Häufigkeitsfaktoren: Bei Anzahlen,
+metrischen Werten und dergleichen ist dann das «von» durch eine
+Division zu ersetzen und wir erhalten dann den Bruch
+(bzw. Prozentsatz). Beispiel: Drei von fünf Kindern heißt $\frac{3}{5}
+= 60\% = 0.6$.}»:
+
+$$\frac34 \textrm{ von } \frac23 = \frac34\cdot\frac23
+=  \frac23\cdot\frac34 = \frac23 \textrm{ von } \frac34$$
+
+\bbwCenterGraphic{8cm}{allg/alg/img/UhrDreiViertel.png}
 
 \subsubsection{Division von Bruchtermen}
 \begin{gesetz}{}{}
