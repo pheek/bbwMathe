@@ -79,6 +79,9 @@ Eins (1) nicht fehlen darf. \textbf{Tipp}: Zur Probe immer zurück ausmultiplizi
 
 $$8-a = \LoesungsRaumLang{\mathbf{(-1)\cdot{}} (-8 + a) = -(a-8)}$$
 
+Anwendung:
+$$\frac{a-3}{3-a} = \frac{(-1)\cdot{}(-a+3)}{3-a} = \frac{(-1)\cdot{}(3-a)}{3-a} = \frac{-1}1 = -1$$
+
 Aus jeder Summe (bzw. Differenz)
 kann minus Eins $(-1)$ ausgeklammert werden, indem alle Vorzeichen der
 Summanden umgedreht werden:
@@ -98,7 +101,7 @@ ist nicht ein Vorzeichen der globalen Summanden!
 \subsubsection{Klammerausdrücke}\index{Klammerausdruck ausklammern}
 Anstelle einfacher Monome können auch ganze Klammerausdrücke
 ausgeklammert werden:
-$$7x{\color{green}(3+b)} + 5z{\color{green}(b+3)}$$\TRAINER{$(7x+5z){\color{green}(a+3)}$}
+$$7x{\color{green}(3+b)} + 5z{\color{green}(b+3)}$$
 $$=(7x+5z){\color{green}(3+b)}$$
 
 Tipp: Geben Sie dem Klammerausdruck einen Namen\footnote{Dieser
@@ -108,32 +111,18 @@ $$7x{\color{green}(3+b)} + 5z{\color{green}(b+3)} = 7x\cdot{\color{green}A}
 + 5z\cdot{\color{green}A} {\stackrel{\textrm{a.}}{=}}
 (7x+5z)\cdot{\color{green}A} = (7x+5z){\color{green}(3+b)}$$
 
-
-\paragraph{Mehrmaliges Ausklammern:}\index{ausklammern!mehrmaliges}
- Um Klammerausdrücke zu finden, bietet sich die Methode des mehrmaligen Ausklammerns an.
- Dabei wird die Summe (bzw. Differenz) in gleiche Anzahl \textbf{Teilsummen}\index{Teilsummen} aufgeteilt und Stückweise ausgeklammert.
- Im folgenden Beispiel werden die beiden ersten Summanden und die beiden letzten «Summanden» zunächst unabhängig voneinander betrachtet.
-
-$$3mk+6nk-5m-10n $$
-$$= 3k{\color{green}(m+2n)}-5{\color{green}(m+2n)} $$
-$$= (3k-5){\color{green}(m+2n)}$$
-
-
 \begin{beispiel}{}{}
-  $$5a-30+ax-6x = ...$$
-  Wie gehen wir vor? Beispiel: Aus den ersten beiden Summanden 5 und
-  aus den beiden hinteren Summanden $x$ ausklammern:
+$$6b(5+x) - x- 5$$
+\TNT{5.2}{
+$$6b(5+x) -(x+5)$$
+$$6b(5+x) -1(x+5)$$
+$$6b(x+5) -1(x+5)$$
+$$(x+5) (6b-1)$$
+}
 
-\TNT{2.4}{$$... = 5\cdot(a-6) + x\cdot(a-6) = ...$$}
-
-  Nun aus beiden Summanden den Term ......... \TRAINER{$(a-6)$}
-  ausklammern:
-
-\TNT{2.4}{$$... = (5+x)\cdot(a-6)$$}
 \end{beispiel}
+
 \newpage
-
-
 
 
 \subsubsection{Minus Eins ausklammern II}\index{Minus Eins ausklammern}
@@ -158,10 +147,35 @@ $7x{\color{green}(b-3)} - 5z{\color{green}(b-3)}$
 
 \TALS{\aufgabenfarbe{S. 18: Aufg. 29. b) 30. a) c) d) g) 31. a) c) f)
 i) 32. b) f)}}
-\GESO{\aufgabenfarbe{S. 39: 41. a) c) e) d) 42. b) c) 43. b)
+\GESO{\aufgabenfarbe{S. 39: 41. a) e) d) 42. b) c) 43. b)
 c) 44. b) e) }}
 \newpage
 
+
+
+\subsubsection{Mehrmaliges Ausklammern:}\index{ausklammern!mehrmaliges}
+ Um Klammerausdrücke zu finden, bietet sich die Methode des mehrmaligen Ausklammerns an.
+ Dabei wird die Summe (bzw. Differenz) in gleiche Anzahl \textbf{Teilsummen}\index{Teilsummen} aufgeteilt und Stückweise ausgeklammert.
+ Im folgenden Beispiel werden die beiden ersten Summanden und die beiden letzten «Summanden» zunächst unabhängig voneinander betrachtet.
+
+$$3mk+6nk-5m-10n $$
+$$= 3k{\color{green}(m+2n)}-5{\color{green}(m+2n)} $$
+$$= (3k-5){\color{green}(m+2n)}$$
+
+
+\begin{beispiel}{}{}
+  $$5a-30+ax-6x = ...$$
+  Wie gehen wir vor? Beispiel: Aus den ersten beiden Summanden 5 und
+  aus den beiden hinteren Summanden $x$ ausklammern:
+
+\TNT{2.4}{$$... = 5\cdot(a-6) + x\cdot(a-6) = ...$$}
+
+  Nun aus beiden Summanden den Term ......... \TRAINER{$(a-6)$}
+  ausklammern:
+
+\TNT{2.4}{$$... = (5+x)\cdot(a-6)$$}
+\end{beispiel}
+\newpage
 
 
 \subsection{Binomische Formeln}\index{Faktorisieren!mit binomischen Formeln}%%
@@ -176,17 +190,16 @@ $$ a^2 - 16 = \LoesungsRaum{(a+4)(a-4)} $$
 
 $$x^2 -18x + 81 = \LoesungsRaum{(x-9)(x-9)}$$
 
-$$64y^2 - 49z^2 = \LoesungsRaum{(8y+7z)(8y-7z)}$$
+$$64y^2 - 49z^6 = \LoesungsRaum{(8y+7z^3)(8y-7z^3)}$$
 
-$$c^4 - 1 = \LoesungsRaum{(c+1)(c-1)(c^2+1)}$$
+$$c^4 - 1 = \LoesungsRaum{\mathbf{(c+1)(c-1)}(c^2+1)}$$
 
 \TALS{$$ b^3 - 3b^2a + 3ba^2 - a^3 = \LoesungsRaum{(b-a)^3}$$}
 
 \TALS{\aufgabenfarbe{S. 19: Aufg. 33. a) b) c) h) l) 34. a)}}
-\GESO{\aufgabenfarbe{S. 39/40: Aufg. 45. a) b) c) d) e) 46. a) c) e)
-g) 47. a) b) e) c)}}
+\GESO{\aufgabenfarbe{S. 39/40: Aufg. 41. c), 45. a) b) c) d) e), 46. a) c) e)
+g) und  47. a) b) e) c)}}
 \newpage
-
 
 
 
@@ -194,8 +207,20 @@ g) 47. a) b) e) c)}}
 Beispiel $$a^2-4a-5$$
 $$=(a-\Box{})(a+\Box{}) = (a-5)(a+1)$$
 
+
+\GESO{\noTRAINER{\mmPapier{5.2}}\TRAINER{Optional: Taschenrechner poly-solv, danach Vorzeichen
+drehen!
+
+Beispiel $x^2 - 2x -48$;
+
+lösen wir mit $a=1$, $b=-2$ und
+$c=-48$. Taschenrechner Lösungen 8 und -6. Somit lautet die
+faktorisierte Form (nach dem Tauschen der Vorzeichen):
+$$x^2-2x-48 = (x-8)(x+6)$$}}
+
 \TALS{\aufgabenfarbe{S. 19: Aufg. 35. a) b) k)}}
 \GESO{\aufgabenfarbe{S. 40: Aufg. 48. a) d) g) h) i) 49. a) b) c) d)}}
+
 
 \newpage
 %\noTRAINER{\blankpage{}}

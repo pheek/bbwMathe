@@ -32,6 +32,12 @@ werden. Im Bild: $\vec{c} = \vec{a} + \vec{b}$
   $$\vec{a\vphantom{b}} + \vec{b} = \vec{b} + \vec{a\vphantom{b}}$$
   \end{gesetz}
 
+\begin{bemerkung}{}{}
+  Es gilt für Vektoren in der «Endpunkt-Notation»:
+  $$\overrightarrow{AB} + \overrightarrow{BC} = \overrightarrow{AC}$$
+\end{bemerkung}
+
+
 \subsection*{Aufgaben}
 \TALSGeomAadB{179}{5., Nr. 6. Teile (1) (3) (5) und (6) und Nr. 7. a) d)}
 
@@ -124,13 +130,13 @@ Gemoetrisch:
 \bbwLetter{2,2}{\vec{a}}{blue}
 \draw [->,blue] (1,1) -- (4,2);
 \bbwLetter{5,1}{\vec{b}}{red}
-\draw [->,red] (4,2) --(5,-1);
-\bbwLetter{3,0.5}{\vec{c}}{ForestGreen}
+\draw [->,red] (5,-1) --(4, 2);
+\bbwLetter{3,0.5}{\vec{x}}{ForestGreen}
 \draw [->,green] (1,1) --(5,-1);
 }%% END bbwGraph
 
-Grafik: Es gilt: $\vec{a} + \vec{b} = \vec{c}$ und das heißt $\vec{a}
-= \vec{c} - \vec{b}$.
+Grafik: Es gilt: $\vec{x} + \vec{b} = \vec{a}$ und das heißt $\vec{a}
+= \vec{x} - \vec{b}$ sowie $\vec{x} = \vec{a}-\vec{b}$.
 }%% END TNT
 
 \subsection*{Aufgaben}
@@ -171,7 +177,7 @@ Grafik: Es gilt: $\vec{a} + \vec{b} = \vec{c}$ und das heißt $\vec{a}
 \begin{beispiel}{Brüche}{}
   Wegen
   $$\frac12\vec{a} + \frac12\vec{a} = \vec{a}$$
-  gilt, dass auch Brüche oder sog. negative Zahlen als Skalar
+  gilt, dass auch Brüche und sogar  negative Zahlen als Skalar
   verwendet werden können.
 \end{beispiel}
 
@@ -213,29 +219,29 @@ gegebenen Vektoren angegeben werden:
 \bbwGraphLeer{-1}{8}{-1}{5}{
 \bbwLetter{3,1.5}{\vec{a}}{blue}
 \draw [->,blue] (1,2) -- (5,2);
-\bbwLetter{1.5,3.5}{\vec{b}}{blue}
-\draw [->,blue] (1,2) -> (2.5,3.999);
+\bbwLetter{1.2,3.5}{\vec{b}}{blue}
+\draw [->,blue] (1,2) -> (2,3.999);
 \bbwLetter{6.5,3}{\vec{c}}{ForestGreen}
-\draw [->,ForestGreen] (6,2) -- (6,4.5);
+\draw [->,ForestGreen] (6,2) -- (6,3);
 }%% END bbwGraph
 
 In obigem Beispiel ist
 
 \TNT{5.2}{
-	$\frac38 \vec{a\vphantom{b}} + \frac45 \vec{c}  = \vec{b}$
+	$\frac14 \vec{a\vphantom{b}} + 2 \vec{c}  = \vec{b}$
   
 	und somit
 
-	$\frac45 \vec{c} = -\frac38 \vec{a\vphantom{b}} + \vec{b}$
+	$2 \vec{c} =\vec{b}  -\frac14 \vec{a\vphantom{b}}$
 
-  Mittels Division mit $\frac45$ erhalten wir $\vec{c}$:
+  Mittels Division durch $2$ erhalten wir $\vec{c}$:
 
-  $\vec{c} = -\frac{15}{32}\vec{a\vphantom{b}} + \frac54 \vec{b}$
+  $\vec{c} = -\frac18\vec{a\vphantom{b}} + \frac12 \vec{b}$
 
   .
 
   Geometrisch: Setze zwei Parallele zu $\vec{a}$ und $\vec{b}$ durch
-  die Enden von $\vec{c}$.
+  je die entgegengesetzten Enden von $\vec{c}$.
 }%% END TNT
 \newpage
 
@@ -251,3 +257,4 @@ viele Lösungeen.
 
 
 \TALSGeomAadB{180ff}{12. b) c), 13., 16. b) d) e) und 17. a) b)}
+\newpage
