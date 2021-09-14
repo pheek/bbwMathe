@@ -13,9 +13,12 @@
 \subsection*{Lernziele}
 
 \begin{itemize}
-	\item Begriffe: Dividend (Zähler)\index{Dividend} : Divisor (Nenner)\index{Divisor}= Quotient\index{Quotient} (Bruch)
+	\item Begriffe: Dividend (Zähler)\index{Dividend} : Divisor
+	(Nenner)\index{Divisor}= Quotient\index{Quotient} (Bruch)
+  \item Kürzen (und erweitern)
 	\item Gleichnamig machen\index{gleichnamig}, Hauptnenner\index{Hauptnenner} (kgV\index{kgV}\GESO{\cite{marthaler17} Seite 43})
 	\item Brüche addieren/subtrahieren
+  \item multiplizieren
 	\item Doppelbrüche (Brüche dividieren) \GESO{S. 45 \cite{marthaler17}}
 \end{itemize}
 
@@ -27,11 +30,11 @@ Jeder Bruch kann ohne ändern seines Wertes erweitert bzw. gekürzt
 werden:
 
 Kürzen:
-$$\frac{130}{50} = \frac{130 : 10}{50:10} =\frac{13}{5}$$
+$$\frac{130}{50} = \LoesungsRaumLang{\frac{130 : 10}{50:10} =\frac{13}{5}}$$
 
 Erweitern:
-$$\frac{4.6}{9.45} = \frac{4.6 \cdot{}100}{9.45\cdot{}100} =
-\frac{460}{945}$$
+$$\frac{4.6}{9.45} = \LoesungsRaumLang{\frac{4.6 \cdot{}100}{9.45\cdot{}100} =
+\frac{460}{945}}$$
 
 Erweitern mit Minus 1:
 $$\frac{a-b}{b-a} = \frac{(-1)\cdot(a-b)}{(-1)\cdot(b-a)}
@@ -59,15 +62,15 @@ $$\frac{ax^2 - a}{(a^2+1)(ax+a)}= \frac{a\cdot{}(x^2-1)}{(a^2+1)\cdot{}a\cdot{}(
 
 \begin{definition}{Definitionsmenge}{}
 Die Menge aller Zahlen, die für die Variable in einem Bruch eingesetzt
-werden darf, nennen wir die \textbf{Definitionsmenge}.
+werden darf, nennen wir die \textbf{Definitionsmenge} $\mathbb{D}$.
 \end{definition}
 
 \renewcommand{\arraystretch}3
 \begin{tabular}{c|c|c}%%
-Bruch                  & Was darf nicht eingesetzt werden? & Definitionsmenge \\\hline
-$\frac1x$              & \TRAINER{0}                       & $\mathbb{R}\backslash\{0\}$\\\hline  
+Bruch                  & Was darf nicht eingesetzt werden? & $\mathbb{D}$ Definitionsmenge \\\hline
+$\frac1x$              & \TRAINER{0}                       & $\mathbb{D}=\mathbb{R}\backslash\{0\}$\\\hline  
 $\frac1{2-x}$          & \TRAINER{2}                       & $\mathbb{R}\backslash\{2\}$\\\hline
-$\frac{x}{(x-5)(x+3)}$ & \TRAINER{-3, 5}                   & $\mathbb{R}\backslash\{-3, 5\}$\\\hline
+$\frac{x}{(x-5)(x+3)}$ & \TRAINER{-3, 5}                   & $\mathbb{D}=\mathbb{R}\backslash\{-3, 5\}$\\\hline
 \end{tabular}
 \renewcommand{\arraystretch}1
 
@@ -97,9 +100,7 @@ Beispiel
 $$\frac{a+1}{-a} + \frac{a}{a-1} = \frac{a^2 - 1 - a^2}{-a(a-1)} = \frac{1}{a(a-1)}$$
 
 Merksatz: Nur gleichnamige Brüche dürfen addiert (bzw. subtrahiert)
-werden\GESO{\TRAINER{\footnote{Aufgabe 25. c) Seite 51 eignet sich hier
-als Vorzeigeaufgabe.}}\noTRAINER{\footnote{Lösen Sie Aufg. 25. c) von
-Seite 51. nach diesem Verfahren.}}}.
+werden.
 
 \begin{rezept}{Brüche addieren}{}
 \begin{enumerate}
@@ -179,7 +180,8 @@ Division zu ersetzen und wir erhalten dann den Bruch
 $$\frac34 \textrm{ von } \frac23 = \frac34\cdot\frac23
 =  \frac23\cdot\frac34 = \frac23 \textrm{ von } \frac34$$
 
-\bbwCenterGraphic{8cm}{allg/alg/img/UhrDreiViertel.png}
+\TRAINER{\bbwCenterGraphic{8cm}{allg/alg/img/UhrDreiViertel.png}}
+\noTRAINER{\bbwCenterGraphic{8cm}{allg/alg/img/UhrDreiViertelLeer.png}}
 
 \subsubsection{Division von Bruchtermen}
 \begin{gesetz}{}{}
@@ -188,10 +190,10 @@ $$\frac{a}{b} : \frac{x}{y}=\frac{a}{b}\cdot\frac{y}{x} = \frac{a\cdot y}{b\cdot
 
 Begründung — mit Kehrwert erweitern:
 
-$$5 : \frac{1}{4} =
-\frac{5}{\left(\frac{1}{4}\right)} =
-\frac{5\cdot{}4}{\left(\frac{1}{4}\right)\cdot{}4} =
-\frac{5\cdot{}4}{1} = 5 \cdot{} 4$$
+$$5 : \frac{3}{4} = \LoesungsRaumLang{
+\frac{5}{\left(\frac{3}{4}\right)} =
+\frac{5\cdot{}\frac43}{\frac34\cdot{}\frac43} =
+\frac{5\cdot{}\frac43}{1} = 5 \cdot{} \frac43}$$
 \newpage
 
 \input{allg/alg/Doppelbrueche}
