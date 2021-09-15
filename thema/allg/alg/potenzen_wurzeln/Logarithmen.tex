@@ -16,71 +16,131 @@
 
 \subsection{Andere Basis als Basis 10}\index{Logarithmus!beliebige Basis}
 
-Wir können bereits $$x^5=32$$ lösen, indem wir beidseitig die 5. Wurzel ziehen: $$x = \sqrt[5]{x^5} = \sqrt[5]{32} = 2$$
+Wir können bereits $$x^5=32$$ lösen, indem wir beidseitig die
+5. Wurzel ziehen:
 
-Ebenso können wir Probleme mit der Unbekannten im Exponenten lösen, wenn die Basis 10 beträgt: Das Problem $10^x = 1000$ können wir mit Logarithmen lösen: $$\lg(1000) = \lg(10^3) = 3$$
+$$x = \LoesungsRaum{\sqrt[5]{32}} = \LoesungsRaum{\sqrt[5]{2^5}} = 2$$
+
+Ebenso können wir Probleme mit der Unbekannten im Exponenten lösen,
+wenn die Basis 10 beträgt: Das Problem $10^x = 1000$ können wir mit
+Logarithmen lösen:
+
+$$\lg(1000) = \LoesungsRaumLang{\lg(10^3) = 3}$$
+
+Zuletzt wissen wir bereits, dass
+
+$$10^{\lg(1000)} = \LoesungsRaum{1000} \textrm{ oder allgemein }$$
+
+$$10^{\lg(b)} = b$$
+
+\newpage
+
 
 Aber wie lösen wir so ein Problem:
 
 $$2^x = 128$$
 
-Die Lösung ist ein Logarithmus mit anderer Basis als 10, sodass «Zweierlogarithmus» von $(2^x) = x$.
+\textbf{Die harte Tour:}\\
 
-Und den gibt es:
-$$\log_2(2^x) = x$$
-Somit können wir das Problem $2^x=128$ lösen (mit Logarithmentabellen oder heute mit dem Taschenrechner):
+Nach obigem Gesetz können wir $2$ und $128$ anders schreiben:
 
-$$x = \log_2(2^x) = \log_2(128) = \LoesungsRaum{7}$$
+$$2= 10^{\lg(2)} \textrm{ und } 128 = 10^{\lg(128)}$$
+
+Setzen wir dies nun in $2^x=128$ ein, so erhalten wir
+
+$$\left(10^{\lg(2)}\right)^x = 10^{\lg(128)}.$$
 
 
-\begin{definition}{Logarithmus zu allgemeiner Basis $a$}{}
+Wegen den Gesetzen zu Potenzen gilt:
+
+$$10^{\lg(2)\cdot{}x} = 10^{\lg(128)}$$
+
+  Durch Exponetenvergleich erhalten wir:
+
+  $$\lg(2)\cdot{}x = \lg(128)$$
+
+  Und damit erhalten wir:
+
+  $$x = \frac{\lg(128)}{\lg(2)} = \LoesungsRaum{7}$$
+
+
+  \textbf{... die sanfte Tour:}\\
+
+ Das Problem $$2^x=128$$ unterscheidet sich vom bisher bekannten nur
+ dadurch, dass die Basis nicht 10, sondern 2 ist. Dies kann der
+ Taschenrechner auch: 
+
+ $$2^x = 128 \Longleftrightarrow  \log_2(128) = x = \LoesungsRaum{7}$$
   
-$$ a^b=c \Leftrightarrow \log{}_a(c) = b $$
-\end{definition}
-
-\TNT{2.4}{Beispiel $2^4 = 16$, d.\,h. $\log_2(16)=4 $.\vspace{1cm}}
-
-\newpage
-
-\subsubsection{Rechengesetze}
-
-Es gilt allgemein
-
-\begin{gesetz}{Logarithmus zu beliebiger Basis}{}
-  $$\log_a(a^x) = x$$
+\begin{gesetz}{Basiswechsel}{}\index{Basiswechsel!Logarithmen}
+  Für $a\in\mathbb{R}^{+}\backslash\{0,1\}$ und $x>0$ gilt:
+  $$\log_a(x) = \frac{\lg(x)}{\lg(a)}\TALS{ = \frac{\log_b(x)}{\log_b(a)}}$$
 \end{gesetz}
 
+%Begründung:
+%
+%\TNT{2.4}{
+%\GESO{$\log_5(32)=x \Longleftrightarrow 5^x=32$\\
+%    Daher: $\log(5^x) = \log(32) \Longleftrightarrow
+%    x\log(5)=\log(32) \Longleftrightarrow x=\frac{\log(32)}{\log(5)} =
+%    \log_5(32)$} %% END GSEO
+%\TALS{Beweis: $\log_a(b)=x \Longleftrightarrow a^x=b$\\
+%    Daher: $\log(a^x) = \log(b) \Longleftrightarrow
+%    x\log(a)=\log(b) \Longleftrightarrow x=\frac{\log(b)}{\log(a)} =
+%    \log_a(b)$} %% END TALS
+%}%% END TNT
+
+%\GESO{
+%  Drücken Sie $\log_3(17)$ durch den Zehnerlogarithmus $\lg{}$ aus:
+%  \TNT{2}{$$\log_3(17) = \frac{\lg(17)}{\lg(3)}$$}%% END TNT
+%}%% END GESO
+
+ 
+ \newpage
+
+
+ 
+\subsubsection{Weitere Logarithmengesetze}\index{Gesetze!Logarithmen}
+
+ \begin{definition}{Logarithmus zu allgemeiner Basis}{}
+   $$a^b=c \Longleftrightarrow \log_a(c) = b$$
+   \end{definition}
+
+ 
+ \begin{bemerkung}{}{}
+   $$\log_a(a) = \LoesungsRaum{1} \textrm{ , denn } a^1 = a$$
+\end{bemerkung}
+
+ \begin{bemerkung}{}{}
+   $$\log_a(1) = \LoesungsRaum{0} \textrm{ , denn } a^0 = 1$$
+\end{bemerkung}
+
+\begin{bemerkung}{Logarithmus zu beliebiger Basis}{}
+  $$\log_a(a^x) = x$$
+\end{bemerkung}
+
+
+\TNT{2.4}{Beispiel $2^4 = 16$, d.\,h. $\log_2(16)=4 $.\vspace{1cm}}
 
 
 \GESO{Weitere Rechengesetze im Buch \cite{marthaler17} ab Seite 97:}
 
+ \newpage
 
-\begin{bemerkung}{}{}
-$$\log_a(a)=1$$
-\end{bemerkung}
-\TNT{2.4}{Denn: $\log_a(a) = \log_a(a^1)$ Bsp:  $\lg(10) = \lg(10^1)$.\vspace{1cm}}
+ 
+ \subsubsection{Potenzregel}
 
+ Wir wissen bereits, dass
 
-\begin{bemerkung}{}{}
-$$\log{}_a(1)=0$$
-\end{bemerkung}
-\TNT{2.4}{Bsp.: $\log_{10}(1) = \lg(1) = \lg(10^0) = 0$.\vspace{1cm}}
-\newpage
+ $$\left(10^m\right)^n = 10^{m\cdot{}n}$$
 
-\TALS{\
-  \begin{gesetz}{}{} 
-  $$\log_a(u\cdot{}v)=\log_a(u) + \log_a(v)$$
-  $$\log_a\left(\frac{u}{v}\right)=\log_a(u) - \log_a(v)$$
-  \end{gesetz}%%
-  \TNT{3.2}{Beweis s. Video ph. freimann in den Wikis}
-} %% END TALS
+ und
+
+ $$\lg(10^x) = x$$
+
+ Daraus erhalten wir
 
 
-\TALS{Daraus ergibt sich folgende Potenzregel}
-
-\begin{gesetz}{Potenzregel}{}
-$$\log_a(u^k)=k\cdot{}\log_a(u)$$
-\end{gesetz}
 \TNT{3.2}{
   Voraussetzung:
   \begin{itemize}
@@ -92,6 +152,28 @@ $$\log_a(u^k)=k\cdot{}\log_a(u)$$
   \lg(10^{(7\cdot{} 2)}) {\stackrel{(II)}{=}} 7\cdot{} 2 {\stackrel{(II)}{=}} 7\cdot{}
   \lg(10^2) = 7\cdot{}\lg(100)$
 }%% END TNT
+
+ 
+ Daraus erhalten wir sofort die Potenzregel:
+
+ \begin{gesetz}{Potenzregel}{}
+   Für alle positiven $a$ und $u$ gilt:
+
+   $$\log_a(u^k) = k\cdot{} \log_a(u)$$
+   \end{gesetz}
+\newpage
+
+
+
+
+\TALS{\
+  \begin{gesetz}{}{} 
+  $$\log_a(u\cdot{}v)=\log_a(u) + \log_a(v)$$
+  $$\log_a\left(\frac{u}{v}\right)=\log_a(u) - \log_a(v)$$
+  \end{gesetz}%%
+  \TNT{3.2}{Beweis s. Video ph. freimann in den Wikis}
+} %% END TALS
+
 \newpage
 
 
@@ -143,32 +225,6 @@ $\log_2(200) \approx 7.64$, d.\,h. ich benötige 8 Bit, um 200 Zustände abzubil
 }%% END TALS
 
 
-
-
-\subsubsection{Basiswechsel}\index{Basiswechsel!Logarithmen}
-\begin{gesetz}{Basiswechsel}{}
-  Für $a\in\mathbb{R}^{+}\backslash\{0,1\}$ und $x>0$ gilt:
-  $$\log_a(x) = \frac{\lg(x)}{\lg(a)} = \frac{\log_b(x)}{\log_b(a)}$$
-\end{gesetz}
-
-Begründung:
-
-\TNT{2.4}{
-\GESO{$\log_5(32)=x \Longleftrightarrow 5^x=32$\\
-    Daher: $\log(5^x) = \log(32) \Longleftrightarrow
-    x\log(5)=\log(32) \Longleftrightarrow x=\frac{\log(32)}{\log(5)} =
-    \log_5(32)$} %% END GSEO
-\TALS{Beweis: $\log_a(b)=x \Longleftrightarrow a^x=b$\\
-    Daher: $\log(a^x) = \log(b) \Longleftrightarrow
-    x\log(a)=\log(b) \Longleftrightarrow x=\frac{\log(b)}{\log(a)} =
-    \log_a(b)$} %% END TALS
-}%% END TNT
-
-\GESO{
-  Drücken Sie $\log_3(17)$ durch den Zehnerlogarithmus $\lg{}$ aus:
-  \TNT{2}{$$\log_3(17) = \frac{\lg(17)}{\lg(3)}$$}%% END TNT
-}%% END GESO
-
 \newpage
 
 
@@ -207,6 +263,9 @@ $$\log_a(c) = \frac{\ln(c)}{\ln(a)}$$
 \GESO{Andere Basis (Vieles ist mit dem Taschenrechner lösbar):}
 
 \GESOAadB{103ff}{8. a) b) c) f), 9., 10. a), 13. a) f), 14. a) g),
-  15. a) c) d) e) f), 16. a) c) d) e), 17. a) b) c), 18. g) h) i)}
+  15. a) c) d) e) f), 16. a) c) d) e) und 17. a) b)}
 
 \GESOAadB{106}{33.}
+
+\GESO{Logarithmus naturalis:}
+\GESOAadB{104}{17. c) und 18. g) h) i)}
