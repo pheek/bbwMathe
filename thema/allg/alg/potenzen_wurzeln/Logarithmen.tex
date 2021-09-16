@@ -31,8 +31,9 @@ Zuletzt wissen wir bereits, dass
 
 $$10^{\lg(1000)} = \LoesungsRaum{1000} \textrm{ oder allgemein }$$
 
-$$10^{\lg(b)} = b$$
-
+\begin{center}
+\fbox{$10^{\lg(p)} = p$}
+\end{center}
 \newpage
 
 
@@ -40,7 +41,8 @@ Aber wie lösen wir so ein Problem:
 
 $$2^x = 128$$
 
-\textbf{Die harte Tour:}\\
+\textbf{Die harte Tour}\footnote{Müssen Sie nicht herleiten können,
+  docch daraus ergibt sich ein brauchbares Gesetz.}:\\
 
 Nach obigem Gesetz können wir $2$ und $128$ anders schreiben:
 
@@ -64,7 +66,7 @@ $$10^{\lg(2)\cdot{}x} = 10^{\lg(128)}$$
   $$x = \frac{\lg(128)}{\lg(2)} = \LoesungsRaum{7}$$
 
 
-  \textbf{... die sanfte Tour:}\\
+  \textbf{... die sanfte Tour}:\\
 
  Das Problem $$2^x=128$$ unterscheidet sich vom bisher bekannten nur
  dadurch, dass die Basis nicht 10, sondern 2 ist. Dies kann der
@@ -73,8 +75,8 @@ $$10^{\lg(2)\cdot{}x} = 10^{\lg(128)}$$
  $$2^x = 128 \Longleftrightarrow  \log_2(128) = x = \LoesungsRaum{7}$$
   
 \begin{gesetz}{Basiswechsel}{}\index{Basiswechsel!Logarithmen}
-  Für $a\in\mathbb{R}^{+}\backslash\{0,1\}$ und $x>0$ gilt:
-  $$\log_a(x) = \frac{\lg(x)}{\lg(a)}\TALS{ = \frac{\log_b(x)}{\log_b(a)}}$$
+  Für $a\in\mathbb{R}^{+}\backslash\{0,1\}$ und $p>0$ gilt:
+  $$\log_a(p) = \frac{\lg(p)}{\lg(a)}\TALS{ = \frac{\log_b(p)}{\log_b(a)}}$$
 \end{gesetz}
 
 %Begründung:
@@ -107,6 +109,10 @@ $$10^{\lg(2)\cdot{}x} = 10^{\lg(128)}$$
    \end{definition}
 
  
+ \begin{bemerkung}{}{}
+   $$\log_a(a^7) = \LoesungsRaum{7}$$
+\end{bemerkung}
+
  \begin{bemerkung}{}{}
    $$\log_a(a) = \LoesungsRaum{1} \textrm{ , denn } a^1 = a$$
 \end{bemerkung}
