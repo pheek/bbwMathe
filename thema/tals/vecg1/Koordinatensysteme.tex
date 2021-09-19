@@ -52,15 +52,32 @@ Tragen Sie die fehlenden Werte in die Tabelle ein\footnote{Der
     \arctan{}\left(\frac12\right)\approx 116.6\degre$}               \\\hline
 \end{tabular}
 \renewcommand{\arraystretch}{1}
+
 Koordinatenschreibweise von $\color{blue}\vec{a}$ und $\color{red}\vec{b}$:\,\,
 $\vec{a} = \left( \TRAINER{3}\noTRAINER{\,\,\,\,} \atop \TRAINER{1} \right)$
 $\vec{b} = \left( \TRAINER{-1}\noTRAINER{\,\,\,\,\,} \atop \TRAINER{2} \right)$
 \newpage
-\platzFuerBerechnungen{18}
-\TRAINER{\vspace{18cm}}
+\subsubsection{Addition in kartesischen Koordinaten}
+Vektoren im kartesischen Koordinatensystem werden addiert, indem ihre
+$x$- bzw $y$-Komponenten separat addiert werden:
+
+\begin{gesetz}{Addition}{}\index{Addition!Vektoren}\index{Vektoraddition}
+$$\vec{a} + \vec{b} =   \left(x_a \atop x_b \right)  + \left( x_b \atop y_b \right) =
+  \left( x_a + x_b \atop y_a + y_b \right)$$
+  \end{gesetz}
+
+\begin{beispiel}{Addition}{}
+  $$\vec{a} = \left(3\atop 1\right) \textrm{ und } \vec{b} = \left(-1
+  \atop 2\right)$$
+  $$\Longrightarrow \vec{a} + \vec{b} = \left(3 + (-1) \atop 1 +
+  2\right) = \left(2 \atop 3\right)$$
+  \end{beispiel}
+
+\platzFuerBerechnungen{6}
+\TRAINER{\vspace{6cm}}
 
 \subsection*{Aufgaben}    
-    \TALSGeomAadB{178}{46. a) c) und d), 47. und 48.}
+    \TALSGeomAadB{188}{46. a) c) und d), 47. und 48.}
 
 \newpage
 
@@ -150,7 +167,15 @@ $\begin{pmatrix}0\\1\end{pmatrix}$ hat somit den Winkel $90\degre$.
   zeigt.
   Zum Glück nimmt uns das der Taschenrechner ab.
 
-  \subsubsection{Polarkoordinaten im Taschenrechner}
+  \subsubsection{Kartesische Koordinaten aus Polarkoordinaten}
+  Der Taschenrechner verwandelt Polarkoordinaten automatisch immer in
+  kartesische Koordinaten um:
+
+    \bbwCenterGraphic{5cm}{tals/vecg1/img/Polar2Kartesisch.png}
+    \newpage
+
+    
+  \subsubsection{Polarkoordinaten aus kartesischen}
   \begin{beispiel}{kartesisch zu polar}{}
     Gegeben der Vektor $\vec{a} = \left(-\sqrt{3} \atop 1\right)$:
 
@@ -159,7 +184,6 @@ $\begin{pmatrix}0\\1\end{pmatrix}$ hat somit den Winkel $90\degre$.
 
     \bbwCenterGraphic{5cm}{tals/vecg1/img/Kartesisch2Polar.png}
     \end{beispiel}
-  \newpage
 
 Rechnen Sie in kartesische Koordinaten um:
 
@@ -174,7 +198,7 @@ Rechnen Sie in Polarkoordinaten um:
 \begin{tabular}{rcl}\vspace{2mm}
   $\left(2\atop 2 \right)$ & $=$ & \LoesungsRaum{$(2\cdot{}\sqrt2|45\degre)$}\\\vspace{2mm}
   $\left(0\atop -13 \right)$ & $=$ & \LoesungsRaum{$(13|270\degre)$}\\\vspace{2mm}
-  $\left(-5\atop 1 \right)$ & $=$ & \LoesungsRaum{$(\sqrt{26}\cdot{} | {180\degre - \arctan(\frac15)}) \approx (5.099 | 167.43\degre)$}\\\vspace{2mm}
+  $\left(-5\atop 1 \right)$ & $=$ & \LoesungsRaum{$(\sqrt{26}\cdot{} | {180\degre - \arctan(\frac15)}) \approx (5.099 | 168.69\degre)$}\\\vspace{2mm}
   $\left(0\atop 0 \right)$ & $=$ & \LoesungsRaum{$(0|18.35\degre) = (0|299.68\degre)= ...$} \\\vspace{2mm}
   
 \end{tabular}
@@ -185,7 +209,7 @@ Rechnen Sie in Polarkoordinaten um:
 \subsubsection{Drei Schwimmer im Taschenrechner}
 Mit dem Taschenrechner wird unsere Einstiegs-Aufgabe mit den drei
 Schwimmern stark vereinfacht. Wir geben die Geschwindigkeit und
-Richtung des Schwimmers in Polarkoordinaten an
+Richtung des Schwimmers «A» in Polarkoordinaten an
 (\textbf{\texttt{schwimmera}}).
 
 Die Geschwindigkeit und Richtung des Flusses können wir auch in kartesischen
