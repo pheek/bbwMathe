@@ -34,6 +34,7 @@ $$\frac{1+x}{x}=\frac{3+x}{2x}$$
 \end{beispiel}
 \newpage
 
+
 Vorzeigebeispiel:
 
 \TNT{16.4}{
@@ -59,7 +60,31 @@ $$\mathbb{L}_x = \{1\}$$
 }
 \newpage
 
+  
+  \subsection{Grundmenge, Definitionsmenge}\index{Grundmenge}\index{Definitionsmenge}
+  Die Menge aller Zahlen, welche für die Lösung in Frage kommen,
+  nennen wir die Grundmenge oder Definitionsmenge. Diese ist üblicherweise $\mathbb{R}$, die
+  Menge der reellen Zahlen und wir schreiben:
+  $$\mathbb{G}=\mathbb{R}$$
+  Teilweise sind als Lösungen auch nur positive ($\mathbb{G}=\mathbb{R}^+$) oder
+  beispielsweise nur ganze Zahlen ($\mathbb{G}=\mathbb{Z}$)
+  zugelassen.
+  Insbesondere ist die Menge der Lösungen jedoch eingeschränkt durch
+  die Terme, welche die Gleichung definieren. So besteht die folgende
+  Gleichung aus zwei Termen ($T1=\frac{4}{x-2}$ und $T2=\frac{\sqrt{x}}{x-3}$) mit den unten angegebenen
+  Einschränkungen:
+  $$\frac{4}{x-2}=\frac{\sqrt{x}}{x-3}$$
+  Die Definitionsmengen von $T1$ und $T2$ schränken automatisch die
+  Grundmenge der Gleichung ein. In obigem Beispiel gilt:
+  
+  $$\mathbb{D}_1=\mathbb{D}(T1)=\LoesungsRaum{\mathbb{R}\backslash\{2\}}$$
 
+  $$\mathbb{D}_2=\mathbb{D}(T2)=\LoesungsRaum{\mathbb{R}^+_0\backslash\{3\}}$$
+
+  $$\mathbb{D}=\mathbb{D}_1\cap\mathbb{D}_2=\LoesungsRaumLang{\mathbb{R}^{+}_{0}\backslash\{2;3\}}$$
+
+  \newpage
+  
 \begin{rezept}{Bruchgleichungen}{}
   \begin{itemize}
     \item Definitionsmenge $\mathbb{D}$ festlegen: Division durch null ausschließen
