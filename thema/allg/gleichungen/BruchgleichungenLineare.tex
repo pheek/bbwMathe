@@ -18,15 +18,14 @@ jeder vierte, nein mehr noch: Jeder fünfte!}
 \subsection*{Lernziele}
 
 \begin{itemize}
-	\item ggT\index{ggT}, kgV\index{kgV}
 	\item gleichnamig machen
 	\item Hauptnenner\index{Hauptnenner}
+  \item Definitionsmenge
 \end{itemize}
 
-
-\begin{definition}{Bruchgleichung}{definition_bruchgleichung}
+\begin{definition}{Bruchgleichung}{definition_bruchgleichung}\index{Bruchgleichung}
   Unter einer Bruchgleichung verstehen wir eine Gleichung, bei der die
-  gesuchte Variable (mindestens einmal) im Nenner vorkommt.
+  gesuchte Variable (mindestens einmal) \textbf{im Nenner} vorkommt.
 \end{definition}
 
 \begin{beispiel}{Bruchgleichung}{beispiel_beispiel_einer_bruchgleichung}
@@ -34,30 +33,31 @@ $$\frac{1+x}{x}=\frac{3+x}{2x}$$
 \end{beispiel}
 \newpage
 
-
-Vorzeigebeispiel:
-
+Vorzeigebeispiel \GESO{(aus \cite{marthaler17} S. 120)}:
+$$\frac{x+1}{x-3} = \frac{x-5}x$$
+  
 \TNT{16.4}{
-$$\frac{1+x}{x}=\frac{3+x}{2x}$$
-Der Definitionsbereich enthält die Null (0) nicht:
-$$\mathbb{D} = \mathbb{R}\backslash \{0\}$$
+  Definitioensmenge ist $\mathbb{D}_x = \mathbb{R}\backslash\{0, 3\}$, denn sowohl $0$, wie auch $3$ dürfen nicht
+  für $x$ eingesetzt werden.
 
-Wir multiplizieren beide Seiten mit $x$. Dies ist hier möglich, denn das Multiplizieren mit Null wäre keine Äquivalenzumformung; doch hier ist Null explizit vom Definitionsbereich ausgeschlossen.
+Der Hauptnenner $HN$ ist gleich $x\cdot{}(x-3)$. Das ist das
+kgV\index{kgV}\footnote{kgV = kleinstes gemeinsames Vielfaches} aller
+Nenner.
 
-$$1+x=\frac{3+x}{2}$$
+wir multiplizieren beide Seiten mit dem kgV:
 
-Das Auflösen der Gleichung liefert:
+$$x\cdot{x+1} = (x-5)\cdot{}(x-3) | \textrm { ausmultiplizieren }$$
 
-$$x=1$$
+$$x^2+x = x^2 -8x + 15 | \textrm{ alle } x \textrm { nach links.}$$
 
-Das Multiplizieren beider Seiten mit der unbekannten Größe ist heikel. Es können Scheinlösungen hinzukommen. Daher muss am Schluss die Probe gemacht werden:
+$$9x=15$$ und somit
 
-$$\frac{1+1}{1}=\frac{3+1}{2\cdot{}1}$$
+$$\mathbb{L}_x=\left\{\frac{5}{3}\right\}$$
 
-Die Probe passt. Ergo:
-$$\mathbb{L}_x = \{1\}$$
+Probe a) stimmt die Lösung in der ursprünglichen Gleichung? (ja)\\
+Probe b) liegt die Lösung auch im Definitinosbreich $\mathbb{D}$? (ja)
 
-}
+}%% END TNT
 \newpage
 
   
