@@ -93,16 +93,27 @@
 \TALS{S. \cite{frommenwiler17alg} Seite 79 (Äquivalenz von Aussageformen)}
 \TALS{S. \cite{frommenwiler17alg} Seite 80 (Liste der Äquivalenzumformungen)}
 \GESO{S. \cite{marthaler17} Seite 111 (Liste der Äquivalenzumformungen)}
-\begin{itemize}[label=$|$]
-	\item Termumformungen (unabhängig links und rechts des Gleichheitszeichens, sofern der Definitionsbereich des Terms nicht verändert wird.)
-	\item $+    c\ (c \in \mathbb{R})$
-\GESO{	\item $+    c\cdot{}x\ (c \in \mathbb{R})$}
-	\item $-    c\ (c \in \mathbb{R})$
-\GESO{	\item $-    c\cdot{}x\ (c \in \mathbb{R})$}
-	\item $\cdot\ c\ (c \in \mathbb{R}\backslash 0)$
-	\item $:      c\ (c \in \mathbb{R}\backslash 0)$
-\TALS{\item $+ cx^n\ (c \in \mathbb{R}, n \in \mathbb{N}, x$ ist die Unbekannte$)$}
-\end{itemize}
+
+
+\textbf{Termumformungen sind}
+
+\begin{tabular}{>{$|$ }lp{6cm}p{6cm}}
+Umformung   & Beschreibung  & Beispiel \\\hline
+TU      & Termumformung & Beispiel: Links des Gleichheitszeichens $a$ ausklammern\\
+$+ T(x)$  & Term beidseitig addieren. & $|+4$, $|+\sqrt{x}$, $|+8\cdot{}x^2$\\
+$- T(x)$  & Term beidseitig subtrahieren. & $|-6$, $|-x^3$, $|-5x$\\
+\end{tabular}
+
+\textbf{keine} Termumformungen sind
+
+\begin{tabular}{lp{6cm}>{\raggedright}p{4cm}p{6cm}}
+Umformung  & Beschreibung &Lösungen können... & Beispiel\\\hline
+$| $ quadrieren  & Beide Seiten quadrieren & ...hinzukommen.&$\color{red}\textrm{quadireren}$\\
+$| $ radizieren  & Auf beiden Seiten die Wurzel ziehen& ...verschwinden.&$\color{red}\textrm{Wurzel ziehen}$\\
+$|\cdot{}T(x)$  & mit der Unbekannten multiplizieren & ...hinzukommen.&$\color{red}|\cdot{}(x+4)$, $\color{red}|\cdot{}3x^2$\\
+$|:T(x)$  & durch Unbekannte dividieren & ... verschwinden.&$\color{red}|:(x-8)$, $\color{red}|:\sqrt{x}$\\
+
+\end{tabular}
 \newpage
 
 \subsubsection{Finde Äquivalenzumformungen}
