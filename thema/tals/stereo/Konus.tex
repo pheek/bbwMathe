@@ -45,12 +45,22 @@ Dahschur erbaut.}
   \end{gesetz}
 \newpage
 \subsection*{Aufgaben}
-\TALSAadB{146ff}{86. (Trigonometrie)}
+\TALSAadB{148}{86. (Trigonometrie)}
 \newpage
 
 \subsection{Spezialfall: Kreiskegel}\index{Kreiskegel}
 
 \bbwCenterGraphic{5cm}{tals/stereo/img/Kreiskegel.png}
+
+
+\begin{gesetz}{Volumen eines Kreiskegels}{}
+
+  $G$ = Grundfläche = $\LoesungsRaum{r^2\pi}$
+
+  $$V = \frac13\cdot{} G\cdot{}h = \LoesungsRaumLang{\frac13 \cdot{} r^2\pi \cdot{} h}$$
+\end{gesetz}
+
+
 
 \begin{gesetz}{Oberfläche eines Kreiskegels}{}
 
@@ -64,14 +74,6 @@ Dahschur erbaut.}
 \end{gesetz}
 
 
-\begin{gesetz}{Volumen eines Kreiskegels}{}
-
-  $G$ = Grundfläche = $\LoesungsRaum{r^2\pi}$
-
-  $$V = \frac13\cdot{} G\cdot{}h = \LoesungsRaumLang{\frac13 \cdot{} r^2\pi \cdot{} h}$$
-\end{gesetz}
-
-
 \begin{bemerkung}{Mantellinie}{}
   Die Mantellinie $m$ ist immer größer oder gleich der Höhe $h$:
   $$m \ge{} h$$
@@ -79,24 +81,35 @@ Dahschur erbaut.}
 
 \newpage
 
-
+\subsubsection{Winkel am Kegel}
 \begin{bemerkung}{}{}
   Wir unterscheiden beim Kreiskegel die Winkel
 
   $\alpha$ = Öffnungswinkel des Kegels an der Spitze (= Konizität\index{Konizität})
 
-  $\beta$ = Böschungswinkel (= Neigung der Mantellinie = $90\degre - \frac{\alpha}{2}$)
+  $\beta$ = Böschungswinkel (= Neigung der Mantellinie)
 
-  Für den Sektorwinkel (= Zentriwinkel) des Mantels $\stackrel{\frown}{\varphi}$ gilt im Bogenmaß: $m\cdot\stackrel{\frown}{\varphi} = 2r\pi$ (S. Abwicklung)\\
-  und somit im Gradmaß:\\ $\varphi = \frac{180\degre}\pi \cdot{} \stackrel{\frown}{\varphi} = \frac{180\degre}\pi \cdot \frac{2r\pi}m = 360\degre\cdot{}\frac{r}m$ 
-  
-  $\varphi$ = Sektorwinkel des abgewickelten Mantels = $360\degre \cdot \sin\left(\frac{\alpha}2\right)$
-
+  $\varphi$ = Sektorwinkel des abgewickelten Mantels
 \end{bemerkung}
+
+\begin{gesetz}{}{}
+  Für die Winkel gilt:
+
+  $\beta$ = $90\degre - \frac{\alpha}{2}$
+
+  m$\cdot\stackrel{\frown}{\varphi} = 2r\pi$ \\
+  und somit im Gradmaß:\\
+  $\varphi = \frac{180\degre}\pi \cdot{} \stackrel{\frown}{\varphi} = \frac{180\degre}\pi \cdot \frac{2r\pi}m = 360\degre\cdot{}\frac{r}m$ 
+  
+  $\varphi = 360\degre \cdot \sin\left(\frac{\alpha}2\right)$
+
+\end{gesetz}
+
+
 
 Beweis der $\sin()$-Formel:
 
-\TNT{16}{
+\TNT{12}{
   Skizze Kegel mit a) $m$ - Mantellinie und Radius $r$ und b) Abwicklung mit $\varphi$, $m$ und $2r\pi$ als Bogenlänge.
 
   \bbwCenterGraphic{16cm}{tals/stereo/img/KegelSinus.jpg}
