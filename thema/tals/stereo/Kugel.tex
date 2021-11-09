@@ -39,25 +39,24 @@
 
 Herleitung:\\
 \TNT{16}{
-  Zeiche eine Halbkugel. (Lasse rechts Platz.)
 
-  Wähle beliebige Höhe $h$ in beiden Figuren.
+  \bbwCenterGraphic{15cm}{tals/stereo/img/Kugelvolumen.png}
+  Wähle beliebige Höhe $h$ in beiden Figuren (links Halbkugel, rechts Vergleichskörper).
 
-  Damit entsteht eine Kreisfläche mit Radius $a$, wobei nach Pythagoras gilt:
-  $$a^2 + h^2 = r^2$$
-  und somit
-  $$a^2 = r^2 - h^2$$
-  Der \textbf{Flächeninhalt} dieses Kreises (auf Höhe $h$ ist $\pi a^2$ = $\pi (r^2 - h^2)$ und somit $\pi r^2 = \pi h^2$.
-
-  Somit ist der Flächeninhalt aber auch ein Kreisring mit Außenradius $r$ und Innenhardius $h$.
-
-  Wenn wir das in jeder Höhe machen, entsteht ein Vergleichskörper, der aus einem Kreiszylinder mit ausgeschnittenem Kreiskegel besteht.
-
-  Volumen Halbkugel = (dank Cavalieri) Volumen Vergeichskörper = Volumen Kreszylinder - Volumen Kreiskegel = $r^2\pi r - \frac13 r^2\pi r = \frac23 r^3 \pi $
-
-  Somit ist das Volumen der ganzen Kugel = 2 $\cdot$ Volumen Halbkugel = $V = \frac43\pi r^3$.
-
+  Berechne die Schnittflächen der beiden Körper in Höhe $h$:
   
+  \begin{tabular}{p{8cm}|p{8cm}}\hline
+    $A = R^2\pi = (r^2-h^2)\pi$, wegen Pythagoras ($R^2$ = $r^2-h^2$)&
+    Kreisring = Außenkreis ($r^2\pi$) - Innenkreis ($h^2\pi$), denn
+    Kegel ist 45\degre{} ausgeschnitten. \\
+    \hline
+    \end{tabular} 
+
+  Volumen Halbkugel = (dank Cavalieri) Volumen Vergeichskörper =
+  Volumen Kreisszylinder - Volumen Kreiskegel = $r^2\pi r - \frac13
+  r^2\pi r = \frac23 r^3 \pi$
+  
+  Somit ist das Volumen der ganzen Kugel = 2 $\cdot$ Volumen Halbkugel = $V = \frac43\pi r^3$.  
 }%% END TNT
 \newpage
 
