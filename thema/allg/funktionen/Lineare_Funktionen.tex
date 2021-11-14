@@ -27,6 +27,37 @@ Theorie:
 \GESO{(\cite{marthaler17}       S.237 (Kap. 14))}
 \newpage
 
+\subsection{Einstiegsbeispiel Taxiunternehmen}
+Taxiunternehmen «A» hat eine Grundgebühr von CHF 10.- und kostet
+danach CHF 0.60 pro gefahrenen Kilometer.
+
+Taxiunternehmen «B» hat eine Grundgebühr von CHF 6.- und kostet
+danach CHF 0.90 pro gefahrenen Kilometer.
+
+Ab bzw. bis wo lohnt sich das Unternehmen «A» bzw. «B»?
+
+
+\noTRAINER{
+  Zeichnen Sie ein Koordinatensystem. $x$-Achse = km; $y$-Achse = CHF.
+  (Einteilung je ca. 20 Einheiten im 1. Quadranten.
+ 
+
+  \mmPapier{16}}%%
+\TRAINER{\bbwCenterGraphic{14cm}{allg/funktionen/img/Taxiunternehmen.png}
+
+  Ablesen bei ca. 13.33 km.
+
+  Rechnerisch:
+
+  $$A: 10\textrm{[CHF]}
+  +x\textrm{[km]}\cdot{} 0.60 \left[\frac{\textrm{CHF}}{\textrm{km}}\right] $$
+  $$B: 6 +x \cdot{} 0.90$$
+  Gleichstand bei:
+  $$10+0.6x = 6+0.9x$$
+  Lösung:
+  $$x = 13.\overline{3} \textrm{km}$$
+}
+\newpage
 \subsection{Beispiel einer linearen Funktion}
 Zeichnen Sie den Graphen der Funktion $f: y= -0.5x + 1$ in ein rechtwinkliges Koordinatensystem:
 
@@ -69,16 +100,23 @@ mit $a$ und $b$ in $\mathbb{R}$ dargestellt werden kann.
 Beispiele:
 
 
-$$f(x) = y = 4x + 1.5$$
-(Hier ist $a=4$ und $b=1.5$.)
+$$f(x) = y = \LoesungsRaumLang{4x + 1.5}$$
+(Hier ist $a=\LoesungsRaum{4}$ und $b=\LoesungsRaum{1.5}$.)
 
-$$f(x) = y = -x$$
-(Hier ist $a=-1$ und $b=0$.)
+---
 
-$$f(x) = y = -0.6$$
-(Hier ist $a=0$ und $b=-0.6$.)
+$$f(x) = y = \LoesungsRaumLang{-x}$$
+(Hier ist $a=\LoesungsRaum{-1}$ und $b=\LoesungsRaum{0}$.)
+
+Ist $b=0$, so sprechen wir auch von einer Proportionalität.
+---
+
+$$f(x) = y = \LoesungsRaumLang{-0.6}$$
+(Hier ist $a=\LoesungsRaum{0}$ und $b=\LoesungsRaum{-0.6}$.)
 
 Ist $a=0$, so sprechen wir auch von der konstanten Funktion.
+
+\GESOAadB{250}{6. a) b)}
 \newpage
 
 
@@ -90,11 +128,10 @@ Jede lineare\footnote{
 \vspace{1cm}
 
 Wertetabelle:
-\begin{tabular}{c|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}}
-   x  & & & & & \\
-  \hline
-   y  & & & & & \\
-  \end{tabular} 
+\begin{tabular}{c|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}}
+   x  & 0 & 1 & 2 & 4 & -4 & \TRAINER{-6}\\\hline
+   y  & \TRAINER{3} & \TRAINER{3.5} & \TRAINER{4}& \TRAINER{5}&\TRAINER{1}&0\\%%
+\end{tabular}
 
 
 \bbwGraph{-7}{7}{-2}{5}{}
@@ -208,7 +245,7 @@ $$a=\frac{{\color{red}V}}{{\color{blue}H}}$$
 
 
 \subsection*{Aufgaben}
-\GESOAadB{250ff}{5. a) (1) und b) (1) 6. a) b) 7. a) 8. a) 10.}
+\GESOAadB{250ff}{5. a) (1) und b) (1), 7. a), 8. a), 10., 23. a) c) e)}
 
 \newpage
 
@@ -236,7 +273,9 @@ $$a=\frac{{\color{red}V}}{{\color{blue}H}}$$
 Wir gehen von der linearen\footnote{Eine Gleichung, bzw. ein Term
   heißt «linear», wenn die Variable ($x$) nur in der ersten Potenz vorkommt.} Gleichung $$4x-5+3x -18 + 16x = 0$$ aus.
 
-Schreiben wir dies als Funktion in $x$, so können wir folgende Funktion definieren:
+Schreiben wir dies als Funktion in $x$, so können wir folgende
+Funktion definier
+en:
 $$f(x): x \mapsto y = 4x-5+3x-18+16x$$
 Stellen wir diese Funktion nun graphisch dar, so ergibt sich folgendes
 Bild:
