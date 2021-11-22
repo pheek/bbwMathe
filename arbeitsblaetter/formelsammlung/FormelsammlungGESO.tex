@@ -3,11 +3,11 @@
 %% 2021 fp @ bbw.ch
 %%
 
-\newcommand{\versionsDatumFoSa}{2021-07-19}
+\newcommand{\versionsDatumFoSa}{2021-11-22}
 
 %% ID (ca. alle jahre), Subversion: Grössere Änderungen, Revision: Jede
 %% Umstellung/Korrektur/Typos
-\newcommand{\versionIdSubRev}{0.3.5}
+\newcommand{\versionIdSubRev}{0.3.6}
 
 \newcommand{\versionsnummerFoSa}{\versionsDatumFoSa{} \versionIdSubRev}
 
@@ -46,7 +46,9 @@
 
 \renewcommand{\shortAuthor}{fp he @ bbw.ch [\versionsnummerFoSa{}]}
 
-\renewcommand{\metaHeaderLine}{Formelsammlung (GESO \noTRAINER{2021}\TRAINER{\versionsnummerFoSa{}} BBW)}
+\renewcommand{\metaHeaderLine}{Formelsammlung (GESO
+  \noTRAINER{2021}\TRAINER{\versionsnummerFoSa{}}
+  BMS Winterthur)}
 
 \renewcommand{\arbeitsblattTitel}{Formelsammlung --- gesundheitlich-soziale BM\TRAINER{ (V \versionIdSubRev)}}
 
@@ -114,7 +116,7 @@
 
 \section*{Dezimalzahlen}
 \subsection*{Runden}
-Bsp.: Runden auf \textbf{\color{FarnFarbe}vier}  Dezimalen:
+Bsp.: Runden auf \textbf{\color{FarnFarbe}vier}  Dezimalen.
 Betrachte die nächste Ziffer und runde auf, falls diese
 {\color{red}Ziffer} $\ge 5$. Bsp.:
 
@@ -132,7 +134,9 @@ $$\mathbf{\color{FarnFarbe}208.0} \textrm{ cm} = \mathbf{\color{FarnFarbe}2.080}
 
 %%\forceCB{}%%
 \subsection*{Wissenschaftliche Notation}
-Für grosse, aber auch für Zahlen sehr nahe an 0, wird die wissenschaftliche Schreibweise vorgezogen. Dabei steht vor dem Dezimalpunkt immer \textbf{\color{blue}genau eine Ziffer}:
+Für grosse, aber auch für Zahlen sehr nahe an 0, wird die
+wissenschaftliche Schreibweise vorgezogen. Dabei steht vor dem
+Dezimalpunkt immer \textbf{\color{blue}genau eine Ziffer $\ge$ 1}:
 
 \begin{tabular}{lcccr}
 Zahl    & & wissenschaftl. & & TR: \tiprobutton{EE} \\
@@ -170,7 +174,7 @@ Produkt mit Summe: $2\cdot(x+y)=2x+2y$
 
 Potenzterme: $(-3)^2 = 9$ aber $-3^2 = -9$
 
-\forceCB
+\forceCB{}%%
 Vorzeichen im Taschenrechner:\\
 \vspace{3mm}\\
 \tiprobutton{7}\tiprobutton{minus}\tiprobutton{2}$=7-2= 5$\\
@@ -208,7 +212,7 @@ Vorzeichen im Taschenrechner:\\
 \subsection*{(Absolut)betrag einer Zahl}%%
 %%
 \hfill\, $|+7| = 7$ \hfill\, $|-7| = 7$ \hfill\, %%
-
+Gemomtrisch: Abstand zum Nullpunkt.
 \hrulefill
 \section*{Bruchterme}
     $\frac{a}b = a : b$,\phantom{ and }  $\frac{a}b : \frac{x}y = \frac{a}b\cdot{}\frac{y}x = \frac{ay}{bx}$
@@ -240,10 +244,7 @@ $$4b^2 -12bc + 9c^2=(2b-3c)^2$$
 $$x^2+2x-15 = (x+5)(x-3)$$
 
 \end{enumerate}
-
-
-\forceCB
-
+\forceCB{}%%
 \subsection*{Summenzeichen}
 %%$$\color{orange}\sum_{\color{blue}k=1}^{\color{blue}n} {{\color{FarnFarbe}T}(k)} = {\color{FarnFarbe}T}({\color{blue}1}) {\color{orange}+} {\color{FarnFarbe}T}({\color{blue}2}) {\color{orange}+} ... {\color{orange}+} {\color{FarnFarbe}T}({\color{blue}n})$$
 
@@ -270,15 +271,17 @@ Beispiel
 \begin{tcolorbox}[colback=white]
 \bbwCenterGraphic{5cm}{img/Potenzbegriff.png}
 $$a^n = \underbrace{a\cdot{}a\cdot{}a\cdot{}...\cdot{}a}_{n\textrm{ Faktoren}}$$
+Für $a\ne 0$ gilt:
 $$a^{-n} = \frac1{a^n}$$
   $$a^0 = 1$$
 \end{tcolorbox}
 
 \subsection*{gleiche Basis}
-\begin{tabular}{cc}
-$a^m\cdot{}a^n = a^{m+n},$ & $a^m:a^n=a^{m-n},$ \\
-$\left(a^m\right)^n = a^{m\cdot{}n}$ &
- \end{tabular} 
+$a^m\cdot{}a^n = a^{m+n}$ \hspace{2cm} $a^m:a^n=a^{m-n}$
+
+
+\subsection*{Potenzieren einer Potenz}
+$\left(a^m\right)^n = a^{m\cdot{}n}$ 
 
 \subsection*{gleicher\,Exponent}
 \begin{tabular}{cc}
@@ -317,9 +320,12 @@ $\sqrt[n]{a} = \left(a\right)^\frac1n$\hfill{}Bsp.: $8^{\frac13}=\sqrt[3]{8}=2$
 
 \begin{tcolorbox}[colback=white]
 $$a^{\frac{m}n} = \sqrt[n]{a^m} = \left(\sqrt[n]a\right)^m$$
-$$\sqrt[n]{\sqrt[m]{a}}   = \left((a)^\frac1m \right)^\frac1n = a^\frac1{nm} = \sqrt[m]{\sqrt[n]{a}}  $$
+$$\sqrt[n]{\sqrt[m]{a}}   = \left((a)^\frac1m \right)^\frac1n =
+  a^\frac1{nm} = \sqrt[m]{\sqrt[n]{a}}   = \sqrt[mn]{a}$$
 
-$$\sqrt[n]{a\cdot{}b} = \sqrt[n]{\vphantom{b}a} \cdot \sqrt[n]b$$
+  $$\sqrt[n]{a\cdot{}b} = \sqrt[n]{\vphantom{b}a} \cdot \sqrt[n]b$$
+
+  $$\sqrt[n]{\frac{a}{b}} = \frac{\sqrt[n]a}{\sqrt[n]b}$$
 \end{tcolorbox}
 
 %%$$\sqrt[n]{a\cdot{}\sqrt[m]b} =   \sqrt[n]{\vphantom{b}a} \cdot \sqrt[n m]b$$
@@ -333,7 +339,7 @@ $$\sqrt[n]{a\cdot{}b} = \sqrt[n]{\vphantom{b}a} \cdot \sqrt[n]b$$
 \section*{Logarithmen}
 \begin{tcolorbox}[colback=white]
   \textbf{Definition Logarithmus}\\
-  Für $b>0, b\ne 1, z>0$ ist
+  Für $b>0, b\ne 1, a>0$ ist
 
 $$\log_b{}(a)=x \Longleftrightarrow{} b^x = a$$
 \end{tcolorbox}
@@ -355,17 +361,16 @@ $$e \approx 2.71828 \textrm{ = Eulersche Konstante}$$
 $$\log_{\color{FarnFarbe}a}({\color{red}b}) = \frac{\lg({\color{red}b})}{\lg({\color{FarnFarbe}a})} = \frac{\ln({\color{red}b})}{\ln({\color{FarnFarbe}a})}$$}
 \RLP{$$\log_b(a^x) = x\cdot{}\log_b(a)$$
 $$\log_{\color{FarnFarbe}b}({\color{red}a}) = \frac{\lg({\color{red}a})}{\lg({\color{FarnFarbe}b})} = \frac{\ln({\color{red}a})}{\ln({\color{FarnFarbe}b})}$$}
-\end{tcolorbox}
-
-
-
-\forceCB\
+\end{tcolorbox}%
+%
+\RLP{\forceCB{}}%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%               Gleichungen                          %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Gleichungen}
 
 \subsection*{Lineare Gleichungen}
+Grundform: $ax+b=0$
 
 Beispiel mit Parametern:
 $$a^2x-b=b^2x+a$$
@@ -405,14 +410,15 @@ y^2+2y-15=0 \Longrightarrow \mathbb{L}_y=\{-5,3\} \stackrel{x=\pm{}\sqrt{y}}{\Lo
 
 Bsp.: Nenner darf nicht Null werden:
 
-$$\frac5{x+2}=\frac{7+x}{x-3} \Leftrightarrow{} \mathbb{D}_x=\mathbb{R}\backslash{}\{-2, 3\}$$
+$$\frac5{x+2}=\frac{7+x}{x-3} \Rightarrow{} \mathbb{D}_x=\mathbb{R}\backslash{}\{-2, 3\}$$
 
 \subsection*{Potenzgleichungen}
 
 %%  \TRAINER{ev. nur letztes Gesetz: $x^a = c$ und $x^\frac1b =c$ sind darin enthalten.  }
 
-\begin{tabular}{rcl}
-$x^a=c$ & $\Leftrightarrow$ & $x=\sqrt[a]{c}$\\
+\begin{tabular}{lcl}
+$k$ ungerade: $x^k=c$ & $\Leftrightarrow$ & $x=\sqrt[k]{c}$\\
+$k$ gerade:   $x^k=c$ & $\Leftrightarrow$ & $x=\pm\sqrt[k]{c}$\\
 %%$x^\frac1b=c$&$\Leftrightarrow$&$x=c^b$\\
 %%$x^{\frac{a}b} = c$&$\Leftrightarrow{}$&$x=c^{\frac{b}a}
 %%= \sqrt[a]{c^b}$
@@ -437,9 +443,9 @@ $$5^4 = 5^{2x+1} \Longrightarrow  4=2x+1$$
 
 
 \subsection*{Lineare Gleichungssysteme}
-Erst in \textbf{Grundform} bringen:
+\textbf{Grundform}:
 \gleichungZZ{5x+7y}{19}{6x -3y}{57}
-Danach lösen mit
+Lösen mit
 \begin{itemize}
 \item Additionsverfahren
 \item Einsetzungsverfahren
@@ -559,7 +565,7 @@ $x=0$ setzen und $y$ ausrechnen.
 \subsection*{Schnittpunkt zweier Geraden}
 Gegeben: $g\-:\,\,\, y=ax+b$ und $h\-:\,\,\, y=cx+d$.
 
-Gleichsetzen: $ax+b = cx+d$
+Gleichsetzen: $ax+b = cx+d$ und nach $x$ auflösen.
 \vspace{2cm}
 
 %%\subsection*{Mittelpunkt $M$ einer Strecke $\overline{AB}$}
@@ -589,11 +595,11 @@ $y=\HECH{ax+b}\RLP{mx+q}$ einsetzen, um $\HECH{b}\RLP{q}$ zu finden.
 \subsection*{Potenzfunktionen}
 
 \begin{tabular}{cc}
-$z$ > 0: Parabel ($z$ gerade) & $z$ > 0: Parabel ($z$ ungerade)\\   %%\bbwCenterGraphic{8cm}{PotenzFkt.pdf}
+$k$ > 0: Parabel ($k$ gerade) & $k$ > 0: Parabel ($k$ ungerade)\\   %%\bbwCenterGraphic{8cm}{PotenzFkt.pdf}
   \includegraphics[width=73mm]{PotenzFktx2x4.pdf} &
   \includegraphics[width=73mm]{PotenzFktx3x5.pdf}\\
 
-$z<0$: Hyperbel  ($z$ gerade) & $z<0$: Hyperbel ($z$ ungerade)\\
+$k<0$: Hyperbel  ($k$ gerade) & $k<0$: Hyperbel ($k$ ungerade)\\
   \includegraphics[width=73mm]{PotenzFkt1overx2x4.pdf}&
   \includegraphics[width=73mm]{PotenzFkt1overx3x5.pdf}
   \end{tabular}
@@ -607,19 +613,21 @@ $$y=ax^k$$
 $k \in \{...-2, -1, 2, 3, 4, ...\}$
 \end{tcolorbox}
 
-$z$ gerade: Achsensymmetrisch ($y$-Achse)
+$k$ gerade: Achsensymmetrisch ($y$-Achse)
 
-$z$ ungerade: Punktsymmetrisch (Ursprung $O=(0|0)$)
+$k$ ungerade: Punktsymmetrisch (Ursprung $O=(0|0)$)
 
 %%Ist ${\color{green}a>0}$, so sind Graphen mit
 %%geraden Exponenten nach oben geöffnet bzw. mit ungeraden Exponenten im
 %%Quadranten I und III.
 
-Ist ${\color{blue}a<0}$, so werden Graphen der obigen Funktionen an der $x$-Achse gespiegelt.
+%%Ist ${\color{blue}a<0}$, so werden Graphen der obigen Funktionen an der $x$-Achse gespiegelt.
 
 %% \includegraphics[width=4cm]{allg/funktionen/img/potenzfct/potenzFunktionenGerade.png}\hfill{}\includegraphics[width=4cm]{allg/funktionen/img/potenzfct/potenzFunktionenUngerade.png}
   \subsection*{Streckung / Spiegelung}
-  Der Faktor $a$ in $y=a\cdot{}x^k$ streckt die Funktion in $y$-Richtung, bzw. spiegelt die Funktion an der $x$-Achse.
+  Der Faktor $a$ in $y=a\cdot{}x^k$ streckt die Funktion in
+  $y$-Richtung, bzw. spiegelt die Funktion an der $x$-Achse, wenn
+  $a<0$ ist.
   \bbwCenterGraphic{73mm}{PotenzFktTransformation.pdf}
 
 
@@ -675,18 +683,20 @@ ${\color{blue}\HECH{b}\RLP{a}}={\color{blue}3}$, ${\color{red}\HECH{a}\RLP{q}}={
 $$f(t)= {\color{blue}3}\cdot{}{\color{red}4}^\frac{t}{\color{FarnFarbe}5}$$
 \end{tcolorbox}
 \RLP{\bbwCenterGraphic{8cm}{ExponentialfctAQ.png}}
-
+\HECH{\bbwCenterGraphic{8cm}{ExponentialfctAB.png}}
 
 \subsection*{Basis $e$, Zeitvariable $x$}
 $e$ = Eulersche Konstante $\approx 2.71828$
-\HECH{$$y=c + b\cdot{}a^x$$ entspricht
-$$y=c + b\cdot{}e^{mx}$$}
+\HECH{$$y=b\cdot{}a^x$$ entspricht
+$$y=b\cdot{}e^{mx}$$}
 
-\RLP{$$y=c + a\cdot{}q^x$$ entspricht
-$$y=c + a\cdot{}e^{bx}$$}
+\RLP{$$y=a\cdot{}q^x$$ entspricht
+$$y=a\cdot{}e^{bx}$$}
 
-\HECH{$\textrm{mit } m = \ln(a)\,\,\textrm{ oder } a = e^m$}
-\RLP{$\textrm{mit } b = \ln(q)\,\,\textrm{ oder } q = e^b$}
+%\HECH{$\textrm{mit } m = \ln(a)\,\,\textrm{ oder } a = e^m$}
+%\RLP{$\textrm{mit } b = \ln(q)\,\,\textrm{ oder } q = e^b$}
+\HECH{$\textrm{mit } a = e^m \,\,\textrm{ oder }  m = \ln(a)$}%
+\RLP{$\textrm{mit }  q = e^b \,\,\textrm{ oder }  b = \ln(q)$}%
 
 \vspace{2mm}
 
@@ -694,13 +704,13 @@ $$y=c + a\cdot{}e^{bx}$$}
 
 Und mit Zeitintervall $\tau$:
 
-\HECH{$$y=c+b\cdot{}a^\frac{x}\tau$$ entspricht
-$$y=c+b\cdot{}e^{mx}$$}
-\RLP{$$y=c+a\cdot{}q^\frac{x}\tau$$ entspricht
-$$y=c+a\cdot{}e^{bx}$$}
+\HECH{$$y=b\cdot{}a^\frac{x}\tau$$ entspricht
+$$y=b\cdot{}e^{mx}$$}
+\RLP{$$y=a\cdot{}q^\frac{x}\tau$$ entspricht
+$$y=a\cdot{}e^{bx}$$}
 
-\HECH{$\textrm{mit } m=\ln\left(a^\frac1\tau\right) = \frac1\tau \cdot{}\ln(a) \,\,\textrm{ oder } a = e^{m\tau}$}
-\RLP{$\textrm{mit } b=\ln\left(q^\frac1\tau\right) = \frac1\tau \cdot{}\ln(q) \,\,\textrm{ oder } q = e^{b\tau}$}
+\HECH{$\textrm{mit } a = e^{m\tau}  \,\,\textrm{ oder }    m=\ln\left(a^\frac1\tau\right) = \frac1\tau \cdot{}\ln(a)$}
+\RLP{$\textrm{mit }  q = e^{b\tau}  \,\,\textrm{ oder }    b=\ln\left(q^\frac1\tau\right) = \frac1\tau \cdot{}\ln(q)$}
 
 \hrulefill
 \subsection*{Halbwertszeit}
@@ -728,13 +738,6 @@ $$y=c+a\cdot{}e^{bx}$$}
 
 \textbf{Sättigungsgrenze}: $c$
 
-\textbf{Wachstum}:
-
-\HECH{$$f(t) = c-b\cdot{}a^\frac{t}\tau$$
-$$f(0) = c-b$$}
-\RLP{$$f(t) = c-a\cdot{}q^\frac{t}\tau$$
-$$f(0) = c-a$$}
-
 
 \textbf{Zerfall}:
 \HECH{$$f(t) = c+b\cdot{}a^\frac{t}\tau$$
@@ -742,6 +745,13 @@ $$f(0) = c+b$$}
 \RLP{$$f(t) = c+a\cdot{}q^\frac{t}\tau$$
 $$f(0) = c+a$$}
 
+
+\textbf{Wachstum}:
+
+\HECH{$$f(t) = c-b\cdot{}a^\frac{t}\tau$$
+$$f(0) = c-b$$}
+\RLP{$$f(t) = c-a\cdot{}q^\frac{t}\tau$$
+$$f(0) = c-a$$}
 
 %%\textbf{Sättigungsdefizit}
 %%$b$ = Differenz zu $c$ bei $t=0$.\\
@@ -790,7 +800,7 @@ wurde).
 Der am häufigsten auftretende Wert wird als Modus bezeichnet.
 
 Manchmal ist dies nicht eindeutig, dann sprechen wir von einer
-\textbf{multimodalen} Verteilung. Bei zwei Modi von \textbf{bimodal}.
+\textbf{multimodalen} Verteilung; bei zwei Modi von \textbf{bimodal}.
 
 \subsubsection*{Maximum, Minimum}
 
@@ -940,7 +950,7 @@ Es gibt somit $3\cdot{}4$ mögliche Kombinationen.&\raisebox{-3.5cm}{\includegra
 Hat eine zweistufige Situation zunächst $k_1$ Möglichkeiten, gefolgt
 von $k_2$ Möglichkeiten, so hat man insgesamt $k_1\cdot{}k_2$
 Möglichkeiten. Dies ist auf beliebig viele Stufen verallgemeinerbar.
-Dies kann für auch mit einem Baumdiagramm gelöst werden.
+Dies kann für auch mit einem Baumdiagramm dargestellt werden.
 
 
 %%\bbwCenterGraphic{3cm}{img/KombinatorikMultiplikation.pdf}
@@ -1210,8 +1220,10 @@ $$P(G | F) = \frac{\textrm{Anzahl gesunde Frauen}}{\textrm{Anzahl Frauen}}=  \fr
 &
 
 \begin{tabular}{c|c|p{80mm}}\hline
-\tiprobutton{math}         &math              & Summenzeichen $\Sigma$ (\tiprobutton{5})\\
-                           &math              & Faktorzerlegung (\tiprobutton{4}\texttt{Pfactor})\\\hline
+\tiprobutton{math}         &Summe             & Summenzeichen $\Sigma$ (\tiprobutton{5})\\
+                           &Faktorzerlegung   & Faktorzerlegung (\tiprobutton{4}\texttt{Pfactor})\\
+                           & ggT, kgV         & gcd = ggT
+(\tiprobutton{3}), lcm = kgV (\tiprobutton{2})\\\hline
                            &                  & Bestimmung statistischer Werte:\\
 \tiprobutton{data}         & data             & Daten eingeben\\
                            &\texttt{stat-reg} & 1-VAR STATS anwählen
@@ -1223,10 +1235,10 @@ Max, Mittelwert etc.\\
                            &                  &  (Auch für Zweiklammeransatz)\\\hline
 \tiprobutton{tan_sys-solv} &\texttt{sys-solv} &  Lineare Gleichungssysteme\\\hline
 \tiprobutton{sin_num-solv} &\texttt{num-solv} &  Gleichungen ($7^x=3^{2x+1}$) mit Zahlen nach $x$ auf\/lösen (hier $x\approx{}-4.37$).\\\hline
-\tiprobutton{table}        & table            &  Wertetabelle für diverse Funktionen: Lineare Fct., Potenzfct., Exponentialfct.\\\hline
+\tiprobutton{table}        & table            &  Wertetabelle für diverse Funktionen: Lineare Fkt., Potenzfkt., Exponentialfkt.\\\hline
 \tiprobutton{ncrnpr}       &Kombinatorik      &  Fakultät: {\color{red}\textbf{!}}\\
-                           &                  &  $n \choose k$: Tippe $n$ nCr $k$\\
-                           &                  &  $\frac{n!}{(n-k)!}$: Tippe $n$ nPr $k$\\\hline
+                           &                  &  Kombination $n \choose k$ tippe $n$ nCr $k$\\
+                           &                  &  Permutation $\frac{n!}{(n-k)!}$ tippe $n$ nPr $k$\\\hline
 \tiprobutton{ln_log}       &  Logarithmen     &  log = Zehnerlogarithmus ($\lg$)\\
                            &                  &  ln  = Log. zur Basis $e$\\
                            &                  &  3x drücken = log zu beliebiger Basis\\\hline
