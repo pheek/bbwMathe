@@ -895,7 +895,7 @@ $p_i = f_i\cdot{}100\%$ &$=$& prozentuale Häufigkeit%%\\
 \item Alle Balken sind gleich breit und berühren sich.
 \item Die Höhe der Balken wird durch die (absolute / relative) Häufigkeit der entsprechenden
   Werte festgelegt.
-\item Die Flächeninhalte der Rechtecke entsprechen sind proportional
+\item Die Flächeninhalte der Rechtecke sind proportional
   zu den Häufigkeiten.
 \item Werte auf Balkengrenzen werden immer rechts mitgezählt.
 \item Das obige Histogramm ist \textbf{linksschief} und rechtssteil.
@@ -929,8 +929,8 @@ $p_i = f_i\cdot{}100\%$ &$=$& prozentuale Häufigkeit%%\\
 %%  Diagramm. Dann im Text auch. Ausreisserschwellen ist ein Begriff von
 %%  Frommenwiler, nicht von Marthaler.}%% END TRAINER
 Schritte zum Boxplot:\\
-Fühler (Whisker) werden auf max. $1.5\cdot\textrm{IQR}$ begrenzt ({\color{blue} Ausreisserschwellen blau}),
-danach nach \textit{\color{FarnFarbe}innen} gehen: Fühler sind die von der Box
+Fühler (Whisker) werden auf max. $1.5\cdot\textrm{IQR}$ begrenzt ({\color{blue} Ausreisserschwellen blau})\HECH{,
+danach nach \textit{\color{FarnFarbe}innen} gehen}: Fühler sind die von der Box
 entferntesten Nicht-Ausreisser ({\color{FarnFarbe}grün}). Ausreisser
 ({\color{red} rot}) werden markiert.
 \RLP{\bbwCenterGraphic{18cm}{boxplotRLP.png}}
@@ -1062,10 +1062,8 @@ ${\color{red}P}({\color{FarnFarbe}KK} \textrm{\color{red} oder } {\color{blue}ZZ
 
 \subsection*{Binomialverteilung (Bernoulli)}
 
-Voraussetzung: 
-An jeder Verzweigung im Baum sind Treffer und Niete gleich
-wahrscheinlich.
-Dies entspricht in obiger Tabelle «mit Zurücklegen».
+Voraussetzung: Es gibt pro Verzweigung nur zwei Ausgänge mit jeweils
+gleicher Trefferwahrscheinlichkeit.
 
 
 \begin{tcolorbox}[colback=white]
@@ -1078,7 +1076,7 @@ Taschenrechner:  \textbf{\texttt{binomialpdf}}
 
 Beispiel: Ein Ballspieler trifft mit 35\% Wahrscheinlichkeit
 ($p=0.35$). Wie gross ist die Wahrscheinlichkeit, dass er mit 20 Würfen
-($n=20$) genau vier Mal ($k=4$) trifft?
+($n=20$) \textbf{genau} vier Mal ($k=4$) trifft?
 
 Lösung: \texttt{binomialpdf} $\Longrightarrow 7.38\%$
 
@@ -1106,7 +1104,7 @@ Gegeben $N+T$ Kugeln in einer Urne. Herausgezogen werden $n+t$:
 \end{itemize}
 Wahrscheinlichkeit \textbf{genau} $t$ Treffer zu ziehen:
 
-$$P(X=t) = \frac{ {T \choose t} \cdot {N  \choose n} }{{T+N \choose t+n}}$$
+$$P_{N,T,n}(X=t) = \frac{ {T \choose t} \cdot {N  \choose n} }{{T+N \choose t+n}}$$
 
 \end{tcolorbox}
 
