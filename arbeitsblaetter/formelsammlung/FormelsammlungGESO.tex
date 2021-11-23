@@ -774,6 +774,15 @@ $$f(0) = c-a$$}
 \begin{multicols}{2}
 
 \subsection*{Lagemasse}
+
+
+\subsubsection*{Modus\TRAINER{, Modalwert?}}
+Der am häufigsten auftretende Wert wird als Modus bezeichnet.
+
+Manchmal ist dies nicht eindeutig, dann sprechen wir von einer
+\textbf{multimodalen} Verteilung; bei zwei Modi von \textbf{bimodal}.
+
+
 \subsubsection*{Mittelwert}
 (= Durchschnitt = arithmetisches Mittel)
 
@@ -796,12 +805,6 @@ Die Quartilsgrenzen $Q_1$ bzw. $Q_3$ sind die Mediane der linken,
 bzw. rechten Datenhälfte (nachdem der eine Zentralwert entfernt
 wurde).
 
-\subsubsection*{Modus\TRAINER{, Modalwert?}}
-Der am häufigsten auftretende Wert wird als Modus bezeichnet.
-
-Manchmal ist dies nicht eindeutig, dann sprechen wir von einer
-\textbf{multimodalen} Verteilung; bei zwei Modi von \textbf{bimodal}.
-
 \subsubsection*{Maximum, Minimum}
 
 Maximum bzw. Minimum sind höchste bzw. kleinste Datenwerte: Die Ausreisser
@@ -814,15 +817,15 @@ zählen mit!
 \subsubsection*{Spannweite}
 Die Spannweite $R$ (Range) ist das Maximum minus
 das Minimum.
+\subsubsection*{Standardabweichung}
+Mit $\sigma$ bzw. $s$ wird die Standardabweichung bezeichnet. Es ist
+ein Mass für die Streuung um den Mittelwert.
+
 
 \subsubsection*{Interquartilsabstand}
 Der Abstand zwischen $Q_1$ und $Q_3$ wird als
 Quartilsdifferenz \textbf{QD} oder
 englisch \textit{Inter Quartile Range} = \textbf{IQR} bezeichnet.
-
-\subsubsection*{Standardabweichung}
-Mit $\sigma$ bzw. $s$ wird die Standardabweichung bezeichnet. Es ist
-ein Mass für die Streuung um den Mittelwert.
 
 
 %$\sigma$ = Standardabweichung der Grundgesamtheit
@@ -834,15 +837,15 @@ ein Mass für die Streuung um den Mittelwert.
 Verändert sich der Wert eines statistischen Masses nicht, wenn sich ein Ausreisser
 weiter ins Extreme bewegt, so sprechen wir von einem \textbf{robusten} Mass.
 
-\begin{tabular}{|c|c|c|}\hline
+\begin{tabular}{|c|l|l|}\hline
    & Lage- & Streumass\\\hline
  \multirow{4}{*}{\rotatebox{90}{robust}}  & Median $\mediantilde{x}$ & IQR \\
     & Modus $x_{mod}$ & \\
     & Quartile ($Q_1$,$Q_3$) & \\
     & (Ausreisserschwellen) & \\\hline
  \multirow{3}{*}{\rotatebox{90}{«fragil»}}  & Mittelwert
- $\overline{x}$ & Standardabw.: $\sigma$\\
-    & Minimum & Spannweite\\
+ $\overline{x}$ & Spannweite\\
+    & Minimum & Standardabw.: $\sigma$\\
 
  & Maximum & \\\hline
  \end{tabular}
@@ -852,21 +855,22 @@ weiter ins Extreme bewegt, so sprechen wir von einem \textbf{robusten} Mass.
 %
 \forceCB%
 \subsection*{Diagramme}
-\subsubsection*{Balken / Kuchen}
+\subsubsection*{Säulen (und Balken) / Kreis (Kuchen)}
 %%\begin{tabular}{cc}
 %% \includegraphics[width=4cm]{img/balkendiagramm.png} &  \includegraphics[width=3cm]{img/kuchendiagramm.png}\\
 %%\end{tabular}
 
 \begin{itemize}
-\item Balken- und Kreisdiagramme werden für ordinale und nominale
-  Skalen verwendet.
+\item Säulen- und Kreisdiagramme werden für ordinale und nominale
+  Skalen verwendet (und bei quntitativ diskreten Datentypen, wenn es
+  wenige Ausprägungen sind).
 \item Achse: Unverzerrte Skalierung und Beschriftung
 \item Legende und Titel
 \end{itemize}
 
 
 \begin{tcolorbox}[colback=white]
-  \textbf{Relative Häufigkeit}\\
+  \textbf{Absolute und relative Häufigkeit}\\
 \begin{tabular}{lcl}
 
 $n$   &$=$& Anzahl Werte\\
@@ -889,7 +893,9 @@ $p_i = f_i\cdot{}100\%$ &$=$& prozentuale Häufigkeit%%\\
 \begin{itemize}
 \item Alle Balken sind gleich breit und berühren sich.
 \item Die Höhe der Balken wird durch die (absolute / relative) Häufigkeit der entsprechenden
-Werte festgelegt.
+  Werte festgelegt.
+\item Die Flächeninhalte der Rechtecke entsprechen sind proportional
+  zu den Häufigkeiten.
 \item Werte auf Balkengrenzen werden immer rechts mitgezählt.
 \item Das obige Histogramm ist \textbf{linksschief} und rechtssteil.
 \end{itemize}
@@ -950,7 +956,7 @@ Es gibt somit $3\cdot{}4$ mögliche Kombinationen.&\raisebox{-3.5cm}{\includegra
 Hat eine zweistufige Situation zunächst $k_1$ Möglichkeiten, gefolgt
 von $k_2$ Möglichkeiten, so hat man insgesamt $k_1\cdot{}k_2$
 Möglichkeiten. Dies ist auf beliebig viele Stufen verallgemeinerbar.
-Dies kann für auch mit einem Baumdiagramm dargestellt werden.
+
 
 
 %%\bbwCenterGraphic{3cm}{img/KombinatorikMultiplikation.pdf}
@@ -959,7 +965,7 @@ Dies kann für auch mit einem Baumdiagramm dargestellt werden.
 \subsubsection*{Permutationen (Sitzordnungen)}
 
 Bei $n$ Elementen gibt es $n!$ Permutationen (=Vertauschungen):
-
+                                                                                                                
 \begin{tcolorbox}[colback=white]
   \textbf{Fakultät}\\
   $$n! = n\cdot{}(n-1)\cdot{}(n-2)\cdot{}(n-3)\cdot{} ... \cdot{}2\cdot{}1$$
@@ -970,7 +976,10 @@ Bei $n$ Elementen gibt es $n!$ Permutationen (=Vertauschungen):
 
 \def\missifarbig{M{\color{FarnFarbe}i}{\color{red}ss}{\color{FarnFarbe}i}{\color{red}ss}{\color{FarnFarbe}i}{\color{cyan}pp}{\color{FarnFarbe}i}}
 
-«\missifarbig»-Formel: Sind bei einer Permutation (Vertauschung) einige Elemente gleich, so reduziert
+\vspace{3mm}
+\textbf{Permutation mit Wiederholung}
+
+oder «\missifarbig»-Formel: Sind bei einer Permutation (Vertauschung) einige Elemente gleich, so reduziert
 sich die Anzahl der Möglichkeiten. Wie viele verschiedene Wörter sind mit den Buchstaben des Wortes «\missifarbig» bildbar?
 $$N = \frac{11!}{{\color{FarnFarbe}4}!\cdot{}{\color{red}4}!\cdot{}{\color{cyan}2}!}$$
 
