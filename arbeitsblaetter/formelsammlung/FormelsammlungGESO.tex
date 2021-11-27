@@ -3,11 +3,11 @@
 %% 2021 fp @ bbw.ch
 %%
 
-\newcommand{\versionsDatumFoSa}{2021-07-19}
+\newcommand{\versionsDatumFoSa}{2021-11-27}
 
 %% ID (ca. alle jahre), Subversion: Grössere Änderungen, Revision: Jede
 %% Umstellung/Korrektur/Typos
-\newcommand{\versionIdSubRev}{0.3.5}
+\newcommand{\versionIdSubRev}{0.3.6}
 
 \newcommand{\versionsnummerFoSa}{\versionsDatumFoSa{} \versionIdSubRev}
 
@@ -32,8 +32,6 @@
 \ifisRLP{#1}%%
 \fi%%
 }}%% End New Command RLP
-
-
 
 \input{bbwSeite}
 
@@ -79,6 +77,12 @@
 %% für harten Break:
 %% Force column-break
 \newcommand{\forceCB}{\vfill\null\columnbreak}
+
+
+\renewcommand{\arbeitsblattHeader}{}
+
+\fancyhf[FL]{Seite \thepage{}}
+\fancyhf[HL]{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -521,7 +525,7 @@ $\mathbb{D}$} eindeutig ein {\color{blue}y} aus der
 \subsection*{Lineare Funktionen}
 
 \HECH{$$g\-:\,\,\,\,\, y = f(x) = a\cdot{}x + b$$}
-\RLP{$$g\-:\,\,\,\,\, y = f(x) = m\cdot{}x + q$$}
+\RLP{$$g\-:\,\,\,\,\, y = f(x) = m\cdot{}x + q \textrm{\,\,\,\,oder\,\,\,\,} f(x)=a\cdot{}x + b$$}
 
 
 \RLP{\bbwCenterGraphic{8cm}{img/FunktionenLineareEinfuehrungRLP.pdf}}
@@ -1231,7 +1235,8 @@ Max, Mittelwert etc.\\
                            &                  &  ln  = Log. zur Basis $e$\\
                            &                  &  3x drücken = log zu beliebiger Basis\\\hline
 \tiprobutton{sto_recall}   & Werte speichern  &  Erst \texttt{sto} drücken, danach können die Variablen gespeichert werden (\tiprobutton{xyzabcd}). \\\hline
-\tiprobutton{xyzabcd}      &                  & Benutzen und Auslesen der Variablen.
+\tiprobutton{xyzabcd}      &                  & Benutzen und Auslesen der Variablen.\\\hline
+\tiprobutton{approx}       & Resultat-Anzeige  & $\sqrt{50}$ = $5\sqrt{2} \approx 7.0711$
 \end{tabular}
 \end{tabular}
 
