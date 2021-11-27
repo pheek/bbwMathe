@@ -14,14 +14,19 @@
 \item Zielfunktion und Zielgröße
 \end{itemize}
 
- \cite{frommenwiler17alg}
+Algebrabuch \cite{frommenwiler17alg}:
 
  Parabeln: S. 192ff (Kap. 3.4.8)
 
-  Und Kap. 3.13. 3 (S. 242ff) ab Aufg. 914.
+ Und Kap. 3.13. 3 (S. 242ff) ab Aufg. 914.
+
+ Geometriebuch \cite{frommenwiler18geom}:
+
+ Extremwertaufgaben Kap. 3.5 ab Seite 173.
 
 \newpage
-\subsection{Einstiegsbeispiel Parabel}
+
+\subsection{Erinnerung}
 Die Funktion $f: y = 4x + 3x^2 - 6$ hat ein Extremum (Minimum oder
 Maximum). Wo liegt dieses? Handelt es sich um ein Minimum oder ein Maximum?
 
@@ -42,8 +47,71 @@ Maximum). Wo liegt dieses? Handelt es sich um ein Minimum oder ein Maximum?
   Es handelt sich um ein Minimum, denn der Parameter $a$ (vor dem
   $x^2$) ist positiv; somit ist die Parabel nach oben geöffnet.
 }
+ 
+Algebrabuch:
+\TALSAadB{192ff}{715., 717., 718.*}
+
 \newpage
-\subsection{Extremwertaufgaben lösen}
+
+
+\subsection{Taschenrechner}
+Gegeben ist die Funktion
+$$f: y = 0.1 x^3 + 0.07 x^2 - 0.8 x + 2$$
+
+Wir suchen diejenige positive $x$-Position, wo die Funktion am kleinsten ist.
+
+Vorgehen:
+\begin{enumerate}
+\item Neues «Graph» Fenster mit dem TI-$n$spire CX II-T erstellen
+\item $f1()$ definieren : $f1(x) := 0.1 x^3 + 0.07 x^2 - 0.8 x + 2$
+\item Funktion zeichnen lassen
+\item Menu -> Analyze Graph -> Minimum suchen
+\item Untere Schranke bei ca. 0 und obere Schranke bei \zB 3 auswählen.
+\item Lesen Sie das Resultat bei $x\approx 1.42$ und $y\approx 1.29$ ab.
+  \item Mehr Ziffern gefällig? Unter Menu: [9] Einstellungen: Angezeigte Ziffern auf \zB «Fließ 5» umstellen.
+\end{enumerate}
+
+\bbwCenterGraphic{6.5cm}{tals/fct2/img/minimumNSpire.png}
+
+\subsubsection{«von Hand»}\index{fMin()!nSpire}\index{nSpire!fMin()}
+Das Funktionsminimum kann auch im «notes» berechnet werden. Vorteil: Hier können Zwischenresultate weiterverwendet werden. Nachteil, man sieht von vornherein nicht, wo die Maxima und Minima in etwa sind:
+
+\bbwCenterGraphic{7cm}{tals/fct2/img/fMin.png}
+
+
+
+\subsection*{Aufgaben zum Taschenrechner}
+
+Algebrabuch:
+\TALSAadB{242}{915. a) b) c) [ohne Wertebereiche]} %% Weitere mögliche: , 916., 917., 918. und 919.}
+
+
+\newpage
+\subsection{Das Tipi}\index{Tipi}
+vgl. \cite{frommenwiler18geom} S. 173 Kap. 3.5 Extremwertaufgabe 222.
+
+\TRAINER{Lösen Sie in Gruppen die Aufgabe 222. Noch keinerlei Hilfe geben.}
+
+«Aus vier 5 m langen Stangen soll ein pyramidenförmiges Zelt mit quadratischer Grundfläche errichtet werden.
+Wie hoch wird es, wenn sein Volumen möglichst groß sein soll?
+
+\TNT{8}{Verschiedene Lösungswege sind denkbar;
+
+  Variable $h$ = Höhe:
+  $$V(h) = \frac13 G(h)\cdot{}h$$
+
+  Variable $\alpha$ = Winkel einer Zeltstange gegenüber dem Boden:
+  $$V(\alpha) = \frac13 G(\alpha)\cdot{}h(\alpha)$$
+
+  Variable $a$ = Seitenlänge des Grundseitenquadrates:
+  $$V(a) = \frac13\cdot{}a^2h(a)$$
+
+  allen gemeinsam: Mit einer Größe (Parameter) wird «gespielt», um das Volumen zu berechnen.
+}
+\newpage
+
+
+\subsection{Extremwertaufgaben systematisch lösen}
 Am Beispiel einer Himmelslaterne\footnote{Mit «Himmelslaternen» meine ich hier diese selbst gebastelten Heißluftballone aus Seidenpapier, die mit Spiritus betrieben werden.} soll gezeigt werden, wie dessen Oberfläche unter einer Nebenbedingung (zur Verfügung steht nur eine begrenzte Länge an Holz für die Holzstangen) maximiert wird.
 
 Problemstellung. Eine quaderförmige Himmelslaterne (mit quadratischer
@@ -56,6 +124,7 @@ Hier ist Platz für eine Skizze:
 \mmPapier{8}
 
 \newpage
+
 
 \subsubsection{Rezept}
   \begin{enumerate}
@@ -99,41 +168,19 @@ Hier ist Platz für eine Skizze:
 \end{rezept}
   
 
-
-
-
 \subsection*{Aufgaben}
 Ohne Taschenrechner:
 
-\TALSAadB{192ff}{715., 716., 717., 178.*, 720., 721. und 722.}
-\newpage
+Algebrabuch:
+\TALSAadB{192ff}{720., 721. und 722.}
 
+\TALSAadB{243ff}{922., 924. und 927.}
 
-\subsection{Einstiegsbeispiel Taschenrechner}
-Gegeben ist die Funktion
-$$f: y = 0.1 x^3 + 0.07 x^2 - 0.8 x + 2$$
-
-Wir suchen diejenige positive $x$-Position, wo die Funktion am kleinsten ist.
-
-Vorgehen:
-\begin{enumerate}
-\item Neues «Graph» Fenster mit dem TI-$n$spire CX II-T erstellen
-\item $f1()$ definieren : $f1(x) := 0.1 x^3 + 0.07 x^2 - 0.8 x + 2$
-\item Funktion zeichnen lassen
-\item Menu -> Analyze Graph -> Minimum suchen
-\item Untere Schranke bei ca. 0 und obere Schranke bei \zB 3 auswählen.
-\item Lesen Sie das Resultat bei $x\approx 1.42$ und $y\approx 1.29$ ab.
-  \item Mehr Ziffern gefällig? Unter Menu: [9] Einstellungen: Angezeigte Ziffern auf \zB «Fließ 5» umstellen.
-\end{enumerate}
-
-\bbwCenterGraphic{6.5cm}{tals/fct2/img/minimumNSpire.png}
-
-\subsubsection{«von Hand»}\index{fMin()!nSpire}\index{nSpire!fMin()}
-Das Funktionsminimum kann auch im «notes» berechnet werden. Vorteil: Hier können Zwischenresultate weiterverwendet werden. Nachteil, man sieht von vornherein nicht, wo die Maxima und Minima in etwa sind:
-
-\bbwCenterGraphic{7cm}{tals/fct2/img/fMin.png}
+Geometriebuch:
+\TALSGeomAadB{173}{222., 223., 225. und 228.}
 
 \newpage
+
 
 \subsection{Blechdose}
 In eine Konservendose (Zylinderform) passt genau ein Liter Zwiebelsuppe. Gesucht ist das Verhältnis von Radius $r$ zur Höhe $h$, sodass die Oberfläche (Blechmenge) möglichst klein wird.
@@ -143,7 +190,7 @@ Das Volumen $V$ berechnet sich aus
 $$V = r^2\pi\cdot{}h$$
 Da das Volumen V = 1 (Liter) ist, gilt für die Höhe:
 $$h = \frac{1}{r^2\pi}$$
-Die Oberfläche $A$ berechnet sich aus Deckel+Boden+Mantel:
+Die Oberfläche $A$ berechnet sich aus Deckel+Boden+Mantel:  
 $$A=r^2\pi + r^2\pi + 2r\pi\cdot{}h$$
 Wenn wir die Höhe $h$ aus dem Volumen hier einsetzen, erhalten wir für die Oberfläche:
 $$A=2r\pi\left(r+\frac{1}{r^2\pi}\right)$$
@@ -156,7 +203,3 @@ Computeralgebra-System erst
 \item
   die minimale Oberfläche $A= \LoesungsRaum{5.54}\textrm{dm}^2$.
 \end{itemize}
-
-\subsection*{Aufgaben}
-
-\TALSAadB{242}{915. a) b) c) [ohne Wertebereiche], 927., 916., 917., 918., 919., 922., 923., 925., 926., 928., ...}
