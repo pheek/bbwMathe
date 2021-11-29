@@ -3,11 +3,11 @@
 %% 2021 fp @ bbw.ch
 %%
 
-\newcommand{\versionsDatumFoSa}{2021-11-27}
+\newcommand{\versionsDatumFoSa}{2021-11-29}
 
 %% ID (ca. alle jahre), Subversion: Grössere Änderungen, Revision: Jede
 %% Umstellung/Korrektur/Typos
-\newcommand{\versionIdSubRev}{0.3.8}
+\newcommand{\versionIdSubRev}{0.4.0}
 
 
 %% ID (ca. alle jahre), Subversion: Grössere Änderungen, Revision: Jede
@@ -223,7 +223,8 @@ Vorzeichen im Taschenrechner:\\
 \subsection*{(Absolut)betrag einer Zahl}%%
 %%
 \hfill\, $|+7| = 7$ \hfill\, $|-7| = 7$ \hfill\, %%
-Gemomtrisch: Abstand zum Nullpunkt.
+
+Geometrisch: Abstand zum Nullpunkt.
 
 \hrulefill
 
@@ -539,28 +540,32 @@ $\mathbb{D}$} eindeutig ein {\color{blue}y} aus der
 \hrulefill
 \subsection*{Lineare Funktionen}
 
-\HECH{$$g\-:\,\,\,\,\, y = f(x) = a\cdot{}x + b$$}
-\RLP{$$g\-:\,\,\,\,\, y = f(x) = m\cdot{}x + q \textrm{\,\,\,\,oder\,\,\,\,} f(x)=a\cdot{}x + b$$}
+$$f\-:\,\,\,\,\, y = f(x) = a\cdot{}x + b \RLP{\textrm{\,\,\,\,oder\,\,\,\,} f(x)=m\cdot{}x + q}$$
 
 
-\RLP{\bbwCenterGraphic{8cm}{img/FunktionenLineareEinfuehrungRLP.pdf}}
-\HECH{\bbwCenterGraphic{8cm}{img/FunktionenLineareEinfuehrungHECH.pdf}}
+%%\RLP{\bbwCenterGraphic{8cm}{img/FunktionenLineareEinfuehrungRLP.pdf}}
+%%\HECH{\bbwCenterGraphic{8cm}{img/FunktionenLineareEinfuehrungHECH.pdf}}
+\bbwCenterGraphic{8cm}{img/FunktionenLineareEinfuehrungHECH.pdf}
 
 Steigung:
 
-\fbox{\HECH{$a$}\RLP{$m$}$ = \frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1}$}\\
+%%\fbox{\HECH{$a$}\RLP{$m$}$ = \frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1}$}\\
+\fbox{$a$$ = \frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1}$}\\
 
 
 Zwei Geraden sind \textbf{parallel}, wenn ihre Steigungen gleich sind.
 
-$\HECH{b}\RLP{q}$ = $y$-Achsenabschnitt (=Ordinatenabschnitt)
+%%$\HECH{b}\RLP{q}$ = $y$-Achsenabschnitt (=Ordinatenabschnitt)
+$b$ = $y$-Achsenabschnitt (=Ordinatenabschnitt)
 \forceCB
 
 \subsubsection*{Horizontale Gerade}
 
-$g\-:\,\,\, y=\HECH{ax+b}\RLP{mx+q}$ ist horizontal, wenn die Steigung \HECH{$a$}\RLP{$m$} Null ist.
+%%$g\-:\,\,\, y=\HECH{ax+b}\RLP{mx+q}$ ist horizontal, wenn die Steigung \HECH{$a$}\RLP{$m$} Null ist.
+$g\-:\,\,\, y=ax+b$ ist horizontal, wenn die Steigung $a$ Null ist.
 
-$$g\-:\,\,\,  y=0\cdot{}x+\HECH{b}\RLP{q} \Rightarrow y=\HECH{b}\RLP{q}$$
+%%$$g\-:\,\,\,  y=0\cdot{}x+\HECH{b}\RLP{q} \Rightarrow y=\HECH{b}\RLP{q}$$
+$$g\-:\,\,\,  y=0\cdot{}x+b \Rightarrow y=b$$
 
 
 
@@ -592,14 +597,20 @@ Gleichsetzen: $ax+b = cx+d$ und nach $x$ auflösen.
 
 
 \subsection*{Zweipunkte Aufgaben}
-Gesucht Gerade $g\-: \,\,\, y=\HECH{ax+b}\RLP{mx+q}$ durch zwei gegebene Punkte $A=(x_A|y_A)$
-und $B=(x_B|y_B)$
+%%Gesucht Gerade $g\-: \,\,\, y=\HECH{ax+b}\RLP{mx+q}$ durch zwei gegebene Punkte $A=(x_A|y_A)$
+%%und $B=(x_B|y_B)$
 
-\textbf{Variante 1}: Steigung $\HECH{a}\RLP{m}$ berechnen und einen der beiden Punkte in
-$y=\HECH{ax+b}\RLP{mx+q}$ einsetzen, um $\HECH{b}\RLP{q}$ zu finden.
+Gesucht Gerade $g\-: \,\,\, y=ax+b$ durch zwei gegebene Punkte $A=(x_A|y_A)$ und $B=(x_B|y_B)$
 
-\textbf{Variante 2}: Gleichungssystem nach $\HECH{a}\RLP{m}$ und $\HECH{b}\RLP{q}$ auf\/lösen:
-\gleichungZZ{y_A}{\HECH{a}\RLP{m}\cdot{}x_A+\HECH{b}\RLP{q}}{y_B}{\HECH{a}\RLP{m}\cdot{}x_B + \HECH{b}\RLP{q}}
+%%\textbf{Variante 1}: Steigung $\HECH{a}\RLP{m}$ berechnen und einen der beiden Punkte in
+%%$y=\HECH{ax+b}\RLP{mx+q}$ einsetzen, um $\HECH{b}\RLP{q}$ zu finden.
+\textbf{Variante 1}: Steigung $a$ berechnen und einen der beiden Punkte in
+$y=ax+b$ einsetzen, um $b$ zu finden.
+
+%%\textbf{Variante 2}: Gleichungssystem nach $\HECH{a}\RLP{m}$ und $\HECH{b}\RLP{q}$ auf\/lösen:
+%%\gleichungZZ{y_A}{\HECH{a}\RLP{m}\cdot{}x_A+\HECH{b}\RLP{q}}{y_B}{\HECH{a}\RLP{m}\cdot{}x_B + \HECH{b}\RLP{q}}
+\textbf{Variante 2}: Gleichungssystem nach $a$ und $b$ auf\/lösen:
+\gleichungZZ{y_A}{a\cdot{}x_A+b}{y_B}{a\cdot{}x_B + b}
 
 \end{multicols}
 
@@ -823,7 +834,7 @@ wurde).
 Maximum bzw. Minimum sind höchste bzw. kleinste Datenwerte: Die Ausreisser
 zählen mit!
 
-\forceCB%
+\RLP{\forceCB}%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 
 \subsection*{Streumasse}
@@ -866,7 +877,7 @@ weiter ins Extreme bewegt, so sprechen wir von einem \textbf{robusten} Mass.
 
 
 %
-\forceCB%
+\RLP{\forceCB}%
 \subsection*{Diagramme}
 \subsubsection*{Säulen (und Balken) / Kreis (Kuchen)}
 %%\begin{tabular}{cc}
