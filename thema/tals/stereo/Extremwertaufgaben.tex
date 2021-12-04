@@ -153,10 +153,12 @@ Hier ist Platz für eine Skizze:
   \item \textbf{Zweite Größe bestimmen} Die zweite Größe kann hier entweder die Oberfläche, oder die Höhe der Laterne sein. Wir berechnen beides:
 
     \TNT{3.2}{$$h = 2-2x = 2-2\cdot{}\frac47 = \frac67 [\textrm{m}]$$
-    $$F(x) = y_S = x^2 + 4\cdot{}x\cdot{}h = \left(\frac47\right)^2 + 4\cdot{}\frac47 \cdot{} \frac67= \frac{112}{49} [\textrm{m}^2]$$}
+    $$F(x) = y_S = x^2 + 4\cdot{}x\cdot{}h = \left(\frac47\right)^2 + 4\cdot{}\frac47 \cdot{} \frac67= \frac{112}{49} = \frac{16}{7} [\textrm{m}^2]$$}
     
   \end{enumerate}
-\newpage
+  \newpage
+
+  
   \begin{rezept}{Maximierungsaufgaben}{}
     \begin{enumerate}
     \item Zielgröße festlegen
@@ -182,7 +184,7 @@ Geometriebuch:
 \newpage
 
 
-\subsection{Blechdose}
+\subsection{Blechdose (optional)}
 In eine Konservendose (Zylinderform) passt genau ein Liter Zwiebelsuppe. Gesucht ist das Verhältnis von Radius $r$ zur Höhe $h$, sodass die Oberfläche (Blechmenge) möglichst klein wird.
 
 Das Volumen $V$ berechnet sich aus
@@ -203,3 +205,49 @@ Computeralgebra-System erst
 \item
   die minimale Oberfläche $A= \LoesungsRaum{5.54}\textrm{dm}^2$.
 \end{itemize}
+\newpage
+
+\subsection{Rechteck unter Parabel (optional)}
+
+Wie erstellt man so eine Aufgabe? Erst mal eine Parabel mit Öffnung nach unten und zwei klaren Schnittpunkten (\zB $7$ und $4$) mit der $x$-Achse definieren:
+
+Skizze
+
+\TNT{6}{\bbwCenterGraphic{7.2cm}{tals/stereo/img/RechteckUnterParabel.jpg}}%% END TNT
+
+$$p(x) := a(x-7)(x-4)$$
+
+Der Scheitelpunkt soll auf Höhe $y=5$ liegen (spielt jedoch keine Rolle. Man könnte einfach auch $a<0$ verlangen.
+
+Somit ist $p(\frac{7+4}2) = p(5.5) = 5$ zu setzen:
+
+\TNT{2}{$$p(5.5) := 5 = a(5.5-7)(5.5-4) = a(-1.5)(1.5) = -2.25 a = \frac{-9}4 a$$} %% END TNT
+
+
+Daraus ergibt sich das $a$:
+
+\TNT{2}{$a=\frac{-20}9$}
+\newpage
+
+Nun zur Aufgabenstellung:
+
+\textbf{Gegeben ist eine Parabel $p(x) = \frac{-20}9(x-7)(x-4)$. Gesucht ist ein Rechteck, von dem die eine Seite auf der $x$-Achse liegt. Das Rechteck wird unter dem Parabelbogen einbeschrieben und soll maximalen Flächeninhalt haben.}
+
+Skizze:
+
+\noTRAINER{\mmPapier{6}}
+
+Zielgröße: $F = l\cdot{}b$ (Länge mal Breite). Dabei ist das $l$ der doppelte Abstand $d$ (Distanz) zur Parabelachse.
+Also $F = 2db$
+
+Nebenbedingung: $b = \LoesungsRaum{p(5.5 + d) = p(5.5-d)}$
+
+Zielfunktion: $F(d) = \LoesungsRaum{l\cdot{}b = 2d\cdot{}p(5.5+d) = 2d\cdot{}\frac{-20}9\cdot((5.5+d)-7)((5.5+d)-4)}$
+
+Vereinfachen:
+$F(d) = \LoesungsRaum{\frac{-40}9\cdot{}d(d^2-\frac94)}$
+
+Maximieren: Diese Funktion $F(d)$ soll nun im Bereich $0<d<1.5$ maximiert werden TR: $d = \LoesungsRaum{\pm\frac{\sqrt{3}}4}$
+
+Zweite Größe (hier Fläche) finden: $F(d) = \LoesungsRaum{F\left(\frac{\sqrt{3}}4\right) \approx 5.77 [e^2]}$
+
