@@ -18,65 +18,6 @@
 \newpage
 
 
-\begin{definition}{Exponentialfunktion}{}\index{Exponentialfunktion!Definition}
-  Eine Funktion der Form $$f(x): x \mapsto a^x$$
-  bzw. $$y = a^x$$
-  heißt \textbf{Exponentialfunktion}.
-\end{definition}
-
-Zeichnen Sie $f: y=2^x$ und $g: y=1.4^x$ ins selbe Koordinatensystem:
-
-
-\bbwGraph{-5}{5}{-1}{5}{
-\TRAINER{  \bbwFuncC{pow(2.0,\x)}{-3.5:2.1}{blue}
-  \bbwFuncC{pow(1.4,\x)}{-3.5:3}{green}
-  \bbwLetter{1,3}{$f$}{blue}
-  \bbwLetter{2.5,2}{$g$}{green}
-}%% end TRAINER
-}%% end graph
-
-
-
-\begin{bemerkung}{Wachstumsfaktor}{}\index{Wachstumsfaktor}
-Der Parameter $a$ gibt den Wachstumsfaktor pro Zeiteinheit $e_x$ an.
-\end{bemerkung}
-
-\newpage
-
-\subsection{Allgemeine Form der Exponentialfunktion}
-
-Obige Exponentialfunktion hat für den Wert $x=0$ immer den $y$-Wert = 1. Da dies in der Praxis aber meist nicht der Fall ist, gib es die folgende \textbf{allgemeine Form der Exponentialfunktion}:
-
-\begin{definition}{allgemeine Exponentialfunktion}{}
-$$f: y = b\cdot{}a^x$$
-
-Auch hier gibt der Parameter $a$ den Wachstumsfaktor pro Zeiteinheit $e_x$ an.
-
-Dabei ist $b$ der Startwert zum Zeitpunkt $x$ = 0.
-\end{definition}
-
-
-\bbwCenterGraphic{8cm}{allg/funktionen/img/exp/b_faktor.png}
-
-\begin{bemerkung}{Wachstumsfaktor}{}{}
-Werden zwei $x$ Positionen mit Differenz 1 (=$e_x$) betrachtet, so sind
-die zugehörige $y$-Werte um \textbf{Faktor} $a$ auseinander.
-\end{bemerkung}
-
-Begründung:
-\TNT{4}{
-  Gegeben $x_1$ und $x_2 = x_1 + 1$. So ist
-
-  $y_1 = b\cdot{}a^{x_1}$ und $y_2 = b\cdot{}a^{x_2}$.
-
-  Setzen wir nun $x_1 + 1$ für $x_2$ ein, so erhalten wir:
-
-  $$y_2 = b\cdot{} a^{x_1+1} = b\cdot{}a^{x_1}\cdot{}a^1 = a\cdot{}b\cdot{}a^{x_1} = a\cdot{}y_1$$
-}
-\newpage
-
-
-
 \subsubsection{Verschiebung und Streckung}
 
 Eine Verschiebung der Exponentialfunktion $y=b\cdot{}a^x$ in der Zeit ($x$-Richtung) kann auch in Form einer Veränderung der Startfaktors $b$ umgeschrieben werden.
@@ -101,4 +42,125 @@ $k=a^b$ und mit $b=\log_a(k)$.}
 \subsection*{Aufgaben}
 \TALSAadB{215ff}{809-830}
 \GESOAadB{335ff}{11. a) b), 15. a) b) [Zeichnen mit \texttt{geogebra.org}], 17. a) b) e), 22. a) b), 23. d), 25. a) b)}
+\newpage
+
+
+
+
+\subsection{Basiswechsel}
+Die Algen (im Türlersee) verdoppeln sich alle fünf Tage.
+
+$$\tau = 5; a= 2; f(t) = b\cdot{}a^\frac{t}{\tau} = b\cdot{}2^\frac{t}5$$
+
+Um wie viel nehmen sie ...
+
+\begin{enumerate}
+\item ... alle 15 Tage zu?
+\item ... alle 7 Tage zu?
+\item In wie vielen Tagen verdreifachen sie sich?
+\item Wie sieht es mit der Basis $e$ aus? Mit welchem $m$ kann man die
+  Zunahme als $f(t) = b \cdot{} e^{m\cdot{}t}$ angeben?
+\end{enumerate}
+
+\begin{center}\fbox{
+    \textbf{ $\tau$ und $a$ sind voneinander abhängig!}}
+  \end{center}
+
+Es gilt:
+\begin{center}\fbox{$b\cdot{}a^{\frac{t}{\tau}} = b\cdot{}a_2^{\frac{t}{\tau_2}} =
+    e^{m\cdot{}t}$}
+\end{center}
+
+... oder nach ziehen der $t$-ten Wurzel:
+
+\begin{gesetz}{Basiswechsel}{}
+
+  \begin{center}\fbox{\fbox{$a^{\frac{1}{\tau}} =     a_2^{\frac{1}{\tau_2}} = e^{m}$}}\end{center}
+
+ 
+  $a=$ Wachstumsfaktor\\
+  $\tau=$ Beobachtungszeitraum\\
+  $e=$ Eulersche Konstante (2.718...)
+  $m=\frac1\tau\cdot{}\ln(a) = \frac1{\tau_2}\cdot{}\ln(a_2)$
+\end{gesetz}
+\newpage
+
+
+\textbf{Lösungen}
+
+ad. 1.: $\tau_2=15$:
+\TNT{3.6}{$2^\frac15 = a_2^\frac1{15}$ Nun auf beiden Seiten ``hoch
+  15'' und somit
+
+  $a_2 = (2^{\frac15})^{15} = 2^3 = 8$.}
+
+ad. 2.: $\tau_2=7$:
+\TNT{3.6}{$2^\frac15 = a_2^\frac1{7}$ Nun auf beiden Seiten ``hoch
+  7'' und somit
+
+  $a_2 = (2^{\frac15})^{7} = 2^{\frac75} \approx 2.639$.}
+
+ad. 3.: $a_2 = 3$ (verdreifachen):
+\TNT{4.4}{$2^\frac15 = 3^\frac{1}{\tau_2}$ (beidseitig logarithmieren:)
+
+  $\frac15 \ln(2) = \frac1{\tau_2} \ln(3)$ (Kehrwert:)
+
+  $\frac{5}{\ln(2)} = \frac{\tau_2}{\ln(3)}$ ($\cdot \ln(3)$:)
+
+  $\tau_2 = \frac{5\cdot{}\ln(3)}{\ln(2)}\approx 7.925$ Tage. Sie
+  verdreifachen sich ca. alle 8 Tage.
+}%% end TNT
+
+ad. 4.: $a^\frac{t}5 = e^{m\cdot{}t}$ (Basis $e$):
+\TNT{5.2}{
+  $2^\frac15 = e^{m}$ (beidseitig $\ln()$):
+
+  $\ln(2^\frac15) = m\cdot \ln(e) = m\cdot 1 = m \approx 0.1386$ und somit:
+  $$f(t) \approx b\cdot{} e^{0.1386\cdot{} t}$$
+}%% END TNT
+
+\newpage
+
+
+\subsubsection{Beispiel: Wissenschaftliche Publikation (optional)}
+In einem wissenschaftlichen Journal ist angegeben, dass eine Population annähernd folgendes Verhalten an den Tag lege [$t$ = Tage]:
+$$y = 5.6\cdot{} e^{\frac{t}{4.1}}$$
+
+Berechnen Sie die tägliche Zunahme $a$ und geben Sie somit die Funktionsgleichung ohne Bruch im Exponenten an:
+
+$$y = 5.6\cdot{} e^{\frac{t}{4.1}} = b\cdot{}a^t \approx \LoesungsRaum{5.6} \cdot{} \LoesungsRaum{1.2762}^t$$
+
+\TNT{6.4}{Tipp: Setzen Sie $t=0$ und $t=1$ ein. $$a = e^{\frac{1}{4.1}}$$
+\vspace{3cm}}
+\newpage
+
+\subsubsection{Bedeutung der Zahl $e$ (optional)}
+
+\paragraph{$45\degre$ auf der $y$-Achse:}
+Die E-Funktion $y=e^x$ hat die $45\degre$-Steigung genau auf der $y$-Achse; sie beginnt im Gegensatz zu anderen Exponentialfunktionen genau bei $x=0$ so «richtig zu wachsen»\TALS{\footnote{Wenn wir in einem Punkt $x$ den Wert der $e$-Funktion ($e^x$) betrachten, so ist ihr Funktionswert exakt gleich der Steigung einer Tangente bei diesem $x$-Wert.}}.
+
+\bbwGraph{-4}{3}{-1}{5}{
+  \bbwFunc{pow(2.71828,\x)}{-3.5:1.5}
+  \bbwFuncC{\x+1}{-2:2}{green}
+}%% end graph
+
+Dies ist ein weiterer Grund, warum die Zahl $e$ eine solche Bedeutung bei
+exponentiellen Prozessen einnimmt.
+
+
+\TALS{
+\paragraph{Tangente an die E-Funktion}\index{E-Funktion}
+Als \textbf{E-Funktion} bezeichnen wir die Exponentialfunktion zur
+Basis $e \approx 2.71828172846$; also:
+$$f(x) = e^x$$
+Diese Funktion ist von allen Exponentialfunktionen insofern speziell,
+als dass für jedes $x$ der Funktionswert $y=e^x$ genau die Steigung
+der Tangente an $e^x$ im Punkt $P_x=\left(x | e^x\right)$ angibt.
+
+So ist die Tangentensteigung im Punkt $(0|e^0) = (0 | 1)$ genau 1 und die Steigung im
+Punkt $(1|e^1) = (1|e)$ genau $e$. 
+
+}%% END TALS
+
+
 \newpage
