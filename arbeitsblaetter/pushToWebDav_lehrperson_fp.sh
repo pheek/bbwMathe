@@ -82,8 +82,8 @@ echo "Copying Quadratische Gleichungen mit Photomath (ALLG)"
 cp -f ./photomath_quadratische_funktionen/Photomath_quadratische_Funktionen_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/photomath/Photomath_quadratische_Funktionen.pdf
 
 echo "Copying Potenzgesetze Arbeitsblatt (GESO)"
-cp -f ./potenzgesetze_geso/Potenzgesetze_GESO.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/aa2/arbeitsblaetter/Potenzgesetze.pdf
-cp -f ./potenzgesetze_geso/Potenzgesetze_TRAINER_GESO.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/aa2/arbeitsblaetter/Potenzgesetze_TRAINER.pdf
+cp -f ./potenzgesetze_geso/Potenzgesetze_GESO.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/potenzgesetze/Potenzgesetze.pdf
+cp -f ./potenzgesetze_geso/Potenzgesetze_TRAINER_GESO.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/potenzgesetze/Potenzgesetze_TRAINER.pdf
 
 echo "copying Sin Cos Tan (TALS)"
 cp -f ./sin_cos_tan/60Uebungen/60Uebungen_TALS.pdf        ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig1/60_uebungen/60Uebungen.pdf
