@@ -2,7 +2,7 @@
 %% 2019 07 11 Ph. G. Freimann
 %%
 
-\section{\GESO{allgemeine }Logarithmen}\index{Logarithmus}
+\section{allgemeine Logarithmen}\index{Logarithmus}\index{allgemeine Logarithmen}
 \sectuntertitel{Wer hat noch andere Basen?}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Lernziele}
@@ -135,25 +135,24 @@ $$10^{\lg(2)\cdot{}x} = 10^{\lg(128)}$$
 
  Wir wissen bereits, dass
 
- $$\left(10^m\right)^n = 10^{m\cdot{}n}$$
+ $$\left(a^m\right)^n = a^{m\cdot{}n}\TRAINER{ (I)}$$
 
  und
 
- $$\lg(10^x) = x$$
-
- Daraus erhalten wir
+ $$\log_a(a^x) = x\TRAINER{ (II)}$$
 
 
-\TNT{3.2}{
-  Voraussetzung:
-  \begin{itemize}
-  \item $(I)\,\,\,\,\,\,\,\, \, (10^m)^n = 10^{m\cdot{}n}$
-  \item $(II)\,\,\,\,\,\,\, \lg(10^x) = x$
-  \end{itemize}
-  Beweis am Beispiel:
+\TNT{6}{
+GESO:  Beweis am Beispiel:
   $\lg(100^7) = \lg((10^2)^7) {\stackrel{(I)}{=}} \lg(10^{2\cdot{}7}) =
   \lg(10^{(7\cdot{} 2)}) {\stackrel{(II)}{=}} 7\cdot{} 2 {\stackrel{(II)}{=}} 7\cdot{}
   \lg(10^2) = 7\cdot{}\lg(100)$
+
+  TALS:
+  $u:=a^y \Longleftrightarrow y=\log_a(u)$
+
+  $\log_a(u^k) = \log_a((a^y)^k) {\stackrel{(I)}{=}}  \log_a(a^{yk})
+  {\stackrel{(II)}{=}} k\cdot{}y = k\cdot{}\log_a(u)$
 }%% END TNT
 
  
@@ -165,8 +164,6 @@ $$10^{\lg(2)\cdot{}x} = 10^{\lg(128)}$$
    $$\log_a(u^k) = k\cdot{} \log_a(u)$$
    \end{gesetz}
 \newpage
-
-
 
 
 \TALS{\
@@ -260,8 +257,13 @@ $$\log_a(c) = \frac{\ln(c)}{\ln(a)}$$
 %%\GESO{(\cite{marthaler17}       S.??? (Kap. ???))}
 
 \subsection*{Aufgaben}
-\TALSAadB{???}{???}
-
+\TALS{Andere Basis:\\}
+\TALSAadB{62ff}{185. a) b) c) g), 186. a) d) h), 187. a) c) e)  und
+  (optional) 188.}
+\TALS{Logarithmengesetze:\\}
+\TALSAadB{64ff}{190. a) b) d), 191. a) c) e), 192. c), 193. a) c) e),
+  194. a) c) d), 196. a) b) c) d), 197. a) b) e) f), 198. a) b) e) f),
+  202. a) b), 203. b) d) 204. a) b) c), 206. a) c) f) und 208. a) b)}
 
 \GESO{Andere Basis (Vieles ist mit dem Taschenrechner lösbar):}
 
