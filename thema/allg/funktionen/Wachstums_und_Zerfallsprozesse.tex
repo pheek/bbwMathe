@@ -163,7 +163,6 @@ Die allgemeine Formel für exponentielle Prozesse lautet:
 
 \bbwCenterGraphic{11cm}{allg/funktionen/img/exp/exponentielles_wachstum.png}
 
-
 Dabei sind
 \begin{itemize}
 \item $b=f(0)$ der Anfangsbestand zum Zeitpunkt $t$ = 0.
@@ -173,8 +172,12 @@ Dabei sind
   \item Verfünffachen einer Viertelstunde (= 15 Minuten): $a=5$ und
     $\tau=\frac{1}{4} [\textrm{h}]$
   \end{itemize}
+  Meist ist die Beobachtungszeit gleichzeitig die Maßeinheit (\zB
+  Veränderung pro Stunde). Dann ist unser $\tau=1$ und die Formel
+  vereinfacht sich zu $f(t) = b\cdot{}a^t$.
 \item $a$ ist der Zunahmefaktor zwischen zwei Beobachtungszeitpunkten (Beispiel $a=2$ bei Verdoppelungsprozessen).
-  $a$ berechnet sich durch den Quotienten zwischen zwei Beobachtungswerten $b$ und später $m$. Also $a=\frac{m}b=\frac{f(\tau)}{f(0)}$.
+  $a$ berechnet sich durch den Quotienten zwischen zwei
+  Beobachtungswerten $a = \frac{f(\tau)}{f(0)}$.
 \item $f(t)=b\cdot{}a^{\frac{t}{\tau}}$ ist der Wert (Anzahl, Fläche,
   Bestand, ...) zum Zeitpunkt
   $t$. 
@@ -182,9 +185,9 @@ Dabei sind
 
 Bemerkung: 
 \TNT{2.4}{
-$\frac{f(\tau)}{f(0)}=\frac{b\cdot{}a^{\frac{t}{\tau}}}{b\cdot{}a^{\frac0{\tau}}}
-  = a^{\frac{t}{\tau} -\frac{0}{\tau}} = a^{\frac{t-0}{\tau}}
-  = a^{\frac{\tau}{\tau}} = a$}%% END TNT
+$\frac{f(\tau)}{f(0)}=\frac{b\cdot{}a^{\frac{\tau}{\tau}}}{b\cdot{}a^{\frac0{\tau}}}
+  = \frac{a^1}{a^0} = \frac{a}{1} 
+  = a$}%% END TNT
 
 \newpage
 
@@ -194,21 +197,31 @@ Irland hatte 1990 3.5 Mio. Einwohner. Im Jahr 2019 waren es bereits 4.9 Mio.
 \textbf{Frage 1}: Was prognostizieren Sie für das Jahr 2025, wenn Sie von einem exponentiellen Wachstum ausgehen?
 
 \TNT{12}{
-  1. Skizze:Ersichtlich: $\tau$, 1990, 2019, 3.5 und 4.9 (Rest irrelevant)
+  1. Skizze:Ersichtlich: $\tau=1$, 1990 = $t_0=0$, 2019 = $t_1=29$, 3.5 und 4.9 (Rest irrelevant)
+
+  $\tau$ = 1 Jahr, somit ist $f(t) = b\cdot{} a^t$
+
+  Somit ist $a$ pro Jahr zu verstehen.
   
-  Ansatz: Zeitpunkt $t_1 = 1990$, somit $m_1 = 3.5$ (Mio.). Analog Zeitpunkt $t_2 = 2019$ somit $m_2 = 4.9$ (Mio).
-  Das $\tau= 29$ Jahre und das zugehörige $a$ ist $\frac{4.9}{3.5}$. $a$ abspeichern!
+  Ansatz: Zeitpunkt $t_0 = 0$. Folglich $b=3.5$ [Mio].
 
-  Uns fehlt noch das $b$.
+  $t_1=29$ und hier sind 4.9 [Mio.] Einwohner:
 
-  Es gilt nun im Jahr 1990 ($=t_1$): $3.5 = f(1990) = b\cdot{} \left(a\right)^\frac{t_1}{\tau} = b\cdot{} a^\frac{1990}{29}$
+  $4.9 = f(29) = b\cdot{}a^{29} = 3.5 \cdot{} a^{29}$
 
-  Somit ist $$b = \frac{3.5}{  a^\frac{1990}{29}  } \approx 3.3\cdot{}10^{-10}$$
+  Auflösen nach $a$: $a= \sqrt[29]{\frac{4.9}{3.5}}$.
 
-  Dieses Resultat $b$ abspeichern!
+  $a$ und $b$ abspeichern im TR!!!!
 
-  Nun können wir die Prognose für 2025 einfach berechnen: $f(2025) = b\cdot{}a^\frac{2025}{29}$, denn wir haben ja $a$ und $b$ bereits im Rechner gespeichert.
-}%% ENT TNT
+  Nun Probe TR:
+
+  $f(0) = b\cdot{} a^0$
+  
+  $f(29) = b\cdot{} a^{29}$
+
+  $f(35) = b\cdot{} a^{35} \approx 5.25$ [Mio.]
+
+  }%% END TNT
 \newpage
 
 \textbf{Frage 2}: In wie vielen Jahren hat sich die Bevölkerung verdoppelt?
