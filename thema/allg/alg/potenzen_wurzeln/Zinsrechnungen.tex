@@ -24,7 +24,7 @@ ist die umgekehrte Reihenfolge schlauer? \TRAINER{Lsg: 216.10}
 
 
 
-\subsection{Zins als Faktor}\index{Zins}
+\subsection{Zins als Faktor / Zinsformel}\index{Zins}
 Beispiel $2\%$ Zins auf Kapital CHF $1\,000.-$:\\
 
 \begin{tabular}{l|l|l}
@@ -34,15 +34,15 @@ Beispiel $2\%$ Zins auf Kapital CHF $1\,000.-$:\\
 
  $p$    & Zinsfuß        & 2  [\%]\\\hline
 
-        & Zins von $K_0$ & $\frac{K_0}{100[\%]}\cdot{}2[\%] =$\\
-        &                & $\frac{K_0\cdot{}2[\%]}{100[\%]} =$\\        
-        &                & $K_0 \cdot{} \frac2{100} = $\\
-        &                & $K_0\cdot 0.02$ \\\hline
+        & Zins von $K_0$ & \TRAINER{$\frac{K_0}{100[\%]}\cdot{}2[\%] =$}\\
+        &                & \TRAINER{$\frac{K_0\cdot{}2[\%]}{100[\%]} =$}\\
+        &                & \TRAINER{$K_0 \cdot{} \frac2{100} = $}\\
+        &                & \TRAINER{$K_0\cdot 0.02$}\\\hline
 
-$K_1$   & neues Kapital  &   $K_0+$ Zins von  $K_0=$ \\
-        &                &   $K_0+K_0\cdot{}0.02 = $ \\
-        &                &   $K_0\cdot(1+0.02) = $\\
-        &                &   $K_0\cdot{}1.02$\\
+$K_1$   & neues Kapital  & \TRAINER{  $K_0+$ Zins von  $K_0=$} \\
+        &                & \TRAINER{  $K_0+K_0\cdot{}0.02 = $ }\\
+        &                & \TRAINER{  $K_0\cdot(1+0.02) = $}\\
+        &                & \TRAINER{  $K_0\cdot{}1.02$}\\
 \end{tabular}
 
 \begin{bemerkung}{Faktor}{}
@@ -50,6 +50,25 @@ $K_1$   & neues Kapital  &   $K_0+$ Zins von  $K_0=$ \\
 \textbf{100\% = 1} und  \textbf{2\% = 0.02}. Somit gilt \textbf{100\% + 2\% = 1.02}
 
 \end{bemerkung}
+
+\begin{gesetz}{Zinsformel}{}
+Bei einem Zinssatz von $p$\% wird das neue Kapital $K_1$ aus dem
+Anfangskapital $K_0$ wie folgt berechnet:
+\begin{center}\fbox{$K_1 = K_0\cdot{} a$}\end{center}
+\textbf{Verzinsungsfaktor}:
+$$a = 1 + \frac{p}{100}$$
+\end{gesetz}
+
+Beispiele:
+
+\begin{tabular}{r|r}
+Zinssatz & Zinsfaktor\\\hline
+2\%      & \TRAINER{1.02}\\\hline
+8\%      & \TRAINER{1.08}\\\hline
+100\%      & \TRAINER{2}\\\hline
+-3\%      & \TRAINER{0.97}\\\hline
+-50\%      & \TRAINER{0.5}\\\hline
+\end{tabular}
 \newpage
 
 
@@ -65,7 +84,7 @@ $K_1$   & neues Kapital  &   $K_0+$ Zins von  $K_0=$ \\
 Beim Zinseszins, wird bei jeder weiteren Verzinsung der bereits
 erhaltene Zins weiterverzinst. Beispiel 2\%:
 
-CHF 20.- $\stackrel{\cdot{}1.02}{\longrightarrow}$ 20.40 $\stackrel{\cdot{}1.02}{\longrightarrow}$ 20.808
+CHF 20.- $\stackrel{\cdot{}1.02}{\longrightarrow}$ \LoesungsRaum{20.40} $\stackrel{\cdot{}1.02}{\longrightarrow}$ \LoesungsRaum{20.808}
 
 $$K_2 = {\color{ForestGreen}K_1}\cdot{}1.02 = ({\color{ForestGreen}K_0\cdot{}1.02})\cdot{}1.02 = K_0\cdot{}1.02^2$$
 
@@ -83,22 +102,23 @@ Nach 1000 Jahren wachsen unsere CHF 20.-- also auf $20 \cdot{}
 1.02^{1000}$ an ($\approx 8.0 Mia. Taler$)\footnote{Dies entspricht einem Faktor von fast 400 Millionen}. 
 }
 
-\subsubsection{Zinsformel}\index{Zins und Zinseszins}
+\subsubsection{Zinseszinsformel}\index{Zins und Zinseszins}
 \TRAINER{Hinweis an die Lehrperson: Insbesondere BM2 gut behandeln, denn der Stoff ist ev. in der Sekundarschule nicht behandelt worden (Sek B) oder es liegt generell zu weit zurück.}
 
+\begin{gesetz}{Zinseszins}{}
 Bei gegebenem Startkapital $K_0$ und gegebenem Zinsfuß $p$ (in \%) kann das Endkapital $K_n$ nach $n$ Jahren wie folgt berechnet werden:
 
 \begin{center}\fbox{$K_n = K_0 \cdot{} a^n$}\end{center}
 
-mit \textbf{Verzinsungsfaktor}
+Mit \textbf{Verzinsungsfaktor}:
 
-\begin{center}\fbox{$a := 1 + \frac{p}{100}.$}\end{center}
-
+$$a = 1 + \frac{p}{100}$$
+\end{gesetz}
 
 \TRAINER{Bemerkung: Die Zinseszinsformel beschreibt ein exponentielles Wachstum.}
 \newpage
 
-\subsubsection{Zinsbeispiele}
+\subsubsection{Zinsaufgaben}
 
 Berechnen Sie:
 
@@ -120,14 +140,13 @@ Berechnen Sie:
 
 \TNT{2.4}{Endkapital = $40\,000\cdot{} (1-0.03)^{15} = 40\,000\cdot{} 0.97^{15}\approx 25\, 330.-$ CHF\vspace{2cm}}
 \end{itemize}
-\newpage
 
 
 \GESO{\subsection*{Aufgaben}}
 \GESOAadB{355}{13.}
 %%\GESOAadB{207}{10. a)} %% die anderen setzen Lograithmen voraus! und 12.}
 %%\GESOAadB{207}{9. a) und 11. a)}
-\GESO{\newpage}
+\newpage
 
 
 \subsubsection{Momentanverzinsung\GESO{ (optional)}}\index{Momentanverzinsung}\index{stetige Verzinsung}\index{Verzinsung!stetige}
