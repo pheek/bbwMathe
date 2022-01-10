@@ -54,6 +54,14 @@ von 12 Jahren bei gleichbleibendem Zinssatz von 15\% verändert.
 
 Was ist anders, als beim Einstiegsbeispiel «Taxiunternehmen» bei den
 linearen Funktionen?
+
+\TRAINER{Das Wachstum beim Taxiunternehmen ist nicht von den aktuell
+  gefahrenen Kilometern abhängig; nur der Gesamptpreis. Das Wachstum
+  ist beim Taxiunternehmen konstant.}
+
+\TRAINER{Optional: Zeige mit Geogebar $x^2$ vs. $1.2^x$. Fazit:
+  Exponentielles Wachstum überholt jegliche Potenzfunktion.}
+
 \newpage
 \begin{definition}{Exponentialfunktion}{}\index{Exponentialfunktion!Definition}
   Eine Funktion der Form $$f(x): x \mapsto a^x$$
@@ -80,7 +88,7 @@ Der Parameter $a$ gibt den Wachstumsfaktor pro Zeiteinheit $e_x$ an.
 
 \newpage
 
-\subsection{Allgemeine Form der Exponentialfunktion}
+\subsection{Exponentialfunktion mit anderen Startwerten}
 
 Obige Exponentialfunktion hat für den Wert $x=0$ immer den $y$-Wert = 1. Da dies in der Praxis aber meist nicht der Fall ist, gib es die folgende \textbf{allgemeine Form der Exponentialfunktion}:
 
@@ -108,13 +116,13 @@ Begründung:
 
   Setzen wir nun $x_1 + 1$ für $x_2$ ein, so erhalten wir:
 
-  $$y_2 = b\cdot{} a^{x_1+1} = b\cdot{}a^{x_1}\cdot{}a^1 = a\cdot{}b\cdot{}a^{x_1} = a\cdot{}y_1$$
+  $$y_2 = f(x_2) = b\cdot{}a^{x_2} = b\cdot{} a^{x_1+1} =  b\cdot{}a^{x_1} \cdot{} a^1 = y_1\cdotp{} a$$
 }
 \newpage
 
 
 
-\subsection{Einstiegsbeispiel}
+\subsection{Einstiegsbeispiel Wachstumsprozesse}
 Der Türlersee ist ein kleiner See im Repischtal. Seine Oberfläche
 begann sich vor einigen Jahrzehnten stark mit Algen\footnote{Genau
   genommen handelte es sich um Zooplanktonbiomasse zwischen 1982 und 1994, doch als
@@ -151,7 +159,7 @@ Dabei bezeichnet 20 den Startwert, 2 den Zunahmefaktor und 5 die Beobachtungszei
 
 
 
-\subsubsection{Grundform}
+\subsubsection{Grundform exponentieller Wachstumsprozesse}
 
 Die allgemeine Formel für exponentielle Prozesse lautet:
 
