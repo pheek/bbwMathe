@@ -1,4 +1,4 @@
-%%
+
 %% 2019 07 04 Ph. G. Freimann
 %%
 
@@ -101,7 +101,8 @@ Dabei ist $b$ der Startwert zum Zeitpunkt $x$ = 0.
 \end{definition}
 
 
-\bbwCenterGraphic{8cm}{allg/funktionen/img/exp/b_faktor.png}
+\noTRAINER{\bbwCenterGraphic{8cm}{allg/funktionen/img/exp/b_faktor.png}}
+\TRAINER{\bbwCenterGraphic{8cm}{allg/funktionen/img/exp/b_faktor_trainer.png}}
 
 \begin{bemerkung}{Wachstumsfaktor}{}{}
 Werden zwei $x$ Positionen mit Differenz 1 (=$e_x$) betrachtet, so sind
@@ -255,11 +256,11 @@ verdoppeln.
 
 \subsection*{Aufgaben}
 \TALSAadB{221ff}{831 - 839}
-\GESOAadB{207}{10.}
+\GESOAadB{207}{10. (Algen)}
 \GESOAadB{338}{28. Bakterien}
-\GESOAadB{352ff}{2., 7., 1. (optional)}
-\GESO{\aufgabenfarbe{Kompendium: S. 27ff: 32., 34., 37., 38., 40., 44., 45. und 46.}}
-\GESO{\aufgabenfarbe{Nullserie Aufgabe 8}}
+\GESOAadB{352ff}{2. (Hasenpopulation), 7., 1. (optional)}
+\GESO{\aufgabenfarbe{Kompendium: S. 27ff: 32., 34., 38., 40., 44., 45. und 46.}}
+\GESO{\aufgabenfarbe{Nullserie 2: Aufgabe 8.}}
 \GESO{\aufgabenfarbe{Maturaprüfung 2017, Aufg. 12 (Raupen)\\
 Maturaprüfung 2018 (Serie 3), Aufg. 11 (Müll)
 }}
@@ -298,8 +299,10 @@ Zeichnen Sie die Funktionen $f: y=2^x$, $g: y=2^{-x}$ und $h: y=\left(\frac12\ri
   \TRAINER{\bbwFuncC{exp(0.69314718*\x)}{-6:2}{blue}}
   \TRAINER{\bbwFuncC{exp(-0.69314718*\x)}{-2:6}{red} }
   \TRAINER{\bbwLetter{1.5,4}{2^x}{blue}}
-  \TRAINER{\bbwLetter{-3,4}{2^{-x}=\left(\frac{1}{2}\right)^x}{red}}
+  \TRAINER{\bbwLetter{-5,4}{g(x)=2^{-x}=\left(\frac{1}{2}\right)^x=h(x)}{red}}
 }
+
+Bemerkung: \TRAINER{$$2^{-x} = \frac1{2^x} = \left(\frac12\right)^x$$}
 \newpage
 Die allgemeine Formel für Zerfallsprozesse lautet:
 
@@ -353,21 +356,14 @@ Mit $a = \frac{m_2}{m_1}$ und $d := \frac{m_1}{m_2} = \frac{1}{a}$, gilt
 \subsection*{Aufgaben}
 \TALSAadB{223ff}{840-847}
 \GESOAadB{338}{29. (Bierschaum)}
-\GESOAadB{352ff}{3, 4, 5, 6}
-\GESOAadB{354ff}{9. (Bauchspeicheldrüse)}
-\GESO{\aufgabenfarbe{Kompendium S. 27ff Kap. 3.4.1 33., 35., 36., 39., 41. 42., 43. und 47}}
-\GESO{\aufgabenfarbe{
-    Maturaprüfung 2018 (Serie 4), Aufg 10 (Cäsium 137)\\
-    Maturaprüfung 2018 (Serie 2), Aufg 11 (Plutonium)\\
-    Maturaprüfung 2018 (Serie 1), Aufg 11 (radioaktive Substanz)\\
-    Maturaprüfung 2016, Aufg. 9 (Jod-131)
-}}
-
+\GESOAadB{353}{6 (C-14 Methode)}
+\GESOAadB{354}{9. (Bauchspeicheldrüse)}
+\GESO{\aufgabenfarbe{Kompendium S. 27ff Kap. 3.4.1 33., 35., 36., 39. und 41.}}
 \newpage
 
 \subsection{Halbwertszeit, Verdopplungszeit}\index{Halbwertszeit}\index{Verdopplungszeit}
 
-Die Zeitspanne, in der sich eine Menge halbiert, nenne wir
+Die Zeitspanne, in der sich eine Menge halbiert, nennen wir
 \textbf{Halbwertszeit}\footnote{Die Halbwertszeit wird inbesondere
   beim radioaktiven Zerfall verwendet: nach wie viel tausend Jahren strahlt
   ein Stoff nur noch die Hälfte.}.
@@ -382,15 +378,44 @@ folgt\TRAINER{ beidseitig durch $b$ teilen und dann $log_a$}:
 Beispiel: Ein Stoff nimmt innerhalb von sieben Tagen auf 80\% ab. Wie
 groß ist seine Halbwertszeit $t_{0.5}$?
 
-\TNT{5.2}{$\tau=7$ und $a = 0.8$. Somit
-$$t_{0.5} = 7\cdot{} \log_{0.8}\left(\frac12\right)\approx 21.74
+
+
+\TNT{8}{
+  $\tau=7$ und $a = 0.8$ und
+
+  $$f(t)  = b\cdot{} 0.8 ^{\frac{t}{7}}$$
+
+  Somit
+  $$f(T_{\frac12})  = \frac12\cdot{}f(0)$$
+$$b\cdot{}0.8^{\frac{T_{\frac12}}{7}}  = \frac12 b\cdot{} 0.8^{\frac{0}{7}}$$
+
+   $$0.8^\frac{T_\frac12}{7} = \frac12$$
+
+   $$\frac{T_\frac12}{7} = \log_{(0.8)}\left(\frac12\right)$$
+  
+  $$T_{\frac12} = 7\cdot{} \log_{0.8}\left(\frac12\right)
+  \approx 21.74
   [\textrm{Tage}]$$
 \vspace{2cm}}
-
+\newpage
 
 Analog gilt das Gesetz zur Verdopplung (s. obiges Beispiel Bevölkerung Irlands):
 \begin{gesetz}{Verdopplungszeit}{}
   $$t_2 = \tau\cdot{}\log_a(2)$$
 \end{gesetz}
 
+\GESO{\subsection*{Aufgaben}}
+\GESOAadB{352ff}{3., 4. und 5.}
+
+\GESO{\aufgabenfarbe{Kompendium S. 28ff: Aufg 42., 43. und 47.}}
+
+\GESO{\aufgabenfarbe{
+    Maturaprüfung 2018 (Serie 4), Aufg 10 (Cäsium 137)\\
+    Maturaprüfung 2018 (Serie 2), Aufg 11 (Plutonium)\\
+    Maturaprüfung 2018 (Serie 1), Aufg 11 (radioaktive Substanz)\\
+    Maturaprüfung 2016, Aufg. 9 (Jod-131)
+}}
+
 \newpage
+
+
