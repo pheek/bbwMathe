@@ -42,7 +42,8 @@ Beispiel $2\%$ Zins auf Kapital CHF $1\,000.-$:\\
 $K_1$   & neues Kapital  & \TRAINER{  $K_0+$ Zins von  $K_0=$} \\
         &                & \TRAINER{  $K_0+K_0\cdot{}0.02 = $ }\\
         &                & \TRAINER{  $K_0\cdot(1+0.02) = $}\\
-        &                & \TRAINER{  $K_0\cdot{}1.02$}\\
+        &                & \TRAINER{  $K_0\cdot{}1.02$}\\\hline
+$r$     & Aufzinsungsfaktor & \TRAINER{$r=1+\frac{p}{100}$}\\
 \end{tabular}
 
 \begin{bemerkung}{Faktor}{}
@@ -54,20 +55,20 @@ $K_1$   & neues Kapital  & \TRAINER{  $K_0+$ Zins von  $K_0=$} \\
 \begin{gesetz}{Zinsformel}{}
 Bei einem Zinssatz von $p$\% wird das neue Kapital $K_1$ aus dem
 Anfangskapital $K_0$ wie folgt berechnet:
-\begin{center}\fbox{$K_1 = K_0\cdot{} a$}\end{center}
-\textbf{Verzinsungsfaktor}:
-$$a = 1 + \frac{p}{100}$$
+\begin{center}\fbox{$K_1 = K_0\cdot{} r$}\end{center}
+\textbf{Aufzinsungsfaktor}\index{Aufzinsungsfaktor}:
+$$r = 1 + \frac{p}{100}$$
 \end{gesetz}
 
 Beispiele:
 
 \begin{tabular}{r|r}
-Zinssatz & Zinsfaktor\\\hline
-2\%      & \TRAINER{1.02}\\\hline
-8\%      & \TRAINER{1.08}\\\hline
-100\%      & \TRAINER{2}\\\hline
--3\%      & \TRAINER{0.97}\\\hline
--50\%      & \TRAINER{0.5}\\\hline
+Zinssatz $p$ & Aufzinsungsfaktor $r$\\\hline
+2\%           & \TRAINER{1.02}\\\hline
+0.25\%        & \TRAINER{1.0025}\\\hline
+100\%         & \TRAINER{2}\\\hline
+-18\%         & \TRAINER{0.82}\\\hline
+-50\%         & \TRAINER{0.5}\\\hline
 \end{tabular}
 \newpage
 
@@ -88,7 +89,7 @@ CHF 20.- $\stackrel{\cdot{}1.02}{\longrightarrow}$ \LoesungsRaum{20.40} $\stackr
 
 $$K_2 = {\color{ForestGreen}K_1}\cdot{}1.02 = ({\color{ForestGreen}K_0\cdot{}1.02})\cdot{}1.02 = K_0\cdot{}1.02^2$$
 
-Bei 2\% kann also jedesmal mit einem \textbf{Verzinsungsfaktor}\index{Verzinsungsfaktor} von
+Bei 2\% kann also jedesmal mit einem \textbf{Aufzinsungsfaktor} von
 1.02 multipliziert werden.
 
 
@@ -108,11 +109,11 @@ Nach 1000 Jahren wachsen unsere CHF 20.-- also auf $20 \cdot{}
 \begin{gesetz}{Zinseszins}{}
 Bei gegebenem Startkapital $K_0$ und gegebenem Zinsfuß $p$ (in \%) kann das Endkapital $K_n$ nach $n$ Jahren wie folgt berechnet werden:
 
-\begin{center}\fbox{$K_n = K_0 \cdot{} a^n$}\end{center}
+\begin{center}\fbox{$K_n = K_0 \cdot{} r^n$}\end{center}
 
-Mit \textbf{Verzinsungsfaktor}:
+Mit \textbf{Aufzinsungsfaktor}:
 
-$$a = 1 + \frac{p}{100}$$
+$$r = 1 + \frac{p}{100}$$
 \end{gesetz}
 
 \TRAINER{Bemerkung: Die Zinseszinsformel beschreibt ein exponentielles Wachstum.}
@@ -135,10 +136,11 @@ Berechnen Sie:
 
 
   \TNT{2.4}{Endkapital = $200\cdot{} (1.03)^{5} \approx 231$ Fichten.\vspace{2cm}}%%
-\item Ein Auto hat einen Neupreis von CHF 40\,000.-. Jedes Jahr müssen wegen Abnutzung ein Wertverlust von 3\% in Kauf
-  genommen werden. Wie viel Wert hat das Auto noch nach 15 Jahren? (Achtung, hier ist der Zins negativ!)
+\item Ein Auto hat einen Neupreis von CHF 40\,000.-. Jedes Jahr müssen
+wegen Abnutzung ein Wertverlust von dreizehn \% in Kauf
+  genommen werden. Wie viel Wert hat das Auto noch nach fünfzehn Jahren? (Achtung, hier ist der Zins negativ!)
 
-\TNT{2.4}{Endkapital = $40\,000\cdot{} (1-0.03)^{15} = 40\,000\cdot{} 0.97^{15}\approx 25\, 330.-$ CHF\vspace{2cm}}
+\TNT{2.4}{Endkapital = $40\,000\cdot{} (1-0.13)^{15} = 40\,000\cdot{} 0.87^{15}\approx 4\, 953.-$ CHF\vspace{2cm}}
 \end{itemize}
 
 
@@ -165,13 +167,13 @@ $1.25^4 = (1 + \frac14)^4 \approx 2.44 $
 Füllen Sie die folgende Tabelle aus:
 
 \begin{tabular}{c|c|c|c} 
-  Anzahl Teile  & Faktor                      & Formel          & Endkapital \\ \hline
-  $1$           & $2^1$                      & $(1+1)^1$ & $= K_0 \cdot{} 2 $ \\ \hline
-  $2$           & $1.5^2$                      & $(1+\frac12)^2$ & $= K_0 \cdot{} 2.25 $ \\ \hline
-  $4$           & $1.25^4$                  & $(1+\frac14)^4$ & $\approx K_0 \cdot{} 2.4414 $ \\ \hline
-  $5$           & $\LoesungsRaum{1.2^5}$  & $\LoesungsRaum{(1+\frac14)^2}$ & $\LoesungsRaum{= K_0 \cdot{} 2.48832} $ \\ \hline
-  $10$          & $\LoesungsRaum{1.1^{10}}$  & $\LoesungsRaum{(1+\frac{1}{10})^{10}}$ & $\LoesungsRaum{\approx K_0 \cdot{} 2.5937} $ \\ \hline
-  $100$         & $\LoesungsRaum{1.01^{100}}$  & $\LoesungsRaum{(1+\frac{1}{100})^{100}}$ & $\LoesungsRaum{\approx K_0 \cdot{} 2.7048 }$ \\ \hline
+  Anzahl Teile  & Faktor                        & Formel          & Endkapital \\ \hline
+  $1$           & $2^1$                         & $(1+1)^1$ & $= K_0 \cdot{} 2 $ \\ \hline
+  $2$           & $1.5^2$                       & $(1+\frac12)^2$ & $= K_0 \cdot{} 2.25 $ \\ \hline
+  $4$           & $1.25^4$                      & $(1+\frac14)^4$ & \LoesungsRaum{$\approx K_0 \cdot{} 2.4414 $} \\ \hline
+  $5$           & $\LoesungsRaum{1.2^5}$         & $\LoesungsRaum{(1+\frac15)^5}$ & $\LoesungsRaum{\approx K_0 \cdot{} 2.48832} $ \\ \hline
+  $10$          & $\LoesungsRaum{1.1^{10}}$      & $\LoesungsRaum{(1+\frac{1}{10})^{10}}$ & $\LoesungsRaum{\approx K_0 \cdot{} 2.5937} $ \\ \hline
+  $100$         & $\LoesungsRaum{1.01^{100}}$    & $\LoesungsRaum{(1+\frac{1}{100})^{100}}$ & $\LoesungsRaum{\approx K_0 \cdot{} 2.7048 }$ \\ \hline
   $1000$        & $\LoesungsRaum{1.001^{1000}}$  & $\LoesungsRaum{(1+\frac{1}{1000})^{1000}}$ & $\LoesungsRaum{\approx K_0 \cdot{} 2.7169 }$ \\ \hline
   Großes $n$    & ****  & $\LoesungsRaum{(1+\frac{1}{n})^{n}}$ & $\LoesungsRaum{\approx K_0 \cdot{} e }$ \\ \hline
 \end{tabular} 

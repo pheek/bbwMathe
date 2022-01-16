@@ -24,6 +24,7 @@ echo "pushing files into subdirectories of : ${BBW_WEBDAV_PATH}..."
 
 echo "copying Boxplot (ALLG)"
 cp -f ./boxplot/boxplot_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/datenanalyse/Boxplot/boxplot.pdf
+cp -f ./boxplot/boxplot_TRAINER_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/datenanalyse/Boxplot/boxplot_Loesungen.pdf
 
 echo "Boxplot for TI 30"
 cp -f ./boxplotTI30/boxplotTI30_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/daan/boxplot/boxplotTI30.pdf

@@ -120,7 +120,14 @@ In der Regel sind wir bei Dezimalbrüchen nicht an allen auftretenden
 Stellen interessiert, sondern begnügen uns mit einer Näherung.
 
 \subsubsection{Dezimalen (Nachkommastellen)}\index{Dezimale}\index{Nachkommastelle}
-Als Dezimalen, Dezimalstellen oder Nachkommastellen werden die Stellen \textbf{nach} dem Komma bezeichnet.
+Als Dezimalen, Dezimalstellen oder Nachkommastellen werden die Stellen
+\textbf{nach} dem Komma bezeichnet.
+
+\begin{rezept}{Runden}{}
+  Beim \textbf{Runden} auf die $n$-te Stelle, wird die $n+1$-te Stelle
+  betrachtet. Ist diese >=5, so wird \textbf{aufgerundet}, ansonsten \textbf{abgerundet}.
+\end{rezept}
+
 Runden auf die vierte \textbf{Dezimale} (= vierte \textbf{Nachkommastelle}):
 $$ 36.4699432 \approx  \LoesungsRaum{36.4699}$$
 $$ 36.4699618 \approx  \LoesungsRaum{36.4700}$$
@@ -194,7 +201,7 @@ Dabei bezeichnen negative Exponenten die Zehntel, Hundertstel, etc.
 Erst in der wissenschaftlichen Notation können wir die signifikanten Stellen auch bei gerundeten Zahlen größer als 10 effektiv ablesen.
 
 \TALS{S. \cite{frommenwiler17alg} S. 40 Kap. 1.5.5}
-
+\newpage
 
 \paragraph{Taschenrechner} Auf Taschenrechnern oder in
 Programmiersprachen wird die Exponentialschreibweise i.\,d.\,R. mit dem
@@ -204,12 +211,30 @@ $5\,000 = 5\, \cdot 10^{3} = 5\mathrm{e}3$
 
 $0.063 = 6.3\, \cdot 10^{-2} = 6.3\mathrm{e-}2$
 
-  \begin{rezept}{}{}
+\begin{rezept}{EE}{}
     Um 5.77 Millionen auf Ihrem Taschenrechner \textbf{einzugeben} tippen Sie:
 
 \begin{center}  \TRAINER{5.77 \GESO{\tiprobutton{EE}}\TALS{\nspirebutton{EE}} 6}\noTRAINER{\vspace{5mm}} \end{center}
 
-    \end{rezept}
+\end{rezept}
+\GESO{\begin{rezept}{SCI}{}
+   Der Taschenrechner kann auch direkt die \textit{Wissenschaftliche Notation}
+   anzeigen, wenn er so eingestellt ist:
+
+   Beispiel 0.087 in \textit{Wissenschaftlicher Notation}:
+
+   \tiprobutton{mode}\texttt{SCI}\tiprobutton{enter}\tiprobutton{2nd}\tiprobutton{mode_quit}\tiprobutton{enter}
+
+   \texttt{8.7E-3} (Dies bedeutet $8.7 \cdot{} 10^{-3}$.)
+\end{rezept}
+}%% END GESO
+
+Stellen Sie in Wissenschaftlicher Notation dar:
+
+0.00479 $= \LoesungsRaum{4.79 \cdot{}10^{-3}}$
+
+0.08 Milliarden $= \LoesungsRaum{8\cdot{}10^7}$
+
 \newpage
 
 \subsection{Irrationale und reelle Zahlen ($\mathbb{R}$)}\index{Zahlen!reelle}
