@@ -127,17 +127,17 @@ $\lg(1) = 0$
 \begin{gesetz}{}{}
   $$10^{\lg(x)} = x$$
 \end{gesetz}
-Begründung durch beidseitiges Exponenzieren der Definition...
+Begründung \TRAINER{ durch beidseitiges Exponenzieren der Definition...
 
-$$\lg(10^r) = r \Longleftrightarrow 10^{\lg(10^r)} = 10^r$$
-
-... und dann durch Substitution $x := 10^r$.
+$$\lg(10^r) = r \Longrightarrow 10^{\lg(10^r)} = 10^r
+\stackrel{x:=10^r}{\Longrightarrow} 10^{\lg(x)} = x$$
+}%% END TRANIER
 
 \begin{bemerkung}{negative Exponenten}{}
   Weil $10^x$ für alle $x$ immer positiv ausfällt, so gibt es keine
   Logarithmen von negativen Zahlen:
 
-  $$\lg(a) \textrm{ ist definiert für } a\in\mathbb{R}$$
+  $$\lg(a) \textrm{ ist definiert für } a\in\mathbb{R}^+\backslash\{0\}$$
   \end{bemerkung}
 
 
@@ -149,7 +149,7 @@ $$\lg(10^r) = r \Longleftrightarrow 10^{\lg(10^r)} = 10^r$$
 
 Begründung:
 \TNT{6.0}{
-$10^n * 10^m = 10^{n+m}.$
+$10^n \cdot{} 10^m = 10^{n+m}.$
 \\
 Zahlenbeispiel:
 $$\log(10^2\cdot{}10^4) = \log(10^{2+4}) = 2+4
@@ -170,7 +170,8 @@ $${\color{gray}8=\lg(10^8)=\lg(10^{3+5})}=\lg(10^3\cdot{}10^5) = \lg(10^3)+\lg(1
 \subsection*{Aufgaben}
 \GESOAadB{102ff}{2. a) c) d) g) h) i), 3. a) c) e), 4. a), 12. a) c)
   und 18. a) b) c) e)} 
-\GESOAadB{107ff}{36., 37., 38. und 39.}
+\GESOAadB{108}{38.}
+\GESOAadB{107ff}{Optional: 36., 37. und 39.}
 
 \TALSAadB{60ff}{172. a) b) d), 173. f) k), 174. a) b) c), 175. b) c),
   176. a) b) f) und 179. a) f) h)}
