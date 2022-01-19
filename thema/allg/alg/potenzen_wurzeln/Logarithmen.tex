@@ -109,7 +109,7 @@ Aus obigem Beispiel folgt direkt das folgende Gesetz:
 \subsubsection{Weitere Logarithmengesetze}\index{Gesetze!Logarithmen}
 
  \begin{definition}{Logarithmus zu allgemeiner Basis}{}
-   $$a^b=c \Longleftrightarrow \log_a(c) = b$$
+   $$a^x=p \Longleftrightarrow x = \log_a(p)$$
    \end{definition}
 
  
@@ -135,12 +135,12 @@ Aus obigem Beispiel folgt direkt das folgende Gesetz:
 
 \TALS{
   Direkt aus der Definition
-  $$a^b = c \Longleftrightarrow \log_a(c)=b$$
-  folgt durch Einsetzen von $b$ aus der rechten Gleichung in die linke
+  $$a^x = p \Longleftrightarrow x = \log_a(p)$$
+  folgt durch Einsetzen von $x$ aus der rechten Gleichung in die linke
   Gleichung das Gesetz:
 
   \begin{gesetz}{Der Logarithmus ist der Exponent}{logIstExponent}
-    $$a^{\log_a(c)} = c$$
+    $$a^{\log_a(p)} = p$$
   \end{gesetz}
 }%% END TALS
 \newpage
@@ -255,11 +255,14 @@ darf die Eulersche Zahl $e$, $e^x$ und $\log_e(x)$ auch auf keinem Rechner fehle
 $\ln()$ steht für «Logarithmus Naturalis».
 
 \begin{definition}{Logarithmus naturalis}{}
-  \fbox{$\ln() := \log_e()$ = \textit{\textbf{Logarithmus Naturalis}}}
+  
+  $\ln() := \log_e()$ = \textit{\textbf{Logarithmus Naturalis}}
 \end{definition}
 
 \paragraph{Logarithmentabellen}
-Wenn ich auf einem Taschenrechner lediglich $\ln()$ und $e^x$ zur Verfügung habe\footnote{Oder ich habe, wie früher, nur eine Logarithmentabelle.} und dennoch $\log_a(c)$ oder $a^x$ berechnen will, so kann ich dies einfach mit einer Transformation zur Basis $e$ vollbringen:
+Wenn ich auf einem Taschenrechner lediglich $\ln()$ und $e^x$ zur
+Verfügung habe\footnote{Oder ich habe, wie früher, nur eine
+Logarithmentabelle.} und dennoch $\log_a(p)$ oder das $x$ in $a^x=p$ berechnen will, so kann ich dies einfach mit einer Transformation zur Basis $e$ vollbringen:
 
 \begin{bemerkung}{Logarithmus Naturalis}{}
   Jede Potenz kann als Potenz mit der Basis $e$ geschrieben werden:
@@ -267,7 +270,7 @@ Wenn ich auf einem Taschenrechner lediglich $\ln()$ und $e^x$ zur Verfügung hab
 \end{bemerkung}
 
 \begin{gesetz}{Logarithmus Naturalis}{}
-$$\log_a(c) = \frac{\ln(c)}{\ln(a)} = \frac{\lg(c)}{\lg(a)}$$
+$$\log_a(p) = \frac{\ln(p)}{\ln(a)} = \frac{\lg(p)}{\lg(a)}$$
 \end{gesetz}
 
 \newpage
