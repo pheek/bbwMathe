@@ -72,12 +72,19 @@ $$10^{\lg(2)\cdot{}x} = 10^{\lg(128)}$$
  dadurch, dass die Basis nicht 10, sondern 2 ist. Dies kann der
  Taschenrechner auch: 
 
- $$2^x = 128 \Longleftrightarrow  \log_2(128) = x = \LoesungsRaum{7}$$
-  
+ $$2^x = 128 \Longleftrightarrow  x = \log_2(128) = \LoesungsRaum{7}$$
+ \newpage
+\subsection{Logarithmengesetz}
+Aus obigem Beispiel folgt direkt das folgende Gesetz:
+
 \begin{gesetz}{Basiswechsel}{}\index{Basiswechsel!Logarithmen}
   Für $a\in\mathbb{R}^{+}\backslash\{0,1\}$ und $p>0$ gilt:
   $$\log_a(p) = \frac{\lg(p)}{\lg(a)}\TALS{ = \frac{\log_b(p)}{\log_b(a)}}$$
 \end{gesetz}
+
+\begin{beispiel}{Logarithmen}{}
+\TNT{4}{ $$\log_2(32) = \frac{\lg(32)}{\lg(2)} = 5$$}
+\end{beispiel}
 
 %Begründung:
 %
@@ -126,12 +133,19 @@ $$10^{\lg(2)\cdot{}x} = 10^{\lg(128)}$$
 \TNT{2.4}{Beispiel $2^4 = 16$, d.\,h. $\log_2(16)=4 $.\vspace{1cm}}
 
 
-\GESO{Weitere Rechengesetze im Buch \cite{marthaler17} ab Seite 97:}
+\TALS{
+  Direkt aus der Definition
+  $$a^b = c \Longleftrightarrow \log_a(c)=b$$
+  folgt durch Einsetzen von $b$ aus der rechten Gleichung in die linke
+  Gleichung das Gesetz:
 
- \newpage
-
- 
- \subsubsection{Potenzregel}
+  \begin{gesetz}{Der Logarithmus ist der Exponent}{logIstExponent}
+    $$a^{\log_a(c)} = c$$
+  \end{gesetz}
+}%% END TALS
+\newpage
+  
+ \subsubsection{Potenzregel\GESO{ (optional)}}
 
  Wir wissen bereits, dass
 
@@ -200,12 +214,13 @@ $$\log_a\left(\frac{1}{v}\right)=-\log_a(v)$$
 
 \TALS{
 \begin{bemerkung}{}{}
-$$a^x = b^{x\cdot{}\log_b(a)}$$
+$$b^x = a^{x\cdot{}\log_a(b)}$$
 \end{bemerkung}
-\TNT{2.4}{Wir ersetzen im 2. Gesetz $y$ durch $a^x$ und $a$ durch $b$:
-  $$y = b^{\log_b(y)} \longrightarrow  a^x = b^{\log_b(a^x)} =
-  b^{x\cdot{}\log_b(a)}$$} %% END TNT
+
+\TNT{2.4}{Beweis: Wir wissen $b=a^{\log_a(b)}$. Beidseitiges
+  Exponenzieren mit $x$ liefert das Gewünschte.}%% END TNT
 }%% END TALS
+
 \newpage
 
 
@@ -239,15 +254,21 @@ Zahl $e$ bei exponentiellen Prozessen eine sehr große Rolle spielt,
 darf die Eulersche Zahl $e$, $e^x$ und $\log_e(x)$ auch auf keinem Rechner fehlen. Der $\log_e()$ hat dabei sogar einen eigenen Namen erhalten:
 $\ln()$ steht für «Logarithmus Naturalis».
 
-\begin{center}
+\begin{definition}{Logarithmus naturalis}{}
   \fbox{$\ln() := \log_e()$ = \textit{\textbf{Logarithmus Naturalis}}}
-\end{center}
+\end{definition}
 
 \paragraph{Logarithmentabellen}
 Wenn ich auf einem Taschenrechner lediglich $\ln()$ und $e^x$ zur Verfügung habe\footnote{Oder ich habe, wie früher, nur eine Logarithmentabelle.} und dennoch $\log_a(c)$ oder $a^x$ berechnen will, so kann ich dies einfach mit einer Transformation zur Basis $e$ vollbringen:
 
-$$a^x = e^{x\cdot{}\ln(a)}$$
-$$\log_a(c) = \frac{\ln(c)}{\ln(a)}$$
+\begin{bemerkung}{Logarithmus Naturalis}{}
+  Jede Potenz kann als Potenz mit der Basis $e$ geschrieben werden:
+  $$a^x = e^{x\cdot{}\ln(a)}$$
+\end{bemerkung}
+
+\begin{gesetz}{Logarithmus Naturalis}{}
+$$\log_a(c) = \frac{\ln(c)}{\ln(a)} = \frac{\lg(c)}{\lg(a)}$$
+\end{gesetz}
 
 \newpage
 
