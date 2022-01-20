@@ -389,13 +389,21 @@ Die Halbwertszeit wird inbesondere
 \end{gesetz}
 
 Beispiel: Ein Stoff nimmt innerhalb von sieben Tagen auf 80\% ab. Wie
-groß ist seine Halbwertszeit $t_{1/2}$?
+groß ist seine Halbwertszeit $T_{1/2}$?
 
-\TNT{8}{
+\TNT{6}{
   $\tau=7$ und $a = 0.8$. Somit:
 
-  $$T_{1/2} = 7\cdot{} \log_{0.8}\left(\frac12\right) \approx 21.74 \textrm{ Tage}$$
+  $$T_{1/2} = 7\cdot{} \log_{0.8}\left(\frac12\right) \approx 21.74
+  \textrm{ Tage}$$
+
+  Bemerkung: $$f(t) =b\cdot{}0.8^\frac{t}7 \approx b\cdot{}\left(\frac12\right)^\frac{t}{21.74}$$
 }%% END TNT
+
+\begin{gesetz}{Stoffmenge}{}
+  $$f(t) = b\cdot{}\left(\frac12\right)^\frac{t}{T_{1/2}}$$
+  \end{gesetz}
+
 \newpage
 \GESO{Optional:}
 
