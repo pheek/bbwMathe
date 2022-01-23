@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="196.78448mm"
+   height="70.722137mm"
+   viewBox="0 0 196.78448 70.722137"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="IrrationaleZahlen.svg"
+   inkscape:export-filename="/home/phi/matgit/thema/allg/alg/img/IrrationaleZahlen.png"
+   inkscape:export-xdpi="600"
+   inkscape:export-ydpi="600">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker1113"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1111"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path826"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="501.31965"
+     inkscape:cy="153.27582"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1824"
+     inkscape:window-height="1059"
+     inkscape:window-x="48"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-5.0365635,-18.098409)">
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000001;stroke-width:0.27824616;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path815"
+       sodipodi:type="arc"
+       sodipodi:cx="32.536827"
+       sodipodi:cy="45.979912"
+       sodipodi:rx="27.354071"
+       sodipodi:ry="27.353504"
+       sodipodi:start="5.9313701"
+       sodipodi:end="5.9313491"
+       d="M 58.215426,36.553829 A 27.354071,27.353504 0 0 1 41.96324,71.65793 27.354071,27.353504 0 0 1 6.8583268,55.406265 27.354071,27.353504 0 0 1 23.110144,20.301993 27.354071,27.353504 0 0 1 58.215228,36.553289"
+       sodipodi:open="true" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000001;stroke-width:0.28446642;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect817"
+       width="54.715534"
+       height="54.715534"
+       x="71.392326"
+       y="19.639214" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker1113)"
+       d="M 136.57473,66.506759 H 201.3074"
+       id="path819"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 148.92258,85.215626 V 18.612061"
+       id="path821"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 134.70383,56.403971 c 26.63209,-3.937573 46.55348,-15.92798 63.23597,-31.805073"
+       id="path1139"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.55954266px;line-height:1.25;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#0000ba;stroke-width:0.47098282;stroke-opacity:1"
+       x="9.4754047"
+       y="51.201653"
+       id="text1151"><tspan
+         sodipodi:role="line"
+         id="tspan1149"
+         x="9.4754047"
+         y="51.201653"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor';stroke:#0000ba;stroke-width:0.47098282;stroke-opacity:1">π≈3.142</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#0000ba;stroke-width:0.26458332;stroke-opacity:1"
+       x="14.691968"
+       y="88.603584"
+       id="text1155"><tspan
+         sodipodi:role="line"
+         id="tspan1153"
+         x="14.691968"
+         y="88.603584"
+         style="stroke:#0000ba;stroke-width:0.26458332;stroke-opacity:1">Kreiszahl</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 71.392325,74.35475 126.10789,19.639213"
+       id="path1157"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.08183002px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#c10001;stroke-width:0.41556862;stroke-opacity:1"
+       x="78.003777"
+       y="72.705231"
+       id="text1161"><tspan
+         sodipodi:role="line"
+         id="tspan1159"
+         x="78.003777"
+         y="72.705231"
+         style="stroke:#c10001;stroke-width:0.41556862;stroke-opacity:1">√2≈1.414</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.10664272px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#00e101;stroke-width:0.45399907;stroke-opacity:1"
+       x="150.42262"
+       y="63.382263"
+       id="text1165"><tspan
+         sodipodi:role="line"
+         id="tspan1163"
+         x="150.42262"
+         y="63.382263"
+         style="stroke:#00e101;stroke-width:0.45399907;stroke-opacity:1">e ≈ 2.718</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#c10001;stroke-width:0.26458332;stroke-opacity:1"
+       x="85.823814"
+       y="88.603584"
+       id="text1155-3"><tspan
+         sodipodi:role="line"
+         id="tspan1153-6"
+         x="85.823814"
+         y="88.603584"
+         style="stroke:#c10001;stroke-width:0.26458332;stroke-opacity:1">Wurzeln</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#00e101;stroke-width:0.26458332;stroke-opacity:1"
+       x="158.74998"
+       y="79.777084"
+       id="text1187"><tspan
+         sodipodi:role="line"
+         id="tspan1185"
+         x="158.74998"
+         y="79.777084"
+         style="stroke:#00e101;stroke-width:0.26458332;stroke-opacity:1">Eulersche</tspan><tspan
+         sodipodi:role="line"
+         x="158.74998"
+         y="88.596527"
+         style="stroke:#00e101;stroke-width:0.26458332;stroke-opacity:1"
+         id="tspan1189">Konstante</tspan></text>
+  </g>
+</svg>
