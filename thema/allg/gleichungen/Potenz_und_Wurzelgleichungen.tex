@@ -87,8 +87,6 @@ Beachten Sie die folgenden typischen Fälle:
 
 
 \begin{gesetz}{}{}
-Bei Potenzgleichungen mit geraden Exponenten sind in der Regel zwei
-Lösungen vorhanden:
 
 \begin{center}\fbox{Gegeben $x^n=a$}\end{center}
 
@@ -100,7 +98,9 @@ $$a \textrm{ negativ: \textbf{keine Lösung!}}$$
 
 $n$ ungerade:
 
-$$x = \sqrt[n]{a} \textrm{ (ev. negativ)}$$
+$$a \textrm{ positiv:} x = + \sqrt[n]{a}$$
+$$a \textrm{ negativ:} x = - \sqrt[n]{-a}$$
+
 \end{gesetz}
 
 
@@ -110,32 +110,6 @@ $$x = \sqrt[n]{a} \textrm{ (ev. negativ)}$$
   OLAT (M. Rohner). [Tipp bei Aufg. 2: Substitution.]}
 
 \newpage
-
-\subsection{Rationale Exponenten}\index{Exponenten!rationale}\index{Wurzeln}
-
-Anstelle von $x^{\frac{1}{n}}$ hatten wir auch $\sqrt[n]{x}$
-geschrieben.
-Somit können wir auch rationale Exponenten ($x^{\frac{3}{4}}  = \sqrt[4]{x^{3}} = (\sqrt[4]x)^3$) verwenden:
-
-Mit anderen Worten: Eine Wurzelgleichung ist nichts anderes als eine
-Potenzgleichung mit rationalen Exponenten.
-
-\noTRAINER{$\sqrt[4]{x^3} = 125$}
-
-\TNT{5.2}{
-
-\begin{tabular}{rccl}
-%%                & $\sqrt[4]{x^3}$               &=&   125                \\
-  $\Rightarrow$ & $x^{\frac{3}{4}}$               &=&   125                \\
-  $\Rightarrow$ & $(x^{\frac{3}{4}})^\frac{4}{3}$  &=& $(125)^\frac{4}{3}$  \\
-  $\Rightarrow$ & $x^{\frac{3}{4}\cdot\frac{4}{3}}$  &=& $(\sqrt[3]{125})^4$  \\
-  $\Rightarrow$ & $x^1$                          &=& $5^4$  \\
-  $\Rightarrow$ & $x$                            &=& $625$  
-\end{tabular}
-
-}%% END TNT
-\newpage
-
 
 \subsection{Wurzelgleichungen}\index{Wurzelgleichung}
 Kommt in der Gleichung die Gesuchte unter der Wurzel vor, so sprechen
@@ -182,10 +156,33 @@ Beim \textbf{Potenzieren} können (Schein)\textbf{Lösungen}
 \newpage
 
 
+\subsection{Rationale Exponenten}\index{Exponenten!rationale}\index{Wurzeln}
+ Eine Wurzelgleichung ist nichts anderes als eine
+Potenzgleichung mit rationalen Exponenten.
 
-\subsection{Aufgaben}
+\TRAINER{Anstelle von $\sqrt[n]{x}$ hatten wir auch  $x^{\frac{1}{n}}$
+  geschrieben.}
+
+Beispiel: $\sqrt[4]{x^3} = 125$
+
+\TNT{5.2}{
+
+\begin{tabular}{rccl}
+%%                & $\sqrt[4]{x^3}$               &=&   125                \\
+  $\Rightarrow$ & $x^{\frac{3}{4}}$               &=&   125                \\
+  $\Rightarrow$ & $(x^{\frac{3}{4}})^\frac{4}{3}$  &=& $(125)^\frac{4}{3}$  \\
+  $\Rightarrow$ & $x^{\frac{3}{4}\cdot\frac{4}{3}}$  &=& $(\sqrt[3]{125})^4$  \\
+  $\Rightarrow$ & $x^1$                          &=& $5^4$  \\
+  $\Rightarrow$ & $x$                            &=& $625$  
+\end{tabular}
+
+}%% END TNT
+\newpage
+
+
+\subsection*{Aufgaben}
 \TALSAadB{???}{???}
 \GESO{\aufgabenfarbe{Aufgaben 3. und 4. vom Blatt im OLAT zu
     «Potenzgleichungen» (M. Rohner)}}
-\GESOAadB{196 (Wurzelgleichungen)}{2. 3. a)-f)  4. a) c) d) e) f)
-  5. a) c) 6. b)  7. d) 8. c) d) und Textaufgabe 10. a) und b)}
+\GESOAadB{196 (Wurzelgleichungen)}{2., 3. a)-f),  4. a) c) d) f),
+  5. a) c), 6. b),  7. d), 8. c) d) und Textaufgabe 10. a) und b)}
