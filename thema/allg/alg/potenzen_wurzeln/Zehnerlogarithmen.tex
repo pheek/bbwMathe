@@ -129,11 +129,11 @@ $\lg(1) = 0$
 \end{gesetz}
 
 Begründung:
-\TRAINER{ Durch beidseitiges Exponenzieren der Definition...
+\TNT{2.4}{ Durch beidseitiges Exponenzieren der Definition...
 
 $$\lg(10^x) = x \Longrightarrow 10^{\lg(10^x)} = 10^x
 \stackrel{p:=10^x}{\Longrightarrow} 10^{\lg(p)} = p$$
-}%% END TRANIER
+}%% END TNT
 
 \begin{bemerkung}{negative Exponenten}{}
   Weil $10^x$ für alle $x$ immer positiv ausfällt, so gibt es keine
@@ -159,22 +159,25 @@ $$\log(10^2\cdot{}10^4) = \log(10^{2+4}) = 2+4
 
 Oder allgemein (für $r = 10^n$ und $s = 10^m$)\footnote{\TRAINER{Wobei hier $n$ und $m$ nicht notwendigerweise in $\mathbb{N}$}}:
 $$\lg(r \cdot s) = \lg(10^n \cdot 10^m) = \lg(10^{(n+m)}) = n+m = \lg(10^n) + \lg(10^m) = \lg(r) + \lg(s).$$
-\vspace{3cm}
+\vspace{15mm}
 }%% END TNT
 
 Beispiel: \TRAINER{Beim Vorzeigen mit den beiden 8ern von links und
   rechts beginnen.}
 
-$${\color{gray}8=\lg(10^8)=\lg(10^{3+5})}=\lg(10^3\cdot{}10^5) =
-\lg(10^3)+\lg(10^5){\color{gray}=3+5=8}$$
+\TNT{2}{$${\color{gray}8=\lg(10^8)=\lg(10^{3+5})}=\lg(10^3\cdot{}10^5) =
+\lg(10^3)+\lg(10^5){\color{gray}=3+5=8}$$}%% END TNT
 
 \TALS{
   \textbf{Multiplizieren durch Addieren}\\
 
   Nach dem ebene gezeigten Gesetz gilt:
-  $$\lg(a\cdot{}b) = \lg(a) + \lg(b)$$
+  \TNT{1.2}{  $$\lg(a\cdot{}b) = \lg(a) + \lg(b)$$}
+  
   Daraus folgt:
-  $$a\cdot{}b = 10^{\lg(a\cdot{}b)} = 10^{\lg(a) + \lg(b)}$$
+\TNT{1.2}{  $$a\cdot{}b = 10^{\lg(a\cdot{}b)} = 10^{\lg(a) +
+    \lg(b)}$$}
+
   Und somit können wir zwei Zahlen multiplizieren, indem wir ihre
   Logarithmen addieren:
 
