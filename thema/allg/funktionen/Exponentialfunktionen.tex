@@ -61,6 +61,48 @@ Um wie viel nehmen sie ...
 \item Wie sieht es mit der Basis $e$ aus? Mit welchem $m$ kann man die
   Zunahme als $f(t) = b \cdot{} e^{m\cdot{}t}$ angeben?
 \end{enumerate}
+\newpage
+
+
+\textbf{Lösungen}
+
+@ 1.: $\tau_2=15$:
+\TNT{3.6}{$2^\frac15 = a_2^\frac1{15}$ Nun auf beiden Seiten ``hoch
+  15'' und somit
+
+  $a_2 = (2^{\frac15})^{15} = 2^3 = 8$.
+
+Ergo $b\cdot{}2^\frac{t}5 = b\cdot{} 8^\frac{t}{15}$}
+
+@ 2.: $\tau_2=7$:
+\TNT{3.6}{$2^\frac15 = a_2^\frac1{7}$ Nun auf beiden Seiten ``hoch
+  7'' und somit
+
+  $a_2 = (2^{\frac15})^{7} = 2^{\frac75} \approx 2.639$.
+
+Ergo $b\cdot{}2^\frac{t}5 \approx b\cdot{} 2.639^\frac{t}{7}$}
+
+@ 3.: $a_2 = 3$ (verdreifachen):
+\TNT{4.4}{$2^\frac15 = 3^\frac{1}{\tau_2}$ (Definition Logarithmus):
+
+  $\frac1{\tau_2} = \log_3\left(2^\frac15\right)$
+
+  $\tau_2 = \frac1{\log_3\left(2^\frac15\right)}\approx 7.925$ Tage.
+
+Also: Sie verdreifachen sich ca. alle 8 Tage.
+
+  Ergo: $b\cdot{}2^\frac{t}5 \approx b\cdot{}3^\frac{t}{7.925}$
+}%% end TNT
+
+@ 4.: $a^\frac{t}5 = e^{m\cdot{}t}$ (Basis $e$):
+\TNT{5.2}{
+  $2^\frac15 = e^{m}$ (beidseitig $\ln()$):
+
+  $\ln(2^\frac15) = m\cdot \ln(e) = m\cdot 1 = m \approx 0.1386$ und somit:
+  $$f(t) \approx b\cdot{} e^{0.1386\cdot{} t} \approx b\cdot{}2^\frac{t}5$$
+}%% END TNT
+
+\newpage
 
 \begin{center}\fbox{
     \textbf{ $\tau$ und $a$ sind voneinander abhängig!}}
@@ -68,7 +110,7 @@ Um wie viel nehmen sie ...
 
 Es gilt:
 \begin{center}\fbox{$b\cdot{}a^{\frac{t}{\tau}} = b\cdot{}a_2^{\frac{t}{\tau_2}} =
-    e^{m\cdot{}t}$}
+    b\cdot{}e^{m\cdot{}t}$}
 \end{center}
 
 ... oder nach ziehen der $t$-ten Wurzel:
@@ -84,49 +126,6 @@ Es gilt:
   $m=\frac1\tau\cdot{}\ln(a) = \frac1{\tau_2}\cdot{}\ln(a_2)$
 \end{gesetz}
 \newpage
-
-
-\textbf{Lösungen}
-
-ad. 1.: $\tau_2=15$:
-\TNT{3.6}{$2^\frac15 = a_2^\frac1{15}$ Nun auf beiden Seiten ``hoch
-  15'' und somit
-
-  $a_2 = (2^{\frac15})^{15} = 2^3 = 8$.
-
-Ergo $b\cdot{}2^\frac{t}5 = b\cdot{} 8^\frac{t}{15}$}
-
-ad. 2.: $\tau_2=7$:
-\TNT{3.6}{$2^\frac15 = a_2^\frac1{7}$ Nun auf beiden Seiten ``hoch
-  7'' und somit
-
-  $a_2 = (2^{\frac15})^{7} = 2^{\frac75} \approx 2.639$.
-
-Ergo $b\cdot{}2^\frac{t}5 \approx b\cdot{} 2.639^\frac{t}{7}$}
-
-ad. 3.: $a_2 = 3$ (verdreifachen):
-\TNT{4.4}{$2^\frac15 = 3^\frac{1}{\tau_2}$ (beidseitig logarithmieren:)
-
-  $\frac15 \ln(2) = \frac1{\tau_2} \ln(3)$ (Kehrwert:)
-
-  $\frac{5}{\ln(2)} = \frac{\tau_2}{\ln(3)}$ ($\cdot \ln(3)$:)
-
-  $\tau_2 = \frac{5\cdot{}\ln(3)}{\ln(2)}\approx 7.925$ Tage. Sie
-  verdreifachen sich ca. alle 8 Tage.
-
-  Ergo: $b\cdot{}2^\frac{t}5 \approx b\cdot{}3^\frac{t}{7.925}$
-}%% end TNT
-
-ad. 4.: $a^\frac{t}5 = e^{m\cdot{}t}$ (Basis $e$):
-\TNT{5.2}{
-  $2^\frac15 = e^{m}$ (beidseitig $\ln()$):
-
-  $\ln(2^\frac15) = m\cdot \ln(e) = m\cdot 1 = m \approx 0.1386$ und somit:
-  $$f(t) \approx b\cdot{} e^{0.1386\cdot{} t} \approx b\cdot{}2^\frac{t}5$$
-}%% END TNT
-
-\newpage
-
 
 \subsubsection{Beispiel: Wissenschaftliche Publikation (optional)}
 In einem wissenschaftlichen Journal ist angegeben, dass eine Population annähernd folgendes Verhalten an den Tag lege [$t$ = Tage]:
