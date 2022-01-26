@@ -12,7 +12,7 @@
    viewBox="0 0 140.42603 76.157264"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="exponentielles_wachstum.svg"
    inkscape:export-filename="/home/phi/matgit/includes/thema/allg/funktionen/img/exp/exponentielles_wachstum.png"
    inkscape:export-xdpi="600"
@@ -140,9 +140,9 @@
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1824"
-     inkscape:window-height="1059"
-     inkscape:window-x="48"
+     inkscape:window-width="3840"
+     inkscape:window-height="2135"
+     inkscape:window-x="1920"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      showguides="false"
@@ -467,7 +467,7 @@
            y="114.24633"
            x="132.16502"
            id="tspan927-5"
-           sodipodi:role="line">a·b = f(   )</tspan></text>
+           sodipodi:role="line">a·b = f(   ) = m</tspan></text>
       <path
          d="m 91.869141,156.99805 c -0.08467,0.16933 -0.242277,0.26367 -0.44336,0.26367 -0.761997,0 -1.29269,-0.0527 -2.054687,-0.0527 -0.952497,0 -1.375543,0.41329 -1.671875,1.20704 h 0.232422 c 0.148166,-0.3175 0.446355,-0.53907 0.710937,-0.53907 0.232833,0 0.71875,0.0312 0.71875,0.0312 -0.148166,0.60325 -0.804687,2.7311 -0.804687,3.22852 0,0.47625 0.392574,0.77148 0.847656,0.77148 0.96308,0 1.290923,-0.69844 1.544922,-1.49218 l -0.222657,-0.084 c -0.116416,0.43392 -0.45471,1.19531 -1.015624,1.19531 -0.211666,0 -0.31836,-0.12622 -0.31836,-0.33789 0,-0.14816 0.04197,-0.47583 0.105469,-0.6875 l 0.708984,-2.57226 c 1.18533,0 1.6736,-0.11673 1.853516,-0.93164 z"
          id="text1004-6"
