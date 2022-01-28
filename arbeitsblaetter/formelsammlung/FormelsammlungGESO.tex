@@ -3,6 +3,13 @@
 %% 2021 fp @ bbw.ch
 %%
 
+%% Footer und Header ganz unterdrücken:
+\newcommand{\keinHeaderUndKeinFooter}{}
+%% Sollten Header und Footer unterdrückt werden, einfach die folgende
+%% Zeile nicht als Kommentar lassen:
+%%\renewcommand{\keinHeaderUndKeinFooter}{\thispagestyle{empty}}
+
+
 \newcommand{\versionsDatumFoSa}{2021-11-29}
 
 %% ID (ca. alle jahre), Subversion: Grössere Änderungen, Revision: Jede
@@ -98,7 +105,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}%%
-
+\keinHeaderUndKeinFooter{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%\arbeitsblattHeader{}
@@ -189,6 +196,8 @@ Produkt mit Summe: $2\cdot(x+y)=2x+2y$
 Potenzterme: $(-3)^2 = 9$ aber $-3^2 = -9$
 
 \forceCB{}%%
+\keinHeaderUndKeinFooter{}
+
 Vorzeichen im Taschenrechner:\\
 \vspace{3mm}\\
 \tiprobutton{7}\tiprobutton{minus}\tiprobutton{2}$=7-2= 5$\\
@@ -262,6 +271,8 @@ $$x^2+2x-15 = (x+5)(x-3)$$
 
 \end{enumerate}
 \forceCB{}%%
+\keinHeaderUndKeinFooter{}
+
 \subsection*{Summenzeichen}
 %%$$\color{orange}\sum_{\color{blue}k=1}^{\color{blue}n} {{\color{FarnFarbe}T}(k)} = {\color{FarnFarbe}T}({\color{blue}1}) {\color{orange}+} {\color{FarnFarbe}T}({\color{blue}2}) {\color{orange}+} ... {\color{orange}+} {\color{FarnFarbe}T}({\color{blue}n})$$
 
@@ -381,6 +392,8 @@ $$\log_{\color{FarnFarbe}b}({\color{red}a}) = \frac{\lg({\color{red}a})}{\lg({\c
 \end{tcolorbox}%
 %
 \RLP{\forceCB{}}%%
+\keinHeaderUndKeinFooter{}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%               Gleichungen                          %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -475,6 +488,8 @@ $$(x | y) = (8 | -3)$$
 
 
 \forceCB
+\keinHeaderUndKeinFooter{}
+
 \subsection*{Substitution}
 Beispiel Bruchgleichungssysteme:
 
@@ -492,6 +507,8 @@ $$b=1=\frac{1}{y-2} \Longrightarrow  y=3$$
 
 
 \forceCB
+\keinHeaderUndKeinFooter{}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%               Textaufgaben                         %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -527,10 +544,15 @@ $$p = -3\% \Longleftrightarrow{}  a = 0.97 $$
 
 
 \forceCB
+
+\keinHeaderUndKeinFooter{}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%               Funktionen                           %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Funktionen}
+\keinHeaderUndKeinFooter{}
+
 
 Eine Funktion ist eine {\color{red} eindeutige Zuordnung}. Dabei wird
 jedem {\color{FarnFarbe}x} aus der {\color{FarnFarbe}Definitionsmenge
@@ -561,6 +583,7 @@ Zwei Geraden sind \textbf{parallel}, wenn ihre Steigungen gleich sind.
 %%$\HECH{b}\RLP{q}$ = $y$-Achsenabschnitt (=Ordinatenabschnitt)
 $b$ = $y$-Achsenabschnitt (=Ordinatenabschnitt)
 \forceCB
+\keinHeaderUndKeinFooter{}
 
 \subsubsection*{Horizontale Gerade}
 
@@ -598,10 +621,12 @@ Gleichsetzen: $ax+b = cx+d$ und nach $x$ auflösen.
 
 %%$$x_M = \frac{x_A+x_B}2; y_M=\frac{y_A+y_B}2$$
 
+\keinHeaderUndKeinFooter{}
 
 \subsection*{Zweipunkte Aufgaben}
 %%Gesucht Gerade $g\-: \,\,\, y=\HECH{ax+b}\RLP{mx+q}$ durch zwei gegebene Punkte $A=(x_A|y_A)$
 %%und $B=(x_B|y_B)$
+\keinHeaderUndKeinFooter{}
 
 Gesucht Gerade $g\-: \,\,\, y=ax+b$ durch zwei gegebene Punkte $A=(x_A|y_A)$ und $B=(x_B|y_B)$
 
@@ -619,6 +644,8 @@ $y=ax+b$ einsetzen, um $b$ zu finden.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
+\keinHeaderUndKeinFooter{}
+
 \subsection*{Potenzfunktionen}
 
 \begin{tabular}{cc}
@@ -661,6 +688,8 @@ $k$ ungerade: Punktsymmetrisch (Ursprung $O=(0|0)$)
 
 %%\hrulefill  
 \forceCB
+\keinHeaderUndKeinFooter{}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%               Wachstumsmodelle                     %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -744,21 +773,26 @@ $$y=a\cdot{}e^{bx}$$}
 \HECH{$\frac12 \cdot{} b = f(t) = b\cdot{}a^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t= \tau\cdot{}\log_a\left(\frac12\right)$}
 \RLP{$\frac12 \cdot{} a = f(t) = a\cdot{}q^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t= \tau\cdot{}\log_q\left(\frac12\right)$}
 
+\keinHeaderUndKeinFooter{}
+
 \subsection*{Verdopplungszeit}
 \HECH{$2\cdot{}b = f(t) = b\cdot{}a^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t = \tau\cdot{}\log_a(2)$}
 \RLP{$2\cdot{}a = f(t) = a\cdot{}q^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t = \tau\cdot{}\log_q(2)$}
 
 %%\mmPap{5.6}%
 \forceCB%
+\keinHeaderUndKeinFooter{}
 
 
 
 \subsection*{Sättigungsfunktionen}
+\keinHeaderUndKeinFooter{}
 
 
 \bbwCenterGraphic{7.5cm}{img/ExpFunktionBeschraenktesWachstum.pdf}
 
 \subsubsection*{Beschränktes Wachstum (Zerfall)}
+\keinHeaderUndKeinFooter{}
 
 
 \textbf{Zerfallsrate} immer: $0<\HECH{a}\RLP{q}<1$
@@ -789,6 +823,8 @@ $$f(0) = c-a$$}
 %%\mmPapier{14}
 
 \newpage
+\keinHeaderUndKeinFooter{}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%               Datenanalyse                         %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -838,6 +874,8 @@ Maximum bzw. Minimum sind höchste bzw. kleinste Datenwerte: Die Ausreisser
 zählen mit!
 
 \RLP{\forceCB}%%
+\keinHeaderUndKeinFooter{}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 
 \subsection*{Streumasse}
@@ -858,6 +896,7 @@ englisch \textit{Inter Quartile Range} = \textbf{IQR} bezeichnet.
 %$\sigma$ = Standardabweichung der Grundgesamtheit
 
 %$s$ = Standardabweichung einer gemessenen Stichprobe
+\keinHeaderUndKeinFooter{}
 
 
 \subsubsection*{Robustheit}
@@ -880,9 +919,17 @@ weiter ins Extreme bewegt, so sprechen wir von einem \textbf{robusten} Mass.
 
 
 %
+\keinHeaderUndKeinFooter{}
+
 \RLP{\forceCB}%
+\keinHeaderUndKeinFooter{}
+
 \subsection*{Diagramme}
+\keinHeaderUndKeinFooter{}
+
 \subsubsection*{Säulen (und Balken) / Kreis (Kuchen)}
+\keinHeaderUndKeinFooter{}
+
 %%\begin{tabular}{cc}
 %% \includegraphics[width=4cm]{img/balkendiagramm.png} &  \includegraphics[width=3cm]{img/kuchendiagramm.png}\\
 %%\end{tabular}
@@ -895,6 +942,7 @@ weiter ins Extreme bewegt, so sprechen wir von einem \textbf{robusten} Mass.
 \item Legende und Titel
 \end{itemize}
 
+\keinHeaderUndKeinFooter{}
 
 \begin{tcolorbox}[colback=white]
   \textbf{Absolute und relative Häufigkeit}\\
@@ -910,11 +958,14 @@ $p_i = f_i\cdot{}100\%$ &$=$& prozentuale Häufigkeit%%\\
   \end{tabular}
 \end{tcolorbox}
 
+\keinHeaderUndKeinFooter{}
 
 \RLP{\forceCB}
 
+\keinHeaderUndKeinFooter{}
 
 \subsubsection*{Histogramm}
+\keinHeaderUndKeinFooter{}
 \bbwCenterGraphic{8cm}{img/Histogramm.pdf}
 
 \begin{itemize}
@@ -948,7 +999,9 @@ $p_i = f_i\cdot{}100\%$ &$=$& prozentuale Häufigkeit%%\\
 \end{multicols}
 
 
+\keinHeaderUndKeinFooter{}
 \newpage
+\keinHeaderUndKeinFooter{}
 \subsubsection*{Boxplot}
 %%\TRAINER{«Schritte zum Boxplot als Fliesstext
 %%  daneben. Ausreisserschwellen {\color{blue}blau} im
@@ -970,6 +1023,7 @@ entferntesten Nicht-Ausreisser ({\color{FarnFarbe}grün}). Ausreisser
 %%    Kombinatorik / Wahrscheinlichkeit (Stochastik)  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Stochastik}
+\keinHeaderUndKeinFooter{}
 
 \subsection*{Kombinatorik}
 
@@ -1015,6 +1069,7 @@ $$N = \frac{11!}{{\color{FarnFarbe}4}!\cdot{}{\color{red}4}!\cdot{}{\color{cyan}
 
 \end{multicols}
 \newpage
+\keinHeaderUndKeinFooter{}
 
 
 \subsection*{Überblick Auswahlprobleme / Anzahl Möglichkeiten $N$ }
@@ -1085,8 +1140,10 @@ ${\color{red}P}({\color{FarnFarbe}KK} \textrm{\color{red} oder } {\color{blue}ZZ
   &=&${\color{FarnFarbe}0.6\cdot0.6} {\color{red}+} {\color{blue}0.4\cdot0.4}$
 \end{tabular}
  
+\keinHeaderUndKeinFooter{}
 
 \subsection*{Binomialverteilung (Bernoulli)}
+\keinHeaderUndKeinFooter{}
 
 Voraussetzung: Es gibt pro Verzweigung nur zwei Ausgänge mit jeweils
 gleicher Trefferwahrscheinlichkeit.
@@ -1145,8 +1202,10 @@ Für voneinander \textbf{unabhängige} Ergebnisse
 gilt:
 
 $$P(A\textrm{ «oder» }B) = P(A\cup B) = P(A) + P(B)$$
+\keinHeaderUndKeinFooter{}
 
 \forceCB
+\keinHeaderUndKeinFooter{}
 
 \subsubsection*{Gegenwahrscheinlichkeit}
 Die Wahrscheinlichkeit des \textbf{Gegenereignisses} von $E$ ist
@@ -1162,8 +1221,10 @@ $$P(X \ge 4) = 1 - P(X < 4) = 1-P(X\le 3)$$
 
 Gegenereignis von «minimal 4 Mal» = «maximal 3 Mal».
 
+\keinHeaderUndKeinFooter{}
 
 \subsection*{Zufallsgrössen, Zufallsvariable $\mathbf{X}$}
+\keinHeaderUndKeinFooter{}
 
 (mit endlich vielen Werten $x_i$)
 
@@ -1241,6 +1302,7 @@ $$P(G | F) = \frac{\textrm{Anzahl gesunde Frauen}}{\textrm{Anzahl Frauen}}=  \fr
 
 %% Leerseiten für Notizen
 \newpage
+\keinHeaderUndKeinFooter{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%               Taschenrechner                       %%
@@ -1290,16 +1352,20 @@ Ganz am Schluss:
 
 * Rechtschreibeprogramm
 * Zeilenumbrüche und Einzüge (0pt bei Aufzählungen und Nummerierungen)
+\keinHeaderUndKeinFooter{}
 
 * Absatz-Umbrüche / Seitenumbrüche
 }
+\keinHeaderUndKeinFooter{}
 
 %
 \noTRAINER{\vspace{15mm}}%
 %
 %%\noTRAINER{\mmPapier{4}}%
 %
+\keinHeaderUndKeinFooter{}
 \newpage
+\keinHeaderUndKeinFooter{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%           Notizen                        %%
