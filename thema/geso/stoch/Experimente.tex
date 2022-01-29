@@ -253,20 +253,20 @@ Nun gilt
 \end{gesetz}
 
 In obigem Beispiel ergibt sich:
-$$P(X=5) =
+$$P(X=5) = \ LoesungsRaumLang{
 {{7}\choose {5}}
-\cdot{}\left(\frac26\right)^5\cdot{}\left(1-\frac26\right)^{7-5}$$
+\cdot{}\left(\frac26\right)^5\cdot{}\left(1-\frac26\right)^{7-5}}$$
 
 Dies kann mit dem Taschenrechner gelöst werden:
 Entweder direkt ...
 
 $$( 7 \textrm{\,\,nCr\,\,} 5 ) *\left(\frac26\right)^5 *
-\left(1-\frac26\right)^{7-5} = \frac{28}{729} \approx 0.03841$$
+\left(1-\frac26\right)^{7-5} = \LoesungsRaum{\frac{28}{729}} \approx \LoesungsRaum{0.03841}$$
 
 ... oder aber mit der eingespeicherten Formel bei
 \tiprobutton{data_stat-reg-distr} und dort unter \texttt{DISTR: 4
   Binomialpdf: SINGLE} dann $n=7$ bei $n$, $p=\frac26$ bei $p$ und
-$k=5$ bei $x$ eintragen ($\approx 0.03841$).
+$k=5$ bei $x$ eintragen ($\approx \LoesungsRaum{0.03841}$).
 \newpage
 
 \subsection*{Aufgaben}
@@ -283,7 +283,7 @@ Wahrscheinlichkeit von 85\%.
 Die Wahrscheinlichkeit, dass er von 20 Würfen genau 17 Mal trifft, kennen wir
 bereits von der Binomialverteilung (Bernoulli-Experiment):
 
-$$P(E=17) = {20 \choose 17}\cdot 0.85^{17}\cdot (1-0.85)^{20-17} =  {20 \choose 17}\cdot 0.85^{17}\cdot (0.15)^{3}\approx{}24.28\%$$
+$$P(E=17) = {20 \choose 17}\cdot 0.85^{17}\cdot (1-0.85)^{20-17} =  {20 \choose 17}\cdot 0.85^{17}\cdot (0.15)^{3}\approx{}\LoesungsRaum{24.28\%}$$
 Dabei bezeichnet $E$ das Ereignis ``siebzehn Treffer in den 20 Würfen''.
 
 Wie groß ist nun aber die Wahrscheinlichkeit, dass er bei 20 Würfen
@@ -303,7 +303,7 @@ können wir anders schreiben und sofort mit dem
 Taschenrechner lösen:
 
 $$\sum_{x=0}^{17}\left(( 20 \textrm{\,\,nCr\,\,} x ) * 0.85^x *
-0.15^{20-x}\right) \approx 0.5951$$
+0.15^{20-x}\right) \approx \LoesungsRaum{0.5951}$$
 
 
 Doch auch hierzu gibt es eine eingespeicherte Formel
