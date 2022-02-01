@@ -42,7 +42,7 @@ Aber wie lösen wir so ein Problem:
 
 $$2^x = 128$$
 
-\textbf{Die harte Tour}\footnote{Müssen Sie nicht herleiten können,
+\textbf{Die harte Tour}\label{harteTourLogarithmen}\footnote{Müssen Sie nicht herleiten können,
   doch daraus ergibt sich ein brauchbares Gesetz.}:\\
 
 Nach obigem Gesetz können wir $2$ und $128$ anders schreiben:
@@ -74,10 +74,12 @@ $$10^{\lg(2)\cdot{}x} = 10^{\lg(128)}$$
  Taschenrechner auch: 
 
  $$2^x = 128 \Longleftrightarrow  x = \log_2(128) = \LoesungsRaum{7}$$
- \newpage
- \subsection{Definition zu anderer Basis}
+\newpage
+
+
+\subsection{Definition zu anderer Basis}
  
-\begin{bemerkung}{Zehnerlog}{}
+\begin{bemerkung}{Zehnerlog.}{}
   Zur Erinnerung:
 
   $$10^x = p \Longleftrightarrow x = \lg(p)$$
@@ -89,10 +91,15 @@ Diese Definition können wir auf jede andere Basis als 10 ausweiten:
    $$a^x=p \Longleftrightarrow x = \log_a(p)$$
    \end{definition}
 
+\TALS{\subsection*{Aufgaben}}
+\TALS{Andere Basis:\\}
+\TALSAadB{62ff}{184. a), 185. a) b) c) g), 186. a) d) f) h), 187. a) c) e)  und
+  (optional mit TR) 188.}
+\newpage
 
 
  \subsection{Logarithmengesetz}
-Aus obigem Beispiel folgt direkt das folgende Gesetz:
+Aus obigem Beispiel («die Harte Tour» \totalref{harteTourLogarithmen}) folgt direkt das folgende Gesetz:
 
 \begin{gesetz}{Basiswechsel}{}\index{Basiswechsel!Logarithmen}
   Für $a\in\mathbb{R}^{+}\backslash\{0,1\}$ und $p>0$ gilt:
@@ -292,14 +299,10 @@ $$\log_a(p) = \frac{\ln(p)}{\ln(a)} = \frac{\lg(p)}{\lg(a)}$$
 %%\TALS{(\cite{frommenwiler17alg} S.??? (Kap. ???))}
 %%\GESO{(\cite{marthaler17}       S.??? (Kap. ???))}
 
-\subsection*{Aufgaben}
-\TALS{Andere Basis:\\}
-\TALSAadB{62ff}{185. a) b) c) g), 186. a) d) h), 187. a) c) e)  und
-  (optional) 188.}
 \TALS{Logarithmengesetze:\\}
-\TALSAadB{64ff}{190. a) b) d), 191. a) c) e), 192. c), 193. a) c) e),
-  194. a) c) d), 196. a) b) c) d), 197. a) b) e) f), 198. a) b) e) f),
-  202. a) b), 203. b) d) 204. a) b) c), 206. a) c) f) und 208. a) b)}
+\TALSAadB{64ff}{191. a) b) e), 192. c), 193. a) c) e),
+  194. a) c) d), 196. a) b), 197. b) e) f), 198. a) b) f),
+  202. a) b), 203. b) d) 204. c), 206. a) f) i) und 208. a) b)}
 
 \GESO{Andere Basis (Vieles ist mit dem Taschenrechner lösbar):}
 
