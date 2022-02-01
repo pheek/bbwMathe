@@ -36,11 +36,13 @@ $$x = \log_5(32) = \frac{\lg(32)}{\lg(5)}$$
 \end{rezept}
 \newpage
 
+
+
 \begin{rezept}{Exponentialgleichung lösen}{rezept_allgemeine_exponentialgleichung}
   $$8^{x-1}=7^{x+2}$$
-  \TRAINER{
+\end{rezept}
 
-    \GESO{
+\GESO{\TNT{14}{
       1. Zuerst die Summen in den Exponenten wegbringen:
       $$8^x\cdot{}8^{-1} = 7^x\cdot{}7^2$$
       2. Jetzt alle Potenzen mit $x$ auf eine Seite bringen:
@@ -52,12 +54,19 @@ $$x = \log_5(32) = \frac{\lg(32)}{\lg(5)}$$
       (5.) Dies kann (falls gefragt) mit Zehnerlogarithmen geschrieben
       werden:
       $$x = \frac{\lg(7^2\cdot{}8)}{\lg(\frac87)} \approx 44.718$$
-      
+      }%% END TNT
     }%% END GESO
-    
-\TALS{    
+\GESO{\newpage}
+
+
+\GESO{\begin{rezept}{Optional 2. Lösungsweg}{}
+  $$8^{x-1}=7^{x+2}$$
+\end{rezept}}%% END GESO
+
+\TNT{14}{
   Erst mal auf beiden Seiten logarithmieren, mit einem Logarithmus zu beliebiger Basis:
   $$\log(8^{x-1})=\log(7^{x+2})$$
+  Log Gesetz:
   $$(x-1)\cdot{}\log(8)=(x+2)\cdot{}\log(7)$$
   ausmultiplizieren
   $$\log(8)x-\log(8)=\log(7)x+2\log(7)$$
@@ -66,13 +75,11 @@ $$x = \log_5(32) = \frac{\lg(32)}{\lg(5)}$$
   ausklammern
   $$x(\log(8)-\log(7)) = 2\log(7)+\log(8)$$
   und durch die Klammer $(\log(8)-\log(7))$ teilen
-  $$x = \frac{2\log(7)+\log(8)}{\log(8)-\log(7)}\approx 44.718$$}
-  }%% END TALS
-  \noTRAINER{\mmPapier{10.8}}
-\end{rezept}
-
+  $$x = \frac{2\log(7)+\log(8)}{\log(8)-\log(7)}\approx 44.718$$
+}%% END TNT
 
 \GESO{Siehe auch \cite{marthaler17} Seite 200 im roten Kasten.}
+\newpage
 
 \subsection*{Aufgaben}
 \TALSAadB{???}{???}
