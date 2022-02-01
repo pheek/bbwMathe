@@ -17,6 +17,8 @@
 \item Logarithmen mit $\ln()$
 \TALS{\item Exponentialgleichungen mit Parametern}
 \end{itemize}
+\newpage
+
 
 \subsection{Exponentialgleichung}
 Bei einer \textbf{Exponentialgleichung} kommt die gesuchte Größe im
@@ -27,16 +29,28 @@ $$5^x = 32$$
 Typischerweise werden diese Gleichungen gelöst, indem die Definition
 des Logarithmus angewendet wird.
 
-\begin{rezept}{Exponentialgleichung}{}
+\textbf{Typ I:} Exponentenvergleich\\
+
+\begin{rezept}{Exponentenvergleich}{}
+Bei Exponentialgleichungen der Form $$5^{x+1} = 5^{2x-1}$$ können bei
+gleicher Basis einfach die Exponenten verglichen werden:
+$$\LoesungsRaumLang{\Longleftrightarrow x+1=2x-1}$$
+
+Es entsteht eine lineare Gleichung mit der Lösung $\LoesungsRaum{\mathbb{L}_x = \{2\}}$
+\end{rezept}
+
+\textbf{Typ II:} Lösen durch Logarithmieren\\
+
+\begin{rezept}{Logarithmieren}{}
 $$5^x=32 \Longleftrightarrow x=\log_5(32) \Longrightarrow x \approx 2.15338$$
 
 Die Lösung kann dann auch mit Logarithmen zur Basis 10 angegeben
 werden:
-$$x = \log_5(32) = \frac{\lg(32)}{\lg(5)}$$
+$$\LoesungsRaumLang{x = \log_5(32) = \frac{\lg(32)}{\lg(5)}}$$
 \end{rezept}
 \newpage
 
-
+\textbf{Typ III:} Allgemeiner Fall\\
 
 \begin{rezept}{Exponentialgleichung lösen}{rezept_allgemeine_exponentialgleichung}
   $$8^{x-1}=7^{x+2}$$
