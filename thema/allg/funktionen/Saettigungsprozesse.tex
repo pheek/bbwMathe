@@ -32,10 +32,18 @@ Mit anderen Worten: Je weiter weg der aktuelle Wert vom erreichbaren Wert ist, u
 
 \subsubsection{Einstiegsbeispiel Tee}\index{Tee!Abkühlungsprozess}\index{Abkühlungsprozess}
 
-Tee wird von 75 Grad Celsius auf Zimmertemperatur (20 Grad) abgekühlt. Nach drei Minuten messen wir 61 Grad. Wann ist die Temperatur auf angenehme 37 Grad gesunken?
+Tee wird von 75 Grad Celsius auf Zimmertemperatur (20 Grad)
+abgekühlt. Nach drei Minuten messen wir 61 Grad.
 
-Der Prozess geht mit exponentiellem Zerfall, jedoch ist die Zahl nach
-unten beschränkt.
+
+a) Skizzieren Sie die «Zerfallskurve», welche die Temperatur des Tees
+angibt.
+
+b) Geben Sie die Funktionsgleichung $f(x)$ an, welche den Prozess
+beschreibt.
+
+c) Wann ist die Temperatur auf angenehme 37 Grad gesunken?
+
 
 \TNT{16}{1. Idee mit gleicher Formel klappt nicht, denn der
   Standard-Exponentielle Zerfall geht nach Null!
@@ -43,12 +51,12 @@ unten beschränkt.
   Skizze mit 75 Grad, 20 Grad (Sättigung) und 51 Grad.
 
 2. Idee: verschiebe die Skala um 20 Einheiten nach unten. Nun
-funktioniert es: $f(t) = 55\cdot{}\left(\frac{41}{55}\right)^{\frac{t}{3}}$
+funktioniert es: $g(t) = 55\cdot{}\left(\frac{41}{55}\right)^{\frac{t}{3}}$
 
 3. Verschiebe wieder zurück: ACHTUNG: Das $b$ ist nun jedoch das
 sog. Sättigungs\textbf{defizit}\index{Sättigungsdefizit} zum Zeitpunkt $t_0=0$ und \textbf{nicht} mehr der Startwert! 
 
-$$f(t) = 20 + 55\cdot{}\left(\frac{41}{55}\right)^{\frac{t}{3}}$$
+$$f(t) = 20 + g(t) = 20 + 55\cdot{}\left(\frac{41}{55}\right)^{\frac{t}{3}}$$
 
 4. Berechnung: Wann sind 37 Grad erreicht? Einsetzen
 in die Funktionsgleichung:
@@ -69,7 +77,7 @@ $$t=3\cdot{}\log_{\left(\frac{41}{55}\right)}\left(\frac{17}{55}\right)\approx
 
 \newpage
 
-\subsubsection{Allgemeine Form des gesättigten Zerfalls}
+\subsubsection{Allgemeine Form des beschränkten Zerfalls}
 \begin{center}
 \raisebox{-1cm}{\includegraphics[width=13cm]{allg/funktionen/img/saettigung/saettigungskurveDown.png}}
 \end{center}
@@ -98,7 +106,7 @@ Dabei ist:
 \end{itemize}
 
 \subsection*{Aufgaben}
-\GESOAadB{359}{35. und 36.}
+\GESOAadB{359}{35. (Kuchen) und 36. (Ovomaltine)}
 \GESO{\aufgabenfarbe{Kompendium S. 33 Kap. 3.4.2 Aufg. 48 (Achtung: Das
   Kompendium verwendet andere Buchstaben als hier im Skript und im
   Buch \cite{marthaler17}; das dortige $a$ ist unser $b$.)}}
@@ -291,7 +299,7 @@ Und so ist er nach 17 Minuten so richtig satt.}
 
 
 \GESO{\subsection*{Aufgaben}}
-\GESOAadB{358}{34.}
+\GESOAadB{358}{34. (Eistee)}
 \GESO{\aufgabenfarbe{Kompendium S. 32ff Kap. 3.4.2 Aufg. 49-51 (Achtung: Das
   Kompendium verwendet andere Buchstaben als hier im Skript und im
   Buch \cite{marthaler17})}}
