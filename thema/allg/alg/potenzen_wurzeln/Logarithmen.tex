@@ -48,6 +48,7 @@ $$2^x = 128$$
 \textbf{Die harte Tour}\label{harteTourLogarithmen}\footnote{Müssen Sie nicht herleiten können,
   doch daraus ergibt sich ein brauchbares Gesetz.}:\\
 
+\TNT{12}{
 Nach obigem Gesetz können wir $2$ und $128$ anders schreiben:
 
 $$2= 10^{\lg(2)} \textrm{ und } 128 = 10^{\lg(128)}$$
@@ -69,6 +70,7 @@ $$10^{\lg(2)\cdot{}x} = 10^{\lg(128)}$$
 
   $$x = \frac{\lg(128)}{\lg(2)} = \LoesungsRaum{7}$$
 
+}%% END TNT
 
   \textbf{... die sanfte Tour}:\\
 
@@ -76,8 +78,10 @@ $$10^{\lg(2)\cdot{}x} = 10^{\lg(128)}$$
  dadurch, dass die Basis nicht 10, sondern 2 ist. Dies kann der
  Taschenrechner auch: 
 
+\TNT{2.4}{
  $$2^x = 128 \Longleftrightarrow  x = \log_2(128) = \LoesungsRaum{7}$$
-\newpage
+}%% END TNT
+  \newpage
 
 
 \subsection{Definition zu anderer Basis}
@@ -112,6 +116,17 @@ Aus obigem Beispiel («die Harte Tour» \totalref{harteTourLogarithmen}) folgt d
 \begin{beispiel}{Logarithmen-Basiswechsel}{}
 \TNT{4}{ $$\log_2(32) = \frac{\lg(32)}{\lg(2)} = 5$$}
 \end{beispiel}
+
+\TALS{
+  \TNT{10}{
+    $$x=\log_a(p) \Longleftrightarrow a^x = p$$
+    $$\Longleftrightarrow \lg(a^x) = \lg(p)$$
+    $$\Longleftrightarrow \lg(\underbrace{a\cdot{}a\cdot{}a\cdot{}...\cdot{}a}_{x-\textrm{Faktoren}}) = \lg(p)$$
+    $$\Longleftrightarrow \underbrace{\lg(a)+\lg(a)+\lg(a)+ ... + \lg(a)}_{x-\textrm{Summanden}}= \lg(p)$$
+    $$\Longleftrightarrow x\cdot{} \lg(a) = \lg(p)$$
+
+}%% END TNT
+}%% END TALS
 
 %Begründung:
 %
@@ -301,8 +316,7 @@ Logarithmentabelle.} und dennoch $\log_a(p)$ oder das $x$ in $a^x=p$ berechnen w
 
 %%\TALS{(\cite{frommenwiler17alg} S.??? (Kap. ???))}
 %%\GESO{(\cite{marthaler17}       S.??? (Kap. ???))}
-
-\TALS{Logarithmengesetze:\\}
+\subsection*{Aufgaben}
 \TALSAadB{64ff}{191. a) b) e), 192. c), 193. a) c) e),
   194. a) c) d), 196. a) b), 197. b) e) f), 198. a) b) f),
   202. a) b), 203. b) d) 204. c), 206. a) f) i) und 208. a) b)}
