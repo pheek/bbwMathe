@@ -9,10 +9,12 @@
 
 Bei beschränktem Wachstum ist die Änderungsrate typischerweise
 proportional zum
-sog. \textbf{Sättigungsdefizit}\index{Sättigungsdefizit}\index{Defizit
-der Sättigung} (auch \index{Sättigungsmanko}\index{Manko!der Sättigung}). Als Sättigungsmanko bezeichnet man die Differenz zwischen dem aktuellen Wert und dem absolut möglichen Wert.
+sog. \textbf{Sättigungsdefizit}\index{Sättigungsdefizit}\index{Defizit der Sättigung}
+(auch Sättigungs\textbf{manko}\index{Sättigungsmanko}\index{Manko!der Sättigung}).
+  So bezeichnet man die \textbf{Differenz} zwischen dem
+  aktuellen Wert und der Sättigungsgreze.
 
-Mit anderen Worten: Je weiter weg der aktuelle Wert vom erreichbaren Wert ist, umso rascher ist die Zunahme (bzw. die Abnahme bei beschränktem Zerfall).
+Mit anderen Worten: Je weiter weg der aktuelle Wert vom Grenzwert ist, umso rascher ist die Zunahme (bzw. die Abnahme bei beschränktem Zerfall).
 
 \subsection{Beispiele von Sättigungsprozessen}
 \begin{itemize}
@@ -85,7 +87,7 @@ $$t=3\cdot{}\log_{\left(\frac{41}{55}\right)}\left(\frac{17}{55}\right)\approx
 Die Grundform eines begrenzten Zerfalls ist ein normaler
 exponentieller Zerfall ($y=a^{t}$, $0<a<1$), der in $y$-Richtung um eine Sättigungsgrenze $c$ verschoben ist:
 
-\begin{definition}{gesättigter Zerfall}{}
+\begin{definition}{beschränkter Zerfall}{}
 $$f(t) = c + b\cdot{}a^{\frac{t}{\tau}}$$
 \end{definition}
 
@@ -117,7 +119,8 @@ Dabei ist:
 
 
 
-\subsection{Begrenztes Wachstum}
+\subsection{Sättigung (begrenztes
+  Wachstum)}\index{Sättigung}\index{begrenztes Wachstum}\index{Wachstum!begrenztes}
 \subsubsection{Einstiegsbeispiel 1: Eistee wärmen}
 Das Aufwärmen von Eistee von $5\degre$ Kühlschranktemperatur auf $20\degre$ Zimmertemperatur ist ein klassisches «Begrenztes Wachstum» (mit gespiegelter Exponentialfunktion).
 
@@ -140,16 +143,17 @@ Die Batterie lädt sich umso langsamer, je \textit{voller} sie ist.
 
 \newpage
 
-\subsubsection{Allgemeine Form des begrenzten Wachstums}
+\subsubsection{Allgemeine Form von Sättigungsprozessen}
+
 \begin{center}
 \raisebox{-1cm}{\includegraphics[width=13cm]{allg/funktionen/img/saettigung/saettigungskurve.png}}
 \end{center}
 
-Die Grundform der des begrenzten Wachstums ist ein exponentieller Zerfall\totalref{zerfallsfunktion},
+Die Grundform des begrenzten Wachstums ist ein exponentieller Zerfall\totalref{zerfallsfunktion},
 der an der $x$-Achse gespiegelt und in $y$-Richtung
 verschoben ist:
 
-\begin{definition}{Zerfall}{}
+\begin{definition}{Sättigung}{}
 $$f(t) =c - b\cdot{} a^{\frac{t}{\tau}}$$
 \end{definition}
 
@@ -162,12 +166,10 @@ Wie erwähnt, wird die Funktion in der Praxis gestreckt, bzw. verschoben; die fo
     Sättigungsgrenze: $m = c - f(t)$. Auch hier nimmt das  Sättigungs\textbf{defizit} exponentiell ab.
 	\item $b$: Die Abweichung des Funktionsgraphen zu $S$ zum Zeitpunkt $t=0$. Der
     Anfangswert ist somit $f(0) = c - b$.
-	\item $\tau$: Die Zeit zwischen zwei typischen Beobachtungszeitpunkten wird
-    mit $\tau$ («tau») bezeichnet\footnote{$\tau$ entspricht der
-      Halbwertszeit beim exponentiellen Zerfall: Halbiert sich das Sättigungsdefizit ($c-f(t)$) in der Zeit $\tau$, so ist $a = \frac12$.}.
-    \item $a=\frac{m}{b}=\frac{c-f(\tau)}{c-f(0)}$ Faktor der Veränderung des Sättigungsdefizit.
+	\item $\tau$: Die Zeit zwischen zwei typischen
+    Beobachtungszeitpunkten.
+\item $a=\frac{m}{b}=\frac{c-f(\tau)}{c-f(0)}$ Faktor der Veränderung des Sättigungsdefizit.
 \end{itemize}
-\newpage
 
 
 \subsubsection{Bemerkungen}
@@ -186,13 +188,14 @@ Das $a$ kann aus zwei \textbf{beliebigen} Sättigungsdefizit-Werten berechnet we
 Zeitdifferenz $\tau$ auseinander liegen):
 $$\frac{m_2}{m_1} = \frac{b\cdot{}a^{\frac{t_2}{\tau}}}{b\cdot{}
   a^{\frac{t_1}{\tau}}} = a^{\frac{t_2}{\tau}} : a^{\frac{t_1}{\tau}} =
-a^{\frac{t_2-t_1}{\tau}} = a^{\frac{\tau}{\tau}} = a$$
+a^{\frac{t_2-t_1}{\tau}} = a^{\frac{\tau}{\tau}} = a$$%% 
 \end{bemerkung}
 
 
 \begin{bemerkung}{}{}
 Meistens ist $m_0$ zum Zeitpunkt $t=0$ bekannt und somit ist $b=m_0$. Es reicht, die Messung zum Zeitpunkt $t_0$ und zu einem weiteren Zeitpunkt durchzuführen. Wenn zusätzlich die Sättigungsgrenze $c$ bekannt ist, kann die Funktion $f$ komplett bestimmt werden.
 \end{bemerkung} 
+
 \newpage
 
 \subsection{Referenzaufgaben}
