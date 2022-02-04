@@ -12,7 +12,7 @@ Füllen Sie dazu folgende Tabelle aus. Dabei bedeuten
 
 \begin{tabular}{lp{14cm}}\hline
   Einheit & Stunden, Minuten, Meter, ... \\\hline
-  $\tau$  & In diesem Intervall (Stunden, Meter, ...) wird beobachtet \\\hline
+  $\tau$  & In dieser Zeitspanne (Stunden, Meter, ...) wird beobachtet \\\hline
   $p$     & Zunahme\textbf{rate}\index{Zunahmerate}\index{Rate} während $\tau$ Einheiten in \%. Ist $p$ negativ, handelt es sich um eine Abnahme\\\hline
   $a$     & Zunahme\textbf{faktor}\index{Zunahmefaktor} während $\tau$ Einheiten. Ist $a<1$, handelt es sich um einen Abnahmefaktor\\\hline
   $a_E$ (Formel)   & Zunahme pro Einheit (als Faktor). Aufgeschrieben als Formel\\\hline
@@ -20,14 +20,21 @@ Füllen Sie dazu folgende Tabelle aus. Dabei bedeuten
   $p_E$   & Prozentuale Zunahme pro Zeiteinheit\\\hline
   \end{tabular} 
 
+\leserluft{}
+\leserluft{}
+%% temporäres Platzhalterchen 
+\newcommand{\ph}[1]{\noTRAINER{...........}\TRAINER{#1}}
 
+\renewcommand{\arraystretch}{1.7}
+
+%% probably turn off auto-fill-mode in emacs when editing long lines
 \begin{tabular}{|l|l|l|l|l|l|l|}\hline
-  Einheit     & $\tau$     &  $p$  & $a$ & $a_E$ (Formel)   & $\approx a_E$ &$p_E$ \\\hline
-  h &  $\frac12$ &  50\% & 1.5 & $1.5^\frac1{0.5}$ &  2.25         & 125\% \\\hline 
-  Tage        &  $5$       & 100\% & \LoesungsRaum{2}   & \LoesungsRaum{$2^\frac1{5}$}     &  \LoesungsRaum{2.25}         & \LoesungsRaum{125}\% \\\hline 
-  Min.  &  $2$ & \LoesungsRaum{-60}\% & 0.4 & \LoesungsRaum{$0.4^\frac1{10}$} &  \LoesungsRaum{0.91244}   & \LoesungsRaum{-8.7556E}\% \\\hline 
-  m &  $12$   &  \LoesungsRaum{4.5\%} & \LoesungsRaum{1.045} & $1.045^\frac1{12}$ &  \LoesungsRaum{1.00367}   & \LoesungsRaum{0.3675}\% \\\hline 
-
-
+  Einheit & $\tau$            &  $p$         & $a$         & $a_E$ (Formel)        &  $\approx a_E$ &$p_E$              \\\hline\hline
+  h       &  $\frac12$        &  50\%        & 1.5         &  $1.5^\frac1{0.5}$     &  2.25          & 125\%             \\\hline 
+  Tage    &  $5$              & 100\%        & \ph{2}      & \ph{$2^\frac1{5}$}    &  \ph{2.25}      & \ph{125}\%        \\\hline 
+  Min.    &  $2$              & \ph{-60}\%   & 0.4         & \ph{$0.4^\frac1{10}$} &  \ph{0.91244}   & \ph{-8.7556E}\%   \\\hline 
+  m       &  $12$             & \ph{4.5}\%   & \ph{1.045}  & $1.045^\frac1{12}$    &  \ph{1.00367}   & \ph{0.3675}\%     \\\hline
+  Wochen  & \ph{$2$}          & \ph{$200$}\% & \ph{3}      & $3^\frac12$           & \ph{1.73205}    & \ph{73.205}\%     \\\hline
+  Jahr    & \ph{$\frac1{12}$} & \ph{$1$}\%   & \ph{$1.01$} & $1.01^{\frac1{12}}$    &  \ph{$1.127$}   & \ph{$12.7$}\%     \\\hline
 \end{tabular} 
-
+\renewcommand{\arraystretch}{1}
