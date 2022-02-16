@@ -55,7 +55,7 @@
 
 \newcommand{\TNT}[2]{\noTRAINER{
 
-\mmPapier{#1}}\TRAINER{#2}}%%
+\mmPapierTheorie{#1}}\TRAINER{#2}}%%
 
 %% Trainer "no" Dotfill
 %% If no Trainer: Dotfill
@@ -116,20 +116,19 @@ Platz für Notizen:\newline%%
 \end{tabular}%
 }
 
-\definecolor{bbblue}{rgb}{0.8,0.9,1.0}
+
 %%Häuschenpapier
-\newcommand{\mmPapier}[1]{\begin{tikzpicture}
-  \draw[step=4mm,bbblue,thin]
-  (0, 0) grid (16.8, {#1});
-  \end{tikzpicture}
-}%%
+\definecolor{bbblue}{rgb}{0.9,0.95,0.85}
 \newcommand{\mmPapierZwei}[2]{\begin{tikzpicture}
   \draw[step=4mm,bbblue,thin]
   (0, 0) grid ({#2}, {#1});
   \end{tikzpicture}
 }%%
 
+\newcommand{\mmPapier}[1]{\mmPapierZwei{#1}{16.8}}
+\newcommand{\mmPapierTheorie}[1]{\mmPapierZwei{#1}{17.6}}
 
+%% Notizen Berechungen auf Prüfungsblättern
 \newcommand{\platzFuerBerechnungen}[1]{\noTRAINER{
 
 Notizen / Berechnungen:
