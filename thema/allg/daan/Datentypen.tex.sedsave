@@ -1,0 +1,74 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+
+\section{Datentypen und Skalen}\index{Datentypen}\index{Skala}
+\sectuntertitel{Mit Statistik kann man alles beweisen...}
+
+\theorieGESO{363}{21}
+\theorieTALS{284}{4.1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+  \item Grundlagen
+  \item Tabellenkalkulation
+  \item Datentypen (Merkmalsausprägung) und Skalen
+\end{itemize}
+
+\bbwCenterGraphic{16cm}{allg/daan/img/Dreun.png}
+
+\newpage
+\subsection{Merkmalstypen}
+Merkmale werden in verschiedene \textbf{Kategorien}\index{Kategorie} und \textbf{Skalen}\index{Skala} eingeteilt. Hier ein Versuch eines Überblickes:
+
+\bbwCenterGraphic{17cm}{allg/daan/img/DatenanalyseSkalentypen.pdf}\index{Ordinale Daten}\index{Nominale Daten}\index{Verhältnis-Skala}\index{Intervall-Skala}
+
+
+\GESO{\cite{marthaler17} S. 376}\TALS{\cite{frommenwiler17alg} S. 249}
+
+Die «Datentypen» (\zB Ganze Zahlen) werden in der deskriptiven
+Statistik auch \textbf{Merkmalsausprägung}\index{Merkmalsausprägung} genannt.
+\newpage
+
+Eine Unterscheidung in «stetig»\index{stetig} und
+«diskret»\index{diskret} ergibt nur bei quanitativen Daten Sinn.
+
+\bbwCenterGraphic{17cm}{allg/daan/img/Datentypen.png}\index{Ordinale Daten}\index{Nominale Daten}\index{Verhältnis-Skala}\index{Intervall-Skala}
+\newpage
+
+
+
+
+\subsection*{Aufgaben}
+\GESO{In Kapitel 21 (S. 363) sind
+  Beispiele aufgezeigt. Beantworten Sie folgende Fragen:
+  \TRAINER{In Klassen mit etwas mehr Zeit: Wählt Euch in Teamarbeit ein Beispiel aus, die   ihr in max. 5 Minuten der Klasse erklärt. In Klassen mit weniger Zeit: Beantworten Sie die Fragen für die Beispiele 1-5}
+  \begin{itemize}
+  \item Welcher Datentyp liegt zu Grunde? 
+  \item Welche Darstellungsart (Diagramm) ist sinnvoll? 
+  \item Welche Fehler könnten sich einschleichen?
+  \item (optional) Welche Erhebungsart wurde verwendet? 
+  \end{itemize}
+}%% END GESO
+\TALSAadB{249}{942. 943.}
+\GESOAadB{401}{6}
+
+\aufgabenfarbe{Klassifizieren Sie die Daten aus dem eigenen Fragebogen
+  in die folgenden Kategorien:\\
+  \begin{tabular}{c|c|c|c}
+    nominal & ordinal & Intervall & Verhältnis\\\hline
+    Handymarke &\hspace{40mm} &\hspace{40mm} &Umfang Handgelenk\\
+    ...&\hspace{40mm} &\hspace{40mm} &...\\
+    \hspace{40mm}&\hspace{40mm} &\hspace{40mm} &\hspace{40mm}\\
+    \hspace{40mm}&\hspace{40mm} &\hspace{40mm} &\hspace{40mm}\\
+    \hspace{40mm}&\hspace{40mm} &\hspace{40mm} &\hspace{40mm}\\
+    \hspace{40mm}&\hspace{40mm} &\hspace{40mm} &\hspace{40mm}\\
+    \hspace{40mm}&\hspace{40mm} &\hspace{40mm} &\hspace{40mm}\\
+    \hspace{40mm}&\hspace{40mm} &\hspace{40mm} &\hspace{40mm}\\
+    \hspace{40mm}&\hspace{40mm} &\hspace{40mm} &\hspace{40mm}\\
+    \end{tabular}}
+
+    
+
+\newpage

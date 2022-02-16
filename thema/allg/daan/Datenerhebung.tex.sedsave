@@ -1,0 +1,154 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+\section{Datenerhebung / -gewinnung}\index{Datenerhebung}\index{Datengewinnung}
+\sectuntertitel{Traue keiner Statistik, die Du nicht selbst verfälscht hast}
+
+\theorieGESO{371}{22}
+\theorieGESO{373}{23}
+\theorieTALS{250}{4.2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%t%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item Stichprobe vs. Grundgesamtheit
+\item Methoden der Datengewinnung
+\item Datenqualität
+\item Fehlererkennung
+\end{itemize}
+
+
+\aufgabenfarbe{Füllen Sie die Umfrage «Eine Umfrage» aus.}
+
+\newpage
+
+
+\subsection{Grundbegriffe}
+\GESO{Ab S. 373 im Buch \cite{marthaler17}\\%%
+}%%
+
+\begin{tabular}{p{5cm}|l}
+  Grundgesamtheit         &  Als Grundgesamtheit bezeichnet man ....\\
+  \\
+  Stichprobe\index{Stichprobe}              & \\
+  \\
+  Stichprobenumfang       & \\
+  \\
+  Bias\index{Bias}                   & \\
+  \\ 
+  Repräsentativität       & \\
+  \\
+  Datensatz\index{Datensatz}               & \\
+  \\
+  Untersuchungseinheit\index{Untersuchungseinheit}    & \\
+  \\
+  Beobachtung             & \\
+  \\
+  Merkmal\index{Merkmal} / Variable      & \\
+  \\
+  Merkmalsträger\index{Merkmalsträger}          & \\
+  \\
+  Wert/Ausprägung         & \\
+  \\
+  nominal\index{nominal}                 & \\
+  \\
+  ordinal\index{ordinal}                 & \\
+  \\
+  diskret\index{diskret}                 & \\
+  \\
+  stetig (kontinuierlich) & \\
+  \\
+  Intervalle\index{Intervalle} sind bildbar & \\
+  \\
+  Verhältnisse\index{Verhältnisse!bildbar} (Quotienten) sind bildbar & \\
+  \\
+  relative Häufigkeit\index{Häufigkeit!relative}     & \\
+\end{tabular}%%
+\newpage
+
+\TALS{Theorie \cite{frommenwiler17alg}: S.250 Kap. 4.2}
+
+\subsection{Merkmale}
+Bei einer Datenerhebung fallen diverse Merkmale mehr oder weniger ins
+Gewicht. Wenn wir Personen untersuchen, so ist jede Person ein
+sog. \textbf{Merkmalsträger}. Merkmale können Gewicht, Alter, Wohnort
+etc. sein.
+
+\subsubsection{Abgrenzung}\index{Abgrenzung}
+Um den Überblick zu behalten, unterscheiden wir die Merkmale in drei
+Kategorien:
+\begin{itemize}
+\item \textbf{Untersuchungsmerkmal}\index{Untersuchungsmerkmal}: Das
+Merkmal, worüber ich eine Aussage machen will.
+\item \textbf{Abgrenzungsmerkmal}\index{Abgrenzungsmerkmal}: Merkmale,
+die die Untersuchende Gruppe von allen anderen Abgrenzt. Wenn ich eine
+Untersuchung über die Jugendlichen Schweizerinnen und Schweizer im
+Jahr 2020 machen will, so sind weder Erwachsene, noch Liechtenstein,
+noch Jugendliche in den 60'er Jahren zu Untersuchen
+\item Alle übrigen Merkmale sind für die Untersuchung irrelevant.
+\end{itemize}
+
+Ein gutes Abgrenzungsmerkmal sollte die folgenden Eigenschaften
+aufweisen:
+\begin{itemize}
+\item Örtlich: Nur Personen innerhalb einer geographischen Grenze
+\item Zeitlich: Die Untersuchung untersucht nur einen vorgegebenen
+Zeitraum
+\item Sachlich: Beispiele: jugendlich, berufstätig, ...
+\end{itemize}
+
+Bei allgemeingültigen Experimenten (Physik, Chemie, Biologie, ...)
+sollten hingegen Zeit und Ort keine Rolle spielen.
+
+
+\subsection{Arten der Datengewinnung}
+\begin{itemize}
+ \item Experiment
+ \item Befragung
+ \item Beobachtungsstudie
+ \item Datensammlung
+\end{itemize}
+
+\GESO{\subsection*{Aufgaben}}
+\GESOAadB{399}{3.: «Datengewinnung»}
+
+\subsection{Vorgehen (Optional)}
+Das Vorgehen von den Rohdaten bis zur Interpretation kann grob wie folgt zusammengefasst werden. Dabei wird eine Variable (ein Merkmal)
+\begin{enumerate}
+\item gemessen,
+\item kategorisiert\footnote{nominal, ordinal, «Intervalle-bildbar»,
+    «Verhältnisse-bildbar»},
+\item allenfalls sortiert,
+\item graphisch dargestellt und
+\item interpretiert.
+\end{enumerate}
+\newpage
+
+
+\subsection{Fehlerarten}\index{Fehlerarten!in der Datengewinnung}
+
+
+Die \textbf{Datenqualität}\index{Datenqualität} kann durch minimieren
+von Erfassungsfehlern verbessert werden.
+
+Hier die häufigsten Fehlerquellen:
+
+
+\begin{itemize}
+  
+\item Übertragungsfehler (der Werte, \zB falsche Maßeinheit,
+  Legasthenie, Übermüdung beim Abschreiben, ...)
+
+\item Systematische Fehler (Es wird etwas anderes gemessen, als das,
+  wofür die Aussage gerade stehen muss.)
+
+\item Zufällige Fehler, Messungenauigkeit
+
+\item Mutwilliger oder fahrlässiger Fehler («Traue keiner Statistik...»)
+
+\item Bias: Stichprobenverzerrung\index{Bias}\index{Stichprobenverzerrung}
+\end{itemize}
+
+\GESO{\subsection*{Aufgaben}}
+\GESOAadB{399}{4. «Fehler», 5. «Bias»}
+\newpage
