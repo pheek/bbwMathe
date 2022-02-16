@@ -119,9 +119,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\ptitlepage}{
 
+%%\makeindex
+%%  \renewcommand{\mmPapier}{\mmPapierZwei}
+%%\renewcommand{\mmPapier}[1]{\mmPapierZwei{##1}{17.6}}
+
 %% Tiefe der Index-Seite in Skripts über alle Jahre nur bis Stufe 2:
 \ifisALLINONE{\setcounter{tocdepth}{2}}\fi{}
-
 
 %% Keine Header und Footer auf der Frontseite
 %%\thispagestyle{empty}
@@ -201,6 +204,8 @@
 %%%%%%%%%%%%%%%%%%%%%%
 
 %% Referenzen auf Labels
+%% AllInOne ist wichtig, denn einige Referenzen funkitionieren nicht
+%% in den Themen-Skripts, sondern lediglich in den gesamten Jahres-Skripts.
 \newcommand*\totalref[1]{\ifisALLINONE{ (s.\kern 0.22em{}Kap. \ref{#1}
     auf Seite \pageref{#1}) }\else{}\fi{}}%%
 \newcommand*\totalrefanhang[1]{ (s.\kern 0.22em{}Kap. \ref{#1}
@@ -215,3 +220,6 @@
 
 %% Untertitel bei jeder section
 \newcommand{\sectuntertitel}[1]{{«\textit{#1}»}\\}%%
+
+%% Start fetching index entries for theindex
+\makeindex

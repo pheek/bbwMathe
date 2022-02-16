@@ -122,11 +122,10 @@ Platz für Notizen:\newline%%
 \newcommand{\mmPapierZwei}[2]{\begin{tikzpicture}
   \draw[step=4mm,bbblue,thin]
   (0, 0) grid ({#2}, {#1});
-  \end{tikzpicture}
-}%%
+  \end{tikzpicture}}%%
 
 \newcommand{\mmPapier}[1]{\mmPapierZwei{#1}{16.8}}
-\newcommand{\mmPapierTheorie}[1]{\mmPapierZwei{#1}{17.6}}
+%%\newcommand{\mmPapierTheorie}[1]{\mmPapierZwei{#1}{17.6}}
 
 %% Notizen Berechungen auf Prüfungsblättern
 \newcommand{\platzFuerBerechnungen}[1]{\noTRAINER{
@@ -222,12 +221,12 @@ z.\,B.
 
 \newcommand*{\GESOAadB}[2]{%%
 {%%
-\ifisGESO{\aufgabenfarbe{\aadB \cite{marthaler17}: Seite {#1} Nr. {#2}}}%%
+\ifisGESO{\aufgabenfarbe{\aadB \cite{marthaler21}: Seite {#1} Nr. {#2}}}%%
 \fi%%
 }}%%
 
 \newcommand*{\theorieGESO}[2]{%%
-{\ifisGESO{Theorie \cite{marthaler17}: Seite {#1} Kap. {#2}}%%
+{\ifisGESO{Theorie \cite{marthaler21}: Seite {#1} Kap. {#2}}%%
 \fi%%
 }}
 

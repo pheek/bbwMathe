@@ -55,12 +55,14 @@
 
 \newcommand{\TNT}[2]{\noTRAINER{
 
-\mmPapier{#1}}\TRAINER{#2}}%% END command TNT
-
+\mmPapier{#1}}\TRAINER{#2}}%%
 
 %% Trainer "no" Dotfill
 %% If no Trainer: Dotfill
 \newcommand{\TNDF}[1]{\TRAINER{#1}\noTRAINER{\dotfill{}}}%%
+
+%% %% Start fetching index entries %% %%
+\makeindex
 
 \newcommand{\leserluft}{\vspace{2mm}}
 
@@ -116,23 +118,21 @@ Platz für Notizen:\newline%%
 
 
 %%Häuschenpapier
-\definecolor{bbblue}{rgb}{0.95,1.00,0.90}
+\definecolor{bbblue}{rgb}{0.9,0.95,0.85}
 \newcommand{\mmPapierZwei}[2]{\begin{tikzpicture}
   \draw[step=4mm,bbblue,thin]
   (0, 0) grid ({#2}, {#1});
   \end{tikzpicture}}%%
 
-%% Standardbreite für Arbeitsblätter und das Theorieheft
-%% Wird in bbwPruefung.sty überschrieben, da dort schmaler
 \newcommand{\mmPapier}[1]{\mmPapierZwei{#1}{17.6}}
-
+%%\newcommand{\mmPapierTheorie}[1]{\mmPapierZwei{#1}{17.6}}
 
 %% Notizen Berechungen auf Prüfungsblättern
 \newcommand{\platzFuerBerechnungen}[1]{\noTRAINER{
 
 Notizen / Berechnungen:
 
-\mmPapier{#1}}}%% end platzFuerBerechnungen
+\mmPapier{#1}}}
 
 
 
@@ -255,6 +255,7 @@ z.\,B.
 \newcommand{\LoesungsRaumKurz}[1]{\,\,\noTRAINER{\underline{\underline{\,\,\,\,\,\,\,\,\,\,\,}}}\TRAINER{#1}\,\,}
 
 \newcommand{\LoesungsRaumLang}[1]{\,\,\noTRAINER{\underline{\underline{\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,}}}\TRAINER{#1}\,\,}
+
 
 
 %% TI nSpire

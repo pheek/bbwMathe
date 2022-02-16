@@ -155,3 +155,6 @@
 %% Aufruf \wahrbox{wahr}, falls das Resultat wahr ist
 %% Aufruf \wahrbox{falsch}, falls ``falsch'' angegeben werden muss.
 \newcommand{\wahrbox}[1]{($\Box$ wahr; $\Box$ falsch)\TRAINER{#1}}%%
+
+%% Muss etwas schmaler sein, weil jede Frage einen Rahmen darum herum hat.
+\renewcommand{\mmPapier}[1]{\mmPapierZwei{#1}{16.8}}
