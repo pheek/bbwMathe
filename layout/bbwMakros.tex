@@ -124,7 +124,12 @@ Platz für Notizen:\newline%%
 
 %% Standardbreite für Arbeitsblätter und das Theorieheft
 %% Wird in bbwPruefung.sty überschrieben, da dort schmaler
-\newcommand{\mmPapier}[1]{\mmPapierZwei{#1}{17.6}}
+\def\defaultTextBreite{17.6}
+\def\unitCMWhatElse{cm}%% wird als Breitenangabe für den nächsten command verwendet
+
+%% Verwendung: \bbwCenterGraphic{\defaultTextBreite}{«img url»}
+\def\defaultTextBreiteCM{\defaultTextBreite\unitCMWhatElse}
+\newcommand{\mmPapier}[1]{\mmPapierZwei{#1}{\defaultTextBreite}}
 
 
 %% Notizen Berechungen auf Prüfungsblättern
