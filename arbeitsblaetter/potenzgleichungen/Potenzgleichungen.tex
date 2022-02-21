@@ -15,13 +15,16 @@
 
 \newcommand\aufgabeML[2]{
 Aufgabe \arabic{aufgabennummer}:\,\,
-${#1} \Longrightarrow  \LoesungsRaum{{#2}}$
+${#1} \Longrightarrow \noTRAINER{\mathbb{L}_x = \{ } \TRAINER{{#2}}$
 
 \stepcounter{aufgabennummer}
 }
 {\tiny Nach einem Aufgabenblatt von M. Rohner (BBW)}
 
-\section{Mehrere Lösungen}
+
+\section{Ganzzahlige Exponenten}
+
+\subsection{Mehrere Lösungen ?}
 Bestimmen Sie die Lösungsmenge für die Variable $x$:
 
 \aufgabeML{x^4=81}{x = \pm\sqrt[4]{81} \Longrightarrow \mathbb{L}_x = \{-3; 3\}}
@@ -45,11 +48,51 @@ Bestimmen Sie die Lösungsmenge für die Variable $x$:
 \platzFuerBerechnungen{14}
 \noTRAINER{\newpage}
 
-\subsection{...}
 
-\aufgabeML{...}{...}
 
-\platzFuerBerechnungen{16}
+
+\subsection{Erst umformen}
+Lösen Sie die folgenden Potenzgleichungen, indem Sie diese zuerst auf eine einfache Form (wie oben) bringen.
+
+(Verwenden Sie die Wurzelfunktion des Taschenrechners und geben Sie mind. vier signifikante Ziffern an.)
+
+\aufgabeML{x^4-162 = 0}{x^4 = 162 \Longrightarrow x = \pm\sqrt[4]{162}, \mathbb{L}_x \approx \{-3.568; +3.568\} }
+\aufgabeML{(x-3)^4 - 16 = 0}{\textrm{1. + 16; 2. } \pm \sqrt[4]{16} : x-3=\pm 2; x=3\pm 2 \Longrightarrow  \mathbb{L}_x=\{1; 5\}}
+\aufgabeML{5(x-2)^3 - 135 = 0}{(x-2)^3 = 27 \Longrightarrow \mathbb{L}_x = \{5\}}
+\aufgabeML{3(x+2)^3 + 24 = 0}{x+2 = -\sqrt[3]{8} \Longrightarrow \mathbb{L}_x = \{-4\}}
+\aufgabeML{15-(2-x)^6 = 5}{10=(2-x)^6\Longrightarrow x=2\pm \sqrt[6]{10} \Longrightarrow \mathbb{L}_x\approx \{0.5322; 3.468\}}
+
+\platzFuerBerechnungen{16.4}
+
+
+
+\noTRAINER{\newpage}
+
+\subsection{Längere Umformungen}
+Die folgenden Aufgaben geben noch etwas mehr zum Umformen. Bestimmen Sie die Lösungsmenge für die Variable $x$ (mind. vier sig. Ziffern):
+
+\aufgabeML{\frac{x^7-5}{2} + \frac34 = 1}{x=\sqrt[7]{\frac{11}2} \Longrightarrow x\approx 1.276}
+\aufgabeML{(x+1)^3 = 3\cdot{}(x+1)^2 - 3x - 4x^3 + 4}{x=\sqrt[3]{\frac65} \approx 1.063}
+\platzFuerBerechnungen{20}
+
+
+
+\newpage
+\section{Spezielle Exponenten}
+\subsection{Negative Exponenten}
+
+\aufgabeML{x^{-3}=7}{x=\sqrt[3]{\frac17} \approx 0.5228}
+\aufgabeML{x^{-6}+5 = 10}{x=\pm\sqrt[6]{\frac15} \approx \mathbb{L}_x = \{-0.7647; +0.7647\}}
+\aufgabeML{(x-8)^{-3} - 6 = 1}{x=8+\sqrt[3]{\frac17} \approx 8.523}
+\aufgabeML{(x+4)^{-2} + 3 = 12}{x = -4 \pm \sqrt{\frac19} \Longrightarrow \mathbb{L}_x=\{-\frac{13}3; -\frac{11}3\}}
+\platzFuerBerechnungen{18}
+
+\noTRAINER{\newpage}
+\subsection{Rationale Exponenten}
+\aufgabeML{x^\frac14 = 6}{x=6^4 = 1296}
+\aufgabeML{(x-3)^\frac15}{x=3+3^5 = 246}
+\aufgabeML{(x-5)^\frac13 +4 = 5}{x=6}
+\platzFuerBerechnungen{20}
 
 
 
