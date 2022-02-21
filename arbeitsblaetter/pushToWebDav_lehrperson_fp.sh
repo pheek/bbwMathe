@@ -86,6 +86,10 @@ echo "Copying Potenzgesetze Arbeitsblatt (GESO)"
 cp -f ./potenzgesetze_geso/Potenzgesetze_GESO.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/potenzgesetze/Potenzgesetze.pdf
 cp -f ./potenzgesetze_geso/Potenzgesetze_TRAINER_GESO.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/potenzgesetze/Potenzgesetze_TRAINER.pdf
 
+echo "Copying Potenzgleichungen Arbeitsblatt (ALLG)"
+cp -f ./potenzgleichungen/Potenzgleichungen_ALLG.pdf         ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/potenzgleichungen/Potenzgleichungen.pdf
+cp -f ./potenzgleichungen/Potenzgleichungen_TRAINER_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/potenzgleichungen/Potenzgleichungen_TRAINER.pdf
+
 echo "copying Sin Cos Tan (TALS)"
 cp -f ./sin_cos_tan/60Uebungen/60Uebungen_TALS.pdf        ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig1/60_uebungen/60Uebungen.pdf
 cp -f ./sin_cos_tan/60Loesungen/60Loesungen_TALS.pdf      ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig1/60_uebungen/60Loesungen.pdf
@@ -93,7 +97,6 @@ cp -f ./sin_cos_tan/hoehenmessung/Hoehenmessung_TALS.pdf  ${BBW_WEBDAV_PATH}/leh
 cp -f ./sin_cos_tan/hoehenmessung/HoehenmessungLeer.ods   ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig1/Hoehenmessung/HoehenmessungLeer.ods
 cp -f ./sin_cos_tan/trig_coords/Trig_Coords_TALS.pdf      ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig3/koordinatensysteme/Trig_Coords.pdf
 cp -f ./sin_cos_tan/uebungenBogenmass/*.pdf               ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig2/Bogenmass/arbeitsblattBogenmass/
-
 
 echo "copying Einheitskreise (TALS)"
 cp -f ./sin_cos_tan/einheitskreise/Einheitskreis_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig2/Einheitskreis/Einheitskreise.pdf
