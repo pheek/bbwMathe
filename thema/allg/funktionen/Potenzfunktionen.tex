@@ -53,7 +53,7 @@ Betrachten wir einmal die (Polynom-)Funktion $f: y = 0.1x^3 + x^2 + 2x + 3 - x^{
 }%%
 
 
-Polynomfunktionen sind «\textit{weiche}» Funktionen, die jedoch Asymptoten (hier bei $x=0$) aufweisen können.
+Polynomfunktionen sind «\textit{weiche}» Funktionen, die jedoch \textbf{Asymptoten}\index{Asymptote} (hier bei $x=0$) aufweisen können.
 Ebenso sind die Extremwerte (lokale Maxima und Minima) wie auch die Wendepunkte charakteristische Stellen und oft Gegenstand der Untersuchung.
 Wir beschränken und auf Potenzfunktionen der Art $f: y=a\cdot{}x^z$
 mit $z \in \mathbb{Z}\backslash\{0\}$. \textbf{Potenzfunktionen} sind
@@ -104,24 +104,29 @@ oder Spiegelpunkte?
   Potenzfunktionen finden Sie im Buch \cite{marthaler21} Seite 296 oben.}
 \newpage
 
-\subsubsection{Referenzaufgaben}
+\subsubsection{Referenzaufgabe}
 
+Bestimmen Sie $a$ und $k$ so, dass der Graph von $y = a \cdot{} x^k$
+durch die Punkte $P=\left(3 \middle| 1458\right)$ und
+$Q=\left(-4\middle|8192\right)$ verläuft.
 
-\paragraph{Aufgabe:} Bestimmen Sie den Parameter $a$ so, dass die reinquadratische Funktion $f: y=ax^2$ durch den Punkt $P(7| 3)$ geht.
-
-\TNT{2.4}{\textbf{Einsetzen}: $x=7$ und $y=3$; d.\,h. $3 = a\cdot{}7^2$ ergo $a=\frac{3}{49}$.}
-
-
-\paragraph{Aufgabe:}  Bestimmen Sie $k$ so, dass der Graph von $y = \frac3{200} \cdot{} x^k$
-durch den Punkt $P\left( 10 | 150 \right)$ verläuft.
-
-\TNT{6.4}{  Punkt $P$ einsetzen in die Funktionsgleichung:
-
-  $$150   = \frac3{200} \cdot{} 10^k$$
-  Beide Seiten durch $\frac3{200}$ teilen:
-  $$10\,000= 10^k$$
-  Beide Seite logarithmieren (10er Log):
-  $$4 = k \cdot{}\log(10) = k$$
+\TNT{11.2}{  Punkte einsetzen in die Funktionsgleichung:
+  \gleichungZZ{1458}{a\cdot{}3^k}{8192}{a\cdot{}(-4)^k}
+  Aus der oberen Gleichung das $a$ ermitteln ($a=\frac{1485}{3^k}$)
+  (I) und in die zweite
+  Gleichung einsetzen: $$8192 = \frac{1458}{3^k} \cdot{} (-4) ^k$$
+  Exponent $k$ separieren:
+  $$\frac{8192}{1458} = \left(\frac{-4}3\right)^k$$
+  Problem: Logarithmen mit negativen Basen (hier $\frac{-4}3$)
+  funktionieren nicht!
+  
+  Weil nun $k$ gerade sein muss folgt, dass $\left(\frac{-4}3\right)^k
+  = \left(\frac43\right)^k$. Daraus ergibt sich
+  $$\frac{8192}{1458} = \left(\frac{4}3\right)^k \Longrightarrow k =
+  \log_{\frac43}\left(\frac{8192}{1485}\right) = 6$$
+  Dieses $k$ nun in die Gleichung (I) einsetzen; dies
+  liefert
+  $$a=\frac{1458}{3^k} = 2.$$
 }%% end TRAINER
 
 

@@ -51,9 +51,27 @@ Wenn wir diese Gleichung nun nach $a$ auf"|lösen, so erhalten wir $a = 0.50$ (C
 Nun setzen wir a in eine der Gleichungen ein, lösen diese und erhalten $b = 0.80$ (CHF).
 
 \GESO{\subsection*{Aufgaben}
-\GESOAadB{151}{8. a) b) d) f)}
-}
+  \GESOAadB{151}{8. a) b) d) f)}
+}%% END GESO
 
+
+\subsubsection{Ein nicht lineares Beispiel}
+Mit dem Einsetzungsverfahren lassen sich auch nicht-lineare
+Gleichungssysteme lösen:
+\gleichungZZ{a\cdot{}b}{72}{a^4\cdot{}\frac{b}2}{288}
+
+  \TNT{8}{
+    Lösungsweg: Erstens aus der ersten Gleichung das $b$ separieren:
+    $$b = \frac{72}a$$
+    Und dieses $b$ nun in die \textbf{andere} Gleichung einsetzen:
+    $$a^4\cdot{}\frac12\cdot{}\frac{72}{a} = 288$$
+    Auflösen nach $a$ ergibt $a=3$. Dies nun in die «separierte
+    Gleichung» einsetzen: $b=\frac{72}{a} = \frac{72}2 = 36$.
+
+    Hinweis: Hier hätte man gleich von vornherein die zweite Gleichng
+    durch die erste dividieren können (dies wäre dann aber nicht mehr
+    das Einsetzungsverfahren).
+  }
 \newpage
 \subsection{Additions- bzw. Subtraktionsverfahren}\index{Additionsverfahren!lineare Gleichungen}\index{Subtraktionsverfahren!Gleichungssysteme}
 Eine weitere Möglichkeit Gleichungen mit mehreren Unbekannten zu lösen ist das Verfahren, die linke und die rechte Seite miteinander zu addieren (bzw. voneinander zu subtrahieren), sodass eine Variable wegfällt. Dazu müssen die Gleichungen vorher so \textit{präpariert} werden, dass in einer Variablen (hier \zB $a$) die Koeffizienten übereinstimmen:
