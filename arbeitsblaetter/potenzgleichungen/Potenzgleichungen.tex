@@ -1,0 +1,56 @@
+\input{bbwSeite}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amssymb} %% für \blacktriangleright
+\renewcommand{\metaHeaderLine}{Potenzgleichungen}
+\renewcommand{\arbeitsblattTitel}{(BMS)}
+
+\begin{document}%%
+\arbeitsblattHeader{}
+
+\newcounter{aufgabennummer}
+\setcounter{aufgabennummer}{1}
+
+\newcommand\aufgabeML[2]{
+Aufgabe \arabic{aufgabennummer}:\,\,
+${#1} \Longrightarrow  \LoesungsRaum{{#2}}$
+
+\stepcounter{aufgabennummer}
+}
+{\tiny Nach einem Aufgabenblatt von M. Rohner (BBW)}
+
+\section{Mehrere Lösungen}
+Bestimmen Sie die Lösungsmenge für die Variable $x$:
+
+\aufgabeML{x^4=81}{x = \pm\sqrt[4]{81} \Longrightarrow \mathbb{L}_x = \{-3; 3\}}
+
+\aufgabeML{4x^6=256}{|: 4:  x^6 = 64 \Longrightarrow x = \pm\sqrt[6]{64} \Longrightarrow \mathbb{L}_x=\{-2; 2\}}
+
+\aufgabeML{-x^4=16}{|: \cdot{}(-1) : x^4 =
+-16 \Longrightarrow \mathbb{L}_x=\{\} \textrm{ keine Wurzeln aus
+ negativen Zahlen}}
+
+\aufgabeML{x^3=64}{x = +\sqrt[3]{64} \Longrightarrow \mathbb{L}_x=\{+4\}}
+
+\aufgabeML{-x^3=27}{|: \cdot{}(-1) \Longrightarrow x^3 =
+ -27 \Longrightarrow x = -\sqrt[3]{27} \Longrightarrow \mathbb{L}_x=\{-3\}}
+
+\aufgabeML{\frac56 x^3 = \frac{50}{60}}{\textrm{ kürzen } \frac56 x^3
+= \frac56 \textrm{ durch } \frac56 \textrm{ teilen: } x^3 =
+1 \Longrightarrow \mathbb{L}_x = \{1\}}
+
+
+\platzFuerBerechnungen{14}
+\noTRAINER{\newpage}
+
+\subsection{...}
+
+\aufgabeML{...}{...}
+
+\platzFuerBerechnungen{16}
+
+
+
+\end{document}
