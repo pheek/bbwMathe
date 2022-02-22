@@ -70,7 +70,7 @@ $$\frac{5x}{x^2 - 9x - 36}$$
 Bestimmen Sie den Definitionsbereich und die Lösungsmenge der Gleichung.
 Die Gleichung ist auf \textbf{Grundform}
 $ax^2 + bx + c = 0$ zu bringen und kann dann
-mit dem entsprechenden Taschenrechnermodus gelöst werden\TRAINER{($\lx=\{5\}$)}.
+mit dem entsprechenden Taschenrechnermodus gelöst werden\TRAINER{($\mathbb{L}_x=\{5\}$)}.
 $$\frac{x^2-10x}{x-4} + 1 = \frac{24}{4-x}$$
 
 %% Das folgende, nun auskommentierte,  war die Einstiegsaufgabe oben, daher raus:
@@ -81,17 +81,17 @@ $$\frac{x^2-10x}{x-4} + 1 = \frac{24}{4-x}$$
 
 Bestimmen Sie den Definitionsbereich und die Lösungsmenge der Gleichung.
 Die Gleichung ist auf \textbf{Grundform} $ax^2 + bx + c = 0$ zu bringen und kann dann mit
-dem entsprechenden Taschenrechnermodus gelöst werden\TRAINER{($\lx=\{12\}$)}.
+dem entsprechenden Taschenrechnermodus gelöst werden\TRAINER{($\mathbb{L}_x=\{12\}$)}.
 $$\frac{x^2-16x}{x-3} + 1 = \frac{39}{3-x}$$
 
 Bestimmen Sie den Definitionsbereich und die Lösungsmenge der Gleichung.
 Die Gleichung soll auf die \textbf{Grundform} $ax^2 + bx + c = 0$ gebracht werden und
-kann dann mit dem entsprechenden Taschenrechnermodus gelöst werden\TRAINER{($\lx=\{1\}$)}.
+kann dann mit dem entsprechenden Taschenrechnermodus gelöst werden\TRAINER{($\mathbb{L}_x=\{1\}$)}.
 $$\frac{x^2}{x-2} + \frac{4}{2-x} = 3$$
 
 
 Bestimmen Sie die Lösung(en) der Gleichung in der Grundmenge $\mathbb{R}$.
-\TRAINER{\\$\mathbb{D}=\mathbb{R}\backslash{}\{0,3\}; \lx=\{-5, 2\}  $}
+\TRAINER{\\$\mathbb{D}=\mathbb{R}\backslash{}\{0,3\}; \mathbb{L}_x=\{-5, 2\}  $}
 $$\frac{x+1}{x-3} = \frac{10-2x}{x^2-3x}$$
 \newpage
 } %% END GESO

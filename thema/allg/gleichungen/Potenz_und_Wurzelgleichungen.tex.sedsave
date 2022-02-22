@@ -70,49 +70,40 @@ $$(-3)^5 = \LoesungsRaumLang{((-1)\cdot{}(3))^5} = \LoesungsRaum{(-1)^5 \cdot 3^
 
 Beachten Sie die folgenden typischen Fälle:
 
- \renewcommand{\arraystretch}{2}
-
 \begin{tabular}{|c|l|}
   \hline
-  $x^2 = 4$ & $\lx=\LoesungsRaumLang{\{-2; +2\}}$ \\
+  $x^2 = 4$& \TRAINER{$\mathbb{L}_x=\{-2; +2\}$} \\
   \hline
-  $x^3 =  8$& $\lx=\LoesungsRaumLang{\{2\}}$ \\
+  $x^3 =  8$& \TRAINER{$\mathbb{L}_x=\{2\}$} \\
   \hline
-  $x^3 = -8$& $\lx=\LoesungsRaumLang{\{-2\}}$ \\
+  $x^3 = -8$& \TRAINER{$\mathbb{L}_x=\{-2\}$} \\
   \hline
-  $x^6 = -5$& $\lx=\LoesungsRaumLang{\{\,\}}$ \\
+  $x^6 = -5$& \TRAINER{$\mathbb{L}_x=\{\,\}$} \\
   \hline
-  $x^7 = -5$& $\lx=\LoesungsRaumLang{\{-\sqrt[7]{5}\}}$ \\
+  $x^7 = -5$& \TRAINER{$\mathbb{L}_x=\{-\sqrt[7]{5}\}$}\noTRAINER{\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,} \\
   \hline
   \end{tabular} 
 
- \renewcommand{\arraystretch}{1}
 
- \newpage
- 
+
 \begin{gesetz}{}{}
 
- \begin{center}\fbox{Gegeben $x^n=a$, $n\ne 0$}\end{center}
- \begin{center}\fbox{Gesucht $\lx$}\end{center}
-
- \renewcommand{\arraystretch}{2}
+ \begin{center}\fbox{Gegeben $x^n=a$}\end{center}
+ \begin{center}\fbox{Gesucht $\mathbb{L}_x$}\end{center}
 
  \begin{tabular}{l|l|l}
-                        & $a>0$                                  & $a<0$                      \\\hline
-  $n$ gerade            & $\lx =\LoesungsRaumLang{\{-\sqrt[n]{a}; +\sqrt[n]{a}\}}$ & $\lx=\LoesungsRaumLang{\{\}}$               \\\hline
-  $n$ \textbf{un}gerade & $\lx = \LoesungsRaumLang{\{+\sqrt[n]{a}\}}$               & $\lx = \LoesungsRaumLang{\{-\sqrt[n]{|a|}\}}$
+                        & $a>0$                                           & $a<0$               \\\hline
+  $n$ gerade            & $\mathbb{L}_x = \{-\sqrt[n]{a}; +\sqrt[n]{a}\}$ & $\mathbb{L}_x = \{\}$ \\\hline
+  $n$ \textbf{un}gerade & $\mathbb{L}_x = \{+\sqrt[n]{a}\}$               & $\mathbb{L}_x = \{-\sqrt[n]{|a|}\}$
  \end{tabular}  
 
- \renewcommand{\arraystretch}{1}
-
 \end{gesetz}
-Bemerkung zu $a<0$ und $n$ \textbf{un}gerade: Für den TI-Taschenrechner ist $-\sqrt[3]{5} = \sqrt[3]{-5}$.
 
 
 
 \subsection*{Aufgaben}
-\aufgabenfarbe{Aufgaben 1.1, 1.2 und 1.3 vom Blatt zu «Potenzgleichungen» im
-  OLAT. [Tipp bei Aufg. 1.2: Substitution.]}
+\aufgabenfarbe{Aufgaben 1. und 2. vom Blatt zu «Potenzgleichungen» im
+  OLAT (M. Rohner). [Tipp bei Aufg. 2: Substitution.]}
 
 \newpage
 
@@ -142,7 +133,7 @@ $$\sqrt{x}+1=2x$$
   $$x=4x^2-4x+1$$
   $$0=4x^2-5x+1$$
   $$x_{1,2}=\frac{+5 \pm \sqrt{25-16}}{8}$$
-  $$\lx={1}$$, denn $\frac{1}{4}$ ist eine durchs Quadrieren erschienene Scheinlösung.}
+  $$\mathbb{L}_x={1}$$, denn $\frac{1}{4}$ ist eine durchs Quadrieren erschienene Scheinlösung.}
 
 
 \GESO{Lösungsverfahren im Buch \cite{marthaler21} Seite 192 im roten
@@ -192,10 +183,8 @@ Beispiel: $\sqrt[4]{x^3} = 125$
 \newpage
 
 \subsection*{Aufgaben}
-\aufgabenfarbe{Aufgaben 2.1 und 2.2 vom Blatt im OLAT zu
-  «Potenzgleichungen»}
-
 \TALSAadB{???}{???}
-
+\GESO{\aufgabenfarbe{Aufgaben 3. und 4. vom Blatt im OLAT zu
+    «Potenzgleichungen» (M. Rohner)}}
 \GESOAadB{196 (Wurzelgleichungen)}{2., 3. a)-f),  4. a) c) d) f),
   5. a) c), 6. b),  7. d), 8. c) d) und Textaufgabe 10. a) und b)}

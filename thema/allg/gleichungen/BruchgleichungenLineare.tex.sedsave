@@ -51,7 +51,7 @@ $$x-3+x^2-3x = 3x+x^2 | \textrm{ alle } x \textrm { nach links.}$$
 
 $$5x=-3$$ und somit
 
-$$\lx=\left\{\frac{-3}{5}\right\}$$
+$$\mathbb{L}_x=\left\{\frac{-3}{5}\right\}$$
 
 Probe a) stimmt die Lösung in der ursprünglichen Gleichung? (ja)\\
 Probe b) liegt die Lösung auch im Definitionsbereich\index{Definitionsmenge}\index{Definitionsbereich|see{Definitionsmenge}} $\mathbb{D}$? (ja)

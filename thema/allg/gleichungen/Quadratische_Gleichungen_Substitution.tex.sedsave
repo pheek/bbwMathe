@@ -42,7 +42,7 @@ $$1.: y_1 = 2.5 = \tmpPart{} \Rightarrow 7.5 = 5x+0.5 \Rightarrow x = \frac{7}{5
 
 $$2.: y_2 = 3.5 = \tmpPart{} \Rightarrow 10.5=5x+0.5 \Rightarrow x = 2$$
 
-$$\lx=\{1.4; 2\}$$
+$$\mathbb{L}_x=\{1.4; 2\}$$
 \TRAINER{Substitutionsbasis: $-6\tmpPart{} + 8.75 = -\tmpPart{}^2$\\
   Substituendum: $\tmpPart{}$\\
   Substituens: $y$
@@ -68,7 +68,7 @@ $$z^2 - 2z +1 = 0$$
 \aufgabenfarbe{Berufsmaturitätsprüfung 2020: Aufgabe 4 von Serie 2:
   $$(x-5)^4 - \frac{(x-5)^2}{3} = 8$$}%% END Aufgabenfarbe
 \TNT{5.6}{Lösung der Substituierten $y=(x-5)^2)$ ist $y=3$ bzw. $y=-\frac83$. Die zweite Lösung kommt jedoch nur als Scheinlösung vor.\vspace{45mm}}%% END TNT
-    $$\lx = \LoesungsRaumLang{\left\{5-\sqrt{3}; 5+\sqrt{3}\right\}}$$
+    $$\mathbb{L}_x = \LoesungsRaumLang{\left\{5-\sqrt{3}; 5+\sqrt{3}\right\}}$$
   
 \GESOAadB{184}{28. a) d) 29. a) c) 30. a) b)}
 }%% END GESO

@@ -135,7 +135,7 @@ Des weiteren gelten die folgenden Beziehungen:
 
 
 \subsubsection{Referenzaufgabe}
-Berechnen Sie die Lösungsmenge $\lx$ für
+Berechnen Sie die Lösungsmenge $\mathbb{L}_x$ für
 $$\cos(x) = -\sin(211\degre)$$
 im Definitionsbereich $\mathbb{D}=[0; 360\degre]$.
 
@@ -166,7 +166,7 @@ Lösung.
 5. Der $\cos$ ist symmetrisch gegenüber $180\degre$ und somit ist $x_2
 = 360\degre-301\degre = 59\degre$ auch eine Lösung.
 
-$$\Longrightarrow \lx = \{59\degre, 301\degre\}$$
+$$\Longrightarrow \mathbb{L}_x = \{59\degre, 301\degre\}$$
 }%% END TNT
 \newpage
 

@@ -36,7 +36,7 @@ Bei Exponentialgleichungen der Form $$5^{x+1} = 5^{2x-1}$$ können bei
 gleicher Basis einfach die Exponenten verglichen werden:
 $$\LoesungsRaumLang{\Longleftrightarrow x+1=2x-1}$$
 
-Es entsteht eine lineare Gleichung mit der Lösung $\LoesungsRaum{\lx = \{2\}}$
+Es entsteht eine lineare Gleichung mit der Lösung $\LoesungsRaum{\mathbb{L}_x = \{2\}}$
 \end{rezept}
 
 \textbf{Typ II:} Lösen durch Logarithmieren\\

@@ -16,7 +16,7 @@
 
 \newpage
 \subsection{Einstiegsbeispiel}
-Finden Sie die Lösungsmenge $\lx$:
+Finden Sie die Lösungsmenge $\mathbb{L}_x$:
 
 $$\frac{-3(2x-7) - x}{5} \ge  \frac{-9-x}{5}$$
 
@@ -56,7 +56,7 @@ $$\frac{-3(2x-7) - x}{5} \ge  \frac{-9-x}{5}$$
     $:2$
     $$x\le 5$$
     Lösungsmenge
-  $$\lx = ]-\infty;5]$$
+  $$\mathbb{L}_x = ]-\infty;5]$$
 }%% End TNT
 
 
@@ -103,7 +103,7 @@ $$-2x^2 < -6$$
   $$x < -\sqrt{3}$$
 
   4. Lösungsmenge:
-  $$\lx = ]-\infty; -\sqrt{3}] \cup [+\sqrt{3};\infty[$$
+  $$\mathbb{L}_x = ]-\infty; -\sqrt{3}] \cup [+\sqrt{3};\infty[$$
 }%% END TNT
 
 
@@ -130,7 +130,7 @@ $$x^2 > 3$$
 
   Grenzen der Lösungen nun ablesen bei $-\sqrt{3}$ und $+\sqrt{3}$.
 
-  $$\lx = ]-\infty;-\sqrt{3}[ \phantom{...}\cup\phantom{...} ]\sqrt{3};\infty[$$
+  $$\mathbb{L}_x = ]-\infty;-\sqrt{3}[ \phantom{...}\cup\phantom{...} ]\sqrt{3};\infty[$$
 }%% END TNT
 
 \subsection*{Aufgaben}
@@ -150,7 +150,7 @@ Für welche $x$ gilt:
   \bbwCenterGraphic{15cm}{tals/ungl/img/plusminus.png}
 }%% END TNT
 
-$$\lx = \LoesungsRaumLang{]-\infty;-1[ \,\,\,\, \cup \,\,\,\,  ]3; \infty[     }$$
+$$\mathbb{L}_x = \LoesungsRaumLang{]-\infty;-1[ \,\,\,\, \cup \,\,\,\,  ]3; \infty[     }$$
 
 \subsection*{Aufgaben}
 

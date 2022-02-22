@@ -203,7 +203,7 @@ $x     = 1 \pm \frac14\sqrt{128}$ &                              &  $x=\frac{-b\
 
 \TNT{4.4}{  $$\frac{-(-9) \pm \sqrt{(-9)^2-4\cdot{}3\cdot{}6}}{2\cdot{}3} = \frac{+9 \pm \sqrt{81 - 72}}{6}$$
 
-  $\lx = \{1; 2\}$
+  $\mathbb{L}_x = \{1; 2\}$
 }%% END TNT
 \end{rezept}
 
@@ -275,7 +275,7 @@ $$72x^2 - 605 x + 848 = 0$$
     Tasten & Bemerkung \\
     \hline
     \tiprobutton{2nd}\tiprobutton{cos_poly-solv} & Starte das Lösen
-    von quadratischen Gleichungen. Lösung obiger Gleichung: $\lx=\left\{\frac{53}8,\frac{16}9\right\}$\\
+    von quadratischen Gleichungen. Lösung obiger Gleichung: $\mathbb{L}_x=\left\{\frac{53}8,\frac{16}9\right\}$\\
     \hline
     \tiprobutton{2nd}\tiprobutton{mode_quit}      & Beende den Poly-Solver.\\
     \hline
@@ -285,7 +285,7 @@ $$72x^2 - 605 x + 848 = 0$$
     
     Steht ein $i$ in der Lösung des Taschenrechners, so gibt es keine reellen Lösungen und wir schreiben
 
-    $\lx=\{\}$\\
+    $\mathbb{L}_x=\{\}$\\
     \hline
   \end{tabular}
   

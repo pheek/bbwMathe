@@ -424,12 +424,12 @@ $D<0\Longrightarrow$ Keine Lösung
 \subsubsection*{Spezialfälle}
 \begin{itemize}
 \item Lösen durch Faktorisieren:\\
-$x^2+2x-15=0 \Longrightarrow (x-3)(x+5)=0 \Longrightarrow \lx=\{-5,3\}$
+$x^2+2x-15=0 \Longrightarrow (x-3)(x+5)=0 \Longrightarrow \mathbb{L}_x=\{-5,3\}$
 
 \item Lösen durch Substitution:\\
 $x^4+2x^2-15=0 \stackrel{y=x^2}{\Longrightarrow}\\
 y^2+2y-15=0 \Longrightarrow \mathbb{L}_y=\{-5,3\} \stackrel{x=\pm{}\sqrt{y}}{\Longrightarrow}
-\textrm{ (Rücksubstitution) } \lx=\{\pm\sqrt{3}\}\\
+\textrm{ (Rücksubstitution) } \mathbb{L}_x=\{\pm\sqrt{3}\}\\
 \textrm{(} \pm\sqrt{-5} \textrm{ \, sind keine reelen Lösungen. )}$
 
 \end{itemize}
@@ -457,8 +457,8 @@ $k$ gerade:   $x^k=c$ & $\Leftrightarrow$ & $x=\pm\sqrt[k]{c}$\\
 Beispiele
 
 \begin{tabular}{rcl}
-$x^4=16$ & $\Longrightarrow$ & $\lx=\{-2, 2\}  $ \\
-$x^5=32$ & $\Longrightarrow$ & $\lx=\{+2\}  $ \\
+$x^4=16$ & $\Longrightarrow$ & $\mathbb{L}_x=\{-2, 2\}  $ \\
+$x^5=32$ & $\Longrightarrow$ & $\mathbb{L}_x=\{+2\}  $ \\
 
 \end{tabular}
 

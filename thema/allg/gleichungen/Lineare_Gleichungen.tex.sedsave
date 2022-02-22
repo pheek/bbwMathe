@@ -148,21 +148,21 @@ $\Longrightarrow$ & $2$              &$=$& $1$                 & ...............
 \textbf{Typ A}\\
 
 $$1+4x+2 = 5x - (x-3)$$
-\TNT{2.8}{$$\lx = \mathbb{R}$$}
+\TNT{2.8}{$$\mathbb{L}_x = \mathbb{R}$$}
 
 \textbf{Typ B}\\
 
 $$3x+8 = 5x-(2x-6)$$
-\TNT{2.8}{$$\lx = \{\}$$}
+\TNT{2.8}{$$\mathbb{L}_x = \{\}$$}
 
 \textbf{Grundform}\index{Grundform!lineare Gleichung}\\
 
 \begin{beispiel}{Lineare Gleichung}{beispiel_lineare_gleichung_3x7}
-  Die Gleichung $3x=-7$ ist äquivalent zur Grundform $3x+7=0$ und somit ist die Lösungsmenge $\lx=\left\{ \frac{-7}{3}  \right\}$
+  Die Gleichung $3x=-7$ ist äquivalent zur Grundform $3x+7=0$ und somit ist die Lösungsmenge $\mathbb{L}_x=\left\{ \frac{-7}{3}  \right\}$
   \end{beispiel}
 
 \begin{beispiel}{Lineare Gleichung}{beispiel_lineare_gleichung_5x8}
-  Die Gleichung $-5x=8$ ist äquivalent zur Grundform $-5x-8=0$ und somit ist die Lösungsmenge $\lx=\left\{ \frac{8}{-5}  \right\}$
+  Die Gleichung $-5x=8$ ist äquivalent zur Grundform $-5x-8=0$ und somit ist die Lösungsmenge $\mathbb{L}_x=\left\{ \frac{8}{-5}  \right\}$
 \end{beispiel}
 \newpage
 
@@ -171,20 +171,20 @@ $$3x+8 = 5x-(2x-6)$$
   Die Zahlmenge, der gefundenen Lösungen einer Gleichung, nennen wir
   die Lösungsmenge und beschriften diese $\mathbb{L}$. Falls die gefundene
   Variable $x$ \zB{} den Wert $4$ hat, dann schreiben wir:
-  $$\lx=\{4\}$$
+  $$\mathbb{L}_x=\{4\}$$
   Eine Gleichung ohne Lösung hat die leere Menge als Lösungsmenge und
   wir schreiben:
-  $$\lx=\{\}$$
+  $$\mathbb{L}_x=\{\}$$
   Falls alle Zahlen $x$ die Gleichung lösen, so schreiben wir:
-  $$\lx=\mathbb{R}$$
+  $$\mathbb{L}_x=\mathbb{R}$$
 
   
 
-Die Lösungsmenge $\lx$ zur allgemeinen Grundform $ax+b=0$ lautet somit $$\lx=\left\{ \frac{-b}{a} \right\}.$$
+Die Lösungsmenge $\mathbb{L}_x$ zur allgemeinen Grundform $ax+b=0$ lautet somit $$\mathbb{L}_x=\left\{ \frac{-b}{a} \right\}.$$
 
 \begin{itemize}
-  \item Im Spezialfall \textbf{Typ A} gilt $a=0$ und $b=0$. Hier kann ich für $x$ alles einsetzen und somit gilt $\lx=\mathbb{R}$.
-  \item Im Spezialfall \textbf{Typ B} gilt $a=0$ und $b\ne 0$. Hier wird die Gleichung falsch, egal, was ich für $x$ einsetze; somit ist $\lx=\{\}$.
+  \item Im Spezialfall \textbf{Typ A} gilt $a=0$ und $b=0$. Hier kann ich für $x$ alles einsetzen und somit gilt $\mathbb{L}_x=\mathbb{R}$.
+  \item Im Spezialfall \textbf{Typ B} gilt $a=0$ und $b\ne 0$. Hier wird die Gleichung falsch, egal, was ich für $x$ einsetze; somit ist $\mathbb{L}_x=\{\}$.
 \end{itemize}
 
 \subsection*{Aufgaben}

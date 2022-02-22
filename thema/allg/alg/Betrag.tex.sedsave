@@ -70,13 +70,13 @@ $|-4| = x$ \TRAINER{$x=4$}
 $|-4| = -x$ \TRAINER{$x=-4$}
 
 
-$|x| = 4$ \TRAINER{$\lx=\{4, -4\}$}%
+$|x| = 4$ \TRAINER{$\mathbb{L}_x=\{4, -4\}$}%
 
-$|x| = -4$ \TRAINER{$\lx=\{\}$}%
+$|x| = -4$ \TRAINER{$\mathbb{L}_x=\{\}$}%
 
-$|-x| = 4$ \TRAINER{$\lx=\{4, -4\}$}%
+$|-x| = 4$ \TRAINER{$\mathbb{L}_x=\{4, -4\}$}%
 
-$|-x| = -4$ \TRAINER{$\lx=\{\}$}%
+$|-x| = -4$ \TRAINER{$\mathbb{L}_x=\{\}$}%
 }
 
 \GESO{

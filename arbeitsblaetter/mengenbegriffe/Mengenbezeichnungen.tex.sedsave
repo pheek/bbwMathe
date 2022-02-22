@@ -53,19 +53,19 @@ Beispiel $\mathbb{D}(\frac{1}{\sqrt{x}}) = R^{+}$.
                                         $\mathbb{G}$ für welche die Terme der Gleichung definiert sind\\
    & & & &  ($\mathbb{D}=\mathbb{D}(\textrm{Term links})\cap\mathbb{D}(\textrm{Term rechts})$).\\
 
-   $\mathbb{L}$ bzw. $\lx$ &=& Lösungsmenge &=& Alle Zahlen
+   $\mathbb{L}$ bzw. $\mathbb{L}_x$ &=& Lösungsmenge &=& Alle Zahlen
   aus D, welche die Gleichung lösen.\\
 
-  $\lx$ &=&$\{\}$ &:& Leere Menge: Es gibt keine Zahlen
+  $\mathbb{L}_x$ &=&$\{\}$ &:& Leere Menge: Es gibt keine Zahlen
   (aus $\mathbb{D}$), welche die Gleichung lösen (\zB{} $x+2=x$).\\
 
-  $\lx$ &=&$\{0\}$ &:& Einzelne Zahl: Nur eine Zahl löst die
+  $\mathbb{L}_x$ &=&$\{0\}$ &:& Einzelne Zahl: Nur eine Zahl löst die
   Gleichung (hier \zB{} $6+5x-10=3x+6x-4$).\\
 
- $\lx$ &=&$\{3, -2\}$ &:& Einzelne Zahlen: Nur einzelne
+ $\mathbb{L}_x$ &=&$\{3, -2\}$ &:& Einzelne Zahlen: Nur einzelne
   Zahlen lösen die Gleichung (hier \zB{} $x^2-x=6$).\\
 
-  $\lx$ &=& $\mathbb{R}$ &:& Alle Zahlen lösen die Gleichung
+  $\mathbb{L}_x$ &=& $\mathbb{R}$ &:& Alle Zahlen lösen die Gleichung
   (\zB{} $2x+x=4x-x$).\\
 
 \end{tabular}

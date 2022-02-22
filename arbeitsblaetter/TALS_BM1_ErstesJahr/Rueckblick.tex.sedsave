@@ -54,7 +54,7 @@ Vereinfachen Sie $\sqrt{4a^2b}$. \TRAINER{$2a\sqrt{b}$}
 \section{lineare Gleichungen}
 Lösen Sie nach $x$ auf: $7x+3=0$ \TRAINER{$x = \frac{-3}{7}$}
 
-Lösen Sie nach $x$ auf: $ax + b = 0$ \TRAINER{$\lx = \frac{-b}{a}$}
+Lösen Sie nach $x$ auf: $ax + b = 0$ \TRAINER{$\mathbb{L}_x = \frac{-b}{a}$}
 
 \section{Trigonometrie}
 Zeichnen Sie ein rechtwinkliges Dreieck mit den Seiten $a=3$ und $b=4$.
@@ -88,7 +88,7 @@ Woher kennen Sie den Term $\frac{-b}{a}$?\TRAINER{Nullstelle der linearen Funkti
 \section{quadratische Gleichung}
 Lösen Sie von Hand nach $x$ auf:
 
-$$4x^2 +4x = 8$$\TRAINER{$\lx = \{-2; 1\}$}
+$$4x^2 +4x = 8$$\TRAINER{$\mathbb{L}_x = \{-2; 1\}$}
 
 Lösen Sie mit dem Taschenrechner:
 
