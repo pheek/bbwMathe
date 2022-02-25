@@ -23,6 +23,9 @@ cp -f ./gleichungen/quadratischeGleichungenABC_finden/*.pdf ${PATH_4_UM}Gleichun
 echo "  Arbeitsblatt potenzgesetze"
 cp -f ./potenzgesetze_geso/*.pdf ${PATH_4_UM}Arithmetik/arbeitsblatt_potenzgesetze_fp
 
+echo "  Arbeitsblatt Potenzgleichungen"
+cp -f ./potenzgleichungen/*.pdf ${PATH_4_UM}Gleichungen/Potenzgleichungen
+
 echo "  60 trigo übungen von Jürg"
 cp -f ./sin_cos_tan/60Uebungen/60Uebungen_TALS.pdf   ${PATH_4_UM}Geometrie/Trigonometrie/60Uebungen_fp/UebungenSinCosTan.pdf
 cp -f ./sin_cos_tan/60Loesungen/60Loesungen_TALS.pdf ${PATH_4_UM}Geometrie/Trigonometrie/60Uebungen_fp/LoesungenSinCosTan.pdf
