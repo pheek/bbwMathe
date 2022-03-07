@@ -9,8 +9,10 @@
 
 Bei beschränktem Wachstum ist die Änderungsrate typischerweise
 proportional zum
-sog. \textbf{Sättigungsdefizit}\index{Sättigungsdefizit}\index{Defizit der Sättigung}
-(auch Sättigungs\textbf{manko}\index{Sättigungsmanko}\index{Manko!der Sättigung}).
+sog. \textbf{Sättigungsdifferenz}\index{Sättigungsdifferenz}\index{Differenz!zur
+  Sättigung}
+(auch Sättigungs\textbf{manko}\index{Sättigungsmanko}\index{Manko!der
+  Sättigung} oder Sättigungsdefizit\index{Sättigungsdefizit}).
   So bezeichnet man die \textbf{Differenz} zwischen dem
   aktuellen Wert und der Sättigungsgreze.
 
@@ -55,8 +57,8 @@ c) Wann ist die Temperatur auf angenehme 37 Grad gesunken?
 2. Idee: verschiebe die Skala um 20 Einheiten nach unten. Nun
 funktioniert es: $g(t) = 55\cdot{}\left(\frac{41}{55}\right)^{\frac{t}{3}}$
 
-3. Verschiebe wieder zurück: ACHTUNG: Das $b$ ist nun jedoch das
-sog. Sättigungs\textbf{defizit}\index{Sättigungsdefizit} zum Zeitpunkt $t_0=0$ und \textbf{nicht} mehr der Startwert! 
+3. Verschiebe wieder zurück: ACHTUNG: Das $b$ ist nun jedoch die
+Sättigungs\textbf{differenz} zum Zeitpunkt $t_0=0$ und \textbf{nicht} mehr der Startwert! 
 
 $$f(t) = 20 + g(t) = 20 + 55\cdot{}\left(\frac{41}{55}\right)^{\frac{t}{3}}$$
 
@@ -96,22 +98,23 @@ Dabei ist:
   \item $c+b = f(0) = y$-Achsenabschnitt = Startwert
 	\item $c$: Die Sättigungsgrenze\index{Sättigungsgrenze} (Sättigungswert). Dies ist die Annäherungskonstante oder der \textbf{Asymtote}nwert\index{Asymptote}: Tiefer kann die Funktion nicht fallen.
 
-	\item $m$:  Sättigungs\textbf{defizit}\index{Sättigungsdefizit}\index{Defizit!Sättigung} oder Sättigungsmanko. Wie viel fehlt, bis zur
-    Sättigungsgrenze: $m = f(t) - c$. Das Sättigungs\textbf{defizit} nimmt exponentiell ab.
+	\item $m$:
+    Sättigungs\textbf{differenz}\index{Sättigungsdifferenz}\index{Differenz!zur
+      Sättigung}. Wie viel fehlt, bis zur
+    Sättigungsgrenze: $m = f(t) - c$. Das Sättigungs\textbf{differenz} nimmt exponentiell ab.
 	\item $b$: Die \textbf{Abweichung} zu $c$ zum Zeitpunkt $t=0$. Der
     Anfangswert ist somit $f(0) = c + b$; mit anderen Worten: $b$ ist das
-    \textbf{Sättigungsdefizit} zum Zeitpunkt $t_0 = 0$.
+    \textbf{Sättigungsdifferenz} zum Zeitpunkt $t_0 = 0$.
 	\item $\tau$: Die Zeit zwischen zwei typischen Beobachtungszeitpunkten wird
     mit $\tau$ («tau») bezeichnet.
     \item $a=\frac{m}{b}=\frac{f(\tau)-c}{f(0)-c}$: Der Faktor der Veränderung des
-      Sättigungdefizites.
+      Sättigungdifferenz.
 \end{itemize}
 
 \subsection*{Aufgaben}
 \GESOAadB{359}{35. (Kuchen) und 36. (Ovomaltine)}
 \GESO{\aufgabenfarbe{Kompendium S. 33 Kap. 3.4.2 Aufg. 48 (Achtung: Das
-  Kompendium verwendet andere Buchstaben als hier im Skript und im
-  Buch \cite{marthaler21}; das dortige $a$ ist unser $b$.)}}
+  Kompendium verwendet andere Buchstaben: Das dortige $a$ ist unser $b$.)}}
 
 
 
@@ -162,19 +165,22 @@ Wie erwähnt, wird die Funktion in der Praxis gestreckt, bzw. verschoben; die fo
 \begin{itemize}
 	\item $c$: Sättigungsgrenze. Dies ist die Annäherungskonstante oder der Asymtotenwert. Höher kann die Funktion nicht steigen.
 
-	\item $m$ ist das Sättigungsdefizit\index{Sättigungsdefizit} (= Manko). Wie viel fehlt, bis zur
-    Sättigungsgrenze: $m = c - f(t)$. Auch hier nimmt das  Sättigungs\textbf{defizit} exponentiell ab.
+	\item $m$ ist die
+    Sättigungsdifferenz\index{Sättigungsdifferenz}\index{Differenz!zur
+    Sättigung}. Wie viel fehlt, bis zur
+    Sättigungsgrenze: $m = c - f(t)$. Auch hier nimmt die Sättigungs\textbf{differenz} exponentiell ab.
 	\item $b$: Die Abweichung des Funktionsgraphen zu $S$ zum Zeitpunkt $t=0$. Der
     Anfangswert ist somit $f(0) = c - b$.
 	\item $\tau$: Die Zeit zwischen zwei typischen
     Beobachtungszeitpunkten.
-\item $a=\frac{m}{b}=\frac{c-f(\tau)}{c-f(0)}$ Faktor der Veränderung des Sättigungsdefizit.
+\item $a=\frac{m}{b}=\frac{c-f(\tau)}{c-f(0)}$ Faktor der Veränderung
+  der Sättigungsdifferenz.
 \end{itemize}
 
 
 \subsubsection{Bemerkungen}
 \begin{bemerkung}{}{}
-  Für das Sättigungsdefizit gilt:
+  Für die Sättigungsdifferenz gilt:
 
 $$m = m(t) = c - f(t) = c - \left(c-b\cdot{}a^{\frac{t}{\tau}}\right) = + b\cdot{}a^{\frac{t}{\tau}}$$
 
@@ -184,7 +190,7 @@ $$m_0 = m(0) = b\cdot{}a^0 = b$$
 \end{bemerkung}
 
 \begin{bemerkung}{}{}
-Das $a$ kann aus zwei \textbf{beliebigen} Sättigungsdefizit-Werten berechnet werden (die um die
+Das $a$ kann aus zwei \textbf{beliebigen} Sättigungsdifferenz-Werten berechnet werden (die um die
 Zeitdifferenz $\tau$ auseinander liegen):
 $$\frac{m_2}{m_1} = \frac{b\cdot{}a^{\frac{t_2}{\tau}}}{b\cdot{}
   a^{\frac{t_1}{\tau}}} = a^{\frac{t_2}{\tau}} : a^{\frac{t_1}{\tau}} =
@@ -205,18 +211,22 @@ Eine Batterie weist zum Zeitpunkt $t_0$ vier Volt auf. Nach sechs Stunden am Lad
 
 Zeichnen Sie die gegebenen Größen in ein Koordinatensystem ein und markieren Sie bei neun Volt eine horizontale Beschränkungslinie (\zB 1V = 1 Häus'chen in $y$-Richtung; 1h = 1 Häus'chen in $x$-Richtung).
 
-\mmPapier{4.4}
+\noTRAINER{\mmPapier{8.8}}
+\TRAINER{\bbwCenterGraphic{15cm}{allg/funktionen/img/saettigung/batterieFct.png}}
 
 \textbf{Frage 1}: Wie lautet die Formel $f(t) = ...$ der Sättigungskurve?
 
-\noTRAINER{$b = m_0 = ..........................$}
-\TRAINER{$b = m_0 = 9 - 4 = 5$}
+\noTRAINER{$c = ..........................$}
+\TRAINER{$c = \textrm{ Sättigungsgrenze } = 9 [\textrm{V}]$}
 
-\noTRAINER{$m = m_1 = ..........................$}
-\TRAINER{$m = m_1 = 9 - 7 = 2$}
+\noTRAINER{$b = ..........................$}
+\TRAINER{$b = m_0 = c-f(0) = 9 - 4 = 5$}
+
+\noTRAINER{$m =  ..........................$}
+\TRAINER{$m = m_1 = c-f(\tau) = 9 - 7 = 2$}
 
 \noTRAINER{$a = .........................$}
-\TRAINER{$a=\frac{m_1}{m_0} = \frac{m}{b}= \frac{2}{5}$}
+\TRAINER{$a=\frac{m}{b} = \frac{m_1}{m_0} = \frac{2}{5}$}
 
 \noTRAINER{$\tau = .........................$}
 \TRAINER{$\tau = 6$ ($e_x$ = eine Stunde)}
@@ -225,7 +235,7 @@ Zeichnen Sie die gegebenen Größen in ein Koordinatensystem ein und markieren S
 \noTRAINER{$f(t) = c - b\cdot{}a^{\frac{t}{\tau}} = ..... - .....\cdot{}(.....)^{\frac{-t}{.....}}$}
 \TRAINER{$f(t) = c - b\cdot{}a^{\frac{t}{\tau}} = 9 - 5\cdot{}(\frac{2}{5})^{\frac{t}{6}}$}
 
-\TRAINER{Probe für $t=0$ und $t=6$ sind mit dem Stehenlassen von $a$ als Bruch nun sehr einfach.}
+\TRAINER{Die Kontrollen für $t=0$ und $t=6$ sind mit dem Stehenlassen von $a$ als Bruch nun sehr einfach.}
 \newpage
 
 \textbf{Frage 2}: Wann wird die Batterie zu 99\% geladen sein?
@@ -266,7 +276,7 @@ at (= 0.2 at über Normaldruck) aufzupumpen.
 Nach wie vielen Sekunden muss gestoppt werden, damit der Reifen
 optimal gepumpt ist?
 
-\TNT{8}{Das Sättigungsdefizit schwindet von $m_1=3-1=2$ bis $m_2=3-1.2=1.8$
+\TNT{8}{Die Sättigungsdifferenz schwindet von $m_1=3-1=2$ bis $m_2=3-1.2=1.8$
 innerhalb der ersten $10s = \tau$. Die Sättigungsgrenze liegt bei
 $S=3$. Unsere (Exponential)basis $a$ ist somit $1.8 / 2$, was uns
 liefert:
@@ -302,9 +312,9 @@ Und so ist er nach 17 Minuten so richtig satt.\vspace{52mm}}
 
 \GESO{\subsection*{Aufgaben}}
 \GESOAadB{358}{34. (Eistee)}
-\GESO{\aufgabenfarbe{Kompendium S. 32ff Kap. 3.4.2 Aufg. 49-51 (Achtung: Das
-  Kompendium verwendet andere Buchstaben als hier im Skript und im
-  Buch \cite{marthaler21})}}
+\GESO{\aufgabenfarbe{Kompendium S. 32ff Kap. 3.4.2 Aufg. 49-51 (Bem.: Das
+  Kompendium gibt die Funktionsterme bereits an und verwendet als
+  Basis die Eulersche Konstante $e\approx{} 2.71828$)}}
 \newpage
 
 \subsection{Zusammenfassung der Prozesse}
@@ -318,3 +328,5 @@ Und so ist er nach 17 Minuten so richtig satt.\vspace{52mm}}
 
 \TNT{6}{\bbwCenterGraphic{18cm}{allg/funktionen/img/zusammenfassung_exp/saettigung.png}}%% END TNT
 
+\TRAINER{Hier ist Platz für das Video/die Videos zur den getanzten
+  Funktionen (S. OLAT/Wiki).}
