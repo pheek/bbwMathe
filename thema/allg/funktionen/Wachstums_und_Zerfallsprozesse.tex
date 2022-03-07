@@ -33,34 +33,37 @@ Zunahme, wenn die Zunahme pro Zeiteinheit jeweils proportional zur aktuellen Anz
 \item \Lueckentext{(ungebremstes) Bevölkerungswachstum / bzw. Tierpopulation}
 \item \Lueckentext{\dotfill}
 \end{itemize}
-
-\begin{bemerkung}{}{}
-Oft wird bei Wachstumsprozessen die Zeitachse auch mit $t$ statt $x$ bezeichnet: $t$ steht für \textit{time}.
-\end{bemerkung}
 \newpage
 
-\subsection{Einstiegsbeispiel Zinseszins}
-Skizzieren Sie ein Vermögen von CHF 10\,000.-, wie es sich innerhalb
-von 12 Jahren bei gleichbleibendem Zinssatz von 15\% verändert.
+\subsection{Einstiegsbeispiel Taschengeld}
+
+Bei Familie Cash kann man aussuchen, wie sich sein Taschengeld über
+die Jahre «vermehrt». Mani wählt Variante A. Bei Varante A erhält man
+CHF 1.- im ersten Jahr, CHF 2.- im 2. Jahr, CHF 3.- im 3. Jahr und so
+weiter bis zur abgeschlossenen Grundbildung im 13. Jahr CHF 13.-.
+
+Carla wählt Variante B. Bei der Variante B erhält Carla auch CHF 1.-
+im ersten Jahr, dann aber jedes Jahr 30\% mehr, als im Vorjahr.
+
+a) Wird Carla vor Ende der Grundbildung jemals mehr als Mani erhalten?
+
+\LoesungsRaumLang{Ja, im 10. Schuljahr}
+
+b) Wer hat über alle Jahre mehr Taschengeld?
+
+\LoesungsRaumLang{Carla wird mehr haben}
+
+c) Skizzieren Sie beide Varianten:
+
+\TRAINER{\bbwCenterGraphic{16cm}{allg/funktionen/img/taschengeldAusgefuellt.png}}
+\noTRAINER{\bbwCenterGraphic{16cm}{allg/funktionen/img/taschengeld.png}}
 
 
-($y$-Achse in 10\,000.- CHF)
-
-
-\bbwGraph{-1}{13}{-1}{5}{
-\TRAINER{  \bbwFuncC{pow(1.15,\x)}{0:12}{blue}
-}%% end TRAINER
-}%% end graph
-
-Was ist anders, als beim Einstiegsbeispiel «Taxiunternehmen» bei den
-linearen Funktionen?
-
-\TRAINER{Das Wachstum beim Taxiunternehmen ist nicht von den aktuell
-  gefahrenen Kilometern abhängig; nur der Gesamptpreis. Das Wachstum
-  ist beim Taxiunternehmen konstant.}
+\newpage
 
 \TRAINER{Optional: Zeige mit Geogebra (\texttt{geogebra.org}) $x^2$ vs. $1.2^x$. Fazit:
   Exponentielles Wachstum überholt jegliche Potenzfunktion.}
+
 
 \subsubsection{Rate vs. Faktor I}\index{Rate!Zunahme}\index{Faktor!Zunahme}\index{Zunahmefaktor}\index{Zunahmerate}
 
@@ -136,7 +139,7 @@ Begründung:
 \GESO{
   \subsection*{Aufgaben}
   Als Vorbereitung zur allgemeinen Wachstumsfunktion:
-  \GESOAadB{207}{10. (Algern)}
+  \GESOAadB{207}{10. (Algen)}
 }
 
 \newpage
@@ -187,6 +190,12 @@ Die allgemeine Formel für exponentielle Prozesse lautet:
 \begin{definition}{Wachstumsprozess}{}
   $$f(t) = y = b\cdot{}a^{\frac{t}{\tau}}$$
 \end{definition}
+
+
+\begin{bemerkung}{}{}
+Oft wird bei Wachstumsprozessen die Zeitachse auch mit $t$ statt $x$ bezeichnet: $t$ steht für \textit{time}.
+\end{bemerkung}
+
 \newpage
 
 \subsubsection{Graphische Erläuterung}
