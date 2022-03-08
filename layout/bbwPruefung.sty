@@ -101,13 +101,13 @@
 %%\newcommand{\leserluft}{\vspace{2mm}}
 
 \newcounter{tmpCounter}
-\newenvironment{frage}[1][def]{%%
+\newenvironment{frageALT}[1][def]{%%
 \setcounter{tmpCounter}{#1}%%
 \addtocounter{maxpunkte}{\value{tmpCounter}}%%
 \begingroup
 
 %% Multicolumn nur wichtig, damit die Ränder hier nicht angezeigt werden.
-\begin{tabular}{|p{168mm}|}%%
+\begin{tabular}{|p{176mm}|}%%
 \multicolumn{1}{l}{\textbf{Aufgabe\ \arabic{frageCounter}\stepcounter{frageCounter}%%
 \,\,[\arabic{tmpCounter} Pkt.]:}}\\ %%
 \hline{}%\textbf{Aufgabe\ \arabic{frageCounter}\stepcounter{frageCounter}%%
@@ -115,6 +115,29 @@
 
 }{\\%%
   \hline\end{tabular}\noTRAINER{\parbox[c]{20mm}{{\ ......}\\*{\-\ Pkt.}}}\vspace{4mm}\endgroup}
+
+
+\newenvironment{frage}[1][def]{%%
+\setcounter{tmpCounter}{#1}%%
+\addtocounter{maxpunkte}{\value{tmpCounter}}%%
+\begingroup
+
+%% Multicolumn nur wichtig, damit die Ränder hier nicht angezeigt werden.
+\begin{tabular}{|p{178mm}|}%%
+\multicolumn{1}{p{171mm}}{\textbf{Aufgabe\ \arabic{frageCounter}\stepcounter{frageCounter}%%
+\,\,[\arabic{tmpCounter} Pkt.]: \noTRAINER{\hspace*{\fill} $\Box$
+  s. separates Lösungsblatt \hspace*{\fill}Pkt.: ......}}}\\\hline{}%\textbf{Aufgabe\ \arabic{frageCounter}\stepcounter{frageCounter}%%
+%\,\,[\arabic{tmpCounter} Pkt.]}%%
+
+}{\\%%
+  \hline\end{tabular}\vspace{4mm}\endgroup}
+
+
+
+
+
+
+
 
 %\newcommand{\fragexx}[1]{%%
 %\begin{tabular}{p{172mm}}%%
@@ -157,4 +180,4 @@
 \newcommand{\wahrbox}[1]{($\Box$ wahr; $\Box$ falsch)\TRAINER{#1}}%%
 
 %% Muss etwas schmaler sein, weil jede Frage einen Rahmen darum herum hat.
-\renewcommand{\mmPapier}[1]{\mmPapierZwei{#1}{16.8}}
+\renewcommand{\mmPapier}[1]{\mmPapierZwei{#1}{17.6}}
