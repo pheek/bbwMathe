@@ -144,7 +144,7 @@ Lösen Sie das folgende Musterbeispiel:
 $$\sqrt{x}+1=2x$$
 \TRAINER{Das obige Beispiel von M. Rohner zeigt viele Sackgassen und Dinge, auf die man noch achten muss.}
 \platzFuerBerechnungen{8.4}
-\TRAINER{
+\TRAINER{1. Wurzel separieren
   $$\sqrt{x}=2x-1$$ quadrieren:
   $$x=4x^2-4x+1$$
   $$0=4x^2-5x+1$$
@@ -160,11 +160,33 @@ $$\sqrt{x}+1=2x$$
 \textbf{Achtung}: Beim \textbf{Radizieren} auf beiden Seiten
 einer Gleichung können \textbf{Lösungen} \textbf{verschwinden}.
 
-
 Beim \textbf{Potenzieren} können (Schein)\textbf{Lösungen}
 \textbf{hinzukommen} \GESO{Bsp. S.191 und roter Kasten S. 192
   im \cite{marthaler21}}.
 \end{bemerkung}
+
+
+\GESO{optional:}
+\begin{rezept}{Wurzelgleichung lösen}{}
+  \begin{enumerate}
+  \item Definitionsbereich $\mathbb{D}$ festlegen
+  \item Eine Wurzel isolieren (separieren)
+  \item Quadrieren
+  \item 2. und 3. Schritt wiederholen, bis keine Wurzeln mehr
+    vorkommen
+  \item Auflösen
+  \item Probe:
+    \begin{enumerate}
+    \item Mit Definitionsbereich $\mathbb{D}$ abgleichen
+    \item In ursprüngliche Gleichung einsetzen
+    \end{enumerate}
+  \end{enumerate}
+\end{rezept}
+
+\GESO{Optionales}
+Beispiel: $2\cdot{}\sqrt{x+1} + 2 = 5 + 2\cdot{}\sqrt{x-2}$
+
+\TNT{6}{$\lx = \left\{\frac{33}{16}\right\}$}
 
 \TALS{
   \subsection*{Aufgaben}
@@ -178,7 +200,33 @@ Beim \textbf{Potenzieren} können (Schein)\textbf{Lösungen}
 \newpage
 
 
-\subsection{Rationale Exponenten}\index{Exponenten!rationale}\index{Wurzeln}
+\subsection{Spezielle Exponenten}
+\subsubsection{negative
+  Exponenten}\index{Exponenten!negative}\index{negative Exponenten}
+Bei Potenzgleichungen mit negativen Exponenten ist am Einfachsten
+folgendes Potenzgesetz anzuwenden:
+
+$$a^{-n} = \frac1{a^n}$$
+
+Beachte, dass es manchmal zwei Lösungen, manchmal keine gibt.
+
+Beispiel:
+
+$$x^{-4} = 16$$
+
+\TNT{6}{
+  Potenzgesetz:   $$\frac1{x^4} = 16$$
+  Kehrwert: $$x^4 = \frac1{16}$$
+$$\lx = \{-2; 2\}$$}%% END TNT
+
+\subsection*{Aufgaben}
+\aufgabenfarbe{Aufgaben bei 2.1  vom Blatt im OLAT zu «Potenzgleichungen»}
+
+
+\newpage
+
+\subsubsection{Rationale Exponenten}\index{Exponenten!rationale}\index{Wurzeln}
+
  Eine Wurzelgleichung ist nichts anderes als eine
 Potenzgleichung mit rationalen Exponenten.
 
@@ -201,6 +249,5 @@ Beispiel: $\sqrt[4]{x^3} = 125$
 }%% END TNT
 
 \subsection*{Aufgaben}
-\aufgabenfarbe{Aufgaben 2.1 und 2.2 vom Blatt im OLAT zu
-  «Potenzgleichungen»}
+\aufgabenfarbe{Aufgaben zu 2.2 vom Blatt im OLAT zu  «Potenzgleichungen»}
 
