@@ -53,9 +53,26 @@
 
 \newcommand{\noTRAINER}[1]{{\ifisTRAINER{}\else{#1}\fi}{}}%%
 
+%%\makeatletter
+%% Je nach Umgebung "environment" wird das mmPapier breiter oder
+%% schmaler
+%% bei itemize sollen 16.4 und bei definiton-Boxen 16.8 mm genommen
+%% werden.
+
+\def\itemizeNAME{itemize}
+\def\tcbNAME{tcb@savebox}
 \newcommand{\TNT}[2]{\noTRAINER{
 
-\mmPapier{#1}}\TRAINER{#2}}%% END command TNT
+\ifx\@currenvir\itemizeNAME{}%% innerhlab von \begin{itemize} und \end{itzmize}
+\renewcommand{\mmPapier}[1]{\mmPapierZwei{#1}{16.4}}%%
+\fi%%
+\ifx\@currenvir\tcbNAME{}%%  in rezepten, beipsielen, definitionen und gesetzen
+\renewcommand{\mmPapier}[1]{\mmPapierZwei{#1}{16.8}}%%
+\fi%%
+\mmPapier{#1}%%
+\renewcommand{\mmPapier}[1]{\mmPapierZwei{#1}{\defaultTextBreite}}%%
+}\TRAINER{#2}%%
+}%% END command TNT
 
 
 %% Trainer "no" Dotfill
@@ -273,4 +290,3 @@ z.\,B.
 \newcommand{\tiprobutton}[1]{\raisebox{-2mm}{\mbox{\,\includegraphics[width=\tiprobuttonbreite{}]{img/tiprobuttonimages/#1.png}\,}}}
 
 \newcommand{\nspirebutton}[1]{\raisebox{-2mm}{\mbox{\,\includegraphics[width=\nspirebuttonbreite{}]{img/nspirebuttonimages/#1.png}\,}}}
-
