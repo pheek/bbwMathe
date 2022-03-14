@@ -38,9 +38,9 @@ Beim Einsetzungsverfahren wird aus einer der beiden Gleichungen eine der beiden 
 
 Aus der zweiten Gleichung erhalten wir für $b$:
 
-\TNT{1.6}{$$b = {\color{orange}\frac{6.00-4a}{5}}.$$}
+\TNT{1.6}{$$5b= 6 - 4a \Longrightarrow b = {\color{orange}\frac{6.00-4a}{5}}.$$}
 
-Diesen Term setzen wir nun für $b$ in die erste Gleichung ein:
+Diesen Term setzen wir nun für $b$ in die andere (hier die obere) Gleichung ein:
 $$3a+2b = 3.10$$
 
 Dies ergibt
@@ -116,11 +116,18 @@ Lösen wir also beide Gleichungen nach $a$ auf:
 \gleichungZZ{3a + 2b}{3.10}{4a + 5b}{6.00}
 und erhalten:
 
-\TNT{4.4}{\gleichungZZ{a}{{\color{orange}\frac{3.10 - 2b}{3}}}{a}{{\color{green}\frac{6.00 - 5b}{4}}}}
+\TNT{4.4}{\gleichungZZ{a}{{\color{orange}\frac{3.10 -
+        2b}{3}}}{a}{{\color{green}\frac{6.00 - 5b}{4}}}%%
+\vspace{22mm}}%% END TNT
 
 
-Setzen wir nun die beiden $b$-Terme gleich, so erhalten wir die folgende Gleichung:
-$${\color{orange}\frac{3.10 - 2b}{3}} = {\color{green}\frac{6.00 - 5b}{4}}$$
+Setzen wir nun die beiden Terme gleich, so erhalten wir die
+folgende Gleichung:
+
+\TNT{3.2}{$${\color{orange}\frac{3.10 - 2b}{3}} =
+  {\color{green}\frac{6.00 - 5b}{4}}$$
+\vspace{10mm}}%% END TNT
+
 Nach Auf"|lösung erhalten wir $b=0.80$ (CHF) und das $a$ erhalten wir danach durch Einsetzen in eine der beiden bereits nach $a$ aufgelösten Gleichungen: $a=0.50$ (CHF).
 
 Das Gleichsetzungsverfahren ist ein Spezialfall des
@@ -133,10 +140,22 @@ Oft kommen auch in Gleichungssystemen Bruchgleichungen vor. Tipp:
 bevor Sie die folgenden Aufgaben lösen, betrachten Sie die folgende
 Abkürzung, um eine Bruchgleichung zu vereinfachen...
 
-$$\frac{\color{green}2-x}{\color{red}2x-3} = \frac{\color{red}5-y}{\color{green}y-4}$$
+\gleichungZZ{\frac{\color{green}2-x}{\color{red}2x-3}}{\frac{\color{red}5-y}{\color{green}2y-4}}{8}{5x-3y}
 ... wird mit «übers Kreuz multiplizieren» zu:
 
-$$({\color{green}2-x})({\color{green}y-4}) = ({\color{red}2x-3})({\color{red}5-y})$$
+$$({\color{green}2-x})({\color{green}2y-4}) =
+({\color{red}2x-3})({\color{red}5-y})$$
+Nun wie gewohnt auflösen:
+\TNT{6.4}{
+
+  $$4y-8-2xy+4x=10x-2xy-15+3y$$
+  $$\Rightarrow y+7=6$$
+  \gleichungZZ{7}{6x-y}{8}{5x-3y}
+  Additionsverfahren: Obere Gleichung mit 3 multiplizieren:
+  \gleichungZZ{21}{18x-3y}{8}{5x-3y}
+}%% END TNT
+
+$$\mathbb{L}_{(x;y)} = \LoesungsRaumLang{\{(1; -1)\}}$$
 
 Lösen Sie die folgenden Aufgaben mit der für Sie am besten geeigneten Methode, indem Sie die
 Gleichungen in der Regel zunächst in die Grundform bringen.
@@ -185,6 +204,9 @@ Koordinatensystem ein und lesen Sie die Lösung \TRAINER{bei $(5|2)$} ab:
 \GESO{\input{allg/gls/TaschenRechnerSysSolve}}
 \newpage
 
+\GESO{\input{allg/gls/Spezialfaelle}}
+\newpage
+
 \TALS{\input{allg/gls/Lineare_Abhaengigkeit}
 \newpage}
 
@@ -213,11 +235,11 @@ Schritten}, das Sie bereits aus dem Kapitel zu linearen Gleichungen kennen\total
 \GESO{
   \subsubsection*{Aufgaben}
   \GESOAadB{155}{27. und 28.}
-}%% END Geso
+}%% END GESO
 
 \subsubsection{Mischaufgaben}
 \TNT{8}{Vorzeigen Aufgabe «Farben mischen» aus dem Kompendium Seite
-  14 Aufgabe 35}
+  14 Aufgabe 35\vspace{80mm}}
 \GESO{
   \subsubsection*{Aufgaben zum Misch-Typ}
   \GESOAadB{156}{37., 39., 38., 40., 41.}
@@ -226,7 +248,7 @@ Schritten}, das Sie bereits aus dem Kapitel zu linearen Gleichungen kennen\total
 
 
 \subsubsection{Zinsaufgaben}
-\TNT{10}{Vorzeigen Aufgabe 36 zu Zinsen aus dem Kompendium}
+\TNT{10}{Vorzeigen Aufgabe 36 zu Zinsen aus dem Kompendium\vspace{100mm}}%% END TNT
 \GESO{
   \subsubsection*{Aufgaben zum Zins-Typ}
   \GESOAadB{157}{44., 45.}
@@ -253,6 +275,7 @@ so erhalte ich dasselbe, wie wenn ich der Zahl ihre Ziffern tausche.
   Ordnen:
   \gleichungZZ{9x-9y}{-45}{x+y}{9}
   Taschenrechner: $x=2$ und $y=7$. Somit ist die Zahl $z=27$.
+  \vspace{30mm}
 }%% END TNT
 
 
@@ -270,7 +293,7 @@ Was bedeutet «Teilen mit Rest»?
 \TNT{7.2}{
 
   $$x : 5 = 3 \textrm{ Rest } 2 \Longleftrightarrow   3\cdot{} 5 + 2 = x $$
-  Ergo $x=17$.
+  Ergo $x=17$.\vspace{40mm}
 }%% end TNT
 
 \begin{gesetz}{Teilen mit Rest}{}
@@ -281,7 +304,8 @@ Was bedeutet «Teilen mit Rest»?
 
   Referenzaufgabe: Wenn wir eine Zahl durch 15 teilen, so erhalten wir
   8 Rest 4.
-  \TNT{2.4}{$$15\cdot{}8 + 4 = z = 124$$}
+  \TNT{3.2}{$$z : 15 = 8 \textrm{ Rest } 4 \Longleftrightarrow
+    15\cdot{}8 + 4 = z \Longrightarrow z = 124$$\vspace{20mm}}
 
 
 \TALS{\subsection*{Aufgaben}
