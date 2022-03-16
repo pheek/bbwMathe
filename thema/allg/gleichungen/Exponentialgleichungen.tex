@@ -64,8 +64,29 @@ $$\LoesungsRaumLang{x = \log_5(32) = \frac{\lg(32)}{\lg(5)}}$$
 \textbf{Typ III:} Allgemeiner Fall\\
 
 \begin{rezept}{Exponentialgleichung lösen}{rezept_allgemeine_exponentialgleichung}
-  $$8^{x-1}=7^{x+2}$$
+\TALS{$$2\cdot{}8^{x-1}=7^{x+2}$$}
+\GESO{$$8^{x-1}=7^{x+2}$$}
 \end{rezept}
+
+\TALS{
+  \TNT{16}{
+  Erst mal auf beiden Seiten logarithmieren, mit einem Logarithmus zu beliebiger Basis:
+  $$\log(2\cdot{}8^{x-1}) = \log(7^{x+2})$$
+  Log Gesetz (Produktregel):
+  $$\log(2) + \log(8^{x-1}) = \log(7^{x+2})$$
+  Log Gesetz (Potenzregel):
+  $$\log(2) + (x-1)\cdot{}\log(8) = (x+2)\cdot{}\log(7)$$
+  ausmultiplizieren
+  $$\log(2) + \log(8)\cdot{}x-\log(8) = \log(7)\cdot{}x+2\cdot{}\log(7)$$
+  und $x$ auf eine Seite bringen
+  $$\log(8)\cdot{}x-\log(7)\cdot{}x = 2\cdot{}\log(7)+\log(8)-\log(2)$$
+  ausklammern
+  $$x\cdot{}(\log(8)-\log(7)) = 2\cdot{}\log(7)+\log(8)-\log(2)$$
+  und durch die Klammer $(\log(8)-\log(7))$ teilen
+  $$x = \frac{2\cdot{}\log(7)+\log(8)-\log(2)}{\log(8)-\log(7)} \approx 39.53$$
+
+  }%% END TALS
+}%% END TALS
 
 \GESO{\TNT{14}{
       1. Zuerst die Summen in den Exponenten wegbringen:
@@ -88,20 +109,22 @@ $$\LoesungsRaumLang{x = \log_5(32) = \frac{\lg(32)}{\lg(5)}}$$
   $$8^{x-1}=7^{x+2}$$
 \end{rezept}}%% END GESO
 
-\TNT{14}{
+\GESO{\TNT{14}{
   Erst mal auf beiden Seiten logarithmieren, mit einem Logarithmus zu beliebiger Basis:
   $$\log(8^{x-1})=\log(7^{x+2})$$
   Log Gesetz:
   $$(x-1)\cdot{}\log(8)=(x+2)\cdot{}\log(7)$$
   ausmultiplizieren
-  $$\log(8)x-\log(8)=\log(7)x+2\log(7)$$
+  $$\log(8)\cdot{}x-\log(8)=\log(7)\cdot{}x+2\cdot{}\log(7)$$
   und $x$ auf eine Seite bringen
-  $$\log(8)x-\log(7)x = 2\log(7)+\log(8)$$
+  $$\log(8)\cdot{}x-\log(7)\cdot{}x = 2\cdot{}\log(7)+\log(8)$$
   ausklammern
-  $$x(\log(8)-\log(7)) = 2\log(7)+\log(8)$$
+  $$x\cdot{}(\log(8)-\log(7)) = 2\cdot{}\log(7)+\log(8)$$
   und durch die Klammer $(\log(8)-\log(7))$ teilen
-  $$x = \frac{2\log(7)+\log(8)}{\log(8)-\log(7)}\approx 44.718$$
+  $$x = \frac{2\cdot{}\log(7)+\log(8)}{\log(8)-\log(7)}\approx 44.718$$
 }%% END TNT
+}%% END GESO
+
 
 \GESO{Siehe auch \cite{marthaler21} Seite 200 im roten Kasten.}
 \newpage
