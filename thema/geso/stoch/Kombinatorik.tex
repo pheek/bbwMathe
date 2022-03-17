@@ -30,14 +30,14 @@ Wie viele Variationen gibt es im ganzen für dieses Zahlenschloss?
 
 \bbwCenterGraphic{5cm}{geso/stoch/img/zahlenschloss.jpg}
 
-\TNT{4.8}{
+\TNT{7.2}{
 Jeder Ring hat 6 Möglichkeiten. Somit habe ich am 1. Ring sechs
 Varianten. Für jede dieser Varianten habe ich für den 2. Ring auch
 sechs Varianten. Insgesamt also
 
-$n$ = Anzahl Elemente der Auswahl (hier 6 Ziffern)
+$n$ = Anzahl Objekte zur Auswahl; diese müssen nicht unbedingt gewählt werden (hier 6 Ziffern)
 
-$k$ = Anzahl geordnete auszuwählende Elemente (hier 4 Ringe)
+$k$ = Vorgegebene Anzahl geordnete auszuwählende Objekte (hier 4, weil es 4 Ringe hat)
 
 $N$ = Anzahl Variationen
 
@@ -45,15 +45,15 @@ $$N = n^k = 6^4$$
 }
 
 Dieses Experiment entspricht im Urnenmodell dem...
-\begin{gesetz}{...Ziehen mit Zurücklegen}{}
-Beim Urnenmodell \textbf{«Ziehen mit Zurücklegen»} kann jeder Zug unabhängig vom
+\begin{gesetz}{...Ziehen \textbf{mit} Zurücklegen.}{}
+Bei diesem Urnenmodell kann jeder Zug unabhängig vom
 vorangehenden wieder alle Werte annehmen. Die \textbf{Reihenfolge} der gewählten Kugeln ist hier \textbf{wesentlich}. Für $k$ Züge aus genau $n$
 Kugeln, die alle verschieden sind, gibt es $N$ Möglichkeiten:
 $$N = n^k$$
 \end{gesetz}
 
 \begin{definition}{Variation}{}\index{Variation}
-Eine \textbf{Variation} ist eine geordnete Stichprobe.
+Eine \textbf{Variation} ist eine \textbf{geordnete} Stichprobe.
 \end{definition}
 \newpage
 
@@ -115,6 +115,8 @@ Plätzen...
 
 \TNT{3.2}{120 = 5!\vspace{30mm}}
 \newpage
+
+
 \subsubsection{Fakultät als Operation}\index{Fakultät}
 \TRAINER{Youtube Video als Vorbereitung MatheMai (S. Wiki):\\\texttt{https://www.youtube.com/watch?v=cVCBNVDav3U}}
 
@@ -142,8 +144,9 @@ gilt $n!$ = Anzahl mögliche Sitzordnungen.
 \vspace{32mm}
 }
 
-\begin{gesetz}{}{}
-Im Urnenmodell entspricht die Fakultät einer Urne mit $n$ Kugeln, die
+Dies entspricht im Urnenmodell dem ...
+\begin{gesetz}{...Ziehen \textbf{ohne} Zurücklegen.}{}
+In diesem Urnenmodell entspricht die Fakultät einer Urne mit $n$ Kugeln, die
 alle verschieden sind. Alle $n$ Kugeln werden gezogen. Wie viele
 Reihenfolgen sind möglich?
 $$N = n\cdot{} (n-1) \cdot{} (n-2) \cdot{} (n-3) \cdot{}
@@ -188,8 +191,8 @@ $$N=10\cdot{}9\cdot 8\cdot 7\cdot 6\cdot 5 = \frac{10\cdot 9\cdot 8\cdot 7\cdot 
 Oder als Formel:
 \begin{gesetz}{Ohne Zurücklegen / Reihenfolge wesentlich}{}
 Es seien
-$n = $ Anzahl Elemente der Auswahl (oben die Anzahl der Bücher)\\
-$k = $ Anzahl auszuwählende geordnete Elemente (die Anzahl Plätze im Regal)\\
+$n = $ Anzahl Objekte der Auswahl (oben die Anzahl der Bücher), ev. nicht jedes wird gewählt\\
+$k = $ Anzahl auszuwählende geordnete Objekte (die Anzahl Plätze im Regal, jeder Regalplatz wird besetzt)\\
 $N = $ Anzahl der Möglichkeiten\\
 
 $$N =\frac{n!}{(n-k)!}$$
@@ -204,11 +207,11 @@ Veranschaulichung (2 aus 5):
 15 & 25 & 35 & 45 & 54\\
 \end{tabular}
 
-Das sind fünf Blöcke mit je vier Elementen = $5\cdot{}4 = \frac{5!}{(5-2)!}$.
+Das sind fünf Blöcke mit je vier Objekten = $5\cdot{}4 = \frac{5!}{(5-2)!}$.
 \newpage
 
 \begin{bemerkung}{}{}
-Wenn wir alle $n$ Elemente geordnet auswählen, so erhalten wir
+Wenn wir alle $n$ Objekte geordnet auswählen, so erhalten wir
 $\frac{n!}{(n-n)!} = n!$, was dem bereits bekannten Spezialfall der \textbf{Permutation}
 entspricht.
 \end{bemerkung}
@@ -225,13 +228,12 @@ werden\footnote{Die Taste muss dabei drei Mal gedrückt werden!}.
 }%%% end GESO
 
 \begin{gesetz}{Variation ohne Wiederholung}{}
-Bei $n$ Elementen zur Auswahl und $k$ ausgewählten geordneten
-Elementen, ist immer
+Bei $n$ Objekten zur Auswahl und $k$ geordnet ausgewählten Objekten davon, ist immer
 $$n \ge{} k.$$
 \end{gesetz}
 \newpage
 
-\subsubsection{Referenzaufgaben}
+\subsubsection{Freie Plätze?}
 
 Wie viele Möglichkeiten hat eine Klasse mit $n$ Lernenden, sich auf
 $n+1$ Plätze zu verteilen?
@@ -242,7 +244,7 @@ Anzahl der Möglichen Sitzordnungen = Fakultät der leeren Plätze = $(n+1)!$.}
 
 Wie viele Sitzordnungen sind möglich, wenn es zwei oder mehr freie Plätze gibt?
 
-\TNT{5.2}{Hier gibt es grundsätzlich zwei Betrachtungsweisen.
+\TNT{8}{Hier gibt es grundsätzlich zwei Betrachtungsweisen.
 
 a) Wir stellen uns vor, dass wir $n$ Plätze haben. Davon bleiben $f$
 frei. Nun zählen wir alle Schüler und die ``Phantomschüler'' zusammen, das ergibt
@@ -353,7 +355,7 @@ Beantworten Sie die folgenden Fragestellungen:
 
 \TNT{1.6}{10\vspace{10mm}}
 
-\item Suchen Sie zu zweit für jede «Dreiergruppe» der Familie G. eine
+\item (optional) Suchen Sie zu zweit für jede «Dreiergruppe» der Familie G. eine
 treffende Bezeichnung.
 
 \TNT{4.4}{
@@ -370,37 +372,47 @@ treffende Bezeichnung.
   \vspace{30mm}
 }% END TNT
 
-\item Wie viele ``Teilmengen'', nicht nur mit drei Elementen, gibt es in der
-fünfköpfigen Familie im Ganzen?\LoesungsRaum{ $2^5=32$}
-\item Wie viele Teilmengen wären möglich in einer sechsköpfigen,
+\item (optional) Wie viele ``Teilmengen'', nicht nur mit drei Personen, gibt es in der
+  fünfköpfigen Familie im Ganzen?
+  \TNT{4}{$$N=2^5=32$$
+    
+    Entweder durchzählen: 0 oder alle gewählt: je eine Variante, 1 oder 4 gewählt: je 5 Varianten oder 3 oder 2 gewählt: je 10 Varianten
+
+    Oder folgende Überlegung (Variation mit Wiederholung): Für jedes Familienmitglied hat es zwei Optionen a) ``dabei'', b) ``nicht dabei'' Somit haben wir $2^5$ Variationen ($k=5$ für jedes Familienmiglied muss ich die Entscheidung treffen. und $n=2$ die Entscheidungen ``dabei'', ``nicht dabei'' müssen aber nicht unbedingt beide vorkommen.
+  }%% END TNT
+
+\item (optional) Wie viele Teilmengen wären möglich in einer sechsköpfigen,
 bzw. siebenköpfigen Familie? (6köpfig: \LoesungsRaum{$2^6=64$};
 7köpfig: \LoesungsRaum{$2^7=128$})
-\end{itemize}
 
-Die Anzahl der Möglichkeiten, drei Elemente aus einer Menge mit total
-fünf Elementen auszuwählen, wird in der Mathematik mit dem
+\end{itemize}
+\newpage
+
+
+Die Anzahl der Möglichkeiten, drei Objekte aus einer Menge mit total
+fünf Objekten auszuwählen, wird in der Mathematik mit dem
 Binomialkoeffizienten angegeben:
 
-$${5\choose 3} = 10$$
+\TNT{2}{$$N={5\choose 3} = 10$$} %% END TNT
 
 Berechnet wird dies mit der Fakultät (Anzahl der Permutationen), indem
-alle fünf Elemente permutiert werden. Wir erhalten so zu viele
+alle fünf Objekte permutiert werden. Wir erhalten so zu viele
 Möglichkeiten. Wir dividieren die Zahl durch die Anzahl aller Permutationen der
 gewählten Personen, aber auch durch die Anzahl aller Permutationen der
 nicht gewählten Personen:
 
-$${5\choose 3} = \frac{5!}{3!\cdot{} 2!}$$
+\TNT{2}{$$n={5\choose 3} = \frac{5!}{3!\cdot{} 2!}$$}%% END TNT
 \newpage
 
 \begin{definition}{Kombination}{}\index{Kombination!Definition}
 Eine \textbf{Kombination} ist eine \textbf{un}geordnete Stichprobe.
 \end{definition}
 
-Wenn die Reihenfolge der Elemente keine Rolle spielt, gilt ganz
+Wenn die Reihenfolge der Objekte keine Rolle spielt, gilt ganz
 allgemein:
 
-Die Anzahl der Möglichkeiten, $k$ Elemente aus einer Grundgesamtheit
-von $n$ Elementen auszuwählen, ist gleich
+Die Anzahl der Möglichkeiten, $k$ Objekte aus einer Grundgesamtheit
+von $n$ Objekten auszuwählen, ist gleich
 
 \begin{definition}{Binomialkoeffizient}{}\index{Binomialkoeffizient!Definition}
 $${n\choose k} = \frac{n!}{k!(n-k)!}$$
@@ -423,10 +435,10 @@ berechnet werden.
 
 
 \begin{bemerkung}{}{}
-Zur Begründung: Stellen Sie die $n$ Elemente in eine Reihe. Dazu gibt
+Zur Begründung: Stellen Sie die $n$ Objekte in eine Reihe. Dazu gibt
 es $n!$ Möglichkeiten. Nun dividieren wir die Vertauschungen der
-gewählten Elemente ($k!$) und die Vertauschungen der nicht gewählten
-Elemente $(n-k)!$ davon weg, es bleibt $\frac{n!}{k!(n-k)!}$.
+gewählten Objekte ($k!$) und die Vertauschungen der nicht gewählten
+Objekte $(n-k)!$ davon weg, es bleibt $\frac{n!}{k!(n-k)!}$.
 \end{bemerkung}
 
 \begin{gesetz}{}{}
@@ -437,9 +449,9 @@ Kugeln ist hier nicht relevant.
 \newpage
 
 \subsubsection{Referenzaufgabe Euromillions}
-Beim Glücksspiel «Euromillions» werden fünf aus 50 Zahlen und zwei aus zwölf Sternen angekreuzt. Auf wie viel Arten ist dies Möglich?
+Beim Glücksspiel «Euromillions» werden fünf aus 50 Zahlen und zwei aus zwölf Sternen angekreuzt. Auf wie viel Arten ist dies möglich?
 
-\TNT{2.4}{${50 \choose 5} \cdot {12 \choose 2} = 139\,838\,160$}
+\TNT{2.4}{${50 \choose 5} \cdot {12 \choose 2} = 139\,838\,160$\vspace{2cm}}
 
 \subsection{Zusammenfassung}
 \bbwCenterGraphic{16cm}{geso/stoch/img/KombinatorikRLP.pdf}
