@@ -19,34 +19,35 @@
 \GESO{(\cite{marthaler21}       S.322 (Kap. 19))}
 \newpage
 
+\subsection{Punkte einsetzen}
+Wie bei den linearen Funktionen oder bei den Potenzfunktionen können auch Exponentialfunktionen gefunden werden, wenn bereits Punkte auf dem Graphen bekannt sind:
 
-\subsection{Verschiebung und Streckung}
+\textbf{Referenzaufgabe}
 
-Eine Verschiebung der Exponentialfunktion $y=b\cdot{}a^x$ in der Zeit ($x$-Richtung) kann auch in Form einer Veränderung der Startfaktors $b$ umgeschrieben werden.
+Finden Sie die Parameter $a$ und $b$ der Exponentialfunktion
+$$f: y=b\cdot{}a^x$$
+wenn Sie wissen, dass die Funktion durch die Punkte $P=(2|4)$ und $Q=(-1|2)$ verläuft:
 
-Verschieben wir \zB $$y=2^x$$ um fünf Einheiten nach rechts, so liest sich die neue Funktionsgleichung wie folgt:
-$$y=2^{x-5}.$$
+\TNT{14}{
+  Zunächst wie immer die Punkte in die Gleichung einsetzen:
 
-(Zeichnen Sie in \texttt{geogebra.org} a) $y=2^x$ und b) $y=2^{x-5}$.)
+  \gleichungZZ{4}{b\cdot{}a^2}{2}{b\cdot{}a^{-1}}
 
-Dies kann jedoch auch umgeschrieben werden:
+  Einsetzverfahren: Zum Beiaspiel aus der ersten Gleichung das $b$ ermitteln...
+  $$b = \frac4{a^2} \hspace{2cm} (I)$$
+  ... und in die zweite Gleichung einsetzen:
+  $$2 = \frac4{a^2} \cdot{} a^{-1}$$
+  $$2 = 4\cdot{}a^{-3}$$
+  $$1 = 2\cdot{}a^{-3} | \cdot{} a^3$$
+  $$a^3 = 2| \sqrt[3]{}$$
+  $$a = \sqrt[3]2$$
+  Dies setzen wir noch in $(I)$ ein:
+  $$b = \frac4{a^2} = \frac4{(\sqrt[3]{a})^2} \approx 2.52$$
+  Ergo: $$f(x) = b\cdot{}a^x = \frac4{(\sqrt[3]{a})^2}  \cdot{} \left(\sqrt[3]2\right)^x$$
+}
 
-$$2^{x-5} = 2^x \cdot{} 2^{-5} = 2^{-5} \cdot{} 2^x = \frac{1}{2^5} \cdot{} 2^x =
-\frac{1}{32}\cdot{}2^x$$
 
-\bbwCenterGraphic{8cm}{allg/funktionen/img/exp/verschiebung_gleich_streckung.png}
-Bildlegende: Eine Verschiebung ($x$-Richtung) der Exponentialfunktion entspricht einer Stauchung ($y$-Richtung) der selben Exponentialfunktion.
-
-\TALS{Es gilt hier $$a^{x-b}=\frac{a^x}{k}$$ mit
-$k=a^b$ und mit $b=\log_a(k)$.}
-
-
-\subsection*{Aufgaben}
-\TALSAadB{215ff}{809-830}
-\GESOAadB{335ff}{11. a) b), 15. a) b) [Zeichnen mit \texttt{geogebra.org}], 17. a) b) e), 22. a) b), 23. d), 25. a) b)}
 \newpage
-
-
 
 
 \subsection{Basiswechsel}
@@ -74,7 +75,7 @@ Um wie viel nehmen sie ...
 \textbf{Lösungen}
 
 @ 1.: $\tau_2=15$:
-\TNT{3.6}{$2^\frac15 = a_2^\frac1{15}$ Nun auf beiden Seiten ``hoch
+\TNT{3.2}{$2^\frac15 = a_2^\frac1{15}$ Nun auf beiden Seiten ``hoch
   15'' und somit
 
   $a_2 = (2^{\frac15})^{15} = 2^3 = 8$.
@@ -82,7 +83,7 @@ Um wie viel nehmen sie ...
 Ergo $b\cdot{}2^\frac{t}5 = b\cdot{} 8^\frac{t}{15}$}
 
 @ 2.: $\tau_2=7$:
-\TNT{3.6}{$2^\frac15 = a_2^\frac1{7}$ Nun auf beiden Seiten ``hoch
+\TNT{3.2}{$2^\frac15 = a_2^\frac1{7}$ Nun auf beiden Seiten ``hoch
   7'' und somit
 
   $a_2 = (2^{\frac15})^{7} = 2^{\frac75} \approx 2.639$.
@@ -90,7 +91,7 @@ Ergo $b\cdot{}2^\frac{t}5 = b\cdot{} 8^\frac{t}{15}$}
 Ergo $b\cdot{}2^\frac{t}5 \approx b\cdot{} 2.639^\frac{t}{7}$}
 
 @ 3.: $a_2 = 3$ (verdreifachen):
-\TNT{4.4}{$2^\frac15 = 3^\frac{1}{\tau_2}$ (Definition Logarithmus):
+\TNT{4}{$2^\frac15 = 3^\frac{1}{\tau_2}$ (Definition Logarithmus):
 
   $\frac1{\tau_2} = \log_3\left(2^\frac15\right)$
 
@@ -102,12 +103,17 @@ Also: Sie verdreifachen sich ca. alle 8 Tage.
 }%% end TNT
 
 @ 4.: $a^\frac{t}5 = e^{m\cdot{}t}$ (Basis $e$):
-\TNT{5.2}{
+\TNT{4.8}{
   $2^\frac15 = e^{m}$ (beidseitig $\ln()$):
 
   $\ln(2^\frac15) = m\cdot \ln(e) = m\cdot 1 = m \approx 0.1386$ und somit:
   $$f(t) \approx b\cdot{} e^{0.1386\cdot{} t} \approx b\cdot{}2^\frac{t}5$$
 }%% END TNT
+
+
+\subsection*{Aufgaben}
+\TALSAadB{215ff}{809-830}
+\GESOAadB{335ff}{11. a) b), 15. a) b) [Zeichnen mit \texttt{geogebra.org}], 17. a) b) e), 22. a) b), 23. d), 25. a) b)}
 
 \newpage
 
@@ -133,8 +139,11 @@ Es gilt:
   Beobachtungsintervall $\tau_2$ nach dem Basiswechsel\\
   $e=$ Eulersche Konstante (2.718...)\\
   \hrule
+  \vspace{3mm}
   $a_2 = \left(a^\frac1\tau\right)^{\tau_2}$\\
+  \vspace{3mm}
   $\tau_2=1 : \left(\log_{a_2}\left(a^\frac1\tau\right)\right)$\\
+  \vspace{3mm}
   $m=\ln\left(a^\frac1\tau\right) =  \ln\left(a_2^\frac1{\tau_2}\right)$\\
 \end{gesetz}
 
@@ -147,21 +156,33 @@ Es gilt:
   Dabei ist $m$ die Tangentensteigung an die Funktion $$f(t) = e^{mt}$$
   im Punkt $$\left(0\middle|1\right).$$
   \end{bemerkung}
+
 \newpage
 
-\subsubsection{Beispiel: Wissenschaftliche Publikation (optional)}
-In einem wissenschaftlichen Journal ist angegeben, dass eine Population annähernd folgendes Verhalten an den Tag lege [$t$ = Tage]:
-$$y = 5.6\cdot{} e^{\frac{t}{4.1}}$$
 
-Berechnen Sie die tägliche Zunahme $a$ und geben Sie somit die Funktionsgleichung ohne Bruch im Exponenten an:
+\subsection{Verschiebung und Streckung \GESO{(optional)}}
 
-$$y = 5.6\cdot{} e^{\frac{t}{4.1}} = b\cdot{}a^t \approx \LoesungsRaum{5.6} \cdot{} \LoesungsRaum{1.2762}^t$$
+Eine Verschiebung der Exponentialfunktion $y=b\cdot{}a^x$ in der Zeit ($x$-Richtung) kann auch in Form einer Veränderung der Startfaktors $b$ umgeschrieben werden.
 
-\TNT{6.4}{Tipp: Setzen Sie $t=0$ und $t=1$ ein. $$a = e^{\frac{1}{4.1}}$$
-\vspace{3cm}}
+Verschieben wir \zB $$y=2^x$$ um fünf Einheiten nach rechts, so liest sich die neue Funktionsgleichung wie folgt:
+$$y=2^{x-5}.$$
+
+(Zeichnen Sie in \texttt{geogebra.org} a) $y=2^x$ und b) $y=2^{x-5}$.)
+
+Dies kann jedoch auch umgeschrieben werden:
+
+$$2^{x-5} = 2^x \cdot{} 2^{-5} = 2^{-5} \cdot{} 2^x = \frac{1}{2^5} \cdot{} 2^x =
+\frac{1}{32}\cdot{}2^x$$
+
+\bbwCenterGraphic{8cm}{allg/funktionen/img/exp/verschiebung_gleich_streckung.png}
+Bildlegende: Eine Verschiebung ($x$-Richtung) der Exponentialfunktion entspricht einer Stauchung ($y$-Richtung) der selben Exponentialfunktion.
+
+\TALS{Es gilt hier $$a^{x-b}=\frac{a^x}{k}$$ mit
+$k=a^b$ und mit $b=\log_a(k)$.}
+
 \newpage
 
-\subsubsection{Bedeutung der Zahl $e$ (optional)}
+\subsection{Bedeutung der Zahl $e$ (optional)}
 
 \paragraph{$45\degre$ auf der $y$-Achse:}
 Die E-Funktion $y=e^x$ hat die $45\degre$-Steigung genau auf der $y$-Achse; sie beginnt im Gegensatz zu anderen Exponentialfunktionen genau bei $x=0$ so «richtig zu wachsen»\TALS{\footnote{Wenn wir in einem Punkt $x$ den Wert der $e$-Funktion ($e^x$) betrachten, so ist ihr Funktionswert exakt gleich der Steigung einer Tangente bei diesem $x$-Wert.}}.
@@ -189,5 +210,17 @@ Punkt $(1|e^1) = (1|e)$ genau $e$.
 
 }%% END TALS
 
+\newpage
+
+\subsubsection{Beispiel: Wissenschaftliche Publikation (optional)}
+In einem wissenschaftlichen Journal ist angegeben, dass eine Population annähernd folgendes Verhalten an den Tag lege [$t$ = Tage]:
+$$y = 5.6\cdot{} e^{\frac{t}{4.1}}$$
+
+Berechnen Sie die tägliche Zunahme $a$ und geben Sie somit die Funktionsgleichung ohne Bruch im Exponenten ($\tau = 1$) und mit dem neu berechneten $a$ in der Basis an:
+
+$$y = 5.6\cdot{} e^{\frac{t}{4.1}} = b\cdot{}a^t \approx \LoesungsRaum{5.6} \cdot{} \LoesungsRaum{1.2762}^t$$
+
+\TNT{8}{Tipp: Setzen Sie $t=0$ und $t=1$ ein. $$a = e^{\frac{1}{4.1}}$$
+\vspace{3cm}}
 
 \newpage
