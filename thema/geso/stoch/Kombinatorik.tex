@@ -332,11 +332,11 @@ gleiche Ziffern vorkommen (s. obige Aufgabe). Somit verbleiben $5040-10-360=4670
 \subsection{Kombinationen}\index{Kombination}
 Im Folgenden betrachten wir die Familie G. aus W.:
 \begin{itemize}
-\item Mutter, klein, dunkelhaarig
-\item Vater, groß, blond
-\item 1. Kind: Tochter, groß, blond, Teenager
-\item 2. Kind: Sohn, klein, blond, Teenager
-\item 3. Kind: Tochter, klein, dunkelhaarig (noch kein Teenager)
+\item Mutter, klein, dunkelhaarig, ...
+\item Vater, groß, blond, ...
+\item 1. Kind: Tochter, groß, blond, Teenager, ...
+\item 2. Kind: Sohn, klein, blond, Teenager, ...
+\item 3. Kind: Tochter, klein, dunkelhaarig (noch kein Teenager), ...
 \end{itemize}
 
 Die Familie hat gemerkt, dass es meist nicht nötig ist, alle Namen
@@ -348,17 +348,10 @@ aufzuzählen, wenn eine Teilmenge der Familie angesprochen werden soll:
 \item ...
 \end{itemize}
 
-\newpage
-Beantworten Sie die folgenden Fragestellungen:
-\begin{itemize}
-\item Wie viele ``Teilmengen'', solcher \textbf{Kombinationen}, bestehend aus genau \textbf{drei} Familienmitgliedern sind möglich?
 
-\TNT{1.6}{10\vspace{10mm}}
+Suchen Sie für einige weitere «Dreiergruppen» der Familie G. eine treffende Bezeichnung:
 
-\item (optional) Suchen Sie zu zweit für jede «Dreiergruppe» der Familie G. eine
-treffende Bezeichnung.
-
-\TNT{4.4}{
+\TNT{6}{
   die drei Ältesten,
   Mutter und Männer (M\&Ms),
   keine Teenager,
@@ -371,22 +364,13 @@ treffende Bezeichnung.
   Vater und Teenager
   \vspace{30mm}
 }% END TNT
-
-\item (optional) Wie viele ``Teilmengen'', nicht nur mit drei Personen, gibt es in der
-  fünfköpfigen Familie im Ganzen?
-  \TNT{4}{$$N=2^5=32$$
-    
-    Entweder durchzählen: 0 oder alle gewählt: je eine Variante, 1 oder 4 gewählt: je 5 Varianten oder 3 oder 2 gewählt: je 10 Varianten
-
-    Oder folgende Überlegung (Variation mit Wiederholung): Für jedes Familienmitglied hat es zwei Optionen a) ``dabei'', b) ``nicht dabei'' Somit haben wir $2^5$ Variationen ($k=5$ für jedes Familienmiglied muss ich die Entscheidung treffen. und $n=2$ die Entscheidungen ``dabei'', ``nicht dabei'' müssen aber nicht unbedingt beide vorkommen.
-  }%% END TNT
-
-\item (optional) Wie viele Teilmengen wären möglich in einer sechsköpfigen,
-bzw. siebenköpfigen Familie? (6köpfig: \LoesungsRaum{$2^6=64$};
-7köpfig: \LoesungsRaum{$2^7=128$})
-
-\end{itemize}
 \newpage
+
+
+
+Wie viele ``Teilmengen'', solcher \textbf{Kombinationen}, bestehend aus genau \textbf{drei} Familienmitgliedern sind möglich?
+
+\TNT{2.4}{10\vspace{10mm}}
 
 
 Die Anzahl der Möglichkeiten, drei Objekte aus einer Menge mit total
@@ -401,7 +385,7 @@ Möglichkeiten. Wir dividieren die Zahl durch die Anzahl aller Permutationen der
 gewählten Personen, aber auch durch die Anzahl aller Permutationen der
 nicht gewählten Personen:
 
-\TNT{2}{$$n={5\choose 3} = \frac{5!}{3!\cdot{} 2!}$$}%% END TNT
+\TNT{2}{$$N={5\choose 3} = \frac{5!}{3!\cdot{} 2!}$$}%% END TNT
 \newpage
 
 \begin{definition}{Kombination}{}\index{Kombination!Definition}
@@ -434,24 +418,59 @@ Wählen Sie für den Binomialkoeffizienten ``nCr'', nicht ``nPr''.}
 berechnet werden.
 
 
-\begin{bemerkung}{}{}
-Zur Begründung: Stellen Sie die $n$ Objekte in eine Reihe. Dazu gibt
-es $n!$ Möglichkeiten. Nun dividieren wir die Vertauschungen der
-gewählten Objekte ($k!$) und die Vertauschungen der nicht gewählten
-Objekte $(n-k)!$ davon weg, es bleibt $\frac{n!}{k!(n-k)!}$.
-\end{bemerkung}
 
 \begin{gesetz}{}{}
 Im Urnenmodell entspricht der Binomialkoeffizient dem Ziehen von $k$ Kugeln aus einer
 Urne mit $n$ verschiedenen Kugeln. Die Reihenfolge der gewählten
 Kugeln ist hier nicht relevant.
 \end{gesetz}
+
+
+\begin{bemerkung}{}{}
+Zur Begründung: Stellen Sie die $n$ Objekte in eine Reihe. Dazu gibt
+es $n!$ Möglichkeiten. Nun dividieren wir die Vertauschungen der
+gewählten Objekte ($k!$) und die Vertauschungen der nicht gewählten
+Objekte $(n-k)!$ davon weg, es bleibt $\frac{n!}{k!(n-k)!}$.
+\end{bemerkung}
+\newpage
+
+\subsection{Optional: Name Binomialkoeffizient}
+
+
+ Wie viele ``Teilmengen'', nicht nur mit drei Personen, gibt es in obiger
+  fünfköpfigen Familie im Ganzen?
+  \TNT{4}{$$N=2^5=32$$
+    
+    Entweder durchzählen: 0 oder alle gewählt: je eine Variante, 1 oder 4 gewählt: je 5 Varianten oder 3 oder 2 gewählt: je 10 Varianten
+
+    Oder folgende Überlegung (Variation mit Wiederholung): Für jedes Familienmitglied hat es zwei Optionen a) ``dabei'', b) ``nicht dabei'' Somit haben wir $2^5$ Variationen ($k=5$ für jedes Familienmiglied muss ich die Entscheidung treffen. und $n=2$ die Entscheidungen ``dabei'', ``nicht dabei'' müssen aber nicht unbedingt beide vorkommen.
+  }%% END TNT
+
+
+  
+(optional) Wie viele Teilmengen wären möglich in einer sechsköpfigen,
+  bzw. siebenköpfigen Familie?
+
+\TNT{3.2}{$2^6=64$ bzw. $2^7=128$}
+
+
+\begin{bemerkung}{Binomialkoeffizient}{}
+  Jedes Objekt hat zwei Möglichkeiten, entweder es wird in die besagte
+  Menge aufgenommen, oder er wird ausgeschlossen. Hier haben wir also
+  $2$ Möglichkeiten für jedes der Objekte.
+  
+  Dies ergibt für $n$ Objekte insgesamt $2^n$ Möglichkeiten.
+
+  Somit gilt für eine Anzahl von $n$ Objekten, dass es $2^n$ mögliche
+  Teilmengen gibt.
+\end{bemerkung}
+
 \newpage
 
 \subsubsection{Referenzaufgabe Euromillions}
 Beim Glücksspiel «Euromillions» werden fünf aus 50 Zahlen und zwei aus zwölf Sternen angekreuzt. Auf wie viel Arten ist dies möglich?
 
-\TNT{6}{${50 \choose 5} \cdot {12 \choose 2} = 139\,838\,160$\vspace{2cm}}
+\TNT{10}{${50 \choose 5} \cdot {12 \choose 2} = 139\,838\,160$\vspace{2cm}}
 \newpage
 
 \subsection{Zusammenfassung}

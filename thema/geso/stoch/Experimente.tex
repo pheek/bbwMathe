@@ -10,7 +10,7 @@ Nach Pierre-Simon Laplace (1749-1827).
 
 Ein fairer Spielwürfel wird geworfen. Jede Seite hat genau die selbe
 Wahrscheinlichkeit. Wie groß ist nun die Wahrscheinlichkeit, mit einem
-Wurf eine Augensumme von mehr als vier zu werfen?
+Wurf eine größere Zahl als eine 4 zu werfen?
 
 \TNT{2.4}{Günstige Ereignisse: 5 und 6 (\textbf{zwei} Stück). Alle möglichen Ergebnisse: 1 bis 6 (\textbf{sechs} Stück). Wahrscheinlichkeit = $\frac{2}{6}=\frac13$}
 
@@ -300,7 +300,7 @@ erzielt. Dies nennen wir die kumulierte\footnote{«Kumulieren» kommt von
 $$P(E\le 17) = P(E=0) + P(E=1) + P(E=2) + ... + P(E=16) + P(E=17)$$
 
 Diese Summe
-$$P(X\le 17) = \sum_{k=0}^{17} {20 \choose k} \cdot 0.85^k \cdot 0.15^{20-k}$$
+$$P(X\le 17) = \LoesungsRaumLang{\sum_{k=0}^{17} {20 \choose k} \cdot 0.85^k \cdot 0.15^{20-k}}$$
 können wir anders schreiben und sofort mit dem
 Taschenrechner lösen:
 
@@ -314,8 +314,11 @@ bei
   Binomialcdf: SINGLE} dann $n=20$ bei $n$, $p=0.85$ bei $p$ und
 $k=17$ bei $x$ eintragen ($\approx 0.5951$).
 
+\begin{gesetz}{Kumulierte Wahrscheinlichkeit}{}
+  $$P(X < k) = \sum_{i=0}^k {n \choose i} \cdot{} p^i \cdot{} (1-p)^{n-i}$$
+  \end{gesetz}
 
-
+\newpage
 \subsection*{Aufgaben}
 
 \aufgabenfarbe{Kompendium: Kap. 5.7. Aufg. 36. a) b) und 37.}
