@@ -451,10 +451,47 @@ Kugeln ist hier nicht relevant.
 \subsubsection{Referenzaufgabe Euromillions}
 Beim Glücksspiel «Euromillions» werden fünf aus 50 Zahlen und zwei aus zwölf Sternen angekreuzt. Auf wie viel Arten ist dies möglich?
 
-\TNT{2.4}{${50 \choose 5} \cdot {12 \choose 2} = 139\,838\,160$\vspace{2cm}}
+\TNT{6}{${50 \choose 5} \cdot {12 \choose 2} = 139\,838\,160$\vspace{2cm}}
+\newpage
 
 \subsection{Zusammenfassung}
-\bbwCenterGraphic{16cm}{geso/stoch/img/KombinatorikRLP.pdf}
+%%\bbwCenterGraphic{16cm}{geso/stoch/img/KombinatorikRLP.pdf}
+$N = $
+Anzahl Möglichkeiten, um $\color{red}k$ Elemente aus total $\color{blue}n$ Elementen auszuwählen.
+
+\begin{tabular}{p{15mm}|p{80mm}|p{80mm}}
+& $$\textrm{\textbf{mit} Wiederholung}$$ $$\textrm{(= mit
+    Zurücklegen)}$$ & $$\textrm{\textbf{ohne}
+    Wiederholung}$$ $$\textrm{(= ohne Zurücklegen)}$$\\\hline
+
+%% Zeilentitel Variationen
+\rotatebox[origin=rT]{90}{\makecell{\textbf{Variation}\\Reihenfolge wesentlich}}
+&
+%% Formeln
+ \begin{center}{\fbox{$N={\color{blue}n}^{\color{red}k}$}}\end{center}
+ Bsp.: Anzahl Wörter der Länge
+ {\color{red}10}, die man aus {\color{blue}26} Buchstaben bilden kann: $${\color{blue}26}^{\color{red}10}
+ \approx 1.41 \cdot{} 10^{14}$$
+&
+ \begin{center}{\fbox{$N = \frac{{\color{blue}n}!}{({\color{blue}n}-{\color{red}k})!}$}}\end{center}
+ Bsp.: Anzahl Möglichkeiten, $\color{red}4$ Leute auf $\color{blue}
+ 10$ Sitzplätze zu verteilen.
+ $$\frac{{\color{blue}10}!}{({\color{blue}10}-{\color{red}4})!} = 5040$$
+
+ \\\hline
+
+%% Zeilentitel Kombinationen
+\rotatebox[origin=rT]{90}{\makecell{\textbf{Kombination}\\Reihenfolge irrelevant}}
+&
+%% Formeln
+ \begin{center}$N = {{\color{blue}n}+{\color{red}k}-1 \choose {\color{red}k}}$\end{center}
+ Bsp.: Anzahl Möglichkeiten, $\color{red}4$ Brote aus $\color{blue}10$ Sorten auszuwählen:
+ $${{\color{blue}10}+{\color{red}4}-1 \choose {\color{red}4}} = 715$$
+&
+ \begin{center}{\fbox{$N={{\color{blue}n} \choose {\color{red}k}}$}}\end{center}
+ Bsp.: Anzahl Möglichkeiten, $\color{red}4$ Karten aus {\color{blue}10} zu ziehen: $${{\color{blue}10} \choose {\color{red}4}} = 210$$
+ \end{tabular}
+
 
 \subsection*{Aufgaben}
 %%\aufgabenfarbe{Kompendium: Kap. 5.2 Aufg. 1 - 4}
