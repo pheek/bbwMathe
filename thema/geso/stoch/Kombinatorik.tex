@@ -472,7 +472,33 @@ Objekte $(n-k)!$ davon weg, es bleibt $\frac{n!}{k!(n-k)!}$.
 \subsubsection{Referenzaufgabe Euromillions}
 Beim Glücksspiel «Euromillions» werden fünf aus 50 Zahlen und zwei aus zwölf Sternen angekreuzt. Auf wie viel Arten ist dies möglich?
 
-\TNT{10}{${50 \choose 5} \cdot {12 \choose 2} = 139\,838\,160$\vspace{2cm}}
+\TNT{10}{${50 \choose 5} \cdot {12 \choose 2} =
+  139\,838\,160$
+
+  ..., denn jede der gewählten Zahlenkombinationen kann auch mit jeder
+  Stern-Kombination verwendet (also kombiniert) werden. Daher das
+  «Mal» ($\cdot$) im Resultat.
+}%% END TNT
+\newpage
+
+
+\subsection*{Aufgaben}
+%%\aufgabenfarbe{Kompendium: Kap. 5.2 Aufg. 1 - 4}
+
+\aufgabenfarbe{Berechnen Sie ${15\choose4} = $ \LoesungsRaum{1365}}
+
+\aufgabenfarbe{Begründen Sie, warum «5 aus 7» dasselbe ist, wie «2 aus
+  7»:}
+\TNT{2.8}{«5 aus 7» bedeutet auch, ich habe 2 \textbf{nicht}
+  ausgewählt.}
+
+\aufgabenfarbe{Auf wie viele Arten kann ich eine Delegation von drei
+  Klassendelegierten aus einer Klasse von 21 Schülerinnen
+  bzw. Schülern auswählen?}
+\TNT{2}{$21\choose3$ = 21 nCr 3 = 1330}
+
+
+\aufgabenfarbe{Kompendium S. 46: Kap. 5.5.1 Aufg. 11., 12., 13., 14.*}
 \newpage
 
 \subsection{Zusammenfassung}
@@ -480,7 +506,7 @@ Beim Glücksspiel «Euromillions» werden fünf aus 50 Zahlen und zwei aus zwöl
 $N = $
 Anzahl Möglichkeiten, um $\color{red}k$ Elemente aus total $\color{blue}n$ Elementen auszuwählen.
 
-\begin{tabular}{p{15mm}|p{80mm}|p{80mm}}
+\begin{tabular}{p{15mm}|p{75mm}|p{75mm}}
 & $$\textrm{\textbf{mit} Wiederholung}$$ $$\textrm{(= mit
     Zurücklegen)}$$ & $$\textrm{\textbf{ohne}
     Wiederholung}$$ $$\textrm{(= ohne Zurücklegen)}$$\\\hline
@@ -512,10 +538,4 @@ Anzahl Möglichkeiten, um $\color{red}k$ Elemente aus total $\color{blue}n$ Elem
  \begin{center}{\fbox{$N={{\color{blue}n} \choose {\color{red}k}}$}}\end{center}
  Bsp.: Anzahl Möglichkeiten, $\color{red}4$ Karten aus {\color{blue}10} zu ziehen: $${{\color{blue}10} \choose {\color{red}4}} = 210$$
  \end{tabular}
-
-
-\subsection*{Aufgaben}
-%%\aufgabenfarbe{Kompendium: Kap. 5.2 Aufg. 1 - 4}
-
-\aufgabenfarbe{Kompendium S. 46: Kap. 5.5.1 Aufg. 11., 12., 13., 14.*}
 \newpage
