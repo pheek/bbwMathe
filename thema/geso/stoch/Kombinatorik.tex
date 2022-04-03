@@ -35,9 +35,12 @@ Jeder Ring hat 6 Möglichkeiten. Somit habe ich am 1. Ring sechs
 Varianten. Für jede dieser Varianten habe ich für den 2. Ring auch
 sechs Varianten. Insgesamt also
 
-$n$ = Anzahl Objekte zur Auswahl; diese müssen nicht unbedingt gewählt werden (hier 6 Ziffern)
+$n$ = Anzahl Objekte zur Auswahl; diese müssen nicht unbedingt gewählt
+werden (hier 6 Ziffern): \textbf{Nicht jede Auswahlmöglichkeit muss
+  auch vorkommen!}
 
-$k$ = Vorgegebene Anzahl geordnete auszuwählende Objekte (hier 4, weil es 4 Ringe hat)
+$k$ = Vorgegebene Anzahl geordnete auszuwählende Objekte (hier 4, weil
+es 4 Ringe hat): \textbf{Jege der $k$ Positionen muss verwendet werden.}
 
 $N$ = Anzahl Variationen
 
@@ -133,7 +136,7 @@ Ihrem Rechner ist es die Taste \tiprobutton{ncrnpr}.
 
 Berechnen Sie die Fakultät von 3, 4, 5 und 20 mit dem Taschenrechner.
 
-\TNT{3.2}{\vspace{32mm}}
+\TNT{3.2}{$3! = 6; 4!=24; 5! = 120; 20! = 2.4329...\cdot{}10^{18}$\vspace{32mm}}
 
 Auf wie viele Arten können Sie sich als Klasse in Ihre Bänke
 verteilen? Machen Sie die Überlegung so, wie es aussehen würde, wenn es keine leeren Plätze gäbe.
@@ -186,7 +189,7 @@ Für das erste Buch haben wir zehn Möglichkeiten. Wenn das Buch da mal steht, h
 Schlussendlich bleiben $N$-Möglichkeiten:
 $$N=10\cdot{}9\cdot 8\cdot 7\cdot 6\cdot 5 = \frac{10\cdot 9\cdot
   8\cdot 7\cdot 6\cdot 5\cdot 4\cdot 3\cdot 2\cdot 1}{4\cdot 3\cdot
-  2\cdot 1} = \frac{10!}{4!} = 151200$$
+  2\cdot 1} = \frac{10!}{4!} = \frac{10!}{(10-6)!}151\,200$$
 \vspace{20mm}
 }%% END TNT
 
@@ -319,14 +322,14 @@ Ziffer maximal zweimal auftreten kann. Wie viele Varianten gibt es nun?}
 \TNT{2.4}{Es sind 9630 Varianten. Dies geht am einfachsten mit
 Abzählen. Von den Total 5040 Varianten fallen die zehn weg bei denen
 alle Ziffern gleich sind und ebenso fallen die 360 weg, bei denen drei
-gleiche Ziffern vorkommen (s. obige Aufgabe). Somit verbleiben $10000-10-360=9630$.
+gleiche Ziffern vorkommen (s. obige Aufgabe). Somit verbleiben
+$10000-10-360=9630$. (2. Rechenweg: Muster «XYZT» + «XYZZ» + «XXYY»
+und alle Vertauschungen: $10\cdot{}9\cdot{}8\cdot{}7 +
+10\cdot{}9\cdot{}8\cdot{}\frac{12}2 + 10\cdot{}9\cdot{}\frac62$)
 }
 
-
 \aufgabenfarbe{Kompendium: S. 46 Aufg. 16. b)}
-
 \newpage
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
@@ -387,7 +390,7 @@ Möglichkeiten. Wir dividieren die Zahl durch die Anzahl aller Permutationen der
 gewählten Personen, aber auch durch die Anzahl aller Permutationen der
 nicht gewählten Personen:
 
-\TNT{2}{$$N={5\choose 3} = \frac{5!}{3!\cdot{} 2!}$$}%% END TNT
+\TNT{2}{$$N={5\choose 3} = \frac{5!}{3!\cdot{} 2!}=10$$}%% END TNT
 \newpage
 
 \begin{definition}{Kombination}{}\index{Kombination!Definition}
@@ -409,7 +412,6 @@ Berechnen Sie gleich:
 \item $5\choose 3$\TRAINER{ = 10}
 \item $5\choose 2$ (begründe) \TRAINER{  = 10, denn 3 Auswählen ist gleich
 wie zwei nicht wählen!}
-\item Swiss LOTTO (ohne den Stern) ${42\choose 6}$ \TRAINER{$ = 5\,245\,786$}
 \end{itemize}
 
 
@@ -432,6 +434,46 @@ Urne mit $n$ verschiedenen Kugeln.
   Wiederholung).
 \end{itemize}
 \end{gesetz}
+\newpage
+
+\subsubsection{Begrüundung}
+Am Beispiel mit den fünf Personen kann man die Formel relativ gut
+erkennen:
+
+Es gibt insgesamt $5!$ Variationen, die fünf Personen in einer Reihe aufzustellen:
+\begin{tabular}{c|c}
+  AB&CDE\\
+  AB&CED\\
+  AB&DCE\\
+  AB&DEC\\
+  AB&ECD\\
+  AB&EDC\\\hline
+  AC&BDE\\
+  AC&BED\\
+  ... & ...\\\hline
+  BA&CDE\\
+  BA&CED\\
+  BA&DCE\\
+  ...&...\\\hline
+  ...&...\\\hline
+  ED&CBA
+\end{tabular}
+
+\TRAINER{
+Dabei ergeben aber viele Variationen genau die selbe Auswahl, denn die
+Reihenfolge soll ja bei diesen Kombinationen keine Rolle spielen.
+
+So haben wir für die Wahl von drei Personen \zB «CDE» aus ABCDE einerseits alle Variationen
+aus CDE ($=3!$) zu viel gezählt.
+
+Ebenso haben wir die Variationen aus AB ($=2!$) doppelt gezählt.
+}%% END TRAINER
+
+\noTRAINER{\vspace{2cm}}
+
+  Somit haben wir insgesamt:
+
+\TNT{2}{$$N ={5\choose 3} = {5\choose 2} = \frac{5!}{3!\cdot{}2!} = \frac{120}{6\cdot{}2}$$}%% END TNT
 
 
 \begin{bemerkung}{}{}
@@ -444,22 +486,42 @@ Objekte $(n-k)!$ davon weg, es bleibt $\frac{n!}{k!(n-k)!}$.
 
 \subsection{Optional: Name Binomialkoeffizient}
 
-
  Wie viele ``Teilmengen'', nicht nur mit drei Personen, gibt es in obiger
   fünfköpfigen Familie im Ganzen?
-  \TNT{4}{$$N=2^5=32$$
+  \TNT{1.2}{$$N=2^5=32$$}%% ENN TNT
+
+\textbf{Erklärung I:} Durchzählen:
     
-    Entweder durchzählen: 0 oder alle gewählt: je eine Variante, 1 oder 4 gewählt: je 5 Varianten oder 3 oder 2 gewählt: je 10 Varianten
+\TNT{2}{0 oder alle gewählt: je eine Variante, 1 oder 4 gewählt:
+je 5 Varianten oder 3 oder 2 gewählt: je 10 Varianten. Total also $32
+= 2^5$.}%% END TNT
 
-    Oder folgende Überlegung (Variation mit Wiederholung): Für jedes Familienmitglied hat es zwei Optionen a) ``dabei'', b) ``nicht dabei'' Somit haben wir $2^5$ Variationen ($k=5$ für jedes Familienmiglied muss ich die Entscheidung treffen. und $n=2$ die Entscheidungen ``dabei'', ``nicht dabei'' müssen aber nicht unbedingt beide vorkommen.
-  }%% END TNT
+\textbf{Erklärung II:} Zahlenschloss (Variation mit Wiederholung):
 
+Für jedes Objekt hat es zwei Optionen:``dabei'' (x) bzw. ``nicht dabei'' (-):
 
-  
-(optional) Wie viele Teilmengen wären möglich in einer sechsköpfigen,
-  bzw. siebenköpfigen Familie?
+\begin{tabular}{ccccc|c}
+A&B&C&D&E&$n$ ausgewählt \\\hline
+-&-&-&-&-&0\\
+x&-&-&-&-&1\\
+-&x&-&-&-&1\\
+-&-&x&-&-&1\\
+-&-&-&x&-&1\\
+-&-&-&-&x&1\\
+x&x&-&-&-&2\\
+x&-&x&-&-&2\\
+x&-&-&x&-&2\\
+\hline
+\hline
+x&x&x&-&-&3\\
+x&x&-&x&-&3\\
+x&x&-&-&x&3\\
+\hline \hline
+x&x&x&x&x&5\\\hline
+\end{tabular}
 
-\TNT{3.2}{$2^6=64$ bzw. $2^7=128$}
+Somit haben wir $2^5$ Variationen ($n=2; k=5$) für jedes Familienmiglied muss ich die Entscheidung treffen. und $n=2$ die Entscheidungen ``dabei'', ``nicht dabei'' müssen aber nicht unbedingt beide vorkommen.
+
 
 
 \begin{bemerkung}{Binomialkoeffizient}{}
@@ -502,6 +564,11 @@ Beim Glücksspiel «Euromillions» werden fünf aus 50 Zahlen und zwei aus zwöl
   Klassendelegierten aus einer Klasse von 21 Schülerinnen
   bzw. Schülern auswählen?}
 \TNT{2}{$21\choose3$ = 21 nCr 3 = 1330}
+
+\aufgabenfarbe{Swiss LOTTO (ohne den Stern): Auf wie viele Arten
+  können Sie den Swiss-LOTTO Schein ausfüllen? Sie müssen 6 Zahlen aus
+  42 möglichen Zahlen ankreuzen:}
+  \TNT{2.4}{${42\choose 6}$ \TRAINER{$ = 5\,245\,786$}}%% END TNT
 
 
 \aufgabenfarbe{Kompendium S. 46: Kap. 5.5.1 Aufg. 11., 12., 13., 14.*}
