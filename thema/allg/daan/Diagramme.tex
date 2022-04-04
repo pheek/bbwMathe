@@ -112,56 +112,6 @@ Umrechnungen:
 \newpage
 
 
-%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsubsection{Prozentuale Zunahme/Abnahme}\index{Zunahme!prozentual}\index{Abnahme!prozentual}\index{Prozent}\index{\%}
-Um die prozentuale Zunahme zu rechnen, muss immer von einem «hundert
-Prozent» ausgegangen werden. Bei einer Zunahme (bzw. Abnahme) wird in
-der Regel vom vorangegangenen Wert ausgegangen. Oft ist dieser Wert
-aber auch bereits in Prozenten angegeben. So ist bei der prozentualen
-Zunahme von der alten Prozentzahl auszugehen.
-
-Beispiele
-
-\begin{tabular}{|c|c|c|c|}
-  \hline
-  vorher  &  nachher & absolut   & prozentuale Änderung        \\
-  \hline
-  ({\color{blue}100\%}) &   ---    & ---       & ---                         \\
-  \hline
-  31 Stk. &  38 Stk. & +7 Stk.   & {\color{blue}22.6\%} Zunahme              \\
-  \hline
-  20 {\color{red}m}    &  22 {\color{red}m}    & + 2 {\color{red}m}     & {\color{blue}10 \%} Zunahme              \\
-  \hline
-  20 {\color{red}\%}   &  22 {\color{red}\%}   & + 2 {\color{red}\%}    & {\color{blue}10 \%} (relative, prozentuale) Zunahme              \\
-  \hline
-  38 \%   &  44\%    & +6\%      & {\color{blue}15.8\%} Zunahme              \\
-  \hline
-  87\%    &  23\%    & -64\%     &\TRAINER{73.6\% Abnahme!}    \\
-  \hline
-  6 \%    &  38\%    & +32\%     &\TRAINER{533.3\%(!) Zunahme} \\
-  \hline
-  9 \%    &  11\%    & \noTRAINER{\,\,\,\,\,}\TRAINER{2}\%     &\TRAINER{22.2...\% Zunahme} \\
-  \hline
-  52 \%   & \noTRAINER{\,\,\,\,\,\,} \TRAINER{42.64} \%    & \noTRAINER{\,\,\,\,\,\,}\TRAINER{-9.36}\%  & 18\% Abnahme\\
-  \hline
-  \noTRAINER{\,\,\,\,\,}\TRAINER{50} \%   & \noTRAINER{\,\,\,\,\,\,\,}\TRAINER{57}\% & +7\% & 14\% Zunahme\\
-  \hline
-\end{tabular}
-
-Formel zur Berechnung des Prozentsatzes ($p$), wenn die alte ($a$) und die
-neue ($n$) Menge bekannt ist. 
-
-\TRAINER{$$p = \LoesungsRaum{\frac{n-a}{a}\cdot{} 100\%} =
-  \LoesungsRaum{\left(\frac{n}{a}-1 \right) \cdot{} 100\%}$$}
-
-\noTRAINER{\mmPapier{3.6}}
-
-\TALS{\subsection*{Aufgaben}
-\TALSAadB{S. 252}{948. 949.}
-}
-\newpage
-
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Streifenplot (optional)}\index{Streifenplot}
 \theorieGESO{382}{24.3}
@@ -184,16 +134,22 @@ Das folgende Histogramm zeigt die Pulsverteilung dreier BMS Klassen im Jahr 2019
 
 \bbwCenterGraphic{9cm}{allg/daan/img/histogram.png}
 
-Erstellt online mit
+Erstellt online mit:
 
-\texttt{http://www.shodor.org/interactivate/activities/Histogram/}.
+\texttt{http://www.shodor.org/interactivate/activities/Histogram/}
+
+\newpage
 
 
-\subsubsection{Erfolgskriterien für ein gutes Histogramm}
+\subsubsection{Vorgaben an ein Histogramm}
 \begin{itemize}
 \item \TNDF{Histogramme benötigen quantitative Daten.\footnote{Rein nominale
   oder rein ordinale Daten reichen nicht aus, da die Intervalle [Abstände] hier relevant sind.}}
 \item \TNDF{Die $y$-Achse zeigt die Anzahl Werte, die zwischen den Säulengrenzen liegen, und beginnt bei Null (0).}
+\end{itemize}
+
+\subsubsection{Faustregeln für ein gutes Histogramm}
+\begin{itemize}
 \item \TNDF{Es hat für einen guten Überblick fünf bis zwanzig Säulen.}
 \item \TNDF{Alle Säulen berühren sich und sind gleich breit.}
 \item \TNDF{Fällt ein Messwert genau auf die Säulengrenze ist dieser stets
@@ -204,7 +160,14 @@ Erstellt online mit
 \item \TNDF{Die Klassengrenzen liegen auf einfachen Werten (5, 10, 15, ...)
   und nicht auf komplizierten Dezimalbrüchen (7.34, 8.92, 10.50, ...).}
 \end{itemize}
-\newpage
+
+\subsubsection{Begriffe}
+\begin{itemize}
+\item linksschief, rechtsschief, symmetrisch
+\item unimodal, multimodal, bimodal
+\end{itemize}
+\TRAINER{TODO: Foto vom Lochergut (rechtschief) einpflegen ;-)}
+
 
 \GESO{\subsection*{Aufgaben}
   \GESOAadB{404ff}{22. und zu den Begriffen: 17., 18. und 19.}
@@ -228,15 +191,16 @@ Erstellt online mit
 
 \begin{rezept}{}{}
   \begin{enumerate}
+    \item Daten sortieren
   \item Miniumum und Maximum bestimmen
-  \item Skala zeichenen
+  \item Skala zeichnen
   \item Q1\footnote{Q1 = untere Quartilsgrenze},
-    Median und Q3\footnote{Q3 = obere Quartilsgrenze} besitmmen (Sortieren
+    Median\index{Median} (= Zentralwert\index{Zentralwert}) und Q3\footnote{Q3 = obere Quartilsgrenze} besitmmen (Sortieren
     oder TR\footnote{Die wichtigsten Kenngrößen für den Boxplot können mit dem Taschenrechner berechnet werden. Lassen Sie sich von Ihrer Lehrperson ein Beispiel vorrechnen.})
   \item Box zeichnen
   \item IQR\footnote{IQR = inter quartile range} := Q3 - Q1
     berechnen (IQR = Boxbreite)
-  \item Beide Ausreißerschwellen bei $1.5\cdot$IQR ab Boxende andeuten
+  \item Beide Ausreißerschwellen bei $1.5\cdot$IQR je ab Boxende andeuten
   \item Von den Ausreßerschwellen \textit{nach außen} gehen und
     Ausreißer einzeichnen (rot)
   \item \textit{Nach innen} gehen und Whisker suchen (grün)
@@ -250,27 +214,38 @@ Erstellt online mit
   7, 19, 9, 32, 9, 11, 13, 15, 15
 \end{beispiel}
 
-1. Kennzahlen:
+\begin{enumerate}
 
-\TNT{4}{min = 7, max=32, median = 13, q1 = 9, q3 = 17\\ IQR = Q3-Q1 =
-  8}
+\item Daten sortieren: \LoesungsRaumLang{7, 9, 9, 11, 13, 15, 15, 19, 32}
 
-2. IQR rechnen = \LoesungsRaumLang{17-9 = 8}
+\item Minimum und Maxium bestimmen: \LoesungsRaum{7, 32}
 
-3. Skala und Box zeichnen
-\TNT{2}{Hier kommt die Box hin auf einer Skala von 7 bis  32.}
+\item Skala zeichnen\TRAINER{ gleich unten}
 
-4. Ausreißerschwellen rechnen und andeuten
+\item Q1, $\mediantilde{x}$, Q3 besimmen
 
-\TNT{4}{Untere: q1 - 1.5 IQR = 9 - 1.5 IQR = 9-12 = -3\\
-        Obere: q3+ + 1.5 IQR = 17 + 1.5 IQR = 17 + 12 = 29}
+\item Box zeichnen
 
-5. \textit{Nach außen} gehen und Ausreißer einzeichnen.
+\item Boxbreite: IQR (interquartile range) rechnen =
+  \LoesungsRaumLang{17-9 = 8}
 
-6. \textit{Nach innen} gehen und die Whisker suchen.
+\item Beide Ausreißerschwellen (1.5 $\cdot{}$ IQR) je ab Boxende
+  andeuten:
 
-7. Ausreißerschwellen ausradieren
+  obere Ausreißerschwelle = Q3 + 1.5 $\cdot{}$ 8 = \LoesungsRaum{29}
 
+  untere Ausreißerschwelle = Q1 - 1.5 $\cdot{}$ 8 = \LoesungsRaum{-3}
+
+  \item Von den Ausreßerschwellen \textit{nach außen} gehen und
+    Ausreißer einzeichnen: \LoesungsRaum{32}
+
+  \item \textit{Nach innen} gehen und Whisker suchen:
+    \LoesungsRaum{19} und \LoesungsRaum{7}
+    
+  \item Ausreißerschwellen ausradieren
+\end{enumerate}
+
+\TNT{2.4}{\bbwCenterGraphic{14cm}{allg/daan/img/BoxplotBeispiel.png}}
 
 \TRAINER{%%
   \texttt{Interaktive Webseite zum Boxplot}
@@ -307,3 +282,54 @@ Erstellt online mit
 \GESOAadB{408}{37.}
 \GESO{\aufgabenfarbe{Kompendium S. 38 (Kap. 4.4) Aufg 8., 9. und 10.}}
 
+
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\subsubsection{Prozentuale Zunahme/Abnahme}\index{Zunahme!prozentual}\index{Abnahme!prozentual}\index{Prozent}\index{\%}
+Um die prozentuale Zunahme zu rechnen, muss immer von einem «hundert
+Prozent» ausgegangen werden. Bei einer Zunahme (bzw. Abnahme) wird in
+der Regel vom vorangegangenen Wert ausgegangen. Oft ist dieser Wert
+aber auch bereits in Prozenten angegeben. So ist bei der prozentualen
+Zunahme von der alten Prozentzahl auszugehen.
+
+Beispiele
+
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  vorher  &  nachher & absolut   & prozentuale Änderung        \\
+  \hline
+  ({\color{blue}100\%}) &   ---    & ---       & ---                         \\
+  \hline
+  31 Stk. &  38 Stk. & +7 Stk.   & {\color{blue}22.6\%} Zunahme              \\
+  \hline
+  20 {\color{red}m}    &  22 {\color{red}m}    & + 2 {\color{red}m}     & {\color{blue}10 \%} Zunahme              \\
+  \hline
+  20 {\color{red}\%}   &  22 {\color{red}\%}   & + 2 {\color{red}\%}    & {\color{blue}10 \%} (relative, prozentuale) Zunahme              \\
+  \hline
+  38 \%   &  44\%    & +6\%      & {\color{blue}15.8\%} Zunahme              \\
+  \hline
+  87\%    &  23\%    & -64\%     &\TRAINER{73.6\% Abnahme!}    \\
+  \hline
+  6 \%    &  38\%    & +32\%     &\TRAINER{533.3\%(!) Zunahme} \\
+  \hline
+  9 \%    &  11\%    & \noTRAINER{\,\,\,\,\,}\TRAINER{2}\%     &\TRAINER{22.2...\% Zunahme} \\
+  \hline
+  52 \%   & \noTRAINER{\,\,\,\,\,\,} \TRAINER{42.64} \%    & \noTRAINER{\,\,\,\,\,\,}\TRAINER{-9.36}\%  & 18\% Abnahme\\
+  \hline
+  \noTRAINER{\,\,\,\,\,}\TRAINER{50} \%   & \noTRAINER{\,\,\,\,\,\,\,}\TRAINER{57}\% & +7\% & 14\% Zunahme\\
+  \hline
+\end{tabular}
+
+Formel zur Berechnung des Prozentsatzes ($p$), bzw. der alten Menge ($a$)
+oder der neuen Menge ($n$):
+
+$$n = \LoesungsRaumLang{\left(\frac{p}{100} + 1\right)\cdot{}a}$$
+$$p = \LoesungsRaumLang{\left(\frac{n}{a} - 1\right)\cdot{}100\%}$$
+$$a = \LoesungsRaumLang{\frac{n}{1+\frac{p}{100}}}$$
+
+\noTRAINER{\mmPapier{3.6}}
+
+\TALS{\subsection*{Aufgaben}
+\TALSAadB{S. 252}{948. 949.}
+}
+\newpage
