@@ -292,7 +292,7 @@ Es wäre eine andere Problemstellung, für die 1. Person drei mögliche Stühle,
 
 \leserluft
 
-Konvention: Das $n$ ist immer die größere der beiden Zahlen: $n > k$
+Bemerkung/Konvention: Das $n$ ist immer die größere der beiden Zahlen: $\fbox{n > k}$, denn für \textbf{jedes} der $k$ muss eine Option aus $n$ vorhanden sein. Hingegen von den $n$ Optionen werden i.\,d.\,R. nicht alle ausgewählt.
 
 \end{bemerkung}
 \newpage
@@ -397,8 +397,7 @@ nicht gewählten Personen:
 Eine \textbf{Kombination} ist eine \textbf{un}geordnete Stichprobe.
 \end{definition}
 
-Wenn die Reihenfolge der Objekte keine Rolle spielt, gilt ganz
-allgemein:
+Wenn die Reihenfolge der Objekte keine Rolle spielt, gilt:
 
 Die Anzahl der Möglichkeiten, $k$ Objekte aus einer Grundgesamtheit
 von $n$ Objekten auszuwählen, ist gleich
@@ -437,8 +436,7 @@ Urne mit $n$ verschiedenen Kugeln.
 \newpage
 
 \subsubsection{Begrüundung}
-Am Beispiel mit den fünf Personen kann man die Formel relativ gut
-erkennen:
+Am Beispiel mit den fünf Personen kann man die Formel erkennen:
 
 Es gibt insgesamt $5!$ Variationen, die fünf Personen in einer Reihe aufzustellen:
 \begin{tabular}{c|c}
@@ -490,13 +488,12 @@ Objekte $(n-k)!$ davon weg, es bleibt $\frac{n!}{k!(n-k)!}$.
   fünfköpfigen Familie im Ganzen?
   \TNT{1.2}{$$N=2^5=32$$}%% ENN TNT
 
-\textbf{Erklärung I:} Durchzählen:
+%%\textbf{Erklärung I:} Durchzählen:
     
-\TNT{2}{0 oder alle gewählt: je eine Variante, 1 oder 4 gewählt:
-je 5 Varianten oder 3 oder 2 gewählt: je 10 Varianten. Total also $32
-= 2^5$.}%% END TNT
+%%\TNT{2}{0 oder alle gewählt: je eine Variante, 1 oder 4 gewählt:
+%%je 5 Varianten oder 3 oder 2 gewählt: je 10 Varianten. Total also $32 = 2^5$.}%% END TNT
 
-\textbf{Erklärung II:} Zahlenschloss (Variation mit Wiederholung):
+\textbf{Erklärung:} Zahlenschloss (Variation mit Wiederholung):
 
 Für jedes Objekt hat es zwei Optionen:``dabei'' (x) bzw. ``nicht dabei'' (-):
 
@@ -521,7 +518,6 @@ x&x&x&x&x&5\\\hline
 \end{tabular}
 
 Somit haben wir $2^5$ Variationen ($n=2; k=5$) für jedes Familienmiglied muss ich die Entscheidung treffen. und $n=2$ die Entscheidungen ``dabei'', ``nicht dabei'' müssen aber nicht unbedingt beide vorkommen.
-
 
 
 \begin{bemerkung}{Binomialkoeffizient}{}
