@@ -95,29 +95,6 @@ Alle Endwahrscheinlichkeiten (bei den Endknoten\footnote{Endknoten werden auch a
 
 \subsubsection{Referenzaufgaben}
 
-\paragraph{Mindestens zwei Sechser} Ein Würfel wird dreimal hintereinander geworfen.
-
-a) Wie groß ist die Wahrscheinlichkeit, dass genau zwei Sechser dabei sind?
-
-b) Wie groß ist die Wahrscheinlichkeit, dass mindestens zwei Sechser dabei sind?
-
-
-Zeichnen Sie das zugehörige Baumdiagramm:
-
-\TNT{14}{
-\bbwCenterGraphic{15cm}{geso/stoch/img/mind2sechser.png}
-
-
-  Lösung mit Baum oder  Binomialverteilung.
-
-  a) genau zwei Sechser: $\frac{5}{72}\approx 0.06944$
-
-  b) mindestens zwei Sechser: $\frac2{27}\approx 0.07407$
-
-\vspace{10cm}}
-\newpage
-
-
 \paragraph{Urne ohne Zurücklegen} In einer Urne liegen drei grüne, zwei blaue und eine rote Kugel. Ich ziehe blind (Urne) zwei Kugeln hintereinander, ohne diese wieder zurückzulegen.
 
 Wie groß ist die Wahrscheinlichkeit, dass genau eine blaue Kugel dabei ist?
@@ -159,15 +136,42 @@ Mehrstufige Zufallsexperimente:
 \aufgabenfarbe{Kompendium: Kap. 5.2 Aufg. 4. und Kap. 5.5.2 Aufg 17., 19., 20. und 21.}
 \newpage
 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Binomialverteilung}
+
+
+\subsubsection{Einstiegsaufgabe}
+
+\paragraph{Mindestens zwei Sechser} Ein Würfel wird dreimal hintereinander geworfen.
+
+a) Wie groß ist die Wahrscheinlichkeit, dass genau zwei Sechser dabei sind?
+
+
+Zeichnen Sie das zugehörige Baumdiagramm:
+
+\TNT{18}{
+\bbwCenterGraphic{15cm}{geso/stoch/img/genau2sechser.png}
+
+
+  Lösung mit Baum oder  Binomialverteilung.
+
+  Genau zwei Sechser: $\left(\frac16\right)^2\cdot{}\frac56 +
+  \left(\frac16\right)^2\cdot{}\frac56 +
+  \left(\frac16\right)^2\cdot{}\frac56 =3\cdot{}
+  \left(\frac16\right)^2\cdot{}\frac56= \frac{5}{72}\approx 0.06944$%%
+%%
+  \vspace{10cm}%%
+}%% END TNT
+\newpage
 
 \TRAINER{Einstiegsvideo: ``EinfachMathe!'' (S. Wiki-Lernvideos)}
 
 
 \subsubsection{Bernoulli-Experiment}\index{Experiment!Bernoulli}\index{Bernoulli-Experiment}
-Ein mehrfaches Drehen am Glücksrad ist ein typisches
+Ein mehrfacher Münzwurf ist ein typisches
 Bernoulli-Experiment\footnote{Jakob I Bernoulli, Schweizer Mathematiker,
   1654-1705}, d.\,h.:
 
@@ -215,11 +219,10 @@ zu erwischen, gleich groß und wir sprechen von einem Bernoulli-Experiment.
   
 \item
 Es müssen aber nicht immer Würfel, Münzen oder Kugeln in Urnen sein:
-
-Ein Basketballspieler trifft mit einer Wahrscheinlichkeit von 70\%
-($p=0.7$). Der Spieler wirft vier Mal. Somit ist $q=0.3$ und $n=4$.
-
-
+Der Torwart Alessandro Calderoni fängt einen Ball mit einer
+Warhscheinlichkeit von 38\%.
+Wie groß ist die Wahrscheinlichkeit, dass er sechs von 10 Torschüssen
+abfangen kann?
 \end{itemize}
 \newpage
 
@@ -227,25 +230,30 @@ Ein Basketballspieler trifft mit einer Wahrscheinlichkeit von 70\%
 \subsubsection{Formel zur Binomialverteilung}
 \TRAINER{Einstiegs-Viedo: \texttt{https://www.youtube.com/watch?v=WC5O317JzW0}}
 
+
+\begin{beispiel}{Sieben mal Würfeln}{}
+Wie groß ist die Wahrscheinlichkeit, mit einem Würfel bei
+siebenmaligem Werfen genau fünf mal eine der Zahlen \epsdice{1} oder
+\epsdice{2} zu erreichen?
+\end{beispiel}
+
 Bei der Binomialverteilung handelt es sich um ein
 Bernoulli-Experiment
-in einem mehrstufigen Baum. Dabei interessiert
+in einem mehrstufigen Baum ($n$ Versuche). Dabei interessiert
 uns, wie groß die Wahrscheinlichkeit ist, dass von den beiden
-möglichen Ausgängen einer davon $k$-mal auftritt.
+möglichen Ausgängen (Treffer / Niete) einer davon $k$-mal auftritt.
 
-Wie groß ist die Wahrscheinlichkeit, mit einem Würfel bei siebenmaligem
-Werfen fünf Mal eine der Zahlen 1 oder 2 zu erreichen.
-
-Dabei legen wir fest:
+Dabei legen wir fest (vgl. Beispiel oben: Siebenmaliges Würfeln):
 \begin{itemize}
 \item
   $n$ = Anzahl mögliche Durchführungen; hier 7
 \item
   $k$ = Anzahl der gewünschten ``Treffer''; hier 5, denn wir wollen fünf
-Mal eine 1 oder eine 2 werfen
+Mal eine \epsdice{1} oder eine \epsdice{2} erzielen.
 \item
-  $p$ = Wahrscheinlichkeit, dass wir eine 1 oder eine 2 werfen, hier
-  also wie beim Laplace-Experiment: $p=\frac26$
+  $p$ = Wahrscheinlichkeit, dass eine \epsdice{1} oder \epsdice{2}
+  geworfen wird. Hier $p = \frac26$.\\
+  Somit ist die Misserfolgsquote $q = (1-p)$; hier $1-\frac26=\frac46$.
 \end{itemize}
 
 Nun gilt
@@ -255,19 +263,17 @@ Nun gilt
 \end{gesetz}
 
 In obigem Beispiel ergibt sich:
-$$P(X=5) = \LoesungsRaumLang{
-{{7}\choose {5}}
-\cdot{}\left(\frac26\right)^5\cdot{}\left(1-\frac26\right)^{7-5}}$$
+$$P(X=5) = \LoesungsRaumLang{{7\choose 5} \cdot{} \frac26^5 \cdot{} (1-\frac26)^{7-5}} = \LoesungsRaumLang{{7\choose 5} \cdot{} \frac26^5 \cdot{} \frac46^2}$$
 
 Dies kann mit dem Taschenrechner gelöst werden:
 Entweder direkt ...
 
-$$( 7 \textrm{\,\,nCr\,\,} 5 ) *\left(\frac26\right)^5 *
-\left(1-\frac26\right)^{7-5} = \LoesungsRaum{\frac{28}{729}} \approx \LoesungsRaum{0.03841}$$
+$$\LoesungsRaumLang{( 7 \textrm{\,\,nCr\,\,} 5 ) *\frac26^5 *
+\left(1-\frac26\right)^{7-5}} \approx \LoesungsRaum{0.3841 = 3.841\%}$$
 
 ... oder aber mit der eingespeicherten Formel bei
 \tiprobutton{data_stat-reg-distr} und dort unter \texttt{DISTR: 4
-  Binomialpdf: SINGLE} dann $n=7$ bei $n$, $p=\frac26$ bei $p$ und
+  Binomialpdf: SINGLE} dann $n=7$ bei $n$, $p=2/6$ bei $p$ und
 $k=5$ bei $x$ eintragen ($\approx \LoesungsRaum{0.03841}$).
 \newpage
 
@@ -285,7 +291,8 @@ Wahrscheinlichkeit von 85\%.
 Die Wahrscheinlichkeit, dass er von 20 Würfen genau 17 Mal trifft, kennen wir
 bereits von der Binomialverteilung (Bernoulli-Experiment):
 
-$$P(E=17) = {20 \choose 17}\cdot 0.85^{17}\cdot (1-0.85)^{20-17} =  {20 \choose 17}\cdot 0.85^{17}\cdot (0.15)^{3}\approx{}\LoesungsRaum{24.28\%}$$
+$$P(E=17) = \LoesungsRaumLang{{20 \choose 17}\cdot 0.85^{17}\cdot(1-0.85)^{20-17}}=$$
+$$\LoesungsRaumLang{{20 \choose 17}\cdot 0.85^{17}\cdot (0.15)^{3}}\approx{}\LoesungsRaum{24.28\%}$$
 Dabei bezeichnet $E$ das Ereignis ``siebzehn Treffer in den 20 Würfen''.
 
 Wie groß ist nun aber die Wahrscheinlichkeit, dass er bei 20 Würfen
@@ -297,15 +304,16 @@ keinen Treffer, einen Treffer, zwei Treffer, ... bis zu 17 Treffer
 erzielt. Dies nennen wir die kumulierte\footnote{«Kumulieren» kommt von
   lat. \texttt{cumulus} = Anhäufung.} Wahrscheinlichkeit\index{Wahrscheinlichkeit!kumulierte}:
 
-$$P(E\le 17) = P(E=0) + P(E=1) + P(E=2) + ... + P(E=16) + P(E=17)$$
+$$P(E\le 17) = $$
+\TNT{1.6}{$$P(E=0) + P(E=1) + P(E=2) + ... + P(E=16) + P(E=17)$$}%% END TNT
 
 Diese Summe
 $$P(X\le 17) = \LoesungsRaumLang{\sum_{k=0}^{17} {20 \choose k} \cdot 0.85^k \cdot 0.15^{20-k}}$$
 können wir anders schreiben und sofort mit dem
 Taschenrechner lösen:
 
-$$\sum_{x=0}^{17}\left(( 20 \textrm{\,\,nCr\,\,} x ) * 0.85^x *
-0.15^{20-x}\right) \approx \LoesungsRaum{0.5951}$$
+$$\LoesungsRaumLang{\sum_{x=0}^{17}\left(( 20 \textrm{\,\,nCr\,\,} x ) * 0.85^x *
+0.15^{20-x}\right)} \approx \LoesungsRaum{0.5951}$$
 
 
 Doch auch hierzu gibt es eine eingespeicherte Formel
