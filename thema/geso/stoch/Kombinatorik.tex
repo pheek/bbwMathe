@@ -48,7 +48,7 @@ $$N = n^k = 6^4 = 1296$$
 }
 
 Dieses Experiment entspricht im Urnenmodell dem...
-\begin{gesetz}{...Ziehen \textbf{mit} Zurücklegen.}{}
+\begin{gesetz}{...Ziehen \textbf{mit} Zurücklegen / Reihenfolge wesentlich.}{}
 Bei diesem Urnenmodell kann jeder Zug unabhängig vom
 vorangehenden wieder alle Werte annehmen. Die \textbf{Reihenfolge} der gewählten Kugeln ist hier \textbf{wesentlich}. Für $k$ Züge aus genau $n$
 Kugeln, die alle verschieden sind, gibt es $N$ Möglichkeiten:
@@ -97,7 +97,7 @@ viele Arten können sich die beiden Personen auf die beiden Plätze
 verteilen?
 
 \TNT{2.4}{Genau auf zwei Arten: Entweder ist
-Hanna am Fenster, oder Igor.\vspace{12mm}}
+Hanna am Fenster, oder Igor.\vspace{12mm}}%% END TNT
 
 Das Problem ist etwas komplizierter, wenn nun Hanna, Igor mit Jana
 eine Flugreise machen. Die drei reservierten Plätze sind wieder
@@ -105,18 +105,31 @@ nebeneinander. Ein Platz ist am Fenster, einer zum Gang und der dritte
 Platz ist zwischen den beiden anderen. Auf wie viele Arten können nun
 Hanna, Igor und Jana ihre Plätze wählen?
 
-\TNT{3.6}{6 Varianten. Jede der drei Personen
+\TNT{6.8}{6 Varianten. Jede der drei Personen
 am Fenster ergibt drei Hauptvarianten, dann jede der verbleibenden
-beiden zum Gang hin; Ergo: $3\cdot{}2$}
+beiden zum Gang hin; Ergo: $3\cdot{}2$
+
+H I J
+
+H J I
+
+I H J
+
+I J H
+
+J H I
+
+J I H
+\vspace{5mm}}%% END TNT
 
 Machen Sie die selbe Überlegung noch mit vier Personen\footnote{Ach ja: Die vierte Person ist Karl.} und vier
 Plätzen...
 
-\TNT{2.8}{24 = 4!\vspace{28mm}}
+\TNT{2.4}{24 = 4!\vspace{28mm}}%% END TNT
 
 ... und mit fünf Plätzen und fünf Personen\footnote{Die fünfte Person heißt übrigens Lena, auch wenn es für die Berechnung keine Rolle spielt.}.
 
-\TNT{3.2}{120 = 5!\vspace{30mm}}
+\TNT{2.4}{120 = 5!\vspace{30mm}}%% END TNT
 \newpage
 
 
@@ -148,7 +161,7 @@ gilt $n!$ = Anzahl mögliche Sitzordnungen.
 }
 
 Dies entspricht im Urnenmodell dem ...
-\begin{gesetz}{...Ziehen \textbf{ohne} Zurücklegen.}{}
+\begin{gesetz}{Ziehen aller Objekte \textbf{ohne} Zurücklegen / Reihenfolge wesentlich.}{}
 In diesem Urnenmodell entspricht die Fakultät einer Urne mit $n$ Kugeln, die
 alle verschieden sind. Alle $n$ Kugeln werden gezogen. Wie viele
 Reihenfolgen sind möglich?
@@ -189,12 +202,12 @@ Für das erste Buch haben wir zehn Möglichkeiten. Wenn das Buch da mal steht, h
 Schlussendlich bleiben $N$-Möglichkeiten:
 $$N=10\cdot{}9\cdot 8\cdot 7\cdot 6\cdot 5 = \frac{10\cdot 9\cdot
   8\cdot 7\cdot 6\cdot 5\cdot 4\cdot 3\cdot 2\cdot 1}{4\cdot 3\cdot
-  2\cdot 1} = \frac{10!}{4!} = \frac{10!}{(10-6)!}151\,200$$
-\vspace{20mm}
+  2\cdot 1} = \frac{10!}{4!} = $$ $$\frac{10!}{(10-6)!} = 151\,200$$
+\vspace{5mm}
 }%% END TNT
 
 Oder als Formel:
-\begin{gesetz}{Ohne Zurücklegen / Reihenfolge wesentlich}{}
+\begin{gesetz}{Ziehen ohne Zurücklegen / Reihenfolge wesentlich}{}
 Es seien
 $n = $ Anzahl Objekte der Auswahl (oben die Anzahl der Bücher), ev. nicht jedes wird gewählt\\
 $k = $ Anzahl auszuwählende geordnete Objekte (die Anzahl Plätze im Regal, jeder Regalplatz wird besetzt)\\
@@ -375,14 +388,17 @@ Suchen Sie für einige weitere «Dreiergruppen» der Familie G. eine treffende B
 
 Wie viele ``Teilmengen'', solcher \textbf{Kombinationen}, bestehend aus genau \textbf{drei} Familienmitgliedern sind möglich?
 
-\TNT{2.4}{10\vspace{10mm}}
+\TNT{2.4}{10
+
+  ABC, ABD, ABE, ACD, ACE, ADE, BCD, BCE, BDE, CDE
+}
 
 
 Die Anzahl der Möglichkeiten, drei Objekte aus einer Menge mit total
 fünf Objekten auszuwählen, wird in der Mathematik mit dem
 Binomialkoeffizienten angegeben:
 
-\TNT{2}{$$N={5\choose 3} = 10$$} %% END TNT
+\TNT{2}{$$N={5\choose 3} = 10$$ Sprich «5 \textbf{tief} 3»} %% END TNT
 
 Berechnet wird dies mit der Fakultät (Anzahl der Permutationen), indem
 alle fünf Objekte permutiert werden. Wir erhalten so zu viele
@@ -422,7 +438,7 @@ berechnet werden.
 
 
 
-\begin{gesetz}{}{}
+\begin{gesetz}{Ziehen ohne Zurücklegen / Reihenfolge egal.}{}
 Im Urnenmodell entspricht der Binomialkoeffizient dem Ziehen von $k$ Kugeln aus einer
 Urne mit $n$ verschiedenen Kugeln.
 \begin{itemize}
