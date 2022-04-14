@@ -293,12 +293,15 @@ Wahrscheinlichkeit von 85\%.
 Die Wahrscheinlichkeit, dass er von 20 Würfen genau 17 Mal trifft, kennen wir
 bereits von der Binomialverteilung (Bernoulli-Experiment):
 
-$$P(E=17) = \LoesungsRaumLang{{20 \choose 17}\cdot 0.85^{17}\cdot(1-0.85)^{20-17}}=$$
+$$P(X=17) = \LoesungsRaumLang{{20 \choose 17}\cdot 0.85^{17}\cdot(1-0.85)^{20-17}}=$$
 $$\LoesungsRaumLang{{20 \choose 17}\cdot 0.85^{17}\cdot (0.15)^{3}}\approx{}\LoesungsRaum{24.28\%}$$
 Dabei bezeichnet $E$ das Ereignis ``siebzehn Treffer in den 20 Würfen''.
 
+\begin{beispiel}{Kumulierte Wahrscheinlichkeit}{}
 Wie groß ist nun aber die Wahrscheinlichkeit, dass er bei 20 Würfen
 \textbf{maximal} 17 mal trifft?
+\end{beispiel}
+
 
 Lösung: Wir summieren alle Wahrscheinlichkeiten auf, bei denen er
 während seinen 20 Würfen
@@ -306,8 +309,8 @@ keinen Treffer, einen Treffer, zwei Treffer, ... bis zu 17 Treffer
 erzielt. Dies nennen wir die kumulierte\footnote{«Kumulieren» kommt von
   lat. \texttt{cumulus} = Anhäufung.} Wahrscheinlichkeit\index{Wahrscheinlichkeit!kumulierte}:
 
-$$P(E\le 17) = $$
-\TNT{1.6}{$$P(E=0) + P(E=1) + P(E=2) + ... + P(E=16) + P(E=17)$$}%% END TNT
+$$P(X\le 17) = $$
+\TNT{1.6}{$$P(X=0) + P(X=1) + P(X=2) + ... + P(X=16) + P(X=17)$$}%% END TNT
 
 Diese Summe
 $$P(X\le 17) = \LoesungsRaumLang{\sum_{k=0}^{17} {20 \choose k} \cdot 0.85^k \cdot 0.15^{20-k}}$$
@@ -323,12 +326,11 @@ bei
 \tiprobutton{data_stat-reg-distr} und dort unter \texttt{DISTR: 5
   Binomialcdf: SINGLE} dann $n=20$ bei $n$, $p=0.85$ bei $p$ und
 $k=17$ bei $x$ eintragen ($\approx 0.5951$).
-
+\newpage
 \begin{gesetz}{Kumulierte Wahrscheinlichkeit}{}
   $$P(X < k) = \sum_{i=0}^k {n \choose i} \cdot{} p^i \cdot{} (1-p)^{n-i}$$
   \end{gesetz}
 
-\newpage
 \subsection*{Aufgaben}
 
 \aufgabenfarbe{Kompendium: S. 53ff Kap. 5.7. Aufg. 36. a) b) und 37.}
@@ -421,28 +423,23 @@ Es seien:
 \item $N$ die Anzahl der Nieten in der Urne. Hier die Anzahl schwarze Kugeln ($N=4$)
 \item $T+N$ die Anzahl Elemente (Treffer + Nieten) in der Urne (hier $T+N = 7$)
 
-\item $t$ die Anzahl der gewünschten bzw. zu erreichenden Treffer. Hier \zB $t=2$.
+\item $t$ die Anzahl der gewünschten bzw. zu erreichenden Treffer. Hier \zB $t=1$.
   
-\item $n$ die Anzahl «gewünschten» Nieten (hier z. B. $n = 0$)
+\item $n$ die Anzahl «gewünschten» Nieten (hier z. B. $n = 1$)
 \item $t+n$ die Anzahl total herausgezogener Kugeln (hier $t+n=2+0=2$)
 \end{itemize}
 \begin{gesetz}{}{}
 $$P(X=t) = \frac{ {T\choose t} \cdot{} {{N}\choose {n}}}{{{T+N} \choose {t+n}}}$$
 \end{gesetz}
+
 \textbf{Beispiele} mit obigen sieben Kugeln (drei Treffer und vier
 Nieten)
 $$T=3, N=4, T+N=7$$
 
-\textbf{Beispiel 1}: Ich will bei zwei gezogenen Kugeln je einen Treffer:
 
-($t=2$) mit zwei Ziehungen ($t+n=2$), somit keine Niete ($n=0$).
-Wir erhalten:
 
-$$P(t=2) = \frac{ {T\choose t} \cdot{} {{N}\choose {n}}}{{{T+N}
-    \choose {t+n}}} = \LoesungsRaumLang{\frac{ {3\choose 2} \cdot{} {{4}\choose {0}}}{{7
-    \choose 2}} = \frac{3\cdot{}1}{21} = \frac17 \approx 0.14}$$
 
-\textbf{Beispiel 2}: Ich will bei zwei gezogenen Kugeln genau einen Treffer:
+\textbf{Beispiel 1}: Ich will bei zwei gezogenen Kugeln genau einen Treffer:
 
 ($t=1$) mit zwei Ziehungen ($t+n=2$), somit eine Niete ($n=1$).
 Wir erhalten:
@@ -451,6 +448,20 @@ $$P(t=1) = \frac{ {T\choose t} \cdot{} {{N}\choose {n}}}{{{T+N}
     \choose {t+n}}} = \LoesungsRaumLang{\frac{ {3\choose 1} \cdot{} {{4}\choose {1}}}{{7
     \choose 2}} = \frac{3\cdot{4}}{21} = \frac{12}{21} \approx 0.57}$$
 
+
+
+
+\textbf{Beispiel 2}: Ich will bei zwei gezogenen Kugeln je einen Treffer:
+
+($t=2$) mit zwei Ziehungen ($t+n=2$), somit keine Niete ($n=0$).
+Wir erhalten:
+
+
+
+
+$$P(t=2) = \frac{ {T\choose t} \cdot{} {{N}\choose {n}}}{{{T+N}
+    \choose {t+n}}} = \LoesungsRaumLang{\frac{ {3\choose 2} \cdot{} {{4}\choose {0}}}{{7
+    \choose 2}} = \frac{3\cdot{}1}{21} = \frac17 \approx 0.14}$$
 
 \newpage
 
