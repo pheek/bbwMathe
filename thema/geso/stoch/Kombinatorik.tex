@@ -30,7 +30,7 @@ Wie viele Variationen gibt es im ganzen für dieses Zahlenschloss?
 
 \bbwCenterGraphic{7cm}{geso/stoch/img/zahlenschlossV2.jpg}
 
-\TNT{7.2}{
+\TNT{12}{
 Jeder Ring hat 6 Möglichkeiten. Somit habe ich am 1. Ring sechs
 Varianten. Für jede dieser Varianten habe ich für den 2. Ring auch
 sechs Varianten. Insgesamt also
@@ -46,6 +46,12 @@ $N$ = Anzahl Variationen
 
 $$N = n^k = 6^4 = 1296$$
 }
+\newpage
+
+\begin{definition}{Variation}{}\index{Variation}
+Eine \textbf{Variation} ist eine \textbf{geordnete} Stichprobe.
+\end{definition}
+
 
 Dieses Experiment entspricht im Urnenmodell dem...
 \begin{gesetz}{...Ziehen \textbf{mit} Zurücklegen / Reihenfolge wesentlich.}{}
@@ -53,11 +59,16 @@ Bei diesem Urnenmodell kann jeder Zug unabhängig vom
 vorangehenden wieder alle Werte annehmen. Die \textbf{Reihenfolge} der gewählten Kugeln ist hier \textbf{wesentlich}. Für $k$ Züge aus genau $n$
 Kugeln, die alle verschieden sind, gibt es $N$ Möglichkeiten:
 $$N = n^k$$
-\end{gesetz}
 
-\begin{definition}{Variation}{}\index{Variation}
-Eine \textbf{Variation} ist eine \textbf{geordnete} Stichprobe.
-\end{definition}
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{rcl}
+  $N$ &=& \TRAINER{Variationen}\\
+  $n$ &=& \TRAINER{Objekte zur (optionalen) Auswahl}\\
+  $k$ &=& \TRAINER{auszuwählende wiederholbare Objekte}\\
+\end{tabular}
+\renewcommand{\arraystretch}{1}
+
+\end{gesetz}
 \newpage
 
 \subsection*{Referenzaufgabe Zahlenschloss}
@@ -91,12 +102,14 @@ wir erst 16\,807 Variationen.
 \subsection{Permutationen (Fakultät)}\index{Permutation}\index{Fakultäten}
 Lateinisch «permutare» = vertauschen
 
+\TRAINER{Video MatheMai: \texttt{https://www.youtube.com/watch?v=cVCBNVDav3U} }
+
 Hanna und Igor fahren Bus. Die beiden für sie reservierten Plätze sind
 nebeneinander, doch nur einer davon ist ein Fensterplatz. Auf wie
 viele Arten können sich die beiden Personen auf die beiden Plätze
 verteilen?
 
-\TNT{2.4}{Genau auf zwei Arten: Entweder ist
+\TNT{2}{Genau auf zwei Arten: Entweder ist
 Hanna am Fenster, oder Igor.\vspace{12mm}}%% END TNT
 
 Das Problem ist etwas komplizierter, wenn nun Hanna, Igor mit Jana
@@ -105,7 +118,7 @@ nebeneinander. Ein Platz ist am Fenster, einer zum Gang und der dritte
 Platz ist zwischen den beiden anderen. Auf wie viele Arten können nun
 Hanna, Igor und Jana ihre Plätze wählen?
 
-\TNT{6.8}{6 Varianten. Jede der drei Personen
+\TNT{6}{6 Varianten. Jede der drei Personen
 am Fenster ergibt drei Hauptvarianten, dann jede der verbleibenden
 beiden zum Gang hin; Ergo: $3\cdot{}2$
 
@@ -125,11 +138,11 @@ J I H
 Machen Sie die selbe Überlegung noch mit vier Personen\footnote{Ach ja: Die vierte Person ist Karl.} und vier
 Plätzen...
 
-\TNT{2.4}{24 = 4!\vspace{28mm}}%% END TNT
+\TNT{2.8}{24 = 4!\vspace{28mm}}%% END TNT
 
 ... und mit fünf Plätzen und fünf Personen\footnote{Die fünfte Person heißt übrigens Lena, auch wenn es für die Berechnung keine Rolle spielt.}.
 
-\TNT{2.4}{120 = 5!\vspace{30mm}}%% END TNT
+\TNT{2.8}{120 = 5!\vspace{30mm}}%% END TNT
 \newpage
 
 
@@ -149,7 +162,7 @@ Ihrem Rechner ist es die Taste \tiprobutton{ncrnpr}.
 
 Berechnen Sie die Fakultät von 3, 4, 5 und 20 mit dem Taschenrechner.
 
-\TNT{3.2}{$3! = 6; 4!=24; 5! = 120; 20! = 2.4329...\cdot{}10^{18}$\vspace{32mm}}
+\TNT{3.2}{$3! = 6; 4!=24; 5! = 120; 20! = 2.4329...\cdot{}10^{18}$\vspace{10mm}}
 
 Auf wie viele Arten können Sie sich als Klasse in Ihre Bänke
 verteilen? Machen Sie die Überlegung so, wie es aussehen würde, wenn es keine leeren Plätze gäbe.
@@ -157,7 +170,7 @@ verteilen? Machen Sie die Überlegung so, wie es aussehen würde, wenn es keine 
 \TNT{5.2}{Wenn es keine leeren Plätze hat, entspricht die Anzahl der
 Möglichkeiten der Fakultät. $n$ = Anzahl Schüler = Anzahl Plätze, dann
 gilt $n!$ = Anzahl mögliche Sitzordnungen.
-\vspace{32mm}
+\vspace{10mm}
 }
 
 Dies entspricht im Urnenmodell dem ...
@@ -167,6 +180,13 @@ alle verschieden sind. Alle $n$ Kugeln werden gezogen. Wie viele
 Reihenfolgen sind möglich?
 $$N = n\cdot{} (n-1) \cdot{} (n-2) \cdot{} (n-3) \cdot{}
 (n-4) \cdot{} ... \cdot{} 3\cdot{} 2 \cdot{} 1 = n!$$
+
+\begin{tabular}{rcl}
+  $N$ &=& Variationen\\
+  $n$ &=& Objekte zur (optionalen) Auswahl\\
+  $k$ &=& auszuwählende \textbf{nicht} wiederholbare Objekte\\
+\end{tabular}
+
 \end{gesetz}
 \newpage
 
@@ -448,10 +468,19 @@ Urne mit $n$ verschiedenen Kugeln.
 \item Die Kugeln werden \textbf{nicht} zurückgelegt (ohne
   Wiederholung).
 \end{itemize}
+
+$$N = {n \choose k} = \frac{n!}{k!\cdot{}(n-k)!}$$
+\begin{tabular}{rcl}
+  $N$ &=& Kombinationen\\
+  $n$ &=& Objekte zur (optionalen) Auswahl\\
+  $k$ &=& auszuwählende nicht wiederholbare Objekte\\
+\end{tabular}
+
+
 \end{gesetz}
 \newpage
 
-\subsubsection{Begründung}
+\subsubsection{Begründung (Optional)}
 Am Beispiel mit den fünf Personen kann man die Formel erkennen:
 
 Es gibt insgesamt $5!$ Variationen, die fünf Personen in einer Reihe aufzustellen:
@@ -498,7 +527,7 @@ Objekte $(n-k)!$ davon weg, es bleibt: $$\frac{n!}{k!(n-k)!}$$
 \end{bemerkung}
 \newpage
 
-\subsection{Optional: Name Binomialkoeffizient}
+\subsubsection{Optional: Name Binomialkoeffizient}
 
  Wie viele ``Teilmengen'', nicht nur mit drei Personen, gibt es in obiger
   fünfköpfigen Familie im Ganzen?
@@ -606,8 +635,7 @@ Anzahl Möglichkeiten, um $\color{red}k$ Elemente aus total $\color{blue}n$ Elem
 %% Formeln
  \begin{center}{\fbox{$N={\color{blue}n}^{\color{red}k}$}}\end{center}
  Bsp.: Anzahl Wörter der Länge
- {\color{red}10}, die man aus {\color{blue}26} Buchstaben bilden kann: $${\color{blue}26}^{\color{red}10}
- \approx 1.41 \cdot{} 10^{14}$$
+ {\color{red}4}, die man aus {\color{blue}10} vorgegebenen Buchstaben bilden kann: $${\color{blue}10}^{\color{red}4} = 10\,000$$
 &
  \begin{center}{\fbox{$N = \frac{{\color{blue}n}!}{({\color{blue}n}-{\color{red}k})!}$}}\end{center}
  Bsp.: Anzahl Möglichkeiten, $\color{red}4$ Leute auf $\color{blue}
