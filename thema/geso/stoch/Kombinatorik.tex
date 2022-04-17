@@ -40,7 +40,7 @@ werden (hier 6 Ziffern): \textbf{Nicht jede Auswahlmöglichkeit muss
   auch vorkommen!}
 
 $k$ = Vorgegebene Anzahl geordnete auszuwählende Objekte (hier 4, weil
-es 4 Ringe hat): \textbf{Jege der $k$ Positionen muss verwendet werden.}
+es 4 Ringe hat): \textbf{Jede der $k$ Positionen muss verwendet werden.}
 
 $N$ = Anzahl Variationen
 
@@ -95,7 +95,20 @@ wir erst 16\,807 Variationen.
 
 
 \subsection*{Aufgaben}
-\aufgabenfarbe{Kompendium S. 46 Kap. 5.5.1 Aufg. 16. a)}
+
+\aufgabenfarbe{Die vier Freundinnen Anna, Barbara, Chloris und Danielle werden nach den
+Ferien in die acht Klassen 3a-3g eingeteilt. Auf wie viele
+Variationen ist dies möglich?}
+
+\TNT{2}{Jede der vier hat 8 Möglichkeiten: $8^4 = 4096$.}%% END TNT
+
+\aufgabenfarbe{In einer Urne liegen 20 verschiedenfarbige Kugeln. Vier
+mal nacheinander wird blindlings eine Kugel gezogen, die Farbe wird notiert und
+die Kugel wird wieder zurückgelegt. Wie viele Farbschemata sind
+möglich? Dabei darf eine Farbe im Schema auch mehrfach auftreten.}
+\TNT{2}{Jede Position im Farbschema hat unabhängig von den anderen die
+20 Varianten: $20^4 = 160\,000$}
+
 \newpage
 
 
@@ -147,7 +160,6 @@ Plätzen...
 
 
 \subsubsection{Fakultät als Operation}\index{Fakultät}
-\TRAINER{Youtube Video als Vorbereitung MatheMai (S. Wiki):\\\texttt{https://www.youtube.com/watch?v=cVCBNVDav3U}}
 
 Ganz allgemein gilt: Bei $n$ Personen auf $n$ Plätzen gibt es
 
@@ -176,15 +188,15 @@ gilt $n!$ = Anzahl mögliche Sitzordnungen.
 Dies entspricht im Urnenmodell dem ...
 \begin{gesetz}{Ziehen aller Objekte \textbf{ohne} Zurücklegen / Reihenfolge wesentlich.}{}
 In diesem Urnenmodell entspricht die Fakultät einer Urne mit $n$ Kugeln, die
-alle verschieden sind. Alle $n$ Kugeln werden gezogen. Wie viele
-Reihenfolgen sind möglich?
+alle verschieden sind. \textbf{Alle} $n$ Kugeln werden genau einmal
+gezogen (\textbf{ohne} Wiederholung).
+
 $$N = n\cdot{} (n-1) \cdot{} (n-2) \cdot{} (n-3) \cdot{}
 (n-4) \cdot{} ... \cdot{} 3\cdot{} 2 \cdot{} 1 = n!$$
 
 \begin{tabular}{rcl}
   $N$ &=& Variationen\\
-  $n$ &=& Objekte zur (optionalen) Auswahl\\
-  $k$ &=& auszuwählende \textbf{nicht} wiederholbare Objekte\\
+  $n$ &=& Alle Objekte kommen genau einmal vor ($n=k$) 
 \end{tabular}
 
 \end{gesetz}
@@ -367,7 +379,8 @@ und alle Vertauschungen: $10\cdot{}9\cdot{}8\cdot{}7 +
 10\cdot{}9\cdot{}8\cdot{}\frac{12}2 + 10\cdot{}9\cdot{}\frac62$)
 }
 
-\aufgabenfarbe{Kompendium: S. 46  Kap. 5.5.1 Aufg. 16. b)}
+\aufgabenfarbe{Kompendium S. 46 Kap. 5.5.1 Aufg. 16.}
+
 \newpage
 
 
