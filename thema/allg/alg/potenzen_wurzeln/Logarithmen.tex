@@ -113,11 +113,8 @@ Aus obigem Beispiel («die Harte Tour» \totalref{harteTourLogarithmen}) folgt d
   $$\log_a(p) = \frac{\lg(p)}{\lg(a)}\TALS{ = \frac{\log_b(p)}{\log_b(a)}}$$
 \end{gesetz}
 
-\begin{beispiel}{Logarithmen-Basiswechsel}{}
-\TNT{4}{ $$\log_2(32) = \frac{\lg(32)}{\lg(2)} = 5$$}
-\end{beispiel}
 
-\TALS{
+\TALS{%% Beweis nur bei TALS
   \TNT{10}{
     $$x=\log_a(p) \Longleftrightarrow a^x = p$$
     $$\Longleftrightarrow \lg(a^x) = \lg(p)$$
@@ -127,6 +124,26 @@ Aus obigem Beispiel («die Harte Tour» \totalref{harteTourLogarithmen}) folgt d
 
 }%% END TNT
 }%% END TALS
+
+
+\GESO{\begin{beispiel}{Logarithmen-Basiswechsel}{}
+\TNT{4}{ $$\log_2(32) = \frac{\lg(32)}{\lg(2)} = 5$$}
+  \end{beispiel}%%
+}%% END GESO
+
+
+\begin{beispiel}{Löse mit Zehnerlogarithmus}{}
+  Lösen Sie die folgende Gleichung und schreiben Sie das Resultat mit
+  Hilfe von Zehnerlogarithmen:
+  $$5^x = 30$$
+  \TNT{6}{Definition Logarithmus:
+    $$x = \log_5(30)$$
+    Basiswechsel-Gesetz:
+    $$x = \log_5(30) = \frac{\lg(30)}{\lg(5)} \approx
+    \frac{1.4771}{0.69897} \approx 2.113$$
+  }%% END TNT
+\end{beispiel}
+
 
 %Begründung:
 %
@@ -155,11 +172,11 @@ Aus obigem Beispiel («die Harte Tour» \totalref{harteTourLogarithmen}) folgt d
 \end{bemerkung}
 
  \begin{bemerkung}{}{}
-   $$\log_a(a) = \LoesungsRaum{1} \textrm{ , denn } a^1 = a$$
+   $$\log_a(a) = \LoesungsRaum{1} \textrm{ , denn } \TRAINER{a^1 = a}$$
 \end{bemerkung}
 
  \begin{bemerkung}{}{}
-   $$\log_a(1) = \LoesungsRaum{0} \textrm{ , denn } a^0 = 1$$
+   $$\log_a(1) = \LoesungsRaum{0} \textrm{ , denn } \TRAINER{a^0 = 1}$$
 \end{bemerkung}
 
 \begin{bemerkung}{Logarithmus zu beliebiger Basis}{}
@@ -194,16 +211,18 @@ Aus obigem Beispiel («die Harte Tour» \totalref{harteTourLogarithmen}) folgt d
 
 
 \TNT{6}{
-GESO:  Beweis am Beispiel:
+\GESO{GESO:  Beweis am Beispiel:
   $\lg(100^7) = \lg((10^2)^7) {\stackrel{(I)}{=}} \lg(10^{2\cdot{}7}) =
   \lg(10^{(7\cdot{} 2)}) {\stackrel{(II)}{=}} 7\cdot{} 2 {\stackrel{(II)}{=}} 7\cdot{}
   \lg(10^2) = 7\cdot{}\lg(100)$
-
+}%% END GESO
+\TALS{
   TALS:
   $u:=a^y \Longleftrightarrow y=\log_a(u)$
 
   $\log_a(u^k) = \log_a((a^y)^k) {\stackrel{(I)}{=}}  \log_a(a^{yk})
   {\stackrel{(II)}{=}} k\cdot{}y = k\cdot{}\log_a(u)$
+}%% END TALS
 }%% END TNT
 
  
