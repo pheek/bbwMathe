@@ -192,17 +192,16 @@ Erstellt online mit:
 \begin{rezept}{}{}
   \begin{enumerate}
     \item Daten sortieren
-  \item Miniumum und Maximum bestimmen
-  \item Skala zeichnen
-  \item Q1\footnote{Q1 = untere Quartilsgrenze},
-    Median\index{Median} (= Zentralwert\index{Zentralwert}) und Q3\footnote{Q3 = obere Quartilsgrenze} besitmmen (Sortieren
-    oder TR\footnote{Die wichtigsten Kenngrößen für den Boxplot können mit dem Taschenrechner berechnet werden. Lassen Sie sich von Ihrer Lehrperson ein Beispiel vorrechnen.})
-  \item Box zeichnen
+  \item Kenngrößen bestimmen (ev. TR\footnote{Die wichtigsten Kenngrößen für den Boxplot können mit dem Taschenrechner berechnet werden. Lassen Sie sich von Ihrer Lehrperson ein Beispiel vorrechnen.}): Min., Q1\footnote{Q1 = untere
+    Quartilsgrenze; Q3 = obere Quartilsgrenze}, $\mediantilde{x}$ (=Median\index{Median}),  Q3, Max.
+  \item Skala und Box zeichnen
   \item IQR\footnote{IQR = inter quartile range} := Q3 - Q1
     berechnen (IQR = Boxbreite)
-    \item Maximale Whiskerlänge (MWL) := IQR $\cdot{}$ 1.5
-  \item Beide Ausreißerschwellen bei MWL je ab Boxende andeuten
-  \item Von den Ausreßerschwellen \textit{nach außen} gehen und
+    \item Maximale Whiskerlänge MWL := IQR $\cdot{}$ 1.5
+  \item Beide Ausreißerschwellen\footnote{OAS = obere Ausreißerschwelle; UAS = untere Ausreißerschwelle} bei MWL je ab Boxende andeuten:\\
+    OAS =
+    Q1 - MWL und UAS = Q3 + MWL
+  \item Von den Ausreißerschwellen \textit{nach außen} gehen und
     Ausreißer einzeichnen (rot)
   \item \textit{Nach innen} gehen und Whisker suchen (grün)
   \item Ausreißerschwellen ausradieren
@@ -219,13 +218,10 @@ Erstellt online mit:
 
 \item Daten sortieren: \LoesungsRaumLang{7, 9, 9, 11, 13, 15, 15, 19, 32}
 
-\item Minimum und Maxium bestimmen: \LoesungsRaum{7, 32}
+\item Kenngrößen Bestimmen: \LoesungsRaum{Min=7, Q1 = 9, $\mediantilde{x} =
+  13$, Q3=17, Max=32}
 
-\item Skala zeichnen\TRAINER{ gleich unten}
-
-\item Q1, $\mediantilde{x}$, Q3 besimmen
-
-\item Box zeichnen
+\item Skala und Box zeichnen\TRAINER{s. unten}
 
 \item Boxbreite: IQR (interquartile range) rechnen =
   \LoesungsRaumLang{17-9 = 8}
@@ -281,7 +277,8 @@ Erstellt online mit:
 \TALSAadB{264ff}{979. 980. 983. 984. 985. 989.}
 \aufgabenfarbe{Aufgabenblatt im OLAT}
 \GESOAadB{408}{37.}
-\GESO{\aufgabenfarbe{Kompendium S. 38 (Kap. 4.4) Aufg 8., 9. und 10.}}
+\GESO{\aufgabenfarbe{Kompendium S. 38 (Kap. 4.4) Aufg 8. [ohne
+      8. d)\TRAINER{falls der Modus noch nicht behandelt wurde.}], 9. und 10.}}
 
 
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -297,15 +294,16 @@ Beispiele
 
 \begin{tabular}{|c|c|c|c|}
   \hline
-  vorher  &  nachher & absolut   & prozentuale Änderung        \\
+  ursprünglich $(u)$  &  neu $(n)$& absolute $(a)$... & ... und prozentuale $(p)$ Zunahme       \\
   \hline
   ({\color{blue}100\%}) &   ---    & ---       & ---                         \\
   \hline
   31 Stk. &  38 Stk. & +7 Stk.   & {\color{blue}22.6\%} Zunahme              \\
   \hline
-  20 {\color{red}m}    &  22 {\color{red}m}    & + 2 {\color{red}m}     & {\color{blue}10 \%} Zunahme              \\
+  20 {\color{red}m}    &  18 {\color{red}m}    & - 2 {\color{red}m}
+  & {\color{blue}-10 \%} Zunahme = {\color{blue} +10\%} Abnahme              \\
   \hline
-  20 {\color{red}\%}   &  22 {\color{red}\%}   & + 2 {\color{red}\%}    & {\color{blue}10 \%} (relative, prozentuale) Zunahme              \\
+  20 {\color{red}\%}   &  23 {\color{red}\%}   & + 3 {\color{red}\%}    & {\color{blue}15 \%} (relative, prozentuale) Zunahme              \\
   \hline
   38 \%   &  44\%    & +6\%      & {\color{blue}15.8\%} Zunahme              \\
   \hline
@@ -321,14 +319,20 @@ Beispiele
   \hline
 \end{tabular}
 
-Formel zur Berechnung des Prozentsatzes ($p$), bzw. der alten Menge ($a$)
-oder der neuen Menge ($n$):
+\leserluft
+Formeln:
 
-$$n = \LoesungsRaumLang{\left(\frac{p}{100} + 1\right)\cdot{}a}$$
-$$p = \LoesungsRaumLang{\left(\frac{n}{a} - 1\right)\cdot{}100\%}$$
-$$a = \LoesungsRaumLang{\frac{n}{1+\frac{p}{100}}}$$
+\TNT{8}{
+$$n = u\cdot{} (1 + \frac{p}{100})  = \frac{a\cdot(100+p)}{p}$$
 
-\noTRAINER{\mmPapier{3.6}}
+$$a=\TRAINER{\frac{u\cdot{}p}{100}  = \frac{n\cdot{}p}{100+p}  }  $$
+
+$$u=\frac{a}p\cdot{}100 = \frac{n}{1+\frac{p}{100}}$$
+
+$$p= \frac{a}{u}\cdot{}100\% $$
+  
+}%% END TNT
+
 
 \TALS{\subsection*{Aufgaben}
 \TALSAadB{S. 252}{948. 949.}
