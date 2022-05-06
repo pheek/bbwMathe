@@ -1,13 +1,33 @@
 \section{Wurzelfunktionen}\index{Wurzelfunktionen}\index{Funktionen!Wurzelfct.}
 
-\subsection*{Lernziele}
-
-\begin{itemize}
-\item Wurzelfunktionen
-\item Symmetrieeigenschaften
-\end{itemize}
 
 \theorieTALS{213}{3.9}
+
+
+
+
+Skizzieren Sie $f: y = \sqrt{x}$ und $g: y=\sqrt[5]{x}$ im Bereich $[-1; 9]$ indem Sie für jeden 0.5-er $x$-Wert die zugehörigen $y$-Werte berechnen:
+
+\bbwGraph{-2}{9.5}{-1}{3.5}{%%
+  \TRAINER{\bbwFunc{sqrt(\x)}{0:9}}
+  \TRAINER{\bbwFunc{pow(\x, 0.2)}{0:9}}
+}%%
+
+\begin{definition}{Wurzelfunktion}{}
+  Der Definitionsbereich der Wurzelfunktion beschränkt sich auf die
+  positiven reellen Zahlen:
+  $$\mathbb{D} = \mathbb{R}_0^{+} = [0;\infty[$$
+      Der Wertebereich beschränkt sich somit auch nur auf die positive $y$-Achse:
+  $$\mathbb{W} = \mathbb{R}_0^{+} = [0;\infty[$$
+      
+\end{definition}
+
+\begin{bemerkung}{Wurzelfunktion}{}
+ Je \textbf{höher} der Wurzelexponent $n$, umso \LoesungsRaumLang{flacher} wird die Wurzelfunktion $$y=\sqrt[n]{x}.$$ 
+\end{bemerkung}
+
+
+
 \subsection*{Aufgaben}
 
 \TALSAadB{213ff}{801-808}
@@ -27,6 +47,23 @@
 \end{itemize}
 
 \theorieTALS{209}{3.8}
+
+
+
+Skizzieren Sie $f: y = \sqrt[3]{x}$ und $g: y=x^3$ im Bereich $[-1;
+  9]$ indem Sie für jeden 0.5-er $x$-Wert das jeweils zugehörige $y$ berechnen:
+
+\bbwGraph{-2}{9.5}{-1}{9}{%%
+  \TRAINER{\bbwFunc{\x*\x*\x}{0:2.05}}
+  \TRAINER{\bbwFunc{pow(\x, 0.33))}{0:9}}
+}%%
+
+\begin{bemerkung}{Umkehrfunktion}{}
+  Eine \textbf{Umkehrfunktion} ist das Spiegelbild der der Funktion
+  gespiegelt an der Geraden \LoesungsRaum{$y=x$}.
+\end{bemerkung}  
+\newpage
+
 \subsection*{Aufgaben}
 
 \TALSAadB{213ff}{793., 794., 795., 796., 797., 798., 799. und 800}
