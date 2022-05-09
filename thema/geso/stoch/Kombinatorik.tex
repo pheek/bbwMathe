@@ -238,7 +238,7 @@ Nun haben wir zehn solcher Bücher zur Auswahl. Auf wie viele Arten können wir 
 
 \TNT{6}{
 Für das erste Buch haben wir zehn Möglichkeiten. Wenn das Buch da mal steht, haben wir für das zweite Buch nur noch neun Möglichkeiten.
-Schlussendlich bleiben $N$-Möglichkeiten:
+Dies ergibt $N$ Varianten:
 $$N=10\cdot{}9\cdot 8\cdot 7\cdot 6\cdot 5 = \frac{10\cdot 9\cdot
   8\cdot 7\cdot 6\cdot 5\cdot 4\cdot 3\cdot 2\cdot 1}{4\cdot 3\cdot
   2\cdot 1} = \frac{10!}{4!} = $$ $$\frac{10!}{(10-6)!} = 151\,200$$
@@ -298,12 +298,13 @@ $$n \ge{} k.$$
 
 \subsubsection{Freie Plätze?}
 
-Wie viele Möglichkeiten hat eine Klasse mit $n$ Lernenden, sich auf
-$n+1$ Plätze zu verteilen?
+Wie viele Möglichkeiten hat eine Klasse mit $k$ Lernenden, sich auf
+$k+1$ Plätze zu verteilen?
 
 \TNT{2.4}{Hier stellt man sich einfach einen ``Phantom-Schüler'' vor,
-der unsichtbar auf der leeren Bank sitzt. Somit gilt auch hier: Die
-Anzahl der Möglichen Sitzordnungen = Fakultät der leeren Plätze = $(n+1)!$.}
+der unsichtbar auf der leeren Bank sitzt (somit: $n=k+1$). Somit gilt auch hier: Die
+Anzahl der Möglichen Sitzordnungen = Fakultät der Anzahl Plätze = $n!
+= (k+1)!$.}
 
 Wie viele Sitzordnungen sind möglich, wenn es zwei oder mehr freie Plätze gibt?
 
@@ -357,14 +358,21 @@ Bemerkung/Konvention: Das $n$ ist immer die größere der beiden Zahlen: $\fbox{
 
 \subsection*{Aufgaben}
 
+\aufgabenfarbe{In einer Urne sind sieben Kugeln beschriftet mit «A», «B», «C», «D», «E», «F» und «G».
+Sie ziehen drei davon heraus, um ein dreibuchstabiges Akronym für ihr
+«Startup-Unternehmen» zu schaffen. Beispiel «EFC», «DAB», «GEA», ...\\
+Wie viele dreibuchstabige Akronyme mit nur verschiedenen Buchstaben
+sind denkbar?}%% ENd Aufgabe
+\TNT{3.2}{``Ohne Zurücklegen'': $\frac{7!}{(7-3)!} = 210$}%% END TNT
+
 \aufgabenfarbe{Ein Zahlenschloss mit vier Ringen wird verdreht. Jeder
 Ring hat alle Ziffern von 0..9 (also zehn Ziffern) als wählbare
 Möglichkeiten. Auf wie viele Arten kann ich das Zahlenschloss
 verdrehen, wenn jede Ziffer genau einmal vorkommen darf?}
-\TNT{2.4}{1. Ring: 10 Möglichkeiten, 2. Ring 9, 3. Ring 8 und 4. Ring 7:
+\TNT{3.2}{1. Ring: 10 Möglichkeiten, 2. Ring 9, 3. Ring 8 und 4. Ring 7:
 Also $10\cdot{}9\cdot{}8\cdot{}7 = \frac{10!}{(10-4)!} = 5040$}
 
-\aufgabenfarbe{Das selbe Zahlenschloss wird so verdreht, dass eine
+\aufgabenfarbe{(\textit{kombinierte Aufgabe}) Das selbe Zahlenschloss wird so verdreht, dass eine
 Ziffer dreimal und eine andere Ziffer einmal vorkommt. Wie viele Varianten
 sind das?}
 \TNT{2.4}{Es sind 360 Varianten. Nämlich 10 Varianten für die Ziffer,
@@ -372,12 +380,12 @@ die dreimal vorkommt, und noch 9 Varianten für die Ziffer, die genau
 einmal vorkommt. Dies macht 90 Varianten zwei Ziffern so auszuwählen,
 dass die erste Ziffer dreimal und die zweite Ziffer einmal
 vorkommt. Nun haben wir für diese 90 Varianten aber immer vier
-Möglichkeiten zu wählen, wo die einzelne Ziffer steht. Somit 10 mal 9
-mal 4 = 360.}
+Möglichkeiten zu wählen, wo die einzelne Ziffer steht. Somit
+$\frac{10!}{(10-8)!}\cdot 4$ 10 mal 9 mal 4 = 360.}
 
 \aufgabenfarbe{(optional; schwierig) Das selbe Zahlenschloss wird so verdreht, dass eine
 Ziffer maximal zweimal auftreten kann. Wie viele Varianten gibt es nun?}
-\TNT{2.4}{Es sind 9630 Varianten. Dies geht am einfachsten mit
+\TNT{3.2}{Es sind 9630 Varianten. Dies geht am einfachsten mit
 Abzählen. Von den Total 5040 Varianten fallen die zehn weg bei denen
 alle Ziffern gleich sind und ebenso fallen die 360 weg, bei denen drei
 gleiche Ziffern vorkommen (s. obige Aufgabe). Somit verbleiben
@@ -385,6 +393,9 @@ $10000-10-360=9630$. (2. Rechenweg: Muster «XYZT» + «XYZZ» + «XXYY»
 und alle Vertauschungen: $10\cdot{}9\cdot{}8\cdot{}7 +
 10\cdot{}9\cdot{}8\cdot{}\frac{12}2 + 10\cdot{}9\cdot{}\frac62$)
 }
+\newpage
+Aufgaben aus dem Kompendium:
+
 
 \aufgabenfarbe{Kompendium S. 46 Kap. 5.5.1 Aufg. 16.}
 
