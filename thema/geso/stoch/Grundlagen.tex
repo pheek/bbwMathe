@@ -46,7 +46,7 @@ Wiederholen Sie das Experiment nun noch weitere drei Male:
 
 \subsection{Ergebnis}\index{Ergebnis}
 
-\TRAINER{Mögliche \textbf{Ergebnisse} wären zum Beispiel
+\TRAINER{Mögliche \textbf{Ergebnisse} beim dreimaligen Münzwurf wären zum Beispiel
 
   \begin{itemize}
   \item Kopf Kopf Zahl
@@ -86,7 +86,7 @@ $\Omega = ...$\TRAINER{$\{(Kp.-Kp.-Kp.); (Kp.-Kp.-Zl.); (Kp.-Zl.-Kp);
   
   $(Zl.-Kp.-Kp.); (Zl.-Kp.-Zl.); (Zl.-Zl.-Kp); (Zl.-Zl.-Zl.)\}$}
 
-\TNT{3.6}{\vspace{30mm}}
+\TNT{2.4}{\vspace{30mm}}
 \newpage
 
 \subsubsection{Ein zweites Beispiel}
@@ -132,6 +132,19 @@ aus den Ergebnissen
 \item Zahl-Kopf-Kopf
 \end{itemize}
 
+Notieren Sie für obigen dreimaligen Münzwurf das Ereignis $E$ in Mengennotation «Es wurde mindestens
+zweimal Zahl geworfen»:
+
+$E = \{\noTRAINER{...}\TRAINER{ZZZ,ZZK, ZKZ, KZZ\}}$
+
+\TNT{2.8}{Es gibt vier mögliche Ergebnisse mit besagter Eigenschaft,
+  wobei das Ergebnis dreimal Zahl beim Ereignis mit dabei sein
+  muss.
+\vspace{1cm}
+}
+
+\newpage
+\subsubsection{Elementarereignis}
 \begin{bemerkung}{}{}
   Ein Ereignis kann natürlich auch aus genau einem Ergebnis bestehen. So ist bei einem einmaligen Wurf mit einem Würfel die Zahl 6 sowohl ein Ergebnis: ``6'', wie auch ein Ereignis $\{6\}$, diesmal jedoch als Menge bestehend aus einem einzigen Element. 
   \end{bemerkung}
@@ -140,16 +153,17 @@ aus den Ergebnissen
 Besteht ein Ereignis genau aus einem Ergebnis, so sprechen wir von einem \textbf{Elementarereignis}\index{Elementarereignis}.
 \end{definition}
 
-Notieren Sie für obigen dreimaligen Münzwurf das Ereignis $E$ in Mengennotation «Es wurde mindestens
-zweimal Zahl geworfen»:
+\begin{beispiel}{Elementarereignis}{}
+  Bei dreimaligem Münzwurf ist das Ereignis\\
+  «Es wird keinmal Kopf geworfen»\\
+  ein Elementarereignis:\\
 
-$E = \{\noTRAINER{...}\TRAINER{ZZZ,ZZK, ZKZ, KZZ\}}$
+  $$E = \{ZZZ\}$$
+\end{beispiel}
 
-\TNT{4.8}{Es gibt vier mögliche Ergebnisse mit besagter Eigenschaft,
-  wobei das Ergebnis dreimal Zahl beim Ereignis mit dabei sein
-  muss.
-\vspace{1cm}
-}
+
+
+
 \newpage
 \subsubsection{Gegenereignis}\index{Gegenereignis}
 \begin{definition}{Gegenereignis}{}
@@ -158,22 +172,11 @@ $E = \{\noTRAINER{...}\TRAINER{ZZZ,ZZK, ZKZ, KZZ\}}$
 \end{definition}
 
 \begin{beispiel}{Gegenereignis}{}
-So ist das Gegenereignis zu «\textit{Es wurde mindestens zwei mal Zahl
-geworfen}» wäre folglich «\textit{Es wurde keinmal oder einmal Zahl
-  geworfen}».
+So ist das Gegenereignis beim dreimaligen Münzwurf zu «\textit{Es wurde mindestens zwei mal Zahl
+geworfen}» wäre folglich «\textit{Es wurde keinmal oder einmal Zahl geworfen}».
 \end{beispiel}
 
 \vspace{2mm}
-
-\hrule
-
-Notieren Sie das \textbf{Gegenereignis} von «\textit{Der erste der drei Münzwürfe
-  ist Zahl.}» in der Mengenschreibweise, indem Sie alle
-möglichen Ergebnisse in Mengenklammern angeben:
-
-\noTRAINER{$$\{(..... - ...... - ......);  (..... - ...... - ......); (..... - ...... - ......); (..... - ...... - ......); \}$$}
-\TRAINER{$$\{(Kopf - Kopf - Kopf);  (Kopf - Kopf - Zahl); $$ $$(Kopf -
-  Zahl - Kopf); (Kopf - Zahl - Zahl); \}$$}
 
 
 \begin{definition}{}{}
@@ -181,6 +184,19 @@ Das Gegenereignis wird mit einem Strich über dem Ereignis angegeben:
 
 $$\bar{E} = \Omega \backslash E$$
 \end{definition}
+
+Notieren Sie das \textbf{Gegenereignis} von «\textit{Der erste der drei Münzwürfe
+  ist Zahl.}» in der Mengenschreibweise, indem Sie alle
+möglichen Ergebnisse in Mengenklammern angeben:
+
+$$E = \{
+\noTRAINER{.........................................................}\TRAINER{ZZZ,
+ZKZ, ZZK, ZKK\}}$$
+
+$$\bar{E} = \{
+\noTRAINER{.........................................................}\TRAINER{KZZ,
+KKZ, KZK, KKK\}}$$
+
 
 Sprich: Das Gegenereignis $E$-Strich ist gleich Omega($\Omega$) ohne die Elemente
 aus $E$.
