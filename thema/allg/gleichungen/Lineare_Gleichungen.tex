@@ -140,20 +140,20 @@ Der folgende Lösungsweg ist definitiv falsch. Irgendwo ist eine Umformung vorge
 Schreiben Sie bei jeder Umformung hin, um welche der oben angegebenen gültigen Äquivalenzumformung es sich handelt. Finden Sie den Fehler:
 
 Im folgenden seien $\pi$ und $a$ als die Kreiszahl $3.14159...$ definiert. Es gilt also $\pi = a$.
-\begin{tabular}{lrclp{7cm}}
-                  & $a$              &$=$& $\pi$               & nach Voraussetzung       \\
-$\Longrightarrow$ & $a\cdot a$       &$=$& $a\cdot\pi$         & wegen .........................     \\ 
-$\Longrightarrow$ & $a^2$            &$=$& $a\pi$              & ................................... \\ 
-$\Longrightarrow$ & $a^2 + a^2$      &$=$& $a\pi + a^2$         & ................................... \\
-$\Longrightarrow$ & $2a^2$           &$=$& $a\pi + a^2$         & ................................... \\ 
-$\Longrightarrow$ & $2a^2-2a\pi$     &$=$& $a\pi + a^2 -2a\pi$  & ................................... \\ 
-$\Longrightarrow$ & $2a^2-2a\pi$     &$=$& $\,\,\,\,\,\,\,\,\,\,\,\,\,\,  a^2 -a\pi$  & ................................... \\ 
-$\Longrightarrow$ & $2a^2-2a\pi$     &$=$& $a\cdot(a-\pi)$     & ................................... \\ 
-$\Longrightarrow$ & $2a\cdot(a-\pi)$ &$=$& $a\cdot(a-\pi)$     & ................................... \\ 
-$\Longrightarrow$ & $\frac{2a\cdot(a-\pi)}{a-\pi}$ &$=$& $\frac{a\cdot(a-\pi)}{a-\pi}$     & \noTRAINER{...................................} \TRAINER{hier wurde durch 0 dividiert, denn $a=\pi$!}\\ 
-$\Longrightarrow$ & $2a$             &$=$& $\frac{a\cdot(a-\pi)}{a-\pi}$     & \noTRAINER{...................................}\TRAINER{Definitionsbereich durch Termumformung links verändert} \\ 
-$\Longrightarrow$ & $2a$             &$=$& $a$                 & \noTRAINER{...................................}\TRAINER{Definitionsbereich durch Termumformung rechts verändert} \\ 
-$\Longrightarrow$ & $2$              &$=$& $1$                 & ........................ \\ 
+\begin{tabular}{lr@{$=$}lp{7cm}}
+                  & $a$              & $\pi$               & nach Voraussetzung       \\
+$\Longrightarrow$ & $a\cdot a$       & $a\cdot\pi$         & wegen .........................     \\ 
+$\Longrightarrow$ & $a^2$            & $a\pi$              & ................................... \\ 
+$\Longrightarrow$ & $a^2 + a^2$      & $a\pi + a^2$         & ................................... \\
+$\Longrightarrow$ & $2a^2$           & $a\pi + a^2$         & ................................... \\ 
+$\Longrightarrow$ & $2a^2-2a\pi$     & $a\pi + a^2 -2a\pi$  & ................................... \\ 
+$\Longrightarrow$ & $2a^2-2a\pi$     & $\,\,\,\,\,\,\,\,\,\,\,\,\,\,  a^2 -a\pi$  & ................................... \\ 
+$\Longrightarrow$ & $2a^2-2a\pi$     & $a\cdot(a-\pi)$     & ................................... \\ 
+$\Longrightarrow$ & $2a\cdot(a-\pi)$ & $a\cdot(a-\pi)$     & ................................... \\ 
+$\Longrightarrow$ & $\frac{2a\cdot(a-\pi)}{a-\pi}$ & $\frac{a\cdot(a-\pi)}{a-\pi}$     & \noTRAINER{...................................} \TRAINER{hier wurde durch 0 dividiert, denn $a=\pi$!}\\ 
+$\Longrightarrow$ & $2a$             & $\frac{a\cdot(a-\pi)}{a-\pi}$     & \noTRAINER{...................................}\TRAINER{Definitionsbereich durch Termumformung links verändert} \\ 
+$\Longrightarrow$ & $2a$             & $a$                 & \noTRAINER{...................................}\TRAINER{Definitionsbereich durch Termumformung rechts verändert} \\ 
+$\Longrightarrow$ & $2$              & $1$                 & ........................ \\ 
 \end{tabular}
 \newpage
 
