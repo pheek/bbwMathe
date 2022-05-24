@@ -1,7 +1,14 @@
 %%
 %% 2020 - 08 -03 φ
 %%
-\section{Erwartungswert}\index{Erwartungswert}
+
+\section{Verteilungen}
+
+
+\subsection{Erwartungswert}\index{Erwartungswert}
+
+
+
 
 Ich schlage Ihnen folgendes Würfelspiel vor.
 
@@ -59,3 +66,54 @@ Casino-Betreiber, also für Sie ausgeht?
 	annimmt.
 \end{definition}
 \newpage
+
+
+
+\subsection{Wahrscheinlichkeitsverteilungen ...}\index{Wahrscheinlichkeitsverteilung}
+
+Für ein Bernoulli-Experiment können wir uns auch ein Histogramm\index{Histogramm} aufzeichnen.
+
+Nehmen wir wieder unseren Basketballspieler «Basil», der mit Wahrscheinlichkeit von 85\% jeweils trifft. Vorhin hatten wir uns gefragt, wie groß die Wahrscheinlichkeit ist, dass er in 20 Würfen genau 17 Mal [bzw. maximal 17 Mal] trifft.
+
+Dies können wir in einer Wertetabelle und somit auch in einem Histogramm darstellen.
+\newpage
+
+
+\subsubsection{... genaue Anzahl Treffer}
+Notieren wir uns, wie groß die Wahrscheinlichkeit ist, dass Basil \textbf{genau} $n$ Mal trifft innerhalb von 20 Würfen:
+
+\begin{tabular}{c|cccccccccccccccc}
+  n & 0 & 1 & ... & 8 & 9 & 10   & 11   & 12   & 13  & 14  & 15 & 16 & 17 & 18 & 19 &  20\\
+  \%& 0 & 0 & ... & 0 & 0 & 0.02 & 0.11 & 0.46 & 1.6 & 4.5 & 10 & 18 & 24 & 23 & 14 & 3.9
+\end{tabular}
+
+Wenn wir diese Zahlen in ein Histogramm eintragen erhalten wir eine
+Wahrscheinlichkeitsverteilung:
+
+
+\bbwCenterGraphic{10cm}{geso/stoch/img/BernoulliSingleBasil.png}
+
+
+\subsubsection{... kumulierte Anzahl Treffer}
+Wie im vorangehenden Kapitel können wir uns die Wahrscheinlichkeiten
+auch zusammenzählen und \zB fragen, wie groß ist die
+Wahrscheinlichkeit, dass Basil Ballisti (er trifft mit 85\%
+Wahrscheinlichkeit) bei 20 Würfen \textbf{maximal} 17
+Treffer landet. Dabei darf er für maximal 17 Treffer natürlich auch
+weniger Treffer landen. So werden für ein Anzahl Treffer alle
+Wahrscheinlichkeiten der weniger erzielten Treffer hinzugezählt. So
+erklären sich auch die 100\% um maximal 20 Treffer in 20 Würfen zu
+landen.
+
+\begin{tabular}{c|cccccccccccccccc}
+  n  & 0 & 1 & ... & 8 & 9 & 10  & 11   & 12   & 13  & 14  & 15 & 16 &  17 & 18 & 19 &  20\\
+  \% & 0 & 0 & ... & 0 & 0 &  0.02  &0.13   & 0.59 & 2.2 & 6.7 & 17 & 35 &  60 & 82 & 96 & 100
+\end{tabular}
+
+Das entsprechende Diagramm sieht wie folgt aus:
+
+\bbwCenterGraphic{10cm}{geso/stoch/img/BernoulliCumulativeBasil.png}
+\newpage
+
+
+

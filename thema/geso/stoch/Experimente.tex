@@ -143,7 +143,8 @@ Mehrstufige Zufallsexperimente:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Binomialverteilung}
+\subsection{Bernoulli-Ketten}
+(Binomialverteilung)
 
 \TRAINER{Einstiegsvideo: ``EinfachMathe!'' \texttt{https://www.youtube.com/watch?v=WC5O317JzW0}}
 
@@ -160,7 +161,7 @@ Zeichnen Sie das zugehörige Baumdiagramm:
 \bbwCenterGraphic{15cm}{geso/stoch/img/genau2sechser.png}
 
 
-  Lösung mit Baum oder  Binomialverteilung.
+  Lösung mit Baum oder  Bernoulli-Formel (Binomialverteilung).
 
   Genau zwei Sechser: $\left(\frac16\right)^2\cdot{}\frac56 +
   \left(\frac16\right)^2\cdot{}\frac56 +
@@ -231,7 +232,9 @@ abfangen kann?
 \newpage
 
 
-\subsubsection{Formel zur Binomialverteilung}
+\subsubsection{Formel von Bernoulli}\index{Bernoulli!Formel
+  von}\index{Formel von Bernoulli}
+
 \TRAINER{Einstiegs-Viedo: \texttt{https://www.youtube.com/watch?v=WC5O317JzW0}}
 
 
@@ -241,7 +244,7 @@ siebenmaligem Werfen genau fünf mal eine der Zahlen \epsdice{1} oder
 \epsdice{2} zu erreichen?
 \end{beispiel}
 
-Bei der Binomialverteilung handelt es sich um ein
+Bei der sog. Bernoulli-Kette handelt es sich um ein
 Bernoulli-Experiment
 in einem mehrstufigen Baum ($n$ Versuche). Dabei interessiert
 uns, wie groß die Wahrscheinlichkeit ist, dass von den beiden
@@ -322,7 +325,7 @@ Basketballspieler «Basil Ballisti» trifft mit einer
 Wahrscheinlichkeit von 85\%.
 
 Die Wahrscheinlichkeit, dass er von 20 Würfen \textbf{genau} 17 Mal trifft, kennen wir
-bereits von der Binomialverteilung (Bernoulli-Experiment):
+bereits von der Formel von Bernoulli (Bernoulli-Experiment/Binomialverteilung):
 
 $$P(X=17) = \LoesungsRaumLang{{20 \choose 17}\cdot 0.85^{17}\cdot(1-0.85)^{20-17}}=$$
 $$\LoesungsRaumLang{{20 \choose 17}\cdot 0.85^{17}\cdot (0.15)^{3}}\approx{}\LoesungsRaum{24.28\%}$$
@@ -390,52 +393,8 @@ $k=17$ bei $x$ eintragen.
 
 \subsection*{Aufgaben}
 
-\aufgabenfarbe{Kompendium: S. 53ff Kap. 5.7. Aufg. 36. a) b) und 37.}
-\newpage
-
-\subsection{Wahrscheinlichkeitsverteilungen ...}\index{Wahrscheinlichkeitsverteilung}
-
-Für ein Bernoulli-Experiment können wir uns auch ein Histogramm\index{Histogramm} aufzeichnen.
-
-Nehmen wir wieder unseren Basketballspieler «Basil», der mit Wahrscheinlichkeit von 85\% jeweils trifft. Vorhin hatten wir uns gefragt, wie groß die Wahrscheinlichkeit ist, dass er in 20 Würfen genau 17 Mal [bzw. maximal 17 Mal] trifft.
-
-Dies können wir in einer Wertetabelle und somit auch in einem Histogramm darstellen.
-\newpage
-
-
-\subsubsection{... genaue Anzahl Treffer}
-Notieren wir uns, wie groß die Wahrscheinlichkeit ist, dass Basil \textbf{genau} $n$ Mal trifft innerhalb von 20 Würfen:
-
-\begin{tabular}{c|cccccccccccccccc}
-  n & 0 & 1 & ... & 8 & 9 & 10   & 11   & 12   & 13  & 14  & 15 & 16 & 17 & 18 & 19 &  20\\
-  \%& 0 & 0 & ... & 0 & 0 & 0.02 & 0.11 & 0.46 & 1.6 & 4.5 & 10 & 18 & 24 & 23 & 14 & 3.9
-\end{tabular}
-
-Wenn wir diese Zahlen in ein Histogramm eintragen erhalten wir eine
-Wahrscheinlichkeitsverteilung:
-
-
-\bbwCenterGraphic{10cm}{geso/stoch/img/BernoulliSingleBasil.png}
-
-
-\subsubsection{... kumulierte Anzahl Treffer}
-Wie im vorangehenden Kapitel können wir uns die Wahrscheinlichkeiten
-auch zusammenzählen und \zB fragen, wie groß ist die
-Wahrscheinlichkeit, dass Basil bei 20 Würfen \textbf{maximal} 17
-Treffer landet. Dabei darf er für maximal 17 Treffer natürlich auch
-weniger Treffer landen. So werden für ein Anzahl Treffer alle
-Wahrscheinlichkeiten der weniger erzielten Treffer hinzugezählt. So
-erklären sich auch die 100\% um maximal 20 Treffer in 20 Würfen zu
-landen.
-
-\begin{tabular}{c|cccccccccccccccc}
-  n  & 0 & 1 & ... & 8 & 9 & 10  & 11   & 12   & 13  & 14  & 15 & 16 &  17 & 18 & 19 &  20\\
-  \% & 0 & 0 & ... & 0 & 0 &  0.02  &0.13   & 0.59 & 2.2 & 6.7 & 17 & 35 &  60 & 82 & 96 & 100
-\end{tabular}
-
-Das entsprechende Diagramm sieht wie folgt aus:
-
-\bbwCenterGraphic{10cm}{geso/stoch/img/BernoulliCumulativeBasil.png}
+\aufgabenfarbe{Kompendium: S. 53ff Kap. 5.7. Aufg. 36. a) b)
+  (gerechter Würfel) und 37. (gezinkter Würfel)}
 \newpage
 
 \subsection*{Aufgaben}
@@ -444,11 +403,11 @@ Zeichnen Sie in folgender Aufgabe beide Diagramme: Die
 Wahrscheinlichkeiten für die genaue Anzahl Treffen, aber auch die
 Wahrscheinlichkeiten für die kumulativen Wahrscheinlichkeiten:
 
-\aufgabenfarbe{Kompendium: S. 53 Kap. 5.7. Aufg. 36. c)}
+\aufgabenfarbe{Kompendium: S. 53 Kap. 5.7. Aufg. 36. c) (gezinkter Würfel)}
 
 \newpage
 
-\subsection{Hypergeometrische Verteilung}\index{Verteilung!Hypergeometrische}\index{Hypergeometrische Verteilung}
+\subsection{Lotto-Wahrscheinlichkeit}\index{Verteilung!Hypergeometrische}\index{Hypergeometrische Verteilung}\index{Lotto-Wahrscheinlichkeit}
 In einer Urne liegen sieben Kugeln. Drei davon sind Treffer (grün) und vier davon sind Nieten (schwarz).
 Wir dürfen zwei Kugeln blind herausnehmen (ohne diese wieder zurückzulegen).
 
@@ -472,7 +431,22 @@ Somit erhalten wir für zwei Treffer ($t=2$) eine Wahrscheinlichkeit von $\frac{
 Die Summe aller Wahrscheinlichkeiten muss dann immer gleich 1.0 (100\%) sein.
 \newpage
 
-Andererseits gibt es dazu auch eine Formel, die \textbf{hypergeometrische Verteilung}\footnote{Die Folgeglieder der \textit{geometrischen Verteilung} $P(X=t) = p\cdot{}q^{t-1}$ verhalten sich wie eine geometrische Reihe (die Quotienten von zwei Folgengliedern $P(X=t) : P(X=t+1)$ sind jeweils konstant). Da die hier betrachtete Verteilung noch rascher ``abfällt'', wie die \textit{geometrische Verteilung}, so sprechen wir hier von \textbf{hyper}geometrisch.}.
+Andererseits gibt es dazu auch eine Formel, die
+\textbf{Lotto-Wahrscheinlichkeit} oder «\textit{hypergeometrische
+  Verteilung}»\footnote{Die Folgeglieder der \textit{geometrischen
+    Verteilung} $P(X=t) = p\cdot{}q^{t-1}$ verhalten sich wie eine
+  geometrische Reihe (die Quotienten von zwei Folgengliedern $P(X=t) :
+  P(X=t+1)$ sind jeweils konstant). Da die hier betrachtete Verteilung
+  noch rascher ``abfällt'', wie die \textit{geometrische Verteilung},
+  so sprechen wir hier von \textbf{hyper}geometrisch.}.
+
+\begin{beispiel}{Lotto-Wahrscheinlichkeit}{}
+  In obiger Urne mit \textbf{drei} Treffern und \textbf{zwei} Nieten
+  ziehen wir genau \textbf{zwei} Kugeln heraus. Wie groß ist die
+  Wahrscheinlichkeit auf zwei verschiedene Kugeln?
+\end{beispiel}
+
+
 
 Es seien:
 \begin{itemize}
@@ -483,8 +457,12 @@ Es seien:
 \item $t$ die Anzahl der gewünschten bzw. zu erreichenden Treffer. Hier \zB $t=1$.
   
 \item $n$ die Anzahl «gewünschten» Nieten (hier z. B. $n = 1$)
-\item $t+n$ die Anzahl total herausgezogener Kugeln (hier $t+n=2+0=2$)
+\item $t+n$ die Anzahl total herausgezogener Kugeln (hier $t+n=1+1=2$)
 \end{itemize}
+
+\newpage
+
+
 \begin{gesetz}{}{}
 $$P(X=t) = \frac{ {T\choose t} \cdot{} {{N}\choose {n}}}{{{T+N} \choose {t+n}}}$$
 \end{gesetz}
@@ -514,10 +492,11 @@ $$P(X=2) = \frac{ {T\choose t} \cdot{} {{N}\choose {n}}}{{{T+N}
     \choose {t+n}}} = \LoesungsRaumLang{\frac{ {3\choose 2} \cdot{} {{4}\choose {0}}}{{7
     \choose 2}} = \frac{3\cdot{}1}{21} = \frac17 \approx 0.14}$$
 
-\newpage
 
 \subsection*{Aufgaben}
 
-\aufgabenfarbe{Kompendium: S. 49 Kap. 5.5.3 Aufgaben 25., 26., 24. und optional 27.}
+\aufgabenfarbe{Kompendium: S. 49 Kap. 5.5.3 Aufgaben
+  25. (Herz-Karten), 26. (Smarties), 24. (Zahlenlotto) und optional
+  27. (Euromillions)}
 \newpage
 
