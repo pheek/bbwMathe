@@ -1,0 +1,70 @@
+%%
+%% Meta: TI nSpire Einführung
+%%       Ziel: Damit die Grundoperationen damit durchgeführt werden können.
+%%             Damit man sich an den Rechner gewöhnt.
+%%
+
+\input{bbwSeite}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amssymb} 
+\renewcommand{\metaHeaderLine}{Theorieblatt}
+\renewcommand{\arbeitsblattTitel}{Systematisches Lösen von Textaufgaben}
+
+\begin{document}%%
+\arbeitsblattHeader{}
+(Beispiel Mathematik Marthaler S. 131 Aufgabe 24)
+
+\textit{«Zieht man von 45 das Dreifache einer gesuchten Zahl ab, so
+erhält man die um 10 verminderte Zahl.»}
+
+
+\begin{enumerate}
+\item \textbf{Aufgabe verstehen:} Es hat eine gesuchte Zahl und ein
+Dreifaches. Vermindert heißt hier abgezogen (subtrahiert).
+
+\item \textbf{Variable einführen:} $z\in \mathbb{R}$ ist die gesuchte
+Zahl.
+Hier \textbf{ausnahmsweise ohne} Maßeinheit, denn es handelt sich nur
+um eine blanke Zahl. Ansonsten müsste hier cm, kg, m, km, Stunden,
+... angegeben werden.
+
+\item \textbf{Terme bilden:}
+$3z$: Das Dreifache der gesuchten Zahl
+
+$45-3z$: 45 um das Dreifache vermindert
+
+$z-10$: Die um zehn verminderte Zahl
+
+\item \textbf{Gleichung(en) aufstellen:} Der Text \textit{«... so
+erhält man... »} heißt eigentlich «gleich» und wird mit « $=$ » in der
+Mathematik gekennzeichnet.
+$$45 - 3z = z - 10$$
+
+\item \textbf{Gleichung(en) lösen:}
+
+\begin{tabular}{rcl|l}
+
+ 45-3z &=& z-10 & +3z\\
+
+ 45 &=& 4z-10 & + 10 \\
+
+ 55 &=& 4z  & :4\\
+
+  13.75 &=& z & (fertig)
+ \end{tabular} 
+
+\item \textbf{Kontrolle/Probe:}
+
+Zieht man ab: $45-3z = 45-41.25 = 3.75$
+
+Das Verminderte: $z-10 = 13.75 - 10 = 3.75$
+
+Die Probe stimmt.
+
+\item \textbf{Antwort:} Die gesuchte Zahl lautet \textbf{13.75}.
+
+\end{enumerate}
+
+\end{document}

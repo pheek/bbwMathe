@@ -1,0 +1,84 @@
+%%
+%% Meta: TI nSpire Einführung
+%%       Ziel: Damit die Grundoperationen damit durchgeführt werden können.
+%%             Damit man sich an den Rechner gewöhnt.
+%%
+
+\input{bbwSeite}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amssymb} %% für \blacktriangleright
+
+\renewcommand{\metaHeaderLine}{Aus alten Maturaaufgaben}
+\renewcommand{\arbeitsblattTitel}{Quadratische Gleichugen}
+
+\begin{document}%%
+\arbeitsblattHeader{}
+Lösen Sie nach $x$ auf:
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$1.\ (2018)$
+
+$$\frac{6x-24}{3-x} + x - 2 = \frac{6}{x-3}$$
+
+\TRAINER{$ \mathbb{D} = \mathbb{R}\backslash{}\{3\}, \mathbb{L} = \{8\}$}
+
+\noTRAINER{\mmPapier{4.4}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$2.\ (2018)$
+
+$$\frac{x^2}{x-2} + \frac{4}{2-x} = 3$$
+
+\TRAINER{$ \mathbb{D} = \mathbb{R}\backslash{}\{2\}, \mathbb{L} = \{1\}$}
+
+\noTRAINER{\mmPapier{4.4}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$3.\ (2018)$
+
+$$\frac{x^2-16x}{x-3} + 1 = \frac{39}{3-x}$$
+
+\TRAINER{$ \mathbb{D} = \mathbb{R}\backslash{}\{3\}, \mathbb{L} = \{12\}$}
+
+\noTRAINER{\mmPapier{4.4}}
+\noTRAINER{\newpage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$4.\ (2018)$
+
+$$\frac{x^2-10x}{x-4} + 1 = \frac{24}{4-x}$$
+
+\TRAINER{$ \mathbb{D} = \mathbb{R}\backslash{}\{4\}, \mathbb{L} = \{5\}$}
+
+\noTRAINER{\mmPapier{4.4}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+2017:
+Bestimmen Sie den Definitionsbereich des folgenden Terms:
+$$\frac{5x}{x^2-9x-36}$$
+
+
+\TRAINER{$\mathbb{D} = \mathbb{R}\backslash{}\{-3; 12\}$}
+
+\noTRAINER{\mmPapier{4.4}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+2017:
+$$\frac{x+1}{x-3} = \frac{10-2x}{x^2-3x}$$
+
+
+\TRAINER{$\mathbb{D} = \mathbb{R}\backslash{}\{0, 3\}; \mathbb{L}=\{-5, 2\}$}
+
+\noTRAINER{\mmPapier{4.4}}
+
+
+
+
+\end{document}

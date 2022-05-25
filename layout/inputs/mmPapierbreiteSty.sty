@@ -1,0 +1,18 @@
+%%
+%% Der folgende Code muss in einem STYLE (*.sty) sein, sonst funtz es
+%% nicht.
+
+\def\itemizeNAME{itemize}
+\def\tcbNAME{tcb@savebox}
+\newcommand{\TNT}[2]{\noTRAINER{
+
+\ifx\@currenvir\itemizeNAME{}%% innerhlab von \begin{itemize} und \end{itzmize}
+\renewcommand{\mmPapier}[1]{\mmPapierZwei{#1}{16.4}}%%
+\fi%%
+\ifx\@currenvir\tcbNAME{}%%  in rezepten, beipsielen, definitionen und gesetzen
+\renewcommand{\mmPapier}[1]{\mmPapierZwei{#1}{16.8}}%%
+\fi%%
+\mmPapier{#1}%%
+\renewcommand{\mmPapier}[1]{\mmPapierZwei{#1}{\defaultTextBreite}}%%
+}\TRAINER{#2}%%
+}%% END command TNT

@@ -1,0 +1,63 @@
+%%
+%% Meta: Arbeitsblatt zu Logarithmen
+%%       Wie konnte man vor 200 Jahren komplizierte Multiplikationen
+%%       ausführen.
+
+
+\input{bbwSeite}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\metaHeaderLine}{Logarithmen}
+\renewcommand{\arbeitsblattTitel}{Multiplikation durch Addition}
+
+\begin{document}%%
+\arbeitsblattHeader{}
+
+\section*{Auszug vereinfachte Logarithmentabelle}
+
+\begin{tabular}{|c|c|}\hline
+Numerus & Logarithmus\\\hline
+0.1   & - 1      \\\hline
+1     & 0        \\\hline
+1.001 & 0.0004341\\
+1.002 & 0.0008677\\
+...   & ...      \\
+1.155 & 0.06258  \\
+1.156 & 0.06296  \\
+1.157 & 0.06333  \\
+...   & ...      \\
+1.739 & 0.2403   \\
+1.740 & 0.2405   \\
+1.741 & 0.2408   \\
+...   & ...      \\
+3.570 & 0.5527   \\
+3.571 & 0.5528   \\
+3.572 & 0.5529   \\
+...   & ...      \\
+4.873 & 0.6878   \\
+4.874 & 0.6879   \\
+4.875 & 0.6880   \\
+...   & ...      \\
+6.638 & 0.8220   \\
+6.639 & 0.8221   \\
+6.640 & 0.8222   \\
+...   & ...      \\
+9.998 & 0.9999   \\
+9.999 & 1.000    \\\hline
+10    & 1        \\\hline
+\end{tabular}
+ 
+\section*{Auftrag}
+Multiplizieren Sie die drei Zahlen 4.873, 3.571 und 0.6640
+miteinander, indem Sie die Logarithmen addieren.
+
+\TNT{3.2}{$0.6878+0.5528+(0.8222-1) = 1.0628$
+
+In der Tabelle 0.0628 suchen.
+
+Das Resultat liegt zwischen $10\cdot1.155 = 11.55$ und 
+$10\cdot1.156 = 11.56$
+
+}%% END TNT
+\end{document}

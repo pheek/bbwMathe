@@ -2,6 +2,8 @@
 %% Phi BBW-Vorlage für Mathematische Dokumente (LaTeX)
 %% 2019 - 07 - 11
 
+\documentclass[twoside,12pt,a4paper]{article}%%
+
 %% %% %% %%
 
 %%  In den Dokumenten können die folgenden Attribute überschrieben werden:
@@ -63,15 +65,17 @@
 %%%%%%%%%%%%%%%%%%%%%%% P A C K A G E S %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[paper=a4paper,margin=17mm]{geometry}
 
-\input{bbwUsePackages}
 
 %% damit die Punktezal schon geschrieben werden kann, obschon
 %% Die Punkte erst während dem Dokument zusammengetragen werden:
 \usepackage{totcount}
 
-\input{bbwLayout}
-\input{bbwMakros}
-\input{matheMakros}
+\input{bbwInput}
+
+%\input{bbwUsePackages}
+%\input{bbwLayout}
+%\input{bbwMakros}
+%\input{matheMakros}
 
 %% LAYOUT FUER PRUEFUNGEN %%
 \headheight2pt
