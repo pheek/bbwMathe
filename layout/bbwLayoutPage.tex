@@ -4,38 +4,9 @@
 
 %% %% %% %%
 \documentclass[twoside,12pt,a4paper]{article}%%
-
-%%  In den Dokumenten können die folgenden Attribute überschrieben werden:
-
-\newcommand{\metaHeaderLine}{HeaderLine mit $\backslash{}$ metaHeaderLine überschreiben}%%
-
-%% \thema
-\newcommand{\arbeitsblattTitel}{Pruefungsthema mit renewcommand arbeitsblattTitel überschreiben.}%%
-
-\newcommand{\shortAuthor}{fp @ bbw.ch}
-
-%%%%%%%%%%%%%%%%%%%%%%% P A C K A G E S %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[paper=a4paper,margin=17mm]{geometry}%%
 
 
-\usepackage{tgheros}%% Font TeX Gyre Heros für Titel (font code qhv)
-
-%% damit die Punktezal schon geschrieben werden kann, obschon
-%% Die Punkte erst während dem Dokument zusammengetragen werden:
-
 \input{bbwInput}%%
 
-%% LAYOUT FUER ARBEITSBLAETTER %%
-\headheight12mm%%
-
-%%%%%%%%%%%%%%%  H E A D E R   &   F O O T E R %%%%%%%%%%%%%%%%%%%%
-
-%% Headers
-\fancyhf[HL]{\makebox{\includegraphics[width=30mm]{logos/bbw.pdf}}}%%
-\fancyhf[HC]{\metaHeaderLine{}}%%
-\fancyhf[FR]{\tiny{\shortAuthor{} (\today{})}}%%
-
-\newcommand{\arbeitsblattHeader}{%%
-  \begin{center}%%
-    {\Large \fontfamily{qhv}\selectfont \arbeitsblattTitel{}}%%
-\end{center}}%%
+\usepackage{bbwLayoutPageSty}

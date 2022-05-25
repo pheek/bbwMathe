@@ -1,0 +1,118 @@
+%%%%%%%%%%%%%%% L A Y O U T  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\headheight30pt%
+
+%% Schlagwortverzeichnis
+\renewcommand{\indexname}{Stichwortverzeichnis}%%
+\renewenvironment{theindex}%
+               {\if@twocolumn
+                  \@restonecolfalse
+                \else
+                  \@restonecoltrue
+                \fi
+                \columnseprule \z@
+                \columnsep 35\p@
+                \twocolumn[\section{\indexname}]%
+                \@mkboth{\MakeUppercase\indexname}%
+                        {\MakeUppercase\indexname}%
+                \thispagestyle{fancy}\parindent\z@
+                \parskip\z@ \@plus .3\p@\relax
+                \let\item\@idxitem}
+               {\if@restonecol\onecolumn\else\clearpage\fi}%%
+               
+\definecolor{codeBackground}{rgb}{0.9, 0.9, 0.8}%
+
+%% Subtitle
+\def\iffull#1{\if#1\relax\else}
+\gdef\@subtitle{}
+\def\subtitle#1{\gdef\@subtitle{#1}}
+\def\title#1{\gdef\@title{\sectfont\bfseries\LARGE#1\iffull\@subtitle\\%
+\mdseries\Large\@subtitle\fi}}
+
+
+%%%%%  H E A D E R %%%
+
+%% Erzeuge ein Kommando «parttitle»
+%% Siehe hier:
+%%  https://tex.stackexchange.com/questions/13387/how-to-get-part-name-in-latex
+\newcommand*\parttitle{}
+\let\origpart\part
+\renewcommand*{\part}[2][]{%
+   \ifx\\#1\\% optional argument not present?
+      \origpart{#2}%
+      \renewcommand*\parttitle{#2}%
+   \else
+      \origpart[#1]{#2}%
+      \renewcommand*\parttitle{#1}%
+   \fi
+}
+
+
+% styles siehe http://web.reed.edu/cis/help/latex/bibtexstyles.html
+% include texlife.bibtex.extra:
+\bibliographystyle{alphadin.bst}
+%\bibliographystyle{plain}
+
+%% cleardoublepage soll auf linker (also gerader) Seite beginnen.
+\makeatletter
+\renewcommand*\cleardoublepage{\clearpage\if@twoside
+  \ifodd\c@page \hbox{}\newpage\if@twocolumn\hbox{}%
+  \newpage\fi\fi\fi}
+\makeatother
+
+%% Titel immer links:
+\titleformat{\section}[block]%%
+{\huge}%%{\cleardoublepage\huge}
+{\thesection}%%
+{1em{}}%%
+{ | }%%
+[%%{\vspace{8cm}\raisebox{2mm}{\includegraphics[width=14cm]{logos/bbw.pdf}}\thispagestyle{empty}\newpage\mbox{}}
+]%%
+
+%%%%%%%%%%%%%%% Title Format for TRAINER %%%%%%%%%%%%%%%%%%%
+
+\ifisTRAINER%%
+\definecolor{titelFarbe}{rgb}{0.8, 0.4, 0.0}%%
+\else%%
+\definecolor{titelFarbe}{rgb}{0.68, 0.74, 0.0}%%
+\fi%%
+
+%%\titleformat{\part}{\normalfont\Huge\bfseries\color{titelFarbe}}{\thepart}{1em}{}%%
+\titleformat{\section}{\normalfont\huge\bfseries\color{titelFarbe}}{\thesection}{1em}{}%%
+\titleformat{\subsection}{\normalfont\Large\bfseries\color{titelFarbe}}{\thesubsection}{1em}{}%%
+\titleformat{\subsubsection}{\normalfont\large\bfseries\color{titelFarbe}}{\thesubsubsection}{1em}{}%%
+
+%%\input{impressum.tex}
+
+
+
+%% Theoreme: Bemerkungen, Beispiele und Definitionen
+%\theoremstyle{remark}
+%\newtheorem{bsp}{Beispiel}[section]
+%\newtheorem{bem}{Bemerkung}[section]
+
+%%\theoremstyle{definitionstyle}
+%%\newtheorem{definition}{Definition}[section]
+
+%% EV Hier schauen, wegen Boxen und Faben um Bsp, Bem, Definition
+%% https://tex.stackexchange.com/questions/437317/leftbar-theorem-environment-with-changeable-colors-for-the-left-bar/437335
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+%% Referenzen auf Labels
+%% AllInOne ist wichtig, denn einige Referenzen funkitionieren nicht
+%% in den Themen-Skripts, sondern lediglich in den gesamten Jahres-Skripts.
+\newcommand*\totalref[1]{\ifisALLINONE{ (s.\kern 0.22em{}Kap. \ref{#1}
+    auf Seite \pageref{#1}) }\else{}\fi{}}%%
+\newcommand*\totalrefanhang[1]{ (s.\kern 0.22em{}Kap. \ref{#1}
+    auf Seite \pageref{#1}) }%%
+
+%% Short version
+\newcommand*\totalrefs[1]{\ifisALLINONE{ Kap. \ref{#1} auf Seite
+\pageref{#1} }\else{}\fi{}}%%
+%%\newcommand*\aufgabenref[1]{(s\kern 0.22em{}Aufg. \ref{#1} auf Seite \pageref{#1})}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BBW Makros %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%% Start fetching index entries for theindex
+\makeindex
