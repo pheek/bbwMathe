@@ -15,19 +15,6 @@
 
 \usepackage{tgheros}%% Font TeX Gyre Heros für Titel (font code qhv)
 
-%% damit die Punktezal schon geschrieben werden kann, obschon
-%% Die Punkte erst während dem Dokument zusammengetragen werden:
 
 %% LAYOUT FUER ARBEITSBLAETTER %%
 \headheight12mm%%
-
-%%%%%%%%%%%%%%%  H E A D E R   &   F O O T E R %%%%%%%%%%%%%%%%%%%%
-%% Headers
-\fancyhf[HL]{\makebox{\includegraphics[width=30mm]{logos/bbw.pdf}}}%%
-\fancyhf[HC]{\metaHeaderLine{}}%%
-\fancyhf[FR]{\tiny{\shortAuthor{} (\today{})}}%%
-
-\newcommand{\arbeitsblattHeader}{%%
-  \begin{center}%%
-    {\Large \fontfamily{qhv}\selectfont \arbeitsblattTitel{}}%%
-\end{center}}%%

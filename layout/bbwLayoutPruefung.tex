@@ -3,82 +3,13 @@
 %% 2019 - 07 - 11
 
 \documentclass[twoside,12pt,a4paper]{article}%%
-
-%% %% %% %%
-
-%%  In den Dokumenten können die folgenden Attribute überschrieben werden:
-
-%% \thema
-\newcommand{\pruefungsThema}{Pruefungsthema mit renewcommand «pruefungsThema» überschreiben.}
-%% \klasse
-\newcommand{\klasse}{klasse mit renewcommand «klasse» überschreiben.}
-%% \pruefungsNummer
-\newcommand{\pruefungsNummer}{Pruefungsnummer mit renewcommand «pruefungsNummer» überschreiben.}
-\newcommand{\pruefungsTeil}{}%% Prüfungsteil mit renewcommand «pruefungsTeil» überschreiben}
-%% \datum
-\newcommand{\pruefungsDatum}{Pruefungsdatum mit renewcommand «pruefungsDatum» überschreiben.}
-\newcommand{\pruefungsVorgabeZeit}{Pruefungsvorgabezeit mit renewcommand «pruefungsVorgabeZeit» überschreiben.}
-\newcommand{\pruefungsHilfsmittel}{\colorbox{red}{Pruefungshilfsmittel mit renewcommand «pruefungsHilfsmittel» überschreiben.}}
-
-
-\newcommand{\unloesbarkeitsklausel}{Lösungen ohne Rechenweg werden
-  nicht berücksichtigt, es sei denn es wird beschrieben, wie
-  vorgegangen wurde (Taschenrechner [TR], aus Grafik [ablesen],
-  ...). Es ist möglich, wenn auch i.\,d.\,R. nur bei Gleichungen
-  vorgesehen, dass vereinzelte Aufgaben nicht lösbar sind. Sind bei
-  einer Aufgabe von Ihnen mehrere Lösungswege oder Endresultate
-  vorhanden, so zählen die jeweils schlechteren Resultate.}
-
-\newcommand{\loesungswegsklausel}{
-  
-\textit{Lösungswege können zur Bewertung herangezogen werden.}\footnote{\unloesbarkeitsklausel{}}
-}
-
-\newcommand{\kommunikationsausschluss}{
-
-\textit{Keine Kommunikation\footnote{Handy, Smartwatch, Pad, Laptop,
-    ... Zuwiderhandlung kann zu disziplinarischen Maßnahmen führen.} untereinander!}}
-
-\newcommand{\vielGlueck}{
-
-\textit{Viel Glück!}}
-
-
-\newcommand{\inPapierform}{sowie \achtAvier{}.}
-%% Mögliche erlaubte Papierunterlagen.
-\newcommand{\achtAvier}{acht A4-Seiten mit beliebigem Inhalt und die
-  Formelsammlung (auch acht A4-Seiten)}
-\newcommand{\openBook}{alle Unterlagen in Papierform «\textit{open book}»}
-
-\newcommand{\defaultHiflsmittelOhneRechner}{Erlaubt
-  sind Schreibzeug, \inPapierform{}
-
-  Der Taschenrechner darf \textbf{nicht} verwendet
-  werden.}
-
-\newcommand{\defaultHiflsmittelMitRechner}{Erlaubt
-  sind Schreibzeug, \inPapierform{}
-  
-  Der Taschenrechner \textbf{darf verwendet}
-  werden.}
-
-%%%%%%%%%%%%%%%%%%%%%%% P A C K A G E S %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[paper=a4paper,margin=17mm]{geometry}
 
 
-%% damit die Punktezal schon geschrieben werden kann, obschon
-%% Die Punkte erst während dem Dokument zusammengetragen werden:
-\usepackage{totcount}
-
 \input{inputs/bbwInput}
 
-%\input{bbwUsePackages}
-%\input{bbwLayout}
-%\input{bbwMakros}
-%\input{matheMakros}
+\usepackage{bbwLayoutPruefungSty}
 
-%% LAYOUT FUER PRUEFUNGEN %%
-\headheight2pt
 
 %%%%%%%%%%%%%%%  H E A D E R   &   F O O T E R %%%%%%%%%%%%%%%%%%%%
 
@@ -94,91 +25,3 @@
 %\fancyhf[FCE]{\fachthema:\ \doctitel}
 %\fancyhf[FLE,FRO]{\thepage{}/\pageref{LastPage}}
 %\fancyhf[FCO]{BBW: Abteilung 6 BMS}
-
-\newcounter{frageCounter}
-\setcounter{frageCounter}{1}
-
-%%\newenvironment{fragn}{%%
-%%  \arabic{frageCounter}\stepcounter{frageCounter}%%
-%%  \begin{tabular}{p{169mm}}%%
-%%  \hline\\%%
-%%}{\end{tabular}}
-
-%%\newenvironment{frageXXX}[2][def]{(#1,#2)\begingroup}{\endgroup}
-
-%%\newcommand{\leserluft}{\vspace{2mm}}
-
-\newcounter{tmpCounter}
-\newenvironment{frageALT}[1][def]{%%
-\setcounter{tmpCounter}{#1}%%
-\addtocounter{maxpunkte}{\value{tmpCounter}}%%
-\begingroup
-
-%% Multicolumn nur wichtig, damit die Ränder hier nicht angezeigt werden.
-\begin{tabular}{|p{176mm}|}%%
-\multicolumn{1}{l}{\textbf{Aufgabe\ \arabic{frageCounter}\stepcounter{frageCounter}%%
-\,\,[\arabic{tmpCounter} Pkt.]:}}\\ %%
-\hline{}%\textbf{Aufgabe\ \arabic{frageCounter}\stepcounter{frageCounter}%%
-%\,\,[\arabic{tmpCounter} Pkt.]}%%
-
-}{\\%%
-  \hline\end{tabular}\noTRAINER{\parbox[c]{20mm}{{\ ......}\\*{\-\ Pkt.}}}\vspace{4mm}\endgroup}
-
-
-\newenvironment{frage}[1][def]{%%
-\setcounter{tmpCounter}{#1}%%
-\addtocounter{maxpunkte}{\value{tmpCounter}}%%
-\begingroup
-
-%% Multicolumn nur wichtig, damit die Ränder hier nicht angezeigt werden.
-\begin{tabular}{|p{178mm}|}%%
-\multicolumn{1}{p{171mm}}{\textbf{Aufgabe\ \arabic{frageCounter}\stepcounter{frageCounter}%%
-\,\,[\arabic{tmpCounter} Pkt.]:} \noTRAINER{\hspace*{\fill} $\Box$
-  s. separates Lösungsblatt \textbf{\hspace*{\fill}Pkt.: ......}}}\\\hline{}%%
-}{\\\hline\end{tabular}\vspace{4mm}\endgroup}
-
-
-
-%\newcommand{\fragexx}[1]{%%
-%\begin{tabular}{p{172mm}}%%
-%\hline\\%%
-%\end{tabular}\\%%
-%%\nextFrageNummer{}%%
-%{#1}}%%
-
-%  \\
-%\begin{tabular}{p{14cm}}\hline\\%%
-%\end{tabular}
-%\nextFrageNummer{}
-%{#1}}%%
-\newtotcounter{maxpunkte}
-\newcommand{\pruefungsIntro}{\setcounter{maxpunkte}{0}%%
-\begin{tabular}{|lcllcp{34mm}|}%%
-\hline%%
-  Thema                             &:& \pruefungsThema{}         & Prüfungsdatum           &: & \pruefungsDatum{}                      \\%%
-  Prüfungsnummer                    &:& \pruefungsNummer{}        & Prüfungsteil            &: & \pruefungsTeil{}                       \\%%
-  Klasse                            &:& \klasse{}                 & Nachprf.-\,Datum        &: &  .........................             \\%%
-  \textbf{Vorname}                  &:& \noTRAINER{.........................}\TRAINER{{\color{red}Lehrer/Lösungen}} & \textbf{Familienname}   &: & .........................\\%%
-  Vorgabezeit                       &:& \pruefungsVorgabeZeit{}   & \                       &\ & \                                      \\%%
-  Punkte (Max.\,\total{maxpunkte})  &:& ......................... & Note                    &: & .........................              \\%%
-\hline%%
-\end{tabular}%%
-\vspace{1mm}\\%%
-\textbf{Hilfsmittel}: \pruefungsHilfsmittel{}\\
-\kommunikationsausschluss{}\loesungswegsklausel{}\vielGlueck{}\\%%
-%%\textit{Lösungswege können zur Bewertung herangezogen werden.}\\%%
-\vspace{-1mm}%%
-\setcounter{maxpunkte}{0}%%
-\TRAINER{
-  \begin{center}\Huge{\color{red}Lösungen}\end{center}
-  \newpage
-}%%
-}%%
-
-%% Wahr/Falsch Boxen
-%% Aufruf \wahrbox{wahr}, falls das Resultat wahr ist
-%% Aufruf \wahrbox{falsch}, falls ``falsch'' angegeben werden muss.
-\newcommand{\wahrbox}[1]{($\Box$ wahr; $\Box$ falsch)\TRAINER{#1}}%%
-
-%% Muss etwas schmaler sein, weil jede Frage einen Rahmen darum herum hat.
-\renewcommand{\mmPapier}[1]{\mmPapierZwei{#1}{17.6}}

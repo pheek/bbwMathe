@@ -2,8 +2,6 @@
 %% Phi BBW-Vorlage für Mathematische Dokumente (LaTeX)
 %% 2019 - 07 - 11
 
-%% %% %% %%
-
 %%  In den Dokumenten können die folgenden Attribute überschrieben werden:
 
 %%%%%%%%%%%%%%%%%%%%%%% P A C K A G E S %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -13,9 +11,39 @@
 %%\usepackage[landscape,margin=5mm]{geometry}%
 
 \input{inputs/bbwInput}
+
 \usepackage{bbwLayoutSlideSty}
+
+
+
+
+%%%%%%%%%%%%%%%  H E A D E R   &   F O O T E R %%%%%%%%%%%%%%%%%%%%
 \pagestyle{fancy}
+
+
+%% Oben (Header) linke Seite
+
+\fancyhf[HL]{\makebox{\includegraphics[width=37mm]{logos/bbwBreit.pdf}}} 
+%%\fancyhf[HCE]{\parttitle}
+
+%% Oben (Header) rechte Seite
+%%\fancyhf[HRO]{\leftmark}
+
+
+%% Unten (Footer)  FRE = right even, FLE= left even, FRO = right odd,
+%% FCO = center odd
+%%\fancyhf[FRE]{\doctitel{}:\ \fachthema}
+%%\fancyhf[FLE,FRO]{\thepage{}/\pageref{LastPage}}
+%%\fancyhf[FCO]{BBW: Abteilung 6 BMS}
+
+%%\fancyhead[LE,RO]{\slshape \rightmark}
+
+\fancyhead[RO]{\leftmark}
+\fancyhf[FR]{\footnotesize{\thepage}}
+
+
+
 
 %% Muss hier überschrieben werden, denn in
 %% «bbwLayout.tex» wird die Höhe für A4 auf 24.4 cm festgesetzt
-\textheight10cm
+\textheight108mm
