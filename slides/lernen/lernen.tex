@@ -13,11 +13,23 @@
 \begin{document}%%
 \thispagestyle{fancy}
 \section*{Lernen}
-
 Welche Kantone bezeichnen die folgenden Wappen?
-\newpage
 
+\def\wapp#1{\includegraphics[width=18mm]{img/#1.png}}
+
+\begin{tabular}{cccc}
+ \wapp{zh} & \wapp{ur} & \wapp{ge} & \wapp{sg} \\
+ \wapp{ag} & \wapp{gr} & \wapp{gl} & \wapp{ju}%%
+ \end{tabular}%%
+%%
+%% implicit newpage because of section
 \section*{Auf\/lösung}
+\begin{tabular}{cccc}
+ Zürich    & Uri        & Genf      & St. Gallen \\
+ \wapp{zh} & \wapp{ur}  & \wapp{ge} & \wapp{sg}  \\
+ Aargau    & Graubünden & Glarus    & Jura       \\
+ \wapp{ag} & \wapp{gr}  & \wapp{gl} & \wapp{ju}%%
+ \end{tabular}%%
 \newpage
 \section*{Umkehrung}
 Zeichnen Sie die Wappen von
@@ -25,7 +37,8 @@ Zeichnen Sie die Wappen von
 \item Zürich
 \item Tessin
 \item Freiburg
-\item Glarus
+\item Schaffhausen
+
 \end{itemize}
 \newpage
 

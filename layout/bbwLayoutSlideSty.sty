@@ -1,17 +1,26 @@
+\usepackage{pdflscape}
+
 \usepackage{inputs/bbw}
 
 
 %%%%%%%%%%%%%%%  H E A D E R   &   F O O T E R %%%%%%%%%%%%%%%%%%%%
 
 %% Oben (Header) linke Seite
-\fancyhf[HLE]{\makebox{\includegraphics[width=37mm]{logos/bbwBreit.pdf}}} 
-\fancyhf[HCE]{\parttitle}
+
+\fancyhf[HL]{\makebox{\includegraphics[width=37mm]{logos/bbwBreit.pdf}}} 
+%%\fancyhf[HCE]{\parttitle}
+
 %% Oben (Header) rechte Seite
-\fancyhf[HRO]{\leftmark}
+%%\fancyhf[HRO]{\leftmark}
+
+
 %% Unten (Footer)  FRE = right even, FLE= left even, FRO = right odd,
 %% FCO = center odd
-\fancyhf[FRE]{\doctitel{}:\ \fachthema}
-\fancyhf[FLE,FRO]{\thepage{}/\pageref{LastPage}}
-\fancyhf[FCO]{BBW: Abteilung 6 BMS}
+%%\fancyhf[FRE]{\doctitel{}:\ \fachthema}
+%%\fancyhf[FLE,FRO]{\thepage{}/\pageref{LastPage}}
+%%\fancyhf[FCO]{BBW: Abteilung 6 BMS}
 
-\fancyhead[LE,RO]{\slshape \rightmark}
+%%\fancyhead[LE,RO]{\slshape \rightmark}
+
+\fancyhead[RO]{\leftmark}
+\fancyhf[FR]{\thepage}
