@@ -18,14 +18,6 @@
 \newcommand\bbwCenterGraphicRaise[3]{\begin{center}\bbwGraphicRaise{#1}{#2}{#3}\end{center}}
 \newcommand\bbwCenterGraphic[2]{\bbwCenterGraphicRaise{-5mm}{#1}{#2}}%%
 
-%% Welche Zielgruppe soll ausgedruckt werden?
-%% Typischerweise entweder TALS oder GESO (nicht beide). TRAINER ist optional für
-%% die Trainer Version.
-\newif\ifisTALS
-\newif\ifisGESO
-\newif\ifisTRAINER
-
-\include{zielgruppe}
 
 %% All in one Skript
 \newif\ifisALLINONE
@@ -52,6 +44,8 @@
 }}%    
 
 \newcommand{\noTRAINER}[1]{{\ifisTRAINER{}\else{#1}\fi}{}}%%
+
+
 
 %%\makeatletter
 %% Je nach Umgebung "environment" wird das mmPapier breiter oder
