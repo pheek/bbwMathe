@@ -72,6 +72,10 @@ cp -f ./gleichungen/quadratische_gleichung_gallin/QuadratischeGleichung_TRAINER_
 #cp -f ./gleichungen/quadratische_gleichung_gallin/QuadratischeGleichung_TRAINER_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/14Schritte/QuadratischeGleichung.mitLoesungen.pdf
 
 
+echo "Copiing Lernen mit Wappen"
+cp -f ./lernenMitWappen/lernen_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/lernen/LernenMitWappen.pdf
+
+
 
 echo "Copiing Quadratische funktionen Arbeitsblatt Formne"
 cp -f ./funktionen_quadratische_formen/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/fct2/formen

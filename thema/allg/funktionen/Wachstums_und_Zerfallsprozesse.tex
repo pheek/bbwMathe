@@ -147,7 +147,7 @@ Begründung:
 
 \subsection{Einstiegsbeispiel Wachstumsprozesse}
 
-\bbwCenterGraphic{12cm}{allg/funktionen/img/tuerlersee2.jpg}
+\bbwCenterGraphic{17cm}{allg/funktionen/img/tuerlersee2.jpg}
 \begin{center}{\small Legende: Türlersee April 2022}\end{center}
 
 Der Türlersee ist ein kleiner See im Repischtal. Seine Oberfläche
@@ -191,7 +191,10 @@ Dabei bezeichnet 20 den Startwert, 2 den Zunahmefaktor und 5 die Beobachtungszei
 Die allgemeine Formel für exponentielle Prozesse lautet:
 
 \begin{definition}{Wachstumsprozess}{}
-  $$f(t) = y = b\cdot{}a^{\frac{t}{\tau}}$$
+  $$y = b\cdot{}a^{\frac{t}{\tau}}$$
+  bzw.
+  $$f(t) = b\cdot{}a^{\frac{t}{\tau}}$$
+  
 \end{definition}
 
 
@@ -339,7 +342,9 @@ Bemerkung: \TRAINER{$$2^{-x} = \frac1{2^x} = \left(\frac12\right)^x$$}
 Die allgemeine Formel für Zerfallsprozesse lautet:
 
 \begin{definition}{Zerfall}{}
-$$f(t) = y = b\cdot{}a^{\frac{t}{\tau}}$$
+$$y = b\cdot{}a^{\frac{t}{\tau}}$$
+  bzw.
+  $$f(t) = b\cdot{}a^{\frac{t}{\tau}}$$
 \end{definition}
 
 \bbwCenterGraphic{10cm}{allg/funktionen/img/exp/exponentieller_zerfall.png}
@@ -422,6 +427,16 @@ Die Halbwertszeit wird inbesondere
   $$\frac{b}2 = b\cdot{}a^{\frac{T_{1/2}}{\tau}}$$
 
     Nach Auflösen ergibt sich:
+
+    \TNT{4}{
+      Durch $b$ teilen:
+      $$\frac12 = a^{\frac{T_{1/2}}{\tau}}$$
+      logarithmieren:
+      $$\log_a\left(\frac12\right) = \frac{T_{1/2}}{\tau}$$
+      mit $\tau$ multiplizieren...
+      $$\tau\cdot{}\log_a\left(\frac12\right) = T_{1/2}$$
+    }%% END TNT
+
     
 \begin{gesetz}{Halbwertzszeit}{}
   $$T_{1/2} = \tau\cdot{}\log_a\left(\frac12\right)$$
