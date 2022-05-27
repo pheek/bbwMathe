@@ -1,7 +1,6 @@
 #!/usr/bin/bash
 ## Push All Generated Skripts to Webdav
 
-
 ## Finde lehrperson/fp
 OLAT_MOUNT_POINTS=`mount | grep olat | awk '{print $3}'`
 
@@ -15,7 +14,6 @@ else
 		echo "${BBW_WEBDAV_PATH} not mounted??? exiting..."
 		exit
 fi
-
 
 BBW_WEBDAV_PATH=/mnt/${BBW_WEBDAV_PATH}
 
