@@ -77,7 +77,7 @@ cp -f ./lernenMitWappen/lernen_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/
 
 
 
-echo "Copiing Quadratische funktionen Arbeitsblatt Formne"
+echo "Copiing Quadratische funktionen Arbeitsblatt Formen"
 cp -f ./funktionen_quadratische_formen/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/fct2/formen
 
 echo "Copying Systematisches Lösen von Textaufgaben (ALLG)"
