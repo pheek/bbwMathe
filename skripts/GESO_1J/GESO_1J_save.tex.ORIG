@@ -20,10 +20,16 @@
 %% Kapitel funktioniren:
 \isALLINONEtrue%%
 
-\scriptStart{}
+\begin{document}
+\include{linkverzeichnis}
 
-%% Einstiegsaufgaben
+\ptitlepage
+\newpage
+
+
+%\noTRAINER{\blankpage{}}%%
 \input{geso/000/GESO_Einstiegsaufgaben}
+\newpage
 
 %% Arithmetik und Algebra Grundlagen
 \input{geso/aa1/AllGESO}
@@ -31,37 +37,70 @@
 %%%%%%%%%%%%%%%%
 % Gleichungen I
 \input{geso/gl1/AllGESO}
+\newpage
 
 %%%%%%%%%%%%%%%%%%%%5
 % Funktionen I
 \input{geso/fct1/AllGESO}
+\newpage
+
+%%%%%%%%%%%%%%%%%%
+
 
 %%%%%%%%%%%%%%%
 % Lineare Gleichungssysteme
 \input{geso/gls/AllGESO}
+\newpage
+
+%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%
 % Arithmetik und Algebra II
 \input{geso/aa2/AllGESO}
+\newpage
 
 %%%%%%%%%%%%%%%%%%%
 %% Logarithmen (Arithmetik und Algebra III)
 \input{geso/aa3/AllGESO}
+\newpage
 
 %%%%%%%%%
 %% Gleichungen II
 \input{geso/gl2/AllGESO}
+\newpage
+
 
 %%%%%%%%%%%%%%%%%55
 %% Funktionen II
 \input{geso/fct2/AllGESO}
+\newpage
 
-%%%%%%%%%%%%%%%
+%%
 %% Datenanalyse
 \input{geso/daan/AllGESO}
+
 
 %%%%%%%%%%%%%%%%%%
 %% Wahrscheinlichkeitsrechnung
 \input{geso/stoch/AllGESO}
 
-\scriptEnde{}
+
+%%\input{GESO/Gleichungen}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{anhang}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%\linkVerzeichnis{}%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage\mbox{}
+%\blankOddPage{}%
+%\include{texlife-bibtex-extra}
+
+\bibliography{bibAll}{}\label{literatur}
+
+\printindex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+\end{document}

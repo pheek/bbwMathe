@@ -21,20 +21,14 @@
 %% Kapitel funktioniren:
 \isALLINONEtrue%%
 
-\begin{document}
-\include{linkverzeichnis}
-
-\ptitlepage
-\newpage
+\scriptStart{}
 
 %% Part Arithmetik und Algebra 1
 \input{tals/aa1/AllTALS}
 
-
 %% Part Gleichungen I (lineare)
 \input{tals/gl1/AllTALS}
 
-\newpage
 %% Part Trigo I
 \input{tals/trig1/AllTALS}
 
@@ -44,63 +38,39 @@
 
 %% Metapackage Funktionen I
 \input{tals/fct1/AllTALS}
-\newpage
+
 
 %% All TALS
 \input{tals/gl2/AllTALS}
-\newpage
+
 
 %% Metapackaeg Planimetrie I
 \input{tals/plani/AllTALS}
-\newpage
 
 
 % 2. Jahr
 %% Gleichungssysteme
 \input{tals/gls/AllTALS}
-\newpage
+
 
 %% Datenanalyse
 \input{tals/daan/AllTALS}
-\newpage
+
 
 %% Funktionen II TALS
 \input{tals/fct2/AllTALS}
-\newpage
+
 
 %% Trigonometrie III
 \input{tals/trig3/AllTALS}
-\newpage
+
 
 %% Trigonometrie I%
 \input{tals/trig4/AllTALS}
-\newpage
+
 
 %% Trigonometrie I%
 \input{tals/ungl/AllTALS}
-\newpage
 
 
-%\newpage
-%\newpage
-%\part{Repetitionsaufgaben}
-%\input{Rep_TALS/Algebra}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{anhang}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%\linkVerzeichnis{}%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\newpage\mbox{}
-%\blankOddPage{}%
-% include texlife-bibtex-extra
- \bibliography{bibAll}{}\label{literatur}
-\newpage
-
-
- \printindex
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\end{document}
+\scriptEnde{}
