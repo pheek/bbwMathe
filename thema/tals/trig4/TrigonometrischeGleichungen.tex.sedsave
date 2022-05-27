@@ -1,0 +1,177 @@
+%% Trigonometrie IV
+%% Trigonometrische Gleichungen
+%% 2020 - 12 - 21 φ@bbw.ch
+
+\section{Trigonometrische Gleichungen}\index{trigonometrische Gleichungen}\index{Gleichungen!trigonometrische}
+
+
+\subsection{Trigonometrische Beziehungen}
+Es gelten diverse Beziehungen zwischen $\sin$, $\cos$ und $\tan$.
+
+\subsubsection{$\sin$ und $\cos$}
+Eine Beziehung kennen wir bereits von der verallgemeinerten
+Sinus-Funktion:
+
+\begin{bemerkung}{Sinus und Cosinus}{}
+  Cosinus ist ein verschobener Sinus.
+  $$\sin\left(\varphi+\frac{\pi}{2}\right) = \sin(\varphi+90\degre)= \cos(\varphi)$$
+\end{bemerkung}
+
+\textbf{Referenzaufgabe}: Für welche(n) Winkel $\varphi$ gilt die Beziehung:
+
+$$\sin(150\degre) = \cos(\varphi)$$
+
+\TNT{2.4}{
+  $\cos(\varphi) = \sin(150\degre)$ und $\cos(\varphi) = \sin(\varphi + 90\degre)$. Somit ist
+  $$\sin(150\degre) = \sin(\varphi + 90\degre)$$
+  Eine Lösung erhalten wir aus $150\degre = \varphi + 90\degre$; und somit: $\varphi=60\degre$ ist sicher eine Lösung.
+}%% END TNT
+
+
+\subsubsection{Periodizität}
+Auch aus den Funktionsgraphen von $\sin$, $\cos$ und $\tan$ kennen wir die
+folgenden Beziehungen für alle ganzen Zahlen $z\in\mathbb{Z}$:
+\begin{bemerkung}{Periodizität}{}
+
+
+  Für alle Winkel $\varphi$ gilt:
+  $$\sin(\varphi) = \sin(\varphi + z\cdot2\pi) = \sin(\varphi + z\cdot360\degre)$$
+  $$\cos(\varphi) = \cos(\varphi + z\cdot2\pi) = \sin(\varphi + z\cdot360\degre)$$
+  Für alle Winkel $\varphi$ mit $\cos(\varphi)\ne 0$ gilt:
+  $$\tan(\varphi) = \tan(\varphi + z\cdot\pi) =\tan(\varphi + z\cdot{}180\degre)$$
+  \end{bemerkung}
+\newpage
+
+\subsubsection{Tangens}
+Eine weitere wichtige Beziehung folgt direkt aus den Definitionen:
+
+\begin{gesetz}{Tangens}{}
+  Für alle Winkel $\varphi$, deren $\cos$ nicht Null ergibt, gilt:
+
+  $$\tan(\varphi) = \frac{\sin(\varphi)}{\cos(\varphi)}$$
+  \end{gesetz}
+Zur Herleitung dient einfach die Definition des Tangens mit
+anschließendem Erweitern:
+
+$$\tan(\varphi) = \frac{\textrm{Gegenkathete von
+  }\varphi}{\textrm{Ankathete von }\varphi} =
+\frac{\frac{\textrm{Gegenkathete von }
+    \varphi}{\textrm{Hypotenuse}}}{\frac{\textrm{Ankathete von }\varphi}{\textrm{Hypotenuse}}}
+=\frac{\sin(\varphi)}{\cos(\varphi)}$$
+
+\newpage
+
+
+\subsubsection{$\sin^2 + \cos^2$}
+Betrachten wir ein rechtwinkliges Dreieck mit dem Winkel $\varphi$
+gegenüber der Kathete $g$. $a$ sei die Ankathete und $h$ die
+Hypotenuse:
+
+\bbwCenterGraphic{6cm}{tals/trig4/img/pythagoras.png}
+
+\TNT{10.4}{
+  $\frac{g}{h} = \sin(\varphi)$ und $\frac{a}{h} = \cos{\varphi}$.
+
+  Daraus folgt:
+
+  $$g= h\cdot{}\sin(\varphi) \textrm{ und } a = h\cdot{} \cos(\varphi)$$
+  Ebenso gilt nach Pythagoras:
+
+  $$g^2 + a^2 = h^2$$
+
+  Duch Einsetzen von $g$ und $h$ ergibt sich:
+
+  $$(h\cdot{}\sin(\varphi))^2 + (h\cdot{} \cos(\varphi))^2 = h^2$$
+
+  somit
+
+  $$h^2 \cdot{} \sin(\varphi) \cdot{} \sin(\varphi) + h^2 \cdot{} \cos(\varphi)\cdot{}\cos(\varphi) = h^2$$
+  teilen durch $h^2$ ergibt:
+  
+}%% END TNT
+\newpage
+
+
+
+\begin{gesetz}{}{}
+  $$\sin(\varphi)\cdot \sin(\varphi) + \cos(\varphi) \cdot
+  \cos(\varphi) = 1$$
+\end{gesetz}
+Oder am Einheitskreis (optional):
+\TNT{4.4}{\bbwCenterGraphic{8cm}{tals/trig4/img/ssccEinheitskreis.png}}%% END TNT
+
+\begin{bemerkung}{}{}
+  Es sind die folgenden Notationen üblich:
+  $$\sin^2(\varphi) = \sin(\varphi)\cdot\sin(\varphi)$$
+  $$\cos^2(\varphi) = \cos(\varphi)\cdot\cos(\varphi)$$
+\end{bemerkung}
+Daher merken wir uns:
+\begin{bemerkung}{}{}
+  $\sin^2+\cos^2 = 1$
+\end{bemerkung}
+
+\begin{bemerkung}{}{}
+
+  \begin{tabular}{p{6cm}p{2cm}p{6cm}}
+    \fbox{$\sin^2(\varphi) = \sin(\varphi)\cdot\sin(\varphi)$} & Aber: & \fbox{$\sin(\varphi^2) = \sin(\varphi\cdot\varphi)$}\\
+    \end{tabular}
+  
+\end{bemerkung}
+\newpage
+
+
+\subsubsection{Weitere trigonometrische Beziehungen}
+Des weiteren gelten die folgenden Beziehungen:
+\begin{gesetz}{Sinus}{}
+  Sinus ist ``ungerade''.\index{ungerade Funktion!Sinus}
+  $$sin(\varphi) = - sin(-\varphi)$$
+  \end{gesetz}
+
+\begin{gesetz}{Cosinus}{}
+  Cosinus ist ``gerade''.\index{gerade Funktion!Cosinus}
+  $$cos(\varphi) = cos(-\varphi)$$
+  \end{gesetz}
+\newpage
+
+
+\subsubsection{Referenzaufgabe}
+Berechnen Sie die Lösungsmenge $\lx$ für
+$$\cos(x) = -\sin(211\degre)$$
+im Definitionsbereich $\mathbb{D}=[0; 360\degre]$.
+
+
+\TNT{14}{
+1. Sinusfunktion ist ungerade:
+
+$$\cos(x) = \sin(-211\degre)$$
+
+2. $\cos(x) = \sin(x+90\degre)$
+
+In (1.) einsetzen:
+
+$$\sin(-211\degre) = \sin(x+90\degre)$$
+
+3. 
+Somit erhalten wir für $x$ sofort eine Lösung nämlich
+
+$$211\degre = x+ 90\degre$$
+also
+$$x=-301\degre$$
+
+4. $x$ auf den Definitionsbereich einschränken:
+
+Der $\cos$ ist gerade, somit ist $x_1=+301\degre$ sofort auch eine
+Lösung.
+
+5. Der $\cos$ ist symmetrisch gegenüber $180\degre$ und somit ist $x_2
+= 360\degre-301\degre = 59\degre$ auch eine Lösung.
+
+$$\Longrightarrow \lx = \{59\degre, 301\degre\}$$
+}%% END TNT
+\newpage
+
+\subsection*{Aufgaben}
+\aufgabenfarbe{Strukturaufgaben S. 3 Aufg. 3. k) m) p) q) t) v) x)}
+\TALSGeomAadB{124}{183. a) b) c) und d), 185. a) und mit TR (solve)
+  185. b), 188. a) b) c) d) und e) und 189. a) mit geeigneter Substitution}
+\TALSAadB{234ff}{885.ff}

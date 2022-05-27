@@ -1,4 +1,10 @@
+
+
 %%%%%%%%%%%%%%% L A Y O U T  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{inputs/bbwColors}
+
+
 \headheight30pt%
 
 %% Schlagwortverzeichnis
@@ -19,7 +25,6 @@
                 \let\item\@idxitem}
                {\if@restonecol\onecolumn\else\clearpage\fi}%%
                
-\definecolor{codeBackground}{rgb}{0.9, 0.9, 0.8}%
 
 %% Subtitle
 \def\iffull#1{\if#1\relax\else}
@@ -68,13 +73,7 @@
 [%%{\vspace{8cm}\raisebox{2mm}{\includegraphics[width=14cm]{logos/bbw.pdf}}\thispagestyle{empty}\newpage\mbox{}}
 ]%%
 
-%%%%%%%%%%%%%%% Title Format for TRAINER %%%%%%%%%%%%%%%%%%%
 
-\ifisTRAINER%%
-\definecolor{titelFarbe}{rgb}{0.8, 0.4, 0.0}%%
-\else%%
-\definecolor{titelFarbe}{rgb}{0.68, 0.74, 0.0}%%
-\fi%%
 
 %%\titleformat{\part}{\normalfont\Huge\bfseries\color{titelFarbe}}{\thepart}{1em}{}%%
 \titleformat{\section}{\normalfont\huge\bfseries\color{titelFarbe}}{\thesection}{1em}{}%%

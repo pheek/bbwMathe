@@ -7,7 +7,7 @@
 %% 2019-07-26
 %% phi@freimann.eu
 %% Makros for BBW-Tex Documents
-
+\usepackage{inputs/bbwColors}
 
 %%%%%%%%%%%%%%%%%% I N C L U D E S   &   I N D E X  %%%%%
 \graphicspath{{../img/}}
@@ -115,9 +115,8 @@ Platz für Notizen:\newline%%
 
 
 %%Häuschenpapier
-\definecolor{bbblue}{rgb}{0.79,0.84,0.0}
 \newcommand{\mmPapierZwei}[2]{\begin{tikzpicture}
-  \draw[step=4mm,bbblue,thin]
+  \draw[step=4mm,bbwMMFarbe,thin]
   (0, 0) grid ({#2}, {#1});
   \end{tikzpicture}}%%
 
@@ -164,17 +163,16 @@ z.\,B.
 
 %%%%%%%%%%%%%%%%%%%%%% B B W - M a t h e   F a r b c o d e s  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
 
-\newcommand{\rezeptFarbe}{red}
-\newcommand{\definitionFarbe}{yellow}
-\newcommand{\gesetzFarbe}{green}
-\newcommand{\beispielFarbe}{orange}
-\newcommand{\bemerkungFarbe}{orange}
+\newcommand{\rezeptFarbe}{rezeptFarbe}
+\newcommand{\definitionFarbe}{definitionFarbe}
+\newcommand{\gesetzFarbe}{gesetzFarbe}
+\newcommand{\beispielFarbe}{beispielFarbe}
+\newcommand{\bemerkungFarbe}{bemerkungFarbe}
 
 %% Falls gewünscht übersteuren
 %  \definecolor{xyz}{HTML}{eeff66}
 %  \renewcommand{\beispielFarbe}{xyz}
 %
-
 
 %% Theorem-Styles
 \newcommand\theoremlayoutdefinition[4]{\newtcbtheorem[number within=section]{#1}{#2}%
@@ -204,28 +202,25 @@ z.\,B.
 
 
 
-\newcommand*{\maturaAufgaben}[1]{\begin{mdframed}[backgroundcolor=purple!10]{#1}\end{mdframed}}
-
-\definecolor{shadecolor}{RGB}{180,180,250}
-\newcommand*{\aufgabenfarbe}[1]{\begin{snugshade*}{#1}\end{snugshade*}}
+%%\newcommand*{\maturaAufgaben}[1]{\begin{mdframed}[backgroundcolor=maturaAufgabenFarbe!10]{#1}\end{mdframed}}
 
 \newcommand*{\aadB}{Aufgaben aus dem Buch}
 
 \newcommand*{\TALSAadB}[2]{%%
 {%%
-\ifisTALS{\aufgabenfarbe{\noindent{\aadB \cite{frommenwiler17alg}: Seite {#1} Nr. {#2}}}}%%
+\ifisTALS{\aufgabenFarbe{\noindent{\aadB \cite{frommenwiler17alg}: Seite {#1} Nr. {#2}}}}%%
 \fi%%
 }}%%
 
 \newcommand*{\TALSGeomAadB}[2]{%%
 {%%
-\ifisTALS{\aufgabenfarbe{\noindent{\aadB \cite{frommenwiler18geom}: Seite {#1} Nr. {#2}}}}%%
+\ifisTALS{\aufgabenFarbe{\noindent{\aadB \cite{frommenwiler18geom}: Seite {#1} Nr. {#2}}}}%%
 \fi%%
 }}%%
 
 \newcommand*{\GESOAadB}[2]{%%
 {%%
-\ifisGESO{\aufgabenfarbe{\aadB \cite{marthaler21}: Seite {#1} Nr. {#2}}}%%
+\ifisGESO{\aufgabenFarbe{\aadB \cite{marthaler21}: Seite {#1} Nr. {#2}}}%%
 \fi%%
 }}%%
 

@@ -1,0 +1,209 @@
+%%
+%% 2019 07 11 Ph. G. Freimann
+%%
+
+\section{Zehnerlogarithmus}\index{Logarithmus!Basis 10}\index{Zehnerlogarithmus}
+\sectuntertitel{\textit{logos}: Das Verhältnis, \textit{arithmos}: Die Zahl}
+
+\theorieGESO{97}{6.1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item Zehnerpotenzen
+\item wissenschaftliche Notation (Repetition)
+\item Zehnerlogarithmus
+\item Notation
+\item Logarithmengesetze I
+\item Beispiele: Richterskala (Erdbeben), dB (Lautstärke), pH («Säuregehalt»)
+\end{itemize}
+
+\ifisALLINONE{
+\subsubsection*{wissenschaftliche Notation}
+Die wissenschaftliche Notation wurde bereits
+eingeführt. Zur Erinnerung:\totalref{wissenschaftlicheNotation}.
+}\fi{}%% END ALL IN ONE
+\newpage
+
+\subsection{Definition Zehnerlogarithmus}\index{Logarithmus!Definition
+  Zehnerlogarithmus}
+
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{cc|cc}
+  \hline
+  Potenz               & ${\color{blue}10}^{\color{red}3} = {\color{ForestGreen}x}$     & ${\color{ForestGreen}x}=\LoesungsRaumLang{{\color{blue}10}\cdot{}{\color{blue}10}\cdot{}{\color{blue}10} = {\color{ForestGreen}1000}}$ & Potenzwert \\\hline
+  Potenzgleichung      & ${\color{blue}x}^{\color{red}3}  = {\color{ForestGreen}1000}$  & ${\color{blue}x}=\LoesungsRaumLang{\sqrt[{\color{red}3}]{{\color{ForestGreen}1000}}       = {\color{blue}10}}$   & 3. Wurzel  \\\hline
+  Exponentialgleichung & ${\color{blue}10}^{\color{red}x} = {\color{ForestGreen}1000}$  & ${\color{red}x}=\LoesungsRaumLang{\lg(1000) = {\color{red}3}}$                                  & Logarithmus \\\hline
+  \end{tabular} 
+\renewcommand{\arraystretch}{1}
+
+\vspace{5mm}
+
+Allgemein für ${\color{red}z}\in \mathbb{Z}$:
+
+\begin{definition}{Logarithmus = Exponent}{}
+  $$\lg({\color{green} 10^z}) = {\color{red} z}$$
+\end{definition}
+
+
+Definition für $x\in\mathbb{R}, p \in \mathbb{R}^{+}\backslash\{0\}$:
+\begin{definition}{Logarithmus zur Basis 10}{}
+  \begin{center}
+    ${\color{blue}10}^{\color{red}x}={\color{ForestGreen}p}$
+    $\Longleftrightarrow$
+    ${\color{red}x} = {\color{blue}\lg}({\color{ForestGreen}p})$
+    \end{center}
+\end{definition}
+
+\begin{bemerkung}{}{}\index{Logarithmus!Definition}
+  Der \textbf{Logarithmus} (hier $\color{red}x$) eines Potenzwertes
+  (hier $\color{ForestGreen}p$) ist der Exponent ($\color{red}x$) in der
+  Potenzschreibweise (${\color{blue}10}^{\color{red}x}$); und somit die \textbf{Umkehrung des Potenzierens}.
+\end{bemerkung}
+
+\textbf{Beispiele}:\\
+
+$\lg(\frac1{100}) =\LoesungsRaumLang{\lg(10^{-2}) } = \LoesungsRaum{-2}$
+\leserluft{}
+
+$\lg(\frac1{1000}) =\LoesungsRaumLang{\lg(10^{-3}) } = \LoesungsRaum{-3}$
+\leserluft{}
+
+$\lg(10^{-8}) = \LoesungsRaum{-8}$
+\leserluft{}
+
+$\lg(100 \cdot{} 1000) = \LoesungsRaum{5}$
+\leserluft{}
+
+$\lg(0.0001) = \LoesungsRaum{-4}$
+
+\newpage
+\subsubsection{Logarithmus der Wurzel}
+Wir erinnern uns: $$\sqrt{10} =\LoesungsRaum{ 10^\frac12}$$
+\begin{beispiel}{Logarithmus der
+    Wurzel}{beispiel_logarithmus_der_wurzel}
+
+  Daraus folgt direkt $\lg(\sqrt{10}) = \LoesungsRaum{\lg(10^\frac12)}  = \LoesungsRaum{0.5}$.
+\end{beispiel}
+
+\subsubsection{Notation}
+Der Zehnerlogarithmus $\lg()$ wird oft auch explizit mit der Basis 10
+angegeben; dann wird $\log_{10}(\,\,)$ anstelle von $\lg(\,\,)$ geschrieben:
+
+\begin{center}
+\fbox{$\lg = \log_{10}$ }
+\end{center}
+
+\begin{bemerkung}{Taschenrechner}{}
+  Auf vielen Taschenrechnern steht $\log$ anstatt $\lg$.
+
+  \GESO{  \tiprobutton{ln_log}}
+  \TALS{  \nspirebutton{10xlog}}
+  \end{bemerkung}
+
+
+\textbf{Beispiele}:\\
+
+
+$\sqrt{10} = 10^{0.5} \approx \LoesungsRaum{3.16227766}$
+\leserluft{}
+
+$10^{2.5} \approx \LoesungsRaum{316.227766}$\\
+\TRAINER{, denn $10^{2.5} = 10^{2+0.5} = 10^2 \cdot{} 10^{0.5} = 100\cdot{}\sqrt{10}$.}
+\leserluft{}
+
+$\lg(10^{2.5}) = \LoesungsRaum{2.5}$
+
+\leserluft{}
+
+$\lg(316.23) \approx \LoesungsRaum{2.500}$
+
+
+
+\newpage
+
+\subsection{Rechengesetze}
+Per Definition gilt:
+
+\begin{gesetz}{}{}
+$$\lg(10) = 1$$
+\end{gesetz}
+
+\begin{gesetz}{}{}
+$$\lg(1) = 0$$
+\end{gesetz}
+
+\begin{gesetz}{}{}
+  $$10^{\lg(p)} = p$$
+\end{gesetz}
+
+Begründung:
+\TNT{2.4}{ Durch beidseitiges Exponenzieren der Definition...
+
+$$\lg(10^x) = x \Longrightarrow 10^{\lg(10^x)} = 10^x
+\stackrel{p:=10^x}{\Longrightarrow} 10^{\lg(p)} = p$$
+}%% END TNT
+
+\begin{bemerkung}{negative Exponenten}{}
+  Weil $10^x$ für alle $x$ immer positiv ausfällt, so gibt es keine
+  Logarithmen von negativen Zahlen:
+
+  $$\lg(a) \textrm{ ist definiert für } a\in\mathbb{R}^+\backslash\{0\}$$
+  \end{bemerkung}
+
+
+\newpage
+\subsubsection{Multiplikatiosgesetz\GESO{ (optional)}}
+\begin{gesetz}{}{}
+  $\lg(r\cdot s) = \lg(r) + \lg(s)$
+\end{gesetz}
+
+Begründung:
+\TNT{6.0}{
+$10^n \cdot{} 10^m = 10^{n+m}.$
+\\
+Zahlenbeispiel:
+$$\log(10^2\cdot{}10^4) = \log(10^{2+4}) = 2+4
+= \log(10^2) + \log(10^4) $$
+
+Oder allgemein (für $r = 10^n$ und $s = 10^m$)\footnote{\TRAINER{Wobei hier $n$ und $m$ nicht notwendigerweise in $\mathbb{N}$}}:
+$$\lg(r \cdot s) = \lg(10^n \cdot 10^m) = \lg(10^{(n+m)}) = n+m = \lg(10^n) + \lg(10^m) = \lg(r) + \lg(s).$$
+\vspace{15mm}
+}%% END TNT
+
+Beispiel: \TRAINER{Beim Vorzeigen mit den beiden 8ern von links und
+  rechts beginnen.}
+
+\TNT{2}{$${\color{gray}8=\lg(10^8)=\lg(10^{3+5})}=\lg(10^3\cdot{}10^5) =
+\lg(10^3)+\lg(10^5){\color{gray}=3+5=8}$$}%% END TNT
+
+\TALS{
+  \textbf{Multiplizieren durch Addieren}\\
+
+  Nach dem ebene gezeigten Gesetz gilt:
+  \TNT{1.2}{  $$\lg(a\cdot{}b) = \lg(a) + \lg(b)$$}
+  
+  Daraus folgt:
+\TNT{1.2}{  $$a\cdot{}b = 10^{\lg(a\cdot{}b)} = 10^{\lg(a) +
+    \lg(b)}$$}
+
+  Und somit können wir zwei Zahlen multiplizieren, indem wir ihre
+  Logarithmen addieren:
+
+  \aufgabenfarbe{Lösen Sie die Multiplikation auf dem Blatt im OLAT,
+    indem Sie die Logarithmen der Zahlen addieren.}
+}
+\newpage
+
+
+\subsection*{Aufgaben}
+\GESOAadB{102ff}{2. a) c) d) g) h) i), 3. a) c) e), 4. a), 12. a) c)
+  und 18. a) b) c) e)} 
+\GESOAadB{108}{38.}
+\GESOAadB{107ff}{Optional: 36., 37. und 39.}
+
+\TALSAadB{60ff}{172. a) b) d), 173. f) h) k), 174. a) b) c), 175. b) c),
+  176. a) b) f) und 179. a) f) h)}
+\newpage
+

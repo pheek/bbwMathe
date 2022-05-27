@@ -1,0 +1,37 @@
+\definecolor{codeBackground}{rgb}{0.9, 0.9, 0.8}%
+
+%% Nur der Trainer sieht das
+\definecolor{trainerFarbe}{HTML}{66CCCC}
+
+%% ein angenehmes Grün:
+\definecolor{farnFarbe}{HTML}{4F8F00}
+%%%%%%%%%%%%%%% Title Format for TRAINER %%%%%%%%%%%%%%%%%%%
+
+\ifisTRAINER%%
+\definecolor{titelFarbe}{rgb}{0.8, 0.4, 0.0}%%
+\else%%
+\definecolor{titelFarbe}{rgb}{0.68, 0.74, 0.0}%%
+\fi%%
+
+%% Farbe für Aufgaben (Hintergrund)
+\definecolor{shadecolor}{RGB}{180,180,250}
+\newcommand*{\aufgabenFarbe}[1]{\begin{snugshade*}{#1}\end{snugshade*}}
+
+%%\definecolor{maturaAufgabenFarbe}{HTML}{CCAA33}
+
+
+%%%%%%%%%%%%%%%%%  Rezepte, Definitionen, Gesetze, .... %%%%%%%%%%%%%%%%%%%%%%
+%% Diese werden definiert in "bbwMakros.tex", doch die Farben sind universell
+%%
+\definecolor{rezeptFarbe}{HTML}{FF0000}
+\definecolor{definitionFarbe}{HTML}{FAFA00}
+\definecolor{gesetzFarbe}{HTML}{77EE44}
+\definecolor{beispielFarbe}{HTML}{bb0099}
+\definecolor{bemerkungFarbe}{HTML}{FF8800}
+
+
+%%%  bbwLogoFarbe
+%%
+%% für mmPapier
+%% etwas heller als titelFarbe
+\definecolor{bbwMMFarbe}{rgb}{0.74,0.84,0.0}

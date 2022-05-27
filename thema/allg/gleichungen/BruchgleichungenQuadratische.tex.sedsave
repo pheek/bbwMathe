@@ -1,0 +1,68 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+\subsection{... quadratische}\index{Gleichungen!Bruchgleichungen, quadratische}\index{quadratische Bruchgleichungen}
+%%\sectuntertitel{...}
+
+\theorieGESO{118}{8.3}
+
+\theorieGESO{121}{8.4}
+\theorieTALS{105}{2.4.1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item Bruchgleichungen, die in quadratischen Gleichungen münden
+\item Definitionsbereich
+\TALS{  \item \textit{Bruch\textbf{un}gleichungen (halbgrafische Methode)}}
+\end{itemize}
+
+Bruchgleichungen können beim Lösen auch auf quadratische Gleichungen führen:
+\begin{beispiel}{quadratische Bruchgleichung}{beispiel_quadratische_bruchgleichung}
+$$\frac{6x-24}{3-x} + x - 2 = \frac{6}{x-3}$$
+\end{beispiel}
+
+\newpage
+Vorzeigebeispiel:
+
+$$\frac{6x-24}{3-x} + x - 2 = \frac{6}{x-3}$$
+\TNT{15.6}{
+Definitionsbereich:
+  $\mathbb{D} = \mathbb{Q}\backslash \left\{3\right\}$\\
+
+Gleichnamig:
+
+$$\frac{6x-24}{3-x} + \frac{(x-2)(3-x)}{3-x} = \frac{-6}{+(3-x)}$$
+
+Mit Hauptnenner multiplizieren, denn der kann ja nicht Null sein, denn
+die $3$ wurde aus dem Definitionsbereich ausgeschlossen:
+
+$$6x-24 + (x-2)(3-x) = -6$$
+
+Ausmultiplizieren ...
+
+$$6x - 24 + 3x -x^2 -6 +2x = -6$$
+
+... und zusammenfassen:
+
+$$0=x^2-11x+24 = (x-3)(x-8)$$
+
+Nur Definitionsbereich in der Lösungsmenge:
+
+$$\mathbb{L} = \{8\}$$
+\vspace{20mm}
+}%% END TNT
+\newpage
+
+\subsection*{Aufgaben}
+\TALSAadB{106}{329 ff.}
+
+\GESO{Bruchgleichungen, die auf quadratische Gleichungen führen:}
+\GESOAadB{182}{12.}
+
+\GESO{
+\aufgabenfarbe{Lösen Sie auch das Blatt im OLAT zu
+  Bruch\textbf{gleichungen} aus alten Maturaaufgaben.}
+} %% END GESO
+
+\newpage
