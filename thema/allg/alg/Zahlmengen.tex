@@ -37,11 +37,19 @@ Einführende Youtube Videos: \texttt{youtu.be/9JgcETAN65c} und \texttt{youtu.be/
   wesentlich ist, verzichten wir auf die Schreibweise $\mathbb{N}$ und
   verwenden
 
-  $$\mathbb{N}_0 = \mathbb{N}^\ast = \{0, 1, 2, 3, 4, ...\}$$
+  $$\mathbb{N}_0 = \mathbb{N}\cup{} \{0 \}  = \{0, 1, 2, 3, 4, ...\}$$
   bzw.
-  $$\mathbb{N}\backslash\{0\} = \{1, 2, 3, 4, ...\}.$$
+  $$\mathbb{N}\backslash\{0\} =\mathbb{N}^\ast= \mathbb{N}^+= \{1, 2, 3, 4, ...\}.$$
   \end{bemerkung}
 }%% END TALS
+
+\GESO{\begin{bemerkung}{Notation}{}
+  Um explizit anzugeben, dass die Zahl Null nicht zu $\mathbb{N}$ gehört schreiben wir:
+  $$\mathbb{N}\backslash{}\{0\}$$
+  Um explizit anzugeben, dass die Zahl Null zur Menge $\mathbb{N}$ gehören soll, schreiben wir:
+  $$\mathbb{N}_0$$
+\end{bemerkung}}%% END GESO
+
 
 Mit natürlichen Zahlen können wir beliebig
 \begin{itemize}
@@ -49,12 +57,6 @@ Mit natürlichen Zahlen können wir beliebig
 \item \textbf{multiplizieren} ($\cdot{}$).
 \end{itemize}
 
-\begin{bemerkung}{Notation}{}
-  Um explizit anzugeben, dass die Zahl Null nicht zu $\mathbb{N}$ gehört schreiben wir:
-  $$\mathbb{N}\backslash{}\{0\}$$
-  Um explizit anzugeben, dass die Zahl Null zur Menge $\mathbb{N}$ gehören soll, schreiben wir:
-  $$\mathbb{N}_0$$
-\end{bemerkung}
 
 \TALS{\newpage}
 
@@ -118,6 +120,27 @@ $$0.\overline{13} = 0.131313... = \LoesungsRaumLang{13\cdot{}\frac1{99}=\frac{13
 \TNT{4}{Bem.: $\frac{1}{9} = 0.111\overline{1}$, $\frac{1}{99} = 0.0101\overline{01}$, $\frac{1}{999} = 0.001001\overline{001}$, ...}
 
 %%\GESOAadB{22}{7. a) b) c) d) e)}
+
+\newpage
+
+  \subsection*{Aufgaben}
+  Zeigen Sie, dass die folgenden Dezimalzahlen rational sind. Schreiben Sie dazu diese Zahlen als gewöhnliche, gekürzte Brüche:
+
+  \renewcommand{\arraystretch}{1.5}
+  \begin{tabular}{|c|c|c|}
+  $0.8=\LoesungsRaum{\frac45}$                  & $-2.03=\LoesungsRaum{-\frac{203}{100}}$         & $2.125=\LoesungsRaum{\frac{17}{8}}$                             \\
+  $3.\overline{3}=\LoesungsRaum{\frac{10}{3} }$ & $4.\overline{16}=\LoesungsRaum{\frac{412}{99}}$ & $1.\overline{538461} =\LoesungsRaum{\frac{170\,940}{111\,111}}$ 
+  \end{tabular} 
+  \renewcommand{\arraystretch}{1}
+
+
+  \noTRAINER{\mmPapier{6}}%% END noTRAINER
+
+  \GESOAadB{22}{Optional: 6., 7.}
+  \TALSAadB{8}{Optional: 1., 2.}
+
+  \noTRAINER{\mmPapier{6}}%% END noTRAINER
+
 \newpage
 
 
@@ -187,9 +210,9 @@ $$0.00001    \approx \LoesungsRaum{0.0000{\color{ForestGreen}\mathbf{1000}}}$$
 
 \subsection*{Aufgaben}
 
-\aufgabenFarbe{Runden Sie die Zahl 3.21459 auf zwei Dezimalen: \LoesungsRaumLang{3.21}. Runden Sie die selbe Zahl 3.21459 auf drei Dezimalen: \LoesungsRaumLang{3.215} und runden Sie nun das gerundete Resultat auf zwei Dezimalen: \LoesungsRaumLang{3.22}. Was ist davon zu halten?\\
-\TNT{2}{Rechnen Sie nie mit bereits gerundeten Zwischenresultaten. Der Fehler kann sich dadurch vergrößern!}
-}
+\aufgabenFarbe{Runden Sie die Zahl 3.21459 auf zwei Dezimalen: \LoesungsRaumLang{3.21}. Runden Sie die selbe Zahl 3.21459 auf drei Dezimalen: \LoesungsRaumLang{3.215} und runden Sie nun das gerundete Resultat auf zwei Dezimalen: \LoesungsRaumLang{3.22}. Was ist davon zu halten?}%% END Aufgabenfarbe
+
+\TNT{2}{Rechnen Sie nie mit bereits gerundeten Zwischenresultaten. Der Fehler kann sich dadurch vergrößern!}%% END TNT
 
 \newpage
 
@@ -294,14 +317,8 @@ Dabei ist $\mathbb{R}$ die mächtigste der vier Mengen.
 
 \subsection*{Aufgaben zum Kapitel Zahlmengen}
 
-\GESOAadB{22ff}{5., 6.}
-\TALSAadB{13}{14-18}
+\GESOAadB{22ff}{5.}
+\TALSAadB{9}{4.}
 
-%%\TRAINER{
-%%\subsection{Mengenlehre}
-%%\begin{itemize}
-%%\item Venn-Diagramme
-%%\item Mengenoperationen
-%%\item Zahlmengen
-%%\end{itemize}
-%%}
+\noTRAINER{\mmPapier{6}}
+\newpage
