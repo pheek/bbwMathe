@@ -68,7 +68,7 @@ Gleichungssysteme lösen:
     Auflösen nach $a$ ergibt $a=3$. Dies nun in die «separierte
     Gleichung» einsetzen: $b=\frac{72}{a} = \frac{72}2 = 36$.
 
-    Hinweis: Hier hätte man gleich von vornherein die zweite Gleichng
+    Hinweis: Hier hätte man gleich von vornherein die zweite Gleichung
     durch die erste dividieren können (dies wäre dann aber nicht mehr
     das Einsetzungsverfahren).
   }
@@ -326,48 +326,72 @@ Was bedeutet «Teilen mit Rest»?
 \subsubsection{Arbeit/Leistung-Aufgaben}\index{Arbeit}\index{Leistung}
 
 \begin{gesetz}{Arbeit/Leistung}{}
-  Leistung = Arbeit pro Zeit
+  \begin{center}
+    $\textrm{Leistung} = \frac{\mathrm{Arbeit}}{\mathrm{Zeit}}$
+  \end{center}
+  
   $$\Longleftrightarrow$$
-  Leistung mal Zeit = Arbeit
+  \begin{center}
+    $\mathrm{Leistung} \cdot{} \textrm{Zeit} = \textrm{Arbeit}$
+  \end{center}
+
+  $$\Longleftrightarrow$$
+  \begin{center}
+    $\textrm{Zeit} = \frac{\mathrm{Arbeit}}{\mathrm{Leistung}}$
+  \end{center}
+ 
 \end{gesetz}
 
-Normalerweise wird die Zeit in Stunden, Tagen etc. angegeben. Die
+Normalerweise wird die Zeit in Sekunden, Stunden, Tagen etc. angegeben. Die
 Arbeit hingegen kann irgend eine Verrichtung sein: Eine Wand
 streichen, einen Quadratmeter schleifen, eine Schachtel herstellen,
-einen Baum pflanzen, einen Auftrag erledigen, ...
+einen Baum pflanzen, einen Auftrag erledigen, einen Kilometer zurücklegen\footnote{Ja, km/h\index{Kilometer pro Stunde}\index{Geschwindigkeit} ist auch eine Leistung: Somit sind Geschwindigkeitsaufgaben nur ein Spezialfall der Arbeit/Leistungs-Aufgaben}, ...
+
+\begin{beispiel}{Arbeit/Leistung}{}
+  Eine Leistung könnte  $\left[\frac{\textrm{Auftrag}}{\textrm{Minute}}\right]$ sein.
+
+  Eine Arbeitskraft (Person/Maschine) schafft einen Auftrag innerhalb von 20 Minuten, also
+
+  $$\textrm{Leistung} = \frac1{20} \left[\frac{\textrm{Auftrag}}{\textrm{Minute}}\right]$$
+
+  Wie lange braucht die Arbeitskraft für vier Aufträge?
+
+  $$\textrm{Zeit} [\textrm{Min.}] = \frac{4[\textrm{Aufträge}]}{\frac{1}{20} \left[\frac{\textrm{Aufträge}}{\textrm{Minuten}}\right]} = 4\cdot{} 20 \textrm{ Minuten} = 80 \textrm{ Minuten}$$
+\end{beispiel}
+
+
+\newpage
 
 Im folgenden Beispiel ist sowohl die Einheit der Arbeit, wie auch die
 Einheit der Zeit klar gegeben.
 
-\begin{beispiel}{Arbeit/Leistung}{}
-  Um Desinfktionsmittel (Fläschchen) rasch herzustellen, hilft Kim
-  mit.
-  Kim und die Maschine schaffen zusammen in acht Stunden 800
+\begin{beispiel}{Arbeit/Leistungs-Aufgabe}{}
+  Um Desinfektionsmittel (Fläschchen) rasch herzustellen, hilft Tony mit.
+  Tony und die Maschine schaffen zusammen in acht Stunden 800
   Desinfektionsfläschchen (=800 Stück).
-  Heute fällt die Maschine nach fünf Stunden aus und Kim arbeitet noch
-  drei Stunden alleine weiter. Am Abend sind 608 Fläschen fertig.
+  Heute fällt die Maschine nach fünf Stunden aus und Tony arbeitet noch
+  drei Stunden alleine weiter. Am Abend sind 608 Fläschchen fertig.
 
   a) Wie viel Zeit braucht die Maschine alleine für 800 Fläschchen?
 
-  b) Wie viele Fläschchen schafft Kim in einer Stunde?
+  b) Wie viele Fläschchen schafft Tony in einer Stunde?
 \end{beispiel}
 
-\TNT{6}{
-  $m$ = Leistung Maschine = Fläschchen pro Stunde. Das heißt $m$ mal
+\TNT{8}{
+  $m$ = Leistung Maschine $\left[\frac{\textrm{Fläschchen}}{\textrm{Stunde}}\right]$. Das heißt $m$ mal
   Anzahl Stunden = Anzahl Fläschchen.
 
-  Analog $k$ = Leistung Kim.
+  Analog $k$ = Leistung Tony.
 
   
   \gleichungZZ{(m+k) \cdot{} 8}{800}{(m+k)\cdot{}5 + k\cdot{}3}{608}
 
   $$m=64, k=36$$
 
-  a) Die Maschine braucht alleine 12.5 Stunden.
+  a) Die Maschine braucht alleine 12.5 Stunden für 800 Fläschchen, denn $[h] = \left[\frac{\textrm{Fläschchen}}{\frac{\textrm{Fläschchen}}{h}}\right]$.
 
-  b) Kim schafft 36 Fläschchen pro Stunde.
+  b) Tony schafft 36 Fläschchen pro Stunde.
 }%% END TNT
-\newpage
 
 \subsubsection*{Aufgaben Leistung/Arbeit}
 \GESOAadB{160}{72.}
