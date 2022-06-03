@@ -1,0 +1,5 @@
+%% TALS Metapackag: Ungleichungen
+\part{Ungleichungen}\index{Ungleichungen|textbf}
+\renewcommand{\bbwAufgabenPartTitle}{UNGL}
+
+\input{tals/ungl/Ungleichungen}

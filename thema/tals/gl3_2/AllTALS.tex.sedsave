@@ -1,0 +1,5 @@
+%% TALS Metapackag: Gleichungen III (2/2)
+\part{Gleichungen III (2/2)}\index{Gleichungen!III (Teil 2)|textbf}
+\renewcommand{\bbwAufgabenPartTitle}{GL3/2}
+
+\input{tals/gl3_2/Elementare_Betragsgleichungen}

@@ -270,14 +270,18 @@ z.\,B.
 
 %% Counter  für Aufgaben
 %% Bei jedem Part wird die Aufgabennummer zurückgesetz auf 1
-\newcommand{\bbwAufgabenPartTitle}{AA1}
+\newcommand{\bbwPartID}{AA1}
+\newcommand{\bbwAufgabenBlockID}{}
 \newcounter{bbwAufgabenNummerCounter}[part]
 \setcounter{bbwAufgabenNummerCounter}{1}
 \newcommand{\bbwAufgabenNummer}{\arabic{bbwAufgabenNummerCounter}}
 \newcommand{\nextBbwAufgabenNummer}{\stepcounter{bbwAufgabenNummerCounter}}
-\newcommand{\aufgSubLabel}{\color{blue}{{\tiny[\bbwAufgabenPartTitle]} \bbwAufgabenNummer. \alph*)}}
-\newenvironment{bbwAufgabenBlock}{%% Begin Part:
+\newcommand{\aufgSubLabel}{{\color{blue}\bbwAufgabenNummer. \alph*)}}
+
+\newenvironment{bbwAufgabenBlock}{%% Begin environment
 \nextBbwAufgabenNummer
+
+{\color{blue}\bbwAufgabenNummer. {\small[\bbwAufgabenBlockID]}}
 \begin{enumerate}[label=\aufgSubLabel]
 }{%% END Part
 \end{enumerate}
