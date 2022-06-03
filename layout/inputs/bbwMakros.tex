@@ -267,3 +267,18 @@ z.\,B.
 \newcommand{\tiprobutton}[1]{\raisebox{-2mm}{\mbox{\,\includegraphics[width=\tiprobuttonbreite{}]{img/tiprobuttonimages/#1.png}\,}}}
 
 \newcommand{\nspirebutton}[1]{\raisebox{-2mm}{\mbox{\,\includegraphics[width=\nspirebuttonbreite{}]{img/nspirebuttonimages/#1.png}\,}}}
+
+%% Counter  für Aufgaben
+%% Bei jedem Part wird die Aufgabennummer zurückgesetz auf 1
+\newcommand{\bbwAufgabenPartTitle}{AA1}
+\newcounter{bbwAufgabenNummerCounter}[part]
+\setcounter{bbwAufgabenNummerCounter}{1}
+\newcommand{\bbwAufgabenNummer}{\arabic{bbwAufgabenNummerCounter}}
+\newcommand{\nextBbwAufgabenNummer}{\stepcounter{bbwAufgabenNummerCounter}}
+\newcommand{\aufgSubLabel}{\color{blue}{{\tiny[\bbwAufgabenPartTitle]} \bbwAufgabenNummer. \alph*)}}
+\newenvironment{bbwAufgabenBlock}{%% Begin Part:
+\nextBbwAufgabenNummer
+\begin{enumerate}[label=\aufgSubLabel]
+}{%% END Part
+\end{enumerate}
+}%% END environment bbwAufgabenBlock
