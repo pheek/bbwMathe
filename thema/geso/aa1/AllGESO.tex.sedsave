@@ -1,0 +1,14 @@
+\part{Arithmetik und Algebra I}\index{Arithmetik und Algebra!I|textbf}
+\renewcommand{\bbwAufgabenPartTitle}{AA1}
+\input{allg/alg/Zahlmengen}
+\newpage
+
+\input{allg/alg/Ordnungsrelationen}
+\input{allg/alg/Betrag}
+\input{allg/alg/Terme}
+%% KEINE POLYNOME hier
+\input{allg/alg/Grundoperationen}
+\input{allg/alg/Binomische_Formeln}
+\input{allg/alg/Faktorisieren}
+\input{allg/alg/Bruchterme}
+\newpage

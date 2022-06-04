@@ -1,0 +1,4 @@
+%% Trigo 1 TALS Metapackage
+\part{Trigonometrie I}\index{Trigonometrie!I|textbf}
+\renewcommand{\bbwAufgabenPartTitle}{TRIG1}
+\input{tals/trig1/Rechtwinkliges_Dreieck}
