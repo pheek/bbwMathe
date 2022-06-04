@@ -1,8 +1,0 @@
-\part{Gleichungen II}\index{Gleichungen!II|textbf}
-\renewcommand{\bbwAufgabenPartTitle}{GL2}
-\input{allg/gleichungen/Potenz_und_Wurzelgleichungen}
-\newpage
-
-\input{allg/gleichungen/Exponentialgleichungen}
-%%\input{allg/gleichungen/Zinsrechnungen} %% neu bei Potenzen!
-\newpage
