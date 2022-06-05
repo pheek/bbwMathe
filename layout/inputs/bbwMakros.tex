@@ -116,7 +116,9 @@ Platz für Notizen:\newline%%
 
 %%Häuschenpapier
 \newcommand{\mmPapierZwei}[2]{\begin{tikzpicture}
-  \draw[step=4mm,bbwMMFarbe,thin]
+%%  \draw[step=4mm,bbwMMFarbe,ultra thin]
+%%  \draw[step=4mm,bbwMMFarbe,thick]
+  \draw[step=4mm,bbwMMFarbe,line width=0.01mm]
   (0, 0) grid ({#2}, {#1});
   \end{tikzpicture}}%%
 

@@ -1,5 +1,0 @@
-%% TALS Metapackag: Trigo IV
-\part{Trigonometrie IV}\index{Trigonometrie!IV|textbf}
-\renewcommand{\bbwAufgabenPartTitle}{TRIG4}
-
-\input{tals/trig4/TrigonometrischeGleichungen}

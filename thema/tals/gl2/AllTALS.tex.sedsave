@@ -1,9 +1,0 @@
-\part{Gleichungen II (Quadratische)}\index{Gleichung!quadratische|textbf}\index{Gleichungen!II|textbf}
-\renewcommand{\bbwAufgabenPartTitle}{GL2}
-\input{allg/gleichungen/Quadratische_Gleichungen}
-\newpage
-
-\input{allg/gleichungen/Quadratische_Gleichungen_mit_Parametern}
-\newpage
-\input{allg/gleichungen/BruchgleichungenQuadratische}
-

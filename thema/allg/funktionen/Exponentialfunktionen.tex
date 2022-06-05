@@ -66,8 +66,8 @@ Um wie viel nehmen sie ...
 \item ... alle 15 Tage zu?
 \item ... alle 7 Tage zu?
 \item In wie vielen Tagen verdreifachen sie sich?
-\item Wie sieht es mit der Basis $e$ aus? Mit welchem $m$ kann man die
-  Zunahme als $f(t) = b \cdot{} e^{m\cdot{}t}$ angeben?
+\item Wie sieht es mit der Basis $\e$ aus? Mit welchem $m$ kann man die
+  Zunahme als $f(t) = b \cdot{} \e^{m\cdot{}t}$ angeben?
 \end{enumerate}
 \newpage
 
@@ -102,15 +102,15 @@ Also: Sie verdreifachen sich ca. alle 8 Tage.
   Ergo: $b\cdot{}2^\frac{t}5 \approx b\cdot{}3^\frac{t}{7.925}$
 }%% end TNT
 
-@ 4.: $b\cdot{}a^\frac{t}\tau = b\cdot{}e^{m\cdot{}t}$ (Basis $e$):
+@ 4.: $b\cdot{}a^\frac{t}\tau = b\cdot{}\e^{m\cdot{}t}$ (Basis $\e$):
 \TNT{4.8}{
   Beidseitig durch $b$ teilen: \\
-  $a^\frac{t}\tau = e^{m\cdot{}t}$ (Zahlen einsetzen)\\
-  $2^\frac{t}5 = e^{m\cdot{}t}$ (beidseitig $\sqrt[t]{}$) :\\
-  $a^\frac15 = e^m$ (beidseitig $\log_e() = \ln()$):\\
+  $a^\frac{t}\tau = \e^{m\cdot{}t}$ (Zahlen einsetzen)\\
+  $2^\frac{t}5 = \e^{m\cdot{}t}$ (beidseitig $\sqrt[t]{}$) :\\
+  $a^\frac15 = \e^m$ (beidseitig $\log_{\e}() = \ln()$):\\
 
-  $\ln(a^\frac1\tau)=\ln(2^\frac15) = \ln(e^m) = m \approx 0.1386$ und somit:
-  $$f(t) \approx b\cdot{} e^{0.1386\cdot{} t} \approx
+  $\ln(a^\frac1\tau)=\ln(2^\frac15) = \ln(\e^m) = m \approx 0.1386$ und somit:
+  $$f(t) \approx b\cdot{} \e^{0.1386\cdot{} t} \approx
   b\cdot{}2^\frac{t}5$$
   Bedeutung: Gerade $g(t): y=0.1386\cdot{}t+b$ zeichnen: Dies ist die
   Tangente an die Exponentialfunktion $b\cdot{}2^\frac{t}{5} = b\cdot{}4^\frac{t}{10}$
@@ -129,21 +129,21 @@ Also: Sie verdreifachen sich ca. alle 8 Tage.
 
 Es gilt:
 \begin{center}\fbox{$b\cdot{}a^{\frac{t}{\tau}} = b\cdot{}a_2^{\frac{t}{\tau_2}} =
-    b\cdot{}e^{m\cdot{}t}$}
+    b\cdot{}\e^{m\cdot{}t}$}
 \end{center}
 
 ... oder nach ziehen der $t$-ten Wurzel:
 
 \begin{gesetz}{Basiswechsel}{}
 
-  \begin{center}\fbox{\fbox{$a^{\frac{1}{\tau}} =     a_2^{\frac{1}{\tau_2}} = e^{m}$}}\end{center}
+  \begin{center}\fbox{\fbox{$a^{\frac{1}{\tau}} =     a_2^{\frac{1}{\tau_2}} = \e^{m}$}}\end{center}
 
  
   $a=$ Wachstumsfaktor\\
   $\tau=$ Beobachtungszeitraum\\
   $a_2, \tau_2=$ Entsprechend neuer Wachstumsfaktor $a_2$ bzw. neues
   Beobachtungsintervall $\tau_2$ nach dem Basiswechsel\\
-  $e=$ Eulersche Konstante (2.718...)\\
+  $\e=$ Eulersche Konstante (2.718...)\\
   \hrule
   \vspace{3mm}
   $a_2 = \left(a^\frac1\tau\right)^{\tau_2}$\\
@@ -153,13 +153,13 @@ Es gilt:
   $m=\ln\left(a^\frac1\tau\right) =  \ln\left(a_2^\frac1{\tau_2}\right)$\\
 \end{gesetz}
 
-\begin{bemerkung}{Konstante $e$}{}
-  Mit der Eulerschen Konstanten $e$ als Basis wird lediglich ein einziger
+\begin{bemerkung}{Konstante $\e$}{}
+  Mit der Eulerschen Konstanten $\e$ als Basis wird lediglich ein einziger
   Parameter (meist $m$ oder $q$) verwendet, um die Form der
   Exponentialfunktion zu beschreiben. Eine Abhängigkeit von $a$ zu
   $\tau$ fällt weg.
 
-  Dabei ist $m$ die Tangentensteigung an die Funktion $$f(t) = e^{mt}$$
+  Dabei ist $m$ die Tangentensteigung an die Funktion $$f(t) = \e^{mt}$$
   im Punkt $$\left(0\middle|1\right).$$
   \end{bemerkung}
 
@@ -188,31 +188,31 @@ $k=a^b$ und mit $b=\log_a(k)$.}
 
 \newpage
 
-\subsection{Bedeutung der Zahl $e$ (optional)}
+\subsection{Bedeutung der Zahl $\e$ (optional)}
 
 \paragraph{$45\degre$ auf der $y$-Achse:}
-Die E-Funktion $y=e^x$ hat die $45\degre$-Steigung genau auf der $y$-Achse; sie beginnt im Gegensatz zu anderen Exponentialfunktionen genau bei $x=0$ so «richtig zu wachsen»\TALS{\footnote{Wenn wir in einem Punkt $x$ den Wert der $e$-Funktion ($e^x$) betrachten, so ist ihr Funktionswert exakt gleich der Steigung einer Tangente bei diesem $x$-Wert.}}.
+Die E-Funktion $y=\e^x$ hat die $45\degre$-Steigung genau auf der $y$-Achse; sie beginnt im Gegensatz zu anderen Exponentialfunktionen genau bei $x=0$ so «richtig zu wachsen»\TALS{\footnote{Wenn wir in einem Punkt $x$ den Wert der $\e$-Funktion ($\e^x$) betrachten, so ist ihr Funktionswert exakt gleich der Steigung einer Tangente bei diesem $x$-Wert.}}.
 
 \bbwGraph{-4}{3}{-1}{5}{
   \bbwFunc{pow(2.71828,\x)}{-3.5:1.5}
   \bbwFuncC{\x+1}{-2:2}{green}
 }%% end graph
 
-Dies ist ein weiterer Grund, warum die Zahl $e$ eine solche Bedeutung bei
+Dies ist ein weiterer Grund, warum die Zahl $\e$ eine solche Bedeutung bei
 exponentiellen Prozessen einnimmt.
 
 
 \TALS{
 \paragraph{Tangente an die E-Funktion}\index{E-Funktion}
 Als \textbf{E-Funktion} bezeichnen wir die Exponentialfunktion zur
-Basis $e \approx 2.71828172846$; also:
-$$f(x) = e^x$$
+Basis $\e \approx 2.71828172846$; also:
+$$f(x) = \e^x$$
 Diese Funktion ist von allen Exponentialfunktionen insofern speziell,
-als dass für jedes $x$ der Funktionswert $y=e^x$ genau die Steigung
-der Tangente an $e^x$ im Punkt $P_x=\left(x | e^x\right)$ angibt.
+als dass für jedes $x$ der Funktionswert $y=\e^x$ genau die Steigung
+der Tangente an $\e^x$ im Punkt $P_x=\left(x | \e^x\right)$ angibt.
 
-So ist die Tangentensteigung im Punkt $(0|e^0) = (0 | 1)$ genau 1 und die Steigung im
-Punkt $(1|e^1) = (1|e)$ genau $e$. 
+So ist die Tangentensteigung im Punkt $(0|\e^0) = (0 | 1)$ genau 1 und die Steigung im
+Punkt $(1|\e^1) = (1|\e)$ genau $\e$. 
 
 }%% END TALS
 
@@ -220,13 +220,13 @@ Punkt $(1|e^1) = (1|e)$ genau $e$.
 
 \subsubsection{Beispiel: Wissenschaftliche Publikation (optional)}
 In einem wissenschaftlichen Journal ist angegeben, dass eine Population annähernd folgendes Verhalten an den Tag lege [$t$ = Tage]:
-$$y = 5.6\cdot{} e^{\frac{t}{4.1}}$$
+$$y = 5.6\cdot{} \e^{\frac{t}{4.1}}$$
 
 Berechnen Sie die tägliche Zunahme $a$ und geben Sie somit die Funktionsgleichung ohne Bruch im Exponenten ($\tau = 1$) und mit dem neu berechneten $a$ in der Basis an:
 
-$$y = 5.6\cdot{} e^{\frac{t}{4.1}} = b\cdot{}a^t \approx \LoesungsRaum{5.6} \cdot{} \LoesungsRaum{1.2762}^t$$
+$$y = 5.6\cdot{} \e^{\frac{t}{4.1}} = b\cdot{}a^t \approx \LoesungsRaum{5.6} \cdot{} \LoesungsRaum{1.2762}^t$$
 
-\TNT{8}{Tipp: Setzen Sie $t=0$ und $t=1$ ein. $$a = e^{\frac{1}{4.1}}$$
+\TNT{8}{Tipp: Setzen Sie $t=0$ und $t=1$ ein. $$a = \e^{\frac{1}{4.1}}$$
 \vspace{3cm}}
 
 \newpage
