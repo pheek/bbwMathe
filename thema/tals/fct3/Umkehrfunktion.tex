@@ -11,20 +11,20 @@
 
 \subsection{Einstigsbeispiel}
 \begin{beispiel}{Umkehrfunktion}{}
-  Eine Schulnote wird aus einer Prüfung mit max. 17 Punkten errechnet.
-  Die Skala sei linear. 0 Punkte ergeben die Note 1, 17 Punkte die
+  Eine Schulnote wird aus einer Prüfung mit max. 13 Punkten errechnet.
+  Die Skala sei linear. 0 Punkte ergeben die Note 1, 13 Punkte die
   Note 6. Wie sieht die Zuordnung von «Punkte» (unaabhängige Variable)
   zur «Note» (abhängige Variable) aus?
 
   \leserluft
   
-  $$x \mapsto  \LoesungsRaumLang{\frac{x}{17}\cdot{} 5 + 1}$$
+  $$x \mapsto  \LoesungsRaumLang{\frac{x}{13}\cdot{} 5 + 1}$$
 
   Was ist der Definitions- bzw. der Wertebreich dieser Funktion?
 
   \leserluft
   
-  $$\mathbb{D} = \LoesungsRaumLang{[0; 17]}$$
+  $$\mathbb{D} = \LoesungsRaumLang{[0; 13]}$$
 
   \leserluft
   
@@ -37,24 +37,28 @@
 
   \leserluft{}
   
-  $$x \mapsto \LoesungsRaumLang{\frac{17}5 x - \frac{17}5}$$
+  Die nötige Punktezahl für Note 4 ist \LoesungsRaumLang{7.8}.
+
+  \leserluft{}
+  
+  $$x \mapsto \LoesungsRaumLang{\frac{13}5 x - \frac{13}5}$$
 
     Wie sehen Definitions- und Wertebereiche jetzt aus?
 
     $$\mathbb{D} = \LoesungsRaumLang{ [1; 6] }$$
 
 
-    $$\mathbb{W} = \LoesungsRaumLang{ [0;17] }$$
+    $$\mathbb{W} = \LoesungsRaumLang{ [0;13] }$$
   
 \end{beispiel}
 \newpage
 
 Skizzieren Sie die beiden Funktionen:
 
-\bbwGraph{0}{17}{0}{17}{
-  \TRAINER{\bbwFunc{5/17*\x+1}{0:17}}
-  \TRAINER{\bbwFunc{17/5*(\x-1)}{1:6}}
-}
+\bbwGraph{0}{13}{0}{13}{
+  \TRAINER{\bbwFunc{5/13*\x+1}{0:13}}
+  \TRAINER{\bbwFunc{13/5*(\x-1)}{1:6}}
+}%% END bbwGraph
 \newpage
 
 \subsection{Umkehrbar}
