@@ -109,4 +109,8 @@ echo "copying Auftrag Logarithmentabelle (TALS)"
 cp -f ./logarithmentabelle/LogarithmenArbeitsblatt_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/aa2/auftrag_logarithmentabelle/AuftragLogarithmentabelle.pdf
 cp -f ./logarithmentabelle/LogarithmenArbeitsblatt_TRAINER_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/aa2/auftrag_logarithmentabelle/AuftragLogarithmentabelleLoesungsweg.pdf
 
+echo "copying Arbeitsblatt Algebra I Grundoperationen (GESO und TALS)"
+cp -f ./algebra1Grundoperationen/A1G_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/grundoperationen/A1G_Aufgaben.pdf
+cp -f ./algebra1Grundoperationen/A1G_TRAINER_ALLG.pdf   ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/grundoperationen/A1G_Loesungen.pdf
+
 
