@@ -281,10 +281,10 @@ z.\,B.
 \newcommand{\aufgSubLabel}{{\color{blue}\bbwAufgabenNummer. \alph*)}}
 
 \newenvironment{bbwAufgabenBlock}{%% Begin environment
-\nextBbwAufgabenNummer
 
 {\color{blue}\bbwAufgabenNummer. {\small[\bbwAufgabenBlockID]}}
 \begin{enumerate}[label=\aufgSubLabel]
 }{%% END Part
 \end{enumerate}
+\nextBbwAufgabenNummer
 }%% END environment bbwAufgabenBlock
