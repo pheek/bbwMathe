@@ -36,13 +36,11 @@ danach CHF 0.90 pro gefahrenen Kilometer.
 
 Ab bzw. bis wo lohnt sich das Unternehmen «A» bzw. «B»?
 
-
-\noTRAINER{
   Zeichnen Sie ein Koordinatensystem. $x$-Achse = km; $y$-Achse = CHF.
   (Einteilung je ca. 20 Einheiten im 1. Quadranten.
 
-  \mmPapier{16}}%%
-\TRAINER{\bbwCenterGraphic{14cm}{allg/funktionen/img/Taxiunternehmen.png}
+\TNTeop{%%
+    \bbwCenterGraphic{14cm}{allg/funktionen/img/Taxiunternehmen.png}
 
   Ablesen bei ca. 13.33 km.
 
@@ -55,8 +53,10 @@ Ab bzw. bis wo lohnt sich das Unternehmen «A» bzw. «B»?
   $$10+0.6x = 6+0.9x$$
   Lösung:
   $$x = 13.\overline{3} \textrm{km}$$
-}
-\newpage
+}%% END TNT
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{Beispiel einer linearen Funktion}
 Zeichnen Sie den Graphen der Funktion $f: y= -0.5x + 1$ in ein rechtwinkliges Koordinatensystem:
 
@@ -256,7 +256,7 @@ $$a=\frac{{\color{red}V}}{{\color{blue}H}}$$
 \end{rezept}
 
 \subsubsection*{Herleitung (optional)}
-\TNT{16}{
+\TNTeop{
   \bbwCenterGraphic{10cm}{allg/funktionen/img/Steigungsdreieck.png}
 
  $$\frac{V}H = \frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} =
@@ -267,8 +267,10 @@ $$a=\frac{{\color{red}V}}{{\color{blue}H}}$$
   $$= \frac{a\cdot{}x_2 - a\cdot{}x_1 }{(x_2-x_1)}$$
   $$= \frac{a\cdot{}(x_2 - x_1 )}{(x_2-x_1)}$$
   $$= a$$
-}%% END TNT
-\newpage
+}%% END TNT eop
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection*{Aufgaben}
 \GESO{\aufgabenFarbe{OLAT → Kurs (Mathematik) → Funktionen 1 (lineare) → Arbeitsblatt (SAN = Steigung,
     Achsenabschnitt, Nullstellen)}}
