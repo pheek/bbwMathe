@@ -9,10 +9,19 @@
 \ifx\@currenvir\itemizeNAME{}%% innerhlab von \begin{itemize} und \end{itzmize}
 \renewcommand{\mmPapier}[1]{\mmPapierZwei{#1}{16.4}}%%
 \fi%%
-\ifx\@currenvir\tcbNAME{}%%  in rezepten, beipsielen, definitionen und gesetzen
+\ifx\@currenvir\tcbNAME{}%%  in Rezepten, Beispielen, Definitionen und Gesetzen:
 \renewcommand{\mmPapier}[1]{\mmPapierZwei{#1}{16.8}}%%
 \fi%%
 \mmPapier{#1}%%
 \renewcommand{\mmPapier}[1]{\mmPapierZwei{#1}{\defaultTextBreite}}%%
-}\TRAINER{#2}%%
+}%% end NO-Trainer
+\TRAINER{#2}%%
 }%% END command TNT
+
+%% TNT bis End of Page
+\newcommand{\TNTeop}[1]{%%
+\noTRAINER{\mmPapierBisEndeSeite{}}%%
+\TRAINER{#1}%%
+\newpage%%
+}%% END makro TNT bis Ende Seite
+

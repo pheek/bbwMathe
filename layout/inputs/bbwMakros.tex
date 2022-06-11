@@ -118,9 +118,27 @@ Platz für Notizen:\newline%%
 \newcommand{\mmPapierZwei}[2]{\begin{tikzpicture}
 %%  \draw[step=4mm,bbwMMFarbe,ultra thin]
 %%  \draw[step=4mm,bbwMMFarbe,thick]
-  \draw[step=4mm,bbwMMFarbe,line width=0.01mm]
+  \draw[step=4mm,bbwMMFarbe,line width=0.02mm]
   (0, 0) grid ({#2}, {#1});
-  \end{tikzpicture}}%%
+\end{tikzpicture}}%%
+
+
+%% millimeterPapier füllen bis Ende Seite
+\newcommand{\mmPapierBisEndeSeite}{
+
+\begin{tikzpicture}
+
+\newdimen\spaceleftOnPage
+\spaceleftOnPage=\dimexpr\textheight-\pagetotal-14pt\relax
+
+\pgfmathsetmacro{\gridWidth}{\textwidth        - mod(\textwidth,      4mm)      }
+\pgfmathsetmacro{\gridHeight}{\spaceleftOnPage - mod(\spaceleftOnPage,4mm) - 4mm}
+
+\draw [step=4mm,bbwMMFarbe,line width=0.02mm] (0,0) grid (\gridWidth pt,\gridHeight pt);
+\end{tikzpicture}%%
+\newpage%%
+}%% END Makro mmPapieBisEndeSeite
+
 
 %% Standardbreite für Arbeitsblätter und das Theorieheft
 %% Wird in bbwPruefung.sty überschrieben, da dort schmaler
@@ -138,6 +156,12 @@ Platz für Notizen:\newline%%
 Notizen / Berechnungen:
 
 \mmPapier{#1}}}%% end platzFuerBerechnungen
+
+\newcommand{\platzFuerBerechnungenBisEndeSeite}[1]{\noTRAINER{
+
+Notizen / Berechnungen:
+
+\mmPapierBisEndeSeite}}%% end platzFuerBerechnungen
 
 
 
