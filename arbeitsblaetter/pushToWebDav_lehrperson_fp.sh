@@ -113,4 +113,8 @@ echo "copying Arbeitsblatt Algebra I Grundoperationen (GESO und TALS)"
 cp -f ./algebra1Grundoperationen/A1G_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/grundoperationen/A1G_Aufgaben.pdf
 cp -f ./algebra1Grundoperationen/A1G_TRAINER_ALLG.pdf   ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/grundoperationen/A1G_Loesungen.pdf
 
+echo "copying Arbeitsblatt Algebra I Betrag (GESO und TALS)"
+cp -f ./algebra1Betrag/A1B_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/betrag/A1B_Aufgaben.pdf
+cp -f ./algebra1Betrag/A1B_TRAINER_ALLG.pdf   ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/betrag/A1B_Loesungen.pdf
+
 
