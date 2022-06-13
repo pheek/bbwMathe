@@ -114,7 +114,16 @@ cp -f ./algebra1Grundoperationen/A1G_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrp
 cp -f ./algebra1Grundoperationen/A1G_TRAINER_ALLG.pdf   ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/grundoperationen/A1G_Loesungen.pdf
 
 echo "copying Arbeitsblatt Algebra I Betrag (GESO und TALS)"
-cp -f ./algebra1Betrag/A1B_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/betrag/A1B_Aufgaben.pdf
-cp -f ./algebra1Betrag/A1B_TRAINER_ALLG.pdf   ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/betrag/A1B_Loesungen.pdf
+cp -f ./algebra1Betrag/A1Be_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/betrag/A1Be_Aufgaben.pdf
+cp -f ./algebra1Betrag/A1Be_TRAINER_ALLG.pdf   ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/betrag/A1Be_Loesungen.pdf
+
+echo "copying Arbeitsblatt Algebra I Binomische Formeln (GESO und TALS)"
+cp -f ./algebra1BinomischeFormeln/A1Bi_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/binomischeFormeln/A1Bi_Aufgaben.pdf
+cp -f ./algebra1BinomischeFormeln/A1Bi_TRAINER_ALLG.pdf   ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/binomischeFormeln/A1Bi_Loesungen.pdf
+
+echo "copying Arbeitsblatt Algebra I Faktorisieren (GESO und TALS)"
+cp -f ./algebra1Faktorisieren/A1F_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/faktorisieren/A1F_Aufgaben.pdf
+cp -f ./algebra1Faktorisieren/A1F_TRAINER_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/faktorisieren/A1F_Loesungen.pdf
+
 
 
