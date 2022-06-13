@@ -163,7 +163,7 @@ ungefähr an:
 \renewcommand{\arraystretch}{1}
 \newpage
 
-\subsection*{Aufgabe}
+\subsection*{Referenzaufgabe}
 \aufgabenFarbe{
   Gesucht ist $p$, eine Polynomfunktion 3. Grades. Die Funktion hat
   bei 2 ihren $y$-Achsenabschnitt. Ferner wissen wir, dass die Funktion die
@@ -202,8 +202,18 @@ dargestellt ist:
 \end{itemize} 
 }%% END Aufgabenfarbe
 
-\noTRAINER{\mmPapier{10}}
-\TRAINER{Welche Information fehlt noch? ``berührt'' ist nicht gleich ``schneidet''!}
+\TNTeop{Welche Information fehlt noch? ``berührt'' ist nicht gleich
+  ``schneidet''!
+
+  Ansatz:
+  $$f(x)=a(x-3)(x-3)(x-b)(x-c)(x-d)$$
+  Danach ein Gleichungssystem erstellen
+
+  Lösung:
+
+  $$b=-4, c=-10, d=20, a=.....$$
+  (und alle Vertauschungen)
+}%% END TNT eop
 
 \newpage
 
@@ -250,23 +260,23 @@ und diskutieren Sie Nullstellen und die Lage von Extremwerten:
 \subsubsection{Linearfaktoren erkennen}
 
 \begin{rezept}{Linearfaktoren finden}{}
-Gegeben ist der folgende Funktionsgraph 
-  \bbwCenterGraphic{12cm}{tals/fct3/img/VierLinearfaktoren.png}
+Gegeben ist folgender Graph:
+  \bbwCenterGraphic{79mm}{tals/fct3/img/SechsLinearfaktoren.png}
 
-  mit der Eigenschaft $f(0) = -2.4$ bzw. «$f$ geht durch $P=(0|-2.4)$».
+  mit der Eigenschaft $f(0) = -2.7$ bzw. «$f$ geht durch $P=(0|-2.7)$».
     
     \begin{enumerate}
-  \item Grad bestimmen. Anzahl Nullstellen (inkl. doppelte) \LoesungsRaum{4}
+  \item Grad bestimmen. Anzahl Nullstellen \TRAINER{(inkl. doppelte, dreifache)} \LoesungsRaum{6}
   \item Klammeransatz $f(x) =
-    \LoesungsRaumLang{(x-\Box)(x-\Box)(x-\Box)(x-\Box)}$
+    \LoesungsRaumLang{(x-\Box)(x-\Box)(x-\Box)(x-\Box)(x-\Box)(x-\Box)}$
   \item Nullstellen (inkl. doppelte eintragen)
-    $$f(x) = \LoesungsRaumLang{(x+1)(x-2)(x-2)(x-3)}$$
+    $$f(x) = \LoesungsRaumLang{(x+1)(x-1)(x-1)(x-3)(x-3)(x-3)}$$
   \item Allenfalls Vorfaktor $a$ bestimmen:
-    $$f(0) = \LoesungsRaumLang{-2.4 = a \cdot{}(1)(-2)(-2)(-3)}$$
-    $$\Longrightarrow a= \LoesungsRaumLang{\frac{-2.4}{(-2)(-2)(-3)}}$$
-    $$a  = \LoesungsRaumLang{\frac{-2.4}{-12} = 0.2}$$
+    $$f(0) = \LoesungsRaumLang{-2.7 = a \cdot{}(1)(-1)(-1)(x-3)(x-3)(-3)}$$
+    $$\Longrightarrow a= \LoesungsRaumLang{\frac{-2.4}{(-3)(-3)(-3)}}$$
+    $$a  = \LoesungsRaumLang{\frac{-2.7}{-27} = 0.1}$$
 
-  \item Lösung: $f() = \LoesungsRaumLang{0.2 (x+1)(x-2)(x-2)(x-3)}$ 
+  \item Lösung: $f() = \LoesungsRaumLang{0.1 (x+1)(x-1)(x-1)(x-3)^3}$ 
     \end{enumerate}
   
   \end{rezept}
