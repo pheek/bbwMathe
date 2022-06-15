@@ -61,17 +61,46 @@ Skizzieren Sie die beiden Funktionen:
 }%% END bbwGraph
 \newpage
 
+
+\subsection{Aufgaben}
+Skizzieren Sie die folgenden Funktionen.
+Kehren Sie diese danach auf ihrem maximal möglichen
+Definitionsbereich um und skizzieren Sie auch deren Umkehrfunktion.
+
+$$f(x) = x^3 + 1$$
+\TNT{10}{
+  $f^{-1}(x) = \sqrt[3]{y-1}$ für $y\ge 1$ ansonsten:
+  $f^{-1}(x) = -\sqrt[3]{1-y}$ 
+}
+
+$$x\mapsto x^2 - 2$$
+\TNTeop{
+  Die Funktion ist auf $\mathbb{D}=\mathbb{R}$ nicht umkehrbar. Aber
+  Bsp. im 1. Quadranten $T=[0;\infty[ \subset \mathbb{D}$:
+ 
+  $f^{-1}(x) = \sqrt[2]{y+2}$ für $y\ge -2$.
+}
+
+\newpage
+
+
 \subsection{Umkehrbar}
 \begin{definition}{Umkehrbar}{}
-  Eine Funktion heißt umkehrbar auf $\mathbb{D}$, wenn es eine inverse
-  Funktion
+Die \textbf{Umkehrung} einer Funktion $f$ auf ihrem Definitionsbereich
+$\mathbb{D}$ wird mit
 
-  $$f^{-1} = \bar{f}$$
+  $$f^{-1} \textrm{ bzw. } \bar{f}$$
 
-  gibt, sodass gilt:
-
-  $$x= f^{-1}(f(x))$$
+bezeichnet.
 \end{definition}
+
+\begin{gesetz}{Umkehrung der Umkehrung}{}
+
+  Für eine umkehrbare Funktion $f$ gilt:
+  
+  $$x= f^{-1}(f(x))$$
+\end{gesetz}
+
 
 \begin{gesetz}{Umkehrbar}{}
   Damit eine Funktion auf $\mathbb{D}$ umkehrbar ist, muss für $x_1$ und $x_2$ gelten dass
@@ -83,38 +112,16 @@ Skizzieren Sie die beiden Funktionen:
  Spieglebild der Originalfunktion 
  an der Winkelhalbierenden des 1. bzw. 3. Quadranten ($y=x$).
 \end{bemerkung}
+%%\newpage
 
-\newpage
-
-
-\subsection{Aufgaben}
-Skizzieren Sie die folgenden Funktionen.
-Kehren Sie diese danach auf ihrem maximal möglichen
-Definitionsbereich um und skizzieren Sie auch deren Umkehrfunktion.
-
-$$f(x) = x^3 + 1$$
-\TNT{3.6}{
-  $f^{-1}(x) = \sqrt[3]{y-1}$ für $y\ge 1$ ansonsten:
-  $f^{-1}(x) = -\sqrt[3]{1-y}$ 
-}
-
-$$x\mapsto x^2 - 2$$
-\TNT{3.6}{
-  Die Funktion ist auf $\mathbb{D}=\mathbb{R}$ nicht umkehrbar. Aber
-  Bsp. im 1. Quadranten $T=[0;\infty[ \subset \mathbb{D}$:
- 
-  $f^{-1}(x) = \sqrt[2]{y+2}$ für $y\ge -2$.
-}
-
-\newpage
 
 \subsection{Rezept}
 \begin{rezept}{Umkehrfunktion}{}
   Um auf die Umkehrfunktion zu kommen, sind folgende Schritte nötig
   \begin{enumerate}
-  \item Definitions- und Wertebereiche von $f$ finden: $\mathbb{D} =
-    ...$, $\mathbb{W} = ...$
-  \item Funktion nach $y$ auf\/lösen (falls möglich)
+  \item Sich klar werden über Definitions- und Wertebereiche von $f$:
+    $\mathbb{D} =  ...$, $\mathbb{W} = ...$
+  \item Funktionsgleichung nach $y$ auf\/lösen (falls möglich)
   \item $x$ und $y$ tauschen
   \item Definitions- und Wertebereiche tauschen:\\
     $\mathbb{D}_{f^{-1}} = \mathbb{W}_f$ und  

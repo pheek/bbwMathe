@@ -28,6 +28,7 @@ $$y=\sqrt[n]{x}.$$
   $$\mathbb{W} = \mathbb{R}_0^{+} = [0;\infty[$$
       
 \end{definition}
+\newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Aufgaben}
@@ -49,20 +50,32 @@ $$y=\sqrt[n]{x}.$$
 \end{itemize}
 
 \theorieTALS{209}{3.8}
+\newpage
 
 
-Skizzieren Sie $f: y = \sqrt[3]{x}$ und $g: y=x^3$ im Bereich $[-1; 9]$ indem Sie für jeden 0.5-er $x$-Wert das jeweils zugehörige $y$ berechnen:
 
-\bbwGraph{-2}{9.5}{-1}{9}{%%
-  \TRAINER{\bbwFunc{\x*\x*\x}{0:2.05}}
-  \TRAINER{\bbwFunc{pow(\x, 0.33))}{0:9}}
+Skizzieren Sie $f: y = \sqrt[2]{x}$ und $g: y=x^2$ im Bereich $[-2; 9]$ indem Sie für jeden 0.5-er $x$-Wert das jeweils zugehörige $y$ berechnen:
+
+\bbwGraph{-2}{9.5}{-2}{9}{%%
+  \TRAINER{\bbwFuncC{\x*\x}{-2:0}{red, very thick}}
+  \TRAINER{\bbwFuncC{\x*\x}{0:3}{blue, very thick}}
+  \TRAINER{\bbwFuncC{pow(\x, 0.5))}{0:9}{blue}}
+  \TRAINER{\bbwFuncC{-pow(\x, 0.5))}{0:9}{red}}
 }%%
 
 \begin{bemerkung}{Umkehrfunktion}{}
   Eine \textbf{Umkehrfunktion} ist das Spiegelbild der der Funktion
   gespiegelt an der Geraden \LoesungsRaum{$y=x$}.
 \end{bemerkung}  
+
+\begin{bemerkung}{Einschränkung}{}
+Funktionen, welche beim Spiegeln an $x=y$ mehrere «Funktionswerte»
+erhalten würden, sind nur \textbf{eingeschränkt} umkehrbar.
+\end{bemerkung}
 \newpage
+
+
+
 \subsection*{Aufgaben}
 
 \TALSAadB{213ff}{801. für $n=2,3$, 802. mit Geogebra oder TR}
