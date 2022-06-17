@@ -68,7 +68,7 @@ Kehren Sie diese danach auf ihrem maximal möglichen
 Definitionsbereich um und skizzieren Sie auch deren Umkehrfunktion.
 
 $$f(x) = x^3 + 1$$
-\TNT{10}{
+\TNT{8}{
   $f^{-1}(x) = \sqrt[3]{y-1}$ für $y\ge 1$ ansonsten:
   $f^{-1}(x) = -\sqrt[3]{1-y}$ 
 }
@@ -103,7 +103,7 @@ bezeichnet.
 
 
 \begin{gesetz}{Umkehrbar}{}
-  Damit eine Funktion auf $\mathbb{D}$ umkehrbar ist, muss für $x_1$ und $x_2$ gelten dass
+  Damit eine Funktion auf $\mathbb{D}$ umkehrbar ist, muss für $x_1\ne x_2$ gelten dass
   $$f(x_1) \ne f(x_2)$$
 \end{gesetz}
 
@@ -112,7 +112,7 @@ bezeichnet.
  Spieglebild der Originalfunktion 
  an der Winkelhalbierenden des 1. bzw. 3. Quadranten ($y=x$).
 \end{bemerkung}
-%%\newpage
+\newpage
 
 
 \subsection{Rezept}
@@ -120,12 +120,17 @@ bezeichnet.
   Um auf die Umkehrfunktion zu kommen, sind folgende Schritte nötig
   \begin{enumerate}
   \item Sich klar werden über Definitions- und Wertebereiche von $f$:
-    $\mathbb{D} =  ...$, $\mathbb{W} = ...$
-  \item Funktionsgleichung nach $y$ auf\/lösen (falls möglich)
-  \item $x$ und $y$ tauschen
-  \item Definitions- und Wertebereiche tauschen:\\
-    $\mathbb{D}_{f^{-1}} = \mathbb{W}_f$ und  
-    $\mathbb{W}_{f^{-1}} = \mathbb{D}_f$.
+    $\mathbb{D} =  ...$, $\mathbb{W} = ...$. Allenfalls Wertebereich aus Grundmenge $\mathbb{G}$ und Definitionsbereich ermitteln.
+  \item Funktionsgleichung nach $x$ auf\/lösen (falls möglich)
+  \item vertauschen:
+    \begin{itemize}
+  \item $x$ mit $y$ 
+  \item Definitions- mit Wertebereich\\
+
+      $\mathbb{D}_{f^{-1}} = \mathbb{W}_f$ und  \\
+
+      $\mathbb{W}_{f^{-1}} = \mathbb{D}_f$.
+      \end{itemize}
     \end{enumerate} 
   \end{rezept}
 \newpage%%
