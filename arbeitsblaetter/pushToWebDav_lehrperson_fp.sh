@@ -125,5 +125,9 @@ echo "copying Arbeitsblatt Algebra I Faktorisieren (GESO und TALS)"
 cp -f ./algebra1Faktorisieren/A1F_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/faktorisieren/A1F_Aufgaben.pdf
 cp -f ./algebra1Faktorisieren/A1F_TRAINER_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/faktorisieren/A1F_Loesungen.pdf
 
+echo "copying Arbeitsblatt Gleichungen: Bruchgleichungen (GESO und TALS)"
+cp -f ./bruchgleichungen/arbeitsblatt/BruchgleichungenArbeitsblatt_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/bruchgleichungen/arbeitsblatt/BruchgleichungenArbeitsblatt.pdf
+cp -f ./bruchgleichungen/arbeitsblatt/BruchgleichungenArbeitsblatt_TRAINER_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/bruchgleichungen/arbeitsblatt/BruchgleichungenArbeitsblattLoesungen.pdf
+
 
 
