@@ -129,5 +129,10 @@ echo "copying Arbeitsblatt Gleichungen: Bruchgleichungen (GESO und TALS)"
 cp -f ./bruchgleichungen/arbeitsblatt/BruchgleichungenArbeitsblatt_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/bruchgleichungen/arbeitsblatt/BruchgleichungenArbeitsblatt.pdf
 cp -f ./bruchgleichungen/arbeitsblatt/BruchgleichungenArbeitsblatt_TRAINER_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/bruchgleichungen/arbeitsblatt/BruchgleichungenArbeitsblattLoesungen.pdf
 
+echo "copying Arbeitsblatt Gleichungen: Bruchgleichungen (GESO und TALS)"
+cp -f ./funktionen_umkehrfunktionen/Umkehrfunktionen_TALS.pdf          ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/fct3/umkehrfunktionen/ArbeitsblattUmkehrfunktionen.pdf
+cp -f ./funktionen_umkehrfunktionen/Umkehrfunktionen_TRAINER_TALS.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/fct3/umkehrfunktionen/ArbeitsblattUmkehrfunktionenLoesungen.pdf
+
+
 
 
