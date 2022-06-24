@@ -318,6 +318,10 @@ z.\,B.
 
 \newcommand{\weblink}[2]{\href{#2}{#1}}
 
-\newcommand{\matheNinjaLink}[1]{
-$$\Longrightarrow \Longrightarrow \href{#1}{MatheNinja} \Longleftarrow\Longleftarrow$$
+\newcommand{\matheNinjaLink}[2]{
+\begin{tabular}{cc}
+ \raisebox{-1cm}{\includegraphics[height=2cm]{img/matheninja/turtle.png}}& \href{#2}{MatheNinja: #1}\\
+ \end{tabular} 
+%%\bbwCenterGraphic{2cm}{img/matheninja/turtle.png}
+%%$$\Longrightarrow \Longrightarrow \href{#1}{MatheNinja} \Longleftarrow\Longleftarrow$$
 }%% End Command  \matheNinjaLink
