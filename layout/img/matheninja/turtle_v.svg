@@ -50,11 +50,19 @@
    inkscape:window-height="1080"
    id="namedview1071"
    showgrid="false"
+<<<<<<< HEAD
    inkscape:zoom="0.66141073"
    inkscape:cx="-18.634104"
    inkscape:cy="83.351297"
    inkscape:window-x="48"
    inkscape:window-y="0"
+=======
+   inkscape:zoom="0.46768801"
+   inkscape:cx="974.13991"
+   inkscape:cy="597.34494"
+   inkscape:window-x="66"
+   inkscape:window-y="20"
+>>>>>>> 272748ba1bf8a7f0b20db42fec0f2a8b2214ef2e
    inkscape:window-maximized="0"
    inkscape:current-layer="Layer_1"
    fit-margin-top="0"
@@ -170,6 +178,7 @@
    id="path1066"
    inkscape:connector-curvature="0" />
 </g>
+<<<<<<< HEAD
 <g
    id="g4577"
    transform="matrix(0.75799853,0,0,1.3333333,261.41622,-23.388619)"><path
@@ -242,3 +251,30 @@
      y="450.94815"
      id="tspan1779"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold';stroke:none;stroke-width:2.27012;stroke-opacity:1" /></text></svg>
+=======
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:51.29948807px;line-height:1.25;font-family:'TeX Gyre Chorus';-inkscape-font-specification:'TeX Gyre Chorus';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.48093268"
+   x="106.92555"
+   y="310.22177"
+   id="text834"
+   transform="scale(0.97243969,1.0283414)"><tspan
+     sodipodi:role="line"
+     id="tspan832"
+     x="106.92555"
+     y="310.22177"
+     style="stroke-width:0.48093268">ⓒ</tspan></text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.35044098px;line-height:1.25;font-family:'TeX Gyre Chorus';-inkscape-font-specification:'TeX Gyre Chorus';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.80016035"
+   x="190.74931"
+   y="368.74884"
+   id="text838"
+   transform="scale(0.95145894,1.0510175)"><tspan
+     sodipodi:role="line"
+     id="tspan836"
+     x="190.74931"
+     y="368.74884"
+     style="stroke-width:0.80016035">ℂ</tspan></text>
+</svg>
+>>>>>>> 272748ba1bf8a7f0b20db42fec0f2a8b2214ef2e
