@@ -23,6 +23,12 @@
 \newif\ifisALLINONE
 \isALLINONEfalse
 
+%% Blended Learning
+%% Insb. MatheNinja Links. Diese sind jedoch in einem anderen Kurs!
+\newif\ifisBLENDED
+\isBLENDEDfalse
+
+
 %%%%%%%%% TRAINER Version vs. Schülerversion %%%%%%%%%%%%%
 
 \newcommand\TRAINER[1]{%%
@@ -40,6 +46,12 @@
 \newcommand\GESO[1]{%
 {%%
 \ifisGESO {#1}%%
+\fi%%
+}}%    
+
+\newcommand\BLENDED[1]{%
+{%%
+\ifisBLENDED {#1}%%
 \fi%%
 }}%    
 
