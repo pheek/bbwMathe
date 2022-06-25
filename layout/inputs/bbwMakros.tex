@@ -277,12 +277,27 @@ z.\,B.
 
 \newcommand{\olatBBWLogo}{\includegraphics[width=15mm]{logos/traube.pdf}}%%
 
-\newcommand{\olatLinkArbeitsblatt}[3]{\weblink{Arbeitsblatt \olatBBWLogo{}#1}{#2}:\\\begin{center}#3\end{center}}%% END olatLinkArbeitsblatt
-\newcommand{\olatLinkGESOKompendium}[2]{\olatBBWLogo\weblink{Kompendium}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/102901164962365}}%% END olatLinkArbeitsblatt
-\newcommand{\olatLinkTALSStrukturaufgabenSPF}[2]{\olatBBWLogo\weblink{Strukturaufgaben
-Schwerpunktsfach}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/102901174299246}}%% END olatLinkArbeitsblatt
-\newcommand{\olatLinkTALSStrukturaufgabenGLF}[2]{\olatBBWLogo\weblink{Strukturaufgaben
-Grundlagenfach}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/102901174291476}}%% END olatLinkArbeitsblatt
+\newcommand{\olatLinkArbeitsblatt}[3]{\weblink{
+\olatBBWLogo{}%%
+\begin{tabular}{l}%%
+Arbeitsblatt\\%%
+{#1}
+\end{tabular}%%
+}{#2}
+\aufgabenFarbe{\begin{center}
+#3
+\end{center}}}%%
+
+
+%% olatLinkrbeitsblatt
+
+\newcommand{\olatLinkGESOKompendium}[1]{\olatBBWLogo\weblink{Kompendium}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/102901164962365}
+\aufgabenFarbe{#1}}%% END olatLinkArbeitsblatt
+
+\newcommand{\olatLinkTALSStrukturaufgabenSPF}[1]{\olatBBWLogo\weblink{Strukturaufgaben
+Schwerpunktsfach}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/102901174299246}\aufgabenFarbe{#1}}%% END olatLinkArbeitsblatt
+\newcommand{\olatLinkTALSStrukturaufgabenGLF}[1]{\olatBBWLogo\weblink{Strukturaufgaben
+Grundlagenfach}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/102901174291476}\aufgabenFarbe{#1}}%% END olatLinkArbeitsblatt
 
 
 \newcommand{\matheNinjaLink}[2]{%%
