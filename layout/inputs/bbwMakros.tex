@@ -220,51 +220,6 @@ z.\,B.
 \theoremlayoutdefinition{beispiel}{Beispiel}{\beispielFarbe}{B}
 \theoremlayoutdefinition{bemerkung}{Bemerkung}{\bemerkungFarbe}{M}
 
-
-%% AadB = Aufgaben aus dem Buch
-%% 1. Parameter: Seitenzahl
-%% 2. Parameter: Aufgabennummern.
-%% bsp  \TALSAadB{38-39}{101a-101c, 102 und 103}
-
-
-
-%%\newcommand*{\maturaAufgaben}[1]{\begin{mdframed}[backgroundcolor=maturaAufgabenFarbe!10]{#1}\end{mdframed}}
-
-\newcommand*{\aadB}{Aufgaben aus dem Buch}
-
-\newcommand*{\TALSAadB}[2]{%%
-{%%
-\ifisTALS{\aufgabenFarbe{\noindent{\aadB \cite{frommenwiler17alg}: Seite {#1} Nr. {#2}}}}%%
-\fi%%
-}}%%
-
-\newcommand*{\TALSGeomAadB}[2]{%%
-{%%
-\ifisTALS{\aufgabenFarbe{\noindent{\aadB \cite{frommenwiler18geom}: Seite {#1} Nr. {#2}}}}%%
-\fi%%
-}}%%
-
-\newcommand*{\GESOAadB}[2]{%%
-{%%
-\ifisGESO{\aufgabenFarbe{\aadB \cite{marthaler21}: Seite {#1} Nr. {#2}}}%%
-\fi%%
-}}%%
-
-\newcommand*{\theorieGESO}[2]{%%
-{\ifisGESO{Theorie \cite{marthaler21}: Seite {#1} Kap. {#2}}%%
-\fi%%
-}}
-
-\newcommand*{\theorieTALS}[2]{%%
-{\ifisTALS{Theorie \cite{frommenwiler17alg}: Seite {#1} Kap. {#2}}%%
-\fi%%
-}}
-
-\newcommand*{\theorieTALSGeom}[2]{%%
-{\ifisTALS{Theorie \cite{frommenwiler18geom}: Seite {#1} Kap. {#2}}%%
-\fi%%
-}}
-
 %%
 %% Force a blank page, when \newpage does not work
 %%
@@ -314,14 +269,71 @@ z.\,B.
 }%% END environment bbwAufgabenBlock
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 %% Weblinks und Mathe Ninja Links
 
 \newcommand{\weblink}[2]{\href{#2}{#1}}
 
-\newcommand{\matheNinjaLink}[2]{
-\begin{tabular}{cc}
- \raisebox{-1cm}{\includegraphics[height=2cm]{img/matheninja/turtle.png}}& \href{#2}{MatheNinja: #1}\\
- \end{tabular} 
-%%\bbwCenterGraphic{2cm}{img/matheninja/turtle.png}
-%%$$\Longrightarrow \Longrightarrow \href{#1}{MatheNinja} \Longleftarrow\Longleftarrow$$
+\newcommand{\olatBBWLogo}{\includegraphics[width=15mm]{logos/traube.pdf}}%%
+
+\newcommand{\olatLinkArbeitsblatt}[3]{\weblink{Arbeitsblatt \olatBBWLogo{}#1}{#2}:\\\begin{center}#3\end{center}}%% END olatLinkArbeitsblatt
+\newcommand{\olatLinkGESOKompendium}[2]{\olatBBWLogo\weblink{Kompendium}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/102901164962365}}%% END olatLinkArbeitsblatt
+\newcommand{\olatLinkTALSStrukturaufgabenSPF}[2]{\olatBBWLogo\weblink{Strukturaufgaben
+Schwerpunktsfach}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/102901174299246}}%% END olatLinkArbeitsblatt
+\newcommand{\olatLinkTALSStrukturaufgabenGLF}[2]{\olatBBWLogo\weblink{Strukturaufgaben
+Grundlagenfach}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/102901174291476}}%% END olatLinkArbeitsblatt
+
+
+\newcommand{\matheNinjaLink}[2]{%%
+\begin{tabular}{cc}%%
+ \raisebox{-1cm}{\includegraphics[height=2cm]{img/matheninja/turtle.png}}& \href{#2}{MatheNinja: #1}\\%%
+ \end{tabular}%%
 }%% End Command  \matheNinjaLink
+
+
+
+%% AadB = Aufgaben aus dem Buch
+%% 1. Parameter: Seitenzahl
+%% 2. Parameter: Aufgabennummern.
+%% bsp  \TALSAadB{38-39}{101a-101c, 102 und 103}
+
+
+
+%%\newcommand*{\maturaAufgaben}[1]{\begin{mdframed}[backgroundcolor=maturaAufgabenFarbe!10]{#1}\end{mdframed}}
+
+\newcommand*{\aadB}{Aufgaben aus dem Buch}
+
+\newcommand*{\TALSAadB}[2]{%%
+{%%
+\ifisTALS{\aufgabenFarbe{\noindent{\aadB \cite{frommenwiler17alg}: Seite {#1} Nr. {#2}}}}%%
+\fi%%
+}}%%
+
+\newcommand*{\TALSGeomAadB}[2]{%%
+{%%
+\ifisTALS{\aufgabenFarbe{\noindent{\aadB \cite{frommenwiler18geom}: Seite {#1} Nr. {#2}}}}%%
+\fi%%
+}}%%
+
+\newcommand*{\GESOAadB}[2]{%%
+{%%
+\ifisGESO{\aufgabenFarbe{\aadB \cite{marthaler21}: Seite {#1} Nr. {#2}}}%%
+\fi%%
+}}%%
+
+\newcommand*{\theorieGESO}[2]{%%
+{\ifisGESO{Theorie \cite{marthaler21}: Seite {#1} Kap. {#2}}%%
+\fi%%
+}}%%
+
+\newcommand*{\theorieTALS}[2]{%%
+{\ifisTALS{Theorie \cite{frommenwiler17alg}: Seite {#1} Kap. {#2}}%%
+\fi%%
+}}%%
+
+\newcommand*{\theorieTALSGeom}[2]{%%
+{\ifisTALS{Theorie \cite{frommenwiler18geom}: Seite {#1} Kap. {#2}}%%
+\fi%%
+}}%%
+
