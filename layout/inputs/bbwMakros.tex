@@ -289,15 +289,33 @@ z.\,B.
 
 \newcommand{\olatBBWLogo}{\includegraphics[width=15mm]{logos/traube.pdf}}%%
 
+%% Use:
+%% \olatLinkArbeitsblatt{Kapitel/Arbeitsblattname «[ID]»}{«URL»}{Aufgabennummern}
 \newcommand{\olatLinkArbeitsblatt}[3]{\weblink{
 \olatBBWLogo{}%%
 \begin{tabular}{l}%%
-Arbeitsblatt\\%%
+OLAT Arbeitsblatt\\%%
 {#1}
 \end{tabular}%%
 }{#2}
 \aufgabenFarbe{\begin{center}
-#3
+Nummer: #3
+\end{center}}}%%
+%%\newcommand{\olatLinkArbeitsblatt}[3]{\href{#2}{#1;#3}}%% END 
+
+
+%% Use:
+%% \olatLinkPruefung{Einstiegstest}{«URL»}
+
+\newcommand{\olatLinkPruefung}[2]{\weblink{
+\olatBBWLogo{}%%
+\begin{tabular}{l}%%
+OLAT-Prüfung\\%%
+{#1}
+\end{tabular}%%
+}{#2}
+\aufgabenFarbe{\begin{center}
+ONLINE TEST
 \end{center}}}%%
 
 
