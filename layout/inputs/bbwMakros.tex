@@ -39,19 +39,19 @@
 
 \newcommand\TALS[1]{%
 {%%
-\ifisTALS {#1}%%
+\ifisTALS{#1}%%
 \fi%%
 }}%
 
 \newcommand\GESO[1]{%
 {%%
-\ifisGESO {#1}%%
+\ifisGESO{#1}%%
 \fi%%
 }}%    
 
 \newcommand\BLENDED[1]{%
 {%%
-\ifisBLENDED {#1}%%
+\ifisBLENDED{#1}%%
 \fi%%
 }}%    
 
@@ -242,11 +242,12 @@ z.\,B.
 
 \newcommand{\Lueckentext}[1]{\,\,\noTRAINER{\dotfill}\TRAINER{#1}}
 
-\newcommand{\LoesungsRaum}[1]{\,\,\noTRAINER{\underline{\underline{\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,}}}\TRAINER{#1}\,\,}
 
-\newcommand{\LoesungsRaumKurz}[1]{\,\,\noTRAINER{\underline{\underline{\,\,\,\,\,\,\,\,\,\,\,}}}\TRAINER{#1}\,\,}
+\newcommand{\LoesungsRaumCM}[2]{\,\,\noTRAINER{\underline{\hspace{#1}}}\TRAINER{#2}}
 
-\newcommand{\LoesungsRaumLang}[1]{\,\,\noTRAINER{\underline{\underline{\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,}}}\TRAINER{#1}\,\,}
+\newcommand{\LoesungsRaum}[1]{\LoesungsRaumCM{30mm}{#1}}
+\newcommand{\LoesungsRaumKurz}[1]{\LoesungsRaumCM{15mm}{#1}}
+\newcommand{\LoesungsRaumLang}[1]{\LoesungsRaumCM{60mm}{#1}}
 
 
 %% TI nSpire
@@ -320,7 +321,7 @@ OLAT:\\%%
 %%
 %% use:
 %% \matheNinjaLink{Beschreibung}{URL}
-\newcommand{\matheNinjaLink}[2]{\olatLOGOLink{Mathe Ninja}{#2}{#1}}
+\newcommand{\matheNinjaLink}[2]{\olatLOGOLink{Mathe Ninja Link \includegraphics[width=15mm]{img/matheninja/turtle.png}}{#2}{#1}}
 
 %%\newcommand{\matheNinjaLink}[2]{%%
 %%\begin{tabular}{cc}%%
