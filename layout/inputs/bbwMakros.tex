@@ -289,7 +289,15 @@ z.\,B.
 
 \newcommand{\olatBBWLogo}{\includegraphics[width=15mm]{logos/traube.pdf}}%%
 
-\newcommand{\olatLOGOLink}[3]{\weblink{
+
+\newcommand{\olatLOGOLink}[3]{%%
+\begin{tabular}{ccc}%%
+%%\olatBBWLogo{} & #1 & \aufgabenFarbe{#3}\\%%
+\weblink{\olatBBWLogo{}}{#2} & \weblink{#1}{#2} & #3\\
+\end{tabular}%%
+}%%
+
+\newcommand{\olatLOGOLinkAlt}[3]{\weblink{
 \olatBBWLogo{}%%
 \begin{tabular}{l}%%
 OLAT:\\%%
@@ -309,8 +317,8 @@ OLAT:\\%%
 \newcommand{\olatLinkPruefung}[2]{\olatLOGOLink{Online Prüfung}{#2}{#1}}%%
 
 %% Use
-%% \olatLinkGESOKompendium{Seite/Seiteff}{Aufgabe(n)}
-\newcommand{\olatLinkGESOKompendium}[2]{\olatLOGOLink{Kompendium}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/102901164962365}{Seite #1 --- #2}}%%
+%% \olatLinkGESOKompendium{Kapitel}{Seite/Seiteff}{Aufgabe(n)}
+\newcommand{\olatLinkGESOKompendium}[3]{\GESO{\olatLOGOLink{Kompendium}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/102901164962365}{Kapitel #1; Seite #2; Aufgaben #3}}}%%
 
 
 %% Use
