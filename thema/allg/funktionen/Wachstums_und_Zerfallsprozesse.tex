@@ -1,4 +1,3 @@
-
 %% 2019 07 04 Ph. G. Freimann
 %%
 
@@ -27,9 +26,11 @@ Zunahme, wenn die Zunahme pro Zeiteinheit jeweils proportional zur aktuellen Anz
 
 \begin{itemize}
 \item \Lueckentext{Zinseszins}
-\item \Lueckentext{Frequenzen in der temperierten Stimmung (Musik). Zunahme der Frequenz pro Halbtonschritt.}
+\item \Lueckentext{Frequenzen in der temperierten Stimmung
+  (Musik). Zunahme der Frequenz pro Halbtonschritt.}
 \item \Lueckentext{Keime in der Kuhmilch; Ansteckungsbedingte Krankheitsfälle (\zB viral)}
 \item \Lueckentext{Algenbefall in Teichen}
+\item \Lueckentext{Generell Populationen: Flechten, Pilze}
 \item \Lueckentext{(ungebremstes) Bevölkerungswachstum / bzw. Tierpopulation}
 \item \Lueckentext{\dotfill}
 \end{itemize}
@@ -55,28 +56,13 @@ b) Wer hat über alle Jahre mehr Taschengeld?
 
 c) Skizzieren Sie beide Varianten:
 
-\TRAINER{\bbwCenterGraphic{16cm}{allg/funktionen/img/taschengeldAusgefuellt.png}}
+\TRAINER{\bbwCenterGraphic{13cm}{allg/funktionen/img/taschengeldAusgefuellt.png}}
 \noTRAINER{\bbwCenterGraphic{16cm}{allg/funktionen/img/taschengeld.png}}
-
-
-\newpage
 
 \TRAINER{Optional: Zeige mit Geogebra (\texttt{geogebra.org}) $x^2$ vs. $1.2^x$. Fazit:
   Exponentielles Wachstum überholt jegliche Potenzfunktion.}
 
 
-\subsubsection{Rate vs. Faktor I}\index{Rate!Zunahme}\index{Faktor!Zunahme}\index{Zunahmefaktor}\index{Zunahmerate}
-
-Vervollständigen Sie die folgende Tabelle:
-
-\begin{tabular}{|c|c|}\hline
-  Wachstums\textbf{rate} & Wachstums\textbf{faktor}\\\hline
-  15\%                   & 1.15\\\hline
-  8\%                    & \LoesungsRaum{1.08}\\\hline
-  \LoesungsRaum{100\%}   & 2\\\hline
-  -3\%                   & \LoesungsRaum{0.97}\\\hline
-  \LoesungsRaum{-90\%}   & 0.1\\\hline%%
-\end{tabular} 
 
 \newpage
 \begin{definition}{Exponentialfunktion}{}\index{Exponentialfunktion!Definition}
@@ -104,11 +90,46 @@ Der Parameter $a$ gibt den Wachstumsfaktor pro Zeiteinheit $e_x$ an.
 
 \newpage
 
-\subsection{Exponentialfunktion mit anderen Startwerten}
+\subsection{Startwert}
 
-Obige Exponentialfunktion hat für den Wert $x=0$ immer den $y$-Wert = 1. Da dies in der Praxis aber meist nicht der Fall ist, gib es die folgende \textbf{allgemeine Form der Exponentialfunktion}:
+Obige Exponentialfunktion hat für den Wert $x=0$ immer den $y$-Wert = 1. Da dies in der Praxis aber meist nicht der Fall ist, gib es die folgende \textbf{allgemeinere Form der Exponentialfunktion}:
 
-\begin{definition}{allgemeine Exponentialfunktion}{}
+\subsubsection{Einstiegsbeispiel}
+
+\begin{beispiel}{Pilz}{}
+  Ein Pilzbefall an einer Wand nimmt täglich um 23\% der Fläche zu.
+  Anfänglich wird eine Fläche von $35 \textrm{cm}^2$ gemessen.
+  Welche Fläche ist nach einem, nach zwei, nach fünf, nach zehn
+  bzw. nach $n$ 
+  Tagen zu erwarten?
+
+  \TNT{7.6}{Ein  Tag:   $35\cdot{} 1.23^1    =          43.05 \textrm{cm}^2$\\
+          Zwei Tage:  $35\cdot{} 1.23^2   \approx{}  52.95 \textrm{cm}^2$\\
+          Fünf Tage:  $35\cdot{} 1.23^5   \approx{}  98.54 \textrm{cm}^2$\\
+          Zehn Tage:  $35\cdot{} 1.23^{10} \approx{} 277.4 \textrm{cm}^2$\\
+          $n$  Tage:  $35\cdot{} 1.23^n = 35\cdot{}1.23^n$}%% END TNT
+
+  Wann wird die ganze Wand ($5 \textrm{m}^2$) mit dem Pilz befallen
+  sein?
+  
+\TNT{6.4}{$5 \textrm{m}^2 = 50\,000 \textrm{cm}^2$
+     
+     ergo: $50\,000 = 35 \cdot{} 1.23^n$
+
+     (durch 35 teilen, dann logarithmieren)
+
+     $$\frac{50\,000}{35} = 1.23^n$$
+
+     $$n = \log_{1.23}(\frac{50\,000}{35}) \approx 35.1 \textrm{Tage}$$
+
+   }%% END TNT
+
+
+   
+\end{beispiel}
+
+\newpage
+\begin{definition}{Exponentialfunktion mit frei wählbarem Startwert}{}
 $$f: y = b\cdot{}a^x$$
 
 Auch hier gibt der Parameter $a$ den Wachstumsfaktor pro Zeiteinheit $e_x$ an.
@@ -143,10 +164,10 @@ Begründung:
   Als Vorbereitung zur allgemeinen Wachstumsfunktion:
   \GESOAadB{207}{10. (Algen)}
 }
+\newpage
 
-
-\subsection{Einstiegsbeispiel Wachstumsprozesse}
-
+\subsection{Beobachtungszeitspanne}
+\subsubsection{Einstgiesbeispiel}
 \bbwCenterGraphic{17cm}{allg/funktionen/img/tuerlersee2.jpg}
 \begin{center}{\small Legende: Türlersee April 2022}\end{center}
 

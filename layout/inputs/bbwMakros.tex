@@ -290,12 +290,15 @@ z.\,B.
 \newcommand{\olatBBWLogo}{\includegraphics[width=15mm]{logos/traube.pdf}}%%
 
 
+%%\newcolumntype{A}{>{\columncolor[HTML]{AAACED}} p{3cm}}
+%%\definecolor{lightblah}{gray}{0.9}
 \newcommand{\olatLOGOLink}[3]{%%
-\begin{tabular}{ccc}%%
+\begin{tabular}{lcp{80mm}}%%
 %%\olatBBWLogo{} & #1 & \aufgabenFarbe{#3}\\%%
-\weblink{\olatBBWLogo{}}{#2} & \weblink{#1}{#2} & #3\\
+\weblink{\raisebox{-5mm}{\olatBBWLogo{}}}{#2} & \weblink{#1}{#2} & \cellcolor{aufgabenFarbe}#3\\
+%%A & B & \cellcolor{aufgabenFarbe}C\\
 \end{tabular}%%
-}%%
+}%% END Command olatLOGOLink
 
 \newcommand{\olatLOGOLinkAlt}[3]{\weblink{
 \olatBBWLogo{}%%
@@ -310,7 +313,7 @@ OLAT:\\%%
 
 %% Use:
 %% \olatLinkArbeitsblatt{Kapitel/Arbeitsblattname «[ID]»}{«URL»}{Aufgabennummern}
-\newcommand{\olatLinkArbeitsblatt}[3]{\olatLOGOLink{Arbeitsblatt:#1}{#2}{#3}}%%
+\newcommand{\olatLinkArbeitsblatt}[3]{\olatLOGOLink{Blatt: #1}{#2}{#3}}%%
 
 %% Use:
 %% \olatLinkPruefung{Einstiegstest}{«URL»}

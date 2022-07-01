@@ -298,16 +298,18 @@ Er beginnt das Festmahl bei Kunigundes Hochzeit mit einer Magenfülle
 von 2 Litern\footnote{Darunter würde er echte Hungerschübe
   leiden!}. In der ersten Minute schafft er es, 3 dl Flüssigkeit oder Nahrung
 in sich regelrecht hineinzustopfen. Danach nimmt sein Futtern
-exponentiell ab (bis zur Sättigungsgrenze von 5 Litern, die er
+«exponentiell gesättigt» ab (bis zur Sättigungsgrenze von 5 Litern, die er
 hoffentlich nicht erreicht).
 
 Nach wie vielen Minuten ist er so richtig gesättigt; m.\,a.\,W. wann
 hat er besagte 4.5 Liter im Magen\footnote{Der Moment ist gekommen, wo
-  die Wachen den Ritter Nimmersatt vorsorglich unter irgend einem Vorwand aus der Burg schaffen sollten.}?
+  die Wachen den Ritter Nimmersatt vorsorglich unter ominösem Vorwand aus der Burg schaffen sollten.}?
 
 \TNT{8}{
   $c = 5$, $b = m_0 = 5-2=3$, $m=m_1= 5-2.3=2.7$, $\tau = 1$, $a=\frac{2.7}{3} = 0.9$ und somit:
   $$f(t) = 4.5 = 5 - 3\cdot{}\left(\frac{2.7}{3}\right)^t$$
+
+  $$t = log_{\frac{4.5-5}{-3}}(\frac{2.7}3) \approx 17.006$$
 Und so ist er nach 17 Minuten so richtig satt.\vspace{52mm}}
 
 
@@ -322,12 +324,20 @@ Und so ist er nach 17 Minuten so richtig satt.\vspace{52mm}}
 \vspace{8mm}
 \begin{center}\textbf{Wachstum und Zerfall}\end{center}
 
-\TNT{8.8}{\bbwCenterGraphic{18cm}{allg/funktionen/img/zusammenfassung_exp/wachstum_zerfall.png}}%% END TNT
+\TNT{8.8}{\bbwCenterGraphic{18cm}{allg/funktionen/img/zusammenfassung_exp/wachstum_zerfall.png}
+
+  bzw.
+  $$f(t) = G_0 \cdot{} \e^{qt}; q=  \frac{\ln(a)}\tau  \,\,\,\,\,\,\,\,\, f(t) = G_0 \cdot{} \e^{-qt}; q  = \frac{-\ln(a)}\tau$$
+}%% END TNT
 
 \vspace{8mm}
 \begin{center}\textbf{Sättigung}\end{center}
 
-\TNTeop{\bbwCenterGraphic{18cm}{allg/funktionen/img/zusammenfassung_exp/saettigung.png}}%% END TNT
+\TNTeop{\bbwCenterGraphic{18cm}{allg/funktionen/img/zusammenfassung_exp/saettigung.png}
 
-\TRAINER{Hier ist Platz für das Video/die Videos zur den getanzten
-  Funktionen (S. OLAT/Wiki).}
+    bzw.
+     $$f(t) = S + (G_0-S) \cdot{} \e^{q\cdot{}t}; q=    \frac{\ln(a)}\tau     \,\,\,\,\,\,\,\,\, f(t) = S + (S - G_0) \cdot{} \e^{-q\cdot{}t}; q  = \frac{-\ln(a)}\tau$$
+
+Hier ist Platz für das Video/die Videos zur den getanzten
+Funktionen (S. OLAT/Wiki).
+}%% END TNTeop
