@@ -97,21 +97,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%
 
-%% Referenzen auf Labels
-%% AllInOne ist wichtig, denn einige Referenzen funkitionieren nicht
-%% in den Themen-Skripts, sondern lediglich in den gesamten Jahres-Skripts.
-\newcommand*\totalref[1]{\ifisALLINONE{ (s.\kern 0.22em{}Kap. \ref{#1}
-    auf Seite \pageref{#1}) }\else{}\fi{}}%%
-\newcommand*\totalrefanhang[1]{ (s.\kern 0.22em{}Kap. \ref{#1}
-    auf Seite \pageref{#1}) }%%
-
-%% Short version
-\newcommand*\totalrefs[1]{\ifisALLINONE{ Kap. \ref{#1} auf Seite
-\pageref{#1} }\else{}\fi{}}%%
-%%\newcommand*\aufgabenref[1]{(s\kern 0.22em{}Aufg. \ref{#1} auf Seite \pageref{#1})}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BBW Makros %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 %% Start fetching index entries for theindex
 \makeindex

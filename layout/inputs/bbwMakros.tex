@@ -247,7 +247,7 @@ z.\,B.
 
 \newcommand{\LoesungsRaum}[1]{\LoesungsRaumCM{30mm}{#1}}
 \newcommand{\LoesungsRaumKurz}[1]{\LoesungsRaumCM{15mm}{#1}}
-\newcommand{\LoesungsRaumLang}[1]{\LoesungsRaumCM{60mm}{#1}}
+\newcommand{\LoesungsRaumLang}[1]{\LoesungsRaumCM{45mm}{#1}}
 
 
 %% TI nSpire
@@ -290,12 +290,21 @@ z.\,B.
 \newcommand{\olatBBWLogo}{\includegraphics[width=15mm]{logos/traube.pdf}}%%
 
 
-\newcommand{\olatLOGOLink}[3]{%%
-\begin{tabular}{ccc}%%
-%%\olatBBWLogo{} & #1 & \aufgabenFarbe{#3}\\%%
-\weblink{\olatBBWLogo{}}{#2} & \weblink{#1}{#2} & #3\\
+%%\newcolumntype{A}{>{\columncolor[HTML]{AAACED}} p{3cm}}
+%%\definecolor{lightblah}{gray}{0.9}
+\newcommand{\olatLOGOLinkMittel}[3]{%%
+\begin{tabular}{lcp{80mm}}%%
+\weblink{\raisebox{-5mm}{\olatBBWLogo{}}}{#2} & \weblink{#1}{#2} & \cellcolor{aufgabenFarbe}#3\\
 \end{tabular}%%
-}%%
+}%% END Command olatLOGOLink
+
+\newcommand{\olatLOGOLink}[3]{%%
+\begin{tabular}{|lp{111mm}|}\hline%%
+\weblink{\raisebox{-5mm}{\olatBBWLogo{}}}{#2} & \weblink{#1}{#2}\\
+\multicolumn{2}{|c|}{\cellcolor{aufgabenFarbe}#3}\\\hline
+\end{tabular}%%
+}%% END Command olatLOGOLink
+
 
 \newcommand{\olatLOGOLinkAlt}[3]{\weblink{
 \olatBBWLogo{}%%
@@ -310,7 +319,7 @@ OLAT:\\%%
 
 %% Use:
 %% \olatLinkArbeitsblatt{Kapitel/Arbeitsblattname «[ID]»}{«URL»}{Aufgabennummern}
-\newcommand{\olatLinkArbeitsblatt}[3]{\olatLOGOLink{Arbeitsblatt:#1}{#2}{#3}}%%
+\newcommand{\olatLinkArbeitsblatt}[3]{\olatLOGOLink{Blatt: #1}{#2}{#3}}%%
 
 %% Use:
 %% \olatLinkPruefung{Einstiegstest}{«URL»}
@@ -382,4 +391,21 @@ OLAT:\\%%
 {\ifisTALS{Theorie \cite{frommenwiler18geom}: Seite {#1} Kap. {#2}}%%
 \fi%%
 }}%%
+
+
+
+%% Referenzen auf Labels
+%% AllInOne ist wichtig, denn einige Referenzen funkitionieren nicht
+%% in den Themen-Skripts, sondern lediglich in den gesamten Jahres-Skripts.
+\newcommand*\totalref[1]{\ifisALLINONE{ (s.\kern 0.22em{}Kap. \ref{#1}
+    auf Seite \pageref{#1}) }\else{}\fi{}}%%
+\newcommand*\totalrefanhang[1]{ (s.\kern 0.22em{}Kap. \ref{#1}
+    auf Seite \pageref{#1}) }%%
+
+%% Short version
+\newcommand*\totalrefs[1]{\ifisALLINONE{ Kap. \ref{#1} auf Seite
+\pageref{#1} }\else{}\fi{}}%%
+%%\newcommand*\aufgabenref[1]{(s\kern 0.22em{}Aufg. \ref{#1} auf Seite \pageref{#1})}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BBW Makros %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
