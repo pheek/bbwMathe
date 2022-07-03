@@ -1,0 +1,332 @@
+\input{bbwLayoutPage}
+\renewcommand{\bbwAufgabenBlockID}{FctWZ}%% WZ = Wachstum/Zerfall
+
+\renewcommand{\metaHeaderLine}{Exponentialfunktionen}
+\renewcommand{\arbeitsblattTitel}{Aufgaben zu Wachstum und Zerfall}
+
+
+\begin{document}
+\arbeitsblattHeader{}
+
+\section{Wachstum und Zerfall}
+
+\subsection{Einfache Wachstumsprozesse}
+\textit{Startwert ist hier eine Einheit.}
+
+
+\bbwActAufgabenNr{} \textbf{Pilz}
+
+An einer Kellerwand wächst eine Pilzart und die bedeckte Fläche nimmt exponentiell zu.
+Am Anfang ist $1 \textrm{m}^2$ der Wand mit dem Pilz bedeckt. Jeden Tag nimmt die Fläche um Faktor 1.25 zu.
+
+\begin{bbwAufgabenBlock}
+\item Welche Fläche ist nach 3 Tagen bedeckt?
+\TRAINER{$1.25^3 \approx 1.9531 \textrm{m}^2$}
+\item Welche Fläche ist nach $n$ Tagen bedeckt?
+\TRAINER{$1.25^5 \textrm{m}^2$}
+\item Nach wie vielen Tagen sind $5 \textrm{m}^2$ der Wand mit dem Pilz bedeckt?
+\TRAINER{$n=\log_{1.25}(5)\approx 7.213$ Tage.}
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Zerfall}
+\textit{Nicht immer ist die Wachstumsrate größer als 0}
+
+\bbwActAufgabenNr{} \textbf{Radioaktiver Stoff}
+
+Ein radioaktiver Stoff zerfällt jedes Jahr um elf Prozent. Anfänglich ist ein kg des Stoffes vorhanden.
+
+\begin{bbwAufgabenBlock}
+\item Wie viel vom Stoff ist nach vier Jahren noch übrig?
+\TRAINER{$0.89^4 \textrm{kg} \approx 62.74\%$}
+\item Wie viel vom Stoff ist nach $n$ Jahren noch übrig?
+\TRAINER{$0,89^n \textrm{kg}$}
+\item Nach wie vielen Jahren wird noch 50\% des Stoffes übrig bleiben? (Diese Zeitspanne nennt man die Halbwertszeit $T_2$.)
+\TRAINER{$T_2 = n = \log_{0.89}(0.5)\approx 5.948$ Jahre.}
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Startwerte}
+\textit{Andere Startwerte als eine Einheit.}
+
+
+\bbwActAufgabenNr{} \textbf{Sparen}
+
+Max spart auf eine neue Spielkonsole. Die Mutter will Max dabei unterstützen und vor allem will sie, das Max lernt zu sparen.
+Sie schlägt ihm daher zwei Spar-Varianten vor.
+
+Bei Variante $A$ erhält Max in der ersten Woche $5.-$ \euro{} und danach jede Folgewoche $5.-$ \euro{} mehr als in der Vorangehenden Woche. Also 1. Woche $5.-$; 2. Woche $10.-$; 3. Woche $15.-$ \euro{} etc.
+
+Bei Variante $B$ erhält er in der ersten Woche ebenfalls $5.-$ \euro{}, jedoch in jeder Folgewoche 40\% mehr als in der vorangehenden Woche. Also in der 2. Woche \zB bereits 7.- \euro{} und in der 3. Woche $9.80$ \euro{} etc.
+
+
+\begin{bbwAufgabenBlock}
+\item In welchem Monat erhielte Max zum ersten Mal mehr mit Variante $B$ als mit Variante $A$? (Hier ist nicht das kumulierte Vermögen, sondern das «Einkommen» gefragt.)
+   \TRAINER{ Im Monat 7 erhält er mit Variante $A$ 35.- \euro{}, während er mit Variante $B$ im 7. Monat bereits 37.65 \euro{} erhält.}
+
+\item In welchem Monat überholt das angesparte Vermögen durch exponentielles Einkommenswachstum (Varianten $B$) das Vermögen, das durch die Variante $A$ angespart wurde?
+   \TRAINER{ Im Monat 9 hat er mit Variante $A$ total 225.- \euro{} angespart; wohingegen mit Variante $B$ im Momnat 9 bereits 245.76 \euro angespart wurden.}
+
+\item Wie sieht das angesparte Vermögen bei Variante $A$ nach 12 Monaten aus?
+      \TRAINER{ Im 12. Monat erhält er 60.- \euro, was sich auf 390.- \euro{} kumuliert.}
+
+\item Wie sieht das angesparte Vermögen bei Variante $B$ nach 12 Monaten aus?
+      \TRAINER{ Im 12. Monat erhält er 202.48 \euro, was sich auf 696.17 \euro{} kumuliert.}
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\bbwActAufgabenNr{} \textbf{Gummiball}
+
+Ein Gummiball wird fallen gelassen. Der Ball spring jeweils 72\% der Fallhöhe wieder zurück.
+
+Anfänglich wird der Ball aus $1.7 \textrm{m}$ Höhe fallen gelassen
+
+\begin{bbwAufgabenBlock}
+
+\item Wie hoch springt der Ball nach dem 3. Aufprall wieder zurück?
+      \TRAINER{$1.7 \cdot{} 0.72^3 \approx 63.45 \textrm{cm}$}
+\item Wie hoch springt der Ball nach dem $n$. Aufprall wieder hoch?
+      \TRAINER{$1.7 \cdot{} 0.72^n$}
+\item Nach dem wievielten Aufprall springt der Ball noch 10 cm hoch?
+      \TRAINER{$1.7 \cdot{} 0.72^n = 0.1 \Longrightarrow n = \log_{0.72}\left(\frac{0.1}{1.7}\right) \approx 8.6$. Das heißt: Nach 8 Sprüngen ist der Ball noch höher als 10 cm; nach dem 9. Sprung hingegen weniger als 10 cm.}
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\bbwActAufgabenNr{} \textbf{Neophytenplage}
+
+Eine neu eingeschleppte Brombeerenart vermehrt sich im Wald exponentiell.
+
+Anfänglich werden 82 Pflazen gezählt. Ein Jahr später sind es bereits 102 Pflanzen.
+
+\begin{bbwAufgabenBlock}
+
+\item Wie groß ist der jährliche Zunahmefaktor?
+      \TRAINER{$a = \frac{102}{82} = 1.\overline{24390}$}
+\item Wie groß ist die jährliche Zuwachsrate?
+      \TRAINER{$p = \frac{102}{82} - 1 \approx 24.39\%$}
+      
+\item Wie viele Brombeerpflanzen sind nach fünf Jahren zu erwarten?
+      \TRAINER{$82\cdot{}a^5 \approx 244$ Pflanzen}
+
+\item Wie viele Brombeerpflanzen sind nach $n$ Jahren zu erwarten?
+      \TRAINER{$82\cdot{}a^n \approx{} 82\cdot{} 1.2349^N$ Pflanzen}
+\item Nach wie vielen Jahren werden 1000 Pflanzen erwartet, wenn sich die Pflanzenart weiterhin ungehindert ausbreiten kann?
+\TRAINER{$82\cdot{} a^n = 1000 \Longrightarrow n=\log_a(\frac{1000}{82}) \approx 11.46$}
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+\subsection{Beobachtungsintervall}
+\textit{Andere Startwerte und andere Zeitintervalle als die Einheiten}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\bbwActAufgabenNr{} \textbf{Sauerteig}
+
+Eine Sauerteigkultur verdopple sich bei optimaler, stetiger «Fütterung» alle 5.5 Stunden.
+
+Anfänglich werden 53g gemessen.
+
+\begin{bbwAufgabenBlock}
+
+\item Welche Masse kann nach 11 Stunden erreicht werden?
+      \TRAINER{$y = b \cdot{} a^{\frac{t}{\tau}}$ mit $a = 2$, $b=53$, $\tau=5.5$, Einheit = Stunden.
+
+$y=53 \cdot{} 2^{\frac{11}{5.5}} = 53 \cdot{} 4 = 212 \textrm{g}$
+}
+
+\item Welche Masse kann nach 24 Stunden erreicht werden?
+      \TRAINER{$y = b \cdot{} a^{\frac{t}{\tau}}$ mit $a = 2$, $b=53$, $\tau=5.5$, Einheit = Stunden.
+
+$y=53 \cdot{} 2^{\frac{24}{5.5}} = 53 \cdot{} 20.59 = 1091 \textrm{g}$
+}
+
+\item Wann ist mit einer Verzehnfachung der Masse der Kultur zu rechnen?
+      \TRAINER{$y = b \cdot{} a^{\frac{t}{\tau}}$ mit $a = 2$, $b=53$, $\tau=5.5$, Einheit = Stunden.
+
+$$530=53 \cdot{} 2^{\frac{t}{5.5}} $$
+$$10= 2^{\frac{t}{5.5}} $$
+$$t = 5.5 \cdot{} \log_2(10) \approx 18.27 \textrm{Stunden}$$
+}
+
+
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\section{Exponentialfunktion}
+\textit{Die Basis $\e$}
+
+\subsection{Basiswechsel}
+\textit{$\tau$ und $a$ verändern. und die Basis $\e$ verwenden}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\bbwActAufgabenNr{} \textbf{Algen}
+
+Eine Algenplage verdopple sich alle 7 Stunden.
+
+\begin{bbwAufgabenBlock}
+
+\item Um wie viel nimmt die Algenplage pro Tag (=24 Stunden) zu?
+
+\TRAINER{$$f(24) = b\cdot{}2^{\frac{24}{7}}$$ Der Vervielfachungsfaktor pro Tag ist also $\approx 10.77$}
+
+
+\item Wie lautet die Funktionsgleichng $f(t)$, wenn $t$ in Tagen, und nicht in Stunden gerechnet wird?
+
+\TRAINER{$f(t) = b\cdot{} 10.77^t$}
+
+\item Nach wie vielen Minuten hat die Algenplage um 2\% zugenommen?
+
+\TRAINER{Erst mal in Minuten angeben (7 Stunden = 420 Minuten) :
+$$f(t) = b\cdot{} 2^{\frac{t}{420}}$$
+Faktor 1.02 = 2\%
+$$1.02\cdot{}b = b\cdot{} 2^{\frac{t}{420}}$$
+$$1.02 = 2^{\frac{t}{420}}$$
+$$\log_2(1.02) = \frac{t}{420}$$
+$$420 \cdot{} \log_2(1.02) = t$$
+$$t\approx{} 12.00 \textrm{min}$$
+
+}
+
+\item Finden Sie ein passendes $q$, sodass die Algenplage mit der Funktion $f(t) = b\cdot{}\e^{qt}$ mit $t$ in Stunden angegeben werden kann. $\e$ ist hier die Eulersche Zahl 2.7182818284590.
+
+\TRAINER{
+$$b\cdot{} 2^{\frac{t}{7}} = b\cdot e^{qt}$$
+$$2^{\frac{t}{7}} =e^{qt}$$
+$t$-te Wurzel ziehen:
+$$2^{\frac{1}{7}} =e^{q}$$
+Logarithmieren zur Basis $\e$ ($\ln()$):
+$$q  = \ln(2^{\frac17}) \approx 0.099021$$
+}
+
+
+\end{bbwAufgabenBlock}
+
+
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newpage
+\section{Sättigung}
+\textit{Irgendwo ist auch mal Schluss}
+
+\subsection{Beschränkter Zerfall}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+
+\bbwActAufgabenNr{} \textbf{Impfung}
+
+Nach einer rigorosen Durchimpfung kann eine Krankeit (die hier nicht genannt werden will) von anfänglich 30\% infizierten Personen drastisch reduziert werden. Es ist davon auszugehen, dass jedoch im Endeffekt immer noch 2\% der Bevölkerung die Krankkeit bekommen kann bzw. ansteckend bleiben wird.
+
+Die Funktionsgleichung der Prozentzahl $p()$ der angesteckten Bevölkerung nach $t$ Wochen lautet somit:
+
+$$p(t) = 2 + (30-2)\cdot \e^{qt}$$
+
+Ermitteln Sie $q$, wenn Sie wissen, dass die Krankheit nach 8 Wochen von 30\% bereits auf 12\% gesunken ist.
+
+$$p(t) = 2 + \LoesungsRaumLang{28\cdot{}e^{-0.1287\cdot{}t}}$$
+
+
+\platzFuerBerechnungenBisEndeSeite{}
+\TRAINER{
+$$p(8) = 12$$
+$$2 + (30-2) \cdot{} \e^{8\cdot{}q} = 12$$
+$$(30-2) \cdot{} \e^{8\cdot{}q} = 10$$
+$$28 \cdot{} \e^{8\cdot{}q} = 10$$
+$$\e^{8\cdot{}q} = \frac{10}{28}$$
+$$8\cdot{}q = \ln(\frac{10}{28})$$
+$$q = \ln(\frac{10}{28}) / 8\approx{} -0.1287$$
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+
+\bbwActAufgabenNr{} \textbf{Kara Ben Nemsi}
+
+Kara Ben Nemsi ist gut im Spurenlesen. Er weiß, dass Steine rund um ein Feuer eine Temperatur von rund $400^\circ$ C annehmen.
+Ebenfalls ist ihm der gesättigte Zerfall bei der Temperaturkurve nach dem Löschen des Feuers bekannt.
+
+Es gilt:
+
+$$f(t) = U + \left(f(0) - U\right) \cdot{} a^t$$
+Dabei sind
+
+$f(t)$ die Temperatur nach $t$ Minuten
+
+$U$ ist die Umgebungstemperatur (hier die Sättigungsgrenze)
+
+$f(0)$ ist die Anfangstemperatur nach Löschen der Steine (also $400^\circ$ C)
+
+$a$ ist ein spezifischer Abnahmefaktor für Wüstensteine ($a\approx 0.9753$).
+
+
+Kara Ben Nemsi verfolgt einige Ganoven und erreicht eine Feuerstelle, welche offensichtlich seine Verfolgten benutzt hatten. Er misst eine Umgebungstemperatur von $28^\circ$ C und ermittelt die Temperatur der Steine auf $40^\circ$ C.
+
+Welchen Vorsprung (in Minuten) haben die Ganoven? (Oder: Vor wie vielen Minuten wurde das Feuer gelöscht?)
+
+
+\platzFuerBerechnungenBisEndeSeite{}
+\TRAINER{
+$$f(t) = 28 + (400-28)\cdot{} 0.9753^t$$
+$$40 = 28 + (400-28)\cdot{} 0.9753^t$$
+$$12 =  (400-28)\cdot{} 0.9753^t$$
+$$12 =  (372)\cdot{} 0.9753^t$$
+$$\frac{12}{372} = 0.9753^t$$
+$t=log_a(\frac{12}{372}) \approx{} 137.3 \textrm{min}$}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+
+
+
+\subsection{Beschränktes Wachstum}
+
+
+
+\end{document}
