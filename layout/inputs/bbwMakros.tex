@@ -290,32 +290,12 @@ z.\,B.
 \newcommand{\olatBBWLogo}{\includegraphics[width=15mm]{logos/traube.pdf}}%%
 
 
-%%\newcolumntype{A}{>{\columncolor[HTML]{AAACED}} p{3cm}}
-%%\definecolor{lightblah}{gray}{0.9}
-\newcommand{\olatLOGOLinkMittel}[3]{%%
-\begin{tabular}{lcp{80mm}}%%
-\weblink{\raisebox{-5mm}{\olatBBWLogo{}}}{#2} & \weblink{#1}{#2} & \cellcolor{aufgabenFarbe}#3\\
-\end{tabular}%%
-}%% END Command olatLOGOLink
-
 \newcommand{\olatLOGOLink}[3]{%%
 \begin{tabular}{|lp{111mm}|}\hline%%
 \weblink{\raisebox{-5mm}{\olatBBWLogo{}}}{#2} & \weblink{#1}{#2}\\
-\multicolumn{2}{|c|}{\cellcolor{aufgabenFarbe}#3}\\\hline
+\multicolumn{2}{|p{172mm}|}{\cellcolor{aufgabenFarbe}#3}\\\hline
 \end{tabular}%%
 }%% END Command olatLOGOLink
-
-
-\newcommand{\olatLOGOLinkAlt}[3]{\weblink{
-\olatBBWLogo{}%%
-\begin{tabular}{l}%%
-OLAT:\\%%
-{#1}
-\end{tabular}%%
-}{#2}
-\aufgabenFarbe{\begin{center}
-#3
-\end{center}}}
 
 %% Use:
 %% \olatLinkArbeitsblatt{Kapitel/Arbeitsblattname «[ID]»}{«URL»}{Aufgabennummern}
@@ -338,7 +318,7 @@ OLAT:\\%%
 %%
 %% use:
 %% \matheNinjaLink{Beschreibung}{URL}
-\newcommand{\matheNinjaLink}[2]{\olatLOGOLink{Mathe Ninja Link \includegraphics[width=15mm]{img/matheninja/turtle.png}}{#2}{#1}}
+\newcommand{\matheNinjaLink}[2]{\olatLOGOLink{Mathe Ninja Link \raisebox{-6mm}{\includegraphics[width=17mm]{img/matheninja/matheninja.jpg}}}{#2}{#1}}
 
 %%\newcommand{\matheNinjaLink}[2]{%%
 %%\begin{tabular}{cc}%%
