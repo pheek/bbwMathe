@@ -272,11 +272,19 @@ z.\,B.
 \newcommand{\nextBbwAufgabenNummer}{\stepcounter{bbwAufgabenNummerCounter}}
 \newcommand{\aufgSubLabel}{{\color{blue}\bbwAufgabenNummer. \alph*)}}
 
-\newenvironment{bbwAufgabenBlock}{%% Begin environment
+%% Benutze außerhalb der bbwAufgabenblöcke folgendes Kommando, um an die
+%% nächste Aufgabennummer zu kommen. Dies z. B. wenn ein längerer Text vor der Aufgabe steht,
+%% der auch schon diese Bezeichnung erhalten sollte
+\newcommand{\bbwActAufgabenNr}{{\color{blue}\bbwAufgabenNummer. {\small[\bbwAufgabenBlockID]}}}
 
-{\color{blue}\bbwAufgabenNummer. {\small[\bbwAufgabenBlockID]}}
+
+\newenvironment{bbwAufgabenBlock}{%% Begin environment Part:
+
+\bbwActAufgabenNr{}
+%%{\color{blue}\bbwAufgabenNummer. {\small[\bbwAufgabenBlockID]}}
 \begin{enumerate}[label=\aufgSubLabel]
-}{%% END Part
+}%% Ende der Präambel
+{%% END Part:
 \end{enumerate}
 \nextBbwAufgabenNummer
 }%% END environment bbwAufgabenBlock
