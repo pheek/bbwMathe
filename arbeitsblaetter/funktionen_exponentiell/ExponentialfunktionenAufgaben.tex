@@ -16,7 +16,7 @@
 
 \bbwActAufgabenNr{} \textbf{Pilz}
 
-An einer Kellerwand wächst eine Pilzart und die bedeckte Fläche nimmt exponentiell zu.
+An einer Kellerwand wächst eine Schimmelpilzart und die bedeckte Fläche nehme exponentiell zu.
 Am Anfang ist $1 \textrm{m}^2$ der Wand mit dem Pilz bedeckt. Jeden Tag nimmt die Fläche um Faktor 1.25 zu.
 
 \begin{bbwAufgabenBlock}
@@ -26,6 +26,32 @@ Am Anfang ist $1 \textrm{m}^2$ der Wand mit dem Pilz bedeckt. Jeden Tag nimmt di
 \TRAINER{$1.25^5 \textrm{m}^2$}
 \item Nach wie vielen Tagen sind $5 \textrm{m}^2$ der Wand mit dem Pilz bedeckt?
 \TRAINER{$n=\log_{1.25}(5)\approx 7.213$ Tage.}
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\bbwActAufgabenNr{} \textbf{Einwohnerzahl}
+
+In Winterthur waren im Jahr 1997 89\,850 Einwohner registriert. Im Jahr 2013 waren es
+bereits 107\,799 Einwohner (Quelle: \texttt{stadt.winterthur.ch} Juli 2022).
+
+Zum Glück nimmt die Bevölkerung hier nicht exponentiell zu. Doch für
+diese Aufgabenstellung dürfen Sie das \textit{worst case}-Szenario von
+exponentiellem Wachstum annehmen.
+
+\begin{bbwAufgabenBlock}
+\item Um wie viel \% nimmt die Bevölkerung jährlich zu?
+\TRAINER{$a=\frac{107\,799}{89\,850} \approx 1.199766  $ ergo
+Zunahmefaktor = 1,.199766 in 16 Jahren. Pro Jahr:
+$a^{\frac{1}{16}}$. Zunahme also 1.145\% jährlich.}
+\item Was prgnostizieren Sie bei exponentiellem Wachstum fürs Jahr 2040?
+\TRAINER{$ = 8950\cdot{}a^{\frac{43}{16}} \approx 146\,585 $ Einwohner}
+\item In wie vielen Jahren nimmt die Bevölkerung jeweils um 25\% zu?
+\TRAINER{$ 1.25 = a^{\frac{t}{16}}$ ergo
+$t=16\cdot{}\log_a(1.25)\approx 19.60$. Alle ca. 20 Jahre nimmt die
+Bevölkerung um 25\% zu.}
 \end{bbwAufgabenBlock}
 \platzFuerBerechnungenBisEndeSeite{}
 
@@ -47,7 +73,6 @@ Ein radioaktiver Stoff zerfällt jedes Jahr um elf Prozent. Anfänglich ist ein 
 \TRAINER{$T_2 = n = \log_{0.89}(0.5)\approx 5.948$ Jahre.}
 \end{bbwAufgabenBlock}
 \platzFuerBerechnungenBisEndeSeite{}
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -102,6 +127,27 @@ Anfänglich wird der Ball aus $1.7 \textrm{m}$ Höhe fallen gelassen
 \end{bbwAufgabenBlock}
 \platzFuerBerechnungenBisEndeSeite{}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\bbwActAufgabenNr{} \textbf{Wert des Autos}
+
+Um wie viel Prozent hat der Wert eines Autos jährlich verloren, wenn
+der Wert nach 4 Jahren um 60 \% gesunken ist?
+\nextBbwAufgabenNummer%% Dies geschieht im bbwAufgabenBlock implizit
+\platzFuerBerechnungenBisEndeSeite{}
+
+\TRAINER{
+$$100 - 60 = 0.4$$
+somit
+$$0.4 = a^4$$
+$$a = \sqrt[4]{0.4} \approx 79.527$$
+Dies entspricht einer jählichen Abnahme von.
+$$ 1 - 77.9527\%  \approx 0.2047 $$
+Also eine Prozentuale Abnahme von 20.47\%.
+}%% END TRAINER
+
+
 
 
 
@@ -136,8 +182,33 @@ Anfänglich werden 82 Pflazen gezählt. Ein Jahr später sind es bereits 102 Pfl
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\bbwActAufgabenNr{} \textbf{Licht im Wasser}
+
+In einem Wasserbecken nimmt die Lichtintensität pro Meter auf 24\% ab.
+Dies spielt keine Rolle, ob honizontal oder vertikal gemessen wird.
 
 
+\begin{bbwAufgabenBlock}
+
+\item Skizzieren Sie die Intensität im Koordinatensystem wie folgt:
+   $x$-Achse = Eindringtiefe in Metern. Die Maßeinheit der
+   Lichtintensität wird in Watt pro Quadratmetern gemessen ($\textrm{W}/\textrm{m}^2$); dies
+   hat für die Aufgabe hier jedoch keine Relevanz.
+   $y$-Achse = Lichtintensität in \%. (Gestartet bei 100\%)
+         \TRAINER{graph}
+\item Wie lautet die Funktionsvorschrift von $\textrm{m}\mapsto \%$?
+\TRAINER{$x\mapsto 100\% \cdot{} 0.24^x$}
+\item Wie viel Prozent der ursprünglichen Lichtintensität sind nach 5
+   m noch übrig? \TRAINER{$0.24^5 \approx 0.07963 \%$}
+
+\item In wie vielen Metern ist noch 1\% der Lichtintensität übrig?
+\TRAINER{$x = \log_{0.24}(0.01) \approx  3.22 [\textrm{m}]$}
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -181,11 +252,49 @@ $$t = 5.5 \cdot{} \log_2(10) \approx 18.27 \textrm{Stunden}$$
 
 
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\bbwActAufgabenNr{} \textbf{Bakterien}
+ Ohne Nahrungsmangel und ohne Platzmangel wächst eine Bakterienkultur
+ in der Anzahl exponentiell.
+
+Um 7:00 Uhr waren es 2\,500 Bakterien.
+Um 12:00 Uhr waren es bereits 40\,000 Stück.
+
+\begin{bbwAufgabenBlock}
+
+\item Um welchen Faktor haben die Bakterien (genauer die Anzahl der Bakterien) während diesen fünf
+Stunden zugenommen?
+
+      \TRAINER{$40\,000 / 2\,500 = 16$}
+
+\item Geben Sie die Funktionsgleichnug an, welche die Bakterienzahl ab
+7:00 in Stunden angibt. Null Stunden liefert 2\,500 Stück, fünf
+      Stunden ergibt 40\,000 Stück ...
+      \TRAINER{$\tau = 5: t\mapsto b \cdot{} a^{\frac{t}{\tau}} =
+      2\,500\cdot{} 16^{\frac{t}{5}}$}
+
+\item Geben Sie die Anzahl der Bakterien um 9:30 Uhr an.
+     \TRAINER{$10\,000 = 2\,500 \cdot{} 16^{\frac12}$}
+
+\item In welcher Zeitspanne wird sich die Anzahl der Bakterien
+verdoppelt haben?
+\TRAINER{$t_{10} = 5\cdot{} log_{16}(2) \approx{} 1.25 \textrm{h} $
+also nach jeweis 75 Minuten = $\frac54$ Stunden}
+
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
-\section{Exponentialfunktion}
+\section{E-Funktion}
 \textit{Die Basis $\e$}
 
 \subsection{Basiswechsel}
