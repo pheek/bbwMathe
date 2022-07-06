@@ -297,56 +297,75 @@ z.\,B.
 
 \newcommand{\olatBBWLogo}{\includegraphics[width=15mm]{logos/traube.pdf}}%%
 \newcommand{\externerLinkEPS}{\includegraphics[width=15mm]{logos/extLink.pdf}}%%
+\newcommand{\youtubeLogo}{\includegraphics[width=15mm]{logos/youtube.png}}%%
 
 
-
-\newcommand{\externalLink}[3]{%%
+%%
+%% #1: Text
+%% #2: URL
+%% #3: Aufgabennummern
+%% #4: optional weitere Logos oder leer lassen {}
+\newcommand{\externalLink}[4]{%%
 \begin{tabular}{|lp{111mm}|}\hline%%
-\weblink{\raisebox{-5mm}{\externerLinkEPS{}}}{#2} & \weblink{#1}{#2}\\
+\weblink{\raisebox{-5mm}{\externerLinkEPS{}}}{#2} {#4} & \weblink{#1}{#2}\\
 \multicolumn{2}{|p{172mm}|}{\cellcolor{aufgabenFarbe}#3}\\\hline
 \end{tabular}%%
-}%% END Command olatLOGOLink
+}%% END Command externalLink
 
+%% #1: URL
+%% #2: Text
+\newcommand{\youtubeLink}[2]{%%
+\externalLink{#2}{#1}{Youtube}{\raisebox{-5mm}{\youtubeLogo{}}}
+}%%
+
+%%
+%% #1: Typ-Logo (eg. LOGO auf MatheNinja)
+%% #2: Typ-Name (eg «Mathe Ninja»
+%% #3: URL
+%% #4: Aufgaben Name
 \newcommand{\olatLink}[4]{%%
 \begin{tabular}{|lp{111mm}|}\hline%%
 \weblink{\raisebox{-5mm}{\externerLinkEPS{}}}{#3} \weblink{\raisebox{-5mm}{\olatBBWLogo}}{#3} \weblink{#1}{#3}& \weblink{#2}{#3}\\
 \multicolumn{2}{|p{172mm}|}{\cellcolor{aufgabenFarbe}#4}\\\hline
 \end{tabular}%%
-}%% END Command olatLOGOLink
+}%% END Command olatLink
 
-\newcommand{\olatLOGOLink}[3]{%%
-\begin{tabular}{|lp{111mm}|}\hline%%
-\weblink{\raisebox{-5mm}{\olatBBWLogo{}}}{#2} & \weblink{#1}{#2}\\
-\multicolumn{2}{|p{172mm}|}{\cellcolor{aufgabenFarbe}#3}\\\hline
-\end{tabular}%%
-}%% END Command olatLOGOLink
+
+%\newcommand{\olatLOGOLink}[3]{%%
+%\begin{tabular}{|lp{111mm}|}\hline%%
+%\weblink{\raisebox{-5mm}{\olatBBWLogo{}}}{#2} & \weblink{#1}{#2}\\
+%\multicolumn{2}{|p{172mm}|}{\cellcolor{aufgabenFarbe}#3}\\\hline
+%\end{tabular}%%
+%}%% END Command olatLOGOLink
 
 %% Use:
 %% \olatLinkArbeitsblatt{Kapitel/Arbeitsblattname «[ID]»}{«URL»}{Aufgabennummern}
-%%\newcommand{\olatLinkArbeitsblatt}[3]{\olatLOGOLink{Blatt: #1}{#2}{#3}}%%
-\newcommand{\olatLinkArbeitsblatt}[3]{\olatLink{NOT YET}{Arbeitsblatt: #1}{#2}{#3}}%%
+\newcommand{\olatLinkArbeitsblatt}[3]{\olatLink{\raisebox{-6mm}{\includegraphics[width=12mm]{logos/seite.pdf}}}{Arbeitsblatt: #1}{#2}{#3}}%%
+
+%% #1: Text
+%% #2: URL
+\newcommand{\olatLinkPruefung}[2]{\olatLink{\raisebox{-6mm}{\includegraphics[width=15mm]{logos/test.pdf}}}{Online Test}{#2}{#1}}%%
+
 
 %%
 %% use:
 %% \matheNinjaLink{Beschreibung}{URL}
-%%\newcommand{\matheNinjaLink}[2]{\olatLOGOLink{Mathe Ninja Link \raisebox{-6mm}{\includegraphics[width=17mm]{img/matheninja/matheninja.jpg}}}{#2}{#1}}
-\newcommand{\matheNinjaLink}[2]{\olatLink{\raisebox{-6mm}{\includegraphics[width=17mm]{img/matheninja/matheninja.jpg}}}{Mathe
-Ninja!}{#2}{#1}}%%
+\newcommand{\matheNinjaLink}[2]{\olatLink{\raisebox{-6mm}{\includegraphics[width=17mm]{img/matheninja/matheninja.jpg}}}{Mathe Ninja!}{#2}{#1}}%%
 
-
-%% Use:
-%% \olatLinkPruefung{Einstiegstest}{«URL»}
-\newcommand{\olatLinkPruefung}[2]{\olatLOGOLink{Online Prüfung}{#2}{#1}}%%
 
 %% Use
 %% \olatLinkGESOKompendium{Kapitel}{Seite/Seiteff}{Aufgabe(n)}
-\newcommand{\olatLinkGESOKompendium}[3]{\GESO{\olatLOGOLink{Kompendium}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/102901164962365}{Kapitel #1; Seite #2; Aufgaben #3}}}%%
+\newcommand{\olatLinkGESOKompendium}[3]{%%
+\GESO{%%
+\olatLink{{\Huge K}}{Kompendium}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/102901164962365}{Kapitel #1; Seite #2; Aufgaben #3}%%
+}%% END GESO
+}%%
 
 
 %% Use
 %% \olatLinkTALSStrukturaufgaben[SPF|GLF]{«Seite(n)/Aufgabe(n)»}
-\newcommand{\olatLinkTALSStrukturaufgabenSPF}[1]{\olatLOGOLink{Strukturaufgaben Schwerpunktsfach}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/102901174299246}{#1}}
-\newcommand{\olatLinkTALSStrukturaufgabenGLF}[1]{\olatLOGOLink{Strukturaufgaben Grundlagenfach}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/102901174291476}{#1}}
+%%\newcommand{\olatLinkTALSStrukturaufgabenSPF}[1]{\olatLOGOLink{Strukturaufgaben Schwerpunktsfach}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/102901174299246}{#1}}
+%%\newcommand{\olatLinkTALtfSStrukturaufgabenGLF}[1]{\olatLOGOLink{Strukturaufgaben Grundlagenfach}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/102901174291476}{#1}}
 
 
 %%\newcommand{\matheNinjaLink}[2]{%%
