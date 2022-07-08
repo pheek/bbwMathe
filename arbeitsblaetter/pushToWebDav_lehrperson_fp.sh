@@ -21,15 +21,15 @@ echo "pushing files into subdirectories of : ${BBW_WEBDAV_PATH}..."
 
 
 echo "copying Boxplot (ALLG)"
-cp -f ./boxplot/boxplot_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/datenanalyse/Boxplot/boxplot.pdf
-cp -f ./boxplot/boxplot_TRAINER_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/datenanalyse/Boxplot/boxplot_Loesungen.pdf
+cp -f ./datenanalyse/boxplot/boxplot_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/datenanalyse/Boxplot/boxplot.pdf
+cp -f ./datenanalyse/boxplot/boxplot_TRAINER_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/datenanalyse/Boxplot/boxplot_Loesungen.pdf
 
 echo "Boxplot for TI 30"
-cp -f ./boxplotTI30/boxplotTI30_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/daan/boxplot/boxplotTI30.pdf
+cp -f ./datenanalyse/boxplotTI30/boxplotTI30_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/daan/boxplot/boxplotTI30.pdf
 
 echo "Bruchrechnen GESO"
-cp -f ./bruchrechnen/GESO_Abschlusspruefungsaufgaben/BruchrechnenGESO_Maturaaufgaben_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/aa1/bruchrechnen/BruchrechenenGESO_Maturaaufgaben.pdf
-cp -f ./bruchrechnen/GESO_Abschlusspruefungsaufgaben/BruchrechnenGESO_Maturaaufgaben_TRAINER_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/aa1/bruchrechnen/BruchrechenenGESO_Maturaaufgaben_Trainer.pdf
+cp -f ./algebra/bruchrechnen/GESO_Abschlusspruefungsaufgaben/BruchrechnenGESO_Maturaaufgaben_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/aa1/bruchrechnen/BruchrechenenGESO_Maturaaufgaben.pdf
+cp -f ./algebra/bruchrechnen/GESO_Abschlusspruefungsaufgaben/BruchrechnenGESO_Maturaaufgaben_TRAINER_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/aa1/bruchrechnen/BruchrechenenGESO_Maturaaufgaben_Trainer.pdf
 
 echo "Befragung Datenanalyse offline"
 cp -f ./datenanalyse/befragung/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/datenanalyse/befragung/
@@ -44,13 +44,13 @@ cp -f ./formeleditor/AufgabenFormeleditor_TRAINER_ALLG.pdf ${BBW_WEBDAV_PATH}/le
 
 echo "copying leere Koordinatensysteme"
 echo "erst Koordinatensysteme doppelseitig"
-cd funktionen_leere_koordinatensysteme
+cd funktionen/funktionen_leere_koordinatensysteme
 ./doppelseitig.sh
-cd ..
-cp -f ./funktionen_leere_koordinatensysteme/LeereKoordinatensysteme.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/funktionen/koordinatensystem/LeereKoordinatensysteme.pdf
+cd ../..
+cp -f ./funktionen/funktionen_leere_koordinatensysteme/LeereKoordinatensysteme.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/funktionen/koordinatensystem/LeereKoordinatensysteme.pdf
 
 echo "copying Lineare Funktionen Arbeitsblatt SAN"
-cp -f ./funktionen_lineare_arbeitsblatt/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/funktionen/lineare_funktionen/ArbeitsblattSAN/
+cp -f ./funktionen/funktionen_lineare_arbeitsblatt/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/funktionen/lineare_funktionen/ArbeitsblattSAN/
 
 echo "copying Quadratische Gleichungen GESO alte Maturaprüfungen"
 cp -f ./gleichungen/quadratischeGleichungen/GESO_Abschlusspruefungsaufgaben/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/gl1/maturapruefungen/
@@ -76,7 +76,7 @@ cp -f ./lernenMitWappen/lernen_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/
 
 
 echo "Copiing Quadratische funktionen Arbeitsblatt Formen"
-cp -f ./funktionen_quadratische_formen/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/fct2/formen
+cp -f ./funktionen/funktionen_quadratische_formen/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/fct2/formen
 
 echo "Copying Systematisches Lösen von Textaufgaben (ALLG)"
 cp -f ./gleichungen/textaufgaben/Textaufgaben_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/textaufgaben/SystematischesLoesenVonTextaufgaben.pdf
@@ -85,53 +85,53 @@ echo "Copying Quadratische Gleichungen mit Photomath (ALLG)"
 cp -f ./photomath_quadratische_funktionen/Photomath_quadratische_Funktionen_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/photomath/Photomath_quadratische_Funktionen.pdf
 
 echo "Copying Potenzgesetze Arbeitsblatt (GESO)"
-cp -f ./potenzgesetze_geso/Potenzgesetze_GESO.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/potenzgesetze/Potenzgesetze.pdf
-cp -f ./potenzgesetze_geso/Potenzgesetze_TRAINER_GESO.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/potenzgesetze/Potenzgesetze_TRAINER.pdf
+cp -f ./algebra/potenzgesetze_geso/Potenzgesetze_GESO.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/potenzgesetze/Potenzgesetze.pdf
+cp -f ./algebra/potenzgesetze_geso/Potenzgesetze_TRAINER_GESO.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/potenzgesetze/Potenzgesetze_TRAINER.pdf
 
 echo "Copying Potenzgleichungen Arbeitsblatt (ALLG)"
-cp -f ./potenzgleichungen/Potenzgleichungen_ALLG.pdf         ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/potenzgleichungen/Potenzgleichungen.pdf
-cp -f ./potenzgleichungen/Potenzgleichungen_TRAINER_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/potenzgleichungen/Potenzgleichungen_TRAINER.pdf
+cp -f ./gleichungen/potenzgleichungen/Potenzgleichungen_ALLG.pdf         ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/potenzgleichungen/Potenzgleichungen.pdf
+cp -f ./gleichungen/potenzgleichungen/Potenzgleichungen_TRAINER_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/potenzgleichungen/Potenzgleichungen_TRAINER.pdf
 
 echo "copying Sin Cos Tan (TALS)"
-cp -f ./sin_cos_tan/60Uebungen/60Uebungen_TALS.pdf        ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig1/60_uebungen/60Uebungen.pdf
-cp -f ./sin_cos_tan/60Loesungen/60Loesungen_TALS.pdf      ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig1/60_uebungen/60Loesungen.pdf
-cp -f ./sin_cos_tan/hoehenmessung/Hoehenmessung_TALS.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig1/Hoehenmessung/Hoehenmessung_TALS.pdf
-cp -f ./sin_cos_tan/hoehenmessung/HoehenmessungLeer.ods   ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig1/Hoehenmessung/HoehenmessungLeer.ods
-cp -f ./sin_cos_tan/trig_coords/Trig_Coords_TALS.pdf      ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig3/koordinatensysteme/Trig_Coords.pdf
-cp -f ./sin_cos_tan/uebungenBogenmass/*.pdf               ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig2/Bogenmass/arbeitsblattBogenmass/
+cp -f ./geometrie/trigonometrie/60Uebungen/60Uebungen_TALS.pdf        ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig1/60_uebungen/60Uebungen.pdf
+cp -f ./geometrie/trigonometrie/60Loesungen/60Loesungen_TALS.pdf      ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig1/60_uebungen/60Loesungen.pdf
+cp -f ./geometrie/trigonometrie/hoehenmessung/Hoehenmessung_TALS.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig1/Hoehenmessung/Hoehenmessung_TALS.pdf
+cp -f ./geometrie/trigonometrie/hoehenmessung/HoehenmessungLeer.ods   ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig1/Hoehenmessung/HoehenmessungLeer.ods
+cp -f ./geometrie/trigonometrie/trig_coords/Trig_Coords_TALS.pdf      ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig3/koordinatensysteme/Trig_Coords.pdf
+cp -f ./geometrie/trigonometrie/uebungenBogenmass/*.pdf               ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig2/Bogenmass/arbeitsblattBogenmass/
 
 echo "copying Einheitskreise (TALS)"
-cp -f ./sin_cos_tan/einheitskreise/Einheitskreis_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig2/Einheitskreis/Einheitskreise.pdf
-cp -f ./sin_cos_tan/einheitskreis/EinheitskreisB_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig2/Einheitskreis/Einheitskreis.pdf
-cp -f ./sin_cos_tan/uebungenAblesen/*.pdf                 ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig2/Einheitskreis/
+cp -f ./geometrie/trigonometrie/einheitskreise/Einheitskreis_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig2/Einheitskreis/Einheitskreise.pdf
+cp -f ./geometrie/trigonometrie/einheitskreis/EinheitskreisB_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig2/Einheitskreis/Einheitskreis.pdf
+cp -f ./geometrie/trigonometrie/uebungenAblesen/*.pdf                 ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig2/Einheitskreis/
 
 echo "copying Auftrag Logarithmentabelle (TALS)"
-cp -f ./logarithmentabelle/LogarithmenArbeitsblatt_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/aa2/auftrag_logarithmentabelle/AuftragLogarithmentabelle.pdf
-cp -f ./logarithmentabelle/LogarithmenArbeitsblatt_TRAINER_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/aa2/auftrag_logarithmentabelle/AuftragLogarithmentabelleLoesungsweg.pdf
+cp -f ./algebra/logarithmentabelle/LogarithmenArbeitsblatt_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/aa2/auftrag_logarithmentabelle/AuftragLogarithmentabelle.pdf
+cp -f ./algebra/logarithmentabelle/LogarithmenArbeitsblatt_TRAINER_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/aa2/auftrag_logarithmentabelle/AuftragLogarithmentabelleLoesungsweg.pdf
 
 echo "copying Arbeitsblatt Algebra I Grundoperationen (GESO und TALS)"
-cp -f ./algebra1Grundoperationen/A1G_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/grundoperationen/A1G_Aufgaben.pdf
-cp -f ./algebra1Grundoperationen/A1G_TRAINER_ALLG.pdf   ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/grundoperationen/A1G_Loesungen.pdf
+cp -f ./algebra/algebra1Grundoperationen/A1G_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/grundoperationen/A1G_Aufgaben.pdf
+cp -f ./algebra/algebra1Grundoperationen/A1G_TRAINER_ALLG.pdf   ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/grundoperationen/A1G_Loesungen.pdf
 
 echo "copying Arbeitsblatt Algebra I Betrag (GESO und TALS)"
-cp -f ./algebra1Betrag/A1Be_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/betrag/A1Be_Aufgaben.pdf
-cp -f ./algebra1Betrag/A1Be_TRAINER_ALLG.pdf   ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/betrag/A1Be_Loesungen.pdf
+cp -f ./algebra/algebra1Betrag/A1Be_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/betrag/A1Be_Aufgaben.pdf
+cp -f ./algebra/algebra1Betrag/A1Be_TRAINER_ALLG.pdf   ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/betrag/A1Be_Loesungen.pdf
 
 echo "copying Arbeitsblatt Algebra I Binomische Formeln (GESO und TALS)"
-cp -f ./algebra1BinomischeFormeln/A1Bi_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/binomischeFormeln/A1Bi_Aufgaben.pdf
-cp -f ./algebra1BinomischeFormeln/A1Bi_TRAINER_ALLG.pdf   ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/binomischeFormeln/A1Bi_Loesungen.pdf
+cp -f ./algebra/algebra1BinomischeFormeln/A1Bi_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/binomischeFormeln/A1Bi_Aufgaben.pdf
+cp -f ./algebra/algebra1BinomischeFormeln/A1Bi_TRAINER_ALLG.pdf   ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/binomischeFormeln/A1Bi_Loesungen.pdf
 
 echo "copying Arbeitsblatt Algebra I Faktorisieren (GESO und TALS)"
-cp -f ./algebra1Faktorisieren/A1F_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/faktorisieren/A1F_Aufgaben.pdf
-cp -f ./algebra1Faktorisieren/A1F_TRAINER_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/faktorisieren/A1F_Loesungen.pdf
+cp -f ./algebra/algebra1Faktorisieren/A1F_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/faktorisieren/A1F_Aufgaben.pdf
+cp -f ./algebra/algebra1Faktorisieren/A1F_TRAINER_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/faktorisieren/A1F_Loesungen.pdf
 
 echo "copying Arbeitsblatt Gleichungen: Bruchgleichungen (GESO und TALS)"
-cp -f ./bruchgleichungen/arbeitsblatt/BruchgleichungenArbeitsblatt_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/bruchgleichungen/arbeitsblatt/BruchgleichungenArbeitsblatt.pdf
-cp -f ./bruchgleichungen/arbeitsblatt/BruchgleichungenArbeitsblatt_TRAINER_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/bruchgleichungen/arbeitsblatt/BruchgleichungenArbeitsblattLoesungen.pdf
+cp -f ./gleichungen/bruchgleichungen/arbeitsblatt/BruchgleichungenArbeitsblatt_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/bruchgleichungen/arbeitsblatt/BruchgleichungenArbeitsblatt.pdf
+cp -f ./gleichungen/bruchgleichungen/arbeitsblatt/BruchgleichungenArbeitsblatt_TRAINER_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/bruchgleichungen/arbeitsblatt/BruchgleichungenArbeitsblattLoesungen.pdf
 
 echo "copying Arbeitsblatt Gleichungen: Bruchgleichungen (GESO und TALS)"
-cp -f ./funktionen_umkehrfunktionen/Umkehrfunktionen_TALS.pdf          ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/fct3/umkehrfunktionen/ArbeitsblattUmkehrfunktionen.pdf
-cp -f ./funktionen_umkehrfunktionen/Umkehrfunktionen_TRAINER_TALS.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/fct3/umkehrfunktionen/ArbeitsblattUmkehrfunktionenLoesungen.pdf
+cp -f ./funktionen/funktionen_umkehrfunktionen/Umkehrfunktionen_TALS.pdf          ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/fct3/umkehrfunktionen/ArbeitsblattUmkehrfunktionen.pdf
+cp -f ./funktionen/funktionen_umkehrfunktionen/Umkehrfunktionen_TRAINER_TALS.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/fct3/umkehrfunktionen/ArbeitsblattUmkehrfunktionenLoesungen.pdf
 
 echo "copying Arbeitsblatt Gleichungen: Exponentialgleichungen (GESO und TALS)"
 cp -f ./gleichungen/exponentialgleichungen/Exponentialgleichungen_ALLG.pdf          ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/exponentialgleichungen/arbeitsblatt/ExponentialgleichungenArbeitsblatt.pdf
