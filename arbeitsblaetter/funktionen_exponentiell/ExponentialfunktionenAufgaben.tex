@@ -1,3 +1,7 @@
+%%
+%% Arbeitsblatt zu Exponentialfunktionen, Wachstum, Zerfall und Sättigung.
+
+
 \input{bbwLayoutPage}
 \renewcommand{\bbwAufgabenBlockID}{FctWZ}%% WZ = Wachstum/Zerfall
 
@@ -16,15 +20,16 @@
 
 \bbwActAufgabenNr{} \textbf{Pilz}
 
-An einer Kellerwand wächst eine Schimmelpilzart und die bedeckte Fläche nehme exponentiell zu.
-Am Anfang ist $1 \textrm{m}^2$ der Wand mit dem Pilz bedeckt. Jeden Tag nimmt die Fläche um Faktor 1.25 zu.
+An einer Kellerwand wächst eine Schimmelpilzart, deren Fläche
+exponentiell zunehme.
+Am Anfang ist $1 \textrm{ m}^2$ der Wand mit dem Pilz bedeckt. Jeden Tag nimmt die Fläche um Faktor 1.25 zu.
 
 \begin{bbwAufgabenBlock}
 \item Welche Fläche ist nach 3 Tagen bedeckt?
 \TRAINER{$1.25^3 \approx 1.9531 \textrm{m}^2$}
 \item Welche Fläche ist nach $n$ Tagen bedeckt?
 \TRAINER{$1.25^5 \textrm{m}^2$}
-\item Nach wie vielen Tagen sind $5 \textrm{m}^2$ der Wand mit dem Pilz bedeckt?
+\item Nach wie vielen Tagen sind $5 \textrm{ m}^2$ der Wand mit dem Pilz bedeckt?
 \TRAINER{$n=\log_{1.25}(5)\approx 7.213$ Tage.}
 \end{bbwAufgabenBlock}
 \platzFuerBerechnungenBisEndeSeite{}
@@ -58,7 +63,7 @@ Bevölkerung um 25\% zu.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Zerfall}
-\textit{Nicht immer ist die Wachstumsrate größer als 0}
+\textit{Nicht immer ist die Wachstumsrate größer als 1}
 
 \bbwActAufgabenNr{} \textbf{Radioaktiver Stoff}
 
@@ -427,6 +432,72 @@ $$12 =  (400-28)\cdot{} 0.9753^t$$
 $$12 =  (372)\cdot{} 0.9753^t$$
 $$\frac{12}{372} = 0.9753^t$$
 $t=log_a(\frac{12}{372}) \approx{} 137.3 \textrm{min}$}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+
+
+\bbwActAufgabenNr{} \textbf{Wäsche Trocknen}
+
+Wäsche trocknet schneller, umso trockener die Umgebungsluft ist. Wir
+vernachläßigen hier die Sonne, die Temperatur und den Wind und gehen
+davon aus, dass die Differenz der Umgebungs-Feuchte und der
+Wäsche-Feuchte exponentiell abnimmt.
+
+Frisch gewaschene Wäsche werde aufgehängt und habe im Geflecht eine «Luftfeuchtigkeit» von 95\%
+(= relative Luftfeuchtigkeit).
+
+Die Außenluft habe eine relative Luftfeuchtigkeit von 35\%. 
+
+
+Nach einer
+Stunde messen wir eine relative «Luftfeuchtigkeit im Geflecht von
+54\%.
+
+
+\begin{bbwAufgabenBlock}
+\item Machen Sie eine Skizze im Koordiantensystem, welche die
+Abhängigkeit von der Luftfeuchtigkeit von der Zeit ($t$) aufzeichnet.
+
+\TRAINER{Graph}
+
+\item Geben Sie die Funktionsgleichung $f(t)$ an, welche die relative
+«Luftfeuchtigkeit im Geflecht» in Stunden ($t$) nach dem Aufhängen
+angibt.
+
+\TRAINER{$$f(t) = 35 +
+(95-35) \cdot \left( \frac{19}{95-35}\right)^t$$
+
+$$f(t) = 35 + 60 \cdot \left( \frac{19}{60}\right)^t$$
+}
+
+\item Wie «trocken» ist die Wäsche nach 1.5 Stunden?
+
+\TRAINER{
+$$f(1.5) = 35 + 60 \cdot \left( \frac{19}{60}\right)^{1.5} \approx 45.69\%$$
+
+}
+
+\item Nach wie vielen Stunden hat die Wäsche eine relative
+«Wäsche-Feuchtigkeit» von 40\%.
+
+\TRAINER{
+
+$$f(t) = 35 + 60 \cdot \left( \frac{19}{60}\right)^t$$
+$f(t) = 40[\%]$ einsetzen:
+
+$$40 [\%| = 35 + 60 \cdot \left( \frac{19}{60}\right)^t$$
+$$5 [\%| = 60 \cdot \left( \frac{19}{60}\right)^t$$
+$$\frac5{60} [\%| =\left( \frac{19}{60}\right)^t$$
+$$t = \log_{\frac{19}{60}}(\frac5{60}) \approx 2.16 [\textrm{h}]$$
+}%% END TRAINER
+
+\end{bbwAufgabenBlock}
+
+
+\platzFuerBerechnungenBisEndeSeite{}
+\TRAINER{ ... Lösung noch ausstehend ....}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
