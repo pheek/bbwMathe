@@ -423,11 +423,11 @@ $D<0\Longrightarrow$ Keine Lösung
 \subsubsection*{Spezialfälle}
 \begin{itemize}
 \item Lösen durch Faktorisieren:\\
-$x^2+2x-15=0 \Longrightarrow (x-3)(x+5)=0 \Longrightarrow \lx=\{-5,3\}$
+$x^2+2x-15=0 \Longrightarrow (x-3)(x+5)=0 \Longrightarrow \lx=\{-5; 3\}$ %% DMK: (-5, 3) statt ;
 
 \item Lösen durch Substitution:\\
 $x^4+2x^2-15=0 \stackrel{y=x^2}{\Longrightarrow}\\
-y^2+2y-15=0 \Longrightarrow \mathbb{L}_y=\{-5,3\} \stackrel{x=\pm{}\sqrt{y}}{\Longrightarrow}
+y^2+2y-15=0 \Longrightarrow \mathbb{L}_y=\{-5;3\} \stackrel{x=\pm{}\sqrt{y}}{\Longrightarrow}
 \textrm{ (Rücksubstitution) } \lx=\{\pm\sqrt{3}\}\\
 \textrm{(} \pm\sqrt{-5} \textrm{ \, sind keine reelen Lösungen. )}$
 
@@ -439,15 +439,15 @@ y^2+2y-15=0 \Longrightarrow \mathbb{L}_y=\{-5,3\} \stackrel{x=\pm{}\sqrt{y}}{\Lo
 
 Bsp.: Nenner darf nicht Null werden:
 
-$$\frac5{x+2}=\frac{7+x}{x-3} \Rightarrow{} \mathbb{D}_x=\mathbb{R}\backslash{}\{-2, 3\}$$
+$$\frac5{x+2}=\frac{7+x}{x-3} \Rightarrow{} \mathbb{D}_x=\mathbb{R}\backslash{}\{-2; 3\}$$
 
 \subsection*{Potenzgleichungen}
 
 %%  \TRAINER{ev. nur letztes Gesetz: $x^a = c$ und $x^\frac1b =c$ sind darin enthalten.  }
 
 \begin{tabular}{lcl}
-$k$ ungerade: $x^k=c$ & $\Leftrightarrow$ & $x=\sqrt[k]{c}$\\
 $k$ gerade:   $x^k=c$ & $\Leftrightarrow$ & $x=\pm\sqrt[k]{c}$\\
+$k$ ungerade: $x^k=c$ & $\Leftrightarrow$ & $x=\sqrt[k]{c}$\\
 %%$x^\frac1b=c$&$\Leftrightarrow$&$x=c^b$\\
 %%$x^{\frac{a}b} = c$&$\Leftrightarrow{}$&$x=c^{\frac{b}a}
 %%= \sqrt[a]{c^b}$
@@ -456,7 +456,7 @@ $k$ gerade:   $x^k=c$ & $\Leftrightarrow$ & $x=\pm\sqrt[k]{c}$\\
 Beispiele
 
 \begin{tabular}{rcl}
-$x^4=16$ & $\Longrightarrow$ & $\lx=\{-2, 2\}  $ \\
+$x^4=16$ & $\Longrightarrow$ & $\lx=\{-2; 2\}  $ \\
 $x^5=32$ & $\Longrightarrow$ & $\lx=\{+2\}  $ \\
 
 \end{tabular}
@@ -483,7 +483,7 @@ Lösen mit
 \item \textbf{Taschenrechner}
 \end{itemize}
 Die Lösung ist ein geordnetes Zahlenpaar:
-$$(x | y) = (8 | -3)$$
+$$\mathbb{L}_{(x | y)} = ((8 | -3))$$
 
 
 \forceCB
@@ -973,7 +973,8 @@ $p_i = f_i\cdot{}100\%$ &$=$& prozentuale Häufigkeit%%\\
   Werte festgelegt.
 \item Die Flächeninhalte der Rechtecke sind proportional
   zu den Häufigkeiten.
-\item Werte auf Balkengrenzen werden immer rechts mitgezählt.
+\item Die Regeln für die Klassengrenzen müssen festgelegt werden. Zum
+  Beispiel Klasse 1: $[160; 170[$
 \item Das obige Histogramm ist \textbf{linksschief} und rechtssteil.
 \end{itemize}
 
@@ -1141,41 +1142,58 @@ ${\color{red}P}({\color{farnFarbe}KK} \textrm{\color{red} oder } {\color{blue}ZZ
  
 \keinHeaderUndKeinFooter{}
 
-\subsection*{Binomialverteilung (Bernoulli)}
+\subsection*{Binomialverteilung}
+\subsubsection*{Bernoulli}
 \keinHeaderUndKeinFooter{}
 
-Voraussetzung: Es gibt pro Verzweigung nur zwei Ausgänge mit jeweils
-gleicher Trefferwahrscheinlichkeit.
+Ein Experiment wird $n$ mal ausgeführt.
+
+Jede Ausführung hat die selbe Trefferwahrscheinlichkeit $p$.
+
+Die Wahrscheinlichkeit für \textbf{genau} $x$ Treffer ist
 
 
 \begin{tcolorbox}[colback=white]
-$$P(X=k) = {n \choose k}\cdot{}p^k\cdot{}(1-p)^{n-k}$$
-$k$ = \textbf{genaue} gewünschte Anzahl Treffer\\
-$n$ = Anzahl Züge\\
-$p$ = Wahrscheinlichkeit des Treffers\\
+$$P(X=x) = {n \choose x}\cdot{}p^x\cdot{}(1-p)^{n-x}$$
 Taschenrechner:  \textbf{\texttt{binomialpdf}}
 \end{tcolorbox}%%
 
-Beispiel: Ein Ballspieler trifft mit 35\% Wahrscheinlichkeit
+Beispiel: Ein Basketballspieler trifft mit 35\% Wahrscheinlichkeit
 ($p=0.35$). Wie gross ist die Wahrscheinlichkeit, dass er mit 20 Würfen
-($n=20$) \textbf{genau} vier Mal ($k=4$) trifft?
+($n=20$) \textbf{genau} vier Mal ($x=4$) trifft?
 
 Lösung: \texttt{binomialpdf} $\Longrightarrow 7.38\%$
-
 
 
 \subsubsection*{Kumulierte Binomialverteilung}
 
 \begin{tcolorbox}[colback=white]
-$$P(X\le k) = \sum_{i=0}^{k}{n \choose i}\cdot{}p^i\cdot{}(1-p)^{n-i}$$
-$k$ = \textbf{maximal} gewünschte Anzahl Treffer\\
-$n$ = Anzahl Züge\\
-$p$ = Wahrscheinlichkeit des Treffers\\
+$$P(X\le x) = \sum_{j=0}^{x}{n \choose j}\cdot{}p^j\cdot{}(1-p)^{n-j}$$
+$x$ = \textbf{maximal} gewünschte Anzahl Treffer\\
+$n$ = Anzahl Ausführungen\\
+$p$ = Trefferwahrscheinlichkeit\\
 Taschenrechner: \textbf{\texttt{binomialcdf}}
 \end{tcolorbox}
 
 
-\subsection*{Hypergeometrische Verteilung\\ (Lottomodell)}
+\subsection*{Lottomodell}
+\subsubsection*{Hypergeometrische Verteilung}
+
+\RLP{%%
+\begin{tcolorbox}[colback=white]
+Gegeben $n$ Kugeln in einer Urne. Herausgezogen werden $k$:
+\begin{itemize}
+\item $t =$ Anzahl der \textit{guten} Kugeln
+\end{itemize}
+Wahrscheinlichkeit \textbf{genau} $x$ \textit{gute} Kugeln zu ziehen:
+
+$$P(X=x) = \frac{ {t \choose x} \cdot {n-t  \choose k-x} }{{n \choose k}}$$
+\end{tcolorbox}
+}%% END RLP
+
+
+
+\HECH{%%
 \begin{tcolorbox}[colback=white]
 Gegeben $N+T$ Kugeln in einer Urne. Herausgezogen werden $n+t$:
 \begin{itemize}
@@ -1187,9 +1205,8 @@ Gegeben $N+T$ Kugeln in einer Urne. Herausgezogen werden $n+t$:
 Wahrscheinlichkeit \textbf{genau} $t$ Treffer zu ziehen:
 
 $$P_{N,T,n}(X=t) = \frac{ {T \choose t} \cdot {N  \choose n} }{{T+N \choose t+n}}$$
-
 \end{tcolorbox}
-
+}%% END RLP
 
 
 \subsection*{Elementare Wahrscheinlichkeit}
