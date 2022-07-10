@@ -1,0 +1,77 @@
+\subsection{Einfache Wachstumsprozesse}
+\textit{Startwert ist hier eine Einheit.}
+
+
+\bbwActAufgabenNr{} \textbf{Pilz}
+
+An einer Kellerwand wächst eine Schimmelpilzart, deren Fläche
+exponentiell zunehme.
+Am Anfang ist $1 \textrm{ m}^2$ der Wand mit dem Pilz bedeckt. Jeden Tag nimmt die Fläche um Faktor 1.25 zu.
+
+\begin{bbwAufgabenBlock}
+\item Welche Fläche ist nach 3 Tagen bedeckt?
+\TRAINER{$1.25^3 \approx 1.9531 \textrm{m}^2$}
+\item Welche Fläche ist nach $n$ Tagen bedeckt?
+\TRAINER{$1.25^5 \textrm{m}^2$}
+\item Nach wie vielen Tagen sind $5 \textrm{ m}^2$ der Wand mit dem Pilz bedeckt?
+\TRAINER{$n=\log_{1.25}(5)\approx 7.213$ Tage.}
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\bbwActAufgabenNr{} \textbf{Einwohnerzahl}
+
+In Winterthur waren im Jahr 1997 89\,850 Einwohner registriert. Im Jahr 2013 waren es
+bereits 107\,799 Einwohner (Quelle: \texttt{stadt.winterthur.ch} Juli 2022).
+
+Zum Glück nimmt die Bevölkerung hier nicht exponentiell zu. Doch für
+diese Aufgabenstellung dürfen Sie das \textit{worst case}-Szenario von
+exponentiellem Wachstum annehmen.
+
+\begin{bbwAufgabenBlock}
+\item Um wie viel \% nimmt die Bevölkerung jährlich zu?
+\TRAINER{$a=\frac{107\,799}{89\,850} \approx 1.199766  $ ergo
+Zunahmefaktor = 1,.199766 in 16 Jahren. Pro Jahr:
+$a^{\frac{1}{16}}$. Zunahme also 1.145\% jährlich.}
+\item Was prgnostizieren Sie bei exponentiellem Wachstum fürs Jahr 2040?
+\TRAINER{$ = 8950\cdot{}a^{\frac{43}{16}} \approx 146\,585 $ Einwohner}
+\item In wie vielen Jahren nimmt die Bevölkerung jeweils um 25\% zu?
+\TRAINER{$ 1.25 = a^{\frac{t}{16}}$ ergo
+$t=16\cdot{}\log_a(1.25)\approx 19.60$. Alle ca. 20 Jahre nimmt die
+Bevölkerung um 25\% zu.}
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bbwActAufgabenNr{} \textbf{Sparen}
+
+Max spart auf eine neue Spielkonsole. Die Mutter will Max dabei unterstützen und vor allem will sie, das Max lernt zu sparen.
+Sie schlägt ihm daher zwei Spar-Varianten vor.
+
+Bei Variante $A$ erhält Max in der ersten Woche $5.-$ \euro{} und danach jede Folgewoche $5.-$ \euro{} mehr als in der Vorangehenden Woche. Also 1. Woche $5.-$; 2. Woche $10.-$; 3. Woche $15.-$ \euro{} etc.
+
+Bei Variante $B$ erhält er in der ersten Woche ebenfalls $5.-$ \euro{}, jedoch in jeder Folgewoche 40\% mehr als in der vorangehenden Woche. Also in der 2. Woche \zB bereits 7.- \euro{} und in der 3. Woche $9.80$ \euro{} etc.
+
+
+\begin{bbwAufgabenBlock}
+\item In welchem Monat erhielte Max zum ersten Mal mehr mit Variante $B$ als mit Variante $A$? (Hier ist nicht das kumulierte Vermögen, sondern das «Einkommen» gefragt.)
+   \TRAINER{ Im Monat 7 erhält er mit Variante $A$ 35.- \euro{}, während er mit Variante $B$ im 7. Monat bereits 37.65 \euro{} erhält.}
+
+\item In welchem Monat überholt das angesparte Vermögen durch exponentielles Einkommenswachstum (Varianten $B$) das Vermögen, das durch die Variante $A$ angespart wurde?
+   \TRAINER{ Im Monat 9 hat er mit Variante $A$ total 225.- \euro{} angespart; wohingegen mit Variante $B$ im Momnat 9 bereits 245.76 \euro angespart wurden.}
+
+\item Wie sieht das angesparte Vermögen bei Variante $A$ nach 12 Monaten aus?
+      \TRAINER{ Im 12. Monat erhält er 60.- \euro, was sich auf 390.- \euro{} kumuliert.}
+
+\item Wie sieht das angesparte Vermögen bei Variante $B$ nach 12 Monaten aus?
+      \TRAINER{ Im 12. Monat erhält er 202.48 \euro, was sich auf 696.17 \euro{} kumuliert.}
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage

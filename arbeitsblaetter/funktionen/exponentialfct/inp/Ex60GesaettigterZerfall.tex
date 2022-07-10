@@ -1,0 +1,135 @@
+
+\bbwActAufgabenNr{} \textbf{Impfung}
+
+Nach einer rigorosen Durchimpfung kann eine Krankeit (die hier nicht genannt werden will) von anfänglich 30\% infizierten Personen drastisch reduziert werden. Es ist davon auszugehen, dass jedoch im Endeffekt immer noch 2\% der Bevölkerung die Krankkeit bekommen kann bzw. ansteckend bleiben wird.
+
+Die Funktionsgleichung der Prozentzahl $p()$ der angesteckten Bevölkerung nach $t$ Wochen lautet somit:
+
+$$p(t) = 2 + (30-2)\cdot \e^{qt}$$
+
+Ermitteln Sie $q$, wenn Sie wissen, dass die Krankheit nach 8 Wochen von 30\% bereits auf 12\% gesunken ist.
+
+$$p(t) = 2 + \LoesungsRaumLang{28\cdot{}e^{-0.1287\cdot{}t}}$$
+
+
+\platzFuerBerechnungenBisEndeSeite{}
+\TRAINER{
+$$p(8) = 12$$
+$$2 + (30-2) \cdot{} \e^{8\cdot{}q} = 12$$
+$$(30-2) \cdot{} \e^{8\cdot{}q} = 10$$
+$$28 \cdot{} \e^{8\cdot{}q} = 10$$
+$$\e^{8\cdot{}q} = \frac{10}{28}$$
+$$8\cdot{}q = \ln(\frac{10}{28})$$
+$$q = \ln(\frac{10}{28}) / 8\approx{} -0.1287$$
+}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bbwActAufgabenNr{} \textbf{Kara Ben Nemsi}
+
+Kara Ben Nemsi ist gut im Spurenlesen. Er weiß, dass Steine rund um ein Feuer eine Temperatur von rund $400^\circ$ C annehmen.
+Ebenfalls ist ihm der gesättigte Zerfall bei der Temperaturkurve nach dem Löschen des Feuers bekannt.
+
+Es gilt:
+
+$$f(t) = U + \left(f(0) - U\right) \cdot{} a^t$$
+Dabei sind
+
+$f(t)$ die Temperatur nach $t$ Minuten
+
+$U$ ist die Umgebungstemperatur (hier die Sättigungsgrenze)
+
+$f(0)$ ist die Anfangstemperatur nach Löschen der Steine (also $400^\circ$ C)
+
+$a$ ist ein spezifischer Abnahmefaktor für Wüstensteine ($a\approx 0.9753$).
+
+
+Kara Ben Nemsi verfolgt einige Ganoven und erreicht eine Feuerstelle, welche offensichtlich seine Verfolgten benutzt hatten. Er misst eine Umgebungstemperatur von $28^\circ$ C und ermittelt die Temperatur der Steine auf $40^\circ$ C.
+
+Welchen Vorsprung (in Minuten) haben die Ganoven? (Oder: Vor wie vielen Minuten wurde das Feuer gelöscht?)
+
+
+\platzFuerBerechnungenBisEndeSeite{}
+\TRAINER{
+$$f(t) = 28 + (400-28)\cdot{} 0.9753^t$$
+$$40 = 28 + (400-28)\cdot{} 0.9753^t$$
+$$12 =  (400-28)\cdot{} 0.9753^t$$
+$$12 =  (372)\cdot{} 0.9753^t$$
+$$\frac{12}{372} = 0.9753^t$$
+$t=log_a(\frac{12}{372}) \approx{} 137.3 \textrm{min}$}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\bbwActAufgabenNr{} \textbf{Wäsche Trocknen}
+
+Wäsche trocknet schneller, umso trockener die Umgebungsluft ist. Wir
+vernachläßigen hier die Sonne, die Temperatur und den Wind und gehen
+davon aus, dass die Differenz der Umgebungs-Feuchte und der
+Wäsche-Feuchte exponentiell abnimmt.
+
+Frisch gewaschene Wäsche werde aufgehängt und habe im Geflecht eine «Luftfeuchtigkeit» von 95\%
+(= relative Luftfeuchtigkeit).
+
+Die Außenluft habe eine relative Luftfeuchtigkeit von 35\%. 
+
+
+Nach einer
+Stunde messen wir eine relative «Luftfeuchtigkeit im Geflecht von
+54\%.
+
+
+\begin{bbwAufgabenBlock}
+\item Machen Sie eine Skizze im Koordiantensystem, welche die
+Abhängigkeit von der Luftfeuchtigkeit von der Zeit ($t$) aufzeichnet.
+
+\TRAINER{Graph}
+
+\item Geben Sie die Funktionsgleichung $f(t)$ an, welche die relative
+«Luftfeuchtigkeit im Geflecht» in Stunden ($t$) nach dem Aufhängen
+angibt.
+
+\TRAINER{$$f(t) = 35 +
+(95-35) \cdot \left( \frac{19}{95-35}\right)^t$$
+
+$$f(t) = 35 + 60 \cdot \left( \frac{19}{60}\right)^t$$
+}
+
+\item Wie «trocken» ist die Wäsche nach 1.5 Stunden?
+
+\TRAINER{
+$$f(1.5) = 35 + 60 \cdot \left( \frac{19}{60}\right)^{1.5} \approx 45.69\%$$
+
+}
+
+\item Nach wie vielen Stunden hat die Wäsche eine relative
+«Wäsche-Feuchtigkeit» von 40\%.
+
+\TRAINER{
+
+$$f(t) = 35 + 60 \cdot \left( \frac{19}{60}\right)^t$$
+$f(t) = 40[\%]$ einsetzen:
+
+$$40 [\%| = 35 + 60 \cdot \left( \frac{19}{60}\right)^t$$
+$$5 [\%| = 60 \cdot \left( \frac{19}{60}\right)^t$$
+$$\frac5{60} [\%| =\left( \frac{19}{60}\right)^t$$
+$$t = \log_{\frac{19}{60}}(\frac5{60}) \approx 2.16 [\textrm{h}]$$
+}%% END TRAINER
+
+\end{bbwAufgabenBlock}
+
+
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+
+  
+
+  
+\newpage
