@@ -1,0 +1,56 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+\subsection{Begrenztes Wachstum}
+
+
+\bbwActAufgabenNr{} \textbf{Cola}
+
+Eine Cola wird bei $5^\circ \textrm{ C}$ aus der Kühlbox genommen. Die
+Umgebungstemperatur ist $32^\circ \textrm{ C}$. Nach 3 Minuten messen
+wir bereits eine Temperatur von $9^\circ \textrm{ C}$ 
+
+Wir gehen davon aus, dass die Temperaturdifferenz der Cola zur
+Umgebungstemperatur exponentiell abnimmt.
+
+\begin{bbwAufgabenBlock}
+\item Machen Sie eine Skizze im Koordiantensystem, welche die
+Abhängigkeit von der Cola-Temperatur von der Zeit ($t$) aufzeichnet.
+
+\TRAINER{Graph}
+
+\item Geben Sie die Funktionsgleichung $f(t)$ an, welche die
+Temperatur in Minuten ($t$) nach dem herausnehmen der Cola aus der Kühlbox
+angibt.
+
+\TRAINER{$$f(t) = c - b\cdot{} a^{\frac{t}{\tau}}$$
+
+$$f(t) = 32 - 27 \cdot \left( \frac{23}{27}\right)^{\frac{t}{3}}$$
+}
+
+\item Wie «warm» ist die Cola nach 10 Minuten?
+
+\TRAINER{
+$$f(10) = 32 -
+27 \cdot \left( \frac{23}{27}\right)^{\frac{10}{3}} \approx
+16.18^\circ \textrm{ C}$$
+}%% end TRAINER
+
+\item Nach wie vielen Minuten ist die Cola $18^\circ \textrm{ C}$
+«warm»?
+
+\TRAINER{
+$$f(t) = 18 = 32 - 27\cdot{} \left(\frac{23}{27}\right)^\frac{t}{3}$$
+$$-14 =  - 27\cdot{} \left(\frac{23}{27}\right)^\frac{t}{3}$$
+$$\frac{14}{27} =  - \left(\frac{23}{27}\right)^\frac{t}{3}$$
+$$t =
+3\cdot{} \log_{\left(\frac{23}{27}\right)}\left(\frac{14}{27}\right) \approx
+12.29 \textrm{ min.}$$
+}%% END TRAINER
+
+\end{bbwAufgabenBlock}
+
+
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+\newpage
