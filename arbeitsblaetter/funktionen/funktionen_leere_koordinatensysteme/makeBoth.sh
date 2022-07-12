@@ -1,0 +1,1 @@
+/home/phi/matgit/arbeitsblaetter/makeBoth.sh

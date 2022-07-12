@@ -1,0 +1,111 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+\subsection{Begrenztes Wachstum}
+
+
+\bbwActAufgabenNr{} \textbf{Cola}
+
+Eine Cola wird bei $5^\circ \textrm{ C}$ aus der Kühlbox genommen. Die
+Umgebungstemperatur ist $32^\circ \textrm{ C}$. Nach 3 Minuten messen
+wir bereits eine Temperatur von $9^\circ \textrm{ C}$ 
+
+Wir gehen davon aus, dass die Temperaturdifferenz der Cola zur
+Umgebungstemperatur exponentiell abnimmt.
+
+\begin{bbwAufgabenBlock}
+\item Machen Sie eine Skizze im Koordiantensystem, welche die
+Abhängigkeit von der Cola-Temperatur von der Zeit ($t$) aufzeichnet.
+
+\TRAINER{Graph}
+
+\item Geben Sie eine Funktionsgleichung $f(t)$ an, welche die
+Temperatur in Minuten ($t$) nach dem herausnehmen der Cola aus der Kühlbox
+angibt.
+
+\TRAINER{$$f(t) = c - b\cdot{} a^{\frac{t}{\tau}}$$
+
+$$f(t) = 32 - 27 \cdot \left( \frac{23}{27}\right)^{\frac{t}{3}}$$
+}
+
+\item Wie «warm» ist die Cola nach 10 Minuten?
+
+\TRAINER{
+$$f(10) = 32 -
+27 \cdot \left( \frac{23}{27}\right)^{\frac{10}{3}} \approx
+16.18^\circ \textrm{ C}$$
+}%% end TRAINER
+
+\item Nach wie vielen Minuten ist die Cola $18^\circ \textrm{ C}$
+«warm»?
+
+\TRAINER{
+$$f(t) = 18 = 32 - 27\cdot{} \left(\frac{23}{27}\right)^\frac{t}{3}$$
+$$-14 =  - 27\cdot{} \left(\frac{23}{27}\right)^\frac{t}{3}$$
+$$\frac{14}{27} =  - \left(\frac{23}{27}\right)^\frac{t}{3}$$
+$$t =
+3\cdot{} \log_{\left(\frac{23}{27}\right)}\left(\frac{14}{27}\right) \approx
+12.29 \textrm{ min.}$$
+}%% END TRAINER
+
+\end{bbwAufgabenBlock}
+
+
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\bbwActAufgabenNr{} \textbf{«Silly Blubb»}
+
+Das neue Waschmittel «Silly Blubb» will sich im Markt etablieren.
+Dank einer tollen Fernseh und Internetwerbung nehmen die
+Verkaufszahlen rasant zu.
+
+Es ist jedoch zu erwarten, dass nicht mehr als 20\% aller Käufer auf
+«Silly Blubb» umschwenken werden.
+
+Nach dem ersten Monat sind bereits 5\% der Waschmittelkäufer auf
+«Silly Blubb» umgelenkt worden. Nach zwei weiteren Monaten sind wir
+bei 8\% gelandet.
+
+
+\begin{bbwAufgabenBlock}
+\item Machen Sie eine Skizze im Koordiantensystem, welche die
+Abhängigkeit von Monat ($x$-Achse) zu Käuferzahl in Prozent darstellt.
+
+\TRAINER{Graph}
+
+\item Geben Sie einen mögliche Funktionsterm $f(t)$ an, welcher die
+Prozentzahl der Käufer nach Monaten angibt.
+
+\TRAINER{$$f(t) = 20 - 15 \cdot{} (\frac{12}{15})^{\frac{t-1}{2}}$$
+}
+
+\item Wie viele Prozente der Käufer sind in Monat 6 nach Verkaufsstart
+  bereits «Silly Blubb» Käufer?
+  
+\TRAINER{
+$$y = 20 - 15\cdot{} \left(\frac{12}{15}\right)^{\frac{6-1}{2}} \approx 11.41\% $$%%
+}%% end TRAINER
+
+\item Nach wie vielen Monaten sind 16\% der Käufer von «Silly Blubb»
+  überzeugt worden?
+
+\TRAINER{
+$$f(t) = 16 [\%] = 20 - 15\cdot{} \left(\right)^{\frac{t-1}2}$$
+$$ \frac4{15} = \left(\right)^{\frac{t-1}2}$$
+$$ \frac4{15} = \left(\right)^{\frac{t-1}2}$$
+$$\frac{t-1}2  = \log_{\left(\frac{12}{15}\right)}\left(\frac4{15}\right)$$
+$$t = 1 + 2\cdot{}
+  \log_{\left(\frac{12}{15}\right)}\left(\frac4{15}\right) \approx
+  12.85 \textrm{ Monate}$$
+}%% END TRAINER
+
+\end{bbwAufgabenBlock}
+
+
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+\newpage

@@ -22,14 +22,14 @@ echo "pushing files into subdirectories 6_MAT_RESSOURCEN : ${BBW_WEBDAV_PATH}...
 
 
 echo "copying Taschenrechner (TALS)"
-cp -f ./tr_nspire_tals_einfuehrung/TR_NSPIRE_TALS_Einfuehrung_TALS.pdf "${BBW_WEBDAV_PATH}/5_Buecher_Lehrmittel_Taschenrechner/Taschenrechner/TI Nspire CX CAS/TR_NSPIRE_TALS_Einfuehrung_Schueler.pdf"
-cp -f ./tr_nspire_tals_einfuehrung/TR_NSPIRE_TALS_Einfuehrung_TRAINER_TALS.pdf "${BBW_WEBDAV_PATH}/5_Buecher_Lehrmittel_Taschenrechner/Taschenrechner/TI Nspire CX CAS/TR_NSPIRE_TALS_Einfuehrung_TRAINER.pdf"
+cp -f ./taschenrechner/tr_nspire_tals_einfuehrung/TR_NSPIRE_TALS_Einfuehrung_TALS.pdf "${BBW_WEBDAV_PATH}/5_Buecher_Lehrmittel_Taschenrechner/Taschenrechner/TI Nspire CX CAS/TR_NSPIRE_TALS_Einfuehrung_Schueler.pdf"
+cp -f ./taschenrechner/tr_nspire_tals_einfuehrung/TR_NSPIRE_TALS_Einfuehrung_TRAINER_TALS.pdf "${BBW_WEBDAV_PATH}/5_Buecher_Lehrmittel_Taschenrechner/Taschenrechner/TI Nspire CX CAS/TR_NSPIRE_TALS_Einfuehrung_TRAINER.pdf"
 
 
 echo "copying Taschenrechner (GESO)"
-cp -f ./tr_ti30_geso_einfuehrung/TR_TI30_GESO_Einfuehrung_GESO.pdf  "${BBW_WEBDAV_PATH}/5_Buecher_Lehrmittel_Taschenrechner/Taschenrechner/TI30_PRO_MathPrint/TR_TI30_GESO_Einfuehrung_Schueler.pdf"
-cp -f ./tr_ti30_geso_einfuehrung/TR_TI30_GESO_Einfuehrung_TRAINER_GESO.pdf  "${BBW_WEBDAV_PATH}/5_Buecher_Lehrmittel_Taschenrechner/Taschenrechner/TI30_PRO_MathPrint/TR_TI30_GESO_Einfuehrung_Trainer.pdf"
-cp -f ./tr_ti30_geso_wichtige_befehle/TR_TI30_GESO_Wichtige_Befehle.pdf  "${BBW_WEBDAV_PATH}/5_Buecher_Lehrmittel_Taschenrechner/Taschenrechner/TI30_PRO_MathPrint/TR_TI30_GESO_Wichtige_Befehle.pdf"
+cp -f ./taschenrechner/tr_ti30_geso_einfuehrung/TR_TI30_GESO_Einfuehrung_GESO.pdf  "${BBW_WEBDAV_PATH}/5_Buecher_Lehrmittel_Taschenrechner/Taschenrechner/TI30_PRO_MathPrint/TR_TI30_GESO_Einfuehrung_Schueler.pdf"
+cp -f ./taschenrechner/tr_ti30_geso_einfuehrung/TR_TI30_GESO_Einfuehrung_TRAINER_GESO.pdf  "${BBW_WEBDAV_PATH}/5_Buecher_Lehrmittel_Taschenrechner/Taschenrechner/TI30_PRO_MathPrint/TR_TI30_GESO_Einfuehrung_Trainer.pdf"
+cp -f ./taschenrechner/tr_ti30_geso_wichtige_befehle/TR_TI30_GESO_Wichtige_Befehle_GESO.pdf  "${BBW_WEBDAV_PATH}/5_Buecher_Lehrmittel_Taschenrechner/Taschenrechner/TI30_PRO_MathPrint/TR_TI30_GESO_Wichtige_Befehle.pdf"
 
 
 echo "Copyiing Formelsammlung"

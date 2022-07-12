@@ -87,17 +87,112 @@ Zeichnen Sie $f: y=2^x$ und $g: y=1.4^x$ ins selbe Koordinatensystem:
 \begin{bemerkung}{Wachstumsfaktor}{}\index{Wachstumsfaktor}
 Der Parameter $a$ gibt den Wachstumsfaktor pro Zeiteinheit $e_x$ an.
 \end{bemerkung}
+\newpage
+
+
+\subsection{Exponentieller Zerfall}\label{zerfallsfunktion}
+Die Funktion $f(x): x \mapsto y = d^{-x}$ ist eine
+Exponentialfunktion, die gegen Null geht.
+\bbwFunction{-4}{4}{-1}{8}{exp(-\x)}{-2:4}
+
+\begin{bemerkung}{}{}
+Oft wird bei Wachstumsprozessen die Zeitachse auch mit $t$ statt $x$ bezeichnet: $t$ steht für \textit{time}.
+\end{bemerkung}
+
 
 \newpage
 
+\subsubsection{Beispiele}
+\begin{itemize}
+	\item \Lueckentext{Zinsliche Abschreibungen (\zB Wert eines Autos)}
+	\item \Lueckentext{Radioaktiver Zerfall}
+	\item \Lueckentext{Lichtintensität in Medium (Gas / Flüssigkeit / Glasfaser), dies gilt vertikal, wie auch horizontal}
+	\item \Lueckentext{Atmosphärischer Luftdruck in Metern über Meer}
+  \item \Lueckentext{Entladen einer Batterie bzw. eines Kondensators}
+  \item \Lueckentext{Sauerstoffkonzentration in Seen (\zB Herbst bei kontinuierlicher Abnahme)}
+  \item \Lueckentext{Abnahme des Bierschaums im Glas}
+  \item \Lueckentext{Mischen, wie im Sirup-Beispiel\totalref{sirup_beispiel}}
+  \item \Lueckentext{«Halbwertszeit des Wissens» ;-)}
+  \item \Lueckentext{\dotfill}
+\end{itemize}
+
+\newpage
+
+
+
+Zeichnen Sie die Funktionen $f: y=2^x$, $g: y=2^{-x}$ und $h: y=\left(\frac12\right)^x$ in dasselbe Koordinatensystem:
+
+\bbwGraph{-6}{6}{-1}{5}{
+  \TRAINER{\bbwFuncC{exp(0.69314718*\x)}{-6:2}{blue}}
+  \TRAINER{\bbwFuncC{exp(-0.69314718*\x)}{-2:6}{red} }
+  \TRAINER{\bbwLetter{1.5,4}{2^x}{blue}}
+  \TRAINER{\bbwLetter{-5,4}{g(x)=2^{-x}=\left(\frac{1}{2}\right)^x=h(x)}{red}}
+}
+
+Bemerkung: \TRAINER{$$2^{-x} = \frac1{2^x} = \left(\frac12\right)^x$$}
+\newpage
+
+\subsubsection{Grundform} \index{Exponentieller Prozess! Grundform}
+Die Grundform für Zerfallsprozesse lautet:
+
+\begin{definition}{Zerfall}{}
+$$y = a^t$$
+  bzw.
+  $$f(t) = a^t$$
+\end{definition}
+
+
+\begin{bemerkung}{Wachstum vs. Zerfall}{}
+
+  Der einzige Unterschied bei Wachstums- bzw Zerfallsprozessen ist der
+  Faktor $a$:
+
+  \begin{itemize}
+  \item $a>1$: Wachstum
+  \item $0<a<1$: Zerfall
+    \end{itemize}
+  
+  \end{bemerkung}
+
+\subsubsection{Umkehrung (Optional)}
+Um aus einem Wachstum einen Zerfall zu modellieren können wir entweder
+die Zeitachse umdrehen oder den Kehrwert der Basis verwenden.
+umgedreht werden:
+
+Mit $d := \frac1a $ gilt:
+
+\begin{center}
+  \fbox{$a^{+t} = \left(\frac1a\right)^{-t} = d^{-t} $}
+\end{center}
+
+\newpage
+
+
+\input{allg/funktionen/Mischtank}
+
+
+\subsection*{Aufgaben}
+\TALSAadB{223ff}{840-847}
+\GESOAadB{338}{29. (Bierschaum)}
+\GESOAadB{354}{9. (Bauchspeicheldrüse)}
+\GESOAadB{353}{6 (C-14 Methode)}
+\olatLinkGESOKompendium{3.4.1}{27ff}{33., 35., 36., 39. und 41.}
+\newpage
+
+
 \subsection{Startwert}
 
-Obige Exponentialfunktion hat für den Wert $x=0$ immer den $y$-Wert = 1. Da dies in der Praxis aber meist nicht der Fall ist, gib es die folgende \textbf{allgemeinere Form der Exponentialfunktion}:
+Obige Exponentialfunktionen haben für den Wert $x=0$ (bzw. $t=0$) immer den
+$y$-Wert = 1 bzw. 100\%.
+Da in der Praxis meist konkrete Werte vorgegeben sind verwenden wir
+eine \textbf{allgemeinere Form der Exponentialfunktion}:
 
 \subsubsection{Einstiegsbeispiel}
 
 \begin{beispiel}{Pilz}{}
-  Ein Pilzbefall an einer Wand nimmt täglich um 23\% der Fläche zu.
+  Ein Pilzbefall an einer Wand nehme täglich um 23\% der Fläche
+  zu\footnote{Je nach Organismus ist auch ein quadratisches Wachstum
+  vorhanden, doch für unser Experiment verwenden wir exponentielles Wachstum.}.
   Anfänglich wird eine Fläche von $35 \textrm{cm}^2$ gemessen.
   Welche Fläche ist nach einem, nach zwei, nach fünf, nach zehn
   bzw. nach $n$ 
@@ -207,7 +302,8 @@ Dabei bezeichnet 20 den Startwert, 2 den Zunahmefaktor und 5 die Beobachtungszei
 
 
 
-\subsubsection{Grundform exponentieller Wachstumsprozesse}
+\subsubsection{Allgemeiner exponentieller
+  Prozess}\index{Exponentieller Prozess! allgemeine Form}
 
 Die allgemeine Formel für exponentielle Prozesse lautet:
 
@@ -219,15 +315,18 @@ Die allgemeine Formel für exponentielle Prozesse lautet:
 \end{definition}
 
 
-\begin{bemerkung}{}{}
-Oft wird bei Wachstumsprozessen die Zeitachse auch mit $t$ statt $x$ bezeichnet: $t$ steht für \textit{time}.
-\end{bemerkung}
-
 \newpage
 
 \subsubsection{Graphische Erläuterung}
 
-\bbwCenterGraphic{11cm}{allg/funktionen/img/exp/exponentielles_wachstum.png}
+
+\begin{tabular}{cc}%%
+  \includegraphics[width=9cm]{allg/funktionen/img/exp/exponentielles_wachstum.png} &
+  \includegraphics[width=7cm]{allg/funktionen/img/exp/exponentieller_zerfall.png}\\
+\end{tabular}
+
+%%\bbwCenterGraphic{10cm}{allg/funktionen/img/exp/exponentieller_zerfall.png}
+%%\bbwCenterGraphic{11cm}{allg/funktionen/img/exp/exponentielles_wachstum.png}
 
 Dabei sind
 \begin{itemize}
@@ -322,107 +421,8 @@ Maturaprüfung 2018 (Serie 3), Aufg. 11 (Müll)
 
 \newpage
 
-
-\subsection{Exponentieller Zerfall}\label{zerfallsfunktion}
-Die Funktion $f(t): t \mapsto y = d^{-t}$ ist eine
-Exponentialfunktion, die gegen Null geht.
-\bbwFunction{-4}{4}{-1}{8}{exp(-\x)}{-2:4}
-
-\newpage
-
-\subsubsection{Beispiele}
-\begin{itemize}
-	\item \Lueckentext{Zinsliche Abschreibungen (\zB Wert eines Autos)}
-	\item \Lueckentext{Radioaktiver Zerfall}
-	\item \Lueckentext{Lichtintensität in Medium (Gas / Flüssigkeit / Glasfaser), dies gilt vertikal, wie auch horizontal}
-	\item \Lueckentext{Atmosphärischer Luftdruck in Metern über Meer}
-  \item \Lueckentext{Entladen einer Batterie bzw. eines Kondensators}
-  \item \Lueckentext{Sauerstoffkonzentration in Seen (\zB Herbst bei kontinuierlicher Abnahme)}
-  \item \Lueckentext{Abnahme des Bierschaums im Glas}
-  \item \Lueckentext{Mischen, wie im Sirup-Beispiel\totalref{sirup_beispiel}}
-  \item \Lueckentext{«Halbwertszeit des Wissens» ;-)}
-  \item \Lueckentext{\dotfill}
-\end{itemize}
-
-\newpage
-
-
-
-Zeichnen Sie die Funktionen $f: y=2^x$, $g: y=2^{-x}$ und $h: y=\left(\frac12\right)^x$ in dasselbe Koordinatensystem:
-
-\bbwGraph{-6}{6}{-1}{5}{
-  \TRAINER{\bbwFuncC{exp(0.69314718*\x)}{-6:2}{blue}}
-  \TRAINER{\bbwFuncC{exp(-0.69314718*\x)}{-2:6}{red} }
-  \TRAINER{\bbwLetter{1.5,4}{2^x}{blue}}
-  \TRAINER{\bbwLetter{-5,4}{g(x)=2^{-x}=\left(\frac{1}{2}\right)^x=h(x)}{red}}
-}
-
-Bemerkung: \TRAINER{$$2^{-x} = \frac1{2^x} = \left(\frac12\right)^x$$}
-\newpage
-Die allgemeine Formel für Zerfallsprozesse lautet:
-
-\begin{definition}{Zerfall}{}
-$$y = b\cdot{}a^{\frac{t}{\tau}}$$
-  bzw.
-  $$f(t) = b\cdot{}a^{\frac{t}{\tau}}$$
-\end{definition}
-
-\bbwCenterGraphic{10cm}{allg/funktionen/img/exp/exponentieller_zerfall.png}
-
-Dabei sind
-\begin{itemize}
-\item $b$ der Anfangsbestand zum Zeitpunkt $t$ = 0.
-\item $\tau$ ist die Zeitspanne zwischen zwei typischen Beobachtungszeitpunkten (Zum Beispiel zwischen Wert und dessen Halbierung).
-\item $a=\frac{f(\tau)}{f(0)}$ ist der Abnahmefaktor ($0<a<1$)
-  zwischen zwei Beobachtungszeitpunkten (im Abstand von $\tau$). Bei
-  Halbierungsprozessen \zB wäre $a=0.5$\footnote{Ist $a=\frac12$, so
-  nennen wir das $\tau$ die «Halbwertszeit»\index{Halbwertszeit}, denn
-  in dieser Zeitspanne halbiert sich der Funktionswert.}.
-\end{itemize}
-
-\begin{bemerkung}{Wachstum vs. Zerfall}{}
-
-  Der einzige Unterschied bei Wachstums- bzw Zerfallsprozessen ist der
-  Faktor $a$:
-
-  \begin{itemize}
-  \item $a>1$: Wachstum
-  \item $0<a<1$: Zerfall
-    \end{itemize}
-  
-  \end{bemerkung}
-\newpage
-
-\subsubsection{Umkehrung (Optional)}
-Anstelle eines  positiven Exponenten ($\frac{+t}{\tau}$) kann genauso
-gut der Kehrwert des Faktors $a$ genommen werden. Dann wird der
-Exponent negativ, dafür wird die Basis $> 1$. Seien $m_1$ bzw. $m_2$
-zwei Beobachtungswerte.
-
-Mit $a = \frac{m_2}{m_1}$ und $d := \frac{m_1}{m_2} = \frac{1}{a}$, gilt
-
-\begin{center}
-  \fbox{$b\cdot{} a^{\frac{+t}{\tau}} = b\cdot{}d^{\frac{-t}{\tau}} $}
-\end{center}
-
-\TALS{Beweis:}\GESO{Begründung: So gilt \zB bei Halbierungsprozessen, dass $a=0.5$ und $d=2$:}
-
-\TALS{ $b\cdot{}a^{\frac{t}{\tau}} = b\cdot{} \left(\frac{m_2}{m_1}\right)^{\frac{t}{\tau}} = b\cdot{} \left(\frac{m_1}{m_2}\right)^{\frac{-t}{\tau}} =  b\cdot{}d^{\frac{-t}{\tau}} $}
-\GESO{ $b\cdot{}0.5^{\frac{t}{\tau}} = b\cdot{} \left(\frac{1}{2}\right)^{\frac{t}{\tau}} = b\cdot{} \left(\frac{2}{1}\right)^{\frac{-t}{\tau}} =  b\cdot{}2^{\frac{-t}{\tau}} $}
-\newpage
-
 \input{allg/funktionen/RateVsFaktor}
 
-\newpage
-\input{allg/funktionen/Mischtank}
-
-
-\subsection*{Aufgaben}
-\TALSAadB{223ff}{840-847}
-\GESOAadB{338}{29. (Bierschaum)}
-\GESOAadB{354}{9. (Bauchspeicheldrüse)}
-\GESOAadB{353}{6 (C-14 Methode)}
-\olatLinkGESOKompendium{3.4.1}{27ff}{33., 35., 36., 39. und 41.}
 \newpage
 
 \subsection{Halbwertszeit, Verdopplungszeit}\index{Halbwertszeit}\index{Verdopplungszeit}
@@ -479,7 +479,6 @@ groß ist seine Halbwertszeit $T_{1/2}$?
   $$f(t) = b\cdot{}\left(\frac12\right)^\frac{t}{T_{1/2}}$$
 \end{gesetz}
 
-\newpage
 \GESO{Optional:}
 
 Analog gilt das Gesetz zur Verdopplung (s. obiges Beispiel Bevölkerung Irlands):
