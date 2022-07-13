@@ -129,13 +129,16 @@ echo "copying Arbeitsblatt Gleichungen: Bruchgleichungen (GESO und TALS)"
 cp -f ./gleichungen/bruchgleichungen/arbeitsblatt/BruchgleichungenArbeitsblatt_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/bruchgleichungen/arbeitsblatt/BruchgleichungenArbeitsblatt.pdf
 cp -f ./gleichungen/bruchgleichungen/arbeitsblatt/BruchgleichungenArbeitsblatt_TRAINER_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/bruchgleichungen/arbeitsblatt/BruchgleichungenArbeitsblattLoesungen.pdf
 
-echo "copying Arbeitsblatt Gleichungen: Bruchgleichungen (GESO und TALS)"
+echo "copying Umkehrfunktionen (GESO und TALS)"
 cp -f ./funktionen/funktionen_umkehrfunktionen/Umkehrfunktionen_TALS.pdf          ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/fct3/umkehrfunktionen/ArbeitsblattUmkehrfunktionen.pdf
 cp -f ./funktionen/funktionen_umkehrfunktionen/Umkehrfunktionen_TRAINER_TALS.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/fct3/umkehrfunktionen/ArbeitsblattUmkehrfunktionenLoesungen.pdf
 
 echo "copying Arbeitsblatt Gleichungen: Exponentialgleichungen (GESO und TALS)"
 cp -f ./gleichungen/exponentialgleichungen/Exponentialgleichungen_ALLG.pdf          ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/exponentialgleichungen/arbeitsblatt/ExponentialgleichungenArbeitsblatt.pdf
 cp -f ./gleichungen/exponentialgleichungen/Exponentialgleichungen_TRAINER_ALLG.pdf          ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/exponentialgleichungen/arbeitsblatt/ExponentialgleichungenArbeitsblattLoesungen.pdf
+
+echo "copying Arbeitsblatt Exponentialfunktionen (GESO und TALS)"
+cp -f ./funktionen/exponentialfct/*.pdf                               ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/funktionen/exponentialfunktion/arbeitsblatt/
 
 
 
