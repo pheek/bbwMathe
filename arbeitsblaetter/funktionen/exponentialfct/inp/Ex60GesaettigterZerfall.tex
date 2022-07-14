@@ -45,6 +45,7 @@ $$f(1.5) = 35 + 60 \cdot \left( \frac{19}{60}\right)^{1.5} \approx 45.69\%$$
 \item Nach wie vielen Stunden hat die Wäsche eine relative
 «Wäsche-Feuchtigkeit» von 40\%.
 
+
 \TRAINER{
 
 $$f(t) = 35 + 60 \cdot \left( \frac{19}{60}\right)^t$$
@@ -62,6 +63,7 @@ $$t = \log_{\frac{19}{60}}(\frac5{60}) \approx 2.16 [\textrm{h}]$$
 \platzFuerBerechnungenBisEndeSeite{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
 
 \bbwActAufgabenNr{} \textbf{Kara Ben Nemsi}
 \nextBbwAufgabenNummer{}
@@ -98,9 +100,7 @@ $$\frac{12}{372} = 0.9753^t$$
 $t=log_a(\frac{12}{372}) \approx{} 137.3 \textrm{min}$}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 
 \bbwActAufgabenNr{} \textbf{Impfung}
@@ -128,12 +128,76 @@ $$8\cdot{}q = \ln(\frac{10}{28})$$
 $$q = \ln(\frac{10}{28}) / 8\approx{} -0.1287$$
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\bbwActAufgabenNr{} \textbf{Brot}
+
+Frisch gebackenes Brot wird kühl gestellt. Die Umgebungstemperatur
+misst zwölf Grad. Nach zehn Minuten beträgt die Temperatur noch achzig Grad und
+nach weiteren zehn Minuten noch 48 Grad.
+
+
+\begin{bbwAufgabenBlock}
+\item Machen Sie eine Skizze zum Temperaturverlauf.
+  \TRAINER{Graph}
+  
+\item Geben Sie eine allgemeine Funktionsgleichung für diese
+  Temperaturabnahme an
+  \TRAINER{$$f(t) = 12+ b\cdot{} a^t$$
+    Punkte einsetzen:
+    $$f(10):  80 = 12   + b\cdot{} a^{10}$$
+    $$f(20):  48 = 12   + b\cdot{} a^{20}$$
+    Zwölf abzählen
+    $$f(10):  68 = b\cdot{} a^{10}$$
+    $$f(20):  36 = b\cdot{} a^{20}$$
+    Die zweite Gleichung durch die erste teilen:
+    $$\frac{36}{68} = a^{10}$$
+    $$a = \sqrt[10]{\frac{36}{68}} \approx 0.938381$$
+    $b$ durch Einsetzen:
+    
+    $$b = \frac{68}{a^{10}} = \frac{1156}{9}$$
+    
+  }
+
+\item Wie warm war das Brot anfänglich?
+
+  \TRAINER{$$f(0) = 12+b\cdot{} a^0 = 12 + b = \frac{1264}9 \approx
+    140.44 \textrm{ Grad}$$}%% END Trainer
+\end{bbwAufgabenBlock}  
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  
+\TALS{%% TALS, da nur CAS Lösung
+\bbwActAufgabenNr{} \textbf{Dreipunkte Aufgabe}
 
-  
+Tee kühlt sich auf Zimmertemperatur ab. Die folgenden Temperaturen
+wurden gemesen:
+
+\begin{itemize}
+\item 52.4 Grad nach 6 Minuten
+\item 38.7 Grad nach 10 Minuten
+\item 31 Gard nach 14 Minuten
+  \end{itemize} 
+
+\begin{bbwAufgabenBlock}
+  \item Geben Sie eine allgemeine Funktionsgleichung für diese
+    Temperaturabnahme an (Da es verschiedene Zeitabstände sind, ist
+    die Wahl von $\tau = 1$ sinnvoll.
+    \TRAINER{$f(t) = c + b\cdot{}a^t$}
+
+  \item Wie hoch ist die Umgebungstemperatur?
+
+    \TRAINER{Taschenrechner Ansatz:
+      $$f(t) := c + b\cdot{} a^t$$
+
+      Gleichung:
+
+      $$gls := \{f(6)=52.4, f(10)=38.7, f(14)=31\}$$
+
+      Lösen:
+      $$solve(gls, c) \Longrightarrow  c\approx 21.12\degre$$
+    }
+\end{bbwAufgabenBlock}  
+}%% END TALS
 \newpage
