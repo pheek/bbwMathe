@@ -1,0 +1,19 @@
+%% TALS Metapackag: Stereometrie
+\part{Stereometrie}\index{Stereometrie|textbf}
+\renewcommand{\bbwPartID}{STEREO}
+
+\TALSTadBGeometrie{133}{3}
+
+\input{tals/stereo/WinkelUndLageImRaum}
+
+\input{tals/stereo/Elementare_Objekte}
+\input{tals/stereo/Zylinder}
+\input{tals/stereo/Konus}
+
+
+\input{tals/stereo/Aehnlichkeit3d}
+\input{tals/stereo/SchiefUndStumpf}
+\input{tals/stereo/Kugel}
+\input{tals/stereo/Elementare_Zusammenhaenge}
+\input{tals/stereo/Extremwertaufgaben}
+\newpage

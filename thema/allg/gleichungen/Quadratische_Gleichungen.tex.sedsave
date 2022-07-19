@@ -1,0 +1,433 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+\section{Quadratische Gleichungen\TALS{ I}}\index{Gleichungen!quadratische}
+\sectuntertitel{
+al-Kit\={a}b al-muhta\d{s}ar f\={i} \d{h}is\={a}b al-gabr wa-\'{}l-muq\={a}bala
+}
+
+\GESOTadBMTA{165}{10}
+\TALSTadBFWA{93}{2.3}
+
+Einführendes Youtube Video: \texttt{youtu.be/ZywdPuXR0S0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item Grundform
+\item Lösungsmethoden
+  \begin{itemize}
+    \item{Fallunterscheidung}
+    \item{Zerlegung in Linearfaktoren}
+    \item{Substitution}
+  \end{itemize}
+\item Allgemeine Form, ABC-Formel (Mitternachtsformel)
+\item Rationale Gleichungen
+\item Definitionsbereich
+\item Taschenrechner: Ohne Parameter
+\item Mögliche Lösungsverfahren und sinnvolle Anwendung
+\TALS{\item Taschenrechner: Visualisierung, Interpretation}
+\TALS{\item Linearfaktoren}
+\TALS{\item Substitution}
+\end{itemize}
+\newpage
+
+
+\subsection{Al Khwarizmi}
+\bbwCenterGraphic{6cm}{allg/gleichungen/img/AlKhwarizmiBriefmarke.png}
+Bildlegende: Al Khwarizmi auf einer russischen Briefmarke zum
+1200jährigen Gedenken. Quelle: \texttt{de.wikipedia.org} 2021.
+
+Al-Khwarizmis Buch (
+al-Kit\={a}b al-muhta\d{s}ar f\={i} \d{h}is\={a}b al-gabr wa-\'{}l-muq\={a}bala) \textit{über die Rechenverfahren durch Ergänzen und
+Ausgleichen} trägt zum Namen «Algebra» bei. In seinem Buch wird die
+quadratische Gleichung in allen Varianten gelöst.
+
+\subsubsection{Einstiegsaufgabe}
+Auf \textit{Insta} werden von einer Klasse innerhalb eines W-LANs 650
+\textit{Posts} getätigt. Wir gehen davon aus, dass dabei jedes
+Profilbild allen anderen geschickt wurde. Wie viele Personen waren
+beteiligt?
+
+\TNT{5.2}{
+  $n$ sei die Anzahl Schüler.
+
+  Jeder sendet $n-1$ Post; d.\,h. es werden $n\cdot{}(n-1)$ Posts
+  versendet.
+
+  Gleichung:
+
+  $n\cdot{}(n-1) = 650$
+
+  Lösung 26; dies kann \zB durch Ausprobieren ermittelt werden.
+}
+
+
+\begin{definition}{quadatische Gleichung}{}\index{quadratische Gleichung}\index{Gleichung!quadratische}
+  Bei einer \textbf{quadratischen Gleichung} kommt die Gesuchte in der
+  2. Potenz vor; \zB $x^2$.
+\end{definition}
+
+\newpage
+
+
+\subsection{Einstiegsbeispiele}
+$$x^2=50$$
+
+\TNT{2}{$x=\pm\sqrt{50} = \pm 5\sqrt2$ \vspace{15mm}}
+
+$$(x+5)^2=50$$
+
+\TNT{4}{$x+5=\pm\sqrt{50} \Rightarrow x = \pm\sqrt{50} - 5$, danach unbedingt Probe vorzeigen.\vspace{32mm}}
+
+%%\TRAINER{Normalform $x^2 +5x +6 = 0 \rightarrow (x+2)(x+3)=0$}
+%%\newpage
+
+\subsection*{Aufgaben}
+
+\GESO{\olatLinkArbeitsblatt{Quadratische Gleichungen}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/101586190756718}{bis
+    7. )}}
+
+\TALS{\olatLinkArbeitsblatt{Quadratische Gleichungen}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/102901170063995}{bis
+    7. )}}
+
+
+%%\aufgabenFarbe{Aufgabenblatt im OLAT (Gallin) bis Aufgabe 7}
+
+
+\GESOAadBMTA{181}{3. a) d) e), 4. e) [Bei Aufgabe 4. e) die Probe machen!]}
+
+\TALS{\newpage
+\input{tals/gl2/QuadratischeGleichungenSpezialfaelle}}%% END TALS
+
+\newpage
+
+
+\subsection{Quadratische Ergänzung (optional)}\index{quadratische Ergänzung}\index{Ergänzung!quadratische}
+Grundform\TRAINER{ (Normalform ist, wenn $a=1$)}:
+$$3x^2 - 11x - 4 = 0$$
+
+\TNTeop{
+$+4$, dann $:3 \Rightarrow$
+%%
+  $$x^2 - {\color{red}\frac{11}{3}}x  = \frac{4}{3}$$
+  quadratisch ergänzen:
+  $$x^2 - {\color{red}\frac{11}{3}}x + ({\color{green}\frac{1}{2}}\cdot{\color{red}\frac{11}{3}})^2 = \frac{4}{3} + ({\color{green}\frac{1}{2}}\cdot{\color{red}\frac{11}{3}})^2$$
+%%
+faktorisieren mit binomischer Formel:
+  $$(x - \frac{1}{2}\cdot\frac{11}{3})^2 = \frac{4}{3}+ \frac{121}{36}$$
+links Brüche multiplizieren, rechts ersten Bruch mit 12 erweitern:
+  $$(x - \frac{11}{6})^2 = \frac{48}{36}+ \frac{121}{36}$$
+%%
+  $$(x - \frac{11}{6})^2 = \frac{169}{36}$$
+%%
+Wurzel ziehen (Achtung, es kann zwei Lösungen geben)
+%%
+   $$x - \frac{11}{6} = \pm\sqrt{ \frac{169}{36}}$$
+%%
+   $$x - \frac{11}{6} = \pm \frac{13}{6}$$
+%%
+   $$x  = \frac{11}{6} \pm \frac{13}{6}$$
+%%
+   Erste Lösung $x=\frac{24}{6} = +4$ und zweite Lösung $x =
+   -\frac{2}{6} = -\frac{1}{3}$.
+%%
+   Probe: 4 und $-\frac{1}{3}$ einsetzen.
+}%% END TNT eop
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{$a$-$b$-$c$ -- Formel}\index{abc-Formel!quadratische Gleichung}\index{Mitternachtsformel}
+(Auch Mitternachtsformel)
+
+\begin{gesetz}{$a$-$b$-$c$ --Formel}{}
+Ist eine quadratische Gleichung in Grundform ($a\ne 0$) gegeben,
+$$ax^2 + bx + c = 0$$
+so ist die Lösung durch die folgende Formel bestimmt:
+
+$$x_{1,2}=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+\end{gesetz}
+
+\newpage
+
+
+\subsubsection{Beweis der abc-Formel \GESO{(optional)}}\index{Mitternachtsformel!Beweis}\index{abc-Formel!Beweis}
+\TRAINER{nach dorfuchs: [$-c$] [$\cdot{}4a$] [$+b^2$] [TU:
+    bin. Formel] [$\pm\sqrt{\,\,}$] [$-b$] [$/2a$]}
+\TRAINER{oder hier einfach das VIDEO von Dorfuchs zeigen; ca. 3
+  min.}%% END TRAINER
+
+\TNTeop{%%
+
+\begin{tabular}{c|c|c}
+Zahlenbeispiel                    & Vorgehen                     &  Allgemein           \\
+\hline
+$2x^2-14=4x$                      &                              & Grundform:        \\
+                                  & in Grundform bringen         &                     \\
+$2x^2-4x-14 = 0$                  &                              &  $ax^2 + bx + c =0$  \\
+                                  & $| -c $ ($x$ separieren)     &                      \\
+$2x^2-4x=14$                      &                              &  $ax^2 + bx = -c$    \\
+                                  & $| \cdot{} 4a$               &                      \\
+$16x^2 - 32x=112$                 &                              &  $4a^2x^2+4abx=-4ac$ \\
+                                  & $| + b^2$ (Binom Vorbereiten)&                        \\
+$16x^2 - 32x + 16 = 128$          &                              &  $4a^2x^2+4abx+b^2 = -4ac+b^2$ \\
+                                  & Binomische Formel            &                           \\
+$(4x-4)^2=128$                    &                              &  $(2ax+b)^2 = b^2-4ac$ \\
+                                  & $\pm\sqrt{\,}$ Wurzel ziehen &                           \\
+$4x-4 = \pm\sqrt{128}$            &                              &  $2ax+b=\pm \sqrt{b^2-4ac}$ \\
+                                  & nochmals $x$ separieren      &                              \\
+$4x   = 4 \pm \sqrt{128}$         &                              &  $2ax=-b\pm\sqrt{b^2-4ac}$ \\
+                                  & durch $2a$ teilen            &                              \\
+$x     = 1 \pm \frac14\sqrt{128}$ &                              &  $x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$ \\
+\hline
+\end{tabular}
+
+}%% END TRAINER TNT end of page
+
+
+
+\subsubsection{Anwenden der $a$-$b$-$c$ $-$ Formel}
+\begin{rezept}{$a$-$b$-$c$-Formel}{rezept_abc_formel}
+  Beispiel $$3x^2 = 9x - 6$$
+
+  1. in Grundform bringen: 
+
+\TNT{2}{  $$3x^2 -9x + 6 = 0$$\vspace{11mm}}%% end tnt
+
+2. $a$, $b$ und $c$ ermitteln:
+
+\TNT{3.6}{%%
+  
+  \begin{tabular}{c|c|c}
+  a&b&c\\
+  \hline
+  3 & -9 & 6\\
+  \end{tabular}
+  \vspace{15mm}
+}%% END TNT
+
+3. Einsetzen in \large{ $\frac{-b \pm \sqrt{b^2-4ac}}{2a}$}
+
+\TNT{4.4}{  $$\frac{-(-9) \pm \sqrt{(-9)^2-4\cdot{}3\cdot{}6}}{2\cdot{}3} = \frac{+9 \pm \sqrt{81 - 72}}{6}$$
+
+  $\lx = \{1; 2\}$
+  \vspace{11mm}
+}%% END TNT
+\end{rezept}
+
+\subsection*{Aufgaben}
+Mit der $a$-$b$-$c$ $-$ Formel:
+\GESOAadBMTA{181}{5. a) e), 6. d) und  7. a)  e)}
+\newpage
+
+
+\subsubsection{$a$, $b$ und $c$ finden}
+Betrachten wir das Beispiel in der Grundform:
+$$x^2 - 15 = 0$$
+Dies ist gleich
+
+$$ {\color{ForestGreen}1\cdot{}}  x^2 + {\color{blue}0\cdot{}} x {
+  \color{red} - 15} = 0.$$
+  
+Somit ist
+\begin{tabular}{|c|c|c|}
+    {\color{ForestGreen}a} & {\color{blue}b} &  {\color{red}  c} \\\hline
+    {\color{ForestGreen}1} & {\color{blue}0} &  {\color{red}-15}
+\end{tabular}.
+
+Gleich ein zweites Beispiel. Finden Sie $a$, $b$ und $c$ der folgenden
+quadratischen Gleichung:
+
+$$x^2-2rx-9 = -r^2 + 3x$$
+\TNT{4.8}{Grundform: $$x^2 + (-2r)\cdot{}x -3x+(r^2-9) = 0$$
+$$(1)\cdot{}x^2 + (-2r-3)\cdot{}x +(r^2-9) = 0$$
+  Somit ist
+
+  \begin{tabular}{|c|c|c|}
+  $a$ & $b$     & $c$ \\\hline
+  1   & $-2r-3$ & $r^2 - 9$
+  \end{tabular}
+ 
+}%% END TNT
+\newpage
+
+
+\subsection*{Aufgaben}
+
+\GESO{\olatLinkArbeitsblatt{$a$-$b$-$c$-Finden}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/101937272610102}{(Alle Übungen)}}%% END olatLinkArbeitsblatt
+\TALS{\olatLinkArbeitsblatt{$a$-$b$-$c$-Finden}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/101937272612767}{(Alle Übungen)}}%% END olatLinkArbeitsblatt
+
+
+\GESOAadBMTA{182}{13. a) b)}
+Wer fertig ist:\\
+
+
+\GESO{\olatLinkArbeitsblatt{Quadratische
+    Gleichungen}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/101586190756718}{(Weiter
+    ab derjenigen Nummer, wo Sie aufgehört hatten.)}}
+
+\TALS{\olatLinkArbeitsblatt{Quadratische Gleichungen}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/102901170063995}{(Weiter
+    ab derjenigen Nummer, wo Sie aufgehört hatten.)}}
+
+
+\TALSAadBAlgebra{95ff}{269. a), 275. a) b) d), 276. a) b) f)}%%
+
+\newpage
+
+
+\subsubsection{Taschenrechner Tipps}
+
+\TRAINER{Was fällt bei folgender Gleichung auf?}
+$$72x^2 - 605 x + 848 = 0$$
+
+\TALS{Der CAS\footnote{CAS = Computer Algebra System}-Rechner kann
+  quadratische Gleichungen einfach mit der \texttt{solve}-Funktion
+  lösen:
+
+  \texttt{solve(} $5x^2 - 6x = 3x -5$ \texttt{,} $x$ \texttt{)}
+}
+
+\GESO{
+  Der TI-30X Pro MathPrint kann quadratische Gleichungen mit Zahlen direkt auflösen.
+  Doch dazu einige Tipps:
+  
+  \begin{tabular}{|c|p{13cm}|}
+    \hline
+    Tasten & Bemerkung \\
+    \hline
+    \tiprobutton{2nd}\tiprobutton{cos_poly-solv} & Starte das Lösen
+    von quadratischen Gleichungen. Lösung obiger Gleichung: $\lx=\left\{\frac{53}8,\frac{16}9\right\}$\\
+    \hline
+    \tiprobutton{2nd}\tiprobutton{mode_quit}      & Beende den Poly-Solver.\\
+    \hline
+    \tiprobutton{neg} & Negative Zahlen nicht mit dem Subtraktionsoperator sondern mit der Vorzeichen-Taste eingeben.\\
+    \hline
+    \textbf{ACHTUNG} & Das Resultat lässt beim TI-30X Pro negative Wurzeln zu! Dies wird in der Lösung mit $i$ angegeben ($i$ steht für die imaginäre Einheit: $i=\sqrt{-1}$). Das $i$ kann aber je nach Modus erst gesehen werden, wenn mit der Pfeiltaste ganz nach rechts \textit{gescrollt} wurde.
+    
+    Steht ein $i$ in der Lösung des Taschenrechners, so gibt es keine reellen Lösungen und wir schreiben
+
+    $\lx=\{\}$\\
+    \hline
+  \end{tabular}
+  
+  Lösen Sie mit dem Taschenrechner:
+$$5x^2 - 7x + 2 = 0$$
+\TNT{2}{$x_{1,2} = 1, 0.4$\vspace{16mm}}
+$$x^2 +x  = -1$$
+\TNT{2}{$x_{1,2} = \textrm{keine reelle Lsg. mit} \approx
+  \textrm{verschwindet das }i \textrm{ aus dem Sichtfeld}$\vspace{16mm}}%% END TNT
+}%% END GESO
+
+\GESO{%%
+\newpage
+\begin{rezept}{}{}
+Mit dem Taschenrechner reduzieren sich Aufgaben (ohne Parameter) auf
+das \textbf{Umformen} einer quadratischen Gleichung in die \textbf{Grundform}.
+\end{rezept}
+
+  \subsection*{Aufgaben mit Taschenrechner}
+  \GESOAadBMTA{182}{ 8. a) d) e) i), 9. c) und 10. b) e)}
+}%% END GESO
+
+\newpage
+
+
+\subsection{Diskriminante}\index{Diskriminante}\label{diskriminante}
+Die \textbf{Diskriminante} ist das, was in der $a$-$b$-$c-$Formel unter der Wurzel steht (= Radikand).
+
+$D := b^2 - 4ac$
+
+«diskriminieren = unterscheiden»
+
+Mit der Diskriminante ist eine einfache \textbf{Fallunterscheidung} möglich:
+\begin{itemize}
+\item $D > 0 \Rightarrow $ zwei Lösungen:
+  $$x_{1,2} = \frac{-b \pm \sqrt{D}}{2a} = \frac{-b \pm \sqrt{b^2 -
+    4ac}}{2a}$$
+
+\item $D = 0 \Rightarrow $ eine Lösung:
+  $$ x = \frac{-b}{2a}$$
+
+\item $D < 0 \Rightarrow $ keine Lösung in $\mathbb{R}$
+
+\end{itemize}
+
+\subsubsection{Anwendung}
+Entscheiden Sie, wie viele Lösungen die gegebenen Gleichungen haben:
+
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{c|c|p{5cm}}
+  $x^2 + 3x +1 = 0$ & $b^2-4ac = \LoesungsRaumLang{9 -4 > 0}$ & \LoesungsRaumLang{zwei Lösungen} \noTRAINER{\phantom{xxxxxxxxxx}} \\
+  \hline
+  $x^2 + 2x +1 = 0$ & $b^2-4ac = \LoesungsRaumLang{4 -4 = 0}$ & \LoesungsRaumLang{eine Lösung} \\
+  \hline
+  $x^2 + 1x +1 = 0$ & $b^2-4ac = \LoesungsRaumLang{1 -4 < 0}$ & \LoesungsRaumLang{keine Lösungen} \\
+\end{tabular}
+\renewcommand{\arraystretch}{1}
+\newpage
+
+\GESO{
+  \subsection*{Aufgaben}
+  Vorzeigeaufgabe: S. 183.: 16. b)%%
+  \GESOAadBMTA{182ff}{11. c) f), und 16. c)}
+}%% END GESO
+
+\newpage
+
+
+\input{allg/gleichungen/Quadratische_Gleichungen_Substitution}
+
+\newpage
+
+
+\subsection{Welches Verfahren (optional)}
+Wann soll welches Verfahren eingesetzt werden? Dies ist eine
+individuelle Fragestellung. Je mehr Erfahrung man hat, umso eher sieht
+man die Spezialfälle. Die $a$-$b$-$c$-Formel funktioniert immer, doch
+die anderen Verfahren (Binome, weitere Spezialfälle, Taschenrechner)
+sind oft sinnvoller. Hier ein Versuch eines Überblicks:
+
+\GESO{
+\begin{tabular}{|p{44mm}|p{53mm}|p{64mm}|}
+	\hline
+	Spezialfall $b=0$               & $5x^2 = 3$                   & Durch 5 dividieren, dann positive und negative Wurzel ziehen.\\
+	\hline
+	Spezialfall $c=0$               & $3x^2 = 5x$                   & Fallunterscheidung $x$ = 0 und $x \ne 0$\\
+	\hline
+	Bereits faktorisiert       & $(x-4.6 + b)\cdot{}(x+a) = 0$ & Lösungen hier $x_1=4.6-b$ und $x_2 = -a$\\
+	\hline
+	Einfache Zahlen            & $x^2 -2x + 1= 0$           & $a$-$b$-$c$--Formel (Mitternachtsformel) oder faktorisieren $x^2-2x+1=(x-1)^2$ und danach jeden einzelnen Faktor $=0$ setzen.\\
+	\hline
+	Komplizierte Zahlen        & $7.3x^2 - 8x - 3.4 = 0$       & Taschenrechner \tiprobutton{cos_poly-solv}             \\
+	\hline
+	Variable (Parameter)       & $7.3x^2 - cx + 2.6=0$         & $a$-$b$-$c$-Formel (Mitternachtsformel) \\
+	\hline
+	Komplexe Terme im Quadrat  & $3(x-6)^2 - 17(x-6)  = 0$     & Substitution                            \\
+	\hline
+\end{tabular}
+\newpage
+}
+
+\TALS{
+\begin{tabular}{|p{49mm}|p{53mm}|p{60mm}|}
+	\hline
+	Spezialfall $b=0$               & $5x^2 = 3$                   & Durch 5 dividieren, dann positive und negative Wurzel ziehen.\\
+	\hline
+	Spezialfall $c=0$               & $3x^2 = 5x$                   & Fallunterscheidung $x$ = 0 und $x \ne 0$\\
+  \hline
+	Bereits faktorisiert & $(x-4.6 + b)\cdot{}(x+a) = 0$ & Lösungen hier $x_1=4.6-b$ und $x_2 = -a$\\
+	\hline
+	Einfache Zahlen      & $6x^2 -3x - 18 = 0$               & $a$-$b$-$c$-Formel (Mitternachtsformel) \\
+	\hline
+	Komplizierte Zahlen  & $7.3x^2 - 8x - 3.4 = 0$           & Taschenrechner (solve())                \\
+	\hline
+	Variable             & $7.3x^2 - cx + 2.6=0$         & Taschenrechner                          \\
+	\hline
+	Gesucht Anzahl Lösungen (auf 1)
+           beschränken & $7.3x^2 - cx + 2.6 = 	0$     & 	Diskriminante mit Taschenrechner Null setzen.\\
+	\hline
+\end{tabular} 
+}
+\newpage

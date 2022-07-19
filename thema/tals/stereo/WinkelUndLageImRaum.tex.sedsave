@@ -1,0 +1,59 @@
+\section{Winkel im Raum}\index{Winkel im Raum}
+\sectuntertitel{}
+
+
+\subsection{Lage Im Raum}
+\TALSTadBFWG{134}{3.1.1\TRAINER{auch S. 135 behandeln}}
+
+\subsubsection*{Lernziele}
+\begin{itemize}
+\item windschief
+\item Durchstoß
+\end{itemize}
+
+\TALSAadBGeometrie{136}{6. b) c) und g), 9.}
+\newpage
+
+
+\subsection{Winkel im Raum}
+
+
+\subsection*{Lernziele}
+\begin{itemize}
+\item Winkel in Körpern berechnen
+\end{itemize}
+
+
+Einstieg und Repetition: Berechnen Sie den Winkel $\alpha$ im folgenden Dreieck.
+
+\bbwCenterGraphic{5cm}{tals/stereo/img/einstiegTrigo.png}
+
+$$\alpha= \LoesungsRaumLang{ \arctan(\frac{\sqrt2}2) \approx 35.26\degre  }$$
+
+\TALSTadBFWG{138}{3.1.2}
+\newpage
+
+
+
+\subsubsection{Referenzaufgabe: Winkel im Quader}
+
+Berechnen Sie im folgenden Quader den Winkel $\beta = \angle ABC$:
+\bbwCenterGraphic{10cm}{tals/stereo/img/ReferenzaufgabenWinkelImQuader.png}
+\TNT{2.0}{Idee: Den «richtigen» Schnitt finden und danach mit trigonometrischen
+  Methoden die Aufgabe lösen.}%% END TNT
+
+Lösungsweg:
+\TNT{4.4}{\begin{itemize}
+  \item Schnitt des Quaders durch die Ebene, welche durch das Dreieck
+    $\triangle ABC$ bestimmt ist.
+  \item Berechne (mit Pythagoras) die Strecke $\overline{AB}$:\\
+    
+    $|\overline{AB}| = \sqrt{3.5^2 + 2.5^2}$.
+  \item Im $\triangle ABC$ gilt $\tan(\beta) = \frac{5.0}{|\overline{AB}|}$. Und daraus ergibt sich
+    $$\beta = \arctan(\frac{5.0}{\sqrt{3.5^2 + 2.5^2}}) \approx 49.30\degre$$
+\end{itemize}}
+
+\subsection*{Aufgaben}
+\TALSAadBGeometrie{139}{21. a) b) und c) und 22.}
+\newpage
+

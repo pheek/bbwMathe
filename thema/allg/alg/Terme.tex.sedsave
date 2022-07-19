@@ -1,0 +1,265 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+
+\section{Terme}\index{Term}
+\sectuntertitel{Römische Bäder?}
+
+\TALSTadBFWA{10}{1.1.3}
+\GESOTadBMTA{17}{1.3}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+ \item Termanalyse (Summe, Differenz, Produkt, Quotient, Potenz)
+ \item Hierarchie der Terme (Vorrangregeln)
+ \item Termumformungen
+ \item Ausmultiplizieren
+\end{itemize}
+\newpage
+
+\subsection{Term-Definition}\index{Term}
+\begin{definition}{Term}{definition_term}
+  Ein \textbf{Term} ist entweder
+  \begin{itemize}
+  \item ein Atom (eine Zahl (\zB{} $4.86$) oder  eine Variable (\zB{}
+  $a$, $x$))
+  \item ein Klammerausdruck (\zB{} \fbox{({\color{green}T})}, inkl.  Wurzeln \fbox{$\sqrt{\color{green}T}$})\footnote{Dabei wird der
+  horizontale Strich wie eine Klammer aufgefasst.}
+%%  \item weitere \TALS{Monome\index{Monom}}\GESO{Summanden (Teile einer Summe)}:
+%%    \begin{itemize}
+   \item eine \textbf{Potenz}\index{Potenz}\footnote{Als Exponent darf
+     ein beliebiger Term eingesetzt werden, wohingegen als Basis
+     lediglich Atome, Klammerausdrücke und Wurzelterme verwendet
+     werden dürfen, wegen der Verwechslungsgefahr. Bei
+     ${\frac{a}{b}}^c$ ist nämlich nicht klar, wohin das $c$ denn gehört.} (\fbox{${\color{green}T_1}^{\color{green}T_2}$} \zB{} $a^3$, $(2a - 4)^{x+2}$)
+    \item  ein Bruchterm\footnote{Wie bei der Wurzel, dient der Bruchstrich als Klammerpaar: $\frac{U}{V}=(U):(V)$} (\fbox{$\frac{\color{green}T_1}{\color{green}T_2}$} \zB{} $\frac{2^x}{x^2}$)
+    \item ein implizites \textbf{Produkt}\footnote{Ein implizites
+      Produkt ist mit Koeffizienten angereicherter Ausdruck
+      \textbf{ohne} Multiplikationszeichen.} (\zB{}
+      ${\color{red}4a}{\color{green}T}$)\footnote{Tritt eine Zahl auf,
+      so ist diese immer ganz links zu schreiben. Zahlen rechts von
+      Ausdrücken werden mit einem Multiplikationszeichen ($\cdot$) versehen: $5x$, aber $x\cdot{}5$.}
+    \item ein explizites \textbf{Produkt}\index{Produkt} ($\cdot$;  ${\color{green}T_1}\cdot {\color{green}T_2}$ \zB{} $a\cdot(-1)$) bzw. ein expliziter \textbf{Quotient}\index{Quotient} ($:$, $/$, $\div$; $6a\cdot3b$ bzw. ${\color{green}T_1}:{\color{green}T_2}$ \zB{} $36m^2:12m^2$)
+%%    \end{itemize}
+  \item eine \textbf{Summe}\index{Summe} (bzw. \textbf{Differenz}\index{Differenz}) von \TALS{Monomen}\GESO{Summanden\index{Summand}}
+  (Zum Beispiel bilden die folgenden
+  vier «Pakete» eine Differenz):\\
+  $-4x^2 + \frac{3a+b}{x} + \sqrt{5y^2-6} - 5t:2t$
+
+    \end{itemize}
+(In obiger Aufzählung hat der am höchsten stehende Term die größte
+«Bindungskraft». Beispiel «Punkt vor Strich».)
+\end{definition}
+
+\textbf{Gegenbeispiele}
+Keine Terme sind \zB{}: $x \cdot{}-8$, $\sqrt{+^2}$, $4+*($, $\frac{7}{+}$, $\frac{(a+b}{-c-d)}$.
+
+Generell werden die fünf wichtigsten Termarten in die folgenden drei Kategorien eingeteilt:
+\begin{itemize}
+\item Potenz
+\item Produkt und Quotient
+\item Summe und Differenz
+\end{itemize}
+
+
+\newpage
+
+\subsection{Vorrangregeln}\index{Vorrangregeln}
+
+Es gilt Punkt vor Strich. Daneben bindet ein Exponent (\zB $5^8$) noch
+stärker. Am stärksten binden Klammern oder horizontale Linien
+(Bruchstrich, Wurzelzeichen).
+
+\bbwCenterGraphic{8cm}{allg/alg/img/Klapopustri.png}
+\begin{center}
+  Das \textit{Klapopustri}\index{Klapopustri} meint dazu:
+
+  \textbf{Klammern} vor \textbf{Potenzen} vor \textbf{Punkt} vor
+  \textbf{Strich}
+  
+\end{center}
+
+
+
+
+Beispiel:
+$$-10^4 = \LoesungsRaumLang{-(10^4) = -
+  (10\cdot{}10\cdot{}10\cdot{}10) = -10\,000}$$
+\newpage
+
+\subsubsection{Terme benennen}
+Nicht jeder Term, der ein Pluszeichen enthält, ist automatisch eine
+Summe.
+
+Teilen Sie die folgenden Terme in die Kategorie «Summe/Differenz»,
+«Produkt/Quotient» und «Potenz/Wurzel» ein. Tipp: Setzen Sie vorab
+«unnötige» Klammern und Multiplikationspunkte:
+
+
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{c|c|c}
+  Term                       & mit Klammern                        & Zuordnung\\\hline
+  $3x^{4-a} - y^{b+2}$ & $\left(3\cdot{}\left(x^{(4-a)}\right)\right) - \left(y^{(b+2)}\right)$  &  Differenz \\\hline
+  $ax + 2b$ & \TRAINER{$(a\cdot{}x) + (2\cdot{}b)$} & \TRAINER{Summe}\\\hline
+  $\frac{5+x}{5x}$ & \TRAINER{$\frac{(5+x)}{(5\cdot{}x)}$} & \TRAINER{Quotient}\\\hline
+  $\sqrt{2x^3+5}$ & \TRAINER{$\sqrt{((2\cdot{}(x^3)) + 5)}$} & \TRAINER{Wurzelterm}\\\hline
+  $(a+b)^{c+d}$ & \TRAINER{$(a+b)^{(c+d)}$} & \TRAINER{Potenz}\\\hline
+  $(5-3y)c^8$ & \TRAINER{$(5-3\cdot{}y)\cdot{}(c^8)$} & \TRAINER{Produkt}\\\hline
+  $(\sqrt{x-3}+\sqrt{8-b})^2$ & \TRAINER{$((\sqrt{(x-3)})+(\sqrt{(8-b)}))^2$} & \TRAINER{Potenz}\\\hline
+  $\frac15-2\cdot{}4^{x+1}$ & \TRAINER{$\frac15-\left(2\cdot{}\left(4^{(x+1)}\right)\right)$} & \TRAINER{Differenz}\\\hline
+\end{tabular}
+
+\renewcommand{\arraystretch}{2}
+\newpage
+
+\TALS{\TRAINER{
+Im Compilerbau (Schreiben einer Programmiersprache) werden die
+folgenden Vorrangregeln verwendet:
+
+\begin{itemize}
+\item Term :== Summand \{'+'|'-' Summand\}*\\
+\TRAINER{$4a^3 - 6\cdot az^{(7+b)} : \sin(30)$}
+
+\item Summand :== ExpilziterFaktor \{'$\cdot$'|'/' ExpliziterFaktor\}*\\
+\TRAINER{$4a^3$, $6 \cdot az^{(7+b)} : \sin(30)$}
+
+\item ExpliziterFaktor :== Faktor \{Faktor\}*\\
+\TRAINER{$4a^3$, $6$, $az^{(7+b)}$, $\sin(30)$}
+
+\item Faktor :== SkalarOderKlammerausdruck \{${\,}^{Term}$\}?\\
+\TRAINER{$4$, $a^3$, $6$, $a$, $z^{(7+b)}$, $\sin(30)$}
+
+\item SkalarOderKlammerausdruck :== Zahl |
+           Variable |
+           $\sqrt[Term]{Term)}$ | 
+           '(' Term ')' |
+           $\frac{Term}{Term}$|
+           \textit{Funktionsname} '(' Term ')'\\
+\TRAINER{$4$, $a$, $3$, $6$, $a$, $z$, $(7+b)$, $\sin(30)$}
+
+\item \textit{Funktionsname} := 'sin', 'cos', 'tan', 'log', 'lg', 'ln', ....
+\end{itemize}
+}%% END TRAINER
+\noTRAINER{\newpage\mmPapier{180mm}}
+}%% IND TALS
+
+
+\TALS{\newpage
+\textbf{Achtung} Bei zusammengeschriebenen Faktoren (\zB $ab$) bindet
+           die Multiplikation stärker als beim expliziten verwenden
+           des Multiplikationszeichens (\zB $a\cdot{}b$). Beispiel
+           $a\cdot bm = a\cdot (b\cdot m)$.
+
+Gleich ein Beispiel, wo dies eine Rolle spielt:
+$$111x : 37x = (111x) : (37x) = 3$$
+Aber
+$$111\cdot x : 37\cdot x = ((111 \cdot x) : 37) \cdot x = 3x^2$$
+}%% END TALS
+
+\subsection*{Aufgaben}
+\GESOAadBMTA{23ff}{21. und 22.}
+\TALSAadBAlgebra{11}{9.}
+\TRAINER{Hier auf die Lösungen zum Buch im OLAT aufmerksam machen.}
+\TNTeop{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Terme mit Namen}
+Oft gibt man Termen Namen, um sie einfacher identifizieren und
+bezeichnen zu können. So könnte \zB die Oberfläche einer
+Konservendose mit $A$ (Area) wie folgt bezeichnet werden, wenn $r$ den
+Radius bzw. $h$ die Höhe bezeichnen:
+
+$$A(r, h) = r^2\pi + r^2\pi + 2r\pi{}h$$
+
+Dabei ist $A$ der Name des Terms und $r$ bzw. $h$ sind die Parameter.
+\vspace{3mm}
+\begin{beispiel}{Werte einsetzen}{beispiel_terme_werte_einsetzen}
+  Wir betrachten den Term
+
+  $T({\color{red}a}, {\color{blue}x}) = 5{\color{red}a}{\color{blue}x} - {\color{red}a} + 7$.
+
+  Nun gilt, dass für jeden Parameter im Term (hier ${\color{red}a}$
+  bzw. ${\color{blue}x}$) jede Zahl eingesetzt
+  werden kann.\leserluft{}
+
+  $T({\color{red}2}, {\color{blue}-3}) = \LoesungsRaumLang{5\cdot{}{\color{red}2}\cdot{\color{blue}(-3)} - {\color{red}2} + 7}$
+
+  Es können auch Terme anstelle der Parameter eingesetzt
+  werden\footnote{Beachten Sie, dass beim Einsetzen von Termen in der Regel
+  Klammern gesetzt werden müssen!}:\leserluft{}
+
+  $T({\color{red}z-4}, {\color{blue}2y}) =
+  \LoesungsRaumLang{5 \cdot{} {\color{red}(z-4)} \cdot {\color{blue}(2y)} - {\color{red}(z-4)} + 7}$
+\end{beispiel}
+
+\begin{bemerkung}{}{}
+Achten Sie beim Ersetzen des Parameters durch das Argument auf die
+Klammersetzung. Wenn nicht sicher: Immer Klammern um die Argumente
+setzen, welche für die Parameter eingesetzt werden:
+
+$$ a = z-4$$
+$$ a  \rightarrow (z-4)$$
+\end{bemerkung}
+
+\begin{gesetz}{Einsetzen}{}
+  Beim Einsetzen eines Term in eine Variable sind \textbf{immer} Klammern zu setzen!
+\end{gesetz}
+\newpage
+
+\subsubsection{Übungsbeispiel}
+$$T(b, y) = 7y^2 - 4by$$
+
+Wir berechnen
+
+
+$T(\underbrace{{\color{blue}s}}_b, \underbrace{{\color{green}-t}}_y) = $%%
+\noTRAINER{.......................................................}%%
+\TRAINER{$7\cdot (\underbrace{{\color{green}-t}}_{y})^2 - 4\cdot (\underbrace{{\color{blue}s}}_b) \cdot (\underbrace{{\color{green}-t}}_y) = 7t^2+4ts$}
+
+und
+
+$T(x, 2b) = $ \noTRAINER{.........................................................}\TRAINER{$7(2b)^2 - 4\cdot (x) \cdot (2b) = 28b^2 - 8bx =
+  4b (7b-2x)$}
+\newpage
+\subsection*{Aufgaben}
+
+\aufgabenFarbe{Berechnen Sie die Werte der folgenden Terme und kontrollieren Sie anschließend Ihre Resultate mit dem Taschenrechner:}
+
+\begin{tabular}{|c|c|}
+  $-10^4$ & $\LoesungsRaum{-10\,000}$\\
+  $(-10)^5$ & $\LoesungsRaum{-100\,000}$\\
+  $(-100)^2$ & $\LoesungsRaum{+10\,000}$\\
+  $x^6\textrm{, für } x=-1$ & $x^6= \LoesungsRaum{+1}$\\
+  $-x^5\textrm{, für } x=-10$ & $-x^5= \LoesungsRaum{+100\,000}$\\
+  $(-x)^3\textrm{, für } x=-2$ & $(-x)^3= \LoesungsRaum{+8}$\\
+
+  $A(r) = r^2\pi$ & $A(4)=$ \LoesungsRaum{$16\pi\approx{}50.27$}\\
+  $T(x) = -x^2\cdot{}x^1$ & $T(3)=$ \LoesungsRaum{$-27$}\\
+  $f(x) = -x^2\cdot{}x^3$ & $f(-2)=$ \LoesungsRaum{$+16$}\\
+  $D(a;b;c) = b^2-4ac$ & $D(1; -2; -3)=$ \LoesungsRaum{16}\\
+\end{tabular}
+
+
+\newpage
+\aufgabenFarbe{Füllen Sie die folgende Tablele aus:}
+\begin{tabular}{cccrcc}
+  $x$     & 5                       & 3                    &  -1                 & 0\\\hline
+  $a$     & 2                       & $\frac12$            &   0                 & -3\\\hline
+  $b$     & 0                       & 2                    &  -1                 & 1\\\hline\hline
+  $x^2$   & 25                      & \LoesungsRaum{9 }    &  \LoesungsRaum{1}   & \LoesungsRaum{0}\\\hline
+  $x^3$   & \LoesungsRaum{125}      & \LoesungsRaum{27}    &  \LoesungsRaum{-1}  & \LoesungsRaum{0}\\\hline
+  $-x^2$  & \LoesungsRaum{-25}       & \LoesungsRaum{-9 }   &  \LoesungsRaum{-1}  & \LoesungsRaum{0}\\\hline
+  $a-b^2$ & \LoesungsRaum{2}        & \LoesungsRaum{-3.5}  &  \LoesungsRaum{-1}  & \LoesungsRaum{-4}\\\hline
+  $10x^2$ & \LoesungsRaum{250}      & \LoesungsRaum{90}    &  \LoesungsRaum{10}  & \LoesungsRaum{0}\\\hline
+  $\left(-\frac{b}{-a}\right)$
+          & \LoesungsRaum{0}       & \LoesungsRaum{4}      &  \LoesungsRaum{geht nicht}  & \LoesungsRaum{$-\frac13$}\\\hline
+  
+  
+\end{tabular}
+
+Weitere Trainingsaufgaben im Buch. Beispiel:
+\TALSAadBAlgebra{11}{8. a)}
+\GESOAadBMTA{24ff}{26. a) b) c), 27. a) 28., 29.}
+\newpage

@@ -1,0 +1,105 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+
+\section{Datentypen und Skalen}\index{Datentypen}\index{Skala}
+\sectuntertitel{Mit Statistik kann man alles beweisen...}
+
+\GESOTadBMTA{363}{21}
+\TALSTadBFWA{284}{4.1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+  \item Grundlagen
+  \item Tabellenkalkulation
+  \item Datentypen (Merkmalsausprägung) und Skalen
+\end{itemize}
+
+\bbwCenterGraphic{16cm}{allg/daan/img/Dreun.png}
+
+\newpage
+
+
+
+\subsection{Merkmalstypen}
+Merkmale werden in verschiedene \textbf{Kategorien}\index{Kategorie} und \textbf{Skalen}\index{Skala} eingeteilt. Hier ein Versuch eines Überblickes:
+
+
+\bbwCenterGraphic{17cm}{allg/daan/img/Datentypen.png}\index{Ordinale
+  Daten}\index{Nominale
+  Daten}\index{Verhältnis-Skala}\index{Kardinalskala}\index{Intervallskala}
+
+\subsubsection{Stetig / Diskret}
+Eine Unterscheidung in «stetig»\index{stetig} und
+«diskret»\index{diskret} ergibt nur bei quanitativen Daten Sinn. Bei
+\textbf{stetigen} Werten kann ein neuer Wert zwischen jeden anderen
+Werten liegen (m, kg, ...). Bei \textbf{diskreten} Werten gibt es
+Lücken wie \zB bei der digitalen Uhrzeit liegt nichts zwischen 19:03
+und 19:04.
+\newpage
+
+\subsubsection{Entscheidungshilfe zu Skalen}
+
+\bbwCenterGraphic{14cm}{allg/daan/img/DatenanalyseSkalentypen.pdf}\index{Ordinale Daten}\index{Kardinal-Skala}\index{Intervall-Skala}
+
+
+\GESO{\cite{marthaler21} S. 376}\TALS{\cite{frommenwiler17alg} S. 249}
+
+Die «Datentypen» (\zB ganze Zahlen / Farbnamen / ...) werden in der deskriptiven
+Statistik auch \textbf{Merkmalsausprägung}\index{Merkmalsausprägung} genannt.
+
+
+\begin{tabular}{|p{4cm}|p{8cm}|p{4cm}|}
+  \hline
+  Skala & Beschreibung & Beispiele\\\hline
+  Nominal-Skala & Werte haben ausschließlich Namen und können nicht
+  geordnet werden. & Handy-Marken; Lieblingsfarbe; ...\\\hline
+  Ordinal-Skala & Es gibt eine Natürliche Ordnung, jedoch sind die
+  Abstände zwischen den Werten nicht messbar & Medallien
+  (gold/silber/bronze); ...\\\hline
+  Intervall-Skala & Intervalle können metrisch angegeben werden ---
+  Differenzen können in kg, m, s, etc. berechnet werden & Grad
+  Celsius, Östlicher Längengrad; ...\\\hline
+  Verhältnis- oder Kardinal-Skala\index{Kardinalskala} & Es gibt einen
+  natürlichen Nullpunkt und \textbf{Verhältnisse} (\zB «doppelt so groß»)
+  können gebildet werden. & Anzahl; Gewicht in kg; Dicke in cm; ...\\\hline
+  \end{tabular}
+\newpage
+
+
+
+
+\subsection*{Aufgaben}
+\GESO{In Kapitel 21 (S. 363 im Buch) sind
+  Beispiele aufgezeigt. Beantworten Sie folgende Fragen:
+  \TRAINER{In Klassen mit etwas mehr Zeit: Wählt Euch in Teamarbeit
+    ein Beispiel aus, die   ihr in max. 5 Minuten der Klasse
+    erklärt. In Klassen mit weniger Zeit: Beantworten Sie die
+    folgenden Fragen für die Beispiele 1-5}
+  \begin{itemize}
+  \item Welcher Datentyp liegt zu Grunde? 
+  \item Welche Darstellungsart (Diagramm) ist sinnvoll? 
+  \item Welche Fehler könnten sich einschleichen?
+  \item (optional) Welche Erhebungsart wurde verwendet? 
+  \end{itemize}
+}%% END GESO
+\TALSAadBAlgebra{249}{942. 943.}
+\GESOAadBMTA{401}{6}
+
+\aufgabenFarbe{Klassifizieren Sie die Daten aus dem eigenen Fragebogen
+  in die folgenden Kategorien:\\
+  \begin{tabular}{c|c|c|c}
+    nominal & ordinal & Intervall & Verhältnis\\\hline
+    Handymarke &\hspace{40mm} &\hspace{40mm} &Umfang Handgelenk\\
+    ...&\hspace{40mm} &\hspace{40mm} &...\\
+    \hspace{40mm}&\hspace{40mm} &\hspace{40mm} &\hspace{40mm}\\
+    \hspace{40mm}&\hspace{40mm} &\hspace{40mm} &\hspace{40mm}\\
+    \hspace{40mm}&\hspace{40mm} &\hspace{40mm} &\hspace{40mm}\\
+    \hspace{40mm}&\hspace{40mm} &\hspace{40mm} &\hspace{40mm}\\
+    \hspace{40mm}&\hspace{40mm} &\hspace{40mm} &\hspace{40mm}\\
+    \hspace{40mm}&\hspace{40mm} &\hspace{40mm} &\hspace{40mm}\\
+    \hspace{40mm}&\hspace{40mm} &\hspace{40mm} &\hspace{40mm}\\
+    \end{tabular}}
+
+\newpage

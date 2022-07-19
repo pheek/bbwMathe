@@ -1,0 +1,107 @@
+\section{Schiefe und stumpfe Körper}\index{schief!Körper}\index{stumpf!Körper}
+
+Pyramide : \TALSTadBGeometrie{150}{$n$-seitiger Pyramidenstumpf}
+
+Kreiskegel: \TALSTadBGeometrie{165}{Kreiskegelstumpf}
+
+\subsection*{Lernziele}
+\begin{itemize}
+\item Prinzip von Cavalieri
+\item Stumpf = Ersatzkörper minus Spitze
+\end{itemize}
+
+\bbwCenterGraphic{8cm}{tals/stereo/img/SchiefUndStumpf.png}
+
+\begin{bemerkung}{Deckfläche}{}
+Die Deckfläche beim stumpfen allgemeinen Kegel ist parallel zur
+Grundfläche und ist dieser (in der Form) ähnlich.
+\end{bemerkung}
+
+\begin{bemerkung}{gerade}{}
+  Der «gerade» allgemeine Kegel kann nur als \textbf{gerader Kegel}
+  bezeichnet werden, wenn die Grundfläche eine eindeutige Mitte
+  aufweist (Parallelogramm, Ellipse, ...). Die Kegelspitze steht dann senkrecht über dieser Mitte.
+\end{bemerkung}
+  \newpage
+
+
+\subsection{Schiefe Körper: Cavalieri}\index{schiefe Körper}\index{Cavalieri}
+Bonaventura Francesco Cavalieri (1598 – 1647)
+
+Das \textbf{Prinzip von Cavalieri} sagt aus, dass zwei Körper das
+selbe Volumen haben, genau dann, wenn sie in jeder horizontalen
+Schnittebene die selbe Fläche aufweisen.
+
+\bbwCenterGraphic{18cm}{tals/stereo/img/Cavalieri.png}
+Bildquelle: \texttt{www.slideshaer.net} (Mai 2021)
+\vspace{9mm}
+
+\begin{gesetz}{schiefe Körper}{}
+  Schiefe Körper haben das selbe Volumen, wie der entsprechende gerade Körper, dabei wird die Höhe $h$ auch hier als Abstand zwischen Grund- und Deckflächenebene verwendet.
+
+  $$V = G\cdot{} h$$
+\end{gesetz}
+
+\newpage
+
+
+\subsection{Kreiskegelstumpf / Pyramidenstumpf}
+\TRAINER{Optional?}
+
+
+\bbwCenterGraphic{6.5cm}{tals/stereo/img/VolumenKegelstumpf.png}
+
+
+\begin{gesetz}{Volumen Pyramidenstump}{}
+
+  $G$ = Grundfläche; $D$ = Deckfläche
+
+  $h$ = Höhe des Stumpfs
+  
+  $$V = \frac13 (G + \sqrt{GD} + D)\cdot{}h$$
+\end{gesetz}
+\newpage
+
+... Beweis der Volumenformel für stumpfe Körper (optional) ...
+\TNTeop{
+Zur Volumenberechnung betrachten wir den «Ersatzkörper», der noch nicht beschnitten ist.
+
+
+Gegeben: $G$ = Grundfläche; $D$ = Deckfläche und $h$ = Höhe (des Stumpfs)
+
+Hilfsgröße $H$ = Höhe des Ersatzkörpers
+
+Die Wurzeln der Flächen verhalten sich wie die Strecken in ähnlichen Körpern. Daher:
+\begin{center}
+  \[
+\begin{array}{rcl}
+  \sqrt{G} : H &=&\sqrt{D} : (H-h)\\
+  H\sqrt{D} &=& \sqrt{G}(H-h) = \sqrt{G}H - \sqrt{G} h\\
+  -H\sqrt{D} + \sqrt{G}\cdot{}H &=& \sqrt{G}\cdot{}h\\
+      H\cdot{}(\sqrt{G} - \sqrt{D}) &=& \sqrt{G}\cdot{}h\\
+      H &=& \frac{\sqrt{G}\cdot{}h}{\sqrt{G}-\sqrt{D}}
+  \end{array}
+\]
+\end{center}
+
+Und somit für das Volumen erhalten wir:
+
+\begin{center}
+  \[
+\begin{array}{rcl}
+  3V &=& GH - D\cdot{} (H-h)\\
+  &=& GH - DH + Dh = H\cdot{}(G-D) + D\cdot{}h\\
+  &=& \frac{\sqrt{G}\cdot{}h}{\sqrt{G}-\sqrt{D}} \cdot{} (G-D) + D\cdot{}h\\
+  &=& \frac{(\sqrt{G} + \sqrt{D})\cdot{}\sqrt{G}h}{(\sqrt{G}+\sqrt{D})\cdot{}(\sqrt{G} - \sqrt{D})}\cdot{}(G-D) + D\cdot{}h\\
+  &=& \frac{(\sqrt{G} + \sqrt{D})\cdot{}\sqrt{G}h}{G-D}\cdot{}(G-D) + D\cdot{}h\\
+  &=& (\sqrt{G} + \sqrt{D})\cdot{}\sqrt{G}h + D\cdot{}h\\
+  &=& G\cdot{}h + \sqrt{G}\sqrt{D}h + D\cdot{}h
+\end{array}
+\]
+\end{center}
+}%% END TNT
+\newpage
+
+\subsection*{Aufgaben}
+\TALSAadBMTA{151}{105}
+\newpage

@@ -1,0 +1,35 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%% Ergänzung für TALS zu Quadratischen Gleichungen I (Ohne Parameter)
+%%
+
+\newpage
+\section{Quadratische Gleichungen II (mit
+  Parametern)}\index{Gleichungen!quadratische mit Parametern}
+\sectuntertitel{Welches ist denn nun die Gesuchte?}
+
+\TALSTadBFWA{93}{2.3.1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item Taschenrechner: Mit Parameter(n)
+\item Taschenrechner: Visualisierung, Interpretation
+\end{itemize}
+
+\subsection{Vorzeigeaufgabe 262 a)}
+Für welchen Wert von $a$ wird die folgende Gleichung quadratisch?
+$$ax^3 + 7x^2 -6 = 5(x^3 -x)$$
+
+\noTRAINER{%%
+  \vspace{5cm}
+}
+\TRAINER{
+  $\Rightarrow ax^3 + 7x^2 -6 = 5x^3 -5x$\\
+  $\Rightarrow ax^3 - 5x^3 + 7x^2 + 5x -6 = 0$ (Grundform)\\
+  $\Rightarrow (a-5)x^3 + 7x^2 + 5x - 6 = 4$\\
+  Die Gleichung wird quadratisch, wenn $a-5 = 0$ ist.
+}
+
+\subsection{Aufgaben}
+\TALSAadBAlgebra{99}{ab 279}

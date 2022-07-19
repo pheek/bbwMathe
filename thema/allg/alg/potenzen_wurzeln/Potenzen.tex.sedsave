@@ -1,0 +1,30 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+
+\section{Potenzen}\index{Potenzen}
+\sectuntertitel{Ein dreifaches Hoch auf die Basen}
+
+\GESOTadBAlgebra{57-59}{4.1, 4.2, 4.3 und 4.4}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item Namen der Zehnerpotenzen
+\item Definition: Exponent, Basis, Potenz
+\item Rechengesetze
+\item negative Exponenten
+\item Hoch 0
+\item Potenzen von Bruchtermen
+\end{itemize}
+\TALS{(\cite{frommenwiler17alg} S. 32 (Kap. 1.5))}
+\newpage
+%%\subsection{Definition}
+%%$$a^n = \underbrace{a\cdot a \cdot a \cdot ... \cdot a}_{\textrm{n Faktoren}}$$
+
+\input{allg/alg/potenzen_wurzeln/Zehnerpotenzen}
+
+\input{allg/alg/potenzen_wurzeln/Potenzgesetze}
+
+\input{allg/alg/potenzen_wurzeln/Negative_Exponenten}

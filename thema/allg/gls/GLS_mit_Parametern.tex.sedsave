@@ -1,0 +1,21 @@
+\subsection{Gleichungssysteme mit Parametern}\index{Parameter!Gleichungssysteme}\index{Lineare Gleichungssysteme!mit Parametern}
+Das folgende Gleichungssystem hat offensichtlich vier und nicht wie
+üblich zwei Variable. Wenn wir das System hingegen nach $x$ und $y$
+auf"|lösen, so können wir diese beiden Größen
+\textbf{in Abhängigkeit} der beiden Parameter\footnote{Parameter =
+  Bei- oder Nebenmaß} ($p$ und $q$) ausdrücken.
+
+\gleichungZZ{3x-5y}{p-5q}{5x+6y}{16p+6q}
+
+Zum Lösen können wir wieder mit der Additionsmethode vorgehen, indem
+wir die erste Gleichung mit 6 und die zweite Gleichung mit 5 multiplizieren\footnote{Danke Melisa für den Tipp: Natürlich könnte man auch zuerst die erste Gleichung mit 5 und die zweite Gleichung mit 3 multiplizieren, um so das $x$ zu eliminieren. Doch mit Melisas Trick, fällt auch das $q$ direkt weg.
+}:
+
+\gleichungZZ{18x-30y}{6p-30q}{25x+30y}{80p+30q}
+
+Nach Addition der beiden Gleichungen erhalten wir $43x=86p$, was uns zu $x=2p$ bringt.
+Einsetzen in eine der beiden ursprünglichen Gleichungen liefert $y=p+q$.
+
+\subsection*{Aufgaben}
+\TALSAadBAlgebra{127ff}{392. a) b), 394. a)}
+\GESOAadBMTA{151}{10. a) b) c) und d)}

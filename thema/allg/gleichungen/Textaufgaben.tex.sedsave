@@ -1,0 +1,63 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+\section{Textaufgaben}\index{Textaufgaben}
+\sectuntertitel{Auf dem Schiff sind 26 Schafe und 10 Ziegen. Wie alt ist der Kapitän?}
+
+\GESOTadBMTA{124}{8.5}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item Texte analysieren, Unbekannte bestimmen
+\item Gleichung aufstellen
+\item Probe, Lösungsmenge
+\end{itemize}
+(Beispiele: Zahlenrätsel, Geschwindigkeit, Arbeit, Leistung)
+\newpage
+
+\begin{rezept}{systematischer Lösen von Textaufgaben}{}
+\index{Textaufgaben!Gleichungen}
+Die folgenden Vorgehensschritte\footnote{Entliehen aus dem Skript von Michael
+  Rohner (BBW)} sind sehr hilfreich, auch wenn einige davon bei
+  einfacheren Aufgaben gut übersprungen werden können:
+
+\begin{enumerate}\label{textaufgaben_verfahren_in_sieben_schritten}
+\item Aufgabe analysieren und verstehen:
+  \begin{itemize}
+  \item zuerst ganz durchlesen
+  \item Situation in eigenen Worten formulieren / Aufgabe verstehen.
+  \item gegebene \& gesuchte Informationen herausschreiben
+    (ev. eine Skizze / Tabelle machen)
+  \end {itemize}
+  
+\item Unbekannte Größe(n) eindeutig einführen
+  (Variable immer möglichst präzise (inkl. Einheiten) definieren!)
+
+\item mit den gegebenen Informationen Terme bilden
+  
+\item mit den Termen Gleichung(en) aufstellen
+  (Gesuchtes \& Gegebenes in eine Beziehung zueinander bringen.)
+
+\item Gleichung lösen
+
+\item Kontrolle: Ergibt mein Ergebnis Sinn? (Plausibilitätsüberlegung)
+
+\item  Antwortsatz geben (d.h. die mathematische Lösung sprachlich
+    beschreiben)
+    
+\end{enumerate}    
+\end{rezept}
+
+\fbox{\parbox{\textwidth}{%
+\begin{center}
+{\textit{«Mathe ist der einzige Ort, wo Leute 144 Eier kaufen
+\\
+und sich keiner fragt wozu.»}}
+\end{center}}}
+
+\GESO{\TRAINER{Vorzeigeaufgabe: Aufg. 39 (Badewanne)}}
+
+\subsection*{Aufgaben}
+\TALSAadBAlgebra{81}{223. a) b) e) 225. a) d) e) f) 227.a) b) c) 225. a) d) e) f) 229. a) 230. a) 231. d) 232. b)}
+\GESOAadBMTA{131ff}{24., 25., 27., 28., 29., 32., 33., 35., 42., 43., 46., Geometrie: 47.-51., 54., 59. 62. schwierige Aufgaben: 26., 30., 31.}

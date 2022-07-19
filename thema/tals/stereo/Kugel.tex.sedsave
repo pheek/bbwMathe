@@ -1,0 +1,78 @@
+\section{Kugel}\index{Kugel}
+
+\TALSTadBFWG{166}{3.3.3}
+
+\subsection*{Lernziele}
+\begin{itemize}
+\item Volumen der Kugel
+\item Oberfläche der Kugel
+\item Einbeschriebene und umschriebene Körper
+\item Kugelsektor (optional)
+\item Kuglesegment (optional)
+\item Kugelhaube (Klaotte)
+\item Kugelschicht
+\end{itemize}
+\newpage
+
+\subsection{Kugelkörper}
+
+\bbwCenterGraphic{5cm}{tals/stereo/img/Sphaere.png}
+
+\begin{definition}{Kugel}{}\index{Kugel}\index{Sphäre}\index{Vollkugel}
+  Die Menge aller Punkte, welche von einem Punkt $M$ (dem \textbf{Mittelpunkt}) den selben Abstand ($r$ = Radius) haben, nennen wir die \textbf{Kugelfläche}, \textbf{Kugeloberfläche} oder \textbf{Sphäre}.
+  Ist das Innere der Kugel mitgemeint, so sprechen wir vom \textbf{Kugelkörper} oder von der \textbf{Vollkugel}.
+\end{definition}
+\newpage
+
+\subsection{Kugelvolumen}\index{Volumen!Kugel}\index{Kugel!Volumen}
+
+\TRAINER{Video Volumen/Oberflächenformel:\\\texttt{https://www.youtube.com/watch?v=jQoHp\_P8Y0A}}
+
+\begin{gesetz}{Volumen}{}
+
+  $V$ = Volumen der Kugel
+
+  $r$ = Radius der Kugel
+
+  $$V = \frac43\cdot{}\pi\cdot{}r^3$$
+  \end{gesetz}
+
+Herleitung:\\
+\TNT{16}{
+
+  \bbwCenterGraphic{15cm}{tals/stereo/img/Kugelvolumen.png}
+  Wähle beliebige Höhe $h$ in beiden Figuren (links Halbkugel, rechts Vergleichskörper).
+
+  Berechne die Schnittflächen der beiden Körper in Höhe $h$:
+  
+  \begin{tabular}{p{8cm}|p{8cm}}\hline
+    $A = R^2\pi = (r^2-h^2)\pi$, wegen Pythagoras ($R^2$ = $r^2-h^2$)&
+    Kreisring = Außenkreis ($r^2\pi$) - Innenkreis ($h^2\pi$), denn
+    Kegel ist 45\degre{} ausgeschnitten. \\
+    \hline
+    \end{tabular} 
+
+  Volumen Halbkugel = (dank Cavalieri) Volumen Vergeichskörper =
+  Volumen Kreisszylinder - Volumen Kreiskegel = $r^2\pi r - \frac13
+  r^2\pi r = \frac23 r^3 \pi$
+  
+  Somit ist das Volumen der ganzen Kugel = 2 $\cdot$ Volumen Halbkugel = $V = \frac43\pi r^3$.  
+}%% END TNT
+\newpage
+
+
+\subsection{Kugeloberfläche}
+\begin{gesetz}{Oberfläche}{}
+
+  $S$ = Oberfläche der Sphäre\footnote{engl. untescheidet zwischen
+    \textit{surface} und \textit{area}.}
+
+  $r$ = Radius der Kugel
+
+  $$S = 4\cdot{}\pi\cdot{}r^2$$
+  \end{gesetz}
+
+\subsection*{Aufgaben}
+\TALSAadBGeometrie{167}{177., 179., 180. (Pyramide in Kugel),
+  181. (Zylinder in Kugel) und 182. (Kugel in Kegel)}
+\newpage

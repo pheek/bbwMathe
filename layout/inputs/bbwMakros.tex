@@ -4,6 +4,12 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%% g e n e r e l l e   M a k r o s %%%%%%%%%%%%%%%%%%%%%%%
 
+%% Info vorab bei \newcommand
+%% \newcommand{ - Kommandos können in den Parametern auch Leerzeilen
+%%     enthalten
+%% \newcommand*{ - Kommandos, also mit *, können jedoch in den
+%%    Argumenten KEINE \par (sprich Leerzeilen} enthalten
+
 %% 2019-07-26
 %% phi@freimann.eu
 %% Makros for BBW-Tex Documents
@@ -13,10 +19,10 @@
 \graphicspath{{../img/}}
 \graphicspath{{./img/}}
 
-\newcommand\bbwGraphicRaise[3]{\raisebox{#1}{\includegraphics[width=#2]{#3}}}%%
-\newcommand\bbwGraphic[2]{\bbwGraphicRaise{-5mm}{#1}{#2}}%%
-\newcommand\bbwCenterGraphicRaise[3]{\begin{center}\bbwGraphicRaise{#1}{#2}{#3}\end{center}}
-\newcommand\bbwCenterGraphic[2]{\bbwCenterGraphicRaise{-5mm}{#1}{#2}}%%
+\newcommand*\bbwGraphicRaise[3]{\raisebox{#1}{\includegraphics[width=#2]{#3}}}%%
+\newcommand*\bbwGraphic[2]{\bbwGraphicRaise{-5mm}{#1}{#2}}%%
+\newcommand*\bbwCenterGraphicRaise[3]{\begin{center}\bbwGraphicRaise{#1}{#2}{#3}\end{center}}
+\newcommand*\bbwCenterGraphic[2]{\bbwCenterGraphicRaise{-5mm}{#1}{#2}}%%
 
 
 %% All in one Skript
@@ -30,7 +36,8 @@
 
 
 %%%%%%%%% TRAINER Version vs. Schülerversion %%%%%%%%%%%%%
-
+%% Bem. Kein *-Kommando, da die TRAINER-Blöcke auch leerzeilne (\par)
+%% enthaltne können
 \newcommand\TRAINER[1]{%%
 {%%
 \ifisTRAINER{\color{BlueGreen}{#1}}%%
@@ -71,59 +78,15 @@
 
 %% Trainer "no" Dotfill
 %% If no Trainer: Dotfill
-\newcommand{\TNDF}[1]{\TRAINER{#1}\noTRAINER{\dotfill{}}}%%
+\newcommand*{\TNDF}[1]{\TRAINER{#1}\noTRAINER{\dotfill{}}}%%
 
-\newcommand{\leserluft}{\vspace{2mm}}
+\newcommand*{\leserluft}{\vspace{2mm}}
 
 %% Notiz felder 
 %% Anwendung:
 %% \noteField{10}  
 %%  --> Notizfeld mit 10 Leerzeilen
 \newcounter{DFCounter}
-
-\newcommand*{\noteField}[1]{%
-\setcounter{DFCounter}{1}
-\vspace{0.5in}%
-\begin{tabular}{p{14cm}}%
-\hline%
-\vspace{0.2cm}
-Notizen: \\%
-\whiledo{\theDFCounter < #1}{%
-\dotfill \\
-\addtocounter{DFCounter}{1}%
-}%
-\end{tabular}%
-}%
-
-\newcommand*{\noteLines}[1]{%
-\setcounter{DFCounter}{1}
-\vspace{0.1cm}%
-\begin{tabular}{p{14cm}}%
-\whiledo{\theDFCounter < #1}{%
-\dotfill \\
-\addtocounter{DFCounter}{1}%
-}%
-\end{tabular}%
-}%
-
-%% Platz für Notizen, aber nur bei Schülernverison (\noTRAINER)
-\newcommand{\platzFuerTNNotes}[1]{%
-\ifisTRAINER{}\else{%%
-Platz für Notizen:\newline%%
-\noteLines{#1}%%
-}\fi{}%
-}%%
-
-%% Vier Leerzeilen für Notizen
-\newcommand*\dotfillpara{%
-\begin{tabular}{p{11.5cm}}%
-\hfill   \\
-\dotfill \\
-\dotfill \\
-\dotfill \\
-\dotfill
-\end{tabular}%
-}
 
 
 %%Häuschenpapier
@@ -181,7 +144,6 @@ Notizen / Berechnungen:
 
 \mmPapier{#1}}}
 
-
 %% Die Abkürzung z.\,B. von «Zum Beispiel» hat einen verkleinerten Abstand.
 \newcommand*\zB{%
 z.\,B.
@@ -220,7 +182,7 @@ z.\,B.
     %%drop fuzzy shadow=blue!50!black!50!white,
     terminator sign={:},
     borderline north={0.5mm}{0pt}{#3}, borderline south={0.5mm}{0pt}{#3}
-   }{#4}}
+}{#4}}
 
 
 
@@ -387,44 +349,47 @@ z.\,B.
 %% 2. Parameter: Aufgabennummern.
 %% bsp  \TALSAadB{38-39}{101a-101c, 102 und 103}
 
-
-
 %%\newcommand*{\maturaAufgaben}[1]{\begin{mdframed}[backgroundcolor=maturaAufgabenFarbe!10]{#1}\end{mdframed}}
 
-\newcommand*{\aadB}{Aufgaben aus dem Buch}
+\newcommand*{\aadBTxt}{Aufgaben aus dem Buch}
 
-\newcommand*{\TALSAadB}[2]{%%
-{%%
-\ifisTALS{\aufgabenFarbe{\noindent{\aadB \cite{frommenwiler17alg}: Seite {#1} Nr. {#2}}}}%%
-\fi%%
-}}%%
 
-\newcommand*{\TALSGeomAadB}[2]{%%
-{%%
-\ifisTALS{\aufgabenFarbe{\noindent{\aadB \cite{frommenwiler18geom}: Seite {#1} Nr. {#2}}}}%%
-\fi%%
-}}%%
+%%
+% Generell Aufgaben aus einem Lehrbuch
+% #1: cite auf das Lehrbuch (z. B. frommenwiler17alg)
+% #2: Seitennummer oder Seitennumerff
+% #3: aufgabennummer(n)
+\newcommand*{\AadB}[3]{%%
+\aufgabenFarbe{\noindent{\aadBTxt \cite{#1}: Seite {#2} Nr. {#3}}}%%
+}%%
 
-\newcommand*{\GESOAadB}[2]{%%
-{%%
-\ifisGESO{\aufgabenFarbe{\aadB \cite{marthaler21}: Seite {#1} Nr. {#2}}}%%
-\fi%%
-}}%%
+%%\newcommand*{\AdbBAlgebra}[2]{\AadB{marthaler21alg}{#1}{#2}}%%
 
-\newcommand*{\theorieGESO}[2]{%%
-{\ifisGESO{Theorie \cite{marthaler21}: Seite {#1} Kap. {#2}}%%
-\fi%%
-}}%%
+\newcommand*{\TALSAadBFWA}[2]{\ifisTALS{\AadB{frommenwiler17alg}{#1}{#2}}\fi}%%
+\newcommand*{\TALSAadBMTA}[2]{\ifisTALS{\AadB{marthaler21alg}{#1}{#2}}\fi}%%
+\newcommand*{\TALSAadBFWG}[2]{\ifisTALS{\AadB{frommenwiler18geom}{#1}{#2}}\fi}%%
+\newcommand*{\TALSAadBMTG}[2]{\ifisTALS{\AadB{marthaler21geom}{#1}{#2}}\fi}%%
 
-\newcommand*{\theorieTALS}[2]{%%
-{\ifisTALS{Theorie \cite{frommenwiler17alg}: Seite {#1} Kap. {#2}}%%
-\fi%%
-}}%%
+%% GESO hat (noch) keine Geometrie
+\newcommand*{\GESOAadBMTA}[2]{\ifisGESO{\AadB{marthaler21alg}{#1}{#2}}\fi}%%
 
-\newcommand*{\theorieTALSGeom}[2]{%%
-{\ifisTALS{Theorie \cite{frommenwiler18geom}: Seite {#1} Kap. {#2}}%%
-\fi%%
-}}%%
+%%
+% Generell Theorie aus einem Lehrbuch
+% #1: cite auf das Lehrbuch (z. B. frommenwiler17alg)
+% #2: Seitennummer oder Seitennumerff
+% #3: KapitelNummer
+\newcommand*{\TadB}[3]{%%
+\aufgabenFarbe{\noindent{Theorie \cite{#1}: Seite {#2} Nr. {#3}}}%%
+}%%
+
+\newcommand*{\TALSTadBFWA}[2]{\ifisTALS{\TadB{frommenwiler17alg}{#1}{#2}}\fi}%%
+\newcommand*{\TALSTadBMTA}[2]{\ifisTALS{\TadB{marthaler21alg}{#1}{#2}}\fi}%%
+\newcommand*{\TALSTadBFWG}[2]{\ifisTALS{\TadB{frommenwiler18geom}{#1}{#2}}\fi}%%
+\newcommand*{\TALSTadBMTG}[2]{\ifisTALS{\TadB{marthaler21geom}{#1}{#2}}\fi}%%
+
+%% GESO hat (noch) keine Geometrie
+\newcommand*{\GESOTadBMTA}[2]{\ifisGESO{\TadB{marthaler21alg}{#1}{#2}}\fi}%%
+
 
 
 

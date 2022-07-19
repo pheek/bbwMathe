@@ -1,0 +1,62 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+
+\section{Lineare Gleichungen mit Parametern}\index{Gleichungen!lineare mit Parametern}\index{Parameter}
+\sectuntertitel{Alle Zahlen sind gleich; nur einige sind gleicher.}
+\TALSTadBFWA{89}{2.2.2}
+\GESOTadBAlgebra{116}{8.2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item Lineare Gleichungen mit Parametern
+\end{itemize}
+
+Parameter = (wörtlich) «Neben-Maß»
+
+Griechisch $\pi\alpha\rho\alpha$ (para), deutsch: ‚neben‘ und $\mu\epsilon\tau\rho\omega\nu$ (metron) deutsch: ‚Maß‘
+
+
+\TALS{\input{tals/gl1/CAS_Schieberegler}}
+
+
+\TALS{Aufg 247 l aus \cite{frommenwiler17alg}}
+
+\TALS{Vorzeigeaufgabe:
+\TNT{5}{
+  $$\frac{x}{n} + a - \frac{x}{m} + b = mx + c$$
+  Lösungsweg:
+  $$ \cdot n      \Rightarrow x + an - \frac{nx}{m} + bn = mnx + cn$$
+  $$ \cdot m      \Rightarrow mx + anm - nx + bnm = nm^2x + cnm$$
+  $$ x \textrm{\, nach links}  \Rightarrow mx - nx -nm^2x = cnm -anm - bnm$$
+  $$ x \textrm{\, ausklammern} \Rightarrow x(m - n -nm^2) = cnm -anm - bnm$$
+  $$ \textrm{\, dividieren}    \Rightarrow x = \frac{cnm - anm - bnm}{m-n-nm^2} = \frac{nm(c-a-b)}{m-n-nm^2}$$
+}%% END TNT
+}%% END TALS
+
+\GESO{Vorzeigeaufgabe:
+  $$x^2 - \sqrt{2} - c = (b-x)\cdot{}(a-x)$$
+
+  \TNT{6.4}{
+  Termumformung: $x^2+\sqrt{2} - c = ab -bx -xa + x^2$\\
+  beidseitig $-x^2$: $\Rightarrow \sqrt{2}-c=ab-bx-xa$\\
+  Alle $x$ nach links (Rest nach rechts): $\Rightarrow bx+ax= ab-\sqrt{2} + c$\\
+  $x$ ausklammern: $\Rightarrow x(a+b)=ab-\sqrt{2} + c$\\
+  $: (a+b)$ : $\Rightarrow x = \frac{ab-\sqrt{2} + c}{a+b}$\\%%
+}%% END TNT
+}%% END GESO
+
+
+\subsection*{Aufgaben}
+\TALS{\aufgabenFarbe{Aufgaben: \cite{frommenwiler17alg} S. 89, Aufg. 246. a) 247. a)
+  c) g) 248. a) d) i) 249.}}
+
+\TALS{Textaufgaben: \cite{frommenwiler17alg} S. 89 Aufg. 253}
+
+\GESO{\aufgabenFarbe{Aufgaben: \cite{marthaler21} Seite 128: 7. a) b) c) e)
+  8.  a) d) e) f)
+  9. a) b) c) e) f)
+  10. a) b)
+}}
+\newpage
