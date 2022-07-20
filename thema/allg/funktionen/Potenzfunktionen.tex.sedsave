@@ -57,7 +57,7 @@ $$f: y= ax^2 + bx + c$$
 \end{bemerkung}
 
 
-\GESO{Beispiele zu allgemeinen quadratischen Funktionen finden sie im Buch \cite{marthaler21alg} ab Seite 260 insb. im Bild zu Aufg. 4 auf Seite 273.}
+\GESO{Beispiele zu allgemeinen quadratischen Funktionen finden sie im Buch \cite{marthaler21} ab Seite 260 insb. im Bild zu Aufg. 4 auf Seite 273.}
 
 \GESO{\subsection*{Aufgaben}}
 \GESOAadBMTA{303ff}{1. (nur $n=3$ und $n=5$), 2. (nur $n=4$ und $n=6$)}
@@ -108,7 +108,7 @@ oder Spiegelpunkte?
 
 
 \GESO{Eine Zusammenfassung der wichtigsten Eigenschaften von
-  Potenzfunktionen finden Sie im Buch \cite{marthaler21alg} Seite 296 oben.}
+  Potenzfunktionen finden Sie im Buch \cite{marthaler21} Seite 296 oben.}
 \newpage
 
 \subsubsection{Referenzaufgabe}

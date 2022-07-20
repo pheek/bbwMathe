@@ -44,7 +44,7 @@ und 19:04.
 \bbwCenterGraphic{14cm}{allg/daan/img/DatenanalyseSkalentypen.pdf}\index{Ordinale Daten}\index{Kardinal-Skala}\index{Intervall-Skala}
 
 
-\GESO{\cite{marthaler21alg} S. 376}\TALS{\cite{frommenwiler17alg} S. 249}
+\GESO{\cite{marthaler21} S. 376}\TALS{\cite{frommenwiler17alg} S. 249}
 
 Die «Datentypen» (\zB ganze Zahlen / Farbnamen / ...) werden in der deskriptiven
 Statistik auch \textbf{Merkmalsausprägung}\index{Merkmalsausprägung} genannt.

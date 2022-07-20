@@ -11,7 +11,7 @@
 
 \begin{itemize}
 \item Exponentialgleichungen
-\item logarithmische Gleichungen \GESO{(\cite{marthaler21alg} S. 203
+\item logarithmische Gleichungen \GESO{(\cite{marthaler21} S. 203
     Kap. 12.2)}
 \TALS{\item Exponentialgleichungen mit Parametern}
 \end{itemize}
@@ -79,7 +79,7 @@ $$8^{x-1}=5\cdot{}7^{x+2}$$
       56.77$$
 }%% END TNT
 
-\GESO{Siehe auch \cite{marthaler21alg} Seite 200 im roten Kasten.}
+\GESO{Siehe auch \cite{marthaler21} Seite 200 im roten Kasten.}
 
 \newpage
 

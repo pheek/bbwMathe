@@ -50,7 +50,7 @@ Polynome ersten Grades (\zB $ 3x-1$) nennen wir \textbf{lineare}
 Polynome\index{Polynom!lineares}.
 
 \GESO{Weitere Definitionen zu \textit{quadratischen} und
-  \textit{kubischen} Polynomen finden wir im Buch \cite{marthaler21alg}
+  \textit{kubischen} Polynomen finden wir im Buch \cite{marthaler21}
   auf Seite 19.}
 
 \textbf{Achtung} Kein Polynom ist $x^2 - \sqrt{x}$, denn $x$ kommt in

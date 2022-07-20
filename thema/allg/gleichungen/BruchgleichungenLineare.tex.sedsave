@@ -100,7 +100,7 @@ Probe b) liegt die Lösung auch im Definitionsbereich\index{Definitionsmenge}\in
     vergleichen: Scheinlösungen müssen ausgeschlossen werden
   \item Definitive Lösungsmenge $\mathbb{L}$ angeben
     \end{itemize}
-\GESO{  Quelle: \cite{marthaler21alg} Seite 120}
+\GESO{  Quelle: \cite{marthaler21} Seite 120}
 \end{rezept}
 
 \subsection*{Aufgaben}

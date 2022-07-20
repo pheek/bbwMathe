@@ -106,7 +106,7 @@ Für $a > 0$ gilt somit allgemein:
  \left(\left(\sqrt[n]{a}\right)^n\right)^\frac{1}{n} = a^\frac{1}{n}$
 }%% END TALS
 
- Es gelten die üblichen Potenzgesetze\GESO{\footnote{S. 81 \cite{marthaler21alg}}} nun auch für die $n$-ten Wurzeln.
+ Es gelten die üblichen Potenzgesetze\GESO{\footnote{S. 81 \cite{marthaler21}}} nun auch für die $n$-ten Wurzeln.
 
 
 \begin{gesetz}{Wurzeln von Wurzeln}{}
@@ -125,7 +125,7 @@ $$\sqrt[m]{\sqrt[n]{a}} = \sqrt[m]{a^\frac{1}{n}} = (a^{\frac{1}{n}})^{\frac{1}{
  $\sqrt[3]{\sqrt[2]{64}} = \sqrt[3]{8} = 2 = \sqrt[6]{64} = \sqrt[3\cdot2]{64}$
 \end{beispiel}
 
-\GESO{Die Rechengesetze für $n$-te Wurzeln sind im Buch \cite{marthaler21alg} auf Seite 82 zu finden.}
+\GESO{Die Rechengesetze für $n$-te Wurzeln sind im Buch \cite{marthaler21} auf Seite 82 zu finden.}
 
 Rechenbeispiel. Schreiben Sie unter eine Wurzel:
 $$ab^\frac{-3}4$$
