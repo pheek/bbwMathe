@@ -2,15 +2,18 @@
 %% 26. März 2013: Philipp Gressly Freimann
 %%
 
+\newpage
 \appendix
 
 \section{Anhang}
 
-%% Summenzeichen erst bei Datenanalyse
-%%\input{anhaenge/summenzeichen}
+%% Summenzeichen bereits hier bei TALS, wegen der Definition der
+%% Polynome
+\input{allg/_anhaenge/summenzeichen}
+\newpage
+
 
 \input{allg/_anhaenge/griechischesAlphabet}
-
+\newpage
 %%\sectuntertitel{Was ich sonst noch alles sagen wollte.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
