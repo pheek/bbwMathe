@@ -1,1 +1,1 @@
-/home/phi/matgit/arbeitsblaetter/clean.sh
+/root/matgit/arbeitsblaetter/clean.sh

@@ -1,1 +1,1 @@
-/home/phi/matgit/arbeitsblaetter/makeBoth.sh
+/root/matgit/arbeitsblaetter/makeBoth.sh
