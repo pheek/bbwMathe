@@ -22,6 +22,36 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 
+\subsection{Rechtwinkliges Dreieck}
+
+\definecolor{qqwuqq}{rgb}{0,0.39,0}
+\definecolor{xdxdff}{rgb}{0.49,0.49,1}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.54,0.17) rectangle (5.83,4.51);
+\draw [shift={(3.35,3.58)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-154.75:0.95) arc (-154.75:-64.75:0.95) -- cycle;
+\draw (0,2)-- (4.56,1.02);
+\draw (0,2)-- (3.35,3.58);
+\draw (3.35,3.58)-- (4.56,1.02);
+\fill[color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (3.16,3.05) circle (0.03);
+\begin{scriptsize}
+\fill [color=qqqqff] (0,2) circle (1.5pt);
+\draw[color=qqqqff] (0.25,2.42) node {$A$};
+\fill [color=qqqqff] (4.56,1.02) circle (1.5pt);
+\draw[color=qqqqff] (4.81,1.44) node {$B$};
+\fill [color=xdxdff] (3.35,3.58) circle (1.5pt);
+\draw[color=xdxdff] (3.61,4.01) node {$C$};
+\draw[color=qqwuqq] (2.37,2.49) node {$90\textrm{\degre}$};
+\end{scriptsize}
+\end{tikzpicture}
+
+\begin{gesetz}{Rechtwinkliges Dreieck}{}
+Im \textbf{rechtwinkligen} Dreieck misst der Winkel gegenüber der
+längsten Seite 90\degre.
+\end{gesetz}
+\newpage
+
+
 
 \subsection{Satz des Pythagoras (Repetition)}\index{Pythagoras!Satz des|textbf}\index{Satz des Pythagoras|textbf}
 
@@ -49,5 +79,26 @@ $2h^2 = a^2 + b^2 - p^2 - q^2 = c^2 - p^2 - q^2 = (p+q)^2 -p^2 - q^2 =
 Daraus folgt:$$h^2=pq$$ Nun brauchen wir nur noch auf beiden Seiten die
 Wurzel zu ziehen.
 
-Beweis mit Ähnlichkeit: $p:h = h:q$, somit folgt der Satz automatisch.}
+Beweis mit Ähnlichkeit: $p:h = h:q$, somit folgt der Satz
+automatisch.}
+
+\subsection*{Aufgaben}
+\AadBMTG{37}{8., 9., 15., }
+
+\newpage
+
+\subsection{Spezielle Dreiecke}\index{Dreiecke!spezielle}
+
+\subsubsection*{Lernziele}
+\begin{itemize}
+\item 45\degre: Das halbe Quadrat
+\item 30\degre/60\degre: Das halbe gleichseitige Dreieck
+\end{itemize}
+
+\TadBMTG{33}{2.4.1}
+
+
+\subsection*{Aufgaben}
+\AadBMTG{37}{7., 11., 12., 13., 19., 20., 21., 24., 26., 27., 28.,
+29., 30., 33., 34., 40. und 41. }
 \newpage
