@@ -45,19 +45,19 @@
 \end{scriptsize}
 \end{tikzpicture}
 
-\begin{gesetz}{Rechtwinkliges Dreieck}{}
+\begin{definition}{Rechtwinkliges Dreieck}{}
 Im \textbf{rechtwinkligen} Dreieck misst der Winkel gegenüber der
 längsten Seite 90\degre.
-\end{gesetz}
-\newpage
+\end{definition}
 
 
 
 \subsection{Satz des Pythagoras (Repetition)}\index{Pythagoras!Satz des|textbf}\index{Satz des Pythagoras|textbf}
 
-\fbox{\parbox{\textwidth}{
+\begin{gesetz}{Satz des Pythagoras}{}
+Im rechtwinkligen Dreieck mit Hypotenuse $c$ gilt:
 $$a^2 + b^2 = c^2$$
-}}
+\end{gesetz}
 
 \TNTeop{Platz für graphischen Beweis\vspace{3cm}}
 
@@ -71,16 +71,17 @@ $$h^2=p\cdot{}q$$
 
 Beweise:
 
-\TNT{6.4}{Beweis mit Pythagoras: $h^2 = a^2 - p^2$ und $h^2 = b^2 -
+\TNT{6.4}{
+
+Beweis mit Ähnlichkeit: $p:h = h:q$, somit folgt der Satz direkt.
+
+Optional: Beweis mit Pythagoras: $h^2 = a^2 - p^2$ und $h^2 = b^2 -
   q^2$.\\
 Somit gilt
 $2h^2 = a^2 + b^2 - p^2 - q^2 = c^2 - p^2 - q^2 = (p+q)^2 -p^2 - q^2 =
   p^2 +2pq + q^2 - p^2 - q^2 = 2pq$\\
-Daraus folgt:$$h^2=pq$$ Nun brauchen wir nur noch auf beiden Seiten die
-Wurzel zu ziehen.
-
-Beweis mit Ähnlichkeit: $p:h = h:q$, somit folgt der Satz
-automatisch.}
+Daraus folgt:$$h^2=pq.$$
+}
 
 \subsection*{Aufgaben}
 \AadBMTG{37}{8., 9., 15., }
@@ -91,11 +92,46 @@ automatisch.}
 
 \subsubsection*{Lernziele}
 \begin{itemize}
-\item 45\degre: Das halbe Quadrat
-\item 30\degre/60\degre: Das halbe gleichseitige Dreieck
+  \item 45\degre: Das halbe Quadrat\index{Quadrat}
+  \item 30\degre/60\degre: Das halbe gleichseitige
+  Dreieck\index{Dreieck!gleichseitiges}\index{gleichseitiges Dreieck}
 \end{itemize}
 
 \TadBMTG{33}{2.4.1}
+
+
+
+\begin{samepage}
+\subsection{gleichseitiges Dreieck und halbes Quadrat}\index{Dreieck!gleichseitiges}\index{gleichseitiges Dreieck}\index{Quadrat!Diagonale}\index{halbes Quadrat}
+
+\renewcommand{\arraystretch}{2.4}
+\begin{tabular}{|c|p{5cm}|} 
+  \hline
+  \raisebox{-18mm}{\includegraphics[width=4cm]{tals/plani/img/gleichseitigesDreieck.png}} &
+  $\begin{array}{ll}
+    x=& \frac{a}{2}                     \\
+    h=& \sqrt{3}\cdot{}x                \\
+    h=& \frac{\sqrt{3}}{2}\cdot{}a
+  \end{array}$ \\
+
+  \hline
+  \raisebox{-24mm}{\includegraphics[width=5cm]{tals/plani/img/halbesQuadrat.png}} &
+  $\begin{array}{ll}
+    x=& \sqrt{2}\cdot{}a            \\
+    h=& \frac{x}{2}                 \\
+    h=& \frac{\sqrt{2}}{2} \cdot{} a\\
+    a=& \sqrt{2}\cdot{}h
+  \end{array}$ 
+  \\
+  
+  \hline
+\end{tabular} 
+\renewcommand{\arraystretch}{1}
+
+\TALS{Siehe auch \cite{frommenwiler18geom} S. 25 Kapitel 1.2.2}
+
+\end{samepage}
+
 
 
 \subsection*{Aufgaben}

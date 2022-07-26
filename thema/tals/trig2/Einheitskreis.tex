@@ -1,31 +1,7 @@
 %%
 %% 2019 07 04 Ph. G. Freimann
 %%
-
-\section{Winkel am Einheitskreis}\index{Einheitskreis|textbf}
-\sectuntertitel{Wie groß ist eigentlich der Einheitskreis?}
-
-\TALSTadBFWG{101}{2.2.1}
-\GESOTadBMTA{????}{????}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection*{Lernziele}
-
-\begin{itemize}
-\item Einheitskreis
-\item Werte exakt ablesen
-\item Grad- und Bogenmaß
-\end{itemize}
-
-
-\subsection{Sinus als Verhältnis}\index{Sinus!als Verhältnis}
-Egal, wie groß der Einheitskreis gewählt wird, der $\sin{}$ eines
-gegebenen Winkels $\phi$ ist immer gleich lang, denn er wird im Maß
-des Kreises angegeben. Der $\sin{}$, liegt immer zwischen -1 und
-+1. Dies stimmt auch für den $\cos{}$.
-
-
-\subsection{Tangens}\index{Tangens!im Einheitskreis}
-
+\newcommand{\einheitskreis}{
 \definecolor{qqwuqq}{rgb}{0,0.79,0}
 \definecolor{qqqqff}{rgb}{0,0,1}
 \definecolor{qqzzzz}{rgb}{0,0.6,0.6}
@@ -63,9 +39,60 @@ des Kreises angegeben. Der $\sin{}$, liegt immer zwischen -1 und
 \fill [color=qqqqff] (0,0) circle (1.5pt);
 \draw(0.20,0.09) node {$\Phi$};
 \end{scriptsize}
-\end{tikzpicture}
+\end{tikzpicture}\par
+}%% END Command \einheitskreis
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Winkel am Einheitskreis}\index{Einheitskreis|textbf}
+\sectuntertitel{Wie groß ist eigentlich der Einheitskreis?}
 
 
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item Einheitskreis
+\item Werte exakt ablesen
+\item Grad- und Bogenmaß
+\end{itemize}
+
+\TadBMTG{104}{7.1}
+\newpage
+\subsection{Einheitskreis}
+
+\einheitskreis{}
+
+\subsection{Sinus als Verhältnis}\index{Sinus!als Verhältnis}
+Egal, wie groß der Einheitskreis gewählt wird, der $\sin()$ eines
+gegebenen Winkels $\Phi$ ist immer gleich lang, denn er wird im Maß
+des Kreises angegeben. Der $\sin{}$, liegt immer zwischen -1 und
++1. Dies stimmt auch für den $\cos{}$.
+
+\begin{gesetz}{Einheitskreis: Sinus}{}
+  Die Strecke $s$ kann auch als $\frac{s}1$ aufgefasst werden -- also
+  als Gegenkathete ($s$) dividiert durch Hypotenuse ($r=1$). Somit
+  gilt
+  $$s = \sin(\Phi)$$
+\end{gesetz}
+
+\begin{bemerkung}{Ordinate = Sinus}{}
+  Die Ordinate (= $y$-Achse) eines Punktes auf dem Einheitskreis ist
+  der Sinus des zugehörigen Winkels.
+\end{bemerkung}
+
+\begin{bemerkung}{Cosinus}{}
+  Die Strecke $c$ kann auch als $\frac{c}1$ aufgefasst werden -- also
+  als Ankathete ($c$) dividiert durch Hypotenuse ($r=1$). Somit
+  gilt
+  $$s = \cos(\Phi)$$
+  und auch, dass die Abszisse (=$x$-Koordinate) eines Punktes auf dem
+  Einheitskreis der Cosinus des zugehörigen Winkels darstellt.
+\end{bemerkung}
+
+
+\newpage
+\subsection{Tangens}\index{Tangens!im Einheitskreis}
+
+\einheitskreis{}
 Ähnlichkeit: 
 Betrachten wir in obigem Bild die Strecke $t$ (von der $x$-Achse zum
 Punkt $Y_P$, so sehen wir, dass sie genau das Verhältnis angibt, das
@@ -93,11 +120,14 @@ Einheitskreises:
 \end{tabular}
 
 \TRAINER{Lösungen: $\gamma = 30\degre; 330\degre$, $\sigma = 225\degre;315\degre$ und $\tau=135\degre;315\degre$.}
+\newpage
+
 
 \subsection*{Aufgaben}
-\TALSAadBFWG{101ff}{83. a) c),  84., 85. [$\sin$] a) c) e) f) g) und
-  h), 86. [$\cos$] b) c) e) und h) 87. [$\tan$] a) und c)}
-%% \GESOAadBMTA{????}{????} %% GESO haben noch keine Geometrie
+\olatLinkArbeitsblatt{Einheitskreis}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/102901229792483}{Aufg. 1. - 3. }
 
+
+%%\TALSAadBFWG{101ff}{83. a) c),  84., 85. [$\sin$] a) c) e) f) g) und   h), 86. [$\cos$] b) c) e) und h) 87. [$\tan$] a) und c)}
+%% \GESOAadBMTA{????}{????} %% GESO haben noch keine Geometrie
+\AadBMTG{119ff}{3., 4., 5., 14. a) und 8.}
 \newpage
-\input{tals/trig2/Bogenmass}
