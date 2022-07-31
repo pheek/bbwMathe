@@ -2,23 +2,67 @@
 %% 2019 07 04 Ph. G. Freimann
 %%
 
-\section{Satz des Pythagoras}\index{Pythagoras!Satz des}\index{Satz des Pythagoras}
+\section{Satz des Pythagoras}\index{Pythagoras!Planimetrie}\index{Satz des Pythagoras!Planimetrie}
 \sectuntertitel{Warum sitzen die Mathematiker im Winter immer in eine
   Ecke? --- Weil dort bestimmt 90 Grad ist.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\TALSTadBFWG{22}{1.2}
+\TadBMTG{29}{2.3.2}
 
 \subsection*{Lernziele}
 
 \begin{itemize}
-  \item Formel
-  \item Kathetensatz
+  \item Formel des Pythagoras
 \end{itemize}
 
+Repetition \ifisALLINONE{\totalref{satzDesPythagoras}}\fi
+\begin{bemerkung}{Pythagoras}{}
+  Im rechtwinkligen Dreieck gilt:
+  $$a^2+b^2=c^2$$
+\end{bemerkung}
+
+%%\TALSAadBFWG{23}{56. 57. 58. 60. 63. }
+\subsection*{Aufgaben}
+\AadBMTG{37}{7., 8., 9., 11., 12., 13. und 15.}
+%%\GESOAadBMTA{???}{???}
+\newpage
+\subsection{Spezielle Dreiecke}
+Repetition: Halbes Quadrat und halbes gleichseitiges Dreieck \ifisALLINONE{\totalref{spezielleDreiecke}}\fi
 
 
-
-\TALSAadBFWG{23}{56. 57. 58. 60. 63. }
-\GESOAadBMTA{???}{???}
+\subsection*{Aufgaben}
+\AadBMTG{38ff}{19., 20., 21., 24., 26., 28., 29., 30., 40. und 41.}
 \newpage
 
+\subsection{Kreisberührung}\index{Kreisberührung!Planimetrie}
+
+
+\bbwCenterGraphic{8cm}{tals/plani/img/KleinsterKreis.png}
+In obigem Kreis sind zwei kleinere Kreise einbeschrieben. Berechnen
+Sie den Radius $k$ des kleinsten Kreises aus dem gegebenen Radius $r$ des
+großen Kreises.
+\TNT{12}{
+  \bbwCenterGraphic{8cm}{tals/plani/img/KleinsterKreisLoesung.png}
+  $$\Delta A: x^2 + k^2 = (r-k)^2$$
+  $$\Delta B: x^2 + (\frac{r}2 - k)^2 = (\frac{r}2 + k)^2$$
+  Ausmultiplizieren und 2. Gleichung von 1. Gleichung subtrahieren:
+  $$k^2 - \frac{r^2}4 +rk - k^2  =r^2  -2rk - \frac{r^2}4 - rk$$\
+  $$-\frac{r^2}4 + rk = r^2 - 3rk - \frac{r^2}4$$
+  $$rk = r^2 - 3rk$$
+  $$4k = r$$
+  $$k = \frac{r}4$$
+}%% END TNT
+\newpage
+
+
+\begin{rezept}{Kreisberührung}{}
+  Bei Aufgaben, bei denen sich zwei Kreise \textbf{berühren}, ist es
+  von Vorteil, die Mittelpunkte der Kreise mit den Tangentenpunkten zu
+  verbinden.
+
+  Danach suchen Sie rechtwinklige Dreiecke.
+\end{rezept}
+
+\subsection*{Aufgaben}
+
+\AadBMTG{40}{33., 34.}
+\newpage
