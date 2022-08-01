@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="70.855865mm"
+   height="69.808701mm"
+   viewBox="0 0 70.855865 69.808701"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="KleinsterKreis.svg"
+   inkscape:export-filename="/home/phi/matgit/thema/tals/plani/img/KleinsterKreis.png"
+   inkscape:export-xdpi="320"
+   inkscape:export-ydpi="320">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path823"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#0000b5;fill-opacity:1;fill-rule:evenodd;stroke:#0000b5;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="143.45827"
+     inkscape:cy="1.4227587"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1824"
+     inkscape:window-height="1059"
+     inkscape:window-x="48"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-24.51213,-24.348613)">
+    <path
+       style="fill:none;fill-opacity:0.68669529;stroke:#0000b5;stroke-width:1.00000179;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path896"
+       sodipodi:type="arc"
+       sodipodi:cx="59.940273"
+       sodipodi:cy="59.411945"
+       sodipodi:rx="34.920246"
+       sodipodi:ry="34.395832"
+       sodipodi:start="5.9313618"
+       sodipodi:end="5.9313444"
+       sodipodi:open="true"
+       d="M 92.72151,47.558791 A 34.920246,34.395832 0 0 1 71.974289,91.700839 34.920246,34.395832 0 0 1 27.159141,71.26538 34.920246,34.395832 0 0 1 47.905973,27.123155 34.920246,34.395832 0 0 1 92.721301,47.558229"
+       transform="matrix(0.99999648,-0.00265235,0,1,0,0)"
+       inkscape:export-filename="/home/phi/matgit/thema/tals/plani/img/KleinsterKreis.png"
+       inkscape:export-xdpi="320"
+       inkscape:export-ydpi="320" />
+    <path
+       style="fill:none;fill-opacity:0.68669529;stroke:#0000b5;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path814"
+       sodipodi:type="arc"
+       sodipodi:cx="60.284431"
+       sodipodi:cy="42.205101"
+       sodipodi:rx="17.320854"
+       sodipodi:ry="17.347961"
+       sodipodi:start="5.9313618"
+       sodipodi:end="5.9313444"
+       sodipodi:open="true"
+       d="M 76.544312,36.226817 A 17.320854,17.347961 0 0 1 66.253445,58.490402 17.320854,17.347961 0 0 1 44.024603,48.183527 17.320854,17.347961 0 0 1 54.315276,25.919852 17.320854,17.347961 0 0 1 76.544208,36.226533"
+       inkscape:export-filename="/home/phi/matgit/thema/tals/plani/img/KleinsterKreis.png"
+       inkscape:export-xdpi="320"
+       inkscape:export-ydpi="320" />
+    <path
+       style="fill:none;fill-opacity:0.68669529;stroke:#0000b5;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path816"
+       sodipodi:type="arc"
+       sodipodi:cx="84.81105"
+       sodipodi:cy="51.305496"
+       sodipodi:rx="8.4263287"
+       sodipodi:ry="8.5144339"
+       sodipodi:start="5.9313618"
+       sodipodi:end="5.9313444"
+       sodipodi:open="true"
+       d="m 92.721232,48.371336 a 8.4263287,8.5144339 0 0 1 -5.006348,10.927037 8.4263287,8.5144339 0 0 1 -10.81399,-5.058647 8.4263287,8.5144339 0 0 1 5.006254,-10.927081 8.4263287,8.5144339 0 0 1 10.814033,5.058551"
+       inkscape:export-filename="/home/phi/matgit/thema/tals/plani/img/KleinsterKreis.png"
+       inkscape:export-xdpi="320"
+       inkscape:export-ydpi="320" />
+    <path
+       style="fill:none;stroke:#0000b5;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 60.381697,59.725445 91.564731,73.61607"
+       id="path818"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/phi/matgit/thema/tals/plani/img/KleinsterKreis.png"
+       inkscape:export-xdpi="320"
+       inkscape:export-ydpi="320" />
+    <path
+       style="fill:none;stroke:#0000b5;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 25.135416,59.725445 H 95.249999"
+       id="path1106"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/phi/matgit/thema/tals/plani/img/KleinsterKreis.png"
+       inkscape:export-xdpi="320"
+       inkscape:export-ydpi="320" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#00009a;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1"
+       x="71.531998"
+       y="71.348213"
+       id="text1122"
+       inkscape:export-filename="/home/phi/matgit/thema/tals/plani/img/KleinsterKreis.png"
+       inkscape:export-xdpi="320"
+       inkscape:export-ydpi="320"><tspan
+         sodipodi:role="line"
+         id="tspan1120"
+         x="71.531998"
+         y="71.348213"
+         style="fill:#00009a;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1">r</tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#0e0000;stroke-width:0.27103022;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path1136"
+       sodipodi:type="arc"
+       sodipodi:cx="60.081211"
+       sodipodi:cy="59.487209"
+       sodipodi:rx="0.88379633"
+       sodipodi:ry="0.84419644"
+       sodipodi:start="5.9313618"
+       sodipodi:end="5.9313444"
+       sodipodi:open="true"
+       d="m 60.910871,59.196291 a 0.88379633,0.84419644 0 0 1 -0.525091,1.083403 0.88379633,0.84419644 0 0 1 -1.134226,-0.501559 0.88379633,0.84419644 0 0 1 0.525081,-1.083408 0.88379633,0.84419644 0 0 1 1.134231,0.50155"
+       inkscape:export-filename="/home/phi/matgit/thema/tals/plani/img/KleinsterKreis.png"
+       inkscape:export-xdpi="320"
+       inkscape:export-ydpi="320" />
+  </g>
+</svg>
