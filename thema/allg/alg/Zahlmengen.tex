@@ -59,8 +59,14 @@ Mit natürlichen Zahlen können wir beliebig
 \item \textbf{multiplizieren} ($\cdot{}$).
 \end{itemize}
 
-
-\TALS{\newpage}
+\begin{bemerkung}{Subtratktion}{}
+  Eine Subtraktion ist in den natürlichen Zahlen nur bedingt möglich:
+  \TNT{4}{
+  $$8-4 \in \mathbb{N}$$
+  aber:
+  $$3-6 \not\in \mathbb{N}$$}%% END TNT
+\end{bemerkung}
+\newpage
 
 
 \subsection{Ganze Zahlen ($\mathbb{Z}$)}\index{Zahlen!ganze}
@@ -72,11 +78,23 @@ Mit natürlichen Zahlen können wir beliebig
 
 $$\mathbb{Z} = \{..., -3, -2, -1, 0, 1, 2, 3,  4, ... \}$$
 
-Zusätzlich zu den natürlichen Zahlen können wir nun eine
+Mit den ganzen Zahlen sind uneingeschränkt durchführbar:
 \begin{itemize}
+\item Addition ($+$)
+  \item Multiplikation ($\cdot$)
 \item \textbf{Subtraktion} ($-$)
   \end{itemize}
 uneingeschränkt durchführen.
+
+
+\begin{bemerkung}{Division}{}
+  Eine Division ist in den ganzen Zahlen nur bedingt möglich:
+  \TNT{3.6}{
+  $$8:4 \in \mathbb{Z}$$
+  aber:
+  $$5:3 \not\in \mathbb{Z}$$}%% END TNT
+\end{bemerkung}
+
 
 \TALS{
 \subsubsection{Zahlenstrahl / Zahlengerade}\index{Zahlenstrahl}
@@ -86,7 +104,9 @@ uneingeschränkt durchführen.
 \end{center}
 
 Der Zahlenstrahl hat den Startpunkt 0 (Null)\footnote{... manchmal  den Startpunkt 1 ...}, wohingegen die
-Zahlengerade auf beiden Seiten uneingeschränkt weiterläuft.}%% END TALS
+Zahlengerade auf beiden Seiten uneingeschränkt weiterläuft.%%
+}%% END TALS
+
 \newpage
 
 
@@ -155,7 +175,7 @@ Als Dezimalen, Dezimalstellen oder Nachkommastellen werden die Stellen
 
 \begin{rezept}{Runden}{}
   Beim \textbf{Runden} auf die $n$-te Stelle, wird die $n+1$-te Stelle
-  betrachtet. Ist diese >=5, so wird \textbf{aufgerundet}, ansonsten \textbf{abgerundet}.
+  betrachtet. Ist diese $\ge 5$, so wird \textbf{aufgerundet}, ansonsten \textbf{abgerundet}.
 \end{rezept}
 
 Runden auf die vierte \textbf{Dezimale} (= vierte \textbf{Nachkommastelle}):
