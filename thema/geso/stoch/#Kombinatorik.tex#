@@ -515,13 +515,13 @@ Urne mit $n$ verschiedenen Kugeln.
 \end{itemize}
 
 $$N = {n \choose k} = \frac{n!}{k!\cdot{}(n-k)!}$$
-\renewcommand{\arraystretch}{1.5}
-\begin{tabular}{rcl}
+%%\renewcommand{\arraystretch}{1.5}
+\begin{bbwFillInTabular}{rcl}
   $N$ &=& \TRAINER{Kombinationen (reihenfolge egal)}\\
   $n$ &=& \TRAINER{Objekte zur (optionalen) Auswahl}\\
   $k$ &=& \TRAINER{auszuwählende nicht wiederholbare Objekte}
-\end{tabular}
-\renewcommand{\arraystretch}{1}
+\end{bbwFillInTabular}
+%%\renewcommand{\arraystretch}{1}
 
 
 \end{gesetz}
