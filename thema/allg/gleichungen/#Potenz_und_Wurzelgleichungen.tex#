@@ -94,7 +94,7 @@ Beachten Sie die folgenden typischen Fälle:
   \hline
   \end{bbwFillInTabular} 
 
- \renewcommand{\arraystretch}{1}
+%% \renewcommand{\arraystretch}{1}
 
  \newpage
  
@@ -103,7 +103,7 @@ Beachten Sie die folgenden typischen Fälle:
  \begin{center}\fbox{Gegeben $x^n=a$, $n\ne 0$}\end{center}
  \begin{center}\fbox{Gesucht $\lx$}\end{center}
 
- \renewcommand{\arraystretch}{2}
+%% \renewcommand{\arraystretch}{2}
 
  \begin{bbwFillInTabular}{l|l|l}
                         & $a>0$                                  & $a<0$                      \\\hline

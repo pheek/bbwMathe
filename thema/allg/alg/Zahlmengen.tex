@@ -55,8 +55,8 @@
 
 Mit natürlichen Zahlen können wir beliebig
 \begin{itemize}
-\item \textbf{addieren} ($+$)  und
-\item \textbf{multiplizieren} ($\cdot{}$).
+\item \LoesungsRaumLang{\textbf{addieren} ($+$)}  und
+\item \LoesungsRaumLang{\textbf{multiplizieren} ($\cdot{}$)}.
 \end{itemize}
 
 \begin{bemerkung}{Subtratktion}{}
@@ -82,9 +82,8 @@ Mit den ganzen Zahlen sind uneingeschränkt durchführbar:
 \begin{itemize}
 \item Addition ($+$)
   \item Multiplikation ($\cdot$)
-\item \textbf{Subtraktion} ($-$)
+\item \LoesungsRaumLang{\textbf{Subtraktion} ($-$)}
   \end{itemize}
-uneingeschränkt durchführen.
 
 
 \begin{bemerkung}{Division}{}
@@ -121,6 +120,31 @@ werden als \textbf{rationale Zahlen} bezeichnet.
 $$\mathbb{Q} =\left\{ q = \frac{a}{b} \,\,\, \middle| \,\,\, a \in \mathbb{Z}, b \in \mathbb{N}\backslash{}\{0\}\right\}$$
 \end{definition}
 
+\subsubsection{Beispiele}
+
+$$0.5 = \LoesungsRaum{\frac12} \hspace{1cm} (a=\LoesungsRaum{1}; b=\LoesungsRaum{2})$$
+
+$$3 = \LoesungsRaum{\frac31} \hspace{1cm} (a=\LoesungsRaum{3}; b=\LoesungsRaum{1})$$
+
+oder so:
+
+$$-8 = \LoesungsRaum{\frac{-16}{2}} \hspace{1cm} (a=\LoesungsRaum{-16}; b=\LoesungsRaum{2})$$
+
+$$0 = \LoesungsRaum{\frac{0}{7}} \hspace{1cm} (a=\LoesungsRaum{0}; b=\LoesungsRaum{7})$$
+
+
+Mit den \textbf{rationalen} Zahlen sind uneingeschränkt durchführbar:
+\begin{itemize}
+\item Addition ($+$)
+  \item Multiplikation ($\cdot$)
+\item Subtraktion ($-$)
+\item \LoesungsRaumLang{\textbf{Division} ($:$
+  bzw. $\frac{\cdot{}}{\cdot{}}$ bzw. $\frac{\Box{}}{\Box{}}$)}
+  \end{itemize}
+
+\newpage
+
+
 \subsubsection{Dezimalbrüche}\index{Dezimalbruch}
 Jeder Bruch ($\frac{a}{b}$\TRAINER{  $a, b \in \mathbb{Z}, b\ne 0$}) lässt sich als
 abbrechender oder periodischer Dezimalbruch schreiben. Beispiel:
@@ -147,13 +171,11 @@ $$0.\overline{13} = 0.131313... = \LoesungsRaumLang{13\cdot{}\frac1{99}=\frac{13
   \subsection*{Aufgaben}
   Zeigen Sie, dass die folgenden Dezimalzahlen rational sind. Schreiben Sie dazu diese Zahlen als gewöhnliche, gekürzte Brüche:
 
-  \renewcommand{\arraystretch}{1.5}
-  \begin{tabular}{|c|c|c|}
+%%  \renewcommand{\arraystretch}{1.5}
+  \begin{bbwFillInTabular}{|c|c|c|}
   $0.8=\LoesungsRaum{\frac45}$                  & $-2.03=\LoesungsRaum{-\frac{203}{100}}$         & $2.125=\LoesungsRaum{\frac{17}{8}}$                             \\
   $3.\overline{3}=\LoesungsRaum{\frac{10}{3} }$ & $4.\overline{16}=\LoesungsRaum{\frac{412}{99}}$ & $1.\overline{538461} =\LoesungsRaum{\frac{170\,940}{111\,111}}$ 
-  \end{tabular} 
-  \renewcommand{\arraystretch}{1}
-
+  \end{bbwFillInTabular} 
 
 \TNTeop{}
 
@@ -173,10 +195,10 @@ Stellen interessiert, sondern begnügen uns mit einer Näherung.
 Als Dezimalen, Dezimalstellen oder Nachkommastellen werden die Stellen
 \textbf{nach} dem Komma bezeichnet.
 
-\begin{rezept}{Runden}{}
+\begin{gesetz}{Runden}{}
   Beim \textbf{Runden} auf die $n$-te Stelle, wird die $n+1$-te Stelle
   betrachtet. Ist diese $\ge 5$, so wird \textbf{aufgerundet}, ansonsten \textbf{abgerundet}.
-\end{rezept}
+\end{gesetz}
 
 Runden auf die vierte \textbf{Dezimale} (= vierte \textbf{Nachkommastelle}):
 $$ 36.4699432 \approx  \LoesungsRaum{36.4699}$$
