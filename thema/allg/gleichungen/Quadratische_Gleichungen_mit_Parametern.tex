@@ -4,8 +4,7 @@
 %%
 
 \newpage
-\section{Quadratische Gleichungen II (mit
-  Parametern)}\index{Gleichungen!quadratische mit Parametern}
+\section{Quadratische Gleichungen II (mit Parametern)}\index{Gleichungen!quadratische mit Parametern}
 \sectuntertitel{Welches ist denn nun die Gesuchte?}
 
 \TadBMTA{172}{10.4}
@@ -16,20 +15,32 @@
 \item Taschenrechner: Mit Parameter(n)
 \item Taschenrechner: Visualisierung, Interpretation
 \end{itemize}
+\newpage
 
-\subsection{Vorzeigeaufgabe 262 a)}
-Für welchen Wert von $a$ wird die folgende Gleichung quadratisch?
-$$ax^3 + 7x^2 -6 = 5(x^3 -x)$$
+\subsection{Vorzeigeaufgabe}
+Lösen Sie die folgende Gleichung ohne Berücksichtigung von
+Spezialfällen, die durch die Wahl des Parameters $\lambda$ auftreten
+könnten:
 
-\noTRAINER{%%
-  \vspace{5cm}
-}
-\TRAINER{
-  $\Rightarrow ax^3 + 7x^2 -6 = 5x^3 -5x$\\
-  $\Rightarrow ax^3 - 5x^3 + 7x^2 + 5x -6 = 0$ (Grundform)\\
-  $\Rightarrow (a-5)x^3 + 7x^2 + 5x - 6 = 4$\\
-  Die Gleichung wird quadratisch, wenn $a-5 = 0$ ist.
-}
+$$bx^2 + \sqrt{2} x = \lambda b x + \lambda \sqrt{2}$$
+
+\TNTeop{
+Alles nach links nehmen:
+$$bx^2 + \sqrt{2}x - \lambda b x - \lambda \sqrt{2} = 0$$
+$A$, $B$ und $C$ bestimmen, dazu zuerst $x$ ausklammern:
+\\
+$$b\cdot{}x^2 + (\sqrt{2} - \lambda b) \cdot x - \lambda \sqrt{2} = 0$$
+$$\Longrightarrow  A = b; B = (\sqrt{2} - \lambda{} b); C = -\lambda \sqrt{2}$$
+Einsetzen in $\frac{-B \pm \sqrt{B^2-4AC}}{2A} $:
+$$x_{1,2} = \frac{\lambda b - \sqrt{2} \pm \sqrt{(2-2\sqrt{2}\lambda b) + \lambda^2 b^2 + 4b\lambda\sqrt{2}}}{2b}$$
+$$  = \frac{\lambda b - \sqrt{2} \pm \sqrt{2+2\sqrt{2}\lambda b+ \lambda^2 b^2 }}{2b} $$
+binomische Formel: 
+  $$  = \frac{\lambda b - \sqrt{2} \pm \sqrt{(\sqrt{2} + \lambda b)^2 }}{2b} $$
+  $$  = \frac{\lambda b - \sqrt{2} \pm (\sqrt{2} + \lambda b)}{2b}$$
+  $$x_1 = \sqrt{-\sqrt{2}}{b}; x_2 = \frac{2\lambda b}{2b} = \lambda $$
+}%% END TNT
+%%\newpage
 
 \subsection{Aufgaben}
-\AadBMTA{182ff}{13., 16.}%%\TALSAadBMTA{99}{ab 279}
+\AadBMTA{182ff}{13. a) b)}%%\TALSAadBMTA{99}{ab 279}
+\newpage
