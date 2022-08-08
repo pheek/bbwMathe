@@ -47,10 +47,11 @@ Maximum). Wo liegt dieses? Handelt es sich um ein Minimum oder ein Maximum?
   Es handelt sich um ein Minimum, denn der Parameter $a$ (vor dem
   $x^2$) ist positiv; somit ist die Parabel nach oben geöffnet.
 }
- 
-Algebrabuch (falls nicht schon im GLF\footnote{GLF = Grundlagenfach} behandelt):
-\TALSAadBMTA{192ff}{715., 717., 718.*}
 
+
+%%Algebrabuch (falls nicht schon im GLF\footnote{GLF = Grundlagenfach} behandelt):
+%%\TALSAadMTA{192ff}{715., 717., 718.*}
+\TALSAadBMTA{320}{15.}
 \newpage
 
 
@@ -83,19 +84,19 @@ Das Funktionsminimum kann auch im «notes» berechnet werden. Vorteil: Hier kön
 \subsection*{Aufgaben zum Taschenrechner}
 
 Algebrabuch:
-\TALSAadBMTA{242}{915. a) b) c) [ohne Wertebereiche]} %% Weitere mögliche: , 916., 917., 918. und 919.}
-
+%%\TALSAadBMTA{242}{915. a) b) c) [ohne Wertebereiche]} %% Weitere mögliche: , 916., 917., 918. und 919.}
+\TALSAadBMTA{321}{18.}
 
 \newpage
 \subsection{Das Tipi}\index{Tipi}
-vgl. \cite{frommenwiler18geom} S. 173 Kap. 3.5 Extremwertaufgabe 222.
+\TRAINER{vgl. \cite{frommenwiler18geom} S. 173 Kap. 3.5 Extremwertaufgabe 222.}
 
 \TRAINER{Lösen Sie in Gruppen die Aufgabe 222. Noch keinerlei Hilfe geben.}
 
 «Aus vier 5 m langen Stangen soll ein pyramidenförmiges Zelt mit quadratischer Grundfläche errichtet werden.
 Wie hoch wird es, wenn sein Volumen möglichst groß sein soll?
 
-\TNT{8}{Verschiedene Lösungswege sind denkbar;
+\TNTeop{Verschiedene Lösungswege sind denkbar;
 
   Variable $h$ = Höhe:
   $$V(h) = \frac13 G(h)\cdot{}h$$
@@ -107,8 +108,8 @@ Wie hoch wird es, wenn sein Volumen möglichst groß sein soll?
   $$V(a) = \frac13\cdot{}a^2h(a)$$
 
   allen gemeinsam: Mit einer Größe (Parameter) wird «gespielt», um das Volumen zu berechnen.
-}
-\newpage
+}%% END TNTeop
+%%\newpage
 
 
 \subsection{Extremwertaufgaben systematisch lösen}
@@ -121,30 +122,29 @@ Wie sollen wir die Laterne bauen, dass die Seidenpapier-Oberfläche (vier Seiten
 
 Hier ist Platz für eine Skizze:
 
-\mmPapier{8}
-
-\newpage
+\TNT{14}{}
+%%\newpage
 
 
 \subsubsection{Rezept}
   \begin{enumerate}
   \item \textbf{Zielgröße} festlegen: Dies ist hier die zu maximierende Oberfläche. Also sind die gesuchten Variable die Höhe $h$ und die Quadratseite $x$. Die zu maximierende Fläche ist
-    \TNT{2.4}{$$F(x) = x^2 + 4\cdot{}x\cdot{}h$$\vspace{2cm}}
+    \TNT{2.8}{$$F(x) = x^2 + 4\cdot{}x\cdot{}h$$\vspace{2cm}}
     
 
   \item \textbf{Nebenbedingung} berücksichtigen (identifizieren und danach umformen). Die Nebenbedingung hier ist, dass wir nur beschränktes Material an Stabilisierungsstangen (Holz) zur Verfügung haben (8m).
     Es gilt also
-    \TNT{2.4}{$$8 = 8x+4h$$\vspace{2cm}}
+    \TNT{2.8}{$$8 = 8x+4h$$\vspace{2cm}}
     Somit kann $h$ aus $x$ berechnet werden:
     \TNT{2.4}{$$h=2-2x$$\vspace{2cm}}
 
   \item \textbf{Zielfunktion}\index{Zielfunktion} definieren. Unsere Zielgröße $F(x)$ kann nun vollständig durch $x$ definiert werden, indem wir die Nebenbedingung $h=2-2x$ in die ursprünglich definierte Zielgröße einsetzen:\
-    \TNT{2.4}{$$F(x) = x^2 + 4\cdot{}x\cdot{}(2-2x)$$\vspace{2cm}}
-    \newpage
+    \TNTeop{$$F(x) = x^2 + 4\cdot{}x\cdot{}(2-2x)$$\vspace{2cm}}
+%%    \newpage
     
   \item \textbf{Maximieren/Minimieren} Die Zielfunktion ist hier eine quadratische Funktion, deren Maximum einfach mit Taschenrechner oder Scheitelpunkt bestimmt werden kann. Ich zeige hier die
     Scheitelpunkts-Lösung:
-    \TNT{5.2}{$$F(x) = x^2+4x(2-2x)=-7x^2 + 8x$$\vspace{2cm}
+    \TNT{2.8}{$$F(x) = x^2+4x(2-2x)=-7x^2 + 8x$$\vspace{2cm}
 
    Diese Funktion wird maximiert, indem das $x_S$ des Scheitelpunktes $S=(x_s|y_S)$ bestimmt wird. (Wir erinnern uns: $x_S = \frac{-b}{2a}$.) Somit ist hier $x_S = \frac{-8}{2\cdot{}(-7)} = \frac47$. Dies ist gleichzeitig auch unser gesuchtes $x$.
     }%% END TNT
@@ -152,7 +152,7 @@ Hier ist Platz für eine Skizze:
     
   \item \textbf{Zweite Größe bestimmen} Die zweite Größe kann hier entweder die Oberfläche, oder die Höhe der Laterne sein. Wir berechnen beides:
 
-    \TNT{3.2}{$$h = 2-2x = 2-2\cdot{}\frac47 = \frac67 [\textrm{m}]$$
+    \TNTeop{$$h = 2-2x = 2-2\cdot{}\frac47 = \frac67 [\textrm{m}]$$
     $$F(x) = y_S = x^2 + 4\cdot{}x\cdot{}h = \left(\frac47\right)^2 + 4\cdot{}\frac47 \cdot{} \frac67= \frac{112}{49} = \frac{16}{7} [\textrm{m}^2]$$}
     
   \end{enumerate}
@@ -174,13 +174,14 @@ Hier ist Platz für eine Skizze:
 Ohne Taschenrechner:
 
 Algebrabuch (Planimetrie/quadratische Funktionen):
-\TALSAadBMTA{192ff}{722. [Optional 720. und 721.]}
+\TALSAadBMTA{282}{57. a) c), 59., 60.}%%192ff}{722. [Optional 720. und 721.]}
 
-\TALSAadBMTA{243ff}{922. und 927. [Optional: 924]}
+\TALSAadBMTA{311}{49. [Straßenlampe], 52.}
+%%\TALSAadBMTA{243ff}{922. und 927. [Optional: 924]}
 
-Geometriebuch (Stereometrie):
-\TALSAadBFWG{173}{224. [Optional: 222., 223., 225. und 228.]}
-
+%%Geometriebuch (Stereometrie):
+%%\TALSAadBFWG{173}{224. [Optional: 222., 223., 225. und 228.]}
+\TALSAadBMTA{320ff}{12., 13., 16., 17.}
 \newpage
 
 

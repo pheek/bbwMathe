@@ -78,10 +78,10 @@ $$10^{\lg(2)\cdot{}x} = 10^{\lg(128)}$$
  dadurch, dass die Basis nicht 10, sondern 2 ist. Dies kann der
  Taschenrechner auch: 
 
-\TNT{2.4}{
+\TNTeop{
  $$2^x = 128 \Longleftrightarrow  x = \log_2(128) = \LoesungsRaum{7}$$
-}%% END TNT
-  \newpage
+}%% END TNTeop
+%%  \newpage
 
 
 \subsection{Definition zu anderer Basis}
@@ -98,10 +98,10 @@ Diese Definition können wir auf jede andere Basis als 10 ausweiten:
    $$a^x=p \Longleftrightarrow x = \log_a(p)$$
    \end{definition}
 
-\TALS{\subsection*{Aufgaben}}
-\TALS{Andere Basis:\\}
-\TALSAadBMTA{62ff}{184. a), 185. a) b) c) g), 186. a) d) f) h), 187. a) c) e)  und
-  (optional mit TR) 188.}
+%%\TALS{\subsection*{Aufgaben}}
+%%\TALS{Andere Basis:\\}
+%%\TALSAadBMTA{62ff}{184. a), 185. a) b) c) g), 186. a) d) f) h), 187. a) c) e)  und
+%%  (optional mit TR) 188.}
 \newpage
 
 
@@ -115,24 +115,24 @@ Aus obigem Beispiel («die Harte Tour» \totalref{harteTourLogarithmen}) folgt d
 
 
 \TALS{%% Beweis nur bei TALS
-  \TNT{12}{
+  \TNTeop{
     $$x=\log_a(p) \Longleftrightarrow a^x = p$$
     $$\Longleftrightarrow \lg(a^x) = \lg(p)$$
     $$\Longleftrightarrow \lg(\underbrace{a\cdot{}a\cdot{}a\cdot{}...\cdot{}a}_{x-\textrm{Faktoren}}) = \lg(p)$$
     $$\Longleftrightarrow \underbrace{\lg(a)+\lg(a)+\lg(a)+ ... + \lg(a)}_{x-\textrm{Summanden}}= \lg(p)$$
     $$\Longleftrightarrow x\cdot{} \lg(a) = \lg(p)$$
 
-}%% END TNT
+}%% END TNTeop
 }%% END TALS
 
 
 \GESO{\begin{beispiel}{Logarithmen-Basiswechsel}{}
 \TNT{4}{ $$\log_2(32) = \frac{\lg(32)}{\lg(2)} = 5$$}
   \end{beispiel}%%
+\newpage
 }%% END GESO
 
-\newpage
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{beispiel}{Löse mit Zehnerlogarithmus}{}
   Lösen Sie die folgende Gleichung und schreiben Sie das Resultat mit
   Hilfe von Zehnerlogarithmen:
@@ -252,7 +252,7 @@ Aus obigem Beispiel («die Harte Tour» \totalref{harteTourLogarithmen}) folgt d
   \begin{bemerkung}{}{} 
   $$\log_a(u\cdot{}v)=\log_a(u) + \log_a(v)$$
   \end{bemerkung}%%
-  \TNT{2.4}{Bsp.:  $\log_2(8\cdot 32) = \log_2(2^3 \cdot 2^5) =
+  \TNTeop{Bsp.:  $\log_2(8\cdot 32) = \log_2(2^3 \cdot 2^5) =
     \log_2(2^{3+5}) = 3+5 = \log_2(2^3) + \log_2(2^5) = \log_2(8) + \log_2(32)$.\vspace{1cm}}
 } %% END GESO
 
@@ -337,16 +337,16 @@ Logarithmentabelle.} und dennoch $\log_a(p)$ oder das $x$ in $a^x=p$ berechnen w
 %%\TALS{(\cite{frommenwiler17alg} S.??? (Kap. ???))}
 %%\GESO{(\cite{marthaler21alg}       S.??? (Kap. ???))}
 \subsection*{Aufgaben}
-\TALSAadBMTA{64ff}{191. a) b) e), 192. c), 193. a) c) e),
-  194. a) c) d), 195. d) g) k), 196. a) b), 197. b) e) f), 198. a) b) f),
-  202. a) b), 203. b) d) 204. c), 206. a) f) i) und 208. a) b)}
+%%\TALSAadBMTA{64ff}{191. a) b) e), 192. c), 193. a) c) e),
+%%  194. a) c) d), 195. d) g) k), 196. a) b), 197. b) e) f), 198. a) b) f),
+%%  202. a) b), 203. b) d) 204. c), 206. a) f) i) und 208. a) b)}
 
-\GESO{Andere Basis (Vieles ist mit dem Taschenrechner lösbar):}
+Andere Basis (Vieles ist mit dem Taschenrechner lösbar):
 
-\GESOAadBMTA{103ff}{8. a) b) c) f), 9., 10. a), 13. a) f), 14. a) g),
+\AadBMTA{103ff}{8. a) b) c) f), 9., 10. a), 13. a) f), 14. a) g),
   15. a) c) d) e) f), 16. a) c) d) e) und 17. a) b)}
 
-\GESOAadBMTA{106}{33.}
+\AadBMTA{106}{33.}
 
-\GESO{Logarithmus naturalis:}
-\GESOAadBMTA{104}{17. c) und 18. g) h) i)}
+Logarithmus naturalis:
+\AadBMTA{104}{17. c) und 18. g) h) i)}

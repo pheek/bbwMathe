@@ -16,13 +16,14 @@ Auf wie viele Arten kann der Wanderer von Wesen (im Westen) nach Obertal (im Ost
 
 Die Antwort kann durch Abzählen (oder eine Kombination von Abzählen und Multiplizieren) gefunden werden:
 
-\TNT{2.4}{$3\cdot{}(1+(2\cdot3)) + 3 = 24$ Möglichkeiten. Mögliche
+\TNTeop{$3\cdot{}(1+(2\cdot3)) + 3 = 24$ Möglichkeiten. Mögliche
   Erklärung: Bis «L» sind 3 Wege offen. Bis «R» sind total 3*2 + 1,
   also sieben Wege möglich. Um nach «O» zu gelangen sind nun 7*3 + die
   drei Wege ab Lisibach und dann direkt, also total 24 Wege möglich. Parallele Wege werden addiert;
-  serielle Wegmöglichkeiten multiplizieren sich.}
+  serielle Wegmöglichkeiten multiplizieren sich.}%% END TNT eop
 
-\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
 \subsection{Variation mit Wiederholung
   (Produktregel)}\index{Variation!mit Wiederholung}
 Ein Zahlenschloss hat vier Ringe und auf jedem Ring sind die Zahlen
@@ -31,7 +32,7 @@ Wie viele Variationen gibt es im ganzen für dieses Zahlenschloss?
 
 \bbwCenterGraphic{7cm}{geso/stoch/img/zahlenschlossV2.jpg}
 
-\TNT{12}{
+\TNTeop{
 Jeder Ring hat 6 Möglichkeiten. Somit habe ich am 1. Ring sechs
 Varianten. Für jede dieser Varianten habe ich für den 2. Ring auch
 sechs Varianten. Insgesamt also
@@ -46,8 +47,9 @@ es 4 Ringe hat): \textbf{Jede der $k$ Positionen muss verwendet werden.}
 $N$ = Anzahl Variationen
 
 $$N = n^k = 6^4 = 1296$$
-}
-\newpage
+}%% END TNT eop
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{definition}{Variation}{}\index{Variation!Definition}
 Eine \textbf{Variation} ist eine \textbf{geordnete} Stichprobe.
@@ -73,10 +75,10 @@ $$N = n^k$$
 
 \end{gesetz}
 
-\TNT{8}{\bbwGraphic{15cm}{geso/stoch/img/Urnenmodell.png}\\
+\TNTeop{\bbwGraphic{15cm}{geso/stoch/img/Urnenmodell.png}\\
 Hinweis: Denken Sie an eine Wahlurne, bei der man nicht sehen darf, wie es darin aussieht. Das Urnenmodell wird oft verwendet, da alle unseren Kombinatorischen Problemstellungen damit moedelliert werden können.}%% END TNT
 
-\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection*{Referenzaufgabe Zahlenschloss}
 Ein Zahlenschloss wie eben soll gebaut werden. Dabei hat jeder Ring
@@ -124,7 +126,7 @@ möglich? Dabei darf eine Farbe im Schema auch mehrfach auftreten.}
 
 
 \aufgabenFarbe{Bei einem Spiel wird zunächst eine Münze geworfen (Kopf oder Zahl), danach ein Spielwürfel geworfen (1-6) und zu letzt mit dem Kompass eine der vier Himmelsrichtungen (N,O,S,W) bestimmt. Ein Möglicher Ausgang wäre (Kopf, Drei, Ost). Ein anderer möglicher Ausgang wäre (Zahl, Zwei, Süd). Wie viele solche Ausgänge sind denkbar?}
-\TNT{2}{Jedes Ergebnis ist vom vorangehenden unabhängig. Somit gibt es zwei mal sechs mal vier Variationen = 48 Mögliche Ausgänge}
+\TNT{4}{Jedes Ergebnis ist vom vorangehenden unabhängig. Somit gibt es zwei mal sechs mal vier Variationen = 48 Mögliche Ausgänge}
 
 
 \newpage
@@ -317,7 +319,7 @@ Anzahl der Möglichen Sitzordnungen = Fakultät der Anzahl Plätze = $n!
 
 Wie viele Sitzordnungen sind möglich, wenn es zwei oder mehr freie Plätze gibt?
 
-\TNT{8}{Hier gibt es grundsätzlich zwei Betrachtungsweisen.
+\TNTeop{Hier gibt es grundsätzlich zwei Betrachtungsweisen.
 
 a) Wir stellen uns vor, dass wir $n$ Plätze haben. Davon bleiben $f$
 frei. Nun zählen wir alle Schüler und die ``Phantomschüler'' zusammen, das ergibt
@@ -339,7 +341,8 @@ Reihenfolge}:
 Varianten = $\frac{n!}{(n-k)!}$.
 
 }%% END TNT
-\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{bemerkung}{«Plätze» ist nicht gleich «Stühle»}{}
 Nicht immer sind die zur Verfügung stehenden Objekte die Personen und nicht immer wird die Reihenfolge durch die Plätze (Stühle) festgesetzt:
@@ -434,7 +437,7 @@ aufzuzählen, wenn eine Teilmenge der Familie angesprochen werden soll:
 
 Suchen Sie für einige «\textbf{Dreiergruppen}» der Familie G. eine treffende Bezeichnung:
 
-\TNT{6}{
+\TNTeop{
   die drei Ältesten,
   Mutter und Männer (M\&Ms),
   keine Teenager,
@@ -447,8 +450,8 @@ Suchen Sie für einige «\textbf{Dreiergruppen}» der Familie G. eine treffende 
   Vater und Teenager
   \vspace{30mm}
 }% END TNT
-\newpage
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 Wie viele ``Teilmengen'', solcher \textbf{Kombinationen}, bestehend aus genau \textbf{drei} Familienmitgliedern sind möglich?
@@ -471,8 +474,8 @@ Möglichkeiten. Wir dividieren die Zahl durch die Anzahl aller Permutationen der
 gewählten Personen, aber auch durch die Anzahl aller Permutationen der
 nicht gewählten Personen:
 
-\TNT{2.8}{$$N={5\choose 3} = \frac{5!}{3!\cdot{} 2!}=10$$}%% END TNT
-\newpage
+\TNTeop{$$N={5\choose 3} = \frac{5!}{3!\cdot{} 2!}=10$$}%% END TNT
+%%\newpage
 
 \begin{definition}{Kombination}{}\index{Kombination!Definition}
 Eine \textbf{Kombination} ist eine \textbf{un}geordnete Stichprobe.
@@ -637,13 +640,14 @@ $$(a+b)^3 = (a^2 + 2ab + b^2)\cdot{}(a+b) = 1\cdot{}a^3 + 3a^2b +
 \subsubsection{Referenzaufgabe Euromillions}
 Beim Glücksspiel «Euromillions» werden fünf aus 50 Zahlen und zwei aus zwölf Sternen angekreuzt. Auf wie viel Arten ist dies möglich?
 
-\TNT{12}{${50 \choose 5} \cdot {12 \choose 2} =139\,838\,160$
+\TNTeop{${50 \choose 5} \cdot {12 \choose 2} =139\,838\,160$
 
   ..., denn jede der gewählten Zahlenkombinationen kann auch mit jeder
   Stern-Kombination verwendet (also kombiniert) werden. Daher das
   «Mal» ($\cdot$) im Resultat.
 }%% END TNT
-\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage
 
 
 \subsection*{Aufgaben}
