@@ -4,6 +4,14 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%% g e n e r e l l e   M a k r o s %%%%%%%%%%%%%%%%%%%%%%%
 
+%% change, if huge (V=Version), major (S=Subversion) or minor
+%% (R=Revision) changes have benn made
+
+\newcommand{\versionGESOMajorDate}{8. Aug. 2022}
+\newcommand{\versionTALSMajorDate}{8. Aug. 2022}
+\newcommand{\versionGESOMajorVSR}{1.10.2 (\LaTeX{})}
+\newcommand{\versionTALSMajorVSR}{1.10.1 (\LaTeX{})}
+
 %% Info vorab bei \newcommand
 %% \newcommand{ - Kommandos können in den Parametern auch Leerzeilen
 %%     enthalten
@@ -330,8 +338,14 @@ z.\,B.
 %% Use \olatLinkTALSStrukturaufgabenSPF{Kapitel}{Seite/Seiteff}{Aufgabe(n)}
 \newcommand{\olatLinkTALSStrukturaufgabenSPF}[3]{%%
 \TALS{%%
-\olatLink{{\Huge S}}{Strukturaufgaben}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/102901174299246}{Kapitel #1; Seite #2; Aufgaben #3}%%
-}%% END GESO
+\olatLink{{\Huge S}}{Strukturaufgaben [SPF]}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/102901174299246}{Kapitel #1; Seite #2; Aufgaben #3}%%
+}%% END TALS
+}%%
+
+\newcommand{\olatLinkTALSStrukturaufgabenGLF}[3]{%%
+\TALS{%%
+\olatLink{{\Huge S}}{Strukturaufgaben [GLF]}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/102901174291476}{Kapitel #1; Seite #2; Aufgaben #3}%%
+}%% END TALS
 }%%
 
 %%\newcommand{\olatLinkTALtfSStrukturaufgabenGLF}[1]{\olatLOGOLink{Strukturaufgaben Grundlagenfach}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/102901174291476}{#1}}
@@ -361,7 +375,7 @@ z.\,B.
 % #2: Seitennummer oder Seitennumerff
 % #3: aufgabennummer(n)
 \newcommand*{\AadB}[3]{%%
-\aufgabenFarbe{\noindent{\aadBTxt \cite{#1}: Seite {#2} Nr. {#3}}}%%
+\aufgabenFarbe{\noindent{\aadBTxt\, \cite{#1}: Seite {#2}; Nr. {#3}}}%%
 }%%
 
 %%\newcommand*{\AdbBAlgebra}[2]{\AadB{marthaler21alg}{#1}{#2}}%%
