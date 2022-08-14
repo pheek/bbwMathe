@@ -36,6 +36,7 @@ cp -f ./GESO_BLENDED/*.pdf /mnt/${BBW_WEBDAV_PATH}/6_Blended_Learning/skripts
 
 
 echo 'copying GESO Kapitel...'
+cp -f ./GESO_S_010/*.pdf   ${BBW_WEBDAV_PATH_FP}/i_geso/thema/010/skript
 cp -f ./GESO_S_AA1/*.pdf   ${BBW_WEBDAV_PATH_FP}/i_geso/thema/aa1/skript
 cp -f ./GESO_S_AA2/*.pdf   ${BBW_WEBDAV_PATH_FP}/i_geso/thema/aa2/skript
 cp -f ./GESO_S_AA3/*.pdf   ${BBW_WEBDAV_PATH_FP}/i_geso/thema/aa3/skript
@@ -57,6 +58,7 @@ cp -f ./TALS_4J_SPF_ALL/*.pdf  ${BBW_WEBDAV_PATH_FP}/i_tals/skripts
 
 
 echo 'copying TALS GLF Kapitel...'
+cp -f ./TALS_S_010/*.pdf   ${BBW_WEBDAV_PATH_FP}/i_tals/thema/glf/010/skript
 cp -f ./TALS_S_AA1/*.pdf   ${BBW_WEBDAV_PATH_FP}/i_tals/thema/glf/aa1/skript
 cp -f ./TALS_S_DAAN/*.pdf  ${BBW_WEBDAV_PATH_FP}/i_tals/thema/glf/daan/skript
 cp -f ./TALS_S_FCT1/*.pdf  ${BBW_WEBDAV_PATH_FP}/i_tals/thema/glf/fct1/skript
