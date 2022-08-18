@@ -1,1 +1,1 @@
-/root/matgit/arbeitsblaetter/makeBoth.sh
+../../makeBoth.sh

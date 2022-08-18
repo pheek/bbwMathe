@@ -1,1 +1,1 @@
-/root/matgit/arbeitsblaetter/clean.sh
+../../clean.sh
