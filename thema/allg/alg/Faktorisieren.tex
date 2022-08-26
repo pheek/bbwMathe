@@ -295,6 +295,7 @@ $$x^2 - 4x - 12$$
 $$\Longrightarrow x^2-4x-12 = (x-6)\cdot{}(x+2)$$}%% END TNT
 \end{beispiel}
 
+\GESO{%%
 \begin{bemerkung}{Taschenrechner}{}
   Beispiele im obigen Stil ($a\cdot{}x^2+b\cdot{}x + c$) können auch mit dem
   Taschenrechner mit der Funktion \tiprobutton{2nd} \tiprobutton{cos_poly-solv} gelöst
@@ -310,7 +311,23 @@ Somit lautet die faktorisierte Form:
 $$x^2-4x-12 = (x\LoesungsRaum{-6})\cdot{}(x\LoesungsRaum{+2})$$
 
 \end{bemerkung}
+}%% END GESO
+\TALS{
+\begin{bemerkung}{Taschenrechner}{}
+Der CAS Taschenrechner (nspire) kann direkt einen Term in Faktoren
+zerlegen.:
 
+Zerlegen Sie $x^2-4x-12$:
+
+TR:
+
+\texttt{factor(x²-4x-12)}
+
+Resultat:
+
+\texttt{(x-6)(x+2)}
+\end{bemerkung}
+}%% END TALS
 
 %%\olatAB{Algebra I Faktorisieren Aufgabenblatt A1F}{7}
 \GESO{\olatLinkArbeitsblatt{Faktorisieren [A1F]}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/105796980169261}{7.)}}
