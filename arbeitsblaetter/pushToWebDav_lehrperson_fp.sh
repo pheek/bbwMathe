@@ -31,6 +31,10 @@ echo "  Bruchrechnen GESO"
 cp -f ./algebra/bruchrechnen/GESO_Abschlusspruefungsaufgaben/BruchrechnenGESO_Maturaaufgaben_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/aa1/bruchrechnen/BruchrechenenGESO_Maturaaufgaben.pdf
 cp -f ./algebra/bruchrechnen/GESO_Abschlusspruefungsaufgaben/BruchrechnenGESO_Maturaaufgaben_TRAINER_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/aa1/bruchrechnen/BruchrechenenGESO_Maturaaufgaben_Trainer.pdf
 
+echo "  Bruchrechnen Arbeitsblatt 1: Wann Kürzen"
+cp -f ./algebra/bruchrechnen/WannBruecheKuerzen/WannBruecheKuerzen_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/bruchrechnen/wannKuerzen/WannBruecheKuerzen_ALLG.pdf
+cp -f ./algebra/bruchrechnen/WannBruecheKuerzen/WannBruecheKuerzen_TRAINER_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/bruchrechnen/wannKuerzen/WannBruecheKuerzen_TRAINER_ALLG.pdf
+
 echo "  Befragung Datenanalyse offline"
 cp -f ./datenanalyse/befragung/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/datenanalyse/befragung/
 
