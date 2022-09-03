@@ -210,4 +210,59 @@ $$ \log_{\frac35}(0.2) + \frac53= t \approx 4.871 \textrm{min.}
 
 \platzFuerBerechnungenBisEndeSeite{}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\bbwActAufgabenNr{} \textbf{Kondensatorladung}\par
+Wird ein Kondensator mit Kapazität $C$ (in Farad) an einer Spannung
+$U_0$ (in Volt) über einen Vorwiderstand $R$ (in Ohm) aufgeladen, so
+beschreibt die Spannung im Kondensator $U_C(t)$ ein beschränktes
+Wachstum.
+
+Es gilt:
+
+$$U_C(t) = U_0\left(1-\e^{-\frac{t}{R\cdot{}C}}\right)$$
+
+Dabei sind gegeben:
+
+Die Ladungsspannung $U_0 = 9$ V.
+
+Der Vorwiderstand $R = 470$ Ohm.
+
+Die Kapazität $C = 0.002$ Farad.
+
+Die Ladungszeit $t$ wird in Sekunden gemessen.
+
+\begin{bbwAufgabenBlock}
+\item Wie viel Ladung ist im Kondensator nach 2 Sekunden?
+
+  $$U_C(2) =
+  \LoesungsRaumLang{9\cdot{}\left(1-\e^{-\frac{2}{470\cdot{}0.002}}\right)\approx
+  7.9280 \textrm{ V}}$$
+
+\item Wann ist der Kondensator auf 8.9 Volt aufgeladen?
+
+  \TRAINER{
+  $$8.9 = 9\cdot\left(1-e^{-\frac{t}{470\cdot{}0.002}}\right)$$
+
+  $$\frac{8.9}{9} = 1 - e^{-\frac{t}{470\cdot{}0.002}}$$
+
+  $$1 - \frac{8.9}{9} = e^{-\frac{t}{470\cdot{}0.002}}$$
+
+  $$ln(1 - \frac{8.9}{9}) = -\frac{t}{470\cdot{}0.002}$$
+
+  $$-ln(1 - \frac{8.9}{9}) = \frac{t}{470\cdot{}0.002}$$
+
+  $$-ln(1 - \frac{8.9}{9})\cdot{}(470\cdot{}0.002) = t $$
+
+  $$t\approx{} 42.30 \textrm{ s}$$
+  }%% END Trainer
+  
+\end{bbwAufgabenBlock}
+
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+
 \newpage
