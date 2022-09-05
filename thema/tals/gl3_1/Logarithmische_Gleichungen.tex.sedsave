@@ -1,0 +1,66 @@
+
+%% 2019 07 04 Ph. G. Freimann
+%%
+
+\section{Logarithmische Gleichungen}\index{Gleichungen!logarithmische}\index{Logarithmische Gleichungen}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item Lösen logarithmischer Gleichungen
+\end{itemize}
+
+\TALS{Theorie: (\cite{frommenwiler17alg} S.121 (Kap. 2.4.5))}
+
+\begin{definition}{logarithmische Gleichung}{}
+  Bei einer \textbf{logarithmischen} Gleichung kommt die Unbekannte im Argument eines Logarithmus vor.
+
+\end{definition}
+
+\subsection{Einstiegsbeispiel}
+
+$$3+\log_2(x) = \log_2(40-2x)$$
+
+\TNTeop{
+  \begin{enumerate}
+  \item
+    Definitionsbereich? a) $x>0$ und b) $40-2x>$, d.\,h.\\ $\mathbb{D} = \{x\in\mathbb{R}| x>0 \textrm{ und } x<20\}$
+
+  \item Ordnen:
+    $$3 = \log_2(40-2x) - \log_2(x)$$
+
+  \item Logarithmengesetz:
+    $$3 = \log_2\left(\frac{40-2x}{x}\right)$$
+
+
+  \item Definition Logarithmus ($\log_a(x) = n \Longleftrightarrow a^n=x$):
+  $$2^3 = \frac{40-2x}{x}$$
+
+\item Gleichung lösen:
+  $$8 = \frac{40-2x}{x}$$
+  $$8x = 40-2x$$
+  $$10x = 40$$
+  $$x = 4$$
+\item Probe mit Definitionsbereich
+  $$4 \in \mathbb{D} \Longrightarrow \lx=\{4\}$$
+    \end{enumerate}
+}%% END TNTeop
+%%\newpage
+
+
+\begin{rezept}{logarithmische Gleichung}{}
+  \begin{itemize}
+  \item Definitionsmenge festlegen (Logarithmus-Argument > 0)
+  \item Alle Logarithmen separieren (auf eine Seite bringen)
+  \item Zusammenfassen (Logarithmen-Gesetze)
+  \item beide Seiten potenzieren (Logarithmus wegbringen)
+  \item Gleichung auflösen
+  \item Definitionsbereich prüfen
+ \end{itemize}
+\end{rezept}
+
+\subsection*{Aufgaben}
+%%\TALSAadBMTA{122}{371. a) d), 372. a), 374. a) e), 376. a) [Substitution]}
+\TALSAadBMTA{208}{14. a) b) c) i), 15. c), 18. b), 19. b) c), 20. a)
+  d) e), 21. a) d)}

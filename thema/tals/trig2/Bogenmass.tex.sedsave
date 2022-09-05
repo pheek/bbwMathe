@@ -1,0 +1,51 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+
+\subsection{Grad- und Bogenmaß}\index{Gradmaß}\index{Bogenmaß}
+
+%%\TALSTadBFWG{46}{1.3.2}
+\TadBMTG{87}{6.1}
+
+Das Bogenmaß ist eine alternative Einteilung des Kreises zum
+klassischen $360\degre$-Gradmaß. Dabei wird der volle Kreis nicht in
+$360\degre$ Grad sondern im Verhältnis zum Radius dargestellt. Mit
+anderen Worten: Bei gegebenem Winkel $\alpha$ ist das Bogenmaß nichts
+anderes als die Länge des Bogens zum Winkel $\alpha$ gemessen im Einheitskreis\index{Einheitskreis}.
+
+\bbwGraphic{5cm}{tals/trig2/img/bogenmass.png}
+
+\begin{definition}{Bogenmaß}{}
+$$360\degre \entspricht 2\cdot\pi \textrm{\,\,rad}$$
+\end{definition}
+
+\begin{bemerkung}{rad}{}
+Der Winkel im Bogenmaß wird nicht in der Maßeinheit Grad (${}\degre$)
+sondern in $\textrm{rad}$ angegeben.
+\end{bemerkung}
+
+\begin{gesetz}{Bogenmaß}{}
+$$1 \textrm{ rad } = \frac{180}{\pi}\degre \approx 57.30\degre$$
+$$1\degre = \frac{\pi}{180} \textrm{ rad } \approx 0.01745 \textrm{ rad }$$
+$$\stackrel{\frown}{\alpha} \textrm{rad} = \left(\frac{\alpha\cdot{}180}{\pi}\right)^\circ$$
+$$\alpha\degre = \left(\frac{\alpha\pi}{180}\right) \textrm{ rad }$$  
+\end{gesetz}
+
+\begin{beispiel}{Bogenmaß}{}
+ Zum Beispiel entspricht
+$\frac{3}{4}\pi\,\textrm{rad}$ unseren bekannten $135\degre$ in der
+(bereits sumerischen/babylonischen) $360\degre$-Einteilung.
+
+ $$\frac34\pi \textrm{ rad } = \left(\frac{\frac34\pi\cdot{}180}{\pi}\right)^\circ = 135\degre$$
+\end{beispiel}
+\newpage
+
+
+
+\subsection*{Aufgaben}
+
+\olatLinkArbeitsblatt{Bogenmaß}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/103430829669712}{1.1 bis 1.5}
+
+%%\TALSAadBFWG{46}{175. a) b) d) 176. a) f) i) und das Aufgabenblatt im OLAT}
+%%\AadBMTG{99}{10.}
+\newpage
