@@ -90,6 +90,9 @@ echo "  Copying Potenzgesetze Arbeitsblatt (GESO)"
 cp -f ./algebra/potenzgesetze_geso/Potenzgesetze_GESO.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/potenzgesetze/Potenzgesetze.pdf
 cp -f ./algebra/potenzgesetze_geso/Potenzgesetze_TRAINER_GESO.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/potenzgesetze/Potenzgesetze_TRAINER.pdf
 
+echo "  Copying Runden (algebra/zahlmengen/ordnungsrelationen) (ALLG)"
+cp -f ./algebra/zahlmengen/ordnungsrelationen/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/zahlmengen/ordnungsrelationen
+
 echo "  Copying Runden (algebra/zahlmengen/runden) (ALLG)"
 cp -f ./algebra/zahlmengen/runden/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/zahlmengen/runden
 
