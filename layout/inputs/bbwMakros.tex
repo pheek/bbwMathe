@@ -105,7 +105,6 @@
   (0, 0) grid ({#2}, {#1});
 \end{tikzpicture}}%%
 
-
 %% millimeterPapier füllen bis Ende Seite
 \newcommand{\mmPapierBisEndeSeite}{
 
@@ -156,6 +155,11 @@ Notizen / Berechnungen:
 \newcommand*\zB{%
 z.\,B.
 }
+
+%% Platz für Berechnungen innerhalb einer bbwAufgabenBlock-Aufgabe
+\newcommand{\abplz}[1]{\noTRAINER{
+
+  \mmPapierZwei{#1}{16.8}}}%% END plz
 
 %%
 %% Auf der Titelseite steht entweder GESO oder TALS.
@@ -241,7 +245,6 @@ z.\,B.
 \newcommand{\bbwAufgabenNummer}{\arabic{bbwAufgabenNummerCounter}}
 \newcommand{\nextBbwAufgabenNummer}{\stepcounter{bbwAufgabenNummerCounter}}
 \newcommand{\aufgSubLabel}{{\color{blue}\bbwAufgabenNummer. \alph*)}}
-
 %% Benutze außerhalb der bbwAufgabenblöcke folgendes Kommando, um an die
 %% nächste Aufgabennummer zu kommen. Dies z. B. wenn ein längerer Text vor der Aufgabe steht,
 %% der auch schon diese Bezeichnung erhalten sollte
@@ -249,7 +252,6 @@ z.\,B.
 
 
 \newenvironment{bbwAufgabenBlock}{%% Begin environment Part:
-
 \bbwActAufgabenNr{}
 %%{\color{blue}\bbwAufgabenNummer. {\small[\bbwAufgabenBlockID]}}
 \begin{enumerate}[label=\aufgSubLabel]
@@ -258,6 +260,8 @@ z.\,B.
 \end{enumerate}
 \nextBbwAufgabenNummer
 }%% END environment bbwAufgabenBlock
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
