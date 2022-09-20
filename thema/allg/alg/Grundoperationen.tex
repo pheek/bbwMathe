@@ -22,23 +22,23 @@
 
 \subsection{Addition und Subtraktion}\index{Addition}\index{Subtraktion}
 \begin{beispiel}{}{}
-  $$x^2-((x^3-x^2)-(-(-x+x^2)-(x^2-x^3)))$$
+%%  $$x^2-((x^3-x^2)-(-(-x+x^2)-(x^2-x^3)))$$
+$$-bx-(-bx^2+((xb-2ax)-(2bx-x^2b))+3ax)$$
 \end{beispiel}
 
-\TNT{10}{\bbwCenterGraphic{14cm}{allg/alg/img/KlammernLoesen.png}}%% END TNT
+\TNT{10}{\bbwCenterGraphic{17cm}{allg/alg/img/KlammernLoesen.png}}%% END TNT
 
 Regeln:
 \begin{itemize}
 \item Klammern werden von innen nach außen aufgelöst.
-\item Gleichwertige Operationen\footnote{Zum Beispiel alles Minus und Plus oder aber zum Beispiel alles \textit{Punkt}-Operationen (Produkt/Quotient).} werden von links nach rechts \textit{geklammert}:
-  $$10-4+5 = (10-4) + 5 \ne 10-(4+5)$$
 \item Negative Vorzeichen vor Klammern wechseln die Vorzeichen der
       Summanden innerhalb der Klammer.
 \item Es können nur gleiche Variable (bzw. Produkte von Faktoren)
-      addiert (bzw. subtrahiert) werden.
+      addiert (bzw. subtrahiert) werden: $ab^2 + a^2b + b^2a = 2ab^2+a^2b$.
+%%\item Gleichwertige Operationen\footnote{Zum Beispiel alles Minus und Plus oder aber zum Beispiel alles \textit{Punkt}-Operationen (Produkt/Quotient).} werden von links nach rechts \textit{geklammert}:
+%%  $$10-4+5 = (10-4) + 5 \ne 10-(4+5)$$
 \end{itemize}
 
-\newpage
 
 \subsection*{Aufgaben}
 %%\GESOAadBMTA{34}{1. a) c) e) g), 2. a) e), 3. b), 5. a) f) und 6. d) h)}
@@ -59,17 +59,15 @@ Gesetze:
 
 \begin{gesetz}{}{}
 \begin{itemize}
-\item  Assoziativgesetz:
-  $a+(b+c) = (a+b) +c$ und $a\cdot(b\cdot{}c) = (a\cdot b)\cdot c$
-\item Kommutativgesetz:
-  $a+b = b+a$ und $a\cdot b = b \cdot a$
+%%\item  Assoziativgesetz: $a\cdot(b\cdot{}c) = (a\cdot b)\cdot c$
+\item Kommutativgesetz:  $a\cdot b = b \cdot a$
 \item Distributivgesetz\footnote{lat. \textit{\textbf{distribuere}} = verteilen}:\\
   $a\cdot (b+c) = a\cdot b + a\cdot c$\\
   $a\cdot (b-c) = a\cdot b - a\cdot c$\\
-  $(a+b)\cdot c = ac + bc$\\
-  $(a-b)\cdot c = ac - bc$\\
-  $(a+b):c = a:c + b:c$\\
-  $(a-b):c = a:c - b:c$\\
+%%  $(a+b)\cdot c = ac + bc$\\
+%%  $(a-b)\cdot c = ac - bc$\\
+%%  $(a+b):c = a:c + b:c$\\
+%%  $(a-b):c = a:c - b:c$\\
   
   \end{itemize}
 \end{gesetz}
@@ -88,18 +86,16 @@ Faktor vor (bzw. nach) der Klammer multipliziert.
 \end{beispiel}
 
 \begin{beispiel}{}{}
-  \noTRAINER{$$(x + 7)\cdot(8-y) = x\cdot(8-y) + 7\cdot(8-y) =
-  8x-xy+56-7y$$}\TRAINER{\bbwCenterGraphic{15cm}{allg/alg/img/DistributivRechts.png}}
-oder \TRAINER{\\}
-  \noTRAINER{$$(x + 7)\cdot(8-y) = (x+7)\cdot 8 - (x+7)\cdot y = 8x+56-xy-7y$$}\TRAINER{\bbwCenterGraphic{15cm}{allg/alg/img/DistributivLinks.png}}
+%%  \noTRAINER{$$(x + 7)\cdot(8-y) = x\cdot(8-y) + 7\cdot(8-y) =
+%%  8x-xy+56-7y$$}\TRAINER{\bbwCenterGraphic{15cm}{allg/alg/img/DistributivRechts.png}}
+%%oder
+\TRAINER{\\}
+  $$(x + 7)\cdot(8-y) = 8x+56-xy-7y$$
+
+  \TRAINER{\par Jeden
+  Summanden der ersten Klammer mit jedem Summanden der zweiten
+  Klammer multiplizieren}
 \end{beispiel}
-
-\subsubsection{Kein Distributivgesetz bei Multiplikation eines Produktes}
-Berechnen Sie
-
-$$a\cdot{}(4+b) = \LoesungsRaumLang{4a + ab}$$
- ... und ...
-$$ a\cdot{}(4\cdot{}b) = \LoesungsRaumLang{4ab} $$
 
 \newpage
 
@@ -116,10 +112,10 @@ $$-10(x\cdot{}(-4)) = \LoesungsRaum{40x}$$
 
 Diese Unterschied wird auf dem Taschenrechner besonders gut deutlich:
 
-\tiprobutton{7}\tiprobutton{minus}\tiprobutton{3}  \tiprobutton{enter}  $ 7 - 3 = 4$
+\tiprobutton{7}\tiprobutton{minus}\tiprobutton{3}  \tiprobutton{enter}  \LoesungsRaumLang{$ 7 - 3 = 4$}
 
 \vspace{3mm}
-\tiprobutton{7}\tiprobutton{neg}\tiprobutton{3} \tiprobutton{enter}  $ 7\cdot{}(-3) = -21$
+\tiprobutton{7}\tiprobutton{neg}\tiprobutton{3} \tiprobutton{enter}  \LoesungsRaumLang{$ 7\cdot{}(-3) = -21$}
 
 
 \subsubsection{Referenzaufgabe}
