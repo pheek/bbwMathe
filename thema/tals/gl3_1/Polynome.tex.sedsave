@@ -34,8 +34,8 @@ Eine spezielle Form von Termen sind die
   $T(x)$ in der Gestalt:
 
   \begin{tabular}{rrlllll}\index{$\sum{}$ Summe} 
-   $T({\color{red}x}) = \sum\limits_{{\color{blue}i}=0}^{n}{{\color{ForestGreen}a}_{\color{blue}i}{\color{red}x}^{\color{blue}i}}$ &=& ${\color{ForestGreen}a}_{\color{blue}0}$ &+ ${\color{ForestGreen}a}_{\color{blue}1}{\color{red}x}$ &+ ${\color{ForestGreen}a}_{\color{blue}2}{\color{red}x}^{\color{blue}2}$ &+ $...$ &+ ${\color{ForestGreen}a}_{\color{blue}n}{\color{red}x}^{\color{blue}n}$\\
-    &(=& ${\color{ForestGreen}a}_{\color{blue}0}{\color{red}x}^{\color{blue}0}$ &+ ${\color{ForestGreen}a}_{\color{blue}1}{\color{red}x}^{\color{blue}1}$ &+ ${\color{ForestGreen}a}_{\color{blue}2}{\color{red}x}^{\color{blue}2}$ &+ $...$ &+ ${\color{ForestGreen}a}_{\color{blue}n}{\color{red}x}^{\color{blue}n}$)
+   $T({\color{red}x}) = \sum\limits_{{\color{blue}i}=0}^{n}{{\color{green}a}_{\color{blue}i}{\color{red}x}^{\color{blue}i}}$ &=& ${\color{green}a}_{\color{blue}0}$ &+ ${\color{green}a}_{\color{blue}1}{\color{red}x}$ &+ ${\color{green}a}_{\color{blue}2}{\color{red}x}^{\color{blue}2}$ &+ $...$ &+ ${\color{green}a}_{\color{blue}n}{\color{red}x}^{\color{blue}n}$\\
+    &(=& ${\color{green}a}_{\color{blue}0}{\color{red}x}^{\color{blue}0}$ &+ ${\color{green}a}_{\color{blue}1}{\color{red}x}^{\color{blue}1}$ &+ ${\color{green}a}_{\color{blue}2}{\color{red}x}^{\color{blue}2}$ &+ $...$ &+ ${\color{green}a}_{\color{blue}n}{\color{red}x}^{\color{blue}n}$)
 \end{tabular}
 
     \end{definition}

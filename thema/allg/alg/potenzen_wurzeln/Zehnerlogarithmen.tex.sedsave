@@ -148,7 +148,7 @@ $$\lg(10^x) = x \Longrightarrow 10^{\lg(10^x)} = 10^x
   Weil $10^x$ für alle $x$ immer positiv ausfällt, so gibt es keine
   Logarithmen von negativen Zahlen:
 
-  $$\lg(a) \textrm{ ist definiert für } a\in\mathbb{R}^+\backslash\{0\}$$
+  $$\lg(a) \text{ ist definiert für } a\in\mathbb{R}^+\backslash\{0\}$$
   \end{bemerkung}
 
 

@@ -33,11 +33,11 @@ Die Laufvariable erhöht ihren Wert für jeden Summanden um 1 (eins).
 
 \subsubsection{Beispiele}
 \begin{beispiel}{Summenzeichen}{beispiele_summenzeichen}
-  $${\color{ForestGreen}\sum_{{\color{orange}n}{{\color{ForestGreen}=\color{blue}3}}}^{\color{blue}5\color{ForestGreen}}}  {\color{orange}n}^7 = {\color{blue}3}^7 {\color{ForestGreen}+} {\color{blue}4}^7 {\color{ForestGreen}+} {\color{blue}5}^7\TRAINER{=96\,696}$$
+  $${\color{green}\sum_{{\color{orange}n}{{\color{green}=\color{blue}3}}}^{\color{blue}5\color{green}}}  {\color{orange}n}^7 = {\color{blue}3}^7 {\color{green}+} {\color{blue}4}^7 {\color{green}+} {\color{blue}5}^7\TRAINER{=96\,696}$$
 \end{beispiel}
 
 \begin{beispiel}{}{}
-$${\color{ForestGreen}\sum_{{\color{orange}s}={\color{blue}5}}^{{\color{blue}8}}{\color{black}(3{\color{orange}s}-4)}} = (3 \cdot{\color{blue}5} - 4) {\color{ForestGreen}+} (3 \cdot{\color{blue}6} - 4) {\color{ForestGreen}+} (3 \cdot {\color{blue}7} - 4) {\color{ForestGreen}+} (3 \cdot {\color{blue}8} - 4)\TRAINER{=62}$$
+$${\color{green}\sum_{{\color{orange}s}={\color{blue}5}}^{{\color{blue}8}}{\color{black}(3{\color{orange}s}-4)}} = (3 \cdot{\color{blue}5} - 4) {\color{green}+} (3 \cdot{\color{blue}6} - 4) {\color{green}+} (3 \cdot {\color{blue}7} - 4) {\color{green}+} (3 \cdot {\color{blue}8} - 4)\TRAINER{=62}$$
 \end{beispiel}
 
 

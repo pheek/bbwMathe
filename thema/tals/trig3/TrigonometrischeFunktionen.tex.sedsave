@@ -96,7 +96,7 @@ Zum Skizzieren beginnen wir mit uns bekannten Winkeln. Winkeln also, bei denen w
 
 $$\sin(0\degre)  = 0  ; \sin(30\degre) = 0.5; \sin(90\degre) = 1  $$
 
-\textbf{Leider}: Für $x=90\degre$ \zB erhalten wir also ... $$f(x) = f({\color{ForestGreen}90\degre}) = 0.7\cdot\sin(1.5\cdot({\color{ForestGreen}90\degre}-20\degre)) = 0.7\cdot{}\sin(105\degre)$$ ... und das macht die Sache nicht wirklich einfach.
+\textbf{Leider}: Für $x=90\degre$ \zB erhalten wir also ... $$f(x) = f({\color{green}90\degre}) = 0.7\cdot\sin(1.5\cdot({\color{green}90\degre}-20\degre)) = 0.7\cdot{}\sin(105\degre)$$ ... und das macht die Sache nicht wirklich einfach.
 
 
 Wir müssen also irgendwie erreichen, dass der Term $$(1.5\cdot(x-20\degre))$$
