@@ -14,13 +14,6 @@ echo "  Boxplot Arbeitsblatt"
 cp -f ./datenanalyse/boxplot/boxplot_ALLG.pdf          ${PATH_4_UM}Stochastik_Datenanalyse/Datenanalyse/Box-Plot/Arbeitsblatt_Boxplot_Erstellen_fp.pdf
 cp -f ./datenanalyse/boxplotTI30/boxplotTI30_ALLG.pdf  ${PATH_4_UM}Stochastik_Datenanalyse/Datenanalyse/Box-Plot/TI_30_Boxplot_Daten_auslesen_fp.pdf
 
-echo "  Bruchrechnen: Bruchterme vereinfachen"
-cp -f ./algebra/bruchrechnen/GESO_Abschlusspruefungsaufgaben/*.pdf ${PATH_4_UM}Aufgaben_BMP_GESO/
-
-echo "  Bruchgleichungen, die auf quadratische Gleichungen führen"
-cp -f ./gleichungen/bruchgleichungen/GESO_Abschlusspruefungsaufgaben/*.pdf ${PATH_4_UM}Gleichungen/Quadratische_Gleichungen/Bruchgleichungen/GESO
-cp -f ./gleichungen/bruchgleichungen/GESO_Abschlusspruefungsaufgaben/*.pdf ${PATH_4_UM}Aufgaben_BMP_GESO/
-
 echo "  ABC-Finden"
 cp -f ./gleichungen/quadratischeGleichungenABC_finden/*.pdf ${PATH_4_UM}Gleichungen/Quadratische_Gleichungen/abc_finden
 

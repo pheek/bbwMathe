@@ -32,10 +32,17 @@ cp -f ./taschenrechner/tr_ti30_geso_einfuehrung/TR_TI30_GESO_Einfuehrung_TRAINER
 cp -f ./taschenrechner/tr_ti30_geso_wichtige_befehle/TR_TI30_GESO_Wichtige_Befehle_GESO.pdf  "${BBW_WEBDAV_PATH}/5_Buecher_Lehrmittel_Taschenrechner/Taschenrechner/TI30_PRO_MathPrint/TR_TI30_GESO_Wichtige_Befehle.pdf"
 
 
-echo "Copyiing Formelsammlung"
+echo "copying Formelsammlung"
 GESO_BBW_FS_DIR="${BBW_WEBDAV_PATH}/3_Pruefungen/e_Formelsammlungen/GESO/Formelsammlung_BBW/daily/"
 cp -f ./formelsammlung/FormelsammlungGESO_GESO.pdf  "${GESO_BBW_FS_DIR}FormelsammlungGESO_Daily.pdf"
 cp -f ./formelsammlung/FormelsammlungGESO_TRAINER_GESO.pdf  "${GESO_BBW_FS_DIR}Working_Draft.pdf"
 cp -f ./formelsammlung/FormelsammlungGESO_HECH.pdf  "${GESO_BBW_FS_DIR}FormelsammlungGESO_Daily_hech.pdf"
 cp -f ./formelsammlung/FormelsammlungGESO_HECH_TRAINER.pdf  "${GESO_BBW_FS_DIR}Working_Draft_hech.pdf"
 
+
+echo "copying alte Maturaaufgaben sortiert"
+echo "    Bruchrechnen: Bruchterme vereinfachen"                                     	
+cp -f ./algebra/bruchrechnen/GESO_Abschlusspruefungsaufgaben/*.pdf ${BBW_WEBDAV_PATH}/3_Pruefungen/b_GESO/Abschlusspruefungen/Aufgaben_BMP_GESO_sortiert_nach_Themen/
+echo "    Bruchgleichungen, die auf quadratische Gleichungen führen"
+##cp -f ./gleichungen/bruchgleichungen/GESO_Abschlusspruefungsaufgaben/*.pdf ${PATH_4_UM}Gleichungen/Quadratische_Gleichungen/Bruchgleichungen/GESO
+cp -f ./gleichungen/bruchgleichungen/GESO_Abschlusspruefungsaufgaben/*.pdf ${BBW_WEBDAV_PATH}/3_Pruefungen/b_GESO/Abschlusspruefungen/Aufgaben_BMP_GESO_sortiert_nach_Themen/
