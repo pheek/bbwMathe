@@ -109,7 +109,7 @@ $$\frac{a}{b} + \frac{x}{y} = \frac{ay + bx}{by}$$
 Herleitung
 $$\frac{a}{b} + \frac{x}{y} = %% \frac{a}{b}\cdot\frac{y}{y} +  \frac{x}{y}\cdot\frac{b}{b} =
 %%\frac{a\cdot y}{b\cdot y} + \frac{x\cdot b}{y \cdot b}
-\frac{a\miniPlatz{\cdot{}y}}{b\miniPlatz{\cdot{}y}} + \frac{x\miniPlatz{\cdot{}b}}{y\miniPlatz{\cdot{b}}} = \LoesungsRaum{\frac{ay + bx}{by}}$$
+\frac{a\miniPlatz{\cdot{}y}}{b\miniPlatz{\cdot{}y}} + \frac{x\minxiPlatz{\cdot{}b}}{y\miniPlatz{\cdot{b}}} = \LoesungsRaum{\frac{ay + bx}{by}}$$
 
 
 \begin{gesetz}{}{}
