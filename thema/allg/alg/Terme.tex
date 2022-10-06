@@ -36,17 +36,20 @@ Generell werden die fünf wichtigsten Termarten in die folgenden drei Kategorien
 \begin{definition}{Term}{definition_term}
   Ein \textbf{Term} ist entweder
   \begin{itemize}
-  \item ein Atom (eine Zahl (\zB{} $4.86$) oder  eine Variable (\zB{}
-  $a$, $x$))
-  \item ein Klammerausdruck (\zB{} \fbox{({\color{ForestGreen}T})}, inkl.  Wurzeln \fbox{$\sqrt{\color{ForestGreen}T}$})\footnote{Dabei wird der
-  horizontale Strich wie eine Klammer aufgefasst.}
+  \item ein Atom: eine Zahl (\zB{} $4.86$), eine Konstante\index{Konstante}
+    ($\pi$, $\e$, ...) oder  eine Variable (\zB{}   $x$, $r$)
+  \item ein Klammerausdruck \fbox{({\color{ForestGreen}T})} 
 %%  \item weitere \TALS{Monome\index{Monom}}\GESO{Summanden (Teile einer Summe)}:
 %%    \begin{itemize}
    \item eine \textbf{Potenz}\index{Potenz}\footnote{Als Exponent darf
      ein beliebiger Term eingesetzt werden, wohingegen als Basis
      lediglich Atome, Klammerausdrücke und Wurzelterme verwendet
      werden dürfen, wegen der Verwechslungsgefahr. Bei
-     ${\frac{a}{b}}^c$ ist nämlich nicht klar, wohin das $c$ denn gehört.} (\fbox{${\color{ForestGreen}T_1}^{\color{ForestGreen}T_2}$} \zB{} $a^3$, $(2a - 4)^{x+2}$)
+     ${\frac{a}{b}}^c$ ist nämlich nicht klar, wohin das $c$ denn
+     gehört.}
+     \fbox{${\color{ForestGreen}T_1}^{\color{ForestGreen}T_2}$} \zB{}
+     $a^3$, $(2a - 4)^{x+2}$ (inkl.  Wurzeln \fbox{$\sqrt{\color{ForestGreen}T}$})\footnote{Dabei wird der
+  horizontale Strich wie eine Klammer aufgefasst.}
     \item  ein Bruchterm\footnote{Wie bei der Wurzel, dient der Bruchstrich als Klammerpaar: $\frac{U}{V}=(U):(V)$} (\fbox{$\frac{\color{ForestGreen}T_1}{\color{ForestGreen}T_2}$} \zB{} $\frac{2^x}{x^2}$)
     \item ein implizites \textbf{Produkt}\footnote{Ein implizites
       Produkt ist mit Koeffizienten angereicherter Ausdruck
@@ -67,7 +70,7 @@ Generell werden die fünf wichtigsten Termarten in die folgenden drei Kategorien
 \end{definition}
 
 \textbf{Gegenbeispiele}
-Keine Terme sind \zB{}: $x \cdot{}-8$, $\sqrt{+^2}$, $4+*($, $\frac{7}{+}$, $\frac{(a+b}{-c-d)}$.
+Keine Terme sind \zB{}: $x \cdot{}-8$, $\sqrt{+^2}$, $\frac{7}{\mathbb{N}}$, $\frac{(a+b}{-c-d)}$.
 
 
 \newpage
