@@ -194,52 +194,63 @@ bezeichnen zu können. So könnte \zB die Oberfläche einer
 Konservendose mit $A$ (Area) wie folgt bezeichnet werden, wenn $r$ den
 Radius bzw. $h$ die Höhe bezeichnen:
 
-$$A(r, h) = r^2\pi + r^2\pi + 2r\pi{}h$$
+$$A(r; h) = r^2\pi + r^2\pi + 2r\pi{}h$$
 
 Dabei ist $A$ der Name des Terms und $r$ bzw. $h$ sind die Parameter.
 \vspace{3mm}
 \begin{beispiel}{Werte einsetzen}{beispiel_terme_werte_einsetzen}
   Wir betrachten den Term
 
-  $$T({\color{red}a}, {\color{blue}x}) = 5{\color{red}a}{\color{blue}x} - {\color{red}a} + 7.$$
+  $$T({\color{red}a}; {\color{blue}x}) = 5{\color{red}a}{\color{blue}x} - {\color{red}a} + 7.$$
 
   Nun gilt, dass für jeden Parameter im Term (hier ${\color{red}a}$
   bzw. ${\color{blue}x}$) jede Zahl eingesetzt
   werden kann.\leserluft{}
 
-  $$T({\color{red}2}, {\color{blue}-3}) = \LoesungsRaumLang{5\cdot{}{\color{red}2}\cdot{\color{blue}(-3)} - {\color{red}2} + 7}$$
+  $$T({\color{red}2}; {\color{blue}-3}) = \LoesungsRaumLang{5\cdot{}{\color{red}2}\cdot{\color{blue}(-3)} - {\color{red}2} + 7}$$
 
   Es können auch Terme anstelle der Parameter eingesetzt
   werden:\leserluft{}
 
-  $$T({\color{red}z-4}, {\color{blue}2y}) =
+  $$T({\color{red}z-4}; {\color{blue}2y}) =
   \LoesungsRaumLang{5 \cdot{} {\color{red}(z-4)} \cdot {\color{blue}(2y)} - {\color{red}(z-4)} + 7}$$
 \end{beispiel}
 
 \begin{gesetz}{Einsetzen}{}
-  Beim Einsetzen eines Terms oder einer negativen Zahl in einen
+  Beim Einsetzen eines Terms in einen
   Parameter (= Variable des Terms) sind \textbf{immer} Klammern zu setzen!
 
-
-$$ a = z-4$$
-$$ a  \rightarrow (z-4)$$
-
+  Ist
+  
+  $$ T(x) = x^4$$
+  so ist
+  
+  $$ T(3-5) = (3-5)^4.$$
+  
+Die Klammern dürfen nur dann weggelassen werden, wenn sich der Wert
+des Terms beim Weglassen der Klammern nicht ändert!
 \end{gesetz}
 \newpage
 
 \subsubsection{Übungsbeispiel}
-$$T(b, y) = 7y^2 - 4by$$
+$$T(b; y) = 7y^2 - 4by$$
 
-Wir berechnen
+Berechnen Sie:
 
 
-$T(\underbrace{{\color{blue}s}}_b, \underbrace{{\color{ForestGreen}-t}}_y) = $%%
+$T(\underbrace{{\color{blue}-2}}_b; \underbrace{{\color{ForestGreen}-3}}_y) = $%%
+\noTRAINER{.......................................................}%%
+\TRAINER{$7\cdot (\underbrace{{\color{ForestGreen}-3}}_{y})^2 - 4\cdot (\underbrace{{\color{blue}-2}}_b) \cdot (\underbrace{{\color{ForestGreen}-3}}_y) = 39$}
+
+
+
+
+$T(\underbrace{{\color{blue}s}}_b; \underbrace{{\color{ForestGreen}-t}}_y) = $%%
 \noTRAINER{.......................................................}%%
 \TRAINER{$7\cdot (\underbrace{{\color{ForestGreen}-t}}_{y})^2 - 4\cdot (\underbrace{{\color{blue}s}}_b) \cdot (\underbrace{{\color{ForestGreen}-t}}_y) = 7t^2+4ts$}
 
-und
 
-$T(x, 2b) = $ \noTRAINER{.........................................................}\TRAINER{$7(2b)^2 - 4\cdot (x) \cdot (2b) = 28b^2 - 8bx =
+$T(x; 2b) = $ \noTRAINER{.........................................................}\TRAINER{$7(2b)^2 - 4\cdot (x) \cdot (2b) = 28b^2 - 8bx =
   4b (7b-2x)$}
 
 
