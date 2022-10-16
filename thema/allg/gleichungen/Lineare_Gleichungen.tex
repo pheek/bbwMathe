@@ -39,22 +39,20 @@
 
 \begin{beispiel}{Einstiegsbeispiel}{}
 
-  $2x-7+3x = 5x-6-\frac{x}{2}$ 
+  $2x-7+\sqrt{5}\cdot{}x = 5x-5-\frac{x}{7}$ 
 
-\TNT{10}{  \begin{tabular}{ll}
-    $2x-7+3x = 5x-6-\frac{x}{2}$                      & $| \cdot{} 2$\\
-    $(2x-7+3x)\cdot{} 2 = (5x-6-\frac{x}{2})\cdot{}2$ & $| TU$\\
-    $4x-14+6x = 10x-12-x$ & $| +x$\\
-    $5x-14+6x = 10x-12$ & $| $ TU $ = $ Termumformung\\
-    $11x-14 = 10x-12$ & $|-10x$\\
-    $x-14 = -12$ & $|+14$\\
-    $x = 2$ & \\
+\TNT{15.2}{  \begin{tabular}{ll}
+    $2x-7+\sqrt{5}x=5x-5-\frac{x}{7}$            & $| +7$\\
+    $2x+\sqrt{5}x=5x+2-\frac{x}{7}$              & $| -5x$\\
+    $-3x + \sqrt{5}x=2-\frac{x}{7}$              & $| $ TU (Hinweis)\\
+    $-2x + \sqrt{5}x=2-\frac{1}{7}\cdot{}x$      & $| +\frac17 x$ \\
+    $-3x+\sqrt{5}x + \frac17 x=2$                & $| x $ ausklammern \\
+    $x\cdot{}(-3+ \sqrt{5} + \frac17 )=2$        & $| : (-3+\sqrt{5}+\frac17)$ \\
+    $x=\frac{2}{-3+\sqrt{5}+\frac17} \approx -3.220$        &  \\
     \end{tabular}
 
-  Probe: Setze $\color{red}x=2$ in die Originalgleichung ein:
-
-  $$2\cdot{}{\color{red}2}-7+3\cdot{}{\color{red}2} = 5\cdot{}{\color{red}2}-6-\frac{{\color{red}2}}{2}$$
-  $$4-7+6 = 10 -6 -1 \text{ \color{ForestGreen} OK!}$$
+Allenfalls Probe mit TR: \GESO{\tiprobutton{sto}\tiprobutton{xyzabcd}}\TALS{$x:=\frac{2}{-3+\sqrt{5}+frac17}$}, dann $2x-7+\sqrt{5}x$ und $5x-5-\frac{x}7$ berechnen: je $\approx -20.64$
+  \vspace{75mm}
   }%% END TNT
 \end{beispiel}
 
@@ -62,59 +60,16 @@
   Bei einer \textbf{linearen Gleichung} kommt die Gesuchte in der
   1. Potenz vor; \zB $x (= x^1)$.
 \end{definition}
-\newpage
-\index{Lineare Gleichung!Grundform}\index{Grundform!lineare Gleichung}
 
-\subsection{Grundform}
-\begin{definition}{Grundform}{}\index{Grundform!lineare Gleichung}\index{Lineare Gleichung!Grundform}
-  \textbf{Grundform}\index{Grundform!lineare Gleichung}:\\
-  $$ax+b=0 \text{ mit } a,b\in\mathbb{R}, a\ne 0$$
-  
-  \end{definition}
-
-\begin{gesetz}{Lösungsformel}{}
- Lösung der linearen Gleichung in der Grundform
-
- $$ax+b=0$$
- \TNT{2}{$$ax=-b$$\vspace{10mm}}
-  $$x = \frac{-b}a$$
-  
-\end{gesetz}
-
-
-\subsubsection{Beispiele zur Grundform (optional)}
-
-
-\begin{beispiel}{Grundform}{beispiel_lineare_gleichung_grundform}
-  Bringen Sie die folgende lineare Gleichung auf die Grundform:
-  $$2x-10 = -3x\TRAINER{\,\,\,| +3x}$$
-
-  Grundform: $\LoesungsRaum{5x-10} = 0$
-
-  $a = \LoesungsRaum{5}$
-
-  $b = \LoesungsRaum{-10}$
-
-  und somit
-
-  \LARGE{$x=\frac{-(\noTRAINER{\,\,\,\,\,\,}\TRAINER{-10})}{\noTRAINER{\,\,\,\,\,\,\,}\TRAINER{5}}
-    = \LoesungsRaum{2}$}
-
-\end{beispiel}
-
-
-\begin{beispiel}{Lineare Gleichung}{beispiel_lineare_gleichung_3x7}
-  Die Gleichung $3x=-7$ ist äquivalent zur Grundform $3x+7=0$ und somit ist die Lösung $\LoesungsRaum{\frac{-7}{3}}$
-  \end{beispiel}
-
-\begin{beispiel}{Lineare Gleichung}{beispiel_lineare_gleichung_5x8}
-  Die Gleichung $-5x=8$ ist äquivalent zur Grundform $-5x-8=0$ und somit ist die Lösung $\LoesungsRaum{\frac{8}{-5}}$
-\end{beispiel}
+\begin{rezept}{Lineare Gleichung auflösen}{}
+  \begin{itemize}
+  \item alle $x$ auf eine Seite bringen (alle «nicht $x$» auf die andere Seite)
+  \item $x$ ausklammern
+  \item durch die Klammer teilen
+    \end{itemize} 
+  \end{rezept}
 \newpage
 
-\TALS{\input{allg/gleichungen/GraphischeInterpretationLinearerGleichungen}}
-  
-\newpage
 \subsection{Äquivalenzumformungen}\index{Aquivalenzumformungene@Äquivalenzumformungen}
 Äqui... = Gleich...; ...valenz = ...wertig
 
@@ -175,38 +130,29 @@ $\Longrightarrow$ & $2$              & $1$                 & ...................
 \textbf{Typ A}\\
 
 $$1+4x+2 = 5x - (x-3)$$
-\TNT{6}{Alle Zahlen $x$ lösen die Gleichung!\vspace{14mm}}%% END TNT
+\TNT{7.2}{Alle Zahlen $x$ lösen die Gleichung!\vspace{14mm}}%% END TNT
 
 \textbf{Typ B}\\
 
-$$3x+8 = 5x-(2x-6)$$
+$$3x+8 = 5x-2(x-3)$$
 \TNTeop{Keine Zahl $x$ löst die Gleichnug!\vspace{14mm}}%% END TNT
 
 
 \subsection{Lösungsmenge}\index{Lösungsmenge}
   Die Zahlmenge, der gefundenen Lösungen einer Gleichung, nennen wir
   die Lösungsmenge und bezeichnen diese mit $\mathbb{L}$. Falls die gefundene
-  Variable $x$ \zB{} den Wert $4$ hat, dann schreiben wir:
+  Variable $x$ \zB{} \textbf{den Wert $4$} hat, dann schreiben wir:
   $$\LoesungsRaumLang{\lx=\{4\}}$$
-  Wenn eine Gleichung mehrere Lösungen hat (\zB $x=7$ und $x=-3$), so
+  Wenn eine Gleichung \textbf{mehrere Lösungen} hat (\zB $x=7$ und $x=-3$), so
   schreiben wir die Lösungsmenge in aufsteigender Form:
   $$\LoesungsRaumLang{\lx=\{-3; 7\}}$$
-  Eine Gleichung ohne Lösung hat die leere Menge als Lösungsmenge und
+  Eine Gleichung \textbf{ohne Lösung} (Typ B) hat die leere Menge als Lösungsmenge und
   wir schreiben:
   $$\LoesungsRaumLang{\lx=\{\}}$$
-  Falls alle Zahlen $x$ die Gleichung lösen, so schreiben wir:
+  Falls \textbf{alle Zahlen} $x$ die Gleichung \textbf{lösen} (Typ A), so schreiben wir:
   $$\LoesungsRaumLang{\lx=\mathbb{R}}$$
 
   
-
-Die Lösungsmenge $\lx$ zur allgemeinen Grundform $ax+b=0$ lautet somit $$\LoesungsRaumLang{\lx=\left\{ \frac{-b}{a} \right\}.}$$
-
-\begin{itemize}
-  \item Im Spezialfall \textbf{Typ A} gilt $a=0$ und $b=0$. Hier kann ich für $x$ alles einsetzen und somit gilt $\lx=\mathbb{R}$.
-  \item Im Spezialfall \textbf{Typ B} gilt $a=0$ und $b\ne 0$. Hier wird die Gleichung falsch, egal, was ich für $x$ einsetze; somit ist $\lx=\{\}$.
-\end{itemize}
-
-
 
 \subsection*{Aufgaben}
 \AadBMTA{127ff}{2. a) f),  3. a) h), 4. f) und 6. a) d) e) f)}
@@ -216,8 +162,60 @@ Die Lösungsmenge $\lx$ zur allgemeinen Grundform $ax+b=0$ lautet somit $$\Loesu
 
 \newpage
 
+\index{Lineare Gleichung!Grundform}\index{Grundform!lineare Gleichung}
 
-\TALS{\input{allg/gleichungen/Lineare_Gleichungen_Mit_CAS_Loesen}}
+\subsection{Grundform}
+\begin{definition}{Grundform}{}\index{Grundform!lineare Gleichung}\index{Lineare Gleichung!Grundform}
+  \textbf{Grundform}\index{Grundform!lineare Gleichung}:\\
+  $$ax+b=0 \text{ mit } a,b\in\mathbb{R}, a\ne 0$$
+  
+  \end{definition}
+
+\begin{gesetz}{Lösungsformel}{}
+ Lösung der linearen Gleichung in der Grundform
+
+ $$ax+b=0$$
+ \TNT{2}{$$ax=-b$$\vspace{10mm}}
+  $$x = \frac{-b}a$$
+  
+\end{gesetz}
+
+
+\subsubsection{Beispiele zur Grundform (optional)}
+
+
+\begin{beispiel}{Grundform}{beispiel_lineare_gleichung_grundform}
+  Bringen Sie die folgende lineare Gleichung auf die Grundform:
+  $$2x-10 = -3x\TRAINER{\,\,\,| +3x}$$
+
+  Grundform: $\LoesungsRaum{5x-10} = 0$
+
+  $a = \LoesungsRaum{5}$
+
+  $b = \LoesungsRaum{-10}$
+
+  und somit
+
+  \LARGE{$x=\frac{-(\noTRAINER{\,\,\,\,\,\,}\TRAINER{-10})}{\noTRAINER{\,\,\,\,\,\,\,}\TRAINER{5}}
+    = \LoesungsRaum{2}$}
+
+\end{beispiel}
+
+
+\begin{beispiel}{Lineare Gleichung}{beispiel_lineare_gleichung_3x7}
+  Die Gleichung $3x=-7$ ist äquivalent zur Grundform $3x+7=0$ und somit ist die Lösung $\LoesungsRaum{\frac{-7}{3}}$
+  \end{beispiel}
+
+\begin{beispiel}{Lineare Gleichung}{beispiel_lineare_gleichung_5x8}
+  Die Gleichung $-5x=8$ ist äquivalent zur Grundform $-5x-8=0$ und somit ist die Lösung $\LoesungsRaum{\lx=\frac{8}{-5}}$
+\end{beispiel}
+\newpage
+
+
+\newpage
+\TALS{\input{allg/gleichungen/Lineare_Gleichungen_Mit_CAS_Loesen}\newpage}
+\TALS{\input{allg/gleichungen/GraphischeInterpretationLinearerGleichungen}}
+  
 \GESO{\input{allg/gleichungen/Lineare_Gleichungen_Mit_NumSolv}}
 
 \newpage
