@@ -1,1 +1,1 @@
-. ../../layout/clean.sh
+/home/phi/matgit/arbeitsblaetter/clean.sh
