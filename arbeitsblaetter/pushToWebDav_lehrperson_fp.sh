@@ -152,5 +152,5 @@ echo "  copying Arbeitsblatt Exponentialfunktionen (GESO und TALS)"
 cp -f ./funktionen/exponentialfct/*.pdf                               ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/funktionen/exponentialfunktion/arbeitsblatt/
 
 echo "  copying Mengenbezeichnungen (GESO und TALS)"
-cp -f ./mengenbegriffe/Mengenbezeichnungen_ALLG.pdf                         ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/mengenbezeichnungen/Mengenbezeichnungen.pdf
+cp -f ./mengenbegriffe/Mengenbezeichnungen_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/mengenbezeichnungen/Mengenbezeichnungen.pdf
 
