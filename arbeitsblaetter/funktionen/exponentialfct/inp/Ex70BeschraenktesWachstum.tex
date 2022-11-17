@@ -1,6 +1,61 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 
 \subsection{Begrenztes Wachstum}
+
+
+
+
+
+
+\bbwActAufgabenNr{} \textbf{Sauerstoff}
+
+Ein Patient hat im Blut eine Sauerstoffkonzentration von 70\%. Ziel
+ist es, seinen Sauerstoff wieder auf 100\% zu bringen und dazu wird
+sein Sauerstoff erhöht.
+
+Zwei Minuten nach der Behandlung hat der Patient bereits 80\%
+Sauerstoff seiner möglichen Sättigung erreicht. Gehen Sie von einem
+(exponentiell) beschränkten Prozess aus.
+
+\begin{bbwAufgabenBlock}
+
+
+\item Machen Sie eine Skizze des Sauerstoffgehaltes.
+
+\TRAINER{Graph}
+  
+\item Geben Sie die Formel $y = f(t)$ an mit $y$ = Sauerstoffgehalt und
+$t$ = Zeit in Minuten.
+
+\TRAINER{$$f(t) = 100 - 30\cdot{}\left(\frac{20}{30}\right)^{\frac{t}{2}}$$}
+  
+\item Wie groß ist sein Sauerstoffgehalt nach 8 Minuten?
+
+\TRAINER{$$f(8) =
+  100-30\cdot{}\left(\frac{20}{30}\right)^{\frac{8}{2}}\approx 94.07 \%$$}
+  
+\item
+  Bei 97\% der Sauerstoffsättigung können wir die Behandlung
+abbrechen. Wann wird das erreicht sein?
+
+\TRAINER{
+
+  $$97 = 100 - 30 \cdot{} \left( \frac{20}{30} \right)^{\frac{t}{2}}$$
+  $$-3  = - 30 \cdot{} \left(\frac{20}{30}\right)^{\frac{t}{2}}$$
+  $$3  =  30 \cdot{} \left(\frac{20}{30}\right)^{\frac{t}{2}}$$
+  $$\frac{1}{10}  =  \left(\frac{20}{30}\right)^{\frac{t}{2}}$$
+  $$\log_{\left(\frac{20}{30}\right)}(\frac{1}{10}) =   \frac{t}{2}$$
+  $$2\cdot{} \log_{\left(\frac{20}{30}\right)}(\frac{1}{10}) = t
+      \approx  11.36 \text{ min.}$$
+}
+
+\end{bbwAufgabenBlock}
+
+
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \bbwActAufgabenNr{} \textbf{Cola}
