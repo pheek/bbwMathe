@@ -28,30 +28,59 @@
 \subsection{Einstiegsbeispiel}
 Ein Apfel koste CHF $a$, eine Birne CHF $b$. Wenn ich drei Äpfel und zwei Birnen kaufe, bezahle ich CHF 3.10. Wenn ich hingegen vier Äpfel und fünf Birnen kaufe, so muss ich CHF 6.00 bezahlen. Wie viel kostet ein Apfel, wie viel eine Birne?
 
+
+\TNT{5.2}{$a$ = Preis eines Apfels in CHF
+
+  $b$ = Preis einer Birne in CHF
+
+  $3a$ = Totalpreis von drei Äpfeln in CHF
+
+  etc.
+}
+
+
 Wir schreiben dies üblicherweise als sortiertes Gleichungssystem auf:
 
 \gleichungZZ{3a + 2b}{3.10}{4a + 5b}{6.00}
 
 
+\newpage
+
 \subsection{Einsetzungsverfahren}\label{einsetzungsverfahren}\index{Einsetzungsverfahren!Gleichungssysteme}
 Beim Einsetzungsverfahren wird aus einer der beiden Gleichungen eine der beiden Variablen alleine gestellt. Zum Beispiel hier aus der zweiten Gleichung $b = ...$; danach wird dieser $b$-Term in die \textbf{andere} Gleichung eingesetzt, und so erhalten wir eine Gleichung mit einer Unbekannten.
 
-\gleichungZZ{3a + 2b}{3.10}{4a + 5b}{6.00}
+\gleichungZZ{3a + 2b}{3.10\TRAINER{ (I)}}{4a + 5b}{6.00\TRAINER{ (II)}}
 
 Aus der zweiten Gleichung erhalten wir für $b$:
 
-\TNT{1.6}{$$5b= 6 - 4a \Longrightarrow b = {\color{orange}\frac{6.00-4a}{5}}.$$}
+\TNT{3.2}{$$5b= 6 - 4a \Longrightarrow b = {\color{orange}\frac{6.00-4a}{5}}. (III)$$}
 
-Diesen Term setzen wir nun für $b$ in die andere (hier die obere) Gleichung ein:
+Diesen Term setzen wir nun für $b$ in die \textbf{andere} (hier die obere) Gleichung ein:
 $$3a+2b = 3.10$$
 
-Dies ergibt
+Dies ergibt für $a$:
 
-\TNT{2.0}{$$3a+2\cdot{}{\color{orange}\frac{6.00 - 4a}{5}} = 3.10.$$}
+\TNT{1.2}{$$3a+2\cdot{}{\color{orange}\frac{6.00 - 4a}{5}} = 3.10.$$}
 
-Wenn wir diese Gleichung nun nach $a$ auf"|lösen, so erhalten wir $a = 0.50$ (CHF).
-Nun setzen wir a in eine der Gleichungen ein, lösen diese und erhalten $b = 0.80$ (CHF).
+Wenn wir diese Gleichung nun nach $a$ auf"|lösen, ...
 
+\TNT{4}{
+  $$ 3a+\frac{12-8a}{5} = 3.1$$
+  $$ 3a+\frac{12}{5} - \frac{8a}{5} = 3.1$$
+  $$ 15a+12 - 8a = 15.50$$
+  $$ 7a = 3.50$$
+}
+
+so erhalten wir $a = 0.50$ (CHF).
+
+
+Nun setzen wir $a$ in (III) ein...:
+\TNT{2}{$b=\frac{6-4a}{5} = \frac{6-4\cdot{} 0.5}{5} = \frac{6-2}{5} =
+  \frac{4}{5} = 0.8$}
+...und erhalten $b = \LoesungsRaum{0.80}$ (CHF).
+
+
+\newpage
 \subsection*{Aufgaben}
   \AadBMTA{151}{8. a) b) d) f)}
 
@@ -95,16 +124,19 @@ Eine weitere Möglichkeit Gleichungen mit mehreren Unbekannten zu lösen ist das
 Wir wählen \zB in obigem Beispiel die Variable $a$ und multiplizieren die obere Gleichung mit 4 und die untere mit 3 und
 erhalten:
 
-\TNT{2.8}{\gleichungZZ{12a + 8b}{12.40}{12a + 15b}{18.00}}
+\TNT{2}{\gleichungZZ{12a + 8b}{12.40}{12a + 15b}{18.00}}
 
-Nun können wir die obere Gleichung von der unteren Gleichung abziehen (damit die Variable $a$ eliminiert wird)
+
+  Nun können wir die obere Gleichung von der unteren Gleichung abziehen (damit die Variable $a$ eliminiert wird)
 und erhalten:
-
+\TNTeop{
 $$0a  + (15b - 8b)  = 18.00 - 12.40$$
 Also
 $$7b = 5.60,$$ und somit
 $$b = 0.80.$$
-Nun setzen wir dieses $b$ in eine der beiden obigen Gleichungen ein und erhalten nach dem Auf"|lösen $a=0.50$ (CHF).
+Nun setzen wir dieses $b$ in eine der beiden obigen Gleichungen ein
+und erhalten nach dem Auf"|lösen $a=0.50$ (CHF).
+}
 \newpage
 
 
