@@ -26,7 +26,8 @@ Betrachten wir einmal die Funktion $f: y = 0.1x^3 + x^2 + 2x + 3 - x^{-1}$ \zB m
 Polynomfunktionen und rationale Funktionen sind «\textit{weiche}» Funktionen, die jedoch \textbf{Asymptoten}\index{Asymptote} (hier bei $x=0$) aufweisen können.
 Ebenso sind die Extremwerte (lokale Maxima und Minima) wie auch die Wendepunkte charakteristische Stellen und oft Gegenstand der Untersuchung.
 Wir beschränken uns \TALS{vorerst }auf Funktionen der Art $f: y=a\cdot{}x^z$
-mit $z \in \mathbb{Z}\backslash\{0\}$. 
+mit $z \in \mathbb{Z}\backslash\{0\}$.
+
 \newpage
 
 
@@ -66,7 +67,6 @@ $$f: y= ax^2 + bx + c$$
 
 \subsection{Parabel}\index{Parabel}
 
-
 Zeichnen Sie $y = \frac{1}{16}x^4$ im Bereich $[-3; 3]$ indem Sie für jeden 0.5-er $x$-Wert das zugehörige $y$ berechnen:
 
 \bbwGraph{-4}{4}{-1}{6.5}{%%
@@ -84,7 +84,32 @@ $$f: y=a\cdot{}x^r$$
   Ist $n\in \mathbb{N}_{\ge 2}$, so wird der Graph der Potenzfunktion
   $$x\mapsto a\cdot{}x^n$$
   \textbf{Parabel} $n$-ter Ordnung genannt.
-  \end{definition}
+\end{definition}
+
+\newpage
+
+\subsubsection{Anwendung (optional)}
+
+Die Funktion $P(T) = \sigma\cdot\varepsilon\cdot
+  A\cdot{}T^4$ beschreibt, welche Leistung $P$ ein Körper der
+  Oberfläche $A$ bei Temperatur $T$ (in Kelvin) abstrahlt.
+
+  $\sigma$ = Bolzmann Konstante = $5.6\cdot{}10^{-8}$
+  
+  $\varepsilon$ = Emissionswert (eg. https://ennologic.com/wp-content/uploads/2018/07/Ultimate-Emissivity-Table.pdf)
+
+  
+  Rechenbeispiel:
+
+\TNTeop{$T$ = 20 Grad Zimmertemperatur in Kelvin: 293.15;
+  Brick (Haus) hat Emmissionswert ca. 0.75; Haus Oberfläche $500 \text{m}^2$
+
+  $$P(293.15) \approx 5.6\cdot{}10^{-8} \cdot{} 0.75 \cdot{} 500
+  \cdot{} \cdot{} 293.15^4 \approx 155 \text{kW} $$
+  Natürlich straht eine 20 grädige Umgebungstemperatur gleich viel
+  wieder zurück, sodass keine 'Heizkosten' entstehen.
+
+}%% END TNT
 \newpage
 
 Zeichnen Sie des weiteren die Funktion $y = \frac{1}{9}x^3$:
@@ -117,7 +142,7 @@ Bestimmen Sie $a$ und $k$ so, dass der Graph von $y = a \cdot{} x^k$
 durch die Punkte $P=\left(3 \middle| 1458\right)$ und
 $Q=\left(-4\middle|8192\right)$ verläuft.
 
-\TNT{15.2}{  Punkte einsetzen in die Funktionsgleichung:
+\TNT{15.2}{ Punkte einsetzen in die Funktionsgleichung:
   \gleichungZZ{1458}{a\cdot{}3^k}{8192}{a\cdot{}(-4)^k}
   Aus der oberen Gleichung das $a$ ermitteln ($a=\frac{1485}{3^k}$)
   (I) und in die zweite
