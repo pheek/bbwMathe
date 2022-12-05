@@ -75,13 +75,11 @@ Das zu einem Winkel gehörige \textbf{Seitenverhältnis} der beiden
 Katheten (gegenüberliegende Kathete zu anliegender Kathete) wird als
 
 \begin{center}\textbf{Tangens} des Winkels\end{center}
-  bezeichnet.
-\end{definition}
-Es gilt:
+  bezeichnet:
 
-\begin{gesetz}{Tangens}{}
-  $$tan(\beta) = \frac{\text{Gegenkathete } b}{\text{Ankathete } a}$$
-\end{gesetz}
+    $$tan(\beta) = \frac{\text{Gegenkathete } b \text{ zu }
+    \beta}{\text{Ankathete } a \text{ zu } \beta}$$
+\end{definition}
 
 Beispiele (berechnen Sie mit dem Taschenrechner):
 
@@ -147,8 +145,8 @@ Es gelten die folgenden Gesetze:
   
   \begin{tabular}{|c|c|}\hline
   $\sin(\varphi) = \frac{\text{Gegenkathete } g}{\text{Hypotenuse }  h}$  & $\arcsin\left(\frac{g}h\right) = \varphi$\\\hline
-    $\cos(\varphi) = \frac{\text{Ankathete } a}{\text{Hypotenuse }  h}$  & $\arccos\left(\frac{a}h\right) = \varphi$\\\hline
-  $\tan(\varphi) = \frac{\text{Gegenkathete } g}{\text{Ankathete }  a}$  & $\arctan\left(\frac{g}a\right) = \varphi$\\\hline
+  $\cos(\varphi) = \frac{\text{Ankathete    } a}{\text{Hypotenuse }  h}$  & $\arccos\left(\frac{a}h\right) = \varphi$\\\hline
+  $\tan(\varphi) = \frac{\text{Gegenkathete } g}{\text{Ankathete  }  a}$  & $\arctan\left(\frac{g}a\right) = \varphi$\\\hline
   \end{tabular}
   
 \end{gesetz}
@@ -171,18 +169,31 @@ Es gelten die folgenden Gesetze:
 \bbwCenterGraphic{4.5cm}{tals/trig1/img/starkeSteigung.jpg}
 
 Steigungen werden üblicherweise in \% angegeben. Das obige
-Verkehrsschild «starke Steigung» gibt 10\% an. Das heißt:
+Verkehrsschild «starke Steigung» gibt 7\% an. Das heißt:
 
-\TNT{3.6}{Auf einen horizontalen Meter, steigt die Straße um 10cm (=
-  10\%).
+\TNT{3.6}{Auf einen horizontalen Meter, steigt die Straße um 7cm (=
+  7\%).
 \vspace{3cm}}
 
 Um den Winkel zu berechnen, kann der Tangens verwendet werden:
-$$\frac{0.10m}{1.00m} = \tan(\sigma)$$
+$$\frac{0.07m}{1.00m} = \tan(\sigma)$$
 In obigem Beispiel ist der Steigungswinkel also durch den $\arctan()$
 berechenbar:
 
-$$\sigma = \arctan\left(\frac{0.1m}{1.0m}\right) = \arctan(0.1) \approx 5.71\degre$$
+$$\sigma = \arctan\left(\frac{0.07m}{1.0m}\right) = \arctan(0.07) \approx 4.004\degre$$
+\newpage
+\begin{beispiel}{Steigung}{}
+
+  
+  Steigung: $8\% = \LoesungsRaum{\arctan(0.08)} \approx \LoesungsRaum{4.574}\degre$
+
+  Winkel: $3\degre = \LoesungsRaum{\tan(3)} \approx
+  \LoesungsRaum{5.24}\%$
+
+  
+  \end{beispiel}
+
+\platzFuerBerechnungen{4}
 
 \subsection*{Aufgaben}
 \AadBMTG{100}{16. a) c), 17. a) c), 18. a) c) und 20.}
