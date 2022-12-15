@@ -50,7 +50,7 @@ $$\sqrt[n]{a} = x \Rightarrow x^n = a$$
 \end{definition}
 
 \begin{beispiel}{Dritte Wurzel}{}
-$$\sqrt[3]{1000} = 10 \text{ , denn } 10^3 = 1000$$
+\TNT{2}{$$\sqrt[3]{1000} = 10 \text{ , denn } 10^3 = 1000$$}
 \end{beispiel}
 
 \begin{gesetz}{}{}
@@ -82,16 +82,21 @@ $$\sqrt{a} := \sqrt[2]{a}$$
 Wir repetieren:
 
 \TALS{
- $$(x^m)^n = x^{m\cdot n}\ \ \text{, }\ \ \left(\sqrt[n]{a}\right)^n = a \text{ und } a^{m+n} =a^m\cdot{}a^n.$$
+ $$(x^m)^n = \LoesungsRaum{x^{m\cdot n}}\ \ \text{,
+  }\ \ \left(\sqrt[n]{a}\right)^n = \LoesungsRaum{a} \text{ und }
+  a^{m+n} = \LoesungsRaum{a^m\cdot{}a^n}.$$
 }%% END TALS
-\GESO{$$a^m\cdot{}a^n = a^{m+n}$$}
+\GESO{$$a^m\cdot{}a^n = \LoesungsRaum{a^{m+n}}$$}
 
 
 \begin{beispiel}{}{}
  Es gilt
- $$\sqrt[3]{a} \cdot{}\sqrt[3]{a} \cdot{}\sqrt[3]{a} = a = a^1 = a^{\frac13 +\frac13 +\frac13} = a^\frac13 \cdot{} a^\frac13 \cdot{}a^\frac13$$
+\TNT{2}{ $$\sqrt[3]{a} \cdot{}\sqrt[3]{a} \cdot{}\sqrt[3]{a} = a = a^1
+  = a^{\frac13 +\frac13 +\frac13} = a^\frac13 \cdot{} a^\frac13
+  \cdot{}a^\frac13$$
+(Bei $a$ in der Mitte beginnen erst nach links und dann nach rechts gehen.)}
  Somit ist
- $$\sqrt[3]{a} = a^\frac13$$
+\TNT{1.6}{ $$\sqrt[3]{a} = a^\frac13$$}
 \end{beispiel}
 
 Für $a > 0$ gilt somit allgemein:
@@ -110,7 +115,8 @@ Für $a > 0$ gilt somit allgemein:
 
 
 \begin{gesetz}{Wurzeln von Wurzeln}{}
-  $$\sqrt[m]{\sqrt[n]{a}} = \sqrt[m\cdot n]{a}=a^\frac1{mn} = \sqrt[n]{\sqrt[m]{a}}$$
+  $$\sqrt[m\,]{\sqrt[n]{a}} = \sqrt[m\cdot n]{a}=a^\frac1{mn} =
+  \sqrt[n\,]{\sqrt[m]{a}}$$
 \end{gesetz}
 
 $$\sqrt[m]{\sqrt[n]{a}} = \sqrt[m]{a^\frac{1}{n}} = (a^{\frac{1}{n}})^{\frac{1}{m}} = a^{\frac{1}{n}\cdot\frac{1}{m}} = a^{\frac{1}{m\cdot n}} = \sqrt[m\cdot n]{a}$$
