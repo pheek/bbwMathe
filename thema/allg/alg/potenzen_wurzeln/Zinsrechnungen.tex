@@ -3,7 +3,7 @@
 %%
 
 \newpage
-\section{Textaufgaben/Zinsrechnung}\index{Textaufgaben zur Zinsrechnung}
+\section{Zins}\index{Textaufgaben zur Zinsrechnung}\index{Zins}
 \sectuntertitel{``Klar hab' ich Probleme --- ich bin Mathelehrer.''}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Lernziele}
@@ -17,9 +17,30 @@
 Einstiegsaufgabe:
 Ein Händler gibt Ihnen auf eine Ware von 234.50 CHF einen Jugend-Rabatt von
 5\%, wenn Sie ihren BMS-Ausweis zeigen. Wenn Sie in bar bezahlen, erhalten Sie
-einen weiteren Rabatt von 3\%. Ist es für Sie nun schlauer, zuerst den
+einen weiteren Rabatt von 3\% auf den bereits reduzierten Preis.
+Ist es für Sie nun schlauer, zuerst den
 Jugend-Rabatt (5\%) und danach den Bar-Rabatt(\%) einzufordern oder
-ist die umgekehrte Reihenfolge schlauer? \TRAINER{Lsg: 216.10}
+ist die umgekehrte Reihenfolge schlauer?
+
+
+\TNTeop{
+Minus $3\%$ bedeutet 97\% vom Originalpreis, also $100\% - 3\%$
+
+Der Preis nach Abzug der 3\% berechnet sich wie folgt:
+
+$234.50 - \frac{234.50}{100}\cdot{}3 = \frac{234.50}{100}\cdot{}100
+- \frac{234.50}{100}\cdot{3}$
+
+$= \frac{234.50}{100}\cdot{100-3} = \frac{234.50}{100}\cdot{}97 =
+0.97\cdot{} 234.50$
+
+\vspace{12mm}
+
+Analog: $... -5\% = ... \cdot{} 0.95$
+
+Ergo Endpreis = $0.95\cdot{}0.97\cdot{}234.50\approx 216.10$
+}
+
 \newpage
 
 
@@ -28,27 +49,30 @@ ist die umgekehrte Reihenfolge schlauer? \TRAINER{Lsg: 216.10}
 Beispiel $2\%$ Zins auf Kapital CHF $1\,000.-$:\\
 
 \begin{tabular}{l|l|l}
-  \textit{Variable}  &   \textit{Bedeutung}   & \textit{Beispiel}\\%%
+  \textit{Variable}      &   \textit{Bedeutung} & \textit{Beispiel}\\%%
 \hline%%
- $K_0$  & Startkapital & 1\,000.-  [CHF]\\\hline
+ $K_0$                    & Startkapital        & 1\,000.-  [CHF]\\\hline
 
- $p$    & Zinsfuß        & 2  [\%]\\\hline
+ $p$                      & Zinsfuß             & 2  [\%]\\\hline
 
-        & Zins von $K_0$ & \TRAINER{$\frac{K_0}{100[\%]}\cdot{}2[\%] =$}\\
-        &                & \TRAINER{$\frac{K_0\cdot{}2[\%]}{100[\%]} =$}\\
-        &                & \TRAINER{$K_0 \cdot{} \frac2{100} = $}\\
-        &                & \TRAINER{$K_0\cdot 0.02$}\\\hline
+$K_0\cdot{}\frac{p}{100}$ & Zins von $K_0$      & \TRAINER{$\frac{K_0}{100[\%]}\cdot{}2[\%] =$}\\
+%%  &                     & \TRAINER{$\frac{K_0\cdot{}2[\%]}{100[\%]} =$}\\
+                          &                     & \TRAINER{$K_0 \cdot{} \frac2{100} = $}\\
+                          &                     & \TRAINER{$K_0\cdot 0.02$}\\\hline
 
-$K_1$   & neues Kapital  & \TRAINER{  $K_0+$ Zins von  $K_0=$} \\
-        &                & \TRAINER{  $K_0+K_0\cdot{}0.02 = $ }\\
-        &                & \TRAINER{  $K_0\cdot(1+0.02) = $}\\
-        &                & \TRAINER{  $K_0\cdot{}1.02$}\\\hline
-$r$     & Aufzinsungsfaktor & \TRAINER{$r=1+\frac{p}{100}$}\\
+$K_1$                     & neues Kapital       & \TRAINER{  $K_0+$ Zins von  $K_0=$} \\
+                          &                     & \TRAINER{  $K_0+K_0\cdot{}0.02 = $ }\\
+                          &                     & \TRAINER{  $K_0\cdot(1+0.02) = $}\\
+                          &                     & \TRAINER{  $K_0\cdot{}1.02$}\\\hline
+$r$                       & Aufzinsungsfaktor   & \TRAINER{$r=1+\frac{p}{100}$}\\
 \end{tabular}
 
 \begin{bemerkung}{Faktor}{}
 
-\textbf{100\% = 1} und  \textbf{2\% = 0.02}. Somit gilt \textbf{100\% + 2\% = 1.02}
+\textbf{100\% = \text{ (Faktor)  }1} und  \textbf{2\% = \text{
+                          (Faktor) } 0.02}.
+
+Somit gilt \textbf{100\% + 2\% = \text{ (Faktor) } 1.02}
 
 \end{bemerkung}
 
@@ -114,7 +138,8 @@ mit ihrer Banknachbarin/ihrem Banknachbarn überprüfen.}
 \TRAINER{EinstiegsComics Donald Duck im OLAT}
 
 Beim Zinseszins, wird bei jeder weiteren Verzinsung der bereits
-erhaltene Zins weiter verzinst. Beispiel 2\%:
+
+erhaltene Zins weiter verzinst. Beispiel 20.- Taler zu 2\%:
 
 CHF 20.- $\stackrel{\cdot{}1.02}{\longrightarrow}$ \LoesungsRaum{20.40} $\stackrel{\cdot{}1.02}{\longrightarrow}$ \LoesungsRaum{20.808}
 
@@ -124,10 +149,10 @@ Bei 2\% kann also jedesmal mit einem \textbf{Aufzinsungsfaktor} von
 1.02 multipliziert werden.
 
 
-
 \TNT{4}{
-Nach 100 Jahren wachsen die 20 Taler von Tick Trick und Track auf
-$20\cdot{}1.02^{100}\approx 144.89$ an.
+Nach 100 jahren wachsen die 20 Taler von Tick Trick und Track auf
+$20\cdot{}1.02^{100}\approx 144.89$ an\TRAINER{ (runden auf 0.01 Taler
+miteinbezogen jedes Jahr -> 144.99,000 Taler)}.
 
 
 Nach 1000 Jahren wachsen unsere CHF 20.-- also auf $20 \cdot{}
