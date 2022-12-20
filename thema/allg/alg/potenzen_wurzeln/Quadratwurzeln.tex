@@ -80,22 +80,19 @@ $$\left(\sqrt{|a|}\right)^2 = |a|$$
 \newpage
 \subsubsection{Multiplikation}
 
-\begin{gesetz}{Multiplikation/Division}{}
+\begin{gesetz}{Multiplikation}{}
   Für $a\ge 0$, $b\ge 0$ gilt:
-  \begin{tabular}{c@{ = }c}
-$\sqrt{\vphantom{b}a}\cdot{\sqrt{b}}$ & $\sqrt{\vphantom{b}a\cdot{b}}$\\
+ 
+$$\sqrt{\vphantom{b}a}\cdot{\sqrt{b}} = \sqrt{\vphantom{b}a\cdot{b}}$$
 
-$\frac{\sqrt{\vphantom{b}a}}{\sqrt{b}}$  &  $\sqrt{\frac{\vphantom{b}a}{b}}$\\
-    \end{tabular}
 \end{gesetz}
-
 
 
 $\sqrt{\vphantom{b}a}\cdot\sqrt{b} =$
 
 \TNT{3.2}{
 
-\TALS{
+%\TALS{
 ${\color{blue}\sqrt{\mathstrut a}\cdot\sqrt{b}} = \sqrt{({\color{blue}\sqrt{a}\cdot\sqrt{b}})^2} =
   \sqrt{\sqrt{a}\cdot\sqrt{b}\cdot\sqrt{a}\cdot\sqrt{b}} =
   \sqrt{\sqrt{a}\cdot\sqrt{a}\cdot\sqrt{b}\cdot\sqrt{b}} =
@@ -103,34 +100,47 @@ ${\color{blue}\sqrt{\mathstrut a}\cdot\sqrt{b}} = \sqrt{({\color{blue}\sqrt{a}\c
 
 Die erste Gleichung gilt, wenn ich den ganzen Ausdruck links quadriere
 und danach davon die Wurzel ziehe.
-}%% END TALS
+%}%% END TALS
 
-\GESO{
-Es gilt (für positive Zahlen):
+%\GESO{
+%Es gilt (für positive Zahlen):
+%$$A^2\cdot B^2 = (A\cdot B)^2$$
+%%
+%$\Rightarrow$
+%
+%\begin{center}
+%$\sqrt{\mathstrut{}A^2\cdot B^2}=\sqrt{(AB)^2}=AB=\sqrt{A^2}\cdot\sqrt{B^2}$
+%\end{center}
 
-$$A^2\cdot B^2 = (A\cdot B)^2$$
+%$\Rightarrow$
 
-$\Rightarrow$
+%\begin{center}
+%\fbox{$\sqrt{\mathstrut{}a\cdot b} = \sqrt{\mathstrut{}a}\cdot\sqrt{\mathstrut{}b}$}
+%\end{center}
 
-\begin{center}
-$\sqrt{\mathstrut{}A^2\cdot B^2}=\sqrt{(AB)^2}=AB=\sqrt{A^2}\cdot\sqrt{B^2}$
-\end{center}
-
-$\Rightarrow$
-
-\begin{center}
-\fbox{$\sqrt{\mathstrut{}a\cdot b} = \sqrt{\mathstrut{}a}\cdot\sqrt{\mathstrut{}b}$}
-\end{center}
-
-}%% END GESO
+%}%% END GESO
 
 }%% end TNT
 
 
 \subsubsection{Division}
 Ganz analog kann gezeigt werden, dass gilt: 
+\begin{gesetz}{Division}{}
+  Für $a\ge 0$, $b\ge 0$ gilt:
+  \begin{tabular}{c@{ = }c}
+$\frac{\sqrt{\vphantom{b}a}}{\sqrt{b}}$  &  $\sqrt{\frac{\vphantom{b}a}{b}}$\\
+    \end{tabular}
+\end{gesetz}
 
-\TNT{2}{$\frac{\sqrt{a\mathstrut{}}}{\sqrt{b}}=\sqrt{\frac{a\mathstrut{}}{b}}$}
+$\sqrt{a} : \sqrt{b} =$
+
+\TNT{2}{
+  $\frac{\sqrt{a}}{\sqrt{b}}
+  = \sqrt{a} : \sqrt{b}
+  = \sqrt{(\sqrt{a}:\sqrt{b})^2}
+  = \sqrt{\frac{\sqrt{a}}{\sqrt{b}} \cdot \frac{\sqrt{a}}{\sqrt{b}}}
+  = \sqrt{\frac{a}{b}}$%%
+}%% END TNT
 
 \subsubsection{Addition/Subtraktion}
 \begin{bemerkung}{Addition}{}
