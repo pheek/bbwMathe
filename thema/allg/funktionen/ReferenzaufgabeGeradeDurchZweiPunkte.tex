@@ -1,4 +1,4 @@
-
+%% 
 \subsubsection{Gerade durch zwei gegebene Punkte}\index{Punkt auf Geraden}\index{Gerade!Punkt auf}
 \TALS{Einstiegsaufgaben Frommenwiler: 606. a) c)}
 
@@ -14,8 +14,9 @@ der Graph der Funktion $f$ durch beide Punkte führt.
 \TNTeop{%%
 \raisebox{2cm}{\includegraphics[width=16cm]{allg/funktionen/img/GeradeDurchZweiPunkte.jpg}}}%% END TNT EOP 
 
+\newpage
 
-\textbf{Rezept II: Rechnerisch (algbraisch)}\\
+\textbf{Rezept II: Rechnerisch, algbraisch \GESO{(optional)}}\\
 
 \vspace{1mm}
 
@@ -49,7 +50,35 @@ Setzen wir $a=\frac{1}{5}$ in eine der beiden Gleichungen ein, so erhalten wir $
 
 $$f: y=\LoesungsRaumLang{\frac{1}{5}\cdot{}x + 4}$$
 
-\newpage
+\GESO{\newpage
+\textbf{Rezept III: Mit dem Taschenrechner}
+Wieder seien die beiden Punkte $P=(10|6)$ und $Q=(-5|3)$ gegeben.
+
+Tippen Sie auf dem Taschenrechner \tiprobutton{data}, um mit der
+Eingabe der beiden Punkte zu beginnen. Geben Sie in die
+Spalte \texttt{L1} die $x$-Werte und in die Spalte \texttt{L2} die
+$y$-Werte ein:
+
+\begin{tabular}{c|c|}
+ \texttt{L1}& \texttt{L2} \\\hline
+ \noTRAINER{.....}\TRAINER{10}  & \noTRAINER{.....}\TRAINER{6}\\
+ \noTRAINER{.....}\TRAINER{-5}  & \noTRAINER{.....}\TRAINER{3}
+\end{tabular}
+
+Wählen Sie mit \tiprobutton{2nd} \tiprobutton{data_stat-reg-distr}
+unter \texttt{STAT-REG} die Nummer 4: «\texttt{LinReg} $ax+b$».
+Lassen Sie die Werte auf den nächsten Seite so stehen wie sie sind:
+
+xDATA: L1
+
+yDATA: L2
+
+Mittels \texttt{CALC} (\tiprobutton{enter}) erhalten Sie $a=0.2$ und $b=4$.
+
+}%% END GESO
+
+\TALS{\newpage}
+
 
 \TALS{%%
 Dies kann auch mit dem Taschenrechner gelöst werden; denn für alle Punkte $P$ auf $f$ gilt ja $P(x|y) = P(x|f(x))$:
@@ -71,5 +100,4 @@ $$f(x):=a\cdot{}x + b$$
 
 \AadBMTA{252ff}{15. a) c), 16. a), 18. a), 19., 25. a)}
 
-\newpage
-
+\newpage%%
