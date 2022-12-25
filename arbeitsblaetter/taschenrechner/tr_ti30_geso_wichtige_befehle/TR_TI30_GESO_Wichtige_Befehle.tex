@@ -159,7 +159,9 @@ Zahlen mit \tiprobutton{enter} bestätigen. Die Subtraktion links des
 Gleichheitszeichens mit \tiprobutton{minus} eingeben; negative Werte rechts
 des Gleichheitszeichens mit \tiprobutton{neg} eingeben.
 
-Resultat für obiges Beispiel zur Kontrolle: $x=\frac{-1}{31}$ und $y=\frac{-43}{31}$.
+Resultat für obiges Beispiel zur Kontrolle: $x=\frac{-1}{31}$ und
+$y=\frac{-43}{31}$.
+
 \newpage
 
 
@@ -237,7 +239,31 @@ $x$ & $y=f(x)$\\
 ... &  ... \\
 \end{tabular}
 \newpage
+\section{Geradengleichung durch zwei gegebene Punkte}
+Sind zwei Punkte (\zB $P=(3.6 | 4.9)$ und $Q=(-5.2 | 7.1)$) gegeben,
+so können $a$ und $b$ der Geradengleichung $y=a\cdot{}x+b$ mittels der
+linearen Regression gefunden werden:
 
+\begin{enumerate}
+\item Die beiden Punkte in die Datenreihen \textbf{\texttt{L1}}
+und \textbf{\texttt{L2}} mittels \tiprobutton{data} eingeben. Dabei
+entsprechen \textbf{\texttt{L1}} den $x$- bzw. \textbf{\texttt{L2}} den
+$y$-Werten:
+%%\bbwCenterGraphic{2.4cm}{taschenrechner/tr_ti30_geso_wichtige_befehle/img/ZweiPunkteEingeben.jpg}
+\bbwCenterGraphic{8cm}{img/ZweiPunkteEingeben.jpg}
+
+\item Unter \tiprobutton{data_stat-reg-distr} \tiprobutton{data}
+unter \texttt{\textbf{STAT-REG}} die nummer \texttt{\textbf{4}} suchen:
+«\texttt{\textbf{LinReg $ax+b$}}».
+
+\item Beim nächsten Srceen alles so lassen, wie es
+ist: \texttt{\textbf{xDATA: L1}}, \textbf{\texttt{yDATA: L2}}.
+\item Mittels \texttt{\textbf{calc}} die Daten (in unserem Beispiel
+$a=-0.25$ und $b=5.8$) ablesen.
+\end{enumerate}
+
+
+\newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 \section{Gleichungen numerisch}\index{numGleichungen}\label{numGleichungen}
