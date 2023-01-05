@@ -7,18 +7,18 @@
 Häufig wollen wir Kräfte, Geschwindigikeiten, kurz Richtungen in
 Abhängigkeit von gegebenen Richtungen berechnen.
 
-Wenn zum Beispiel drei Kräfte auf einen Körper wirken, so ist jede
-Kraft immer durch eine Kombination der beiden anderen Kräfte
+Wenn zum Beispiel drei Kräfte in einer Ebene auf einen Körper wirken, so ist jede
+Kraft i.\,d.\,R durch eine Kombination der beiden anderen Kräfte
 darstellbar.
 
 \begin{definition}{Linearkombination}{}
-  Sind $\vec{a\vphantom{b}}$ und $\vec{b}$ gegeben so ist für alle Zahlen $x$ und
-  $y$ der Verktor
-  $$\vec{c} = x\cdot{}\vec{a\vphantom{b}} + y\cdot{}\vec{b}$$
-  eine Linearkombination von $\vec{a\vphantom{b}}$ und $\vec{b}$.
+ %%  Sind $\vec{a\vphantom{b}}$ und $\vec{b}$ gegeben so ist für alle Zahlen $x$ und
+ %%  $y$ der Verktor
+ %%  $$\vec{c} = x\cdot{}\vec{a\vphantom{b}} + y\cdot{}\vec{b}$$
+ %%  eine Linearkombination von $\vec{a\vphantom{b}}$ und $\vec{b}$.
 
-  Dies gilt für jede beliebige Anzahl von Summanden:
-
+ %% gilt für jede beliebige Anzahl von Summanden:
+ 
   Sind $\vec{a_1}$, $\vec{a_2}$, $\vec{a_3}$, ... gegebene Vektoren.
 
   Und sind $x_1$, $x_2$, $x_3$, ... beliebige reelle Zahlen, so ist
@@ -26,20 +26,24 @@ darstellbar.
   $$\vec{b} = x_1\cdot{}\vec{a_1} +  x_2\cdot{}\vec{a_2} +
   x_3\cdot{}\vec{a_3} + ...$$
   eine Linearkombination der gegebenen Vektoren $\vec{a_1}$, $\vec{a_2}$, $\vec{a_3}$, ... 
-  \end{definition}
+\end{definition}
 
 
-\begin{gesetz}{Linearkombination}{}
+
+
+\begin{beispiel}{Linearkombination}{}
 Oft wollen wir einen Vektor $\vec{c}$ durch eine Linearkombination von
-zwei gegebenen Vektoren ausdrücken.
+gegebenen Vektoren ausdrücken.
 
 Gegeben: $\vec{a\vphantom{b}}$, $\vec{b}$ und $\vec{c\vphantom{b}}$
 
 Gesucht $t$ und $s$ in $\mathbb{R}$, sodass
 
 $$\vec{c} = t\cdot{}\vec{a\vphantom{b}} + s\cdot{}\vec{b}$$
+gilt.
 
-\end{gesetz}
+\end{beispiel}
+
 \newpage
 
 \begin{beispiel}{Linearkombination}{}
@@ -55,12 +59,19 @@ $$\vec{c} = t\cdot{}\vec{a\vphantom{b}} + s\cdot{}\vec{b}$$
 
   Dies entspricht einem linearen Gleichungssystem:
   \gleichungZZ{3}{7s + 4t}{5}{9s + 3t}
+
+  Für welches Paar $(s, t)$ ist dies möglich?
+  
+  \TNT{4}{solve mit TR, am besten gleich in der Vektor-Schreibweise}%%
+  
+  Die Kombination ist möglich, wenn $s=\LoesungsRaum{\frac{11}{15}}$ und\\
+  $t=\LoesungsRaum{-\frac{8}{15}}$ gesetzt wird.
 \end{beispiel}
 
 \begin{bemerkung}{Linearkombination}{}
   Sind $\vec{a\vphantom{b}}$ und $\vec{b}$ zwei \textbf{kolineare} Vektoren
   (d.\,h. $\vec{a\vphantom{b}} = x\cdot{}\vec{b}$), so kann der Vektor $\vec{c}$
-  nicht, oder \textbf{nicht eindeutig als Linearkombination} von $\vec{a\vphantom{b}}$ und
+  nicht, oder \textbf{nicht} eindeutig als \textbf{Linearkombination} von $\vec{a\vphantom{b}}$ und
   $\vec{b}$ geschrieben werden.
 
   Dies entspricht bei linearen Funktionen der Suche nach dem

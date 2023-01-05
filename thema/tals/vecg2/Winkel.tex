@@ -1,13 +1,12 @@
 %% 2020 12 25 ph. g. Freimann
 %%
-\section{Operationen ausführen}\index{Operationen!auf Vektoren}\index{Vektoroperationen}
+\section{Winkel}\index{Winkel!bei Vektoren}
 
 \subsection*{Lernziele}
 \begin{itemize}
-\item Skalarmultiplikation
 \item Skalarprodukt
 \end{itemize}
-\newpage
+
 \subsection{Skalarprodukt}\index{Skalarprodukt}
 
 %%\TALSTadBFWG{201}{4.5}
@@ -51,12 +50,13 @@ Herleitung:
 
   und somit:
   }
-
+\newpage
+\subsubsection{Gesetze}
 \begin{gesetz}{}{}
   Mit $a = |\vec{a}|$ und $b = |\vec{b}|$ gilt:\\
   $a_x\cdot{}b_x + a_y\cdot{}b_y = a\cdot{}b\cdot{}\cos(\gamma)$
 \end{gesetz}
-  \newpage
+ 
 
 Nach obigem Gesetz sind die beiden folgenden Definitionen identisch:
 \begin{definition}{Skalarprodukt}{}\index{Skalarprodukt}
@@ -89,19 +89,3 @@ oder mit $a=|\vec{a}|$, $b=|\vec{b}|$ und $\gamma$ = Zwischenwinkel:
   10. d), 20.}
 
 \newpage
-\subsection{Anwendung Skalarprodukt und Parametergleichnug}
-
-Eine klassische Anwendung des Skalarproduktes ist die
-Abstandsbestimmung zwischen einer Geraden und einem Punkt oder
-allgemein zwischen zwei Geraden im Raum.
-
-\begin{beispiel}{Abstand}{}
-Gegeben ist der Ortsvektor $\vec{r_A}=\left(1 \atop 2\right)$, der einen Punkt auf der
-Geraden $\vec{r}$ repräsentiert und ein Richtungsvektor
-$\vec{u}=\left(3\atop 1\right)$, der
-die Richtung der Geraden angibt.
-
-Des weiteren ist ein Punkt $P=(8|1)$ gegeben. Gesucht ist nun ein Vektor
-$\vec{a}$ der senkrecht zur Geraden $\vec{r}$ steht und dessen Länge
-$|\vec{a}|$ gerade den Abstand zwischen Gerade und Punkt angibt.
-\end{beispiel}
