@@ -78,4 +78,45 @@ gilt.
   Schnittpunkt von zwei \textbf{parallelen} Geraden.
   \end{bemerkung}
 
+
+\subsection*{Aufgaben}
+\TALSAadBFWG{196}{82. b)}
+
 \newpage
+\subsection{Lineare Abhängigkeit}\index{linear abhängig}\index{Abhängigkeit!lineare}
+
+Ich brauche zwei Vektoren, um eine Ebene und drei Vektoren, um der
+Raum aufzuspannen.
+
+
+\begin{bemerkung}{Drei Dimensionen}{}
+  Die drei Einheitsvektoren
+  $$\vec{e}_1=\begin{pmatrix}1\\0\\0\end{pmatrix};
+  \vec{e}_2=\begin{pmatrix}0\\1\\0\end{pmatrix} \text{ und }
+  \vec{e}_3=\begin{pmatrix}0\\0\\1\end{pmatrix}$$
+spannen den dreidimensioalen Raum derart auf, dass jeder Vektor als
+Linearkombination aus diesen drei Vektoren geschrieben werden kann:
+
+$$\begin{pmatrix}7\\3\\-1.4\end{pmatrix}=
+  \LoesungsRaum{7}\cdot{}\begin{pmatrix}1\\0\\0\end{pmatrix} +
+  \LoesungsRaum{3}\cdot{}\begin{pmatrix}0\\1\\0\end{pmatrix} +
+  \LoesungsRaum{(-1.4)}\cdot{}\begin{pmatrix}0\\0\\1\end{pmatrix}$$
+\end{bemerkung}
+
+\begin{gesetz}{Einheitsvektoren}{}
+  Die drei Einheitsvektoren sind voneinander linear unabhängig, d.\,h.:
+
+  Es ist nicht möglich, einen der drei Einheitsvektoren aus einer
+  Linearkombination der anderen beiden Einheitsvektoren darzustellen.
+\end{gesetz}
+
+\begin{definition}{Linear abhängig}{}
+  Ein Vektor $\vec{a}\ne \vec{0}$ heißt von den Vektoren $\vec{b}_1, \vec{b}_2,
+  \vec{b}_3, ... , \vec{b}_n$ \textbf{linear abhängig}, wenn es eine
+  Linearkombination mit $m_i \in \mathbb{R}$ gibt, für die gilt:
+
+  $$\vec{a} = \sum_{i=1}^{n}m_i\cdot{}\vec{b}_i$$
+  \end{definition}
+  
+\subsection*{Aufgaben}
+\TALSAadBFWG{196}{ 80. a)}
