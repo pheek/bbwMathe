@@ -4,27 +4,68 @@
 
 \subsection*{Lernziele}
 \begin{itemize}
-\item Abstände von Geraden im Raum
+  \item Abstand eines Punktes zu einer Geraden
+\item Abstand zwischen zwei parelleln Geraden im Raum
+\item Abstand zwischen zwei windschiefen Geraden im Raum
 \end{itemize}
+
+\TALSTadBMTG{298}{19.6}
+\newpage
 
 \subsection{Anwendung Skalarprodukt und Parametergleichnug}
 
 Eine klassische Anwendung des Skalarproduktes ist die
 Abstandsbestimmung zwischen einer Geraden und einem Punkt oder
 allgemein zwischen zwei (windschiefen) Geraden im Raum.
+\newpage
+
+\subsubsection{Abstand Gerade / Punkt}\index{Abstand!Gerade/Punkt}
 
 \begin{beispiel}{Abstand}{}
-Gegeben ist der Ortsvektor $\vec{r_A}=\left(1 \atop 2\right)$, der einen Punkt auf der
-Geraden $\vec{r}$ repräsentiert und ein Richtungsvektor
-$\vec{u}=\left(3\atop 1\right)$, der
+Gegeben ist der Ortsvektor $\vec{r}=\left(1 \atop 2\right)$, der einen Punkt auf der
+Geraden $g$ repräsentiert und ein Richtungsvektor
+$\vec{a}=\left(3\atop 1\right)$, der
 die Richtung der Geraden angibt.
 
-Des weiteren ist ein Punkt $P=(8|1)$ gegeben. Gesucht ist nun ein Vektor
-$\vec{a}$ der senkrecht zur Geraden $\vec{r}$ steht und dessen Länge
-$|\vec{a}|$ gerade den Abstand zwischen Gerade und Punkt angibt.
+Des weiteren ist ein Punkt $P=(8|1)$ gegeben.
+
+Gesucht ist nun ein Vektor
+$\vec{s}$ der senkrecht zur Geraden $g$ steht und dessen Länge
+$s=|\vec{s}|$ gerade den Abstand zwischen Gerade und Punkt angibt.
 \end{beispiel}
 
+\TNTeop{ Der Abstand wird senkrecht gemessen. Somit existiert ein
+  Punkt $Q$ auf $g$, sodass $\vec{QP}$ senkrecht zu $\vec{a}$ steht.
+  
+  Zum Begriff senkrecht machen wir uns das Skalarprodukt zu nutze.
 
-\TALSTadBMTG{298}{19.6}
+  Ich bezeichne $\vec{s} := \vec{QP}$ und $\vec{p} = \vec{0P}$.
 
-\TALSAadBMTG{308}{38. bis 43.}
+  Somit gelten:
+
+  $$\vec{r} + t\cdot{}\vec{a} + \vec{s} = \vec{p}$$
+  $$\vec{s} \perp \vec{a} \Longleftrightarrow \vec{s}\circ\vec{a} =
+  0$$
+  Dies lösen wir entweder mit dem Taschenrechner, oder wir stellen das
+  Gleichungssystem komponentenweise auf:
+
+  $$\vec{s} = \vec{p} - t\cdot{}\vec{a} - \vec{r}$$
+  
+
+  \gleichungDD{s_x}{8-3t-1}{s_y}{1-1t-2}{3s_x+1s_y}{0}
+  Mit $s_y=-3s_x$ ergibt sich
+  \gleichungZZ{s_x}{7-3t}{-3s_x}{-1-t}
+  Daraus folgt $\vec{s}=\left(1\atop -3\right)$ und somit ist der
+  Abstand $s=\sqrt{10}$. (Bem.: $t=2$)
+}
+
+\subsection*{Aufgaben}
+\AadBMTG{305}{18. a) b) c) d), 19., 20. und 21.}
+\newpage
+
+
+\subsubsection{Abstand windschiefe Geraden}
+
+... coming soon ...
+
+\TALSAadBMTG{307ff}{35. und Flugzeug: 38. bis 43.}
