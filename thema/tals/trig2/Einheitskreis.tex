@@ -39,7 +39,7 @@
 \fill [color=uququq] (0.69,0.72) circle (1.5pt);
 \draw[color=uququq] (0.82,0.7) node {$Yp$};
 \fill [color=qqqqff] (0,0) circle (1.5pt);
-\draw(0.20,0.09) node {$\Phi$};
+\draw(0.20,0.09) node {$\varphi$};
 \end{scriptsize}
 \end{tikzpicture}\par
 }%% END Command \einheitskreis
@@ -72,7 +72,7 @@
 
 \subsection{Sinus als Verhältnis}\index{Sinus!als!im Einheitskreis}
 Egal, wie groß der Einheitskreis gewählt wird, der $\sin()$ eines
-gegebenen Winkels $\Phi$ ist immer gleich lang, denn er wird im Maß
+gegebenen Winkels $\varphi$ ist immer gleich lang, denn er wird im Maß
 des Kreises angegeben.
 
 
@@ -80,7 +80,7 @@ des Kreises angegeben.
   Die Strecke $s$ kann im Einheitskreis auch als $\frac{s}1$ aufgefasst werden -- also
   als Gegenkathete ($s$) dividiert durch Hypotenuse ($r=1$). Somit
   gilt im Einheitskreis:
-  $$s = \sin(\Phi)$$
+  $$s = \sin(\varphi)$$
 \end{gesetz}
 
 \begin{bemerkung}{Ordinate\index{Ordinate} = Sinus}{}
@@ -110,7 +110,7 @@ Der $\sin{}$, liegt immer zwischen -1 und
   Die Strecke $c$ kann auch als $\frac{c}1$ aufgefasst werden -- also
   als Ankathete ($c$) dividiert durch Hypotenuse ($r=1$). Somit
   gilt
-  $$c = \cos(\Phi)$$
+  $$c = \cos(\varphi)$$
   und auch, dass die Abszisse (=$x$-Koordinate) eines Punktes auf dem
   Einheitskreis der Cosinus des zugehörigen Winkels darstellt.
 \end{bemerkung}
@@ -138,11 +138,11 @@ Punkt $Y_P$, so sehen wir, dass sie genau das Verhältnis angibt, das
 auch zwischen den Strecken $s$ und $c$ vorliegt. 
 Somit können wir den Tangens definieren als
 
-$$\tan(\phi) = t$$
+$$\tan(\varphi) = t$$
 
 Ebenso gilt:
 \begin{gesetz}{Tangens}{}
-$$\tan(\phi) = t = \frac{t}{1} =  \frac{s}{c} = \frac{\sin(\phi)}{\cos(\phi)}$$
+  $$\tan(\varphi) = t = \frac{t}{1} =  \frac{s}{c} = \frac{\sin(\varphi)}{\cos(\varphi)}$$
 \end{gesetz}
 \newpage
 
@@ -210,7 +210,7 @@ Einheitskreis abgelesen werden können:
 
 \begin{gesetz}{Sinus und Cosinus}{}
  Für Sinus und Cosinus gilt:
-  $$\cos( \varphi ) = \sin( \varphi + 90\degre )$$
+  $$\cos( \varphi ) = \sin(90\degre -  \varphi )$$
   \end{gesetz}
 \newpage
 
@@ -224,30 +224,32 @@ im Definitionsbereich $\mathbb{D}=[0; 360\degre]$.
 %%WAS STAND DA bei 1??????
 
 \TNTeop{
-  1. $$\cos(x) = \sin(-211\degre)$$
+  am besten am Einheitskreis ablesen. Ansonsten Rechnerisch:
+  
+  1. Sinus ist ungerade (gesetz) $$\cos(x) = \sin(-211\degre)$$
 
   2. Generell gilt:
 
-  $\cos(x) = \sin(x+90\degre)$
+  $\cos(x) = \sin(90\degre - x)$
 
   3. $\cos(x)$ aus (1.) und (2.) gleichsetzen:
 
-$$\sin(-211\degre) = \sin(x+90\degre)$$
+$$\sin(-211\degre) = \sin(90\degre - x)$$
 
 4. 
 Somit erhalten wir für $x$ sofort eine Lösung nämlich
 
-$$211\degre = x+ 90\degre$$
+$$ - 211\degre = 90\degre - x$$
+$$   211\degre = x - 90\degre$$
+
 also
-$$x=-301\degre$$
+$$x=301\degre$$
 
 5. $x$ auf den Definitionsbereich einschränken:
 
-Der $\cos$ ist an $\varphi=0$ gespiegelt (gerade), somit ist $x_1=+301\degre$ sofort auch eine
+Der $\cos$ ist an der $x$-Achse gespiegelt (gerade), somit ist
+$x_1=-311\degre = 59\degre$ sofort auch eine
 Lösung.
-
-6. Der $\cos$ ist symmetrisch gegenüber $180\degre$ und somit ist $x_2
-= 360\degre-301\degre = 59\degre$ auch eine Lösung.
 
 $$\Longrightarrow \lx = \{59\degre, 301\degre\}$$
 }%% END TNTeop
