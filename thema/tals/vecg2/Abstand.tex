@@ -66,6 +66,47 @@ $s=|\vec{s}|$ gerade den Abstand zwischen Gerade und Punkt angibt.
 
 \subsubsection{Abstand windschiefe Geraden}
 
-... coming soon ...
+Gegeben sind zwei windschiefe Geraden in der Parameter-Schreibweise:
+
+$$g:  P+t\cdot{}\vec{r}$$
+
+Hier also
+$$g_1:  P_1+t\cdot{}\vec{r}_1 \text{ mit } P_1
+= \begin{pmatrix}3\\2\\1\end{pmatrix} \text{ und } \vec{r}_1= \begin{pmatrix}2\\2\\0\end{pmatrix}$$
+$$g_2:  P_1+s\cdot{}\vec{r}_2 \text{ mit } P_2
+= \begin{pmatrix}2\\2\\0\end{pmatrix} \text{ und } \vec{r}_2= \begin{pmatrix}1\\0\\1\end{pmatrix}$$
+
+\begin{rezept}{Grundidee Abstand}{}
+
+  1. Der Abstandsvektor $\vec{a}$ stehe senkrecht auf $\vec{r}_1$
+  \textbf{und} senkrecht auf $\vec{r}_2$.
+
+  2. Der Weg $\vec{p}_1 + t\cdot{}\vec{r}_1 + \vec{a}$ ist gleich dem
+  Weg $\vec{p}_2 +  s\cdot{}\vec{r}_1$ für bestimmte Werte von $t$ und
+  $s$.
+
+  3. Dies ergibt uns drei Gleichungen:
+
+  $$\vec{a}\perp\vec{r}_1 \Longleftrightarrow{}  \vec{a}\circ{}\vec{r}_1 = 0$$
+  $$\vec{a}\perp\vec{r}_2 \Longleftrightarrow{}  \vec{a}\circ{}\vec{r}_2 = 0$$
+  $$\vec{p}_1 + t\cdot{}\vec{r}_1 + \vec{a} = \vec{p}_2 + s\cdot{}\vec{r}_1$$
+  
+\end{rezept}
+
+Auf der nächsten Seite zeige ich, wie dies im Taschenrechner direkt
+eingegeben werden kann:
+\newpage
+
+Lösung der Abstands-Aufgabe zwischen zwei windschiefen Geraden mit dem
+Taschenrechner:
+
+\bbwCenterGraphic{8cm}{tals/vecg2/img/abstandTR.png}
+
+Der effektive Abstand kann nun aus dem gefundenen Vektor $\vec{a}$
+berechnet werden:
+
+$$\vec{a} = \frac13\cdot{}\begin{pmatrix}5\\-5\\-5\end{pmatrix}$$
+$$|\vec{a}| = \frac13\cdot{}\sqrt{25+25+25} = \frac{5\sqrt{3}}{3}$$
+\newpage
 
 \TALSAadBMTG{307ff}{35. und Flugzeug: 38. bis 43.}
