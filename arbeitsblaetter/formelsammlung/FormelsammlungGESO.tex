@@ -4,17 +4,31 @@
 %%
 
 %% Footer und Header ganz unterdrücken:
-\newcommand{\keinHeaderUndKeinFooter}{}
+\newcommand{\headerUndFooterDieseSeite}{}
+\newcommand{\geometrieErsteSeite}{}
 %% Sollten Header und Footer unterdrückt werden, einfach die folgende
-%% Zeile nicht als Kommentar lassen:
-\renewcommand{\keinHeaderUndKeinFooter}{\thispagestyle{empty}}
+%% Zeile nicht als Kommentar lassen: (empty= leer, fncy = fancy)
+
+\renewcommand{\headerUndFooterDieseSeite}{\thispagestyle{empty}}
+%%\renewcommand{\headerUndFooterDieseSeite}{\thispagestyle{fancy}\fancyhf[FC]{Seite \thepage{}}}
 
 
-\newcommand{\versionsDatumFoSa}{2021-11-29}
+%%% Ananlog für Seitennumemern
+\renewcommand{\geometrieErsteSeite}{\newgeometry{left=0.3cm,right=0.3cm,top=0.3cm,bottom=0.5cm}}
+%%\renewcommand{\geometrieErsteSeite}{\newgeometry{left=0.3cm,right=0.3cm,top=0.3cm,bottom=1.5cm}}
+
+
+%\newgeometry{left=0.3cm,right=0.3cm,top=0.3cm,bottom=0.5cm}
+%%\newgeometry{left=0.3cm,right=0.3cm,top=0.3cm,bottom=2.5cm}
+
+
+
+
+\newcommand{\versionsDatumFoSa}{2023-01-17}
 
 %% ID (ca. alle jahre), Subversion: Grössere Änderungen, Revision: Jede
 %% Umstellung/Korrektur/Typos
-\newcommand{\versionIdSubRev}{0.4.1}
+\newcommand{\versionIdSubRev}{0.4.2}
 
 
 %% ID (ca. alle jahre), Subversion: Grössere Änderungen, Revision: Jede
@@ -54,19 +68,18 @@
 
 \usepackage{makecell}
 
-\renewcommand{\shortAuthor}{fp he @ bbw.ch [\versionsnummerFoSa{}]}
+%\renewcommand{\shortAuthor}{fp he @ bbw.ch [\versionsnummerFoSa{}]}
+\renewcommand{\shortAuthor}{}
 
 %% Falls ohne Autor in der Fußzeile:
 %%\renewcommand{\shortAuthor}{}
 
-\renewcommand{\metaHeaderLine}{Formelsammlung (GESO
-  \noTRAINER{2021}\TRAINER{\versionsnummerFoSa{}}
-  BMS Winterthur)}
+%%\renewcommand{\metaHeaderLine}{Formelsammlung (GESO \noTRAINER{2021}\TRAINER{\versionsnummerFoSa{}} BMS Winterthur)}
 
 \renewcommand{\arbeitsblattTitel}{Formelsammlung --- gesundheitlich-soziale BM\TRAINER{ (V \versionIdSubRev)}}
 
-\titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
-\titlespacing*{\subsection}{0pt}{0.1\baselineskip}{0.1\baselineskip}
+%\titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
+%\titlespacing*{\subsection}{0pt}{0.1\baselineskip}{0.1\baselineskip}
 
 %% Millimeterpapier (2.8mm) für Notizen \mmPap
 \newcommand{\mmPap}[1]{\mmPapierZwei{#1}{8.4}}
@@ -98,9 +111,9 @@
 \renewcommand{\arbeitsblattHeader}{}
 
 %% Nur leere Seiten mit Seitennummer. Keine Titelzeile für mehr Platz.
-\fancyhf[FL]{Seite \thepage{}}
-\fancyhf[HL]{}
-\fancyhf[HC]{}
+\fancyhf[LE,FLO,FRE,FRO]{}%% Überscrheibe Titel
+%\fancyhf[HL]{}
+%\fancyhf[HC]{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -111,7 +124,8 @@
 
 \begin{document}%%
 
-\newgeometry{left=0.3cm,right=0.3cm,top=0.3cm,bottom=0.5cm}
+\geometrieErsteSeite{}
+
 %\setlength{\hoffset}{1mm}
 %\setlength{\oddsidemargin}{1mm}
 %\setlength{\evensidemargin}{1mm}
@@ -127,7 +141,7 @@
 %\font\myfont=cmr20 at 60pt
 
 
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%\arbeitsblattHeader{}
@@ -217,7 +231,7 @@ Produkt mit Summe: $2\cdot(x+y)=2x+2y$
 Potenzterme: $(-3)^2 = 9$ aber $-3^2 = -9$
 
 %%\forceCB{}%%
-%%\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 Vorzeichen im Taschenrechner:\\
 \vspace{3mm}\\
@@ -259,7 +273,7 @@ Vorzeichen im Taschenrechner:\\
 
 Geometrisch: Abstand zum Nullpunkt.
 
-\forceCB{}
+\RLP{\forceCB{}}
 %%\hrulefill
 
 \section*{Bruchterme}
@@ -293,7 +307,7 @@ $$x^2+2x-15 = (x+5)(x-3)$$
 
 \end{enumerate}
 \forceCB{}%%
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 \subsection*{Summenzeichen}
 %%$$\color{orange}\sum_{\color{blue}k=1}^{\color{blue}n} {{\color{farnFarbe}T}(k)} = {\color{farnFarbe}T}({\color{blue}1}) {\color{orange}+} {\color{farnFarbe}T}({\color{blue}2}) {\color{orange}+} ... {\color{orange}+} {\color{farnFarbe}T}({\color{blue}n})$$
@@ -413,7 +427,7 @@ $$\log_{\color{farnFarbe}b}({\color{red}a}) = \frac{\lg({\color{red}a})}{\lg({\c
 \end{tcolorbox}%
 %
 \RLP{\forceCB{}}%%
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%               Gleichungen                          %%
@@ -482,7 +496,7 @@ $x^4=16$ & $\Longrightarrow$ & $\lx=\{-2; 2\}  $ \\
 $x^5=32$ & $\Longrightarrow$ & $\lx=\{+2\}  $ \\
 
 \end{tabular}
-
+\HECH{\forceCB{}}
 \subsection*{Exponentialgleichungen}
 \subsubsection*{mit Exponentenvergleich}
 
@@ -509,7 +523,7 @@ $$\mathbb{L}_{(x | y)} = \{(8 | -3)\}$$
 
 
 \forceCB
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 \subsection*{Substitution}
 Beispiel Bruchgleichungssysteme:
@@ -528,7 +542,7 @@ $$b=1=\frac{1}{y-2} \Longrightarrow  y=3$$
 
 
 \forceCB
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%               Textaufgaben                         %%
@@ -566,13 +580,13 @@ $$p = -3\% \Longleftrightarrow{}  a = 0.97 $$
 
 \forceCB
 
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%               Funktionen                           %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Funktionen}
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 
 Eine Funktion ist eine {\color{red} eindeutige Zuordnung}. Dabei wird
@@ -604,7 +618,7 @@ Zwei Geraden sind \textbf{parallel}, wenn ihre Steigungen gleich sind.
 %%$\HECH{b}\RLP{q}$ = $y$-Achsenabschnitt (=Ordinatenabschnitt)
 $b$ = $y$-Achsenabschnitt (=Ordinatenabschnitt)
 \forceCB
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 \subsubsection*{Horizontale Gerade}
 
@@ -641,12 +655,12 @@ Gleichsetzen: $ax+b = cx+d$ und nach $x$ auflösen.
 
 %%$$x_M = \frac{x_A+x_B}2; y_M=\frac{y_A+y_B}2$$
 
-%%\keinHeaderUndKeinFooter{}
+%%\headerUndFooterDieseSeite{}
 
 \subsection*{Zweipunkte Aufgaben}
 %%Gesucht Gerade $g\-: \,\,\, y=\HECH{ax+b}\RLP{mx+q}$ durch zwei gegebene Punkte $A=(x_A|y_A)$
 %%und $B=(x_B|y_B)$
-%%\keinHeaderUndKeinFooter{}
+%%\headerUndFooterDieseSeite{}
 
 Gesucht Gerade $g\-: \,\,\, y=ax+b$ durch zwei gegebene Punkte $A=(x_A|y_A)$ und $B=(x_B|y_B)$
 
@@ -664,7 +678,7 @@ $y=ax+b$ einsetzen, um $b$ zu finden.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 \subsection*{Potenzfunktionen}
 
@@ -708,7 +722,7 @@ $k$ ungerade: Punktsymmetrisch (Ursprung $O=(0|0)$)
 
 %%\hrulefill  
 \forceCB
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%               Wachstumsmodelle                     %%
@@ -793,7 +807,7 @@ $$y=a\cdot{}e^{bx}$$}
 \HECH{$\frac12 \cdot{} b = f(t) = b\cdot{}a^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t= \tau\cdot{}\log_a\left(\frac12\right)$}
 \RLP{$\frac12 \cdot{} a = f(t) = a\cdot{}q^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t= \tau\cdot{}\log_q\left(\frac12\right)$}
 
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 \subsection*{Verdopplungszeit}
 \HECH{$2\cdot{}b = f(t) = b\cdot{}a^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t = \tau\cdot{}\log_a(2)$}
@@ -801,18 +815,18 @@ $$y=a\cdot{}e^{bx}$$}
 
 %%\mmPap{5.6}%
 \forceCB%
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 
 
 \subsection*{Sättigungsfunktionen}
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 
 \bbwCenterGraphic{7.5cm}{img/ExpFunktionBeschraenktesWachstum.pdf}
 
 \subsubsection*{Beschränktes Wachstum (Zerfall)}
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 
 \textbf{Zerfallsrate} immer: $0<\HECH{a}\RLP{q}<1$
@@ -843,7 +857,7 @@ $$f(0) = c-a$$}
 %%\mmPapier{14}
 
 \newpage
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%               Datenanalyse                         %%
@@ -894,7 +908,7 @@ Maximum bzw. Minimum sind höchste bzw. kleinste Datenwerte: Die Ausreisser
 zählen mit!
 
 \RLP{\forceCB}%%
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 
@@ -916,7 +930,7 @@ englisch \textit{Inter Quartile Range} = \textbf{IQR} bezeichnet.
 %$\sigma$ = Standardabweichung der Grundgesamtheit
 
 %$s$ = Standardabweichung einer gemessenen Stichprobe
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 
 \subsubsection*{Robustheit}
@@ -939,16 +953,16 @@ weiter ins Extreme bewegt, so sprechen wir von einem \textbf{robusten} Mass.
 
 
 %
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 \RLP{\forceCB}%
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 \subsection*{Diagramme}
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 \subsubsection*{Säulen (und Balken) / Kreis (Kuchen)}
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 %%\begin{tabular}{cc}
 %% \includegraphics[width=4cm]{img/balkendiagramm.png} &  \includegraphics[width=3cm]{img/kuchendiagramm.png}\\
@@ -962,7 +976,7 @@ weiter ins Extreme bewegt, so sprechen wir von einem \textbf{robusten} Mass.
 \item Legende und Titel
 \end{itemize}
 
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 \begin{tcolorbox}[colback=white]
   \textbf{Absolute und relative Häufigkeit}\\
@@ -978,14 +992,14 @@ $p_i = f_i\cdot{}100\%$ &$=$& prozentuale Häufigkeit%%\\
   \end{tabular}
 \end{tcolorbox}
 
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 \RLP{\forceCB}
 
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 \subsubsection*{Histogramm}
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 \bbwCenterGraphic{8cm}{img/Histogramm.pdf}
 
 \begin{itemize}
@@ -1020,9 +1034,9 @@ $p_i = f_i\cdot{}100\%$ &$=$& prozentuale Häufigkeit%%\\
 \end{multicols}
 
 
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 \newpage
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 \subsubsection*{Boxplot}
 %%\TRAINER{«Schritte zum Boxplot als Fliesstext
 %%  daneben. Ausreisserschwellen {\color{blue}blau} im
@@ -1044,7 +1058,7 @@ entferntesten Nicht-Ausreisser ({\color{farnFarbe}grün}). Ausreisser
 %%    Kombinatorik / Wahrscheinlichkeit (Stochastik)  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Stochastik}
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 \subsection*{Kombinatorik}
 
@@ -1090,7 +1104,7 @@ $$N = \frac{11!}{{\color{farnFarbe}4}!\cdot{}{\color{red}4}!\cdot{}{\color{cyan}
 
 \end{multicols}
 \newpage
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 
 \subsection*{Überblick Auswahlprobleme / Anzahl Möglichkeiten $N$ }
@@ -1161,11 +1175,11 @@ ${\color{red}P}({\color{farnFarbe}KK} \textrm{\color{red} oder } {\color{blue}ZZ
   &=&${\color{farnFarbe}0.6\cdot0.6} {\color{red}+} {\color{blue}0.4\cdot0.4}$
 \end{tabular}
  
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 \subsection*{Binomialverteilung}
 \subsubsection*{Bernoulli}
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 Ein Experiment wird $n$ mal ausgeführt.
 
@@ -1240,10 +1254,10 @@ Für voneinander \textbf{unabhängige} Ergebnisse
 gilt:
 
 $$P(A\textrm{ «oder» }B) = P(A\cup B) = P(A) + P(B)$$
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 %%\forceCB
-%%\keinHeaderUndKeinFooter{}
+%%\headerUndFooterDieseSeite{}
 
 \subsubsection*{Gegenwahrscheinlichkeit}
 Die Wahrscheinlichkeit des \textbf{Gegenereignisses} von $E$ ist
@@ -1259,11 +1273,11 @@ $$P(X \ge 4) = 1 - P(X < 4) = 1-P(X\le 3)$$
 
 Gegenereignis von «minimal 4 Mal» = «maximal 3 Mal».
 
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 \forceCB{}
 \subsection*{Zufallsgrössen, Zufallsvariable $\mathbf{X}$}
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 (mit endlich vielen Werten $x_i$)
 
@@ -1342,7 +1356,7 @@ $$P(G | F) = \frac{\textrm{Anzahl gesunde Frauen}}{\textrm{Anzahl Frauen}}=  \fr
 
 %% Leerseiten für Notizen
 \newpage
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%               Taschenrechner                       %%
@@ -1394,16 +1408,16 @@ Ganz am Schluss:
 * Zeilenumbrüche und Einzüge (0pt bei Aufzählungen und Nummerierungen)
 * Absatz-Umbrüche / Seitenumbrüche
 }}
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 %
 \noTRAINER{\vspace{15mm}}%
 %
 %%\noTRAINER{\mmPapier{4}}%
 %
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 \newpage
-\keinHeaderUndKeinFooter{}
+\headerUndFooterDieseSeite{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%           Notizen                        %%

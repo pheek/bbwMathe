@@ -3,19 +3,19 @@ InfoKey: Creator
 InfoValue: LaTeX with hyperref
 InfoBegin
 InfoKey: ModDate
-InfoValue: D:20221005110039+02&apos;00&apos;
+InfoValue: D:20230117151028+01&apos;00&apos;
 InfoBegin
 InfoKey: CreationDate
-InfoValue: D:20221005110039+02&apos;00&apos;
+InfoValue: D:20230117151028+01&apos;00&apos;
 InfoBegin
 InfoKey: Producer
 InfoValue: pdfTeX-1.40.20
 InfoBegin
 InfoKey: PTEX.Fullbanner
 InfoValue: This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) kpathsea version 6.3.1
-PdfID0: 5f76bef06d87558587b1eec788511e6a
-PdfID1: 5f76bef06d87558587b1eec788511e6a
-NumberOfPages: 16
+PdfID0: 7fa36ce3d8985ca14da6432169c610ca
+PdfID1: 7fa36ce3d8985ca14da6432169c610ca
+NumberOfPages: 17
 PageMediaBegin
 PageMediaNumber: 1
 PageMediaRotation: 0
@@ -93,6 +93,11 @@ PageMediaRect: 0 0 595.276 841.89
 PageMediaDimensions: 595.276 841.89
 PageMediaBegin
 PageMediaNumber: 16
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 17
 PageMediaRotation: 0
 PageMediaRect: 0 0 595.276 841.89
 PageMediaDimensions: 595.276 841.89

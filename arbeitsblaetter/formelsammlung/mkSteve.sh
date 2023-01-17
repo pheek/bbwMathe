@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-pdftk FormelsammlungGESO_GESO.pdf burst
+pdftk FormelsammlungGESO_HECH.pdf burst
 
 cp blank.pdf_fix blank.pdf
 
