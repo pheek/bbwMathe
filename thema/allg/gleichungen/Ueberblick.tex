@@ -7,44 +7,37 @@
 
 \subsection{Überblick über Gleichungen mit Potenzen}
 
-\begin{tabular}{|p{52mm}|p{52mm}|p{52mm}|}
+\begin{bbwFillInTabular}{|p{52mm}|p{52mm}|p{52mm}|}\hline
+
+  Potenzwert               & Basis gesucht                       &  Exponent gesucht      \\
+  (berechnen)              & \TRAINER{Potenzgleichung}           &  \TRAINER{Exponentialgleichung}       \\
   \hline
-  Potenzwert gesucht       & Basis gesucht                       &  Exponent gesucht          \\
+  \multicolumn{3}{c}{Zehnerpotenzen}\\
+%%  \multicolumn{3}{c}{\,}\\ %% Generiere etwas Abstand
+
   \hline
   $10^3=x$                 & $x^3=1000$                           &  $10^x=1000$               \\
   \hline
-  $x=10\cdot{}10\cdot{}10$ & $x=\sqrt[3]{1000}$                   & $x =  \log_{10}(1000)$     \\
-  $x=1000$                 & $x=10$                               & $x =  3$                   \\
-                           & Potenzgleichung                      & Exponentialgleichung       \\
-
-
-
-  \hline
-  \multicolumn{3}{c}{\,}\\ %% Generiere etwas Abstand
+  $x=\TRAINER{1000}$  & $ x=\TRAINER{\sqrt[3]{1000}=10}$          & $x   =  \TRAINER{\log_{10}(1000) = 3}$     \\\hline
+%%  \multicolumn{3}{c}{\,}\\ %% Generiere etwas Abstand
   \multicolumn{3}{c}{Beispiel Zweierpotenzen}\\
   \hline
-  Potenz                   & Potenzgleichung bzw. Wurzelgleichung &  Exponentialgleichung     \\
-  \hline 
   $2^5=x$                  & $x^5=32$                             &  $2^x=32$                  \\
   \hline
-  $x=2\cdot{}2\cdot{}2\cdot{}2\cdot{2}$ & $x=\sqrt[5]{32}$        & $x =  \log_{2}(32)$        \\
-  $x=32$                   & $x=2$                                & $x  =  3$                  \\
-  \hline
+  $x=\TRAINER{2\cdot{}2\cdot{}2\cdot{}2\cdot{2}=32}$ & $x=\TRAINER{\sqrt[5]{32}=2}$        & $x = \TRAINER{\log_{2}(32)=3}$        \\\hline
 
-
-  \hline
-  \multicolumn{3}{c}{\,}\\ %% Generiere etwas Abstand
+%%  \multicolumn{3}{c}{\,}\\ %% Generiere etwas Abstand
   \multicolumn{3}{c}{\GESO{(Optional)}\TALS{Erinnerung} --- Wurzeln sind rationale Exponenten:}\\
   \hline
-  Wurzelwert gesucht        & Radikand gesucht                   &  Wurzelexponent gesucht            \\
-  \hline
-  $\sqrt[3]{1000}=x$        & $\sqrt[3]{x}=10$                    &  $\sqrt[x]{1000}=10$               \\
+  $\sqrt[3]{1000}=x$       & $\sqrt[3]{x}=10$                    &  $\sqrt[x]{1000}=10$               \\
   \hline
   $1000^{\frac{1}{3}}=x$     & $x^{\frac{1}{3}}=10$                   &  $1000^{\frac{1}{x}}=10$               \\
-  $x=\sqrt[3]{1000}$       & $x=10^3$                             & $\frac{1}{x} =  \log_{1000}(10)$      \\
-  $x=10$                   & $x=1000$                             & $\frac{1}{x} =  \frac{1}{3}$         \\
-                           &                                      & $x = 3$                      \\\hline
-\end{tabular}
+  $x=\TRAINER{\sqrt[3]{1000}=10}$       & $\TRAINER{\left(x^\frac13 \right)^3}=\TRAINER{10^3}$  & $\TRAINER{\frac{1}{x} }\noTRAINER{\hspace{2cm}}=\TRAINER{  \log_{1000}(10)}$      \\
+                           &   $\TRAINER{x}\noTRAINER{\hspace{15mm}}=\TRAINER{1000}$                                  & $\TRAINER{\frac{1}{x}}\noTRAINER{\hspace{2cm}} = \TRAINER{ \frac{1}{3}}$         \\
+                           &                                      & $x = \TRAINER{3}$                      \\\hline
+\end{bbwFillInTabular}
+
+
 
 \TALS{
   \begin{center}\TRAINER{Letzter Typ: }Logarithmische Gleichungen\end{center}
@@ -64,4 +57,5 @@
 
   \tiprobutton{ln_log}-Taste
   auf Ihrem TI-30 Taschenrechner 3x drücken.
-\newpage}%% END GESO
+}%% END GESO
+\newpage
