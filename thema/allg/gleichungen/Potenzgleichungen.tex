@@ -126,92 +126,6 @@ Bemerkung zu $a<0$ und $n$ \textbf{un}gerade: Für den TI-Taschenrechner ist $-\
 
 \newpage
 
-\subsection{Wurzelgleichungen}\index{Wurzelgleichung}
-
-\TadBMTA{191}{11}
-
-\begin{definition}{Wurzelgleichung}{}
-Kommt in der Gleichung die Gesuchte unter der Wurzel vor, so sprechen
-wir von einer \textbf{Wurzelgleichung}.
-\end{definition}
-Einführungsbeispiel:
-$$\sqrt[5]{x}=6$$
-
-
-Dies löst man indem man beide Seiten der Gleichung potenziert:
-\TNT{4}{
-  
-\begin{tabular}{rccl}
-  \             & $\sqrt[5]{x}$   &=&     6      \\
-  $\Rightarrow$ & $(\sqrt[5]x)^5$ &=&  $6^5$     \\
-  $\Rightarrow$ & $x$             &=& $7\,776$ 
-\end{tabular}
-}%% END TNT
-
-Lösen Sie das folgende Musterbeispiel:
-$$\sqrt{x}+1=2x$$
-\TRAINER{Das obige Beispiel von M. Rohner zeigt viele Sackgassen und Dinge, auf die man noch achten muss.}
-
-\GESO{Lösungsverfahren im Buch \cite{marthaler21alg} Seite 192 im roten
-  Kasten.}
-
-\platzFuerBerechnungenBisEndeSeite{}
-
-\TRAINER{1. Wurzel separieren
-  $$\sqrt{x}=2x-1$$ quadrieren:
-  $$x=4x^2-4x+1$$
-  $$0=4x^2-5x+1$$
-  $$x_{1,2}=\frac{+5 \pm \sqrt{25-16}}{8}$$
-  $$\lx={1}$$, denn $\frac{1}{4}$ ist eine durchs Quadrieren erschienene Scheinlösung.}
-
-\newpage
-\begin{bemerkung}{Scheinlösung}{}
-  
-\textbf{Achtung}: Beim \textbf{Radizieren} auf beiden Seiten
-einer Gleichung können \textbf{Lösungen} \textbf{verschwinden}.
-
-Beim \textbf{Potenzieren} können (Schein)\textbf{Lösungen}
-\textbf{hinzukommen} \GESO{Bsp. S.191 und roter Kasten S. 192
-  im \cite{marthaler21alg}}.
-\end{bemerkung}
-
-
-\GESO{optional:}
-\begin{rezept}{Wurzelgleichung lösen}{}
-  \begin{enumerate}
-  \item Definitionsbereich $\mathbb{D}$ festlegen
-  \item Eine Wurzel isolieren (separieren)
-  \item Quadrieren
-  \item 2. und 3. Schritt wiederholen, bis keine Wurzeln mehr
-    vorkommen
-  \item Auflösen
-  \item Probe:
-    \begin{enumerate}
-    \item Mit Definitionsbereich $\mathbb{D}$ abgleichen
-    \item In ursprüngliche Gleichung einsetzen
-    \end{enumerate}
-  \end{enumerate}
-\end{rezept}
-\newpage
-
-
-\GESO{Optionales}
-Beispiel: $2\cdot{}\sqrt{x+1} + 2 = 5 + 2\cdot{}\sqrt{x-2}$
-
-\TNT{16}{\bbwCenterGraphic{16cm}{allg/gleichungen/img/WurzelgleichungLoesungsweg.png}
-  \vspace{3cm}
-  $$\lx = \left\{\frac{33}{16}\right\}$$}
-
-\subsection*{Aufgaben}
-%%  \TALSAadBMTA{112ff}{339. d) e), 340. c), 342. d), 344. a) b) c) [Tipp
-%%      bei c): Substitution]}
-
-\AadBMTA{
-  196 (Wurzelgleichungen)}{2., 3. a)-f),  4. a) c) d) f),
-  5. a) c), 6. b),  7. d), 8. c) d) und Textaufgabe 10. a) und b)}
-
-\newpage
-
 
 \subsection{Spezielle Exponenten}
 \subsubsection{negative
@@ -243,7 +157,7 @@ $$\lx = \left\{-\frac12; \frac12\right\}$$}%% END TNT
 
 \newpage
 
-\subsubsection{Rationale Exponenten}\index{Exponenten!rationale}\index{Wurzeln}
+\subsubsection{Rationale Exponenten\GESO{ (optional)}}\index{Exponenten!rationale}\index{Wurzeln}
 
  Eine Wurzelgleichung ist nichts anderes als eine
 Potenzgleichung mit rationalen Exponenten.
