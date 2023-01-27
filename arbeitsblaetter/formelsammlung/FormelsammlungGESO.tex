@@ -273,7 +273,7 @@ Vorzeichen im Taschenrechner:\\
 
 Geometrisch: Abstand zum Nullpunkt.
 
-\RLP{\forceCB{}}
+%%\RLP{\forceCB{}}
 %%\hrulefill
 
 \section*{Bruchterme}
@@ -378,7 +378,7 @@ Exponenten vertauschen ihr Vorzeichen beim Übertreten des
 Bruchstrichs. Beispiel:
 $$\frac{a^{-3}b^2}{c^5d^{-6}} = \frac{b^2d^6}{a^3c^5}$$
 
-\forceCB{}
+%%\forceCB{}
 
 \subsection*{$n$-te Wurzel}
 $\sqrt[n]{a} = \left(a\right)^\frac1n$\hfill{}Bsp.: $8^{\frac13}=\sqrt[3]{8}=2$
@@ -426,7 +426,8 @@ $$\log_{\color{farnFarbe}a}({\color{red}b}) = \frac{\lg({\color{red}b})}{\lg({\c
 $$\log_{\color{farnFarbe}b}({\color{red}a}) = \frac{\lg({\color{red}a})}{\lg({\color{farnFarbe}b})} = \frac{\ln({\color{red}a})}{\ln({\color{farnFarbe}b})}$$}
 \end{tcolorbox}%
 %
-\RLP{\forceCB{}}%%
+%%\RLP{\forceCB{}}%%
+\forceCB{}%%
 \headerUndFooterDieseSeite{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -496,7 +497,7 @@ $x^4=16$ & $\Longrightarrow$ & $\lx=\{-2; 2\}  $ \\
 $x^5=32$ & $\Longrightarrow$ & $\lx=\{+2\}  $ \\
 
 \end{tabular}
-\HECH{\forceCB{}}
+%%\HECH{\forceCB{}}
 \subsection*{Exponentialgleichungen}
 \subsubsection*{mit Exponentenvergleich}
 
@@ -541,8 +542,8 @@ $$a=\frac12=\frac{1}{x+1} \Longrightarrow  x=1$$
 $$b=1=\frac{1}{y-2} \Longrightarrow  y=3$$
 
 
-\forceCB
-\headerUndFooterDieseSeite{}
+%%\forceCB
+%%\headerUndFooterDieseSeite{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%               Textaufgaben                         %%
@@ -673,6 +674,11 @@ $y=ax+b$ einsetzen, um $b$ zu finden.
 %%\gleichungZZ{y_A}{\HECH{a}\RLP{m}\cdot{}x_A+\HECH{b}\RLP{q}}{y_B}{\HECH{a}\RLP{m}\cdot{}x_B + \HECH{b}\RLP{q}}
 \textbf{Variante 2}: Gleichungssystem nach $a$ und $b$ auf\/lösen:
 \gleichungZZ{y_A}{a\cdot{}x_A+b}{y_B}{a\cdot{}x_B + b}
+
+\textbf{Variante 3}: Punkte in \texttt{L1}=$x$ und \texttt{L2}=$y$
+unter \tiprobutton{DATA} eingeben. Danach unter
+\tiprobutton{2nd}\tiprobutton{data_stat-reg-distr} die «4» wählen:
+\texttt{LinReg ax+b}.
 
 \end{multicols}
 
