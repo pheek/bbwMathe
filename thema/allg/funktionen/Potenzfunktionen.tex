@@ -47,7 +47,7 @@ Die Funktion
 
 $f: y = a\cdot{}x^2$
 
-heißt rein-quadratische Funktion.
+heißt \textbf{Parabel zweiter Ordnung} oder rein-quadratische Funktion.
 \end{definition}
 
 
@@ -60,9 +60,6 @@ $$f: y= ax^2 + bx + c$$
 
 \GESO{Beispiele zu allgemeinen quadratischen Funktionen finden sie im Buch \cite{marthaler21alg} ab Seite 260 insb. im Bild zu Aufg. 4 auf Seite 273.}
 
-\GESO{\subsection*{Aufgaben}}
-\GESOAadBMTA{303ff}{1. (nur $n=3$ und $n=5$), 2. (nur $n=4$ und $n=6$)}
-
 \newpage
 
 \subsection{Parabel}\index{Parabel}
@@ -74,30 +71,56 @@ Zeichnen Sie $y = \frac{1}{16}x^4$ im Bereich $[-3; 3]$ indem Sie für jeden 0.5
 }%%
 
 
-\begin{definition}{Potenzfunktion}{definition_potenzfunktion}
-  Eine Funktion der Art
-$$f: y=a\cdot{}x^r$$
-  mit $r \in \mathbb{R}\backslash\{0\}$ heißt \textbf{Potenzfunktion}.
-\end{definition}
-
 \begin{definition}{Parabel}{definition_parabel}
   Ist $n\in \mathbb{N}_{\ge 2}$, so wird der Graph der Potenzfunktion
   $$x\mapsto a\cdot{}x^n$$
   \textbf{Parabel} $n$-ter Ordnung genannt.
 \end{definition}
 
+\TALS{%%
+\begin{bemerkung}{Potenzfunktion}{definition_potenzfunktion}
+  Eine Funktion der Art
+$$f: y=a\cdot{}x^r$$
+  mit $r \in \mathbb{R}\backslash\{0\}$ heißt \textbf{Potenzfunktion}.
+\end{bemerkung}
+
+\begin{bemerkung}{Polynomfunktionen}{}
+  Funktionen, deren Funktionsterm ein Polyom bilden werden
+  \textbf{Polynomfunktionen} genannt:
+  $$f: y=a_n\cdot{}x^n + a_{n-1}\cdot{}x^{n-1} + a_{n-2}\cdot{}x^{n-2} + ... + a_2\cdot{}x^2 + a_1 \cdot{} x + a_0 $$
+\end{bemerkung}
+%
+}%% END TALS
+
+
+\newpage
+\subsection*{Aufgaben}
+\aufgabenFarbe{Zeichnen Sie die Parabeln $$y=f(x) = x^n$$ für $n = 2$,
+  $n=3$, $n=4$, $n=5$ und $n=6$ mit \texttt{geogebra.org}.
+\\
+Was fällt auf?}
+%%\GESOAadBMTA{303ff}{1. (nur $n=3$ und $n=5$), 2. (nur $n=4$ und $n=6$)}
+
+\TNTeop{}
+
 \newpage
 
 \subsubsection{Anwendung (optional)}
+Boltzmannsches T-hoch-vier-Gesetz
+
+\leserluft{}
 
 Die Funktion $P(T) = \sigma\cdot\varepsilon\cdot
-  A\cdot{}T^4$ beschreibt, welche Leistung $P$ ein Körper der
-  Oberfläche $A$ bei Temperatur $T$ (in Kelvin) abstrahlt.
+  A\cdot{}T^4$ beschreibt, welche Strahlungsleistung $P$ ein Körper der
+  Oberfläche $A$ (in $ \text{m}^2$) bei Temperatur $T$ (in Kelvin) aussendet.
 
   $\sigma$ = Bolzmann Konstante = $5.6\cdot{}10^{-8}$
   
-  $\varepsilon$ = Emissionswert (eg. https://ennologic.com/wp-content/uploads/2018/07/Ultimate-Emissivity-Table.pdf)
+  $\varepsilon$ = Emissionswert
 
+  \small{\texttt{(eg. https://ennologic.com/wp-content/uploads/2018/07/Ultimate-Emissivity-Table.pdf)}}
+
+  \leserluft{}
   
   Rechenbeispiel:
 
@@ -248,7 +271,8 @@ Vergleichen Sie die neue Funktion mit der Parabel $y=x^3$.
 \TALS{
   \aufgabenFarbe{Zeichnen Sie mit \texttt{geogebra.org} die Funktion
     $f(x) = \frac1{10}(x^3 - 3x^2 + 3)$
-    Definieren Sie nun die Funktion $g(x) = a\cdot{}f((x+s)\cdot{}b)+r$.
+    \\
+    Definieren Sie anschließend die Funktion $$g(x) = a\cdot{}f((x+s)\cdot{}b)+r.$$
 \\
     Entscheiden Sie, welche Veränderungen die Parameter $a$, $b$, $r$
     und $s$ bewirken.\\
@@ -280,4 +304,6 @@ Vergleichen Sie die neue Funktion mit der Parabel $y=x^3$.
 
 
 \input{allg/funktionen/Hyperbel.tex}
+\newpage
+\input{allg/funktionen/PotenzfunktionenUeberblick.tex}
 \newpage
