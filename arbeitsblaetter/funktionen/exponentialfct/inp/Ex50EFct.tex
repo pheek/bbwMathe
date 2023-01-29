@@ -121,6 +121,35 @@ zweitens in der Form $g(x)=b\cdot{} e^{qx}$ an.
 \subsection{Basiswechsel-Aufgaben}
 
 
+\bbwActAufgabenNr{} \textbf{Moos}
+
+Eine Moosart bedeckt in einem Moor mehr und mehr der Fläche. Die
+Fläche in $\text{m}^2$ wird in Abhängigkeit der Zeit $t$ [in Jahren]
+wie folgt angegeben:
+
+$$f(t) = 30\cdot{}\e^{1.79179\cdot{}t} $$
+
+\begin{bbwAufgabenBlock}
+
+\item Geben Sie die Funktion in der Form $f(t) = b\cdot{}a^t$ an, mit
+  geeignetem $a$ und $b$.
+
+  \TRAINER{$$f(0):   30\cdot{}e^{1.79179\cdot{}0} = b\cdot{}a^0$$
+    somit
+    $$30 = b$$
+    Und: für $t=1$:
+    $$f(t) = 30\cdot{}e^{1.79179} = b\cdot{}a^1$$
+    Durch $b=30$ teilen:
+    $$e^{1.79179} = a$$
+    und somit
+    $$a\approx 6.000$$
+    $$f(t) = 30\cdot{}6.000^t$$
+  }
+\end{bbwAufgabenBlock}
+\TNTeop{}
+
+\newpage
+
 \bbwActAufgabenNr{} \textbf{Algen}
 
 Eine Algenplage verdopple sich alle 7 Stunden.
@@ -132,7 +161,7 @@ Eine Algenplage verdopple sich alle 7 Stunden.
 \TRAINER{$$f(24) = b\cdot{}2^{\frac{24}{7}}$$ Der Vervielfachungsfaktor pro Tag ist also $\approx 10.77$}
 
 
-\item Wie lautet die Funktionsgleichung $f(t)$, wenn $t$ in Tagen, und nicht in Stunden gerechnet wird?
+\item Wie lautet die Funktionsgleichung $f(t)=b\cdot{}a^t$, wenn $t$ in Tagen, und nicht in Stunden gerechnet wird?
 
 \TRAINER{$f(t) = b\cdot{} 10.77^t$}
 
@@ -141,7 +170,7 @@ Eine Algenplage verdopple sich alle 7 Stunden.
 \TRAINER{Erst mal in Minuten angeben (7 Stunden = 420 Minuten) :
 $$f(t) = b\cdot{} 2^{\frac{t}{420}}$$
 Faktor 1.02 = 2\%
-$$1.02\cdot{}b = b\cdot{} 2^{\frac{t}{420}}$$
+$$1.02\cdot{}b = b\cdot{} 2^{\frac{t}{420}} | \text{ durch } b \text{ teilen.}$$
 $$1.02 = 2^{\frac{t}{420}}$$
 $$\log_2(1.02) = \frac{t}{420}$$
 $$420 \cdot{} \log_2(1.02) = t$$

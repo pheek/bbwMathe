@@ -47,7 +47,8 @@ wenn Sie wissen, dass die Funktion durch die Punkte $P=(2|4)$ und $Q=(-1|2)$ ver
   Ergo: $$f(x) = b\cdot{}a^x = \frac4{(\sqrt[3]{a})^2}  \cdot{} \left(\sqrt[3]2\right)^x$$
 }
 
-
+\subsection*{Aufgaben}
+\AadBMTA{334}{10. a) b)\TALS{ e)}\GESO{ f)}}
 \newpage
 
 
@@ -129,7 +130,7 @@ Also: Sie verdreifachen sich ca. alle 8 Tage.
 
 \subsection*{Aufgaben}
 %%\TALSAadBMTA{215ff}{809-830}
-\AadBMTA{335ff}{11. a) b), 15. a) b) [Zeichnen mit \texttt{geogebra.org}], 17. a) b) e), 22. a) b), 23. d), 25. a) b)}
+\AadBMTA{336ff}{11. a) b), 15. a) b) [Zeichnen mit \texttt{geogebra.org}], 17. a) b) e), 22. a) b), 23. d), 25. a) b)}
 
 \newpage
 
@@ -156,23 +157,51 @@ Es gilt:
   $\e=$ Eulersche Konstante (2.718...)\\
   \hrule
   \vspace{3mm}
-  $a_2 = \left(a^\frac1\tau\right)^{\tau_2}$\\
+\begin{center}\fbox{\fbox{  $a = a_2^{\frac{\tau}{\tau_2}}$}}\end{center}
+  \vspace{3mm}
+  $a_2 = a^{\frac{\tau_2}{\tau}}$\\
   \vspace{3mm}
   $\tau_2=1 : \left(\log_{a_2}\left(a^\frac1\tau\right)\right)$\\
   \vspace{3mm}
   $m=\ln\left(a^\frac1\tau\right) =  \ln\left(a_2^\frac1{\tau_2}\right)$\\
 \end{gesetz}
+\newpage
+
+\newpage
+
+\subsection{Beispiel: Wissenschaftliche Publikation}
+
 
 \begin{bemerkung}{Konstante $\e$}{}
   Mit der Eulerschen Konstanten $\e$ als Basis wird lediglich ein einziger
   Parameter (meist $m$ oder $q$) verwendet, um die Form der
-  Exponentialfunktion zu beschreiben. Eine Abhängigkeit von $a$ zu
-  $\tau$ fällt weg.
+  Exponentialfunktion zu beschreiben.
+
+  $$\text{Wir schreiben }\, b\cdot{}\e^{mt} \,\text{ anstelle von }\, b\cdot{}a^{\frac{t}{\tau}}$$
+
+  Eine Abhängigkeit von $a$ zu $\tau$ fällt weg.
 
   Dabei ist $m$ die Tangentensteigung an die Funktion $$f(t) = \e^{mt}$$
   im Punkt $$\left(0\middle|1\right).$$
-  \end{bemerkung}
+\end{bemerkung}
 
+
+
+In einem wissenschaftlichen Journal ist angegeben, dass eine Population annähernd folgendes Verhalten an den Tag lege [$t$ = Tage]:
+$$f(t) = 3\,000\cdot{}\e^{1.504\cdot{}t}$$
+
+Berechnen Sie die tägliche Zunahme $a$ und geben Sie somit die Funktionsgleichung ohne Bruch im Exponenten ($\tau = 1$) und mit dem neu berechneten $a$ in der Basis an:
+
+$$f(t) = 3\,000\cdot{}\e^{1.504\cdot{}t} = b\cdot{}a^t \approx \LoesungsRaum{3\,000\cdot{}5.000^t}$$
+
+\TNTeop{Tipp: Setzen Sie $t=0$, um den Startwert $b$ zu erhalten
+  ($b=3\,000$) und danach $t=1$ ein: $$a = \e^{1.504} \approx 5.000$$
+\vspace{3cm}}
+
+
+\subsubsection*{Aufgaben}
+\GESO{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/106029175831971}{Kap. 2.: E-Funktion}}
+\TALS{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/106029175777725}{Kap. 2.: E-Funktion}}
 \newpage
 
 
@@ -226,22 +255,3 @@ Punkt $(1|\e^1) = (1|\e)$ genau $\e$.
 
 }%% END TALS
 
-\newpage
-
-\subsubsection{Beispiel: Wissenschaftliche Publikation (optional)}
-In einem wissenschaftlichen Journal ist angegeben, dass eine Population annähernd folgendes Verhalten an den Tag lege [$t$ = Tage]:
-$$y = \e^{\frac{t}{4.1}}$$
-
-Berechnen Sie die tägliche Zunahme $a$ und geben Sie somit die Funktionsgleichung ohne Bruch im Exponenten ($\tau = 1$) und mit dem neu berechneten $a$ in der Basis an:
-
-$$y = \e^{\frac{t}{4.1}} = b\cdot{}a^t \approx \LoesungsRaum{1.2762}^t$$
-
-\TNTeop{Tipp: Setzen Sie $t=0$ und $t=1$ ein. $$a = \e^{\frac{1}{4.1}}$$
-\vspace{3cm}}
-
-
-
-\subsubsection*{Aufgaben}
-\GESO{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/106029175831971}{Kap. 2.: E-Funktion}}
-\TALS{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/106029175777725}{Kap. 2.: E-Funktion}}
-\newpage
