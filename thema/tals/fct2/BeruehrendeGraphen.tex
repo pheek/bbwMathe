@@ -40,7 +40,7 @@ Schnittpunkts nennen wir $x_S$:
 \begin{tabular}{rclr}
 $f(x_S)$                      & $=$ & $g(x_S)$                              & \\
 $\frac14x^2-\frac12x+\frac14$ & $=$ & $ax-2$                                & \\
-$0$                           & $=$ & $\frac14x^2+(-\frac12-a)-\frac94$     & (I)\\
+$0$                           & $=$ & $\frac14x^2+(-\frac12-a) + \frac94$     & (I)\\
 \end{tabular}
 \vspace{10mm}
 }%% END TNT
@@ -51,7 +51,7 @@ Die Diskriminante $D=B^2 - 4AC$ muss gleich 0 sein.
 $A = \frac14$, $B = -\frac12-a$ und $C = \frac{-9}4$.
 
   $$D=0=B^2-4AC = (-\frac12-a)^2  - (4\cdot{}A\cdot{}C)$$
-  $$0 = (a^2+a+\frac14) - (4\cdot\frac14\cdot{}\frac{-9}4)$$
+  $$0 = (a^2+a+\frac14) - (4\cdot\frac14\cdot{}\frac{+9}4)$$
 $$\Longrightarrow 0 = a^2 + a - 2$$
 $$\Longrightarrow a_1 = 1 \text{ und  } a_2 = -2$$
 \vspace{40mm}
@@ -63,7 +63,7 @@ $a$ in die Gleichung (I) einsetzen ($a_1=1$):
 
 \TNT{6}{
 $S_1: a_1 = 1:$
-$$0 = \frac14x^2+ (-\frac12 - 1) - \frac94$$
+$$0 = \frac14x^2+ (-\frac12 - 1) + \frac94$$
   $$\Longrightarrow x_1 = \frac{\frac32\pm\sqrt{D}}{2\cdot{}\frac14} = \frac32 : \frac12= 3$$
 
 Bem. Der Term $\sqrt{D}$ kann weggelassen werden, denn $D$ wurde ja so
@@ -85,7 +85,7 @@ Zweiter \textbf{Schnittpunkt} ($a_2 = -2$):
 
 \TNT{6}{
 $S_2: a_2 = -2:$
-$$0 = \frac14x^2+ (-\frac12 - (-2)) - \frac94$$
+$$0 = \frac14x^2+ (-\frac12 - (-2)) + \frac94$$
 $$\Longrightarrow x_2 = \frac{-\frac32\pm\sqrt{D}}{2\cdot{}\frac14} = -\frac32 : \frac12= -3$$
 
 
@@ -115,7 +115,7 @@ der quadratischen Funktion.
 Betrachten wir die allgemeine quadratische Funktion $$p: y=ax^2 + bx +
 c$$
 Mit dem selben $a$ und dem selben $b$ kann ich eine Gerade $s$
-definieren, die ich die \textbf{Steigungsfunktion}\footnote{Diese
+definieren, die ich die (Tangenten-)\textbf{Steigungsfunktion}\footnote{Diese
   Steigungsfunktion wird in der Mathematik die
   \textbf{Ableitung}\index{Ableitung} genannt. Genau genommen handelt
   es sich nicht um die Steigung der Parabel, sondern um die Steigung
@@ -124,8 +124,8 @@ $$s: y= 2ax+b$$
 \newpage
 
 
-Diese Steigungsfunktion $s$ gibt in jedem Punkt $x$ die Steigung der
-Parabel $p$ an.
+Diese Steigungsfunktion $s$ gibt in jedem Punkt $x$ die Steigung einer
+Tangente an die Parabel $p$ an.
 
 \begin{beispiel}{Parabel}{}
   Gegeben ist die Parabel $p: y=2.5x^2 - 3x + 6.5$. Wo hat diese Parabel
@@ -158,7 +158,7 @@ $g: y=ax+b$, sodass die Gerade die Parabel bei $x=7$ berührt.
 \end{beispiel}
 \newpage
 
-\subsubsection{Beweis der Formel der Steigungsfunktion}
+\subsubsection{Beweis der Formel der (Tangenten-)Steigungsfunktion}
 
 Betrachten wir auf auf der $x$-Achse zwei benachbarte Punkte $x$ und
 $x+\Delta$. Die Funktionswerte lauten $f(x)$ und $f(x+\Delta)$. Die
@@ -173,7 +173,7 @@ $$\frac{f(x+\Delta)-f(x)}{\Delta} = \frac{(a(x+\Delta)^2 + b(x+\Delta)
   + c) - (ax^2 + bx +c)}{\Delta}=2ax+a\Delta+b$$
 
 Wenn wir nun das $\Delta$ gegen Null gehen lassen, also immer kleinere
-Werte einsetzen, so verschwindet der Term $a\Delta$ fast und unsere
+Werte einsetzen, so verschwindet der Term $a\cdot{}\Delta$ fast und unsere
 Formel stimmt annähernd --- jedoch präzise genug, um dies als Beweis
 gelten zu lassen.
 
