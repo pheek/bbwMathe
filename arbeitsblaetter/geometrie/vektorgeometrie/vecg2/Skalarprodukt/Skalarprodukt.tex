@@ -19,14 +19,14 @@
 \setcounter{aufgabennummer}{1}
 
 
-\newcommand\aufgabeML[2]{
+\newcommand\aufgabeML[2]{\begin{samepage}%%
 Aufgabe \arabic{aufgabennummer}:\,\,\\
 #1\\  #2
 
 \abplz{3.2}
 
-\stepcounter{aufgabennummer}
-}
+\stepcounter{aufgabennummer}\end{samepage}%%
+}%%
 
 
 \section{Skalarprodukt}
@@ -42,7 +42,6 @@ $$p=37\hspace{11mm}q=42\hspace{1mm}\text{ und } \angle (\vec{p},\vec{q}) = 18\de
 Gegeben sind
 $$r=20\hspace{11mm}s=30\hspace{1mm}\text{ und } \angle
 (\vec{r},\vec{s}) = 0\degre$$}{$$\vec{r}\circ\vec{s} = \LoesungsRaum{20\cdot{}30\cdot\cos(0\degre)=600}$$}
-\noTRAINER{\newpage}%%
 
 \aufgabeML{\\
 Gegeben sind
@@ -89,6 +88,20 @@ Vektoren $\vec{a}$ und $\vec{b}$ einen Winkel von 60 Grad
 einschließen:
 $$\vec{a} = \begin{pmatrix}2\\3\\4\end{pmatrix} \hspace{11mm} \vec{b}=\begin{pmatrix}5\\s\\8\end{pmatrix}$$}%%
 {$$s = \LoesungsRaum{\frac{\sqrt{222691}-504}{7}\approx{}-4.5855}$$}
+
+\aufgabeML{Gegeben ist ein Quader mit der Grundfläche
+$1.7 \times 2.4\text{m}^2$
+und der Höhe $0.8 \text{m}$.\\
+Welchen Winkel $\alpha$ schließt die Körperdiagonale zur Grundseite ein?
+}%%
+{$$\alpha = \LoesungsRaum{
+\alpha =
+\arccos\left(\frac{\vec{a}\circ{}\vec{p}}{a\cdot{}p}\right)
+= \arccos\left(\frac{2.4^2 + 1.7^2}{\sqrt{2.4^2+1.7^2+0.8^2}\cdot{}\sqrt{2.4^2+1.7^2}}\right)
+\approx 15.21676\degre
+}$$
+Dabei ist $\vec{a}$ die Quaderdiagonale (Körperdiagonale) und $\vec{p}
+dessen Projektion auf die Grundfläche (= $xy$-Ebene).$}
 
 
 
