@@ -1,0 +1,51 @@
+%%
+%% Meta: TI nSpire Einführung
+%%       Ziel: Damit die Grundoperationen damit durchgeführt werden können.
+%%             Damit man sich an den Rechner gewöhnt.
+%%
+
+\input{bbwLayoutPage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amssymb} %% für \blacktriangleright
+\renewcommand{\metaHeaderLine}{Geradengleichung}
+\renewcommand{\arbeitsblattTitel}{Vektorgeometrie in $\mathbb{R}^3$}
+
+\begin{document}%%
+\arbeitsblattHeader{}
+
+\newcounter{aufgabennummer}
+\setcounter{aufgabennummer}{1}
+
+
+\newcommand\aufgabeML[2]{\begin{samepage}%%
+Aufgabe \arabic{aufgabennummer}:\,\,\\
+#1\\  #2
+
+\abplz{3.2}
+\end{samepage}
+\stepcounter{aufgabennummer}%%
+}%%
+
+
+\section{Parameterdarstellung der Geradengleichung}
+
+ Es bezeichne jeweils $g: \vec{r} = \vec{a} + t\cdot{}\vec{u}$, mit
+ Stützvektor $\vec{a}$ und Richtungsvektor $\vec{u}$.
+
+
+%% Maturaprüfng 2022 Aufg. 4 (Teil 2 mit TR)
+\aufgabeML{
+Gegeben sind die Gerade $g$ und die Punkte $A$ und $B$.
+
+$$g : \vec{r} = \begin{pmatrix}2\\1\\1\end{pmatrix} +
+t\cdot{}\begin{pmatrix}0\\2\\1\end{pmatrix}\hspace{20mm}  A=(6|4| 1),
+B=(-2|5|7)$$
+
+Berechnen Sie die Punkte $P$ der Geraden $g$, für die gilt: $\angle
+APB = 35\degre$.}{}
+
+
+
+\end{document}
