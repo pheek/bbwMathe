@@ -12,6 +12,26 @@
 
 %% Summenzeichen für Mittelwert bei Datenreihen.
 
+\subsubsection{Einführung}
+
+\bbwCenterGraphic{5cm}{allg/_anhaenge/img/Carl_Friedrich_Gauss.jpg}
+\begin{center}\textit{Carl Friedrich Gauss (1777-1855) (Gemälde von G. Biermann
+    1887)}\end{center}
+
+Zählen Sie alle Zahlen von 1 bis 100 zusammen:
+
+$$1+2+3+4+...+99+100 = ?$$
+
+\TNT{4}{Lösung Gauss: 100+99+...+2+1 unter 1+2+...+100
+  schreiben. 101*100 / 2 = 10\,100 / 2 = 5\,050}
+
+\textit{«Der kleine Gauß»}: Formel
+
+$1+2+3+...+n = \frac{n\cdot{}(n+1)}2$
+
+
+\newpage
+
 \subsubsection{Notation}
 Um Summen mit vielen Summanden abzukürzen, wird das mathematische Summenzeichen (ein
 griechisches Sigma) $\sum{}$ benutzt:
@@ -26,26 +46,29 @@ $z$ gleich eins bis fünf».
 \subsubsection{Laufvariable}
 Es spielt keine Rolle, mit welchem Variablennamen der Laufindex abgekürzt wird. Üblich sind Buchstaben wie $i$, $j$, $k$, $m$, $n$:
 
-$$\sum_{n=1}^{5}{n} = \sum_{i=1}^5{i} = \sum_{k=1}^5{k} = 15$$
+$$\sum_{n=1}^{5}{n} = \sum_{i=1}^5{i} = \sum_{k=1}^5{k} = \LoesungsRaum{15}$$
 
 Die Laufvariable erhöht ihren Wert für jeden Summanden um 1 (eins).
 \newpage
 
 \subsubsection{Beispiele}
 \begin{beispiel}{Summenzeichen}{beispiele_summenzeichen}
-  $${\color{ForestGreen}\sum_{{\color{orange}n}{{\color{ForestGreen}=\color{blue}3}}}^{\color{blue}5\color{ForestGreen}}}  {\color{orange}n}^7 = {\color{blue}3}^7 {\color{ForestGreen}+} {\color{blue}4}^7 {\color{ForestGreen}+} {\color{blue}5}^7\TRAINER{=96\,696}$$
+  $${\color{ForestGreen}\sum_{{\color{orange}n}{{\color{ForestGreen}=\color{blue}3}}}^{\color{blue}5\color{ForestGreen}}}  {\color{orange}n}^7 = \noTRAINER{\hspace{90mm}}\TRAINER{{\color{blue}3}^7 {\color{ForestGreen}+} {\color{blue}4}^7 {\color{ForestGreen}+} {\color{blue}5}^7=96\,696}$$
 \end{beispiel}
 
 \begin{beispiel}{}{}
-$${\color{ForestGreen}\sum_{{\color{orange}s}={\color{blue}5}}^{{\color{blue}8}}{\color{black}(3{\color{orange}s}-4)}} = (3 \cdot{\color{blue}5} - 4) {\color{ForestGreen}+} (3 \cdot{\color{blue}6} - 4) {\color{ForestGreen}+} (3 \cdot {\color{blue}7} - 4) {\color{ForestGreen}+} (3 \cdot {\color{blue}8} - 4)\TRAINER{=62}$$
+$${\color{ForestGreen}\sum_{{\color{orange}s}={\color{blue}5}}^{{\color{blue}8}}{\color{black}(3{\color{orange}s}-4)}} = \noTRAINER{\hspace{105mm}}\TRAINER{(3 \cdot{\color{blue}5} - 4) {\color{ForestGreen}+} (3 \cdot{\color{blue}6} - 4) {\color{ForestGreen}+} (3 \cdot {\color{blue}7} - 4) {\color{ForestGreen}+} (3 \cdot {\color{blue}8} - 4)=62}$$
 \end{beispiel}
 
-
+\TALS{
 \textbf{Aber:}
 
 \begin{beispiel}{}{}
-  $$\sum_{s=5}^{8}{3s-4} = (3\cdot 5) + (3\cdot 6) + (3\cdot 7) + (3\cdot 8) - 4$$  
+  $$\sum_{s=5}^{8}{3s-4} = \noTRAINER{???}\TRAINER{(3\cdot 5) +
+    (3\cdot 6) + (3\cdot 7) + (3\cdot 8) - 4}$$
+  \platzFuerBerechnungen{4}
 \end{beispiel}
+}
 
 \newpage
 \subsubsection{Übungsaufgaben}
@@ -56,21 +79,23 @@ $$\sum_{n=-40}^{60}{(n-10)} = \LoesungsRaum{0}$$
 $$\sum_{i=1}^{10}{\frac{1}{i}} = \LoesungsRaum{\frac{7381}{2520} \approx 2.9290}$$
 
 Für Spezialisten:
-$$\sum_{i=3}^{10}\left(i^6 - ( i-1 )^6\right) = \LoesungsRaum{1\,000\,000 - 2^6 = 999\,936}$$
 
-Tipp: Schreiben Sie die ersten drei und die letzten beiden Summanden
-explizit hin\noTRAINER{.}\TRAINER{:
+\textit{Tipp: Schreiben Sie die ersten drei und die letzten beiden Summanden
+  jeweils explizit hin.}
+
+$$\sum_{i=3}^{10}\left(i^6 - ( i-1 )^6\right) = \LoesungsRaum{1\,000\,000 - 2^6 = 999\,936}$$
   
-$$(3^6 - 2^6) + (4^6 - 3^6) + (5^6 - 4^6) + ... + (9^6 - 8^6) + (10^6
+\TNT{2.8}{$$(3^6 - 2^6) + (4^6 - 3^6) + (5^6 - 4^6) + ... + (9^6 - 8^6) + (10^6
 - 9^6) = 10^6 - 2^6$$}
 
-$$\sum_{i=0}^{n-1}x^i(x-1)=\LoesungsRaum{}$$
-\TRAINER{$= x^0(x-1) + x^1(x-1) ... + x^{n-1}(x-1) =$}
 
-\TRAINER{$=x-1+x^2-x+x^3-x^2+ ...+ x^n-x^{n-1} = x^n-1$}
+$$\sum_{i=0}^{n-1}x^i(x-1)=\LoesungsRaum{}$$
+\TNT{2.8}{$= x^0(x-1) + x^1(x-1) ... + x^{n-1}(x-1) =$
+
+$=x-1+x^2-x+x^3-x^2+ ...+ x^n-x^{n-1} = x^n-1$}
 
 \GESO{Taschenrechner: \tiprobutton{math} danach \texttt{5: sum(}\\
-Die Variable lautet im Rechner immer $x$.}
+Die Laufvariable lautet im Rechner immer $x$.}
 \newpage
 
 
