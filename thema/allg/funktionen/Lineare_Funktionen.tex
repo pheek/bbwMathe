@@ -87,24 +87,24 @@ Zeichnen Sie den Graphen der Funktion $f: y= -0.5x + 1$ in ein rechtwinkliges Ko
 }%% END GESO
 
 \TALS{
-  \paragraph{Punkte mit dem Taschenrechner}: Mit der ``Lists \&
-  Spreadsheet hinzufügen''-Funktion auf Ihrem Taschenrechner lassen
-  sich Wertetabellen ganz einfach erstellen. Sind Sie bei einer Seite
-  ``Lists \& Spreadsheet'' (Tabellenkalkulation) angelangt, so drücken
-  Sie die «menu»-Taste und wählen Sie «5: Wertetabelle».
-  
-  Füllen Sie eine Wertetabelle zur Funktion $f: y=\frac{3}{4}x  - 1.5$ aus und zeichnen Sie die Gerade ein ein rechtwinkliges Koordinatensystem:
+  \paragraph{Punkte mit dem Taschenrechner}:
+  Erstellen Sie einen Graphen und definieren Sie die Funktion $f1$ wie
+  folgt:
+
+  $$f1(x) : = \frac{3}{4}x - 1.5$$
+
+  Mit CTRL-T (Tabelle mit geteiltem
+  Bildschirm) erscheint sofort auch die Wertetabelle.
 
   \begin{tabular}{l|c|c|c|c|c|c|c}
     $x$ & -2 & -1 & 0 & 1 & 2 & 3 \\
-    $y$ & \LoesungsRaum{-3}   & \LoesungsRaum{-2.25}   & \LoesungsRaum{-1.5}  & \LoesungsRaum{-0.75}  & \LoesungsRaum{0}  &  \LoesungsRaum{0.75} \\
+    $y$ & \LoesungsRaumKurz{-3}   & \LoesungsRaumKurz{-2.25}   & \LoesungsRaumKurz{-1.5}  & \LoesungsRaumKurz{-0.75}  & \LoesungsRaumKurz{0}  &  \LoesungsRaumKurz{0.75} \\
   \end{tabular}
 
   \bbwGraph{-4}{4}{-4}{2}{
     \TRAINER{\bbwFunc{0.75*\x - 1.5}{-2.5:3.5}}
   }%% END bbw Graph
-  %%\noTRAINER{\bbwGraph{-4}{4}{-4}{2}{}}
-  %%\TRAINER{\bbwFunction{-4}{4}{-4}{2}{0.75*\x - 1.5}{-2.5:3.5}}  
+
 }%% END TALS
 
 \newpage%%
@@ -164,11 +164,19 @@ Jede lineare\footnote{
 
 Wertetabelle:
 
+
 \begin{tabular}{c|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}}
    x  & 0 & 1 & 2 & 4 & -4 & \TRAINER{-6}\\\hline
    y  & \TRAINER{3} & \TRAINER{3.5} & \TRAINER{4}& \TRAINER{5}&\TRAINER{1}&0\\%%
 \end{tabular}
 
+
+\TNT{4}{
+  Die Nullstelle bei $y=0$ wird entweder abgelesen, oder berechnet,
+  indem wir in der Funktinosgleichnug $y=\frac12x+3$ den Funktionswert
+  $y=0$ setzen:
+  $$0=\frac12x+3 \Longrightarrow x_0=-6$$
+}
 
 \bbwGraph{-7}{7}{-2}{5}{}
 \newpage
@@ -208,13 +216,13 @@ Dazu setzen wir $f(x)=y=0$, und lesen wir den Schnittpunkt in obiger Grafik etwa
 Die Nullstelle einer linearen Funktion in ihrer Grundform ist die Lösung der entsprechenden linearen Gleichung (mit
 $y$=0) in ihrer Grundform. Nämlich:
 
-a) Lineare Gleichung $ax+b=0$
+a) Lineare Gleichung $$ax+b=0$$
 
 Gesucht \textbf{Lösung} $x$:
 
-$$x = \frac{-b}{a}  $$
+$$x = \TRAINER{\frac{-b}{a}}  $$
 
-b) Lineare Funktion $f: y=ax+b$
+b) Lineare Funktion $$f: y=ax+b$$
 
 Gesucht \textbf{Nullstelle} $x_0$ bei $y_0=0$. Die Gerade schneidet
 die $x$-Achse in der Nullstelle $x_0$ der Geraden.
@@ -293,8 +301,10 @@ $$a=\frac{{\color{red}V}}{{\color{blue}H}}$$
 \end{rezept}
 
 \subsubsection*{Herleitung (optional)}
+
+\bbwCenterGraphic{10cm}{allg/funktionen/img/Steigungsdreieck.png}
+
 \TNTeop{
-  \bbwCenterGraphic{10cm}{allg/funktionen/img/Steigungsdreieck.png}
 
  $$\frac{V}H = \frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} =
   \frac{f(x_1) - f(x_2)}{x_2-x_1}$$
