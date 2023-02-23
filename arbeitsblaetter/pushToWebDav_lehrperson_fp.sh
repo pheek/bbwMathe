@@ -72,6 +72,11 @@ echo "  Copying Quadratische Gleichungen 14-Schritte nach Gallin (ALLG)"
 cp -f ./gleichungen/quadratische_gleichung_gallin/QuadratischeGleichung_ALLG.pdf          ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/14Schritte/QuadratischeGleichung.pdf
 cp -f ./gleichungen/quadratische_gleichung_gallin/QuadratischeGleichung_TRAINER_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/14Schritte/QuadratischeGleichung.mitLoesungen.pdf
 
+
+echo "  Copying Quadratische Gleichungen Einführung zur Quadr. Ergänzung (ALLG)"
+cp -f ./gleichungen/einfuehrung_ergaenzung_formel/QuadratischeGleichung_ALLG.pdf          ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/EinfuerhungErgaenzung/QuadratischeGleichungEinfuerhungErgaenzung.pdf
+cp -f ./gleichungen/einfuehrung_ergaenzung_formel/QuadratischeGleichung_TRAINER_ALLG.pdf          ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/EinfuerhungErgaenzung/QuadratischeGleichungEinfuerhungErgaenzung_TRAINER.pdf
+
 #echo "Copying Quadratische Gleichungen 14-Schritte nach Gallin (ALLG)"
 #cp -f ./gleichungen/quadratische_gleichung_gallin/QuadratischeGleichung_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/14Schritte/QuadratischeGleichung.pdf
 #cp -f ./gleichungen/quadratische_gleichung_gallin/QuadratischeGleichung_TRAINER_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/14Schritte/QuadratischeGleichung.mitLoesungen.pdf
