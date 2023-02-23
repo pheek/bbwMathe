@@ -152,10 +152,11 @@ Bemerkung: \TRAINER{$$2^{-x} = \frac1{2^x} = \left(\frac12\right)^x$$}
 \subsubsection{Grundform} \index{Exponentieller Prozess! Grundform}
 Die Grundform für Zerfallsprozesse lautet:
 
-\begin{definition}{Zerfall}{}
-$$y = a^t$$
+\begin{definition}{Zerfall}{}\index{Zerfall}
+  Die Grundform des exponentiellen Zerfalls wird beschrieben durch die Funktion
+$$f(t): x \mapsto a^x$$
   bzw.
-  $$f(t) = a^t$$
+  $$y = a^x$$
 \end{definition}
 
 
@@ -170,6 +171,13 @@ $$y = a^t$$
   \end{itemize}
   
 \end{gesetz}
+
+\begin{bemerkung}{$x$-Richtung}{}
+  Exponentielle Prozesse laufen meist in der Zeit ab. Somit wird
+  die $x$-Achse zur Zeitachse und meist mit $t$ (Time) bezeichnet:
+  $$f(t) = a^t$$
+  \end{bemerkung}
+
 
 \subsubsection{Umkehrung (Optional)}
 Um aus einem Wachstum einen Zerfall zu modellieren können wir entweder
@@ -319,8 +327,24 @@ also ein Tag,  nach rechts entspricht einem Häuschen und in $y$-Richtung nehmen
 
 \TNT{10}{\bbwGraphic{10cm}{allg/funktionen/img/tuerlerAlgen.png}}
 
-Geben Sie eine Funktionsgleichung an, welche das Wachstum der Algenpopulation beschreibt:
+Geben Sie eine Funktionsgleichung an, welche das Wachstum der
+Algenpopulation beschreibt...
 
+
+
+\begin{bbwFillInTabular}{c|c|c||c|c|c|c|c|c|c|c}\hline
+  Tage      & $t$ & \noTRAINER{\hspace{2cm}} & 0            & 1234 & 5            & 6789 & 10           & 11\,12\,13\,14 & 15           &\\\hline
+  Fläche     & $A$ & \TRAINER{$20\cdot v$}    &
+  \TRAINER{20}\noTRAINER{\hspace{15mm}} &      &
+  \TRAINER{40}\noTRAINER{\hspace{15mm}} &      &
+  \TRAINER{80}\noTRAINER{\hspace{15mm}} &                &
+  \TRAINER{160}\noTRAINER{\hspace{15mm}} &\\\hline
+  Intervall & $z$ & \TRAINER{$z=\frac{t}{5}$}    & \TRAINER{0}  &      & \TRAINER{1}  &      & \TRAINER{2}  &                & \TRAINER{3} &\\\hline
+  Faktor    & $v$ & \TRAINER{$v=2^z$}    & \TRAINER{1}  &      & \TRAINER{2}  &      & \TRAINER{4}  &                & \TRAINER{8} &\\\hline
+\end{bbwFillInTabular}
+
+
+\leserluft
 \begin{center}
   $f:\,\,\, y=\LoesungsRaumLang{20\cdot{} 2 ^{\frac{t}{5}}}$
   \end{center}
