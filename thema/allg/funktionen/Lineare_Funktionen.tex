@@ -41,10 +41,10 @@ Ab bzw. bis wo lohnt sich das Unternehmen «A» bzw. «B»?
   Zeichnen Sie ein Koordinatensystem. $x$-Achse = km; $y$-Achse = CHF.
   (Einteilung je ca. 20 Einheiten im 1. Quadranten.
 
-\TNTeop{%%
+\TRAINER{%%
     \bbwCenterGraphic{14cm}{allg/funktionen/img/Taxiunternehmen.png}
 
-  Ablesen bei ca. 13.33 km.
+  Ablesen bei ca. 13-14 km.
 
   Rechnerisch:
 
@@ -55,25 +55,20 @@ Ab bzw. bis wo lohnt sich das Unternehmen «A» bzw. «B»?
   $$10+0.6x = 6+0.9x$$
   Lösung:
   $$x = 13.\overline{3} \text{km}$$
-}%% END TNT
-
+}%% END TRAINER
+\noTRAINER{%
+    \bbwCenterGraphic{14cm}{allg/funktionen/img/LeerFuerTaxi.png}%
+}%% end noTRAINER
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Beispiel einer linearen Funktion}
-Zeichnen Sie den Graphen der Funktion $f: y= -0.5x + 1$ in ein rechtwinkliges Koordinatensystem:
-
-\bbwGraph{-4}{4}{-1}{4}{
-  \TRAINER{\bbwFunc{-0.5*\x + 1}{-3:3}}
-}%% end bbwGraph
-
-%%\noTRAINER{\bbwGraph{-4}{4}{-1}{4}{}}
-%%\TRAINER{\bbwFunction{-4}{4}{-1}{4}{-0.5*\x + 1}{-3:3}}
+\subsection{Taschenrechner}\index{Taschenrechner!Funktionen}
 
 \GESO{
-  \paragraph{Punkte mit dem Taschenrechner}: Mit der ``TABLE''-Funktion auf Ihrem Taschenrechner lassen sich Wertetabellen ganz einfach erstellen.
+  Mit der ``TABLE''-Funktion auf Ihrem Taschenrechner lassen sich Wertetabellen ganz einfach erstellen.
   Füllen Sie eine Wertetabelle zur Funktion $f: y=\frac{3}{4}x  - 1.5$ aus und zeichnen Sie die Gerade in ein rechtwinkliges Koordinatensystem:
 
-  \begin{tabular}{l|c|c|c|c|c|c|c}
+  \begin{tablar}{l|c|c|c|c|c|c|c}
     $x$ & -2 & -1 & 0 & 1 & 2 & 3 \\
     $y$ & \LoesungsRaumKurz{-3}   & \LoesungsRaumKurz{-2.25}   & \LoesungsRaumKurz{-1.5}  & \LoesungsRaumKurz{-0.75}  & \LoesungsRaumKurz{0}  &  \LoesungsRaumKurz{0.75} \\
   \end{tabular}
@@ -87,7 +82,6 @@ Zeichnen Sie den Graphen der Funktion $f: y= -0.5x + 1$ in ein rechtwinkliges Ko
 }%% END GESO
 
 \TALS{
-  \paragraph{Punkte mit dem Taschenrechner}:
   Erstellen Sie einen Graphen und definieren Sie die Funktion $f1$ wie
   folgt:
 
@@ -203,45 +197,6 @@ Was uns zeigt, dass der  Punkt $P=(0|b)$ der Geraden immer auf der $y$-Achse lie
 
 \newpage
 
-\subsubsection{Nullstelle}\index{Nullstelle}
-Wo schneidet der Funktionsgraph die $x$-Achse?
-
-Dazu setzen wir $f(x)=y=0$, und lesen wir den Schnittpunkt in obiger Grafik etwa bei $x=-6$ ab.
-
-\begin{definition}{Nullstelle}{}
-  Eine \textbf{Nullstelle} $x_0$ gibt an, an welcher Stelle der Funktionsgraph die $x$-Achse schneidet.
-\end{definition}
-
-
-Die Nullstelle einer linearen Funktion in ihrer Grundform ist die Lösung der entsprechenden linearen Gleichung (mit
-$y$=0) in ihrer Grundform. Nämlich:
-
-a) Lineare Gleichung $$ax+b=0$$
-
-Gesucht \textbf{Lösung} $x$:
-
-$$x = \TRAINER{\frac{-b}{a}}  $$
-
-b) Lineare Funktion $$f: y=ax+b$$
-
-Gesucht \textbf{Nullstelle} $x_0$ bei $y_0=0$. Die Gerade schneidet
-die $x$-Achse in der Nullstelle $x_0$ der Geraden.
-
-\begin{gesetz}{Nullstelle}{}
-  Die Nullstelle einer linearen Funktion berechnet sich wie folgt:
-  
-$$x_0 = \frac{-b}{a}$$
-\end{gesetz}
-
-Somit ist der
-Schnittpunkt wie folgt gegeben:
-
-$$N = (x_0|y_0) = (x_0|0) =\left( \frac{-b}{a}\,\, \bigg|\,\, 0 \right) $$
-
-
-
-\newpage
-
 
 \subsubsection{Steigung}\index{Steigung|textbf}
   \includegraphics[width=4.5cm]{tals/trig1/img/starkeSteigung.jpg}
@@ -262,20 +217,6 @@ dem $y$-Anstieg\footnote{Bei negativem $a$ sprechen wir von «Gefälle»,
 
 \newpage
 
-
-Steigt die Gerade in $x$-Richtung an, so ist ${\color{blue}a}$ positiv
-(${\color{blue}a>0}$) {\color{blue} «Steigung»};\index{Steigung}
-fällt die Gerade in $x$-Richtung ab, so ist ${\color{red}a}$ negativ
-(${\color{red}a<0}$) {\color{red} «Gefälle»}.\index{Gefälle}
-
-%% Steigungsgraph: Eins nach rechts -> a noch oben (oder -a nach unten)
-\bbwGraph{-4}{4}{-3}{4}{
-	\draw[thick,color=blue] (-4, -1) -- (4  , 3);
-	\draw[thick,color=blue] (4, 3) node[anchor=north]{${\color{blue}+}$};
-	\draw[thick,color=red ] (-3.5, 2) -> (4, -2);
-	\draw[thick,color=red ] (4, -2) node[anchor=west ]{${\color{red}-}$ };
-}
-
 Die Steigung $a$ kann aus \textbf{jedem} Steigungsdreieck berechnet werden,
 wozu einfach zwei Punkte uf der Geraden zu verwenden sind:
 
@@ -292,6 +233,21 @@ wozu einfach zwei Punkte uf der Geraden zu verwenden sind:
   \bbwDot{3,2}{black}{north}{}
   \bbwDot{3,-1}{black}{north}{}
 }
+
+
+Steigt die Gerade in $x$-Richtung an, so ist ${\color{blue}a}$ positiv
+(${\color{blue}a>0}$) {\color{blue} «Steigung»};\index{Steigung}
+fällt die Gerade in $x$-Richtung ab, so ist ${\color{red}a}$ negativ
+(${\color{red}a<0}$) {\color{red} «Gefälle»}.\index{Gefälle}
+
+%% Steigungsgraph: Eins nach rechts -> a noch oben (oder -a nach unten)
+\bbwGraph{-4}{4}{-3}{4}{
+	\draw[thick,color=blue] (-4, -1) -- (4  , 3);
+	\draw[thick,color=blue] (4, 3) node[anchor=north]{${\color{blue}+}$};
+	\draw[thick,color=red ] (-3.5, 2) -> (4, -2);
+	\draw[thick,color=red ] (4, -2) node[anchor=west ]{${\color{red}-}$ };
+}
+
 \newpage
 
 \begin{rezept}{Finden der Geradensteigung}{}
@@ -318,6 +274,52 @@ $$a=\frac{{\color{red}V}}{{\color{blue}H}}$$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newpage
+
+\subsubsection{Nullstelle}\index{Nullstelle}
+Eine steigende oder fallende lineare Funktion schneidet die $x$-Achse
+in einem Punkt. Dieser Punkt wird \textbf{Nullstelle} genannt.
+
+In der anfänglich untersuchten Funktion $f(x) = \frac12x+3$ schneidet
+der Graph die $x$-Achse bei $-6$. 
+
+\begin{definition}{Nullstelle}{}
+  Eine \textbf{Nullstelle} $x_0$ gibt an, an welcher Stelle der Funktionsgraph die $x$-Achse schneidet.
+\end{definition}
+
+
+Die Nullstelle einer linearen Funktion in ihrer Grundform ist die Lösung der entsprechenden linearen Gleichung (mit
+$y$=0) in ihrer Grundform. Nämlich:
+
+\hrule
+
+a) Lineare Gleichung $$ax+b=0$$
+
+Gesucht \textbf{Lösung} $x$:
+
+$$x = \TRAINER{\frac{-b}{a}}  $$
+
+\hrule
+
+b) Lineare Funktion $$f: y=ax+b$$
+
+Gesucht \textbf{Nullstelle} $x_0$ bei $y_0=0$. Die Gerade schneidet
+die $x$-Achse in der Nullstelle $x_0$ der Geraden.
+
+\begin{gesetz}{Nullstelle}{}
+  Die Nullstelle einer linearen Funktion berechnet sich wie folgt:
+  
+$$x_0 = \frac{-b}{a}$$
+\end{gesetz}
+
+Somit ist der
+Schnittpunkt wie folgt gegeben:
+
+$$N = (x_0|y_0) = (x_0|0) =\left( \frac{-b}{a}\,\, \bigg|\,\, 0 \right) $$
+
+
+
+\newpage
 
 \subsection*{Aufgaben}
 
