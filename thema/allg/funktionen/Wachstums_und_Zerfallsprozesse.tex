@@ -324,10 +324,10 @@ Füllen Sie die (prognostizierte) Wertetabelle für 30 Tage ein:
 
 \newpage
 Zeichnen Sie die Algenpopulation als Graph in eine Koordinatensystem
-(beginnen Sie mit dem Ursprung ganz links unten. Eine $x$-Einheit,
-also ein Tag,  nach rechts entspricht einem Häuschen und in $y$-Richtung nehmen Sie 2 Häuschen für 100$m^2$ Algenfläche:
+(beginnen Sie mit dem Ursprung ganz links unten. $x$-Achse in Tagen. $y$-Achse in $\text{m}^2$.
 
-\TNT{10}{\bbwGraphic{10cm}{allg/funktionen/img/tuerlerAlgen.png}}
+\noTRAINER{\bbwCenterGraphic{10cm}{allg/funktionen/img/exp/WachstumTuerlerseeLeer.png}}
+\TRAINER{\bbwCenterGraphic{10cm}{allg/funktionen/img/exp/tuerlerAlgen.png}}
 
 Geben Sie eine Funktionsgleichung an, welche das Wachstum der
 Algenpopulation beschreibt...
@@ -416,21 +416,28 @@ Irland hatte 1990 3.51 Mio. Einwohner. Im Jahr 2019 waren es bereits 4.93 Mio.
 
 \textbf{Frage 1}: Was prognostizieren Sie für das Jahr 2025, wenn Sie von einem exponentiellen Wachstum ausgehen?
 
-\bbwCenterGraphic{12cm}{allg/funktionen/img/exp/IrlandLeer.png}
+\noTRAINER{\bbwCenterGraphic{12cm}{allg/funktionen/img/exp/IrlandLeer.png}}%%
 
 \TNTeop{
   Skizze:
   \bbwCenterGraphic{12cm}{allg/funktionen/img/exp/IrlandVoll.png}
 
-  $b=3.51$ [Mio EW] = Startwert (Taschenrechner!).
-
-  $a=\frac{4.93}{3.51} = 1.404...$ pro 29 Jahre (Taschenrechner!). 
-
-  $\tau$ = 29 Jahr, Einheit = 1 Jahr ($t$ in Jahren gemessen).
+  $\tau$ = 29 Jahre, Einheit = Jahre ($t$ in Jahren gemessen).
   
+  $b=f(0) = 3.51$ [Mio EW] = Startwert (Taschenrechner STO).
+
+  $m=f(\tau) = 4.93$ [Mio EW] = Messwert nach $\tau$ Jahren.
+
+  $a=\frac{m}{b}=\frac{4.93}{3.51} = 1.404...$ pro 29 Jahre (Taschenrechner! STO). 
+
   $$f(t) = b\cdot{}a^\frac{t}{\tau}=b\cdot{}a^\frac{t}{29}$$
-  
-    Jahr 2025: $t=35$:
+
+
+  TR Probe $b\cdot{}a^\frac{0}{29} = ? = 3.51$ 
+
+  TR Probe $b\cdot{}a^\frac{29}{29} = ? = 4.93$ 
+
+  Jahr 2025: $t=35$:
 
     $$f(35) = b\cdot{}a^\frac{35}{29}\approx 5.28899$$
 
