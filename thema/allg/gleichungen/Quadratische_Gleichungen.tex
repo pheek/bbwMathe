@@ -76,7 +76,7 @@ beteiligt?
   Lösung 26; dies kann \zB durch Ausprobieren ermittelt werden.
 }
 \newpage
-\subsection{Definitionen}
+\subsection{Definition}
 
 
 \begin{definition}{quadatische Gleichung}{}\index{quadratische Gleichung}\index{Gleichung!quadratische}
@@ -84,12 +84,16 @@ beteiligt?
   2. Potenz vor; \zB $x^2$.
 \end{definition}
 
-\begin{definition}{Grundform der quadatischen Gleichung}{}\index{Grundform!quadratische Gleichung}
-  Die Grundform der quadratischen Gleichung lautet
+\textbf{Welche sind quadratisch?}
 
-  $$ax^2+bx+c=0$$
-  mit $a\in \mathbb{R}\backslash\{0\}$, $b, c \in \mathbb{R}$
-\end{definition}
+\begin{bbwFillInTabular}{cc}
+$5^2=25x-6$ & \noTRAINER{\fbox{\,\vphantom{$X$}}}\TRAINER{\fbox{\,\,\vphantom{$X$}}} \\
+$5=x^2-6$ & \noTRAINER{\fbox{\,\vphantom{$X$}}}\TRAINER{\fbox{X}} \\
+$5x^3=18$ & \noTRAINER{\fbox{\,\vphantom{$X$}}}\TRAINER{\fbox{\,\,\vphantom{$X$}}} \\
+$\sqrt{b}-x^2=b^3$ &
+  \noTRAINER{\fbox{\,\vphantom{$X$}}}\TRAINER{\fbox{X} Ja,
+    falls die Gesuchte das $x$ ist.} \\
+\end{bbwFillInTabular}
 
 \newpage
 
@@ -106,10 +110,25 @@ $$x^2=49$$
 $$(x-2)^2=49$$
 
 \TNTeop{
- Erinnert Sie das an $|x-2| = 7$ ??
 
- $ x-2=\pm\sqrt{49} \Longrightarrow x = \pm 7 +2 \Longrightarrow \lx =
- \{-5; 9\}$,
+ Ausmultiplizieren führt in eine Sackgasse:
+ $$x^2-4x+4=49$$
+ $$x^2-4x=45$$
+ Sackgasse! Umkehren!
+
+ Erinnert Sie das ursprüngliche Beispiel an $|x-2| = 7$ ??
+
+ Direkt Wurzel ziehen:
+ $$x-2=7$$
+ und somit
+ $$x=9$$
+ aber auch
+ $$x-2=-7$$
+ somit
+ $$x=-5$$
+ $$
+ \lx =
+ \{-5; 9\}$$
 
  danach unbedingt Probe vorzeigen.\vspace{32mm}}
 
@@ -136,6 +155,18 @@ $$(x-2)^2=49$$
 
 \TALS{\newpage{}
   \input{tals/gl2/BinomeBilden}}%% END TALS 
+
+
+\newpage
+\subsection{Grundform}
+
+\begin{definition}{Grundform der quadatischen Gleichung}{}\index{Grundform!quadratische Gleichung}
+  Die Grundform der quadratischen Gleichung lautet
+
+  $$ax^2+bx+c=0$$
+  mit $a\in \mathbb{R}\backslash\{0\}$, $b, c \in \mathbb{R}$
+\end{definition}
+
 
 \TALS{\newpage
 \input{tals/gl2/QuadratischeGleichungenSpezialfaelle}}%% END TALS
