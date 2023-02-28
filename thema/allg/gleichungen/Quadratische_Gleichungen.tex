@@ -32,30 +32,8 @@ al-Kit\={a}b al-muhta\d{s}ar f\={i} \d{h}is\={a}b al-gabr wa-\'{}l-muq\={a}bala
 \newpage
 
 \TALS{\input{tals/gl2/QuadratischeGleichungenVoraussetzungen}}
-
-\subsection{Al Chwarizmi}\index{Al Chwarizme}\index{Chwarizmi (Al
-  Chwarizmi)}
-
-(auch Al Khwarizmi)
-
-\noTRAINER{\bbwCenterGraphic{9cm}{allg/gleichungen/img/AlKhwarizmiBriefmarke.png}}
-\TRAINER{\bbwCenterGraphic{4cm}{allg/gleichungen/img/AlKhwarizmiBriefmarke.png}}
-Bildlegende: Al Chwarizmi auf einer russischen Briefmarke zum
-1200jährigen Gedenken. Quelle: \texttt{de.wikipedia.org} 2021.
-
-Al-Chwarizmis Buch (
-al-Kit\={a}b al-muhta\d{s}ar f\={i} \d{h}is\={a}b al-gabr
-wa-\'{}l-muq\={a}bala)
-
-\textit{«Kleines Büchlein über die Rechenverfahren durch Ergänzen und Ausgleichen»}
-
-trägt zum Namen «Algebra» bei.
-
-\TRAINER{In seinem Buch wird die
-quadratische Gleichung in allen Varianten gelöst.}
-
-\TRAINER{Hier (ev. Rubiks Cube zeigen\\ und) 1. Lernziel $x^2+10x+25=17$ bekannt geben.}
 \newpage
+
 
 
 \subsubsection{Einstiegsaufgabe Snapchat}\index{Snapchat}
@@ -90,25 +68,25 @@ Lösungsstrategien:
   Das Ausprobieren könnte noch durch $\sqrt{650}\approx 25.5$  angenähert werden;
   als ersten Startwert.
 }
+
+
 \newpage
 
-\subsection{Erste Berechnungen}
-$$x^3=343$$
 
-\TNT{1.6}{$x=7$}
-
+\subsubsection{Erste Berechnungen}
 $$x^2=49$$
 
-\TNT{3.2}{$\lx = \{-7; 7\}$ \vspace{15mm}}
+\TNT{3.2}{$$\sqrt{x^2} = \sqrt{49}$$
+  $$|x| = 7$$
+  $\lx = \{-7; 7\}$ \vspace{15mm}}
 
 $$(x-2)^2=49$$
 
-\TNTeop{
+\TNT{12}{
 
  Ausmultiplizieren führt in eine Sackgasse:
  $$x^2-4x+4=49$$
- $$x^2-4x=45$$
- Sackgasse! Umkehren!
+ $$x^2-4x=45 \text{Sackgasse! Umkehren!}$$
 
  Erinnert Sie das ursprüngliche Beispiel an $|x-2| = 7$ ??
 
@@ -120,14 +98,51 @@ $$(x-2)^2=49$$
  $$x-2=-7$$
  somit
  $$x=-5$$
- $$
- \lx =
- \{-5; 9\}$$
+ $$\lx = \{-5; 9\}$$
 
- danach unbedingt Probe vorzeigen.\vspace{32mm}}
+ danach unbedingt Probe vorzeigen.\vspace{32mm}}%% END TNT
+
+Bemerkung:
+
+\TNTeop{Mathematisches Verfahren =
+  \textbf{Algorithmus}\index{Algorithmus}.
+
+  Das Wort \textit{Algorithmus} geht zurück auf Al-Chwarizmi.
+
+  Bsp. Rubiks-Cube: 2x RUR'U', dann 4x RUR'U'
+}%% END TNTeop
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Begriffe und Definition}
+
+\subsubsection{Al Chwarizmi}\index{Al Chwarizme}\index{Chwarizmi (Al
+  Chwarizmi)}
+
+(auch Al Khwarizmi)
+
+\noTRAINER{\bbwCenterGraphic{9cm}{allg/gleichungen/img/AlKhwarizmiBriefmarke.png}}
+\TRAINER{\bbwCenterGraphic{4cm}{allg/gleichungen/img/AlKhwarizmiBriefmarke.png}}
+Bildlegende: Al Chwarizmi auf einer russischen Briefmarke zum
+1200jährigen Gedenken. Quelle: \texttt{de.wikipedia.org} 2021.
+
+Al-Chwarizmis Buch (al-Kit\={a}b al-muhta\d{s}ar f\={i} \d{h}is\={a}b al-gabr wa-\'{}l-muq\={a}bala)
+
+\textit{«Kleines Büchlein über die Rechenverfahren durch Ergänzen und Ausgleichen»}
+
+trägt zum Namen «Algebra» bei.
+
+\TRAINER{In seinem Buch wird die
+quadratische Gleichung in sechs Varianten gelöst.}
+
+\TRAINER{al-gabr = «Wieder herstellen», «vervollständigen», «ganz machen»}
+
+\TRAINER{Hier (ev. Rubiks Cube zeigen\\ und) 1. Lernziel $x^2+10x+25=17$ bekannt geben.}
 \newpage
 
-\subsection{Definition}
+
+\subsubsection{Definition}
 
 
 \begin{definition}{quadratische Gleichung}{}\index{quadratische Gleichung}\index{Gleichung!quadratische}
@@ -138,11 +153,13 @@ $$(x-2)^2=49$$
 \textbf{Welche sind quadratisch?}
 
 \begin{bbwFillInTabular}{cc}
-$5^2=25x-6$ & \noTRAINER{\fbox{\,\vphantom{$X$}}}\TRAINER{\fbox{\,\,\vphantom{$X$}}} \\
-$5=x^2-6$ & \noTRAINER{\fbox{\,\vphantom{$X$}}}\TRAINER{\fbox{X}} \\
-$5x^3=18$ & \noTRAINER{\fbox{\,\vphantom{$X$}}}\TRAINER{\fbox{\,\,\vphantom{$X$}}} \\
+$5^2=25x-6$ &
+  \noTRAINER{\fbox{\,\vphantom{$X$}}}\TRAINER{\fbox{\color{red} X} falsch} \\
+$5=x^2-6$ &
+  \noTRAINER{\fbox{\,\vphantom{$X$}}}\TRAINER{\fbox{\color{green} \checkmark}} \\
+$5x^3=18$ & \noTRAINER{\fbox{\,\vphantom{$X$}}} \TRAINER{\fbox{\color{red} X} falsch}\\
 $\sqrt{b}-x^2=b^3$ &
-  \noTRAINER{\fbox{\,\vphantom{$X$}}}\TRAINER{\fbox{X} Ja,
+  \noTRAINER{\fbox{\,\vphantom{$X$}}}\TRAINER{\fbox{\color{green}\checkmark} Ja,
     falls die Gesuchte das $x$ ist.} \\
 \end{bbwFillInTabular}
 \newpage
