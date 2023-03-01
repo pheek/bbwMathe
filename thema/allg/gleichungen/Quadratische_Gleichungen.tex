@@ -10,8 +10,6 @@ al-Kit\={a}b al-muhta\d{s}ar f\={i} \d{h}is\={a}b al-gabr wa-\'{}l-muq\={a}bala
 %%\TALSTadBFWA{93}{2.3}
 \TadBMTA{165}{10}
 
-\newpage
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Lernziele}
 
@@ -31,6 +29,7 @@ al-Kit\={a}b al-muhta\d{s}ar f\={i} \d{h}is\={a}b al-gabr wa-\'{}l-muq\={a}bala
 \end{itemize}
 \newpage
 
+<<<<<<< HEAD
 \TALS{\input{tals/gl2/QuadratischeGleichungenVoraussetzungen}}{Al Chwarizmi}\index{Al Chwarizme}\index{Chwarizmi (Al
   Chwarizmi)}
 
@@ -53,13 +52,17 @@ trägt zum Namen «Algebra» bei.
 quadratische Gleichung in allen Varianten gelöst.}
 
 \TRAINER{Hier (ev Rubiks Cube zeigen\\ und) 1. Lernziel $x^2+10x+25=17$ bekannt geben.}
+=======
+\TALS{\input{tals/gl2/QuadratischeGleichungenVoraussetzungen}}
+>>>>>>> 4fb67847a558b2c3a956587430d4f37b45f23046
 \newpage
+
 
 
 \subsubsection{Einstiegsaufgabe Snapchat}\index{Snapchat}
 \aufgabenFarbe{In einer Schule werden innerhalb eines W-LANs 650
 Datenpakete der selben Klasse registriert. Wir gehen davon aus, dass dabei jede Person
-genau ein \textit{snap} (bzw. \textit{ein post}) an alle anderen versendet hat.\\Wie viele Personen waren
+genau ein \textit{snap} an alle anderen versendet hat.\\Wie viele Personen waren
 beteiligt?}
 
 Lösung:
@@ -88,41 +91,52 @@ Lösungsstrategien:
   Das Ausprobieren könnte noch durch $\sqrt{650}\approx 25.5$  angenähert werden;
   als ersten Startwert.
 }
+
+<<<<<<< HEAD
+\subsection{Erste Berechnungen}
+=======
+
 \newpage
 
-\subsection{Erste Berechnungen}
+>>>>>>> 4fb67847a558b2c3a956587430d4f37b45f23046
 
+\subsubsection{Einfache quadratische Gleichungen}
+\TRAINER{zu zweit besprechen.}
 $$x^2=49$$
 
-\TNT{3.2}{$\lx = \{-7; 7\}$ \vspace{15mm}}
+\TNT{3.2}{$$\sqrt{x^2} = \sqrt{49}$$
+  $$|x| = 7$$
+  $\lx = \{-7; 7\}$ \vspace{15mm}}
 
 $$(x-2)^2=49$$
 
-\TNTeop{
+\TNT{12}{
 
  Ausmultiplizieren führt in eine Sackgasse:
  $$x^2-4x+4=49$$
- $$x^2-4x=45$$
- Sackgasse! Umkehren!
+ $$x^2-4x=45 \text{Sackgasse! Umkehren!}$$
 
  Erinnert Sie das ursprüngliche Beispiel an $|x-2| = 7$ ??
 
  Direkt Wurzel ziehen:
- $$x-2=7$$
+ $$\sqrt{(x-2)^2}=\sqrt{49}$$
+ $$|x-2|=7$$
  und somit
- $$x=9$$
- aber auch
- $$x-2=-7$$
- somit
- $$x=-5$$
- $$
- \lx =
- \{-5; 9\}$$
+ $$x=9 \text{ aber auch } x=-5$$
 
- danach unbedingt Probe vorzeigen.\vspace{32mm}}
+ $$\lx = \{-5; 9\}$$
+
+ danach unbedingt Probe vorzeigen.\vspace{32mm}}%% END TNT
+
+Bemerkung: \TRAINER{ Mathematisches Verfahren =
+  \textbf{Algorithmus}\index{Algorithmus}}
 \newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Definition}
+
+\subsection{Begriffe und Definition}
+
+\subsubsection{Definition}
 
 \begin{definition}{quadratische Gleichung}{}\index{quadratische Gleichung}\index{Gleichung!quadratische}
   Bei einer \textbf{quadratischen Gleichung} kommt die Gesuchte in der
@@ -132,15 +146,16 @@ $$(x-2)^2=49$$
 \textbf{Welche sind quadratisch?}
 
 \begin{bbwFillInTabular}{cc}
-$5^2=25x-6$ & \noTRAINER{\fbox{\,\vphantom{$X$}}}\TRAINER{\fbox{\,\,\vphantom{$X$}}} \\
-$5=x^2-6$ & \noTRAINER{\fbox{\,\vphantom{$X$}}}\TRAINER{\fbox{X}} \\
-$5x^3=18$ & \noTRAINER{\fbox{\,\vphantom{$X$}}}\TRAINER{\fbox{\,\,\vphantom{$X$}}} \\
+$5^2=25x-6$ &
+  \noTRAINER{\fbox{\,\vphantom{$X$}}}\TRAINER{\fbox{\color{red} X} falsch} \\
+$5=x^2-6$ &
+  \noTRAINER{\fbox{\,\vphantom{$X$}}}\TRAINER{\fbox{\color{green} \checkmark}} \\
+$5x^3=18$ & \noTRAINER{\fbox{\,\vphantom{$X$}}} \TRAINER{\fbox{\color{red} X} falsch}\\
 $\sqrt{b}-x^2=b^3$ &
-  \noTRAINER{\fbox{\,\vphantom{$X$}}}\TRAINER{\fbox{X} Ja,
+  \noTRAINER{\fbox{\,\vphantom{$X$}}}\TRAINER{\fbox{\color{green}\checkmark} Ja,
     falls die Gesuchte das $x$ ist.} \\
 \end{bbwFillInTabular}
 \newpage
-
 
 
 %%\TRAINER{Normalform $x^2 +5x +6 = 0 \rightarrow (x+2)(x+3)=0$}
@@ -149,12 +164,13 @@ $\sqrt{b}-x^2=b^3$ &
 \subsection*{Aufgaben}
 
 \GESO{\olatLinkArbeitsblatt{Quadratische
-    Gleichungen}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/107315676111812}{Alle geraden Aufgaben plus Aufgabe 9.}}
+    Gleichungen}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/107315676111812}{Alle
+geraden Aufgaben}}
 
 \olatLinkGESOKompendium{2.3.1.}{16}{42. bis 44.}
 
 \TALS{\olatLinkArbeitsblatt{Quadratische
-    Gleichungen}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/107315676197926}{Alle geraden Aufgaben plus Aufgabe 9.}}
+    Gleichungen}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/107315676197926}{3., 4., 6., 8., 9., 10., und 11.}}
 
 
 %%\aufgabenFarbe{Aufgabenblatt im OLAT (Gallin) bis Aufgabe 7}
@@ -166,6 +182,43 @@ $\sqrt{b}-x^2=b^3$ &
 
 \TALS{
   \input{tals/gl2/BinomeBilden}}%% END TALS 
+
+\subsubsection{Al Chwarizmi}\index{Al Chwarizme}\index{Chwarizmi (Al
+  Chwarizmi)}
+
+(auch Al Khwarizmi)
+
+\noTRAINER{\bbwCenterGraphic{9cm}{allg/gleichungen/img/AlKhwarizmiBriefmarke.png}}
+\TRAINER{\bbwCenterGraphic{4cm}{allg/gleichungen/img/AlKhwarizmiBriefmarke.png}}
+Bildlegende: Al Chwarizmi auf einer russischen Briefmarke zum
+1200jährigen Gedenken. Quelle: \texttt{de.wikipedia.org} 2021.
+
+Al-Chwarizmis Buch (al-Kit\={a}b al-muhta\d{s}ar f\={i} \d{h}is\={a}b al-$\check{\text{g}}$abr wa-\'{}l-muq\={a}bala)
+
+\textit{«Kleines Büchlein über die Rechenverfahren durch Ergänzen und Ausgleichen»}
+
+trägt zum Namen «Algebra» bei.
+
+\TRAINER{In seinem Buch wird die
+  quadratische Gleichung in sechs Varianten gelöst.}
+
+\leserluft
+
+\TRAINER{al-$\check{\text{g}}$abr = «Wieder herstellen», «vervollständigen», «ganz machen»}
+
+
+
+\subsection*{Aufgaben}
+
+\olatLinkArbeitsblatt{Quadratische
+    Gleichungen}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/107315676197926}{Weiter, wo Sie aufgehört hatten}
+
+\TRAINER{Lernzielkontrolle: Kahoot: Quadratische Gleichungen.}%%
+
+%%\TRAINER{Hier (ev. Rubiks Cube zeigen\\ und) 1. Lernziel $x^2+10x+25=17$ bekannt geben.}
+\newpage
+
+
 
 
 \subsection{Grundform}\index{Grundform!Quadratische
