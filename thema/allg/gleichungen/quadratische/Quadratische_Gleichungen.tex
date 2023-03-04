@@ -29,33 +29,9 @@ al-Kit\={a}b al-muhta\d{s}ar f\={i} \d{h}is\={a}b al-gabr wa-\'{}l-muq\={a}bala
 \end{itemize}
 \newpage
 
-<<<<<<< HEAD
-\TALS{\input{tals/gl2/QuadratischeGleichungenVoraussetzungen}}{Al Chwarizmi}\index{Al Chwarizme}\index{Chwarizmi (Al
-  Chwarizmi)}
-
-(auch Al Khwarizmi)
-
-\noTRAINER{\bbwCenterGraphic{9cm}{allg/gleichungen/img/AlKhwarizmiBriefmarke.png}}
-\TRAINER{\bbwCenterGraphic{4cm}{allg/gleichungen/img/AlKhwarizmiBriefmarke.png}}
-Bildlegende: Al Chwarizmi auf einer russischen Briefmarke zum
-1200jährigen Gedenken. Quelle: \texttt{de.wikipedia.org} 2021.
-
-Al-Chwarizmis Buch (
-al-Kit\={a}b al-muhta\d{s}ar f\={i} \d{h}is\={a}b al-gabr
-wa-\'{}l-muq\={a}bala)
-
-\textit{«Kleines Büchlein über die Rechenverfahren durch Ergänzen und Ausgleichen»}
-
-trägt zum Namen «Algebra» bei.
-
-\TRAINER{In seinem Buch wird die
-quadratische Gleichung in allen Varianten gelöst.}
-
-\TRAINER{Hier (ev Rubiks Cube zeigen\\ und) 1. Lernziel $x^2+10x+25=17$ bekannt geben.}
-=======
-\TALS{\input{tals/gl2/QuadratischeGleichungenVoraussetzungen}}
->>>>>>> 4fb67847a558b2c3a956587430d4f37b45f23046
+\TALS{\input{tals/gl2/Voraussetzungen}}
 \newpage
+
 
 
 
@@ -72,8 +48,11 @@ Lösungsstrategien:
 
 \TNTeop{
   Wie sieht es bei $10$ Personen aus?
-  Alle $10$ senden es $9$ Personen weiter. Daraus erfolgen $10\cdot{}9$, also $90$
-  Posts.
+  Alle $10$ senden es $9$ Personen weiter.
+
+  $$10\cdot{}9 = 90\text{ snaps}$$
+
+  $$15\cdot{}14 = 210$$
 
   Es sollen aber $650$ sein.
   
@@ -84,59 +63,100 @@ Lösungsstrategien:
 
   Gleichung:
 
-  $n\cdot{}(n-1) = 650 \Longrightarrow   n^2 - n = 650$
+  $$n\cdot{}(n-1) = 650 \Longrightarrow   n^2 - n = 650 \text{ =
+    quadratische Gleichung}$$
 
   Die Lösung $26$ kann \zB durch ein Ausprobieren ermittelt werden.
   
   Das Ausprobieren könnte noch durch $\sqrt{650}\approx 25.5$  angenähert werden;
   als ersten Startwert.
-}
 
-<<<<<<< HEAD
-\subsection{Erste Berechnungen}
-=======
+  Hier ev. noch die Lösung des openai.com chats (GPT chatbot) zeigen.
+}
 
 \newpage
 
->>>>>>> 4fb67847a558b2c3a956587430d4f37b45f23046
+Bemerkungen:
+\TNT{1.6}{Lernziel/Fernziel $x^2+10x+25=7$ bekannt geben.}%% END TNT
 
-\subsubsection{Einfache quadratische Gleichungen}
-\TRAINER{zu zweit besprechen.}
+
+\TNT{1.6}{ Mathematisches Verfahren = \textbf{Algorithmus}\index{Algorithmus}}%% END TNT
+
+
+\subsubsection{Al Chwarizmi}\index{Al Chwarizme}\index{Chwarizmi (Al
+  Chwarizmi)}
+
+(auch Al Khwarizmi)
+
+\noTRAINER{\bbwCenterGraphic{9cm}{allg/gleichungen/img/AlKhwarizmiBriefmarke.png}}
+\TRAINER{\bbwCenterGraphic{4cm}{allg/gleichungen/img/AlKhwarizmiBriefmarke.png}}
+Bildlegende: Al Chwarizmi auf einer russischen Briefmarke zum
+1200jährigen Gedenken. Quelle: \texttt{de.wikipedia.org} 2021.
+
+Al-Chwarizmis Buch (
+al-Kit\={a}b al-muhta\d{s}ar f\={i} \d{h}is\={a}b al-$\check{\text{g}}$abr
+wa-\'{}l-muq\={a}bala)
+
+\textit{«Kleines Büchlein über die Rechenverfahren durch Ergänzen und Ausgleichen»}
+
+trägt zum Namen \LoesungsRaumLang{«Algebra»} bei.
+
+
+
+\TRAINER{In seinem Buch wird die
+quadratische Gleichung in sechs Varianten gelöst.}
+
+
+\TRAINER{al-$\check{\text{g}}$abr = «Wieder herstellen», «vervollständigen», «ganz machen»}
+
+\TRAINER{(Hier ev. Rubiks Cube zeigen)}
+\newpage
+
+\subsubsection{Erste quadratische Gleichungen}
+\TRAINER{Zu zweit besprechen; danach geführt Lösungsweg gemeinsam festhalten.}
 $$x^2=49$$
 
-\TNT{3.2}{$$\sqrt{x^2} = \sqrt{49}$$
+\TNT{3.2}{
+
+  $$\sqrt{x^2} = \sqrt{49}$$
   $$|x| = 7$$
-  $\lx = \{-7; 7\}$ \vspace{15mm}}
+  $$x=7\text{ oder } x=-7$$
+  $$x=\pm 7$$
+  $\lx = \{-7; 7\}$ \vspace{15mm}}%% END TNT
+
+\TRAINER{\hrule}
 
 $$(x-2)^2=49$$
 
 \TNT{12}{
 
- Ausmultiplizieren führt in eine Sackgasse:
- $$x^2-4x+4=49$$
- $$x^2-4x=45 \text{Sackgasse! Umkehren!}$$
-
- Erinnert Sie das ursprüngliche Beispiel an $|x-2| = 7$ ??
+( Erinnert Sie das ursprüngliche Beispiel an $|x-2| = 7$ ??)
 
  Direkt Wurzel ziehen:
- $$\sqrt{(x-2)^2}=\sqrt{49}$$
- $$|x-2|=7$$
- und somit
- $$x=9 \text{ aber auch } x=-5$$
+ $$\sqrt{(x-2)^2}=\pm\sqrt{49}$$
+ $$\left\{ (x-2) = 7 \text{ od. } (x-2)= -7\right\}$$
+
+ $$(x-2)=\pm 7$$
+ $$x=2\pm7$$
 
  $$\lx = \{-5; 9\}$$
 
- danach unbedingt Probe vorzeigen.\vspace{32mm}}%% END TNT
+ danach unbedingt Probe vorzeigen.\vspace{32mm}
 
-Bemerkung: \TRAINER{ Mathematisches Verfahren =
-  \textbf{Algorithmus}\index{Algorithmus}}
+
+  
+ Ausmultiplizieren führt in eine Sackgasse:
+ $$x^2-4x+4=49$$
+ $$x^2-4x=45 \text{Sackgasse! Umkehren!}$$
+ 
+}%% END TNT
+
+
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\subsection{Begriffe und Definition}
-
-\subsubsection{Definition}
+\subsection{Definition}
 
 \begin{definition}{quadratische Gleichung}{}\index{quadratische Gleichung}\index{Gleichung!quadratische}
   Bei einer \textbf{quadratischen Gleichung} kommt die Gesuchte in der
@@ -183,39 +203,15 @@ geraden Aufgaben}}
 \TALS{
   \input{tals/gl2/BinomeBilden}}%% END TALS 
 
-\subsubsection{Al Chwarizmi}\index{Al Chwarizme}\index{Chwarizmi (Al
-  Chwarizmi)}
-
-(auch Al Khwarizmi)
-
-\noTRAINER{\bbwCenterGraphic{9cm}{allg/gleichungen/img/AlKhwarizmiBriefmarke.png}}
-\TRAINER{\bbwCenterGraphic{4cm}{allg/gleichungen/img/AlKhwarizmiBriefmarke.png}}
-Bildlegende: Al Chwarizmi auf einer russischen Briefmarke zum
-1200jährigen Gedenken. Quelle: \texttt{de.wikipedia.org} 2021.
-
-Al-Chwarizmis Buch (al-Kit\={a}b al-muhta\d{s}ar f\={i} \d{h}is\={a}b al-$\check{\text{g}}$abr wa-\'{}l-muq\={a}bala)
-
-\textit{«Kleines Büchlein über die Rechenverfahren durch Ergänzen und Ausgleichen»}
-
-trägt zum Namen «Algebra» bei.
-
-\TRAINER{In seinem Buch wird die
-  quadratische Gleichung in sechs Varianten gelöst.}
-
-\leserluft
-
-\TRAINER{al-$\check{\text{g}}$abr = «Wieder herstellen», «vervollständigen», «ganz machen»}
-
-
-
+\TALS{
 \subsection*{Aufgaben}
 
 \olatLinkArbeitsblatt{Quadratische
     Gleichungen}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/107315676197926}{Weiter, wo Sie aufgehört hatten}
 
 \TRAINER{Lernzielkontrolle: Kahoot: Quadratische Gleichungen.}%%
+}%% END TALS
 
-%%\TRAINER{Hier (ev. Rubiks Cube zeigen\\ und) 1. Lernziel $x^2+10x+25=17$ bekannt geben.}
 \newpage
 
 
@@ -233,7 +229,7 @@ trägt zum Namen «Algebra» bei.
 \newpage
 
 \TALS{
-\input{tals/gl2/QuadratischeGleichungenSpezialfaelle}}%% END TALS
+\input{tals/gl2/Spezialfaelle}}%% END TALS
 
 
 \subsection{Lösungsformel}
@@ -431,7 +427,7 @@ Wer fertig ist:\\
 \TALSAadBMTA{181}{4. a) c) e), 5. a) c) e)}
 \newpage
 
-\TALS{\input{tals/gl2/Quadratische_Gleichungen_mit_Parametern}
+\TALS{\input{tals/gl2/Mit_Parametern}
 \newpage}
 
 \subsubsection{Taschenrechner Tipps}
@@ -484,7 +480,8 @@ $$72x^2 - 605 x + 848 = 0$$
 $$5x^2 - 7x + 2 = 0$$
 \TNT{2}{$x_{1,2} = 1, 0.4$\vspace{16mm}}
 $$1001x^2 + x  = -1$$
-\TNT{2}{$x_{1,2} = \text{keine reelle Lsg. Das }i\text{ verschwindet aus dem Sichtfeld}$\vspace{16mm}}%% END TNT
+\TNT{2}{$x_{1,2} = \text{keine reelle Lsg. Das }i\text{ verschwindet
+    aus dem Sichtfeld}$\vspace{16mm}}%% END TNT
 }%% END GESO
 
 \GESO{%%
@@ -496,15 +493,29 @@ Mit dem Taschenrechner reduzieren sich Aufgaben (ohne Parameter) auf
 das \textbf{Umformen} einer quadratischen Gleichung in die \textbf{Grundform}.
 \end{rezept}
 
-  \subsection*{Aufgaben mit Taschenrechner}
+\subsection*{Aufgaben mit Taschenrechner}
+
+Lösen Sie: $$4.1x^2+6x=-15$$
+\TNT{2}{Auch hier verschwindet das $i$.}
+
+
   \GESOAadBMTA{182}{ 8. a) d) e) i), 9. c) und 10. b) e)}
 }%% END GESO
 
+
+\olatLinkGESOKompendium{2.3.2.}{16}{46. bis 49.}
+
+
+\GESO{und Textaufgaben:}
+
+\olatLinkGESOKompendium{2.3.4.}{17ff}{55. bis 59.}
+
+
 \newpage
 
-\input{allg/gleichungen/QuadratischeGleichung_Diskriminante}
+\input{allg/gleichungen/quadratische/Diskriminante}
 
-\input{allg/gleichungen/Quadratische_Gleichungen_Substitution}
+\input{allg/gleichungen/quadratische/Substitution}
 
 \newpage
 
