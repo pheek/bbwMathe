@@ -499,9 +499,33 @@ Die Zeitspanne, in der sich eine Menge halbiert, nennen wir
 $$T_{1/2}$$
 \end{definition}
 
-Die Halbwertszeit wird inbesondere
+Die Halbwertszeit wird insbesondere
   beim radioaktiven Zerfall verwendet: nach wie viel tausend Jahren strahlt
   ein Stoff nur noch die Hälfte.
+
+
+Beispiel: Ein Stoff nimmt innerhalb von sieben Tagen auf 80\% ab. Wie
+groß ist seine Halbwertszeit $T_{1/2}$?
+
+\TNT{6}{
+  $\tau=7$ und $a = 0.8$. Somit:
+
+  $$T_{1/2} = 7\cdot{} \log_{0.8}\left(\frac12\right) \approx 21.74
+  \text{ Tage}$$
+
+  Bemerkung: $$f(t) =b\cdot{}0.8^\frac{t}7 \approx b\cdot{}\left(\frac12\right)^\frac{t}{21.74}$$
+}%% END TNT
+
+\begin{gesetz}{Stoffmenge}{}
+  $$f(t) = b\cdot{}\left(\frac12\right)^\frac{t}{T_{1/2}}$$
+\end{gesetz}
+\newpage
+  
+\begin{gesetz}{Halbwertzszeit}{}
+  $$T_{1/2} = \tau\cdot{}\log_a\left(\frac12\right)$$
+\end{gesetz}
+
+
 
   Herleitung. Es gilt ja:
   $$b=f(0) \text{ bei unserer Notation } f(t) = b\cdot{}a^\frac{t}\tau$$
@@ -522,27 +546,6 @@ Die Halbwertszeit wird inbesondere
       $$\tau\cdot{}\log_a\left(\frac12\right) = T_{1/2}$$
     }%% END TNT
 
-    
-\begin{gesetz}{Halbwertzszeit}{}
-  $$T_{1/2} = \tau\cdot{}\log_a\left(\frac12\right)$$
-\end{gesetz}
-
-\newpage
-Beispiel: Ein Stoff nimmt innerhalb von sieben Tagen auf 80\% ab. Wie
-groß ist seine Halbwertszeit $T_{1/2}$?
-
-\TNT{6}{
-  $\tau=7$ und $a = 0.8$. Somit:
-
-  $$T_{1/2} = 7\cdot{} \log_{0.8}\left(\frac12\right) \approx 21.74
-  \text{ Tage}$$
-
-  Bemerkung: $$f(t) =b\cdot{}0.8^\frac{t}7 \approx b\cdot{}\left(\frac12\right)^\frac{t}{21.74}$$
-}%% END TNT
-
-\begin{gesetz}{Stoffmenge}{}
-  $$f(t) = b\cdot{}\left(\frac12\right)^\frac{t}{T_{1/2}}$$
-\end{gesetz}
 
 \GESO{Optional:}
 
