@@ -138,6 +138,55 @@ $$t = 5\cdot{} \log_{16}\left(\frac{150}{2\,500}\right) \approx
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\bbwActAufgabenNr{} \textbf{Verdopplungszeit}
+
+E. coli-Bakterien (Benannt nach Th. Escherich) durchlaufen bei
+optimalen Bedingungen pro Tag (24 h) sechs (bis sieben) Generationen. Das
+bedeutet, dass sich ein einziges Bakterium sechs mal teilt und sich
+somit die Anzahl sechs mal verdoppelt.
+
+\begin{bbwAufgabenBlock}
+
+\item Machen Sie eine Skizze 
+  \TNT{6}{}
+  
+\item Gehen Sie zunächst von sechs Generationen innerhalb von 24 h aus
+  und geben Sie eine Funktion an, welche die Anzahl Bakterien in
+  Abhängigkeit der Zeit (in Stunden) angibt. Gehen Sie von einer
+  Startpopulation $f(0) = \text{G}_0$ aus.
+
+  
+  \TNT{2}{$f(0) = \text{G}_0 \cdot{} (2^6)^\frac{1}{24} = \text{G}_0
+    \cdot{} 2^\frac{1}{4}$; $b$ = $\text{G}_0$; $a=2$ und $\tau=4$;
+    bzw. $a=2^6$ und $\tau=24$}%% END TNT
+  
+  
+\item Geben Sie die Zunahme $a_h$ pro Stunde an für (1.) 6 Generationen
+  und (2.) sieben Generationen pro Tag
+
+  \TNT{3.2}{
+    (1.) $a_h = 2^\frac14 \approx 1.1892$
+
+    (2.) $a_h = 2^\frac7{24} \approx 1.2241$
+
+  }%% end TNT
+ 
+
+  
+\item Wie ist die durchschnittliche Verdopplungszeit, wenn Sie von 6.5 Generationen pro
+  Tag im Schnitt ausgehen?
+  
+  \TNT{4}{$$f(t) = \text{G}_0\cdot 2^{\frac{6.5t}{24}} \Longrightarrow$$
+$$2\cdot{}\text{G}_0 = \text{G}_0 \cdot{} 2^\frac{6.5\text{T}_2}{24}
+    \Longrightarrow$$
+    $$\text{T}_2 = \log_{2^{\frac{6.5}{24}}}(2) \approx 3.6923 \text{h}$$
+  }
+
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \bbwActAufgabenNr{} \textbf{Düngemittel}
 
