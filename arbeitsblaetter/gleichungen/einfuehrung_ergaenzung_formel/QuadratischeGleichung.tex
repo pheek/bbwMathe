@@ -32,7 +32,7 @@ Versuchen Sie, bei jeder Gleichung zuerst herauszufinden, was sich gegenüber de
 \begin{samepage}
 \stepcounter{nuemmerli}(\thenuemmerli. )\,\,\,\, #1\\
 \noTRAINER{\mmPapier{#2}}\TRAINER{{\color{black}#3}
-{(Vorgehen: \color{blue}#4})}\\
+{\\(Vorgehen: \color{blue}#4})}\\
 \end{samepage}
 
 }%% end quadGleichnug
@@ -56,4 +56,24 @@ Versuchen Sie, bei jeder Gleichung zuerst herauszufinden, was sich gegenüber de
 \quadGleichung{$x^2+12x+35=6$}{4}{$\lx=\{-5-\sqrt7;-5+\sqrt7\}$}{Ergänzen $x^2+12x+36=7$; dann wie zweitletzte Aufgabe: Binom: $(x+6)^2=7$; Wurzel ziehen: $x+5=\pm \sqrt{7}$; Minus 5: $x=-5\pm\sqrt{7}$}
 
 
+Challenge:
+
+\quadGleichung{$2x^2-16x+32=\frac{49}{8}$}{4}{
+$\lx=\{\frac94; \frac{23}4\}$}{
+Halbieren: $x^2-8x+16 = \frac{49}{16}$\\
+Binom: $(x-4)^2 = \frac{49}{16} | \pm\sqrt{}$\\
+Wurzel: $x-4 = \frac74$\\
+$\lx = \{4-\frac74; x+\frac74\}$\\
+}
+
+Tipp bei der folgenden Aufgabe: Versuchen Sie zunächst die Aufgabe so
+umzuformen, dass Sie etwas bekanntes (Aufgabe vorhin) erhalten:
+
+\quadGleichung{$2x^2-16x=\frac{-207}{8}$}{4}{$\lx=\{\frac94; \frac{23}4\}$}{
+Halbieren: $x^2-8x=\frac{-207}{16}$\\
+Ergänzen: $x^2-8x+16 = \frac{-207}{16}+16 = \frac{49}{16}$\\
+Binom: $(x-4)^2 = \frac{49}{16} | \pm\sqrt{}$\\
+Wurzel: $x-4 = \frac74$\\
+$\lx = \{4-\frac74; x+\frac74\}$\\
+}
 \end{document}
