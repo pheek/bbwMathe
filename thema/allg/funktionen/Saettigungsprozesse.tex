@@ -294,9 +294,9 @@ etwa 65.8 Sekunden.
   Kompendium gibt die Funktionsterme bereits an und verwendet als
   Basis i.\,d.\,R. die Eulersche Konstante $e\approx{} 2.71828$)}
 
-\GESO{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/106029175831971}{Kap. 3.1:
+\GESO{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/106029175831971}{Kap. 3.2:
     Begrenztes Wachstum}}%% END GESO
-\TALS{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/106029175777725}{Kap. 3.1:
+\TALS{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/106029175777725}{Kap. 3.2:
     Begrenztes Wachstum}}%% END TALS
 
 \newpage
@@ -305,7 +305,12 @@ etwa 65.8 Sekunden.
 \vspace{8mm}
 \begin{center}\textbf{Wachstum und Zerfall}\end{center}
 
-\TNT{8.8}{\bbwCenterGraphic{18cm}{allg/funktionen/img/zusammenfassung_exp/wachstum_zerfall.png}
+
+\noTRAINER{\begin{tabular}{cc}
+    \bbwGraph{-3}{4}{-1}{4}{} &
+    \bbwGraph{-3}{4}{-1}{4}{} \\
+\end{tabular}}%% end noTRAINER
+\TRAINER{\bbwCenterGraphic{18cm}{allg/funktionen/img/zusammenfassung_exp/wachstum_zerfall.png}
 
   bzw.
   $$f(t) = G_0 \cdot{} \e^{qt}; q=  \frac{\ln(a)}\tau  \,\,\,\,\,\,\,\,\, f(t) = G_0 \cdot{} \e^{-qt}; q  = \frac{-\ln(a)}\tau$$
@@ -314,14 +319,18 @@ etwa 65.8 Sekunden.
 \vspace{8mm}
 \begin{center}\textbf{Sättigung}\end{center}
 
-\TNTeop{\bbwCenterGraphic{18cm}{allg/funktionen/img/zusammenfassung_exp/saettigung.png}
+\noTRAINER{\begin{tabular}{cc}
+    \bbwGraph{-3}{4}{-1}{6}{} &
+    \bbwGraph{-3}{4}{-1}{6}{} \\
+\end{tabular}}%% end noTRAINER
+\TRAINER{\bbwCenterGraphic{18cm}{allg/funktionen/img/zusammenfassung_exp/saettigung.png}
 
     bzw.
      $$f(t) = S + (G_0-S) \cdot{} \e^{q\cdot{}t}; q=    \frac{\ln(a)}\tau     \,\,\,\,\,\,\,\,\, f(t) = S + (S - G_0) \cdot{} \e^{-q\cdot{}t}; q  = \frac{-\ln(a)}\tau$$
 
 Hier ist Platz für das Video/die Videos zur den getanzten
 Funktionen (S. OLAT/Wiki).
-}%% END TNTeop
+}%% Trainer
 \newpage
 
 \begin{rezept}{Exponentielle Prozesse}{}
