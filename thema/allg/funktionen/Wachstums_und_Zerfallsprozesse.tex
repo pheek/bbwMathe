@@ -252,13 +252,13 @@ eine \textbf{allgemeinere Form der Exponentialfunktion}.
 \newpage
 
 
-\begin{definition}{Exponentialfunktion mit frei wählbarem Startwert}{}
+\begin{gesetz}{Exponentialfunktion mit frei wählbarem Startwert}{}
 $$f: y = b\cdot{}a^x$$
 
 Auch hier gibt der Parameter $a$ den Wachstumsfaktor pro Zeiteinheit $e_x$ an.
 
 Dabei ist $b$ der Startwert zum Zeitpunkt $x$ = 0.
-\end{definition}
+\end{gesetz}
 
 
 \noTRAINER{\bbwCenterGraphic{8cm}{allg/funktionen/img/exp/b_faktor.png}}
@@ -511,42 +511,55 @@ Beispiel: Ein Stoff nimmt innerhalb von sieben Tagen auf 80\% ab. Wie
 groß ist seine Halbwertszeit $T_{1/2}$?
 
 \TNT{6}{
-  $\tau=7$ und $a = 0.8$. Somit:
+  $f(t) = a^t$. $80\%$ und $7$ Tage einsetzen:
 
-  $$T_{1/2} = 7\cdot{} \log_{0.8}\left(\frac12\right) \approx 21.74
-  \text{ Tage}$$
+  $$f(0) \cdot 0.8 = f(7)$$
 
+  Somit:
+
+  $$a^0 \cdot{} 0.8 = a^7$$
+  $$a = \sqrt[7]{0.8}$$
+
+  Halbwertszeit:
+
+  $$a^{T_{1/2}} = \frac12$$
+
+  $$T_{1/2} = \log_{\frac[7]{0.8}}\left(\frac12\right) \approx 21.74 \text{Tage}$$
+  
   Bemerkung: $$f(t) =b\cdot{}0.8^\frac{t}7 \approx b\cdot{}\left(\frac12\right)^\frac{t}{21.74}$$
 }%% END TNT
 
 \begin{gesetz}{Stoffmenge}{}
+  Ist die Halbwertszeit $T_{1/2}$ und die anfängliche Stoffmenge $b$
+  bekannt, so kann die Soffmenge zu jedem Zeitpunkt $t$ mit der
+  folgenden Funktion $f$ angegeben werden:
   $$f(t) = b\cdot{}\left(\frac12\right)^\frac{t}{T_{1/2}}$$
 \end{gesetz}
 \newpage
   
 \begin{gesetz}{Halbwertzszeit}{}
-  $$T_{1/2} = \tau\cdot{}\log_a\left(\frac12\right)$$
+  Die Halbwertszeit $T_{1/2}$ berechnet sich wie folgt:
+  $$T_{1/2} = \log_a\left(\frac12\right)$$
+  Dabei ist $a$ der Abnahmefaktor pro Zeiteinheit.
 \end{gesetz}
 
 
 
   Herleitung. Es gilt ja:
-  $$b=f(0) \text{ bei unserer Notation } f(t) = b\cdot{}a^\frac{t}\tau$$
+  $$b=f(0) \text{ bei unserer Notation } f(t) = b\cdot{}a^t$$
   Und es soll gelten:
   $$\frac{b}2 = f(T_{1/2})$$
 
   Daraus ergibt sich:
-  $$\frac{b}2 = b\cdot{}a^{\frac{T_{1/2}}{\tau}}$$
+  $$\frac{b}2 = b\cdot{}a^{T_{1/2}}$$
 
     Nach Auflösen ergibt sich:
 
     \TNT{4}{
       Durch $b$ teilen:
-      $$\frac12 = a^{\frac{T_{1/2}}{\tau}}$$
+      $$\frac12 = a^{T_{1/2}}$$
       logarithmieren:
-      $$\log_a\left(\frac12\right) = \frac{T_{1/2}}{\tau}$$
-      mit $\tau$ multiplizieren...
-      $$\tau\cdot{}\log_a\left(\frac12\right) = T_{1/2}$$
+      $$\log_a\left(\frac12\right) = T_{1/2}$$
     }%% END TNT
 
 
@@ -556,7 +569,7 @@ groß ist seine Halbwertszeit $T_{1/2}$?
 
 Analog gilt das Gesetz zur Verdopplung (s. obiges Beispiel Bevölkerung Irlands):
 \begin{gesetz}{Verdopplungszeit}{}
-  $$T_2 = \tau\cdot{}\log_a(2)$$
+  $$T_2 = \log_a(2)$$
 \end{gesetz}
 \newpage
 
@@ -568,6 +581,7 @@ Analog gilt das Gesetz zur Verdopplung (s. obiges Beispiel Bevölkerung Irlands)
 \olatLinkGESOKompendium{3.4}{28ff}{42., 43. und 47.}
 
 \GESO{\aufgabenFarbe{
+    Maturaprüfung 2020, Aufg 11 (Käfer)\\
     Maturaprüfung 2018 (Serie 4), Aufg 10 (Cäsium 137)\\
     Maturaprüfung 2018 (Serie 2), Aufg 11 (Plutonium)\\
     Maturaprüfung 2018 (Serie 1), Aufg 11 (radioaktive Substanz)\\
