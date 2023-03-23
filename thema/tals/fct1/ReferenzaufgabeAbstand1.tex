@@ -1,6 +1,6 @@
 \subsubsection{Referenzaufgabe: Abstand}\index{Abstand!zwischen Punkt und Gerade}
 
-Gegeben ist ein Punkt $P=(2|3)$ und eine Gerade $f: y=\frac{1}{4}x-1$. Gesucht ist der Abstand des Punktes $P$ zu $f$.
+Gegeben ist ein Punkt $P=(1|3.5)$ und eine Gerade $f: y=\frac{1}{4}x-1$. Gesucht ist der Abstand des Punktes $P$ zu $f$.
 
 \newcommand{\vorgehensTitelchen}[1]{\textbf{\color{brown}#1
 \\
@@ -10,10 +10,10 @@ Wie ist der Abstand zwischen einem Punkt und einer Geraden wohl definiert?
 
 \vorgehensTitelchen{1. Skizze}
 \bbwGraph{-1}{6}{-2}{4}{
- \bbwDot{2,3}{blue}{west}{P}
+ \bbwDot{1,3.5}{blue}{west}{P}
       \bbwLine{-1,-1.25}{5,0.25}{green}
     \TRAINER{
-    \bbwLine{2,3}{3,-1}{red}}
+    \bbwLine{0.875,4}{2.25,-1.5}{red}}
   }
   
 Suchen Sie in obiger Skizze den Abstand und messen/schätzen Sie ihn.
@@ -30,10 +30,10 @@ Suchen Sie in obiger Skizze den Abstand und messen/schätzen Sie ihn.
 
 \TNT{2.8}{Kernidee: Punkt in Funktionsgleichung einsetzen:
 
-  $P=(2|3)$ in $y=-4x+b$ einsetzen: $3 = -4\cdot(2) + b$
+  $P=(1|3.5)$ in $y=-4x+b$ einsetzen: $3.5 = -4\cdot{} (1) + b$
 
-  Daraus errechnen wir $b = 11$. Und es folgt
-$$g: y= -4x+11$$}
+  Daraus errechnen wir $b = 7.5$. Und es folgt
+$$g: y= -4x+7.5$$}
 
 \newcommand\mussgleich{\mathrel{\stackrel{\makebox[0pt]{\mbox{\normalfont{\tiny{!}}}}}{=}}}
 
@@ -41,14 +41,16 @@ $$g: y= -4x+11$$}
 
 \TNT{3.2}{Idee: Beide Funktionsterme gleichsetzen, denn $S(x_s|y_s)$ muss auf beiden Geraden liegen:
   $$g(x_s) = y_s = f(x_s)$$
-  $$-4x_s + 11 \mussgleich{} \frac{1}{4}x_s - 1$$
+  $$-4x_s + 7.5 \mussgleich{} \frac{1}{4}x_s - 1$$
   ausrechnen lassen
-$\Rightarrow x_s = \frac{48}{17}\approx 2.82 \Rightarrow y_s=-\frac{5}{17}\approx -0.294 \Rightarrow S(\frac{48}{17}|\frac{-5}{17}) $}
+$\Rightarrow x_s = 2 \Rightarrow y_s= \frac14x-1 = \frac14\cdot{}2 - 1
+  = \frac12; S=(2|-\frac12) $}
 \noTRAINER{\newpage}
 
 \vorgehensTitelchen{5. Abstand mit Pythagoras ($\left|\overline{PS}\right|$)}
 
-\TNTeop{$P=(2|3), S(\frac{48}{17}|\frac{-5}{17}) \Rightarrow \sqrt{(2-\frac{48}{17})^2 + (3-\frac{-5}{17})^2}=\frac{14\sqrt{17}}{17}\approx 3.3955 $}
+\TNTeop{$P=(1|3.5), S(2|-0.5) \Rightarrow \sqrt{(2-1)^2 +
+  (-0.5-3.5)^2}= \sqrt{17} \approx 4.123 $}
 \newpage
 
 \TALS{
