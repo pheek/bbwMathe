@@ -359,8 +359,7 @@ Dabei bezeichnet\\20 den Startwert,\\2 den Zunahmefaktor und \\5 die Beobachtung
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Allgemeiner exponentieller
-  Prozess}\index{Exponentieller Prozess! allgemeine Form}
+\subsubsection{Allgemeiner exponentieller Prozess}\index{Exponentieller Prozess! allgemeine Form}
 
 Die allgemeine Formel für exponentielle Prozesse lautet:
 
@@ -370,6 +369,33 @@ Die allgemeine Formel für exponentielle Prozesse lautet:
   $$f(t) = b\cdot{}a^{\frac{t}{\tau}}$$
   
 \end{definition}
+
+Alternativ «die harte Tour» (ohne das $\tau$ mit anderer Basis):
+
+\TNTeop{
+  Die Algenzahl verdoppelt sich alle fünf Tage (Startwert $b$):
+
+  $$f(t) = b\cdot{}A^t$$
+
+  $$f(0) = b\cdot{}A^0 = b \cdot{} 1$$
+
+  und
+  $$f(5) = b\cdot{}A^5$$
+
+  Nach fünf Tagen verdoppeln: Ansatz:
+  $$f(5) = 2\cdot{}f(0)$$
+  $$b\cdot{}A^5 = 2\cdot{}b\cdot{} A^0 = 2\cdot{} b \cdot{} 1$$
+  $$b\cdot{}A^5 = 2\cdot{} b$$
+  $$A^5 = 2 | \sqrt[5]{\,\,}$$
+  $$A = \sqrt[5]{2} = 2^{\frac15}$$
+
+  Somit:
+
+  $$b \cdot{} A^t =
+  b \cdot{} \left( \sqrt[5]{2} \right)^t  =
+  b \cdot{} \left( 2^{\frac15} \right)^t =
+  b \cdot{} 2^{\frac{t}5}$$
+}%% end TNTeop
 
 
 \newpage
