@@ -101,7 +101,7 @@ $$k = \log_7(20\,000)\approx 5.089$$
 Damit müssen wir mind. \textbf{6 Ringe} einsetzen, denn bei 5 Ringen erhalten
 wir erst 16\,807 Variationen.
 }%% END TNT
-
+\newpage
 
 \subsection*{Aufgaben}
 
@@ -117,8 +117,6 @@ die Kugel wird wieder zurückgelegt. Wie viele Farbschemata sind
 möglich? Dabei darf eine Farbe im Schema auch mehrfach auftreten.}
 \TNT{2}{Jede Position im Farbschema hat unabhängig von den anderen die
 20 Varianten: $20^4 = 160\,000$}
-
-\newpage
 
 
 \aufgabenFarbe{Kim hat vier Pullover, drei Paar Hosen und 2 Paar Schuhe. Auf wie viele Arten kann sich Kim bekleiden?}
@@ -151,7 +149,7 @@ nebeneinander. Ein Platz ist am Fenster, einer zum Gang und der dritte
 Platz ist zwischen den beiden anderen. Auf wie viele Arten können nun
 Hanna, Igor und Jana ihre Plätze wählen?
 
-\TNT{6}{6 Varianten. Jede der drei Personen
+\TNT{2.8}{6 Varianten. Jede der drei Personen
 am Fenster ergibt drei Hauptvarianten, dann jede der verbleibenden
 beiden zum Gang hin; Ergo: $3\cdot{}2$
 
@@ -171,11 +169,11 @@ J I H
 Machen Sie die selbe Überlegung noch mit vier Personen\footnote{Ach ja: Die vierte Person ist Karl.} und vier
 Plätzen...
 
-\TNT{2.4}{24 = 4!\vspace{28mm}}%% END TNT
+\TNT{3.6}{24 = 4!\vspace{28mm}}%% END TNT
 
 ... und mit fünf Plätzen und fünf Personen\footnote{Die fünfte Person heißt übrigens Lena, auch wenn es für die Berechnung keine Rolle spielt.}.
 
-\TNT{2.4}{120 = 5!\vspace{30mm}}%% END TNT
+\TNT{4.4}{120 = 5!\vspace{30mm}}%% END TNT
 \newpage
 
 
@@ -188,25 +186,19 @@ $$n\cdot{} (n-1) \cdot{} (n-2) \cdot{} (n-3) \cdot{} (n-4) \cdot{}
 
 Möglichkeiten.
 
+\begin{definition}{Fakultät}{}
+  Mit dem Ausrufezeichen ($!$) wird die Fakultät bezeichnet:
+  $$n! := n\cdot{}(n-1) \cdot{} (n-2) \cdot{} (n-3) \cdot{} (n-4) \cdot{}
+  ... \cdot{} 2 \cdot{} 1$$
+  Sprich «n Fakultät»!
+  \end{definition}
+
 Diese Rechnung ist im Taschenrechner unter der Operation ``Fakultät''
 bekannt und wird üblicherweise mit der Taste \fbox{n!} bezeichnet. Auf
 Ihrem Rechner ist es die Taste \tiprobutton{ncrnpr}.
 
-Berechnen Sie die Fakultät von 3, 4, 5 und 20 mit dem Taschenrechner.
-
-\TNT{2}{$3! = 6; 4!=24; 5! = 120; 20! = 2.4329...\cdot{}10^{18}$\vspace{10mm}}
-
-Auf wie viele Arten können Sie sich als Klasse in Ihre Bänke
-verteilen? Machen Sie die Überlegung so, wie es aussehen würde, wenn es keine leeren Plätze gäbe.
-
-\TNT{2.4}{Wenn es keine leeren Plätze hat, entspricht die Anzahl der
-Möglichkeiten der Fakultät. $n$ = Anzahl Schüler = Anzahl Plätze, dann
-gilt $n!$ = Anzahl mögliche Sitzordnungen.
-\vspace{10mm}
-}
-
 Dies entspricht im Urnenmodell dem ...
-\begin{gesetz}{Ziehen aller Objekte \textbf{ohne} Zurücklegen / Reihenfolge wesentlich.}{}
+\begin{gesetz}{... Ziehen aller Objekte \textbf{ohne} Zurücklegen / Reihenfolge wesentlich.}{}
 In diesem Urnenmodell entspricht die Fakultät einer Urne mit $n$ Kugeln, die
 alle verschieden sind. \textbf{Alle} $n$ Kugeln werden genau einmal
 gezogen (\textbf{ohne} Wiederholung).
@@ -220,9 +212,31 @@ $$N = n\cdot{} (n-1) \cdot{} (n-2) \cdot{} (n-3) \cdot{}
 \end{tabular}
 
 \end{gesetz}
-\TNT{4}{Urne mit 4 Kugeln und daneben 4 Plätze zeichnen lassen.}
+\TNTeop{Urne mit 4 Kugeln und daneben 4 Plätze zeichnen lassen.}
 \newpage
 
+
+\subsection*{Aufgaben}
+
+\aufgabenFarbe{Berechnen Sie die Fakultät von 3, 4, 5 und 20 mit dem Taschenrechner.}
+
+\TNT{2}{$3! = 6; 4!=24; 5! = 120; 20! = 2.4329...\cdot{}10^{18}$\vspace{10mm}}
+
+\hrule
+
+\aufgabenFarbe{%
+Auf wie viele Arten können Sie sich als Klasse in Ihre Bänke
+verteilen? Machen Sie die Überlegung so, wie es aussehen würde, wenn es keine leeren Plätze gäbe.}
+
+
+
+\TNT{2.4}{Wenn es keine leeren Plätze hat, entspricht die Anzahl der
+Möglichkeiten der Fakultät. $n$ = Anzahl Schüler = Anzahl Plätze, dann
+gilt $n!$ = Anzahl mögliche Sitzordnungen.
+\vspace{10mm}
+}
+
+\hrule
 
 Ein alter Bekannter (optional):
 
@@ -238,10 +252,10 @@ ein Glas süßen Sirup, während Ihr Taschenrechner diese Summe für Sie berechn
 
 Erinnern Sie sich auch an dieses Resultat? \TRAINER{$= \e \approx 2.718281828459045$}
 
+\hrule
 
-
-\subsection*{Aufgaben}
 \olatLinkGESOKompendium{5.5.1}{46}{15.}
+
 \newpage
 
 
@@ -326,9 +340,14 @@ frei. Nun zählen wir alle Schüler und die ``Phantomschüler'' zusammen, das er
 gerade die $n$ Plätze. Hier gibt es also $n!$ Varianten. Die $f$
 Phantomschüler setzen sich aber auch für alle Variationen mit realen
 Schülern auf $f!$ verschiedene Varianten hin. Somit müssen wir diese
-Varianten wieder wegdividieren. Es bleiben total $\frac{n!}{f!}$ Varianten.
+Varianten wieder wegdividieren. Es bleiben total $\frac{n!}{f!}$
+Varianten.
 
-Varianten = $\frac{n!}{(n-k)!} = \frac{n!}{f!}$ mit $f = n-k$ (= Anzahl der «Phantomschüler»).
+Mit «$f = n-k$ = Anzahl «Phantomschüler» gilt;
+
+$$N = \frac{n!}{f!} = \frac{n!}{(n-k)!}$$
+
+\hrule
 
 b) Wir stellen uns die Sitzbänke nummeriert vor und legen für jeden der
 $n$ Nummern eine Kugel in eine Urne. Die $k$ Schüler stellen wir der Reihe
