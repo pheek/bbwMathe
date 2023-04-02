@@ -24,30 +24,30 @@ $$\tmpPart{}^2 - 10 = 3\cdot{}{\tmpPart{}}$$
 
 \textbf{Substitution}
 
-\TNT{1.6}{Wir ersetzen: $u := {\color{ForestGreen}\tmpPart{}}$}
+\TNT{1.2}{Wir ersetzen: $u := {\color{ForestGreen}\tmpPart{}}$}
 
 und die ursprüngliche Gleichung ist nun äquivalent zu
 \TNT{1.6}{$${\color{ForestGreen}u}^2 - 10 = 3{\color{ForestGreen}u}$$
   $$u^2 -3u - 10 = 0$$
 }
 
-\begin{tabular}{c|c|c}
+\begin{bbwFillInTabular}{c|c|c}
   a&b&c\\
-  1&-3&-10
-  \end{tabular}
+  \LoesungsRaum{1}&\LoesungsRaum{-3}&\LoesungsRaum{-10}
+  \end{bbwFillInTabular}
 
 \GESO{Substituierte Gleichung \GESO{mit TR }lösen:}
 \TALS{Substituierte Gleichung mit $abc$-Formel:
 
-  \TNT{4}{
-  $u_{1,2} = \frac{3\pm\sqrt{9+40}}{2a} = \frac{3\pm 7}{2}$}%% END TNT
+\TNT{3.2}{
+  $u_{1,2} = \frac{3\pm\sqrt{9+40}}{2} = \frac{3\pm 7}{2}$}%% END TNT
 }%% END TALS
 
 
 $$\mathbb{L}_u=\LoesungsRaumLang{\{\LoesungsRaum{-2}; \LoesungsRaum{5}\}}$$
 
 \TRAINER{\textbf{Nomenklatur:}\\
-  Substitutionsbasis: $-6\tmpPart{} + 8.75 = -\tmpPart{}^2$\\
+  Substitutionsbasis: $\tmpPart{}^2 - 10 = 3\tmpPart{}$\\
   Substituendum: $\tmpPart{}$\\
   Substituens: $u$
 }%%
@@ -60,14 +60,16 @@ Nun setzen wir die Lösungen anstelle der substituierten Variable ein:
 
 
 \TNTeop{
-$$1.: u_1 = 2.5 = \tmpPart{} \Rightarrow 7.5 = 5x+0.5 \Rightarrow x = \frac{7}{5} = 1.4$$
+$$1.: u_1 = -2 = \tmpPart{} \Rightarrow -6 = 5x+0.5 \Rightarrow x =
+  -6.5 = 5x \Rightarrow -1.3 = x$$
 
-$$2.: u_2 = 3.5 = \tmpPart{} \Rightarrow 10.5=5x+0.5 \Rightarrow x = 2$$
+$$2.: u_2 = 5 = \tmpPart{} \Rightarrow 15=5x+0.5 \Rightarrow 14.5 = 5x
+  \Rightarrow x = 2.9$$
 
-$$\lx=\{1.4; 2\}$$}%% END TNTeop
+$$\lx=\{\LoesungsRaum{-1.3}; \LoesungsRaum{2.9}\}$$}%% END TNTeop
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55555
-
+\newpage
 
 \subsection*{Aufgaben}
 
@@ -75,6 +77,30 @@ $$\lx=\{1.4; 2\}$$}%% END TNTeop
 \AadBMTA{184}{29. a) 30. a)}
 
 
+\GESO{  \aufgabenFarbe{Berufsmaturitätsprüfung 2020: Aufgabe 4 von Serie 2:
+  $$(x-5)^4 - \frac{(x-5)^2}{3} = 8$$}%% END Aufgabenfarbe
+\TNTeop{Lösung der Substituierten $u=(x-5)^2)$ ist $u=3$ bzw. $u=-\frac83$. Die zweite Lösung kommt jedoch nur als Scheinlösung vor.\vspace{45mm}}%% END TNT
+    $$\lx = \LoesungsRaumLang{\left\{5-\sqrt{3}; 5+\sqrt{3}\right\}}$$
+}%% END GESO
+  
+  %% TALS hat hier ein einfacheres Beispiel, da TALS ohne TR lösen muss:
+  \TALS{
+\aufgabenFarbe{$$\left(3x-\frac15\right)^2-4\left(3x-\frac15\right)=21$$}%% end AufgabenFarbe
+\TNTeop{
+  Substitution:
+  $$u:= 3x-\frac15$$
+  $$u^2 -4u -21 = 0$$
+  $$u_{1,2} = \frac{4\pm\sqrt{16+84}}{2}=\frac{4\pm 10}{2}\Rightarrow u_1 = 7; u_2 = -3$$
+
+  Resub:
+
+  $$ 7 = 3x-\frac15 \Rightarrow 7.2=3x \Rightarrow x = 2.4$$
+  $$-3 = 3x-\frac15 \Rightarrow -2.8=3x \Rightarrow x =
+  \frac{-28}{30} = \frac{-14}{15}$$
+}
+  }%% END TALS
+\newpage
+  
   \subsubsection{Nullserie}
   Die folgende Aufgabe stammt aus der \textit{Nullserie}-Maturaprüfung
   \TALS{Gesundheitlich-soziale Ausrichtung}:
@@ -89,12 +115,6 @@ $$u^2 - 2u +1 = 0$$
   
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   
-  \aufgabenFarbe{Berufsmaturitätsprüfung 2020: Aufgabe 4 von Serie 2
-    \TALS{Gesundheitlich-soziale Ausrichtung}:
-  $$(x-5)^4 - \frac{(x-5)^2}{3} = 8$$}%% END Aufgabenfarbe
-\TNT{8}{Lösung der Substituierten $u=(x-5)^2)$ ist $u=3$ bzw. $u=-\frac83$. Die zweite Lösung kommt jedoch nur als Scheinlösung vor.\vspace{45mm}}%% END TNT
-    $$\lx = \LoesungsRaumLang{\left\{5-\sqrt{3}; 5+\sqrt{3}\right\}}$$
-
 
 \TALS{\newpage
   \aufgabenFarbe{
