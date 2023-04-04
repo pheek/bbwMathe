@@ -39,25 +39,35 @@
 
 \begin{beispiel}{Einstiegsbeispiel}{}
 
-$$7x - 3 + \sqrt{5}x=5x - \sqrt{7} - \frac{x}7$$
+$$\sqrt{2}(x+5) = 3x + \sqrt{7} - \frac{x}4$$
 
   Die \textit{harte} Tour:
   
-\TNT{14}{  \begin{tabular}{ll}
-    $7x - 3 + \sqrt{5}x              =5x - \sqrt{7} - \frac{x}7$  & $| + \frac{x}7$\\
-    $7x - 3 + \sqrt{5}x +\frac{x}7   =5x - \sqrt{7}            $  & $| -5x        $\\
-    $2x - 3 + \sqrt{5}x +\frac{x}7   = - \sqrt{7}              $  & $|  +3             $\\
-    $2x     + \sqrt{5}x +\frac{x}7   = 3 - \sqrt{7}            $  & $|$ $x$ ausklammern\\
-    $x (2+\sqrt{5} + \frac17)        = 3 - \sqrt{7}            $  & $|$ durch die Klammer teilen\\
-    $x        = \frac{3 - \sqrt{7}}{2+\sqrt{5} + \frac17}    $  &\\
+  \TNT{13.2}{ 1. Ausmultiplizieren
 
-    $x \approx  0.0809$        &  \\
+    \begin{tabular}{ll}
+
+      $x\sqrt{2} + 5\sqrt{2}            = 3x + \sqrt{7} -\frac14x$ &  $| + \frac14x$\\
+
+      $x\sqrt{2} + 5\sqrt{2} + \frac14x =  3x + \sqrt{7}$          &  $| - 3x$\\
+
+      $x\sqrt{2} + 5\sqrt{2} + \frac14x -3x =   \sqrt{7}$          &  $| -5\sqrt{2}$\\
+
+      $x\sqrt{2} + \frac14x -3x =   \sqrt{7} - 5\sqrt{2}$          & $| x\text{ ausklammern}$\\
+
+      $x (\sqrt{2} + \frac14 -3) =   \sqrt{7} - 5\sqrt{2}$          &      $| x\text{ durch Klammer teilen}$\\
+
+      $x = \frac{  \sqrt{7} - 5\sqrt{2}}{\sqrt{2} + \frac14 -3}$          &      $| x\text{ durch Klammer teilen}$\\
+
+      $x \approx   3.31289$    &    \\
+
     \end{tabular}
 
 Allenfalls Probe mit TR:
 \GESO{\tiprobutton{sto}\tiprobutton{xyzabcd}}
-\TALS{$x:= \frac{3 - \sqrt{7}}{2+\sqrt{5} + \frac17}$}, dann $x$ links und rechts einsetzen: Term wird je $-2.2528$.
-\vspace{75mm}
+\TALS{$x:= \frac{  \sqrt{7} - 5\sqrt{2}}{\sqrt{2} + \frac14 -3}$},
+dann $x$ links und rechts einsetzen: Term wird je $ 11.7562$.
+\vspace{55mm}
 }%% END TNT
 
 \end{beispiel}
@@ -69,11 +79,12 @@ Allenfalls Probe mit TR:
 \end{definition}
 
 \begin{rezept}{Lineare Gleichung auflösen}{}
-  \begin{itemize}
+  \begin{enumerate}
+    \item In einzelne Summanden verwandeln (ausmultiplizieren)
   \item sortieren: Alle Summanden, welche den Faktor $x$ enthalten, auf eine Seite bringen (alle «nicht $x$» auf die andere Seite)
   \item $x$ ausklammern
   \item durch die Klammer teilen
-    \end{itemize} 
+    \end{enumerate} 
   \end{rezept}
 \newpage
 
