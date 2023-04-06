@@ -1,11 +1,12 @@
 %%
 %% Meta: Formelsammlung GESO BBW
-%% 2022 fp @ bbw.ch
+%% 2023 fp @ bbw.ch
 %%
 
 
-
+%% Alle Kommandos und entsprechende...
 \input{IFCOMMANDS.sty}
+%% ... Auswahlen
 \input{VERSION.sty}
 
 
@@ -13,13 +14,11 @@
 \newcommand{\versionIdSubRev}{0.4.3}
 \newcommand{\versionsnummerFoSa}{\versionsDatumFoSa{} \versionIdSubRev}
 
-
 \input{bbwLayoutPage}
 
-
-\MITHEADERFOOTER{\renewcommand{\metaHeaderLine}{Formelsammlung (GESO \noTRAINER{2023}\TRAINER{\versionsnummerFoSa{}} BMS Winterthur)}}
+\MITHEADERFOOTER{\renewcommand{\metaHeaderLine}{Formelsammlung --- gesundheitlich-soziale BM}}%% END HEADERFOOTER
+%%{Formelsammlung (GESO \noTRAINER{2023}\TRAINER{\versionsnummerFoSa{}} BMS Winterthur)}}
 \SCHMALERRAHMEN{\renewcommand{\metaHeaderLine}{}}
-
 
 \newcommand{\geometrieErsteSeite}{}
 
@@ -35,7 +34,7 @@
 \newcommand{\headerUndFooterDieseSeite}{%%
 \SCHMALERRAHMEN{ \thispagestyle{empty} }%%
 \MITHEADERFOOTER{ \thispagestyle{fancy}
-                \fancyhf[FC]{Seite \thepage{}} \fancyhf[FR]{}}%%
+                \fancyhf[HR]{Seite \thepage{}} \fancyhf[FR]{}}%%
 }%%
 
 
@@ -51,7 +50,7 @@
 
 \renewcommand{\shortAuthor}{fp he @ bbw.ch [\versionsnummerFoSa{}]}
 
-\renewcommand{\arbeitsblattTitel}{Formelsammlung --- gesundheitlich-soziale BM\TRAINER{ (V \versionIdSubRev)}}
+\renewcommand{\arbeitsblattTitel}{}%%{Formelsammlung --- gesundheitlich-soziale BM\TRAINER{ (V \versionIdSubRev)}}
 
 %% Millimeterpapier (2.8mm) für Notizen \mmPap
 \newcommand{\mmPap}[1]{\mmPapierZwei{#1}{8.4}}
@@ -335,6 +334,9 @@ $$\log_{\color{farnFarbe}b}({\color{red}a}) = \frac{\lg({\color{red}a})}{\lg({\c
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Gleichungen}
 
+\MITHEADERFOOTER{ \thispagestyle{fancy}
+                \fancyhf[HR]{Seite \thepage{}} \fancyhf[HL]{} \fancyhf[HC]{}}%%
+                
 \subsection*{Lineare Gleichungen}
 Grundform: $ax+b=0$
 
@@ -411,13 +413,12 @@ $$5^4 = 5^{2x+1} \Longrightarrow  4=2x+1$$
 \subsection*{Lineare Gleichungssysteme}
 \textbf{Grundform}:
 \gleichungZZ{5x+7y}{19}{6x -3y}{57}
-Lösen mit
+
 \begin{itemize}
 \item Additionsverfahren
 \item Einsetzungsverfahren
 \item Gleichsetzungsverfahren
-\item Graphisch
-\item \textbf{Taschenrechner}
+\item Graphisch oder \textbf{Taschenrechner}
 \end{itemize}
 Die Lösung ist ein geordnetes Zahlenpaar:
 $$\mathbb{L}_{(x | y)} = \{(8 | -3)\}$$
@@ -499,7 +500,7 @@ $\mathcal{D}$} eindeutig ein {\color{blue}y} aus der
 \bbwCenterGraphic{8cm}{FunktionDefinition.pdf}
 
 
-\hrulefill
+\MITHEADERFOOTER{\forceCB}
 \subsection*{Lineare Funktionen}
 
 $$f\-:\,\,\,\,\, y = f(x) = a\cdot{}x + b \RLP{\textrm{\,\,\,\,oder\,\,\,\,} f(x)=m\cdot{}x + q}$$
@@ -525,7 +526,11 @@ $g\-:\,\,\, y=ax+b$ ist horizontal, wenn die Steigung $a$ Null ist.
 
 $$g\-:\,\,\,  y=0\cdot{}x+b \Rightarrow y=b$$
 
-
+\HECH{
+\subsubsection*{Punkt- / Steigungsform}
+Gerade durch Punkt $P=(P_x|P_y)$ mit gegebener Steigung $a$:
+$$y = a(x-P_x) + P_y$$
+}
 
 \subsection*{Achsenschnittpunkte}
 
@@ -619,8 +624,8 @@ $k$ ungerade: Punktsymmetrisch (Ursprung $O=(0|0)$)
 
 
 %%\hrulefill  
-%%\forceCB
-\headerUndFooterDieseSeite{}
+\forceCB
+%%\headerUndFooterDieseSeite{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%               Wachstumsmodelle                     %%
@@ -710,11 +715,8 @@ $$y=a\cdot{}e^{bx}$$}
 \FAKTORAQ{$2\cdot{}a = f(t) = a\cdot{}q^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t = \tau\cdot{}\log_q(2)$}
 
 %%\mmPap{5.6}%
-%%\forceCB%
-\headerUndFooterDieseSeite{}
-
-
-
+\forceCB%
+%%\headerUndFooterDieseSeite{}
 \subsection*{Sättigungsfunktionen}
 \headerUndFooterDieseSeite{}
 
@@ -770,7 +772,7 @@ $$f(0) = c-a$$}
 
 
 \subsubsection*{Modus\TRAINER{, Modalwert?}}
-Der am häufigsten auftretende Wert wird als Modus bezeichnet.
+Modus: Der am häufigsten auftretende Wert.
 
 Manchmal ist dies nicht eindeutig, dann sprechen wir von einer
 \textbf{multimodalen} Verteilung; bei zwei Modi von \textbf{bimodal}.
@@ -845,8 +847,6 @@ weiter ins Extreme bewegt, so sprechen wir von einem \textbf{robusten} Mass.
 
  & Maximum & \\\hline
  \end{tabular}
-
-
 
 %
 \headerUndFooterDieseSeite{}
@@ -1009,8 +1009,12 @@ $$\textrm{Binomialkoeffizient:} {{\color{blue}n}\choose
 {\color{red}k}!}\phantom{etwas Platz lassen} {n\choose 0}= {n\choose
 n}= 1$$
 
-%%\RLP{\bbwCenterGraphic{17cm}{img/KombinatorikRLP.pdf}}
-\bbwCenterGraphic{17cm}{img/KombinatorikHECH.pdf}
+\ifisRLP
+\bbwCenterGraphic{12cm}{img/KombinatorikRLP.pdf}
+\else
+\bbwCenterGraphic{13cm}{img/KombinatorikHECH.pdf}
+\fi
+
 
 \hrulefill
 
@@ -1050,9 +1054,9 @@ wahrscheinlich (fairer Würfel), so ist die Wahrscheinlichkeit $P(E)$ für das E
 $E$ wie folgt zu berechnen:
 
 $$P(E) = \frac{\textrm{Anzahl Ergebnisse in
-}E}{\textrm{Anzahl Ergebnisse in }\Omega}$$
-
-%%\forceCB
+}E}{\textrm{Anzahl Ergebnisse in }\Omega}$$%%
+%%
+\forceCB%%
 \subsubsection*{Baumdiagramme}
 Bsp.: Zwei Mal eine \textit{unfaire} Münze werfen
 \bbwCenterGraphic{75mm}{img/WahrscheinlichkeitBaumdiagramm.pdf}
@@ -1068,8 +1072,8 @@ ${\color{red}P}({\color{farnFarbe}KK} \textrm{\color{red} oder } {\color{blue}ZZ
   $P({\color{farnFarbe}KK}) {\color{red}+} P({\color{blue}ZZ})$\\
   &=&${\color{farnFarbe}0.6\cdot0.6} {\color{red}+} {\color{blue}0.4\cdot0.4}$
 \end{tabular}
- 
-\headerUndFooterDieseSeite{}
+
+\forceCB{}
 
 \subsection*{Binomialverteilung}
 \subsubsection*{Bernoulli}
@@ -1087,7 +1091,7 @@ $$P(X=x) = {n \choose x}\cdot{}p^x\cdot{}(1-p)^{n-x}$$
 Taschenrechner:  \textbf{\texttt{binomialpdf}}
 \end{tcolorbox}%%
 
-Beispiel: Ein Basketballspieler trifft mit 35\% Wahrscheinlichkeit
+Beispiel: Ein Spieler trifft mit 35\% Wahrscheinlichkeit
 ($p=0.35$). Wie gross ist die Wahrscheinlichkeit, dass er mit 20 Würfen
 ($n=20$) \textbf{genau} vier Mal ($x=4$) trifft?
 
@@ -1107,9 +1111,9 @@ Taschenrechner: \textbf{\texttt{binomialcdf}}
 %%\forceCB{}
 
 \subsection*{Lottomodell}
-\subsubsection*{Hypergeometrische Verteilung}
+(Hypergeometrische Verteilung)
 
-\RLP{%%
+\ifisRLP
 \begin{tcolorbox}[colback=white]
 Gegeben $n$ Kugeln in einer Urne. Herausgezogen werden $k$:
 \begin{itemize}
@@ -1119,11 +1123,7 @@ Wahrscheinlichkeit \textbf{genau} $x$ \textit{gute} Kugeln zu ziehen:
 
 $$P(X=x) = \frac{ {t \choose x} \cdot {n-t  \choose k-x} }{{n \choose k}}$$
 \end{tcolorbox}
-}%% END RLP
-
-
-
-\HECH{%%
+\else
 \begin{tcolorbox}[colback=white]
 Gegeben $N+T$ Kugeln in einer Urne. Herausgezogen werden $n+t$:
 \begin{itemize}
@@ -1136,7 +1136,7 @@ Wahrscheinlichkeit \textbf{genau} $t$ Treffer zu ziehen:
 
 $$P_{N,T,n}(X=t) = \frac{ {T \choose t} \cdot {N  \choose n} }{{T+N \choose t+n}}$$
 \end{tcolorbox}
-}%% END RLP
+\fi%% END RLP
 
 
 \subsection*{Elementare Wahrscheinlichkeit}
@@ -1160,8 +1160,8 @@ $$P(\overline{E}) = 1- P(E)$$
 Bei Aufgaben wie «... mindestens eins ...» ist das Arbeiten mit der
 Gegenwahrscheinlichkeit häufig einfacher.
 
-\textbf{Beispiel}: Das Gegenteil von «Ballspieler trifft minimal vier Mal»
-ist «Ballspieler trifft maximal drei Mal»:
+\textbf{Beispiel}: Das Gegenteil von «Spieler trifft minimal vier Mal»
+ist «Spieler trifft maximal drei Mal»:
 
 $$P(X \ge 4) = 1 - P(X < 4) = 1-P(X\le 3)$$
 
@@ -1169,7 +1169,7 @@ Gegenereignis von «minimal 4 Mal» = «maximal 3 Mal».
 
 \headerUndFooterDieseSeite{}
 
-%%\forceCB{}
+\forceCB{}
 \subsection*{Zufallsgrössen, Zufallsvariable $\mathbf{X}$}
 \headerUndFooterDieseSeite{}
 
