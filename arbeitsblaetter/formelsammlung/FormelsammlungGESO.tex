@@ -3,63 +3,44 @@
 %% 2022 fp @ bbw.ch
 %%
 
+
+
+\input{IFCOMMANDS.sty}
+\input{VERSION.sty}
+
 %% Footer und Header ganz unterdrücken:
-\newcommand{\headerUndFooterDieseSeite}{}
-\newcommand{\geometrieErsteSeite}{}
+%\newcommand{\headerUndFooterDieseSeite}{}
+%\newcommand{\geometrieErsteSeite}{}
 %% Sollten Header und Footer unterdrückt werden, einfach die folgende
 %% Zeile nicht als Kommentar lassen: (empty= leer, fncy = fancy)
 
-\renewcommand{\headerUndFooterDieseSeite}{\thispagestyle{empty}}
-%%\renewcommand{\headerUndFooterDieseSeite}{\thispagestyle{fancy}\fancyhf[FC]{Seite \thepage{}}}
 
-
-%%% Ananlog für Seitennumemern
-\renewcommand{\geometrieErsteSeite}{\newgeometry{left=0.3cm,right=0.3cm,top=0.3cm,bottom=0.5cm}}
-%%\renewcommand{\geometrieErsteSeite}{\newgeometry{left=0.3cm,right=0.3cm,top=0.3cm,bottom=1.5cm}}
-
-
-%\newgeometry{left=0.3cm,right=0.3cm,top=0.3cm,bottom=0.5cm}
-%%\newgeometry{left=0.3cm,right=0.3cm,top=0.3cm,bottom=2.5cm}
-
-
-
-
-\newcommand{\versionsDatumFoSa}{2023-01-17}
+\newcommand{\versionsDatumFoSa}{2023-04-06}
 
 %% ID (ca. alle jahre), Subversion: Grössere Änderungen, Revision: Jede
 %% Umstellung/Korrektur/Typos
-\newcommand{\versionIdSubRev}{0.4.2}
+\newcommand{\versionIdSubRev}{0.4.3}
 
-
-%% ID (ca. alle jahre), Subversion: Grössere Änderungen, Revision: Jede
-%% Umstellung/Korrektur/Typos
 
 \newcommand{\versionsnummerFoSa}{\versionsDatumFoSa{} \versionIdSubRev}
 
-%% Für Notationen   mit a, b, c (Hersberger Christian [HECH])
-%% Für Schreibwesie mit m, q etc. (Rahmenlehrplan [RLP])
-\newif\ifisHECH
-\newif\ifisRLP
-
-%% Steuere später über das File "VERSION.sty"
-%%\isHECHtrue %% f(x) = ax+b
-%%\isRLPtrue %%f(x) = mx+q
-\input{VERSION.sty}
-
-%% Kommandos zur Vereinfachun des Einbindens der beiden Versionen
-\newcommand\HECH[1]{%%
-{%%
-\ifisHECH{#1}%%
-\fi%%
-}}%% End New Command HECH
-%% Für Rahmenlehrplan (RLP)
-\newcommand\RLP[1]{%%
-{%%
-\ifisRLP{#1}%%
-\fi%%
-}}%% End New Command RLP
 
 \input{bbwLayoutPage}
+
+
+\BREITERRAHMEN{\renewcommand{\metaHeaderLine}{Formelsammlung (GESO \noTRAINER{2023}\TRAINER{\versionsnummerFoSa{}} BMS Winterthur)}}
+\RAHMENLOS{\renewcommand{\metaHeaderLine}{}}
+
+\newcommand{\geometrieErsteSeite}{\newgeometry{left=3mm,right=3mm,top=3mm,bottom=3mm}}
+
+\BREITERRAHMEN{\renewcommand{\geometrieErsteSeite}{\newgeometry{left=7mm,right=7mm,top=7mm,bottom=7mm}}}
+\RAHMENLOS{\renewcommand{\geometrieErsteSeite}{\newgeometry{left=3mm,right=3mm,top=3mm,bottom=3mm}}}
+
+
+\newcommand{\headerUndFooterDieseSeite}{%%
+\RAHMENLOS{\thispagestyle{empty}}%%
+\BREITERRAHMEN{\thispagestyle{fancy}\fancyhf[FC]{Seite \thepage{}}}%%
+}%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -74,7 +55,6 @@
 %% Falls ohne Autor in der Fußzeile:
 %%\renewcommand{\shortAuthor}{}
 
-%%\renewcommand{\metaHeaderLine}{Formelsammlung (GESO \noTRAINER{2021}\TRAINER{\versionsnummerFoSa{}} BMS Winterthur)}
 
 \renewcommand{\arbeitsblattTitel}{Formelsammlung --- gesundheitlich-soziale BM\TRAINER{ (V \versionIdSubRev)}}
 
@@ -119,26 +99,22 @@
 
 
 %% Titel schwarz, nicht bbw Grün
-\definecolor{titelFarbe}{rgb}{0,0,0}%%
-
-
 \begin{document}%%
+
+\SCHWARZETITEL{
+isswarte
+\definecolor{titelFarbe}{rgb}{0,0,0}
+}%%
+
+tests:
+\SCHWARZETITEL{st}
+\BREITERRAHMEN{br}
+\RAHMENLOS{rl}
+
 
 \geometrieErsteSeite{}
 
-%\setlength{\hoffset}{1mm}
-%\setlength{\oddsidemargin}{1mm}
-%\setlength{\evensidemargin}{1mm}
-%\setlength{\voffset}{0mm}
-%\setlength{\headsep}{20pt}
-%\setlength{\headheight}{2em}
-%\setlength{\textheight}{280mm}
-%\setlength{\leftmargin}{1mm}
-%\setlength{\rightmargin}{1mm}
-%\setlength{\footskip}{10mm}
-
 \font\myfont=cmr11 at 40pt
-%\font\myfont=cmr20 at 60pt
 
 
 \headerUndFooterDieseSeite{}
@@ -155,22 +131,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-
-%%\section*{Zahlmengen}
-%%\begin{tcolorbox}[colback=white]
-%%\textbf{Definition}: Die Zahlmengen heissen
-
-%%$\mathbb{N} = \{1, 2, 3, ...\}$                                   \textbf{natürlich}\\
-%%$\mathbb{Z} = \{..., -2, -1, 0, 1, 2, ...\}$                   \textbf{ganz}\\
-%%$\mathbb{Q} = \{\frac{a}b|a\in \mathbb{Z},b\in\mathbb{N}\}$   \textbf{rational} (Brüche)\\
-%%$\mathbb{R} = \{..., -\frac12, ..., 0, ..., \sqrt{2}, ..., e,..., \pi, ...\}$\,\textbf{reell}%%
-%%\phantom{$\mathbb{R}$} $=$ \textbf{reell}
-%%\end{tcolorbox}
-
-%%$$\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}$$
-
-%% \hrulefill vor allen neuen "sections" auf derselben Seite
-
 \section*{Dezimalzahlen}
 \subsection*{Runden}
 Bsp.: Runden auf \textbf{\color{farnFarbe}vier}  Dezimalen.
@@ -182,12 +142,12 @@ $70.\mathbf{\color{farnFarbe}0031}\mathbf{\color{red}4}998\approx 70.\mathbf{\co
 
 (Alle vier Dezimalen sind anzugeben.)
 
-\HECH{\subsection*{Signifikante Stellen}
+\MITSIGNIFIKANTENSTELLEN{\subsection*{Signifikante Stellen}
 Führende Nullen zählen nicht, nachfolgende Nullen
 zählen. Bsp. \textbf{\color{farnFarbe}vier} signifikante Stellen:
 
 $$\mathbf{\color{farnFarbe}208.0} \textrm{ cm} = \mathbf{\color{farnFarbe}2.080} \textrm{ m} = 0.00\mathbf{\color{farnFarbe}2080} \textrm{ km}$$
-}%% END HECH
+}%% END MITSIGNIFIKANTENSTELLEN
 
 %%\forceCB{}%%
 \subsection*{Wissenschaftliche Notation}
@@ -237,27 +197,6 @@ Vorzeichen im Taschenrechner:\\
 \vspace{3mm}\\
 \tiprobutton{7}\tiprobutton{minus}\tiprobutton{2}$=7-2= 5$\\
 \tiprobutton{7}\tiprobutton{neg}\tiprobutton{2}$=7(-2)=7\cdot{}(-2)= -14$
-
-%%\subsection*{Grundrechenarten}
-
-%%%\textbf{Assoziativgesetz}:\\ $(a+b)+c = a+(b+c)$,\\ $(a\cdot{}b)\cdot{}c = a\cdot{}(b\cdot{}c)$\\
-%%\textbf{Kommutativgesetz}:\\ $a+b = b+a$,\\ $a\cdot{}b= b\cdot{}a$\\
-%%\textbf{Distributivgesetz}:
-
-%%$a\cdot{}(x+ y) = a\cdot{}x + a\cdot{}y$,\phantom{ and } $a\cdot{}(x - y) = a\cdot{}x - a\cdot{}y$
-
-%%\textbf{Vorzeichen}
-
-%%$(+2)\cdot(+3)=+6$\\
-%%$(-2)\cdot(-3)=+6$\\
-%%$(+2)\cdot(-3)=-6$\\
-%%$(-2)\cdot(+3)=-6$\\
-
-%%$$\fbox{+}\fbox{+} = \fbox{+}$$
-%%$$\fbox{-}\fbox{-} = \fbox{+}$$
-%%$$\fbox{+}\fbox{-} = \fbox{-}$$
-%%$$\fbox{-}\fbox{+} = \fbox{-}$$
-
 
 \subsection*{Binomische Formeln}
 \begin{tabular}{lcl}
@@ -310,7 +249,6 @@ $$x^2+2x-15 = (x+5)(x-3)$$
 \headerUndFooterDieseSeite{}
 
 \subsection*{Summenzeichen}
-%%$$\color{orange}\sum_{\color{blue}k=1}^{\color{blue}n} {{\color{farnFarbe}T}(k)} = {\color{farnFarbe}T}({\color{blue}1}) {\color{orange}+} {\color{farnFarbe}T}({\color{blue}2}) {\color{orange}+} ... {\color{orange}+} {\color{farnFarbe}T}({\color{blue}n})$$
 
   $${\color{farnFarbe}\sum_{{\color{red}k}{{\color{farnFarbe}{\color{black}=}\color{blue}1}}}^{\color{blue}n\color{farnFarbe}}}
   {\color{orange}T(}{{\color{red}k}}{\color{orange})} = {\color{orange}T(}{\color{blue}1}{\color{orange})} {\color{farnFarbe}+} {\color{orange}T(}{\color{blue}2}{\color{orange})} {\color{farnFarbe}+}
@@ -417,12 +355,12 @@ $$e \approx 2.71828 \textrm{ = Eulersche Konstante}$$
 
 
 \begin{tcolorbox}[colback=white]
-\HECH{$$\log_a(u\cdot v) = \log_a(u) + \log_a(v)$$}
-\HECH{$$\log_a(u : v) = \log_a(u) - \log_a(v)$$}
+\ALLELOGGESETZE{$$\log_a(u\cdot v) = \log_a(u) + \log_a(v)$$}
+\ALLELOGGESETZE{$$\log_a(u : v) = \log_a(u) - \log_a(v)$$}
 
-\HECH{$$\log_a(b^x) = x\cdot{}\log_a(b)$$
+\FAKTORBA{$$\log_a(b^x) = x\cdot{}\log_a(b)$$
 $$\log_{\color{farnFarbe}a}({\color{red}b}) = \frac{\lg({\color{red}b})}{\lg({\color{farnFarbe}a})} = \frac{\ln({\color{red}b})}{\ln({\color{farnFarbe}a})}$$}
-\RLP{$$\log_b(a^x) = x\cdot{}\log_b(a)$$
+\FAKTORAQ{$$\log_b(a^x) = x\cdot{}\log_b(a)$$
 $$\log_{\color{farnFarbe}b}({\color{red}a}) = \frac{\lg({\color{red}a})}{\lg({\color{farnFarbe}b})} = \frac{\ln({\color{red}a})}{\ln({\color{farnFarbe}b})}$$}
 \end{tcolorbox}%
 %
@@ -497,15 +435,15 @@ $x^4=16$ & $\Longrightarrow$ & $\lx=\{-2; 2\}  $ \\
 $x^5=32$ & $\Longrightarrow$ & $\lx=\{+2\}  $ \\
 
 \end{tabular}
-%%\HECH{\forceCB{}}
+
 \subsection*{Exponentialgleichungen}
 \subsubsection*{mit Exponentenvergleich}
 
 $$5^4 = 5^{2x+1} \Longrightarrow  4=2x+1$$
 
 \subsubsection*{durch Logarithmieren}
-\HECH{$$a^x=b \Rightarrow{} x=\log_a(b) = \frac{\lg(b)}{\lg(a)}$$}
-\RLP{$$b^x=a \Rightarrow{} x=\log_b(a) = \frac{\lg(a)}{\lg(b)}$$}
+\FAKTORBA{$$a^x=b \Rightarrow{} x=\log_a(b) = \frac{\lg(b)}{\lg(a)}$$}
+\FAKTORAQ{$$b^x=a \Rightarrow{} x=\log_b(a) = \frac{\lg(a)}{\lg(b)}$$}
 
 
 \subsection*{Lineare Gleichungssysteme}
@@ -604,29 +542,22 @@ $\mathcal{D}$} eindeutig ein {\color{blue}y} aus der
 $$f\-:\,\,\,\,\, y = f(x) = a\cdot{}x + b \RLP{\textrm{\,\,\,\,oder\,\,\,\,} f(x)=m\cdot{}x + q}$$
 
 
-%%\RLP{\bbwCenterGraphic{8cm}{img/FunktionenLineareEinfuehrungRLP.pdf}}
-%%\HECH{\bbwCenterGraphic{8cm}{img/FunktionenLineareEinfuehrungHECH.pdf}}
 \bbwCenterGraphic{8cm}{img/FunktionenLineareEinfuehrungHECH.pdf}
 
 Steigung:
 
-%%\fbox{\HECH{$a$}\RLP{$m$}$ = \frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1}$}\\
 \fbox{$a$$ = \frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1}$}\\
-
 
 Zwei Geraden sind \textbf{parallel}, wenn ihre Steigungen gleich sind.
 
-%%$\HECH{b}\RLP{q}$ = $y$-Achsenabschnitt (=Ordinatenabschnitt)
 $b$ = $y$-Achsenabschnitt (=Ordinatenabschnitt)
 \forceCB
 \headerUndFooterDieseSeite{}
 
 \subsubsection*{Horizontale Gerade}
 
-%%$g\-:\,\,\, y=\HECH{ax+b}\RLP{mx+q}$ ist horizontal, wenn die Steigung \HECH{$a$}\RLP{$m$} Null ist.
 $g\-:\,\,\, y=ax+b$ ist horizontal, wenn die Steigung $a$ Null ist.
 
-%%$$g\-:\,\,\,  y=0\cdot{}x+\HECH{b}\RLP{q} \Rightarrow y=\HECH{b}\RLP{q}$$
 $$g\-:\,\,\,  y=0\cdot{}x+b \Rightarrow y=b$$
 
 
@@ -659,19 +590,15 @@ Gleichsetzen: $ax+b = cx+d$ und nach $x$ auflösen.
 %%\headerUndFooterDieseSeite{}
 
 \subsection*{Zweipunkte Aufgaben}
-%%Gesucht Gerade $g\-: \,\,\, y=\HECH{ax+b}\RLP{mx+q}$ durch zwei gegebene Punkte $A=(x_A|y_A)$
-%%und $B=(x_B|y_B)$
-%%\headerUndFooterDieseSeite{}
+
 
 Gesucht Gerade $g\-: \,\,\, y=ax+b$ durch zwei gegebene Punkte $A=(x_A|y_A)$ und $B=(x_B|y_B)$
 
-%%\textbf{Variante 1}: Steigung $\HECH{a}\RLP{m}$ berechnen und einen der beiden Punkte in
-%%$y=\HECH{ax+b}\RLP{mx+q}$ einsetzen, um $\HECH{b}\RLP{q}$ zu finden.
+
 \textbf{Variante 1}: Steigung $a$ berechnen und einen der beiden Punkte in
 $y=ax+b$ einsetzen, um $b$ zu finden.
 
-%%\textbf{Variante 2}: Gleichungssystem nach $\HECH{a}\RLP{m}$ und $\HECH{b}\RLP{q}$ auf\/lösen:
-%%\gleichungZZ{y_A}{\HECH{a}\RLP{m}\cdot{}x_A+\HECH{b}\RLP{q}}{y_B}{\HECH{a}\RLP{m}\cdot{}x_B + \HECH{b}\RLP{q}}
+
 \textbf{Variante 2}: Gleichungssystem nach $a$ und $b$ auf\/lösen:
 \gleichungZZ{y_A}{a\cdot{}x_A+b}{y_B}{a\cdot{}x_B + b}
 
@@ -736,63 +663,61 @@ $k$ ungerade: Punktsymmetrisch (Ursprung $O=(0|0)$)
 \section*{Wachstumsmodelle}
 
 \textbf{Lineares Wachstum}
-$$f(t) = \HECH{a}\RLP{m}\cdot t + \HECH{b}\RLP{q}$$
-Bei linearem Wachstum wird pro Zeiteinheit der selbe Wert $\HECH{a}\RLP{m}$ \textbf{addiert}.
+$$f(t) = \FAKTORBA{a}\FAKTORAQ{m}\cdot t + \FAKTORBA{b}\FAKTORAQ{q}$$
+Bei linearem Wachstum wird pro Zeiteinheit der selbe Wert $\FAKTORBA{a}\FAKTORAQ{m}$ \textbf{addiert}.
 
 \textbf{Exponentielles Wachstum}
 
-\HECH{$$f(t) = b\cdot{}a^t$$}
-\RLP{$$f(t) = a\cdot{}q^t$$}
-Bei exponentiellem Wachstum wird pro Zeiteinheit mit dem selben Wert $\HECH{a}\RLP{q}$ \textbf{multipliziert}.
+\FAKTORBA{$$f(t) = b\cdot{}a^t$$}
+\FAKTORAQ{$$f(t) = a\cdot{}q^t$$}
+Bei exponentiellem Wachstum wird pro Zeiteinheit mit dem selben Wert $\FAKTORBA{a}\FAKTORAQ{q}$ \textbf{multipliziert}.
 
   \begin{tabular}{rl}
-   $\HECH{b}\RLP{a}$  & Startwert bei $t=0$; $\HECH{b}\RLP{a}=f(0)$\\
+   $\FAKTORBA{b}\FAKTORAQ{a}$  & Startwert bei $t=0$; $\FAKTORBA{b}\FAKTORAQ{a}=f(0)$\\
         & \phantom{$b$} = $y$-Achsenabschnitt\\
-   $\HECH{a}\RLP{q}$  & beschreibt das Wachstum
+   $\FAKTORBA{a}\FAKTORAQ{q}$  & beschreibt das Wachstum
   \end{tabular}
 
 $$A_0 = A(0) = f(0); A_t = A(t) = f(t)$$
 
-\HECH{\bbwCenterGraphic{8cm}{ExpFktVergleichMitLinearemWachstumHECH.pdf}}
-\RLP{\bbwCenterGraphic{8cm}{ExpFktVergleichMitLinearemWachstumRLP.pdf}}
+\FAKTORBA{\bbwCenterGraphic{8cm}{ExpFktVergleichMitLinearemWachstumHECH.pdf}}
+\FAKTORAQ{\bbwCenterGraphic{8cm}{ExpFktVergleichMitLinearemWachstumRLP.pdf}}
 
 \subsection*{Exponentialfunktionen}
 %%\bbwCenterGraphic{8.5cm}{allg/funktionen/img/exp/exponentielles_wachstum.png}
-\begin{tcolorbox}[colback=white]$$y=f(t) = \HECH{b}\RLP{a}\cdot{}{\HECH{a}\RLP{q}}^t$$\end{tcolorbox}
+\begin{tcolorbox}[colback=white]$$y=f(t) = \FAKTORBA{b}\FAKTORAQ{a}\cdot{}{\FAKTORBA{a}\FAKTORAQ{q}}^t$$\end{tcolorbox}
 
 Wachstum:
-\HECH{$a>1$, Zerfall: $0<a<1$}
-\RLP{$q>1$, Zerfall: $0<q<1$}
+\FAKTORBA{$a>1$, Zerfall: $0<a<1$}
+\FAKTORAQ{$q>1$, Zerfall: $0<q<1$}
 
 
 \begin{tcolorbox}[colback=white]
 Wachstum bezogen auf eine Zeitspanne  
-  $$f(t) = {\color{blue}\HECH{b}\RLP{a}}\cdot{}{\color{red}\HECH{a}\RLP{q}}^{\frac{t}{\color{farnFarbe}\tau}}$$
+  $$f(t) = {\color{blue}\FAKTORBA{b}\FAKTORAQ{a}}\cdot{}{\color{red}\FAKTORBA{a}\FAKTORAQ{q}}^{\frac{t}{\color{farnFarbe}\tau}}$$
   \begin{tabular}{ccp{60mm}}
-$\color{farnFarbe}\tau$ &=& Beobachtungsintervall zu $\color{red}\HECH{a}\RLP{q}$\\
-    $\color{red}\HECH{a}\RLP{q}$ &=& Wachstums(bzw. Zerfalls)rate im Zeit\-raum $\color{farnFarbe}\tau$
+$\color{farnFarbe}\tau$ &=& Beobachtungsintervall zu $\color{red}\FAKTORBA{a}\FAKTORAQ{q}$\\
+    $\color{red}\FAKTORBA{a}\FAKTORAQ{q}$ &=& Wachstums(bzw. Zerfalls)rate im Zeit\-raum $\color{farnFarbe}\tau$
     \end{tabular}
 
 Beispiel: Die Algen mit Startwert von ${\color{blue}3} \textrm{ m}^2$ ver{\color{red}vier}fachen
 sich alle {\color{farnFarbe}fünf} Tage:\\
-${\color{blue}\HECH{b}\RLP{a}}={\color{blue}3}$, ${\color{red}\HECH{a}\RLP{q}}={\color{red}4}$, ${\color{farnFarbe}\tau}={\color{farnFarbe}5}$
+${\color{blue}\FAKTORBA{b}\FAKTORAQ{a}}={\color{blue}3}$, ${\color{red}\FAKTORBA{a}\FAKTORAQ{q}}={\color{red}4}$, ${\color{farnFarbe}\tau}={\color{farnFarbe}5}$
 $$f(t)= {\color{blue}3}\cdot{}{\color{red}4}^\frac{t}{\color{farnFarbe}5}$$
 \end{tcolorbox}
-\RLP{\bbwCenterGraphic{8cm}{ExponentialfctAQ.png}}
-\HECH{\bbwCenterGraphic{8cm}{ExponentialfctAB.png}}
+\FAKTORAQ{\bbwCenterGraphic{8cm}{ExponentialfctAQ.png}}
+\FAKTORBA{\bbwCenterGraphic{8cm}{ExponentialfctAB.png}}
 
 \subsection*{Basis $e$, Zeitvariable $x$}
 $e$ = Eulersche Konstante $\approx 2.71828$
-\HECH{$$y=b\cdot{}a^x$$ entspricht
+\FAKTORBA{$$y=b\cdot{}a^x$$ entspricht
 $$y=b\cdot{}e^{mx}$$}
 
-\RLP{$$y=a\cdot{}q^x$$ entspricht
+\FAKTORAQ{$$y=a\cdot{}q^x$$ entspricht
 $$y=a\cdot{}e^{bx}$$}
 
-%\HECH{$\textrm{mit } m = \ln(a)\,\,\textrm{ oder } a = e^m$}
-%\RLP{$\textrm{mit } b = \ln(q)\,\,\textrm{ oder } q = e^b$}
-\HECH{$\textrm{mit } a = e^m \,\,\textrm{ oder }  m = \ln(a)$}%
-\RLP{$\textrm{mit }  q = e^b \,\,\textrm{ oder }  b = \ln(q)$}%
+\FAKTORBA{$\textrm{mit } a = e^m \,\,\textrm{ oder }  m = \ln(a)$}%
+\FAKTORAQ{$\textrm{mit }  q = e^b \,\,\textrm{ oder }  b = \ln(q)$}%
 
 \vspace{2mm}
 
@@ -800,24 +725,24 @@ $$y=a\cdot{}e^{bx}$$}
 
 Und mit Zeitintervall $\tau$:
 
-\HECH{$$y=b\cdot{}a^\frac{x}\tau$$ entspricht
+\FAKTORBA{$$y=b\cdot{}a^\frac{x}\tau$$ entspricht
 $$y=b\cdot{}e^{mx}$$}
-\RLP{$$y=a\cdot{}q^\frac{x}\tau$$ entspricht
+\FAKTORAQ{$$y=a\cdot{}q^\frac{x}\tau$$ entspricht
 $$y=a\cdot{}e^{bx}$$}
 
-\HECH{$\textrm{mit } a = e^{m\tau}  \,\,\textrm{ oder }    m=\ln\left(a^\frac1\tau\right) = \frac1\tau \cdot{}\ln(a)$}
-\RLP{$\textrm{mit }  q = e^{b\tau}  \,\,\textrm{ oder }    b=\ln\left(q^\frac1\tau\right) = \frac1\tau \cdot{}\ln(q)$}
+\FAKTORBA{$\textrm{mit } a = e^{m\tau}  \,\,\textrm{ oder }    m=\ln\left(a^\frac1\tau\right) = \frac1\tau \cdot{}\ln(a)$}
+\FAKTORAQ{$\textrm{mit }  q = e^{b\tau}  \,\,\textrm{ oder }    b=\ln\left(q^\frac1\tau\right) = \frac1\tau \cdot{}\ln(q)$}
 
 \hrulefill
 \subsection*{Halbwertszeit}
-\HECH{$\frac12 \cdot{} b = f(t) = b\cdot{}a^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t= \tau\cdot{}\log_a\left(\frac12\right)$}
-\RLP{$\frac12 \cdot{} a = f(t) = a\cdot{}q^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t= \tau\cdot{}\log_q\left(\frac12\right)$}
+\FAKTORBA{$\frac12 \cdot{} b = f(t) = b\cdot{}a^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t= \tau\cdot{}\log_a\left(\frac12\right)$}
+\FAKTORAQ{$\frac12 \cdot{} a = f(t) = a\cdot{}q^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t= \tau\cdot{}\log_q\left(\frac12\right)$}
 
 \headerUndFooterDieseSeite{}
 
 \subsection*{Verdopplungszeit}
-\HECH{$2\cdot{}b = f(t) = b\cdot{}a^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t = \tau\cdot{}\log_a(2)$}
-\RLP{$2\cdot{}a = f(t) = a\cdot{}q^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t = \tau\cdot{}\log_q(2)$}
+\FAKTORBA{$2\cdot{}b = f(t) = b\cdot{}a^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t = \tau\cdot{}\log_a(2)$}
+\FAKTORAQ{$2\cdot{}a = f(t) = a\cdot{}q^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t = \tau\cdot{}\log_q(2)$}
 
 %%\mmPap{5.6}%
 \forceCB%
@@ -835,23 +760,23 @@ $$y=a\cdot{}e^{bx}$$}
 \headerUndFooterDieseSeite{}
 
 
-\textbf{Zerfallsrate} immer: $0<\HECH{a}\RLP{q}<1$
+\textbf{Zerfallsrate} immer: $0<\FAKTORBA{a}\FAKTORAQ{q}<1$
 
 \textbf{Sättigungsgrenze}: $c$
 
 
 \textbf{Zerfall}:
-\HECH{$$f(t) = c+b\cdot{}a^\frac{t}\tau$$
+\FAKTORBA{$$f(t) = c+b\cdot{}a^\frac{t}\tau$$
 $$f(0) = c+b$$}
-\RLP{$$f(t) = c+a\cdot{}q^\frac{t}\tau$$
+\FAKTORAQ{$$f(t) = c+a\cdot{}q^\frac{t}\tau$$
 $$f(0) = c+a$$}
 
 
 \textbf{Wachstum}:
 
-\HECH{$$f(t) = c-b\cdot{}a^\frac{t}\tau$$
+\FAKTORBA{$$f(t) = c-b\cdot{}a^\frac{t}\tau$$
 $$f(0) = c-b$$}
-\RLP{$$f(t) = c-a\cdot{}q^\frac{t}\tau$$
+\FAKTORAQ{$$f(t) = c-a\cdot{}q^\frac{t}\tau$$
 $$f(0) = c-a$$}
 
 %%\textbf{Sättigungsdefizit}
@@ -869,10 +794,10 @@ $$f(0) = c-a$$}
 %%               Datenanalyse                         %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Datenanalyse}
-\HECH{\bbwCenterGraphic{17cm}{img/Skalentyp.pdf}
-\vspace{5mm}}%% END  HECH
-%%\bbwCenterGraphic{15cm}{img/DatenanalyseSkalentypen.eps}
-\HECH{\hrulefill}
+\MITSKALENTYPEN{\bbwCenterGraphic{17cm}{img/Skalentyp.pdf}
+\vspace{5mm}}%% END  MIT Skalentypen
+
+\MITSKALENTYPEN{\hrulefill}
 
 \begin{multicols}{2}
 
@@ -1053,9 +978,7 @@ Fühler (Whisker) werden auf max. $1.5\cdot\textrm{IQR}$ begrenzt ({\color{blue}
 danach nach \textit{\color{farnFarbe}innen} gehen}: Fühler sind die von der Box
 entferntesten Nicht-Ausreisser ({\color{farnFarbe}grün}). Ausreisser
 ({\color{red} rot}) werden markiert.
-\RLP{\bbwCenterGraphic{18cm}{boxplotRLP.png}}
-\HECH{\bbwCenterGraphic{18cm}{boxplotHECH.png}}
-%%\TRAINER{Entferne «Sportler*innen»}
+\bbwCenterGraphic{18cm}{boxplotRLP.png}
 
 \hrulefill
 
@@ -1121,8 +1044,8 @@ $$\textrm{Binomialkoeffizient:} {{\color{blue}n}\choose
 {\color{red}k}!}\phantom{etwas Platz lassen} {n\choose 0}= {n\choose
 n}= 1$$
 
-\RLP{\bbwCenterGraphic{17cm}{img/KombinatorikRLP.pdf}}
-\HECH{\bbwCenterGraphic{17cm}{img/KombinatorikHECH.pdf}}
+%%\RLP{\bbwCenterGraphic{17cm}{img/KombinatorikRLP.pdf}}
+\bbwCenterGraphic{17cm}{img/KombinatorikHECH.pdf}
 
 \hrulefill
 

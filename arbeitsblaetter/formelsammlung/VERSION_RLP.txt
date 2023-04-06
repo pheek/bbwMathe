@@ -1,6 +1,10 @@
 %%
-%% Steuerung, ob die Variablennamen nach RLP (Rahmenlehrplan) oder
-%% nach Ch. Hersberger (HECH) verwendet werden sollten. 
+%% Rahmenlehrplan
 
-\isRLPtrue
-%%\isHECHtrue
+\isHECHfalse%%
+\isRLPtrue%%
+\isMITSEITENNUMMERNtrue%%
+\isFAKTORAQtrue%%
+\isFAKTORBAfalse%%
+\isALLELOGGESETZEtrue%%
+\isBREITERRAHMENtrue%%

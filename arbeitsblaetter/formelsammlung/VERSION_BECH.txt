@@ -1,0 +1,11 @@
+%%
+%% Christoph Benz
+
+%%\isRLPtrue
+\isHECHfalse%%
+\isRLPfalse%%
+\isMITSIGNIFIKANTENSTELLENfalse%%
+\isFAKTORAQfalse%%
+\isFAKTORBAtrue%%
+\isBREITERRAHMENtrue%%
+\isALLELOGGESETZEtrue%%

@@ -1,0 +1,13 @@
+%%
+%% Steve Deubelbeiss
+
+%%\isRLPtrue
+\isHECHtrue%%
+\isRLPfalse%%
+\isMITSIGNIFIKANTENSTELLENtrue%%
+\isSCHWARZETITELtrue%%
+\isFAKTORAQtrue%%
+\isFAKTORBAfalse%%
+\isALLELOGGESETZEtrue%%
+\isBREITERRAHMENfalse%%
+\isRAHMENLOStrue%%
