@@ -1,97 +1,70 @@
 
 %% Für Rahmenlehrplan (RLP)
 \newif\ifisRLP
-\newcommand\RLP[1]{%%
-{%%
-\ifisRLP{#1}%%
-\fi%%
-}}%% End New Command RLP
+\newcommand\RLP[1]{\ifisRLP%%
+#1%%
+\fi}%% End New Command RLP
 \isRLPtrue%
 
-
-\newif\ifisBREITERRAHMEN%% Rahmen 7mm statt 3mm
-\newcommand\BREITERRAHMEN[1]{%%
-{%%
-\ifisBREITERRAHMEN{#1}%%
-\fi%%
-}}%% End New Command BREITERRAHMEN
-\isBREITERRAHMENtrue%%
+%% Rahmen breit = normal / schmal: Steve 
+\newif\ifisSCHMALERRAHMEN%% Rahmen 7mm statt 3mm
+\newcommand\SCHMALERRAHMEN[1]{\ifisSCHMALERRAHMEN%%
+#1%%
+\fi}%% End New Command SCHMALERRAHMEN
+\isSCHMALERRAHMENfalse%%
 
 
-\newif\ifisRAHMENLOS%% Rahmen 3mm ohen Header und Footre
-\newcommand\RAHMENLOS[1]{%%
-{%%
-\ifisRAHMENLOS{#1}%%
-\fi%%
-}}%% End New Command RAHMENLOS
-\isRAHMENLOSfalse%%
+\newif\ifisMITHEADERFOOTER%% Mit HeaderUndFooter
+\newcommand\MITHEADERFOOTER[1]{\ifisMITHEADERFOOTER%%
+#1%%
+\fi}%% End New Command RAHMENLOS
+\isMITHEADERFOOTERtrue%%
 
 
 \newif\ifisMITSKALENTYPEN%% Zeigt die Grafik "Skalentyhpen"
-\newcommand\MITSKALENTYPEN[1]{%%
-{%%
-\ifisMITSKALENTYPEN{#1}%%
-\fi%%
-}}%% End New Command BREITERRAHMEN
+\newcommand\MITSKALENTYPEN[1]{\ifisMITSKALENTYPEN%%
+#1%%
+\fi}%% End New Command MITSKALENTYPEN
 \isMITSKALENTYPENfalse%%
 
-\newif\ifisMITSEITENNUMMERN%% Zeige Seitennnummern
-\newcommand\MITSEITENNUMMERN[1]{%%
-{%%
-\ifisMITSEITENNUMMERN{#1}%%
-\fi%%
-}}%% End New Command BREITERRAHMEN
-\isMITSEITENNUMMERNtrue%%
-
-
 \newif\ifisFAKTORAQ%% Formal mit a * q^t
-\newcommand\FAKTORAQ[1]{%%
-{%%
-\ifisFAKTORAQ{#1}%%
-\fi%%
-}}%% End New Command BREITERRAHMEN
+\newcommand\FAKTORAQ[1]{\ifisFAKTORAQ%%
+#1%%
+\fi}%% End command FAKTORAQ
 \isFAKTORAQtrue%%
 
 \newif\ifisFAKTORBA%% Formel mit b * a^t
-\newcommand\FAKTORBA[1]{%%
-{%%
-\ifisFAKTORBA{#1}%%
-\fi%%
-}}%% End New Command BREITERRAHMEN
+\newcommand\FAKTORBA[1]{\ifisFAKTORBA%%
+#1%%
+\fi}%% End New Command FAKTORBA
 \isFAKTORBAfalse%%
 
 
 \newif\ifisMITSIGNIFIKANTENSTELLEN%% Kapitel Signifikante Stellen mitnehmen
-\newcommand\MITSIGNIFIKANTENSTELLEN[1]{%%
-{%%
-\ifisMITSIGNIFIKANTENSTELLEN{#1}%%
-\fi%%
-}}%% End New Command MITSIGNIFIKANTENSTELLEN
+\newcommand\MITSIGNIFIKANTENSTELLEN[1]{\ifisMITSIGNIFIKANTENSTELLEN%%
+#1%%
+\fi}%% End New Command MITSIGNIFIKANTENSTELLEN
 \isMITSIGNIFIKANTENSTELLENfalse%%
 
 
 \newif\ifisSCHWARZETITEL%% Titel schwarz statt BBW Grün 
-\newcommand\SCHWARZETITEL[1]{%%
-{%%
-\ifisSCHWARZETITEL{#1}%%
-\fi%%
-}}%% End New Command MITSIGNIFIKANTENSTELLEN
+\newcommand\SCHWARZETITEL[1]{\ifisSCHWARZETITEL%%
+#1%%
+\fi}%% End New Command SCHWARZETITEL
 \isSCHWARZETITELtrue%%
 
+
 \newif\ifisALLELOGGESETZE%% Formal mit a * q^t
-\newcommand\ALLELOGGESETZE[1]{%%
-{%%
-\ifisALLELOGGESETZE{#1}%%
-\fi%%
-}}%% End New Command BREITERRAHMEN
+\newcommand\ALLELOGGESETZE[1]{\ifisALLELOGGESETZE%%
+#1%%
+\fi}%% End New Command BREITERRAHMEN
 \isALLELOGGESETZEfalse%%
 
 
 %% Christian Hersberger Spezialwünsche
-\newif\ifisHECH
-\newcommand\HECH[1]{%%
-{%%
-\ifisHECH{#1}%%
-\fi%%
-}}%% End New Command HECH
+\newif\ifisHECH%%
+\newcommand\HECH[1]{\ifisHECH%%
+#1%%
+\fi}%% End New Command HECH
 \isHECHfalse%
+

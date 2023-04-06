@@ -8,39 +8,39 @@
 \input{IFCOMMANDS.sty}
 \input{VERSION.sty}
 
-%% Footer und Header ganz unterdrücken:
-%\newcommand{\headerUndFooterDieseSeite}{}
-%\newcommand{\geometrieErsteSeite}{}
-%% Sollten Header und Footer unterdrückt werden, einfach die folgende
-%% Zeile nicht als Kommentar lassen: (empty= leer, fncy = fancy)
-
 
 \newcommand{\versionsDatumFoSa}{2023-04-06}
-
-%% ID (ca. alle jahre), Subversion: Grössere Änderungen, Revision: Jede
-%% Umstellung/Korrektur/Typos
 \newcommand{\versionIdSubRev}{0.4.3}
-
-
 \newcommand{\versionsnummerFoSa}{\versionsDatumFoSa{} \versionIdSubRev}
 
 
 \input{bbwLayoutPage}
 
 
-\BREITERRAHMEN{\renewcommand{\metaHeaderLine}{Formelsammlung (GESO \noTRAINER{2023}\TRAINER{\versionsnummerFoSa{}} BMS Winterthur)}}
-\RAHMENLOS{\renewcommand{\metaHeaderLine}{}}
+\MITHEADERFOOTER{\renewcommand{\metaHeaderLine}{Formelsammlung (GESO \noTRAINER{2023}\TRAINER{\versionsnummerFoSa{}} BMS Winterthur)}}
+\SCHMALERRAHMEN{\renewcommand{\metaHeaderLine}{}}
 
-\newcommand{\geometrieErsteSeite}{\newgeometry{left=3mm,right=3mm,top=3mm,bottom=3mm}}
 
-\BREITERRAHMEN{\renewcommand{\geometrieErsteSeite}{\newgeometry{left=7mm,right=7mm,top=7mm,bottom=7mm}}}
-\RAHMENLOS{\renewcommand{\geometrieErsteSeite}{\newgeometry{left=3mm,right=3mm,top=3mm,bottom=3mm}}}
+\newcommand{\geometrieErsteSeite}{}
 
+\MITHEADERFOOTER{
+\renewcommand{\geometrieErsteSeite}{\newgeometry{left=7mm,right=7mm,top=22mm,bottom=15mm}}}
+\SCHMALERRAHMEN{
+\renewcommand{\geometrieErsteSeite}{\newgeometry{left=3mm,right=3mm,top=2mm,bottom=4mm}}}
+
+
+%%\fancyhf[LE,FLO,FRE,FRO]{}%% Überscrheibe Titel
+%%\MITHEADERFOOTER{\fancyhf[LE,FLO,FR]{Seite \thepage{}}}%% Überscrheibe Titel
 
 \newcommand{\headerUndFooterDieseSeite}{%%
-\RAHMENLOS{\thispagestyle{empty}}%%
-\BREITERRAHMEN{\thispagestyle{fancy}\fancyhf[FC]{Seite \thepage{}}}%%
+\SCHMALERRAHMEN{ \thispagestyle{empty} }%%
+\MITHEADERFOOTER{ \thispagestyle{fancy}
+                \fancyhf[FC]{Seite \thepage{}} \fancyhf[FR]{}}%%
 }%%
+
+
+\newcommand{\forceCB}{\vfill\null\columnbreak\headerUndFooterDieseSeite{}}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -49,17 +49,9 @@
 
 \usepackage{makecell}
 
-%\renewcommand{\shortAuthor}{fp he @ bbw.ch [\versionsnummerFoSa{}]}
-\renewcommand{\shortAuthor}{}
-
-%% Falls ohne Autor in der Fußzeile:
-%%\renewcommand{\shortAuthor}{}
-
+\renewcommand{\shortAuthor}{fp he @ bbw.ch [\versionsnummerFoSa{}]}
 
 \renewcommand{\arbeitsblattTitel}{Formelsammlung --- gesundheitlich-soziale BM\TRAINER{ (V \versionIdSubRev)}}
-
-%\titlespacing*{\section}{0pt}{0.1\baselineskip}{0.1\baselineskip}
-%\titlespacing*{\subsection}{0pt}{0.1\baselineskip}{0.1\baselineskip}
 
 %% Millimeterpapier (2.8mm) für Notizen \mmPap
 \newcommand{\mmPap}[1]{\mmPapierZwei{#1}{8.4}}
@@ -69,47 +61,18 @@
 
 %%\definecolor{FarnFarbe}{HTML}{4F8F00}
 
-%%% MODERN, falls Rezepte, Gesetze und Definitionen, wie im Marthaler
-%%% verwendet werden sollten:
-\definecolor{none}{HTML}{eeeeee}
-\renewcommand{\rmdefault}{phv} % Arial
-\renewcommand{\sfdefault}{phv} % Arial
-\definecolor{fsgray}{HTML}{eeeeee}
-\renewcommand{\rezeptFarbe}{none}
-%%\renewcommand{\definitionFarbe}{fsgray}
-\renewcommand{\gesetzFarbe}{none}
-\renewcommand{\beispielFarbe}{none}
-\renewcommand{\bemerkungFarbe}{none}
-%%% END MODERN
+%%\renewcommand{\arbeitsblattHeader}{}
 
 
-%% Benutze «\columnbreak»
-%% für harten Break:
-%% Force column-break
-\newcommand{\forceCB}{\vfill\null\columnbreak}
 
-\renewcommand{\arbeitsblattHeader}{}
-
-%% Nur leere Seiten mit Seitennummer. Keine Titelzeile für mehr Platz.
-\fancyhf[LE,FLO,FRE,FRO]{}%% Überscrheibe Titel
-%\fancyhf[HL]{}
-%\fancyhf[HC]{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\SCHWARZETITEL{\definecolor{titelFarbe}{rgb}{0,0,0}}%%
+
 %% Titel schwarz, nicht bbw Grün
 \begin{document}%%
-
-\SCHWARZETITEL{
-isswarte
-\definecolor{titelFarbe}{rgb}{0,0,0}
-}%%
-
-tests:
-\SCHWARZETITEL{st}
-\BREITERRAHMEN{br}
-\RAHMENLOS{rl}
 
 
 \geometrieErsteSeite{}
@@ -126,9 +89,6 @@ tests:
 
 \begin{multicols}{2}%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%               Zahlen / Runden                      %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \section*{Dezimalzahlen}
@@ -245,7 +205,9 @@ $$4b^2 -12bc + 9c^2=(2b-3c)^2$$
 $$x^2+2x-15 = (x+5)(x-3)$$
 
 \end{enumerate}
-\forceCB{}%%
+%%%\forceCB{}%%
+
+
 \headerUndFooterDieseSeite{}
 
 \subsection*{Summenzeichen}
@@ -365,7 +327,7 @@ $$\log_{\color{farnFarbe}b}({\color{red}a}) = \frac{\lg({\color{red}a})}{\lg({\c
 \end{tcolorbox}%
 %
 %%\RLP{\forceCB{}}%%
-\forceCB{}%%
+%%\forceCB{}%%
 \headerUndFooterDieseSeite{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -461,7 +423,8 @@ Die Lösung ist ein geordnetes Zahlenpaar:
 $$\mathbb{L}_{(x | y)} = \{(8 | -3)\}$$
 
 
-\forceCB
+%%\forceCB
+
 \headerUndFooterDieseSeite{}
 
 \subsection*{Substitution}
@@ -517,7 +480,7 @@ $$p = 2.5\% \Longleftrightarrow{} a = 1.025$$
 $$p = -3\% \Longleftrightarrow{}  a = 0.97 $$
 
 
-\forceCB
+%%\forceCB
 
 \headerUndFooterDieseSeite{}
 
@@ -551,7 +514,9 @@ Steigung:
 Zwei Geraden sind \textbf{parallel}, wenn ihre Steigungen gleich sind.
 
 $b$ = $y$-Achsenabschnitt (=Ordinatenabschnitt)
-\forceCB
+
+%%\forceCB
+
 \headerUndFooterDieseSeite{}
 
 \subsubsection*{Horizontale Gerade}
@@ -654,7 +619,7 @@ $k$ ungerade: Punktsymmetrisch (Ursprung $O=(0|0)$)
 
 
 %%\hrulefill  
-\forceCB
+%%\forceCB
 \headerUndFooterDieseSeite{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -745,7 +710,7 @@ $$y=a\cdot{}e^{bx}$$}
 \FAKTORAQ{$2\cdot{}a = f(t) = a\cdot{}q^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t = \tau\cdot{}\log_q(2)$}
 
 %%\mmPap{5.6}%
-\forceCB%
+%%\forceCB%
 \headerUndFooterDieseSeite{}
 
 
@@ -838,7 +803,7 @@ wurde).
 Maximum bzw. Minimum sind höchste bzw. kleinste Datenwerte: Die Ausreisser
 zählen mit!
 
-\RLP{\forceCB}%%
+%%\RLP{\forceCB}%%
 \headerUndFooterDieseSeite{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
@@ -886,7 +851,7 @@ weiter ins Extreme bewegt, so sprechen wir von einem \textbf{robusten} Mass.
 %
 \headerUndFooterDieseSeite{}
 
-\RLP{\forceCB}%
+%%\RLP{\forceCB}%
 \headerUndFooterDieseSeite{}
 
 \subsection*{Diagramme}
@@ -925,7 +890,7 @@ $p_i = f_i\cdot{}100\%$ &$=$& prozentuale Häufigkeit%%\\
 
 \headerUndFooterDieseSeite{}
 
-\RLP{\forceCB}
+%%\RLP{\forceCB}
 
 \headerUndFooterDieseSeite{}
 
@@ -1006,7 +971,7 @@ Möglichkeiten. Dies ist auf beliebig viele Stufen verallgemeinerbar.
 
 %%\bbwCenterGraphic{3cm}{img/KombinatorikMultiplikation.pdf}
 %%\TRAINER{Ersetze «Ein:e Schüler:in» durch «Andrea»}
-\forceCB
+%%\forceCB
 \subsubsection*{Permutationen (Sitzordnungen)}
 
 Bei $n$ Elementen gibt es $n!$ Permutationen (=Vertauschungen):
@@ -1076,7 +1041,7 @@ Es gilt $A \cup \overline{A} = \Omega$
 Ergebnis aus $\Omega$. Beispiel: $E_1$ = Wirf eine \textbf{Eins}: $E_1
 = \left\{\epsdice{1}\right\}$.
 
-\forceCB
+%%\forceCB
 
 
 \subsection*{Laplace-Wahrscheinlichkeit}
@@ -1087,7 +1052,7 @@ $E$ wie folgt zu berechnen:
 $$P(E) = \frac{\textrm{Anzahl Ergebnisse in
 }E}{\textrm{Anzahl Ergebnisse in }\Omega}$$
 
-\forceCB
+%%\forceCB
 \subsubsection*{Baumdiagramme}
 Bsp.: Zwei Mal eine \textit{unfaire} Münze werfen
 \bbwCenterGraphic{75mm}{img/WahrscheinlichkeitBaumdiagramm.pdf}
@@ -1139,7 +1104,7 @@ $p$ = Trefferwahrscheinlichkeit\\
 Taschenrechner: \textbf{\texttt{binomialcdf}}
 \end{tcolorbox}
 
-\forceCB{}
+%%\forceCB{}
 
 \subsection*{Lottomodell}
 \subsubsection*{Hypergeometrische Verteilung}
@@ -1204,7 +1169,7 @@ Gegenereignis von «minimal 4 Mal» = «maximal 3 Mal».
 
 \headerUndFooterDieseSeite{}
 
-\forceCB{}
+%%\forceCB{}
 \subsection*{Zufallsgrössen, Zufallsvariable $\mathbf{X}$}
 \headerUndFooterDieseSeite{}
 
@@ -1230,7 +1195,7 @@ Zufallsgrösse. $p_i$ = Wahrscheinlichkeit  $P(X=x_i)$\\
  \hline
  \end{tabular}
 
-\forceCB{}
+%%\forceCB{}
 
 \subsection*{Vierfeldtafeln}
 Vierfeld-Tafeln=Kontingenztafeln mit 4 Feldern.

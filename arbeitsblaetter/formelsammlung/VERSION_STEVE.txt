@@ -1,7 +1,6 @@
 %%
 %% Steve Deubelbeiss
 
-%%\isRLPtrue
 \isHECHtrue%%
 \isRLPfalse%%
 \isMITSIGNIFIKANTENSTELLENtrue%%
@@ -9,5 +8,5 @@
 \isFAKTORAQtrue%%
 \isFAKTORBAfalse%%
 \isALLELOGGESETZEtrue%%
-\isBREITERRAHMENfalse%%
-\isRAHMENLOStrue%%
+\isSCHMALERRAHMENtrue%%
+\isMITHEADERFOOTERfalse%%

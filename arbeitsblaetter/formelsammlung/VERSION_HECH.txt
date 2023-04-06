@@ -9,4 +9,3 @@
 \isFAKTORAQfalse%%
 \isFAKTORBAtrue%%
 \isALLELOGGESETZEtrue%%
-\isBREITERRAHMENtrue%%
