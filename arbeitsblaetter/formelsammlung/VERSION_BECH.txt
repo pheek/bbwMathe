@@ -1,6 +1,8 @@
 %%
 %% Christoph Benz
 
+\renewcommand{\versionMANDANT}{(BECH)}
+
 %% Benutzt DEFAULT (RLP)
 %% Änderungen sind hier möglich S. DEST/HECH/GRPH
 

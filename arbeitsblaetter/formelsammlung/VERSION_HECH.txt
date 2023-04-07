@@ -3,6 +3,8 @@
 
 \newcommand{\versionHECH}
 
+\renewcommand{\versionMANDANT}{(HECH)}
+
 \isRLPfalse%%
 \isMITSIGNIFIKANTENSTELLENtrue%%
 \isMITSKALENTYPENtrue%%

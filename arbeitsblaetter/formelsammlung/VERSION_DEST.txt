@@ -2,6 +2,7 @@
 %% Steve Deubelbeiss
 
 \newcommand{\versionDEST}{}
+\renewcommand{\versionMANDANT}{(DEST)}
 
 \isRLPfalse%%
 \isMITSIGNIFIKANTENSTELLENtrue%%

@@ -1,5 +1,7 @@
 %%
 %% Rahmenlehrplan
 
+\renewcommand{\versionMANDANT}{(Rahmenlehrplan)}
+
 \isRLPtrue%%
 \isALLELOGGESETZEtrue%%
