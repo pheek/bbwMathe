@@ -1,31 +1,23 @@
+%%
+%% Diverse Flags, um die Version zu steuern.
+%% Individuelle Flags pro Lehrperson sind in den VERSION_<Kuerzel>.txt-Files
+%%
 
-%% Für Rahmenlehrplan (RLP)
-\newif\ifisRLP
-\newcommand\RLP[1]{\ifisRLP%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%        L A Y O U T   O P T I O N E N
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newif\ifisSCHWARZETITEL%% Titel schwarz statt BBW Grün 
+\newcommand\SCHWARZETITEL[1]{\ifisSCHWARZETITEL%%
 #1%%
-\fi}%% End New Command RLP
-\isRLPtrue%
+\fi}%% End New Command SCHWARZETITEL
+\isSCHWARZETITELtrue%%
 
-%% Rahmen breit = normal / schmal: Steve 
-\newif\ifisSCHMALERRAHMEN%% Rahmen 7mm statt 3mm
-\newcommand\SCHMALERRAHMEN[1]{\ifisSCHMALERRAHMEN%%
-#1%%
-\fi}%% End New Command SCHMALERRAHMEN
-\isSCHMALERRAHMENfalse%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%    O P T I O N E N   V A R I A B L E N N A M E N
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-\newif\ifisMITHEADERFOOTER%% Mit HeaderUndFooter
-\newcommand\MITHEADERFOOTER[1]{\ifisMITHEADERFOOTER%%
-#1%%
-\fi}%% End New Command RAHMENLOS
-\isMITHEADERFOOTERtrue%%
-
-
-\newif\ifisMITSKALENTYPEN%% Zeigt die Grafik "Skalentyhpen"
-\newcommand\MITSKALENTYPEN[1]{\ifisMITSKALENTYPEN%%
-#1%%
-\fi}%% End New Command MITSKALENTYPEN
-\isMITSKALENTYPENfalse%%
 
 \newif\ifisFAKTORAQ%% Formal mit a * q^t
 \newcommand\FAKTORAQ[1]{\ifisFAKTORAQ%%
@@ -39,32 +31,50 @@
 \fi}%% End New Command FAKTORBA
 \isFAKTORBAfalse%%
 
+%% Für Rahmenlehrplan (RLP)
+\newif\ifisRLP
+\newcommand\RLP[1]{\ifisRLP%%
+#1%%
+\fi}%% End New Command RLP
+\isRLPtrue%
 
-\newif\ifisMITSIGNIFIKANTENSTELLEN%% Kapitel Signifikante Stellen mitnehmen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%    I n h a l t s  -  O P T I O N E N
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Zeigt die Grafik "Skalentypen" bei Datenanalyse
+\newif\ifisMITSKALENTYPEN%%
+\newcommand\MITSKALENTYPEN[1]{\ifisMITSKALENTYPEN%%
+#1%%
+\fi}%% End New Command MITSKALENTYPEN
+\isMITSKALENTYPENfalse%%
+
+%% Zeigt bei Zahldarstellungen/Runden auch das Kapitel
+%% «Mit Signifikanten Stellen Runden»
+\newif\ifisMITSIGNIFIKANTENSTELLEN%%
 \newcommand\MITSIGNIFIKANTENSTELLEN[1]{\ifisMITSIGNIFIKANTENSTELLEN%%
 #1%%
 \fi}%% End New Command MITSIGNIFIKANTENSTELLEN
 \isMITSIGNIFIKANTENSTELLENfalse%%
 
-
-\newif\ifisSCHWARZETITEL%% Titel schwarz statt BBW Grün 
-\newcommand\SCHWARZETITEL[1]{\ifisSCHWARZETITEL%%
-#1%%
-\fi}%% End New Command SCHWARZETITEL
-\isSCHWARZETITELtrue%%
-
-
-\newif\ifisALLELOGGESETZE%% Formal mit a * q^t
+%% Sollen ALLE drei Log-Gesetze gezeigt werden, dann TRUEN
+%% Ansonsten werden nur die im Rahmenlehrplan geforderten
+%% dargestellt
+\newif\ifisALLELOGGESETZE%%
 \newcommand\ALLELOGGESETZE[1]{\ifisALLELOGGESETZE%%
 #1%%
-\fi}%% End New Command BREITERRAHMEN
+\fi}%% End New Command ALLE LOG GESETZE
 \isALLELOGGESETZEfalse%%
 
-
-%% Christian Hersberger Spezialwünsche
-\newif\ifisHECH%%
-\newcommand\HECH[1]{\ifisHECH%%
+%%
+%% DEfinition, was bei statistischen Variablen ROBUST sein soll.
+%%
+\newif\ifisROBUSTDEFINITION%%
+\newcommand\ROBUSTDEFINITION[1]{\ifisROBUSTDEFINITION%%
 #1%%
-\fi}%% End New Command HECH
-\isHECHfalse%
+\fi}%% End New Command ROBUSTDEFINITION
+\isROBUSTDEFINITIONtrue%%
+
+
+
 

@@ -1,0 +1,8 @@
+%%
+%% Steve Deubelbeiss
+
+\newcommand{\versionDEST}{}
+
+\isRLPfalse%%
+\isMITSIGNIFIKANTENSTELLENtrue%%
+\isALLELOGGESETZEtrue%%

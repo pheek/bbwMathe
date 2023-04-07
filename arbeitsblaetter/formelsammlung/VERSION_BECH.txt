@@ -1,5 +1,9 @@
 %%
 %% Christoph Benz
 
-\isFAKTORAQfalse%%
-\isFAKTORBAtrue%%
+%% Benutzt DEFAULT (RLP)
+%% Änderungen sind hier möglich S. DEST/HECH/GRPH
+
+%% Test: Habe alle Log-Gesetze auf TRUE gesetzt
+
+\isALLELOGGESETZEtrue%%

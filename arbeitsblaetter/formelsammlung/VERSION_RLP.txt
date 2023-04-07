@@ -1,8 +1,5 @@
 %%
 %% Rahmenlehrplan
 
-\isHECHfalse%%
 \isRLPtrue%%
-\isFAKTORAQtrue%%
-\isFAKTORBAfalse%%
 \isALLELOGGESETZEtrue%%

@@ -1,8 +1,8 @@
 %%
 %% Hersberger Christian
 
-\isRLPfalse%%
-\isHECHtrue%%
+\newcommand{\versionHECH}
+
 \isRLPfalse%%
 \isMITSIGNIFIKANTENSTELLENtrue%%
 \isMITSKALENTYPENtrue%%

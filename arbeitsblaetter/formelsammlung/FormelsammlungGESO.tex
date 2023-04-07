@@ -10,33 +10,32 @@
 \input{VERSION.sty}
 
 
-\newcommand{\versionsDatumFoSa}{2023-04-06}
-\newcommand{\versionIdSubRev}{0.4.3}
+\newcommand{\versionsDatumFoSa}{2023-04-07}
+\newcommand{\versionIdSubRev}{0.5.0}
 \newcommand{\versionsnummerFoSa}{\versionsDatumFoSa{} \versionIdSubRev}
 
 \input{bbwLayoutPage}
 
-\MITHEADERFOOTER{\renewcommand{\metaHeaderLine}{Formelsammlung --- gesundheitlich-soziale BM}}%% END HEADERFOOTER
-%%{Formelsammlung (GESO \noTRAINER{2023}\TRAINER{\versionsnummerFoSa{}} BMS Winterthur)}}
-\SCHMALERRAHMEN{\renewcommand{\metaHeaderLine}{}}
-
 \newcommand{\geometrieErsteSeite}{}
 
-\MITHEADERFOOTER{
-\renewcommand{\geometrieErsteSeite}{\newgeometry{left=7mm,right=7mm,top=22mm,bottom=15mm}}}
-\SCHMALERRAHMEN{
-\renewcommand{\geometrieErsteSeite}{\newgeometry{left=3mm,right=3mm,top=2mm,bottom=4mm}}}
-
+\ifdefined\versionDEST%%
+\renewcommand{\metaHeaderLine}{Formelsammlung --- gesundheitlich-soziale BM}%% END HEADERFOOTER
+\renewcommand{\geometrieErsteSeite}{\newgeometry{left=3mm,right=3mm,top=2mm,bottom=4mm}}
+\else
+\renewcommand{\metaHeaderLine}{}
+\renewcommand{\geometrieErsteSeite}{\newgeometry{left=7mm,right=7mm,top=22mm,bottom=15mm}}
+\fi%% END version DEST
 
 %%\fancyhf[LE,FLO,FRE,FRO]{}%% Überscrheibe Titel
 %%\MITHEADERFOOTER{\fancyhf[LE,FLO,FR]{Seite \thepage{}}}%% Überscrheibe Titel
 
 \newcommand{\headerUndFooterDieseSeite}{%%
-\SCHMALERRAHMEN{ \thispagestyle{empty} }%%
-\MITHEADERFOOTER{ \thispagestyle{fancy}
-                \fancyhf[HR]{Seite \thepage{}} \fancyhf[FR]{}}%%
-}%%
-
+\ifdefined\versionDEST%%
+\thispagestyle{empty}%%
+\else
+\thispagestyle{fancy} \fancyhf[HR]{Seite \thepage{}} \fancyhf[FR]{}%%
+\fi%% version DEST
+}%% END newcommand "headerUndFooterDieseSeite
 
 \newcommand{\forceCB}{\vfill\null\columnbreak\headerUndFooterDieseSeite{}}
 
@@ -67,12 +66,10 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \SCHWARZETITEL{\definecolor{titelFarbe}{rgb}{0,0,0}}%%
 
 %% Titel schwarz, nicht bbw Grün
 \begin{document}%%
-
 
 \geometrieErsteSeite{}
 
@@ -334,8 +331,10 @@ $$\log_{\color{farnFarbe}b}({\color{red}a}) = \frac{\lg({\color{red}a})}{\lg({\c
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Gleichungen}
 
-\MITHEADERFOOTER{ \thispagestyle{fancy}
-                \fancyhf[HR]{Seite \thepage{}} \fancyhf[HL]{} \fancyhf[HC]{}}%%
+\thispagestyle{fancy} \fancyhf[HR]{Seite \thepage{}} \fancyhf[HL]{} \fancyhf[HC]{}
+\ifdefined\versionDEST%%
+\thispagestyle{empty}%%
+\fi%%
                 
 \subsection*{Lineare Gleichungen}
 Grundform: $ax+b=0$
@@ -500,7 +499,11 @@ $\mathcal{D}$} eindeutig ein {\color{blue}y} aus der
 \bbwCenterGraphic{8cm}{FunktionDefinition.pdf}
 
 
-\MITHEADERFOOTER{\forceCB}
+\ifdefined\versionDEST%
+\else%%
+\forceCB{}%%
+\fi%%
+
 \subsection*{Lineare Funktionen}
 
 $$f\-:\,\,\,\,\, y = f(x) = a\cdot{}x + b \RLP{\textrm{\,\,\,\,oder\,\,\,\,} f(x)=m\cdot{}x + q}$$
@@ -526,11 +529,12 @@ $g\-:\,\,\, y=ax+b$ ist horizontal, wenn die Steigung $a$ Null ist.
 
 $$g\-:\,\,\,  y=0\cdot{}x+b \Rightarrow y=b$$
 
-\HECH{
+
+\ifdefined\versionHECH%%
 \subsubsection*{Punkt- / Steigungsform}
 Gerade durch Punkt $P=(P_x|P_y)$ mit gegebener Steigung $a$:
 $$y = a(x-P_x) + P_y$$
-}
+\fi
 
 \subsection*{Achsenschnittpunkte}
 
@@ -830,7 +834,7 @@ englisch \textit{Inter Quartile Range} = \textbf{IQR} bezeichnet.
 %$s$ = Standardabweichung einer gemessenen Stichprobe
 \headerUndFooterDieseSeite{}
 
-
+\ROBUSTDEFINITION{
 \subsubsection*{Robustheit}
 Verändert sich der Wert eines statistischen Masses nicht, wenn sich ein Ausreisser
 weiter ins Extreme bewegt, so sprechen wir von einem \textbf{robusten} Mass.
@@ -847,7 +851,7 @@ weiter ins Extreme bewegt, so sprechen wir von einem \textbf{robusten} Mass.
 
  & Maximum & \\\hline
  \end{tabular}
-
+}
 %
 \headerUndFooterDieseSeite{}
 
@@ -939,8 +943,11 @@ $p_i = f_i\cdot{}100\%$ &$=$& prozentuale Häufigkeit%%\\
 %%  Diagramm. Dann im Text auch. Ausreisserschwellen ist ein Begriff von
 %%  Frommenwiler, nicht von Marthaler.}%% END TRAINER
 Schritte zum Boxplot:\\
-Fühler (Whisker) werden auf max. $1.5\cdot\textrm{IQR}$ begrenzt ({\color{blue} Ausreisserschwellen blau})\HECH{,
-danach nach \textit{\color{farnFarbe}innen} gehen}: Fühler sind die von der Box
+Fühler (Whisker) werden auf max. $1.5\cdot\textrm{IQR}$ begrenzt ({\color{blue} Ausreisserschwellen blau})
+\ifdefined\versionHECH%%
+danach nach \textit{\color{farnFarbe}innen} gehen
+\fi%%
+: Fühler sind die von der Box
 entferntesten Nicht-Ausreisser ({\color{farnFarbe}grün}). Ausreisser
 ({\color{red} rot}) werden markiert.
 \bbwCenterGraphic{18cm}{boxplotRLP.png}
@@ -1325,7 +1332,8 @@ Eigene Notizen\\
 \vspace{5mm}
 
 Fehler gefunden? \texttt{philipp.freimann@bbw.ch / christian.hersberger@bbw.ch}
-%%v 0.0.29 DRAFT 2021-06-22 fp)}
+
+\tiny{\versionsnummerFoSa}
 
 \TRAINER{
 {\footnotesize Quelltext dieser Formelsammlung:\\
