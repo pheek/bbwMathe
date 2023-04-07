@@ -34,10 +34,11 @@ cp -f ./taschenrechner/tr_ti30_geso_wichtige_befehle/TR_TI30_GESO_Wichtige_Befeh
 
 echo "copying Formelsammlung"
 GESO_BBW_FS_DIR="${BBW_WEBDAV_PATH}/3_Pruefungen/e_Formelsammlungen/GESO/Formelsammlung_BBW/daily/"
-cp -f ./formelsammlung/FormelsammlungGESO_FP.pdf  "${GESO_BBW_FS_DIR}FormelsammlungGESO_Daily.pdf"
-cp -f ./formelsammlung/FormelsammlungGESO_BECH.pdf  "${GESO_BBW_FS_DIR}FormelsammlungGESO_Daily_bech.pdf"
-cp -f ./formelsammlung/FormelsammlungGESO_HECH.pdf  "${GESO_BBW_FS_DIR}FormelsammlungGESO_Daily_hech.pdf"
-cp -f ./formelsammlung/FormelsammlungGESO_RLP.pdf  "${GESO_BBW_FS_DIR}FormelsammlungGESO_Daily_rlp.pdf"
+cp -f ./formelsammlung/FormelsammlungGESO_RLP.pdf  "${GESO_BBW_FS_DIR}FormelsammlungGESO_Daily.pdf"
+##cp -f ./formelsammlung/FormelsammlungGESO_RLP.pdf  "${GESO_BBW_FS_DIR}FormelsammlungGESO_Daily_RLP.pdf"
+cp -f ./formelsammlung/FormelsammlungGESO_GRPH.pdf  "${GESO_BBW_FS_DIR}FormelsammlungGESO_Daily_GRPH.pdf"
+cp -f ./formelsammlung/FormelsammlungGESO_BECH.pdf  "${GESO_BBW_FS_DIR}FormelsammlungGESO_Daily_BECH.pdf"
+cp -f ./formelsammlung/FormelsammlungGESO_HECH.pdf  "${GESO_BBW_FS_DIR}FormelsammlungGESO_Daily_HECH.pdf"
 cp -f ./formelsammlung/FormelsammlungGESO_STEVE.pdf  "${GESO_BBW_FS_DIR}FormelsammlungGESO_Daily_DEST.pdf"
 
 

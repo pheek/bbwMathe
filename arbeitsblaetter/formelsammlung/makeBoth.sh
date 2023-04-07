@@ -15,6 +15,12 @@ mv FormelsammlungGESO_GESO.pdf FormelsammlungGESO_HECH.pdf
 cp VERSION_DEST.txt VERSION.sty
 . ./superMakeBoth.sh
 mv FormelsammlungGESO_GESO.pdf FormelsammlungGESO_DEST.pdf
+#
+# Spezialwunsch steve: 4 a6 pro a4
+# 
+./mkSteve.sh
+mv steve.pdf FormelsammlungGESO_DEST.pdf
+
 
 # Benz Christoph (BECH)
 cp VERSION_BECH.txt VERSION.sty
