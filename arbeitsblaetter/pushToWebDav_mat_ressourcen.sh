@@ -1,7 +1,6 @@
 #!/usr/bin/bash
 ## Push All Generated Skripts to Webdav
 
-
 ## Finde lehrperson/fp
 OLAT_MOUNT_POINTS=`mount | grep olat | awk '{print $3}'`
 
@@ -20,26 +19,23 @@ BBW_WEBDAV_PATH=/mnt/${BBW_WEBDAV_PATH}
 
 echo "pushing files into subdirectories 6_MAT_RESSOURCEN : ${BBW_WEBDAV_PATH}..."
 
-
 echo "copying Taschenrechner (TALS)"
 cp -f ./taschenrechner/tr_nspire_tals_einfuehrung/TR_NSPIRE_TALS_Einfuehrung_TALS.pdf "${BBW_WEBDAV_PATH}/5_Buecher_Lehrmittel_Taschenrechner/Taschenrechner/TI Nspire CX CAS/TR_NSPIRE_TALS_Einfuehrung_Schueler.pdf"
 cp -f ./taschenrechner/tr_nspire_tals_einfuehrung/TR_NSPIRE_TALS_Einfuehrung_TRAINER_TALS.pdf "${BBW_WEBDAV_PATH}/5_Buecher_Lehrmittel_Taschenrechner/Taschenrechner/TI Nspire CX CAS/TR_NSPIRE_TALS_Einfuehrung_TRAINER.pdf"
-
 
 echo "copying Taschenrechner (GESO)"
 cp -f ./taschenrechner/tr_ti30_geso_einfuehrung/TR_TI30_GESO_Einfuehrung_GESO.pdf  "${BBW_WEBDAV_PATH}/5_Buecher_Lehrmittel_Taschenrechner/Taschenrechner/TI30_PRO_MathPrint/TR_TI30_GESO_Einfuehrung_Schueler.pdf"
 cp -f ./taschenrechner/tr_ti30_geso_einfuehrung/TR_TI30_GESO_Einfuehrung_TRAINER_GESO.pdf  "${BBW_WEBDAV_PATH}/5_Buecher_Lehrmittel_Taschenrechner/Taschenrechner/TI30_PRO_MathPrint/TR_TI30_GESO_Einfuehrung_Trainer.pdf"
 cp -f ./taschenrechner/tr_ti30_geso_wichtige_befehle/TR_TI30_GESO_Wichtige_Befehle_GESO.pdf  "${BBW_WEBDAV_PATH}/5_Buecher_Lehrmittel_Taschenrechner/Taschenrechner/TI30_PRO_MathPrint/TR_TI30_GESO_Wichtige_Befehle.pdf"
 
-
 echo "copying Formelsammlung"
-GESO_BBW_FS_DIR="${BBW_WEBDAV_PATH}/3_Pruefungen/e_Formelsammlungen/GESO/Formelsammlung_BBW/daily/"
-cp -f ./formelsammlung/FormelsammlungGESO_RLP.pdf  "${GESO_BBW_FS_DIR}FormelsammlungGESO_Daily.pdf"
+GESO_BBW_FS_DIR="${BBW_WEBDAV_PATH}/3_Pruefungen/e_Formelsammlungen/GESO/Formelsammlung_BBW"
+cp -f ./formelsammlung/FormelsammlungGESO_RLP.pdf  "${GESO_BBW_FS_DIR}/daily/FormelsammlungGESO_Daily.pdf"
 ##cp -f ./formelsammlung/FormelsammlungGESO_RLP.pdf  "${GESO_BBW_FS_DIR}FormelsammlungGESO_Daily_RLP.pdf"
-cp -f ./formelsammlung/FormelsammlungGESO_GRPH.pdf  "${GESO_BBW_FS_DIR}FormelsammlungGESO_Daily_GRPH.pdf"
-cp -f ./formelsammlung/FormelsammlungGESO_BECH.pdf  "${GESO_BBW_FS_DIR}FormelsammlungGESO_Daily_BECH.pdf"
-cp -f ./formelsammlung/FormelsammlungGESO_HECH.pdf  "${GESO_BBW_FS_DIR}FormelsammlungGESO_Daily_HECH.pdf"
-cp -f ./formelsammlung/FormelsammlungGESO_STEVE.pdf  "${GESO_BBW_FS_DIR}FormelsammlungGESO_Daily_DEST.pdf"
+cp -f ./formelsammlung/FormelsammlungGESO_GRPH.pdf  "${GESO_BBW_FS_DIR}/mandanten/FormelsammlungGESO_Daily_GRPH.pdf"
+cp -f ./formelsammlung/FormelsammlungGESO_BECH.pdf  "${GESO_BBW_FS_DIR}/mandanten/FormelsammlungGESO_Daily_BECH.pdf"
+cp -f ./formelsammlung/FormelsammlungGESO_HECH.pdf  "${GESO_BBW_FS_DIR}/mandanten/FormelsammlungGESO_Daily_HECH.pdf"
+cp -f ./formelsammlung/FormelsammlungGESO_DEST.pdf  "${GESO_BBW_FS_DIR}/mandanten/FormelsammlungGESO_Daily_DEST.pdf"
 
 
 echo "copying alte Maturaaufgaben sortiert"
