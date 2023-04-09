@@ -33,7 +33,6 @@
 %%    O P T I O N E N   V A R I A B L E N N A M E N
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \newif\ifisFAKTORAQ%% Formal mit a * q^t
 \newcommand\FAKTORAQ[1]{\ifisFAKTORAQ%%
 #1%%
@@ -56,6 +55,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%    I n h a l t s  -  O P T I O N E N
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Formel Halbwertszeit auch mit Zeitintervall (Beobachtungsinervall) TAU
+\newif\ifisHALBWERTSZEITMITTAU%%
+\newcommand\HALBWERTSZEITMITTAU[1]{\ifisHALBWERTSZEITMITTAU%%
+#1%%
+\fi}%% End New Command HALBWERTSZEITMITTAU
+\isHALBWERTSZEITMITTAUfalse%%
 
 %% Zeigt die Grafik "Skalentypen" bei Datenanalyse
 \newif\ifisMITSKALENTYPEN%%

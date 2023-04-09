@@ -714,14 +714,28 @@ $$y=a\cdot{}e^{bx}$$}
 
 \hrulefill
 \subsection*{Halbwertszeit}
+\ifisHALBWERTSZEITMITTAU%%
 \FAKTORBA{$\frac12 \cdot{} b = f(t) = b\cdot{}a^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t= \tau\cdot{}\log_a\left(\frac12\right)$}
 \FAKTORAQ{$\frac12 \cdot{} a = f(t) = a\cdot{}q^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t= \tau\cdot{}\log_q\left(\frac12\right)$}
+\else
+\FAKTORBA{$\frac12 \cdot{} b = f(t) = b\cdot{}a^t\phantom{xxx}\Longrightarrow\phantom{xxx}t= \log_a\left(\frac12\right)$}
+\FAKTORAQ{$\frac12 \cdot{} a = f(t) = a\cdot{}q^t\phantom{xxx}\Longrightarrow\phantom{xxx}t= \log_q\left(\frac12\right)$}
+\fi
 
 \headerUndFooterJedeSeite{}
 
 \subsection*{Verdopplungszeit}
+\ifisHALBWERTSZEITMITTAU%%
 \FAKTORBA{$2\cdot{}b = f(t) = b\cdot{}a^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t = \tau\cdot{}\log_a(2)$}
 \FAKTORAQ{$2\cdot{}a = f(t) = a\cdot{}q^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t = \tau\cdot{}\log_q(2)$}
+\else
+\FAKTORBA{$2\cdot{}b = f(t) = b\cdot{}a^t\phantom{xxx}\Longrightarrow\phantom{xxx}t = \log_a(2)$}
+\FAKTORAQ{$2\cdot{}a = f(t) = a\cdot{}q^t\phantom{xxx}\Longrightarrow\phantom{xxx}t = \log_q(2)$}
+\fi
+
+
+
+
 
 %%\mmPap{5.6}%
 \forceCB%
