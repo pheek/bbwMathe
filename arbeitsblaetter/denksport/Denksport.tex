@@ -1,0 +1,574 @@
+\input{bbwLayoutDoc}
+
+
+
+\renewcommand{\author}{Philipp G. Freimann}
+\renewcommand{\grafikautor}{Ph. G. Freimann}
+\renewcommand{\authoremail}{philipp.freimann@bbw.ch}
+\renewcommand{\erstellungsdatum}{10. Nov. 2021}
+\renewcommand{\docversion}{2.36 \TeX}
+\renewcommand{\doctitel}{Denksportaufgaben}
+
+\renewcommand{\fachthema}{Mathematischer Denkanstoß---}
+\renewcommand{\ausrichtungAufTitelseite}{}
+
+\begin{document}
+
+\ptitlepage
+\newpage
+
+\section{Gefangene}
+\subsection{Drei Wächter}
+Ein Verließ hat zwei Türen: Die eine führt zur Freiheit, die andere an den
+Galgen. Dazwischen stehen drei Wächter. Einer, sagt immer die Wahrheit, einer
+lügt immer und der Wankelmütige sagt manchmal die Wahrheit, und manchmal
+lügt er. Es ist aber nicht bekannt, wer von den Wächtern welche beschriebene
+Eigenschaft hat.
+Ein Gefangener darf zwei beliebige Fragen stellen, um herauszufinden, wie er in
+die Freiheit gelangt. Jede der beiden Fragen darf jedoch nur einer Person
+gestellt werden. Natürlich dürfen beide Fragen auch an dieselbe Person gestellt
+werden. Es darf aber keine Frage an mehrere Personen gleichzeitig gestellt
+werden.
+\TNTeop{}
+
+
+\subsection{Was muss ein Cracker Fragen, um in die Freiheit zu gelangen?}
+
+Nachdem die acht bekanntesten Cracker endlich gefangen wurden, konnte
+ihnen die Schuld dennoch nicht nachgewiesen werden. In dubio pro reo1 hat
+sich der Richter gesagt und ihnen am Prozesstag den folgenden Vorschlag
+gemacht:
+
+\textit{«Ihr werdet in Einzelhaft gebracht. Jeder in eine eigene Zelle; in einem
+Gefängnis mit acht normalen Zellen und einer speziellen Zelle. Ihr werdet keine
+Mittel zur Kommunikation untereinander erhalten. Weder Handy, noch sonst
+was. Jeden Tag werde ich jedoch irgendeinen von Euch – ganz zufällig – für eine
+Stunde in die spezielle Zelle, die Binärzelle sperren. Darin gibt es lediglich einen
+Schalter den ihr vom Zustand 0 auf 1 oder vom Zustand 1 auf 0 umschalten
+könnt. Dies ist dann auch die einzige Information, die ihr einander hinterlassen
+dürft, bevor am nächsten Tag der nächste (oder nach dem Zufallsprinzip wieder
+ihr selbst) in die Binärzelle gebracht wird. Nach einigen Wochen werden dann –
+ganz nach meinem Auswahlprinzip – alle Acht von Euch einmal in der Binärzelle
+gewesen sein. Viele von Euch aber auch mehrfach! Kann mir einer von Euch nun
+den Tag nennen, an dem alle mindestens einmal in der Binärzelle waren, dann
+seid ihr alle frei. Ihr dürft mir auch später melden und sagen, dass der besagte
+Tag nun definitiv vorbei gewesen sei. Ihr müsst also den exakten Tag nicht
+angeben können. Wenn ihr es herausfindet, seid ihr alle frei. Meldet ihr es
+jedoch zu früh, wird das Verfahren eingestellt und ihr bleibt für den Rest eures
+Lebens hinter Gittern. Morgen beginnt das Verfahren, bis dahin könnt ihr noch
+beraten, ob ihr darauf eingehen wollt, oder ob ihr gleich für immer hinter Gitter
+wollt.»}
+
+Die Cracker beraten sich und nach einiger Zeit kommen sie zum Schluss, dass
+sie diesen Vorschlag annehmen wollen. Was haben sie sich wohl für ein
+Verfahren ausgedacht, damit sie sicher freikommen?
+
+\TNTeop{}
+
+\newpage
+\TRAINER{%% nur Trainerversion
+\subsection{Lösungsvorschlag: Drei Wächter}
+
+Die erste Frage des Gefangenen (an einen beliebigen Wächter) lautet: «Welcher
+von Deinen Kollegen lügt seltener?»
+
+\begin{itemize}
+\item Gerät der Gefangene an den Wahrheitsliebenden, so zeigt dieser diesem
+den Wankelmütigen.
+\item Gerät er an den Lügner, zeigt dieser auch den Wankelmütigen.
+\item Gerät er an den Wankelmütigen, zeigt dieser auf einen der beiden
+anderen.
+\end{itemize}
+
+In allen drei Fällen aber ist der, auf den nicht gezeigt wird auch nicht der
+Wankelmütige.
+
+Diesem dritten kann man der Gefangene also erfolgreich folgende Frage stellen:
+«Welchen Weg in die Freiheit würde mir dein Kollege, der das genaue Gegenteil
+von dir ist, zeigen?»
+
+\subsection{Lösungsvorschlag: Cracker}
+Die Cracker wählen das folgende Verfahren.
+Der erste Cracker, der in die Binärzelle geführt wird, wird zum Senior ernannt.
+(Also der am ersten Tag ausgewählte.) Der Senior schaltet \textbf{immer}, wenn er in
+die Zelle kommt, den Schalter auf 0. Ab seinem zweiten Tag in der Binärzelle
+beginnt er mit dem Zählen. Jedes Mal, wenn er in die Zelle kommt und der
+Schalter auf 1 ist, zählt der Senior für sich hoch (und schaltet dann den Schalter
+sofort wieder auf 0). Wenn er nun sieben Mal hochzählen konnte, meldet er dem
+Richter, dass nun alle Gefangenen mindestens einmal in der Binärzelle waren.
+
+Alle anderen Cracker verfahren wie folgt. Sie dürfen während der ganzen
+Gefangenschaft den Schalter in der Binärzellen nur ein einziges Mal von 0 auf 1
+umschalten. Kommen sie in die Binärzelle und der Schalter ist bereits auf 1,
+dann tun sie gar nichts. Das bedeutet nämlich, dass ein Gefangener vor ihnen
+bereits seinen «Zähler» verbraucht hat. Kommen sie jedoch in die Zelle und der
+Schalter ist auf 0, so können sie nun den Schalter auf 1 umlegen. Dies dürfen sie
+aber, wie erwähnt, während der ganzen Gefangenschaft nur ein einziges Mal
+tun. Dieses umlegen zählt nämlich ihren eigenen Besuch in der Binärzelle.
+
+Hat der Senior nun auf 7 gezählt, so ist jeder der anderen Gefangenen bereits
+einmal in der Zelle gewesen und der Senior kann dem Richter melden, dass der
+Zeitpunkt der Freilassung nun endlich gekommen sei.
+Zusatzaufgabe: Programmieren Sie dieses Verfahren, um herauszufinden, wie
+lange es im Durchschnitt braucht, bis die acht Cracker frei sind.
+}%% END TRAINER Lösungsvorschlag
+\newpage
+
+
+\section{Zwei Eimer}
+Vor einem Brunnen stehen zwei Eimer. Diese weisen keinerlei Markierungen
+auf. Einer der Eimer fasst 5 Liter, der andere fasst 7 Liter. Ziel ist es, einen (1)
+Liter abzumessen.
+
+Wie ist vorzugehen? Wer findet die Lösung, bei der am wenigsten umzuschütten
+ist?
+\TNTeop{}
+\TRAINER{%% Lösungsvorschlag nur Trainer}
+\subsection{Lösungsvorschlag: Zwei Eimer}
+
+\begin{enumerate}
+\item
+Beide Eimer leeren.
+\item
+5 Liter abmessen und
+\item
+in den (leeren) 7-Liter-Eimer füllen.
+\item
+5 Liter abmessen
+\item
+und 2 Liter in den 7-Liter-Eimer füllen. Es bleiben 3 Liter im 5-Liter-
+Eimer.
+\item
+7-Liter-Eimer leeren.
+\item
+Die 3 Liter aus dem 5-Liter-Eimer in den (leeren) 7-Liter-Eimer einfüllen.
+\item
+5-Liter-Eimer ganz auffüllen.
+\item
+4 Liter aus dem 5-Liter-Eimer in den 7-Liter-Eimer einfüllen (der ist jetzt
+voll); im 5-Liter-Eimer bleibt genau ein Liter übrig.
+\end{enumerate}
+
+Andere Variante:
+\begin{enumerate}
+\item
+Beide Eimer leeren.
+\item
+7 Liter abmessen
+\item
+in den (leeren) 5-Liter-Eimer füllen. Es bleiben 2 Liter im 7-Liter-Eimer.
+\item
+5-Liter-Eimer ausleeren.
+\item
+2 Liter aus dem 7-Liter-Eimer in den 5-Liter-Eimer umfüllen.
+\item
+7-Liter-Eimer neu füllen.
+\item
+3 Liter aus dem 7-Liter-Eimer in den 5-Liter-Eimer umfüllen (mehr hat im
+5-Liter-Eimer nicht Platz).
+\item
+5-Liter-Eimer ausleeren.
+\item
+Die 4 verbleibenden Liter aus dem 7-Liter-Eimer in den 5-Liter-Eimer
+einfüllen.
+\item
+7-Liter-Eimer wieder auffüllen.
+\item
+Ein Liter aus dem 7-Liter-Eimer in den 5-Liter-Eimer einfüllen (es bleiben
+6 Liter im 7-Liter-Eimer).
+\item 
+5-Liter-Eimer entleeren.
+\item
+5 Liter aus dem 7-Liter-Eimer in den 5-Liter-Eimer füllen. Es bleibt ein
+Liter im 7-Liter-Eimer.
+\end{enumerate}
+
+}%% END TRAINER
+\newpage
+\section{Zahlen}
+\subsection{Französischer Spion}
+Im Deutsch-Französischen Krieg 1870/71 will ein französischer Spion
+unbemerkt in eine deutsche Stadt gelangen. Die Stadt hat eine Schutzmauer
+und wird von einem Wächter bewacht. Der Franzose versteckt sich in einem
+Gebüsch und versucht herauszufinden, wie die Stadtbewohner an der Wache
+vorbeikommen.
+
+Zuerst kommt ein Bauer und der Wächter ruft fragend «8 . Der Bauer antwortet
+«4» und wird hineingelassen. Jetzt kommt eine Nonne und wird vom Wächter
+gefragt: «16»? Sie antwortet «8» und wird ebenfalls eingelassen. Jetzt kommt ein
+Mönch. Der Wächter fragt nach «28». Der Mönch antwortet «14». Auch er kann
+passieren.
+
+Jetzt glaubt unser Französische Spion das Spiel durchschaut zu haben und geht
+auf das Stadttor zu. Er wird vom Wächter nach «14» gefragt, antwortet mit «7»
+und wird noch am selben Tage exekutiert.
+
+Was hätte er auf die Frage des Wächters antworten sollen?
+
+\subsection{Falsche Rechnungen?}
+In dieselbe Kategorie geht die Aufgabe, die mir ein Kursteilnehmer per E-Mail
+zur Verfügung gestellt hat.
+
+8890 = 6
+
+6633 = 2
+
+7722 = 0 
+
+7563 = 1
+
+7387 = 2
+
+1838 = 4
+
+7237 = 0
+ 
+5656 = 2
+
+8398 = 5
+
+1386 = ???
+
+\TNTeop{}
+
+\TRAINER{%%
+\subsection{Lösungsvorschlag: Spion}
+Die Zahlen sind als Text zu lesen und nicht als Zahlenwerte oder Ziffernfolge.
+Die Zahl „acht“ hat 4 Buchstaben.
+
+„Sechzehn“ hat 8 Buchstaben.
+
+„Achtundzwanzig“ hat 14 Buchstaben.
+
+Somit hätte der Spion auf die Frage „14“ einfach 8 antworten sollen.
+
+\subsection{Lösungsvorschlag: Falsche Rechnungen}
+
+Zählen Sie einfach die Anzahl der geschlossenen Kreise. 6, 9 und 0 besitzen je
+einen Kreis, 8 besitzt 2 Kreise. (Die Aufgabe kann am besten von
+Vorschulkindern gelöst werden.)
+
+Lösung 1386 = 3
+}%% END TRAINER
+
+\newpage
+
+\section{Wiegeprobleme}
+\subsection{König}
+
+
+
+Der König treibt im ganzen Land die Steuern ein. Jeder der 100 Bürger muss
+einen Sack mit 1000 Goldmünzen abliefern. Dem König wird bekannt, dass unter
+den Bürgern ein Betrüger ist, dessen Goldmünzen gefälscht sind. Seine Münzen
+sind rein optisch von den anderen nicht zu unterscheiden, wiegen aber nur 9g,
+anstelle der gewöhnlichen 10g.
+
+Wie kann der König mit nur einem
+Wiegevorgang den Betrüger herausfinden?
+
+Bemerkung: Der König hat eine sehr
+genaue Waage, die jedoch nur ein einziges Mal funktioniert.
+
+\TNTeop{}
+
+\subsection{Karamell}
+Der Besitzer eines Krämerladens möchte Zucker pfundweise von einem bis zu
+40 Pfund abwiegen können. Er hat nur eine altmodische Waage zur Verfügung,
+bei der die abzuwiegende Menge in einer Waagschale mit den entsprechenden
+Gewichten in der anderen Schale ausbalanciert wird. Da er ein effizienter und
+sparsamer Mann ist, will er sich nur so viele Gewichte besorgen, wie unbedingt
+nötig sind, um jede Menge von einem bis zu 40 Pfund in einem einzigen
+Wiegevorgang abzuwiegen.
+
+a) Wie viele Gewichte benötigt er und wie groß sind sie, wenn sie nur auf einer
+Seite der Waage benutzt werden dürfen?
+
+b) Wie viele Gewichte sind nur noch nötig, wenn er Gewichte auf beide Schalen
+legen darf?
+\TNTeop{}
+
+\TRAINER{%%
+\subsection{Lösungsvorschlag: König}
+
+Der König nimmt vom ersten Sack 1 Münze, vom zweiten Sack 2 Münzen, vom
+dritten Sack 3 Münzen, usw. heraus. Bei 100 Säcken hat er 5050 Münzen
+herausgenommen, die somit (unterstellt keine sei gefälscht) 50.500g wiegen
+müssten. Beträgt sein Wiegeergebnis allerdings beispielsweise 34g weniger, so
+weiß er, dass der Bürger, dem er 34 Münzen aus dem Sack genommen hat der
+Betrüger ist! Denn seine Münzen sind ja 1g leichter.
+
+Quelle: \texttt{www.denksport-ecke.de}
+
+
+\subsection{Lösungsvorschlag: Karamell}
+
+(Quelle: Paul Sloane: Neue Denkpuzzles für helle Köpfe):
+Tipp: Ob Sie’s glauben oder nicht, es ist tatsächlich möglich, jedes beliebige
+Gewicht zwischen einem und 40 Pfund mit nur vier verschiedenen Gewichten
+abzuwiegen. Das setzt allerdings voraus, dass es erlaubt ist, die Gewichte in
+beide Waagschalen zu legen (Aufgabe b). Wenn Sie nur eine Waagschale für die
+Gewichte benutzen dürfen (Aufgabe a), dann brauchen Sie insgesamt 6
+Gewichte. Doch damit können Sie dann alle Gewichte von einem bis 63 Pfund
+bestimmen.
+
+a) Die Gewichte haben die Massen 1, 2, 2, 5, 10 und 20 Pfund. Alternativ: 1, 2,
+4, 8, 16 und 32 Pfund. Vorteil der 1. Variante: Gängige Zahlen sind einfacher zu
+berechnen. Vorteil 2. Variante: Sogar Gewichte bis zu 63 Pfund sind alle
+abmessbar.
+
+b) Die Massen betragen: 1, 3, 9 und 27 Pfund.
+Um Beispielsweise 16 Pfund abzuwiegen, legt der Kramer 28 (27 + 1) Pfund auf
+die eine Schale und 12 (9 + 3) Pfund auf die andere Schale: 28 – 12 ergibt 16
+Pfund: so braucht er nur noch 16 Pfund Zucker auf die zweite Schale zu kippen
+und die Waage ist im Gleichgewicht.
+}%% END TRAINER
+\newpage
+
+\section{Prozentrechnungen}
+
+
+\begin{center}\textit{«125\% der Leute können nicht Bruchrechnen. Das ist jeder vierte, nein mehr
+noch: jeder fünfte!»}\end{center}
+
+
+\subsection{Skonto}
+
+Beim Kauf ab zwei Artikeln gewährt der Verkäufer 5\% Rabatt. Bei einer
+Barzahlung gewährt er zusätzlich 3\% Skonto. Ist es nun schlauer, das Skonto
+zuerst einzufordern und dann die 5\% Rabatt oder besser zuerst die 5\% Rabatt
+und dann die 3\% Skonto?
+
+\TNTeop{}
+
+\subsection{Gemüse}
+Ein Früchte- und Gemüsehändler hatte eine Tonne (1000kg) Gemüse (z. B.
+Gurken) geerntet. Seine Messung hatte ergeben, dass die Ware zu 98\%\,
+(Gewichtsprozente) aus Wasser besteht.
+Leider konnte er das Gemüse auf dem Markt nicht sofort verkaufen, sodass es
+einige Tage liegen blieb. Als er es endlich verkaufen kann, ergibt die Messung,
+dass die Ware nur noch einen Wasseranteil von 95\% aufweist.
+Wie schwer ist die Ware nun?
+
+\TNTeop{}
+
+\subsection{Umsatzsteigerung}
+Ein Händler gibt neu einen Rabatt von 10\% auf sein Sortiment. Laut
+Branchenverband müsste der Händler nun 70\% mehr Umsatz\footnote{Umsatz = Einnahmen durch Verkauf der Ware, also Einkaufspreis + Marge.} 1 machen, wie vor
+der Reduktion, um den ursprünglichen Gewinn zu erzielen.
+Reichen diese Angaben, um die ursprüngliche Marge\footnote{Marge = Differenz von Einkaufspreis zum Verkaufspreis; m. a. W. der gesuchte
+Gewinn.} 2 zu bestimmen?
+
+\TNTeop{}
+
+
+\TRAINER{%%
+\subsection{Lösungsvorschlag: Skonto}
+
+Die Reihenfolge spielt keine Rolle, es sei denn, es werde zwischen den beiden
+Abzügen auf- oder abgerundet. Begründung: 5\% Rabatt entspricht einer
+Multiplikation mit Faktor 0.95; 3\% Skonto entspricht einem Faktor 0.97. Nun
+gilt aber
+(Preis * 0.95) * 0.97 = (Preis * 0.97) * 0.95 (Kommutativgesetz) = 0.9515
+Noch besser wäre es, vom Verkäufer direkt 8\% einzufordern, sofern er damit
+einverstanden wäre ;-)
+
+5.5. Lösungsvorschlag: Prozentrechnung
+Der einfachste Weg geht hier über den festen Bestandteil des Gemüses. Die
+erste Messung ergibt einen Wasseranteil von 98\%, das bedeutet, dass das
+Gemüse anfänglich einen Anteil von 980kg Wasser enthält: lediglich 20kg sind
+kein Wasser (also fester Bestandteil).
+Die zweite Messung ergibt einen Wasseranteil von 95\%. Das bedeutet aber, dass
+5\% fester Anteil sind. 5\% sind aber die 20kg aus der ersten Messung. Die
+Festbestandteile haben sich ja nicht geändert. Nun lautet die Aufgabe viel
+einfacher: 20kg entsprechen 5\%, wie viel sind 100%?
+Die einfache aber doch noch etwas verblüffende Antwort lautet: 400kg (wovon
+380kg Wasser sind.)
+Man könnte sich nun fragen: „Was(?), eine Abnahme von 3\% Wasser macht
+600kg aus?“ Das wäre natürlich falsch. Es werden ja eben nicht einfach 3\% des
+Wassers entzogen, sondern das Verhältnis Wasser zu Festbestandteil ändert
+sich um 3\%.
+\newpage
+
+\subsection{Lösungsvorschlag: Umsatzsteigerung}
+
+\textbf{Zeitpunkt 1 (vor dem Abschlag):}
+
+Einkaufspreis Ware vorher = EP1 = 100% = 1 (z. B. 100.- CHF)
+$$m = \text{(Aufschlags)Marge (als Faktor) vor dem Abschlag}$$
+$$\text{Verkaufspreis ursprünglich} = EP \cdot{} (1+m) = 1+m,$$
+da ich EP auf eine Einheit (EP) gesetzt hatte (\zB $100.- \cdot{} (1+m)$)
+
+
+\textbf{Zeitpunkt 2 (nach dem Abschlag, aber vor der Umsatzsteigerung):}
+
+$(1+m)\cdot{}0.9$ = Verkaufspreis nach dem Abschlag (vor der Umsatzsteigerung)
+
+$y := (1+m)\cdot{}0.9 - 1 =$ Marge nach der Reduktion (als Faktor z. B. 0.15 o. ä.)
+
+\textbf{Zeitpunkt 3 (nach der Umsatzsteigerung gegenüber Zeitpunkt 1):}
+
+$1.7(1+m)$ = Umsatzsteigerung gegenüber ursprünglichem Umsatz
+
+
+$x :=$ Zunahme im Einkauf (unbekannt) (als Faktor gegenüber dem ursprünglichen Einkaufspreis)
+
+$xy =$ Gewinnzunahme gegenüber dem Gewinn aus Zeitpunkt 2.
+
+$1+x = $neuer Einkauf (genau $EP \cdot{} (1+x)$)
+
+$1+y + x + xy =$ neuer Umsatz (Genau genommen $EP \cdot{} (1+y) + x\cdot{}EP \cdot{}(1+y)$,
+daher das $xy$)
+
+$y+xy = $neuer Gewinn (und dieser muss ja gleich der alten Marge sein $(y+xy=m)$)
+Der neue Umsatz muss nun gleich 170\% des ursprünglichen Umsatzes sein.
+
+Ergo:
+
+$$\Longrightarrow 1+x+y+xy = 1.7(1+m)$$
+
+Die drei Gleichungen nun so (1:1) in \texttt{wolframalpha.com} eintragen:
+
+wolframalpha.com -> $$\{ y=9*(1+m)/10-1, y+xy=m, 1+x+y+xy=17*(1+m)/10\}$$
+
+(die 2. Lösung $m=-1$, also die Marge = -100\% vor der Reduktion ist hier zu
+vernachlässigen, das würde bedeuten, er habe die Ware immer gratis
+abgegeben.)
+
+Frei nach Wolframalpha:
+
+* Ursprüngliche (Aufschlags)Marge: \textbf{17/63}
+
+* Neue (Aufschlags)Marge: 1/7
+
+* Einkaufszuname: 8/9
+
+PS: Natürlich müssen wir die Resultate an einem Zahlenbeispiel noch
+nachrechnen; also eine Probe machen, ob die Resultate sinnvoll sind.
+Das Gleichungssystem nicht von Hand ausrechnen: a) geht zu lange b) ist
+fehleranfällig.
+\newpage
+}%% end TRAINER
+
+
+\section{Alter}
+\subsection{Petra und Anton}
+
+Petra ist jetzt 24 Jahre alt. Sie ist doppelt so alt wie Anton war, als Petra so alt
+war, wie Anton jetzt ist.
+
+Wie alt ist Anton?
+
+
+\subsection{Du und ich}
+
+Als du so alt warst wie ich heute bin, warst du dreimal so alt wie ich. Und wenn
+ich dreimal so alt sein werde wie ich heute bin, dann sind wir zusammen genau
+ein Jahrhundert alt.
+
+Wie alt bin ich? Wie alt bist Du?
+
+
+\subsection{Aus einer Mathematikolympiade (Singapur)}
+Alice und Bob haben Zegna kennen gelernt und wollen ihren Geburtstag wissen.
+Zegna nennt den beiden zehn mögliche Daten:
+
+15. Mai, 16. Mai, 19. Mai,
+
+17. Juni, 18. Juni,
+
+14. Juli, 16. Juli,
+
+14. August, 15. August und 17. August.
+
+
+
+Zegna verrät Alice nur den Geburtsmonat und Bob nur den Tag. Dann sprechen
+die beiden miteinander.
+
+Alice sagt zu Bob: «Ich weiß nicht, wann Zegna Geburtstag hat, aber ich weiß,
+dass Du es auch nicht weißt.»
+
+Darauf erwidert Bob: «Zu Anfang wusste ich auch nicht, wann Zegna Geburtstag
+hat, aber jetzt, dank Deiner Information, weiß ich es.»
+
+Alice: «Jetzt kenne ich ihren Geburtstag auch.»
+
+Wann hat Zegna Geburtstag?
+\TNTeop{}
+
+
+\subsection{Wo ist der Vater?}
+
+Die Mutter ist um 21 Jahre älter als ihr Kind. In sechs Jahren wird dann die
+Mutter fünf mal so alt sein wie das Kind. Wo ist der Vater jetzt?
+
+\TNTeop{}
+
+\TRAINER{
+\subsection{Lösungsvorschlag: Anton und Petra}
+
+Anton ist 18. Damals in der Vergangenheit, war er halb so alt, also 12 Jahre.
+Petra war aber damals gleich alt, wie Anton heute ist:
+
+\begin{tabular}{|c|c|c|}\hline
+ & Petra & Anton\\\hline
+ Vergangenheit (war) & $x$ & 12 \\\hline
+ Gegenwart (ist) & 24 & $x$\\\hline
+ \end{tabular}
+
+Die Differenz von $x$ bis 24 muss aber gleich groß sein, wie die Differenz von 12
+zu $x$.
+
+In Formeln: $24-x = x - 12$ woraus folgt, dass $x = 18$.
+ 
+
+\subsection{Lösungsvorschlag: Ich und Du}
+
+Wieder kann die Lösung mit einer Tabelle einfach gefunden werden:
+
+\begin{tabular}{|c|c|c|}\hline
+ & du &  ich \\\hline
+war (Vergangenheit) & $3x$ & $x$ \\\hline
+ist (Gegenwart) & $5x$ & $3x$  \\\hline
+sein wird (Zukunft) & $11x$ & $9x$\\\hline
+ \end{tabular}
+ 
+11X + 9X = 100 woraus folgt, dass X = 5 ist. \textbf{«Ich bin 15, du bist 25»}
+
+\newpage
+
+\subsection{Lösungsvorschlag: Mathematikolympiade}
+
+\begin{tabular}{|c|c|c|c|c|c|c|}\hline
+       & 14. & 15. & 16. & 17. & 18. & 19.\\\hline
+
+Mai    &     & 1.  & 1.     &     &     & 1. \\\hline
+Juni   &     &     &        & 1.  & 1.  &  \\\hline
+Juli   &  2. &     & Lösung &     &     & \\ \hline
+August & 2.  & 2.  &        & 3.  &     & \\\hline
+ \end{tabular}
+
+1.: Mai und Juni fallen weg, ansonsten wüsste Alice nicht, ob es Bob weiß (18.
+Juni und 19. Mai wären eindeutig für Bob).
+
+2.: Nun weiß es Bob, somit fällt der 14. weg.
+
+3.: Da es Alice schlussendlich weiß, fällt der August weg.
+
+
+\subsection{Lösungsvorschlag: Wo ist der Vater?}
+
+Nach dem Lösen der Gleichung [$(x+21)+6 = 5·(x+6)$; $x$ = Alter des Kindes
+heute] erhalten wir, dass das Kind heute genau $-\frac34$ Jahre, also minus neun
+Monate alt ist.
+
+}%% END Trainer
+
+
+
+
+
+\end{document}
+
+
