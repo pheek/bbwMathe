@@ -554,22 +554,13 @@ $$N = {n \choose k} = \frac{n!}{k!\cdot{}(n-k)!}$$
 Am Beispiel mit den fünf Personen kann man die Formel erkennen:
 
 Es gibt insgesamt $5!$ Variationen, die fünf Personen in einer Reihe aufzustellen:
-\begin{tabular}{c|c}
-  AB&CDE\\
-  AB&CED\\
-  AB&DCE\\
-  AB&DEC\\
-  AB&ECD\\
-  AB&EDC\\\hline
-  AC&BDE\\
-  AC&BED\\
-  ... & ...\\\hline
-  BA&CDE\\
-  BA&CED\\
-  BA&DCE\\
-  ...&...\\\hline
-  ...&...\\\hline
-  ED&CBA
+\begin{tabular}{c|c||c|c||c}\hline
+  (AB) (CDE) & (BA) (CDE) & (AC) (BDE) & (CA) (BDE) & ...\\
+  (AB) (CED) & (BA) (CED) & (AC) (BED) & (CA) (BED) & ...\\
+  (AB) (DCE) & (BA) (DCE) & ... & ...       & ...\\
+  (AB) (DEC) & (BA) (DEC) & ... & ...       & \\
+  (AB) (ECD) & (BA) (ECD) & & & \\
+  (AB) (EDC) & (BA) (EDC) & & & \\\hline
 \end{tabular}
 
 \TRAINER{
@@ -579,14 +570,17 @@ Reihenfolge soll ja bei diesen Kombinationen keine Rolle spielen.
 So haben wir für die Wahl von drei Personen \zB «CDE» aus ABCDE einerseits alle Variationen
 aus CDE ($=3!$) zu viel gezählt.
 
-Ebenso haben wir die Variationen aus AB ($=2!$) doppelt gezählt.
+Das heißt: Alle Variationen der linken beiden Blöcke bezeichnen dieselbe Auswahl = dieselbe Kombination; nämlich: «AB gewählt»
+
+Ebenso haben wir die Variationen aus (AB)=(BA) ($=2!$) doppelt gezählt.
+
 }%% END TRAINER
 
 \noTRAINER{\vspace{2cm}}
 
   Somit haben wir insgesamt:
 
-\TNT{2}{$$N ={5\choose 3} = {5\choose 2} = \frac{5!}{3!\cdot{}2!} = \frac{120}{6\cdot{}2}$$}%% END TNT
+\TNT{2}{$$N = \frac{5!}{12} =  \frac{120}{6\cdot{}2}=\frac{5!}{3!\cdot{}2!} = {5\choose 3} = {5\choose 2} = $$}%% END TNT
 
 
 \begin{bemerkung}{Herleitung der Formel}{}
