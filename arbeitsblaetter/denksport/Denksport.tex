@@ -874,15 +874,163 @@ Diamanten sind, wovon er 3 behalten darf. Wieder ist die Aufteilung möglich.
 Er berechnet nun den Sachverhalt ganz allgemein.
 Bein n Kisten sind n*n*n Diamanten vorhanden, wovon er n (also ein Säcklein)
 behalten darf. Somit bleiben (n*n*n) – n Diamanten aufzuteilen.
-$$n\cdot{}n\cdot{}n – n = n \cdot{} ( n \cdot{} n – 1) = n \cdot{} (n – 1) \cdot{} (n + 1) = (n – 1) \cdot{} n \cdot{} (n + 1)$$
+$$n\cdot{}n\cdot{}n - n = n \cdot{} ( n \cdot{} n - 1) = n \cdot{} (n - 1) \cdot{} (n + 1) = (n - 1) \cdot{} n \cdot{} (n + 1)$$
 Die erste Gleichung erhält man durch ausklammern, die zweite durch die
-allgemeine Tatsache, dass $(n-1)\cdot{}(n+1)$ gerade $(n\cdot{}n – 1)$ ergibt.
+allgemeine Tatsache, dass $(n-1)\cdot{}(n+1)$ gerade $(n\cdot{}n - 1)$ ergibt.
 Eine der Zahlen aus $(n-1)$, $n$, $(n+1)$ ist nun sicher durch 3 teilbar, ebenso ist eine
 durch 2 teilbar. Somit muss das Produkt der drei Zahlen sicher immer durch 6
 teilbar sein.
 \newpage
 }%% end TRANIER
 
+
+\section{Berufe Raten}\index{Berufe raten}
+
+Fünf Männer treffen sich zum Kartenspiel: Herr Müller\index{Müller}, Herr Schmied\index{Schmied}, Herr
+Gerber\index{Gerber}, Herr Bäcker\index{Bäcker} und Herr
+Bauer\index{Bauer!berufe Raten}. Jeder der fünf hat einen durch ihre Namen
+angegebenen Beruf, jedoch hat keiner den Beruf, der seinem Namen entspricht.
+Herr Müller gibt dem Bauern die Karten zum Austeilen, während der Bäcker für
+sich und den Pfeife rauchenden Herrn Gerber Bier bestellt; der fünfte, Herr
+Schmied, raucht die Zigarre, die ihm der Müller geschenkt hat. Zu wem gehört
+welcher Beruf? (Der Dorfpolizist ist bei dem Versuch, die Aufgabe ohne
+Tabellentechnik zu lösen, trübsinnig geworden. Er gehört also nicht zu dieser
+Geschichte.)
+
+\TNTeop{}
+
+
+\TRAINER{
+\subsection{Lösungsvorschlag: Berufe Raten}
+
+\begin{tabular}{|c|c|c|c|c|c|}\hline
+           & Müller & Schmied & Gerber & Bäcker & Bauer \\\hline
+ Hr Müller &  1     &    x    &   10   &   7    &   2   \\\hline 
+ Hr Schmied&  9     &    1    &    b   &   4    &   4   \\\hline 
+ Hr Gerber &  x     &   11    &   1    &   4    &   5   \\\hline 
+ Hr Bäcker &  6     &    6    &   6    &   t    &   x   \\\hline 
+ Hr Baure  &  8     &    8    &   8    &   x    &   1   \\\hline 
+ \end{tabular} 
+
+\begin{tabular}{|c|c|c|c|c|c|}\hline
+           & Müller & Schmied & Gerber & Bäcker & Bauer \\\hline
+ Hr Müller &        &         &        &        &       \\\hline 
+ Hr Schmied&        &         &        &        &       \\\hline 
+ Hr Gerber &        &         &        &        &       \\\hline 
+ Hr Bäcker &        &         &        &        &       \\\hline 
+ Hr Baure  &        &         &        &        &       \\\hline 
+ \end{tabular} 
+
+\begin{enumerate}
+
+\item
+Keiner hat seinen dem Namen zugeordneten Beruf
+\item
+Hr. Müller ist nicht Bauer («Herr Müller gibt dem Bauern die Karten»)
+\item
+Herr Gerber ist nicht Bäcker(Der Bäcker bestellt für Herrn Gerber Bier)
+\item 
+ Alle außer Herr Schmied sind schon vorgekommen (der fünfte), somit ist
+Herr Schmied nicht Bauer und nicht Bäcker.
+\item
+Herr Müller gibt die Karten zum Austeilen nicht Herrn Gerber (ansonsten
+wären „Herr Müller“, „Herr Gerber“, der Bauer, der Bäcker und Herr
+Schmied nicht 5 Personen).
+\item
+Logische Konklusion: Jeder hat nur einen Beruf.
+\item
+Herr Müller kann nicht Bäcker sein (gleiche Überlegung wie in Punkt 5).
+\item
+siehe 6
+\item
+Schmied beschenkt sich nicht selbst und ist somit nicht Müller
+ \item
+ .siehe 6
+ \item
+ .siehe 6
+\end{enumerate}
+
+\newpage
+
+In die gleiche Kategorie gehört das „Einstein-Rätsel“, auf dessen Lösung ich hier
+verzichte.
+
+http://www.adventure-yachting.de/Mathematik/einsteinraetsel.htm
+
+http://www.raetselstunde.de/logical/einstein-raetsel.html
+
+Einstein Rätsel:
+
+Aufgabenstellung «Wem gehört der Fisch?»:
+
+\begin{enumerate}
+\item
+ Es gibt fünf Häuser mit je einer anderen Farbe.
+ \item
+  In jedem Haus wohnt eine Person einer anderen Nationalität
+  \item
+   Jeder Hausbewohner bevorzugt ein bestimmtes Getränk,
+raucht eine bestimmte Zigarettenmarke und hält ein
+bestimmtes Haustier.
+\item
+ Keine der fünf Personen trinkt das gleiche Getränk, raucht
+die gleichen Zigaretten oder hält das gleiche Tier wie einer
+seiner Nachbarn.
+\end{enumerate}
+
+Frage: Wem gehört der Fisch?
+
+Ihre Hinweise:
+
+\begin{itemize}
+\item Der Brite lebt im roten Haus
+\item Der Schwede hält einen Hund
+\item Der Däne trinkt gerne Tee
+\item Das grüne Haus steht links vom weißen Haus
+\item Der Besitzer des grünen Hauses trinkt Kaffee
+\item Die Person, die Pall Mall raucht, hält einen Vogel
+\item Der Mann, der im mittleren Haus wohnt, trinkt Milch
+\item Der Besitzer des gelben Hauses raucht Dunhill
+\item Der Norweger wohnt im ersten Haus
+\item Der Marlboro-Raucher wohnt neben dem, der eine Katze hält
+\item Der Mann, der ein Pferd hält, wohnt neben dem, der Dunhill raucht
+\item Der Winfield-Raucher trinkt gerne Bier
+\item Der Norweger wohnt neben dem blauen Haus
+\item Der Deutsche raucht Rothmans
+\item Der Marlboro-Raucher hat einen Nachbarn, der Wasser trinkt
+\end{itemize}
+
+\newpage
+}%% end TRAINER
+
+
+
+\section{Zündschnüre}\index{Zündschnur}\index{Zündschnüre}
+Wir besitzen 2 Zündschnüre der „Länge“ 60 Minuten und ein Feuerzeug. Die
+Zündschnüre sind zeitlich, jedoch nicht in der Länge geeicht. Ebenfalls brennen
+sie nicht regelmäßig ab. Es ist also möglich, dass eine der beiden Schnüre
+innerhalb der ersten 10 Minuten 60\% der Länge verbrennt. Das bedeutet dann
+aber, dass die letzten 40\% der Länge in 50 Minuten abbrennen werden.
+Das einzige, was wir wissen, ist, dass die Schnüre nach exakt 60 Minuten
+abgebrannt sind.
+
+Wie können wir mit diesen Mitteln exakt eine Viertelstunde abmessen?
+
+\TRAINER{
+\subsection{Lösungsvorschlag: Zündschnüre}
+
+Zuallererst werden beide Zündschnüre gleichzeitig angezündet. Eine davon auf
+einer, die andere auf beiden Seiten.
+Sobald die Schnur, die auf beiden Seiten angezündet wurde abgebrannt ist, sind
+30 Minuten vorbei. Jetzt werden wir die zweite Schnur auf der zweiten Seite
+anzünden. Diese zweite Schnur hat ja auch nur gerade noch 30 Minuten zu
+leben.
+
+Der Rest der zweiten Schnur kann nun verwendet werden um 15 Minuten
+abzumessen. Sobald nun auch die zweite Schnur abgebrannt ist, sind weitere 15
+Minuten verstrichen.
+\newpage
+}%% END TRAINER
 
 \newpage
 \bibliography{bibAll}{}\label{literatur}
