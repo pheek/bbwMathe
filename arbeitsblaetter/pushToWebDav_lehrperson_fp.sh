@@ -162,3 +162,6 @@ cp -f ./funktionen/exponentialfct/*.pdf                               ${BBW_WEBD
 echo "  copying Mengenbezeichnungen (GESO und TALS)"
 cp -f ./mengenbegriffe/Mengenbezeichnungen_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/mengenbezeichnungen/Mengenbezeichnungen.pdf
 
+echo "  copying Denksport (ALLG"
+cp -f ./denksport/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/denksport/
+
