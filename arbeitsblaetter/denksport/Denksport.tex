@@ -1126,6 +1126,69 @@ sein können.
 \newpage}%% end tranier
 
 
+
+\section{Straßennetz}\index{Straßennetz}
+Vier Städte sind im Quadrat angeordnet. Die Quadratseite beträgt 10 Kilometer.
+Die Städte liegen auf den Ecken dieses Quadrates.
+
+Gesucht ist eine Straße, oder besser ein Straßennetz, das alle die vier Städte
+miteinander verbindet. Da Straßenbau teuer ist, wird diejenige Lösung gesucht,
+die mit der kürzesten Gesamtstraßenlänge auskommt.
+
+Tipp: zwei Diagonalen zu ziehen und in der Mitte eine Kreuzung zu bauen ist
+zwar kurz, jedoch nicht die kürzeste Lösung.
+\TNTeop{}
+\TRAINER{
+\subsection{Lösungsvorschlag: Straßennetz}
+
+
+\begin{tabular}{cp{8cm}}
+\raisebox{-22mm}{\includegraphics[width=5cm]{Strassen.png}} & \makecell[l]{Alle Winkel sind
+$30\degre$ oder ein Vielfaches davon.\\
+$s$ = Quadratseite = $10$ km\\
+$x=\frac{s\cdot{}\sqrt{3}}{6}$ (Formel im gleichseitigen Dreieck)\\
+$t = $ totale Straßenlänge\\
+Senkrechte Mittelstrecke $= s-2x$\\
+$t=8x+(s-2x)$\\
+$t=6x+s$\\
+$t=s\cdot{}\sqrt{3} + s=(1+\sqrt{3})s \approx 27.32 $ km\\
+}
+ \end{tabular}
+
+Dies ist etwa 900 m kürzer, als wenn wir die beiden Diagonalen erbauen lassen.
+ 
+\textbf{Beweis}, warum $x=\frac{s\cdot{}\sqrt{3}}{6}$ in dieser
+Konstellation die beste Lösung ist:
+
+
+Bezeichne $x$ die Strecke wie oben im Bild (dabei wird $s$ vereinfacht als 1
+angenommen).
+
+Bezeichne $a$ die Strecke von einer Quadratecke zur Kreuzung (in der Grafik mit
+$2x$ bezeichnet; es muss jedoch noch bewiesen werden, dass $4a = 2 x$
+ist).
+
+Die totale Straßenlänge (in Abhängigkeit von $x$) wird mit $T(x)$
+bezeichnet.
+$$T(x) = 4a + (1 – 2x)$$
+
+$a(x)$ kann nach dem Satz von Pythagoras berechnet werden:
+$a(x) = \sqrt{\frac14 + x^2}$
+
+
+Somit ist $$T(x) = 4\sqrt{\frac14+ x^2} + 1-2x$$
+
+Beispiele: $T(0) = 3$, $T(0.5) = 2\cdot{}\sqrt{2}$
+
+Um $T(x)$ zu minimieren leiten wir nach $x$ ab und setzten den
+Ausdruck gleich Null
+$$\frac{d}{dx}T(x) = 0 = \frac{8x}{\sqrt{4x^2+1}}-2$$
+
+\newpage
+
+}%% END TRAINER
+
+
 \newpage
 \bibliography{bibAll}{}\label{literatur}
 
