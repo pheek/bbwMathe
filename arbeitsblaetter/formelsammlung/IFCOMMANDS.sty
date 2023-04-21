@@ -78,6 +78,15 @@
 \fi}%% End New Command MITSIGNIFIKANTENSTELLEN
 \isMITSIGNIFIKANTENSTELLENfalse%%
 
+%% Zeigt bei Zahldarstellungen/Runden auch das Kapitel
+%% «Mit Wissenschaftliche Notation»
+\newif\ifisMITWISSENSCHAFTLICHERNOTATION%%
+\newcommand\MITWISSENSCHAFTLICHERNOTATION[1]{\ifisMITWISSENSCHAFTLICHERNOTATION%%
+#1%%
+\fi}%% End New Command MITWISSENSCHAFTLICHERNOTATION
+\isMITWISSENSCHAFTLICHERNOTATIONtrue%%
+
+
 %% Sollen ALLE drei Log-Gesetze gezeigt werden, dann TRUEN
 %% Ansonsten werden nur die im Rahmenlehrplan geforderten
 %% dargestellt
@@ -95,4 +104,3 @@
 #1%%
 \fi}%% End New Command ROBUSTDEFINITION
 \isROBUSTDEFINITIONtrue%%
-
