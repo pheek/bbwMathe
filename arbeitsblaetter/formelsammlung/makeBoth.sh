@@ -35,3 +35,5 @@ mv FormelsammlungGESO_TRAINER_GESO.pdf FormelsammlungGESO_TRAINER.pdf
 
 
 
+## remove doc_data.txt
+rm ./doc_data.txt
