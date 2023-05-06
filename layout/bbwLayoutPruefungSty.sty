@@ -150,6 +150,15 @@
 %% Aufruf \bbwCheckBox{false}{«hier ist die frage»} falls falsch
 \newcommand{\bbwCheckBox}[2]{\ifstrequal{#1}{true}{\TRAINER{\makebox[0pt][l]{$\square$}{\raisebox{0.1\height}{$\times$}}}\noTRAINER{$\Box$}}{$\Box$} #2}
 
+%% Nur true/false Checkbox
+%% Aufruf entweder \tfCheckbox{x}  falls angekreuzt werden muss
+%%                 oder \tfCheckbox{$\times$}
+%% Falls leer bleiben soll: call \tfChckbox{}
+\newcommand{\tfCheckbox}[1]{
+\makebox[0pt][l]{$\square$}{\raisebox{0.1\height}{\TRAINER{#1}}}
+ %% \noTRAINER{$\Box{}$}%% end noTRAINER
+}%% end 
+
 %% Muss etwas schmaler sein, weil jede Frage einen Rahmen darum herum hat.
 \renewcommand{\mmPapier}[1]{\mmPapierZwei{#1}{17.6}}
 
