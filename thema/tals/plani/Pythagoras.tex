@@ -67,20 +67,45 @@ Repetition: Halbes Quadrat und halbes gleichseitiges Dreieck \ifisALLINONE{\tota
 \subsection{Kreisberührung}\index{Kreisberührung!Planimetrie}
 
 
-\bbwCenterGraphic{8cm}{tals/plani/img/KleinsterKreis.png}
-In obigem Kreis sind zwei kleinere Kreise einbeschrieben. Berechnen
-Sie den Radius $k$ des kleinsten Kreises aus dem gegebenen Radius $r$ des
-großen Kreises.
-\TNT{12}{
-  \bbwCenterGraphic{8cm}{tals/plani/img/KleinsterKreisLoesung.png}
-  $$\Delta A: x^2 + k^2 = (r-k)^2$$
-  $$\Delta B: x^2 + (\frac{r}2 - k)^2 = (\frac{r}2 + k)^2$$
-  Ausmultiplizieren und 2. Gleichung von 1. Gleichung subtrahieren:
-  $$k^2 - \frac{r^2}4 +rk - k^2  =r^2  -2rk - \frac{r^2}4 - rk$$\
-  $$-\frac{r^2}4 + rk = r^2 - 3rk - \frac{r^2}4$$
-  $$rk = r^2 - 3rk$$
-  $$4k = r$$
-  $$k = \frac{r}4$$
+\bbwCenterGraphic{8cm}{tals/plani/img/HalbkreisMitRadien.png}
+
+In obigem Halbkreis ist rechts ein Bogen mit demselben Kreisradius $r$
+eingezeichnet. Links ist ein kleiner Kreis mit Radius $k$
+einbeschrieben.
+
+Geben Sie $k$ in Abhängikeit von $r$ an.\newpage
+
+\TRAINER{\bbwCenterGraphic{8cm}{tals/plani/img/HalbkreisMitRadienMitLoesungen.png}}
+
+\noTRAINER{\bbwCenterGraphic{8cm}{tals/plani/img/HalbkreisOhneRadien.png}}
+
+
+\TNTeop{
+  Pythagoras in den beiden Dreiecken:
+
+  $$x^2 + k^2 = (r-k)^2$$
+  $$(r+x)^2 + k^2 = (r+k)^2$$
+
+  Von Hand (obwohl mit TR rascher)
+  Erste Gleichung ausmultiplizieren und vereinfachen:
+  
+  $$(I)   \hspace{18mm}  x^2 = r^2-2rk \Longrightarrow  x = \sqrt{r^2-2rk}$$
+  $$(II)  \hspace{18mm} 2rx + x^2 = 2rk$$
+  (I) in (II) einsetzen:
+  $$2r\sqrt{r^2-2rk} + r^2 -2rk = 2rk$$
+  zusammenfassen:
+  $$2r\sqrt{r^2-2rk} = 4rk-r^2$$
+  quadrieren
+  $$4r^2(r^2-2rk) = 16r^2k^2-8r^3k+r^4$$
+  ausmultiplizieren
+  $$4r^4 - 8r^3k = 16r^2k^2-8r^3k+r^4$$
+  zusammenfassen
+  $$3r^4 = 176r^2k^2$$
+  wurzel ziehen
+  $$\sqrt{3} r^2 = 4rk$$
+  ergo
+  $$k = \frac{\sqrt{3}r^2}{4r} = \frac{\sqrt{3}r}{4}$$
+  
 }%% END TNT
 \newpage
 
