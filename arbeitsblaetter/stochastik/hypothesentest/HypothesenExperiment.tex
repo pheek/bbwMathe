@@ -1,0 +1,152 @@
+\input{bbwLayoutPage}
+\renewcommand{\bbwAufgabenBlockID}{StHyp}
+
+\renewcommand{\metaHeaderLine}{Auftrag: Würfelexperiment}
+\renewcommand{\arbeitsblattTitel}{Hypothesentest}
+
+\begin{document}
+\arbeitsblattHeader{}
+
+\section{Testen von Hypothesen}
+
+\subsection{Würfeln}
+\TRAINER{Die Würfel werden vorab so sortiert, dass die Hälfte der
+Klasse einen gezinkten Würfel mit doppelter \epsdice{3} erhalten wird.}
+
+Werfen Sie den Würfel 25 Mal und notieren Sie das Ergebins der
+jeweiligen Augzenzahlen:
+
+\begin{bbwFillInTabular}{|c|p{50mm}|}\hline
+$\epsdice{1}$ & \\\hline
+$\epsdice{2}$ & \\\hline
+$\epsdice{3}$ & \\\hline
+$\epsdice{4}$ & \\\hline
+$\epsdice{5}$ & \\\hline
+$\epsdice{6}$ & \\\hline
+\end{bbwFillInTabular}
+
+\subsection{Ergebnis}
+
+Wie oft ist die \epsdice{3} erschienen?
+
+Die \epsdice{3} ist bei mir \LoesungsRaum{n} Mal erschienen.
+\newpage
+
+
+\subsection{Nullhypothese}
+Angenommen, der Würfel ist «fair», so erwarten wir, dass jede Seite
+etwa gleich häufig auftritt. Hierzu ein Begriff:
+
+\begin{center}\textbf{Nullhypothese} oder {$H_0$}.\end{center}
+
+Die \textbf{Nullhypthese $H_0$} nimmt an, dass bloß der reine Zufall
+im Spiel war und sonst nichts.
+
+Die \textbf{Alternativhypothese $H_1$} hingegen behauptet, dass das
+Ergebnis nicht allein durch den Zufall zustande kommt.
+
+In unserem Beispiel lautet die
+
+\textbf{Nullhypothese}: Es ist ein «fairer» Würfel.
+
+Die Alternativhypothese lautet hier: Der Würfel ist nicht fair.
+
+Wie oft erwarten wir nun vom «fairen» Würfel, das Auftreten
+einer \epsdice{3} bei 25 maligem Würfeln?
+
+\TNT{4}{
+$\frac{25}{6}\approx 4.17$ Mal. Es ist jedoch nicht zu erwarten, dass
+auch ein fairer Würfel genau 4 oder 5 Mal die \epsdice{3} zeigen wird!
+}
+
+\newpage
+\subsection{Erwartetes Resultat}
+Ab wann werden wir nicht mehr glauben, dass der Würfel fair ist?
+
+Zeigt der Würfel ein Resulat, das extrem unwahrscheinlich ist, dann
+können wir annehmen, dass der Würfel irgendwie gezinkt ist.
+
+Auch wenn der Würfeln nun nicht exakt vier mal die Drei bringt, können
+wir eventuell annehmen, dass der Würfel fair ist und ein dreimaliges
+Auftreten kann genausogut eine Laune des Zufalls sein, wie ein
+fünfmaliges Auftreten.
+
+Berechnen Sie, wie groß die Wahrscheinlichkeit ist, dass ein «fairer»
+Würfel bei 25maligem Werfen \textbf{geanu} zwei Mal eine \epsdice{3}
+zeigt:
+
+\TNT{1.6}{Bernoulli $P(X=2 \text{ Mal }  = {25  \choose
+2} \left(\frac16\right)^2\times \left(\frac56\right)^{25-2}\approx 12.58\% $}
+
+Berechnen Sie mit dem Taschenrechner alle Wahrscheinlichkeiten, dass
+eine \epsdice{3} geworfen wird innerhalb von $n$ Würfen.
+
+\begin{bbwFillInTabular}{|c|p{8cm}|}\hline
+$n$  & Wahrscheinlichkeit, genau $n$-mal eine \epsdice{3} zu erzielen
+bei 25maligem werfen: \\\hline\hline
+
+ 0   & \\\hline
+ 1   & \\\hline
+ 2   & \\\hline
+ 3   & \\\hline
+ 4   & \\\hline
+ 5   & \\\hline
+ 6   & \\\hline
+ 7   & \\\hline
+ 8   & \\\hline
+ 9   & \\\hline
+10   & \\\hline 
+11   & \\\hline
+     & \\\hline
+\end{bbwFillInTabular}
+\newpage
+\subsection{Erwartete Verteilungen}
+\bbwCenterGraphic{6cm}{wuerfeltabelle.png}
+
+Mit 94.48\% Wahrscheinlichkeit liefert der normale Würfel 1 - 7 Mal die \epsdice{3}.
+
+Mit 94.36\% Wahrscheinlichkeit liefert der gezinkte  Würfel 4 - 12 Mal die \epsdice{3}.
+
+\bbwCenterGraphic{17cm}{wuerfelverteilung.png}
+\newpage
+
+\subsection{Fehler erster und Fehler zweiter Art}
+Wo «kippt» die Erwartung nun wohl am ehesten von einem «fairen» Würfel
+zu einem gezinkten, der auf zwei Seiten eine \epsdice{3} stehen hat?
+
+Beim etwa \LoesungsRaum{5-6} maligem Auftreten der \epsdice{3} sind wir
+wohl am unsichersten.
+
+Legen wir fest: Ein Würfel, der weniger als sieben Mal
+eine \epsdice{3} zeigt bei 25maligem würfeln, gelte noch als «fair».
+
+Füllen wir in der Klasse gemeinsam die folgende Tabelle aus:
+
+\begin{bbwFillInTabular}{p{5cm}|p{5cm}|p{5cm}}
+    & Würfel ist «fair» ($H_0$) & Würfel ist gezinkt ($H_1$)\\\hline
+Würfel wird als «fair» gewertet (weniger als sieben \epsdice{3}er).& & \\\hline
+Würfel wird als gezinkt gewertet (mehr als sechs \epsdice{3}er).& & \\\hline
+\end{bbwFillInTabular}
+
+\subsubsection{Fehler erster Art}
+Fehler erster Art (Alpha-Fehler) = Fälschliche Zurückweisung der Nullhypothese.
+
+Der «faire» Würfel wird als gezinkt kategorisiert.
+
+Dies kann auch in einer Beobachtungssdudie passieren, wenn \zB
+angenommen wird, dass die Winterthurer häufiger krank sind als der
+Rest der Schweiz, nur weil die Winterthurer in der Statistik
+zufälligerweise häufiger Krankeitssymptome zeigen als andere. Dies
+kann verschiedene Ursachen haben: Zu kleine Stichprobe und
+zufälligerweise einige Kranke erwischt; oder Bias in der Stichprobe,
+weil die Umfrage zu nahe am Kantonsspital stattgefunden hat etc.
+
+\subsubsection{Fehler zweiter Art}
+Fehler zweiter Art (Beta-Fehler) = Fälschlche Annahme der Alternativhypothese.
+
+Der gezinkte Würfel wird als «fair» angesehen.
+
+
+\platzFuerBerechnungenBisEndeSeite{}
+
+\end{document}
