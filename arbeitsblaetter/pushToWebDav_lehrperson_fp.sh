@@ -165,3 +165,10 @@ cp -f ./mengenbegriffe/Mengenbezeichnungen_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperso
 echo "  copying Denksport (ALLG"
 cp -f ./denksport/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/denksport/
 
+echo "  copying Hypothesentest (GESO)"
+cp -f ./stochastik/hypothesentest/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/stoch/hypothesentest/
+cp -f ./stochastik/hypothesentest/*.ods ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/stoch/hypothesentest/
+
+
+
+
