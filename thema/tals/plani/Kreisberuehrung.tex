@@ -1,0 +1,63 @@
+
+\subsection{Kreisberührung}\index{Kreisberührung!Planimetrie}
+
+
+\bbwCenterGraphic{8cm}{tals/plani/img/HalbkreisMitRadien.png}
+
+In obigem Halbkreis ist rechts ein Bogen mit demselben Kreisradius $r$
+eingezeichnet. Links ist ein kleiner Kreis mit Radius $k$
+einbeschrieben.
+
+Geben Sie $k$ in Abhängikeit von $r$ an.\newpage
+
+\TRAINER{\bbwCenterGraphic{8cm}{tals/plani/img/HalbkreisMitRadienMitLoesungen.png}}
+
+\noTRAINER{\bbwCenterGraphic{12cm}{tals/plani/img/HalbkreisOhneRadien.png}}
+
+
+\TNTeop{
+  Pythagoras in den beiden Dreiecken:
+
+  $$(r+x)^2 + k^2 = (r+k)^2$$
+  $$x^2 + k^2 = (r-k)^2$$
+
+  Von Hand (obwohl mit TR rascher)
+  Erste Gleichung ausmultiplizieren und vereinfachen:
+  
+  $$(I)  \hspace{18mm} 2rx + x^2 = 2rk$$
+  $$(II) \hspace{18mm}  x^2 = r^2-2rk \Longrightarrow  x = \sqrt{r^2-2rk}$$
+  (II) in (I) einsetzen:
+  $$2r\sqrt{r^2-2rk} + r^2 -2rk = 2rk$$
+  zusammenfassen:
+  $$2r\sqrt{r^2-2rk} = 4rk-r^2$$
+  quadrieren
+  $$4r^2(r^2-2rk) = 16r^2k^2-8r^3k+r^4$$
+  ausmultiplizieren
+  $$4r^4 - 8r^3k = 16r^2k^2-8r^3k+r^4$$
+  zusammenfassen
+  $$3r^4 = 176r^2k^2$$
+  wurzel ziehen
+  $$\sqrt{3} r^2 = 4rk$$
+  ergo
+  $$k = \frac{\sqrt{3}r^2}{4r} = \frac{\sqrt{3}r}{4}$$
+  
+}%% END TNT
+\newpage
+
+
+\begin{rezept}{Kreisberührung}{}
+  Wählen Sie zwei Kreise, die sich \textbf{berühren}.
+
+  Von sich berührenden Kreisen werden die \textbf{Mittlpunkte und der Berührungspunkt}
+    miteinander verbunden. Die drei Punkte liegen immer auf einer Geraden.
+
+  Meist sind die Strecken zwischen den beiden Mittelpunkten
+  \textbf{Hypothenusen} in rechtwinkligen Dreiecken. Dann verwenden Sie den
+  \textbf{Satz des Pythagoras}.
+\end{rezept}
+
+\subsection*{Aufgaben}
+
+\AadBMTG{39ff}{28. und eine Teilaufgabe aus Aufg. 33. und zwei Teilaufgaben
+  aus Aufg. 34.}
+\newpage
