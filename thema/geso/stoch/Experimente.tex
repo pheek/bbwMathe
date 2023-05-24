@@ -336,12 +336,12 @@ Die Wahrscheinlichkeit, dass er von 20 Würfen \textbf{genau} 17 Mal trifft, ken
 bereits von der Formel von Bernoulli (Bernoulli-Experiment/Binomialverteilung):
 
 $$P(X=17) = \LoesungsRaumLang{{20 \choose 17}\cdot 0.85^{17}\cdot(1-0.85)^{20-17}}=$$
-$$\LoesungsRaumLang{{20 \choose 17}\cdot 0.85^{17}\cdot (0.15)^{3}}\approx{}\LoesungsRaum{24.28\%}$$
+$$\LoesungsRaumLang{{20 \choose 17}\cdot 0.85^{17}\cdot (0.15)^{3}}\approx{}\LoesungsRaum{24.29\%}$$
 Dabei bezeichnet $E$ das Ereignis ``siebzehn Treffer in den 20 Würfen''.
 
 \begin{beispiel}{Kumulierte Wahrscheinlichkeit}{}
 Wie groß ist nun aber die Wahrscheinlichkeit, dass er bei 20 Würfen
-\textbf{maximal} 17 mal trifft?
+\textbf{höchstens} (= maximal)  17 mal trifft?
 \end{beispiel}
 
 
@@ -392,7 +392,7 @@ $k=17$ bei $x$ eintragen.
 
 \begin{tabular}{rcl}
   $n$ &=& Anzahl Durchführungen (Baumtiefe)\\
-  $p$ &=& Gewinnwahrscheinlichkeit pro Durchführung\\
+  $p$ &=& Trefferwahrscheinlichkeit pro Durchführung\\
   $k$ &=& \textbf{Maximal} gewünschte Treffer\\
 \end{tabular}
 
@@ -481,7 +481,8 @@ Nieten)
 $$T=\LoesungsRaum{3}, N=\LoesungsRaum{4}, T+N=\LoesungsRaum{7}$$
 
 
-\textbf{Beispiel 1}: Ich will bei zwei gezogenen Kugeln genau einen Treffer:
+\textbf{Beispiel 1}: Ich will bei zwei gezogenen Kugeln zwei
+verschiedene Kuglen, also \textbf{genau einen Treffer}:
 
 ($t=1$) mit zwei Ziehungen ($t+n=2$), somit eine Niete ($n=1$).
 Wir erhalten:
@@ -490,7 +491,7 @@ $$P(X=1) = \frac{ {T\choose t} \cdot{} {{N}\choose {n}}}{{{T+N}
     \choose {t+n}}} = \LoesungsRaumLang{\frac{ {3\choose 1} \cdot{} {{4}\choose {1}}}{{7
     \choose 2}} = \frac{3\cdot{4}}{21} = \frac{12}{21} \approx 0.57}$$
 
-\textbf{Beispiel 2}: Ich will bei zwei gezogenen Kugeln je einen Treffer:
+\textbf{Beispiel 2}: Ich will bei zwei gezogenen Kugeln \textbf{je einen Treffer}:
 
 ($t=2$) mit zwei Ziehungen ($t+n=2$), somit keine Niete ($n=0$).
 Wir erhalten:
