@@ -133,6 +133,18 @@ Für $a > 0$ gilt somit allgemein:
  \left(\sqrt[n]{a}\right)^{n\cdot{}\frac{1}{n}} =
  \left(\left(\sqrt[n]{a}\right)^n\right)^\frac{1}{n} = a^\frac{1}{n}$
 }%% END TALS
+
+\GESO{
+  \begin{beispiel}{Fünfte Wurzel}{}
+    Es gilt
+    $$\left(\sqrt[5]{x}\right)^5 = \LoesungsRaum{x}$$
+    und
+    $$\left(x^{\frac15}\right)^5= \LoesungsRaumLang{x^{\frac15\cdot{}5}} = \LoesungsRaum{x^1} = \LoesungsRaum{x}$$
+    somit:
+    $$\LoesungsRaum{\sqrt[5]{x}} = \LoesungsRaum{x^\frac15}$$
+    \end{beispiel}
+}
+
 \newpage
 
 
@@ -144,7 +156,14 @@ Für $a > 0$ gilt somit allgemein:
   \sqrt[n\,]{\sqrt[m]{a}}$$
 \end{gesetz}
 
-$$\sqrt[m]{\sqrt[n]{a}} = \sqrt[m]{a^\frac{1}{n}} = (a^{\frac{1}{n}})^{\frac{1}{m}} = a^{\frac{1}{n}\cdot\frac{1}{m}} = a^{\frac{1}{m\cdot n}} = \sqrt[m\cdot n]{a}$$
+Umformungen:
+\TNT{4}{
+$$\sqrt[m]{\sqrt[n]{a}} = \sqrt[m]{a^\frac{1}{n}} =
+  (a^{\frac{1}{n}})^{\frac{1}{m}} = a^{\frac{1}{n}\cdot\frac{1}{m}} =
+  a^{\frac{1}{m\cdot n}} = \sqrt[m\cdot n]{a}$$
+  \vspace{22mm}
+}%% end TNT
+
 
 \begin{gesetz}{Wurzelschreibweise}{}
   $$a^\frac{m}n = \sqrt[n]{a^m} = \left(\sqrt[n]{a}\right)^m$$
