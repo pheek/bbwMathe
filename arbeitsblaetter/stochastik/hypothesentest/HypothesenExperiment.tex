@@ -9,28 +9,25 @@
 
 \section{Testen von Hypothesen}
 
-\subsection{Würfeln}
+\subsection{\epsdice{3} werfen}
 \TRAINER{Die Würfel werden vorab so sortiert, dass die Hälfte der
 Klasse einen gezinkten Würfel mit doppelter \epsdice{3} erhalten wird.}
 
-Werfen Sie den Würfel 25 Mal und notieren Sie das Ergebins der
-jeweiligen Augzenzahlen (wie oft kommt die \epsdice{1}, wie oft
-die \epsdice{2} etc.):
+Werfen Sie den Würfel 25 Mal und notieren Sie das Ergebins wie folgt: Wie oft kommt die \epsdice{3}, wie oft
+mehr als die \epsdice{2}):
 
 \begin{bbwFillInTabular}{|c|p{50mm}|}\hline
-$\epsdice{1}$ & \\\hline
-$\epsdice{2}$ & \\\hline
 $\epsdice{3}$ & \\\hline
-$\epsdice{4}$ & \\\hline
-$\epsdice{5}$ & \\\hline
-$\epsdice{6}$ & \\\hline
+$\epsdice{3},\epsdice{4},\epsdice{5}$ oder $\epsdice{6}$ & \\\hline
 \end{bbwFillInTabular}
 
 \subsection{Ergebnis}
 
-Wie oft ist die \epsdice{3} erschienen?
+Wie oft ist die \epsdice{3} erschienen? ....................
+\vspace{15mm}
 
-Die \epsdice{3} ist bei mir \LoesungsRaum{n} Mal erschienen.
+Wie oft kam mehr als die \epsdice{3}? .......................
+
 \newpage
 
 
@@ -56,8 +53,8 @@ Wie oft erwarten wir nun vom «fairen» Würfel, das Auftreten
 einer \epsdice{3} bei 25 maligem Würfeln?
 
 \TNT{4}{
-$\frac{25}{6}\approx 4.17$ Mal. Es ist jedoch nicht zu erwarten, dass
-auch ein fairer Würfel genau 4 oder 5 Mal die \epsdice{3} zeigen wird!
+$\frac{25}{6}\approx 4.17$ Mal. Es ist jedoch \textbf{nicht} zu erwarten, dass
+auch ein fairer Würfel \textbf{immer} genau 4 oder 5 Mal die \epsdice{3} zeigen wird!
 }
 
 \newpage
@@ -109,7 +106,24 @@ Mit 94.48\% Wahrscheinlichkeit liefert der normale Würfel 1 - 7 Mal die \epsdic
 Mit 94.36\% Wahrscheinlichkeit liefert der gezinkte  Würfel 4 - 12 Mal die \epsdice{3}.
 
 \bbwCenterGraphic{17cm}{wuerfelverteilung.png}
+
 \newpage
+
+
+
+\subsection{Unsere Resultate}
+
+Füllen wir in der Klasse gemeinsam die folgende Tabelle aus:
+
+\begin{bbwFillInTabular}{p{5cm}|p{5cm}|p{5cm}}
+    & Würfel ist «fair» ($H_0$) & Würfel ist gezinkt ($H_1$)\\\hline
+Würfel wird als «fair» gewertet (weniger als sieben \epsdice{3}er).& & \\\hline
+Würfel wird als gezinkt gewertet (mehr als sechs \epsdice{3}er).& & \\\hline
+\end{bbwFillInTabular}
+
+\newpage
+
+
 
 \subsection{Fehler erster und Fehler zweiter Art}
 Wo «kippt» die Erwartung nun wohl am ehesten von einem «fairen» Würfel
@@ -120,14 +134,6 @@ wohl am unsichersten.
 
 Legen wir fest: Ein Würfel, der weniger als sieben Mal
 eine \epsdice{3} zeigt bei 25maligem würfeln, gelte noch als «fair».
-
-Füllen wir in der Klasse gemeinsam die folgende Tabelle aus:
-
-\begin{bbwFillInTabular}{p{5cm}|p{5cm}|p{5cm}}
-    & Würfel ist «fair» ($H_0$) & Würfel ist gezinkt ($H_1$)\\\hline
-Würfel wird als «fair» gewertet (weniger als sieben \epsdice{3}er).& & \\\hline
-Würfel wird als gezinkt gewertet (mehr als sechs \epsdice{3}er).& & \\\hline
-\end{bbwFillInTabular}
 
 \subsubsection{Fehler erster Art}
 Fehler erster Art (Alpha-Fehler) = Fälschliche Zurückweisung der Nullhypothese.
@@ -149,5 +155,8 @@ Der gezinkte Würfel wird als «fair» angesehen.
 
 
 \platzFuerBerechnungenBisEndeSeite{}
+\newpage
+
+
 
 \end{document}
