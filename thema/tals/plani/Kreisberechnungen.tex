@@ -38,6 +38,9 @@ Herleitung
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 \subsubsection{Kreisringfläche}
+
+\bbwCenterGraphic{8cm}{tals/plani/img/Kreisring.png}
+
 \begin{gesetz}{Kreisring}{}\index{Kreisring}
   Die Kreisringfläche ist die Differenz der umgebenden Kreisfläche
   (Radius $R$) und
@@ -46,6 +49,10 @@ Herleitung
   $$A = A(R) - A(r) = R^2\pi - r^2\pi = (R^2-r^2)\pi$$
 \end{gesetz}
 
+\begin{bemerkung}{Kreisring}{}
+  Die Formel stimmt auch, wenn die Kreismittelpunkte nicht
+  übereinstimmen und sich die Kreislinien nicht überlappen (s. Grafik).
+  \end{bemerkung}
 
 \subsection*{Aufgaben}
 
@@ -88,7 +95,30 @@ Begründung \LoesungsRaumLang{Dreisatz}
 
 \subsection{Kreissegment}
 
-Für das Kreissegment Siehe \cite{marthaler20geom} Seite 61 Kap. 4.2.3.
+\TRAINER{\bbwCenterGraphic{8cm}{tals/plani/img/Kreissegment.png}}
+\noTRAINER{\bbwCenterGraphic{8cm}{tals/plani/img/KreissegmentLeer.png}}
+
+\begin{definition}{Kreissegment}{}
+  Wir verwenden die folgenden Notationen:
+  \begin{tabular}{ll}
+    $r:$        & Radius \\
+    $s:$        & Sehne  \\
+    $\varphi: $ & Zentriwinkel \\
+    $h:$        & Höhe des Segments\\
+    $r-h:$      & Höhe des Dreiecks \\
+    $A_{SG}:$    & Segmentfläche ($A_{\text{Segment}}$)
+    \end{tabular}  
+\end{definition}
+
+\begin{gesetz}{Kreissegmentfläche $A_{SG}$}{}
+  $$A_{\text{Segment}} = A_{\text{Sektor}} - A_{\text{Dreieck}}$$
+  $$A_{SG} = \frac{r^2\pi\varphi}{360\degre} - \frac{s(r-h)}{2}$$
+\end{gesetz}
+
+
+\TRAINER{Für das Kreissegment Siehe \cite{marthaler20geom} Seite 61 Kap. 4.2.3.}
+\newpage
+
 
 
 \subsection*{Aufgaben}
