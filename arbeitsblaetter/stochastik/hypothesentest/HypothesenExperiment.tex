@@ -13,7 +13,7 @@
 \TRAINER{Die Würfel werden vorab so sortiert, dass die Hälfte der
 Klasse einen gezinkten Würfel mit doppelter \epsdice{3} erhalten wird.}
 
-Werfen Sie den Würfel 25 Mal und notieren Sie das Ergebins wie folgt: Wie oft kommt die \epsdice{3}, wie oft
+Werfen Sie den Würfel 25 Mal und notieren Sie das Ergebnis wie folgt: Wie oft kommt die \epsdice{3}, wie oft
 mehr als die \epsdice{2}):
 
 \begin{bbwFillInTabular}{|c|p{50mm}|}\hline
@@ -37,7 +37,7 @@ etwa gleich häufig auftritt. Hierzu ein Begriff:
 
 \begin{center}\textbf{Nullhypothese} oder {$H_0$}.\end{center}
 
-Die \textbf{Nullhypthese $H_0$} nimmt an, dass bloß der reine Zufall
+Die \textbf{Nullhypothese $H_0$} nimmt an, dass bloß der reine Zufall
 im Spiel war und sonst nichts.
 
 Die \textbf{Alternativhypothese $H_1$} hingegen behauptet, dass das
@@ -61,7 +61,7 @@ auch ein fairer Würfel \textbf{immer} genau 4 oder 5 Mal die \epsdice{3} zeigen
 \subsection{Erwartetes Resultat}
 Ab wann werden wir nicht mehr glauben, dass der Würfel fair ist?
 
-Zeigt der Würfel ein Resulat, das extrem unwahrscheinlich ist, dann
+Zeigt der Würfel ein Resultat, das extrem unwahrscheinlich ist, dann
 können wir annehmen, dass der Würfel irgendwie gezinkt ist.
 
 Auch wenn der Würfeln nun nicht exakt vier mal die Drei bringt, können
@@ -70,7 +70,7 @@ Auftreten kann genausogut eine Laune des Zufalls sein, wie ein
 fünfmaliges Auftreten.
 
 Berechnen Sie, wie groß die Wahrscheinlichkeit ist, dass ein «fairer»
-Würfel bei 25maligem Werfen \textbf{geanu} zwei Mal eine \epsdice{3}
+Würfel bei 25maligem Werfen \textbf{genau} zwei Mal eine \epsdice{3}
 zeigt:
 
 \TNT{1.6}{Bernoulli $P(X=2 \text{ Mal }  = {25  \choose
@@ -107,6 +107,12 @@ Mit 94.36\% Wahrscheinlichkeit liefert der gezinkte  Würfel 4 - 12 Mal die \eps
 
 \bbwCenterGraphic{17cm}{wuerfelverteilung.png}
 
+Behauptung (Hypothese):
+
+\begin{center} $H_0$:
+\textbf{Ein fairer Würfel} wirft maximal sechs mal eine \epsdice{3}.
+\end{center}
+
 \newpage
 
 
@@ -140,7 +146,7 @@ Fehler erster Art (Alpha-Fehler) = Fälschliche Zurückweisung der Nullhypothese
 
 Der «faire» Würfel wird als gezinkt kategorisiert.
 
-Dies kann auch in einer Beobachtungssdudie passieren, wenn \zB
+Dies kann auch in einer Beobachtungsstudie passieren, wenn \zB
 angenommen wird, dass die Winterthurer häufiger krank sind als der
 Rest der Schweiz, nur weil die Winterthurer in der Statistik
 zufälligerweise häufiger Krankeitssymptome zeigen als andere. Dies
@@ -149,7 +155,7 @@ zufälligerweise einige Kranke erwischt; oder Bias in der Stichprobe,
 weil die Umfrage zu nahe am Kantonsspital stattgefunden hat etc.
 
 \subsubsection{Fehler zweiter Art}
-Fehler zweiter Art (Beta-Fehler) = Fälschlche Annahme der Alternativhypothese.
+Fehler zweiter Art (Beta-Fehler) = Fälschliche Annahme der Alternativhypothese.
 
 Der gezinkte Würfel wird als «fair» angesehen.
 
