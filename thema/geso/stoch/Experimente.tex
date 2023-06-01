@@ -148,6 +148,53 @@ Mehrstufige Zufallsexperimente:
 \olatLinkGESOKompendium{5.2}{43ff}{Aufg. 4. (Glücksrad), 17. (Klasse), 19., 20. (Kugeln) und 21. (Würfel)}
 \newpage
 
+\textbf{Aufgabe Schweizer Münzen (optional)}
+
+In zwei Urnen sind Münzen. In jeder Urne kommt jede Schweizer Münzart
+genau einmal vor:
+
+0.05, 0.10, ... 5.--.
+
+Aus jeder Urne wird zufällig eine Münze gezogen.
+
+Wie groß ist die Wahrscheinlichkeit:
+\begin{itemize}
+\item Einen ganzen Frankenbetrag zu ziehen?
+\item Mehr als 3 Franken zu erwischen?
+\end{itemize}
+
+  Tipp: Baumdiagramm oder Tabelle (Zeilen = erste Urne; Spalten =
+  zweite Urne)
+
+  \TNTeop{
+    Ganzer Frankenbetrag:
+
+    Die erste Verzweigung im Baum hat drei Äste. Die Münzen 0.05, 0.10
+    und 0.20 haben je 1/7 Wahrscheinlichkeit und daraus resultiert nie
+    ein ganzer Frankenbetrag. Die Münze 0.50 hat 1/7
+    Wahrscheinlichkeit, aber nur ein einziger weiterführender Ast
+    liefert einen ganzen Frankenbetrag, nämlich nochmals 1/7.
+    Die ganzen Frankenbeträge (1.-, 2.- und 5.-) haben zusammen auch
+    3/7 Wahrscheinlichkeit, aber nur die ganzen Frankenbeträge aus der
+    2. Urne liefern einen ganzen Frankenbetrag.
+
+    Somit:
+
+    $$P(X= \text{ ganzer Frankenbetrag } ) =
+    \frac17\cdot{}\frac17+\frac37\cdot{}\frac37 = \frac{22}{49}
+    \approx 44.90\%$$
+
+    Mehr als CHF 3.-:
+
+    Wenn der 5-Liber dabei ist, so sind immer mehr als 3 Franken
+    gezogen. Anders ist mehr als 3.- nur möglich mit 2.- + 2.-. Somit
+    sind Somit gibt es 14 von 49 Varianten.
+
+    $$P(X= \text{ Mehr als CHF 3.- } ) = \frac{14}{49} \approx 28.57\%$$
+  }
+  
+
+\newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
