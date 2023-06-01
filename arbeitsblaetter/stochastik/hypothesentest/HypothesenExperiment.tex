@@ -13,12 +13,16 @@
 \TRAINER{Die Würfel werden vorab so sortiert, dass die Hälfte der
 Klasse einen gezinkten Würfel mit doppelter \epsdice{3} erhalten wird.}
 
-Werfen Sie den Würfel 25 Mal und notieren Sie das Ergebnis wie folgt: Wie oft kommt die \epsdice{3}, wie oft
-mehr als die \epsdice{2}):
+Werfen Sie den Würfel 29 Mal und notieren Sie das Ergebnis wie folgt:
+\begin{itemize}
+\item Wie oft kommt die \epsdice{3},
+\item wie oft mehr als die \epsdice{2}?
+\end{itemize}
 
 \begin{bbwFillInTabular}{|c|p{50mm}|}\hline
 $\epsdice{3}$ & \\\hline
 $\epsdice{3},\epsdice{4},\epsdice{5}$ oder $\epsdice{6}$ & \\\hline
+\epsdice{1} oder \epsdice{2} & \\\hline
 \end{bbwFillInTabular}
 
 \subsection{Ergebnis}
@@ -26,7 +30,7 @@ $\epsdice{3},\epsdice{4},\epsdice{5}$ oder $\epsdice{6}$ & \\\hline
 Wie oft ist die \epsdice{3} erschienen? ....................
 \vspace{15mm}
 
-Wie oft kam mehr als die \epsdice{3}? .......................
+Wie oft kam mehr als die \epsdice{2}? .......................
 
 \newpage
 
@@ -50,10 +54,10 @@ In unserem Beispiel lautet die
 Die Alternativhypothese lautet hier: Der Würfel ist nicht fair.
 
 Wie oft erwarten wir nun vom «fairen» Würfel, das Auftreten
-einer \epsdice{3} bei 25 maligem Würfeln?
+einer \epsdice{3} bei 29 maligem Würfeln?
 
 \TNT{4}{
-$\frac{25}{6}\approx 4.17$ Mal. Es ist jedoch \textbf{nicht} zu erwarten, dass
+$\frac{29}{6}\approx 4.83$ Mal. Es ist jedoch \textbf{nicht} zu erwarten, dass
 auch ein fairer Würfel \textbf{immer} genau 4 oder 5 Mal die \epsdice{3} zeigen wird!
 }
 
@@ -64,24 +68,24 @@ Ab wann werden wir nicht mehr glauben, dass der Würfel fair ist?
 Zeigt der Würfel ein Resultat, das extrem unwahrscheinlich ist, dann
 können wir annehmen, dass der Würfel irgendwie gezinkt ist.
 
-Auch wenn der Würfeln nun nicht exakt vier mal die Drei bringt, können
+Auch wenn der Würfeln nun nicht exakt fünf mal die Drei bringt, können
 wir eventuell annehmen, dass der Würfel fair ist und ein dreimaliges
 Auftreten kann genausogut eine Laune des Zufalls sein, wie ein
 fünfmaliges Auftreten.
 
 Berechnen Sie, wie groß die Wahrscheinlichkeit ist, dass ein «fairer»
-Würfel bei 25maligem Werfen \textbf{genau} zwei Mal eine \epsdice{3}
+Würfel bei 29maligem Werfen \textbf{genau} zwei Mal eine \epsdice{3}
 zeigt:
 
-\TNT{1.6}{Bernoulli $P(X=2 \text{ Mal }  = {25  \choose
-2} \left(\frac16\right)^2\times \left(\frac56\right)^{25-2}\approx 12.58\% $}
+\TNT{1.6}{Bernoulli $P(X=2 \text{ Mal }  = {29  \choose
+2} \left(\frac16\right)^2\times \left(\frac56\right)^{29-2}\approx 8.21\% $}
 
 Berechnen Sie mit dem Taschenrechner alle Wahrscheinlichkeiten, dass
 eine \epsdice{3} geworfen wird innerhalb von $n$ Würfen.
 
 \begin{bbwFillInTabular}{|c|p{8cm}|}\hline
 $n$  & Wahrscheinlichkeit, genau $n$-mal eine \epsdice{3} zu erzielen
-bei 25maligem werfen: \\\hline\hline
+bei 29maligem werfen: \\\hline\hline
 
  0   & \\\hline
  1   & \\\hline
@@ -101,21 +105,24 @@ bei 25maligem werfen: \\\hline\hline
 \subsection{Erwartete Verteilungen}
 \bbwCenterGraphic{6cm}{wuerfeltabelle.png}
 
-Mit 94.48\% Wahrscheinlichkeit liefert der normale Würfel 1 - 7 Mal die \epsdice{3}.
+Mit 95.36\% Wahrscheinlichkeit liefert der normale Würfel 1 - 8 Mal die \epsdice{3}.
 
-Mit 94.36\% Wahrscheinlichkeit liefert der gezinkte  Würfel 4 - 12 Mal die \epsdice{3}.
+Mit 95.28\% Wahrscheinlichkeit liefert der gezinkte  Würfel 5 - 14 Mal die \epsdice{3}.
 
 \bbwCenterGraphic{17cm}{wuerfelverteilung.png}
+\newpage
 
+\subsection{Aufstellen der Hypothese}
 Behauptung (Hypothese):
 
 \begin{center} $H_0$:
-\textbf{Ein fairer Würfel} wirft maximal sechs mal eine \epsdice{3}.
+\textbf{Ein fairer Würfel} liefert bei 29 maligem Werfen maximal
+sieben mal die \epsdice{3}.
 \end{center}
 
-\newpage
-
-
+Bemerkung: Wir sprechen hier von einer \textbf{einseitigen} Hypothese
+/ bzw. vom einseitigen Hypothesentest. Ein \textbf{zweiseitiger} Hypothesentest würde auch
+das Minimum festlegen.
 
 \subsection{Unsere Resultate}
 
@@ -123,9 +130,13 @@ Füllen wir in der Klasse gemeinsam die folgende Tabelle aus:
 
 \begin{bbwFillInTabular}{p{5cm}|p{5cm}|p{5cm}}
     & Würfel ist «fair» ($H_0$) & Würfel ist gezinkt ($H_1$)\\\hline
-Würfel wird als «fair» gewertet (weniger als sieben \epsdice{3}er).& & \\\hline
-Würfel wird als gezinkt gewertet (mehr als sechs \epsdice{3}er).& & \\\hline
+Würfel wird als «fair» gewertet (weniger als acht \epsdice{3}er).&
+& \TRAINER{fehler 2. Art}\\\hline
+Würfel wird als gezinkt gewertet (mehr als
+sieben \epsdice{3}er).& \TRAINER{fehler erster Art}& \\\hline
 \end{bbwFillInTabular}
+
+
 
 \newpage
 
@@ -135,11 +146,18 @@ Würfel wird als gezinkt gewertet (mehr als sechs \epsdice{3}er).& & \\\hline
 Wo «kippt» die Erwartung nun wohl am ehesten von einem «fairen» Würfel
 zu einem gezinkten, der auf zwei Seiten eine \epsdice{3} stehen hat?
 
-Beim etwa \LoesungsRaum{5-6} maligem Auftreten der \epsdice{3} sind wir
+Wo sind wir am «unsichersten»?
+Beim etwa \LoesungsRaum{6-8} maligem Auftreten der \epsdice{3} sind wir
 wohl am unsichersten.
 
-Legen wir fest: Ein Würfel, der weniger als sieben Mal
+Legen wir fest: Ein Würfel, der weniger als acht Mal
 eine \epsdice{3} zeigt bei 25maligem würfeln, gelte noch als «fair».
+
+\subsubsection{Signifikanzniveau}
+Das Signifikanzniveau für «Ein fairer Würfel liefert weniger als acht
+Mal die \epsdice{3} bei 29maligem Würfeln» liegt also bei:
+\vspace{15mm}
+\textbf{Signifikanzniveau} = \LoesungsRaum{90.31\%}
 
 \subsubsection{Fehler erster Art}
 Fehler erster Art (Alpha-Fehler) = Fälschliche Zurückweisung der Nullhypothese.
