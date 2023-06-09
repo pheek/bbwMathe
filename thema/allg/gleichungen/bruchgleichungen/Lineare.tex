@@ -19,7 +19,6 @@ jeder vierte, nein mehr noch: Jeder fünfte!}
 
 \begin{itemize}
 	\item gleichnamig machen
-  \item Definitionsmenge
 \end{itemize}
 
 \begin{definition}{Bruchgleichung}{definition_bruchgleichung}\index{Bruchgleichungen}
@@ -41,14 +40,11 @@ $$\frac{1+x}{x}=\frac{x+3}{x-3}$$
 $$\frac{1+x}{x}=\frac{x+3}{x-3}$$
   
 \TNTeop{
-  1. Definitionsmenge ist $\mathcal{D}_x = \mathbb{R}\backslash\{0, 3\}$, denn sowohl $0$, wie auch $3$ dürfen nicht
-  für $x$ eingesetzt werden.
-
-  2. Nun alles auf eine Seite bringen (Grundform):
+  1. Alles auf eine Seite bringen (Grundform):
 
   $$\frac{1+x}x - \frac{x+3}{3-x} = 0$$
 
-  3. Bruchterm vereinfachen \ifisALLINONE{(Vgl. \totalref{bruchterme})}\fi
+  2. Bruchterm vereinfachen \ifisALLINONE{(Vgl. \totalref{bruchterme})}\fi
 
   $$\frac{(1+x)(x-3)}{x(x-3)} - \frac{x(x+3)}{x(x-3)} = 0$$
 
@@ -56,7 +52,11 @@ $$\frac{1+x}{x}=\frac{x+3}{x-3}$$
 
   $$\frac{-5x-3}{x(x-3)} = 0$$
 
-  4. Wir betrachten nur den Zähler!
+  3. Wir betrachten nur den Zähler!
+
+  Begründung I: «Ein Bruch
+  ist genau dann = 0, wenn der Zähler = 0 ist»; Begründung II:
+  Beidseitig multiplizieren mit dem Nenner: Rechts bleibt die Null stehen.
 
   $$-5x-3 \stackrel{!}{=} 0$$
 
@@ -72,63 +72,16 @@ $$\frac{1+x}{x}=\frac{x+3}{x-3}$$
 %% implicit endofpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
-  
-\subsection{Definitionsmenge einer
-    Gleichung}\index{Definitionsmenge!bei Gleichungen}
-
-\begin{definition}{Definitionsmenge}{}  Die Menge aller Zahlen, welche für die Lösung einer Gleichnug in Frage kommen,
-  nennen wir die \textbf{Definitionsmenge}.
-\end{definition}
-
-  Insbesondere ist die Menge der Lösungen eingeschränkt durch
-  die Terme, welche die Gleichung definieren. So besteht die folgende
-  Gleichung aus zwei Termen ($T1=\frac{4}{x-2}$ und $T2=\frac{\sqrt{x}}{x-3}$) mit den unten angegebenen
-  Einschränkungen:
-  $$\frac{4}{x-2}=\frac{\sqrt{x}}{x-3}$$
-
-$$T1=\frac{4}{x-2} \text{ und } T2=\frac{\sqrt{x}}{x-3}$$
-  
-  Die Definitionsmengen von $T1$ und $T2$ schränken automatisch die
-  Grundmenge der Gleichung ein. In obigem Beispiel gilt:
-  
-  $$\mathcal{D}_1=\mathcal{D}(T1)=\LoesungsRaum{\mathbb{R}\backslash\{2\}}$$
-
-  $$\mathcal{D}_2=\mathcal{D}(T2)=\LoesungsRaum{\mathbb{R}^+_0\backslash\{3\}}$$
-
-  $$\mathcal{D}=\mathcal{D}_1\cap\mathcal{D}_2=\LoesungsRaumLang{\mathbb{R}^{+}_{0}\backslash\{2;3\}}$$
-
-  \begin{bemerkung}{Schnittmenge}{}
-    Dabei bedeutet das $\cap$-Zeichen «Schnittmenge».
-
-    $$\mathcal{D}_1\cap\mathcal{D}_2$$
-    heißt also, dass nur Zahlen genommen werden, die \textbf{sowohl}
-    in $\mathcal{D}_1$ \textbf{als auch} in $\mathcal{D}_2$ liegen.
-    \end{bemerkung}
-
-  \TRAINER{\GESO{GESO: $R_0^+$ müssen Sie nicht im Deteil können, aber die 2
-  und die 3 müssen Sie ausschließen!}}
-  \newpage
-  
-\begin{rezept}{Bruchgleichungen}{}
-  \begin{itemize}
-  \item Alle Terme nach links nehmen (wie bei den quadratischen Gleichungen)
-  \item links: Definitionsmenge $\mathcal{D}$ bestimmen und
-    Termvereinfachung wie im Rezept über Addition/Subtraktion von
-    Brüchen\ifisALLINONE{\totalref{bruchtermeRezept}}\fi{}; so, dass nur noch ein vereinfachter Bruch dasteht.
-  \item Zähler muss gleich Null sein; Lösungsmenge bestimmen
-   \item Definitionsmenge $\mathcal{D}$ mit Lösungsmenge $\mathbb{L}$
-     vergleichen: Scheinlösungen müssen ausgeschlossen werden
-  \end{itemize}
-  
-\end{rezept}
 
 \subsection*{Aufgaben}
 
 
-\GESO{\olatLinkArbeitsblatt{Bruchgleichungen}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/105951755115452}{1.), 2.) und 3.)}}
+\GESO{\olatLinkArbeitsblatt{Bruchgleichungen (Definitionsbreich wie
+    bei Termen)}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/105951755115452}{1.), 2.) und 3.)}}
 
 \olatLinkGESOKompendium{2.1.2.}{10}{7. bis 11.}
 
-\TALS{\olatLinkArbeitsblatt{Bruchgleichungen}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/105951754967029}{1.), 2.) und 3.)}}
+\TALS{\olatLinkArbeitsblatt{Bruchgleichungen (Definitionsbereich wie
+    bei Termen)}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/105951754967029}{1.), 2.) und 3.)}}
 
 \newpage
