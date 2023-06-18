@@ -6,23 +6,7 @@
 Die Kombinatorik befasst sich damit, wie viele Möglichkeiten für
 verschiedene Konstellationen zur Wahl stehen.
 
-Als Einstiegsbeispiel dient die folgende Wanderung:
-
-\vspace{5mm}
-
-\bbwGraphic{12cm}{geso/stoch/img/wanderung.png}
-
-Auf wie viele Arten kann der Wanderer von Wesen (im Westen) nach Obertal (im Osten) gelangen, wenn er ausschließlich von West nach Ost wandern will?
-
-Die Antwort kann durch Abzählen (oder eine Kombination von Abzählen und Multiplizieren) gefunden werden:
-
-\TNTeop{$3\cdot{}(1+(2\cdot3)) + 3 = 24$ Möglichkeiten. Mögliche
-  Erklärung: Bis «L» sind 3 Wege offen. Bis «R» sind total 3*2 + 1,
-  also sieben Wege möglich. Um nach «O» zu gelangen sind nun 7*3 + die
-  drei Wege ab Lisibach und dann direkt, also total 24 Wege möglich. Parallele Wege werden addiert;
-  serielle Wegmöglichkeiten multiplizieren sich.}%% END TNT eop
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\input{geso/stoch/Intro}
 
 \subsection{Variation mit Wiederholung
   (Produktregel)}\index{Variation!mit Wiederholung}
@@ -51,11 +35,11 @@ $$N = n^k = 6^4 = 1296$$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{definition}{Variation}{}\index{Variation!Definition}
+\begin{definition}{Variation}{}\index{Variation!Definition}\label{kombiVariation}
 Eine \textbf{Variation} ist eine \textbf{geordnete} Stichprobe.
 \end{definition}
 
-
+\subsection{Variation mit Zurücklegen}\label{kombiVariationMitZuruecklegen}
 Dieses Experiment entspricht im \textbf{Urnenmodell}\index{Urnenmodell} dem...
 \begin{gesetz}{...Ziehen \textbf{mit} Zurücklegen / Reihenfolge wesentlich.}{}
 Bei diesem Urnenmodell kann jeder Zug unabhängig vom
@@ -67,14 +51,18 @@ $$N = n^k$$
 \begin{bbwFillInTabular}{rcp{14cm}}
   $N$ &=& \TRAINER{Variationen}\\
   $n$ &=& \TRAINER{Anzahl der pro «Ziehung» zur Verfügung stehenden
-    Objekte (optionale Auswahl)}\\
-  $k$ &=& \TRAINER{Anzahl Ziehungen (dabei muss nicht jedes der $n$
-    Objekte gezogen werden)}\\
+    Objekte (optionale Auswahl).}
+\noTRAINER{\vspace{20mm}}
+    \TRAINER{Dabei muss nicht jedes der $n$
+    Objekte gezogen werden.}\\
+  $k$ &=& \TRAINER{Anzahl vorgeschriebene Ziehungen}\noTRAINER{\vspace{20mm}}\\
 \end{bbwFillInTabular}
 %%\renewcommand{\arraystretch}{1}
 
 \end{gesetz}
+\newpage
 
+\subsubsection{Urnenmodell}
 \TNTeop{\bbwGraphic{12cm}{geso/stoch/img/Urnenmodell.png}\\
 Hinweis: Denken Sie an eine Wahlurne, bei der man nicht sehen darf, wie es darin aussieht. Das Urnenmodell wird oft verwendet, da alle unseren Kombinatorischen Problemstellungen damit moedelliert werden können.}%% END TNT
 
@@ -129,7 +117,7 @@ möglich? Dabei darf eine Farbe im Schema auch mehrfach auftreten.}
 
 \newpage
 
-\subsection{Variation ohne Wiederholung}\index{Variation!ohne Wiederholung}
+\subsection{Variation ohne Wiederholung}\index{Variation!ohne Wiederholung}\label{kombiVariationOhneWiederholung}
 \subsubsection{Permutationen (Fakultät)}\index{Permutation}\index{Fakultät}
 Lateinisch «permutare» = vertauschen
 
@@ -259,7 +247,7 @@ Erinnern Sie sich auch an dieses Resultat? \TRAINER{$= \e \approx 2.718281828459
 \newpage
 
 
-\subsubsection{Permutation einer Teilmenge}\index{Permutation!einer Teilmenge}
+\subsubsection{Permutation einer Teilmenge}\index{Permutation!einer Teilmenge}\label{kombiVariationEinerTeilmenge}
 Stellen wir uns vor, wir könnten sechs Kunstbände (Bücher) in ein schmales
 Regal stellen. Mehr geht nicht, weniger wollen wir nicht.
 Nun haben wir zehn solcher Bücher zur Auswahl. Auf wie viele Arten können wir nun sechs Bücher in unser Regal einordnen?
@@ -434,7 +422,7 @@ und alle Vertauschungen: $10\cdot{}9\cdot{}8\cdot{}7 +
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 
-\subsection{Kombinationen}\index{Kombination}
+\subsection{Kombinationen}\index{Kombination}\label{kombiKombination}
 Im Folgenden betrachten wir die Familie G. aus W.:
 \begin{itemize}
 \item Mutter, klein, dunkelhaarig, ...
@@ -584,6 +572,7 @@ Ebenso haben wir die Variationen aus (AB)=(BA) ($=2!$) doppelt gezählt.
 
 \TNTeop{$$N = \frac{5!}{12} =  \frac{120}{6\cdot{}2}=\frac{5!}{3!\cdot{}2!} = {5\choose 3} = {5\choose 2} = $$}%% END TNT
 %% new page implicit
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{bemerkung}{Herleitung der Formel}{}
 Stellen Sie die $n$ Objekte in eine Reihe. Dazu gibt
@@ -600,6 +589,33 @@ Objekte $(n-k)!$ davon weg, es bleibt: $$\frac{n!}{k!(n-k)!}$$
   \end{bemerkung}
 \newpage
 
+\subsubsection{Mississippi-Formel}\index{Mississippi-Formel}
+
+Auf wie viele Arten können die Buchstaben des Wortes Mississippi in
+eine Reihe gebracht werden? Anders gefragt: Wie viel Sinn- und
+Unsinnwörter sind mit den elf Buchstaben des Wortes «Mississippi»
+möglich?
+
+Lösung: Mit den Buchstaben des Wortes
+{\color{red}M}{\color{blue}i}{\color{orange}ss}{\color{blue}i}{\color{orange}ss}{\color{blue}i}{\color{violet}pp}{\color{blue}i}
+können wie folgt Wörter gebildet werden:
+
+\TNT{6}{
+
+  $$\frac{11!}{{\color{red}1!}\cdot{}{\color{blue}4!}\cdot{}{\color{orange}4!}\cdot{}{\color{violet}2!}}
+  = 34650$$
+
+}%% END TNT
+
+Die allgemeine Formel wird wie folgt angewendet:
+
+\TNTeop{
+  $$\frac{n!}{k_1! \cdot{} k_2! \cdot{} k_3! \cdot{} k_4! \cdot{}
+    ...}$$
+  Dabei ist $n$ die Anzahl aller Objekte und $k_i$ die Anzahl
+  gleichartiger Objekte zum Typ $i$ (\zB Buchstabe $i$ = «s»).
+}%% end TNTeop
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Optional: Name Binomialkoeffizient}
 
  Wie viele ``Teilmengen'', nicht nur mit drei Personen, gibt es in obiger
