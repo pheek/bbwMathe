@@ -546,9 +546,40 @@ Wir erhalten:
 $$P(X=2) = \frac{ {T\choose t} \cdot{} {{N}\choose {n}}}{{{T+N}
     \choose {t+n}}} = \LoesungsRaumLang{\frac{ {3\choose 2} \cdot{} {{4}\choose {0}}}{{7
     \choose 2}} = \frac{3\cdot{}1}{21} = \frac17 \approx 0.14}$$
-
+\newpage
 
 \subsection*{Aufgaben}
+
+\aufgabenFarbe{
+Robin kauft im Supermarkt 17 Artikel ein und scannt den Einkauf
+selbständig. Robins fünfjähriges Kind «schmuggelt» nachträglich zwei
+Tafeln Schokolade in die Einkaufstasche. Somit sind nun 19 Artikel in
+der Einkaufstasche, wovon zwei nicht gescannt wurden.
+\\
+Bei einer Kontrolle durch das Ladenpersonal werden jeweils fünf
+Artikel wahllos aus den Einkaufstaschen herausgepickt und mit der
+Abrechnung verglichen.
+\\
+a) Wie groß ist die Wahrscheinlichkeit, dass bei der Prüfung genau eine der nicht
+gescannten Schokoladentafeln dabei ist?
+\\
+b) Wie groß ist die Wahrscheinlichkeit, dass bei der Prüfung
+mindestens eine der nicht gescannten Schokoladentafeln dabei ist?
+}%% end AufgabenFarbe
+
+\TNT{8}{
+  a) Lotto Wahrscheinlichkeit. $T=2; N=17; t=1; n=4$
+  $$
+        P(X=1) = \frac{{2 \choose 1} \cdot{} {17 \choose 4}}{{19 \choose 5}} =
+\frac{70}{171}\approx  40.95\%$$
+
+
+b) $$P(x > 1) = P(x=1) + P(x=2) = \frac{70}{171} +
+    \frac{ {2 \choose 2} \cdot{} {17 \choose 3} }{{19 \choose 5}} = \frac{70}{171} + \frac{10}{171}
+    = \frac{80}{171} \approx 46.78\% $$
+}%% end TNT
+
+
 
 \olatLinkGESOKompendium{5.5.3}{49}{25. (Herz-Karten), 26. (Smarties), 24. (Zahlenlotto) und optional
   27. (Euromillions)}
