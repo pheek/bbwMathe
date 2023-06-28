@@ -31,20 +31,23 @@ Ein Apfel koste CHF $a$, eine Birne CHF $b$. Wenn ich drei Äpfel und zwei Birne
 
 \TNT{5.2}{$a$ = Preis eines Apfels in CHF
 
-  $b$ = Preis einer Birne in CHF
+  $b$ = Preis einer Birne \textbf{in} CHF
 
-  $3a$ = Totalpreis von drei Äpfeln in CHF
+  $3a$ = Totalpreis von drei Äpfeln \textbf{in} CHF
+
+  $2b$ = Totalpreis von zwei Birnen \textbf{in} CHF
 
   etc.
+  
+  \vspace{22mm}
 }
 
 
 Wir schreiben dies üblicherweise als sortiertes Gleichungssystem auf:
 
-\gleichungZZ{3a + 2b}{3.10}{4a + 5b}{6.00}
+\TNTeop{\gleichungZZ{3a + 2b}{3.10}{4a + 5b}{6.00}}
 
-
-\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Einsetzungsverfahren}\label{einsetzungsverfahren}\index{Einsetzungsverfahren!Gleichungssysteme}
 Beim Einsetzungsverfahren wird aus einer der beiden Gleichungen eine der beiden Variablen alleine gestellt. Zum Beispiel hier aus der zweiten Gleichung $b = ...$; danach wird dieser $b$-Term in die \textbf{andere} Gleichung eingesetzt, und so erhalten wir eine Gleichung mit einer Unbekannten.
@@ -71,12 +74,14 @@ Wenn wir diese Gleichung nun nach $a$ auf"|lösen, ...
   $$ 7a = 3.50$$
 }
 
-so erhalten wir $a = 0.50$ (CHF).
+so erhalten wir $a = \LoesungsRaum{0.50}$ (CHF).
 
 
-Nun setzen wir $a$ in (III) ein...:
+Nun setzen wir das gefundene $a$ in (III) ein:
+
 \TNT{2}{$b=\frac{6-4a}{5} = \frac{6-4\cdot{} 0.5}{5} = \frac{6-2}{5} =
-  \frac{4}{5} = 0.8$}
+  \frac{4}{5} = 0.8$}%% end TNT
+
 ...und erhalten $b = \LoesungsRaum{0.80}$ (CHF).
 
 
@@ -92,12 +97,20 @@ Mit dem Einsetzungsverfahren lassen sich auch nicht-lineare
 Gleichungssysteme lösen:
 \gleichungZZ{a\cdot{}b}{72}{a^4\cdot{}\frac{b}2}{288}
 
-  \TNTeop{
-    Lösungsweg: Erstens aus der ersten Gleichung das $b$ separieren:
+Lösungsweg:
+  \TNT{10.8}{
+    Erstens aus der ersten Gleichung das $b$ separieren:
     $$b = \frac{72}a$$
     Und dieses $b$ nun in die \textbf{andere} Gleichung einsetzen:
     $$a^4\cdot{}\frac12\cdot{}\frac{72}{a} = 288$$
-    Auflösen nach $a$ ergibt $a=3$. Dies nun in die «separierte
+    
+    Auflösen nach $a$:
+
+    $$a^3 \cdot{} 36 = 288$$
+
+    $$a^3 = 8$$
+
+    ergibt $a=3$. Dies nun in die «separierte
     Gleichung» einsetzen: $b=\frac{72}{a} = \frac{72}2 = 36$.
 
     Hinweis: Hier hätte man gleich von vornherein die zweite Gleichung
@@ -105,6 +118,17 @@ Gleichungssysteme lösen:
     das Einsetzungsverfahren).
   }%%
 
+  \begin{gesetz}{Lösungsmenge}{}
+    Die Lösung eines Gleichungssystems ist typischerweise ein
+    geordnetes Zahlenpaar. Wir schreiben 
+
+\TNT{2}{    $$\mathbb{L}_{(a; b)} = \left\{(3; 36)\right\}$$ } 
+
+  als Beispiel für obige Gleichung.
+    
+    \end{gesetz}
+
+  \newpage
   %%%%%%%%%%%
   
 \subsection{Additions- bzw. Subtraktionsverfahren}\index{Additionsverfahren!lineare Gleichungen}\index{Subtraktionsverfahren!Gleichungssysteme}
@@ -165,7 +189,7 @@ folgende Gleichung:
   {\color{ForestGreen}\frac{6.00 - 5b}{4}}$$
 \vspace{10mm}}%% END TNT
 
-Nach Auf"|lösung erhalten wir $b=0.80$ (CHF) und das $a$ erhalten wir danach durch Einsetzen in eine der beiden bereits nach $a$ aufgelösten Gleichungen: $a=0.50$ (CHF).
+Nach Auf"|lösung erhalten wir $b=\LoesungsRaum{0.80}$ (CHF) und das $a$ erhalten wir danach durch Einsetzen in eine der beiden bereits nach $a$ aufgelösten Gleichungen: $a=\LoesungsRaum{0.50}$ (CHF).
 
 Das Gleichsetzungsverfahren ist ein Spezialfall des
 Einsetzungsverfahrens\totalref{einsetzungsverfahren}.
