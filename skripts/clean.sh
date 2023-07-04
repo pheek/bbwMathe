@@ -1,1 +1,1 @@
-. ../../layout/clean.sh
+. ../../../framework/bin/clean.sh
