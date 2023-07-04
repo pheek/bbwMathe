@@ -1,15 +1,15 @@
-if [ -f '../../layout/clean.sh' ] ; then
-. ../../layout/clean.sh
+if [ -f '../../framework/bin/clean.sh' ] ; then
+. ../../framework/bin/clean.sh
 fi
 
-if [ -f '../../../layout/clean.sh' ] ; then
-. ../../../layout/clean.sh
+if [ -f '../../../framework/bin/clean.sh' ] ; then
+. ../../../framework/bin/clean.sh
 fi
 
-if [ -f '../../../../layout/clean.sh' ] ; then
-. ../../../../layout/clean.sh
+if [ -f '../../../../framework/bin/clean.sh' ] ; then
+. ../../../../framework/bin/clean.sh
 fi
 
-if [ -f '../../../../../layout/clean.sh' ] ; then
-. ../../../../../layout/clean.sh
+if [ -f '../../../../../framework/bin/clean.sh' ] ; then
+. ../../../../../framework/bin/clean.sh
 fi

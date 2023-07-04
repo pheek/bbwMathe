@@ -32,4 +32,7 @@ fi
 
 
 export MAKE_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )
-. ../../layout/makeBoth.sh
+
+echo "actual make dir: ${MAKE_DIR}"
+
+. ../../../framework/bin/makeBoth.sh

@@ -11,4 +11,4 @@ export ZIELGRUPPE="GESO"
 #export ZIELGRUPPE="TRAINER_GESO"
 
 export MAKE_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )
-../../layout/makeall.sh
+../../../layout/makeall.sh

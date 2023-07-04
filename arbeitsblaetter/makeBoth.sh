@@ -28,18 +28,18 @@ fi
 
 export MAKE_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )
 
-if [ -f '../../layout/makeBoth.sh' ] ; then
-. ../../layout/makeBoth.sh
+if [ -f '../../framework/bin/makeBoth.sh' ] ; then
+. ../../framework/bin/makeBoth.sh
 fi
 
-if [ -f '../../../layout/makeBoth.sh' ] ; then
-. ../../../layout/makeBoth.sh
+if [ -f '../../../framework/bin/makeBoth.sh' ] ; then
+. ../../../framework/bin/makeBoth.sh
 fi
 
-if [ -f '../../../../layout/makeBoth.sh' ] ; then
-. ../../../../layout/makeBoth.sh
+if [ -f '../../../../framework/bin/makeBoth.sh' ] ; then
+. ../../../../framework/bin/makeBoth.sh
 fi
 
-if [ -f '../../../../../layout/makeBoth.sh' ] ; then
-. ../../../../../layout/makeBoth.sh
+if [ -f '../../../../../framework/bin/makeBoth.sh' ] ; then
+. ../../../../../framework/bin/makeBoth.sh
 fi

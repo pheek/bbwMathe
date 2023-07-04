@@ -1,1 +1,1 @@
-. ../../layout/clean.sh
+. ../../../layout/clean.sh
