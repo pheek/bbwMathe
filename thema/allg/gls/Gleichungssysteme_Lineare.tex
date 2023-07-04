@@ -144,8 +144,9 @@ Lösungsweg:
 
   \newpage
   %%%%%%%%%%%
-  
-\subsection{Additions- bzw. Subtraktionsverfahren}\index{Additionsverfahren!lineare Gleichungen}\index{Subtraktionsverfahren!Gleichungssysteme}
+
+\subsection{Abkürzende Verfahren}
+\subsubsection{Additions- bzw. Subtraktionsverfahren}\index{Additionsverfahren!lineare Gleichungen}\index{Subtraktionsverfahren!Gleichungssysteme}
 Eine weitere Möglichkeit Gleichungen mit mehreren Unbekannten zu lösen ist das Verfahren, die linke und die rechte Seite miteinander zu addieren (bzw. voneinander zu subtrahieren), sodass eine Variable wegfällt. Dazu müssen die Gleichungen vorher so \textit{präpariert} werden, dass in einer Variablen (hier \zB $a$) die Koeffizienten übereinstimmen:
 
 \gleichungZZ{3a + 2b}{3.10}{4a + 5b}{6.00}
@@ -162,7 +163,7 @@ Eine weitere Möglichkeit Gleichungen mit mehreren Unbekannten zu lösen ist das
 Wir wählen \zB in obigem Beispiel die Variable $a$ und multiplizieren die obere Gleichung mit 4 und die untere mit 3 und
 erhalten:
 
-\TNT{2}{\gleichungZZ{12a + 8b}{12.40}{12a + 15b}{18.00}}
+\TNT{2.8}{\gleichungZZ{12a + 8b}{12.40}{12a + 15b}{18.00}}
 
 
   Nun können wir die obere Gleichung von der unteren Gleichung abziehen (damit die Variable $a$ eliminiert wird)
@@ -184,33 +185,44 @@ und erhalten nach dem Auf"|lösen $a=0.50$ (CHF).
 \newpage
 
 
-\subsection{Gleichsetzungsverfahren (optional)}\label{lin_gl_gleichsetzungsverfahren}\index{Gleichsetzungsverfahren}
+\subsubsection{Gleichsetzungsverfahren (optional)}\label{lin_gl_gleichsetzungsverfahren}\index{Gleichsetzungsverfahren}
 Beim Gleichsetzungsverfahren werden zwei Gleichungen nach der selben Variable \textit{aufgelöst} und die beiden Gleichungen der Form $a = ...$ einander gleichgesetzt.
 
-Lösen wir also beide Gleichungen nach $a$ auf:
-\gleichungZZ{3a + 2b}{3.10}{4a + 5b}{6.00}
-und erhalten:
-
-\TNT{4.4}{\gleichungZZ{a}{{\color{orange}\frac{3.10 -
-        2b}{3}}}{a}{{\color{ForestGreen}\frac{6.00 - 5b}{4}}}%%
-\vspace{22mm}}%% END TNT
+\gleichungZZ{a}{{\color{orange}\frac{3.10 -2b}{3}}}{a}{{\color{ForestGreen}\frac{6.00 - 5b}{4}}}
 
 
-Setzen wir nun die beiden Terme gleich, so erhalten wir die
-folgende Gleichung:
 
-\TNT{6.4}{$${\color{orange}\frac{3.10 - 2b}{3}} =
+Die beiden Terme mit $b$ sind gleich, und somit können wir diese gleichsetzen:
+
+\TNT{8}{$${\color{orange}\frac{3.10 - 2b}{3}} =
   {\color{ForestGreen}\frac{6.00 - 5b}{4}}$$
+
+
+  $$\cdot{} 12$$
+
+  $$12.40 - 8b = 18 - 15b$$
+
+  $$7b = 5.60$$
+  
 \vspace{10mm}}%% END TNT
 
-Nach Auf"|lösung erhalten wir $b=\LoesungsRaum{0.80}$ (CHF) und das $a$ erhalten wir danach durch Einsetzen in eine der beiden bereits nach $a$ aufgelösten Gleichungen: $a=\LoesungsRaum{0.50}$ (CHF).
+Nach Auf"|lösung erhalten wir $b=\LoesungsRaum{0.80}$ (CHF) und das
+$a$ erhalten wir danach durch Einsetzen in eine der beiden bereits
+nach $a$ aufgelösten Gleichungen:
+
+\TNT{4}{
+$$a=\frac{3.10 -2b}{3} =\frac{3.10 - 2\cdot{}0.80}{3} =  \frac{3.10 -
+    1.60}{3} =  \frac{1.50}{3} = 0.50 $$
+}
+
+$a=\LoesungsRaum{0.50}$ (CHF).
 
 Das Gleichsetzungsverfahren ist ein Spezialfall des
 Einsetzungsverfahrens\totalref{einsetzungsverfahren}.
 \newpage
 
 
-\subsubsection*{Aufgaben}
+\subsubsection{Brüche}
 Oft kommen auch in Gleichungssystemen Bruchgleichungen vor. Tipp:
 bevor Sie die folgenden Aufgaben lösen, betrachten Sie die folgende
 Abkürzung, um eine Bruchgleichung zu vereinfachen...
@@ -224,7 +236,7 @@ Nun wie gewohnt auflösen:
 \TNT{6.4}{
 
   $$4y-8-2xy+4x=10x-2xy-15+3y$$
-  $$\Rightarrow y+7=6$$
+  $$\Rightarrow y+7=6x$$
   \gleichungZZ{7}{6x-y}{8}{5x-3y}
   Additionsverfahren: Obere Gleichung mit 3 multiplizieren:
   \gleichungZZ{21}{18x-3y}{8}{5x-3y}
