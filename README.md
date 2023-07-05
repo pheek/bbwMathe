@@ -1,5 +1,6 @@
 Mathe Skripts Arbeitsblätter
 ============================
+(Version: 2023_07_05a)
 
 BMS an der BBW (TALS und GeSo)
 BBW Layout, Skripts und Arbbeitsblätter
