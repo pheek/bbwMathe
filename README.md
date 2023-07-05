@@ -14,4 +14,19 @@ git clone https://github.com/pheek/bbwMathe
 Die relativen Pfade für das Kompilieren der LaTeX-Quellen sind in den
 make-files beschrieben.
 
-Insbesondere muss das Verzeichnis "includes/thema", aber auch das Verzeichnis "layout" im LaTeX-Pfad integriert sein.
+Auf derselben Stufe, wie cnt (hier ist der Name nicht mal so wichtig)
+muss auch das Verzeichnis "framework" stehen. Dies muss jedoch genau
+so heißen:
+
+git clone https://github.com/pheek/bbwFramework
+
+mv bbwFramework framework
+
+Die Struktur sieht dann typischerweise so aus:
+
+<~mgit>
+  / pruefungen
+  / cnt
+  / framework
+
+
