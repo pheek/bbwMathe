@@ -43,3 +43,7 @@ fi
 if [ -f '../../../../../framework/bin/makeBoth.sh' ] ; then
 . ../../../../../framework/bin/makeBoth.sh
 fi
+
+if [ -f '../../../../../../framework/bin/makeBoth.sh' ] ; then
+. ../../../../../../framework/bin/makeBoth.sh
+fi
