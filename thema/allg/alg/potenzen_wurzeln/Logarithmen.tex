@@ -91,8 +91,9 @@ $$10^{\lg(2)\cdot{}x} = 10^{\lg(128)}$$
  
 \begin{bemerkung}{Zehnerlog.}{}
   Zur Erinnerung:
-
-  $${\color{blue}10}^{\color{red}x} = {\color{ForestGreen}p} \Longleftrightarrow {\color{red}x} = {\color{blue}\lg}({\color{ForestGreen}p})$$
+  \noTRAINER{\vspace{22mm}}
+    
+  \TRAINER{$${\color{blue}10}^{\color{red}x} = {\color{ForestGreen}p} \Longleftrightarrow {\color{red}x} = {\color{blue}\lg}({\color{ForestGreen}p})$$}
 \end{bemerkung}
 
 Diese Definition können wir auf jede andere Basis als 10 ausweiten:
@@ -178,7 +179,7 @@ Aus obigem Beispiel («die Harte Tour» \totalref{harteTourLogarithmen}) folgt d
 \newpage
 
 
-\subsubsection{Weitere Logarithmengesetze}\index{Gesetze!Logarithmen}
+\subsubsection{Logarithmengesetze: Beispiele}\index{Beispiele!Logarithmen}\index{Gesetze!Logarithmen}\index{Logarithmus!Beispiele,Gesetze}
  
  \begin{bemerkung}{}{}
    $$\log_a(a^7) = \LoesungsRaum{7}$$
@@ -228,8 +229,10 @@ Aus obigem Beispiel («die Harte Tour» \totalref{harteTourLogarithmen}) folgt d
  $$\log_a(a^x) = x\TRAINER{ (II)}$$
 
 
-\TNT{6}{
-\GESO{GESO:  Beweis am Beispiel:
+ Damit gilt: 
+ \TNT{6}{
+   
+\GESO{GESO:  
   $\lg(100^7) = \lg((10^2)^7) {\stackrel{(I)}{=}} \lg(10^{2\cdot{}7}) =
   \lg(10^{(7\cdot{} 2)}) {\stackrel{(II)}{=}} 7\cdot{} 2 {\stackrel{(II)}{=}} 7\cdot{}
   \lg(10^2) = 7\cdot{}\lg(100)$
@@ -253,7 +256,7 @@ Aus obigem Beispiel («die Harte Tour» \totalref{harteTourLogarithmen}) folgt d
    \end{gesetz}
 \newpage
 
-\subsubsection{Weitere Logarithmusgesetze\GESO{ (optional)}}
+\subsubsection{Produkt- und Quotientenregel\GESO{ (optional)}}
 
 \TALS{\
   \begin{gesetz}{}{} 
@@ -331,6 +334,7 @@ $$x=\log_a(p) \Longleftrightarrow  a^x=p$$
 
 \AadBMTA{106}{33.}
 
+\olatLinkGESOKompendium{1.5}{9}{20}
 
 
 \newpage
@@ -357,14 +361,50 @@ Wenn ich auf einem Taschenrechner lediglich $\ln()$ und $\e^x$ zur
 Verfügung habe\footnote{Oder ich habe, wie früher, nur eine
 Logarithmentabelle.} und dennoch $\log_a(p)$ oder das $x$ in $a^x=p$ berechnen will, so kann ich dies mit einer Transformation zur Basis $\e$ vollbringen:
 
+\begin{gesetz}{Logarithmus Naturalis}{}
+  $$\log_a(p) = \frac{\ln(p)}{\ln(a)} \TRAINER{= \frac{\lg(p)}{\lg(a)}}$$
+\end{gesetz}
+
 \begin{bemerkung}{Logarithmus Naturalis}{}
   Jede Potenz kann als Potenz mit der Basis $\e$ geschrieben werden:
   $$a^x = \e^{x\cdot{}\ln(a)}$$
 \end{bemerkung}
 
-\begin{gesetz}{Logarithmus Naturalis}{}
-  $$\log_a(p) = \frac{\ln(p)}{\ln(a)}$$
-\end{gesetz}
+\newpage
+\subsubsection{Diverse Notationen}\index{Logarithmus!Notationen}
+
+Verschiedene Taschenrechner bzw. Programmiersprachen verwenden
+verschiedene Notationen für den Logarithmus:
+
+\begin{tabular}{|c|c|l|}\hline
+ \textit{wer}        & \textit{\textbf{Notation}} & \textit{Bedeutung}\\\hline
+  TI-Rechner, duckduckgo, Google, libreOffice & $\log$ & $log_{10} = \lg$\\\hline
+  \texttt{c}, $\text{Java}^{\text{TM}}$, \texttt{python}, R   & $\log$ & $log_{\e} = \ln$\\\hline
+  Google             & $\lg$  & $log_{2}$\\\hline
+\end{tabular}
+
+\vspace{22mm}
+
+\textbf{Programmiersprachen:}\\
+
+
+Einige Programmierpsrachen kennen keine «Hoch»-Funktion. In einigen
+Programmierspachen wird das «Hoch» mit «\texttt{**}» oder mit
+«\texttt{pow}» berechnet.
+
+Wenn eine Programmiersprache das «Hoch» jedoch nicht kennt, kann dies
+einfach mit dem Gesetz
+$$a^b = e^{\ln(a)\cdot{} b}$$
+errechnet werden.
+
+\begin{beispiel}{Power-Funktion}{}
+
+  In c, bzw. python kann $x:=5.3^{7.2}$ wie folgt berechnet werden:
+
+  \begin{center}{\texttt{ x = exp(log(5.3) * 7.2) }}\end{center}
+
+\end{beispiel}
+
 
 \newpage
 \subsection*{Aufgaben}

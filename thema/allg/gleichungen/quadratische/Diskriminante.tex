@@ -43,7 +43,7 @@ Entscheiden Sie, wie viele Lösungen die gegebenen Gleichungen haben:
 Bestimmen Sie den Parameter $b$ so, dass die folgende Gleichung genau
 eine Lösung hat:
 $$x^2+b+2 = -2bx$$
-\TNT{16}{
+\TNTeop{
   Vorzeigeaufgabe: S. 183.: 16. b):%%
   Grundform:
   $$x^2+2bx+b+2=0$$
@@ -53,10 +53,36 @@ $$x^2+b+2 = -2bx$$
   $$b^2-b-2 = 0$$
   $$\mathbb{L}_b = \{-1; 2\}$$
 }%% END TNT
+\newpage
 
+\subsubsection{Taschenrechner}
+Das selbe Beispiel können wir ganz einfach auch mit dem Taschenrechner lösen:
+\begin{beispiel}{Taschenrechner}{}
+  Bestimmen Sie den Parameter $b$ so, dass die quadratische
+  Gleichung $$x^2+b+2=-2bx$$
+  genau eine Lösung hat:
+
+  \TNT{2}{\texttt{solve($x^2+b+2=-2bx$, x)} liefert
+
+  $$x_{1,2} = \pm\sqrt{b^2-b-2} - b$$}
+  
+  nun die Diskriminante suchen
+
+  \TNT{2}{\texttt{D = $b^2-b-2$}}
+
+  jetzt Diskriminante = 0 setzen:
+
+  \TNT{2}{\texttt{solve($b^2-b-2$ = 0,b)}
+
+    liefert
+
+  $$b_{1,2} = -1 \text{ oder } 2$$}
+
+\end{beispiel}%%  
+  
+\newpage
 \subsection*{Aufgaben}
-\AadBMTA{182ff}{16. a)  b)  c)}
-  }%% END TALS
+\AadBMTA{182ff}{16. a) c) d)}
 
-
+}%% END TALS
 \newpage
