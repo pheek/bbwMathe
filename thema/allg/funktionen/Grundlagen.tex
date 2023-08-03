@@ -10,8 +10,7 @@
 \begin{itemize}
  \item Zuordnung
  \item Mengenbegriffe: Definitionsmenge\index{Definitionsmenge} (= Definitionsbereich\index{Definitionsbereich}) vs. Quellbereich\index{Quellbereich}
- \item Wertebereich (= Bildmenge) vs. Zielmenge\index{Zielmenge}
-   (=Zielmenge\index{Zielmenge} oder Wertevorrat\index{Wertevorrat})
+ \item Wertebereich (= Bildmenge) vs. Wertevorrat (= Zielmenge)
  \item Darstellungsarten
    \begin{itemize}
       \item Wertetabelle
@@ -31,31 +30,21 @@
 \TadBMTA{211}{13}
 \newpage
 \subsection{Allgemeiner Funktionsbegriff}\index{Funktion!allgemeiner Begriff}
-
-\begin{definition}{Funktion}{}
-    Eine \textbf{Funktion}\index{Funktion} ist eine \textbf{Zuordnung}\index{Zuordnung}, die jeder Zahl
-    $x$ aus einer Definitionsmenge \textbf{genau} eine Zahl $y$ aus
-    einer Zielmenge\index{Zielmenge} zuordnet.\\
-\end{definition}
-    
-Die Menge aller getroffenen Werte aus der Zielmenge wird \textbf{Wertebereich}\index{Wertebereich}
-(oder Bildmenge) genannt.\GESO{ Achtung im Buch \cite{marthaler21alg} wird
-  mit dem Begriff «Bildmenge» der Wertevorrat bezeichnet!}
-
 Mengenbezeichnungen bei Gleichungen (Diese Mengen sind bereits
 bekannt\footnote{Die Definitionsmenge bezeichnet hier die Menge aller
   Zahlen für die alle Terme definiert sind.}):
 
 \begin{tabular}{cp{4cm}l}
-
   \raisebox{-3cm}{\includegraphics[width=8cm]{allg/funktionen/img/MengenbezeichnungenBeiGleichungen.png}}
-  & Beispiel & \makecell{$\frac{1}{x-3}=5$\\
+  & Beispiel & \TRAINER{\makecell{$\frac{1}{x-3}=5$\\
   $\mathcal{G}=\mathbb{R}$\\
   $\mathcal{D}=\mathbb{R}\backslash{}\{3\}$\\
-  $\lx = \{3.2\}$}%% end makecell
+      $\lx = \{3.2\}$}%% end makecell
+    }%% END Trainer
 \end{tabular}
 
 \vspace{6mm}
+
 Mengenbezeichnungen bei Funktionen:
 \TRAINER{\begin{center}
   \includegraphics[width=16cm]{allg/funktionen/img/MengenbezeichnungenBeiFunktionen.png}
@@ -66,6 +55,22 @@ Mengenbezeichnungen bei Funktionen:
   \includegraphics[width=16cm]{allg/funktionen/img/MengenbezeichnungenBeiFunktionenLeer.png}
 \end{center}
 }%% END no TRAINER
+
+\begin{definition}{Wertebereich}{}
+Die Menge aller getroffenen Werte aus dem Wertvorrat wird \textbf{Wertebereich}\index{Wertebereich}
+(oder Bildmenge) genannt. Bemerkung: im Buch \cite{marthaler21alg} wird
+  mit dem Begriff «Bildmenge» der Wertevorrat bezeichnet!
+\end{definition}
+
+\newpage
+\subsubsection{Definition Funktionsbegriff}
+
+\begin{definition}{Funktion}{}\index{Funktion!Definition}
+    Eine \textbf{Funktion}\index{Funktion} ist eine eindeutige \textbf{Zuordnung}\index{Zuordnung}, die jeder Zahl
+    $x$ aus einem Definitionsbereich \textbf{genau} eine Zahl $y$ aus
+    einem Wertevorrat\index{Wertevorrat} (= Zielmenge)\index{Zielmenge} zuordnet.\\
+\end{definition}
+
 
 \TALS{
 \begin{beispiel}{reelle Funktion}{}
@@ -80,20 +85,21 @@ Mengenbezeichnungen bei Funktionen:
     
   $$\tan: \mathbb{R}\backslash\{90^\circ{}+z\cdot{}180^\circ{}|z \in \mathbb{Z}\} \rightarrow \mathbb{R} \text{ mit } \alpha\mapsto{}\tan(\alpha) $$
 \end{beispiel}
-}
+}%% end TALS
+
 
 \begin{bemerkung}{}{}
   Zum Wertebereich: Wo der Begriff Quellbereich (eine theoretische Obermenge
   des Definitionsbereichs\index{Definitionsbereich}) kaum praktische Bedeutung hat,
-  wird jedoch in speziellen Fällen statt dem Wertebereich die
-  \textbf{Zielmenge}\index{Zielmenge}\footnote{Die Zielmenge
-    wird auch Zielbereich, Wertevorrat\index{Wertevorrat},
+  wird jedoch in speziellen Fällen statt dem Wertebereich der
+  Wertevorrat\index{Wertevorrat}\footnote{Der Wertevorrat
+    wird auch Zielbereich, Zielmenge\index{Zielmenge},
     Cobereich\index{Cobereich} oder Nachbereich\index{Nachbereich}
     genannt (\cite{FormelnUndTafeln19}).}
   angegeben; meist daher, weil der
   Wertebereich in komplexen, fraktalen, sprungstetigen oder sonstwie komplizierten Funktionen schlicht
   und ergreifend nicht bekannt ist.\footnote{\textbf{Beispiel 1}: Bei der Funktion
-    «mittlere Tagestemperatur» ist zwar die Zielmenge ($\mathbb{R}[{}^\circ]$)
+    «mittlere Tagestemperatur» ist zwar der Wertevorrat ($\mathbb{R}[{}^\circ]$)
     bekannt, jedoch sind die effektiv getroffenen Bildwerte meist nur
     zwischen $-40^\circ$ und $+50^\circ$ vorzufinden (daher ist der
     effektiv eintretende Wertebereich erst dann bekannt, wenn das Wetter
@@ -102,7 +108,7 @@ Mengenbezeichnungen bei Funktionen:
     «millionste Nachkommastelle von $n\pi$»
     kann der effektive Wertebereich nicht
   angesehen werden, bevor wir genügend oft die millionste Ziffer von
-  $n\pi$ berechnet haben. Hier ist vorerst nur die Zielmenge, nicht
+  $n\pi$ berechnet haben. Auch hier ist vorerst nur der Wertevorrat, nicht
   aber der Wertebereich bekannt.}
 \end{bemerkung}
 
@@ -111,13 +117,25 @@ Mengenbezeichnungen bei Funktionen:
   \begin{beispiel}{Jahreszins}{}
     Jahreszins bei gegebenem Jahreszinssatz von 3\%:
 
-    $\mathcal{D} = \mathbb{R}^{+}$; $\mathcal{W} = \mathbb{R}^{+}$
+    \vspace{5mm}
+    
+    $\mathcal{D} = \LoesungsRaum{\mathbb{R}^{+}}$
 
-    $\text{Zins}: \mathbb{R}^{+} \rightarrow \mathbb{R}^{+} \text{ mit } k \mapsto{} k\cdot{}\frac{3}{100}$
+    \vspace{5mm}
+    
+    $\mathcal{W} = \LoesungsRaum{\mathbb{R}^{+}}$
+
+    \vspace{5mm}
+    
+    $\text{Zins}: \LoesungsRaum{\mathbb{R}^{+} \rightarrow \mathbb{R}^{+}}$
+
+    \vspace{5mm}
+
+    $\text{ mit } k \LoesungsRaum{\mapsto{} k\cdot{}\frac{3}{100}}$
     \end{beispiel}
 }
 
-\AadBMTA{232}{20., 21. und 22.}
+\AadBMTA{232}{21. und 22.}
 
 \newpage
 
@@ -147,11 +165,11 @@ Mengenbezeichnungen bei Funktionen:
 
   \begin{tabular}{l|l}
     \textit{Begriff} & \textit{Beispiel(e)}\\\hline
-    \textbf{Funktionsgleichung}\index{Funktion!Gleichung}\index{Gleichung!Funktion}   & \TRAINER{$y=x^2-1$ bzw. $y=f(x)$}\\\hline
-    \textbf{Funktionsargumente}\index{Funktion!Argument}\index{Argument!Funktionen}    & \TRAINER{$x$-Werte:  -2, -1, 0, 1, ...}\\\hline
-    \textbf{Funktionswert}     \index{Funktion!Wert}\index{Wert!einer Funktion}       & \TRAINER{$y$-Werte: 3, 0, -1, 0, ... }\\\hline
-    Funktionsterm\index{Funktion!Term}\index{Funktionsterm}\index{Term!Funktionsterm}        & \TRAINER{$x^2-1$}\\\hline
-    Funktionsvorschrift\index{Funktion!Vorschrift}\index{Vorschrift!Funktionsvorschrift}        & \TRAINER{$x\mapsto{}x^2-1$}\\\hline
+    \textbf{Funktionsgleichung}\index{Funktion!Gleichung}\index{Gleichung!Funktion}        & \TRAINER{$y=x^2-1$, $f(x)=x^2-1$, $y=f(x)$}\\\hline
+    \textbf{Funktionsargumente}\index{Funktion!Argument}\index{Argument!Funktionen}        & \TRAINER{$x$-Werte:  -2, -1, 0, 1, ...}\\\hline
+    \textbf{Funktionswert}     \index{Funktion!Wert}\index{Wert!einer Funktion}            & \TRAINER{$y$-Werte: 3, 0, -1, 0, ... }\\\hline
+    Funktionsterm\index{Funktion!Term}\index{Funktionsterm}\index{Term!Funktionsterm}      & \TRAINER{$x^2-1$}\\\hline
+    Funktionsvorschrift\index{Funktion!Vorschrift}\index{Vorschrift!Funktionsvorschrift}   & \TRAINER{$x\mapsto{}x^2-1$}\\\hline
 %%    \textbf{Funktionsparameter}\index{Funktion!Parameter}\index{Parameter!Funktionen} & \TRAINER{$x$}\noTRAINER{\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,}\\\hline
   \end{tabular}
 
@@ -162,7 +180,7 @@ Mengenbezeichnungen bei Funktionen:
 
 %%\TALSAadBFWA{165ff}{577. e) f) 578. b) 579. a) c) 580. a) c) 581.b)
 %%  582. 587. 588. 592.}
-\AadBMTA{231ff}{17. a) b) und f) und  19. a) b) e) und f)}
+\AadBMTA{231ff}{17. a) f) und b) und  19. a) b) e) und f)}
 
 \olatLinkGESOKompendium{3.1}{20}{1. und 2.}
 \newpage

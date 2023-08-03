@@ -1,23 +1,36 @@
-\subsubsection{Referenzaufgabe Schnittpunkt zwischen zwei Geraden}
+\subsubsection{Schnittpunkt zwischen zwei Geraden}
 
-Wo schneiden sich die Geraden $f: y=3x - 1$ und $g: y=-\frac{1}{4}x +
-2$?
+Wo schneiden sich die Geraden $f: y=3x - 1$ und $g: y=-\frac14x + 2$?
 
 Zeichnen Sie zunächst eine Skizze:
 
-
-\bbwGraph{-2}{6}{-3}{5}{
+\bbwGraph{-4}{4}{-4}{5}{
+\bbwFunc{3*\x - 1}{-1.5:2}{blue}
+\bbwFunc{-\x/4 +2}{-1.5:2}{blue}
 }
 
 Gibt es eine Möglichkeit, den Schnittpunkt rechnerisch zu bestimmen?
 
-\platzFuerBerechnungenBisEndeSeite{}
-\TRAINER{$$f(x_s)=y=g(x_s)$$ ergo $$\frac{x_s}{4}-2=-\frac{3x_s}{2}+5$$ ergo $$x_s=4$$}
+\TNTeop{
+$$f(x_s)=y=g(x_s)$$
+
+$$3x-1 = -\frac14x + 2$$
+$$\frac{13}4x = 3$$
+
+$x=\frac{12}{13} y= 3\cdot{}\frac{12}{13} - 1 =\frac{36}{13}-\frac{13}{13} =\frac{23}{13}$
+
+$$S = \left(\frac{12}{13}\middle|\frac{23}{13}\right)$$
+}%% END TNTeop
+
+
 \newpage
 
 \TALS{%%
 
 \subsubsection{Schnittpunkt zweier Funktionen mit dem Taschenrechner}
+
+Nehmen wir zur Abwechslung zwei andere Funktionen, von denen wir den
+Schnittpunkt ihrer Graphen bestimmen wollen:
 
 $$f(x) :=  \frac{x}{4}  - 2$$
 $$g(x) := -\frac{3}{2}x + 5$$
@@ -34,4 +47,3 @@ $$g(x) := -\frac{3}{2}x + 5$$
   $$solve(gls,\{xs, ys\})$$
   \TRAINER{Lösung S(4|-1)}
 }%%
-
