@@ -56,6 +56,9 @@ cp -f ./funktionen/funktionen_leere_koordinatensysteme/LeereKoordinatensysteme.p
 echo "  copying Begriffe Koordinatensystem Selbsteinschätzung"
 cp -f ./funktionen/begriffe/Begriffe_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/funktionen/einstieg/begriffe/Begriffe.pdf
 
+echo "  copying Koordinatensystem Arbeitsblatt SAN"
+cp -f ./funktionen/koordinatensystem_arbeitsblatt/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/funktionen/koordinatensystem/arbeitsblatt/
+
 echo "  copying Lineare Funktionen Arbeitsblatt SAN"
 cp -f ./funktionen/funktionen_lineare_arbeitsblatt/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/funktionen/lineare_funktionen/ArbeitsblattSAN/
 
