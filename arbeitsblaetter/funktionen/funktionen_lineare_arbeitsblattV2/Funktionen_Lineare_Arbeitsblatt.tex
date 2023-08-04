@@ -1,0 +1,335 @@
+%%
+%% Meta: TI nSpire Einführung
+%%       Ziel: Damit die Grundoperationen damit durchgeführt werden können.
+%%             Damit man sich an den Rechner gewöhnt.
+%%
+
+\input{bbwLayoutPage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amssymb} %% für \blacktriangleright
+\renewcommand{\metaHeaderLine}{Lineare Funktionen}
+\renewcommand{\arbeitsblattTitel}{\metaHeaderLine{} Arbeitsblatt (V 2.0)}
+
+\begin{document}%%
+\arbeitsblattHeader{}
+
+\title{Aufgaben Funktionsbegriff}
+
+\section{Darstellung}
+\subsection{Wertetabelle und Graph}
+Gegeben ist die Funktion $f$:
+$$y=\frac32x-5$$
+
+
+a) Erstellen Sie eine Wertetabelle für $f$:
+
+\TRAINER{%%
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}\hline
+$-4$ & $-3$ & $-2$ & $-1$ & $0$ & $1$ & $2$ & $3$ & $4$ & $5$ & $6$\\\hline%%
+$-11$ & $-9.5$ & $-8$ & $-6.5$ & $-5$ & $-3.5$ & $-2$ & $-0.5$ & $1$ & $2.5$ & $4$\\\hline%%
+\end{tabular} 
+}%% end TRAINER
+\noTRAINER{%%
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+$-4$ & $-3$ & $-2$ & $-1$ & $0$ & $1$ & $2$ & $3$ & $4$ & $5$ & $6$\\\hline
+ \hspace{7mm} & \hspace{7mm} & \hspace{7mm} & \hspace{7mm} &\hspace{7mm} &\hspace{7mm} &\hspace{7mm} &\hspace{7mm} &\hspace{7mm} &\hspace{7mm} &\hspace{7mm}\,\,\,\,%%
+\end{tabular} 
+}%% end noTRANIER
+
+b) Zeichnen Sie den Graphen von $f$ ins folgende
+Koordinatensystem; natürlich nur im passenden Bereich (Tipps:
+Taschenrechner / Grundform):
+
+\bbwGraph{-2}{6}{-7}{2}{%%
+\TRAINER{\bbwFunc{\x / 2 * 3 - 5}{-1:4}}
+}%% end bbwGraph
+
+c) Geben Sie die beiden Schnittpunkte mit den Achsen an:
+$$S_{y\text{Achse}} = \LoesungsRaum{(0|-5)}
+\text{ und }
+S_{x\text{-Achse}} = \LoesungsRaum{\left(\frac{10}3 \middle| 0\right)}$$
+\newpage
+
+\subsection{Skizzieren}
+Skizzieren Sie die folgenden Funktionen $f_1$ bis $f_6$:
+
+$f_1$: $y=2x+3$
+
+\bbwGraph{-4}{5}{-3}{5}{
+\TRAINER{\bbwFunc{2*\x + 3}{-3:1}}
+}
+
+
+$f_2$: $y=\frac12x-1$
+
+\bbwGraph{-4}{5}{-3}{1}{
+\TRAINER{\bbwFunc{0.5*\x  - 1}{-3:4}}
+}
+\newpage
+
+
+$f_3$: $y=-x+1.5$
+
+\bbwGraph{-4}{5}{-3}{5}{
+\TRAINER{\bbwFunc{-\x  +1.5}{-3:4}}
+}
+
+
+
+$f_4$: $y=\frac23x-3$
+
+\bbwGraph{-4}{6}{-5}{2}{
+\TRAINER{\bbwFunc{\x*2/3 -3}{-3:5}}
+}
+\newpage
+
+
+$f_5$: $2x=2y-4$ \TRAINER{$\Longrightarrow  y=x+2$}
+
+\bbwGraph{-5}{5}{-2}{5}{
+\TRAINER{\bbwFunc{\x+2}{-4:3}}
+}
+
+
+
+$f_6$: $\frac{2-x}3 = \frac{y-x}6$ \TRAINER{$\Longrightarrow  y=-x+4$}
+
+\bbwGraph{-3}{5}{-2}{6.5}{
+\TRAINER{\bbwFunc{-\x  +4}{-2:5}}
+}
+\newpage
+
+\section{$y$-Achsenabschnitt (= Ordinatenabschnitt)}
+
+\subsection{$y$-Achsenabschnitt rechnen}
+
+Geben Sie jeweils den $y$-Achsenabschnitt an:
+
+a) $y=3x-2$ $\Longrightarrow$ $y$-Achsenabschnitt =
+$\LoesungsRaum{-2}$
+
+\noTRAINER{\mmPapier{2.4}}
+
+b) $y=4x+\frac12$ $\Longrightarrow$ $y$-Achsenabschnitt =
+$\LoesungsRaum{\frac12}$
+
+\noTRAINER{\mmPapier{3.2}}
+
+c) $2(x+y+1) = y-4x+3$ $\Longrightarrow$ $y$-Achsenabschnitt =
+$\LoesungsRaum{1}$
+
+\TNTeop{
+Umformen in Grundform:
+$$2(x+y+1) = y-4x+3$$
+$$2x+2y+2 = y-4x+3$$
+$$2x+2y-1 = y-4x$$
+$$6x+2y-1 = y$$
+$$6x+y-1 = 0$$
+$$6x+y= 1$$
+$$y= -6x + 1$$
+}
+%% implicit: \newpage
+
+\subsection{Funktionsgleichung finden}
+Die Funktion $y=3x+b$ geht durhc den Punkt $(0|7)$.
+Berechnen Sie den Parameter $b$ oder mit anderen Worten: Geben Sie die
+Funktionsgleichng an:
+
+\TNT{4.8}{$$y=3x+7$$ denn $7$ ist als $y$-Achsenabschnitt gegeben.}
+\newpage
+
+\section{Steigung}
+
+\subsection{Steigung von Strecken}
+Geben Sie die Steigungen der folgenden Strecken an:
+
+\newcommand{\bbwStrecke}[7]{%%
+\bbwDot{#1,#2}{blue}{west}{}\bbwLine{#1,#2}{#3,#4}{blue}\bbwDot{#3,#4}{blue}{west}{}%
+\draw (#5,#6) node{{\color{blue}#7)}};
+}%%
+
+\bbwGraph{-8}{7}{-6}{6}{%
+\bbwStrecke{ 2}{ 3}{ 6}{ 5}{ 4  }{ 4.5}{a}
+\bbwStrecke{-6}{ 4}{-3}{ 3}{-4.5}{ 4  }{b}
+\bbwStrecke{-7}{-4}{-4}{-4}{-5.5}{-4.5}{c}
+\bbwStrecke{-3}{-2}{ 2}{-5}{ 1  }{-4  }{d}
+\bbwStrecke{ 0}{-1}{ 4}{ 2}{ 2  }{ 1  }{e}
+\bbwStrecke{ 4}{-3}{ 4}{-5}{ 4.5}{-4  }{f}
+
+}%% end BBW Graph
+
+Lösungen:
+
+\TNTeop{
+a) $\frac12$; b) $-\frac13$; c) $0$; d) $-\frac35$; e) $\frac34$
+
+Bei f) wäre die Steigung unendlich hoch. Da die Gerade, welche die
+Strecke $f$ verlängert aber sowieso keine Funktion ist, entwällt eine
+weitere Betrachtung; f) hat keine Lösung.
+}
+\newpage
+
+\subsection{Geradensteigung und $y$-Achsenabschnitt bestimmen}
+
+%%\bbwGraph{-8}{8}{-6}{5}{}
+\noTRAINER{\bbwCenterGraphic{18cm}{img/FunktionsgleichungAblesen.png}}
+  \TRAINER{\bbwCenterGraphic{9cm}{img/FunktionsgleichungAblesen.png}}
+
+[challenge: $y$-Achsenabschnitt bei d) e) Tipp: Dreisatz]
+
+\TNTeop{
+a) $y = -x + 1$
+
+b) $y = \frac{-2}{3}x - 2$
+
+c) $y = 0x + 2.5 = 2.5$
+
+d) $y = \frac56x + 4\cdot{}\frac56 - 2 = \frac56x + \frac43$
+
+e) $y = \frac{5}{23}x + 5.5\cdot{}\frac5{23}-1 = \frac5{23}x + \frac{9}{46}$
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+\section{Nullstelle}
+
+\subsection{Steigung, $y$-Achsenabschnitt und Nullstelle bestimmen}
+Bestimmen Sie den $y$-Achsenabschnitt $b$, die Nullstelle ($y=0$, d.\,h. $x=\frac{-b}{a}$) und die Steigung $a$ der folgenden Funktionen:
+
+$$y = a\cdot{}x + b$$
+
+
+\begin{bbwFillInTabular}{l|c|c|c}
+ Funktionsgleichung  & $y$-Achsenabschnitt $b$ & Nullstelle $\frac{-b}{a}$ & Steigung $a$\\\hline
+ 
+$y=3x + 3$ & \LoesungsRaum{3} & \LoesungsRaum{$-1$} & \LoesungsRaum{3} \\\hline
+
+$y=4x-2$ & \LoesungsRaum{-2} & \LoesungsRaum{$\frac{1}{2}$} & \LoesungsRaum{4} \\\hline
+
+$y=-\frac{1}{2}x + 1.5$ & \LoesungsRaum{1.5} & \LoesungsRaum{$\frac{1.5}{\frac{1}{2}}=3$} & \LoesungsRaum{$-\frac{1}{2}$} \\\hline
+
+$y=-\frac{2}{5}x - 3.5$ & \LoesungsRaum{-3.5} & \LoesungsRaum{-8.75} & \LoesungsRaum{$-\frac{2}{5}$} \\\hline
+
+$y=1.8x$ & \LoesungsRaum{0} & \LoesungsRaum{0} & \LoesungsRaum{1.8} \\\hline
+
+$y=-3x$ & \LoesungsRaum{0} & \LoesungsRaum{0} & \LoesungsRaum{-3} \\\hline
+
+$y=3.7$ & \LoesungsRaum{3.7} & \LoesungsRaum{keine Nullstelle} & \LoesungsRaum{0} \\\hline
+
+$y=0$ & \LoesungsRaum{0} & \LoesungsRaum{alle $x$ sind Nullstelle} & \LoesungsRaum{0} \\\hline
+
+$y=-x$ & \LoesungsRaum{0} & \LoesungsRaum{0} & \LoesungsRaum{-1} \\\hline
+
+$5y-3 = 2x+7$ & \LoesungsRaum{2} & \LoesungsRaum{$-5$} & \LoesungsRaum{$\frac25$} \\\hline
+
+\end{bbwFillInTabular}
+\newpage
+
+
+\noTRAINER{
+
+Hilfsblatt
+
+\bbwGraph{-7}{7}{-4}{5}{}
+
+\bbwGraph{-7}{7}{-4}{5}{}
+\newpage
+}%% END noTRAINER
+
+\subsection{Funktionsgleichung finden}
+
+Bestimmen Sie die Funktionsgleichung $y=ax+b$ (und die anderen
+fehlenden Werte):
+
+\begin{bbwFillInTabular}{c|c|c|l}
+ $y$-Achsenabschnitt $b$ & Nullstelle $\frac{-b}{a}$& Steigung $a$& Funktionsgleichung $y=...$\\
+\hline
+
+-2 & \LoesungsRaum{$\frac{2}{3}$} & 3 & \LoesungsRaum{$y=3x-2$}\\
+\hline
+
+1.5 & \LoesungsRaum{$\frac{15}{17}$} & -1.7 & \LoesungsRaum{$y=-1.7x + 1.5$}\\
+\hline
+
+0 & \LoesungsRaum{$0$} & 1.4 & \LoesungsRaum{$y=1.4x$}\\
+\hline
+
+\LoesungsRaum{4} & -4 & 1 & \LoesungsRaum{$y=x+4$}\\
+\hline
+
+\LoesungsRaum{-6} & -3 & -2 & \LoesungsRaum{$y=-2x-6$}\\
+\hline
+
+2 & $\frac{1}{5}$ & \LoesungsRaum{-10} & \LoesungsRaum{$y=-10x + 2$}\\
+\hline
+
+5 & \LoesungsRaum{keine Nullstelle}& 0 & \LoesungsRaum{$y=5$}\\
+\hline
+
+\LoesungsRaum{0} & 0 & $-\frac{3}{2}$ & \LoesungsRaum{$y=-\frac{3}{2}x$}\\
+\hline
+
+0 & -1.5 & \LoesungsRaum{0} & \LoesungsRaum{$y=0$}\\
+\hline
+
+
+0 & \LoesungsRaum{Alle $x\in\mathbb{R}$ sind Nullstelle} & 0 & \LoesungsRaum{$y=0$}\\  %
+\hline
+
+0 & 0 & \LoesungsRaum{$\mathbb{R}$} & \LoesungsRaum{$y=0$ oder $y=7x$
+oder $y=-22.6x$ }\\  %
+\hline
+
+\end{bbwFillInTabular}
+\newpage
+
+
+\noTRAINER{
+Hilfsblatt
+
+\bbwGraph{-7}{7}{-4}{5}{}
+
+\bbwGraph{-7}{7}{-4}{5}{}
+\newpage
+}%% END noTRAINER
+\newpage
+
+
+\subsection{Schnittpuknt mit Achsen}
+Bestimmen Sie die Schnittpunkte der Geraden
+$$y-2x=3\left(x+\frac23\right)$$
+mit den Koordinatenachsen!
+
+
+Schnittpunkt mit der $x$-Achse: \LoesungsRaum{$(-\frac25|0)$}
+
+\vspace{5mm}
+Schnittpunkt mit der $y$-Achse: \LoesungsRaum{$(0|2)$}
+
+\TNTeop{
+Tipp: Erst in Form bringen: In Grundform:
+
+$$y-2x=3x+2$$
+$$y=5x+2$$
+Hier erhalten wir sofort den Schnittpunkt mit der $y$-Achse
+(Achsenabschnitt = 2)
+
+Nun nach $y=0$ setzen und nach $x$ auflösen:
+
+$$0=5x+2$$
+$$-2=5x$$
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+
+\subsection{Funktionsgleichung finden}
+
+
+
+\section{Schnittpunkt(e)}
+
+\section{Parallele}
+
+\section{Punkte-Aufgaben}
+
+\end{document}
