@@ -61,6 +61,23 @@ Neben den bbw-Makros kann jeder tikz-draw-Befehl verwendet werden. Beachte das a
 \end{verbatim}
 \newpage
 
+\subsection{Strecken mit Endpunkten}
+Geben Sie (\#1) Anfanngs- und Endpunkt (\#). Die weiteren drei Parameter sind
+\#3: Ort der Beschriftung; \#4: Beschriftung und \#5: Farbe der Strecke
+und der Beschriftung:
+
+\bbwGraph{-4}{4}{-3}{3}{
+\bbwStrecke{-3,2}{2,1}{1,2}{$\overline{AB}$}{green}
+}%% end BBWGraph
+
+\begin{verbatim}
+\bbwGraph{-4}{4}{-3}{3}{
+\bbwStrecke{-3,2}{2,1}{1,2}{$\overline{AB}$}{green}
+}%% end BBWGraph
+\end{verbatim}
+
+\newpage
+
 \subsection{Beliebige Funktionen}
 %%       xmin,xmax,ymin,ymax,fct,domain
 \bbwFunction{-3}{2}{-2}{5}{-\x*\x - \x + 4.5}{-2.5:1.5}

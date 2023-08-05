@@ -145,19 +145,13 @@ Funktionsgleichng an:
 \subsection{Steigung von Strecken}
 Geben Sie die Steigungen der folgenden Strecken an:
 
-\newcommand{\bbwStrecke}[7]{%%
-\bbwDot{#1,#2}{blue}{west}{}\bbwLine{#1,#2}{#3,#4}{blue}\bbwDot{#3,#4}{blue}{west}{}%
-\draw (#5,#6) node{{\color{blue}#7)}};
-}%%
-
 \bbwGraph{-8}{7}{-6}{6}{%
-\bbwStrecke{ 2}{ 3}{ 6}{ 5}{ 4  }{ 4.5}{a}
-\bbwStrecke{-6}{ 4}{-3}{ 3}{-4.5}{ 4  }{b}
-\bbwStrecke{-7}{-4}{-4}{-4}{-5.5}{-4.5}{c}
-\bbwStrecke{-3}{-2}{ 2}{-5}{ 1  }{-4  }{d}
-\bbwStrecke{ 0}{-1}{ 4}{ 2}{ 2  }{ 1  }{e}
-\bbwStrecke{ 4}{-3}{ 4}{-5}{ 4.5}{-4  }{f}
-
+\bbwStrecke{ 2, 3}{ 6, 5}{ 4  , 4.5}{a)}{blue}
+\bbwStrecke{-6, 4}{-3, 3}{-4.5,4}{b)}{orange}
+\bbwStrecke{-7,-4}{-4,-4}{-5.5,-4.5}{c)}{green}
+\bbwStrecke{-3,-2}{ 2,-5}{ 1  ,-4  }{d)}{black}
+\bbwStrecke{ 0,-1}{ 4, 2}{ 2  , 1  }{e)}{pink}
+\bbwStrecke{ 4,-3}{ 4,-5}{ 4.5,-4  }{f)}{ForestGreen}
 }%% end BBW Graph
 
 Lösungen:
@@ -174,21 +168,40 @@ weitere Betrachtung; f) hat keine Lösung.
 \subsection{Geradensteigung und $y$-Achsenabschnitt bestimmen}
 
 %%\bbwGraph{-8}{8}{-6}{5}{}
-\noTRAINER{\bbwCenterGraphic{18cm}{img/FunktionsgleichungAblesen.png}}
-  \TRAINER{\bbwCenterGraphic{9cm}{img/FunktionsgleichungAblesen.png}}
 
-[challenge: $y$-Achsenabschnitt bei d) e) Tipp: Dreisatz]
+\newcommand{\bbwDotGerade}[7]{%%
+\bbwLine{#1}{#2}{#5}
+\bbwDot{#3}{#5}{west}{}
+\bbwDot{#4}{#5}{west}{}%
+\draw (#7) node{{\color{#5}#6}};
+}%%
+
+\bbwGraph{-7}{8}{-5}{5}{%
+% a (blau)
+\bbwDotGerade{-7,-1.5}{4,4}{-6,-1}{2,3}{blue}{a)}{2.5, 4}
+% b (rot)
+\bbwDotGerade{-6,2}{3,-4}{-4.5, 1}{1.5,-3}{red}{b)}{2.5,-4.5}
+% c (ForestGreen)
+\bbwDotGerade{-4,5}{4,-3}{-3, 4}{2.5,-1.5}{ForestGreen}{c)}{3.5,-2}
+% d (black)
+\bbwDotGerade{-7,2.5}{6,2.5}{-4, 2.5}{3,2.5}{black}{d)}{6,3}
+% e (orange)
+\bbwDotGerade{-7,-3}{8,2}{-4, -2}{5,1}{orange}{e)}{-5,-3}
+
+}%% end BBW Graph
+
+
 
 \TNTeop{
-a) $y = -x + 1$
+a) $y = \frac12 x + 2$
 
 b) $y = \frac{-2}{3}x - 2$
 
-c) $y = 0x + 2.5 = 2.5$
+c) $y = -x + 1$
 
-d) $y = \frac56x + 4\cdot{}\frac56 - 2 = \frac56x + \frac43$
+d) $y = 0x + 2.5 = 2.5$
 
-e) $y = \frac{5}{23}x + 5.5\cdot{}\frac5{23}-1 = \frac5{23}x + \frac{9}{46}$
+e) $y = \frac13 x  - \frac43$
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 
