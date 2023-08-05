@@ -133,9 +133,9 @@ $$y= -6x + 1$$
 %% implicit: \newpage
 
 \subsection{Funktionsgleichung finden}
-Die Funktion $y=3x+b$ geht durhc den Punkt $(0|7)$.
+Die Funktion $y=3x+b$ geht durch den Punkt $(0|7)$.
 Berechnen Sie den Parameter $b$ oder mit anderen Worten: Geben Sie die
-Funktionsgleichng an:
+Funktionsgleichung an:
 
 \TNT{4.8}{$$y=3x+7$$ denn $7$ ist als $y$-Achsenabschnitt gegeben.}
 \newpage
@@ -160,7 +160,7 @@ Lösungen:
 a) $\frac12$; b) $-\frac13$; c) $0$; d) $-\frac35$; e) $\frac34$
 
 Bei f) wäre die Steigung unendlich hoch. Da die Gerade, welche die
-Strecke $f$ verlängert aber sowieso keine Funktion ist, entwällt eine
+Strecke $f$ verlängert aber sowieso keine Funktion ist, entfällt eine
 weitere Betrachtung; f) hat keine Lösung.
 }
 \newpage
@@ -309,7 +309,7 @@ Hilfsblatt
 \newpage
 
 
-\subsection{Schnittpuknt mit Achsen}
+\subsection{Schnittpunkt mit Achsen}
 Bestimmen Sie die Schnittpunkte der Geraden
 $$y-2x=3\left(x+\frac23\right)$$
 mit den Koordinatenachsen!
@@ -368,7 +368,7 @@ a) Wenn Andrea nun (ab 22:00 Uhr) keinen Alkohol mehr zu sich nimmt:
 Wann ist der Alkoholgehalt in Andreas Blut auf $1.2$\textperthousand{}
 gesunken?
 
-\TNT{4}{Differenz von 1.2 zu 1.8 sint 0.6
+\TNT{4}{Differenz von 1.2 zu 1.8 sind 0.6
 [\textperthousand{}]. Somit teilen wir die 0.6 durch 0.15 und erhalten
 4 [Stunden].
 
@@ -378,7 +378,7 @@ gesunken.}%% end TNT
 
 b) Geben Sie die (lineare) Funktionsgleichung $y=f(x)$ an mit
 $$y = \text{ Alkoholgehalt in \textperthousand{} im Blut}$$
-$$x = \text{ Anzahl Stunden dach der Feier (also nach 22:00 Uhr)}$$
+$$x = \text{ Anzahl Stunden nach der Feier (also nach 22:00 Uhr)}$$
 
 Beispiel: $x=3$ bedeutet also 1 Uhr morgens.
 
@@ -461,11 +461,153 @@ $$S_y = -\frac23S_x+6 = -\frac23\cdot{}\frac{45}7 + 6 =
 $$S = (S_x | S_y) = \left(\frac{45}7\middle|\frac{12}7\right)$$
 
 }%% end TNT eop
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Schnittpunkt ?}
+Wo schneidet sich
+
+$$f(x) = 3.2x - 8$$
+mit
+
+$$g: x\mapsto \frac{16x+3.68}5 \text{ ?}$$
+
+\vspace{5mm}
+$$\mathbb{L}_S=\LoesungsRaumLang{\{\}}$$
+\TNTeop{
+Beide haben die selbe Steigung (3.2) aber einen verschiedenen
+$y$-Achsenabschnitt.
+Die beiden sind parallel und haben somit keinen gemeinsamen
+Schnittpunkt in $\mathbb{R}\times\mathbb{R}$
+
+}%% end TNT eop
+
+\subsection{Schnittpunkt(e)?}
+Wo schneiden sich die Geraden $f$ und $g$?
+
+Gegeben:
+$$f(x) = 3x - 8$$
+$$g: 2x=\frac23y+\frac{16}3$$
+
+\vspace{5mm}
+$$\mathbb{L}_S=\LoesungsRaumLang{\{ (S_x|S_y) | S_y = 3x-8  \} \text{ oder } \{ (S_x|S_y) | S_x = \frac{y+8}3  \}}$$
+\TNTeop{
+
+Die beiden Geraden haben äquivalente Funktionsgleichungen und sind
+somit \textbf{zusammenfallend}.
+}%% end TNT
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Parallele}
+\subsection{Zeichnen}
+a) Zeichnen Sie $y=\frac23x+b$ für die Parameter
+
+1. $b=1.5$
+
+2. $b=-1$
+
+3. $b= -4$
+
+\bbwGraph{-4}{4}{-5}{3}{
+\TRAINER{\bbwFunc{\x*2/3 + 1.5}{-3:3}}
+\TRAINER{\bbwFunc{\x*2/3 - 1  }{-3:3}}
+\TRAINER{\bbwFunc{\x*2/3 - 4  }{-3:3}}
+}%% end bbwGraph
+
+b) Was fällt auf?
+\TNT{4}{
+Die drei Geraden (Graphen der Funktionen) sind parallel. Sie alle
+haben die selbe Steigung.
+}
+\newpage
+\subsection{Parallele Graphen}
+Je zwei der folgenden sechs linearen Funktionen besitzen zu einander parallele
+Graphen.
+
+Ordnen Sie zu:
+
+$$x\mapsto -\frac13 x + 2.5$$
+
+$$42 = 12y + 1.5x$$
+
+$$f(x) = 3x-6$$
+
+$$x=-48-8y$$
+
+$$2y-6x = 16$$
+
+$$y= - \frac13 x + \frac74$$
+\TNTeop{
+
+$$x\mapsto -\frac13 x + 2.5   \Longleftrightarrow  y= - \frac13 x + \frac74$$
+
+$$42 = 12y + 1.5x \Longleftrightarrow  x=-48-8y$$
+
+$$f(x) = 3x-6 \Longleftrightarrow  2y-6x = 16$$
+
+}%% end TNTeop
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Punkte-Aufgaben}
+
+\subsection{Parameter finden}
+Gegeben ist die Steigung $a=3.7$ der Funktion
+$$y=3.7x + b.$$
+
+a) Berechnen Sie $b$ so, dass der Graph von $f$ durch den Punkt $(0|6)$
+verläuft:
+
+$$b = \LoesungsRaum{6}$$
+
+\TNT{2.4}{$b$ ist der $y$-Achsenabschnitt. Hier gibt es nichts zum Rechnen.}
+
+
+b) Berechnen Sie $b$ so, dass der Graph von $f$ durch den Punkt
+$(2|2)$ verläuft:
+
+$$b= \LoesungsRaum{-5.4}$$
+\TNTeop{$x=y=2$ in die Funktionsgleichung einsetzen:
+$$2 = 3.7\cdot{}2 + b$$
+nun nach $b$ auflösen
+}%% end TNTeop
+
+
+
+
+
+
 
 
 \newpage
-\section{Parallele}
+\subsection{Taxi}
+Taxiunternehmen \textbf{A} kostet pro gefahrenen Kilometer CHF
+0.60. Daneben verlangt das Unternehmen eine Grundgebühr von CHF 5.-.
 
-\section{Punkte-Aufgaben}
+Ein neues Taxiunternehmen (nennen wir es \textbf{B}) geht davon aus, dass viele Fahrten über 4 km
+sind. Das Unternehmen \textbf{B} will nun erreichen, dass für exakt 4
+km Fahrten beide Unternehmen gleich teuer sind um wenigstens für die
+kurzen Fahrten Unternehmen b nicht zu konkurrenzieren. Jedoch will das
+Unternehmen \textbf{B} keine Grundgebühr erheben sondern einfach einen
+km-Preis erheben.
+
+Was sind die zu erwartenden Kosten pro km bei Unternehmen \textbf{B}?
+
+\TNTeop{CHF 1.85  $= 7.40 / 4 = (5+4\cdot{}0.6) / 4$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Taxi zwei}
+Ein Taxiunternehmen hat den Markt analysiert und will nun für 3
+km-Fahrten  eine Gebühr von CHF 8.- und für 9 km Fahrten eine Gebühr
+von CHF 20.- erheben.
+
+Um die Berechnung der Fahrtkosten für die Kunden verständlich zu
+machen, will das Unternehmen eine Grundgebühr und eine km-Gebühr
+erheben.
+
+Wie hoch wird diese Grundgebühr und wie hoch die km-Gebühr ausfallen?
+
+\TNTeop{ Die Grundgebühr wird CHF 2.- sein und die km-Gebühr ebenfalls
+CHF 2.-
+
+Lösung am Einfachsten mit Lin-Reg-Funktion des Taschenrechners. Ohne
+TR: Gleichungssystem: 2-Punkte-Aufgabe.
+}
 
 \end{document}
