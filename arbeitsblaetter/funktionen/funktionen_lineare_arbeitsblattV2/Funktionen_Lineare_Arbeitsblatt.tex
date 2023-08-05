@@ -336,11 +336,106 @@ $$-2=5x$$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 
 \subsection{Funktionsgleichung finden}
+Gegeben ist die folgende Wertetabelle:
+
+\begin{tabular}{l|c|c|c|c|c|c|}
+$x$    & $-1$ & $0$   & $1$ & $2$   & $3$ & $4$ \\\hline
+$f(x)$ & $2$  & $1.5$ & $1$ & $0.5$ & $0$ & $-0.5$ \\
+\end{tabular}
+
+a) Skizzieren Sie den Graphen ins folgende Koordinatensystem:
+
+\bbwGraph{-2}{5}{-2}{3}{%
+\TRAINER{%
+\bbwLine{-1,2}{4,-1}{red}
+}%% end TRAINER
+}%% end BBW Graph
+
+b) Geben Sie die Funktionsgleichung an:
+
+$$f(x) = \LoesungsRaum{-\frac12x+1.5}$$
+\TNTeop{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Alkohol (Promille)}
+Alkohol baut sich im Körper im Durchschnitt mit
+$0.15$\textperthousand{} pro Stunde ab (wir gehen von einem annähernd
+linearen Abbau aus).
+
+Andrea hat um 22:00 Uhr nach einer unachtsamen Feier einen
+Alkoholgehalt von $1.8$\textperthousand{} im Blut.
+
+a) Wenn Andrea nun (ab 22:00 Uhr) keinen Alkohol mehr zu sich nimmt:
+Wann ist der Alkoholgehalt in Andreas Blut auf $1.2$\textperthousand{}
+gesunken?
+
+\TNT{4}{Differenz von 1.2 zu 1.8 sint 0.6
+[\textperthousand{}]. Somit teilen wir die 0.6 durch 0.15 und erhalten
+4 [Stunden].
+
+Nach vier Stunden ist der Alkoholgehalt auf $1.2$\textperthousand{}
+gesunken.}%% end TNT
 
 
+b) Geben Sie die (lineare) Funktionsgleichung $y=f(x)$ an mit
+$$y = \text{ Alkoholgehalt in \textperthousand{} im Blut}$$
+$$x = \text{ Anzahl Stunden dach der Feier (also nach 22:00 Uhr)}$$
+
+Beispiel: $x=3$ bedeutet also 1 Uhr morgens.
+
+$$y = f(x) = \LoesungsRaumLang{-0.15\cdot{}x + 1.8 [\textperthousand{}]}$$
+\TNT{4}{}
+
+c) Geben Sie den Alkoholgehalt nach $6.45$ Stunden an:
+
+$$f(6.45) = \LoesungsRaumLang{1.8-0.15\cdot{}6.45 = 0.8325
+[\textperthousand]}$$
+\TNTeop{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+d) Geben Sie den Alkoholgehalt um 5:15 am nächsten Morgen an:
+
+$$y = f(\LoesungsRaum{7.25}) = \LoesungsRaum{0.7125}\textperthousand$$
+
+\TNT{4}{}
+
+e) Um welche Uhrzeit wir der Wert auf $0.5$\textperthousand{} gesunken
+sein?
+
+\vspace{5mm}
+Dies wird um \LoesungsRaum{6:40} Uhr eintreten.
+\TNTeop{
+$$0.5 = 1.8-0.15x$$
+$$0.15x = 1.8 - 0.5$$
+
+ergo
+$$x = \frac{1.8-0.5}{0.15} = 8.666... \text{h} = 8\text{h} 40\text{ min}$$
+}%% end TNTeop
 
 \section{Schnittpunkt(e)}
+\subsection{Wo schneiden sich $f$ und $g$?}
+Finden Sie den Schnittpunkt $S$ von $f$ und $g$:
 
+$$f: y= 2x-3$$
+$$g: y=-x+2$$
+
+
+\TRAINER{$$S = \left(\frac53\middle|\frac13\right)$$}
+\noTRAINER{
+\vspace{8mm}
+$$S = $$}%% end noTRAINER
+
+\TNT{6}{
+Gleichsetzen:
+$$2x-3=-x+2$$
+$$3x=5$$
+$$x=\frac53$$
+
+$x$ in eine der beiden Gleichungen einsetzen:
+
+$$y=2\cdot{}\frac52 -3 = \frac{10}3 - 3 = \frac13$$
+}
+
+...
+\newpage
 \section{Parallele}
 
 \section{Punkte-Aufgaben}
