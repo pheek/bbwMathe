@@ -5,6 +5,8 @@ CURRENT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )
 
 echo "Dir: $CURRENT_DIR"
 
+export MAKE_ALL_AT_ONCE=WAHR
+
 find . -iwholename './*/makeBoth.sh' -printf "$CURRENT_DIR/%h\n" > tmpAllDirs.log
 find . -iwholename './*/makepdf.sh'  -printf "$CURRENT_DIR/%h\n" >> tmpAllDirs.log
 
@@ -28,5 +30,7 @@ for currdir in `cat tmpAllDirs.log`; do
 
 		echo "... done"
 done
+
+export MAKE_ALL_AT_ONCE=FALSCH
 
 rm ${CURRENT_DIR}/tmpAllDirs.log

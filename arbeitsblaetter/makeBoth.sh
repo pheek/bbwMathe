@@ -25,6 +25,12 @@ if [ -f './HECH.flag' ] ; then
 		export ZIELGRUPPE="HECH"
 fi
 
+## show endresult with evince
+export SHOW_COMMAND_FOR_PDF='evince'
+if [ "WAHR" == ${MAKE_ALL_AT_ONCE} ] ; then
+	 export SHOW_COMMAND_FOR_PDF=:
+fi
+
 
 export MAKE_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )
 

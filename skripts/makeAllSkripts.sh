@@ -1,6 +1,8 @@
 #!/usr/bin/bash
 ## Generate all skripts
 
+export MAKE_ALL_AT_ONCE=WAHR
+
 CURRENT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )
 
 echo "Dir: $CURRENT_DIR"
@@ -19,5 +21,7 @@ for currdir in `cat tmpAllDirs.log`; do
 		
 		echo "... done"
 done
+
+export MAKE_ALL_AT_ONCE=FALSCH
 
 rm ${CURRENT_DIR}/tmpAllDirs.log
