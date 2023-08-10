@@ -15,7 +15,7 @@
 \renewcommand{\arbeitsblattTitel}{Exponentialgleichungen}
 
 \begin{document}%%
-\arbeitsblattHeader{}
+\arbeitsblattHeader{} (V 1.0 2023-08-10)
 
 \section{Exponentenvergleich}
 
@@ -42,7 +42,7 @@ Lösen Sie durch Exponentenvergleich:
 
 \section{Logarithmieren mit dem Taschenrechner}
 Lösen Sie folgende Gleichung durch Logarithmieren und geben Sie die
-Resultate einerseits duch Zehnerlogarithmen ausgedrückt, andererseits mit
+Resultate einerseits durch Zehnerlogarithmen ausgedrückt, andererseits mit
 Hilfe des Taschenrechners auf drei signifikante Stellen an.
 
 \begin{bbwAufgabenBlock}
@@ -110,14 +110,15 @@ Substitution auf quadratische Gleichungen zurückgeführt werden.
 $\lx=\LoesungsRaumLang{\left\{   \frac{\ln\left(\frac{9\pm\sqrt{31}}{10}\right)}{\ln(5)} \approx
 0.234; -0.664 \right\}
 }$ \plz{}
-\item $10^x - 10^{-x} = 1$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\left\{  \frac{\ln\left(\frac{1+\sqrt{5}}{2}\right)}{\ln(10)} \approx  0.209   \right\}}$ \plz{}
+\item $10^x - 10^{-x} = 1$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\left\{  \frac{\ln\left(\frac{1+\sqrt{5}}{2}\right)}{\ln(10)} \approx  0.209   \right\}}$ 
 
 \end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
 
 %%\platzFuerBerechnungenBisEndeSeite{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Textaufgaben}
-
+\subsection{Kapital I}
 Ein Kapital von CHF $22\,000.-$ wird zu $3.5\%$ Jahreszins angelegt.
 \begin{bbwAufgabenBlock}
 \item Auf welchen Betrag ist das Kapital nach 7 Jahren
@@ -131,7 +132,7 @@ angewachsen sein? \TRAINER{ 9.97 Jahre} \plz{}
 \end{bbwAufgabenBlock}
 \platzFuerBerechnungenBisEndeSeite{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\subsection{Kapital II}
 Ein Kapital von CHF $13\,000.-$ wird zu $0.3\%$ jährlichem Zins angelegt.
 \begin{bbwAufgabenBlock}
 \item Auf welchen Betrag ist das Kapital nach 4 Jahren
@@ -145,6 +146,7 @@ angewachsen sein? \TRAINER{ Nach 47.8 Jahren.} \plz{}
 \end{bbwAufgabenBlock}
 \platzFuerBerechnungenBisEndeSeite{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Abschreibung}
 Ein Computer verliert jedes Jahr um 21\% an Wert. Anfänglich wurde ein Modell «X»
 zum Neupreis von 9 870.- eingekauft.
 
@@ -162,6 +164,37 @@ verloren? \TRAINER{ 3.89 Jahre} \plz{}
 
 \platzFuerBerechnungenBisEndeSeite{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Mille Feuilles}
+Blätterteig heißt auf französisch «mille feuilles» (wörtlich also
+«tausend Blätter»).
+
+Um Blätterteig herzustellen wird ein Stück Teig halbiert, eingebuttert
+und die beiden Hälften werden aufeinander gelegt. Das entstandene
+Teigstück wird mit dem Wallholz (Nudelholz) flach ausgewallt und der
+Prozess beginnt von vorn.
+
+Nach dem zweiten Durchgang sind also bereits 4 Schichten übereinander.
+
+\begin{bbwAufgabenBlock}
+\item Wie viele Schichten («Blätter») sind nach fünf Durchgängen
+vorhanden? \TRAINER{32 «Blätter» sind nach fünf Durchgängen
+vorhanden.} \plz{}
+
+\item Wie viele «Blätter» sind nach $n$ Durchgängen
+vorhanden? \TRAINER{Nach $n$ Durchgängen sind es $2^n$ Schichten
+vorhanden.} \plz{}
+
+\item Nach wie vielen Durchgängen sind es tatsächlich tausend
+Schichten, sodass «mille feuilles» seinem Namen gerecht
+wird? \TRAINER{Nach 10 Durchgängen sind es 1000 (exakt 1024)
+Schichten. Rechnung: $$2^n=1000 \Longrightarrow   n
+= \log_2(1000) \approx 9.966 $$}
+
+\end{bbwAufgabenBlock}
+
+\platzFuerBerechnungenBisEndeSeite{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Wäldchen}
 Ein Wäldchen wächst jedes Jahr um 15\% Waldfläche. (Die anfängliche Fläche werde mit
 100\% bezeichnet.)
 \begin{bbwAufgabenBlock}
