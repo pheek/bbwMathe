@@ -1497,8 +1497,78 @@ zerlegt werden können, und danach als Multiplikation weniger Silben benötigen:
 727 727 737 = 1613587 * 41 * 11
 
 \newpage}%% END TRAINER
+\section{Treppensteigen}\index{Treppe}
+Herr F. aus W. nimmt beim Treppensteigen oft auch zwei Stufen aufs
+Mal. Mehr als zwei Stufen aufs Mal hingegen nimmt er nie.
+
+Er hat herausgefunden, dass es bei der Treppe zu Hause mit fünf Stufen
+acht Varianten gibt, die Treppe mit einer seiner Varianten zu
+erklimmen. Namentlich:
+
+\begin{enumerate}
+\item $1+1+1+1+1$
+\item $2 + 1 + 1 + 1$
+\item $1 + 2 + 1 + 1$
+\item $1 + 1 + 2 + 1$
+\item $1 + 1 + 1 + 2$
+\item $2+2+1$
+\item $2+1+2$
+\item $1+2+2$
+\end{enumerate}
+
+Auf wie viele Arten kann er eine Treppe mit $n$ Stufen
+($n\in\mathbb{N}$) erklimmen?
+\TNTeop{%%
+}%% end TNTeop
+\TRAINER{\newpage
+\subsection{Lösungsvorschlag}
+Bei der Anzahl der Varianten die Treppe zu erklimmen, handelt es sich
+um die Fibonacci-Zahlen.
+
+Sei $A(n)$ die Anzahl der Varianten, eine Treppe mit $n$ Stufen zu
+erklimmen, indem immer nur eine oder zwei Stufen aufs Mal genommen
+werden.
+
+$A(1)$ ist definitiv 1.
+
+Ebenso kann leicht gezeigt werden, dass $A(2) = 2$; nämlich die
+Varianten $1+1$ und $2$.
+
+$A(n)$ kann aber rekursiv einfach erklärt werden. Entweder ist der
+letzte Schritt eine einzelne Stufe oder der letzte Schritt ist eine
+Doppelstufe.
+
+Jede Variante der $A(n)$ Möglichkeiten kann also immer entweder so
+$$... + 2$$
+oder so
+$$... + 1$$
+aufgeschrieben werden.
+
+Im ersten Fall bezeichnen die Punkte (...) also eine Variante aus den
+Möglichkeiten, eine Treppe mit $n-2$ Stufen zu erklimmen, während beim
+zweiten Fall die Punkte (...) eine der Varianten bezeichnet, bei denen
+eine Treppe mit $n-1$ Stufen zu erklimmen ist.
+
+Somit gilt
+$$A(n) = A(n-2) + A(n-1).$$
+
+Dies können wir am Beispiel von fünf Stufen einfach nachvollziehen:
+
+Mit drei Stufen gibt es die Möglichkeiten $1+1+1$; $1+2$ und
+$2+1$. Mit vier Stufen gibt es die Möglichkeiten $1+1+1+1$, $1+1+2$,
+$1+2+1$, $2+1+1$ und $2+2$.
+Wenn wir nun bei jeder der «Dreistufen-Möglichkeiten» hinten ein
+«$+2$» ergänzen und bei jeder der «Vierstufen-Möglichkeiten» hinten
+ein «$+1$» ergänzen, erhalten wir die folgenden Möglichkeiten:
+
+$1+1+1+2$; $1+2+2$; $2+1+2$ bzw. $1+1+1+1+1$; $1+1+2+1$; $1+2+1+1$;
+$2+1+1+1$; $2+2+1$.
+
+Dies sind aber gerade genau alle Möglichkeiten, eine Treppe mit fünf
+Stufen zu erklimmen.
 
 
+}%% end TRAINER
 \newpage
 %%\bibliography{bibAll}{}\label{literatur}
 
