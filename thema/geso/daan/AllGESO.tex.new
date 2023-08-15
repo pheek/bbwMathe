@@ -1,8 +1,0 @@
-%% Datenanalyse Metapackage Alle GESO
-\part{Datenanalyse}\index{Datenanalyse|textbf}
-\renewcommand{\bbwPartID}{DAAN}
-\input{allg/daan/Datenerhebung}
-\input{allg/daan/Datentypen}\newpage
-\input{allg/daan/Diagramme}\newpage
-\input{allg/daan/Masszahlen}\newpage
-\input{allg/daan/Manipulation}

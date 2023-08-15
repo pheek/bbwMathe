@@ -1,7 +1,0 @@
-%%
-% Metapackage TALS Funktionen I
-\part{Funktionen I}\index{Funktionen!I|textbf}
-\renewcommand{\bbwPartID}{FCT1}
-%% Dies noch wechseln ins TRIG II
-\input{allg/funktionen/Grundlagen}
-\input{allg/funktionen/Lineare_Funktionen}
