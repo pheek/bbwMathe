@@ -1,0 +1,22 @@
+%%
+%% Meta: Master Document
+%% 2020 12 25 ph. g. freimann @ bbw.ch
+%% Vektorgeometrie II
+%% 
+%%
+
+\input{bbwLayoutDoc}
+
+\renewcommand{\author}{Philipp G. Freimann}
+\renewcommand{\grafikautor}{Ph. G. Freimann}
+\renewcommand{\authoremail}{philipp.freimann@bbw.ch}
+\renewcommand{\erstellungsdatum}{\versionTALSMajorDate}
+\renewcommand{\docversion}{\versionTALSMajorVSR}
+
+
+\renewcommand{\doctitel}{Vektorgeometrie II}
+\renewcommand{\fachthema}{Rechnen mit Winkeln und Abständen}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\defaultScript{tals/vecg2/AllTALS}

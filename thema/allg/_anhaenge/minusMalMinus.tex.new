@@ -1,0 +1,51 @@
+
+\subsection{Minus mal Minus (optional)}
+Wir können uns vorstellen, dass $3 \cdot (-4)$ dasselbe ist wie $(-4) + (-4) + (-4)$. Daher gilt
+\begin{itemize}
+\item $3 \cdot 4 = 12$
+\item $3 \cdot (-4) = (-12)$
+\item $(-3) \cdot 4 = (-12)$
+\end{itemize}
+Warum soll aber $(-3)\cdot(-4)$ gleich $+12$ sein?
+
+Hier einige Erklärungsversuche:
+
+
+\paragraph{Negativer Krankheits-Befund}
+Wer negativ auf einen schlimmen Virus- oder Bakterienbefall getestet wurde, kann
+die sich doch in einer positiven Situation sehen.
+
+\paragraph{Vorzeichen:} Sehen wir die Zahl $(-4)$ als Gegenzahl von $4$, so können wir auch die Gegenzahl der Gegenzahl betrachten:
+$4 = -(-4) = -(1\cdot(-4)) = (-1)\cdot(-4)$. Somit ist $(-1)\cdot(-4) = +4$.
+
+\paragraph{Rechengesetze einhalten:} Wir versuchen den Rechengesetzen, die wir von den positiven Zahlen her kennen, Allgemeingültigkeit zu verleihen, dann müssen sie auch für die negativen Zahlen gelten.
+Somit ist
+$$(-4)          \cdot 0 = 0$$
+Null anders schreiben:
+$$(-4)    \cdot (3-3) = 0$$
+Gegenzahl addieren:
+$$(-4)\cdot(3 + (-3)) = 0$$
+Distributivgesetz:
+$$(-4)\cdot3 + (-4)\cdot (-3) = 0$$
+Term $(-4)\cdot3$ ausrechnen:
+$$-12 + (-4)\cdot (-3)= 0$$
+Der Gleichung links und rechts 12 hinzufügen (addieren):
+$$(-4)\cdot (-3) = 12$$
+\newpage
+
+\paragraph{Schuldscheine abgeben:}
+Eine anschauliche, aus dem Leben gegriffene, Analogie ist das
+«Verschenken von Schuldscheinen». Bezeichnen wir Banknoten als
+Kreditscheine, so besitzt eine 50er Note einen Wert von $+50$. So hat
+ein Schuldschein von $50.-$ Franken (oder Euros) den Wert $-50$
+(sprich «minus fünfzig»).
+
+\begin{tabular}{r@{}l|rl|r@{}l}
+Geldwert & Gewinn/Verlust & Effekt\\
+\hline\\
+ + 50&.--   (Banknote)     &  3&  (erhalten)  & + 150&.-- (Gewinn)   \\
+ - 50&.--   (Schuldschein) &  3&  (erhalten)  & - 150&.-- (Verlust)  \\
+ + 50&.--   (Banknote)     & -3&  (abgeben)   & - 150&.-- (Verlust)  \\
+ - 50&.--   (Schuldschein) & -3&  (abgeben)   & + 150&.-- (Gewinn)   \\
+\end{tabular}
+\newpage

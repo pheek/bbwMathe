@@ -1,0 +1,32 @@
+%% 2020 12 25 ph. g. Freimann
+%%
+\section{Gegenseitige Lage von Geraden}
+
+\subsection*{Lernziele}
+\begin{itemize}
+\item identisch
+\item parallel
+\item schneidend
+\item windschief
+\end{itemize}
+
+
+\subsection{Entscheidungshilfe}
+Mit folgendem Entscheidungsbaum können wir leicht sehen, ob zwei
+geraden \textit{identisch}, \textit{parallel}, \textit{schneidend}
+oder \textit{windschief} sind:
+
+\bbwCenterGraphic{18cm}{tals/vecg2/img/WindschiefEntscheidung.png}
+
+
+\subsection*{Aufgaben}
+
+\TRAINER{
+  mögliche Aufgaben:
+
+  Prüfen Sie, ob zwei Geraden einen gemeinsamen Schnittpunkt haben.
+  
+  Prüfen Sie, ob zwei Geraden parallel sind.
+}
+
+\TALSAadBMTG{305ff}{25., 27.}

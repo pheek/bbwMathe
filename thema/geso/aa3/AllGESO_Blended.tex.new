@@ -1,0 +1,10 @@
+%%
+%% GESO Metapackeg Arithmetik und Algebra III
+
+%%%%%%%%%%%%%%%%
+ \part{Arithmetik und Algebra III}\index{Arithmetik und Algebra!III|textbf}
+\renewcommand{\bbwPartID}{AA3}
+\input{allg/alg/potenzen_wurzeln/Zehnerlogarithmen}
+\newpage
+\input{allg/alg/potenzen_wurzeln/Logarithmen}
+\newpage

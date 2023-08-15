@@ -1,0 +1,212 @@
+%%
+%% Meta: TI nSpire Einführung
+%%       Ziel: Damit die Grundoperationen damit durchgeführt werden können.
+%%             Damit man sich an den Rechner gewöhnt.
+%%
+
+\input{bbwLayoutPage}
+\renewcommand{\bbwAufgabenBlockID}{GL\_Ex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amssymb} %% für \blacktriangleright
+
+\renewcommand{\metaHeaderLine}{Arbeitsblatt}
+\renewcommand{\arbeitsblattTitel}{Exponentialgleichungen}
+
+\begin{document}%%
+\arbeitsblattHeader{} (V 1.0 2023-08-10)
+
+\section{Exponentenvergleich}
+
+\newcommand{\plz}{\noTRAINER{\\ \mmPapier{5.2}}}
+
+Lösen Sie durch Exponentenvergleich:
+
+\begin{bbwAufgabenBlock}
+\item $5^{2x+1} = 5^{x-2}$                        $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{-3\}}$ \plz{}
+\item $7^x \cdot 7^{12} = 7^{21}$                 $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{9\}}$ \plz{}
+\item $(r^x)^3 \cdot{} r^2 = r^{x+5} \cdot{} r^x$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{3\}}$ \plz{}\noTRAINER{\newpage}
+\item $a^4 = \frac{a^{3x}}{a^{-6}}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{-\frac23\}}$ \plz{}
+\item $(f^{-7})^x \cdot{} f^3 = \frac{1}{f^{2x}} : \frac{f^{-1}}{f^{-x}}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac12\}}$ \plz{}
+\item $2^x=32$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{5\}}$ \plz{}
+\item $10^x=0.000\,01$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{-5\}}$ \plz{}\noTRAINER{\newpage}
+\item $10^{3x}=\sqrt{10}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac16\}}$ \plz{}
+\item $10^{3x-8}=1$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac83\}}$ \plz{}
+
+\item $3^{\frac{x-1}{3}} = \frac1{9^{\frac{x+1}{4}}}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{-\frac15\}}$ \plz{}
+\end{bbwAufgabenBlock}
+
+\platzFuerBerechnungenBisEndeSeite{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Logarithmieren mit dem Taschenrechner}
+Lösen Sie folgende Gleichung durch Logarithmieren und geben Sie die
+Resultate einerseits durch Zehnerlogarithmen ausgedrückt, andererseits mit
+Hilfe des Taschenrechners auf drei signifikante Stellen an.
+
+\begin{bbwAufgabenBlock}
+\item $10^{x-4}=1000$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{7\}}$ \plz{}
+\item $2^x=30$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(30)}{\lg(2)}\approx 4.91}\}$ \plz{}
+\item $13^x=1000$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(1000)}{\lg(13)}\approx 2.69\}}$ \plz{}\noTRAINER{\newpage}
+\item $5\cdot{}7^x = 19$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(19)-\lg(5)}{\lg(7)}\approx 0.686\}}$ \plz{}
+\item $7\cdot{}3^x = 2 + 4\cdot{}3^x$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(2)-\lg(3)}{\lg(3)}\approx  \}}$ \plz{}
+\item $3\cdot{}6^x - 36 = 6^x$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(18)}{\lg(6)} \approx  1.61 \}}$ \plz{}\noTRAINER{\newpage}
+\item $2^{5x} = 5^{2x}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{0\}}$ \plz{}
+\end{bbwAufgabenBlock}
+
+\platzFuerBerechnungenBisEndeSeite{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Wenden Sie Logarithmengesetze an}
+
+$$\log(a^n) = n\cdot{}\log(a)$$
+$$\log(A\cdot{}B) = \log(A) + \log(B)$$
+
+Geben Sie auch in folgenden Aufgaben die Lösungen ausgedrückt durch
+Zehnerlogarithmen an; aber auch mit Hilfe des Taschenrechners auf drei
+signifikante Stellen an.
+
+\begin{bbwAufgabenBlock}
+\item $3^x=2^{x+2}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{2\cdot{}\lg(2)}{\lg(3)-\lg(2)} \approx  3.42  \}}$ \plz{}
+\item $7^x=8\cdot{}6^{x+1}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(48)}{\lg(7)-\lg(6)} \approx 25.1   \}}$ \plz{}
+\item $2\cdot{}3^{x+7}=4\cdot{}6^{x+5}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(\frac{4\cdot{}6^5}{2\cdot{}3^7})}{\lg(\frac12)} \approx  -2.83  \}}$ \plz{}
+\item $5^{x-1}\cdot{}2^{1-x}=6^{2x}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(5)-\lg(2)}{\lg(5)-\lg(2)-2\lg(6)} \approx -0.344   \}}$ \plz{}
+\item $10\cdot{}3^{4x} = 6^{1-x}\cdot{}4^{3x}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(6)-\lg(10)}{\lg(6\cdot{}3^4 - \lg(4^3))} \approx -0.252   \}}$ \plz{}
+
+\end{bbwAufgabenBlock}
+
+\platzFuerBerechnungenBisEndeSeite{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Logarithmus Naturalis}
+Geben Sie die Lösung einerseits mit dem «Logarithmus Naturalis»
+($=\ln() = \log_{\e}()$) an, berechnen Sie zur Sicherheit aber auch das
+Resultat auf drei signifikante Stellen.
+
+\begin{bbwAufgabenBlock}
+\item $4^x=7^{x+2}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{2\cdot{}\ln(7)}{\ln(4)-\ln(7)} \approx -6.95   \}}$ \plz{}
+\item $\left(\frac14\right)^{3x-1} = \left(\frac15\right)^{2-x}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{-2\ln(5)-\ln(4)}{-3\ln(4)-\ln(5)} \approx 0.798   \}}$ \plz{}
+\item $12^x+4\cdot{}3^{4-x}=0$ $\Longrightarrow$
+$\lx=\LoesungsRaumLang{\{   \}}$  \plz{} \noTRAINER{\newpage}
+\item $2^{x+1}=5^x + 5^{x-1}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\ln(3)-\ln(5)}{\ln(2)-\ln(5)} \approx 0.554   \}}$ \plz{}
+\item $2^r=3\cdot{}2^{r-3} + 12\cdot{}5^{r-3} - 2\cdot{}5^{r-2}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{ 4 \}}$ \plz{}
+\item $5^x + 5^{x+2} = 2600$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\ln(100)}{\ln(5)} \approx 2.86   \}}$ \plz{}
+\item $7^{2x+1} = 100 + 7^{2x-1}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\ln(100) - \ln(7-\frac17)}{2\cdot{}\ln(7)} \approx  0.689  \}}$ \plz{}\noTRAINER{\newpage}
+\item $e^x + e^{x+1} + e^{x+2} = 1$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\left(\frac{1}{1+e+e^2}\right) \approx -2.41  \}}$ \plz{}
+
+\end{bbwAufgabenBlock}
+
+\platzFuerBerechnungenBisEndeSeite{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Substitution}
+Die folgenden Exponentialgleichungen können mit Hilfe einer geeigneten
+Substitution auf quadratische Gleichungen zurückgeführt werden.
+
+\begin{bbwAufgabenBlock}
+\item $4^x + 4^{2x} = 20$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{  1   \}}$ \plz{}
+\item $2\cdot{}5^{2r} = 3.6\cdot{}5^r - 1$ $\Longrightarrow$
+$\lx=\LoesungsRaumLang{\left\{   \frac{\ln\left(\frac{9\pm\sqrt{31}}{10}\right)}{\ln(5)} \approx
+0.234; -0.664 \right\}
+}$ \plz{}
+\item $10^x - 10^{-x} = 1$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\left\{  \frac{\ln\left(\frac{1+\sqrt{5}}{2}\right)}{\ln(10)} \approx  0.209   \right\}}$ 
+
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+%%\platzFuerBerechnungenBisEndeSeite{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Textaufgaben}
+\subsection{Kapital I}
+Ein Kapital von CHF $22\,000.-$ wird zu $3.5\%$ Jahreszins angelegt.
+\begin{bbwAufgabenBlock}
+\item Auf welchen Betrag ist das Kapital nach 7 Jahren
+angewachsen?\TRAINER{ 27 990.14 CHF} \plz{}
+\item Auf welchen Betrag ist das Kapital nach 50 Jahren
+angewachsen? \TRAINER{ 122868.39 CHF} \plz{}
+\item Auf welchen Betrag ist das Kapital nach $n$ Jahren
+angewachsen? \TRAINER{  $22\,000\cdot{} 1.035^n$} \plz{} \noTRAINER{\newpage}
+\item Nach wie vielen Jahren wird das Kapital auf $31\,000.-$ CHF
+angewachsen sein? \TRAINER{ 9.97 Jahre} \plz{}
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Kapital II}
+Ein Kapital von CHF $13\,000.-$ wird zu $0.3\%$ jährlichem Zins angelegt.
+\begin{bbwAufgabenBlock}
+\item Auf welchen Betrag ist das Kapital nach 4 Jahren
+angewachsen? \TRAINER{ 13\,156.70 CHF} \plz{}
+\item Auf welchen Betrag ist das Kapital nach 10 Jahren
+angewachsen? \TRAINER{ 13\,395.31 CHF} \plz{}
+\item Auf welchen Betrag ist das Kapital nach $n$ Jahren
+angewachsen? \TRAINER{ $13\,000\cdot{} 1.003^n$} \plz{} \noTRAINER{\newpage}
+\item Nach wie vielen Jahren wird das Kapital auf $15\,000.-$ CHF
+angewachsen sein? \TRAINER{ Nach 47.8 Jahren.} \plz{}
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Abschreibung}
+Ein Computer verliert jedes Jahr um 21\% an Wert. Anfänglich wurde ein Modell «X»
+zum Neupreis von 9 870.- eingekauft.
+
+\begin{bbwAufgabenBlock}
+\item  Wie viel Wert hat der Computer (Modell «X») nach 3 Jahren
+noch? \TRAINER{ 4866.29 CHF } \plz{}
+\item Wie viel Wert hat der Computer nach 15 Jahren noch? \TRAINER{
+287.56 CHF} \plz{}
+\item Wie viel Wert hat der Computer nach n Jahren? \TRAINER{ $ 0.79^n \cdot 9870.-$ } \plz{} \noTRAINER{\newpage}
+\item Wann ist der Wert des Computers auf einen Wert von 10\% des
+Neuwertes gesunken? \TRAINER{ 9.77 Jahre} \plz{}
+\item Wann hat der Wert des Computer 60\% des Neuwertes
+verloren? \TRAINER{ 3.89 Jahre} \plz{}
+\end{bbwAufgabenBlock}
+
+\platzFuerBerechnungenBisEndeSeite{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Mille Feuilles}
+Blätterteig heißt auf französisch «mille feuilles» (wörtlich also
+«tausend Blätter»).
+
+Um Blätterteig herzustellen wird ein Stück Teig halbiert, eingebuttert
+und die beiden Hälften werden aufeinander gelegt. Das entstandene
+Teigstück wird mit dem Wallholz (Nudelholz) flach ausgewallt und der
+Prozess beginnt von vorn.
+
+Nach dem zweiten Durchgang sind also bereits 4 Schichten übereinander.
+
+\begin{bbwAufgabenBlock}
+\item Wie viele Schichten («Blätter») sind nach fünf Durchgängen
+vorhanden? \TRAINER{32 «Blätter» sind nach fünf Durchgängen
+vorhanden.} \plz{}
+
+\item Wie viele «Blätter» sind nach $n$ Durchgängen
+vorhanden? \TRAINER{Nach $n$ Durchgängen sind es $2^n$ Schichten
+vorhanden.} \plz{}
+
+\item Nach wie vielen Durchgängen sind es tatsächlich tausend
+Schichten, sodass «mille feuilles» seinem Namen gerecht
+wird? \TRAINER{Nach 10 Durchgängen sind es 1000 (exakt 1024)
+Schichten. Rechnung: $$2^n=1000 \Longrightarrow   n
+= \log_2(1000) \approx 9.966 $$}
+
+\end{bbwAufgabenBlock}
+
+\platzFuerBerechnungenBisEndeSeite{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Wäldchen}
+Ein Wäldchen wächst jedes Jahr um 15\% Waldfläche. (Die anfängliche Fläche werde mit
+100\% bezeichnet.)
+\begin{bbwAufgabenBlock}
+\item Auf wie viel \% ist der Wald nach 5 Jahren angewachsen? \TRAINER{ 201\%} \plz{}
+\item Um wie viel \% ist der Wald nach 5 Jahren angewachsen? \TRAINER{ 101\%} \plz{}
+\item Auf wie viel \% ist der Wald nach n Jahren
+angewachsen? \TRAINER{ $1.15^n [\cdot{} 100\%]$} \plz{} \noTRAINER{\newpage}
+\item Nach wie vielen Jahren hat sich die Waldfläche
+verdreifacht? \TRAINER{ 7.86 Jahre} \plz{}
+\item Nach wie vielen Jahren sind 100\% Waldfläche
+dazugekommen? \TRAINER{nach 4.69 Jahren } \plz{}
+\end{bbwAufgabenBlock}
+
+\platzFuerBerechnungenBisEndeSeite{}
+\end{document}

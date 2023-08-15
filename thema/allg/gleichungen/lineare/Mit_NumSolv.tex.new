@@ -1,0 +1,22 @@
+%%
+%% (C) 2022 ph. freimann @ bbw.ch
+%%
+
+\subsection{Gleichungen mit dem Solver lösen}\index{Solver}\index{num-Solv}
+
+«Die \textit{sanfte} Tour»
+
+Lineare Gleichungen ohne Parameter können mit dem Taschenrechner mit dem numerischen
+\textit{Solver} (num-solve) gelöst werden.
+
+  Hierzu dient die Taste \tiprobutton{sin_num-solv}.
+
+  Tippen Sie also \tiprobutton{2nd}, dann \tiprobutton{sin} und geben
+  Sie die folgende lineare Gleichung ein:
+
+$$\sqrt{2}(x+5) = 3x + \sqrt{7} - \frac{x}4$$
+
+  Alle Optionen sind standardmäßig auf die Suche nach $x$
+  eingestellt. Sie müssen also nur \textbf{sechs mal} \tiprobutton{enter}
+  drücken um auf $x\approx \LoesungsRaum{3.31289}$ zu kommen!
+\newpage

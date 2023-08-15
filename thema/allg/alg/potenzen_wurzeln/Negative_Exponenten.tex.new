@@ -1,0 +1,190 @@
+\subsubsection{Negative Exponenten}
+\sectuntertitel{Nicht für alle ist die Potenzrechnung \textit{positiv}.}
+Wir kennen bereits das Rechengesetz für positive Exponenten:
+
+$$a^5\cdot{}a^2 = a^{5+2} = a^7$$
+
+Sinnvoll wäre die folgende Erweiterung auf negative
+Exponenten:\\\TRAINER{Damit die Rechengesetze weiterhin gelten.}
+$$a^5\cdot{}a^{-2} = a^{5+(-2)} = a^3$$
+
+Dividieren wir obige Gleichung beidseitig durch $a^5$, so erhalten wir
+folgende sinnvolle Definition:
+
+\TNT{4.4}{
+Wir wollen erreichen, dass gilt: $a^5\cdot{}a^{-2} \stackrel{!}{=}a^3$
+
+Was wäre eine sinnvolle Definition für $a^{-2}$, damit die
+Rechengesetze weiterhin gelten?
+
+Wir dividieren durch $a^5$ beidseitig: $a^{-2} = \frac{a^3}{a^5} = \frac{1}{a^2}$
+
+Mit dieser «Herleitung» von $a^{-2}= \frac1{a^2}$ gilt: $a^5\cdot{}a^{-2} = a^5\cdot{}\frac1{a^2} = a^3$
+}%% END TNT
+
+\begin{definition}{}{}
+$$a^{-n} := \frac{1}{a^n}$$
+\end{definition}
+
+\begin{bemerkung}{}{}
+$$\frac{1}{a^n}= 1 : \underbrace{a : a : a : ... : a}_{n \text{\ Divisoren}}$$
+\end{bemerkung}
+
+\begin{gesetz}{}{}
+$a^{-n} = \left(\frac1a\right)^n$
+\end{gesetz}
+Begründung:
+
+\TNTeop{$a^{-n} = \frac1{a^n}
+= \frac1{\underbrace{a\cdot{}a\cdot{}a\cdot{}...\cdot{}a}_{n \text{\ Faktoren}}}
+= \underbrace{\frac1a\cdot{}\frac1a\cdot{}\frac1a\cdot{}...\cdot{}\frac1a}_{n \text{\ Faktoren}}
+= \left(\frac1a\right)^n$
+}%% END TNT
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Ganz analog gilt:
+
+\begin{gesetz}{}{}
+$\frac{1}{a^{-n}} =a^n$
+\end{gesetz}
+Begründung:
+\TNT{8}{
+
+Beispiel:
+
+$$\frac1{10^{-3}} = \frac1{0.001} = 1000 = 10^3$$
+
+\TALS{TALS:}
+Beweis: Definition hinschreiben und auf beiden Seiten den Kehrwert bilden:
+
+$$a^{-n} = \frac1{a^n}$$
+
+$$\frac1{a^{-n}} = a^n$$
+
+\vspace{2cm}
+}%% END TNT
+
+
+
+\begin{gesetz}{}{}
+$\left(\frac{1}{a}\right)^{-n}=a^n$
+\end{gesetz}
+Begründung:
+\TNTeop{
+Zahlenbeispiel (erster Schritt nach Definition):
+$$\left(\frac1{10}\right)^{-3}  = \frac1{\left(\frac1{10}\right)^3}  = \frac1{0.001} = 1000 = 10^3$$
+
+\TALS{TALS:}
+
+Beweis: Nach Definition gilt für alle $n$:
+
+$$x^{-n} = \frac1{x^n}$$
+
+Somit gilt es auch, wenn wir anstelle von $x$ den Term $\frac1a$ einsetzen:
+
+$$\left(\frac1a\right)^{-n} = \frac1{\frac1{a^n}} = a^n$$
+
+
+\vspace{2cm}
+
+}%% END TNT
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Rechenbeispiel:
+
+Wurm «Wurli» schaft 3 cm pro Sekunde (= $3 \cdot{} 10^{-2} $ m pro Sekunde). Wie lange braucht «Wurli» für 12 m?
+\TNT{2.4}{
+$$t = \frac{s}v = \frac{12[ \text{m}]}{3 \frac{[\text{cm}]}{[\text{s}]}} =   \frac{12[ \text{m}]}{3\cdot{}10^{-2}\frac{[\text{m}]}{[\text{s}]}} = 4\cdot{} 10^2 [\text{s}] = 400 [\text{s}]\approx 6-7 Min.$$
+}%% END TNT
+
+
+
+
+Und ebenso für beliebige Brüche:
+
+\begin{gesetz}{}{}
+$\left(\frac{a}{b}\right)^{-n} = \left(\frac{b}{a}\right)^{+n}$
+\end{gesetz}
+
+    
+    \TALS{ Begründung
+
+      \TNT{2.4}{$\left( \frac{b}{a} \right)^n  =
+       \left(b \cdot{} \frac{1}{a} \right)^n =
+       b^n \cdot \left(\frac{1}{a}\right)^n =
+       \left(\frac{1}{b}\right)^{-n} \cdot{} a^{-n} =
+       \left(\frac{1}{b}\cdot{}a\right)^{-n} =
+       \left(\frac{a}{b}\right)^{-n} 
+       $}} %% END TNT END TALS
+
+    \GESO{ Begründung
+
+      \TNT{2.4}{$\left( \frac{5}{2} \right)^3  =
+       \left(5 \cdot{} \frac{1}{2} \right)^3 =
+       5^3 \cdot \left(\frac{1}{2}\right)^3 =
+       \left(\frac{1}{5}\right)^{-3} \cdot{} 2^{-3} =
+       \left(\frac{1}{5}\cdot{}2\right)^{-3} =
+       \left(\frac{2}{5}\right)^{-3} 
+       $}} %% END TNT END GESO
+
+%%$$\left(\frac{1}{a}\right)^{-n} = \frac{1}{\left(\frac{1}{a}\right)^n} = a^n$$
+\newpage
+
+
+
+\subsubsection{Null}
+
+Ebenso müsste $a^5 \cdot a^0 = a^{5+0} = a^5$ gelten. Dies ist aber
+nur möglich, wenn wir $a^0 := 1$ definieren ($a\ne 0$).
+
+\begin{definition}{Exponent Null}{} Für alle Basen
+$a \in \mathbb{R}\backslash\{0\}$ definieren wir:
+\begin{center}
+\fbox{$a^0 := 1$}
+\end{center}
+\end{definition}
+
+Zweite Begründung wenn die Rechengesetze gelten sollten: $a^0 = a^{1-1} = \frac{a^1}{a^1} = 1$
+
+%\textbf{Rechengesetze zusammengefasst:}
+
+%\begin{itemize}
+%\item  $\frac{a^m}{a^n} = a^{m-n}$ (Dies gilt auch wenn $n > m$.)
+ 
+%\item $a^{-n} := a^{0-n}=\frac{a^0}{a^n} = \frac{1}{a^n} = \left(\frac{1}{a}\right)^n$
+
+%\item
+%$\left(\frac{1}{a}\right)^{-n} = \frac{1}{\left(\frac{1}{a}\right)^n} = a^n$
+
+
+%\item $\left(\frac{a}{b}\right)^{-n} = \left(\frac{b}{a}\right)^{+n}$ gilt daher auch. 
+%\end{itemize}
+
+\begin{rezept*}{«Kielholen»}{}{}
+Exponenten vertauschen ihr Vorzeichen beim Übertreten des Bruchstrichs:
+$$\frac{a^{-3}b^2}{c^5b^{-6}} = \LoesungsRaumLang{\frac{b^2\cdot{}b^{+6}}{a^{+3}c^5}}= \LoesungsRaumLang{\frac{b^8}{a^3c^5}}$$
+\end{rezept*}
+
+
+
+\subsection{Aufgaben}
+
+%%\TALS{Potenzen:}\TALSAadBMTA{32ff}{Von Hand: 79. c), 82. a), 83. b),
+%%86. b) c),
+%%91. a), 92. j), 94. k), 96. b) f) h) und 105. i)\\
+%%Prüfen Sie die folgenden Aufgaben auch mit dem TR (Training):\\
+%%103. a) b) c), und 106. h)}
+
+\AadBMTA{67ff}{15., 18. c), 19. b), 20. h), 26. b), 31. b),
+  38. c) e), 41. e), 43. c), 44. d) e) f) h) i), 48. a) b), 49. a) c)}
+
+\GESO{\olatLinkArbeitsblatt{Potenzgesetze}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/102690264435484}{Kapitel 3 und 4}}%% END olatLinkArbeitsblatt
+\TALS{\olatLinkArbeitsblatt{Potenzgesetze}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/104915210426569}{Kapitel 3 und 4}}%% END olatLinkArbeitsblatt
+
+
+\GESO{Optional: \GESOAadBMTA{72ff}{51. (Koch)}}
+
+\newpage

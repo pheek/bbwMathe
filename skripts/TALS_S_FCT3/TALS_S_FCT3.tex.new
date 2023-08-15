@@ -1,0 +1,20 @@
+%%
+%% Meta: Master Document
+%% Funktionen III
+%% 
+%%
+
+\input{bbwLayoutDoc}
+
+\renewcommand{\author}{Philipp G. Freimann}
+\renewcommand{\grafikautor}{Ph. G. Freimann}
+\renewcommand{\authoremail}{philipp.freimann@bbw.ch}
+\renewcommand{\erstellungsdatum}{\versionTALSMajorDate}
+\renewcommand{\docversion}{\versionTALSMajorVSR}
+
+\renewcommand{\doctitel}{Funktionen III}
+\renewcommand{\fachthema}{Potenz-, Wurzel- und Polynomfunktionen}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\defaultScript{tals/fct3/AllTALS}

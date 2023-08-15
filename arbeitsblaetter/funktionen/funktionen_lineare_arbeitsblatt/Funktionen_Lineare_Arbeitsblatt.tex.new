@@ -1,0 +1,856 @@
+%%
+%% Meta: TI nSpire Einführung
+%%       Ziel: Damit die Grundoperationen damit durchgeführt werden können.
+%%             Damit man sich an den Rechner gewöhnt.
+%%
+
+\input{bbwLayoutPage}
+\renewcommand{\bbwAufgabenBlockID}{F1Lin}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amssymb} %% für \blacktriangleright
+\renewcommand{\metaHeaderLine}{Lineare Funktionen}
+\renewcommand{\arbeitsblattTitel}{\metaHeaderLine{} Arbeitsblatt (V 2.0)}
+
+\begin{document}%%
+\arbeitsblattHeader{}
+
+\title{Aufgaben Funktionsbegriff}
+
+\section{Darstellung}
+\subsection{Wertetabelle und Graph}
+Gegeben ist die Funktion $f$:
+$$y=\frac32x-5$$
+
+
+a) Erstellen Sie eine Wertetabelle für $f$:
+
+\TRAINER{%%
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}\hline
+$-4$ & $-3$ & $-2$ & $-1$ & $0$ & $1$ & $2$ & $3$ & $4$ & $5$ & $6$\\\hline%%
+$-11$ & $-9.5$ & $-8$ & $-6.5$ & $-5$ & $-3.5$ & $-2$ & $-0.5$ & $1$ & $2.5$ & $4$\\\hline%%
+\end{tabular} 
+}%% end TRAINER
+\noTRAINER{%%
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+$-4$ & $-3$ & $-2$ & $-1$ & $0$ & $1$ & $2$ & $3$ & $4$ & $5$ & $6$\\\hline
+ \hspace{7mm} & \hspace{7mm} & \hspace{7mm} & \hspace{7mm} &\hspace{7mm} &\hspace{7mm} &\hspace{7mm} &\hspace{7mm} &\hspace{7mm} &\hspace{7mm} &\hspace{7mm}\,\,\,\,%%
+\end{tabular} 
+}%% end noTRANIER
+
+b) Zeichnen Sie den Graphen von $f$ ins folgende
+Koordinatensystem; natürlich nur im passenden Bereich (Tipps:
+Taschenrechner / Grundform):
+
+\bbwGraph{-2}{6}{-7}{2}{%%
+\TRAINER{\bbwFunc{\x / 2 * 3 - 5}{-1:4}}
+}%% end bbwGraph
+
+c) Geben Sie die beiden Schnittpunkte mit den Achsen an:
+$$S_{y\text{-Achse}} = \LoesungsRaum{(0|-5)}
+\text{ und }
+S_{x\text{-Achse}} = \LoesungsRaum{\left(\frac{10}3 \middle| 0\right)}$$
+\newpage
+
+\subsection{Skizzieren}
+Skizzieren Sie die folgenden Funktionen $f_1$ bis $f_6$:
+
+$f_1$: $y=2x+3$
+
+\bbwGraph{-4}{5}{-3}{5}{
+\TRAINER{\bbwFunc{2*\x + 3}{-3:1}}
+}
+
+
+$f_2$: $y=\frac12x-1$
+
+\bbwGraph{-4}{5}{-3}{1}{
+\TRAINER{\bbwFunc{0.5*\x  - 1}{-3:4}}
+}
+\newpage
+
+
+$f_3$: $y=-x+1.5$
+
+\bbwGraph{-4}{5}{-3}{5}{
+\TRAINER{\bbwFunc{-\x  +1.5}{-3:4}}
+}
+
+
+
+$f_4$: $y=\frac23x-3$
+
+\bbwGraph{-4}{6}{-5}{2}{
+\TRAINER{\bbwFunc{\x*2/3 -3}{-3:5}}
+}
+\newpage
+
+
+$f_5$: $2x=2y-4$ \TRAINER{$\Longrightarrow  y=x+2$}
+
+\bbwGraph{-5}{5}{-2}{5}{
+\TRAINER{\bbwFunc{\x+2}{-4:3}}
+}
+
+
+
+$f_6$: $\frac{2-x}3 = \frac{y-x}6$ \TRAINER{$\Longrightarrow  y=-x+4$}
+
+\bbwGraph{-3}{5}{-2}{6.5}{
+\TRAINER{\bbwFunc{-\x  +4}{-2:5}}
+}
+\newpage
+
+\section{$y$-Achsenabschnitt (= Ordinatenabschnitt)}
+
+\subsection{$y$-Achsenabschnitt rechnen}
+
+Geben Sie jeweils den $y$-Achsenabschnitt an:
+
+a) $y=3x-2$ $\Longrightarrow$ $y$-Achsenabschnitt =
+$\LoesungsRaum{-2}$
+
+\noTRAINER{\mmPapier{2.4}}
+
+b) $y=4x+\frac12$ $\Longrightarrow$ $y$-Achsenabschnitt =
+$\LoesungsRaum{\frac12}$
+
+\noTRAINER{\mmPapier{3.2}}
+
+c) $2(x+y+1) = y-4x+3$ $\Longrightarrow$ $y$-Achsenabschnitt =
+$\LoesungsRaum{1}$
+
+\TNTeop{
+Umformen in Grundform:
+$$2(x+y+1) = y-4x+3$$
+$$2x+2y+2 = y-4x+3$$
+$$2x+2y-1 = y-4x$$
+$$6x+2y-1 = y$$
+$$6x+y-1 = 0$$
+$$6x+y= 1$$
+$$y= -6x + 1$$
+}
+%% implicit: \newpage
+
+\subsection{Funktionsgleichung finden}
+Die Funktion $y=3x+b$ geht durch den Punkt $(0|7)$.
+Berechnen Sie den Parameter $b$ oder mit anderen Worten: Geben Sie die
+Funktionsgleichung an:
+
+\TNT{4.8}{$$y=3x+7$$ denn $7$ ist als $y$-Achsenabschnitt gegeben.}
+\newpage
+
+\section{Steigung}
+
+\subsection{Steigung von Strecken}
+Geben Sie die Steigungen der folgenden Strecken an:
+
+\bbwGraph{-8}{7}{-6}{6}{%
+\bbwStrecke{ 2, 3}{ 6, 5}{ 4  , 4.5}{a)}{blue}
+\bbwStrecke{-6, 4}{-3, 3}{-4.5,4}{b)}{orange}
+\bbwStrecke{-7,-4}{-4,-4}{-5.5,-4.5}{c)}{green}
+\bbwStrecke{-3,-2}{ 2,-5}{ 1  ,-4  }{d)}{black}
+\bbwStrecke{ 0,-1}{ 4, 2}{ 2  , 1  }{e)}{pink}
+\bbwStrecke{ 4,-3}{ 4,-5}{ 4.5,-4  }{f)}{ForestGreen}
+}%% end BBW Graph
+
+Lösungen:
+
+\TNTeop{
+a) $\frac12$; b) $-\frac13$; c) $0$; d) $-\frac35$; e) $\frac34$
+
+Bei f) wäre die Steigung unendlich hoch. Da die Gerade, welche die
+Strecke $f$ verlängert aber sowieso keine Funktion ist, entfällt eine
+weitere Betrachtung; f) hat keine Lösung.
+}
+\newpage
+
+\subsection{Geradensteigung und $y$-Achsenabschnitt bestimmen}
+
+%%\bbwGraph{-8}{8}{-6}{5}{}
+
+\newcommand{\bbwDotGerade}[7]{%%
+\bbwLine{#1}{#2}{#5}
+\bbwDot{#3}{#5}{west}{}
+\bbwDot{#4}{#5}{west}{}%
+\draw (#7) node{{\color{#5}#6}};
+}%%
+
+\bbwGraph{-7}{8}{-5}{5}{%
+% a (blau)
+\bbwDotGerade{-7,-1.5}{4,4}{-6,-1}{2,3}{blue}{a)}{2.5, 4}
+% b (rot)
+\bbwDotGerade{-6,2}{3,-4}{-4.5, 1}{1.5,-3}{red}{b)}{2.5,-4.5}
+% c (ForestGreen)
+\bbwDotGerade{-4,5}{4,-3}{-3, 4}{2.5,-1.5}{ForestGreen}{c)}{3.5,-2}
+% d (black)
+\bbwDotGerade{-7,2.5}{6,2.5}{-4, 2.5}{3,2.5}{black}{d)}{6,3}
+% e (orange)
+\bbwDotGerade{-7,-3}{8,2}{-4, -2}{5,1}{orange}{e)}{-5,-3}
+
+}%% end BBW Graph
+
+
+
+\TNTeop{
+a) $y = \frac12 x + 2$
+
+b) $y = \frac{-2}{3}x - 2$
+
+c) $y = -x + 1$
+
+d) $y = 0x + 2.5 = 2.5$
+
+e) $y = \frac13 x  - \frac43$
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+\section{Nullstelle}
+
+\subsection{Steigung, $y$-Achsenabschnitt und Nullstelle bestimmen}
+Bestimmen Sie den $y$-Achsenabschnitt $b$, die Nullstelle ($y=0$, d.\,h. $x=\frac{-b}{a}$) und die Steigung $a$ der folgenden Funktionen:
+
+$$y = a\cdot{}x + b$$
+
+\begin{bbwFillInTabular}{l|c|c|c}
+ Funktionsgleichung  & $y$-Achsenabschnitt $b$ & Nullstelle $\frac{-b}{a}$ & Steigung $a$\\\hline
+ 
+$y=3x + 3$ & \LoesungsRaum{3} & \LoesungsRaum{$-1$} & \LoesungsRaum{3} \\\hline
+
+$y=4x-2$ & \LoesungsRaum{-2} & \LoesungsRaum{$\frac{1}{2}$} & \LoesungsRaum{4} \\\hline
+
+$y=-\frac{1}{2}x + 1.5$ & \LoesungsRaum{1.5} & \LoesungsRaum{$\frac{1.5}{\frac{1}{2}}=3$} & \LoesungsRaum{$-\frac{1}{2}$} \\\hline
+
+$y=-\frac{2}{5}x - 3.5$ & \LoesungsRaum{-3.5} & \LoesungsRaum{-8.75} & \LoesungsRaum{$-\frac{2}{5}$} \\\hline
+
+$y=1.8x$ & \LoesungsRaum{0} & \LoesungsRaum{0} & \LoesungsRaum{1.8} \\\hline
+
+$y=-3x$ & \LoesungsRaum{0} & \LoesungsRaum{0} & \LoesungsRaum{-3} \\\hline
+
+$y=3.7$ & \LoesungsRaum{3.7} & \LoesungsRaum{keine Nullstelle} & \LoesungsRaum{0} \\\hline
+
+$y=0$ & \LoesungsRaum{0} & \LoesungsRaum{alle $x$ sind Nullstelle} & \LoesungsRaum{0} \\\hline
+
+$y=-x$ & \LoesungsRaum{0} & \LoesungsRaum{0} & \LoesungsRaum{-1} \\\hline
+
+$5y-3 = 2x+7$ & \LoesungsRaum{2} & \LoesungsRaum{$-5$} & \LoesungsRaum{$\frac25$} \\\hline
+
+\end{bbwFillInTabular}
+\newpage
+
+
+\noTRAINER{
+
+Hilfsblatt
+
+\bbwGraph{-7}{7}{-4}{5}{}
+
+\bbwGraph{-7}{7}{-4}{5}{}
+\newpage
+}%% END noTRAINER
+
+\subsection{Funktionsgleichung finden}
+
+Bestimmen Sie die Funktionsgleichung $y=ax+b$ (und die anderen
+fehlenden Werte):
+
+\begin{bbwFillInTabular}{c|c|c|l}
+ $y$-Achsenabschnitt $b$ & Nullstelle $\frac{-b}{a}$& Steigung $a$& Funktionsgleichung $y=...$\\
+\hline
+
+-2 & \LoesungsRaum{$\frac{2}{3}$} & 3 & \LoesungsRaum{$y=3x-2$}\\
+\hline
+
+1.5 & \LoesungsRaum{$\frac{15}{17}$} & -1.7 & \LoesungsRaum{$y=-1.7x + 1.5$}\\
+\hline
+
+0 & \LoesungsRaum{$0$} & 1.4 & \LoesungsRaum{$y=1.4x$}\\
+\hline
+
+\LoesungsRaum{4} & -4 & 1 & \LoesungsRaum{$y=x+4$}\\
+\hline
+
+\LoesungsRaum{-6} & -3 & -2 & \LoesungsRaum{$y=-2x-6$}\\
+\hline
+
+2 & $\frac{1}{5}$ & \LoesungsRaum{-10} & \LoesungsRaum{$y=-10x + 2$}\\
+\hline
+
+5 & \LoesungsRaum{keine Nullstelle}& 0 & \LoesungsRaum{$y=5$}\\
+\hline
+
+\LoesungsRaum{0} & 0 & $-\frac{3}{2}$ & \LoesungsRaum{$y=-\frac{3}{2}x$}\\
+\hline
+
+0 & -1.5 & \LoesungsRaum{0} & \LoesungsRaum{$y=0$}\\
+\hline
+
+
+0 & \LoesungsRaum{Alle $x\in\mathbb{R}$ sind Nullstelle} & 0 & \LoesungsRaum{$y=0$}\\  %
+\hline
+
+0 & 0 & \LoesungsRaum{$\mathbb{R}$} & \LoesungsRaum{$y=0$ oder $y=7x$
+oder $y=-22.6x$ }\\  %
+\hline
+
+\end{bbwFillInTabular}
+\newpage
+
+
+\noTRAINER{
+Hilfsblatt
+
+\bbwGraph{-7}{7}{-4}{5}{}
+
+\bbwGraph{-7}{7}{-4}{5}{}
+\newpage
+}%% END noTRAINER
+\newpage
+\subsection{Schnittpunkt mit Achsen I}
+Geben Sie von der Geraden $x\mapsto 3x-\frac45$ die Schnittpunkte mit
+den Achsen an:
+
+\vspace{15mm}
+Schnittpunkt mit der $x$-Achse: \LoesungsRaumLang{$\left(\frac{4}{15}\middle|0\right)$}
+
+\vspace{5mm}
+
+Schnittpunkt mit der $y$-Achse: \LoesungsRaumLang{$\left(0\middle|\frac{-4}5\right)$}
+
+\TNTeop{%
+$x$-Achse: $y=0$ setzen:
+
+$$0=3x-\frac45$$
+$$0 = 15x - 4$$
+$$4 = 15x$$
+
+$$x = \frac{4}{15}$$
+
+$y$-Achse: Achsenabschnitt ist bereits in der Funktionsgleichung gegeben.
+}% end TNT EOP
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Schnittpunkt mit Achsen II}
+Geben Sie die Schnittpunkte mit den Koordinatenachsen der folgenden
+linearen Funktion an:
+
+$$\frac{y+45}9 = 8x$$
+
+\vspace{15mm}
+Schnittpunkt mit der $x$-Achse: \LoesungsRaumLang{$\left(\frac58\middle|0\right)$}
+
+\vspace{5mm}
+
+Schnittpunkt mit der $y$-Achse: \LoesungsRaumLang{$\left(0\middle|-45\right)$}
+
+\TNTeop{%
+$x$-Achse: $y=0$ setzen:
+ 
+$$\frac{y+45}9 = 8x$$
+$$\frac{45}9 = 8x$$
+$$5 = 8x$$
+$$\frac58 = x$$
+
+$y$-Achse: $x=0$ setzen:
+$$\frac{y+45}9 = 8x$$
+$$\frac{y+45}9 = 0$$
+$$y+45 = 0$$
+$$y = -45$$
+}%% END TNT eop
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Schnittpunkt mit Achsen III}
+Bestimmen Sie die Schnittpunkte der Geraden
+$$y-2x=3\left(x+\frac23\right)$$
+mit den Koordinatenachsen!
+
+
+Schnittpunkt mit der $x$-Achse: \LoesungsRaum{$(-\frac25|0)$}
+
+\vspace{5mm}
+Schnittpunkt mit der $y$-Achse: \LoesungsRaum{$(0|2)$}
+
+\TNTeop{
+Tipp: Erst in Form bringen: In Grundform:
+
+$$y-2x=3x+2$$
+$$y=5x+2$$
+Hier erhalten wir sofort den Schnittpunkt mit der $y$-Achse
+(Achsenabschnitt = 2)
+
+Nun nach $y=0$ setzen und nach $x$ auflösen:
+
+$$0=5x+2$$
+$$-2=5x$$
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Funktionsgleichung finden}
+Gegeben ist die folgende Wertetabelle:
+
+\begin{tabular}{l|c|c|c|c|c|c|}
+$x$    & $-1$ & $0$   & $1$ & $2$   & $3$ & $4$ \\\hline
+$f(x)$ & $2$  & $1.5$ & $1$ & $0.5$ & $0$ & $-0.5$ \\
+\end{tabular}
+
+a) Skizzieren Sie den Graphen ins folgende Koordinatensystem:
+
+\bbwGraph{-2}{5}{-2}{3}{%
+\TRAINER{%
+\bbwLine{-1,2}{4,-1}{red}
+}%% end TRAINER
+}%% end BBW Graph
+
+b) Geben Sie die Funktionsgleichung an:
+
+$$f(x) = \LoesungsRaum{-\frac12x+1.5}$$
+\TNTeop{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Alkohol (Promille)}
+Alkohol baut sich im Körper im Durchschnitt mit
+$0.15$\textperthousand{} pro Stunde ab (wir gehen von einem annähernd
+linearen Abbau aus).
+
+Andrea hat um 22:00 Uhr nach einer unachtsamen Feier einen
+Alkoholgehalt von $1.8$\textperthousand{} im Blut.
+
+a) Wenn Andrea nun (ab 22:00 Uhr) keinen Alkohol mehr zu sich nimmt:
+Wann ist der Alkoholgehalt in Andreas Blut auf $1.2$\textperthousand{}
+gesunken?
+
+\TNT{4}{Differenz von 1.2 zu 1.8 sind 0.6
+[\textperthousand{}]. Somit teilen wir die 0.6 durch 0.15 und erhalten
+4 [Stunden].
+
+Nach vier Stunden ist der Alkoholgehalt auf $1.2$\textperthousand{}
+gesunken.}%% end TNT
+
+b) Geben Sie die (lineare) Funktionsgleichung $y=f(x)$ an mit
+$$y = \text{ Alkoholgehalt in \textperthousand{} im Blut}$$
+$$x = \text{ Anzahl Stunden nach der Feier (also nach 22:00 Uhr)}$$
+
+Beispiel: $x=3$ bedeutet also 1 Uhr morgens.
+
+$$y = f(x) = \LoesungsRaumLang{-0.15\cdot{}x + 1.8 [\text{\textperthousand{}}]}$$
+\TNT{4}{}
+
+c) Geben Sie den Alkoholgehalt nach $6.45$ Stunden an:
+
+$$f(6.45) = \LoesungsRaumLang{1.8-0.15\cdot{}6.45 = 0.8325
+[\text{\textperthousand}]}$$
+\TNTeop{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+d) Geben Sie den Alkoholgehalt um 5:15 am nächsten Morgen an:
+
+$$y = f(\LoesungsRaum{7.25}) = \LoesungsRaum{0.7125}\textperthousand$$
+
+\TNT{4}{}
+
+e) Um welche Uhrzeit wir der Wert auf $0.5$\textperthousand{} gesunken
+sein?
+
+\vspace{5mm}
+Dies wird um \LoesungsRaum{6:40} Uhr eintreten.
+\TNTeop{
+$$0.5 = 1.8-0.15x$$
+$$0.15x = 1.8 - 0.5$$
+
+ergo
+$$x = \frac{1.8-0.5}{0.15} = 8.666... \text{h} = 8\text{h} 40\text{ min}$$
+}%% end TNTeop
+
+\section{Schnittpunkt(e)}
+\subsection{Wo schneiden sich $f$ und $g$?}
+Finden Sie den Schnittpunkt $S$ von $f$ und $g$:
+
+$$f: y= 2x-3$$
+$$g: y=-x+2$$
+
+
+\TRAINER{$$S = \left(\frac53\middle|\frac13\right)$$}
+\noTRAINER{
+\vspace{8mm}
+$$S = $$}%% end noTRAINER
+
+\TNTeop{
+Gleichsetzen:
+$$2x-3=-x+2$$
+$$3x=5$$
+$$x=\frac53$$
+
+$x$ in eine der beiden Gleichungen einsetzen:
+
+$$y=2\cdot{}\frac52 -3 = \frac{10}3 - 3 = \frac13$$
+}
+\newpage
+
+\subsection{Schnittpunkt}
+Finden Sie den Schnittpunkt $S$ von $f$ und $g$:
+
+$$f: y=-\frac23x + 6$$
+
+$$g: 2x-4y = 6$$
+
+\vspace{5mm}
+$$S=\LoesungsRaumLang{\left(\frac{45}7\middle|\frac{12}7\right)}$$
+\TNTeop{
+$g:$
+$$-4y=6-2x$$
+$$y=\frac{-2x+6}{-4} = \frac{-2x}{-4} + \frac{6}{-4} = \frac12x
+-\frac32$$
+$f$ und $g$ gleichsetzen:
+$$-\frac23x+6=\frac12x-\frac32$$
+$\cdot{}6:$
+$$-4x+36=3x-9$$
+$$45=7x$$
+$$S_x = \frac{45}7$$
+$$S_y = -\frac23S_x+6 = -\frac23\cdot{}\frac{45}7 + 6 =
+... =\frac{12}7$$
+
+$$S = (S_x | S_y) = \left(\frac{45}7\middle|\frac{12}7\right)$$
+
+}%% end TNT eop
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Schnittpunkt ?}
+Wo schneidet sich
+
+$$f(x) = 3.2x - 8$$
+mit
+
+$$g: x\mapsto \frac{16x+3.68}5 \text{ ?}$$
+
+\vspace{5mm}
+$$\mathbb{L}_S=\LoesungsRaumLang{\{\}}$$
+\TNTeop{
+Beide haben die selbe Steigung (3.2) aber einen verschiedenen
+$y$-Achsenabschnitt.
+Die beiden sind parallel und haben somit keinen gemeinsamen
+Schnittpunkt in $\mathbb{R}\times\mathbb{R}$
+
+}%% end TNT eop
+
+\subsection{Schnittpunkt(e)?}
+Wo schneiden sich die Geraden $f$ und $g$?
+
+Gegeben:
+$$f(x) = 3x - 8$$
+$$g: 2x=\frac23y+\frac{16}3$$
+
+\vspace{5mm}
+$$\mathbb{L}_S=\LoesungsRaumLang{\{ (S_x|S_y) | S_y = 3x-8  \} \text{ oder } \{ (S_x|S_y) | S_x = \frac{y+8}3  \}}$$
+\TNTeop{
+
+Die beiden Geraden haben äquivalente Funktionsgleichungen und sind
+somit \textbf{zusammenfallend}.
+}%% end TNT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Tropfsteinhöhlen}
+
+Stalaktiten bilden sich durch herabtropfendes Wasser in Tropfsteinhöhlen.
+Wir gehen hier davon aus, dass es $3\,000$ Jahre benötigt, bis ein
+Stalaktit $50$ cm von der Decke heruntergewachsen ist. Wir gehen von
+linearem Wachstum aus.
+
+Stalagmiten sind die Gegenstücke, welche vom Boden
+«heraufwachsen». Gehen wir hier von der Annahme aus, dass unser
+Stalagmit dreimal länger braucht, um die selbe Höhe zu erreichen.
+
+In unserer fiktiven Höhle ist der Abstand vom Boden zur Decke $2.3$ m
+(= $230$ cm). und der Stalagmit (von unten) wird auf $34$ cm gemessen.
+
+a) Zeichnen Sie das Ende des Stalagmiten als
+lineare Funktion in ein kartesisches Koordinatensystem. Verwenden Sie
+eine $y$-Achse von $0 - 200$ cm und eine $x$-Achse von $0-12\,000$
+Jahre. Nehmen Sie selbständig eine sinnvolle Skalierung vor.
+
+\noTRAINER{\mmPapier{16}}
+
+b) Zeichnen Sie das Ende des Stalaktiten (nicht dessen Höhe) in
+dasselbe Koordinatensystem. Die Gerade beginnt für $x=0$ Jahre
+natürlich bei $200$ cm.
+\newpage
+
+c) Geben Sie sowohl das Ende des Stalagmiten ($f$), wie auch das des
+Stalaktiten ($g$) als Funktionsterm an mit $x$ = Alter in Jahren und
+$y$ = Spitze über Boden.
+
+\TNT{6}{%
+ $$f(x) = 50\cdot{}\frac{x}{9000} = \frac{x}{180} [\text{ cm}]$$
+ $$g(x) = 200 - \frac{x}{60}  [\text{ cm}]$$
+}%% end TNT
+
+
+d) Wo schneiden sich die Geraden $f$ und $g$? Mit anderen Worten: Wann
+(nach deren Entstehung) wachsen die beiden zusammen?
+\TNTeop{%
+$$\frac{x}{180} = 200 - \frac{x}{60}$$
+$$x = 36\,000 - 3x$$
+$$4x = 36\,000 $$
+$$x = 9\,000 \text{[Jahre]}$$
+}%% end TNT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Parallele}
+\subsection{Zeichnen}
+a) Zeichnen Sie $y=\frac23x+b$ für die Parameter
+
+1. $b=1.5$
+
+2. $b=-1$
+
+3. $b= -4$
+
+\bbwGraph{-4}{4}{-5}{3}{
+\TRAINER{\bbwFunc{\x*2/3 + 1.5}{-3:3}}
+\TRAINER{\bbwFunc{\x*2/3 - 1  }{-3:3}}
+\TRAINER{\bbwFunc{\x*2/3 - 4  }{-3:3}}
+}%% end bbwGraph
+
+b) Was fällt auf?
+\TNT{4}{
+Die drei Geraden (Graphen der Funktionen) sind parallel. Sie alle
+haben die selbe Steigung.
+}
+\newpage
+\subsection{Parallele Graphen}
+Je zwei der folgenden sechs linearen Funktionen besitzen zu einander parallele
+Graphen.
+
+Ordnen Sie zu:
+
+$$x\mapsto -\frac13 x + 2.5$$
+
+$$42 = 12y + 1.5x$$
+
+$$f(x) = 3x-6$$
+
+$$x=-48-8y$$
+
+$$2y-6x = 16$$
+
+$$y= - \frac13 x + \frac74$$
+\TNTeop{
+
+$$x\mapsto -\frac13 x + 2.5   \Longleftrightarrow  y= - \frac13 x + \frac74$$
+
+$$42 = 12y + 1.5x \Longleftrightarrow  x=-48-8y$$
+
+$$f(x) = 3x-6 \Longleftrightarrow  2y-6x = 16$$
+
+}%% end TNTeop
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Punkte-Aufgaben}
+
+\subsection{Parameter finden}
+Gegeben ist die Steigung $a=3.7$ der Funktion
+$$y=3.7x + b.$$
+
+a) Berechnen Sie $b$ so, dass der Graph von $f$ durch den Punkt $(0|6)$
+verläuft:
+
+$$b = \LoesungsRaum{6}$$
+
+\TNT{2.4}{$b$ ist der $y$-Achsenabschnitt. Hier gibt es nichts zum Rechnen.}
+
+
+b) Berechnen Sie $b$ so, dass der Graph von $f$ durch den Punkt
+$(2|2)$ verläuft:
+
+$$b= \LoesungsRaum{-5.4}$$
+\TNTeop{$x=y=2$ in die Funktionsgleichung einsetzen:
+$$2 = 3.7\cdot{}2 + b$$
+nun nach $b$ auflösen
+}%% end TNTeop
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\subsection{Parallele}
+Gegeben ist die Gerade $f: y=\frac{-2}3x+9.6$.
+
+Legen Sie eine parallele Gerade zu $f$ so, dass diese Parallele durch
+den Punkt $(9|7)$ verläuft und geben Sie die Funktionsgleichung der
+gefundenen Geraden an.
+
+\vspace{15mm}
+\LoesungsRaumLang{$y=\frac{-2}3x + 13$}
+\TNTeop{
+ Die neue Gerade hat die selbe Steigung $\frac{-2}3$; somit lautet die
+ Gerade
+
+$$y = \frac{-2}3x + b$$
+
+Nun setzen wir die Koordinaten des Punktes in die Funktionsgleichung
+ein:
+
+$$7 = \frac{-2}3\cdot{}9 + b$$
+und lösen nach $b$ auf:
+$$7 = -6 + b$$
+$$13 = b$$
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+\subsection{Zwei Punkte Aufgabe}
+Die Funktion $f$ schneide die Achsen in $\left(0\middle|\frac87\right)$ und
+$(-2|0)$. Geben Sie die Funktionsgleichung von $f$ an:
+
+\vspace{20mm}
+
+$$f: \LoesungsRaum{\frac47x + \frac87}$$
+
+\TNTeop{
+$y$-Achsenabschnitt (= Ordinatenabschnitt):
+
+$$y=ax+\frac87$$
+Nun Punkt $(-2|0)$ (= Nullstelle) einsetzen:
+
+$$0 = a\cdot{}(-2) + \frac87$$
+$$0 = a\cdot{}(-14) + 8$$
+$$-8 = a\cdot{}(-14)$$
+$$8 = a\cdot{}(14)$$
+$$4 = a\cdot{}(7)$$
+$$\frac47 = a$$
+}%% end TNT eop
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Nullstelle und Ordinatenabschnitt}
+Die Funktion $f$ habe die Nullstelle $\frac83$ und den
+Ordinatenabschnitt 2. Geben Sie die Funktionsgleichung in der
+Grundform an:
+
+\vspace{20mm}
+$$f: \LoesungsRaumLang{y = \frac{-3}4 \cdot{} x + 2}$$
+
+\TNTeop{
+Ordinatenabschnitt führt direkt zu Parameter $b$ in $y=ax+b$:
+$$y = ax + 2$$
+Nun die Nullstelle $\left(\frac83\middle|0\right)$ einsetzen:
+$$0 = a\cdot{}\frac83 + 2$$
+$$-2 = a\cdot{}\frac83 $$
+$$-6 = a\cdot{}8 $$
+$$-\frac68 = a$$
+}%% end TNT eop
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Funktionsgleichung durch zwei Punkte}
+Geben Sie die Funktionsgleichung $y=ax+b$ der Geraden $g$ an, welche
+durch die Punkte $A$ und $B$ verläuft:
+
+a) $A = (3|9)$, $B=(4|10)$
+
+\vspace{15mm}
+
+$$g: y= \LoesungsRaum{x + 6}$$
+\vspace{5mm}
+
+b) $A = \left(-\frac13\middle|\frac45\right)$, $B=\left(\frac29\middle|\frac{-7}3\right)$
+
+\vspace{15mm}
+
+$$g: y= \LoesungsRaum{\left( \frac{-141}{25} \middle| \frac{27}{25}\right)}$$
+\vspace{5mm}
+\TNTeop{%
+a) und b) mit TR (lin-reg)
+}%% end TNT eop
+\newpage
+(challenge:)
+
+\vspace{3mm}
+
+c) $A = \left( t \middle| \sqrt{3} \right)$,
+$B=\left( \sqrt{2} \middle| s \right)$
+
+(Resultat exakt angeben)
+
+\vspace{15mm}
+
+$$g: y= \LoesungsRaum{\left( \frac{s-\sqrt{3}}{\sqrt{2}-t} \middle| \frac{st-\sqrt{6}}{t-\sqrt{2}}\right)}$$
+\vspace{5mm}
+
+
+\TNTeop{%
+
+c)
+\gleichungZZ{\sqrt{3}}{at+b}{s}{a\sqrt{2}+b}
+II - I: $s-\sqrt{3} = a(\sqrt{2}-t) \Longrightarrow a
+= \frac{s-\sqrt{3}}{\sqrt{2}-t}$.
+
+Dies nun in eine der Gleichungen einsetzen (z. B. in A):
+
+$$\sqrt{3} = at+b$$
+$$b = \sqrt{3} - at$$
+$$b = \sqrt{3} - \frac{s-\sqrt{3}}{\sqrt{2}-t} \cdot{}t$$
+Linken Bruch erweitern mit $\sqrt{2}-1$:
+$$b = \frac{\sqrt{3}(\sqrt{2}-t)}{\sqrt{2}-t}
+- \frac{s-\sqrt{3}}{\sqrt{2}-t} \cdot{}t$$
+alles auf einen Bruchstrich:
+$$\frac{\sqrt{3}\sqrt{2} - \sqrt{3}t+\sqrt{3}t-st}{\sqrt{2}-t}$$
+$$\frac{\sqrt{6}-st}{\sqrt{2}-t}$$
+
+}% END TNTeop
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Vier Punkte / Zwei Geraden}
+Die Gerade $f$ verläuft durch die Punkte $(7|2)$ und $(-2|8)$ während
+die Gerade $g$ durch $(-2|6)$ und $\left(2\middle|\frac14\right)$
+verläuft.
+
+Geben Sie den Schnittpunkt von $f$ und $g$ an:
+
+\vspace{15mm}
+
+$$\LoesungsRaumLang{\left( \frac{-170}{37} \middle| \frac{360}{37} \right)}$$
+
+\TNTeop{%%
+1. $f$:
+\gleichungZZ{2}{7a + b}{8}{-2a+b}
+$$\Longrightarrow  a = -\frac23 \text{ und } b = \frac{20}3$$
+
+2. $g$:
+\gleichungZZ{6}{-2a + b}{\frac14}{2a+b}
+$$\Longrightarrow  a = -\frac{23}{16} \text{ und } b = \frac{25}8$$
+
+3. $f \cap g$:
+
+$$-\frac23 x + \frac{20}3 = \frac{23}{16} x + \frac{25}8$$
+solve:
+$$x = \frac{-170}{37} = -4.\overline{594}$$
+und
+$$y = \frac{360}{37} = 9.\overline{729}$$
+
+}%% end TNT eop
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Taxi}
+Taxiunternehmen \textbf{A} kostet pro gefahrenen Kilometer CHF
+0.60. Daneben verlangt das Unternehmen eine Grundgebühr von CHF 5.-.
+
+Ein neues Taxiunternehmen (nennen wir es \textbf{B}) geht davon aus, dass viele Fahrten über 4 km
+sind. Das Unternehmen \textbf{B} will nun erreichen, dass für exakt 4
+km Fahrten beide Unternehmen gleich teuer sind um wenigstens für die
+kurzen Fahrten Unternehmen b nicht zu konkurrenzieren. Jedoch will das
+Unternehmen \textbf{B} keine Grundgebühr erheben sondern einfach einen
+km-Preis erheben.
+
+Was sind die zu erwartenden Kosten pro km bei Unternehmen \textbf{B}?
+
+\TNTeop{CHF 1.85  $= 7.40 / 4 = (5+4\cdot{}0.6) / 4$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Taxi zwei}
+Ein Taxiunternehmen hat den Markt analysiert und will nun für 3
+km-Fahrten  eine Gebühr von CHF 8.- und für 9 km Fahrten eine Gebühr
+von CHF 20.- erheben.
+
+Um die Berechnung der Fahrtkosten für die Kunden verständlich zu
+machen, will das Unternehmen eine Grundgebühr und eine km-Gebühr
+erheben.
+
+Wie hoch wird diese Grundgebühr und wie hoch die km-Gebühr ausfallen?
+
+\TNTeop{ Die Grundgebühr wird CHF 2.- sein und die km-Gebühr ebenfalls
+CHF 2.-
+
+Lösung am Einfachsten mit Lin-Reg-Funktion des Taschenrechners. Ohne
+TR: Gleichungssystem: 2-Punkte-Aufgabe.
+}
+
+\end{document}

@@ -1,0 +1,99 @@
+%%
+%% Meta: TI nSpire Einführung
+%%       Ziel: Damit die Grundoperationen damit durchgeführt werden können.
+%%             Damit man sich an den Rechner gewöhnt.
+%%
+
+\input{bbwLayoutPage}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amssymb} %% für \blacktriangleright
+\renewcommand{\metaHeaderLine}{Arbeitsblatt}
+\renewcommand{\arbeitsblattTitel}{Bruchgleichungen (alte GESO Maturaaufgaben)}
+
+\begin{document}%%
+\arbeitsblattHeader{}
+
+\renewcommand{\TNTeop}[1]{\noTRAINER{\mmPapier{16}\newpage}\TRAINER{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+(2016 Serie 1 Aufgabe 3) Lösen Sie die Gleichung nach $x$ auf und schreiben Sie das
+Resultat möglichst einfach:
+
+$$a(2a-2b) - ax = - \frac{b(x+b)}{2}$$
+
+\TNTeop{$x=2a-b$
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+(2017 Aufgabe 4) Bestimmen Sie den Definitionsbereich des folgenden Terms bezüglich der Grundmenge $\mathbb{R}$.
+$$\frac{5x}{x^2 - 9x - 36}$$
+
+\TNTeop{$\mathcal{D}_x=\mathbb{R}\backslash\{-3;12\}$}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+(2017 Aufgabe 8)
+Bestimmen Sie den Definitionsbereich und die Lösungsmenge der
+folgenden Gleichung:
+
+$$\frac{x+1}{x-3} = \frac{10-2x}{x^2-3x}$$
+
+
+\TNTeop{$\mathcal{D} = \mathbb{R}\backslash{}\{0, 3\}; \mathbb{L}=\{-5, 2\}$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+(2018 Serie 1)
+Bestimmen Sie die Definitionsmenge und die Lösungsmenge der folgenden Gleichung:
+
+$$\frac{6x-24}{3-x} + x - 2 = \frac{6}{x-3}$$
+
+\TNTeop{$ \mathcal{D} = \mathbb{R}\backslash{}\{3\}, \mathbb{L} = \{8\}$}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+(2018 Serie 2)
+Bestimmen Sie den Definitionsbereich und die Lösungsmenge der Gleichung.
+Die Gleichung soll auf die \textbf{Grundform} $ax^2 + bx + c = 0$ gebracht werden und
+kann dann mit dem entsprechenden Taschenrechnermodus gelöst werden.
+$$\frac{x^2}{x-2} + \frac{4}{2-x} = 3$$
+\TNTeop{$\lx=\{1\}$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%% Das folgende, nun auskommentierte,  war die Einstiegsaufgabe oben, daher raus:
+%% Bestimmen Sie den Definitionsbereich und die Lösungsmenge der Gleichung.
+%% Die Gleichung ist auf \textbf{Grundform} $ax^2 + bx + c = 0$ zu bringen und
+%% kann dann mit dem entsprechenden Taschenrechnermodus gelöst werden.
+%% $$\frac{6x-24}{3-x} +x -2 = \frac{6}{x-3}$$
+(2018 Serie 3)
+Bestimmen Sie den Definitionsbereich und die Lösungsmenge der Gleichung.
+Die Gleichung ist auf \textbf{Grundform} $ax^2 + bx + c = 0$ zu bringen und kann dann mit
+dem entsprechenden Taschenrechnermodus gelöst werden.
+$$\frac{x^2-16x}{x-3} + 1 = \frac{39}{3-x}$$
+\TNTeop{$\lx=\{12\}$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+(2018 Serie 4)
+
+Bestimmen Sie den Definitionsbereich und die Lösungsmenge der Gleichung.
+Die Gleichung ist auf \textbf{Grundform}
+$ax^2 + bx + c = 0$ zu bringen und kann dann
+mit dem entsprechenden Taschenrechnermodus gelöst werden.
+$$\frac{x^2-10x}{x-4} + 1 = \frac{24}{4-x}$$
+
+\TNTeop{$\lx=\{5\}$}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+(2022 Aufgabe 6)
+
+Bestimmen Sie die Definitionsmenge und die Lösungsmenge der Gleichung.
+
+Grundmenge = $\mathbb{R}$
+
+
+$$\frac5{x-3}   = \frac{7x-1}{x^2-9}   -    \frac4{x+3}$$
+
+\TNTeop{$$\mathcal{D} = \mathbb{R} \backslash{}  \{-3; 3\}$$
+$$\lx = \{ -2 \}$$}%% end TNT       
+
+\end{document}

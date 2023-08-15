@@ -1,0 +1,81 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+
+\section{Koordinatensystem}\index{Koordinatensystem!kartesisches}\index{Kartesisches
+  Koordinatensystem}
+\sectuntertitel{Was man nicht gut beschreiben kann, kann man auch
+  nicht messen (René Descartes: franz. Philosoph und Mathematiker).}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item $x$-Achse und $y$-Achse\index{Achse}\index{x-Achse}\index{y-Achse}
+\item Einheitsstrecke ($e_x$, $e_y$)\index{Einheitsstrecke!im Koordinatensystem}
+\item kartesisch (nach René Descartes)\index{kartesisch}
+\item Quadrant \index{Quadrant}
+\item Ursprung\index{Ursprung}, Nullpunkt
+\end{itemize}
+
+%%\TALS{(\cite{frommenwiler17alg} S. 165 (Kap. 3.1))}
+%%\GESO{(\cite{marthaler21alg}       S.211 (Kap. 13.1))}
+\TadBMTA{211}{13.1}
+\newpage
+
+\subsection{Das kartesische Koordinatensystem}
+In einem Koordinatensystem kann man Zahlenpaare $(x; y)$ als Punkte
+darstellen.
+
+\begin{definition}{Punkt im Koordinatensystem}{}
+  Punkte in der $x|y$-Ebene können als geordnete Zahlenpaare aufgefasst
+  werden. Sie werden bezeichnet als
+
+  $$P=(x|y)$$
+  bzw.
+  $$P=(x;y).$$
+
+\end{definition}
+
+
+\begin{bemerkung}{}{}
+  Auch wenn in einigen Lehrbüchern  (s. \cite{frommenwiler17alg})die Bezeichnung $P(x/y)$ für Punkte gebräuchlich ist, ist
+  sie jedoch die unglücklichste von allen. Gerade bei $P=(1/2,5)$
+  treten im deutschsprachigen Raum Verwechslungen auf. Ist $P=(1/2,5)$
+  nun gleich $P=(1 | 2.5)$ oder gleich $P=(\frac{1}{2} | 5)$?
+  Daher verwende ich lieber den senkrechten Strich, was auch in den
+  BMS Abschlussprüfungen so gehandhabt wird. Im Lehrbuch (\cite{marthaler21alg}) wird jedoch
+  konsequent das Semikolon ($;$ = Strichpunkt) verwendet, was auch
+  nicht zu Verwechslungen führen kann.
+\end{bemerkung}
+\newpage
+
+\subsection{Bezeichnungen im Koordinatensystem}
+
+\TRAINER{\begin{center}\index{Quadrant}\index{$x$-Achse}\index{y-Achse}\index{Ursprung}
+  \includegraphics[width=16cm]{allg/funktionen/img/Koordinatensystem.png}
+  \end{center}
+  \vspace{15mm}
+}
+\noTRAINER{\bbwGraph{-7}{8}{-4}{5}{}}
+
+Dabei bezeichnen $e_x$ und $e_y$ die Einheiten (\zB cm, km, CHF, kg, ...) der entsprechenden Achsen.
+
+Die $x$-Koordinate wird auch Abszisse\index{Abszisse} und die $y$-Koordinate wird auch Ordinate\index{Ordinate} genannt.
+
+\subsection*{Aufgaben}
+
+%%\TALSAadBMTA{165}{577. e) f) 578. b) 579. a) c) 580. a) c) 581. b) 582.}
+\TALS{%% TALS
+\olatLinkArbeitsblatt{Koordinatensystem}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/108030907897983}{1.1
+  bis 1.5}
+
+Zusätzlich:
+
+\AadBMTA{228ff.}{10. a) c) }
+}%% end TALS
+\GESO{%%
+\olatLinkArbeitsblatt{Koordinatensystem}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/108030907866742}{1.1 bis 1.5}
+  %%\AadBMTA{228ff.}{3.a) b), 5. a) d) e)}%%
+}%% end GESO
+
+\newpage

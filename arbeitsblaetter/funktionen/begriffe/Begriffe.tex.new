@@ -1,0 +1,39 @@
+%%
+%% Arbeitsblatt zu Exponentialfunktionen, Wachstum, Zerfall und Sättigung.
+
+
+\input{bbwLayoutPage}
+
+\renewcommand{\metaHeaderLine}{Begriffe zum Koordinatensystem}
+\renewcommand{\arbeitsblattTitel}{Selbsteinschätzung}
+
+\begin{document}
+\arbeitsblattHeader{}
+
+Machen Sie bei allen Begriffen, die Sie kennen (oder glauben zu
+kennen) eine Markierung vor und eine andere Markierung nach der
+Lektion.
+
+
+
+
+\section{Begriffe}\
+
+\begin{bbwFillInTabular}{|c|c|c|}\hline
+                       & vorher & nachher \\\hline
+Ordinate               &  &\\\hline
+Definitionsbreich      &  &\\\hline
+Graph                  &  &\\\hline
+Zielmenge              &  &\\\hline
+Quadrant               &  &\\\hline
+Zuordnung              &  &\\\hline
+Nullpunkt              &  &\\\hline
+Wertebreich            &  &\\\hline
+Funktionsterm          &  &\\\hline
+Abszisse               &  &\\\hline
+Ursprung               &  &\\\hline
+Funktionsvorschrift    &  &\\\hline
+ \end{bbwFillInTabular} 
+
+
+\end{document}

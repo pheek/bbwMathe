@@ -1,0 +1,39 @@
+%%
+%% Meta: Einsatz von Photomath fürs Verständnis von quadratischen Funktionen
+%%
+
+\input{bbwLayoutPage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usepackage{amssymb} 
+\usepackage{cancel}
+
+
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\renewcommand{\metaHeaderLine}{Arbeitsblatt}
+\renewcommand{\arbeitsblattTitel}{Photomat und quadratische Funktionen}
+
+\begin{document}%%
+\arbeitsblattHeader{}
+
+Aufgaben zur quadratischen Gleichung und zu Parabeln.
+
+\begin{enumerate}
+\item Wie viele Lösungen haben die folgenden Gleichungen?
+ \begin{itemize}
+  \item $(x+2)^2 - 1 = 0$
+  \item $(x+2)^2 + 1 = 0$
+  \item $(x+2)^2     = 0$
+ \end{itemize}
+
+\item Kann es für verschiedene Parameter von $q$ drei Lösungen geben?
+  Begründen Sie.
+  $$(x+2)^2+q = 0$$
+
+\item Für welche $p$ und $q$ hat die Gleichung
+$$(x+p)^2-q = 0$$
+keine / eine bzw. mehrere Lösungen?
+\end{enumerate}
+
+\end{document}

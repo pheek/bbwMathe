@@ -1,0 +1,65 @@
+%% 2020 12 25 ph. g. Freimann
+%%
+\section{Längenprobleme}
+
+\subsection*{Lernziele}
+\begin{itemize}
+\item Längen
+\item Multiplikation mit einem Skalar (Vielfaches)
+\end{itemize}
+
+Im kartesischen Koordinatensystem kann die Länge von Vektoren einfach
+mit dem Satz des Pythagoras ermittelt werden.
+
+\begin{gesetz}{in $\mathbb{R}^2$}{}
+  $$|\vec{a}| = \left| \begin{pmatrix} a_x\\a_y\end{pmatrix}  \right|   = \sqrt{a_x^2 + a_y^2}$$
+\end{gesetz}
+
+\begin{gesetz}{in $\mathbb{R}^3$}{}
+  $$|\vec{a}| =  \left|\begin{pmatrix}a_x\\a_y\\a_z\end{pmatrix}\right| = \sqrt{a_x^2 + a_y^2 + a_z^2}$$
+\end{gesetz}
+
+Bemerkung Taschenrechner: Im Taschenrechner kann die Länge (Distanz
+\texttt{d}) mit der \texttt{norm}\index{norm!Vektorlänge} ermittelt
+werden:
+
+\texttt{d:=norm(vec)}
+
+\subsection*{Aufgaben}
+\TALSAadBFWG{196}{77. a), 83.}
+
+\newpage
+
+
+\subsection{Vielfaches im
+  Raum}\index{Vielfaches!Vektoren}\index{Multiplikation!mit Skalar}\index{skalare Multiplikation}
+Wie bereits in der Ebenen können Vektoren auch im Raum durch eine
+\textbf{Multiplikation mit einem Skalar} verlängert oder
+verkürzt werden. Diese Operation nennen wir auch hier 
+
+\begin{definition}{Multiplikation mit einem Skalar}{}
+  Sei ein Vektor $\vec{a}$ in der Ebene oder im Raum gegeben. Weiter
+  sei $k$ eine beliebige reelle Zahl. Dann bezeichnen wir mit
+  
+  $$\vec{b} = k \cdot{} \vec{\vphantom{b}a}$$
+  eine Multiplikation mit einem Skalar. Der neue Vektor $\vec{b}$ ist
+  der um $k$ gestreckte Vektor $a$.
+\end{definition}
+
+\begin{beispiel}{Vielfaches}{}
+  $$2.5\cdot{} \begin{pmatrix} 4 \\ -2.5 \\ 1.1 \end{pmatrix} \;
+  = \begin{pmatrix}\TRAINER{2.5\cdot{} 4}\noTRAINER{\hspace{25mm}}  \\ \TRAINER{2.5\cdot{} (-2.5)} \\ \TRAINER{2.5\cdot{} 1.1} \end{pmatrix}
+  = \begin{pmatrix}\TRAINER{10}\noTRAINER{\hspace{12mm}} \\ \TRAINER{-6.25} \\ \TRAINER{2.65} \end{pmatrix}$$
+\end{beispiel}
+
+«Das Entgegengesetz»
+
+\begin{bemerkung}{Streckung mit Richtungsänderung}{}
+  Ist $k<0$, so ist die Richtung von $k\cdot{}\vec{a}$ der Richtung von $\vec{a}$ entgegengesetzt.
+\end{bemerkung}
+
+
+\subsection*{Aufgaben}
+\TALSAadBFWG{197}{86.}
+\TALSAadBMTG{264}{30. a) b) }
+

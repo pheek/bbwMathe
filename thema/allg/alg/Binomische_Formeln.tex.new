@@ -1,0 +1,125 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+\newpage
+\section{Binomische Formeln}\index{Formeln!binomische}\index{Binomische Formeln}
+
+\sectuntertitel{2: Zwei, bi-, di-, zwie-, doppel, binär, duo, dual,
+Boole'sch, paar, stereo, sekund-, ...\footnote{Zürich unterscheidet die Zahl
+2 je nach Geschlecht: «zwoo Fraue», «zwéé Mane» und «zwäi Chinde»}}
+
+\youtubeLink{https://www.youtube.com/watch?v=nSmlfe-ftTo}{Binomische
+Formeln (10:37)}
+\youtubeLink{https://www.youtube.com/watch?v=zYVY0nmGnbE}{Binomische
+Formeln Daniel Jung (4:07)}
+        
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item Drei binomische Formeln
+\item Wichtiger Verterter: $1-x^2 = \LoesungsRaumLang{(1+x)\cdot{}(1-x)}$
+
+%%  \item Polynomdivision
+
+\end{itemize}
+
+%% \TALSTadBFWA{16}{1.3.1}
+\TadBMTA{29}{2.2.1}
+%%\TALSTadBMTA{29}{2.2.1}
+
+
+\newpage
+
+
+\subsection{Binomische Formeln}\index{Formeln!binomische}
+Es gilt:
+
+\TNT{4}{
+  $(a+b)\cdot(c+d) = \overbrace{(a+b)}^{X} \cdot (c+d)
+  =X(c+d)
+  =Xc + Xd
+  =(a+b)c + (a+b)d
+  =ac + bc + ad + bd$
+  \vspace{2cm}
+}%% END TNT
+
+Daraus folgen die drei binomischen Formeln
+\begin{gesetz}{Binomische Formeln}{}
+$$(a+b)^2 = a^2 + 2ab +b^2$$
+\vspace{0.01mm}
+$$(a-b)^2 = a^2 - 2ab +b^2$$
+\vspace{0.2mm}
+$$(a+b)(a-b) = a^2 - b^2$$
+\end{gesetz}
+
+
+Graphischer Beweis der 1. binomischen Formel:
+
+%% Für Millimeterpapier siehe auch hier:
+%%     http://www.texample.net/tikz/examples/graph-paper/
+
+
+\TNT{5.2}{%
+\raisebox{-1cm}{\includegraphics[width=12cm]{allg/alg/img/a_plus_b_zum_quadrat.png}}%
+}%% END TNT
+
+\begin{beispiel}{}{}
+
+Typische Anwendungen der binomischen Formeln:
+
+$$(x+5)\cdot(x-5)=\LoesungsRaum{x^2 -25}$$
+$$(t+1)\cdot(t-1)=\LoesungsRaum{t^2 - 1}$$
+$$(x-2)\cdot(x-2)=\LoesungsRaum{x^2 -4x + 4}$$
+\end{beispiel}
+
+
+\newpage
+
+%Mit diesem Wissen lassen sich einige Summen einfacher ausklammern:
+%\vspace{4cm}
+%\TRAINER{
+%  $$49 - x^2 = (7-x)\cdot(7+x)$$
+%  $$a^2 -16a + 64 = (a-8)^2$$
+%}
+
+\TALS{
+\subsection{Pascalsches Dreieck (optional)}\index{Pascalsches
+  Dreieck}\index{Dreieck!Pascalsches}
+
+Berechnen Sie $(a+b)^4$:
+
+\TNT{6}{$$[a^2 + 2ab + b^2]^2$$ $$a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4$$
+\vspace{5cm}}%% END TNT
+
+Zeichnen Sie das Pascalsche Dreieck:
+\begin{center}
+\begin{tabular}{cccccccccccc}\\
+  &   &     &     &     & 1   &     &     &     &     &    & \\
+  &   &     &     & 1   &     & 1   &     &     &     &    & \\  
+  &   &     & 1   &     & 2   &     & 1   &     &     &    & \\
+  &   &  1  &     & 3   &     & 3   &     & 1   &     &    & \\
+  & 1 &     & ... &     & ... &     & ... &     & ... &    & \\ 
+1 &   & ... &     & ... &     & ... &     & ... &     & ...&  
+\end{tabular}
+...
+%\noTRAINER{\vspace{3cm}}
+\end{center}
+%%\newpage
+}
+
+
+\subsection*{Aufgaben}
+%% \TALSAadBMTA{16}{22a) b) e)}
+%% \TALSAadBMTA{17}{23a) 24a)}
+%% \GESOAadBMTA{36ff}{ 19. b) d) h) 20. a) b) c) d) e) 21. a) 23. a)
+%% 24. a) 25. b) e) Optional: 27. c)}
+\GESO{\olatLinkArbeitsblatt{Binomische Formeln [A1Bi]}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/105796980058302}{1.) und 2.)}}
+
+\TALS{\olatLinkArbeitsblatt{Binomische Formeln [A1Bi]}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/105796978456639}{1.) und 2.)}}
+
+%%\aufgabenFarbe{Aufgabenblatt im OLAT zu Algebra 1: Binomische
+%%Formeln. Aufgaben A1Bi: 1) und 2)}
+
+\olatLinkGESOKompendium{1.3}{7}{9}

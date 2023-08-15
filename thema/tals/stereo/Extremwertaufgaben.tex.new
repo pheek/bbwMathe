@@ -1,0 +1,259 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+\section{Extremwertaufgaben}\index{Extremwertaufgaben}\index{maximieren}\index{minimieren}
+\sectuntertitel{Was für einen maximal ist, ist für den andern minimal}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\TALSTadBFWG{173}{3.5}
+
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item Minima und Maxima von Parabeln mittels Scheitelpunkt
+\item Taschenrechner
+\item Zielfunktion und Zielgröße
+\end{itemize}
+
+Algebrabuch \cite{frommenwiler17alg}:
+
+ Parabeln: S. 192ff (Kap. 3.4.8)
+
+ Und Kap. 3.13. 3 (S. 242ff) ab Aufg. 914.
+
+ Geometriebuch \cite{frommenwiler18geom}:
+
+ Extremwertaufgaben Kap. 3.5 ab Seite 173.
+
+\newpage
+
+\subsection{Erinnerung}
+Die Funktion $f: y = 4x + 3x^2 - 6$ hat ein Extremum (Minimum oder
+Maximum). Wo liegt dieses? Handelt es sich um ein Minimum oder ein Maximum?
+
+\noTRAINER{\platzFuerBerechnungen{5.2}}
+\TRAINER{
+  \begin{enumerate}
+  \item Quadratische Funktion in die Grundform $y=ax^2 + bx + c$
+    bringen:
+    $$y = 3x^2 + 4x -6$$
+  \item $x$-Koordinate des Scheitelpunktes bestimmen $x_S =
+    \frac{-b}{2a}$:
+    $$x_s = \frac{-b}{2a}= \frac{-4}{2\cdot{}3} = -\frac{2}{3}$$
+  \item Den zugehörigen Funktionswert $y = f(x)$ durch Einsetzen
+    bestimmen:
+    $$y_s = 3x_S^2 + 4x_S - 6 = 3\left(-\frac{2}{3}\right)^2 +
+    4\left(-\frac{2}{3}\right) - 6 = - \frac{22}{3}$$
+  \end{enumerate}
+  Es handelt sich um ein Minimum, denn der Parameter $a$ (vor dem
+  $x^2$) ist positiv; somit ist die Parabel nach oben geöffnet.
+}
+
+
+%%Algebrabuch (falls nicht schon im GLF\footnote{GLF = Grundlagenfach} behandelt):
+%%\TALSAadMTA{192ff}{715., 717., 718.*}
+\TALSAadBMTA{320}{15.}
+\newpage
+
+
+\subsection{Taschenrechner}
+Gegeben ist die Funktion
+$$f: y = 0.1 x^3 + 0.07 x^2 - 0.8 x + 2$$
+
+Wir suchen diejenige positive $x$-Position, wo die Funktion am kleinsten ist.
+
+Vorgehen:
+\begin{enumerate}
+\item Neues «Graph» Fenster mit dem TI-$n$spire CX II-T erstellen
+\item $f1()$ definieren : $f1(x) := 0.1 x^3 + 0.07 x^2 - 0.8 x + 2$
+\item Funktion zeichnen lassen
+\item Menu -> Analyze Graph -> Minimum suchen
+\item Untere Schranke bei ca. 0 und obere Schranke bei \zB 3 auswählen.
+\item Lesen Sie das Resultat bei $x\approx 1.42$ und $y\approx 1.29$ ab.
+  \item Mehr Ziffern gefällig? Unter Menu: [9] Einstellungen: Angezeigte Ziffern auf \zB «Fließ 5» umstellen.
+\end{enumerate}
+
+\bbwCenterGraphic{6.5cm}{tals/fct2/img/minimumNSpire.png}
+
+\subsubsection{«von Hand»}\index{fMin()!nSpire}\index{nSpire!fMin()}
+Das Funktionsminimum kann auch im «notes» berechnet werden. Vorteil: Hier können Zwischenresultate weiterverwendet werden. Nachteil, man sieht von vornherein nicht, wo die Maxima und Minima in etwa sind:
+
+\bbwCenterGraphic{7cm}{tals/fct2/img/fMin.png}
+
+
+
+\subsection*{Aufgaben zum Taschenrechner}
+
+Algebrabuch:
+%%\TALSAadBMTA{242}{915. a) b) c) [ohne Wertebereiche]} %% Weitere mögliche: , 916., 917., 918. und 919.}
+\TALSAadBMTA{321}{18.}
+
+\newpage
+\subsection{Das Tipi}\index{Tipi}
+\TRAINER{vgl. \cite{frommenwiler18geom} S. 173 Kap. 3.5 Extremwertaufgabe 222.}
+
+\TRAINER{Lösen Sie in Gruppen die Aufgabe 222. Noch keinerlei Hilfe geben.}
+
+«Aus vier 5 m langen Stangen soll ein pyramidenförmiges Zelt mit quadratischer Grundfläche errichtet werden.
+Wie hoch wird es, wenn sein Volumen möglichst groß sein soll?
+
+\TNTeop{Verschiedene Lösungswege sind denkbar;
+
+  Variable $h$ = Höhe:
+  $$V(h) = \frac13 G(h)\cdot{}h$$
+
+  Variable $\alpha$ = Winkel einer Zeltstange gegenüber dem Boden:
+  $$V(\alpha) = \frac13 G(\alpha)\cdot{}h(\alpha)$$
+
+  Variable $a$ = Seitenlänge des Grundseitenquadrates:
+  $$V(a) = \frac13\cdot{}a^2h(a)$$
+
+  allen gemeinsam: Mit einer Größe (Parameter) wird «gespielt», um das Volumen zu berechnen.
+}%% END TNTeop
+%%\newpage
+
+
+\subsection{Extremwertaufgaben systematisch lösen}
+Am Beispiel einer Himmelslaterne\footnote{Mit «Himmelslaternen» meine ich hier diese selbst gebastelten Heißluftballone aus Seidenpapier, die mit Spiritus betrieben werden.} soll gezeigt werden, wie dessen Oberfläche unter einer Nebenbedingung (zur Verfügung steht nur eine begrenzte Länge an Holz für die Holzstangen) maximiert wird.
+
+Problemstellung. Eine quaderförmige Himmelslaterne (mit quadratischer
+Grundfläche) ist unten offen aber an Decke und an den vier Seitenwänden mit Seidenpapier aufgefüllt. Alle zwölf Kanten sind dabei mit einem festen Holzgestell stabilisiert, wobei wir diesmal nur eine acht Meter lange Holzleiste zur Verfügung haben, die wir in die zwölf Kanten aufteilen müssen.
+
+Wie sollen wir die Laterne bauen, dass die Seidenpapier-Oberfläche (vier Seiten und Deckel) möglichst groß wird?
+
+Hier ist Platz für eine Skizze:
+
+\TNT{14}{}
+%%\newpage
+
+
+\subsubsection{Rezept}
+  \begin{enumerate}
+  \item \textbf{Zielgröße} festlegen: Dies ist hier die zu maximierende Oberfläche. Also sind die gesuchten Variable die Höhe $h$ und die Quadratseite $x$. Die zu maximierende Fläche ist
+    \TNT{2.8}{$$F(x) = x^2 + 4\cdot{}x\cdot{}h$$\vspace{2cm}}
+    
+
+  \item \textbf{Nebenbedingung} berücksichtigen (identifizieren und danach umformen). Die Nebenbedingung hier ist, dass wir nur beschränktes Material an Stabilisierungsstangen (Holz) zur Verfügung haben (8m).
+    Es gilt also
+    \TNT{2.8}{$$8 = 8x+4h$$\vspace{2cm}}
+    Somit kann $h$ aus $x$ berechnet werden:
+    \TNT{2.4}{$$h=2-2x$$\vspace{2cm}}
+
+  \item \textbf{Zielfunktion}\index{Zielfunktion} definieren. Unsere Zielgröße $F(x)$ kann nun vollständig durch $x$ definiert werden, indem wir die Nebenbedingung $h=2-2x$ in die ursprünglich definierte Zielgröße einsetzen:\
+    \TNTeop{$$F(x) = x^2 + 4\cdot{}x\cdot{}(2-2x)$$\vspace{2cm}}
+%%    \newpage
+    
+  \item \textbf{Maximieren/Minimieren} Die Zielfunktion ist hier eine quadratische Funktion, deren Maximum einfach mit Taschenrechner oder Scheitelpunkt bestimmt werden kann. Ich zeige hier die
+    Scheitelpunkts-Lösung:
+    \TNT{2.8}{$$F(x) = x^2+4x(2-2x)=-7x^2 + 8x$$\vspace{2cm}
+
+   Diese Funktion wird maximiert, indem das $x_S$ des Scheitelpunktes $S=(x_s|y_S)$ bestimmt wird. (Wir erinnern uns: $x_S = \frac{-b}{2a}$.) Somit ist hier $x_S = \frac{-8}{2\cdot{}(-7)} = \frac47$. Dies ist gleichzeitig auch unser gesuchtes $x$.
+    }%% END TNT
+
+    
+  \item \textbf{Zweite Größe bestimmen} Die zweite Größe kann hier entweder die Oberfläche, oder die Höhe der Laterne sein. Wir berechnen beides:
+
+    \TNTeop{$$h = 2-2x = 2-2\cdot{}\frac47 = \frac67 [\text{m}]$$
+    $$F(x) = y_S = x^2 + 4\cdot{}x\cdot{}h = \left(\frac47\right)^2 + 4\cdot{}\frac47 \cdot{} \frac67= \frac{112}{49} = \frac{16}{7} [\text{m}^2]$$}
+    
+  \end{enumerate}
+  \newpage
+
+  
+\begin{rezept}{Extremwertaufgaben}{}
+    \begin{enumerate}
+    \item Zielgröße festlegen
+    \item Nebenbedingungen berücksichtigen
+    \item Zielfunktion definieren
+    \item Maximieren bzw. minimieren
+    \item Zweite Größe bestimmen
+      \end{enumerate}
+\end{rezept}
+  
+
+\subsection*{Aufgaben}
+Ohne Taschenrechner:
+
+Algebrabuch (Planimetrie/quadratische Funktionen):
+\TALSAadBMTA{282}{57. a) c), 59., 60.}%%192ff}{722. [Optional 720. und 721.]}
+
+\TALSAadBMTA{311}{49. [Straßenlampe], 52.}
+%%\TALSAadBMTA{243ff}{922. und 927. [Optional: 924]}
+
+%%Geometriebuch (Stereometrie):
+%%\TALSAadBFWG{173}{224. [Optional: 222., 223., 225. und 228.]}
+\TALSAadBMTA{320ff}{12., 13., 16., 17.}
+\newpage
+
+
+\subsection{Blechdose (optional)}
+In eine Konservendose (Zylinderform) passt genau ein Liter Zwiebelsuppe. Gesucht ist das Verhältnis von Radius $r$ zur Höhe $h$, sodass die Oberfläche (Blechmenge) möglichst klein wird.
+
+Das Volumen $V$ berechnet sich aus
+
+$$V = r^2\pi\cdot{}h$$
+Da das Volumen V = 1 (Liter) ist, gilt für die Höhe:
+$$h = \frac{1}{r^2\pi}$$
+Die Oberfläche $A$ berechnet sich aus Deckel+Boden+Mantel:  
+$$A=r^2\pi + r^2\pi + 2r\pi\cdot{}h$$
+Wenn wir die Höhe $h$ aus dem Volumen hier einsetzen, erhalten wir für die Oberfläche:
+$$A=2r\pi\left(r+\frac{1}{r^2\pi}\right)$$
+
+Betrachten Sie $A$ in Abhängigkeit von $r$ und finden Sie mit einem
+Computeralgebra-System erst
+\begin{itemize}
+\item
+  den optimalen Radius $r=\LoesungsRaum{0.542}\text{dm}$ und dann
+\item
+  die minimale Oberfläche $A= \LoesungsRaum{5.54}\text{dm}^2$.
+\end{itemize}
+\newpage
+
+\subsection{Rechteck unter Parabel (optional)}
+
+Wie erstellt man so eine Aufgabe? Erst mal eine Parabel mit Öffnung nach unten und zwei klaren Schnittpunkten (\zB $7$ und $4$) mit der $x$-Achse definieren:
+
+Skizze
+
+\TNT{6}{\bbwCenterGraphic{7.2cm}{tals/stereo/img/RechteckUnterParabel.jpg}}%% END TNT
+
+$$p(x) := a(x-7)(x-4)$$
+
+Der Scheitelpunkt soll auf Höhe $y=5$ liegen (spielt jedoch keine Rolle. Man könnte einfach auch $a<0$ verlangen.
+
+Somit ist $p(\frac{7+4}2) = p(5.5) = 5$ zu setzen:
+
+\TNT{2}{$$p(5.5) := 5 = a(5.5-7)(5.5-4) = a(-1.5)(1.5) = -2.25 a = \frac{-9}4 a$$} %% END TNT
+
+
+Daraus ergibt sich das $a$:
+
+\TNTeop{$a=\frac{-20}9$}
+\newpage
+
+Nun zur Aufgabenstellung:
+
+\textbf{Gegeben ist eine Parabel $p(x) = \frac{-20}9(x-7)(x-4)$. Gesucht ist ein Rechteck, von dem die eine Seite auf der $x$-Achse liegt. Das Rechteck wird unter dem Parabelbogen einbeschrieben und soll maximalen Flächeninhalt haben.}
+
+Skizze:
+
+\noTRAINER{\mmPapier{6}}
+
+Zielgröße: $F = l\cdot{}b$ (Länge mal Breite). Dabei ist das $l$ der doppelte Abstand $d$ (Distanz) zur Parabelachse.
+Also $F = 2db$
+
+Nebenbedingung: $b = \LoesungsRaum{p(5.5 + d) = p(5.5-d)}$
+
+Zielfunktion: $F(d) = \LoesungsRaum{l\cdot{}b = 2d\cdot{}p(5.5+d) = 2d\cdot{}\frac{-20}9\cdot((5.5+d)-7)((5.5+d)-4)}$
+
+Vereinfachen:
+$F(d) = \LoesungsRaum{\frac{-40}9\cdot{}d(d^2-\frac94)}$
+
+Maximieren: Diese Funktion $F(d)$ soll nun im Bereich $0<d<1.5$ maximiert werden TR: $d = \LoesungsRaum{\pm\frac{\sqrt{3}}2}$
+
+Zweite Größe (hier Fläche) finden: $F(d) = \LoesungsRaum{F\left(\frac{\sqrt{3}}2\right) \approx 5.77 [e^2]}$
+
+
+%% Die folgende Aufgabe wurde neu bei den Wurzelfunktionen untergebracht.
+%%\subsection*{Aufgabe}
+%%\aufgabenFarbe{Maturaaufgabe 2020/2021:
+%%\bbwCenterGraphic{9cm}{tals/stereo/img/Maturaaufgabe2021.png}}

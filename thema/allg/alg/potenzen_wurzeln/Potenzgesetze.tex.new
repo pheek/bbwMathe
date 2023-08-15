@@ -1,0 +1,173 @@
+\newcommand{\aaaa}{a\cdot a \cdot a \cdot{} ... \cdot a}
+\newcommand{\bbbb}{b\cdot b \cdot b \cdot{} ... \cdot b}
+
+\newpage
+\subsection{Potenzen, Definitionen und Gesetze}\index{Potenz}
+
+\subsubsection{Einführungsbeispiele}
+Die sieben verschiedenen schweizer Münzen werden nacheinander geworfen
+und es wird notiert, welcher Wurf Zahl oder «Kopf» aufweist. Dieses
+Experiment wird einige Male wiederholt, bis man sich die Frage stellt:
+Wie viele mögliche Ausgänge hat das Experiment?
+
+\TNT{6}{$$2^7 = 128$$\vspace{22mm}}
+
+Berechen Sie
+$$5^3$$
+
+\TNT{4}{125\vspace{16mm}}
+
+Vereinfachen Sie:
+
+$$a^5\cdot(ab)^3\cdot{}(2c)^{2+3}$$
+
+\TNTeop{$$32a^8b^3c^5$$\vspace{22mm}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{definition}{Potenz}{}\index{Potenz}
+Unter der $n$-ten \textbf{Potenz} verstehen wir eine $n$-malige Multiplikaiton mit demselben Faktor:
+$$a^2 = a\cdot a$$
+$$a^n = \underbrace{\aaaa}_{n\, \text{Faktoren}}$$
+\end{definition}
+Dabei bezeichnen
+
+\bbwCenterGraphic{9cm}{allg/alg/potenzen_wurzeln/img/Potenzbegriff.png}
+
+%\begin{itemize}
+% \item Potenz\index{Potenz}: $a^n$
+% \item Exponent\index{Exponent}: $n$
+% \item Basis\index{Basis}: $a$
+%\end{itemize}
+
+\vspace{40mm}
+
+\bbwCenterGraphic{10cm}{allg/alg/potenzen_wurzeln/img/Ivegotthepower.png}
+
+
+\newpage
+
+\subsubsection{gleiche Basis}\index{Potenz!Gesetze}
+
+\begin{itemize}
+ \item \fbox{$a^m\cdot a^n = a^{m+n}$}
+
+   Begründung:
+
+   \TNT{2.4}{
+   \TALS{$a^m\cdot a^n =
+    \underbrace{{\underbrace{\aaaa}_{m\text{-mal}}}\cdot{\underbrace{\aaaa}_{n\text{-mal}}}}_{m+n\text{-mal}}
+    = a^{m+n}$}
+   \GESO{$7^3\cdot{} 7^5 = (7\cdot{}7\cdot{}7)\cdot{}(7\cdot{}7\cdot{}7\cdot{}7\cdot{}7)=7^8$}%%
+}%% END TNT
+
+   
+   \item \fbox{$a^m : a^n = \frac{a^m}{a^n}= a^{m-n}$}
+     
+     Begründung:
+
+     \TNT{2.4}{%
+     \TALS{$a^m :  a^n =
+    \underbrace{{\underbrace{\aaaa}_{m\text{-mal}}} : {\underbrace{\aaaa}_{n\text{-mal}}}}_{m-n\text{-mal}}
+    = a^{m-n}$}
+     \GESO{
+  Kürzen: 
+   $7^5 :  7^3 = \frac{7^5}{7^3} =
+  \frac{7\cdot{}7\cdot{}7\cdot{}7\cdot{}7}{7\cdot{}7\cdot{}7} = 7^2 =
+  7^{5-3}$}
+     }%% END TNT
+
+  
+\item \fbox{$(a^n)^m = a^{n\cdot{}m} = (a^m)^n$}
+
+  Begründung:
+
+  \TNT{2.4}{Beispiel $(a^4)^3$ vorrechnen \vspace{12mm}}%%
+  
+\end{itemize}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{gleiche Exponenten}
+
+\begin{itemize}
+\item \fbox{$a^n \cdot{} b^n  = (ab)^n$}
+  
+  Begründung
+
+  \TNT{2.4}{
+    \TALS{$a^n\cdot b^n
+= \underbrace{\aaaa}_{n\text{-mal}}\underbrace{\bbbb}_{n\text{-mal}}
+= \underbrace{ab\cdot ab\cdot ... \cdot ab}_{n\text{-mal}} =
+(ab)^n$}%%
+   \GESO{\zB $7^3 \cdot 5^3 = (7\cdot{}7\cdot{}7) \cdot{}
+     (5\cdot{}5\cdot{}5) = (7\cdot{}5)\cdot{} (7\cdot{}5)\cdot{} (7\cdot{}5) =(7\cdot{}5)^3$}
+}%% end TRAINER
+   
+\item \fbox{$a^n : b^n = (a:b)^n$} bzw. \fbox{$\frac{a^n}{b^n} = \left(\frac{a}{b}\right)^n$} (Gilt ganz analog.)
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Aber Vorsicht}
+
+$$a^3 \cdot{}  b^4 \ne \, ???$$ \TRAINER{(\text{Keine gleiche Basis, kein
+  gleicher Exponent})}
+$$a^3 +        b^3 \ne \, ???$$ \TRAINER{ (\text{keine Punkt-Rechunung!})}
+\newpage
+
+\subsubsection{Theorieaufgaben}
+
+Lösen Sie:
+
+%\TRAINER{
+%$a^4 \cdot a^5 = (a\cdot a\cdot a\cdot a) \cdot (a\cdot a\cdot a\cdot a\cdot a) = a^9 = a^{4+5}$}%%
+
+ $-a^4\cdot (-a)^5 =\LoesungsRaum{-(a\cdot a\cdot a\cdot a) \cdot ((-a)\cdot (-a)\cdot (-a)\cdot (-a)\cdot (-a)) = +a^9}$
+
+ $r^6 : r^4 =\LoesungsRaum{r^{6-4}=r^2}$
+
+ $a^4\cdot b^4 =\LoesungsRaum{(a\cdot a\cdot a\cdot a) \cdot (b\cdot b\cdot b\cdot b) = (a\cdot{}b)^4 = (ab)^4}$
+
+$p^5 : q^5 = \LoesungsRaum{(p:q)^5=\left(\frac{p}{q}\right)^5}$
+
+$(-s^4)^3 = \LoesungsRaum{-s^{4\cdot{}3} = -s^{12}}$
+
+Exponentenvergleich: Finde $x$:
+$(r^x)^{10}\cdot{}r^{22} = r^{72}$, $x=\LoesungsRaum{5}$
+\newpage
+
+
+\subsection*{Aufgaben}
+\AadBMTA{66ff}{5. a) c) und 6. a) b)}
+
+
+Gleiche Basis:
+
+\AadBMTA{69ff}{25. b) f), 29. b) f), 30. b) c) d) e), 33. e) f)}
+
+
+Potenzen von Potenzen:
+
+\AadBMTA{70ff}{39. b) d) e)}
+
+Gleiche Exponenten:
+
+\AadBMTA{70ff}{40. a) c) f), 42. f) g) h) i)}
+
+
+Erste Exponentialgleichungen:
+
+\AadBMTA{71}{44. a) b) c)}
+
+%%  OLAT Arbeitsblatt
+\GESO{\olatLinkArbeitsblatt{Potenzgesetze}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/102690264435484}{Kapitel 1 und 2}}%% END olatLinkArbeitsblatt
+\TALS{\olatLinkArbeitsblatt{Potenzgesetze}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/104915210426569}{Kapitel 1 und 2}}%% END olatLinkArbeitsblatt
+
+\olatLinkGESOKompendium{1.4}{8ff}{14., bis 18.}
+
+%%\TALS{Aufgaben noch ohne negative Exponenten:}
+%%\TALSAadBMTA{32ff}{79. a), 90. d) l), 91. l), 92. a) d), 93. j), 94. c) f), 95. a),
+%%  101. a), 103. a) b) c), 105. a) g) h) und 106. f)}
+\newpage

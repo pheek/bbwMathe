@@ -1,0 +1,108 @@
+%% 
+\subsubsection{Gerade durch zwei gegebene Punkte}\index{Punkt auf Geraden}\index{Gerade!Punkt auf}
+\TRAINER{\TALS{ev. Einstiegsaufgaben Frommenwiler: 606. a) c)}}
+
+Seien die Punkte $P=(10|6)$ und $Q=(-5|3)$ gegeben.
+Gesucht ist die Funktionsgleichung $f: y=ax+b$ (namentlich $a$ und $b$), sodass
+der Graph der Funktion $f$ durch beide Punkte führt.
+
+
+\textbf{Rezept I: Graphisch}\\
+
+\vspace{1mm}
+
+
+\noTRAINER{
+\bbwGraph{-6}{11}{-1}{7}{
+\bbwLine{-6,2.8}{11,6.2}{green}
+\bbwDot{-5,3}{blue}{south}{Q}
+\bbwDot{10,6}{blue}{south}{P}
+}%% end bbwGraph
+}%% end noTRAINER
+
+\TNTeop{%%
+\raisebox{2cm}{\includegraphics[width=16cm]{allg/funktionen/img/GeradeDurchZweiPunkte.jpg}}}%% END TNT EOP 
+
+\newpage
+
+\textbf{Rezept II: Rechnerisch, algbraisch \GESO{(optional)}}\\
+
+Seien wieder $P=(10|6)$ und $Q=(-5|3)$.
+\vspace{1mm}
+
+a)
+
+Das $a$ kann durch das «Steigungsdreieck» berechnet werden:
+
+$$a = \frac{\text{V}}{\text{H}}=\TALS{\frac{\Delta y}{\Delta x}}=\frac{y_Q-y_P}{x_Q-x_p} = \LoesungsRaumLang{\frac{3 - 6}{(-5) - 10} = \frac{-3}{-15} = \frac{1}{5}}$$
+
+b)
+
+Setzen wir $a=\frac{1}{5}$ und einen der beiden Punkte (\zB $P=(10|6)$) in die
+allgemeine Funktionsgleichung $y=ax+b$ ein, so erhalten wir
+
+\TNT{4}{$$y=\frac15x+b$$
+$$6=\frac15\cdot{}10 + b$$
+$$b=4$$}
+
+Die gesuchte Geradengleichung lautet also:
+
+$$f: y=\LoesungsRaumLang{\frac{1}{5}\cdot{}x + 4}$$
+
+\begin{rezept}{}{}
+Um die Funktionsgleichung $$y=ax+b$$ zu finden,
+  wird erst $a$ aus dem Steigungsdreieck berechnet und danach dieses
+  $a$ und die Koordinaten eines Punktes in die Funktionsgleichung
+  $y=ax+b$ eingesetzt. Diese Gleichung wird nach $b$ aufgelöst.
+\end{rezept}
+\newpage
+
+\GESO{
+\textbf{Rezept III: Mit dem Taschenrechner}
+Wieder seien die beiden Punkte $P=(10|6)$ und $Q=(-5|3)$ gegeben.
+
+Tippen Sie auf dem Taschenrechner \tiprobutton{data}, um mit der
+Eingabe der beiden Punkte zu beginnen. Geben Sie in die
+Spalte \texttt{L1} die $x$-Werte und in die Spalte \texttt{L2} die
+$y$-Werte ein:
+
+\begin{tabular}{c|c|}
+ \texttt{L1}& \texttt{L2} \\\hline
+ \noTRAINER{.....}\TRAINER{10}  & \noTRAINER{.....}\TRAINER{6}\\
+ \noTRAINER{.....}\TRAINER{-5}  & \noTRAINER{.....}\TRAINER{3}
+\end{tabular}
+
+Wählen Sie mit \tiprobutton{2nd} \tiprobutton{data_stat-reg-distr}
+unter \texttt{STAT-REG} die Nummer 4: «\texttt{LinReg} $ax+b$».
+Lassen Sie die Werte auf den nächsten Seite so stehen wie sie sind:
+
+xDATA: L1
+
+yDATA: L2
+
+Mittels \texttt{CALC} (\tiprobutton{enter}) erhalten Sie $a=0.2$ und $b=4$.
+
+}%% END GESO
+
+\TALS{
+
+Dies kann auch mit dem Taschenrechner gelöst werden; denn für alle Punkte $P$ auf $f$ gilt ja $P(x|y) = P(x|f(x))$:
+
+$$f(x):=a\cdot{}x + b$$
+\[
+%%\begin{equation}%% but equation makes a number (1)
+    gls:= \left\{\begin{array}{@{}lr@{}}
+        f(10) = 6\\
+        f(-5) = 3
+        \end{array}\right.
+\]
+%%\end{equation}
+
+  $$solve(gls,\{a, b\})$$
+}%%
+
+\subsection*{Aufgaben}
+
+\AadBMTA{252ff}{13. a), 14. a), 15. a), 16. a), 18. a), 19., 25. a)}
+
+\newpage%%

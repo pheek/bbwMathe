@@ -1,0 +1,20 @@
+%%
+%% Meta: Master Document
+%% TALS Funktionen I
+%%
+
+\input{bbwLayoutDoc}
+
+\renewcommand{\author}{Philipp G. Freimann}
+\renewcommand{\grafikautor}{Ph. G. Freimann}
+\renewcommand{\authoremail}{philipp.freimann@bbw.ch}
+\renewcommand{\erstellungsdatum}{\versionTALSMajorDate}
+\renewcommand{\docversion}{\versionTALSMajorVSR}
+
+%%\renewcommand{\modulnummer}{Arithmetik und Algebra I}
+\renewcommand{\doctitel}{Funktionen I}
+\renewcommand{\fachthema}{lineare Funktionen}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\defaultScript{tals/fct1/AllTALS}

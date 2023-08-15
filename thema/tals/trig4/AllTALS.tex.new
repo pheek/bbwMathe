@@ -1,0 +1,6 @@
+%% TALS Metapackag: Trigo IV
+\part{Trigonometrie IV}\index{Trigonometrie!IV|textbf}
+\renewcommand{\bbwPartID}{TRIG4}
+
+\input{tals/trig4/TrigonometrischeGleichungen}
+\newpage

@@ -1,0 +1,66 @@
+\input{bbwLayoutPage}
+\renewcommand{\bbwAufgabenBlockID}{A1G}
+
+\renewcommand{\metaHeaderLine}{Aufgabenblatt}
+\renewcommand{\arbeitsblattTitel}{Grundoperationen}
+
+\begin{document}
+\arbeitsblattHeader{}
+Fassen Sie zusammen:
+%%\begin{enumerate}[label=(\bbwAufgabenNummer. \alph*)]
+\begin{bbwAufgabenBlock}
+\item $x+1x+y+x = \LoesungsRaumLang{3x+y}$\abplz{4}
+\item $ab^2+ba^2 - 1ab + a^2b + ab^2 - 1\cdot{}a -b  = \LoesungsRaumLang{2ab^2 + 2ba^2 - ab - a - b}$\abplz{4}
+\end{bbwAufgabenBlock}
+
+Schreiben Sie ohne Klammern und vereinfachen Sie so weit wie möglich:
+\begin{bbwAufgabenBlock}
+\item $-c+(-4c) = \LoesungsRaumLang{-5c}$\abplz{4}
+\item $a-x-(b-(-x-a)-b-a)-x = \LoesungsRaumLang{a-3x}$\abplz{4}\newpage
+\item $6x+3xy^2 -(-3x-y^2)-9x-y^2 = \LoesungsRaumLang{3xy^2}$\abplz{4}
+\item $5-((-\sqrt{2}a - \sqrt{3}b)+\sqrt{2}a)-(\sqrt{3}b+5)= \LoesungsRaumLang{0}$\abplz{4}
+\item $-(r+(-2r-(3r+4)))-(4r-(5r))=\LoesungsRaumLang{5r+4}$\abplz{4}
+\item $3s^2+(2s-5+(4s+1-((3s)^2-1)+s^2)+1-1s)+2 = \LoesungsRaumLang{5s-5s^2}$\abplz{4}
+\end{bbwAufgabenBlock}
+%%\platzFuerBerechnungenBisEndeSeite{}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+Multiplizieren Sie aus:
+
+\begin{bbwAufgabenBlock}
+\item $5(x+y)=\LoesungsRaumLang{5x+5y}$\abplz{4}
+\item $-10(x-y)=\LoesungsRaumLang{-10x+10y}$\abplz{4}
+\item $-a(b\cdot{}(-4)) = \LoesungsRaumLang{4ab}$\abplz{4}
+\item $-b(-a^2+x) = \LoesungsRaumLang{+a^2b - bx}$\abplz{4}\newpage
+\item $-1(5-x)=\LoesungsRaumLang{x-5}$\abplz{4}
+\item $5x(ab-1)=\LoesungsRaumLang{5xab - 5x}$\abplz{4}
+\item $3rst + rst=\LoesungsRaumLang{4rst}$\abplz{4}
+\item $-b(-(a^2)x) = \LoesungsRaumLang{a^2bx}$\abplz{4}\newpage
+\end{bbwAufgabenBlock}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+Schreiben Sie als möglichst einfache Summe (bzw. Differenz):
+\begin{bbwAufgabenBlock}
+\item $3(2a+b) + 2(a+3b)=\LoesungsRaumLang{8a+9b}$\abplz{4}
+\item $9a(a^2-b)-b(a-b^2) = \LoesungsRaumLang{9a^3 - 10ab + b^3}$\abplz{4}
+\end{bbwAufgabenBlock}
+\newpage
+
+
+Multiplizieren Sie aus, fassen Sie zusammen und schreiben Sie so
+einfach wie möglich:
+\begin{bbwAufgabenBlock}
+\item $(t+m)(n+1\cdot{}v)=\LoesungsRaumLang{tn+tv+mn+mv}$\abplz{4}
+\item $(s-2)(-s-5) =\LoesungsRaumLang{-s^2-3s+10}$\abplz{4}
+\item $(-u+2v)(-u+3v) = \LoesungsRaumLang{u^2-5uv +6v^2}$\abplz{4}
+\item $(a-b+c)(-d-e)=\LoesungsRaumLang{-ae+be-ce-ad+bd-cd}$\abplz{4}\newpage
+\item $-\sqrt{2}(a-\sqrt{2})(\sqrt{2}b + c) =\LoesungsRaumLang{-2ab- \sqrt{2}ac + 2\sqrt{2}b +2c}$\abplz{4}
+\item $(a+1)(1b+c)(a-2) = \LoesungsRaumLang{a^2b+a^2c-ab-ac-2b-2c}$\abplz{4}
+\item $-(3x^2+((x-3)x-x^2)x)-(x+3) = \LoesungsRaumLang{-x-3}$\abplz{4}
+\end{bbwAufgabenBlock} 
+
+\end{document}

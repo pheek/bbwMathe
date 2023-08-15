@@ -1,0 +1,135 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+\subsection{... quadratische}\index{Gleichungen!Bruchgleichungen, quadratische}\index{quadratische Bruchgleichungen}
+%%\sectuntertitel{...}
+
+\TadBMTA{118}{8.3}
+
+\TALSTadBMTA{121}{8.4}
+%%\TALSTadBFWA{105}{2.4.1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item Bruchgleichungen, die in quadratischen Gleichungen münden
+\item Definitionsbereich (Definitionsmenge)
+%%\TALS{  \item \textit{Bruch\textbf{un}gleichungen (halbgrafische Methode)}}
+\end{itemize}
+
+Bruchgleichungen können beim Lösen auch auf quadratische Gleichungen führen:
+\begin{beispiel}{quadratische Bruchgleichung}{beispiel_quadratische_bruchgleichung}
+$$\frac{6x-24}{3-x} + x - 2 = \frac{6}{x-3}$$
+\end{beispiel}
+
+\newpage
+Vorzeigebeispiel\TRAINER{ = Maturaaufgabe 2018 Serie I Aufg 5.}:
+
+$$\frac{6x-24}{3-x} + x - 2 = \frac{6}{x-3}$$
+
+\TNT{2}{
+ (erst am Schluss ausfüllen, da der Definitionsbereich für Gleichungen
+  noch nicht definiert worden ist)
+  
+  $\mathcal{D} = \mathbb{Q}\backslash \left\{3\right\}$\\
+}
+\vspace{5mm}
+
+\TNTeop{
+
+Alle Terme nach links bringen:
+
+$$\frac{6x-24}{3-x} + x - 2 - \frac{6}{x-3} = 0$$
+
+Termvereinfachung (alles gleichnamig); 3. Bruch mit -1 erweitern: 
+
+
+$$\frac{6x-24}{3-x} + \frac{(x-2)(3-x)}{3-x} + \frac{6}{3-x} = 0$$
+
+
+gemeinsamer Bruchstrich:
+
+$$\frac{6x-24+(-x^2+5x-6)+6}{3-x} = 0$$
+
+Zähler vereinfachen:
+
+$$\frac{-x^2+11x-24}{3-x} = 0$$
+
+Zähler muss Null sein!
+
+$$-x^2 +11x-24 = 0 \stackrel{\text{TR}}{\Longrightarrow} x_1 = 8; x_2=3$$
+Nur Definitionsbereich in der Lösungsmenge:
+
+$$\mathbb{L} = \{8\}$$
+\vspace{20mm}
+}%% END TNT eop
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+  
+\subsection{Definitionsmenge einer
+    Gleichung}\index{Definitionsmenge!bei Gleichungen}
+
+\begin{definition}{Definitionsmenge}{}  Die Menge aller Zahlen, welche für die Lösung einer Gleichung in Frage kommen,
+  nennen wir die \textbf{Definitionsmenge}.
+\end{definition}
+
+  Insbesondere ist die Menge der Lösungen eingeschränkt durch
+  die Terme, welche die Gleichung definieren. So besteht die folgende
+  Gleichung aus zwei Termen ($T1=\frac{4}{x-2}$ und $T2=\frac{\TALS{\sqrt{x}}\GESO{x+7}}{x-3}$) mit den unten angegebenen
+  Einschränkungen:
+  $$\frac{4}{x-2}=\frac{\TALS{\sqrt{x}}\GESO{x+7}}{x-3}$$
+
+$$T1=\frac{4}{x-2} \text{ und } T2=\frac{\TALS{\sqrt{x}}\GESO{x+7}}{x-3}$$
+  
+  Die Definitionsmengen von $T1$ und $T2$ schränken automatisch die
+  Grundmenge der Gleichung ein. In obigem Beispiel gilt:
+  
+  $$\mathcal{D}_1=\mathcal{D}(T1)=\LoesungsRaum{\mathbb{R}\backslash\{2\}}$$
+
+  $$\mathcal{D}_2=\mathcal{D}(T2)=\LoesungsRaum{\TALS{\mathbb{R}^+_0\backslash\{3\}}\GESO{\mathbb{R}\backslash{}\{3\}}}$$
+
+  \TALS{  $$\mathcal{D}=\mathcal{D}_1\cap\mathcal{D}_2=\LoesungsRaumLang{\mathbb{R}^{+}_{0}\backslash\{2;3\}}$$}
+  \GESO{  $$\mathcal{D}=\mathcal{D}_1\cap\mathcal{D}_2=\LoesungsRaumLang{\mathbb{R}\backslash\{2;3\}}$$}
+  
+
+  \begin{bemerkung}{Schnittmenge}{}
+    Dabei bedeutet das $\cap$-Zeichen «Schnittmenge».
+
+    $$\mathcal{D}_1\cap\mathcal{D}_2$$
+    heißt also, dass nur Zahlen genommen werden, die \textbf{sowohl}
+    in $\mathcal{D}_1$ \textbf{als auch} in $\mathcal{D}_2$ liegen.
+    \end{bemerkung}
+
+  \TRAINER{\GESO{GESO: $R_0^+$ müssen Sie nicht im Deteil können, aber die 2
+  und die 3 müssen Sie ausschließen!}}
+  \newpage
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+\begin{rezept}{Bruchgleichungen}{}
+  \begin{itemize}
+  \item Alle Terme nach links nehmen (wie bei den quadratischen Gleichungen)
+  \item links: Definitionsmenge $\mathcal{D}$ bestimmen und
+    Termvereinfachung wie im Rezept über Addition/Subtraktion von
+    Brüchen\ifisALLINONE{\totalref{bruchtermeRezept}}\fi{}; so, dass nur noch ein vereinfachter Bruch dasteht.
+  \item Zähler muss gleich Null sein; Lösungsmenge bestimmen
+   \item Definitionsmenge $\mathcal{D}$ mit Lösungsmenge $\mathbb{L}$
+     vergleichen: Scheinlösungen müssen ausgeschlossen werden
+  \end{itemize}
+  
+\end{rezept}
+
+\subsection*{Aufgaben}
+
+\olatLinkGESOKompendium{2.3.1.}{16}{45., 50. und 51.}
+
+
+\GESO{\olatLinkArbeitsblatt{Bruchgleichungen}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/105951755115452}{4.), 5.) und 6.)}}
+
+\TALS{\olatLinkArbeitsblatt{Bruchgleichungen}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/105951754967029}{4.), 5.) und 6.)}}
+
+
+
+\GESO{\olatLinkArbeitsblatt{Bruchgleichungen alte Maturaaufgaben}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/102611886537294}{[2017/2018]}}
+\newpage

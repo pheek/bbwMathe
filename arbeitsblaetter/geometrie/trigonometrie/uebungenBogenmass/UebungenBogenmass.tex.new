@@ -1,0 +1,104 @@
+%%
+%% Übungen zum Bogenmaß mit Sinus Cosinus und Tangens
+%%
+
+\input{bbwLayoutPage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\metaHeaderLine}{Arbeitsblatt}
+\renewcommand{\arbeitsblattTitel}{Uebungen zum Bogenmaß und den
+trigonometrischen Funktionen}
+
+\begin{document}%%
+\arbeitsblattHeader{}
+
+
+\section{Umrechnungen}
+
+\subsection{Geben Sie im Bogenmaß an}
+
+1. $90\degre = \LoesungsRaum{\frac{\pi}2}$
+
+2. $30\degre = \LoesungsRaum{\frac{\pi}6}$
+
+3. $390\degre = \LoesungsRaum{\frac{13\pi}6}$
+
+4. $45\degre = \LoesungsRaum{\frac{\pi}4}$
+
+5. $135\degre = \LoesungsRaum{\frac{3\pi}4}$
+
+6. $-225\degre = \LoesungsRaum{-\frac{5\pi}4}$
+
+Mit Taschenrechner
+
+7. $17\degre \approx \LoesungsRaum{0.297 [\textrm{rad}]}$
+
+8. $-199\degre \approx \LoesungsRaum{-3.473 [\textrm{rad}]}$
+
+
+
+\subsection{Geben Sie im Gradmaß an}
+
+1. $\frac{\pi}2 = \LoesungsRaum{90\degre}$
+
+2. $\frac{3\pi}2 = \LoesungsRaum{270\degre}$
+
+3. $-\frac{2\pi}3 = \LoesungsRaum{-120\degre}$
+
+4. $\frac76\cdot{}\pi = \LoesungsRaum{210\degre}$
+
+Mit Taschenrechner:
+
+5. $5.3 \approx \LoesungsRaum{303.67\degre}$
+
+6. $-2.8 \approx \LoesungsRaum{-160.43\degre}$
+
+\platzFuerBerechnungenBisEndeSeite{}
+\newpage
+
+
+\subsection{Winkelberechnungen}
+
+Berechnen Sie jeweils im Grad \textbf{und} im Bogenmaß und geben Sie
+die Lösung im Intervall $[0\degre; 360\degre)$ (= $[0; 2\pi)$):
+
+1. $\sin(\varphi) = 0.5$ $\Longrightarrow$
+$\mathbb{L}_\varphi = \LoesungsRaum{30\degre, 150\degre}$ bzw. $= \LoesungsRaum{ \frac16\cdot{}\pi{}, \frac56\cdot{}\pi}$
+
+2. $\sin(\varphi) = -\frac{\sqrt{2}}{2}$ $\Longrightarrow$
+$\mathbb{L}_\varphi = \LoesungsRaum{225\degre, 315\degre}$ bzw. $= \LoesungsRaum{ \frac54\cdot{}\pi{}, \frac74\cdot{}\pi}$
+
+
+3. $\cos(\varphi) = -\frac{\sqrt{3}}{2}$ $\Longrightarrow$
+$\mathbb{L}_\varphi = \LoesungsRaum{150\degre, 210\degre}$ bzw. $= \LoesungsRaum{ \frac56\cdot{}\pi{}, \frac76\cdot{}\pi}$
+
+4. $\tan(\varphi) = 1$ $\Longrightarrow$
+$\mathbb{L}_\varphi = \LoesungsRaum{45\degre, 225\degre}$ bzw. $= \LoesungsRaum{ \frac14\cdot{}\pi{}, \frac54\cdot{}\pi}$
+
+\subsection{Verhältnisse ohne Taschenrechner}
+
+1. $\sin(\frac{\pi}3) = \LoesungsRaum{\frac{\sqrt{3}}2}$
+
+2. $\sin(-\frac{\pi}4) = \LoesungsRaum{\frac{-\sqrt{2}}2}$
+
+3. $\cos(-\frac{\pi}2) = \LoesungsRaum{0}$
+
+4. $\tan(\frac{\pi}6) = \LoesungsRaum{\frac{\sqrt{3}}3}$
+
+\platzFuerBerechnungenBisEndeSeite{}
+\newpage
+
+
+\subsection{Taschenrechner}
+
+1. $\sin(\frac{\pi}2) -\cos(90\degre) = \LoesungsRaum{1}$
+
+2. $\cos(\frac\pi4) + \sin(60\degre) = \LoesungsRaum{\frac{\sqrt{2}+\sqrt{3}}2}$
+
+3. $\sin(\pi) - \tan(-\frac{\pi}2) = \LoesungsRaum{\textrm{ undefiniert }}$
+
+\platzFuerBerechnungenBisEndeSeite{}
+
+\end{document}
+  

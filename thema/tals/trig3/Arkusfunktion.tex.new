@@ -1,0 +1,197 @@
+%% Trigonometrie III
+%% Arkusfunktionen
+%% 2020 - 12 - 21 φ@bbw.ch
+
+\section{Arkusfunktionen}\index{Arkusfunktionen}
+
+Einstiegsüberlegung: Von einem Winkel $\varphi$ ist gerade einmal sein Sinuswert bekannt: $0.6 = \sin(\varphi)$. Wie groß ist der Winkel?
+
+\trigsysDsin{}
+
+
+\TNT{6.4}{Hier gibt es unendlich viele Lösungen. Im Bereich 0 bis 180$\degre$ sind es jedoch genau zwei Lösungen: 1. Lösung: $\varphi=\arcsin(0.6) \approx 36.87$ und 2. Lösung: $\varphi = 180\degre - \arcsin(0.6) \approx{} 143.13$}
+
+Mit dem Taschenrechner haben Sie zwei Varianten diesen Winkel zu berechnen:
+
+A) \texttt{arcsin(0.6)}
+
+B) \texttt{solve(0.6=sin(x), x)}
+
+Was fällt Ihnen bei den Löusngen auf?
+\newpage
+
+
+
+\subsection{Arcussinus}
+Auch die Umkehrungen der Sinus-, Cosinus- und Tangensbeziehungen
+können stückweise als Funktionen aufgefasst werden.
+
+Füllen Sie die folgende Tabelle aus und übertragen Sie die Werte ins nachstehende
+Koordinatensystem (Winkel im Bogenmaß):
+
+
+\begin{bbwFillInTabular}{l|l|l|l||l|l}
+  \multicolumn{4}{c||}{Winkel} & \multicolumn{2}{c}{$\sin()$-Wert} \\\hline
+  Grad & \multicolumn{3}{c||}{Bogenmaß} & \multicolumn{2}{c}{}\\\hline
+  & exakt &  & Dezimalzahl & Dezimalzahl & exakt \\\hline\hline
+  $-30^\circ$ & \TRAINER{$-\frac{\pi}6$} & \TRAINER{$\arcsin(-\frac12)$} & \TRAINER{$-0.52...$} & \TRAINER{$-0.5$} & \TRAINER{$-\frac12$}\\\hline
+  $0^\circ$ & $ \TRAINER{0} $ & \TRAINER{$\arcsin(0)$} & \TRAINER{$0$} & \TRAINER{$0$} & \TRAINER{$0$}\\\hline
+  $30^\circ$ & $ \frac{\pi}6 $ & $\arcsin\left(\frac12\right)$ \noTRAINER{\,\,\,\,\,\,\,\,\,\,}& $0.52...$ & $0.5$ & $\frac12$\\\hline
+  $45^\circ$ & $ \TRAINER{\frac{\pi}4} $ & \TRAINER{$\arcsin\left(\frac{\sqrt{2}}2\right)$} & \TRAINER{$0.785...$} & \TRAINER{$0.7071...$} & \TRAINER{$\frac{\sqrt{2}}2$}\\\hline
+  $60^\circ$ & $ \TRAINER{\frac{\pi}3} $ & \TRAINER{$\arcsin \left( \frac{\sqrt{3}}2 \right) $} & \TRAINER{$1.047...$} & \TRAINER{$0.8660...$} & \TRAINER{$\frac{\sqrt{3}}2$}\\\hline
+  $90^\circ$ & $ \TRAINER{\frac{\pi}2} $ & \TRAINER{$\arcsin(1)$} &   \TRAINER{$1.570796...$} & \TRAINER{$1.000...$} & \TRAINER{$1$}\\\hline
+  $120^\circ$ & $ \TRAINER{\frac{2\pi}3} $ & \TRAINER{$\pi-\arcsin(\frac{\sqrt{3}}{2})$} &   \TRAINER{$2.094...$} & \TRAINER{$0.8660...$} & \TRAINER{$\frac{\sqrt{3}}2$}\\\hline
+\end{bbwFillInTabular}
+
+
+\TNTeop{Achtung: Für den $\sin$-Wert 0.8660... existieren mehrere
+  Winkel! Die Umkehrung der Sinusfunktion ist nur \textbf{stückweise}
+  definiert!}
+
+\newpage
+
+\subsubsection{Graph der Arcussinus-Funktion}
+\noTRAINER{\bbwCenterGraphic{12cm}{tals/trig3/img/py_system.png}}
+\TRAINER{\bbwCenterGraphic{8cm}{tals/trig3/img/arcsin.png}}
+
+Geben Sie den Definitionsbereich der Arcus-Sinus-Funktion an:
+
+$$\mathcal{D} = \LoesungsRaum{\left[-1; 1\right]}$$
+
+Geben Sie den Wertebereich der Arcus-Sinus-Funktion einmal im Bogenmaß,
+einmal im Gradmaß an:
+$$\mathcal{W} = \LoesungsRaum{\left[-\frac{\pi}{2}; \frac{\pi}{2}\right]}  =  \LoesungsRaum{[-90\degre; 90\degre]}$$
+\newpage
+
+
+\subsection*{Referenzaufgabe}
+
+Winkel-Aufgabe diesmal anhand der Funktionsgraphen und nicht (nur) am Einheitskreis.
+
+Vorzeigeaufgabe: Für welche(n) Winkel $\varphi$ gilt \fbox{$\sin(\varphi) = -\sin(-41.7\degre)$}?
+
+\TRAINER{Lösung: $\varphi = 41.7\degre$ und $180\degre-41.7\degre=138.3\degre$ und alle periodischen Vielfachen: $\varphi\pm n\cdot{}360\degre$}
+
+\trigsysDsin{}
+
+\subsection*{Aufgaben}
+
+%%\TALSAadBFWG{102ff}{85. a) c)}
+\aufgabenFarbe{
+Mit Taschenrechner:\\
+a) $\sin(\alpha) = 0.574$\\
+b) $-0.985 = \sin(\beta)$\\
+Ohne Taschenrechner\footnote{Für die Grundlagenfachprüfung müssen Sie solche Aufgaben lösen können.}:\\
+%%\TALSAadBFWG{102ff}{85. e) f) g) und h)}
+c) $\sin(76\degre) = -\sin(\gamma)$\\
+d) $\sin(265\degre) = -\sin(\delta)$\\
+e) $\sin(-53\degre) = \sin(\varepsilon)$\\
+f) $-\sin(\omega) = \sin(-113\degre)$\\
+}
+
+\TNTeop{}
+%%\newpage
+
+\subsection{Arccuscosinus}
+Zeichnen Sie die Umkehrfunktion des Cosinus und geben Sie den Definitionsbereich an.
+
+\noTRAINER{\bbwCenterGraphic{8cm}{tals/trig3/img/py_system.png}}
+\TRAINER{\bbwCenterGraphic{8cm}{tals/trig3/img/arccos.png}}
+
+
+$$\mathcal{D} = \LoesungsRaum{[-1; 1]}$$
+
+Geben Sie den Wertebereich der Arcus-Sinus-Funktion einmal im Bogenmaß,
+einmal im Gradmaß an:
+$$\mathcal{W} = \LoesungsRaum{[0; \pi]}  =  \LoesungsRaum{[0; 180\degre]}$$
+
+\subsection*{Aufgaben}
+\aufgabenFarbe{Mit Taschenrechner:\\
+%%\TALSAadBFWG{102ff}{86. b)}
+a) $-0.546 = \cos(\alpha)$\\
+Ohne Taschenrechner:\\
+%%\TALSAadBFWG{102ff}{86. c) und e)}
+b) $\cos(\beta) = -\cos(37\degre)$\\
+c) $\cos(-\gamma) = \cos(96\degre)$\\
+d) $-\cos(-24\degre) = \cos(\delta)$\\
+}
+\TNTeop{}
+%%\newpage
+
+
+\subsection{Arcustangens}
+Zeichnen Sie die Umkehrfunktion des Tangens (im Bogenmaß) und geben Sie den Definitionsbereich an.
+
+\noTRAINER{\bbwCenterGraphic{8cm}{tals/trig3/img/py_system.png}}
+\TRAINER{\bbwCenterGraphic{8cm}{tals/trig3/img/arctan.png}}
+
+
+$$\mathcal{D} = \LoesungsRaum{\mathbb{R}}$$
+
+Geben Sie den Wertebereich der Arcus-Sinus-Funktion einmal im Bogenmaß,
+einmal im Gradmaß an:
+$$\mathcal{W} = \LoesungsRaum{\left]-\frac{\pi}{2}; \frac{\pi}{2}\right[}  = \LoesungsRaum{\left]-90\degre; 90\degre\right[}$$
+
+Beachten Sie, dass im Wertebereich $\mathcal{W}$ die Grenzen ($-90\degre$und $+90\degre$) nicht enthalten sind. Warum ist das so?
+
+\subsection*{Aufgaben}
+\aufgabenFarbe{
+  Mit Taschenrechner:\\
+%%\TALSAadBFWG{102ff}{87. a)}
+a) $\tan(\alpha) = 0.706$\\
+Ohne Taschenrechner:\\
+%%\TALSAadBFWG{102ff}{87. c)}
+b) $-\tan(\beta) = -tan(-13\degre)$\\
+}
+\TNTeop{}
+%%\newpage
+
+
+\subsubsection{Für Applikationsentwickler\LoesungsRaum{\,($\mathrm{atan2}()$)}}
+
+Wir betrachten ein kleines Computerspiel, bei dem von einer
+Abschussrampe im Punkt $O=(0|0)$ in einem Winkel $\varphi$ ein Geschoss
+abgeschossen wird (siehe folgende beiden Graphiken). Die Längen sind
+in Einheiten von \texttt{px}\footnote{Ein \texttt{px} ist ein
+  sog. \textit{picture element} (kurz \textit{Pixel}) und ist
+  ursprünglich die kleinste adressierbare Einheit auf dem Computerdisplay.} gegeben.
+
+\begin{tabular}{p{11cm}c}
+\textbf{Problem I}: Gegeben ist ein Winkel von $107\degre$ von der
+Abschussrampe aus gesehen und gesucht sind die Koordinaten des Punktes
+$P=(x_P|y_P)$, der in der Entfernung von 350 [px].
+&
+\raisebox{-4cm}{\includegraphics[width=5cm]{tals/trig3/img/atan2PunktGesucht.jpg}}\\
+\end{tabular}
+
+Lösung: $P=( \LoesungsRaumLang{350[px]\cdot{}\cos(107\degre)\approx{}-102[px]} | \LoesungsRaumLang{350[px]\cdot{}\sin(107\degre)\approx{}335[px]})$
+
+
+\begin{tabular}{p{11cm}c}
+\textbf{Problem II}: Gegeben ist neben dem Ursprung $O = (0 | 0)$ ein
+weiterer Punkt $P=(x_P|y_P)$. In welchem Winkel $\varphi$ befindet sich
+$P$ von $O$ aus gesehen? Gesucht ist der Winkel $\varphi$ im
+mathematisch positiven Sinne.
+
+&
+\raisebox{-4cm}{\includegraphics[width=5cm]{tals/trig3/img/atan2WinkelGesucht.jpg}}\\
+\end{tabular}
+
+Beispiele und Lösung:
+
+\begin{tabular}{l|l|l}
+  Punkt          & Winkel                  & allgemeine Formel? \\ \hline
+  $P=(+10 |  60)$ & $\varphi = \LoesungsRaum{80.5\degre}$  & $\varphi=\LoesungsRaum{\arctan(\frac{y}{x})}$ \\ \hline
+  $P=(-10 |  60)$ & $\varphi = \LoesungsRaum{99.46\degre}$ & $\varphi=\LoesungsRaum{180\degre - \arctan(\frac{y}{x})}$ \\ \hline
+  $P=(  0 |  70)$ & $\varphi = \LoesungsRaum{90\degre}$    & $\varphi=$\LoesungsRaum{Sonderfall, sonst Division durch 0} \\ \hline
+  $P=(-20 |   0)$ & $\varphi = \LoesungsRaum{180\degre}$   & $\varphi=\LoesungsRaum{\arctan(\frac{y}{x}) + 180\degre}$ \\ \hline
+  $P=(x_P | y_P)$ & allgemeiner Fall?      & $\varphi=\LoesungsRaum{\text{\textbf{atan2}}(\textbf{y}, \textbf{x})}$\\ \hline
+\end{tabular}
+
+\TNT{2.8}{
+Beispiel unter \texttt{html-css-js.com}: im HTML-Fenster: \texttt{<p
+  id='test'/>} und im javascript-Fenster (tippen, nicht copy, da
+versteckte Sonderzeichen vorhanden):
+
+\texttt{document.getElementById('test').innerHTML = 180 * Math.atan2(10, 5) / Math.PI;}%%
+}%% END TNT

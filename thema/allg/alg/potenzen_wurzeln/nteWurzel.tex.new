@@ -1,0 +1,228 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+
+\section{$n$-te Wurzel}\index{n-te@$n$-te Wurzel}
+\sectuntertitel{Was soll's denn sein: Radi, Radieschen, Rande, Rübe,
+  Räbe, Rettich, ``Runggele'', ...?}
+
+\TadBMTA{78}{5}
+%%\TALSTadBMTA{78}{5}
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item Quadratwurzeln, Kubikwurzeln
+\item allgemeine $n$-te Wurzeln
+\item Rechengesetze
+\item Rationale (gebrochene) Exponenten
+\end{itemize}
+\newpage
+
+
+\begin{verse}
+\textit{«En-te Wurzel»}:
+\bbwCenterGraphic{35mm}{allg/alg/potenzen_wurzeln/img/Ente_Wurzel}
+\end{verse}
+
+Wir wissen bereits, dass
+$$3^2 = 9 \text{ heißt } \sqrt{9} = 3.$$
+
+
+
+Doch wenn wir nun
+$$x^3 = 1000$$
+vor uns haben? Wie berechnen wir die Basis $x$?
+
+\TNT{1.6}{Dazu gibt es die dritte Wurzel:
+$$\sqrt[3]{1000} = 10$$
+}
+
+
+Was bedeutet $\sqrt[3]{8}$? Schätzen Sie und prüfen Sie nach
+(allenfalls auch mit dem Taschenrechner)
+
+$\sqrt[3]{8} =  \LoesungsRaum{\sqrt[3]{8}=2 \text{, denn } 2^3=8}$
+
+Was bedeutet $\sqrt[4]{600}$? Schätzen Sie und prüfen Sie nach: \LoesungsRaum{
+  $\sqrt[4]{600}\approx4.95\text{, denn } 5^4=625
+  \Longleftrightarrow{} \sqrt[4]{625} = 5$}
+
+
+
+\TNT{1.6}{Verwenden Sie die n-te Wurzel Funktion des Taschenrechners.}
+
+
+
+\newpage
+\begin{definition}{$n$-te Wurzel}{definition_n_te_wurzel}
+Mit $\sqrt[n]{a}$ bezeichnen wir die $n$\textbf{-te Wurzel} aus $a$; das heißt
+$$\sqrt[n]{a} = x \Rightarrow x^n = a$$
+\end{definition}
+
+\begin{beispiel}{Dritte Wurzel}{}
+\TNT{2}{$$\sqrt[3]{1000} = 10 \text{ , denn } 10^3 = 1000$$}
+\end{beispiel}
+
+\begin{gesetz}{}{}
+$$\sqrt[n]{a^n} = \left(\sqrt[n]a\right)^n = a$$
+\end{gesetz}
+
+
+\begin{definition}{}{}
+Den Wurzelexponenten $n=2$ lassen wir üblicherweise weg:
+
+$$\sqrt{a} := \sqrt[2]{a}$$
+\end{definition}
+
+\begin{gesetz}{Mulitplikation, Division}{}
+  Weiterhin gelten die folgenden Gesetze:
+  $$\sqrt[n]{A\cdot{}B} = \sqrt[n]{A}\cdot{}\sqrt[n]{B}$$ und
+  $$\sqrt[n\,]{\frac{A}{B}} = \frac{\sqrt[n]{A}}{\sqrt[n]{B}}$$
+\end{gesetz}
+
+
+\subsection*{Aufgaben}
+\AadBMTA{85}{\GESO{ Nur mit Taschenrechner: } 8. f) und 10. g)}
+
+%%  OLAT Arbeitsblatt
+\GESO{\olatLinkArbeitsblatt{Potenzgesetze}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/102690264435484}{Kapitel 5 Wurzeln}}%% END olatLinkArbeitsblatt
+\TALS{\olatLinkArbeitsblatt{Potenzgesetze}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/104915210426569}{Kapitel 5 Wurzeln}}%% END olatLinkArbeitsblatt
+
+
+%%\TALSAadBMTA{52}{146. «geometrisches Mittel»}
+
+\newpage
+
+\subsection{Rationale Exponenten}\index{rationale Exponenten}
+
+\TRAINER{Einstiegsvideo\\
+\GESO{  GESO:\\ \olatLinkVideo{Rationale Exponenten}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/107682581924138}{Definition rationale Exponenten}\\}
+\TALS{  TALS:\\ \olatLinkVideo{Rationale Exponenten}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/107682596794409}{Definition rationale Exponenten}\\}
+}
+
+Wir repetieren\TRAINER{ (für ganze Exponenten wissen wir)}:
+
+\TALS{
+ $$(x^m)^n = \LoesungsRaum{x^{m\cdot n}}\ \ \text{,
+  }\ \ \left(\sqrt[n]{a}\right)^n = \LoesungsRaum{a} \text{ und }
+  a^{m+n} = \LoesungsRaum{a^m\cdot{}a^n}.$$
+}%% END TALS
+\GESO{$$a^m\cdot{}a^n = \LoesungsRaum{a^{m+n}}$$}
+
+
+\begin{beispiel}{}{}
+ Es gilt
+\TNT{2.8}{ $$\sqrt[3]{a} \cdot{}\sqrt[3]{a} \cdot{}\sqrt[3]{a} = a = a^1
+  = a^{\frac13 +\frac13 +\frac13} = a^\frac13 \cdot{} a^\frac13
+  \cdot{}a^\frac13$$
+(Bei $a$ in der Mitte beginnen erst nach links und dann nach rechts
+  gehen. Bem. für Lehrpersonen: Das rechteste Gleichheitszeichen ist
+  eigentlich gemogelt, das wissen wir ja noch nicht; aber wir wollen
+  es so haben, damit die Gesetze stimmen. Daher ist untenstehende
+  Definition sinnvoll.)}
+
+ Somit ist
+\TNT{1.6}{ $$\sqrt[3]{a} = a^\frac13$$}
+\end{beispiel}
+
+Für $a > 0$ gilt somit allgemein:
+
+\begin{definition}{}{}
+  $$a^{\frac{1}{n}} := \sqrt[n]{a}$$
+\end{definition}
+
+\TALS{
+ Denn: $\sqrt[n]{a} = \left(\sqrt[n]{a}\right)^1 =
+ \left(\sqrt[n]{a}\right)^{n\cdot{}\frac{1}{n}} =
+ \left(\left(\sqrt[n]{a}\right)^n\right)^\frac{1}{n} = a^\frac{1}{n}$
+}%% END TALS
+
+\GESO{
+  \begin{beispiel}{Fünfte Wurzel}{}
+    Es gilt
+    $$\left(\sqrt[5]{x}\right)^5 = \LoesungsRaum{x}$$
+    und
+    $$\left(x^{\frac15}\right)^5= \LoesungsRaumLang{x^{\frac15\cdot{}5}} = \LoesungsRaum{x^1} = \LoesungsRaum{x}$$
+    somit:
+    $$\LoesungsRaum{\sqrt[5]{x}} = \LoesungsRaum{x^\frac15}$$
+    \end{beispiel}
+}
+
+\newpage
+
+
+ Es gelten die üblichen Potenzgesetze\GESO{\footnote{S. 81 \cite{marthaler21alg}}} nun auch für die $n$-ten Wurzeln.
+
+
+\begin{gesetz}{Wurzeln von Wurzeln}{}
+  $$\sqrt[m\,]{\sqrt[n]{a}} = \sqrt[m\cdot n]{a}=a^\frac1{mn} =
+  \sqrt[n\,]{\sqrt[m]{a}}$$
+\end{gesetz}
+
+Umformungen:
+\TNT{4}{
+$$\sqrt[m]{\sqrt[n]{a}} = \sqrt[m]{a^\frac{1}{n}} =
+  (a^{\frac{1}{n}})^{\frac{1}{m}} = a^{\frac{1}{n}\cdot\frac{1}{m}} =
+  a^{\frac{1}{m\cdot n}} = \sqrt[m\cdot n]{a}$$
+  \vspace{22mm}
+}%% end TNT
+
+
+\begin{gesetz}{Wurzelschreibweise}{}
+  $$a^\frac{m}n = \sqrt[n]{a^m} = \left(\sqrt[n]{a}\right)^m$$
+\end{gesetz}
+
+\begin{beispiel}{Vier Beispiele}{}
+  $$\sqrt[4]{a^7} = \TRAINER{a^\frac74}$$
+
+  $${\sqrt[3]{b}}^2 = \TRAINER{b^{\frac23}}$$
+
+  $$\sqrt[7]{\sqrt[3]{c}} = \TRAINER{\sqrt[21]{c} = c^\frac1{21}}$$
+
+  $$\sqrt[7]{a^{21}b^7} = \TRAINER{
+    \sqrt[7]{a^{21}}\cdot{}\sqrt[7]{b^7} =  a^{\frac{21}{7}}\cdot{}
+    b^{\frac77} = a^3b }$$
+  \end{beispiel}
+\newpage
+
+
+\begin{beispiel}{}{}
+ $\sqrt[3]{\sqrt[2]{64}} = \sqrt[3]{8} = 2 = \sqrt[6]{64} = \sqrt[3\cdot2]{64}$
+\end{beispiel}
+
+\GESO{Die Rechengesetze für $n$-te Wurzeln sind im Buch \cite{marthaler21alg} auf Seite 82 zu finden.}
+
+Rechenbeispiel. Schreiben Sie unter eine Wurzel:
+$$ab^\frac{-3}4$$
+
+\TNT{10}{
+ $$ab^\frac{-3}4 = a\cdot{}b^\frac{-3}4
+                = a\cdot{} \left(\frac1b\right)^\frac34
+                = a\cdot{} \left(\left(\frac1b\right)^3\right)^\frac14
+                = a\cdot{}\sqrt[4\,\,]{\left(\frac1b\right)^3}
+                = \sqrt[4\,\,]{a^4 \left(\frac1b\right)^3}
+                = \sqrt[4\,\,]{\frac{a^4}{b^3}}$$
+}%% END TNT
+
+
+\newpage
+
+\subsection{Aufgaben}
+%%\TALSAadBMTA{51ff}{141. f) g) i), 142. b) d) i), 143. a) d) j), 144. b) i),
+%%                149. a) d) h) i), 150. h) und 157. a) b) k)}
+\AadBMTA{85 ff}{[Wenn möglich immer \GESO{mit } \TALS{ohne } Taschenrechner] 9. g), 11. a) e) g) i), 12. a) b) d), 13. a) b), 16. a) c) d), 17. a) b), 19. a) d) i),
+                 20. a) c), 21. a) c), 22. a) c) e), 24. a)}
+
+
+%%  OLAT Arbeitsblatt
+\GESO{\olatLinkArbeitsblatt{Potenzgesetze}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/102690264435484}{Kapitel 6 Rationale Exponenten}}%% END olatLinkArbeitsblatt
+
+\olatLinkGESOKompendium{1.4}{9}{19}
+
+
+\TALS{\olatLinkArbeitsblatt{Potenzgesetze}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/104915210426569}{Kapitel 6 Rationale Exponenten}}%% END olatLinkArbeitsblatt
+
+
+\newpage
+
+

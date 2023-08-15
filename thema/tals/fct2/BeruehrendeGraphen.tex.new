@@ -1,0 +1,185 @@
+\section{Berührende Graphen}\index{Graphen!berührende}\index{berührende Graphen}
+
+\textbf{Einführungsbeispiel}
+
+
+Gegeben ist die Parabel $f: y=\frac{1}{4}x^2 -\frac12x +\frac14$ und von einer
+Geraden $g$ ist der $y$-Achsenabschnitt $b = -2$ gegeben.
+
+Gesucht ist von der Geraden $g$ die Steigung $a$ so, dass die
+Gerade die Parabel tangiert; also genau in einem Punkt berührt.
+
+Wo (in welchem Punkt $S=(x_S|y_S)$) tangiert also die Gerade $g$ die Parabel $f$?
+
+In der folgenden Skizze sind drei mögliche Geraden mit $y$-Achsenabschnitt
+$-2$ gezeichnet. Nur eine dieser drei Geraden \textit{tangiert} die Parabel.
+
+\bbwGraph{-4}{4}{-3}{5}{
+  \draw[thick,color=blue,variable=\x,domain=-3.5:4] plot ({\x},   {0.25*\x*\x -0.5*\x + 0.25});
+
+  \draw[color=red,variable=\x,domain=-3:5] plot ({\x},{2*\x -2});
+  \draw[color=red,variable=\x,domain=-3:5] plot ({\x},{0.5*\x - 2});
+  \draw[color=cyan,thick,variable=\x,domain=-3:5] plot ({\x},{1*\x  -2});
+
+  \bbwDot{3, 1}{green}{north}{S}
+
+  %%%\draw[thick,color=blue,variable=\x,domain=-1:5] plot ({\x}, {0.5*\x*\x - 2*\x + 3}); 
+  %%\draw[color=red,variable=\x,domain=-1:5] plot ({\x},{0.5*\x + 1});
+  %%\draw[color=red,variable=\x,domain=-1:5] plot ({\x},{0.5*\x - 1.5});
+  %%\draw[color=cyan,thick,variable=\x,domain=-1:6] plot ({\x},{0.5*\x  -0.125});
+  %%\bbwDot{2.5, 1.125}{green}{north}{P}
+}
+\newpage
+\textbf{Lösungsidee}: Wähle als Parameter die Steigung $a$  (der Geraden)
+und berechne die Schnittpunkte mit $f(x) = g(x)$. Nur für ein $a$ gibt
+es genau eine Lösung (Diskriminante = 0). Den $x$-Wert dieses
+Schnittpunkts nennen wir $x_S$:
+
+\TNT{3.2}{
+ 
+\begin{tabular}{rclr}
+$f(x_S)$                                   & $=$ & $g(x_S)$  & \\
+$\frac14x_s^2-\frac12x_s+\frac14$          & $=$ &  $ax_s-2$ & \\
+$\frac14x_s^2+(-\frac12-a)x_s + \frac94$   & $=$ & $0$       & (I)\\
+\end{tabular}
+\vspace{10mm}
+}%% END TNT
+
+Die Diskriminante $D=B^2 - 4AC$ muss gleich 0 sein. 
+
+\TNT{7.2}{
+$A = \frac14$, $B = -\frac12-a$ und $C = \frac94$.
+
+  $$D=0=B^2-4AC = (-\frac12-a)^2  - (4\cdot{}A\cdot{}C)$$
+  $$0 = (a^2+a+\frac14) - (4\cdot\frac14\cdot{}\frac{+9}4)$$
+$$\Longrightarrow 0 = a^2 + a - 2$$
+$$\Longrightarrow a_1 = 1 \text{ und  } a_2 = -2$$
+\vspace{40mm}
+}%% END TNT
+\newpage
+
+Für den \textbf{Schnittpunkt} müssen wir nun nur doch das gefundene
+$a$ in die Gleichung (I) einsetzen ($a_1=1$):
+
+\TNT{6}{
+$S_1: a_1 = 1:$
+$$0 = \frac14x^2+ (-\frac12 - 1) + \frac94$$
+  $$\Longrightarrow x_1 = \frac{\frac32\pm\sqrt{D}}{2\cdot{}\frac14} = \frac32 : \frac12= 3$$
+
+Bem. Der Term $\sqrt{D}$ kann weggelassen werden, denn $D$ wurde ja so
+konstruiert, dass $D=0$ sei.
+
+
+Das $y$ finden wir einfach durch Einsetzen von $x$ in den
+Funktionsterm der Geradengleichung.
+
+$$y_1 = a_1x_1 - 2 = 1\cdot{}3-2 = 1$$
+und somit ist
+$$S_1 = (3 | 1)$$
+}%% END TNT
+
+
+
+Zweiter \textbf{Schnittpunkt} ($a_2 = -2$):
+
+
+\TNT{6}{
+$S_2: a_2 = -2:$
+$$0 = \frac14x^2+ (-\frac12 - (-2)) + \frac94$$
+$$\Longrightarrow x_2 = \frac{-\frac32\pm\sqrt{D}}{2\cdot{}\frac14} = -\frac32 : \frac12= -3$$
+
+
+$$y_2 = a_2x_2+b = -2\cdot{}3-2 = 4$$
+und somit ist
+$$S_2 = (-3 | 4)$$
+
+}%% END TNT
+\newpage
+\TRAINER{(Je nach Zeit wäre 699. a) noch eine Vorzeigeaufgabe.)}
+
+\subsection{Aufgaben}
+\TRAINER{Achtung bei 702., dass nicht das Gleichungssystem bereits
+  nach dem Gleichsetzen der Kurven aufgestellt wird. Erst nach dem
+  Null-Setzen der Diskriminante erhalten wir eine gültige Gleichung
+  für das Gleichungssystem.}
+%%\TALSAadBMTA{190}{698., 702., 703., 705.}
+\TALSAadBMTA{278}{40. a) c), 42. a), 43. a), 44. a)}
+\newpage
+
+
+\subsection{Grenzwerte und Steigungsfunktion (Optional)}
+
+Wie macht das ein CAS, dass es den tiefsten bzw. den höchsten Punkt
+einer Funktion bestimmen kann? Hier ein Erklärungsversuch am Beispiel
+der quadratischen Funktion.
+Betrachten wir die allgemeine quadratische Funktion $$p: y=ax^2 + bx +
+c$$
+Mit dem selben $a$ und dem selben $b$ kann ich eine Gerade $s$
+definieren, die ich die (Tangenten-)\textbf{Steigungsfunktion}\footnote{Diese
+  Steigungsfunktion wird in der Mathematik die
+  \textbf{Ableitung}\index{Ableitung} genannt. Genau genommen handelt
+  es sich nicht um die Steigung der Parabel, sondern um die Steigung
+  einer im Punkt $P=(X_P|f(x_P))$ angelegter Tangente.} nenne:
+$$s: y= 2ax+b$$
+\newpage
+
+
+Diese Steigungsfunktion $s$ gibt in jedem Punkt $x$ die Steigung einer
+Tangente an die Parabel $p$ an.
+
+\begin{beispiel}{Parabel}{}
+  Gegeben ist die Parabel $p: y=2.5x^2 - 3x + 6.5$. Wo hat diese Parabel
+  ihren Tiefpunkt? Im Scheitelpunkt $x_S =
+  \frac{-b}{2a} = \frac{-(-3)}{2\cdot{}2.5}$. Dies ist gleichzeitig die Nullstelle der
+  Steigungsfunktion $s: y= 2\cdot{}2.5x - 3$.
+
+  Wir können damit aber auch die Steigung in einem ganz anderen Punkt
+  \zB für $x=10$ berechnen. Die Parabel $p$ hat an der Stelle $x=10$
+  die Steigung, die durch die Steigungsfunktion im Punkt $10$
+  ermittelt wird: $s(10) = 2\cdot{}10\cdot{2.5} - 3 = 47$.
+  
+\end{beispiel}
+
+\begin{beispiel}{Gerade gesucht}{}
+Gegeben ist die Parabel $p: y=4x^2 -6x + 3$. Gesucht ist die Gerade
+$g: y=ax+b$, sodass die Gerade die Parabel bei $x=7$ berührt.
+
+\begin{enumerate}
+\item Die Steigungsfunktion $s$ lautet: $s: y=2\cdot{}4x - 6$
+\item Für $x=7$ hat die Steigungsfunktion den Wert 50, und somit hat
+  die Parabel bei $x=7$ die Steigung 50.
+\item Um den Berührungspunkt $B$ zu finden, setzen wir 7 diesen in $p$
+  ein: $p(7)= 4\cdot{}49-6\cdot{}7+3 = 157$; und somit $B=(\LoesungsRaum{7}|\LoesungsRaum{157})$.
+\item Die gesuchte Gerade $g: y=ax+b$ hat also auch die Steigung 50
+  und verläuft durch den Berührungspunkt $B=(7|157)$. Also
+  $157=50\cdot{}7+b$. Somit ist das gesuchte $b = 157-50\cdot{}7=-193$
+  und die gesuchte Funktionsgleichung der Geraden lautet: $y = 50x-193$
+  \end{enumerate}
+\end{beispiel}
+\newpage
+
+\subsubsection{Beweis der Formel der (Tangenten-)Steigungsfunktion}
+
+Betrachten wir auf auf der $x$-Achse zwei benachbarte Punkte $x$ und
+$x+\Delta$. Die Funktionswerte lauten $f(x)$ und $f(x+\Delta)$. Die
+\textbf{Steigung} kann nun für eine Gerade bestimmt werden durch:
+
+\bbwCenterGraphic{7cm}{tals/fct3/img/Steigungsfunktion.jpg}
+
+$$\frac{f(x+\Delta) - f(x)}{\Delta}$$
+
+Dies gilt für eine Parabel $p: y=ax^2+bx+c$ näherungsweise auch:
+$$\frac{f(x+\Delta)-f(x)}{\Delta} = \frac{(a(x+\Delta)^2 + b(x+\Delta)
+  + c) - (ax^2 + bx +c)}{\Delta}=2ax+a\Delta+b$$
+
+Wenn wir nun das $\Delta$ gegen Null gehen lassen, also immer kleinere
+Werte einsetzen, so verschwindet der Term $a\cdot{}\Delta$ fast und unsere
+Formel stimmt annähernd --- jedoch präzise genug, um dies als Beweis
+gelten zu lassen.
+
+Ein anderer Beweis wäre die Tangente effektiv einzusetzen und diese so
+zu wählen, dass es genau einen Schnittpunkt gibt, was wieder darauf
+zurückführt, dass die Diskriminante = Null gesetzt werden muss. Dann
+sind wir exakt, aber der Beweis ist ungleich aufwändiger.
+\newpage
+

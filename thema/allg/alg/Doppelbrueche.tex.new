@@ -1,0 +1,39 @@
+\subsubsection{Doppelbrüche}\index{Doppelbruch}
+
+%%\TALS{S. Buch \cite{frommenwiler17alg} S. 25 Kap. 1.4.4 Dividieren.}
+%%\GESO{S. Buch \cite{marthaler21alg} S. 44 Kap. 3.4 Brüche multiplizieren und dividieren}
+
+\TadBMTA{44/45}{3.4}
+
+\begin{definition}{Doppelbruch}{definition_doppelbruch}\index{Doppelbruch}
+  \textbf{Doppelbrüche} sind lediglich eine andere Schreibweise für die
+  Division zweier Brüche:\\
+
+  \begin{center}
+  \fbox{\huge{$\frac{\frac{a}{b}}{\frac{c}{d}} = \frac{a}{b} :
+      \frac{c}{d}$}}
+  \end{center}
+\end{definition}
+
+\begin{gesetz}{Doppelbruch}{gesetz_doppelbruch}\index{Doppelbruch}
+  Brüche werden dividiert, indem man mit dem Kehrwert des Divisors multipliziert:\\
+
+  \begin{center}
+  \fbox{\huge{$\frac{\frac{a}{b}}{\frac{c}{d}} = \frac{a}{b} :
+      \frac{c}{d} = \frac{a}{b} \cdot\frac{d}{c} = \frac{ad}{bc}$}}
+  \end{center}
+\end{gesetz}
+
+\begin{beispiel}{}{}
+$$\frac{\frac{x+1}{x^2-1}}{\frac{x^2+2x+1}{-2-2x}}$$
+\end{beispiel}
+
+\TNTeop{
+  $= \frac{x+1}{x^2-1}      :     \frac{x^2+2x+1}{-2-2x}$
+  $= \frac{x+1}{(x-1)(x+1)} :     \frac{(x+1)(x+1)}{-2(1+x)}$
+  $= \frac{x+1}{(x-1)(x+1)} \cdot \frac{(-2)(1+x)}{(x+1)(x+1)}$
+  $= \frac{1}{(x-1)}\cdot\frac{-2}{(x+1)}$
+  $= \frac{ -2}{x^2 - 1}$
+}
+
+

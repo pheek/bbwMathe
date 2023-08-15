@@ -1,0 +1,65 @@
+%%
+%% Meta: Master Document
+%% Arithmetik und Algebra I
+%% 
+%%
+\input{bbwLayoutDoc}
+
+
+\renewcommand{\author}{Philipp G. Freimann}
+\renewcommand{\grafikautor}{Ph. G. Freimann}
+\renewcommand{\authoremail}{philipp.freimann@bbw.ch}
+\renewcommand{\erstellungsdatum}{\versionGESOMajorDate}
+\renewcommand{\docversion}{\versionGESOMajorVSR}
+
+%%\renewcommand{\modulnummer}{Arithmetik und Algebra I}
+\renewcommand{\doctitel}{Mathematik}
+\renewcommand{\fachthema}{3jährige BM1}
+
+%% Gesamt-Skripts benötigen ALINONE (all in one), damit Referenzen auf andere
+%% Kapitel funktioniren:
+\isALLINONEtrue%%
+
+\scriptStart{}
+
+%% EinstiegsAufgaben
+\input{geso/010/GESO_Einstiegsaufgaben}
+
+%% Arithmetik und Algebra
+\input{geso/aa1/AllGESO}
+
+%% Datenanalyse
+\input{geso/daan/AllGESO}
+
+%%%%%%%%%%%%%%%%%%%%%%
+%% Gleichungen 1 (lineare)
+\input{geso/gl1/AllGESO}
+
+% Funktionen I
+\input{geso/fct1/AllGESO}
+
+%%%%%%%%%%%%%%%5
+% Lineare Gleichungssysteme
+\input{geso/gls/AllGESO}
+
+%%%%%%%%%%%%%%%%%%%%
+% Arithmetik und Algebra II
+\input{geso/aa2/AllGESO}
+
+%%%%%%%%%%%%%%%%%%%
+%% Logarithmen (Arithmetik und Algebra III)
+\input{geso/aa3/AllGESO}
+
+%%%%%%%%%
+%% Gleichungen II
+\input{geso/gl2/AllGESO}
+
+%%%%%%%%%%%%%%%%%55
+%% Funktionen II
+\input{geso/fct2/AllGESO}
+
+%%%%%%%%%%%%%%%%%%%%%%
+%% wahrscheinlichkeitsrechnung
+\input{geso/stoch/AllGESO}
+
+\scriptEnde{}

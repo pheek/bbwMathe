@@ -1,0 +1,62 @@
+%%
+%% Meta: TI nSpire Einführung
+%%       Ziel: Damit die Grundoperationen damit durchgeführt werden können.
+%%             Damit man sich an den Rechner gewöhnt.
+%%
+
+\input{bbwLayoutPage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amssymb} 
+\renewcommand{\metaHeaderLine}{Arbeitsblatt}
+\renewcommand{\arbeitsblattTitel}{Lösungsformel zur quadratischen Gleichung}
+
+\begin{document}%%
+\arbeitsblattHeader{}
+\textbf{Zur Auflösungsformel für die quadratische Gleichung $ax^2+bx+c=0$}
+
+Bestimmen Sie die Lösungsmenge jeder Gleichung. In der Regel hat jede
+Gleichung \textbf{zwei} Lösungen. Schreiben Sie Ihre Gedankengänge
+auf. Insbesondere: Was ist neu gegenüber der vorangehenden
+Aufgabe. Vereinfachen Sie die Wurzeln so, dass
+
+\begin{enumerate}[label=\alph*)]
+\item \textbf{keine Wurzeln im Nenner} vorkommen (Erweitern)
+\item jede Wurzel \textbf{maximal ausgezogen} ist (Bsp. :
+$\sqrt{50}=\sqrt{2 \cdot 25} =5 \sqrt{2}$)
+\end{enumerate}
+
+\newcounter{nuemmerli}
+%\newcommand{\noteSpace}{\noTRAINER{\rule{0pt}{6.5ex}}}
+\newcommand{\noteSpace}{\noTRAINER{\mmPapier{4}}}
+
+\newcommand{\quadGleichung}[4]{
+\TRAINER{\hrulefill\\}%%
+\par
+\needspace{4\baselineskip}
+\begin{samepage}
+\stepcounter{nuemmerli}(\thenuemmerli. )\,\,\,\, #1\\
+\noTRAINER{\mmPapier{#2}}\TRAINER{{\color{black}#3}
+{\color{blue}#4}}\\
+\end{samepage}
+
+}%% end quadGleichung
+
+\quadGleichung{$x^2=4$}{4}{$x_{1,2}=\pm 2$}{Wurzel ziehen, negativ und positives beachten}
+\quadGleichung{$x^2-3 = 0$}{3.2}{$x_{1,2}=\pm \sqrt{3}$}{Drei auf die andere Seite nehmen.}
+\quadGleichung{$2x^2 - 1 = 0$}{6}{$x_{1,2}=\pm \frac{\sqrt{2}}{2}$}{}
+\quadGleichung{$x^2 = 6$}{2}{$x_{1,2}= \pm\sqrt{6}$}{}
+\quadGleichung{$(x+2)^2 = 6$}{4}{$x_{1,2}=-2\pm\sqrt{6}$}{}
+\quadGleichung{$x^2 -6x+9 = \frac{25}{4}$}{4}{$x_{1,2}=3\pm\frac{5}{2}$}{}
+\quadGleichung{$x^2-6x=31$}{6}{$x_{1,2}=3\pm\sqrt{40}$}{}
+\quadGleichung{$x^2 +4x = - \frac{7}{4}$}{6}{$x_{1,2}=-2\pm\frac{3}{2}$}{}
+\quadGleichung{$x^2 - \frac{2}{3}x = -\frac{1}{9}$}{6}{$x_{1,2}=\frac{1}{3}$}{Mit $\frac{1}{9}$ quadratisch ergänzen.}
+\quadGleichung{$x^2 - 3x =  - \frac{25}{4}$}{4}{$\lx=\{\}$}{}
+\quadGleichung{$2x^2 +4x-7 = 0$}{10}{$x_{1,2}=-1\pm\frac{3\sqrt{2}}{2}$}{}
+\quadGleichung{$\frac{1}{6}x^2 - \frac{1}{4}x - \frac{1}{6}  = 0$}{12}{$x_{1,2}=-\frac{1}{2}, 2$}{Quadratisch ergänzen mit $\frac{9}{16}$}
+\quadGleichung{$x^2 +2px + q = 0$}{10}{$x_{1,2}=-p\pm\sqrt{p^2-q}$}{}\noTRAINER{\newpage}
+\quadGleichung{ $ax^2 +bx + c = 0$}{12}{$x_{1,2}=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$}{}
+
+
+\end{document}

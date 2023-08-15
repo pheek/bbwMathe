@@ -1,0 +1,323 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+\subsection{Begrenztes Wachstum}
+
+
+
+
+
+
+\bbwActAufgabenNr{} \textbf{Sauerstoff}
+
+Ein Patient hat im Blut eine Sauerstoffkonzentration von 70\%. Ziel
+ist es, seinen Sauerstoff wieder auf 100\% zu bringen und dazu wird
+sein Sauerstoff erhöht.
+
+Zwei Minuten nach der Behandlung hat der Patient bereits 80\%
+Sauerstoff seiner möglichen Sättigung erreicht. Gehen Sie von einem
+(exponentiell) beschränkten Prozess aus.
+
+\begin{bbwAufgabenBlock}
+
+
+\item Machen Sie eine Skizze des Sauerstoffgehaltes.
+
+\TRAINER{Graph}
+  
+\item Geben Sie die Formel $y = f(t)$ an mit $y$ = Sauerstoffgehalt und
+$t$ = Zeit in Minuten.
+
+\TRAINER{$$f(t) = 100 - 30\cdot{}\left(\frac{20}{30}\right)^{\frac{t}{2}}$$}
+  
+\item Wie groß ist sein Sauerstoffgehalt nach 8 Minuten?
+
+\TRAINER{$$f(8) =
+  100-30\cdot{}\left(\frac{20}{30}\right)^{\frac{8}{2}}\approx 94.07 \%$$}
+  
+\item
+  Bei 97\% der Sauerstoffsättigung können wir die Behandlung
+abbrechen. Wann wird das erreicht sein?
+
+\TRAINER{
+
+  $$97 = 100 - 30 \cdot{} \left( \frac{20}{30} \right)^{\frac{t}{2}}$$
+  $$-3  = - 30 \cdot{} \left(\frac{20}{30}\right)^{\frac{t}{2}}$$
+  $$3  =  30 \cdot{} \left(\frac{20}{30}\right)^{\frac{t}{2}}$$
+  $$\frac{1}{10}  =  \left(\frac{20}{30}\right)^{\frac{t}{2}}$$
+  $$\log_{\left(\frac{20}{30}\right)}(\frac{1}{10}) =   \frac{t}{2}$$
+  $$2\cdot{} \log_{\left(\frac{20}{30}\right)}(\frac{1}{10}) = t
+      \approx  11.36 \text{ min.}$$
+}
+
+\end{bbwAufgabenBlock}
+
+
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\bbwActAufgabenNr{} \textbf{Cola}
+
+Eine Cola wird bei $5^\circ \textrm{ C}$ aus der Kühlbox genommen. Die
+Umgebungstemperatur ist $32^\circ \textrm{ C}$. Nach 3 Minuten messen
+wir bereits eine Temperatur von $9^\circ \textrm{ C}$ 
+
+Wir gehen davon aus, dass die Temperaturdifferenz der Cola zur
+Umgebungstemperatur exponentiell abnimmt.
+
+\begin{bbwAufgabenBlock}
+\item Machen Sie eine Skizze im Koordinatensystem, welche die
+Abhängigkeit von der Cola-Temperatur von der Zeit ($t$) aufzeichnet.
+
+\TRAINER{Graph}
+
+\item Geben Sie eine Funktionsgleichung $f(t)$ an, welche die
+Temperatur in Minuten ($t$) nach dem herausnehmen der Cola aus der Kühlbox
+angibt.
+
+\TRAINER{$$f(t) = c - b\cdot{} a^{\frac{t}{\tau}}$$
+
+$$f(t) = 32 - 27 \cdot \left( \frac{23}{27}\right)^{\frac{t}{3}}$$
+}
+
+\item Wie «warm» ist die Cola nach 10 Minuten?
+
+\TRAINER{
+$$f(10) = 32 -
+27 \cdot \left( \frac{23}{27}\right)^{\frac{10}{3}} \approx
+16.18^\circ \textrm{ C}$$
+}%% end TRAINER
+
+\item Nach wie vielen Minuten ist die Cola $18^\circ \textrm{ C}$
+«warm»?
+
+\TRAINER{
+$$f(t) = 18 = 32 - 27\cdot{} \left(\frac{23}{27}\right)^\frac{t}{3}$$
+$$-14 =  - 27\cdot{} \left(\frac{23}{27}\right)^\frac{t}{3}$$
+$$\frac{14}{27} =  - \left(\frac{23}{27}\right)^\frac{t}{3}$$
+$$t =
+3\cdot{} \log_{\left(\frac{23}{27}\right)}\left(\frac{14}{27}\right) \approx
+12.29 \textrm{ min.}$$
+}%% END TRAINER
+
+\end{bbwAufgabenBlock}
+
+
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\bbwActAufgabenNr{} \textbf{«Silly Blubb»}
+
+Das neue Waschmittel «Silly Blubb» will sich im Markt etablieren.
+Dank einer tollen Fernseh- und Internetwerbung nehmen die
+Verkaufszahlen rasant zu.
+
+Es ist jedoch zu erwarten, dass nicht mehr als 20\% aller Käufer auf
+«Silly Blubb» umschwenken werden.
+
+Nach dem ersten Monat sind bereits 5\% der Waschmittelkäufer auf
+«Silly Blubb» umgelenkt worden. Nach zwei weiteren Monaten sind wir
+bei 8\% gelandet.
+
+
+\begin{bbwAufgabenBlock}
+\item Machen Sie eine Skizze im Koordinatensystem, welche die
+Abhängigkeit von Monat ($x$-Achse) zu Käuferzahl in Prozent darstellt.
+
+\TRAINER{Graph}
+
+\item Geben Sie einen mögliche Funktionsterm $f(t)$ an, welcher die
+Prozentzahl der Käufer nach Monaten angibt. Bedenken Sie, dass die
+«Sättigungsgrenze» bei 20\% liegt.
+
+\TRAINER{$$f(t) = 20 - 15 \cdot{} (\frac{12}{15})^{\frac{t-1}{2}}$$
+}
+
+\item Wie viele Prozente der Käufer sind in Monat 6 nach Verkaufsstart
+  bereits «Silly Blubb» Käufer?
+  
+\TRAINER{
+$$y = 20 - 15\cdot{} \left(\frac{12}{15}\right)^{\frac{6-1}{2}} \approx 11.41\% $$%%
+}%% end TRAINER
+
+\item Nach wie vielen Monaten sind 16\% der Käufer von «Silly Blubb»
+  überzeugt worden?
+
+\TRAINER{
+$$f(t) = 16 [\%] = 20 - 15\cdot{} \left(\right)^{\frac{t-1}2}$$
+$$ \frac4{15} = \left(\right)^{\frac{t-1}2}$$
+$$ \frac4{15} = \left(\right)^{\frac{t-1}2}$$
+$$\frac{t-1}2  = \log_{\left(\frac{12}{15}\right)}\left(\frac4{15}\right)$$
+$$t = 1 + 2\cdot{}
+  \log_{\left(\frac{12}{15}\right)}\left(\frac4{15}\right) \approx
+  12.85 \textrm{ Monate}$$
+}%% END TRAINER
+
+\end{bbwAufgabenBlock}
+
+
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bbwActAufgabenNr{} \textbf{Ritter Nimmersatt}
+
+\nextBbwAufgabenNummer{}
+
+Ritter Nimmersatt ist nimmer satt. Erst bei einer Magenfülle von
+5 Litern stößt ihm alles wieder auf. Richtig wohlgenährt ist er
+normalerweise erst bei einem Magen, der zu 4.5 Liter gefüllt ist.
+
+Er beginnt das Festmahl bei Kunigundes Hochzeit mit einer Magenfülle
+von 2 Litern\footnote{Darunter würde er echte Hungerschübe
+  leiden!}. In der ersten Minute schafft er es, 3 dl Flüssigkeit oder Nahrung
+in sich regelrecht hineinzustopfen. Danach nimmt sein Futtern
+«exponentiell gesättigt» ab (bis zur Sättigungsgrenze von 5 Litern, die er
+hoffentlich nicht erreicht).
+
+Nach wie vielen Minuten ist er so richtig gesättigt; m.\,a.\,W. wann
+hat er besagte 4.5 Liter im Magen\footnote{Der Moment ist gekommen, wo
+  die Wachen den Ritter Nimmersatt vorsorglich unter ominösem Vorwand aus der Burg schaffen sollten.}?
+
+\TNT{16}{
+  $c = 5$, $b = m_0 = 5-2=3$, $m=m_1= 5-2.3=2.7$, $\tau = 1$, $a=\frac{2.7}{3} = 0.9$ und somit:
+  $$f(t) = 4.5 = 5 - 3\cdot{}\left(\frac{2.7}{3}\right)^t$$
+
+  $$t = log_{\frac{4.5-5}{-3}}(\frac{2.7}3) \approx 17.006$$
+Und so ist er nach 17 Minuten so richtig satt.\vspace{52mm}}%% END TNT
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bbwActAufgabenNr{} \textbf{WC-Spülung}\par
+Ältere Spülkästen für Toiletten funktionieren nach folgendem Prinzip.
+Wird die Kordel gezogen, so hebt sich eine
+Ansaugglocke, welche das Wasser ansaugt. Jetzt wird aufs Mal durch den
+Sog der ganze Kasten entleert.
+
+Beim Wiederauffüllen, und darum gehts bei diesem Modell, wird zunächst
+Wasser im vollen Druck der Röhre wieder in den Spülkasten
+gepumpt (dies ist vorest ein linearer Prozess). Doch damit es wieder mit dem Füllen aufhört,
+ist ein Schwimmer angebracht. Dieser Schwimmer ist immer auf der
+Wasseroberfläche und hebt sich beim Füllen des Spülkastens an.
+
+Über eine Stange ist der Schwimmer
+mit einem Ventil verbunden, das sich umso mehr schließt, je höher der
+Schwimmer steht. Also: Je höher der Pegelstand, umso geschlossener ist
+das Ventil. Dies bedeutet aber wiederum, dass das Wasser umso
+langsamer einfließt, je höher der Schwimmer steht. Erst bei der
+maximalen Füllung von ca. 8 bis 11 Litern ist das Ventil ganz
+geschlossen. 
+
+\begin{bbwAufgabenBlock}
+\item Skizzieren Sie den Prozess für einen 10-Liter Spülkasten, wenn
+  Sie davon ausgehen, dass der Schwimmer erst ab 5 Litern beginnt das
+  Ventil zu schließen und dass die ersten 5 Liter mit 3 Litern pro
+  Minute gefüllt werden.
+  Gehen Sie ab den 5 Litern von einem beschränkten Prozess aus bei dem
+  in der ersten Minute (nach den 5 Litern) nur noch 2 Liter (wegen
+  der Ventilschließung) in den Spülkasten fließen. Gehen Sie weiter
+  davon aus, dass der Kasten bei 10 Litern ganz voll ist und auch wird
+  bei 10 Litern das Ventil ganz geschlossen sein (= Sättigungsgrenze).
+\TRAINER{Skizze mit zwei Bereichen $f_1$ bis Eine Minute 40 Sekunden
+  (= $\frac53$ Minuten) und $f_2$ ab $\frac53$ Minuten; jetzt erst
+  beginnt das beschränkte Wachstum.}%% END Trainer
+  
+\item Geben Sie die beiden Funktionsgleichungen der ersten Teilaufgabe
+  an: Erstens die
+  lineare Füllung ($f_1$) bis zu den 5 Litern; zweitens das beschränkte
+  Wachstum ($f_2$) nach den 5 Litern.
+  
+  \TRAINER{Bis $\frac53$ Minuten: $$f_1(t) = 3t$$
+  Ab $\frac53$ Minuten: $$f_2(t) = 10 -
+  5\cdot{}\left(\frac35\right)^{t-\frac53}$$
+  Machen Sie unbedingt die Probe für 0', für 1'40'' und für 2' 40''
+  um die $t-\frac53$ im Exponenten zu verstehen!}
+  
+\item Geben Sie für die erste Teilaufgabe an wie viele Liter im
+  Spülkasten sind nach
+  \begin{enumerate}
+    \item einer Minute \TRAINER{ 3 Liter}
+    \item zwei Minuten \TRAINER{ $\approx 5.783$ Liter}
+    \item zehn Minuten \TRAINER{ $\approx 9.929$ Liter}
+  \end{enumerate}
+
+\item Wann sind 9 Liter im Kasten?
+  \TRAINER{$$f_2(t) = 9$$
+$$ 9 = 10-5\cdot{}\left(\frac35\right)^{t-\frac53}$$
+$$ -1 = -5\cdot{}\left(\frac35\right)^{t-\frac53}$$
+$$ 1 = 5\cdot{}\left(\frac35\right)^{t-\frac53}$$
+$$ 0.2 = \left(\frac35\right)^{t-\frac53}$$
+$$ \log_{\frac35}(0.2) = t-\frac53$$
+$$ \log_{\frac35}(0.2) + \frac53= t \approx 4.871 \textrm{min.}
+    \approx 4'49.04''$$
+
+  }%% END TRAINER
+  
+\end{bbwAufgabenBlock}
+
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\bbwActAufgabenNr{} \textbf{Kondensatorladung}\par
+Wird ein Kondensator mit Kapazität $C$ (in Farad) an einer Spannung
+$U_0$ (in Volt) über einen Vorwiderstand $R$ (in Ohm) aufgeladen, so
+beschreibt die Spannung im Kondensator $U_C(t)$ ein beschränktes
+Wachstum.
+
+Es gilt:
+
+$$U_C(t) = U_0\left(1-\e^{-\frac{t}{R\cdot{}C}}\right)$$
+
+Dabei sind gegeben:
+
+Die Ladungsspannung $U_0 = 9$ V.
+
+Der Vorwiderstand $R = 470$ Ohm.
+
+Die Kapazität $C = 0.002$ Farad.
+
+Die Ladungszeit $t$ wird in Sekunden gemessen.
+
+\begin{bbwAufgabenBlock}
+\item Wie viel Ladung ist im Kondensator nach 2 Sekunden?
+
+  $$U_C(2) =
+  \LoesungsRaumLang{9\cdot{}\left(1-\e^{-\frac{2}{470\cdot{}0.002}}\right)\approx
+  7.9280 \textrm{ V}}$$
+
+\item Wann ist der Kondensator auf 8.9 Volt aufgeladen?
+
+  \TRAINER{
+  $$8.9 = 9\cdot\left(1-e^{-\frac{t}{470\cdot{}0.002}}\right)$$
+
+  $$\frac{8.9}{9} = 1 - e^{-\frac{t}{470\cdot{}0.002}}$$
+
+  $$1 - \frac{8.9}{9} = e^{-\frac{t}{470\cdot{}0.002}}$$
+
+  $$ln(1 - \frac{8.9}{9}) = -\frac{t}{470\cdot{}0.002}$$
+
+  $$-ln(1 - \frac{8.9}{9}) = \frac{t}{470\cdot{}0.002}$$
+
+  $$-ln(1 - \frac{8.9}{9})\cdot{}(470\cdot{}0.002) = t $$
+
+  $$t\approx{} 42.30 \textrm{ s}$$
+  }%% END Trainer
+  
+\end{bbwAufgabenBlock}
+
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+
+\newpage

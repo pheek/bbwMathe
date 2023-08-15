@@ -1,0 +1,78 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+
+\subsection{Polynome}\index{Polynom}
+\sectuntertitel{Poly = viel; Nom = Name}
+
+%%\TALSTadBFWA{12}{1.1.4}
+\TadBMTA{18}{1.4}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection*{Lernziele}
+
+\begin{itemize}
+\item Grad, Grundform und Koeffizienten
+\end{itemize}
+
+
+Eine spezielle Form von Termen sind die
+\textbf{Polynome}.\footnote{Siehe dazu auch im Anhang das
+  Summenzeichen auf Seite \pageref{Summenzeichen}.}
+
+
+\begin{beispiel}{Polynom}{}
+  
+  Binom: $T(x) = \LoesungsRaumLang{5x^4 + 3x}$
+  \leserluft{}
+  
+  Trinom: $T(z) = \LoesungsRaumLang{7bz^6 + \sqrt{2}z^3 + 44}$
+  \end{beispiel}
+
+
+\begin{definition}{Polynom}{definition_polynom}
+  Unter einem \textbf{Polynom} verstehen wir einen Term in einer Variable
+  $T(x)$ in der Gestalt:
+
+  \begin{tabular}{rrlllll}\index{$\sum{}$ Summe} 
+   $T({\color{red}x}) = \sum\limits_{{\color{blue}i}=0}^{n}{{\color{ForestGreen}a}_{\color{blue}i}{\color{red}x}^{\color{blue}i}}$ &=& ${\color{ForestGreen}a}_{\color{blue}0}$ &+ ${\color{ForestGreen}a}_{\color{blue}1}{\color{red}x}$ &+ ${\color{ForestGreen}a}_{\color{blue}2}{\color{red}x}^{\color{blue}2}$ &+ $...$ &+ ${\color{ForestGreen}a}_{\color{blue}n}{\color{red}x}^{\color{blue}n}$\\
+    &(=& ${\color{ForestGreen}a}_{\color{blue}0}{\color{red}x}^{\color{blue}0}$ &+ ${\color{ForestGreen}a}_{\color{blue}1}{\color{red}x}^{\color{blue}1}$ &+ ${\color{ForestGreen}a}_{\color{blue}2}{\color{red}x}^{\color{blue}2}$ &+ $...$ &+ ${\color{ForestGreen}a}_{\color{blue}n}{\color{red}x}^{\color{blue}n}$)
+\end{tabular}
+
+    \end{definition}
+Dabei bezeichnet n ($\in \mathbb{N}$) den \textbf{Grad} des Polynoms,
+während die $a_i$ Koeffizienten in $\mathbb{R}$ sind.
+
+\begin{bemerkung}{}{}Bei Polynomen kommt die Variable weder im Nenner, noch im
+  Exponenten, noch unter einer Wurzel vor.\end{bemerkung}
+
+\subsection{Nomenklatur}
+Polynome ersten Grades (\zB $ 3x-1$) nennen wir \textbf{lineare}
+Polynome\index{Polynom!lineares}.
+
+\GESO{Weitere Definitionen zu \textit{quadratischen} und
+  \textit{kubischen} Polynomen finden wir im Buch \cite{marthaler21alg}
+  auf Seite 19.}
+
+\textbf{Achtung} Kein Polynom ist $x^2 - \sqrt{x}$, denn $x$ kommt in
+der Wurzel vor. Ebensowenig ist $x - \frac{5}{x^2}$ ein Polynom, denn
+es lässt sich nicht in die Grundform verwandeln.
+\newpage
+
+
+\subsection{Beispiele}
+
+%%\renewcommand{\arraystretch}{2}
+\begin{bbwFillInTabular}{|r|c|l|}\hline
+\multirow{2}{*}{$3yx^2 + 3x$} & Binom  in $x$ & $(3y)\cdot{}x^2 + 3\cdot{}x^1$\\\cline{2-3}
+                              & Binom  in $y$ & $(3x^2)\cdot{}y^1 + (3x)\cdot{}y^0$\\\hline
+$3m$                    & \LoesungsRaum{Monom in $m$} & \LoesungsRaumLang{$3\cdot{} m^1$}\phantom{xxxxxxxxxxxxxxxx}\\\hline
+$4m^2 + 3m$             & \LoesungsRaum{Binom  in $m$} & \LoesungsRaumLang{$4\cdot{}m^2 + 3\cdot{} m^1$}\\\hline
+$5t^2 + 2$              & \LoesungsRaum{Binom  in $t$} & \LoesungsRaumLang{$5\cdot{}t^2 + 2\cdot{}t^0$}\\\hline
+\multirow{3}{*}{$5a^2 + 4am +2rm + m^3$} & \LoesungsRaum{Trinom in $a$} & \LoesungsRaumLang{$5\cdot{}a^2 + 4m\cdot{}a^1 + (2rm+m^3)\cdot{}a^0$}\\\cline{2-3}
+                        & \LoesungsRaum{Trinom in $m$} & \LoesungsRaumLang{$1\cdot{}m^3 + (4a+2r)\cdot{}m^1 + 5a^2\cdot{}m^0$}\\\cline{2-3}
+                        & \LoesungsRaum{Binom  in $r$} & \LoesungsRaumLang{$2m\cdot{}r^1 + (5a^2+4am+m^3)\cdot{}r^0$}\\\hline
+\end{bbwFillInTabular} 
+
+\subsection*{Aufgaben}
+%%\TALSAadBMTA{13}{10 und 11}
+\AadBMTA{25}{30. a) c) e) f)}

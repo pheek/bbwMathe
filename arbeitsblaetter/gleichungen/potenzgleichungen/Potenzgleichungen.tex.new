@@ -1,0 +1,175 @@
+\input{bbwLayoutPage}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amssymb} %% für \blacktriangleright
+\renewcommand{\metaHeaderLine}{Potenzgleichungen}
+\renewcommand{\arbeitsblattTitel}{(BMS)}
+
+\begin{document}%%
+\arbeitsblattHeader{}
+
+
+\section{Ganzzahlige Exponenten}
+\small{Nach einem Arbeitsblatt von M. Rohner.}
+
+
+\subsection{Mehrere Lösungen ?}
+Bestimmen Sie die Lösungsmenge für die Variable $x$:
+
+%%\newcommand{\aufgabeML}[2]{$#1$ ... $#2$}
+
+\begin{bbwAufgabenBlock}
+
+\item $x^4=81$ \hspace{10mm} $\lx = \LoesungsRaumLang{\{-3; 3\}}$\TRAINER{\\$x=\pm\sqrt[4]{81}$}\abplz{6}
+
+\item
+ $4x^6=256$ \hspace{10mm} $\lx=\LoesungsRaumLang{\{-2; 2\}}$
+ \TRAINER{\\$|: 4:  x^6 = 64 \Longrightarrow x = \pm\sqrt[6]{64}$}\abplz{6}\noTRAINER{\newpage}
+
+\item
+ $-x^4=16$ \hspace{10mm} $\lx=\LoesungsRaumLang{\{\} \text{ (keine
+ Wurzeln aus negativen Zahlen) }}$
+ \TRAINER{\\$|: \cdot{}(-1) : x^4 = -16$}\abplz{6}
+
+\item
+ $x^3=64$ \hspace{10mm} $\lx=\LoesungsRaumLang{\{+4\} }$
+ \TRAINER{\\$x = +\sqrt[3]{64}$}\abplz{6}
+
+\item
+ $-x^3=27$ \hspace{10mm} $\lx=\LoesungsRaumLang{\{-3\} }$
+ \TRAINER{\\$\Longrightarrow x^3 = -27 \Longrightarrow x = -\sqrt[3]{27}$}\abplz{6}\noTRAINER{\newpage}
+
+\item
+ $\frac56 x^3 = \frac{50}{60}$ \hspace{10mm} $\lx=\LoesungsRaumLang{\{+1\}  }$
+ \TRAINER{\\$\frac56 x^3 = \frac56 \text{ durch } \frac56 \text{ teilen: } x^3 = 1$}\abplz{6}
+
+\end{bbwAufgabenBlock}
+\noTRAINER{\newpage}
+
+
+
+\subsection{Erst umformen}
+Lösen Sie die folgenden Potenzgleichungen, indem Sie diese zuerst auf eine einfache Form (wie oben) bringen.
+
+Berechnen Sie die Lösungen von Hand. Wurzeln, die nicht aufgehen
+lassen Sie stehen.
+
+
+\begin{bbwAufgabenBlock}
+
+\item
+ $x^4-162 = 0$ \hspace{10mm} $\lx=\LoesungsRaumLang{\{-\sqrt[4]{162}; +\sqrt[4]{162}\}}$
+ \TRAINER{\\$x^4 = 162 \Longrightarrow x
+= \pm\sqrt[4]{162}$}\abplz{6}
+
+\item
+ $(x-3)^4 - 16 = 0$ \hspace{10mm} $\lx=\LoesungsRaumLang{\{1; 5\}}$
+ \TRAINER{\\$\textrm{1. + 16; 2. } \pm \sqrt[4]{16} : x-3=\pm 2; x=3\pm 2$}\abplz{6}\noTRAINER{\newpage}
+
+\item
+ $5(x-2)^3 - 135 = 0$ \hspace{10mm} $\lx=\LoesungsRaumLang{\{5\}}$
+ \TRAINER{\\$(x-2)^3 = 27$}\abplz{6}
+
+\item
+ $3(x+2)^3 + 24 = 0$ \hspace{10mm} $\lx=\LoesungsRaumLang{\{-4\}}$
+ \TRAINER{\\$x+2 = -\sqrt[3]{8}$}\abplz{6}
+
+\item
+ $15-(2-x)^6 = 5$ \hspace{10mm} $\lx=\LoesungsRaumLang{\{2-\sqrt[6]{10}; 2+\sqrt[6]{10}\}}$
+ \TRAINER{\\$10=(2-x)^6\Longrightarrow
+x=2\pm \sqrt[6]{10} $}\abplz{6}
+
+\end{bbwAufgabenBlock}
+
+\noTRAINER{\newpage}
+
+\subsection{Längere Umformungen}
+
+Die folgenden Aufgaben geben noch etwas mehr zum Umformen. Bestimmen
+Sie die Lösungsmenge für die Variable $x$ (berechnen Sie die
+Lösungsmenge wieder von Hand und lassen Sie irrationale Wurzeln stehen):
+
+\begin{bbwAufgabenBlock}
+\item
+ $\frac{x^7-5}{2} + \frac34 = 1$ \hspace{10mm} $\lx=\LoesungsRaumLang{\{\sqrt[7]{\frac{11}2}\}}$
+ \TRAINER{\\$|\cdot{}2\\
+ x^7-5 +\frac32 = 2 |-\frac32\\
+ x^7-5=0.5|+5\\
+ x^7=5.5=\frac{11}2$}\abplz{6}
+
+\item
+ $(x+1)^3 = 3\cdot{}(x+1)^2 - 3x - 4x^3 + 4$ \hspace{10mm} $\lx=\LoesungsRaumLang{\{\sqrt[3]{\frac65\}}}$
+ \TRAINER{\\$\text{\\binome ausmultiplizieren:}\\
+ x^3+3x^2+3x+1 = 3(x^2+2x+1) - 3x -4x^3+4\\
+ x^3  + 3x^2 + 3x + 1 = 3x^2 + 6x + 3 -3x -4x^3 +4 | \text{ (zusammenfassen) }\\
+ 5x^3 = 6 | : 5\\
+ x^3 =\frac65$}\abplz{6}
+
+\end{bbwAufgabenBlock}
+\newpage
+
+\section{Spezielle Exponenten}
+\subsection{Negative Exponenten}
+
+Berechnen Sie die Lösungsmengen von Hand und lassen Sie allfällige
+Wurzeln stehen.
+
+\begin{bbwAufgabenBlock}
+\item
+ $x^{-3}=7$ \hspace{10mm} $\lx=\LoesungsRaumLang{\{\sqrt[3]{\frac17}\}}$
+ \TRAINER{\\
+ $\frac{1}{x^3} = 7 | \text{(Kehrwert)}\\
+ x^3=\frac17
+ $}\abplz{6}
+
+\item
+ $x^{-6}+5 = 10$ \hspace{10mm} $\lx=\LoesungsRaumLang{\{-\sqrt[6]{\frac15}; +\sqrt[6]{\frac15}\}}$
+ \TRAINER{\\$x=\pm\sqrt[6]{\frac15}$}\abplz{6}
+\noTRAINER{\newpage}
+
+
+\item
+ $(x-8)^{-3} - 6 = 1$ \hspace{10mm} $\lx=\LoesungsRaumLang{\{8+\sqrt[3]{\frac17}\}}$
+ \TRAINER{\\+6\\
+ $(x-8)^{-3}=7 | (\text{ Kehrwert } )\\
+  (x-8)^3 = \frac17 | \sqrt[3]{}\\
+  x-8 = \sqrt[3]{\frac17} | +8
+  $}\abplz{6}
+
+
+\item
+ $(x+4)^{-2} + 3 = 12$ \hspace{10mm} $\lx=\LoesungsRaumLang{\left\{-\frac{13}3; -\frac{11}3\right\}}$
+ \TRAINER{\\$(x+4)^2 = \frac19\\
+ x = -4 \pm \sqrt{\frac19}$}\abplz{6}
+
+\end{bbwAufgabenBlock}
+\noTRAINER{\newpage}
+
+
+
+\subsection{Rationale Exponenten}
+
+\begin{bbwAufgabenBlock}
+\item
+ $x^\frac14 = 6$ \hspace{10mm} $\lx=\LoesungsRaumLang{\{1296\}}$
+ \TRAINER{\\$x=6^4$}\abplz{6}
+
+\item
+ $(x-3)^\frac15=3$ \hspace{10mm} $\lx=\LoesungsRaumLang{\{246\}}$  
+ \TRAINER{\\$x=3+3^5$}\abplz{6}
+\noTRAINER{\newpage}
+
+\item
+ $(x-5)^{\frac13} +4 = 5$ \hspace{10mm} $\lx=\LoesungsRaumLang{\{6 \}}$
+ \TRAINER{\\$(x-5)^{\frac13} +4 = 5 | -4\\
+   (x-5)^{\frac13} = 1 | X^3\\
+   x-5 = 1^3 
+$}\abplz{6}
+
+\end{bbwAufgabenBlock}
+
+
+
+\end{document}

@@ -1,0 +1,74 @@
+\subsection{Binome}
+
+$$x^2+6x+9 = 19$$
+
+Algorithmus:
+
+
+1.
+
+\TNT{2}{Binomische Formel:
+$$(x+3)^2 = 19$$
+}
+
+2.
+\TNT{2}{Wurzel ziehen / 2. Lösung nicht vergessen
+  $$x+3 = \pm \sqrt{19}$$
+  rechts 0  $\Longrightarrow$ Eine Lösung\\
+  rechts <0 $\Longrightarrow$ keine Lösungen
+}
+
+3.
+\TNT{2}{ausgleichen:
+$$x = -3 \pm \sqrt{19}$$
+}
+
+4. 
+\TNT{2}{Lösungsmenge angeben:
+$$\lx = \{-3-\sqrt{19}; -3+\sqrt{19}\} \approx \{-7.3589; 1.3589\} $$
+}
+
+Bemerkung
+\TNTeop{Sackgasse:
+
+Hinweis: Beidseitig -9 ist nicht falsch, führt hier jedoch in eine Sackgasse:
+
+$$x^2 +6x = 10\, ???$$
+
+
+
+}
+\newpage
+
+\TRAINER{ganz selbständig}
+
+$$x^2 -10x + 25 = 17$$
+\TNT{7.2}{
+$$(x-5)^2 = 17$$
+
+$$\Longrightarrow$$
+
+$$x-5 = \pm \sqrt{17}$$
+
+$$\Longrightarrow$$
+
+$$x=5\pm\sqrt{17}$$
+
+$$\Longrightarrow  \lx = \{5-\sqrt{17}; 5+\sqrt{17}\}$$
+
+
+}
+
+
+$$x^2 -4x + 4 = -16$$
+\TNTeop{
+$$(x-2)^2 = -16$$
+$$x-2 = \pm\sqrt{-16}$$
+
+$$\Longrightarrow  \lx = \{\}$$
+
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage

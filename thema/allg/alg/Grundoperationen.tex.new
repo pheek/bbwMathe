@@ -1,0 +1,137 @@
+%%
+%%
+\newpage
+\section{Grundoperationen}\index{Grundoperationen}
+\renewcommand{\bbwAufgabenBlockID}{A1G}
+\sectuntertitel{Im Grunde ganz einfach?}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+\begin{itemize}
+\item Addition\index{Addition}, Subtraktion\index{Subtraktion}
+\item Multiplikation\index{Multiplikation}, Ausmultiplizieren\index{ausmultiplizieren}
+\item Distributivgesetz\index{Distributivgesetz},
+  Assoziativgesetz\index{Assoziativgesetz},
+  Kommutativgesetz\index{Kommutativgesetz}
+\end{itemize}
+
+%%\TALSTadBFWA{15}{1.2}
+\TadBMTA{28}{2}
+%%\TALSTadBMTA{28}{2}
+\newpage
+
+\subsection{Addition und Subtraktion}\index{Addition}\index{Subtraktion}
+\begin{beispiel}{}{}
+%%  $$x^2-((x^3-x^2)-(-(-x+x^2)-(x^2-x^3)))$$
+$$-bx-(-bx^2+((xb-2ax)-(2bx-x^2b))+3ax)$$
+\end{beispiel}
+
+\TNT{10}{\bbwCenterGraphic{17cm}{allg/alg/img/KlammernLoesen.png}}%% END TNT
+
+Regeln:
+\begin{itemize}
+\item Klammern werden von innen nach außen aufgelöst.
+\item Negative Vorzeichen vor Klammern wechseln die Vorzeichen der
+      Summanden innerhalb der Klammer.
+\item Es können nur gleiche Variable (bzw. Produkte von Faktoren)
+      addiert (bzw. subtrahiert) werden: $ab^2 + a^2b + b^2a = 2ab^2+a^2b$.
+%%\item Gleichwertige Operationen\footnote{Zum Beispiel alles Minus und Plus oder aber zum Beispiel alles \textit{Punkt}-Operationen (Produkt/Quotient).} werden von links nach rechts \textit{geklammert}:
+%%  $$10-4+5 = (10-4) + 5 \ne 10-(4+5)$$
+\end{itemize}
+
+
+\subsection*{Aufgaben}
+%%\GESOAadBMTA{34}{1. a) c) e) g), 2. a) e), 3. b), 5. a) f) und 6. d) h)}
+%%\TALSAadBMTA{15}{19.}
+\GESO{\olatLinkArbeitsblatt{Grundoperationen [A1G]}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/105796961619595}{1. und 2.}}
+\TALS{\olatLinkArbeitsblatt{Grundoperationen [A1G]}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/105796961688601}{1. und 2.}}
+
+
+\newpage
+\subsection{Multiplikation}\index{Multiplikation}
+\TadBMTA{29}{2.2}
+%%\TALS{Theorie im Buch \cite{frommenwiler17alg} S. 16 Kap. 1.3}
+
+Für die Addition und die Multiplikation gelten die folgenden
+Gesetze:
+
+
+
+\begin{gesetz}{}{}
+\begin{itemize}
+%%\item  Assoziativgesetz: $a\cdot(b\cdot{}c) = (a\cdot b)\cdot c$
+\item Kommutativgesetz:  $a\cdot b = b \cdot a$
+\item Distributivgesetz\footnote{lat. \textit{\textbf{distribuere}} = verteilen}:\\
+  $a\cdot (b+c) = a\cdot b + a\cdot c$\\
+  $a\cdot (b-c) = a\cdot b - a\cdot c$\\
+%%  $(a+b)\cdot c = ac + bc$\\
+%%  $(a-b)\cdot c = ac - bc$\\
+%%  $(a+b):c = a:c + b:c$\\
+%%  $(a-b):c = a:c - b:c$\\
+  
+  \end{itemize}
+\end{gesetz}
+
+\subsubsection{Distributivgesetz}
+
+\youtubeLink{https://www.youtube.com/watch?v=HVk43UypIdY}{Distributivgesetz}
+\TNTeop{Platz für graphischen Beweis: a(x+y) = ax + ay}
+\newpage
+
+\subsubsection{Ausmultiplizieren}\index{ausmultiplizieren}
+Beim Ausmultiplizieren wird jeder Summand in der Klammer mit dem
+Faktor vor (bzw. nach) der Klammer multipliziert.
+\begin{beispiel}{}{}
+
+  $4\cdot (x + 5) =\LoesungsRaumLang{4\cdot x + 4\cdot 5 = 4x + 20}$
+\end{beispiel}
+
+\begin{beispiel}{}{}
+%%  \noTRAINER{$$(x + 7)\cdot(8-y) = x\cdot(8-y) + 7\cdot(8-y) =
+%%  8x-xy+56-7y$$}\TRAINER{\bbwCenterGraphic{15cm}{allg/alg/img/DistributivRechts.png}}
+%%oder
+\TRAINER{\\}
+  $$(x + 7)\cdot(8-y) = \LoesungsRaumLang{8x+56-xy-7y}$$
+
+  \TRAINER{\par Jeden
+  Summanden der ersten Klammer mit jedem Summanden der zweiten
+  Klammer multiplizieren}
+\end{beispiel}
+
+\newpage
+
+\subsubsection{Achtung}
+Auch wenn die folgenden Ausdrücke sehr ähnlich aussehen, so
+handelt es sich beim ersten um eine \textbf{Differenz} und bei den anderen um
+ein \textbf{Produkt}\TRAINER{ (Genau genommen um die Gegenzahl eines
+Produktes) }!
+
+$$10-(x-4) =\LoesungsRaum{14-x}$$
+
+$$-10(x-4) = \LoesungsRaum{-10x + 40}$$
+
+$$-10(x\cdot{}(-4)) = \LoesungsRaum{40x}$$
+
+Diese Unterschied wird auf dem Taschenrechner besonders gut deutlich:
+
+\tiprobutton{7}\tiprobutton{minus}\tiprobutton{3}  \tiprobutton{enter}  \LoesungsRaumLang{$ 7 - 3 = 4$}
+
+\vspace{3mm}
+\tiprobutton{7}\tiprobutton{neg}\tiprobutton{3} \tiprobutton{enter}  \LoesungsRaumLang{$ 7\cdot{}(-3) = -21$}
+
+
+\subsubsection{Referenzaufgabe}
+$$3ab-(x-a(2-b))\cdot{}3$$
+
+\TNTeop{$$3ab-(x-2a+ab)\cdot{}3$$
+$$3ab - (3x -6a +3ab)$$
+$$3ab - 3x +6a -3ab$$
+$$6a-3x$$}
+\newpage
+
+\subsection*{Aufgaben}
+%%\olatLinkArbeitsblatt{Grundoperationen [A1G]}{\GESO{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/105796961619595}\TALS{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/105796961688601}}{3., 4. und 5.}
+\GESO{\olatLinkArbeitsblatt{Grundoperationen [A1G]}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/105796961619595}{3., 4. und 5.}}
+\TALS{\olatLinkArbeitsblatt{Grundoperationen [A1G]}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/105796961688601}{3., 4. und 5.}}
+%%\aufgabenFarbe{Aufgaben zu Grundoperationen im OLAT Aufg. [A1G] 3., 4. und 5.}
+\newpage

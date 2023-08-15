@@ -1,0 +1,436 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%% 2020 Systematik verbessert
+%%
+
+\section{Lineare Funktionen}\index{Funktion!lineare}
+\index{affin-lineare Funktionen}\label{lineare_funktionen}
+\sectuntertitel{$f: \mathbb{R} \rightarrow \mathbb{R}$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item Begriff «Lineare Funktion»
+\item Darstellungen (Wertetabelle, Funktionsgleichung, Graph)
+\item Charakteristische Punkte\index{Punkt!charakteristischer}
+  \begin{itemize}
+  \item
+    y-Achsenabschnitt (Ordinatenabschnitt)
+  \item Nullstelle
+  \end{itemize}
+\item Steigung
+\TALS{\item Taschenrechner: Darstellung von Graphen}
+\end{itemize}
+
+%%Theorie:
+%%\TALS{(\cite{frommenwiler17alg} S.170 (Kap. 3.3))}
+%%\GESO{(\cite{marthaler21alg}       S.237 (Kap. 14))}
+
+
+\GESO{\matheNinjaLink{Lineare Funktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/108030887418864}}
+\TALS{\matheNinjaLink{Lineare Funktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/108030908044855}}
+
+\TadBMTA{237}{14}
+
+\newpage
+
+\subsection{Einstiegsbeispiel Taxiunternehmen}
+Taxiunternehmen «A» hat eine Grundgebühr von CHF 10.- und kostet
+danach CHF 0.60 pro gefahrenen Kilometer.
+
+Taxiunternehmen «B» hat eine Grundgebühr von CHF 6.- und kostet
+danach CHF 0.90 pro gefahrenen Kilometer.
+
+Ab bzw. bis wo lohnt sich das Unternehmen «A» bzw. «B»?
+
+  Zeichnen Sie ein Koordinatensystem. $x$-Achse = km; $y$-Achse = CHF.
+  (Einteilung je ca. 20 Einheiten im 1. Quadranten.
+
+\TRAINER{%%
+    \bbwCenterGraphic{14cm}{allg/funktionen/img/Taxiunternehmen.png}
+
+  Ablesen bei ca. 13-14 km.
+
+  Rechnerisch:
+
+  $$A(x): 10\text{[CHF]}
+  +x\text{[km]}\cdot{} 0.60 \left[\frac{\text{CHF}}{\text{km}}\right] $$
+  $$B(x): 6 +x \cdot{} 0.90$$
+  Gleichstand bei:
+  $$A(x) = B(x)$$
+  $$10+0.6x = 6+0.9x$$
+  Lösung:
+  $$x = 13.\overline{3} \text{km}$$
+}%% END TRAINER
+\noTRAINER{%
+    \bbwCenterGraphic{14cm}{allg/funktionen/img/LeerFuerTaxi.png}%
+}%% end noTRAINER
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Taschenrechner}\index{Taschenrechner!Funktionen}
+
+\GESO{
+  Mit der ``TABLE''-Funktion auf Ihrem Taschenrechner lassen sich Wertetabellen ganz einfach erstellen.
+  Füllen Sie eine Wertetabelle zur Funktion $f: y=\frac{3}{4}x  - 1.5$ aus und zeichnen Sie die Gerade in ein rechtwinkliges Koordinatensystem:
+
+  \begin{tabular}{l|c|c|c|c|c|c|c}
+    $x$ & -2 & -1 & 0 & 1 & 2 & 3 \\
+    $y$ & \LoesungsRaumKurz{-3}   & \LoesungsRaumKurz{-2.25}   & \LoesungsRaumKurz{-1.5}  & \LoesungsRaumKurz{-0.75}  & \LoesungsRaumKurz{0}  &  \LoesungsRaumKurz{0.75} \\
+  \end{tabular}
+
+
+  \bbwGraph{-4}{4}{-4}{2}{
+    \TRAINER{\bbwFunc{0.75*\x - 1.5}{-2.5:3.5}}
+  }%% END bbw Graph
+  %%\noTRAINER{\bbwGraph{-4}{4}{-4}{2}{}}
+  %%\TRAINER{\bbwFunction{-4}{4}{-4}{2}{0.75*\x - 1.5}{-2.5:3.5}}  
+}%% END GESO
+
+\TALS{
+  Erstellen Sie einen Graphen und definieren Sie die Funktion $f1$ wie
+  folgt:
+
+  $$f1(x) : = \frac{3}{4}x - 1.5$$
+
+  Mit CTRL-T (Tabelle mit geteiltem
+  Bildschirm) erscheint sofort auch die Wertetabelle.
+
+  \begin{tabular}{l|c|c|c|c|c|c|c}
+    $x$ & -2 & -1 & 0 & 1 & 2 & 3 \\
+    $y$ & \LoesungsRaumKurz{-3}   & \LoesungsRaumKurz{-2.25}   & \LoesungsRaumKurz{-1.5}  & \LoesungsRaumKurz{-0.75}  & \LoesungsRaumKurz{0}  &  \LoesungsRaumKurz{0.75} \\
+  \end{tabular}
+
+  \bbwGraph{-4}{4}{-4}{2}{
+    \TRAINER{\bbwFunc{0.75*\x - 1.5}{-2.5:3.5}}
+  }%% END bbw Graph
+
+}%% END TALS
+
+\newpage%%
+
+\subsection{Definition der linearen Funktion}\index{Lineare Funktion!Definition}
+
+\begin{definition}{Lineare Funktion}{}
+  Eine Funktion $f: x\mapsto f(x)$ von $\mathbb{R}$ nach $\mathbb{R}$ heißt
+\textbf{linear}\index{lineare Funktion}, wenn sie in der Grundform
+$$f(x) = y=a\cdot{}x + b$$
+mit $a$ und $b$ in $\mathbb{R}$ dargestellt werden kann.
+\end{definition}
+
+
+Beispiele:
+
+\vspace{3mm}
+\hrule
+\vspace{3mm}
+
+$$f(x) = y = \LoesungsRaumLang{4x + 1.5}$$
+(Hier ist $a=\LoesungsRaum{4}$ und $b=\LoesungsRaum{1.5}$.)
+
+\vspace{3mm}
+\hrule
+\vspace{3mm}
+
+$$f(x) = y = \LoesungsRaumLang{-x}$$
+(Hier ist $a=\LoesungsRaum{-1}$ und $b=\LoesungsRaum{0}$.)
+
+Ist $b=0$, so sprechen wir auch von einer Proportionalität.
+
+\vspace{3mm}
+\hrule
+\vspace{3mm}
+
+$$f(x) = y = \LoesungsRaumLang{-0.6}$$
+(Hier ist $a=\LoesungsRaum{0}$ und $b=\LoesungsRaum{-0.6}$.)
+
+Ist $a=0$, so sprechen wir auch von der konstanten Funktion.
+
+\vspace{3mm}
+\hrule
+
+\subsection*{Aufgaben}
+%%\GESOAadBMTA{250}{6. a) b)}
+
+\GESO{\olatLinkArbeitsblatt{Lineare
+    Funktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/102901171745363}{1. Funktionen skizzieren}}
+\TALS{\olatLinkArbeitsblatt{Lineare
+    Funktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/106131926046623}{1. Funktionen skizzieren}}
+
+
+\newpage%%
+
+
+\subsection{Charakteristiken}
+%%
+%%\subsection{Charakteristische Punkte}\index{Punkte!charakteristische}\index{charakteristische Punkte}
+Jede lineare\footnote{
+  Die linearen Funktionen werden eingeteilt in die \textbf{Proportionalitäten} für $b=0$ und in die \textbf{affinen Abbildungen} für $b\ne{}0$.} Funktion schneidet irgendwo die beiden\footnote{Ausnahme: Konstante. Eine Konstante $y=b$ schneidet nur die $y$-Achse. Der Spezialfall $y=0$ \textbf{ist} die $x$-Achse.} Achsen. Zeichnen Sie die Funktion $f: y=\frac{1}{2}x  +3$ und notieren Sie die Punkte, wo die x- bzw. die y-Achse von unserer Geraden geschnitten wird:
+
+\vspace{1cm}
+
+Wertetabelle:
+
+
+\begin{tabular}{c|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}}
+   x  & 0 & 1 & 2 & 4 & -4 & \TRAINER{-6}\\\hline
+   y  & \TRAINER{3} & \TRAINER{3.5} & \TRAINER{4}& \TRAINER{5}&\TRAINER{1}&0\\%%
+\end{tabular}
+
+
+\TNT{4}{
+  Die Nullstelle bei $y=0$ wird entweder abgelesen, oder berechnet,
+  indem wir in der Funktionsgleichung $y=\frac12x+3$ den Funktionswert
+  $y=0$ setzen:
+  $$0=\frac12x+3 \Longrightarrow x_0=-6$$
+}
+
+\bbwGraph{-7}{7}{-2}{5}{}
+\newpage
+
+\subsubsection{$y$-Achsenabschnitt}\index{$y$-Achsenabschnitt}\index{Achsenabschnitt!y-}\index{Ordinatenabschnitt}
+\begin{definition}{$y$-Achsenabschnitt}{}
+  Der Parameter $b$ wird $y$-Achsenabschnitt
+(oder Ordinatenabschnitt\index{Ordinatenabschnitt}\footnote{Die
+    $y$-Koordinate eines Punktes wird auch
+    \textbf{Ordinate}\index{Ordinate} und die $x$-Koordinate wird auch
+    \textbf{Abszisse}\index{Abszisse}  genannt.}) genannt.
+  
+Dieser gibt an, in welcher «Höhe» die Gerade die y-Achse schneidet.
+\end{definition}
+
+Wir erhalten den $y$-Achsenabschnitt, indem wir das Funktionsargument $x$
+gleich Null (0) setzen: $x=0$.
+
+Somit wird
+$$y=ax+b$$
+$$y=a\cdot{}0+b$$
+$$y=b$$
+Was uns zeigt, dass der  Punkt $P=(0|b)$ der Geraden immer auf der $y$-Achse liegt.
+
+\subsection*{Aufgaben}
+%%\GESOAadBMTA{250}{6. a) b)}
+
+\GESO{\olatLinkArbeitsblatt{Lineare
+    Funktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/102901171745363}{2. $y$-Achsenabschnitt}}
+\TALS{\olatLinkArbeitsblatt{Lineare
+    Funktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/106131926046623}{2. $y$-Achsenabschnitt}}
+
+
+
+
+\newpage
+
+
+\subsubsection{Steigung}\index{Steigung|textbf}
+  \includegraphics[width=4.5cm]{tals/trig1/img/starkeSteigung.jpg}
+
+Der Parameter $a$ wird Steigung der Geraden genannt. Dies entspricht
+dem $y$-Anstieg\footnote{Bei negativem $a$ sprechen wir von «Gefälle»,
+  Abstieg, Neigung, Senkung, ...} der Geraden pro Einheit in $x$-Richtung ($e_x$):
+
+
+%% Steigungsgraph: Eins nach rechts -> a noch oben (oder -a nach unten)
+\bbwGraph{-4}{4}{-3}{4}{
+	\draw[thick] (-4,-2.5) -- (4, 3.5);
+	\draw[thick,color=blue] (1, 1.25) -- (2  , 1.25);
+	\draw[thick,color=blue] (1, 1.25) -- (1.5, 1.25) node[anchor=north]{${\color{blue}1}$};
+	\draw[thick,color=red ] (2, 1.25) -- (2, 2   );
+	\draw[thick,color=red ] (2, 1.25) -- (2, 1.625   ) node[anchor=west ]{${\color{red}a}$ };
+}
+
+\newpage
+
+Die Steigung $a$ kann aus \textbf{jedem} Steigungsdreieck berechnet werden,
+wozu einfach zwei Punkte auf der Geraden zu verwenden sind:
+
+%% Steigungsgraph: Eins nach rechts -> a noch oben (oder -a nach unten)
+\bbwGraph{-4}{4}{-3}{4}{
+	\draw[thick] (-4,-11/5) -- (4, 13/5);
+	\draw[thick,color=blue] (-2, -1) -- (3,-1);
+	\draw[thick,color=blue] (1, -1.1) node[anchor=north]{${\color{blue}H}$};
+  
+	\draw[thick,color=red] (3, -1) -- (3,2);
+	\draw[thick,color=red] (3, 1.1) node[anchor=west]{${\color{red}V}$};
+
+  \bbwDot{-2,-1}{black}{north}{}
+  \bbwDot{3,2}{black}{north}{}
+  \bbwDot{3,-1}{black}{north}{}
+}
+
+
+Steigt die Gerade in $x$-Richtung an, so ist ${\color{blue}a}$ positiv
+(${\color{blue}a>0}$) {\color{blue} «Steigung»};\index{Steigung}
+fällt die Gerade in $x$-Richtung ab, so ist ${\color{red}a}$ negativ
+(${\color{red}a<0}$) {\color{red} «Gefälle»}.\index{Gefälle}
+
+%% Steigungsgraph: Eins nach rechts -> a noch oben (oder -a nach unten)
+\bbwGraph{-4}{4}{-3}{4}{
+	\draw[thick,color=blue] (-4, -1) -- (4  , 3);
+	\draw[thick,color=blue] (4, 3) node[anchor=north]{${\color{blue}+}$};
+	\draw[thick,color=red ] (-3.5, 2) -> (4, -2);
+	\draw[thick,color=red ] (4, -2) node[anchor=west ]{${\color{red}-}$ };
+}
+\newpage
+
+\begin{rezept}{Finden der Geradensteigung}{}
+Die Steigung $a$ ist:
+$$a=\frac{{\color{red}V}}{{\color{blue}H}}$$
+«Vau durch Haa, das gibt das Ahh!»
+\end{rezept}
+
+\subsubsection*{Herleitung (optional)}
+
+\bbwCenterGraphic{10cm}{allg/funktionen/img/Steigungsdreieck.png}
+
+\TNTeop{
+
+ $$\frac{V}H = \frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} =
+  \frac{f(x_1) - f(x_2)}{x_2-x_1}$$
+
+  $$= \frac{(a\cdot{}x_2 + b) - (a\cdot{}x_1 +b)}{(x_2-x_1)}$$
+  $$= \frac{a\cdot{}x_2 + b - a\cdot{}x_1 -b}{(x_2-x_1)}$$
+  $$= \frac{a\cdot{}x_2 - a\cdot{}x_1 }{(x_2-x_1)}$$
+  $$= \frac{a\cdot{}(x_2 - x_1 )}{(x_2-x_1)}$$
+  $$= a$$
+}%% END TNT eop
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+
+\subsection*{Aufgaben}
+%%\GESOAadBMTA{250}{6. a) b)}
+
+\GESO{\olatLinkArbeitsblatt{Lineare
+    Funktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/102901171745363}{3. Steigung}}
+\TALS{\olatLinkArbeitsblatt{Lineare
+    Funktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/106131926046623}{3. Steigung}}
+\newpage
+
+\subsubsection{Nullstelle}\index{Nullstelle}
+Eine steigende oder fallende lineare Funktion schneidet die $x$-Achse
+in einem Punkt. Dieser Punkt wird \textbf{Nullstelle} genannt.
+
+In der anfänglich untersuchten Funktion $f(x) = \frac12x+3$ schneidet
+der Graph die $x$-Achse bei $-6$. 
+
+\begin{definition}{Nullstelle}{}
+  Eine \textbf{Nullstelle} $x_0$ gibt an, an welcher Stelle der Funktionsgraph die $x$-Achse schneidet.
+\end{definition}
+
+
+Die Nullstelle einer linearen Funktion in ihrer Grundform ist die Lösung der entsprechenden linearen Gleichung (mit
+$y$=0) in ihrer Grundform. Nämlich:
+
+\hrule
+
+a) Lineare Gleichung $$ax+b=0$$
+
+Gesucht \textbf{Lösung} $x$:
+
+$$x = \TRAINER{\frac{-b}{a}}  $$
+
+\hrule
+
+b) Lineare Funktion $$f: y=ax+b$$
+
+Gesucht \textbf{Nullstelle} $x_0$ bei $y_0=0$. Die Gerade schneidet
+die $x$-Achse in der Nullstelle $x_0$ der Geraden.
+
+\begin{gesetz}{Nullstelle}{}
+  Die Nullstelle einer linearen Funktion berechnet sich wie folgt:
+  
+$$x_0 = \frac{-b}{a}$$
+\end{gesetz}
+
+Somit ist der
+Schnittpunkt wie folgt gegeben:
+
+$$N = (x_0|y_0) = (x_0|0) =\left( \frac{-b}{a}\,\, \bigg|\,\, 0 \right) $$
+\newpage
+
+\subsection*{Aufgaben}
+
+\GESO{\olatLinkArbeitsblatt{Lineare Funktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/102901171745363}{4.1 und 4.2}}
+\TALS{\olatLinkArbeitsblatt{Lineare Funktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/106131926046623}{4.1 und 4.2}}
+
+
+\GESO{\olatLinkArbeitsblatt{Lineare Funktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/102901171745363}{4.3 - 4. 7}}
+\TALS{\olatLinkArbeitsblatt{Lineare Funktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/106131926046623}{4.3 - 4.7}}
+%%\AadBMTA{251ff}{10., 23. a) c) und optional 20. (Alkohol im Blut)}
+\newpage
+
+\subsection{Referenzaufgaben}\index{Lineare
+  Funktion!Referenzaufgaben}\index{Referenzaufgaben zu linearen Funktionen}
+
+\GESO{\input{allg/funktionen/ReferenzaufgabeSchnittpunktGESO}}
+\TALS{\input{allg/funktionen/ReferenzaufgabeSchnittpunktTALS}}
+\newpage
+
+\input{allg/funktionen/ReferenzaufgabeParallele}
+
+\subsection*{Aufgaben}
+\GESO{\olatLinkArbeitsblatt{Lineare Funktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/102901171745363}{6. Parallele}}
+\TALS{\olatLinkArbeitsblatt{Lineare Funktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/106131926046623}{6. Parallele}}
+\newpage
+
+\input{allg/funktionen/ReferenzaufgabeEinPunktGegeben}
+\newpage
+
+\input{allg/funktionen/ReferenzaufgabeGeradeDurchZweiPunkte}
+\newpage
+
+\TALS{\input{tals/fct1/ReferenzaufgabeAbstand1}
+\newpage}
+
+\GESO{
+\subsection*{Vermischte Aufgaben zu linearen Funktionen}
+\olatLinkGESOKompendium{3.2}{20ff}{3. bis 26.}
+\newpage
+}%% END GESO
+
+\subsection{Lineare Gleichungen visualisieren\GESO{ (optional)}}\index{Gleichungen!visualisieren}\index{Visualisierung von Gleichungen}
+Wir gehen von der linearen\footnote{Eine Gleichung, bzw. ein Term
+  heißt «linear», wenn die Variable ($x$) nur in der ersten Potenz vorkommt.} Gleichung $$4x+3x -18 + 16x = 5$$ aus.
+
+Bringen wir alle Summanden nach links, so erhalten wir folgende
+Gleichung:
+
+\TNT{2}{$$4x + 3x  -18 + 16x  - 5= 0$$}%% END TNT
+
+
+Schreiben wir dies als Funktion in $x$, so können wir folgende
+Funktion definieren:
+
+$$f(x): x \mapsto y = \TRAINER{4x+3x-18+16x - 5}$$
+
+Stellen wir diese Funktion nun graphisch dar, so ergibt sich folgendes
+Bild:
+
+\TRAINER{\raisebox{-1cm}{\includegraphics[width=7cm]{allg/funktionen/img/FunktionsplotAusGleichung.png}}}
+\noTRAINER{\raisebox{-1cm}{\includegraphics[width=7cm]{allg/funktionen/img/KoordSystemFaktor20.png}}}
+
+
+Die Lösung obiger Gleichung kann nun auf der $x$-Achse ungefähr bei $x=1.0$ abgelesen werden.
+\newpage
+
+\subsection*{Aufgaben}
+%%\TALSAadBFWA{171ff}{601. a) b) c) e) f) 602. b) c) d) 603. b) c)
+%% 604. 605. a) c) e) 606. a) c) 607. c) d) g) 608. a) 609. a) 610. a)
+%% 611. a) 613. a) 616. c) 622. Flächen: 626. 628. und 629.}
+
+\GESO{\olatLinkArbeitsblatt{Lineare Funktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/102901171745363}{7.}}
+\TALS{\olatLinkArbeitsblatt{Lineare Funktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/106131926046623}{7.}}
+
+\GESO{\olatLinkGESOKompendium{3.2}{25}{27.}}
+
+\GESO{
+  Alte Maturprüfungsaufgaben zu linearen Funktionen:
+  
+  \olatLinkArbeitsblatt{Alte Maturprüfungsaufgaben zu linearen Funktionen}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/107461640594784}{05\_Lineare\_Funktionen\_alte\_Prüfungsaufgaben\_GESO.pdf}
+  %%\newpage \input{allg/funktionen/AusAltenMaturapruefungenGESO}
+}%% end GESO
+
+
+\newpage%%

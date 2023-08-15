@@ -1,0 +1,162 @@
+{Vektorbegriff}\index{Vektor}
+
+%%\TALSTadBFWG{175}{4}
+%%Weitere Theorie: S. 176-178, S. 181, S. 187 und S. 189
+\TALSTadBMTG{235}{16.1}
+
+\subsection*{Lernziele}
+\begin{itemize}
+\item Vektor als Repräsentant
+\item Betrag
+\item Richtung
+\item Skalar vs. Vektor
+\end{itemize}
+
+\begin{bemerkung}{Vektor}{}
+  Der Begriff «Vektor» kommt aus dem Lateinischen und bedeutet so viel
+  wie «Träger» oder «Fahrer».
+\end{bemerkung}
+\newpage
+\subsection{Motivation}
+%%\def\mycomyc{cm}
+\bbwCenterGraphic{\defaultTextBreiteCM}{tals/vecg1/img/DreiSchwimmer.png}
+
+Wer erreicht das andere Ufer am raschesten?
+\TNTeop{
+
+  Für die Ufererreichung (Zeit) ist lediglich die «$y$»-Koordinate der Geschwindigkeit
+  zuständig. Daneben rechnen wir erst alles in km / h.
+
+Schwimmer A: $y = 2\cdot{}\sqrt2 $ (km/h) und somit erreicht er
+das andere Ufer nach
+$t=\frac{s}{v}=0.2 : (2\cdot{}\sqrt2) \approx 0.07071 [\text{h}] = 4.24 \text{ min.}$
+
+Schwimmer B: $y = 3 $ (km/h) und somit erreicht er
+das andere Ufer nach
+$t=\frac{s}{v}=0.2 : 3 = 4 \text{ min.}$
+
+Schwimmer(in) C: $y = 3.5\cdot{}\frac{\sqrt{3}}{2}$ (km/h) und somit erreicht sie
+das andere Ufer nach
+$t=\frac{s}{v}=0.2 : (1.75\cdot{}\sqrt{3}) \approx 3.96 \text{ min.}$
+
+}%% END TNTeop
+%%\newpage
+
+
+Wo landen die drei Schwimmer am anderen Ufer?
+
+\TNTeop{
+  Bei allen dreien «addieren» wir die Pfeile. Das entstehende Dreieck
+  ist ähnlich wie ein Dreieck über den ganzen Fluss. $x$ sei der
+  «Drift» nach rechts.
+  
+  Schwimmer A: $\frac{6-2\cdot{}\sqrt{2}}{2\cdot{}\sqrt2}
+  =\frac{x}{0.2} \Longrightarrow x\approx 224 \text{ m}$
+  
+  Schwimmer B: $\frac63 =\frac{x}{0.2} \Longrightarrow x = 400 \text{ m}$
+  
+  Schwimmer(in) C: $\frac{1.75 + 6}{1.75\cdot{}\sqrt3}=\frac{x}{0.2} \Longrightarrow x\approx 511 \text{ m}$
+
+  \bbwCenterGraphic{13cm}{tals/vecg1/img/DreiSchwimmerLoesung.png}
+  
+  }%% END TNTeop
+%%\newpage
+
+\subsection{Freie Vektoren}\index{Freie Vektoren}\index{Vektoren!freie}
+
+\subsubsection{Notation}\index{Notation!Vektor}\index{Vektor!Notation}
+
+Ein Vektor wird entweder mit einem Pfeil über dem Buchstaben
+(${\color{blue}\vec{a}}$) oder aber mit einem Pfeil über zwei
+Punkten (${\color{red}\overrightarrow{{PQ}}}$) angegeben:
+
+\bbwGraphLeer{-3}{6}{-1}{3}{
+\bbwLetter{2,2}{\vec{a}}{blue}
+\draw [->,blue] (1,1) -- (4,2);
+
+\bbwLetter{-1.5,1}{P}{red}
+\bbwLetter{-2.5,3}{Q}{red}
+\draw [->,red] (-1,1) --(-2,3);
+}%% END bbwGraph
+
+
+\subsection{Richtung}\index{Richtung!eines Vektors}
+Die \textbf{Richtung} eines Vektors wird nicht durch die Pfeillänge,
+sondern durch den Strahl ab dem Anfangspunkt durch den Endpunkt des
+Vektors festgelegt: «Wohin die Route führt.»
+
+
+\subsection{Skalar}\index{Skalar}
+Ein \textbf{Skalar} ist eine ungerichtete Größe, wie \zB die 2.5 in
+``2.5 kg''.
+Ein \textbf{Vektor} hingegen hat (mit Ausnahme des Nullvektors) immer
+eine Richtung.
+
+\begin{tabular}{ll}\hline
+  Skalare Größen& Vektorielle Größen\\\hline
+
+  Fläche [a]                   & Wind (Richtung inkl. Geschwindigkeit)\\
+  Volumen [l, $\text{dm}^3$] & Kraft (Richtung und Stärke [N])\\
+  Masse [kg]                   & Gewicht [N]\\
+  Druck [Pa]                   & Strahlen (Licht, $\gamma$)\\
+  Temperatur [K]               & Flussrichtung und Geschwindigkeit
+\end{tabular}
+\newpage
+
+%% Marthaler hat keine entsprechenden einführenden Aufgaben ?
+%%\subsection*{Aufgaben}\
+%%\TALSAadBFWG{178ff}{1., 3. und 4.}
+%%\newpage
+
+
+
+\subsubsection{Repräsentant}\index{Repräsentant!Vektorgeometrie}
+Betrachten Sie die beiden folgenden (freien) Vektoren ${\color{blue} \vec{a}}$ und
+${\color{red}\vec{b}}$, welche beide durch mehrere Repräsentanten\index{Repräsentant!Vektor}
+(Vertreter\index{Vertreter!Vektor}) eingezeichnet sind:
+
+\bbwGraphLeer{-4}{7}{-3}{3}{
+\bbwLetter{3.5,3}{\vec{a}}{blue}
+\draw [->,blue] (1,1) -- (4,2);
+\draw [->,blue] (2,2) -- (5,3);
+\draw [->,blue] (-3.5,-1) -- (-0.5,0);
+\draw [->,blue] (2,0.5) -- (5,1.5);
+\bbwLetter{-1,3}{\vec{b}}{red}
+\draw [->,red] (-1,1) --(-2,3);
+\draw [->,red] (-1,-2) --(-2,0);
+\draw [->,red] (2.5,-0.5) --(1.5,1.5);
+\draw [->,red] (5,-3) --(4,-1);
+\draw [->,red] (7,0.5) --(6,2.5);
+}%% END bbwGraph
+
+Alle {\color{red} roten} Repräsentanten bezeichnen ein und denselben
+\textbf{freien} Vektor. (Analog gilt das für den {\color{blue} blauen} freien Vektor.)
+
+\newpage
+
+
+\subsection{Betrag (Länge) von Vektoren}\index{Betrag!eines Vektors}
+
+
+%%\TALSTadBFWG{176}{4.1}
+\TALSTadBMTG{236}{16.1.2}
+
+
+\begin{definition}{Vektor}{}
+  Ein \textbf{Vektor} besteht aus einer Länge und einer Richtung.
+\end{definition}
+
+
+    \begin{definition}{Länge}{}
+      Ein Vektor $\vec{a}$ von Punkt $A$ nach $B$ hat den Betrag (= Länge)
+
+      $$a = |\vec{a}| = \overline{AB} = \left|\overrightarrow{AB}\right|$$
+    \end{definition}
+
+\TRAINER{meteoblue.com - Wind Map zeigen: Blau = kleiner Betrag,
+  Orange = großer Betrag}
+
+\subsection*{Aufgaben}\
+%%\TALSAadBFWG{178ff}{2.}
+\TALSAadBMTG{245}{1., 2., 3. a) c)}
+\newpage

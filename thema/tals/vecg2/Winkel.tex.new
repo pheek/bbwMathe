@@ -1,0 +1,117 @@
+%% 2020 12 25 ph. g. Freimann
+%%
+\section{Winkel}\index{Winkel!bei Vektoren}
+
+% Weglassen, da nur ein Lernziel und so gibt es mehr Platz auf der Seite
+%\subsection*{Lernziele}
+%\begin{itemize}
+%\item Skalarprodukt
+%\end{itemize}
+
+\subsection{Skalarprodukt}\index{Skalarprodukt}
+
+%%\TALSTadBFWG{201}{4.5}
+\TALSTadBMTG{266}{18}
+\bbwCenterGraphic{5cm}{tals/vecg2/img/skalarprodukt.png}
+
+Herleitung:
+
+\TNTeop{
+  $\vec{b} + \vec{c} = \vec{a} \Longrightarrow   \vec{c} = \vec{a} - \vec{b}$
+
+  $\Longrightarrow   c_x = a_x - b_x \text{ und } c_y = a_y - b_y$
+
+  $a = |\vec{a}|, b=|\vec{b}| \text{ und } c = |\vec{c}|$
+
+  Pythagoras:
+  $c^2 = c_x^2 + c_y^2$
+
+  $a_x-b_x$ anstelle von $c_x$ einsetzen (analog $c_y=a_y-b_y$):
+
+  $c^2 = (a_x-b_x)^2 + (a_y - b_y)^2$
+
+  Wir erinnern an den Cosinussatz: $c^2 = a^2 + b^2 -
+  2ab\cdot{}\cos(\gamma)$
+
+  Setzen wir beide Gleichungen gleich (via $c^2$), so erhalten wir:
+
+  $(a_x-b_x)^2 + (a_y-b_y)^2 = a^2 + b^2 - 2ab\cdot{}\cos(\gamma)$
+
+  $(a_x-b_x)^2 + (a_y-b_y)^2 = \overbrace{a_x^2 + a_y^2}^{|\vec{a}|^2=a^2}
+  + \overbrace{b_x^2 + b_y^2}^{b^2} - 2ab\cdot{}\cos(\gamma)$
+
+  jetzt links ausmultiplizieren:
+  
+  $a_x^2 - 2a_xb_x +b_x^2 + a_y^2 - 2a_yb_y + b_y^2 = a_x^2 + a_y^2 +
+  b_x^2 + b_y^2 - 2ab\cdot{}\cos(\gamma)$
+
+  nun beginnt der Spaß mit dem Wegstreichen:
+
+  $-2a_xb_x - 2a_yb_y = -2ab\cdot{}\cos(\gamma)$
+
+  und noch kürzen mit $-2$:
+  $$ a_xb_x + a_yb_y = ab\cdot{}\cos(\gamma)$$
+  Bem.: Dieser Beweis funktioniert exakt gleich im $\mathbb{R}^3$, es
+  fallen dann fünf weitere Summanden an, von denen sich vier aber auch
+  wieder wegstreichen:
+
+  \texttt{https://www.youtube.com/watch?v=RQ\_7laap-rM}
+  }
+\newpage
+\subsubsection{Gesetze}
+Dies gilt auch in $\mathbb{R}^3$:
+
+\begin{gesetz}{}{}
+  Für zwei Vektoren $\vec{a}$ und $\vec{b}$ gilt:\\
+  $$a_x\cdot{}b_x + a_y\cdot{}b_y  + a_z\cdot{}b_z = |\vec{a}|\cdot{}|\vec{b}|\cdot{}\cos(\gamma)$$
+\end{gesetz}
+ 
+
+Nach obigem Gesetz sind die beiden folgenden Definitionen identisch:
+\begin{definition}{Skalarprodukt im $\mathbb{R}^3$}{}\index{Skalarprodukt}
+  $$\vec{a\vphantom{b}}\circ\vec{b} := a_x\cdot{}b_x + a_y \cdot{} b_y + a_z\cdot{}b_z$$
+oder mit $\gamma$ als Zwischenwinkel von $\vec{a}$ und $\vec{b}$:
+  $$\vec{a\vphantom{b}}\circ\vec{b} := |\vec{a}|\cdot{}|\vec{b}|\cdot{}\cos({\gamma})$$
+\end{definition}
+
+
+\begin{gesetz}{Winkel und
+    Skalarprodukt}{}\index{Skalarprodukt!Zwischenwinkel}
+
+
+  Mit $a=|\vec{\vphantom{b}a}|$ und $b = |\vec{b}|$ gilt:
+  
+  $$\cos(\gamma) = \frac{\vec{a\vphantom{b}}\circ\vec{b}}{a\cdot b}$$
+  bzw.:
+  $$\gamma = \arccos{} \left(\frac{\vec{a\vphantom{b}}\circ\vec{b}}{a\cdot b}\right)$$
+  
+\end{gesetz}
+
+Mit dem Taschenrechner TI nSpire CAS wird das Skalarprodukt mit
+\texttt{dotp(a, b)} berechnet.
+
+\subsection*{Aufgaben}
+\TALSAadBFWG{202}{102. a) d) e), 103. a) c), 104. a) c), 106. a),
+107. a), 108., 109., 110. a), 113.}
+
+\TALSAadBMTG{282ff}{1. a) c) e), 2. a) c) e), 4. a), 7. a) b) c), 8.,
+  10. d), 20.}
+
+
+\newpage
+
+\subsection{Orthogonale Vektoren}\index{orthogonal!Vektor}
+
+\begin{gesetz}{Orthogonale Vektoren}{}
+  Zwei von Null verschiedene Vektoren $\vec{a}$ und $\vec{b}$ sind genau dann
+  \textbf{orthongonal}, wenn das Skalarprodukt der beiden Vektoren
+  Null ergibt.
+
+
+  $$\vec{\vphantom{b}a} \perp \vec{b} \Longleftrightarrow
+  \vec{\vphantom{b}a}\circ{}\vec{b} = 0$$
+\end{gesetz}
+
+
+\subsection*{Aufgaben}
+\TALSAadBFWG{205}{123. b), 124.}

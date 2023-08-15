@@ -1,0 +1,64 @@
+%%
+%% Meta: Boxplot erstellen. Viele Beispiele
+%%
+  
+\input{bbwLayoutSlide}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage{cancel}
+
+\begin{document}%%
+\thispagestyle{fancy}
+\section*{Wie lernen?}
+{\small{Nach einer Idee von M. Rohner @ bbw}}
+\newpage
+Welche Kantone bezeichnen die folgenden Wappen?
+
+\def\wapp#1{\includegraphics[width=25mm]{img/#1.png}}
+
+\begin{tabular}{cccc}
+ 1         & 2         & 3         & 4           \\
+ \wapp{zh} & \wapp{ur} & \wapp{ge} & \wapp{sg}   \\
+ 5         & 6         & 7         & 8           \\
+ \wapp{ag} & \wapp{gr} & \wapp{gl} & \wapp{ju}%%
+ \end{tabular}%%
+%%
+%% implicit newpage because of section
+\section*{Auf\/lösung}
+\begin{tabular}{cccc}
+ 1. Zürich  & 2. Uri        & 3. Genf   & 4. St. Gallen \\
+ \wapp{zh}  & \wapp{ur}     & \wapp{ge} & \wapp{sg}     \\
+ 5. Aargau  & 6. Graubünden & 7. Glarus & 8. Jura       \\
+ \wapp{ag}  & \wapp{gr}     & \wapp{gl} & \wapp{ju}%%
+ \end{tabular}%%
+\newpage
+\section*{Umkehrung}
+Zeichnen Sie die Wappen von
+\begin{itemize}
+\item Zürich
+\item Aargau
+\item Tessin
+\item Freiburg
+\item Schaffhausen
+
+\end{itemize}
+\newpage
+
+\section*{Auf\/lösung}
+\begin{tabular}{ccccc}
+ Zürich    & Aargau    & Tessin     & Freiburg  & Schaffhausen \\
+ \wapp{zh} & \wapp{ag} & \wapp{ti}  & \wapp{fr} & \wapp{sh}
+ \end{tabular}%%
+\newpage
+
+\section*{Lerntipps}
+\begin{itemize}
+\item Möglichst aktiv lernen (tun); nicht bloß anschauen/zuhören
+\item Kontinuierlich: Besser 5 Mal 15 Minuten als zwei Stunden am Stück
+\item Reflektieren, Eigene Fehler verstehen
+\end{itemize}
+
+\end{document}

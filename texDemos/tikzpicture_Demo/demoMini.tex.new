@@ -1,0 +1,22 @@
+\documentclass[twoside,12pt,a4paper]{article}
+
+\usepackage{german}
+
+\usepackage{pgfplots}
+
+\pgfplotsset{width=10cm,compat=1.16}
+
+\usepackage{tikz}
+\usepackage{tkz-euclide} %% Grid
+
+\begin{document}%%
+
+
+\begin{tikzpicture}
+  \draw[thick] (10,10) -- (20,25);
+%%\foreach \x in {-4, ..., -1}  \draw (\x , 2pt) -- (\x , -2pt)  node[anchor=north]{$\x$};
+\end{tikzpicture}
+
+
+
+\end{document}

@@ -1,0 +1,158 @@
+%% Ungleichungen
+%% 2021 - 06 -24 φ@bbw.ch
+
+\section{Ungleichungen}\index{Ungleichungen}\index{Gleichungen!Ungleichungen}
+
+\TadBMTA{112}{7.3}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item Spezielle Äquivalenzumformungen
+\item Lösungsmenge in Intervallnotation
+\item Graphische Lösungsverfahren
+\end{itemize}
+
+\newpage
+\subsection{Einstiegsbeispiel}
+Finden Sie die Lösungsmenge $\lx$:
+
+$$\frac{-3(2x-7) - x}{5} \ge  \frac{-9-x}{5}$$
+
+
+\TNTeop{
+  $\cdot{}5$
+  $$-3(2x-7) -x\ge -9 -x$$
+
+  Erklärung $\cdot5$ (größer/kleiner Zeichen selbst einsetzen lassen):
+  
+  \begin{tabular}{|c|c|}\hline
+    Drei Fälle & $\cdot5$\\
+    $ 7 \ge  3$& $ 35 \ge  15$ (ok)\\\hline
+    $ 7 \ge -1$& $ 35 \ge  -5$ (ok)\\\hline
+    $-2 \ge -7$& $-10 \ge -35$ (ok)\\\hline
+    \end{tabular}
+  
+  Beidseitig $+x$
+  
+  $$-3(2x-7) \ge -9$$
+  $:(-3)$
+
+  $$2x-7 \le 3$$
+  
+  Erklärung $:(-3)$ (größer/kleiner Zeichen selbst einsetzen lassen):
+
+    \begin{tabular}{|c|c|}\hline
+    Drei Fälle & $:(-3)$\\
+    $6 > 3$  & $ -2 < -1$ (ok)\\\hline
+    $6 > -3$ & $ -2 <  1$ (ok)\\\hline
+    $-3 > -6$& $  1 <  2$ (ok)\\\hline
+    \end{tabular}
+
+  
+  $+7$
+  $$2x\le 10$$
+    $:2$
+    $$x\le 5$$
+    Lösungsmenge
+  $$\lx = ]-\infty;5]$$
+}%% End TNTeop
+%%\newpage
+
+  
+\begin{gesetz}{}{}
+  Äquivalenzumformungen bei Ungleichungen.\index{Äquivalenzumformungen!Ungleichungen}
+
+  \begin{itemize}
+	\item Termumformungen (unabhängig links und rechts des Gleichheitszeichens, sofern der Definitionsbereich des Terms nicht verändert wird.)
+	\item $\pm    c\ (c \in \mathbb{R})$
+	\item $\pm    c\cdot{}x^n\ (c \in \mathbb{R})$
+	\item $\cdot\ c\ (c \in \mathbb{R}^+\backslash \{0\})$
+	\item $:      c\ (c \in \mathbb{R}^+\backslash \{0\})$
+\end{itemize}
+
+Bei den folgenden Umformungen dreht sich das Ungleichheitszeichen:
+\begin{itemize}
+	\item $\cdot\ c\ (c \in \mathbb{R}^-\backslash \{0\})$
+	\item $:      c\ (c \in \mathbb{R}^-\backslash \{0\})$
+  \end{itemize}
+  
+  \end{gesetz}
+
+\subsection*{Aufgaben}
+
+\AadBMTA{114}{7. a), 8. a) und 9. a) c)}
+
+\newpage
+\subsection{Quadratische Ungleichungen}
+
+Einstiegsbeispiel:
+
+$$-2x^2 < -6$$
+
+\TNT{6}{
+  1. Gegenzahl
+  $$2x^2 > 6$$
+  2. Durch 2 teilen:
+  $$x^2 > 3$$
+  3. a) positive Wurzel:
+  $$x>\sqrt{3}$$
+  3. b) negative Wurzel:
+  $$x < -\sqrt{3}$$
+
+  4. Lösungsmenge:
+  $$\lx = ]-\infty; -\sqrt{3}] \cup [+\sqrt{3};\infty[$$
+}%% END TNT
+
+
+    
+    \begin{gesetz}{}{}
+      Ein beidseitiges positives und negatives Wurzelziehen bei einer
+      Ungleichung kehrt bei der negativen Variante das
+      Ungleichheitszeichen um.
+  \end{gesetz}
+
+\newpage
+
+
+\subsubsection{Lösung mit Funktionsgraph}
+Wir betrachten wieder $-2x^2 < -6$. Dies ist, wie wir bereits wissen,
+äquivalent zu: 
+$$x^2 > 3$$
+\TNTeop{
+  $$\Longleftrightarrow x^2-3 > 0$$
+  $$\text{mit }f(x) := x^2-3$$
+  $$\Longleftrightarrow f(x) > 0$$
+  Zeichne $f(x)$ und suche die Nullstellen.
+  \bbwCenterGraphic{8cm}{tals/ungl/img/parabel.png}
+
+  Grenzen der Lösungen nun ablesen bei $-\sqrt{3}$ und $+\sqrt{3}$.
+
+  $$\lx = ]-\infty;-\sqrt{3}[ \phantom{...}\cup\phantom{...} ]\sqrt{3};\infty[$$
+}%% END TNTeop
+%%\newpage
+
+%%\subsection*{Aufgaben}
+
+%%\TALSAadBMTA{186}{670.}
+
+
+\subsubsection{Halbgraphische Lösungsmethode (Optional)}
+
+Bsp.:
+
+Für welche $x$ gilt:
+\noTRAINER{$$(2x+2) \cdot{} \left(\frac{x}2 -1.5\right) > 0$$}
+\TRAINER{$$\overbrace{{\color{black}(2x+2)}}^{A(x)}\cdot{}\overbrace{{\color{black}\left(\frac{x}2 -1.5\right)}}^{B(x)}{\color{black} > 0}$$}
+
+\TNT{8}{
+  \bbwCenterGraphic{15cm}{tals/ungl/img/plusminus.png}
+}%% END TNT
+
+$$\lx = \LoesungsRaumLang{]-\infty;-1[ \,\,\,\, \cup \,\,\,\,  ]3; \infty[     }$$
+
+\subsection*{Aufgaben}
+
+\AadBMTA{131}{22. a) c) e)}
+\AadBMTA{184}{32. a) b) e) und 33. a) b) d)}

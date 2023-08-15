@@ -1,0 +1,21 @@
+%%
+%% Meta: Master Document
+%% GESO 1jährig
+%%
+
+\input{bbwLayoutDoc}
+
+\renewcommand{\author}{Philipp G. Freimann}
+\renewcommand{\grafikautor}{Ph. G. Freimann}
+\renewcommand{\authoremail}{philipp.freimann@bbw.ch}
+\renewcommand{\erstellungsdatum}{\versionTALSMajorDate}
+\renewcommand{\docversion}{\versionTALSMajorVSR}
+
+
+%%\renewcommand{\modulnummer}{Arithmetik und Algebra I}
+\renewcommand{\doctitel}{Algebra I}
+\renewcommand{\fachthema}{Terme, Grundoperationen, Faktorisieren}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\defaultScript{tals/aa1/AllTALS}

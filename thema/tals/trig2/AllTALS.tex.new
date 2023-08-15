@@ -1,0 +1,12 @@
+%% TALS Metapackag: Trigo II
+\part{Trigonometrie II}\index{Trigonometrie!II|textbf}
+\renewcommand{\bbwPartID}{TRIG2}
+
+%% Hier noch allg/funktionen/Koordinatensystem einbauen und bei
+%% Funktionen I (Tals) entfernen. Bei GESO ist es bei Funktionen jedoch
+%% gut aufgehoben.
+%% Warum? Der Einheitskreis braucht diese Begriffe.
+\input{allg/funktionen/Koordinatensystem}
+\input{tals/trig2/Einheitskreis}\newpage
+\input{tals/trig2/Bogenmass}\newpage
+\input{tals/trig2/Allgemeines_Dreieck}\newpage

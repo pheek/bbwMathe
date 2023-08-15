@@ -1,0 +1,31 @@
+
+\subsubsection{Quadratische Ergänzung (optional)}\index{quadratische Ergänzung}\index{Ergänzung!quadratische}
+Grundform\TRAINER{ (Normalform ist, wenn $a=1$)}:
+$$2x^2 - 12x - 14 = 0$$
+
+\TNTeop{
+$:2$
+
+$$x^2 -6x - 7 = 0$$
+
+$+ 16$
+
+$$x^2 -6x + 9 = 16$$
+
+Binom
+
+$$(x-3)^2 = 16$$
+
+Wurzel ziehen (Achtung: zwei Lösungen sind möglich):
+
+$$x-3 = \pm 4$$
+
+$+3$
+
+$$x = 3 \pm 4 \Longrightarrow  \lx = \{-1; 7\}$$
+
+   Probe: $-1$ und $7$ einsetzen.
+}%% END TNT eop
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

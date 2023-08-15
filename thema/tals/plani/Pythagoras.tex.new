@@ -1,0 +1,71 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+
+\section{Satz des Pythagoras}\index{Pythagoras!Planimetrie}\index{Satz des Pythagoras!Planimetrie}
+\sectuntertitel{Warum sitzen die Mathematiker im Winter immer in eine
+  Ecke? --- Weil dort bestimmt 90 Grad ist.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\TadBMTG{29}{2.3.2}
+
+\subsection*{Lernziele}
+
+\begin{itemize}
+  \item Formel des Pythagoras
+\end{itemize}
+
+Repetition \ifisALLINONE{\totalref{satzDesPythagoras}}\fi
+\begin{bemerkung}{Pythagoras}{}
+  Im rechtwinkligen Dreieck gilt:
+  $$a^2+b^2=c^2$$
+\end{bemerkung}
+
+%%\TALSAadBFWG{23}{56. 57. 58. 60. 63. }
+\subsection*{Aufgaben}
+\AadBMTG{37}{11., 12., 13. und 31.}
+%%\GESOAadBMTA{???}{???}
+\newpage
+\subsection{Spezielle Dreiecke}
+Repetition: Halbes Quadrat und halbes gleichseitiges Dreieck \ifisALLINONE{\totalref{spezielleDreiecke}}\fi
+
+\noTRAINER{\bbwCenterGraphic{12cm}{tals/plani/img/regulaer.png}}
+\TRAINER{\bbwCenterGraphic{12cm}{tals/plani/img/regulaerTrainer.png}}
+
+
+\TNT{10}{
+  Beziehungen im Quadrat:
+
+  $a$ = Seitenlänge
+
+  $d$ = Diagonale
+
+  $\frac{d}2$ = halbe Diagonale
+
+  Beziehungen:  $a = \frac{d}2 \cdot{} \sqrt{2}; d = a\cdot{} \sqrt{2}$
+
+  \vspace{10mm}
+
+  Beziehungen im gleichseitigen (regulären) Dreieck:
+
+  $a$ = Seitenlänge
+
+  $h$ = Höhe
+
+  $\frac{a}2$ = halbe Seitenlänge
+
+  Beziehungen:
+
+ $h = \frac{a}2 \cdot{} \sqrt{3};  a=2 \cdot{} \frac{h}{\sqrt{3}} $
+
+  \vspace{10mm}
+
+}%% END TNT
+
+
+\newpage
+\subsection*{Aufgaben}
+\AadBMTG{38ff}{19., 20., 24., 26., 29., 38., 40. und 41.}
+
+\olatLinkArbeitsblatt{Strukturaufgaben}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/107682599240642}{VT1\_4. (Tangenten mit 120\degre) und VT1\_5 (Spezielle Winkel)}
+
+\newpage

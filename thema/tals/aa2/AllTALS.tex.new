@@ -1,0 +1,14 @@
+%%
+%% TALS Metapackeg Arithmetik und Algebra II
+
+%%%%%%%%%%%%%%%%
+\part{Arithmetik und Algebra II}\index{Arithmetik und Algebra!II|textbf}
+\renewcommand{\bbwPartID}{AA2}
+
+\input{allg/alg/potenzen_wurzeln/Potenzen}
+\input{allg/alg/potenzen_wurzeln/Zinsrechnungen}
+\input{allg/alg/potenzen_wurzeln/nteWurzel}
+\input{allg/alg/potenzen_wurzeln/Zehnerlogarithmen}
+\newpage
+\input{allg/alg/potenzen_wurzeln/Logarithmen}
+\newpage

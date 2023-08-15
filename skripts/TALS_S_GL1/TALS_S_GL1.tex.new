@@ -1,0 +1,21 @@
+%%
+%% Meta: Master Document
+%% Arithmetik und Algebra I
+%% 
+%%
+
+\input{bbwLayoutDoc}
+
+\renewcommand{\author}{Philipp G. Freimann}
+\renewcommand{\grafikautor}{Ph. G. Freimann}
+\renewcommand{\authoremail}{philipp.freimann@bbw.ch}
+\renewcommand{\erstellungsdatum}{\versionTALSMajorDate}
+\renewcommand{\docversion}{\versionTALSMajorVSR}
+
+%%\renewcommand{\modulnummer}{Arithmetik und Algebra I}
+\renewcommand{\doctitel}{Gleichungen I}
+\renewcommand{\fachthema}{Lineare Gleichungen}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\defaultScript{tals/gl1/AllTALS}

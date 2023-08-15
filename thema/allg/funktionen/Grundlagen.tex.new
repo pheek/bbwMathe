@@ -1,0 +1,203 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+
+\section{Funktionen}\index{Funktion|textbf}
+\sectuntertitel{longitudo, latitudo (Begriffe nach Nikolaus von Oresme)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+ \item Zuordnung
+ \item Mengenbegriffe: Definitionsmenge\index{Definitionsmenge} (= Definitionsbereich\index{Definitionsbereich}) vs. Quellbereich\index{Quellbereich}
+ \item Wertebereich (= Bildmenge) vs. Wertevorrat (= Zielmenge)
+ \item Darstellungsarten
+   \begin{itemize}
+      \item Wertetabelle
+      \item Graphen\index{Graph}
+      \item Funktionsterm
+   \end{itemize}
+ \item verschiedene Notationen
+ \item Gleichungen visualisieren
+ \item Achsen\index{Achse}
+ \item Funktionsgleichung
+ \item Abhängige, unabhängige Variable / Argument, Parameter, Funktionswert
+\end{itemize}
+
+%%\TALS{(\cite{frommenwiler17alg} S.161 (Kap. 3))}
+%%\GESO{(\cite{marthaler21alg}       S.211 (Kap. 13))}
+
+\TadBMTA{211}{13}
+\newpage
+\subsection{Allgemeiner Funktionsbegriff}\index{Funktion!allgemeiner Begriff}
+Mengenbezeichnungen bei Gleichungen (Diese Mengen sind bereits
+bekannt\footnote{Die Definitionsmenge bezeichnet hier die Menge aller
+  Zahlen für die alle Terme definiert sind.}):
+
+\begin{tabular}{cp{4cm}l}
+  \raisebox{-3cm}{\includegraphics[width=8cm]{allg/funktionen/img/MengenbezeichnungenBeiGleichungen.png}}
+  & Beispiel & \TRAINER{\makecell{$\frac{1}{x-3}=5$\\
+  $\mathcal{G}=\mathbb{R}$\\
+  $\mathcal{D}=\mathbb{R}\backslash{}\{3\}$\\
+      $\lx = \{3.2\}$}%% end makecell
+    }%% END Trainer
+\end{tabular}
+
+\vspace{6mm}
+
+Mengenbezeichnungen bei Funktionen:
+\TRAINER{\begin{center}
+  \includegraphics[width=16cm]{allg/funktionen/img/MengenbezeichnungenBeiFunktionen.png}
+\end{center}
+}%% END TRAINER
+
+\noTRAINER{\begin{center}
+  \includegraphics[width=16cm]{allg/funktionen/img/MengenbezeichnungenBeiFunktionenLeer.png}
+\end{center}
+}%% END no TRAINER
+
+\begin{definition}{Wertebereich}{}
+Die Menge aller getroffenen Werte aus dem Wertvorrat wird \textbf{Wertebereich}\index{Wertebereich}
+(oder Bildmenge) genannt. Bemerkung: im Buch \cite{marthaler21alg} wird
+  mit dem Begriff «Bildmenge» der Wertevorrat bezeichnet!
+\end{definition}
+
+\newpage
+\subsubsection{Definition Funktionsbegriff}
+
+\begin{definition}{Funktion}{}\index{Funktion!Definition}
+    Eine \textbf{Funktion}\index{Funktion} ist eine eindeutige \textbf{Zuordnung}\index{Zuordnung}, die jeder Zahl
+    $x$ aus einem Definitionsbereich \textbf{genau} eine Zahl $y$ aus
+    einem Wertevorrat\index{Wertevorrat} (= Zielmenge)\index{Zielmenge} zuordnet.\\
+\end{definition}
+
+
+\TALS{
+\begin{beispiel}{reelle Funktion}{}
+  Funktion Sinus $\sin()$:
+  $\mathcal{D} = \mathbb{R}$; $\mathcal{W}= [-1; 1]$
+  $$\sin: \mathbb{R} \rightarrow [-1; 1] \text{ mit } \varphi\mapsto{}\sin(\varphi) $$
+\end{beispiel}
+
+\begin{beispiel}{}{}
+  Funktion Tangens $\tan()$:
+  $\mathcal{D} = \mathbb{R}\backslash\{\pm{}90^\circ, \pm{}270^\circ, \pm{}450^\circ, ...\}$; $\mathcal{W}= \mathbb{R}$
+    
+  $$\tan: \mathbb{R}\backslash\{90^\circ{}+z\cdot{}180^\circ{}|z \in \mathbb{Z}\} \rightarrow \mathbb{R} \text{ mit } \alpha\mapsto{}\tan(\alpha) $$
+\end{beispiel}
+}%% end TALS
+
+
+\begin{bemerkung}{}{}
+  Zum Wertebereich: Wo der Begriff Quellbereich (eine theoretische Obermenge
+  des Definitionsbereichs\index{Definitionsbereich}) kaum praktische Bedeutung hat,
+  wird jedoch in speziellen Fällen statt dem Wertebereich der
+  Wertevorrat\index{Wertevorrat}\footnote{Der Wertevorrat
+    wird auch Zielbereich, Zielmenge\index{Zielmenge},
+    Cobereich\index{Cobereich} oder Nachbereich\index{Nachbereich}
+    genannt (\cite{FormelnUndTafeln19}).}
+  angegeben; meist daher, weil der
+  Wertebereich in komplexen, fraktalen, sprungstetigen oder sonstwie komplizierten Funktionen schlicht
+  und ergreifend nicht bekannt ist.\footnote{\textbf{Beispiel 1}: Bei der Funktion
+    «mittlere Tagestemperatur» ist zwar der Wertevorrat ($\mathbb{R}[{}^\circ]$)
+    bekannt, jedoch sind die effektiv getroffenen Bildwerte meist nur
+    zwischen $-40^\circ$ und $+50^\circ$ vorzufinden (daher ist der
+    effektiv eintretende Wertebereich erst dann bekannt, wenn das Wetter
+    bereits eingetreten ist bzw. auch gemessen wurde). \\
+    \textbf{Beispiel 2}: (Sei $\pi$ die Kreiszahl.) Der Funktion $f: n\mapsto f(n)$; $\mathbb{N} \rightarrow \{0, 1, 2, 3, ..., 9\} \text{mit} f(n) = $
+    «millionste Nachkommastelle von $n\pi$»
+    kann der effektive Wertebereich nicht
+  angesehen werden, bevor wir genügend oft die millionste Ziffer von
+  $n\pi$ berechnet haben. Auch hier ist vorerst nur der Wertevorrat, nicht
+  aber der Wertebereich bekannt.}
+\end{bemerkung}
+
+
+\GESO{
+  \begin{beispiel}{Jahreszins}{}
+    Jahreszins bei gegebenem Jahreszinssatz von 3\%:
+
+    \vspace{5mm}
+    
+    $\mathcal{D} = \LoesungsRaum{\mathbb{R}^{+}}$
+
+    \vspace{5mm}
+    
+    $\mathcal{W} = \LoesungsRaum{\mathbb{R}^{+}}$
+
+    \vspace{5mm}
+    
+    $\text{Zins}: \LoesungsRaum{\mathbb{R}^{+} \rightarrow \mathbb{R}^{+}}$
+
+    \vspace{5mm}
+
+    $\text{ mit } k \LoesungsRaum{\mapsto{} k\cdot{}\frac{3}{100}}$
+    \end{beispiel}
+}
+
+
+\GESO{%%
+\olatLinkArbeitsblatt{Funktionsbegriff}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/108030908300504}{1.1
+und 1.2}
+}%% end GESO
+
+
+\TALS{%%
+\olatLinkArbeitsblatt{Funktionsbegriff}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/108030908410625}{1.1
+und 1.2}
+}%% end GESO
+
+
+\newpage
+
+
+\subsection{Arten der Darstellung}
+\begin{itemize}
+\item Wertetabelle\index{Wertetabelle}:
+
+  \begin{tabular}{c|cccccc}$x$ & -2 & -1 & 0 & 1 & 2 & 2.5\\
+    \hline
+    $f(x)=y=x^2-1$ & \LoesungsRaumKurz{3} & \LoesungsRaumKurz{0} & \LoesungsRaumKurz{-1} & \LoesungsRaumKurz{0} & \LoesungsRaumKurz{3} & \LoesungsRaumKurz{5.25}\\ 
+\end{tabular}
+\item Graphen im rechtwinkligen Koordinatensystem
+  
+\noTRAINER{\bbwGraph{-3}{4}{-1.5}{6}{}}
+\TRAINER{  \bbwFunction{-3}{4}{-1.5}{6}{\x*\x - 1 }{-2:2.5}}
+
+\item Funktionsschreibweise (verschiedene Notationen)\\
+  $f: \mathcal{D} \rightarrow \mathcal{W}$\\
+  Beispiel:\\
+  $y=f(x)$ \zB $y=x^2-1$\\
+  $f: x\mapsto y$ mit $x \in \mathcal{D}$ und $y \in \mathcal{W}$\\
+  Alternative Notation: $f: x\mapsto{} f(x)$ oder $x\mapsto x^2-1$\\
+
+
+  \subsubsection*{Begriffe}
+
+  \begin{tabular}{l|l}
+    \textit{Begriff} & \textit{Beispiel(e)}\\\hline
+    \textbf{Funktionsgleichung}\index{Funktion!Gleichung}\index{Gleichung!Funktion}        & \TRAINER{$y=x^2-1$, $f(x)=x^2-1$, $y=f(x)$}\\\hline
+    \textbf{Funktionsargumente}\index{Funktion!Argument}\index{Argument!Funktionen}        & \TRAINER{$x$-Werte:  -2, -1, 0, 1, ...}\\\hline
+    \textbf{Funktionswert}     \index{Funktion!Wert}\index{Wert!einer Funktion}            & \TRAINER{$y$-Werte: 3, 0, -1, 0, ... }\\\hline
+    Funktionsterm\index{Funktion!Term}\index{Funktionsterm}\index{Term!Funktionsterm}      & \TRAINER{$x^2-1$}\\\hline
+    Funktionsvorschrift\index{Funktion!Vorschrift}\index{Vorschrift!Funktionsvorschrift}   & \TRAINER{$x\mapsto{}x^2-1$}\\\hline
+%%    \textbf{Funktionsparameter}\index{Funktion!Parameter}\index{Parameter!Funktionen} & \TRAINER{$x$}\noTRAINER{\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,}\\\hline
+  \end{tabular}
+
+\end{itemize}
+\newpage
+
+\subsection*{Aufgaben}
+
+\GESO{%%
+\olatLinkArbeitsblatt{Funktionsbegriff}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/108030908300504}{Alle weiteren Aufgaben (1.3 - 1.7)}
+}%% end GESO
+
+
+\TALS{%%
+\olatLinkArbeitsblatt{Funktionsbegriff}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/108030908410625}{Alle weiteren Aufgaben (1.3 - 1.7)}
+}%% end GESO
+
+
+\newpage
+

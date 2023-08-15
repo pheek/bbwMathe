@@ -1,0 +1,479 @@
+%%
+%% Meta: Master Document
+%% Wichtige Befehle für GESO mit TI 30 Pro MathPrint
+%%
+
+\input{bbwLayoutPage}
+\renewcommand{\metaHeaderLine}{Arbeitsblatt}
+\renewcommand{\arbeitsblattTitel}{Taschenrechner TI-30 Pro MathPrint
+-- Befehle}
+
+
+\begin{document}%%
+\arbeitsblattHeader{}
+
+\begin{center}
+\includegraphics[width=5cm]{img/tiprobuttonimages/ti30.png}
+\end{center}
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Benutzen}
+\subsection{Einschalten}
+Schalten Sie den Rechner ein: \tiprobutton{on} unten links. Sollte schon
+was da stehen, so verwenden Sie \tiprobutton{clear}\label{clear} oder \tiprobutton{2nd}\tiprobutton{mode_quit}, um in den
+Initialzustand zu gelangen.
+
+\subsubsection{2nd}\label{mehrfachbelegung}
+Die \tiprobutton{2nd}-Taste aktiviert die klein geschriebene blaue Funktion über der Taste.
+
+\subsubsection{quit}\label{modus_verlassen}
+Verlassen der aktuellen Funktionalität geschieht mit \tiprobutton{2nd}\tiprobutton{mode_quit}
+
+\subsubsection{\texttt{delete}
+und \texttt{clear}}\label{delete_and_clear}
+Die Taste \tiprobutton{delete} löscht die letzte eingegebene Ziffer. Die
+Taste \tiprobutton{clear}\label{clear} löscht die ganze Rechnung.
+
+
+\subsubsection{Reset}
+Um den Rechner zurückzusetzen entweder \tiprobutton{on_off}\tiprobutton{clear} gleichzeitig drücken oder aber \tiprobutton{2nd}\tiprobutton{0_reset}.
+
+\subsection{Ausschalten}
+ \fbox{{\color{cyan}\textbf{\textit{off}}}} = \tiprobutton{2nd}\tiprobutton{on_off}
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Grundoperationen}
+\subsection{Genau vs. «verständlich»}\label{approx}
+
+Tippen Sie nun $\frac{9}{8}$:
+
+\tiprobutton{9}\tiprobutton{div}\tiprobutton{8}\tiprobutton{enter}
+
+
+
+und schalten Sie mit der
+Taste \tiprobutton{approx} zwischen $1.125$ und $\frac{9}{8}$ um.
+
+
+Probieren Sie dies auch mit $\sqrt{8}$:
+
+\tiprobutton{2nd}\tiprobutton{sqr_sqrt}\tiprobutton{8}\tiprobutton{enter}:
+
+$2\sqrt{2} \approx 2.82824$. 
+
+dann: \tiprobutton{approx}
+
+
+\subsection{Negative Zahlen}
+Zur Eingabe von negativen Zahlen dient die Taste \tiprobutton{neg}.
+
+Leider beim TI-30X Pro muss das
+Zeichen \textbf{vor} der Zahl eingegeben werden; im Gegensatz zu den
+meisten gängigen Taschenrechnern.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Wissenschaftliche Notation}
+Der TI-30x Pro MathPrint ist in der Lage, Zahlen auch in der
+Wissenschaftlichen Notation anzuzeigen. Dazu drücken
+Sie \tiprobutton{mode}.
+
+Wählen Sie \textbf{\texttt{SCI}} aus der zweiten Zeile
+neben \texttt{NORMAL} und bestätigen Sie mit \tiprobutton{enter}:
+
+\texttt{NORMAL\,\,\,\textbf{SCI}\,\,\,ENG}
+
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Speichern}
+
+\subsection{answer}\label{AnsSto}
+
+Um mit dem Resultat der vorangehenden Rechnung weiterzufahren,
+existiert die Tastenkombination \tiprobutton{2nd}\tiprobutton{neg_answer}. \texttt{ans} steht für den Wert des
+Resultates der zuletzt ausgeführten Operation. Wir berechnen $16.3 +
+19.8$ und danach das Resultat $\cdot4$ (Stimmts? 144.4). Starten Sie
+eine Rechnung mit einem Operationszeichen (\zB \tiprobutton{mult}\tiprobutton{3}), so
+wird \texttt{ans} vorangestellt und gleich mit der Antwort weitergerechnet.
+
+Noch ältere Resultate können mit der Pfeiltaste nach oben \tiprobutton{pfeiltasten} zurückgeholt werden.
+
+\subsection{STO}\label{sto}
+
+Daneben gibt es die Möglichkeit, Zwischenresultate in Variablen (nummerierte
+Speicherplätze) mit \tiprobutton{sto} (gefolgt von einem
+Variablennamen \tiprobutton{xyzabcd}) zu
+speichern. Die Variablennamen $y$, $z$, $t$, $a$, $b$, $c$ und $d$
+werden mit mehrmaligem Drücken dieser Taste
+erreicht. Mit \tiprobutton{2nd}\tiprobutton{sto_recall} kann die Variable wieder 
+ausgelesen und weiterverwendet werden.
+
+Beispiel: Erst Zahl abspeichern mit \tiprobutton{sto} \tiprobutton{xyzabcd}. Es
+erscheint
+
+\texttt{ans$\rightarrow{}$x}
+
+Zum Beispiel kann nun
+mit  \tiprobutton{xyzabcd} \tiprobutton{plus} \tiprobutton{5} \tiprobutton{enter}
+dem Resultat gleich fünf dazugezählt werden.
+
+\subsection{Gespeicherte Konstanten}\label{constants}
+Der TI-30 Pro MathPrint hat zusätzlich die wichtigsten physikalischen
+Konstanten bereits integriert. Die Mol-Zahl (Avogadro-Konstante) \zB
+finden wir mittels \tiprobutton{2nd} \tiprobutton{constants}. Wollen wir \zB die
+Zahl 12 durch die Mol-Zahl teilen, so tippen wir
+
+\tiprobutton{1}\tiprobutton{2}\tiprobutton{div}\tiprobutton{2nd}\tiprobutton{constants}\tiprobutton{4}\tiprobutton{enter}.
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Quadratische Gleichungen}\label{quadGL}
+Quadratische Gleichungen mit Zahlen können einfach mit \tiprobutton{2nd}\tiprobutton{cos_poly-solv} gelöst werden. Dazu müssen die Gleichungen vorab in die Grundform gebracht werden:
+
+$$7x^2 - 55x - 22 = 0$$
+
+und danach $a$, $b$ und $c$ für die $abc$-Formel abgelesen werden:
+
+$$a=7; b=-55; c=-22$$
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Lineare Gleichungssysteme}\label{gleichungssysteme}
+Lineare Gleichungssysteme können mit der \texttt{sys-solv}-Funktion gelöst werden.
+Dazu muss das Gleichungssystem zunächst in die Grundform gebracht werden.
+
+\gleichungZZ{5x-3y}{4}{7x+2y}{-3}
+
+Nach der Eingabe von \tiprobutton{2nd}\tiprobutton{tan_sys-solv} wählen Sie \texttt{1} für ein Gleichungssystem mit zwei Gleichungen und zwei Unbekannten:
+
+\texttt{1: 2x2 linear EQs}
+
+Zahlen mit \tiprobutton{enter} bestätigen. Die Subtraktion links des
+Gleichheitszeichens mit \tiprobutton{minus} eingeben; negative Werte rechts
+des Gleichheitszeichens mit \tiprobutton{neg} eingeben.
+
+Resultat für obiges Beispiel zur Kontrolle: $x=\frac{-1}{31}$ und
+$y=\frac{-43}{31}$.
+
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\section{Potenzen, Wurzeln und
+Logarithmen}\label{ln_log}\label{xhoch_nwurz}
+
+Quadratzahlen werden mit der \tiprobutton{sqr} berechnet.
+
+Quadratwurzeln liegen auf der selben Taste
+mit \tiprobutton{2nd} \tiprobutton{sqr_sqrt}.
+
+
+Zehnerpotenzen ($10^x$) werden mit der Taste \tiprobutton{ex_10x} eingegeben. Dies gilt auch für Exponenten zur Basis $e$.
+
+Große Zehnerpotenzen\label{ee} für die Wissenschaftliche Notation werden mit der \tiprobutton{EE}-Taste eingegeben: Beispiel: $3.84 \cdot{} 10^9$:\\
+\tiprobutton{3}\tiprobutton{dot}\tiprobutton{8}\tiprobutton{4}\tiprobutton{EE}\tiprobutton{9}
+
+$x^4$, $x^7$ ... werden mit der Taste \tiprobutton{xhoch} eingegeben.
+
+Analog die $n$-te Wurzel mit \tiprobutton{2nd}\tiprobutton{xhoch_nwurz}.
+
+Den Zehnerlogarithmus geben wir mit zweimaligem Drücken
+von \tiprobutton{ln_log}\tiprobutton{ln_log}  ein. Analog Logarithmen zu anderen
+Basen; dazu muss die \tiprobutton{ln_log}-Taste jedoch drei Mal gedrückt
+werden.
+Wird die Taste \tiprobutton{ln_log} nur einmal gedrückt, handelt es sich um
+den natürlichen Logarithmus zur Basis $e$ ($e = 2.71828...$).
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+\section{Faktorisieren}\index{faktorisieren}\label{faktorisieren}
+
+
+Will man einfach nur Zahlen Faktorisieren, \zB um den \textbf{Zweiklammeransatz} zu verwenden, geschieht das mit der Funktion \texttt{Pfactor}, welche sich hinter der \tiprobutton{math}-Taste verbirgt.
+
+Faktorisieren von Termen der Form $x^2 +4x -32$ ist zudem mit
+quadratischer Gleichung möglich, indem wir den Term als quadratische
+Gleichung auffassen indem wir den Term gleich 0 setzen. Hier müssen wir jedoch aufpassen, denn der Term wird als quadratische Gleichung aufgefasst und die Lösung der quadratischen Gleichung sind die \textbf{negativen} Parameter des faktorisierten Terms! Bitte nachrechnen!
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\section{Funktionen / Wertetabelle}\label{wertetabelle}
+Wertetabellen können mit dem Befehl \tiprobutton{table} einfach erstellt
+werden.
+
+Beispiel Wertetabelle zu $f: y=-0.5x + 2.5$:
+
+Drücken Sie \tiprobutton{table}:
+
+\texttt{1: Add/Edit Func.}
+
+Mit \tiprobutton{1} können Sie die Funktion definieren:
+
+$$f(x) = -0.5 * x + 2.5$$
+
+Die Funktion $g()$ können Sie leer lassen (mit \tiprobutton{enter}
+bestätigen).
+
+Das System erfragt danach die Werte
+
+\texttt{start}: Welches ist der erste $x$-Wert?
+
+und
+
+\texttt{step}: Schrittweite zwischen den $x$-Werten. Mit Bestätigung
+(\tiprobutton{enter}) erscheint die Wertetabelle
+
+\begin{tabular}{r|l}
+$x$ & $y=f(x)$\\
+\hline\\
+-4 & 4.5\\
+-2 & 3.5\\
+... &  ... \\
+\end{tabular}
+\newpage
+\section{Geradengleichung durch zwei gegebene Punkte}\index{geradengleichung}\label{geradengleichung}
+Sind zwei Punkte (\zB $P=(3.6 | 4.9)$ und $Q=(-5.2 | 7.1)$) gegeben,
+so können $a$ und $b$ der zugehörigen Geradengleichung $y=a\cdot{}x+b$ mittels der
+linearen Regression gefunden werden:
+
+\begin{enumerate}
+\item Die beiden Punkte in die Datenreihen \textbf{\texttt{L1}}
+und \textbf{\texttt{L2}} mittels \tiprobutton{data} eingeben. Dabei
+entsprechen \textbf{\texttt{L1}} den $x$- bzw. \textbf{\texttt{L2}} den
+$y$-Werten:
+%%\bbwCenterGraphic{2.4cm}{taschenrechner/tr_ti30_geso_wichtige_befehle/img/ZweiPunkteEingeben.jpg}
+\bbwCenterGraphic{8cm}{img/ZweiPunkteEingeben.jpg}
+
+\item
+Unter \textbf{\texttt{STAT-REG}} \tiprobutton{2nd} \tiprobutton{data_stat-reg-distr}
+die Nummer \texttt{\textbf{4}} suchen:
+«\texttt{\textbf{LinReg $ax+b$}}».
+
+\item Beim nächsten \textit{Srceen} alles so lassen, wie es
+ist: \texttt{\textbf{xDATA: L1}}, \textbf{\texttt{yDATA: L2}}.
+\item Mittels \texttt{\textbf{calc}} die Daten (in unserem Beispiel
+$a=-0.25$ und $b=5.8$ also $y=-\frac14x+5.8$) ablesen. 
+\end{enumerate}
+
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\section{Gleichungen numerisch}\index{numGleichungen}\label{numGleichungen}
+Oft verlieren wir viel Zeit, nach dem Lösen einer Gleichung, mit dem Prüfen, ob unser Resultat stimmt.
+
+Der «num-solv» Befehl kann jedoch Gleichungen mit Zahlen (numerische Gleichungen) lösen, sodass wir rasch sehen, ob wir richtig gerechnet haben.
+
+Beispiel: Es sei $a=4$ gegeben und die folgende Gleichung zu lösen: $$5x-a = 18x-\frac32x + 2$$.
+
+Zuerst lösen wir die Gleichung von Hand nach $x$ auf indem wir $4$ für $a$ einsetzen:
+
+$$5x-a = 18x -\frac32x + 2$$
+$$5x-4 = 18x -\frac32x + 2$$
+$$  -4 = 13x -\frac32x + 2$$
+$$  -6 = 13x -\frac32x$$
+$$  -6 = 11.5x$$
+$$ x = \frac{-6}{11.5}\approx{-0.5217}$$
+
+Nun kontrollieren wir mit dem Taschenrechner.
+
+\begin{enumerate}
+\item 4 in die Variable $a$ abspeichern: \tiprobutton{4} \tiprobutton{sto} $5\times$\tiprobutton{xyzabcd}
+\item Num-Solver starten: \tiprobutton{2nd} \tiprobutton{sin_num-solv}
+\item Danach Eingabe der Gleichung
+$$5x-a = 18x -\frac32x + 2$$
+\item Bei \texttt{EDIT VARIABLE IF NEEDED} kann die Variable $x$ ignoriert werden; sie wird ja berechnet. Jedoch kann $a$ überprüft werden.
+\item Bei \texttt{SELECT SOLUTION VARIABLE} muss $x$ ausgewählt werden, wenn nicht schon gesetzt.
+\item Bei \texttt{ENTER SOLUTION BOUNDS} könnte die Lösung in ein Intervall eingegrenzt werden. $-1E99$ und $1E99$ sind in der Regel ausreichend.
+\item Mit \texttt{SOLVE} (\tiprobutton{enter}-Taste) wird das Resultat für $x$ angezeigt: $x = -0.521739...$.
+\end{enumerate}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\section{Datenanalyse}\index{daan}\label{daan}
+Hinter \tiprobutton{data_stat-reg-distr} verstecken sich statistische
+Funktionen zur Berechnung wichtiger \textbf{Kennzahlen}:
+Standardabweichung, Mittelwert und insb. alle wichtigen Zahlen für
+den \textbf{Boxplot}: Q1, Median, Q3.
+
+Gleich ein Beispiel:
+
+Wir haben die Messwerte
+
+5, 8, 4, 9, 2, 2 und 6
+
+Drücken Sie \tiprobutton{data} und geben Sie die Daten
+bei \texttt{L1} ein.
+Mit \tiprobutton{delete} können Sie Werte auch wieder löschen.
+
+Sind alle Zahlen eingegeben so tippen
+Sie \tiprobutton{2nd}\tiprobutton{data_stat-reg-distr}. Es erscheint eine
+Auswahl. Wählen Sie \tiprobutton{2}:
+
+\texttt{2: 1-VAR STATS}
+
+Danach wählen Sie:
+
+\texttt{Data: \textbf{L1}}
+
+und
+
+\texttt{Freq: \textbf{ONE}}
+
+Im Resultat bezeichnen:
+
+\begin{tabular}{r|r l|p{9cm}}
+ 1: & $n$            = & 6     & Anzahl der Werte\\
+ 2: & $\overline{x}$ = & 5     & Mittelwert (arithmetisch) = Durchschnitt\\
+ 3: & Sx             = & 2.966 & Standardabweichung \\
+ 8: & Q1             = & 2     & Untere Quartilsgrenze \\
+ 9: & Med            = & 4.5   & Median \\
+10: & Q3             = & 8     & Obere Quartilsgrenze \\
+
+
+\end{tabular}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Wahrscheinlichkeitsrechnung}\label{wahrscheinlichkeitsrechnung}
+Anzahl Möglichkeiten bei Zurücklegen oder ohne Zurücklegen geschieht mit der \tiprobutton{ncrnpr}-Taste, die je nach Funktion mehrmals zu drücken ist. 
+
+Dabei bezeichnen
+
+\begin{itemize}
+\item \texttt{\textbf{!}}: Fakultät: Anzahl Permutationen von $n$ Elementen auf $n$ Plätzen:\\
+4 ! = 24
+
+\item \texttt{\textbf{nCr}}: Anzahl Kombinationen: Wähle 2 aus 8 aus; die Reihenfolge ist nicht wesentlich:\\
+\texttt{8 nCr 2} = 28
+
+\item \texttt{\textbf{nPr}}: Anzahl Permutationen: Wähle 2 aus 8 aus, diesmal ist die Reihenfolge wesentlich:\\
+\texttt{8 nPr 2} = 56
+\end{itemize}
+
+\subsubsection{Binomialverteilung}
+Die Formel
+$$P(E = k) = {n \choose k}\cdot{}p^k\cdot{}(1-p)^{n-k}$$
+kann direkt mit \texttt{nCr} eingegeben werden.
+
+Doch eine Abkürzung kann unter der \tiprobutton{data_stat-reg-distr}-Taste gefunden werden:
+
+\tiprobutton{data_stat-reg-distr}: \texttt{DISTR} :
+4:Binomialpdf\footnote{pdf = probability density function} :
+\texttt{SINGLE} : dann $n$ bei $n$, $p$ bei $p$ und $k$ bei $x$ eintragen.
+
+Auch kumuliert:
+
+ $$P(E \le k) = \sum_{i=0}^{k}{n \choose i}\cdot{}p^i\cdot{}(1-p)^{n-i}$$
+
+\tiprobutton{data_stat-reg-distr}: \texttt{DISTR} :
+4:Binomialcdf\footnote{cdf = cumulated density function} :
+\texttt{SINGLE} : dann $n$ bei $n$, $p$ bei $p$ und $k$ bei $x$ eintragen.
+
+     
+
+
+\newpage
+
+
+\section*{Überblick über die Tasten}
+
+\begin{tabular}{c|p{10cm}|l}
+\textit{Taste}                           & \textit{Beschreibung}                       & \textit{Kapitel}              \\
+\hline
+\hline
+
+\tiprobutton{2nd}                        & zweite Funktion auf den Tasten (klein blau) & \ref{mehrfachbelegung}        \\
+
+\hline
+
+\tiprobutton{2nd}\tiprobutton{mode_quit}   & Verlassen des aktuellen Modus               & \ref{modus_verlassen}         \\
+
+\hline
+
+\tiprobutton{delete}                     & Aktuelle Eingabe löschen                   & \ref{delete_and_clear}                              \\
+
+\hline
+
+\tiprobutton{ln_log}                     & Logarithmen                                & \ref{ln_log}                   \\
+
+\hline
+
+\tiprobutton{math}                     & Mathematische Funktionen wie kgV, ggT und Faktorisieren  & \ref{faktorisieren}                   \\
+
+\hline
+
+\tiprobutton{data_stat-reg-distr}      & Datenanalyse /
+Wahrscheinlichkeitsrechnung / Geradengleichung            & \ref{daan},\ref{geradengleichung}                   \\
+
+\hline
+
+\tiprobutton{ex_10x}                   & Potenzen $e^x$ und $10^x$                       & \ref{ln_log}                   \\
+
+\hline
+
+\tiprobutton{EE}                      & Eingabe großer Zehnerpotenzen in wissenschaftlicher Notation     & \ref{ee}                   \\
+
+\hline
+
+\tiprobutton{ncrnpr}                  & Anzahlen für die Wahrscheinlichkeitsrechnung     & \ref{wahrscheinlichkeitsrechnung}                   \\
+
+\hline
+
+\tiprobutton{table}                  & Wertetabellen zu Funktionen                      & \ref{wertetabelle}                   \\
+
+\hline
+
+\tiprobutton{clear}                  & Ganze Rechnung löschen                           & \ref{clear}                   \\
+
+\hline
+
+\tiprobutton{2nd}\tiprobutton{sin_num-solv}  & Lösen von Gleichungen                         & \ref{numGleichungen}                 \\
+
+\hline
+
+\tiprobutton{2nd}\tiprobutton{cos_poly-solv}  & Quadratische Gleichungen lösen              & \ref{quadGL}                 \\
+
+\hline
+
+\tiprobutton{2nd}\tiprobutton{tan_sys-solv}  & Gleichungssysteme lösen                      & \ref{gleichungssysteme}                 \\
+
+\hline
+
+\tiprobutton{2nd}\tiprobutton{constants}                        &physikalische Konstanten                  & \ref{constants}                 \\
+
+\hline
+
+\tiprobutton{xhoch_nwurz}              & Potenzen und Wurzeln                          & \ref{xhoch_nwurz}                 \\
+
+\hline
+
+\tiprobutton{sqr_sqrt}              & Quadrate und Quadratwurzeln                        & \ref{xhoch_nwurz}                 \\
+
+\hline
+
+\tiprobutton{xyzabcd}              & Variablen (\zB für die \tiprobutton{sto}-Funktion)                      & \ref{sto}                 \\
+
+\hline
+
+\tiprobutton{sto}                        & Speichern und auslesen                      & \ref{AnsSto}                 \\
+
+
+\hline
+
+\tiprobutton{approx}                        & Umschalten zwischen exakter Form und Dezimalbruchdarstellung      & \ref{approx}                 \\
+
+\end{tabular}
+
+
+\end{document}

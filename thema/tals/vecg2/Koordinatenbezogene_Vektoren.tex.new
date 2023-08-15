@@ -1,0 +1,44 @@
+%% 2020 12 25 ph. g. Freimann
+%%
+\section{Koordinatenbezogene Vektoren}\index{Vektoren!koordinatenbezogen}
+
+\subsection*{Lernziele}
+\begin{itemize}
+\item Darstellung im Koordinatensystem
+\item Addition und Subtraktion via Koordinaten
+\end {itemize}
+
+\subsection{Dreidimensionales Koordinatensystem}
+
+Betrachten wir im dreidimensionalen den Vektor
+$$\vec{a} = \begin{pmatrix}1 \\ 2.5 \\ -2\end{pmatrix}$$
+
+  \bbwCenterGraphic{7cm}{tals/vecg2/img/dreidimensional.png}
+
+  \begin{bemerkung}{Rechtshändiges System}{}
+Gebräuchlich ist das \textbf{rechtshändige} Koordinatensystem, bei dem
+die dritte Achse, die $z$-Achse nach oben zeigt, wenn $x$ nach rechts
+und $y$ nach hinten zeigt (s. Abbildung).
+  \end{bemerkung}
+
+
+
+\subsection*{Aufgabe}
+\aufgabenFarbe{Geben Sie die obigen Koordinaten in
+  \texttt{geogebra.org} ein und betrachten Sie das System aus Sicht
+  der $x$-, $y$- und $z$-Achse.}
+
+  \newpage
+
+\subsection{Addition, Subtraktion}
+\begin{gesetz}{Vektoraddition}{}
+  Vektoren im Dreidimensionalen werden wie im Zweidimensionalen
+komponentenweise addiert bzw. subtrahiert:
+
+$$\begin{pmatrix}4 \\ 7 \\ -2\end{pmatrix} - \begin{pmatrix}2 \\ 2.5  \\ -1.1\end{pmatrix} =
+    \begin{pmatrix}\TRAINER{4-2}\noTRAINER{\hspace{20mm}} \\ \TRAINER{7-2.5} \\ \TRAINER{-2 - (-1.1)}\end{pmatrix}=
+    \begin{pmatrix}\TRAINER{2}\noTRAINER{\hspace{12mm}}  \\ \TRAINER{4.5} \\ \TRAINER{-0.9}\end{pmatrix}$$
+\end{gesetz}
+
+\subsection*{Aufgaben}
+\TALSAadBFWG{195}{74. a), 79.}

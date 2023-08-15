@@ -1,0 +1,51 @@
+%%
+%% Meta: Master Document
+%% Schwerpukntfach
+%% 
+%%
+
+\input{bbwLayoutDoc}
+
+\renewcommand{\author}{Philipp G. Freimann}
+\renewcommand{\grafikautor}{Ph. G. Freimann}
+\renewcommand{\authoremail}{philipp.freimann@bbw.ch}
+\renewcommand{\erstellungsdatum}{\versionTALSMajorDate}
+\renewcommand{\docversion}{\versionTALSMajorVSR}
+
+%%\renewcommand{\modulnummer}{Arithmetik und Algebra I}
+\renewcommand{\doctitel}{Schwerpunktfach Mathematik}
+\renewcommand{\fachthema}{4jährige BM1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Gesamt-Skripts benötigen ALINONE (all in one), damit Referenzen auf andere
+%% Kapitel funktioniren:
+\isALLINONEtrue%%
+
+\scriptStart{}
+
+%% Part Vektorgeometrie I
+\input{tals/vecg1/AllTALS}
+
+%% Part Stereometrie
+\input{tals/stereo/AllTALS}
+
+%% Arithmetik und Algebra II
+\input{tals/aa2/AllTALS}
+
+%% Part Gleichungen III (1/2)
+\input{tals/gl3_1/AllTALS}
+
+%% Part Funktionen III
+\input{tals/fct3/AllTALS}
+
+%% Part Funktionen IV
+\input{tals/fct4/AllTALS}
+
+%% Part Vektorgeometrie II
+\input{tals/vecg2/AllTALS}
+
+%% Part Gleichungen 3 (2/2)
+\input{tals/gl3_2/AllTALS}
+
+
+\scriptEnde{}

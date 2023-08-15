@@ -1,0 +1,169 @@
+
+\subsection{Runden}\index{runden}
+In der Regel sind wir bei Dezimalbrüchen nicht an allen auftretenden
+Stellen interessiert, sondern begnügen uns mit einer Näherung.
+
+\subsubsection{Dezimalen (Nachkommastellen)}\index{Dezimale}\index{Nachkommastelle}
+Als Dezimalen, Dezimalstellen oder Nachkommastellen werden die Stellen
+\textbf{nach} dem Komma bezeichnet.
+
+\begin{gesetz}{Runden}{}
+  Beim \textbf{Runden} auf die $n$-te Stelle, wird die $n+1$-te Stelle
+  betrachtet. Ist diese $\ge 5$, so wird \textbf{aufgerundet}, ansonsten \textbf{abgerundet}.
+\end{gesetz}
+
+Runden auf die vierte \textbf{Dezimale} (= vierte \textbf{Nachkommastelle}):
+$$ 36.4699432 \approx  \LoesungsRaum{36.4699}$$
+$$ 36.4699618 \approx  \LoesungsRaum{36.4700}$$
+
+\textbf{Vorsicht} bei Zahlen nahe an Null. So wird die relativ präzise
+Zahl
+
+$$0.002468$$ beim Runden auf drei Dezimalen wie folgt gerundet:
+$$0.002$$
+
+Runden Sie auf {\color{ForestGreen}vier} Dezimalen:
+
+\begin{bbwFillInTabular}{rcl}
+  $55.55555$      &$\approx$& \LoesungsRaum{$55.{\color{ForestGreen}\mathbf{5556}}$}\\
+  $8.55695$       &$\approx$& \LoesungsRaum{$8.{\color{ForestGreen}\mathbf{5570}}$}\\
+%%  $3.3339499$     &$\approx$& \LoesungsRaum{$3.{\color{ForestGreen}\mathbf{3339}}$}\\
+%%  $1000.0001$     &$\approx$& \LoesungsRaum{$1000.{\color{ForestGreen}\mathbf{0001}}$}\\
+%%  $10\,000.00001$ &$\approx$& \LoesungsRaum{$10\,000.{\color{ForestGreen}\mathbf{0000}}$}\\
+%%  $-6.99999$      &$\approx$& \LoesungsRaum{$-7.{\color{ForestGreen}\mathbf{0000}}$}\\
+  $0.000040447$   &$\approx$& \LoesungsRaum{$0.{\color{ForestGreen}\mathbf{0000}}$}\\
+\end{bbwFillInTabular}
+\newpage
+
+%%\TRAINER{Das letzte Beispiel zeigt, dass so oft wichtige Information
+%%  verloren geht. Daher wird sinnvollerweise meist auf signifikante Stellen, und nicht
+%%  auf Dezimalen gerundet.}
+
+\GESO{\olatLinkArbeitsblatt{A1rnd}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/106261461706500}{1.}}
+\TALS{\olatLinkArbeitsblatt{A1rnd}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/106261461797588}{1.}}
+
+\GESO{
+Eine Aufgabe dazu finden Sie auch im «Kompendium»:
+
+\olatLinkGESOKompendium{1.2}{6}{5.}
+}%% END GESO
+
+\newpage
+
+\subsubsection{Signifikante Stellen\GESO{ (optional)}}\index{signifikante Stellen}
+\begin{rezept}{Auf signifikante Ziffern runden}{}
+  
+  Beim Runden auf \textbf{vier signifikante Ziffern} wird
+  \begin{itemize}
+  \item  von links nach rechts die erste von Null verschiedene Ziffer gesucht. Dies ist die
+    erste signifikante Ziffer.
+  \item
+    Danach werden die nächsten drei Ziffern
+  genommen, egal ob sie Null sind oder nicht. 
+\item   Mit diesen drei Ziffern bilden die Ziffern zusammen die vier
+  signifikanten Ziffern.
+\item  Die 5. Ziffer wird nur noch zum Auf- oder Abrunden verwendet.
+  \end{itemize}
+\end{rezept}
+
+Geben Sie {\color{ForestGreen}\textbf{vier}} \textbf{signifikante} Ziffern an und runden Sie wenn nötig:
+
+$$0.000040447  \approx \LoesungsRaum{0.0000{\color{ForestGreen}\mathbf{4045}}}$$
+
+%%$$36.4699432 \approx \LoesungsRaum{{\color{ForestGreen}\mathbf{36.47}}}$$
+%%$$36.9952831 \approx \LoesungsRaum{{\color{ForestGreen}\mathbf{37.00}}}$$
+%%$$30009.78   \approx \LoesungsRaum{{\color{ForestGreen}\mathbf{3001}}0}$$
+%%$$0.0439899  \approx \LoesungsRaum{0.0{\color{ForestGreen}\mathbf{4399}}}$$
+%%$$1\,000\,000 \approx \LoesungsRaum{{\color{ForestGreen}\mathbf{1\,000}}\,000}$$
+%%$$0.00001    \approx \LoesungsRaum{0.0000{\color{ForestGreen}\mathbf{1000}}}$$
+
+
+\GESO{
+Aufgaben zu signifikanten Ziffern finden Sie im «Kompendium»:
+
+\olatLinkGESOKompendium{1.2}{7}{6.}
+}%% END GESO
+
+
+\TNTeop{Rechnen Sie nie mit bereits gerundeten Zwischenresultaten. Der Fehler kann sich dadurch vergrößern!}%% END TNT
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+\subsubsection{Wissenschaftliche Notation}\index{Notation!wissenschaftliche}\label{wissenschaftlicheNotation}
+Bei Zahlen größer als 10 können wir einer Zahl manchmal nicht ansehen, wie viel Stellen denn nun signifikant sind.
+
+$$ 679\,946 \text{\ Einwohner} \approx  \LoesungsRaumLang{680\,000} \text{\ Einwohner}$$
+$$ 680\,023 \text{\ Einwohner} \approx  \LoesungsRaumLang{680\,000} \text{\ Einwohner}$$
+
+Daher bietet sich die wissenschaftliche Notation an.\footnote{Die
+\textbf{wissenschaftliche Notation} wird vorwiegend für sehr große
+aber auch für Zahlen sehr nahe an Null verwendet.}
+Bei der wissenschaftlichen Notation wird die erste signifikante Ziffer
+vor das Komma geschrieben. Nach dem Komma stehen \textbf{alle} weiteren signifikanten Stellen.
+Zuletzt wird die Zahl mit Zehnerpotenzen
+($10^{n}: n \in \mathbb{Z}$) «an die richtige Stelle» gerückt:
+
+$$64\,038.6  = \LoesungsRaumLang{6.40386 \cdot 10^{ 4}} \approx \LoesungsRaumLang{6.40 \cdot 10^{ 4}}$$
+$$0.00463640 = \LoesungsRaumLang{4.63640 \cdot 10^{-3}} \approx \LoesungsRaumLang{4.64 \cdot 10^{-3}}$$
+
+Dabei bezeichnen negative Exponenten die Zehntel, Hundertstel, etc.
+Erst in der wissenschaftlichen Notation können wir die signifikanten Stellen auch bei gerundeten Zahlen größer als 10 effektiv ablesen.
+
+
+Stellen Sie in Wissenschaftlicher Notation dar:
+
+0.00479 $= \LoesungsRaum{4.79 \cdot{}10^{-3}}$
+
+0.08 Milliarden $= \LoesungsRaum{8\cdot{}10^7}$
+
+\GESO{
+Eine Aufgabe dazu finden Sie auch im «Kompendium»:
+
+\olatLinkGESOKompendium{1.2}{7}{7.}
+}%% END GESO
+
+
+%%\TALS{S. \cite{frommenwiler17alg} S. 40 Kap. 1.5.5}
+\newpage
+
+\paragraph{Taschenrechner} Auf Taschenrechnern oder in
+Programmiersprachen wird die Exponentialschreibweise i.\,d.\,R. mit dem
+Buchstaben «e» angegeben. Also «e$\color{red}n$» anstelle von «$\cdot10^{\color{red}n}$». Beispiele:
+
+$5\,000 = 5\, \cdot 10^{\color{red}3} = 5\mathrm{e}\color{red}3$
+
+$0.063 = 6.3\, \cdot 10^{-2} = 6.3\mathrm{e-}2$
+
+Berechnen Sie mit dem Taschenrechner und interpretieren Sie:
+
+$$5.7^{19}  \approx  \LoesungsRaumLang{2.299440931\small{E}14}  = \LoesungsRaumLang{2.299440931 \cdot{} 10^{14}}$$
+$$0.44^{36} \approx  \LoesungsRaumLang{1.459810064\small{E}-13} = \LoesungsRaumLang{1.459810064\cdot{} 10^{-13}}$$
+
+
+(und überprüfen Sie mit dem Taschenrechner):
+
+\begin{rezept}{EE}{}
+    Um 5.77 Millionen auf Ihrem Taschenrechner \textbf{einzugeben} tippen Sie:
+
+\begin{center}  \TRAINER{5.77 \GESO{\tiprobutton{EE}}\TALS{\nspirebutton{EE}} 6}\noTRAINER{\vspace{5mm}} \end{center}
+
+\end{rezept}
+
+\GESO{\begin{rezept}{SCI}{}
+   Der Taschenrechner kann auch direkt die \textit{Wissenschaftliche Notation}
+   anzeigen, wenn er so eingestellt ist:
+
+   Beispiel 0.087 in \textit{Wissenschaftlicher Notation}:
+
+   0.087 \tiprobutton{mode}\texttt{SCI}\tiprobutton{enter}\tiprobutton{2nd}\tiprobutton{mode_quit}\tiprobutton{enter}
+
+   \texttt{8.7E-2} (Dies bedeutet $8.7 \cdot{} 10^{-2}$.)
+\end{rezept}
+}%% END GESO
+
+\GESO{\olatLinkArbeitsblatt{A1rnd}{https://olat.bbw.ch/auth/RepositoryEntry/572162163/CourseNode/106261461706500}{2. - 8.}}
+\TALS{\olatLinkArbeitsblatt{A1rnd}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/106261461797588}{2. - 8.}}
+
+
+\newpage

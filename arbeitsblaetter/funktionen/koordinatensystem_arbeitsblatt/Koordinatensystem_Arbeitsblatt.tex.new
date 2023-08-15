@@ -1,0 +1,197 @@
+%%
+%% Meta: TI nSpire Einführung
+%%       Ziel: Damit die Grundoperationen damit durchgeführt werden können.
+%%             Damit man sich an den Rechner gewöhnt.
+%%
+
+\input{bbwLayoutPage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amssymb} %% für \blacktriangleright
+\renewcommand{\metaHeaderLine}{Koordinatensystem}
+\renewcommand{\arbeitsblattTitel}{\metaHeaderLine{} Arbeitsblatt (V 1.0)}
+
+\begin{document}%%
+\arbeitsblattHeader{}
+
+\section{Aufgaben}
+
+\subsection{Quadranten}
+In welchen Quadranten liegen die folgenden Punkte?
+
+a) $(1|2.5)$  \LoesungsRaum{1.}
+
+b) $\left(7|\frac18\right)$  \LoesungsRaum{1.}
+
+c) $\left(-8|-2\right)$  \LoesungsRaum{3.}
+
+d) $\left(2|-3\right)$  \LoesungsRaum{4.}
+
+d) $\left(-4|0\right)$  \LoesungsRaum{in keinem bzw. im 2. und
+3. gleichzeitig. Man sagt: «Der Punkt liegt auf der $x$-Achse»}
+
+\noTRAINER{
+\bbwGraph{-8}{8}{-6}{6}{}
+}
+\newpage
+\subsection{Streckenzug}
+Verbinden Sie die folgenden Punkte in alphabetischer Reihenfolge:
+
+$A=( 1| 1)$, $B=( 4| 1)$, $C=( 4| 3)$, $D=( 7| 0)$, 
+$E=( 4|-3)$, $F=( 4|-1)$, $G=( 1|-1)$, $H=( 1|-5)$, 
+$I=(-1|-5)$, $J=(-1|-1)$, $K=(-4|-1)$, $L=(-4|-3)$, 
+$M=(-7| 0)$, $N=(-4| 3)$, $O=(-4| 1)$, $P=(-1|-1)$, 
+$Q=(-7| 4)$, $R=( 1| 4)$, $S=A$
+
+\noTRAINER{
+\bbwGraph{-8}{8}{-6}{6}{}
+}
+\TRAINER{\bbwCenterGraphic{72mm}{img/SBBFake.png}}
+\newpage%%
+%%
+\subsection{Mittelpunkt, Streckenlänge}
+Zeichnen Sie die folgenden drei Punkte in das gegebene kartesische
+Koordinatensystem:
+
+$$A=(6|3), B=(-1|4), C=(-2|-3)$$
+
+\bbwGraph{-3}{7}{-3}{4}{%%
+\TRAINER{
+\bbwDot{6,3}{red}{west}{A}
+\bbwDot{-1,4}{red}{east}{B}
+\bbwDot{-2,-3}{red}{east}{C}
+}%% END Trainer
+}%% END bbwGraph
+
+a) Berechnen Sie den Mittelpunkt $M$ der Strecke $\overline{AC}$: $M=(\LoesungsRaum{2}|\LoesungsRaum{0})$
+
+\noTRAINER{\mmPapier{0.8}}
+
+b) Berechnen Sie den Mittelpunkt $N$ der Strecke $\overline{AB}$: $N=(\LoesungsRaum{2.5}|\LoesungsRaum{3.5})$
+
+\noTRAINER{\mmPapier{1.2}}
+
+c) Berechnen Sie den Mittelpunkt $P$ der Strecke $\overline{DE}$ mit
+$D=(D_x|D_y)$ und $E=(E_x|E_y)$:
+
+\noTRAINER{\mmPapier{1.2}}
+
+$$P = (\LoesungsRaumLang{\frac{D_x+E_x}2}|\LoesungsRaumLang{\frac{D_y+E_y}2})$$
+
+d) Berechnen Sie die Länge der Strecke $\overline{AC}$: \LoesungsRaum{10}$e^2$
+
+\noTRAINER{\mmPapier{1.2}}
+
+e) Berechnen Sie die Länge der Strecke $\overline{CB}$: \LoesungsRaum{$\sqrt{50}\approx{}7.071$}$e^2$
+%%
+\newpage%%
+%%
+\subsection{Dreieck}
+Zeichnen Sie das Dreieck $\Delta{}ABC$ ins untenstehende
+Koordinatensystem:\\
+$A=(7|2), B=(5|6), C=(-1|4)$
+
+\bbwGraph{-7}{7}{-6}{8}{
+\TRAINER{
+\bbwDot{7,2}{red}{west}{A}
+\bbwDot{5,6}{red}{west}{B}
+\bbwDot{-1,4}{red}{east}{C}
+\bbwLine{-2,8}{7,-1}{blue}
+}%% end TRAINER
+}%% end bbwGraph
+
+a) Spiegeln Sie das Dreieck $\Delta ABC$ am Koordinatenursprung und
+geben Sie die Bildkoordinaten $A'$, $B'$ und $C'$ an:
+
+$A' = (\LoesungsRaum{-7}|\LoesungsRaum{-2})$, 
+$B' = (\LoesungsRaum{-5}|\LoesungsRaum{-6})$,\\
+$C' = (\LoesungsRaum{1}|\LoesungsRaum{-4})$
+
+b) Zeichnen Sie die Gerade $g$, welche durch die Punkte $P=(5|1)$ und
+$Q=(-2|8)$ geht, ins obige Koordinatensystem ein.
+
+c) Spiegeln Sie das Dreieck $\Delta ABC$ an $g$ aus Aufgabe b). Geben
+Sie die neuen Koordinaten der gespiegelten Punkte $A''$, $B''$ und
+$C''$ an:
+
+$A'' = (\LoesungsRaum{4}|\LoesungsRaum{-1})$, 
+$B'' = (\LoesungsRaum{0}|\LoesungsRaum{1})$,\\
+$C'' = (\LoesungsRaum{2}|\LoesungsRaum{7})$
+%%
+\newpage%%
+%%
+\subsection{Satz von Pick}
+Georg Pick\footnote{Georg Alexander Pick: 1859 - 1942 (im KZ Theresienstadt)} hat einen allgemeingültigen Term
+gefunden, mit dem in einer allgemeinen polygonalen Figur (Vieleck) die
+Fläche einzig aus Rand- und Innenpunkte ermittelt werden kann.
+Der Term lautet
+$$A = A(r,i) =  \frac{r}2 + i - 1$$
+mit $r$ = Anzahl der Gitterpunkte auf dem Figurenrand und $i$ = Anzahl
+Gitterpunkte im Inneren der Figur.
+
+Dabei dürfen die Ecken des Vielecks natürlich nur auf ganzzahligen
+Gitterpunkten liegen und ebenso zählt man nur die ganzzahligen Gitterpunkte
+
+Gleich ein Beispiel:
+
+\begin{tabular}{cp{84mm}}
+\raisebox{-80mm}{\bbwGraph{-1}{6}{-1}{6}{
+\bbwLine{1,1}{6,1}{blue}
+\bbwLine{6,1}{3,2}{blue}
+\bbwLine{3,2}{5,4}{blue}
+\bbwLine{5,4}{2,5}{blue}
+\bbwLine{2,5}{1,1}{blue}
+\bbwDot{1,1}{ForestGreen}{west}{}
+\bbwDot{2,1}{ForestGreen}{west}{}
+\bbwDot{3,1}{ForestGreen}{west}{}
+\bbwDot{4,1}{ForestGreen}{west}{}
+\bbwDot{5,1}{ForestGreen}{west}{}
+\bbwDot{6,1}{ForestGreen}{west}{}
+\bbwDot{3,2}{ForestGreen}{west}{}
+\bbwDot{4,3}{ForestGreen}{west}{}
+\bbwDot{5,4}{ForestGreen}{west}{}
+\bbwDot{2,5}{ForestGreen}{west}{}
+%% innere Punkte: 
+\bbwDot{2,2}{red}{west}{}
+\bbwDot{2,3}{red}{west}{}
+\bbwDot{3,3}{red}{west}{}
+\bbwDot{2,4}{red}{west}{}
+\bbwDot{3,4}{red}{west}{}
+\bbwDot{4,4}{red}{west}{}
+}%% end bbwGraph%%
+}%% end Raisbox
+& Die abgebildete Figur besitzt zehn Gitterpunkte
+auf dem Rand (grün) und sechs innere Gitterpunkte (rot). Somit ist $r=10$ und
+ $i=6$. Die Fläche ist somit: $A=\frac{10}{2}+6-1=10[e^2]$
+ \end{tabular}
+
+a) Berechnen Sie mit diesem Term die Flächen der folgenden Figuren und
+prüfen Sie die Fläche geometrisch nach:
+
+\noTRAINER{\bbwCenterGraphic{15cm}{img/Pick.png}}
+\TRAINER{\bbwCenterGraphic{15cm}{img/PickTrainer.png}}
+
+\noTRAINER{\mmPapier{4.4}}
+%%
+\newpage%%
+%%
+e) Zeichnen Sie das Fünfeck $(0|4)-(-3|2)-(-2|-2)-(2|-2)-(3|2)$ und zurück zu $(0|4)$ ins
+folgende Koordinatensystem und berechnen Sie mit dem Satz von Pick
+dessen Fläche:
+
+\bbwGraph{-4}{4}{-3}{5}{
+\TRAINER{
+\bbwDot{0,4}{red}{west}{}
+\bbwDot{-3,2}{red}{west}{}
+\bbwDot{-2,-2}{red}{west}{}
+\bbwDot{2,-2}{red}{west}{}
+\bbwDot{3,2}{red}{west}{}
+}%% end TRAINER
+}%% end bbwGraph
+
+Die Fläche beträgt: $\LoesungsRaum{24}  [e^2]$
+
+\TRAINER{Fläche = 24, denn $r=8$ und $i = 21$}
+
+\end{document}
