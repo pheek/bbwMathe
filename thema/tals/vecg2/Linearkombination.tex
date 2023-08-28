@@ -91,16 +91,17 @@ Raum aufzuspannen.
 
 \begin{bemerkung}{Drei Dimensionen}{}
   Die drei Einheitsvektoren
-  $$\vec{e}_1=\begin{pmatrix}1\\0\\0\end{pmatrix};
-  \vec{e}_2=\begin{pmatrix}0\\1\\0\end{pmatrix} \text{ und }
-  \vec{e}_3=\begin{pmatrix}0\\0\\1\end{pmatrix}$$
-spannen den dreidimensionalen Raum derart auf, dass jeder Vektor als
+  $$\vec{e}_1=\Spvek{1;0;0} ;
+  \vec{e}_2=\Spvek{0;1;0} \text{ und }
+  \vec{e}_3=\Spvek{0;0;1}$$
+spannen den dreidimensionalen Raum derart auf, dass jeder weitere
+erdenkliche Vektor als
 Linearkombination aus diesen drei Vektoren geschrieben werden kann:
 
-$$\begin{pmatrix}7\\3\\-1.4\end{pmatrix}=
-  \LoesungsRaum{7}\cdot{}\begin{pmatrix}1\\0\\0\end{pmatrix} +
-  \LoesungsRaum{3}\cdot{}\begin{pmatrix}0\\1\\0\end{pmatrix} +
-  \LoesungsRaum{(-1.4)}\cdot{}\begin{pmatrix}0\\0\\1\end{pmatrix}$$
+$$\Spvek{7;3;-1.4} = 
+  \LoesungsRaum{  7   }\cdot{}\Spvek{1;0;0} + 
+  \LoesungsRaum{  3   }\cdot{}\Spvek{0;1;0} +
+  \LoesungsRaum{(-1.4)}\cdot{}\Spvek{0;0;1}$$
 \end{bemerkung}
 
 \begin{gesetz}{Einheitsvektoren}{}
@@ -120,9 +121,9 @@ $$\begin{pmatrix}7\\3\\-1.4\end{pmatrix}=
 \newpage
 \subsubsection{Linear unabhängig}\index{unabhängig!linear}
 \begin{bemerkung}{Linear unabhängig}{}
-  Der Vektor $\begin{pmatrix}4\\5\\6\end{pmatrix}$ ist von den beiden
-    Vektoren $\begin{pmatrix}1\\0\\0\end{pmatrix}$ 
-    und $\begin{pmatrix}0\\1\\0\end{pmatrix}$  linear unabhängig, denn
+  Der Vektor $\Spvek{4;5;6}$ ist von den beiden
+    Vektoren $\Spvek{1;0;0}$
+    und $\Spvek{0;1;0)$  linear unabhängig, denn
       er kann \textbf{nicht} als Linearkombination dieser beiden
       Einheitsvektoren geschrieben werden.
 \end{bemerkung}

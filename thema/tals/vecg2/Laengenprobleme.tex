@@ -12,11 +12,11 @@ Im kartesischen Koordinatensystem kann die Länge von Vektoren einfach
 mit dem Satz des Pythagoras ermittelt werden.
 
 \begin{gesetz}{in $\mathbb{R}^2$}{}
-  $$|\vec{a}| = \left| \begin{pmatrix} a_x\\a_y\end{pmatrix}  \right|   = \sqrt{a_x^2 + a_y^2}$$
+  $$|\vec{a}| = \left| \Spvek{a_x;a_y}  \right|   = \sqrt{a_x^2 + a_y^2}$$
 \end{gesetz}
 
 \begin{gesetz}{in $\mathbb{R}^3$}{}
-  $$|\vec{a}| =  \left|\begin{pmatrix}a_x\\a_y\\a_z\end{pmatrix}\right| = \sqrt{a_x^2 + a_y^2 + a_z^2}$$
+  $$|\vec{a}| =  \left|\Spvek{a_x;a_y;a_z}\right| = \sqrt{a_x^2 + a_y^2 + a_z^2}$$
 \end{gesetz}
 
 Bemerkung Taschenrechner: Im Taschenrechner kann die Länge (Distanz
@@ -47,9 +47,10 @@ verkürzt werden. Diese Operation nennen wir auch hier
 \end{definition}
 
 \begin{beispiel}{Vielfaches}{}
-  $$2.5\cdot{} \begin{pmatrix} 4 \\ -2.5 \\ 1.1 \end{pmatrix} \;
-  = \begin{pmatrix}\TRAINER{2.5\cdot{} 4}\noTRAINER{\hspace{25mm}}  \\ \TRAINER{2.5\cdot{} (-2.5)} \\ \TRAINER{2.5\cdot{} 1.1} \end{pmatrix}
-  = \begin{pmatrix}\TRAINER{10}\noTRAINER{\hspace{12mm}} \\ \TRAINER{-6.25} \\ \TRAINER{2.65} \end{pmatrix}$$
+
+  $$2.5\cdot{} \Spvek{4;-2.5;1.1} \;
+  = \Spvek{\TRAINER{2.5\cdot{} 4}\noTRAINER{\hspace{25mm}} ;    \TRAINER{2.5\cdot{} (-2.5)} ; \TRAINER{2.5\cdot{} 1.1}  }
+  = \Spvek{\TRAINER{10}\noTRAINER{\hspace{12mm}} ; \TRAINER{-6.25} ; \TRAINER{2.65}}$$
 \end{beispiel}
 
 «Das Entgegengesetz»
