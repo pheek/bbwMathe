@@ -15,7 +15,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="abgrenzung.svg">
+   sodipodi:docname="abgrenzung.svg"
+   inkscape:export-filename="/home/phi/mgit/cnt/thema/allg/daan/img/abgrenzung.png"
+   inkscape:export-xdpi="600"
+   inkscape:export-ydpi="600">
   <defs
      id="defs2">
     <marker
@@ -62,7 +65,7 @@
          inkscape:connector-curvature="0"
          id="path847-6"
          d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         style="fill:#9e5500;fill-opacity:1;fill-rule:evenodd;stroke:#9e5500;stroke-width:1.00000003pt;stroke-opacity:1"
          transform="matrix(-0.8,0,0,-0.8,-10,0)" />
     </marker>
     <marker
@@ -90,13 +93,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="9.2875135"
+     inkscape:cx="-255.71249"
      inkscape:cy="254.52343"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1824"
-     inkscape:window-height="1059"
+     inkscape:window-height="1057"
      inkscape:window-x="48"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
