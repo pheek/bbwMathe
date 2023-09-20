@@ -20,7 +20,7 @@
 
 
 \newcommand\aufgabeML[2]{\begin{samepage}%%
-Aufgabe \arabic{aufgabennummer}:\,\,\\
+\textbf{Aufgabe \arabic{aufgabennummer}:}\,\,\\
 #1\\  #2
 
 \abplz{3.2}
@@ -46,7 +46,7 @@ $$r=20\hspace{11mm}s=30\hspace{1mm}\text{ und } \angle
 \aufgabeML{\\
 Gegeben sind Vektoren $\vec{a}$ und $\vec{b}$ mit
 $$a=11.3\hspace{11mm}b=17.853\hspace{1mm}\text{ und } \angle
-(\vec{a},\vec{b}) = 90\degre$$}{$$\vec{r}\circ\vec{s} = \LoesungsRaum{11.3\cdot{}17.853\cdot\cos(90\degre)=0}$$}
+(\vec{a},\vec{b}) = 90\degre$$}{$$\vec{a}\circ\vec{b} = \LoesungsRaum{11.3\cdot{}17.853\cdot\cos(90\degre)=0}$$}
 
 \aufgabeML{Berechnen Sie den Winkel zwischen $\vec{a}$ und $\vec{b}$.
 $$\vec{a}\circ\vec{b}=18\hspace{11mm}a=9\hspace{11mm}b=8$$}{$$\angle(\vec{a},\vec{b})= \LoesungsRaum{=\arccos\left(\frac{\vec{a}\circ\vec{b}}{a\cdot{}b}\right)
@@ -92,6 +92,20 @@ einschließen:
 $$\vec{a} = \begin{pmatrix}2\\3\\4\end{pmatrix} \hspace{11mm} \vec{b}=\begin{pmatrix}5\\s\\8\end{pmatrix}$$}%%
 {$$s = \LoesungsRaum{\frac{\sqrt{222691}-504}{7}\approx{}-4.5855}$$}
 
+%% entspricht Frommenwiler S. 203 Aufg 109
+
+\aufgabeML{Berechnen Sie den Winkel zwishen der Körperdiagonalene und
+den Seitenflächen eines Würfels mit Hilfe des Skalarproduktes}{}%%
+\TRAINER{$$\cos(\alpha) = \frac{\vec{a}\circ{}\vec{b}}{a\cdot{}
+b} \Longrightarrow  \alpha
+= \arccos\left(\frac{\sqrt{6}}{3}\right)\text{, mit } \vec{a}
+= \Spvek{\sqrt{2};1}\text{ und } \vec{b} = \Spvek{\sqrt{2};1}$$
+$$\Longrightarrow \alpha\approx 35.26\degre$$}%% end TRAINER
+
+
+
+
+
 \aufgabeML{Gegeben ist ein Quader mit der Grundfläche
 $1.7 \times 2.4\text{m}^2$
 und der Höhe $0.8 \text{m}$.\\
@@ -115,5 +129,8 @@ $B=(1|3|2)$ und $C=(2|2|1)$ den Winkel $\alpha = \angle BAC$:
 {$$\alpha=\LoesungsRaum{\arccos\left(\frac{\vec{AB}\circ{}\vec{AC}}{|\vec{AB}|\cdot{}|\vec{AC}|}\right)
 \approx 79.2\degre}$$
 }
+
+
+
 
 \end{document}
