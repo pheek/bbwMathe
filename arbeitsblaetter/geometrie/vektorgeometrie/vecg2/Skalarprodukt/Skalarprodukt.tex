@@ -23,7 +23,7 @@
 \textbf{Aufgabe \arabic{aufgabennummer}:}\,\,\\
 #1\\  #2
 
-\abplz{3.2}
+\abplz{5.2}
 \end{samepage}
 \stepcounter{aufgabennummer}%%
 }%%
@@ -35,7 +35,7 @@
 
 \aufgabeML{ Gegeben sind die Vektoren $\vec{p}$ und $\vec{q}$ mit
 $$p=37\hspace{11mm}q=42\hspace{1mm}\text{ und } \angle (\vec{p},\vec{q}) = 18\degre$$}%%
-{$$\vec{p}\circ\vec{q} = \LoesungsRaum{37\cdot{}42\cdot\cos(18\degre)\approx 1477.9418}$$}
+{Berechnen Sie das Skalarprodukt: $$\vec{p}\circ\vec{q} = \LoesungsRaum{37\cdot{}42\cdot\cos(18\degre)\approx 1477.9418}$$}
 
 
 \aufgabeML{\\
@@ -64,47 +64,65 @@ $$\vec{a}\circ\vec{b}=0\hspace{11mm}a=1.41421\hspace{11mm}b=1.73205$$}{$$\angle(
   = \arccos{}\left(\frac{0}{a\cdot{}b}\right)\approx 90\degre}$$}
 
 \aufgabeML{Berechnen Sie $\vec{r}\circ\vec{s}$:
-$$\vec{r} = \begin{pmatrix}6\\-5\end{pmatrix}\hspace{11mm}\vec{s}=\begin{pmatrix}-6\\-4\end{pmatrix}$$}%%
+$$\vec{r} = \Spvek{6;-5} \hspace{11mm}\vec{s}=\Spvek{-6;-4}$$}%%
 {$$\vec{r}\circ{}\vec{s} = \LoesungsRaum{-16}$$}
 
 \aufgabeML{Berechnen Sie $\vec{r}\circ\vec{s}$:
-$$\vec{r} = \begin{pmatrix}6\\6\\-3\end{pmatrix}\hspace{11mm}\vec{s}=\begin{pmatrix}-0.5\\5\\9\end{pmatrix}$$}%%
+$$\vec{r} = \Spvek{6;6;-3} \hspace{11mm} \vec{s}=\Spvek{-0.5;5;9}$$}%%
 {$$\vec{r}\circ{}\vec{s} = \LoesungsRaum{0 \hspace{11mm}(=-3+30-27)}$$}
-
-\aufgabeML{Bestimmen Sie den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
-$$\vec{u} = \begin{pmatrix}-1\\-2\\-3\end{pmatrix}\hspace{11mm}\vec{v}=\begin{pmatrix}4\\5\\-6\end{pmatrix}$$}%%
-{$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{\arccos\left(\frac{2\cdot{}\sqrt{22}}{77}\right) \approx 83.00\degre}$$}
-
 \TRAINER{\newpage}
 
 \aufgabeML{Bestimmen Sie den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
-$$\vec{u} = \begin{pmatrix}-1\\3\\5.5\end{pmatrix}\hspace{11mm}\vec{v}=\begin{pmatrix}2\\-6\\-11\end{pmatrix}$$}%%
+$$\vec{u} = \Spvek{-1;-2;-3} \hspace{11mm} \vec{v}=\Spvek{4;5;-6}$$}%%
+{$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{\arccos\left(\frac{2\cdot{}\sqrt{22}}{77}\right) \approx 83.00\degre}$$}
+
+\aufgabeML{Bestimmen Sie den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
+$$\vec{u} = \Spvek{-1;3;5.5}\hspace{11mm}\vec{v}=\Spvek{2;-6;-11}$$}%%
 {$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{180\degre}$$}
 
 \aufgabeML{Bestimmen Sie den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
-$$\vec{u} = \begin{pmatrix}1\\1\\9\end{pmatrix}\hspace{11mm}\vec{v}=\begin{pmatrix}0.5\\\frac12\\4.5\end{pmatrix}$$}%%
+$$\vec{u} = \Spvek{1;1;9} \hspace{11mm}\vec{v}= \Spvek{0.5;\frac12;4.5}$$}%%
 {$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{0\degre}$$}
 
 
-\aufgabeML{Bestimmen Sie den Parameter $s$ so, daass die beiden
+\aufgabeML{Bestimmen Sie den Parameter $t$ von Hand so, dass die beiden
+Vektoren $\vec{p}$ und $\vec{q}$ einen Winkel von 90 Grad
+einschließen:
+$$\vec{p} = \Spvek{1;t;2} \hspace{11mm} \vec{q}=\Spvek{3;1;t}$$}%%
+{$$t = \LoesungsRaum{-1}$$ }%% end aufgabeML
+\TRAINER{..., denn bei 90 Grad ist das Skalarprodukt = 0 und somit
+muss $3t+3 = 0$ sein. Dies geht nur, wenn $t=-1$}
+
+
+
+\aufgabeML{Bestimmen Sie den Parameter $x$ von Hand so, dass die beiden
+Vektoren $\vec{u}$ und $\vec{v}$ einen Winkel von 45 Grad
+einschließen:
+$$\vec{u} = \Spvek{1;1;0} \hspace{11mm} \vec{v}=\Spvek{2;1;x}$$}%%
+{$$t = \LoesungsRaum{\pm 2}$$ }%% end aufgabeML
+\TRAINER{..., denn $\cos{45\degre} = \frac{\sqrt2}2$ und dies ist
+gleich $\frac{\vec{u}\circ\vec{v}}{uv} = \frac{1+2}{\sqrt{2}\cdot{}\sqrt{x^2+5}}$}
+\newpage
+
+
+\aufgabeML{Bestimmen Sie den Parameter $s$ mit dem Taschenrechner so, dass die beiden
 Vektoren $\vec{a}$ und $\vec{b}$ einen Winkel von 60 Grad
 einschließen:
-$$\vec{a} = \begin{pmatrix}2\\3\\4\end{pmatrix} \hspace{11mm} \vec{b}=\begin{pmatrix}5\\s\\8\end{pmatrix}$$}%%
+$$\vec{a} = \Spvek{2;3;4} \hspace{11mm} \vec{b}=\Spvek{5;s;8}$$}%%
 {$$s = \LoesungsRaum{\frac{\sqrt{222691}-504}{7}\approx{}-4.5855}$$}
+\TRAINER{Lösung mit TR: a und b definieren, dananach cos(60) =
+dotp(a,b) / (norm(a) * norm(b)).}
 
 %% entspricht Frommenwiler S. 203 Aufg 109
-
-\aufgabeML{Berechnen Sie den Winkel zwishen der Körperdiagonalene und
+%
+\aufgabeML{Berechnen Sie den Winkel zwischen der Körperdiagonalene und
 den Seitenflächen eines Würfels mit Hilfe des Skalarproduktes}{}%%
 \TRAINER{$$\cos(\alpha) = \frac{\vec{a}\circ{}\vec{b}}{a\cdot{}
 b} \Longrightarrow  \alpha
 = \arccos\left(\frac{\sqrt{6}}{3}\right)\text{, mit } \vec{a}
 = \Spvek{\sqrt{2};1}\text{ und } \vec{b} = \Spvek{\sqrt{2};1}$$
 $$\Longrightarrow \alpha\approx 35.26\degre$$}%% end TRAINER
-
-
-
-
+\noTRAINER{\newpage}
 
 \aufgabeML{Gegeben ist ein Quader mit der Grundfläche
 $1.7 \times 2.4\text{m}^2$
@@ -119,7 +137,7 @@ Welchen Winkel $\alpha$ schließt die Körperdiagonale zur Grundseite ein?
 }$$
 Dabei ist $\vec{a}$ die Quaderdiagonale (Körperdiagonale) und $\vec{p}$
 dessen Projektion auf die Grundfläche (= $xy$-Ebene).}
-
+\newpage
 
 %% Maturaprüfung 2020 Aufgabe 2b):
 
@@ -129,6 +147,17 @@ $B=(1|3|2)$ und $C=(2|2|1)$ den Winkel $\alpha = \angle BAC$:
 {$$\alpha=\LoesungsRaum{\arccos\left(\frac{\vec{AB}\circ{}\vec{AC}}{|\vec{AB}|\cdot{}|\vec{AC}|}\right)
 \approx 79.2\degre}$$
 }
+
+
+\aufgabeML{Berechnen Sie den Winkel $\alpha$ zwischen der $xy$-Ebene und dem
+Vektor $\vec{q}$:
+
+$\vec{q}=\Spvek{-3;6;2}$}%%
+{$$\alpha=\LoesungsRaum{\arccos(\frac{\vec{q}\circ{}\vec{p}}{qp})\text{
+mit p = Projektion auf xy-Ebene (-3;6;0)} \approx 16.6015\degre}$$
+}
+
+
 
 
 
