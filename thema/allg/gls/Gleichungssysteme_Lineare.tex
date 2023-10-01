@@ -25,24 +25,25 @@
 
 
 \subsection{Einstiegsbeispiel}
-Ein Apfel koste CHF $a$, eine Birne CHF $b$. Wenn ich drei Äpfel und zwei Birnen kaufe, bezahle ich CHF 3.10. Wenn ich hingegen vier Äpfel und fünf Birnen kaufe, so muss ich CHF 6.00 bezahlen. Wie viel kostet ein Apfel, wie viel eine Birne?
+Ein Apfel koste CHF $a$, eine Banane CHF $b$. Wenn ich drei Äpfel und zwei Bananen kaufe, bezahle ich CHF 3.10. Wenn ich hingegen vier Äpfel und fünf Bananen kaufe, so muss ich CHF 6.00 bezahlen. Wie viel kostet ein Apfel, wie viel eine Banane?
 
+\begin{center}\includegraphics[width=8cm]{allg/gls/img/ApfelBanane.jpg}\end{center}
 
-\TNT{5.2}{$a$ = Preis eines Apfels in CHF
+\TNT{8}{$a$ = Preis eines Apfels in CHF
 
-  $b$ = Preis einer Birne \textbf{in} CHF
+  $b$ = Preis einer Banane\textbf{in} CHF
 
   $3a$ = Totalpreis von drei Äpfeln \textbf{in} CHF
 
-  $2b$ = Totalpreis von zwei Birnen \textbf{in} CHF
+  $2b$ = Totalpreis von zwei Bananen \textbf{in} CHF
 
-  etc.
+  $3a+2b$ = Totalpreis von drei Äpfeln und zwei Bananen \textbf{in} CHF
   
   \vspace{22mm}
 }
 
-
-Wir schreiben dies üblicherweise als sortiertes Gleichungssystem auf:
+Diese Term-Information packen wir in Gleichungen und schreiben die
+beiden Gleichungen als sortiertes \textit{(lineares)} Gleichungssystem auf:
 
 \TNTeop{\gleichungZZ{3a + 2b}{3.10}{4a + 5b}{6.00}}
 
@@ -85,7 +86,19 @@ Nun setzen wir das gefundene $a$ in (III) ein:
 
 
 \newpage
-\begin{rezept}{Einsetzungsverfahren}{}
+
+  \begin{gesetz}{Lösungsmenge}{}
+    Die Lösung eines Gleichungssystems ist typischerweise ein
+    geordnetes Zahlenpaar. Wir schreiben 
+
+\TNT{2}{    $$\LoesungsMenge{}_{(a; b)} = \left\{(0.50; 0.80)\right\}$$ } 
+
+  als Beispiel für obige Gleichung.
+    
+    \end{gesetz}
+
+
+  \begin{rezept}{Einsetzungsverfahren}{}
   \begin{enumerate}
 
   \item Eine (beliebige) Gleichung nach einer (beliebigen) Variable
@@ -105,7 +118,7 @@ Nun setzen wir das gefundene $a$ in (III) ein:
 \olatLinkGESOKompendium{2.2.1}{13}{27. bis 32.}
 \newpage
   
-\subsubsection{Ein nicht lineares Beispiel}
+\subsubsection{Ein nicht lineares Beispiel (optional)}
 Mit dem Einsetzungsverfahren lassen sich auch nicht-lineare
 Gleichungssysteme lösen:
 \gleichungZZ{a\cdot{}b}{72}{a^4\cdot{}\frac{b}2}{288}
@@ -130,16 +143,6 @@ Lösungsweg:
     durch die erste dividieren können (dies wäre dann aber nicht mehr
     das Einsetzungsverfahren).
   }%%
-
-  \begin{gesetz}{Lösungsmenge}{}
-    Die Lösung eines Gleichungssystems ist typischerweise ein
-    geordnetes Zahlenpaar. Wir schreiben 
-
-\TNT{2}{    $$\LoesungsMenge{}_{(a; b)} = \left\{(2; 36)\right\}$$ } 
-
-  als Beispiel für obige Gleichung.
-    
-    \end{gesetz}
 
   \newpage
   %%%%%%%%%%%
@@ -220,13 +223,13 @@ Einsetzungsverfahrens\totalref{einsetzungsverfahren}.
 \newpage
 
 
-\subsubsection*{Spezielle Bruchgleichungen}\index{Bruchgleichungen!Gleichungssysteme}
+\subsubsection{Spezielle Bruchgleichungen}\index{Bruchgleichungen!Gleichungssysteme}
 Oft kommen auch in Gleichungssystemen Bruchgleichungen vor. Tipp:
-bevor Sie die folgenden Aufgaben lösen, betrachten Sie die folgende
-Abkürzung, um eine Bruchgleichung zu vereinfachen...
+bevor Sie die nachfolgenden Aufgaben lösen, betrachten Sie die folgende
+Abkürzung: Um die folgende Bruchgleichung zu vereinfachen...
 
 \gleichungZZ{\frac{\color{ForestGreen}2-x}{\color{red}2x-3}}{\frac{\color{red}5-y}{\color{ForestGreen}2y-4}}{8}{5x-3y}
-... wird mit «übers Kreuz multiplizieren» zu:
+... wird die erste Gleichung mit «übers Kreuz multiplizieren» zu:
 
 $$({\color{ForestGreen}2-x})({\color{ForestGreen}2y-4}) =
 ({\color{red}2x-3})({\color{red}5-y})$$
