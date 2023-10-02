@@ -525,12 +525,21 @@ $$g: x\mapsto \frac{16x+3.68}5 \text{ ?}$$
 
 \vspace{5mm}
 $$\LoesungsMenge{}_S=\LoesungsRaumLang{\{\}}$$
+(Warum versagt hier der numerische \textit{Solver} des Taschenrechners?
+Tipp: Resultate immer auch noch nachprüfuen!)
+
 \TNTeop{
-Beide haben die selbe Steigung (3.2) aber einen verschiedenen
+Beide Funktionen haben die selbe Steigung (3.2) aber einen verschiedenen
 $y$-Achsenabschnitt.
 Die beiden sind parallel und haben somit keinen gemeinsamen
 Schnittpunkt in $\mathbb{R}\times\mathbb{R}$
 
+Der numerische Taschenrechner versagt, wenn von einem Startwert >0
+ausgegangen wird. Startet der Rechner \zB{} mit $x=1$, so kann das
+Resultat gut und gerne $x=5.96 \cdot{}10^{16}$ werden. Für den Rechner
+ist dieses Resultat so ok, denn in den Größenordnungen kann der
+Rechner die hinterste Ziffer nicht mehr genau annähern und bekommt für
+beide Seiten der Gleichung den selben $y$-Wert.
 }%% end TNT eop
 
 \subsection{Schnittpunkt(e)?}

@@ -134,7 +134,24 @@ Zahl 12 durch die Mol-Zahl teilen, so tippen wir
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Quadratische Gleichungen}\label{quadGL}
+\section{Gleichungen}
+
+\subsection{Lineare Gleichungen}
+Mit der Taste \tiprobutton{2nd}\tiprobutton{sin_num-solv} ist ist der Rechner in der
+Lage, lineare Gleichungen zu lösen. Beispiel:
+
+$$x+2 = 3x-4$$
+$$\lx = \{2.5\}$$
+
+Aber \textbf{Achtung}: Dem Resultat ist nicht immer zu trauen. Der
+Rechner versucht das Resultat anzunähern. So findet er auch für
+unlösbare Gleichungen meist eine Lösung:
+
+$$x+1 = x+2$$
+
+$$\lx = \{\}\text{, der Rechner liefert: } \approx 1.845\cdot{}10^{12}$$
+
+\subsection{Quadratische Gleichungen}\label{quadGL}
 Quadratische Gleichungen mit Zahlen können einfach mit \tiprobutton{2nd}\tiprobutton{cos_poly-solv} gelöst werden. Dazu müssen die Gleichungen vorab in die Grundform gebracht werden:
 
 $$7x^2 - 55x - 22 = 0$$
@@ -145,7 +162,8 @@ $$a=7; b=-55; c=-22$$
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Lineare Gleichungssysteme}\label{gleichungssysteme}
+\newpage
+\subsection{Lineare Gleichungssysteme}\label{gleichungssysteme}
 Lineare Gleichungssysteme können mit der \texttt{sys-solv}-Funktion gelöst werden.
 Dazu muss das Gleichungssystem zunächst in die Grundform gebracht werden.
 
