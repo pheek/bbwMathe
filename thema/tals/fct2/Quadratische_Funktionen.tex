@@ -32,7 +32,7 @@ Einstieg: Bilder von Heimgartner/Hunziker.
 
 Welche Funktionen sind quadratisch?
 
-\TadBMTA{272}{1., 2.}
+\AadBMTA{272}{1., 2. a) b)}
 
 \newpage
 
@@ -53,14 +53,19 @@ und $y=-0.25\cdot{}x^2$  ins Koordinatensystem:
 \newpage
 
 \subsection{Grundform}\index{Grundform!quadratische Funktion}\index{Quadratische Funktion!Grundform}
-Die Funktion $f(x): x \mapsto y = ax^2 + bx +c$ ist eine
+
+\begin{definition}{Grundform}{}
+Die Funktion $$f(x): x \mapsto y = ax^2 + bx +c$$ ist eine
 quadratische Funktion in Grundform\index{Grundform!quadratische Funktion}.
+\end{definition}
 
 Spielen Sie mit \TALS{dem TI-nSpire oder mit} \texttt{geogebra.org} an den Parametern $a$, $b$ und $c$ der Funktionsgleichung $y = a\cdot{}x^2 + b\cdot{} x + c$ herum. Was bewirkt der Parameter
 
-$a$: \LoesungsRaumLang{Parabelöffnung: $|a|$ klein: Breite (weite) Öffnung / $|a|$ groß: Enge, schmale Öffnung. $a < 0$: Parabel ist nach unten geöffnet. $a > 0$: Parabel ist nach oben geöffnet.}
+$a$: \LoesungsRaumLang{Parabelöffnung:\\ $|a|$ klein: Breite (weite) Öffnung / $|a|$ groß: Enge, schmale Öffnung. $a < 0$: Parabel ist nach unten geöffnet. $a > 0$: Parabel ist nach oben geöffnet.}
 
-$b$: \LoesungsRaumLang{«Parabelsteigung»\footnote{Mit «Parabelsteigung» ist hier die Steigung der entsprechenden Tangente gemeint.} im Punkt $A(0|c)$}
+\noTRAINER{\mmPapier{2.4}}
+
+$b$: \LoesungsRaumLang{«Tangentensteigung»  im Punkt $C=(0|c)$: Mit «Tangentensteigung ist hier die Steigung der entsprechenden Tangente gemeint.}
 
 $c$: \LoesungsRaumLang{$y$-Achsenabschnitt. Damit wird eine Verschiebung der Parabel entlang der $y$-Achse erreicht.}
 
@@ -68,7 +73,7 @@ Versuchen Sie eine Parabel mit Scheitelpunkt $(1|1)$ zu finden\TRAINER{(Lösung:
 
 \subsection*{Aufgaben}
 %%\TALSAadBMTA{184ff}{660. a) c) f), 662. a) b) c) und e)}
-\AadBMTA{273}{5., 6., 7., 8. und 9.}
+\AadBMTA{273}{5., 6.}
 \newpage
 
 \subsection{Vier charakteristische Punkte}
@@ -108,7 +113,7 @@ der Normalparabel ($a=1$) vom
 Scheitelpunkt um eine Einheit nach rechts, so muss die Parabel um eine
 $y$-Einheit nach oben anwachsen.
 
-a) Parabel durch Scheitelpunkt $P=(-3|1)$ und durch $P'=(-2|2)$ zechnen. \TRAINER{=verschobene Normalparbel}
+a) Parabel durch Scheitelpunkt $P=(-3|1)$ und durch $P'=(-2|2)$ zeichnen. \TRAINER{=verschobene Normalparbel}
 
 
 b) Parabel mit Scheitelpunkt $Q=(2|2)$ durch $Q'=(3|0.5)$ zeichnen.
@@ -138,8 +143,8 @@ c$.
 
 \subsubsection{Nullstellen}
 Wie bei den linearen Funktionen sind auch hier die
-Nullstellen\index{Nullstelle} ($x_0$) die Schnittpunkte mit der $x$-Achse. Dies bedeutet für die
-Nullstellenpunkte $N(x_0 | y_0)$, dass die $y$-Koordinate = 0 ist. Es gilt
+Nullstellen
+Nullstellenpunkte $N=(x_0 | y_0)$, dass die $y$-Koordinate = 0 ist. Es gilt
 also
 
 $$0 = x^2 - 4 x + \frac{7}{4} $$
@@ -148,30 +153,32 @@ Dies ist eine quadratische Gleichung mit den Lösungen:
 
 $$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$ 
 
-\noTRAINER{\platzFuerBerechnungen{2.4}}
-\TRAINER{$x_{1} = 0.5; x_{2}=3.5$ (Mitternachtsformel)
-  \vspace{3cm}}
+\noTRAINER{\platzFuerBerechnungen{1.6}}
+\TRAINER{$x_{1} = 0.5; x_{2}=3.5$ (Mitternachtsformel. Auflösung s. unten.)
+  \vspace{22mm}}
 
 \begin{bemerkung}{}{}
   Die Nullstellen der quadratischen Funktion entsprechen den Lösungen
-  der zugehörigen quadratischen Funktion (mit $y=0$). Daher gilt
+  der zugehörigen quadratischen Gleichung(mit $y=0$). Daher gilt
   auch hier: 
 
 
   \begin{tabular}{c|p{8cm}}
-    Diskriminante $D=b^2-4ac$ > 0 & Es gibt zwei Nullstellen. \\
+    Diskriminante $D=b^2-4ac$ > 0 & Es gibt \textbf{zwei} Nullstellen. \\
     \hline\\
-    Diskriminante $D=b^2-4ac$ = 0 & Es gibt eine Nullstelle, denn der Scheitelpunkt liegt auf der $x$-Achse.\\
+    Diskriminante $D=b^2-4ac$ = 0 & Es gibt \textbf{genau eine} Nullstelle, denn
+    \TRAINER{der Scheitelpunkt liegt auf der $x$-Achse.}\noTRAINER{\vspace{18mm}}\\
     \hline\\
-    Diskriminante $D=b^2-4ac$ < 0 & Es gibt keine Nullstellen, denn die Parabel schneidet die $x$-Achse nicht.\\
+    Diskriminante $D=b^2-4ac$ < 0 & Es gibt \textbf{keine} Nullstellen, denn\TRAINER{ die Parabel schneidet die $x$-Achse nicht.}\noTRAINER{\vspace{18mm}}\\
   \end{tabular}
   
  \ifisALLINONE{Zum Begriff \textbf{Diskriminante}:  \totalref{diskriminante}}\fi{} 
 \end{bemerkung}
+\newpage
+
 
 \subsection*{Aufgaben}
 \AadBMTA{277ff}{28. a) c) }
-
 \newpage
 
 
@@ -183,21 +190,30 @@ genannt.
 Wir berechnen den Scheitelpunkt in zwei Schritten.
 
 \textbf{Erstens:} Wir berechnen den Mittelwert der beiden Nullstellen:
-$$x_S := \frac{x_{1} + x_{2}}{2} = \frac{\frac{-b+\sqrt{D}}{2a} + \frac{-b-\sqrt{D}}{2a}}{2} =
+$$x_S = \TRAINER{\frac{x_{1} + x_{2}}{2}}\noTRAINER{\hspace{35mm}} = \frac{\frac{-b+\sqrt{D}}{2a} + \frac{-b-\sqrt{D}}{2a}}{2} =
 \frac{(-b+\sqrt{D}) + (-b-\sqrt{D})}{4a} =\frac{-b}{2a}$$
 Dabei ist $D$ die Diskriminante $D=b^2-4ac$.
 
-\platzFuerBerechnungen{2.4}
-\TRAINER{$x_S = 2$
-\vspace{3cm}}
+Beispiel
+$$y = x^2 - 4x + 1.75$$
+
+\vspace{15mm}
+
+$x_S = \TRAINER{\frac{-b}{2a} = \frac{-(-4)}{2\cdot{}1} = \frac{4}{2} = 2}$
+
+\vspace{3cm}
 
 \textbf{Zweitens:} Wir setzen den gefundenen $x$-Wert
 (\LoesungsRaum{2}) in die Funktionsgleichung
 ein:
 $$y_S = x^2 - 4x + 1.75$$
-$$y_S = (\LoesungsRaum{2})^2 - 4\cdot{}(\LoesungsRaum{2}) + 1.75$$
+$$y_S = (\TRAINER{2}\noTRAINER{\hspace{7mm}})^2 - 4\cdot{}(\TRAINER{2}\noTRAINER{\hspace{7mm}}) + 1.75$$
 
-Wir erhalten für den Scheitelpunkt $S$: $S=(x_S | y_S) = (\LoesungsRaum{2} | \LoesungsRaum{-2.25})$.
+Wir erhalten für den Scheitelpunkt $S$:
+
+$$S=(x_S | y_S) = (\LoesungsRaum{2} | \LoesungsRaum{-2.25}).$$
+\newpage
+
 
 \begin{gesetz}{Scheitelpunkt}{}
   Der Scheitelpunkt $S$ einer Parabel in der Grundform ($y=ax^2+bx+c$) kann wie folgt
@@ -211,7 +227,8 @@ Wir erhalten für den Scheitelpunkt $S$: $S=(x_S | y_S) = (\LoesungsRaum{2} | \L
   
 \subsection*{Aufgaben}
 %%\TALSAadBMTA{184ff}{665. a) b) c) 666. a) b) c) e) f) g)}
-\AadBMTA{273}{4. (=Aufg. 22. S. 276)}
+\AadBMTA{273ff}{7., 8. und 9. mit \texttt{geogebra.org}, 17. a) c),
+  18. a) c) und 28. b) c)}
 
 \newpage
 
@@ -479,7 +496,7 @@ Tipp: Skizze und  die Parabelgleichung in Nullstellenform aufschreiben. Die Düs
 
 \subsection*{Aufgaben}%% Nullstellenform
 %%\TALSAadBMTA{185}{663, 678., 680.}
-\TALSAadBMTA{277}{30. a) b), 31. c)}
+\TALSAadBMTA{277}{30. a) b), 31. c), 32. a), 33.}
 \newpage
 
 %%\TRAINER{\, \newpage}
@@ -536,7 +553,7 @@ Von einer Parabel ist der Scheitel $S(2|3)$ gegeben. Ebenfalls ist bekannt, dass
   }%%end TRAINER%%
 
   \subsection*{Aufgabe}
-  \AadBMTA{277}{29. b) c), 32. a), 33.}
+  \AadBMTA{275}{16. a) c) d)}
 %%  \TALSAadBMTA{185}{679. a), 681., 695., 684. a), 700., 694., 686.(*) und  664.}}
 
 \newpage
@@ -626,5 +643,3 @@ $$x_{1,2} =x_S \pm \sqrt{\frac{-y_S}{a}}$$
 \subsection{Aufgaben}
 
 \TALS{\olatLinkArbeitsblatt{Umrechnen der Formen}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/103176133021102}{1., 2., 3. und 8.}}
-
-
