@@ -185,7 +185,11 @@ Wertetabelle:
   $$0=\frac12x+3 \Longrightarrow x_0=-6$$
 }
 
-\bbwGraph{-7}{7}{-2}{5}{}
+\bbwGraph{-7}{7}{-2}{5}{\TRAINER{
+    \bbwDot{-6,0}{red}{east}{N}
+    \bbwDot{0,3}{orange}{west}{Y}
+    \bbwFuncC{3+0.5*\x}{-6.5:3.5}{blue}
+}}
 \newpage
 
 \subsubsection{$y$-Achsenabschnitt}\index{$y$-Achsenabschnitt}\index{Achsenabschnitt!y-}\index{Ordinatenabschnitt}
@@ -325,21 +329,25 @@ $y$=0) in ihrer Grundform. Nämlich:
 
 \hrule
 
-a) Lineare Gleichung $$ax+b=0$$
+a) Lineare \textbf{Gleichung} $$ax+b=0$$
 
 Gesucht \textbf{Lösung} $x$:
 
-$$x = \TRAINER{\frac{-b}{a}}  $$
+\TRAINER{$$ax+b=0 | -b$$}\noTRAINER{\mmPapier{1.2}}
+\vspace{1mm}
+\TRAINER{$$ax=-b | :a$$}\noTRAINER{\mmPapier{1.2}}
+
+$$\lx = \TRAINER{\left\{\frac{-b}{a}\right\}}  $$
 
 \hrule
 
-b) Lineare Funktion $$f: y=ax+b$$
+b) Lineare \textbf{Funktion}/ $$f: y=ax+b$$
 
 Gesucht \textbf{Nullstelle} $x_0$ bei $y_0=0$. Die Gerade schneidet
 die $x$-Achse in der Nullstelle $x_0$ der Geraden.
 
 \begin{gesetz}{Nullstelle}{}
-  Die Nullstelle einer linearen Funktion berechnet sich wie folgt:
+  Die Nullstelle $x_0$ einer linearen Funktion berechnet sich wie folgt:
   
 $$x_0 = \frac{-b}{a}$$
 \end{gesetz}
