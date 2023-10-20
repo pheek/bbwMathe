@@ -2,7 +2,7 @@
 \subsubsection{Gerade durch zwei gegebene Punkte}\index{Punkt auf Geraden}\index{Gerade!Punkt auf}
 \TRAINER{\TALS{ev. Einstiegsaufgaben Frommenwiler: 606. a) c)}}
 
-Seien die Punkte $P=(10|6)$ und $Q=(-5|3)$ gegeben.
+Seien die Punkte $P=(9|6)$ und $Q=(-6|3)$ gegeben.
 Gesucht ist die Funktionsgleichung $f: y=ax+b$ (namentlich $a$ und $b$), sodass
 der Graph der Funktion $f$ durch beide Punkte führt.
 
@@ -11,43 +11,58 @@ der Graph der Funktion $f$ durch beide Punkte führt.
 
 \vspace{1mm}
 
-
-\noTRAINER{
-\bbwGraph{-6}{11}{-1}{7}{
-\bbwLine{-6,2.8}{11,6.2}{green}
-\bbwDot{-5,3}{blue}{south}{Q}
-\bbwDot{10,6}{blue}{south}{P}
+\bbwGraph{-7}{10}{-1}{7}{
+%
+\TRAINER{%% Steigungsdreieck: 
+ \bbwLine{-7,2.8}{10,6.2}{green}
+ \bbwDot{-6,3}{blue}{south}{Q}
+ \bbwDot{9,6}{blue}{south}{P}
+  \bbwLine{-6,3}{9,3}{blue}
+  \bbwLine{9,6}{9,3}{blue}
+}%% end TRAINER
 }%% end bbwGraph
-}%% end noTRAINER
 
-\TNTeop{%%
-\raisebox{2cm}{\includegraphics[width=16cm]{allg/funktionen/img/GeradeDurchZweiPunkte.jpg}}}%% END TNT EOP 
+\TNTeop{
+1. Zeichnen\\
+2. Steigungsdreieck zeichnen $V=3, H=15$\\
+3. Steigung rechnen $a = \frac{V}{H} = \frac3{15} = \frac15 = 0.2$\\
+4. $b$ «ablesen». Hier Dreisatz: $b = 3 + y^*$ mit $H : V = 6 :
+y^* \Longleftrightarrow  6V = H\cdot{}y^*$ \\
+    $\Longrightarrow y^* = 6\cdot{} V : H = 6\cdot{} a =
+    6\cdot{} \frac15 = 1.2$\\
+    ergo\\
+    $b = 3 + y^* = 3+1.2 = 4.2.$
 
+5. Funktionsgleichung $y = ax+b = 0.2 x + 4.2$
+}%% end TNTeop
+%
+%\raisebox{2cm}{\includegraphics[width=16cm]{allg/funktionen/img/GeradeDurchZweiPunkte.jpg}}%% END TNT EOP 
+%
 \newpage
 
 \textbf{Rezept II: Rechnerisch, algbraisch \GESO{(optional)}}\\
 
-Seien wieder $P=(10|6)$ und $Q=(-5|3)$.
+Seien wieder $P=(9|6)$ und $Q=(-6|3)$.
 \vspace{1mm}
 
 a)
 
 Das $a$ kann durch das «Steigungsdreieck» berechnet werden:
 
-$$a = \frac{\text{V}}{\text{H}}=\TALS{\frac{\Delta y}{\Delta x}}=\frac{y_Q-y_P}{x_Q-x_p} = \LoesungsRaumLang{\frac{3 - 6}{(-5) - 10} = \frac{-3}{-15} = \frac{1}{5}}$$
+$$a = \frac{\text{V}}{\text{H}}=\TALS{\frac{\Delta y}{\Delta x}}=\frac{y_Q-y_P}{x_Q-x_p} = \LoesungsRaumLang{\frac{3 - 6}{(-6) - 9} = \frac{-3}{-15} = \frac{1}{5}}$$
 
 b)
 
-Setzen wir $a=\frac{1}{5}$ und einen der beiden Punkte (\zB $P=(10|6)$) in die
+Setzen wir $a=\frac{1}{5}$ und einen der beiden Punkte (\zB $P=(9|6)$) in die
 allgemeine Funktionsgleichung $y=ax+b$ ein, so erhalten wir
 
 \TNT{4}{$$y=\frac15x+b$$
-$$6=\frac15\cdot{}10 + b$$
-$$b=4$$}
+$$6=\frac15\cdot{}9 + b$$
+$$b=6 - \frac15 \cdot{} 9 = 4.2$$}
 
 Die gesuchte Geradengleichung lautet also:
 
-$$f: y=\LoesungsRaumLang{\frac{1}{5}\cdot{}x + 4}$$
+$$f: y=\LoesungsRaumLang{\frac{1}{5}\cdot{}x + 4.2}$$
 
 \begin{rezept}{}{}
 Um die Funktionsgleichung $$y=ax+b$$ zu finden,
@@ -60,7 +75,7 @@ Um die Funktionsgleichung $$y=ax+b$$ zu finden,
 \GESO{
 \textbf{Rezept III: Mit dem Taschenrechner}
 
-Wieder seien die beiden Punkte $P=(10|6)$ und $Q=(-5|3)$ gegeben.
+Wieder seien die beiden Punkte $P=(9|6)$ und $Q=(-6|3)$ gegeben.
 
 Tippen Sie auf dem Taschenrechner \tiprobutton{data}, um mit der
 Eingabe der beiden Punkte zu beginnen. Geben Sie in die
@@ -69,8 +84,8 @@ $y$-Werte ein:
 
 \begin{tabular}{c|c|}
  \texttt{L1}& \texttt{L2} \\\hline
- \noTRAINER{.....}\TRAINER{10}  & \noTRAINER{.....}\TRAINER{6}\\
- \noTRAINER{.....}\TRAINER{-5}  & \noTRAINER{.....}\TRAINER{3}
+ \noTRAINER{.....}\TRAINER{9}  & \noTRAINER{.....}\TRAINER{6}\\
+ \noTRAINER{.....}\TRAINER{-6}  & \noTRAINER{.....}\TRAINER{3}
 \end{tabular}
 
 Wählen Sie mit \tiprobutton{2nd} \tiprobutton{data_stat-reg-distr}
@@ -81,7 +96,7 @@ xDATA: L1
 
 yDATA: L2
 
-Mittels \texttt{CALC} (\tiprobutton{enter}) erhalten Sie $a=0.2$ und $b=4$.
+Mittels \texttt{CALC} (\tiprobutton{enter}) erhalten Sie $a=0.2$ und $b=4.2$.
 
 }%% END GESO
 
@@ -93,8 +108,8 @@ $$f(x):=a\cdot{}x + b$$
 \[
 %%\begin{equation}%% but equation makes a number (1)
     gls:= \left\{\begin{array}{@{}lr@{}}
-        f(10) = 6\\
-        f(-5) = 3
+        f(9) = 6\\
+        f(-6) = 3
         \end{array}\right.
 \]
 %%\end{equation}
