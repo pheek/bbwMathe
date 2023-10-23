@@ -29,18 +29,8 @@
 
 \stepcounter{aufgabennummer}
 }
-
-
 \section{Komponenten in drei D}
 
-\subsection{Aufgaben ohne Taschenrechner}
-
-\aufgabeML{Berechnen Sie den Vektor $\vec{v} = \vec{a}+2.5\vec{b}
--3\vec{c}$ mit:
-
-$$\vec{a}= \Spvek{4;3;-1}; \vec{b}= \Spvek{1;-1;0} \vec{c}= \Spvek{-2;-1;1}$$}%%
-{Lösung: \noTRAINER{\vspace{22mm}}\TRAINER{$$\vec{v} = \Spvek{4 + 2.5\cdot{}1 - 3\cdot{}(-2);3 +
-2.5\cdot{}(-1) -3\cdot{}(-1);-1 +0 -3\cdot{}1}= \Spvek{12.5;3.5;-4}$$}}%%
 
 \aufgabeML{Welcher Vektor $\vec{s}$ beschreibt die Verschiebung, welche
 den Punkt $A$ auf $A'$ abbildet?
@@ -55,6 +45,8 @@ Lösung: $\vec{s}$ = \LoesungsRaum{$\Spvek{2;-4;5}$}%%
 }
 
 
+
+
 \aufgabeML{Gegeben sind die folgenden Vektoren:
 $$\vec{a} = \Spvek{1;2;x}; \vec{b} = \Spvek{x;y;-1} \text{ und } \vec{c} = \Spvek{z; 2z; 0} $$
 
@@ -65,33 +57,47 @@ Komponente folgt $x=1$. Nun folgt aus der ersten Komponente, dass
 $z=-2$ ; danach kann das $y$ aus der zweiten Komponente errechnet
 werden: $y=2$}}
 
-
-\aufgabeML{Gegeben sind die Vektoren
-$$\vec{a}= \Spvek{-5;3;-7},
- \vec{b} = \Spvek{-3;-3;2} \text{ und }
- \vec{c} = \Spvek{0;2;-2}$$
-
-
-Berechnen Sie $\vec{d}$ so, dass
-$\vec{a}+\vec{b}+\vec{c}+\vec{d}=\vec{0}$ ergibt.
-\vspace{22mm}
-}{$\vec{d} = \LoesungsRaum{\Spvek{8;-2;7}}$}
 \newpage
+\aufgabeML{
+a) Bestimmen Sie den Betrag des Vektors $\vec{a}$:
+$$\vec{b}=\Spvek{2;6;9}$$
+
+b) Berechnen Sie:
+
+$$\left|\Spvek{4;4;7}\right|$$
 
 
-\aufgabeML{Bestimmen Sie den Betrag des Vektors $\vec{a}$:
-$$\vec{a}=\Spvek{3.5;-6;0}$$
+c) Bestimmen Sie mit dem Taschenrechner den Betrag des Vektors $\vec{c}$:
+$$\vec{c}=\Spvek{3.5;-6;0}$$
 
 %%\vspace{22mm}
-}{$|\vec{a}| \approx \LoesungsRaum{6.94622199472}$}
+}{
+a) $|\vec{a}| = 11$
 
+b) $|\vec{b}| = 9$
 
-\aufgabeML{
+c) $|\vec{c}| \approx \LoesungsRaum{6.94622199472}$
+}
+\newpage
+
+\aufgabeML{%%
+a) Der Vektor $\vec{v}$ habe die Struktur $\Spvek{3;v_y;2}$. Es gilt
+$|\vec{v}| = 7$. Berechnen Sie $v_y$.
+
+b) 
 Der Vektor $\vec{v}$ habe folgende Struktur:
 $$\vec{v}=\Spvek{a;6;a+3}$$
 Wir wissen, dass $$|\vec{v}|=\sqrt{125}$$
 Berechnen Sie $a$. (Tipp: Zweiklammeransatz)
-}{Lösung: $a=\TRAINER{-8 \text{ oder } 5}$\\
+}{Lösung: a)
+
+$$\sqrt{2^2 + 3^2 + v_y^2}=7$$
+$$13 + v_y^2=49$$
+$$v_y^2=36$$
+$$L_{v_y} = \{-6; 6\}$$
+
+Lösung b)
+$a=\TRAINER{-8 \text{ oder } 5}$\\
 \TRAINER{Es gilt
 $$\sqrt{125} = \sqrt{a^2 + 6^2 + (a+3)^2}$$
 Somit
@@ -103,6 +109,7 @@ $$(a+8)(a-5) = 0$$
 Somit $L_a = \{-8, 5\}$}
 }
 
+\newpage
 
 
 \aufgabeML{Gegeben sind die Punkte:
@@ -115,7 +122,91 @@ Berechnen Sie die folgenden Terme:
 =\LoesungsRaum{\Spvek{7;5.5;-3}}$$
 $$\overline{AB} \approx \LoesungsRaum{8.3217}$$}
 
+
+\aufgabeML{Gegeben sind die Punkte $A=(5|1)$ und $B=(8|5)$.
+
+a) Bestimmen Sie die Vektoren $\overrightarrow{OA}$,
+$\overrightarrow{AB}$
+
+b) Geben Sie die Länge des Vektors $\overrightarrow{BA}$ an.
+
+}{
+
+Lösung zu a) $\overrightarrow{0A} = \LoesungsRaum{\Spvek{5;1}}$.
+
+$$\overrightarrow{AB} = \LoesungsRaumLen{50mm}{\overrightarrow{OB} - \overrightarrow{OA}
+=  \Spvek{8;5} - \Spvek{5;1} = \Spvek{3;4}}$$
+
+Lösung zu b)
+
+$$|\overrightarrow{AB}| = \LoesungsRaumLang{\sqrt{3^2+4^2} = \sqrt{25}= 5}$$
+}%% end aufgabeML
 \newpage
+
+\aufgabeML{Bestimmen Sie alle Punkte der $xy$-Ebene, welche von den
+beiden Punkten $A=(7|6)$ und $B=(-1|2)$ den selben Abstand haben.}{
+Lösung:
+
+$$LoesungsRaumLang{y = -2x + 10}$$
+
+\TRAINER{
+Wir definieren $P := (x|y)$. Nun gelte $|\overrightarrow{AP}| =
+|\overrightarrow{BP}|$. Mit den Zahlen:
+
+$$|\Spvek{7-x;6-y}| = |\Spvek{-1-x;2-y}|$$
+Wenn wir nun den Abstand rechnen, so erhalten wir:
+
+$$\sqrt{(7-x)^2 + (6-y)^2} = \sqrt{(-1-x)^2 + (2-y)^2}$$
+Beidseitig quadrieren und ausmultiplizieren:
+$$49-14x+x^2 + 36-12y+y^2  =  1 + 2x + x^2  + 4 - 4y + y^2$$
+Quadrate streichen und zusammenfassen:
+$$49+36-1-4 = 8y + 16 x$$
+Grundform:
+$$y= -2x + 10$$
+Alle Punkte auf der Geraden $-2x+10$ sind von $A$ und $B$ gleich weit entfernt.
+
+}%% end TRAINER
+
+}%% end aufgabeML
+
+
+
+
+
+\aufgabeML{%%
+Berechnen Sie den Umfang des Dreiecks
+$$A=(7|2|6), B=(-4|3|-1), C=(0;0;8)$$
+}{
+Umfang $\approx \LoesungsRaumLang{30.9222}$
+
+$$\overrightarrow{AB} = \Spvek{7-(-4);2-3;6-(-1)} = \Spvek{11;-1;7}$$
+$$\overrightarrow{BC} = \Spvek{-4-0; 3-0; -1-8} = \Spvek{-4;3;-9}$$
+$$\overrightarrow{AC} = \Spvek{7-0;2-0;6-8} = \Spvek{7;2;-2}$$
+
+
+}%% end aufgabeML
+\newpage
+
+
+\aufgabeML{Bestimmen Sie die Länge der Seitenhalbierenden $s_a$ im
+Dreieck $\Delta ABC$\\
+(es gelte $e_x=e_y=e_z=1$):
+
+$$A=(1|1|2); B=(3|4|5); C=(2|9|6)$$
+
+}{Lösung: Die Länge misst \LoesungsRaumLang{ca. $6.6895$} (Einheiten)
+\TRAINER{
+Erstens den Mittelpunkt $M_a$ der Strecke $\overline{BC}$ rechnen:
+$$M_a = (2.5| 6.5 | 5.5)$$
+Nun den Vektor $\vec{s_a} = \overrightarrow{AM_a}$ bestimmen:
+$$\vec{s_a} = \Spvek{2.5-1; 6.5-1; 5.5-2} = \Spvek{1.5; 5.5; 3.5}$$
+TR: Dreidimensionaler Pythagoras:
+$$|s_a| = \sqrt{1.5^2 + 5.5^2 + 3.5^2} \approx 6.6859$$
+}%% end TRAINER
+}%% end aufgabeML
+
+
+
 
 \aufgabeML{Berechnen Sie $\vec{b}$ so, dass $\vec{b}$ den Betrag 5 hat
 und dem Vektor $\vec{a}$ entgegengesetzt ist:
@@ -123,6 +214,7 @@ $$\vec{a} = \Spvek{4;0;-3}$$
 
 \vspace{12mm}
 }{$$\vec{b} = \LoesungsRaum{\Spvek{-0.8;0;0.6}}$$}
+\newpage
 
 
 \aufgabeML{
@@ -134,10 +226,23 @@ Berechnen Sie den Vektor $\vec{d}$, wenn gilt:
 
 $$ -\vec{a} + 5\left( \vec{d}-\frac13\vec{b} \right) = 2\vec{c}$$
 
-}{Der Lösungsvektor $\vec{d}$ ist gleich $\Spvek{-\frac13;-\frac95;\frac{31}{15}}$}
+}{Der Lösungsvektor $\vec{d}$ ist gleich
+$\Spvek{-\frac13;-\frac95;\frac{31}{15}}$
 
 Kontrollieren Sie Ihr Ergebnis mit dem Taschenrechner.
+}
+
+
+
+\aufgabeML{Berechnen Sie den Vektor $\vec{v} = \vec{a}+2.5\vec{b}
+-3\vec{c}$ mit:
+
+$$\vec{a}= \Spvek{4;3;-1}; \vec{b}= \Spvek{1;-1;0} \vec{c}= \Spvek{-2;-1;1}$$}%%
+{Lösung: \noTRAINER{\vspace{22mm}}\TRAINER{$$\vec{v} = \Spvek{4 + 2.5\cdot{}1 - 3\cdot{}(-2);3 +
+2.5\cdot{}(-1) -3\cdot{}(-1);-1 +0 -3\cdot{}1}= \Spvek{12.5;3.5;-4}$$}}%%
+
 \newpage
+
 \aufgabeML{Kollinear:
 
 Bestimmen Sie $x$ und $y$ so, dass $\vec{a}$ kollinear zu $\vec{b}$
@@ -173,70 +278,21 @@ $$2\vec{c}-\frac14 \vec{b} - 2(\vec{a}+\vec{d})= 3(\vec{a}+\vec{b}+\vec{d})$$
 Geben Sie den Vektor $\vec{d}$ als Linearkombination der Vektoren
 $\vec{a}$, $\vec{b}$ und $\vec{c}$ an:
 }{$$\vec{d}  = \LoesungsRaumLang{-5\vec{a} -\frac{13}4 \vec{b} + 2\vec{c}}$$}
-
-\aufgabeML{Stellen Sie den Vektor $\vec{z}$ als Linearkombination von
-$\vec{a}$, $\vec{b}$ und $\vec{c}$ dar.
-$$\vec{a} = \Spvek{4;2;-7};
-  \vec{b} = \Spvek{1;-4;-5};
-  \vec{c} = \Spvek{4;0;-3};
-  \vec{z} = \Spvek{48;48;84}$$
-
-\vspace{12mm}
-}{$$\vec{z} = \LoesungsRaum{42}\cdot{}\vec{a}
-+ \LoesungsRaum{9}\cdot{}\vec{b} + \LoesungsRaum{-129}\cdot{}\vec{c}$$}
-
 \newpage
 
-\aufgabeML{Sind die beiden folgenden Vektoren voneinander linear
-abhängig?
-
-$\vec{a} = \Spvek{2;12;7}$, $\vec{b} = \Spvek{-3;-18;10}$
-
-}{Die beiden Vektoren sind linear \LoesungsRaumLang{unabhängig}.}
-
-
-
-
-\aufgabeML{Für welches $z$ sind die drei folgenden Vektoren
-voneinander linear abhängig?
-
-$\vec{a} = \Spvek{1;-1;3}$,
-$\vec{b} = \Spvek{4;5;1}$
-$\vec{c} = \Spvek{2;-4;z}$
-}{
-Lösung $z = \LoesungsRaum{\frac{76}9}$\TRAINER{, denn damit geht die
-Gleichung $$s\cdot{}\vec{a} + t\cdot{}\vec{b} = \vec{c}$$ auf und
-somit ist $\vec{c}$ eine Linearkombination von $\vec{a}$ und $\vec{b}$}.
-}
-
-
-\aufgabeML{%% Frommenwilere Geometrie Aufga 51 S. 189
-Welche Vektoren sind voneinander linear abhängig?
-
-$$\vec{p} = \Spvek{3;7}; \vec{q} = \Spvek{5;9} ; \vec{r} = \Spvek{4.5;10.5}$$
-}{Lösung: \LoesungsRaumLang{$\vec{p}$ und $\vec{r}$, denn $\vec{r} = 1.5\cdot{}\vec{p}$}}
-
-\aufgabeML{%% Frommenwilere Geometrie Aufga 51 S. 189
-Welche Vektoren sind voneinander linear abhängig?
-
-$$\vec{p} = \Spvek{1;4;3}; \vec{q} = \Spvek{-2;-8;6} ; \vec{r} = \Spvek{0.5;2;-1.5}$$
-}{Lösung: \LoesungsRaumLang{$\vec{q}$ und $\vec{r}$, denn $\vec{q} = -4\cdot{}\vec{r}$}}
-
-
-
-\aufgabeML{Bestimmen Sie die fehlenden Koordinaten, wenn gilt:
+\aufgabeML{Bestimmen Sie die fehlenden Koordinaten, wenn beide der
+folgenden Eigenschaften zutreffen sollten:
 
 a) 
 $$\vec{s} = \vec{a} + 2\vec{b} -5 \vec{c}$$
-und b)\\
+\textbf{und} b)\\
 $$\vec{a} \text{ ist kollinear zu } \vec{c}$$
 Für
 $$\vec{a}=\Spvek{3;-2}; \vec{b} = \Spvek{b_x; b_y}; \vec{c}
 = \Spvek{-2;c_y}; \vec{s} = \Spvek{5;5}$$}%%
-{$bx = \LoesungsRaum{-4}$, $c_y = \LoesungsRaum{\frac43}$ und $b_y
+{$b_x = \LoesungsRaum{-4}$, $c_y = \LoesungsRaum{\frac43}$ und $b_y
 = \LoesungsRaum{\frac{41}6}$
 \TRAINER{
-  
 Aus a) folgt:
 \gleichungZZ{3+2b_x -5\cdot{}(-2)}{5}{-2+2\cdot{}b_y -5\cdot{}c_y}{5}
 Aus der oberen Gleichung folgt:
@@ -253,6 +309,34 @@ und somit
 $$b_y = \frac{41}6$$
 }%% end TRAINER
 }%% end aufgabeML
+
+\aufgabeML{%
+Einheitsvektor:
+
+Gegeben ist der Vektor $\vec{a}$:
+$$\vec{a} = \Spvek{\sqrt{7};-2;3.8}$$
+
+Skalieren Sie den Vektor $\vec{a}$ mit einem Skalar $s$ so, dass er die Länge 1 hat.
+
+
+}{%
+Lösung: $s=\LoesungsRaum{\frac{5\cdot{}\sqrt{159}}{318} \approx 0.1983}$
+}
+\newpage
+
+\aufgabeML{Stellen Sie den Vektor $\vec{z}$ als Linearkombination von
+$\vec{a}$, $\vec{b}$ und $\vec{c}$ dar.
+$$\vec{a} = \Spvek{4;2;-7};
+  \vec{b} = \Spvek{1;-4;-5};
+  \vec{c} = \Spvek{4;0;-3};
+  \vec{z} = \Spvek{48;48;84}$$
+
+\vspace{12mm}
+}{$$\vec{z} = \LoesungsRaum{42}\cdot{}\vec{a}
++ \LoesungsRaum{9}\cdot{}\vec{b} + \LoesungsRaum{-129}\cdot{}\vec{c}$$}
+\newpage
+
+
 
 \aufgabeML{Lässt sich der Vektor $\vec{a}$ als Linearkombination von
 $\vec{u}$, $\vec{v}$ und $\vec{w}$ schreiben? Falls ja, geben Sie die
@@ -293,70 +377,61 @@ von unten her weiter mit der $y$-Koordinate...
 $$-\Spvek{1;0;0} +13\Spvek{1;1;0}-7\Spvek{1;1;1} = \Spvek{5;6;-7}$$
 }%% end TRAINER
 }%% end aufgabeML
+\newpage
 
-\aufgabeML{Gegeben sind die Punkte $A=(5|1)$ und $B=(8|5)$.
 
-a) Bestimmen Sie die Vektoren $\overrightarrow{OA}$,
-$\overrightarrow{AB}$
 
-b) Geben Sie die Länge des Vektors $\overrightarrow{BA}$ an.
 
+
+\aufgabeML{Gegeben sind die Vektoren
+$$\vec{a}= \Spvek{-5;3;-7},
+ \vec{b} = \Spvek{-3;-3;2} \text{ und }
+ \vec{c} = \Spvek{0;2;-2}$$
+
+
+Berechnen Sie $\vec{d}$ so, dass
+$\vec{a}+\vec{b}+\vec{c}+\vec{d}=\vec{0}$ ergibt.
+\vspace{22mm}
+}{$\vec{d} = \LoesungsRaum{\Spvek{8;-2;7}}$}
+
+
+
+\aufgabeML{Sind die beiden folgenden Vektoren voneinander linear
+abhängig?
+
+$\vec{a} = \Spvek{2;12;7}$, $\vec{b} = \Spvek{-3;-18;10}$
+
+}{Die beiden Vektoren sind linear \LoesungsRaumLang{unabhängig}.}
+
+\newpage
+
+
+\aufgabeML{Für welches $z$ sind die drei folgenden Vektoren
+voneinander linear abhängig?
+
+$\vec{a} = \Spvek{1;-1;3}$,
+$\vec{b} = \Spvek{4;5;1}$
+$\vec{c} = \Spvek{2;-4;z}$
 }{
-
-Lösung zu a) $\overrightarrow{0A} = \LoesungsRaum{\Spvek{5;1}}$.
-
-$$\overrightarrow{AB} = \LoesungsRaumLen{50mm}{\overrightarrow{OB} - \overrightarrow{OA}
-=  \Spvek{8;5} - \Spvek{5;1} = \Spvek{3;4}}$$
-
-Lösung zu b)
-
-$$|\overrightarrow{AB}| = \LoesungsRaumLang{\sqrt{3^2+4^2} = \sqrt{25}= 5}$$
-}%% end aufgabeML
+Lösung $z = \LoesungsRaum{\frac{76}9}$\TRAINER{, denn damit geht die
+Gleichung $$s\cdot{}\vec{a} + t\cdot{}\vec{b} = \vec{c}$$ auf und
+somit ist $\vec{c}$ eine Linearkombination von $\vec{a}$ und $\vec{b}$}.
+}
 
 
-\aufgabeML{Bestimmen Sie alle Punkte der $xy$-Ebene, welche von den
-beiden Punkten $A=(7|6)$ und $B=(-1|2)$ den selben Abstand haben.}{
-Lösung:
+\aufgabeML{%% Frommenwilere Geometrie Aufga 51 S. 189
+Welche Vektoren sind voneinander linear abhängig?
 
-$$LoesungsRaumLang{y = -2x + 10}$$
+$$\vec{p} = \Spvek{3;7}; \vec{q} = \Spvek{5;9} ; \vec{r} = \Spvek{4.5;10.5}$$
+}{Lösung: \LoesungsRaumLang{$\vec{p}$ und $\vec{r}$, denn $\vec{r} = 1.5\cdot{}\vec{p}$}}
 
-\TRAINER{
-Wir definieren $P := (x|y)$. Nun gelte $|\overrightarrow{AP}| =
-|\overrightarrow{BP}|$. Mit den Zahlen:
+\aufgabeML{%% Frommenwilere Geometrie Aufga 51 S. 189
+Welche Vektoren sind voneinander linear abhängig?
 
-$$|\Spvek{7-x;6-y}| = |\Spvek{-1-x;2-y}|$$
-Wenn wir nun den Abstand rechnen, so erhalten wir:
-
-$$\sqrt{(7-x)^2 + (6-y)^2} = \sqrt{(-1-x)^2 + (2-y)^2}$$
-Beidseitig quadrieren und ausmultiplizieren:
-$$49-14x+x^2 + 36-12y+y^2  =  1 + 2x + x^2  + 4 - 4y + y^2$$
-Quadrate streichen und zusammenfassen:
-$$49+36-1-4 = 8y + 16 x$$
-Grundform:
-$$y= -2x + 10$$
-Alle Punkte auf der Geraden $-2x+10$ sind von $A$ und $B$ gleich weit entfernt.
-
-}%% end TRAINER
-
-}%% end aufgabeML
+$$\vec{p} = \Spvek{1;4;3}; \vec{q} = \Spvek{-2;-8;6} ; \vec{r} = \Spvek{0.5;2;-1.5}$$
+}{Lösung: \LoesungsRaumLang{$\vec{q}$ und $\vec{r}$, denn $\vec{q} = -4\cdot{}\vec{r}$}}
 
 
-\subsection{Mit Taschenrechner}
-\aufgabeML{Bestimmen Sie die Länge der Seitenhalbierenden $s_a$ im
-Dreieck $\Delta ABC$\\
-(es gelte $e_x=e_y=e_z=1$):
 
-$$A=(1|1|2); B=(3|4|5); C=(2|9|6)$$
-
-}{Lösung: Die Länge misst \LoesungsRaumLang{ca. $6.6895$} (Einheiten)
-\TRAINER{
-Erstens den Mittelpunkt $M_a$ der Strecke $\overline{BC}$ rechnen:
-$$M_a = (2.5| 6.5 | 5.5)$$
-Nun den Vektor $\vec{s_a} = \overrightarrow{AM_a}$ bestimmen:
-$$\vec{s_a} = \Spvek{2.5-1; 6.5-1; 5.5-2} = \Spvek{1.5; 5.5; 3.5}$$
-TR: Dreidimensionaler Pythagoras:
-$$|s_a| = \sqrt{1.5^2 + 5.5^2 + 3.5^2} \approx 6.6859$$
-}%% end TRAINER
-}%% end aufgabeML
 
 \end{document}
