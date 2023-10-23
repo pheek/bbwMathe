@@ -76,8 +76,12 @@ Fahrzeugs) haben, da es jedoch keine Bewegung hat, spielt die
   $$\vec{a} + \vec{0}  = \vec{a}$$
 \end{bemerkung}
 
-\subsection*{Aufgaben}
+\subsection*{Aufgabe}
 %%\TALSAadBFWG{180}{8.}
+Die drei Vektoren $\vec{a}$, $\vec{b}$ und $\vec{c}$ haben all den
+selben Betrag. Zeichnen Sie die drei Vektoren so, dass
+gilt $$\vec{a}+\vec{b}+\vec{c} = \vec{0}$$
+\TNTeop{Lösung: Gleichseitiges Dreieck}
 
 \newpage
 
@@ -188,41 +192,49 @@ Grafik: Es gilt: $\vec{x} + \vec{b} = \vec{a}$ und das heißt $\vec{a}
 
 \subsection*{Aufgaben}
 %%\TALSAadBFWG{179ff}{6. (2) und (4), 7. b) c) 9. und 10. a) c) i)}
-\TALSAadBMTG{245ff}{5. d) e) f), 6. a) c)}
-\TALSAadBMTG{264}{29. a) d)}
-\newpage
-
-
-\subsubsection{Kollinear}
-
-\begin{definition}{kollinear}{}\index{kollinear}\label{linearkombination}
-
-  Zwei Vektoren $\vec{a\vphantom{b}}$ und $\vec{b}$ heißen \textbf{kollinear}, wenn es ein
-  $k\in\mathbb{R}$ gibt, sodass
-  $$\vec{a\vphantom{b}} = k\cdot{}\vec{b}$$
-  \end{definition}
-%%\subsubsection*{Aufgaben}
-%%\TALSAadBMTA{179}{7. e) und f)}
+\TALSAadBMTG{245ff}{5. d) e) f), 6. a) c), 7.}
+%%\TALSAadBMTG{264}{29. a) d)}
 \newpage
 
 
 \subsection{Zerlegung von Vektoren}\index{Vektoren!zerlegen}\index{Zerlegung von Vektoren}
 
+\subsubsection{Kollinear}
+
+\begin{definition}{kollinear}{}\index{kollinear}\label{linearkombination}\index{linear abhängig}
+
+  Zwei Vektoren $\vec{a\vphantom{b}}$ und $\vec{b}$ heißen
+  \textbf{kollinear} (auch \textbf{linear abhängig}), wenn es ein
+  $k\in\mathbb{R}$ gibt, sodass
+  $$\vec{a\vphantom{b}} = k\cdot{}\vec{b}$$
+\end{definition}
+
+\subsubsection{lineare Unabhängigkeit}
+\begin{definition}{linear unabhängig}{}\index{linear unabhängig}\index{unabhängig!linear}
+Zwei Vektoren heißen \textbf{linear unabhängig}, wenn sie nicht
+kollinear sind.
+\end{definition}
+  %%\subsubsection*{Aufgaben}
+%%\TALSAadBMTA{179}{7. e) und f)}
+
+\subsubsection{Linearkombination}\index{Linearkombination}
 Sind zwei Vektoren $\vec{a}$ und $\vec{b}$ gegeben, so kann im
 allgemeinen Fall ein
-dritter Vektor $\vec{c}$ als sog. Linearkombination der beiden
+dritter Vektor $\vec{c}$\, als sog. Linearkombination der beiden
 gegebenen Vektoren angegeben werden:
 
 \begin{gesetz}{Linearkombination}{}
 
-  Gegeben $\vec{a}$ und $\vec{b}$.
+  Gegeben sind zwei linear unabhängige Vektoren $\vec{a}$ und
+  $\vec{b}$. Zudem ist ein dritter Vektor $\vec{c}$ gegeben.
 
-  Gegeben $\vec{c}$.
-
-  Gesucht $t$ und $s$ mit
+  Gesucht ist eine \textbf{Linearkombination} $t\cdot{}\vec{a} +
+  s\cdot{}\vec{b}$ (namentlich $t$ und $s$), sodass gilt:
 
   $$\vec{c} = t\cdot{}\vec{a} + s\cdot{}\vec{b}$$
 \end{gesetz}
+\newpage
+
 
 \textbf{Beispiel}
 
@@ -255,16 +267,22 @@ In obigem Beispiel ist
 }%% END TNTeop
 %%\newpage
 
-In welchen Fällen ist eine solche Zerlegung nicht möglich?
+Welche Spezialfälle kommen Ihnen in den Sinn, wodurch eine solche Zerlegung
+nicht eindeutig möglich ist?
 
 \TNT{15.2}{
-Die Zerlegung ist nicht möglich, wenn $\vec{a}$ parallel zu $\vec{b}$
-ist. Es sei denn, $\vec{c}$ ist auch parallel, dann gibt es unendlich
-viele Lösungen.
+Die Zerlegung ist nicht eindeutig möglich, wenn $\vec{a}$ parallel zu $\vec{b}$
+ist.
+
+1. Fall $\vec{c}$ ist nicht parallel zu $\vec{a}$ (und $\vec{b}$),
+dann gibt es keine Zerlegung.
+
+2. Fall $\vec{c}$ ist auch parallel zu $\vec{a}$ (und $\vec{b}$), dann
+gibt es unendlich viele Zergelungsmöglichkeiten.
 }
 
 \subsection*{Aufgaben}
 
-\TALSAadBMTG{246ff}{7., 8., 9., 11., 12.}
+\TALSAadBMTG{246ff}{8., 9., 11., 12.}
 %%\TALSAadBFWG{180ff}{12. b) c), 13., 16. b) d) e) und 17. a) b)}
 \newpage
