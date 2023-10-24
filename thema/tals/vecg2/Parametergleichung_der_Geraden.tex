@@ -12,22 +12,41 @@
 \subsection{Ortsvektor}
 
 \begin{definition}{Ortsvektor}{}
-  Sei $O=(0|0|0)$ der Koordinatenursprung und $P=(x_P|y_P|z_P)$ ein Punkt im
+  Sei $O=(0|0|0)$ der Koordinatenursprung und $A=(A_x|A_y|A_z)$ ein Punkt im
   kartesischen Koordinatensystem.
   
-  Ein \textbf{Ortsvektor}\index{Ortsvektor} $\vec{p}$ eines Punktes
-  ist ein Repräsentant des Vektors $\overrightarrow{OP}$:
-  $$\vec{p} = \overrightarrow{OP}=\Spvek{x_P;y_P;z_P}$$
-  bzw.
-  $$P = O + \vec{p}$$
+  Ein \textbf{Ortsvektor}\index{Ortsvektor} $\vec{a}$ eines Punktes
+  ist derjenige Repräsentant des Vektors $\overrightarrow{OA}$, dessen
+  Startpunkt bei $O$ liegt. 
+  $$\overrightarrow{a_A} := \vec{a} = \overrightarrow{OA}=\Spvek{A_x;A_y;A_z}$$
 \end{definition}
+
+\begin{bemerkung}{Ortsvektor}{}\index{Ortsvektor}
+  Vektoren bezeichnen üblicherweise nur die Länge und die Richtung
+  eines \textit{Pfeils}. Man versteht unter dem Vektor die Menge
+  \textbf{aller} Repräsentanten.
+
+  Um jedoch den spezifischen Repräsentanten anzugeben,
+  der vom Ursprung zum Punkt $A$ führt, wird entweder explizit vom
+  \textbf{Ortsvektor} gesprochen oder der Vektor wird dem Namen des
+  Punktes als Index versehen:
+  \vspace{5mm}
+  
+  \begin{bbwFillInTabular}{ll}
+    Bezeichnung & Notation\\\hline
+    Ortsvektor & $\overrightarrow{a_A}$ \\
+    alle übrigen Repräsentanten & $\vec{a}$ 
+  \end{bbwFillInTabular} 
+
+\end{bemerkung}
+
 
 \begin{beispiel}{Ortsvektor}{}
   Sei
   $$P=(\LoesungsRaum{4}|\LoesungsRaum{-3}|\LoesungsRaum{s})$$
   ein
 gegebener Punkt. So ist
- $$\vec{p}
+ $$\overrightarrow{v_P}
 = \noTRAINER{\hspace{15mm}} \TRAINER{\Spvek{4;-3;s}}$$
 der zugehörige \textbf{Ortsvektor}.
 \end{beispiel}
@@ -41,12 +60,17 @@ folgende Gleichung dargestellt werden:
   Bei gegebenem Referenzpunkt $A$ auf der Geraden und einer gegebenen
   Richtung $\vec{u}$ kann die Gerade $\vec{r}$ geschrieben werden als.
   
-  $$\vec{r} = \vec{r}(t) = \vec{r}_A + t\cdot{} \vec{u} = \vec{a} + t\cdot{}\vec{u}$$
+  $$\vec{r} = \vec{r}(t) = \overrightarrow{a_A} + t\cdot{} \vec{u} = \vec{a} + t\cdot{}\vec{u}$$
 
+  oder kurz:
+
+  \begin{center}\fbox{\fbox{$g:\hspace{7mm} \vec{r}(t) = \vec{a} + t\cdot{}\vec{u}$}}\end{center}
+  
   Dabei ist
   \begin{itemize}
-    \item $t\in\mathbb{R}$ beliebig und
-    \item $\vec{r}_A = \vec{a} = \overrightarrow{OA}$ der
+    \item $g$ der Name der Geraden,
+    \item $t\in\mathbb{R}$ der beliebig wählbare Parameter,
+    \item $\overrightarrow{a_A} = \vec{a} = \overrightarrow{OA}$ der
       \textbf{Ortsvektor} zu einem Referenzpunkt $A$ auf der Geraden und
     \item $\vec{u}$ ein
       \textbf{Richtungsvektor}\index{Richtungsvektor} der Geraden.

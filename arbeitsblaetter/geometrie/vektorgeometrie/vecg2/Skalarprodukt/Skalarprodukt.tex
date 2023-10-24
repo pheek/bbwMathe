@@ -21,11 +21,13 @@
 
 \newcommand\aufgabeML[2]{\begin{samepage}%%
 \textbf{Aufgabe \arabic{aufgabennummer}:}\,\,\\
-#1\\  #2
-
-\abplz{5.2}
-\end{samepage}
+#1%%\\  \TRAINER{#2}
+%%
+\TRAINER{#2}%%abplz{5.2}
+\noTRAINER{\mmPapierBisEndeSeite}
+%%\end{samepage}
 \stepcounter{aufgabennummer}%%
+\end{samepage}%%
 }%%
 
 
@@ -61,12 +63,12 @@ $$p=37\hspace{11mm}q=42\hspace{1mm}\text{ und } \angle (\vec{p},\vec{q}) = 18\de
 {Berechnen Sie das Skalarprodukt: $$\vec{p}\circ\vec{q} = \LoesungsRaum{37\cdot{}42\cdot\cos(18\degre)\approx 1477.9418}$$}
 
 
-\aufgabeML{\\
+\aufgabeML{
 Gegeben sind die Vektoren $\vec{r}$ und $\vec{s}$ mit: 
 $$r=20\hspace{11mm}s=30\hspace{1mm}\text{ und } \angle
 (\vec{r},\vec{s}) = 0\degre$$}{$$\vec{r}\circ\vec{s} = \LoesungsRaum{20\cdot{}30\cdot\cos(0\degre)=600}$$}
 
-\aufgabeML{\\
+\aufgabeML{
 Gegeben sind Vektoren $\vec{a}$ und $\vec{b}$ mit
 $$a=11.3\hspace{11mm}b=17.853\hspace{1mm}\text{ und } \angle
 (\vec{a},\vec{b}) = 90\degre$$}{$$\vec{a}\circ\vec{b} = \LoesungsRaum{11.3\cdot{}17.853\cdot\cos(90\degre)=0}$$}
