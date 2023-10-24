@@ -57,6 +57,19 @@ Lösung: \noTRAINER{\vspace{15mm}}\TRAINER{1. Aus der dritten
 Komponente folgt $x=1$. Nun folgt aus der ersten Komponente, dass
 $z=-2$ ; danach kann das $y$ aus der zweiten Komponente errechnet
 werden: $y=2$}}
+\newpage
+\aufgabeML{Bestimmen Sie die fehlenden Parameter, damit gilt $\vec{a} = 3\cdot{}\vec{b}$
+
+$$\vec{a} = \Spvek{6; -t; m} \text{ und } \vec{b}= \Spvek{-\frac{s}{4}; 3(t-1); 6.8m}$$
+}{
+
+Lösung:
+
+\TRAINER{Komponentenweise
+$s=-24$, $t=\frac34$, $m=0$}%% end TRAINER
+}%% end AufgabeML
+
+
 
 \newpage
 \subsection{Längenprobleme}
@@ -137,7 +150,7 @@ b) Geben Sie die Länge des Vektors $\overrightarrow{BA}$ an.
 
 }{
 
-Lösung zu a) $\overrightarrow{OA} = \LoesungsRaum{\Spvek{5;1}}$.
+Lösung zu a) $$\overrightarrow{OA} = \LoesungsRaum{\Spvek{5;1}}$$
 
 $$\overrightarrow{AB} = \LoesungsRaumLen{50mm}{\overrightarrow{OB} - \overrightarrow{OA}
 =  \Spvek{8;5} - \Spvek{5;1} = \Spvek{3;4}}$$
@@ -152,19 +165,19 @@ $$|\overrightarrow{AB}| = \LoesungsRaumLang{\sqrt{3^2+4^2} = \sqrt{25}= 5}$$
 beiden Punkten $A=(7|6)$ und $B=(-1|2)$ den selben Abstand haben.}{
 Lösung:
 
-$$LoesungsRaumLang{y = -2x + 10}$$
+$$\LoesungsRaumLang{y = -2x + 10}$$
 
 \TRAINER{
 Wir definieren $P := (x|y)$. Nun gelte $|\overrightarrow{AP}| =
 |\overrightarrow{BP}|$. Mit den Zahlen:
 
-$$|\Spvek{7-x;6-y}| = |\Spvek{-1-x;2-y}|$$
+$$\bigg|\Spvek{7-x;6-y}\bigg| = \bigg|\Spvek{-1-x;2-y}\bigg|$$
 Wenn wir nun den Abstand rechnen, so erhalten wir:
 
 $$\sqrt{(7-x)^2 + (6-y)^2} = \sqrt{(-1-x)^2 + (2-y)^2}$$
 Beidseitig quadrieren und ausmultiplizieren:
 $$49-14x+x^2 + 36-12y+y^2  =  1 + 2x + x^2  + 4 - 4y + y^2$$
-Quadrate streichen und zusammenfassen:
+Quadrate beidseitig subtrahieren und zusammenfassen:
 $$49+36-1-4 = 8y + 16 x$$
 Grundform:
 $$y= -2x + 10$$
@@ -210,7 +223,41 @@ TR: Dreidimensionaler Pythagoras:
 $$|s_a| = \sqrt{1.5^2 + 5.5^2 + 3.5^2} \approx 6.6859$$
 }%% end TRAINER
 }%% end aufgabeML
+\newpage
+\aufgabeML{Berechnen Sie alle Punkte auf der $y$-Achse, welche vom
+Punkt $P=(2|-3|4)$ fünf Einheiten entfernt sind.}{
 
+Lösung:
+\TRAINER{Ansatz Punkt = $\Spvek{0;y;0}$ Dann gilt
+
+$$5 = \sqrt{(2-0)^2 + (-3-y)^2 + (4-0)^2}$$
+
+$y=-3\pm \sqrt{8} \approx -5.83 \text{ bzw. } -0.172$}
+}
+\newpage
+\aufgabeML{Bestimmen Sie mit dem Taschenrechner alle möglichen Punkte
+auf der $x$-Achse, welche vom Punkt $A=(-4|3|12)$ die dreifache Entfernung wie
+vom Punkt $B=(16|2|-1)$ haben.}{
+Lösung: $\LoesungsRaumLang{}$
+\TRAINER{Ansatz: Gesuchter Punkt $P$ hat Koordinaten $(x|0|0)$.
+
+Dann gilt
+
+$\overline{AP} = 3\cdot{} \overline{BP}$
+
+TR: solver: $$\lx = \{10.15; 26.85\}$$
+}%% end TRANIER
+}%% end aufgabeML
+\newpage
+
+\aufgabeML{Gegeben sind die Drei Punkte $A=(1|2|-3)$, $B=(6|-2|4)$ und
+$C=(2|3|-5)$.
+
+Welcher Punkt in der $xz$-Ebene ist von all den drei Punkten gleich
+weit entfernt?
+}{Lösung \LoesungsRaumLang{$P=\Spvek{\frac{126}{17};0;\frac{-39}{17}}$}
+}%% end aufgabe ML
+\newpage
 
 \subsection{Vielfaches im Raum}
 
@@ -327,6 +374,31 @@ Skalieren Sie den Vektor $\vec{a}$ mit einem Skalar $s$ so, dass er die Länge 1
 }{%
 Lösung: $s=\LoesungsRaum{\frac{5\cdot{}\sqrt{159}}{318} \approx 0.1983}$
 }
+\newpage
+\aufgabeML{Bestimmen Sie den Parameter $p$ so, dass es sich beim
+folgenden um einen Einheitsvektor handelt:
+$$\Spvek{0.7; k; \frac1{10}}$$
+(Mit Taschenrechner auf 3 signifikante Stellen angeben.)
+
+
+}{Lösung = \LoesungsRaumLang{$\sqrt{2}/2 \approx 0.707$}}
+
+\newpage
+
+\aufgabeML{
+Berechnen Sie alle Punkte $A$ auf der Geraden $PQ$, die sieben Einheiten
+von $P$ entfernt sind.
+
+Gegeben: $$P=(3|9|1); Q=(6|8|-4)$$
+}{Lösung \TRAINER{mit Einheitsvektor:
+
+$$\Spvek{3;9;1} \pm \frac{\sqrt{35}}{5}\cdot{}\Spvek{3;-1;-5}$$
+
+}%% end TRAINER
+}%% end AufgabeML
+
+
+
 \newpage
 \subsection{Linearkombination}
 \aufgabeML{Stellen Sie den Vektor $\vec{z}$ als Linearkombination von

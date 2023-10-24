@@ -9,13 +9,35 @@
 %\end{itemize}
 
 \subsection{Skalarprodukt}\index{Skalarprodukt}
-Einstiegsaufgabe: \aufgabenFarbe{1. Aufgabe vom Blatt Skalarprodukt
-  (Rechter Winkel)}
-%%\TALSTadBFWG{201}{4.5}
 \TALSTadBMTG{266}{18}
+
+
+Einstiegsaufgabe:
+
+a) Geben Sie einen Vektor an, der zum Vektor $\vec{a} = \Spvek{-3;2}$
+orthogonal steht.
+
+b) Geben Sie alle Vektoren an, die senkrecht zum obigen Vektor $\vec{a}$ sind.
+
+c) Geben Sie alle Vektoren an, die im rechten Winkel zum Vektor $\vec{v} = \Spvek{v_x;
+  v_y}$ stehen.
+
+\TNTeop{
+  a) Entweder $\Spvek{2;3}$ oder $\Spvek{-2;-3}$. (und viele andere)
+
+  b) $\left\{\vec{v} \middle| \vec{v} = k\cdot{}\Spvek{2;3} \text{ und } k\in\mathbb{R}\right\}$
+
+  c) $\left\{\vec{v} \middle| \vec{v} = k\cdot{}\Spvek{-v_y; v_x} \text{ und } k\in\mathbb{R}\right\}$
+
+}
+
+%%\TALSTadBFWG{201}{4.5}
+
+\newpage
+Herleitung des Skalarproduktes:
+
 \bbwCenterGraphic{5cm}{tals/vecg2/img/skalarprodukt.png}
 
-Herleitung:
 
 \TNTeop{
   $\vec{b} + \vec{c} = \vec{a} \Longrightarrow   \vec{c} = \vec{a} - \vec{b}$
@@ -38,6 +60,8 @@ Herleitung:
 
   $(a_x-b_x)^2 + (a_y-b_y)^2 = a^2 + b^2 - 2ab\cdot{}\cos(\gamma)$
 
+  Rechts Pythagoras: $a^2 = a_x^2 + a_y^2$ und $b^2 = b_x^2 + b_y^2$.
+  
   $(a_x-b_x)^2 + (a_y-b_y)^2 = \overbrace{a_x^2 + a_y^2}^{|\vec{a}|^2=a^2}
   + \overbrace{b_x^2 + b_y^2}^{b^2} - 2ab\cdot{}\cos(\gamma)$
 
@@ -91,6 +115,13 @@ oder mit $\gamma$ als Zwischenwinkel von $\vec{a}$ und $\vec{b}$:
 Mit dem Taschenrechner TI nSpire CAS wird das Skalarprodukt mit
 \texttt{dotp(a, b)} berechnet.
 
+\begin{bemerkung}{Skalarprodukt als Fläche}{}
+  Das Skalarprodukt kann auch als Fläche angesehen werden:
+  
+  \weblink{Geogebra: Skalarprodukt als Fläche:\\
+    (https://www.geogebra.org/m/AEbtvksE)}{https://www.geogebra.org/m/AEbtvksE}
+\end{bemerkung}
+\newpage
 \subsection*{Aufgaben}
 \TALSAadBFWG{202}{102. a) d) e), 103. a) c), 104. a) c), 106. a),
 107. a), 108., 109., 110. a), 113.}
