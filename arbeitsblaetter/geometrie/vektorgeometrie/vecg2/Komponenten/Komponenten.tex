@@ -29,6 +29,23 @@
 
 \stepcounter{aufgabennummer}
 }
+
+
+
+
+\renewcommand\aufgabeML[2]{\begin{samepage}%%
+\textbf{Aufgabe \arabic{aufgabennummer}:}\,\,\\
+#1%%\\  \TRAINER{#2}
+%%
+\TRAINER{#2}%%abplz{5.2}
+\noTRAINER{\mmPapierBisEndeSeite}
+%%\end{samepage}
+\stepcounter{aufgabennummer}%%
+\end{samepage}%%
+}%%
+
+
+
 \section{Vektorgeometrie in $\mathbb{R}^3$}
 \subsection{Komponenten}
 
