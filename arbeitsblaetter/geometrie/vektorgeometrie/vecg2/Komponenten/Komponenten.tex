@@ -41,10 +41,9 @@ $A' = (8 | 5 | 3.5)$
 
 \vspace{22mm}
 }{
+
 Lösung: $\vec{s}$ = \LoesungsRaum{$\Spvek{2;-4;5}$}%%
 }
-
-
 
 
 \aufgabeML{Gegeben sind die folgenden Vektoren:
@@ -52,7 +51,9 @@ $$\vec{a} = \Spvek{1;2;x}; \vec{b} = \Spvek{x;y;-1} \text{ und } \vec{c} = \Spve
 
 Berechnen Sie $x$, $y$ und $z$ so, dass $\vec{a} + \vec{b} + \vec{c} =
 0$.
-}{Lösung: \noTRAINER{\vspace{15mm}}\TRAINER{1. Aus der dritten
+}{%%
+
+Lösung: \noTRAINER{\vspace{15mm}}\TRAINER{1. Aus der dritten
 Komponente folgt $x=1$. Nun folgt aus der ersten Komponente, dass
 $z=-2$ ; danach kann das $y$ aus der zweiten Komponente errechnet
 werden: $y=2$}}
@@ -93,14 +94,15 @@ Berechnen Sie $a$. (Tipp: Zweiklammeransatz)
 }{
 
 Lösung: a)
-
+\TNT{4}{
 $$\sqrt{2^2 + 3^2 + v_y^2}=7$$
 $$13 + v_y^2=49$$
 $$v_y^2=36$$
 $$L_{v_y} = \{-6; 6\}$$
+}%% end TNT 4
 
 Lösung b)
-$a=\TRAINER{-8 \text{ oder } 5}$\\
+$\TRAINER{a=-8 \text{ oder } 5}$\\
 \TRAINER{Es gilt
 $$\sqrt{125} = \sqrt{a^2 + 6^2 + (a+3)^2}$$
 Somit
@@ -182,10 +184,11 @@ $$A=(7|2|6), B=(-4|3|-1), C=(0;0;8)$$
 }{
 Umfang $\approx \LoesungsRaumLang{30.9222}$
 
+\TRAINER{
 $$\overrightarrow{AB} = \Spvek{7-(-4);2-3;6-(-1)} = \Spvek{11;-1;7}$$
 $$\overrightarrow{BC} = \Spvek{-4-0; 3-0; -1-8} = \Spvek{-4;3;-9}$$
 $$\overrightarrow{AC} = \Spvek{7-0;2-0;6-8} = \Spvek{7;2;-2}$$
-
+}%% end TRAINER
 
 }%% end aufgabeML
 \newpage
@@ -230,7 +233,7 @@ Berechnen Sie den Vektor $\vec{d}$, wenn gilt:
 $$ -\vec{a} + 5\left( \vec{d}-\frac13\vec{b} \right) = 2\vec{c}$$
 
 }{Der Lösungsvektor $\vec{d}$ ist gleich
-$\Spvek{-\frac13;-\frac95;\frac{31}{15}}$
+\TRAINER{$\Spvek{-\frac13;-\frac95;\frac{31}{15}}$}
 
 Kontrollieren Sie Ihr Ergebnis mit dem Taschenrechner.
 }
