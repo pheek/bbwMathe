@@ -29,8 +29,8 @@
 
 \stepcounter{aufgabennummer}
 }
-\section{Komponenten in drei D}
-
+\section{Vektorgeometrie in $\mathbb{R}^3$}
+\subsection{Komponenten}
 
 \aufgabeML{Welcher Vektor $\vec{s}$ beschreibt die Verschiebung, welche
 den Punkt $A$ auf $A'$ abbildet?
@@ -58,6 +58,7 @@ $z=-2$ ; danach kann das $y$ aus der zweiten Komponente errechnet
 werden: $y=2$}}
 
 \newpage
+\subsection{Längenprobleme}
 \aufgabeML{
 a) Bestimmen Sie den Betrag des Vektors $\vec{a}$:
 $$\vec{b}=\Spvek{2;6;9}$$
@@ -72,9 +73,9 @@ $$\vec{c}=\Spvek{3.5;-6;0}$$
 
 %%\vspace{22mm}
 }{
-a) $|\vec{a}| = 11$
+a) $|\vec{a}| = \LoesungsRaum{11}$
 
-b) $|\vec{b}| = 9$
+b) $|\vec{b}| = \LoesungsRaum{9}$
 
 c) $|\vec{c}| \approx \LoesungsRaum{6.94622199472}$
 }
@@ -89,7 +90,9 @@ Der Vektor $\vec{v}$ habe folgende Struktur:
 $$\vec{v}=\Spvek{a;6;a+3}$$
 Wir wissen, dass $$|\vec{v}|=\sqrt{125}$$
 Berechnen Sie $a$. (Tipp: Zweiklammeransatz)
-}{Lösung: a)
+}{
+
+Lösung: a)
 
 $$\sqrt{2^2 + 3^2 + v_y^2}=7$$
 $$13 + v_y^2=49$$
@@ -132,7 +135,7 @@ b) Geben Sie die Länge des Vektors $\overrightarrow{BA}$ an.
 
 }{
 
-Lösung zu a) $\overrightarrow{0A} = \LoesungsRaum{\Spvek{5;1}}$.
+Lösung zu a) $\overrightarrow{OA} = \LoesungsRaum{\Spvek{5;1}}$.
 
 $$\overrightarrow{AB} = \LoesungsRaumLen{50mm}{\overrightarrow{OB} - \overrightarrow{OA}
 =  \Spvek{8;5} - \Spvek{5;1} = \Spvek{3;4}}$$
@@ -206,7 +209,7 @@ $$|s_a| = \sqrt{1.5^2 + 5.5^2 + 3.5^2} \approx 6.6859$$
 }%% end aufgabeML
 
 
-
+\subsection{Vielfaches im Raum}
 
 \aufgabeML{Berechnen Sie $\vec{b}$ so, dass $\vec{b}$ den Betrag 5 hat
 und dem Vektor $\vec{a}$ entgegengesetzt ist:
@@ -267,7 +270,6 @@ und somit
 $$y = \frac{-50}9$$}%% end TRAINER
 }%% end aufgabeML
 
-
 \aufgabeML{Gegeben seien die Vektoren $\vec{a}$, $\vec{b}$ und
 $\vec{c}$.
 
@@ -323,7 +325,7 @@ Skalieren Sie den Vektor $\vec{a}$ mit einem Skalar $s$ so, dass er die Länge 1
 Lösung: $s=\LoesungsRaum{\frac{5\cdot{}\sqrt{159}}{318} \approx 0.1983}$
 }
 \newpage
-
+\subsection{Linearkombination}
 \aufgabeML{Stellen Sie den Vektor $\vec{z}$ als Linearkombination von
 $\vec{a}$, $\vec{b}$ und $\vec{c}$ dar.
 $$\vec{a} = \Spvek{4;2;-7};
@@ -335,7 +337,6 @@ $$\vec{a} = \Spvek{4;2;-7};
 }{$$\vec{z} = \LoesungsRaum{42}\cdot{}\vec{a}
 + \LoesungsRaum{9}\cdot{}\vec{b} + \LoesungsRaum{-129}\cdot{}\vec{c}$$}
 \newpage
-
 
 
 \aufgabeML{Lässt sich der Vektor $\vec{a}$ als Linearkombination von
@@ -394,6 +395,7 @@ $\vec{a}+\vec{b}+\vec{c}+\vec{d}=\vec{0}$ ergibt.
 \vspace{22mm}
 }{$\vec{d} = \LoesungsRaum{\Spvek{8;-2;7}}$}
 
+\subsection{lineare Abhängigkeit}
 
 
 \aufgabeML{Sind die beiden folgenden Vektoren voneinander linear

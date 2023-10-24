@@ -3,7 +3,23 @@
 
 ## Finde lehrperson/fp
 OLAT_MOUNT_POINTS=`mount | grep olat | awk '{print $3}'`
+echo "OLAT_MOUNT_POINTS = ${OLAT_MOUNT_POINTS}"
+##BBW_WEBDAV_PATH=`ls -l /mnt/ | grep ${OLAT_MOUNT_POINTS} | grep "6_MAT_Ressourcen/\$" | awk '{print $9}'`
 
+#ls -l /mnt/ > bbw1.tmp
+## debug
+#echo "DEBUG bbw1.tmp:"
+#cat bbw1.tmp
+
+#cat bbw1.tmp | grep ${OLAT_MOUNT_POINTS} | grep 6_MAT_Ressourcen\/lehrpers > bbw2.tmp
+#echo "DEBUG bbw2.tmp"
+#cat bbw2.tmp
+#rm bbw1.tmp 
+
+#BBW_WEBDAV_PATH=`cat bbw2.tmp | awk '{print $9}'`
+
+
+##BBW_WEBDAV_PATH=`ls -l /mnt/ | grep "${OLAT_MOUNT_POINTS}" | grep "6_MAT_Ressourcen" | grep "lehrperson" | awk '{print $9}'`
 BBW_WEBDAV_PATH=`ls -l /mnt/ | grep ${OLAT_MOUNT_POINTS} | grep "6_MAT_Ressourcen/\$" | awk '{print $9}'`
 
 echo "BBW_WEBDAV_PATH :: ${BBW_WEBDAV_PATH} ::"
@@ -11,14 +27,15 @@ echo "BBW_WEBDAV_PATH :: ${BBW_WEBDAV_PATH} ::"
 if [ -d "/mnt/${BBW_WEBDAV_PATH}/lehrperson" ] ; then
 		echo "found mountpath at /mnt/${BBW_WEBDAV_PATH}"
 else
-		echo "${BBW_WEBDAV_PATH} not mounted??? exiting..."
+		echo "${BBW_WEBDAV_PATH} not mounted???"
+		echo "Es braucht ein /mnt/XYZ/lehrperson-Verzeichnis!"
+		echo "... exiting"
 		exit
 fi
 
 BBW_WEBDAV_PATH=/mnt/${BBW_WEBDAV_PATH}
 
 echo "pushing files into subdirectories of : ${BBW_WEBDAV_PATH}..."
-
 
 echo "  copying Boxplot (ALLG)"
 cp -f ./datenanalyse/boxplot/boxplot_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/datenanalyse/Boxplot/boxplot.pdf
@@ -126,6 +143,10 @@ echo "  copying Einheitskreise (TALS)"
 cp -f ./geometrie/trigonometrie/einheitskreise/Einheitskreis_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig2/Einheitskreis/Einheitskreise.pdf
 cp -f ./geometrie/trigonometrie/einheitskreis/EinheitskreisB_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig2/Einheitskreis/Einheitskreis.pdf
 cp -f ./geometrie/trigonometrie/uebungenAblesen/*.pdf                 ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig2/Einheitskreis/
+
+echo "  copying Vektorgeometrie Komponenten in R3 (TALS)"
+cp -f ./geometrie/vektorgeometrie/vecg2/Komponenten/Komponenten_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/vecg2/aufgabenblaetter/Komponenten_Aufgben.pdf
+cp -f ./geometrie/vektorgeometrie/vecg2/Komponenten/Komponenten_TRAINER_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/vecg2/aufgabenblaetter/Komponenten_Loesungen.pdf
 
 echo "  copying Auftrag Logarithmentabelle (TALS)"
 cp -f ./algebra/logarithmentabelle/LogarithmenArbeitsblatt_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/aa2/auftrag_logarithmentabelle/AuftragLogarithmentabelle.pdf
