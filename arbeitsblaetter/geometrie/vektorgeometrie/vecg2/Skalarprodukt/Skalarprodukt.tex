@@ -35,27 +35,8 @@
 
  Es bezeichne jeweils $a = |\vec{a}|$.
 
-\subsection{Aufgaben ohne Taschenrechner}
 
-\aufgabeML{Gegeben sind die Vektoren
-$$\vec{a} = \Spvek{5;-3}; \vec{b} = \Spvek{b_x; b_y}.$$
-
-
-a) Bestimmen Sie alle Vektoren, die zu $\vec{a}$ senkrecht stehen und den Betrag $a$
-haben.
-
-b) Bestimmen Sie alle Vektoren, die zu $\vec{a}$ senkrecht stehen.
-
-c) Bestimmen Sie alle Vektoren, die zu $\vec{b}$ senkrecht stehen.
-}{Lösungen: \\
-
-a) $$L = \LoesungsRaumLen{55mm}{\left\{\Spvek{3;5}; \Spvek{-3;-5}\right\}}$$
-
-b)  $$L = \LoesungsRaumLen{55mm}{\left\{k\cdot{}\Spvek{3;5}| k\in\mathbb{R}\backslash\{0\}\right\}}$$
-
-c)  $$L = \LoesungsRaumLen{55mm}{\left\{k\cdot{}\Spvek{-b_y;+b_x}| k\in\mathbb{R}\backslash\{0\}\right\}}$$
- 
-}%% end aufgabeML
+\subsection{Formel zum Skalarprodukt}
 
 
 \aufgabeML{ Gegeben sind die Vektoren $\vec{p}$ und $\vec{q}$ mit
@@ -68,25 +49,103 @@ Gegeben sind die Vektoren $\vec{r}$ und $\vec{s}$ mit:
 $$r=20\hspace{11mm}s=30\hspace{1mm}\text{ und } \angle
 (\vec{r},\vec{s}) = 0\degre$$}{$$\vec{r}\circ\vec{s} = \LoesungsRaum{20\cdot{}30\cdot\cos(0\degre)=600}$$}
 
-\aufgabeML{
-Gegeben sind Vektoren $\vec{a}$ und $\vec{b}$ mit
-$$a=11.3\hspace{11mm}b=17.853\hspace{1mm}\text{ und } \angle
-(\vec{a},\vec{b}) = 90\degre$$}{$$\vec{a}\circ\vec{b} = \LoesungsRaum{11.3\cdot{}17.853\cdot\cos(90\degre)=0}$$}
 
 \aufgabeML{Berechnen Sie den Winkel zwischen $\vec{a}$ und $\vec{b}$.
 $$\vec{a}\circ\vec{b}=18\hspace{11mm}a=9\hspace{11mm}b=8$$}{$$\angle(\vec{a},\vec{b})= \LoesungsRaum{=\arccos\left(\frac{\vec{a}\circ\vec{b}}{a\cdot{}b}\right)
   = \arccos{}\left(\frac{18}{9\cdot{}8}\right)\approx 75.52\degre}$$}
 
-
-\TRAINER{\newpage}
-
 \aufgabeML{Berechnen Sie den Winkel zwischen $\vec{a}$ und $\vec{b}$.
 $$\vec{a}\circ\vec{b}=56\hspace{11mm}a=7\hspace{11mm}b=8$$}{$$\angle(\vec{a},\vec{b})= \LoesungsRaum{=\arccos\left(\frac{\vec{a}\circ\vec{b}}{a\cdot{}b}\right)
   = \arccos{}\left(\frac{56}{7\cdot{}8}\right)\approx 0\degre}$$}
 
+
+
 \aufgabeML{Berechnen Sie den Winkel zwischen $\vec{a}$ und $\vec{b}$.
 $$\vec{a}\circ\vec{b}=0\hspace{11mm}a=1.41421\hspace{11mm}b=1.73205$$}{$$\angle(\vec{a},\vec{b})= \LoesungsRaum{=\arccos\left(\frac{\vec{a}\circ\vec{b}}{a\cdot{}b}\right)
   = \arccos{}\left(\frac{0}{a\cdot{}b}\right)\approx 90\degre}$$}
+
+\aufgabeML{Berechnen Sie den Wert des Skalarproduktes, wenn bekannt
+  isd, dass der Winkel zwischen den zwei Vektoren $\\vec{u}$ und
+  $\vec{v}$ $45\degre$ beträgt und zusätzlich folgendes gilt:
+ $$|\vec{u}|= 3 \text{ und } |\vec{v}|=4$$
+}{...}
+
+
+\aufgabeML{Seien $\vec{u}$ und $\vec{v}$ zwei Vektoren. Berechnen Sie
+den Zwischenwinkel, wenn gilt:
+
+a) $\vec{u}\circ{}\vec{v} = -u\cdot{}v$
+
+b) $ \frac12ab = \vec{u}\circ{}\vec{v} $
+
+
+}{...}
+
+\aufgabeML{Zeigen Sie, mit der Definition des Skalarproduktes über den Cosinus, dass gilt:
+
+$$\vec{u}\circ{}\vec{u} = u^2$$}{
+
+Es gilt $$\vec{u}\circ{}\vec{v} = uv\cdot{}\cos(\gamma)$$ mit
+$\gamma$  = Zwischenwinkel zwischen $\vec{u}$ und $\vec{v}$.
+
+Wenn die Vektoren kollinear sind, so ist $\gamma=0$ und $\cos(\gamma)
+= 1$
+
+Somit ist
+
+$$\vec{u}\circ{}\vec{u} = u\cdot{}u\cdot{}\cos(0\degre) = u\cdot{}u = u^2$$
+}
+
+
+\aufgabeML{%%
+Gegeben sind die Vektoren $\vec{u} = \Spvek{2;0;-1}$, $\vec{v}
+= \Spvek{1;-1;1}$ und $\vec{w} = \Spvek{0;1;-2}$.
+
+Berechnen Sie mit dem Taschenrechner die folgende Summe:
+$$(4\vec{u}\circ{}\vec{v}) + (\vec{u}\circ{}2\vec{w})
+= \LoesungsRaum{8}$$
+Tipp: \texttt{dotp} berechnet das Skalarprodukt auf dem tiNSpire.
+}{%%
+TR
+}%% end AufgabeML
+
+
+
+
+
+\aufgabeML{Für das Skalarproduk gilt das Distributivgesetz
+folgendermaßen:
+
+$$\vec{a}\circ{} (\vec{u} + \vec{v}) =  \vec{a}\circ{} \vec{u}
++ \vec{a}\circ{}\vec{v} $$
+Berechnen Sie mit diesem Wissen den Winkel zwischen den Vektoren
+$\vec{q}$ und $\vec{r}$, wenn folgendes gegeben ist:
+
+$$q = 9 \text{, } r=2 \text{ und } \vec{r}\circ{}(\vec{q}-3\vec{r}) = 5$$
+}{%% Lösungsteil
+Es folgt:
+
+$$\vec{r}\circ{}\vec{q} - 3\vec{r}\circ{}\vec{r} = 5$$
+
+Wegen
+$$\vec{r}\circ{}\vec{r} = r^2 = 4$$
+gilt
+
+$$\vec{r}\circ{}\vec{q} - 3\cdot{}4 = 5.$$
+
+Daher:
+$$\vec{r}\circ{}\vec{q} = 17 = rq\cdot{}\cos(\alpha)$$
+
+Setzen wir unser $rq=2\cdot{}9=18$ ein, so erhalten wir:
+$$17 = 18\cos{\alpha}$$
+
+Nach $\alpha$ auflösen:
+$$\alpha=\arccos\left(\frac{17}{18}\right) \approx 19.1881\degre$$
+
+}
+
+\subsection{Skalarprodukt aus gegebenen Vektoren berechnen}
+
 
 \aufgabeML{Berechnen Sie $\vec{r}\circ\vec{s}$:
 $$\vec{r} = \Spvek{6;-5} \hspace{11mm}\vec{s}=\Spvek{-6;-4}$$}%%
@@ -97,91 +156,28 @@ $$\vec{r} = \Spvek{6;6;-3} \hspace{11mm} \vec{s}=\Spvek{-0.5;5;9}$$}%%
 {$$\vec{r}\circ{}\vec{s} = \LoesungsRaum{0 \hspace{11mm}(=-3+30-27)}$$}
 \TRAINER{\newpage}
 
-\aufgabeML{Bestimmen Sie den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
-$$\vec{u} = \Spvek{-1;-2;-3} \hspace{11mm} \vec{v}=\Spvek{4;5;-6}$$}%%
-{$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{\arccos\left(\frac{2\cdot{}\sqrt{22}}{77}\right) \approx 83.00\degre}$$}
 
-\aufgabeML{Bestimmen Sie den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
-$$\vec{u} = \Spvek{-1;3;5.5}\hspace{11mm}\vec{v}=\Spvek{2;-6;-11}$$}%%
-{$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{180\degre}$$}
-
-\aufgabeML{Bestimmen Sie den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
-$$\vec{u} = \Spvek{1;1;9} \hspace{11mm}\vec{v}= \Spvek{0.5;\frac12;4.5}$$}%%
-{$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{0\degre}$$}
-
-
-\aufgabeML{Bestimmen Sie den Parameter $t$ von Hand so, dass die beiden
-Vektoren $\vec{p}$ und $\vec{q}$ einen Winkel von 90 Grad
-einschließen:
-$$\vec{p} = \Spvek{1;t;2} \hspace{11mm} \vec{q}=\Spvek{3;1;t}$$}%%
-{$$t = \LoesungsRaum{-1}$$ }%% end aufgabeML
-\TRAINER{..., denn bei 90 Grad ist das Skalarprodukt = 0 und somit
-muss $3t+3 = 0$ sein. Dies geht nur, wenn $t=-1$}
+\aufgabeML{%%
+Bestimmen Sie das Skalarprodukt der Vektoren $\vec{u}$ und $\vec{v}$:
+%% RoMi
+$$\vec{u} = \Spvek{3;-4;6} \text{ und } \vec{v} = \Spvek{2;3;-1}$$
+}{%%
+}%% end AufgabeML
 
 
 
-\aufgabeML{Bestimmen Sie den Parameter $x$ von Hand so, dass die beiden
-Vektoren $\vec{u}$ und $\vec{v}$ einen Winkel von 45 Grad
-einschließen:
-$$\vec{u} = \Spvek{1;1;0} \hspace{11mm} \vec{v}=\Spvek{2;1;x}$$}%%
-{$$t = \LoesungsRaum{\pm 2}$$ }%% end aufgabeML
-\TRAINER{..., denn $\cos{45\degre} = \frac{\sqrt2}2$ und dies ist
-gleich $\frac{\vec{u}\circ\vec{v}}{uv} = \frac{1+2}{\sqrt{2}\cdot{}\sqrt{x^2+5}}$}
-\newpage
+\aufgabeML{%%
+
+}{%%
+
+}%% end AufgabeML
 
 
-\aufgabeML{Bestimmen Sie den Parameter $s$ mit dem Taschenrechner so, dass die beiden
-Vektoren $\vec{a}$ und $\vec{b}$ einen Winkel von 60 Grad
-einschließen:
-$$\vec{a} = \Spvek{2;3;4} \hspace{11mm} \vec{b}=\Spvek{5;s;8}$$}%%
-{$$s = \LoesungsRaum{\frac{\sqrt{222691}-504}{7}\approx{}-4.5855}$$}
-\TRAINER{Lösung mit TR: a und b definieren, dananach cos(60) =
-dotp(a,b) / (norm(a) * norm(b)).}
+\aufgabeML{%%
 
-%% entspricht Frommenwiler S. 203 Aufg 109
-%
-\aufgabeML{Berechnen Sie den Winkel zwischen der Körperdiagonalene und
-den Seitenflächen eines Würfels mit Hilfe des Skalarproduktes}{}%%
-\TRAINER{$$\cos(\alpha) = \frac{\vec{a}\circ{}\vec{b}}{a\cdot{}
-b} \Longrightarrow  \alpha
-= \arccos\left(\frac{\sqrt{6}}{3}\right)\text{, mit } \vec{a}
-= \Spvek{\sqrt{2};1}\text{ und } \vec{b} = \Spvek{\sqrt{2};1}$$
-$$\Longrightarrow \alpha\approx 35.26\degre$$}%% end TRAINER
-\noTRAINER{\newpage}
+}{%%
 
-\aufgabeML{Gegeben ist ein Quader mit der Grundfläche
-$1.7 \times 2.4\text{m}^2$
-und der Höhe $0.8 \text{m}$.\\
-Welchen Winkel $\alpha$ schließt die Körperdiagonale zur Grundseite ein?
-}%%
-{$$\alpha = \LoesungsRaum{
-\alpha =
-\arccos\left(\frac{\vec{a}\circ{}\vec{p}}{a\cdot{}p}\right)
-= \arccos\left(\frac{2.4^2 + 1.7^2}{\sqrt{2.4^2+1.7^2+0.8^2}\cdot{}\sqrt{2.4^2+1.7^2}}\right)
-\approx 15.21676\degre
-}$$
-Dabei ist $\vec{a}$ die Quaderdiagonale (Körperdiagonale) und $\vec{p}$
-dessen Projektion auf die Grundfläche (= $xy$-Ebene).}
-\newpage
-
-%% Maturaprüfung 2020 Aufgabe 2b):
-
-\aufgabeML{Berechnen Sie im Dreieck mit den Eckpunkten $A=(3|1|4)$,
-$B=(1|3|2)$ und $C=(2|2|1)$ den Winkel $\alpha = \angle BAC$:
-}%%
-{$$\alpha=\LoesungsRaum{\arccos\left(\frac{\vec{AB}\circ{}\vec{AC}}{|\vec{AB}|\cdot{}|\vec{AC}|}\right)
-\approx 79.2\degre}$$
-}
-
-
-\aufgabeML{Berechnen Sie den Winkel $\alpha$ zwischen der $xy$-Ebene und dem
-Vektor $\vec{q}$:
-
-$\vec{q}=\Spvek{-3;6;2}$}%%
-{$$\alpha=\LoesungsRaum{\arccos(\frac{\vec{q}\circ{}\vec{p}}{qp})\text{
-mit p = Projektion auf xy-Ebene (-3;6;0)} \approx 16.6015\degre}$$
-}
-
+}%% end AufgabeML
 
 
 
