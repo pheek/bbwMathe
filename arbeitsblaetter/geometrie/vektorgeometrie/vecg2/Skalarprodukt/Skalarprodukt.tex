@@ -167,18 +167,341 @@ $$\vec{u} = \Spvek{3;-4;6} \text{ und } \vec{v} = \Spvek{2;3;-1}$$
 
 
 \aufgabeML{%%
+Gegeben sind die Vektoren $\vec{a} = \Spvek{1;2}$,
+$\vec{b}=\Spvek{-3;2}$, $\vec{c}=\Spvek{-4;-1}$ und $\vec{d}
+= \Spvek{-1;3}$.
 
+Berechnen Sie $(\vec{a} - 2\vec{c})\cdot{}(3\vec{b}-\vec{d})$
 }{%%
-
+ Lösung: $-60$
 }%% end AufgabeML
+
+
+\subsection{Parameter bestimmen, wenn Winkel gegeben}
+
+
+
+\aufgabeML{Bestimmen Sie den Parameter $x$ von Hand so, dass die beiden
+Vektoren $\vec{u}$ und $\vec{v}$ einen Winkel von 45 Grad
+einschließen:
+$$\vec{u} = \Spvek{1;1;0} \hspace{11mm} \vec{v}=\Spvek{2;1;x}$$}%%
+{$$t = \LoesungsRaum{\pm 2}$$ }%% end aufgabeML
+\TRAINER{..., denn $\cos{45\degre} = \frac{\sqrt2}2$ und dies ist
+gleich $\frac{\vec{u}\circ\vec{v}}{uv} = \frac{1+2}{\sqrt{2}\cdot{}\sqrt{x^2+5}}$}
+
+
+
+\aufgabeML{Bestimmen Sie den Parameter $s$ mit dem Taschenrechner so, dass die beiden
+Vektoren $\vec{a}$ und $\vec{b}$ einen Winkel von 60 Grad
+einschließen:
+$$\vec{a} = \Spvek{2;3;4} \hspace{11mm} \vec{b}=\Spvek{5;s;8}$$}%%
+{$$s = \LoesungsRaum{\frac{\sqrt{222691}-504}{7}\approx{}-4.5855}$$}
+\TRAINER{Lösung mit TR: a und b definieren, dananach cos(60) =
+dotp(a,b) / (norm(a) * norm(b)).}
+
+
 
 
 \aufgabeML{%%
+Berechnen Sie $x$ so, dass $\vec{a} = \Spvek{x;3;2}$ und $\vec{b}
+= \Spvek{-4.5; 0; 1.5}$ einen Winkel von $62\degre$ einschließen.
+}{%%
+$x=-1.22$ (mit TR)
+}%% end AufgabeML
+
+\subsection{Winkel bestimmen}
+\subsubsection{von Hand}
+
+\aufgabeML{Bestimmen Sie von Handden Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
+$$\vec{u} = \Spvek{-1;3;5.5}\hspace{11mm}\vec{v}=\Spvek{2;-6;-11}$$}%%
+{$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{180\degre}$$
+}%% end AufgabeML
+
+
+\aufgabeML{Bestimmen Sie von Hand den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
+$$\vec{u} = \Spvek{1;1;9} \hspace{11mm}\vec{v}= \Spvek{0.5;\frac12;4.5}$$}%%
+{$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{0\degre}$$}
+
+
+\aufgabeML{Bestimmen Sie von Hand den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
+$$\vec{u} = \Spvek{0;3;4} \hspace{11mm}\vec{v}= \Spvek{\sqrt{11};5;0}$$}%%
+{$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{60\degre}$$}
+
+\aufgabeML{Bestimmen Sie von Hand den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
+$$\vec{u} = \Spvek{-1;2;5} \hspace{11mm}\vec{v}= \Spvek{2;1;0}$$}%%
+{$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{90\degre}$$}
+
+\subsubsection{mit Taschenrechner}
+
+\aufgabeML{Bestimmen Sie den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
+$$\vec{u} = \Spvek{-1;-2;-3} \hspace{11mm} \vec{v}=\Spvek{4;5;-6}$$}%%
+{$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{\arccos\left(\frac{2\cdot{}\sqrt{22}}{77}\right) \approx 83.00\degre}$$}
+
+
+\aufgabeML{Bestimmen Sie den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
+$$\vec{u} = \Spvek{-12;-7.5;-3.4} \hspace{11mm} \vec{v}=\Spvek{-4.5;2.4;3.8}$$}%%
+{$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{\arccos\left(\frac{2\cdot{}\sqrt{22}}{77}\right) \approx 75.6\degre}$$}
+
+\subsection{Winkel zwischen Koordinatenachsen}
+
+
+
+\aufgabeML{%%i
+Welche drei Winkel bildet der Vektor $\vec{v}$ je mit den drei
+Koordinatenachsen? Berechnen Sie von Hand!
+
+$$\vec{v} = \Spvek{3\cdot{}\sqrt{3}; 0; 3}$$
+}{%%
+$x$-Achse: 30 Grad
+
+$y$-Achse: 90 Grad
+
+$z$-Achse: 60 Grad
+}%% end AufgabeML
+
+
+
+\aufgabeML{%%i
+Ein Ortsvektor $\vec{r}$ mit Länge $v$ schließt mit der $x$- und der
+$y$-Achse je einen Winkel von $\frac{\pi}3$ ein.
+
+Bestimmen Sie von Hand den Winkel zwischen $\vec{r}$ und der $z$-Achse.
+
+
+}{%%
+Der Winkel misst $\frac{\pi}4$ (=$45\degre$ =$135\degre$, doch beim Winkel zwischen
+zwei Geraden wird immer der kleinere genommen), egal, wie lang der Vektor ist.
+}%% end AufgabeML
+
+
+\subsubsection{Aufgaben mit Taschenrechner}
+
+
+
+\aufgabeML{%%i
+Welche Winkel bildet der Vektor $\vec{v}$ mit den drei
+Koordinatenachsen?
+
+$$\vec{v} = \Spvek{4;-11;1}$$
+}{%%
+Mit der $x$-Achse: 70.093 Grad
+
+Mit der $y$-Achse: 20.547 Grad
+
+Mit der $z$-Achse: 85.117 Grad
+}%% end AufgabeML
+
+\aufgabeML{%%i
+Welche Winkel bildet der Vektor $\vec{v}$ mit den drei
+Koordinatenachsen?
+
+$$\vec{v} = \Spvek{6.5; 5.5; 4}$$
+}{%%
+Mit der $x$-Achse: 46.3 Grad
+
+Mit der $y$-Achse: 54.2 Grad
+
+Mit der $z$-Achse: 64.8 Grad
+}%% end AufgabeML
+
+
+\aufgabeML{%%i
+Ein Ortsvektor bildet mit der $x$-Achse einen Winkel von $38\degre$
+und mit der $y$-Achse einen von $117\degre$. Berechnen Sie den Winkel
+mit der $z$-Achse.
+}{%%
+$\alpha_z = 65.427\degre$
+}%% end AufgabeML
+
+
+
+\aufgabeML{Berechnen Sie den Winkel $\alpha$ zwischen der $xy$-Ebene und dem
+Vektor $\vec{q}$:
+
+$\vec{q}=\Spvek{-3;6;2}$}%%
+{$$\alpha=\LoesungsRaum{\arccos(\frac{\vec{q}\circ{}\vec{p}}{qp})\text{
+mit p = Projektion auf xy-Ebene (-3;6;0)} \approx 16.6015\degre}$$
+}
+
+
+\subsection{Orthogonale Vektoren}
+(Skalarprodukt = 0)
+\subsubsection{Aufgaben von Hand}
+
+\aufgabeML{
+Gegeben sind Vektoren $\vec{a}$ und $\vec{b}$ mit
+$$a=11.3\hspace{11mm}b=17.853\hspace{1mm}\text{ und } \angle
+(\vec{a},\vec{b}) = 90\degre$$}{$$\vec{a}\circ\vec{b} = \LoesungsRaum{11.3\cdot{}17.853\cdot\cos(90\degre)=0}$$}
+
+\aufgabeML{Bestimmen Sie den Parameter $t$ von Hand so, dass die beiden
+Vektoren $\vec{p}$ und $\vec{q}$ einen Winkel von $\frac{\pi}2$
+einschließen:
+$$\vec{p} = \Spvek{1;t;2} \hspace{11mm} \vec{q}=\Spvek{3;1;t}$$}%%
+{$$t = \LoesungsRaum{-1}$$ }%% end aufgabeML
+\TRAINER{..., denn bei 90 Grad ist das Skalarprodukt = 0 und somit
+muss $3t+3 = 0$ sein. Dies geht nur, wenn $t=-1$}
+
+
+
+\aufgabeML{%%i
+Bestimmen Sie sämtliche WVektoren, die senkrecht zum Vektor $\vec{v}$
+stehen und die selbe Länge wie $\vec{v}$ haben:
+
+$$\vec{v} = \Spvek{-3; 1}$$
+}{%%
+$\Spvek{1;3}$ und $\Spvek{-1;-3}$
+}%% end AufgabeML
+
+\aufgabeML{%%i
+Bestimmen Sie den Parameter $n$, sodass die beiden folgenden Vektoren
+senkrecht zueinaned stehen:
+
+$$\Spvek{n;1;-3} \hspace{11mm}  \Spvek{4;-2;n}$$
+}{%%
+$n=2$
+}%% end AufgabeML
+
+
+\aufgabeML{%%i
+Bestimmen Sie den Parameter $p$ so, adass die beiden Vektoren
+senkrecht aufeinander stehen:
+
+$$\vec{u} = \Spvek{p;2;3} \hspace{33mm}  \vec{v} = \Spvek{1;0;-2}$$
+}{%%
+$p=6$
+}%% end AufgabeML
+
+
+\aufgabeML{%%i
+Bestimmen Sie den Parameter $p$ so, adass die beiden Vektoren
+senkrecht aufeinander stehen:
+
+$$\vec{u} = \Spvek{2p;2;-4} \hspace{33mm}  \vec{v} = \Spvek{p;-8;p}$$
+
+(Tipp beim Lösen der quadratischen Gleichung: Zweiklammeransatz)
+}{%%
+$p_1=-2, p_2=4$
+}%% end AufgabeML
+
+
+
+\aufgabeML{%%i
+Bestimmen Sie $x$ und $z$ so, dass der Vektor $\vec{r}=Spvek{x;3;z}$
+senkrecht auf den beiden Vektoren steht:
+
+$$\vec{u} = \Spvek{5;4;9} \hspace{33mm}  \vec{v} = \Spvek{2;5;-1.5}$$
+
+(Tipp beim Lösen der quadratischen Gleichung: Zweiklammeransatz)
+}{%%
+$x=-6, z=2$
+}%% end AufgabeML
+
+\aufgabeML{%%i
+Bestimmen Sie den Parameter $y$ so, dass das Dreieck $\triangle ABC$
+bei $\beta (= \angle ABC)$ rechtwinklig wird:
+
+$$A=(2|1|3); B=(4|y|1) \text{ und } C=(2|4|0)$$
+}{%%
+Lösungen: $y=2$ oder $y=3$
+
+Weg:
+
+$\vec{a} = \overrightarrow{BC}=\Spvek{-2;4-y;-1}$
+
+$\vec{b} =\overrightarrow{AB} = \Spvek{2;y-1;-2}$
+
+Skalarprodukt über die Komponenten bestimmen und = 0 setzen.
+}%% end AufgabeML
+
+
+
+\subsubsection{Aufgaben mit Taschenrechner}
+\aufgabeML{%%i
+Bestimmen Sie sämntliche Vektoren der Länge 6, die senkrecht zu
+$\vec{u}$ und zu $\vec{v}$ stehen:
+
+$$\vec{u} = \Spvek{2;1;-2}\hspace{11mm} \vec{v} = \Spvek{-1;0;4}$$
+}{%%
+Lösung: $\pm \Spvek{3.3; -4.94; 0.82}$
+}%% end AufgabeML
+
+
+\aufgabeML{%%i
+Berechnen Sie $k$ so, dass $\vec{u}$ und $\vec{v}$ einen Winkel von
+$90\degre$ einschließen:
+
+$$\vec{u} = \Spvek{-1;k+2;3} \hspace{11mm} \vec{v} = \Spvek{2; k-3; k}$$
+}{%%
+$L_k = \{-4; 2\}$
+}%% end AufgabeML
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\aufgabeML{%%i
 
 }{%%
 
 }%% end AufgabeML
 
+\aufgabeML{%%i
+
+}{%%
+
+}%% end AufgabeML
+
+\aufgabeML{%%i
+
+}{%%
+
+}%% end AufgabeML
+
+\aufgabeML{%%i
+
+}{%%
+
+}%% end AufgabeML
+
+\aufgabeML{%%i
+
+}{%%
+
+}%% end AufgabeML
 
 
 

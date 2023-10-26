@@ -60,14 +60,6 @@ c)  $$L = \LoesungsRaumLen{55mm}{\left\{k\cdot{}\Spvek{-b_y;+b_x}| k\in\mathbb{R
 
 \TRAINER{\newpage}
 
-\aufgabeML{Bestimmen Sie den Parameter $t$ von Hand so, dass die beiden
-Vektoren $\vec{p}$ und $\vec{q}$ einen Winkel von 90 Grad
-einschließen:
-$$\vec{p} = \Spvek{1;t;2} \hspace{11mm} \vec{q}=\Spvek{3;1;t}$$}%%
-{$$t = \LoesungsRaum{-1}$$ }%% end aufgabeML
-\TRAINER{..., denn bei 90 Grad ist das Skalarprodukt = 0 und somit
-muss $3t+3 = 0$ sein. Dies geht nur, wenn $t=-1$}
-
 
 %% entspricht Frommenwiler S. 203 Aufg 109
 %
