@@ -9,8 +9,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{amssymb} %% für \blacktriangleright
-\renewcommand{\metaHeaderLine}{Skalarprodukt}
-\renewcommand{\arbeitsblattTitel}{Vektorgeometrie in $\mathbb{R}^3$}
+\renewcommand{\metaHeaderLine}{Arbeitsblatt}
+\renewcommand{\arbeitsblattTitel}{Vektorgeometrie in $\mathbb{R}^3$: Skalarprodukt}
 
 \begin{document}%%
 \arbeitsblattHeader{}
@@ -65,7 +65,7 @@ $$\vec{a}\circ\vec{b}=0\hspace{11mm}a=1.41421\hspace{11mm}b=1.73205$$}{$$\angle(
   = \arccos{}\left(\frac{0}{a\cdot{}b}\right)\approx 90\degre}$$}
 
 \aufgabeML{Berechnen Sie den Wert des Skalarproduktes, wenn bekannt
-  isd, dass der Winkel zwischen den zwei Vektoren $\\vec{u}$ und
+  ist, dass der Winkel zwischen den zwei Vektoren $\\vec{u}$ und
   $\vec{v}$ $45\degre$ beträgt und zusätzlich folgendes gilt:
  $$|\vec{u}|= 3 \text{ und } |\vec{v}|=4$$
 }{...}
@@ -113,7 +113,7 @@ TR
 
 
 
-\aufgabeML{Für das Skalarproduk gilt das Distributivgesetz
+\aufgabeML{Für das Skalarprodukt gilt das Distributivgesetz
 folgendermaßen:
 
 $$\vec{a}\circ{} (\vec{u} + \vec{v}) =  \vec{a}\circ{} \vec{u}
@@ -196,7 +196,7 @@ Vektoren $\vec{a}$ und $\vec{b}$ einen Winkel von 60 Grad
 einschließen:
 $$\vec{a} = \Spvek{2;3;4} \hspace{11mm} \vec{b}=\Spvek{5;s;8}$$}%%
 {$$s = \LoesungsRaum{\frac{\sqrt{222691}-504}{7}\approx{}-4.5855}$$}
-\TRAINER{Lösung mit TR: a und b definieren, dananach cos(60) =
+\TRAINER{Lösung mit TR: a und b definieren, danach cos(60) =
 dotp(a,b) / (norm(a) * norm(b)).}
 
 
@@ -212,7 +212,7 @@ $x=-1.22$ (mit TR)
 \subsection{Winkel bestimmen}
 \subsubsection{von Hand}
 
-\aufgabeML{Bestimmen Sie von Handden Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
+\aufgabeML{Bestimmen Sie von Hand den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
 $$\vec{u} = \Spvek{-1;3;5.5}\hspace{11mm}\vec{v}=\Spvek{2;-6;-11}$$}%%
 {$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{180\degre}$$
 }%% end AufgabeML
@@ -274,6 +274,18 @@ zwei Geraden wird immer der kleinere genommen), egal, wie lang der Vektor ist.
 }%% end AufgabeML
 
 
+
+\aufgabeML{%%
+Ein Ortsvektor bildet mit der $y$-Achse einen Winkel von $45\degre$
+und mit der $z;$-Achse einen Winkel von $60\degre$. Er hat eine Länge
+von 6 Einheiten. Bestimmen Sie die Komponenten dieses Ortsvektors.
+}{%%
+
+$a_1 = \Spvek{3;3\sqrt{2};3}$
+
+$a_2 = \Spvek{-3;3\sqrt{2};3}$
+}%%
+
 \subsubsection{Aufgaben mit Taschenrechner}
 
 
@@ -328,6 +340,29 @@ mit p = Projektion auf xy-Ebene (-3;6;0)} \approx 16.6015\degre}$$
 (Skalarprodukt = 0)
 \subsubsection{Aufgaben von Hand}
 
+
+\aufgabeML{Gegeben sind die Vektoren
+$$\vec{a} = \Spvek{5;-3}; \vec{b} = \Spvek{b_x; b_y}.$$
+
+
+a) Bestimmen Sie alle Vektoren, die zu $\vec{a}$ senkrecht stehen und den Betrag $a$
+haben.
+
+b) Bestimmen Sie alle Vektoren, die zu $\vec{a}$ senkrecht stehen.
+
+c) Bestimmen Sie alle Vektoren, die zu $\vec{b}$ senkrecht stehen.
+}{Lösungen: \\
+
+a) $$L = \LoesungsRaumLen{55mm}{\left\{\Spvek{3;5}; \Spvek{-3;-5}\right\}}$$
+
+b)  $$L = \LoesungsRaumLen{55mm}{\left\{k\cdot{}\Spvek{3;5}| k\in\mathbb{R}\backslash\{0\}\right\}}$$
+
+c)  $$L = \LoesungsRaumLen{55mm}{\left\{k\cdot{}\Spvek{-b_y;+b_x}| k\in\mathbb{R}\backslash\{0\}\right\}}$$
+ 
+}%% end aufgabeML
+
+
+
 \aufgabeML{
 Gegeben sind Vektoren $\vec{a}$ und $\vec{b}$ mit
 $$a=11.3\hspace{11mm}b=17.853\hspace{1mm}\text{ und } \angle
@@ -344,7 +379,7 @@ muss $3t+3 = 0$ sein. Dies geht nur, wenn $t=-1$}
 
 
 \aufgabeML{%%i
-Bestimmen Sie sämtliche WVektoren, die senkrecht zum Vektor $\vec{v}$
+Bestimmen Sie sämtliche Vektoren, die senkrecht zum Vektor $\vec{v}$
 stehen und die selbe Länge wie $\vec{v}$ haben:
 
 $$\vec{v} = \Spvek{-3; 1}$$
@@ -354,7 +389,7 @@ $\Spvek{1;3}$ und $\Spvek{-1;-3}$
 
 \aufgabeML{%%i
 Bestimmen Sie den Parameter $n$, sodass die beiden folgenden Vektoren
-senkrecht zueinaned stehen:
+senkrecht zueinander stehen:
 
 $$\Spvek{n;1;-3} \hspace{11mm}  \Spvek{4;-2;n}$$
 }{%%
@@ -363,7 +398,7 @@ $n=2$
 
 
 \aufgabeML{%%i
-Bestimmen Sie den Parameter $p$ so, adass die beiden Vektoren
+Bestimmen Sie den Parameter $p$ so, dass die beiden Vektoren
 senkrecht aufeinander stehen:
 
 $$\vec{u} = \Spvek{p;2;3} \hspace{33mm}  \vec{v} = \Spvek{1;0;-2}$$
@@ -373,7 +408,7 @@ $p=6$
 
 
 \aufgabeML{%%i
-Bestimmen Sie den Parameter $p$ so, adass die beiden Vektoren
+Bestimmen Sie den Parameter $p$ so, dass die beiden Vektoren
 senkrecht aufeinander stehen:
 
 $$\vec{u} = \Spvek{2p;2;-4} \hspace{33mm}  \vec{v} = \Spvek{p;-8;p}$$
@@ -414,10 +449,29 @@ Skalarprodukt über die Komponenten bestimmen und = 0 setzen.
 }%% end AufgabeML
 
 
+\aufgabeML{%%
+Gegeben sind die Punkte $A=(-5|1)$ und $B=(3|-3)$. Berechnen Sie die
+Koordinaten des Punktes $C$, sodass $\overline{AC}$ einerseits genau
+10 Einheiten lang wird und andererseits $\overline{AC}$ die Hypotenuse
+im Dreieck $\triangle{} ABC$ wird.
+
+Tipp 1: Machen Sie eine Skizze.
+
+Tipp 2: Die entstehende quadratische Gleichung kann von Hand gelöst
+werden, wenn die Gleichung in Grundform vereinfacht wird und danach
+der Zweiklammeransatz verwendet wird.
+}{%%
+1. Lösung: $\overrightarrow{OC} = \Spvek{5;1}$
+
+2. Lösung: $\overrightarrow{OC} = \Spvek{1;-7}$
+
+}%% end AufgabeML
+
+
 
 \subsubsection{Aufgaben mit Taschenrechner}
 \aufgabeML{%%i
-Bestimmen Sie sämntliche Vektoren der Länge 6, die senkrecht zu
+Bestimmen Sie sämtliche Vektoren der Länge 6, die senkrecht zu
 $\vec{u}$ und zu $\vec{v}$ stehen:
 
 $$\vec{u} = \Spvek{2;1;-2}\hspace{11mm} \vec{v} = \Spvek{-1;0;4}$$
@@ -436,74 +490,301 @@ $L_k = \{-4; 2\}$
 }%% end AufgabeML
 
 
+\subsection{Rechteck, Quadrat, Quader und Würfel}
+
+
+\subsubsection{Rechteck}
+
+\aufgabeML{%%i
+Berechnen Sie den Winkel, unter dem sich die Diagonalen eines 15 cm
+langen und 11 cm breiten Rechtecks schneiden.
+}{%%
+$72.508\degre$ bzw. $107.492\degre$
+}%% end AufgabeML
+
+
+
+\aufgabeML{%%i
+Lösen Sie diese Aufgabe mit Hilfe des \textit{Solvers} und der
+Funktion \texttt{dotp} mit Ihrem Taschenrechner:
+
+Die Vektoren $\vec{a} = \Spvek{x;2;6}$ und $\vec{b}=\Spvek{3;6;z}$
+spannen ein Rechteck auf, das doppelt so lang wie breit ist.
+
+a) Sind beide Seiten ($a$ bzw. $b$) als die Längsseite des Rechtecks
+denkbar? Begründen Sie Ihre Antwort.
+
+b) Berechnen Sie den Flächeninhalt des Rechtecks.
+}{%%
+a) Das Gleichungssystem beinhaltet für beide Fälle die Gleichung
+$\vec{a}\circ{}\vec{b} = 0$.
+
+Mit Gleichung $|\vec{a}| = 2|\vec{b}|$ erhalten wir die Lösung
+$x=\frac{-39}2$ und $z=\frac{31}4$. Wohingegen für $2|\vec{a}| =
+|\vec{b}|$ keine reelle Lösung möglich ist (quadratische Gleichung
+ohne Lösung).
+
+b) Mit den gefundenen $x$ und $z$ Werten kann die Fläche mit
+$|\vec{a}|\cdot{}|\vec{b}| = 210.125$ errechnet werden.
+}%% end AufgabeML
+
+
+\subsubsection{Quadrat}
+
+\aufgabeML{%%i
+Von einem Quadrat $ABCD$ kennt man die Ecke $B=(3|4|5)$ und den
+Mittelpunkt $M=(1|3|2)$. Die Ecke $A$ liegt in der
+$xy$-Ebene. Berechnen Sie mit dem Taschenrechner die Ecken $D$ und $A$.
+}{%%
+$D=(-1|2|-1)$
+
+Für $A$ gibt es zwei Lösungen:
+
+$$A_1 \approx (2.652 | 5.697 | 0)$$
+und 
+$$A_2 \approx (4.148 | 2.703 | 0)$$
+}%% end AufgabeML
 
 
 
 
+\aufgabeML{%%i
+Die beiden Vektoren $\vec{a}=\Spvek{-3;1;z}$ und
+$\vec{b}=\Spvek{1;y;3}$ spannen ein Quadrat auf. Wie groß ist der
+Flächeninhalt und wie groß ist der Umfang dieses Quadrates?
+}{%%
+
+$(y_1 = -1.5; z_1=1.5); U_1=14; A_1=12.25$
+
+$(y_2 = 0.75; z_2=0.75); U_2=13; A_2=10.563$
+}%% end AufgabeML
+
+\subsubsection{Quader}
+
+
+\aufgabeML{Gegeben ist ein Quader mit der Grundfläche
+$1.7 \times 2.4\text{m}^2$
+und der Höhe $0.8 \text{m}$.\\
+Welchen Winkel $\alpha$ schließt die Körperdiagonale zur Grundseite
+ein? Berechnen Sie dies mit dem Taschenrechner.
+}%%
+{$$\alpha = \LoesungsRaum{
+\alpha =
+\arccos\left(\frac{\vec{a}\circ{}\vec{p}}{a\cdot{}p}\right)
+= \arccos\left(\frac{2.4^2 + 1.7^2}{\sqrt{2.4^2+1.7^2+0.8^2}\cdot{}\sqrt{2.4^2+1.7^2}}\right)
+\approx 15.21676\degre
+}$$
+Dabei ist $\vec{a}$ die Quaderdiagonale (Körperdiagonale) und $\vec{p}$
+dessen Projektion auf die Grundfläche (= $xy$-Ebene).}
+
+
+\aufgabeML{%%i
+Im abgebildeten Quader $RSTUVWXY$ ist $\overline{RS}$ = 18 cm,
+$\overline{ST}$ = 9 cm und $\overline{RV}$ = 13 cm. $M$ bezeichne den
+Schnittpunkt der Raumdiagonalen. Berechnen Sie mit dem Taschenrechner die Winkel $\angle RMS$
+und $\angle WMX$
+
+\bbwCenterGraphic{100mm}{./img/Quader_RSTUVWXY.png}
+
+}{%%
+
+$\angle RMS = 97.407\degre$
+
+$\angle WMX = 44.129\degre$
+}%% end AufgabeML
+
+
+\subsubsection{Würfel}
+
+%% entspricht Frommenwiler S. 203 Aufg 109
+%
+\aufgabeML{Berechnen Sie den Winkel zwischen der Körperdiagonalen und
+den Seitenflächen eines Würfels mit Hilfe des Skalarproduktes}{}%%
+\TRAINER{$$\cos(\alpha) = \frac{\vec{a}\circ{}\vec{b}}{a\cdot{}
+b} \Longrightarrow  \alpha
+= \arccos\left(\frac{\sqrt{6}}{3}\right)\text{, mit } \vec{a}
+= \Spvek{\sqrt{2};1}\text{ und } \vec{b} = \Spvek{\sqrt{2};1}$$
+$$\Longrightarrow \alpha\approx 35.26\degre$$}%% end TRAINER
 
 
 
 
+\subsection{Dreieck und Pyramide}
 
+%% Maturaprüfung 2020 Aufgabe 2b):
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\aufgabeML{Berechnen Sie im Dreieck mit den Eckpunkten $A=(3|1|4)$,
+$B=(1|3|2)$ und $C=(2|2|1)$ den Winkel $\alpha = \angle BAC$:
+}%%
+{$$\alpha=\LoesungsRaum{\arccos\left(\frac{\vec{AB}\circ{}\vec{AC}}{|\vec{AB}|\cdot{}|\vec{AC}|}\right)
+\approx 79.2\degre}$$
+}
 
 
 
 
 
 \aufgabeML{%%i
+Von einem Dreieck $\triangle ABC$ sind die Koordinaten der drei
+Eckpunkte bekannt:
 
+$A=(3|-2|5), B=(7|6|10) \text{ und } C=(5|4|6)$
+
+Berechnen Sie mit dem Taschenrechner den Flächeninhalt des Dreiecks $ABC$:
 }{%%
+1. Einen Winkel berechnen (\zB $\beta$): $\beta = 28.8...\degre$
 
+2. Zwei anstoßende Seiten berechnen
+
+$a=4.899...$ und $c=10.247...$
+
+3. Allgemeine Flächenformel Fläche =
+$\frac12\cdot{}a\cdot{}c\cdot{}\sin(\beta) \approx 12.1$
+}%% end AufgabeML
+
+
+
+
+
+\aufgabeML{%%i
+In einer quadratischen Pyramide sind alle Kanten gleich
+lang. Berechnen Sie den Winkel zwischen ...
+
+a) ... einer Seiten- und einer Grundkante,
+
+b) zwei gegenüberliegenden Seitenkanten und
+
+c) zwei benachbarten Seitenkanten.
+}{%%
+a) 60 Grad; b) 90 Grad; c) 60 Grad
+}%% end AufgabeML
+
+
+\subsection{vermischte Aufgaben}
+
+
+\aufgabeML{%%i
+Die Ecken eines regulären Tetraeders liegen auf einer Kugel. Wie groß
+ist das Volumenverhältnis
+
+\begin{center}Kugel : Tetraeder\end{center}
+
+Lösen Sie die Aufgabe a) mit dem Taschenrechner b) von Hand.
+
+}{%% Lösungsteil
+Es seien die Ecken des Tetraeders:
+$A=(0|0|0); B=(1|0|0)$
+Sei $C$ in der $xy$-Ebene, also
+$C = (\frac12|\frac{\sqrt{3}}2|0)$
+
+Die Koordinaten des Mittelpunktes der Grundseite ist
+$G=(\frac12|\frac{\sqrt{3}}6|0)$
+
+Die Spitze $S$ habe die Koordinaten $(\frac12|\frac{\sqrt{3}}6|z_S)$.
+
+Ohne Beschränkung der Allgemeinheit ist die Seitenlänge = 1. Somit
+auch $|\overline{AS}| = 1$, was zu $z_S = \frac{\sqrt{6}}{3}$ führt.
+
+Der Radius $r$ ist also der Abstand jeder Ecke zum Mittelpunkt $M$ und es
+gilt:
+
+$|\overline{AM}| = |\overline{MS}|$
+
+Dies bedeutet, die beiden folgenden Vektoren sind gleich lang ($z_M$ =
+$z$-Koordinate des Mittelpunktes):
+
+$$\Spvek{\frac12 ; \frac{\sqrt{3}}6; z_M} \text{ ist gleich lang wie
+}  \Spvek{0;0;z_S-z_M}$$
+
+Da wir $z_S = \frac{\sqrt{6}}3$ bereits kennen, können wir $z_M$
+berechnen:
+
+$$z_M = \frac{\sqrt{6}}{12}$$
+
+Somit ist der Kugelradius = Höhe - $z$-Koordinate des Mittelpunktes
+
+$r = h-\frac{\sqrt{6}}{12} = \frac{\sqrt{6}}4$
+
+Kugelvolumen $V_K = \frac43\pi\cdot{}r^3 = \frac{\pi\sqrt{6}}{8}$
+
+Pyramidenvolumen $V_T = \frac13 G\cdot{}h = \frac{\sqrt{3}\cdot{}\sqrt{6}}{3\cdot{}4\cdot{}3 = \frac{\sqrt{2}}{12}}$
+
+Das gesuchte Volumen ist daher:
+
+Kugel : Tetraeder = $$\frac{\pi\sqrt{6}}{8} : \frac{\sqrt{2}}{12} = \frac{3\sqrt{3}\cdot{}\pi}2$$
 }%% end AufgabeML
 
 \aufgabeML{%%i
+Gegeben sind die Punkte $A=(12|12|-6)$ und $B=(15|6|3)$.
 
+Welche Punkte $C$ der $xy$-Ebene bilden mit den Punkten $A$ und $B$ ein
+gleichseitiges Dreieck?
+
+Verwenden Sie die Vektor-Operationen des Taschenrechners.
 }{%%
+$C_1 = (4.2 | 6.6 | 0)$
 
+$C_2 = (21 | 15 | 0)$
 }%% end AufgabeML
 
 \aufgabeML{%%i
+Gegeben sind die beiden Vektoren $\vec{u} = \Spvek{1;2;x}$ und
+$\vec{v} = \Spvek{3;-1;1}$.
+
+Berechnen Sie $x$ so, dass der von $\vec{u}$ und $\vec{v}$
+eingeschlossene Winkel minimal wird. Wie groß ist dieser minimale
+Winkel?
 
 }{%%
+Zielfunktion $\varphi = f(x) := \arccos\left(\frac{3-2+x}{\sqrt{5+x^2}\cdot{}\sqrt{11}}\right)$
 
+\texttt{fmin(f(x),x)} mit dem Taschenrechner liefert $x_{min} = 5$ und
+somit $f(5) = 70.714\degre$.
 }%% end AufgabeML
 
-\aufgabeML{%%i
+\aufgabeML{%%
+Gegeben sind zwei Punkte $A=(7|8|-9)$ und $B=(-2|4|11)$.
 
+Gesucht ist ein Punkt $P$ in der $xy$-Ebene (also $z_P=0$) der zum einen
+von $A$ und von $B$ gleich weit entfernt ist und zum anderen soll der Winkel $\angle APB$ maximal werden.
 }{%%
 
-}%% end AufgabeML
+Möglicher Lösungsweg TR:
+Definiere die Ortsvektoren $\overrightarrow{r_A} := \Spvek{7;8;-9}$
+und $\overrightarrow{r_B} := \Spvek{-2;4;11}$ und den gesuchten
+Ortsvektor $\overrightarrow{r_P} := \Spvek{x;y;0}$.
+Somit müssen die beiden Vektoren $r_1=\overrightarrow{PA}$ und
+$r_2=\overrightarrow{PB}$ gleich lang sein:
 
-\aufgabeML{%%i
+Ich löse diese Gleichung ($|r_1|=|r_2|$) mit dem \textit{Solver} nach $y$ auf und
+erhalte die Geradengleichung $y=\frac{-(18x-53)}{8}$.
 
-}{%%
+Nun definiere ich $y:=\frac{-(18x-53)}{8}$, sodass das $y$ an das $x$
+gebunden ist.
 
-}%% end AufgabeML
+Die Zielfunktion (Winkel) definiere ich als zweiparametrige Funktion:
 
+$$f(x,y)
+:= \arccos\left(\frac{\overrightarrow{r_1}\circ\overrightarrow{r_2}}{|\overrightarrow{r_1}|\cdot{}|\overrightarrow{r_2}|}\right)
+=  \arccos\left(\frac{\text{dotp}(\overrightarrow{r_1}, \overrightarrow{r_2})}{\text{norm}(\overrightarrow{r_1})\cdot{}\text{norm}(\overrightarrow{r_2})}\right)$$
 
+Mittels \texttt{fmax} maximiere ich die den Winkel durch den Parameter
+$x$:
+
+\texttt{fmax(f(x,y),x)} und ich erhalte das $x$:
+
+$$x = \frac{125}{194}$$
+
+Dies eingesetzt in die Funktionsgleichung der linearen Funktion
+(Geradengleichung) in der $xy$-Ebene ergibt:
+
+$$y = \frac{-(18x-53)}{8} = \frac{-(18\cdot{}\frac{125}{194}-53)}{8}
+= \frac{502}{97}$$
+
+Der Gesuchte Punkt ist also
+
+$$P = \left(\frac{125}{194}\middle|\frac{502}{97}\middle|0\right)$$
+}%%
 
 
 \end{document}
