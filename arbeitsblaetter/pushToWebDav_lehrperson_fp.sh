@@ -144,9 +144,13 @@ cp -f ./geometrie/trigonometrie/einheitskreise/Einheitskreis_TALS.pdf ${BBW_WEBD
 cp -f ./geometrie/trigonometrie/einheitskreis/EinheitskreisB_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig2/Einheitskreis/Einheitskreis.pdf
 cp -f ./geometrie/trigonometrie/uebungenAblesen/*.pdf                 ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig2/Einheitskreis/
 
-echo "  copying Vektorgeometrie Komponenten in R3 (TALS)"
+echo "  copying Vektorgeometrie 2: Komponenten in R3 (TALS)"
 cp -f ./geometrie/vektorgeometrie/vecg2/Komponenten/Komponenten_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/vecg2/aufgabenblaetter/Komponenten_Aufgben.pdf
 cp -f ./geometrie/vektorgeometrie/vecg2/Komponenten/Komponenten_TRAINER_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/vecg2/aufgabenblaetter/Komponenten_Loesungen.pdf
+
+echo "  copying Vektorgeometrie 2: Skalarprodukt (TALS)"
+cp -f ./geometrie/vektorgeometrie/vecg2/Skalarprodukt/Skalarprodukt_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/vecg2/aufgabenblaetter/Skalarprodukt_Aufgben.pdf
+cp -f ./geometrie/vektorgeometrie/vecg2/Skalarprodukt/Skalarprodukt_TRAINER_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/vecg2/aufgabenblaetter/Skalarprodukt_Loesungen.pdf
 
 echo "  copying Auftrag Logarithmentabelle (TALS)"
 cp -f ./algebra/logarithmentabelle/LogarithmenArbeitsblatt_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/aa2/auftrag_logarithmentabelle/AuftragLogarithmentabelle.pdf
