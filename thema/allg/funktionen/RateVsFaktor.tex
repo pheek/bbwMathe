@@ -16,10 +16,13 @@ Füllen Sie dazu folgende Tabelle aus. Dabei bedeuten
   Einheit & Stunden, Minuten, Meter, ... \\\hline
   $\tau$  & In dieser Zeitspanne (Stunden, Meter, ...) wird beobachtet \\\hline
   $p$     & Zunahme\textbf{rate}\index{Zunahmerate}\index{Rate} während $\tau$ Einheiten in \%. Ist $p$ negativ, handelt es sich um eine Abnahme\\\hline
-  $a_\tau$ & Zunahme\textbf{faktor}\index{Zunahmefaktor} während $\tau$ Einheiten. Ist $a<1$, handelt es sich um einen Abnahmefaktor\\\hline
-  $a_E$ (Formel)   & Zunahme pro Einheit (als Faktor). Aufgeschrieben als Formel\\\hline
+  $a_\tau$ & Zunahme\textbf{faktor}\index{Zunahmefaktor} während
+  $\tau$ Einheiten. Ist $a<1$, handelt es sich um einen Abnahmefaktor
+  ($a_{\tau} = 1+\frac{p}{100\%}$)\\\hline
+  $a_E$ (Formel)   & Zunahme pro Einheit (als Faktor). Aufgeschrieben
+  als Formel $=a_{\tau}^{\frac1{\tau}}$\\\hline
   $\approx a_E$ (Zahl)  & Zunahme pro Einheit (als Näherungswert).\\\hline
-  $p_E$   & Prozentuale Zunahme pro Zeiteinheit\\\hline
+  $p_E$   & Prozentuale Zunahme pro Zeiteinheit $=(a_E-1)\cdot{}100\%$\\\hline
   \end{tabular} 
 
 \leserluft{}
@@ -32,11 +35,12 @@ $$f(t) = a_\tau^{\frac{t}\tau} = a_E^t$$
 %% probably turn off auto-fill-mode in emacs when editing long lines
 \begin{bbwFillInTabular}{|l|l|l|l|l|l|l|}\hline
   Einheit & $\tau$            &  $p$         & $a_\tau$         & $a_E$ (Formel)           &  $\approx a_E$    &$p_E$            \\\hline\hline
-  h       &  $3$              &  56\%        & $1.56$           & $1.56^\frac13$            &  1.1598           & 11.598\%        \\\hline 
-  h       &  $\frac14 = 0.25$ &  70\%        & \ph{1.7}         & \ph{ $1.7^\frac1{0.25}$}  &  \ph{8.3521}      & \ph{735.21\%}   \\\hline 
-  h       &  $\frac12$        &  \ph{50\%}   & 1.5              &  $1.5^\frac1{0.5}$        &  2.25             & \ph{125\%}      \\\hline 
-  Tage    &  $5$              & 100\%        & \ph{2}           & \ph{$2^\frac1{5}$}        &  \ph{1.1487}      & \ph{14.87}\%    \\\hline 
-  Min.    &  $2$              & \ph{-60}\%   & 0.4              & \ph{$0.4^\frac1{2}$}      &  \ph{0.6325}      & \ph{-36.75}\%   \\\hline 
+  h       &  $3$              &  $56$\%        & $1.56$           & $1.56^\frac13$            &  $1.1598$         & $15.98$\%        \\\hline 
+  m       &  $2$              &  $-10$\%       & \ph{0.9}         &     \ph{$0.9^\frac1{2}$}  &  \ph{0.9487}      & \ph{-5.13}\%   \\\hline 
+  h       &  $\frac14 = 0.25$ &  $70$\%        & \ph{1.7}         & \ph{ $1.7^\frac1{0.25}$}  &  \ph{8.3521}      & \ph{735.21}\%   \\\hline 
+  h       &  $\frac12$        &  \ph{50}\%   & $1.5$              &  $1.5^\frac1{0.5}$        &  $2.25$           & \ph{125}\%      \\\hline 
+  Tage    &  $5$              & $100$\%        & \ph{2}           & \ph{$2^\frac1{5}$}        &  \ph{1.1487}      & \ph{14.87}\%    \\\hline 
+  Min.    &  $2$              & \ph{-60}\%   & $0.4$              & \ph{$0.4^\frac1{2}$}      &  \ph{0.6325}      & \ph{-36.75}\%   \\\hline 
   m       &  $12$             & \ph{4.5}\%   & \ph{1.045}       & $1.045^\frac1{12}$        &  \ph{1.00367}     & \ph{0.3675}\%   \\\hline
   Wochen  & \ph{$2$}          & \ph{$200$}\% & \ph{3}           & $3^\frac12$               & \ph{1.73205}      & \ph{73.205}\%   \\\hline
   Jahr    & \ph{$\frac1{12}$} & \ph{$1$}\%   & \ph{$1.01$}      & $1.01^{\frac1{1/12}}$      &  \ph{$1.127$}     & \ph{$12.7$}\%   \\\hline
