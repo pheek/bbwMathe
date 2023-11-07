@@ -155,7 +155,7 @@ Die Grundform für Zerfallsprozesse lautet:
 
 \begin{definition}{Zerfall}{}\index{Zerfall}
   Die Grundform des exponentiellen Zerfalls wird beschrieben durch die Funktion
-$$f(t): x \mapsto a^x$$
+$$f(x): x \mapsto a^x$$
   bzw.
   $$y = a^x$$
 \end{definition}
@@ -325,9 +325,9 @@ Füllen Sie die (prognostizierte) Wertetabelle für 30 Tage ein:
 
 \newpage
 Zeichnen Sie die Algenpopulation als Graph in eine Koordinatensystem
-(beginnen Sie mit dem Ursprung ganz links unten. $x$-Achse in Tagen. $y$-Achse in $\text{m}^2$.
+(beginnen Sie mit dem Ursprung ganz links unten. $x$-Achse in Tagen ($t$). $y$-Achse in $\text{m}^2$.
 
-\noTRAINER{\bbwCenterGraphic{10cm}{allg/funktionen/img/exp/WachstumTuerlerseeLeer.png}}
+\noTRAINER{\bbwCenterGraphic{170mm}{allg/funktionen/img/exp/WachstumTuerlerseeLeer.png}}
 \TRAINER{\bbwCenterGraphic{10cm}{allg/funktionen/img/exp/tuerlerAlgen.png}}
 \newpage
 
@@ -343,15 +343,15 @@ Algenpopulation beschreibt...
 
 
 \begin{bbwFillInTabular}{c|c|c||c|c|c|c|c|c|c|c}\hline
-  Tage      & $t$ & \noTRAINER{\hspace{2cm}} & 0            & 1-4 & 5            & 6-9 & 10           & 11-14 & 15           &\\\hline
+  Tage      & $t$ & \cellcolor{gray!75}\noTRAINER{\hspace{2cm}} & 0            & \tiny{1-4} & 5            & \tiny{6-9} & 10           & \tiny{11-14} & 15           &\\\hline
   Fläche     & $A$ & \TRAINER{$20\cdot v$}    &
-  \TRAINER{20}\noTRAINER{\hspace{15mm}} &      &
-  \TRAINER{40}\noTRAINER{\hspace{15mm}} &      &
-  \TRAINER{80}\noTRAINER{\hspace{15mm}} &                &
+  \TRAINER{20}\noTRAINER{\hspace{15mm}} &  \cellcolor{gray!75}    &
+  \TRAINER{40}\noTRAINER{\hspace{15mm}} &    \cellcolor{gray!75}  &
+  \TRAINER{80}\noTRAINER{\hspace{15mm}} &         \cellcolor{gray!75}       &
   \TRAINER{160}\noTRAINER{\hspace{15mm}} &\\\hline
-  Intervalle & $z$ & \TRAINER{$z=\frac{t}{5}$}    & \TRAINER{0}  &      & \TRAINER{1.}  &      & \TRAINER{2.}  &                & \TRAINER{3.} &\\\hline
-  Potenz     &\TRAINER{$2^z$} & \TRAINER{$2^\frac{t}{5}$}     & \TRAINER{$2^0$}  &      & \TRAINER{$2^1$}  &      & \TRAINER{$2^2$}  &                & \TRAINER{$2^3$} &\\\hline
-  Faktor    & $v$ & \TRAINER{$v=2^z$}    & \TRAINER{1}  &      & \TRAINER{2}  &      & \TRAINER{4}  &                & \TRAINER{8} &\\\hline
+  Intervalle & $z$ & \TRAINER{$z=\frac{t}{5}$}    & \TRAINER{0}  &  \cellcolor{gray!75}    & \TRAINER{1.}  & \cellcolor{gray!75}     & \TRAINER{2.}  &   \cellcolor{gray!75}             & \TRAINER{3.} &\\\hline
+  Potenz     &\TRAINER{$2^z$} & \TRAINER{$2^\frac{t}{5}$}     & \TRAINER{$2^0$}  &   \cellcolor{gray!75}   & \TRAINER{$2^1$}  &   \cellcolor{gray!75}   & \TRAINER{$2^2$}  &  \cellcolor{gray!75}              & \TRAINER{$2^3$} &\\\hline
+  Faktor    & $v$ & \TRAINER{$v=2^z$}    & \TRAINER{1}  &  \cellcolor{gray!75}    & \TRAINER{2}  &   \cellcolor{gray!75}   & \TRAINER{4}  &    \cellcolor{gray!75}            & \TRAINER{8} &\\\hline
 \end{bbwFillInTabular}
 
 \TRAINER{Falls nicht mit Tabelle: 1. Tipp $f(0)=20; f(5)=40;
