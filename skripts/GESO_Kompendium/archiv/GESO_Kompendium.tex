@@ -5,33 +5,16 @@
 
 \input{bbwLayoutDoc}
 
-\renewcommand{\author}{Philipp G. Freimann}
+\renewcommand{\author}{Philipp G. Freimann, nach Susanne Wagner und Urs Vonesch}
 \renewcommand{\grafikautor}{Ph. G. Freimann}
 \renewcommand{\authoremail}{philipp.freimann@bbw.ch}
-\renewcommand{\erstellungsdatum}{14. Nov. 2023}
+\renewcommand{\erstellungsdatum}{19. Juli 2019}
 \renewcommand{\docversion}{0.0.1 (\LaTeX{})}
 
 \renewcommand{\doctitel}{Kompendium Mathematik}
 \renewcommand{\untertitel}{Fachbereich Gesundheit / Soziale Arbeit}
 \renewcommand{\fachthema}{Aufgaben}
 \renewcommand{\rechte}{\textbf{Nutzungsrechte} Creative Commons CC-NB-CY}
-
-%%%%
-%%Makros
-
-\newcounter{aufgabenNummer}
-\setcounter{aufgabenNummer}{1}
-
-\newif\ifisLoesungsteil%%
-
-%% Ändern auf <true> für mit Lösungen, Ändern auf <false> für ohne Lösungen
-\isLoesungsteiltrue%% 
-
-
-\newcommand{\kaufgabe}[2]{\arabic{\aufgabenNummer}.\\
-#1\\
-\ifisLoesungsteil{\color{blue} #2}\else{}\fi\\
-\stepcounter{\aufgabenNummer}}%% end makro kaufgabe
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%% A r i t h m e t i k   u n d   A l g e b r a  I
@@ -41,14 +24,10 @@
 
 %%\newpage
 \newpage
-\section{Arithmetik und Algebra}
-
-
-\section{Gleichungen}
-\kaufgabe{Vereinfachen Sie 1+1}{2}
-\section{Funktionen}
-\section{Datenanalyse}
-\section{Stochastik}
+\part{Repetitionsaufgaben}
+\input{geso/Rep_GESO/ArithmetikUndAlgebra}
+\input{geso/Rep_GESO/Gleichungen}
+\input{geso/Rep_GESO/Datenanalyse}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%\newpage\mbox{}
