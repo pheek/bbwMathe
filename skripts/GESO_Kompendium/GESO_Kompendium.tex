@@ -24,17 +24,20 @@
 %% Englisch / deutsch
 %% Variable: «isEnglisch»
 \newif\ifisEnglisch%%
+\newif\ifisLoesungsteil%%
+
+\input{kflags.tex}
+
 %% Ändern auf <true> für Englisch; ändern auf «false» für Deutsch.
-\isEnglischfalse%%
+%%\isEnglischfalse%%
 \newcommand{\eng}[1]{\ifisEnglisch{#1}\else{}\fi{}}
 \newcommand{\deu}[1]{\ifisEnglisch{}\else{#1}\fi{}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
 %% Lösungsteil
 %% Variable: «isLoesungsteil»
-\newif\ifisLoesungsteil%%
 %% Ändern auf <true> für mit Lösungen, Ändern auf <false> für ohne Lösungen
-\isLoesungsteilfalse%% 
+%%\isLoesungsteilfalse%% 
 
 
 %%%%%%%%%%%%%%%%%%%   Aufgabenblock %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
