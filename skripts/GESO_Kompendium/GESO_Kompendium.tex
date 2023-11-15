@@ -9,29 +9,60 @@
 \renewcommand{\grafikautor}{Ph. G. Freimann}
 \renewcommand{\authoremail}{philipp.freimann@bbw.ch}
 \renewcommand{\erstellungsdatum}{14. Nov. 2023}
-\renewcommand{\docversion}{0.0.1 (\LaTeX{})}
+\renewcommand{\docversion}{0.0.2 (\LaTeX{})}
 
 \renewcommand{\doctitel}{Kompendium Mathematik}
-\renewcommand{\untertitel}{Fachbereich Gesundheit / Soziale Arbeit}
+\renewcommand{\untertitel}{Fachbereich Gesundheit / Soziale Arbeit [GESO]}
 \renewcommand{\fachthema}{Aufgaben}
 \renewcommand{\rechte}{\textbf{Nutzungsrechte} Creative Commons CC-NB-CY}
 
 %%%%
 %%Makros
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
+%% Englisch / deutsch
+%% Variable: «isEnglisch»
+\newif\ifisEnglisch%%
+%% Ändern auf <true> für Englisch; ändern auf «false» für Deutsch.
+\isEnglischtrue%%
+\newcommand{\eng}[1]{\ifisEnglisch{#1}\else{}\fi{}}
+\newcommand{\deu}[1]{\ifisEnglisch{}\else{#1}\fi{}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
+%% Lösungsteil
+%% Variable: «isLoesungsteil»
+\newif\ifisLoesungsteil%%
+%% Ändern auf <true> für mit Lösungen, Ändern auf <false> für ohne Lösungen
+\isLoesungsteilfalse%% 
+
+
+%%%%%%%%%%%%%%%%%%%   Aufgabenblock %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 \newcounter{aufgabenNummer}
 \setcounter{aufgabenNummer}{1}
 
-\newif\ifisLoesungsteil%%
-
-%% Ändern auf <true> für mit Lösungen, Ändern auf <false> für ohne Lösungen
-\isLoesungsteiltrue%% 
-
-
-\newcommand{\kaufgabe}[2]{\arabic{\aufgabenNummer}.\\
+\newcommand{\kaufgabe}[2]{\arabic{aufgabenNummer}.\\
 #1\\
-\ifisLoesungsteil{\color{blue} #2}\else{}\fi\\
-\stepcounter{\aufgabenNummer}}%% end makro kaufgabe
+\ifisLoesungsteil{Lösung: \color{blue} #2}%%
+\else{%%
+\mmPapier{4}%%
+}%%
+\fi\\
+\stepcounter{aufgabenNummer}%%
+}%% end makro kaufgabe
+
+
+\newcommand{\kaufgabeTRAINING}[2]{\arabic{aufgabenNummer}.\\
+{\color{green} Trainingsaufgabe: }#1\\
+\ifisLoesungsteil{Lösung: \color{blue} #2}%%
+\else{%%
+\mmPapier{4}%%
+}%%
+\fi\\
+\stepcounter{aufgabenNummer}%%
+}%% end makro kaufgabeTRAINING
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%% A r i t h m e t i k   u n d   A l g e b r a  I
@@ -41,15 +72,41 @@
 
 %%\newpage
 \newpage
-\section{Arithmetik und Algebra}
+\section{\deu{Arithmetik und Algebra}\eng{Aritmetics and Algebra}}
 
 
-\section{Gleichungen}
-\kaufgabe{Vereinfachen Sie 1+1}{2}
-\section{Funktionen}
-\section{Datenanalyse}
-\section{Stochastik}
+\section{\eng{Equations}\deu{Gleichungen}}
+\kaufgabeTRAINING{\ifisEnglisch{simplifly:}\else{Vereinfachen Sie:}\fi{}
+1+1}{2}
+\kaufgabe{\ifisEnglisch{simplifly:}\else{Vereinfachen Sie:}\fi{}
+-|-(-5-|-8||}{-13}
 
+\subsection{\deu{lineare Gleichungen}\eng{linear equations}}
+\subsection{\deu{quadratische Gleichungen}\eng{quadratic equations}}
+\subsection{\deu{Bruchgleichungen}\eng{übersetzte: equations with fractions}}
+\subsection{\deu{Exponentialgleichungen}\eng{exponential equations}}
+
+
+\section{\deu{Funktionen}\eng{Functions}}
+\subsection{\deu{linerae Funtkonen}\eng{linear functions}}
+\subsection{\deu{Potenzfunktionen}\eng{Powerfunctions}}
+\subsection{\deu{Exponentialfunktionen}\eng{exponential functions}}
+\subsubsection{\deu{Wachstum und Zerfall}\eng{übersetze «Wachstum und Zerfall»}}
+
+
+\section{\deu{Datenanalyse}\eng{Data analysis}}
+\subsection{\deu{Grundlagen}\eng{Basics}}
+\subsection{\deu{Maßzahlen}\eng{übersetze: Maßzahlen}}
+\subsection{\deu{Diagramme}\eng{Diagrams}}
+
+
+
+\section{\deu{Stochastik}\eng{Stochastics}}
+\subsection{\deu{Kombinatorik}\eng{«Combinatorics»}}
+\subsection{\deu{Wahrscheinlichkeitsrechnung}\eng{Probability Calculations}}
+\subsubsection{\deu{Kontingenztafeln}\eng{übersetze: Kontingenztafeln}}
+\subsection{\deu{Statistisches Schließen}\eng{übersetze: Statistisches
+Schließen}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%\newpage\mbox{}
 %%\blankOddPage{}%
