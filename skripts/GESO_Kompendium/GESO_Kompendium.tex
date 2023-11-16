@@ -25,6 +25,7 @@
 %% Variable: «isEnglisch»
 \newif\ifisEnglisch%%
 \newif\ifisLoesungsteil%%
+\newif\ifisMitPlatzfuerLoesungen%%
 
 \input{kflags.tex}
 
@@ -47,12 +48,12 @@
 \newcommand{\printAufgabentext}[1]{%%
 \ifdefined\trainingsAufgabe%%
 %%{\color{blue}«Training»}:
-\vspace{-5mm}\begin{tcolorbox}[colback=blue!20,enhanced,sharp corners,frame hidden,halign=left]
+\vspace{-1mm}\begin{tcolorbox}[colback=blue!20,enhanced,sharp corners,frame hidden,halign=left]
 #1
 \end{tcolorbox}
 \else
 %%{\color{red}«Niveau»}:
-\vspace{-5mm}\begin{tcolorbox}[colback=red!30,enhanced,sharp corners,frame hidden,halign=left]
+\vspace{-1mm}\begin{tcolorbox}[colback=red!30,enhanced,sharp corners,frame hidden,halign=left]
 #1
 \end{tcolorbox}
 \fi
@@ -66,7 +67,10 @@
 \else{%%
 \printAufgabentext{#1}
 
-%%\mmPapier{4}%%
+%%\ifisMitPlatzfuerLoesungen{\mmPapier{4}%% ...
+
+
+
 }%%
 \fi%%
 \stepcounter{aufgabenNummer}%%
