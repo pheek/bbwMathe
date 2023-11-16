@@ -25,6 +25,7 @@
 %% Variable: «isEnglisch»
 \newif\ifisEnglisch%%
 \newif\ifisLoesungsteil%%
+\newif\ifisOhneTrainingsaufgaben%%
 \newif\ifisMitPlatzfuerLoesungen%%
 
 \input{kflags.tex}
@@ -57,24 +58,26 @@
 #1
 \end{tcolorbox}
 \fi
+\ifisMitPlatzfuerLoesungen{
+\mmPapier{4}
+}\else{}\fi{}
 }%% end command PrintAufgabenText
 
 
-\newcommand{\mkaufgabe}[2]{\arabic{aufgabenNummer}.
-\ifisLoesungsteil{{\color{blue} #2}
 
-}%%
-\else{%%
-\printAufgabentext{#1}
-
-%%\ifisMitPlatzfuerLoesungen{\mmPapier{4}%% ...
-
-
-
-}%%
-\fi%%
+\newcommand{\mkaufgabe}[2]{
+%% temporaerer Hack
+%%\ifisLoesungsteil{\arabic{aufgabenNummer}. {\color{blue} #2}%%
+%%\ifisTRAINER{\arabic{aufgabenNummer}. {\color{blue} #2}%%
+\arabic{aufgabenNummer}.
+\ifisLoesungsteil{%%
+{\color{blue} #2}%%
+}\else{%%
+\printAufgabentext{#1}%%
+}\fi{}%%
 \stepcounter{aufgabenNummer}%%
 }%% end makro mkaufgabe
+
 
 
 \newcommand{\kaufgabe}[2]{%%
@@ -82,11 +85,10 @@
 \mkaufgabe{#1}{#2}}%% end makro kaufgabe
 
 
+
 \newcommand{\kaufgabeTRAINING}[2]{%%
-\def\trainingsAufgabe{true}
-\mkaufgabe{#1}{#2}}%%
-
-
+\ifisOhneTrainingsaufgaben{}\else{\def\trainingsAufgabe{true}\mkaufgabe{#1}{#2}}\fi
+}%%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -194,17 +196,6 @@ Benennen Sie die folgenden Terme mit dem richtigen Begriff
 }%% end kaufgabe
 
 \subsection{Betrag}
-\subsection{Runden}
-\subsection{Addition / Subtraktion}
-\subsection{Multiplikation / Division}
-\subsubsection{Faktorisieren}
-\subsubsection{Bruchterme}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% GLeichungen %%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{\eng{Equations}\deu{Gleichungen}}
 
 \deu{Vereinfachen Sie}\eng{simplify}:
 
@@ -216,6 +207,23 @@ Benennen Sie die folgenden Terme mit dem richtigen Begriff
 \kaufgabe{$T(x) = (-4)\cdot{}|x-8|\cdot{}(x^2)$\\
 \deu{Berechnen Sie}\eng{calculate}: $$T(-2)$$ }{$80$}%% end kaufgabe
 
+
+
+
+\subsection{Runden}
+\kaufgabeTRAINING{\deu{Runden Sie auf 3 Dezimalen}\eng{translate:
+Runden Sie auf 3 Dezimalen}
+$$4.6896$$}{4.690 \deu{Die letzte Null ist zwingend!}}
+\subsection{Addition / Subtraktion}
+\subsection{Multiplikation / Division}
+\subsubsection{Faktorisieren}
+\subsubsection{Bruchterme}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% GLeichungen %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\eng{Equations}\deu{Gleichungen}}
 
 \kaufgabeTRAINING{}{}
 
