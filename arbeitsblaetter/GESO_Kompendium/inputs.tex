@@ -1,0 +1,88 @@
+%%\usepackage{german} %% Macht Probleme mit grafiken
+%\usepackage{mciteplus}
+
+\usepackage[dvipsnames,table]{xcolor}
+
+%\usepackage{pgfplotstable}
+\usepackage{tikz}
+%\usepackage{tkz-euclide} %% Grid
+
+%\usepackage{amsthm}
+\usepackage{amsfonts} %% Zahlmengen Z, R, ...
+\usepackage{eurosym}
+%\usepackage[mathscr]{euscript}
+
+%% THEOREMS?
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems}
+\tcbuselibrary{skins}
+
+
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+
+%\usepackage{supertabular}
+\usepackage{makeidx}  
+%\usepackage{ifthen} 
+
+\usepackage{multirow}
+\usepackage{listings}
+
+%% Linebreaks in tabular-Zellen:
+\usepackage{makecell}
+
+\usepackage{multicol}
+\usepackage{lastpage}
+
+\usepackage{pstricks}
+
+%% bold typewriter font:
+\usepackage[T1]{fontenc}
+%\usepackage{lmodern}
+
+\usepackage{enumitem}
+
+%\usepackage{float}
+
+\usepackage{titlesec}
+%\usepackage{textcomp}
+
+\usepackage{framed}
+\usepackage{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%
+%\usepackage{tocbasic}
+
+%% für accentset wedge:
+\usepackage{accents}
+
+%% neue German: Sauberere Trennhilfe
+\usepackage[german]{babel}
+%%\usepackage{ngerman} %% ngerman seit 1998 deprecated (must change to babel soon!!!)
+
+%% Würfel
+\usepackage{epsdice}
+
+%% Einbinden von GeoGebra Bildchen:
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{arrows}
+
+%% Hyperlinks
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    bookmarks=true,
+}
+
+%% bugtracker (part of pgfplots) should be loaded AFTER "hyperref"
+%% See: https://texblog.net/hyperref/ AND https://tex.stackexchange.com/questions/16268/warning-with-footnotes-namehfootnote-xx-has-been-referenced-but-does-not-exi
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+
+%% For Background on title page (Züri Wappn)
+\usepackage{eso-pic}
+

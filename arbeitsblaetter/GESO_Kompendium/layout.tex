@@ -1,0 +1,16 @@
+%% Layout for Kompendium
+
+%%%%%%%%%%%%%%%  H E A D E R   &   F O O T E R %%%%%%%%%%%%%%%%%%%%
+
+%% Oben (Header) linke Seite
+%%\fancyhf[HLE]{\makebox{\includegraphics[width=37mm]{logos/bbwBreit.pdf}}} 
+\fancyhf[HR]{\topRightHeader} 
+\fancyhf[HCE]{\parttitle}
+%% Oben (Header) rechte Seite
+\fancyhf[HLO]{\leftmark}
+%% Unten (Footer)  FRE = right even, FLE= left even, FRO = right odd,
+%% FCO = center odd
+\fancyhf[FRE]{\doctitel{}:\ \fachthema}
+\fancyhf[FLE,FRO]{\thepage{}/\pageref{LastPage}}
+\fancyhf[FCO]{BMS Winterthur (bmwin.ch)}
+%%\fancyhf[FCO]{}

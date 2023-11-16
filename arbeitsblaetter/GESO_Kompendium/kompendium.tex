@@ -1,0 +1,26 @@
+%% Kompendium GESO
+
+\documentclass[twoside,14pt,a4paper]{extarticle}
+\usepackage[paper=a4paper,margin=17mm]{geometry}%
+\usepackage{makeidx}
+
+\input{inputs}
+\input{kflags}
+\input{layout}
+\input{makros}
+
+\makeindex{}
+
+\begin{document}
+
+\printKFirstPage{}%%
+
+\input{chapterAlgebra}
+\input{chapterGleichungen}
+\input{chapterFunktionen}
+\input{chapterDatenanalyse}
+\input{chapterStochastik}
+
+\appendix
+\printindex
+\end{document}

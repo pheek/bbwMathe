@@ -1,0 +1,111 @@
+%% Makros for Kompendium
+
+
+%% Text nur bei deutscher Sprache ausgeben:
+\newcommand{\deu}[1]{%
+\ifthenelse{\equal{\kLanguage}{deu}}{%%
+{#1}}{%%
+}%% end ifthenelse
+}% end deu
+
+%% Text nur bei englischer Sprache ausgeben:
+\newcommand{\eng}[1]{%
+\ifthenelse{\equal{\kLanguage}{eng}}{%%
+{#1}}{%%
+}%% end ifthenelse
+}% end deu
+
+
+\newcommand{\isLoesungen}[1]{%%
+  \ifthenelse{\equal{\kLoesungen}{true}}{%%
+#1}{%%
+}%% end ifthenelse
+}%%
+
+\newcommand{\isAufgaben}[1]{%%
+  \ifthenelse{\equal{\kLoesungen}{true}}{%%
+}{%%
+#1    
+}%% end ifthenelse
+}%%
+
+
+
+
+\newcommand{\mmPapierZwei}[2]{\begin{tikzpicture}
+%%  \draw[step=4mm,bbwMMFarbe,ultra thin]
+%%  \draw[step=4mm,bbwMMFarbe,thick]
+  \draw[step=5mm,gray,line width=0.02mm]
+  (0, 0) grid ({#2}, {#1});
+\end{tikzpicture}}%%
+
+
+
+\newcommand{\isMMPapier}[1]{%%
+  \ifthenelse{\equal{\kMMPapier}{true}}{%%
+    
+    \mmPapierZwei{#1}{15.5}
+
+}{%%
+}%% end ifthenelse
+}%%
+
+\newcommand{\nurNiveauBMP}[1]{%%
+  \ifthenelse{\equal{\kAufgabenNiveau}{bmp}}{%%
+#1}{%%
+}%% end ifthenelse
+}%%
+
+\newcommand{\auchTrainingsAufgabe}[1]{%%
+  \ifthenelse{\equal{\kAufgabenNiveau}{bmp}}{%%
+}{%%
+#1
+}%% end ifthenelse
+}%%
+
+
+
+
+
+
+\newcounter{aufgabenNummer}
+\setcounter{aufgabenNummer}{1}
+%% Kompendium Aufgaben
+%% #1  : Aufgabentext
+%% #2  : Lösungstext
+%% #3  : Optional, 
+\newcommand{\kMetaAufgabe}[3]{%%
+  \arabic{aufgabenNummer}.
+  \isLoesungen{{\color{blue}#2}}\isAufgaben{#1}\stepcounter{aufgabenNummer}
+  \isMMPapier{#3}
+  \vspace{2mm}
+}%% end kaufgabe
+
+\newcommand{\kNiveauAufgabe}[3]{%%
+%%\nurNiveauBMP{\kMetaAufgabe{#1}{#2}{#3}}%%
+\kMetaAufgabe{#1}{#2}{#3}%%
+}%% end kaufgabe
+
+\newcommand{\kTrainingAufgabe}[3]{%%
+\auchTrainingsAufgabe{\kMetaAufgabe{#1}{#2}{#3}}%%
+}%% end kaufgabe
+
+
+\renewcommand{\indexname}{Stichwortverzeichnis}%%
+
+%% Layout erste Seite
+\newcommand{\printKFirstPage}{%%
+  \vspace{10mm}
+  
+  \begin{center} Kompendium \end{center}
+  \begin{center} GESO \end{center}
+  \begin{center} \deu{deutsche Version} \eng{englische Version} \end{center}
+
+  \begin{center} \isLoesungen{Lösungsteil} \isAufgaben{Aufgabenteil} \end{center}
+  \thispagestyle{empty}
+  \newpage
+  \tableofcontents{}
+\newpage
+\fancyhf{}%%
+\pagestyle{fancy}
+}%% end firstPage
