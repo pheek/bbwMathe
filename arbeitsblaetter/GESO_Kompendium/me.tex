@@ -1,0 +1,39 @@
+\documentclass[twoside,14pt,a4paper]{extarticle}
+\usepackage[paper=a4paper,margin=17mm]{geometry}%
+\usepackage{ifthen}
+
+%% use
+%% deu for deutsch
+%% eng for english
+\newcommand{\kLanguage}{eng}
+
+
+
+%% Text nur bei deutscher Sprache ausgeben:
+\newcommand{\deu}[1]{%
+\ifthenelse{\equal{\kLanguage}{deu}}{%%
+{#1}}{%%
+}%% end ifthenelse
+}% end deu
+
+%% Text nur bei englischer Sprache ausgeben:
+\newcommand{\eng}[1]{%
+\ifthenelse{\equal{\kLanguage}{eng}}{%%
+{#1}}{%%
+}%% end ifthenelse
+}% end deu
+
+
+
+\begin{document}
+
+This works: Language is \kLanguage
+
+This works
+\deu{Deutscher Text} \eng{English text}
+
+But this does not work:
+\section{\deu{Deutscher Titel}\eng{Englischer Titel}}
+
+
+\end{document}
