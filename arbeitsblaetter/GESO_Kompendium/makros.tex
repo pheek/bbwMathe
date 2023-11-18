@@ -21,18 +21,18 @@
 \setcounter{aufgabenNummer}{1}
 
 
-\newcommand{\isLoesungen}[1]{%%
+\NewDocumentCommand{\isLoesungen}{m}{%%
   \ifthenelse{\equal{\kLoesungen}{true}}{%%
 #1}{%%
 }%% end ifthenelse
 }%%
 
-\newcommand{\isAufgaben}[1]{%%
-  \ifthenelse{\equal{\kLoesungen}{true}}{%%
+\NewDocumentCommand{\isAufgaben}{m}{%%
+\ifthenelse{\equal{\kLoesungen}{true}}{%%
 }{%%
-#1    
+#1
 }%% end ifthenelse
-}%%
+}%% end IS Aufgaben
 
 
 \newcommand{\mmPapierZwei}[2]{\begin{tikzpicture}
@@ -44,7 +44,7 @@
 
 
 
-\newcommand{\isMMPapier}[1]{%%
+\NewDocumentCommand{\isMMPapier}{m}{%%
   \ifthenelse{\equal{\kMMPapier}{true}}{%%
     
     \mmPapierZwei{#1}{15.5}
@@ -75,8 +75,10 @@
 %% #1 : Aufgabentext
 %% #2 : Lösungstext
 %% #3 : Optional, 
+
+\newcommand{\kAufgabenBuchstabe}{0}
 \newcommand{\kMetaAufgabe}[3]{%%
-  \arabic{aufgabenNummer}. \fragenMarkierung{}:
+  \kAufgabenBuchstabe{}\,\arabic{aufgabenNummer}. \fragenMarkierung{}:
   \isLoesungen{{\color{blue}#2}}\isAufgaben{#1}\stepcounter{aufgabenNummer}
   \isMMPapier{#3}
   \vspace{2mm}
@@ -98,32 +100,54 @@
 
 %% Layout erste Seite
 \newcommand{\printKFirstPage}{%%
+  \begin{center} {\huge{Kompendium}} \end{center}
+
   \vspace{10mm}
   
-  \begin{center} Kompendium \end{center}
-  \begin{center} GESO \end{center}
-  \begin{center} \deu{deutsche Version} \eng{englische Version} \end{center}
+  \begin{center} {\large{GESO}} \end{center}
+
+  \vspace{10mm}
+
+  \begin{center} \deu{deutsche Version} \eng{english version} \end{center}
+  \vspace{10mm}
+
+\vspace{50mm}
+
+\begin{center} \deu{Autoren} \eng{Authors}\\
+Susanne Wagner (susanne.wagner@bms-zuerich.ch)\\
+Thomas Fellmann (thomas.fellmann@bms-zuerich.ch)\\
+Mirjam Bräm, Wolfgang Pfalzgraf, Ulrike Gruber
+Urs Vonaesch\\
+Christian Hersberger (christian.hersberger@bmwin.ch)\\
+Phlipp Freimann (philipp.freimann@bmwin.ch)
+  \end{center}
 
   \begin{center} \isLoesungen{\deu{Lösungsteil}\eng{Solutions}}
     \isAufgaben{\deu{Aufgabenteil}\eng{Excercises (translate:Aufgabenteil)}} \end{center}
 
   \vspace{20mm}
-  \begin{center}Winterthurer Ausgabe \kVersion{} \end{center}
+
+  \begin{center}Kantonale Ausgabe \kVersion{} Kanton Zürich \end{center}
+
   \thispagestyle{empty}
-  \newpage
   
+  \newpage
+
+  \ifthenelse{\equal{\kAufgabenNiveau}{bmp}}{%% nothing
+}{%%
  \deu{Mit {\colorbox{blue!30}{(E)}} gekennzeichnete Aufgaben dienen
 lediglich dem Training als Einstiegsaufgaben.\\
 Mit \colorbox{red!30}{(B)} gekennzeichnete Aufgaben haben das Niveau
   der BMP (Berufsmaturitätsprüfung).
 }%% end deu
 
-
 \eng{Questions having \colorbox{blue!30}{(E)} are only for
     training purpouse.\\
 Questions marked with  \colorbox{red!30}{(B)} have the level BMP (Berufsmaturitätsprüfung).
-}%% end enx
+}%% end printKFirstPage
+}%% end if Unterscheidung BMP
 
+\newpage
 \tableofcontents{}
 \newpage
 \fancyhf{}%%
