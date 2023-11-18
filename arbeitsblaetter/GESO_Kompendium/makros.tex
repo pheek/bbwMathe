@@ -2,18 +2,23 @@
 
 
 %% Text nur bei deutscher Sprache ausgeben:
-\newcommand{\deu}[1]{%
+\NewDocumentCommand{\deu}{m}{%
 \ifthenelse{\equal{\kLanguage}{deu}}{%%
 {#1}}{%%
 }%% end ifthenelse
 }% end deu
 
 %% Text nur bei englischer Sprache ausgeben:
-\newcommand{\eng}[1]{%
+\NewDocumentCommand{\eng}{m}{%
 \ifthenelse{\equal{\kLanguage}{eng}}{%%
 {#1}}{%%
 }%% end ifthenelse
 }% end eng
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\newcounter{aufgabenNummer}
+\setcounter{aufgabenNummer}{1}
 
 
 \newcommand{\isLoesungen}[1]{%%
@@ -28,8 +33,6 @@
 #1    
 }%% end ifthenelse
 }%%
-
-
 
 
 \newcommand{\mmPapierZwei}[2]{\begin{tikzpicture}
@@ -51,31 +54,29 @@
 }%%
 
 \newcommand{\nurNiveauBMP}[1]{%%
-  \ifthenelse{\equal{\kAufgabenNiveau}{bmp}}{%%
-#1}{%%
+\ifthenelse{\equal{\kAufgabenNiveau}{bmp}}{%%
+#1
 }%% end ifthenelse
 }%%
 
 \newcommand{\auchTrainingsAufgabe}[1]{%%
-  \ifthenelse{\equal{\kAufgabenNiveau}{bmp}}{%%
+\ifthenelse{\equal{\kAufgabenNiveau}{bmp}}{%%
+%% Aufgabennummern durchnummerieren, auch wenn keine Trainingsaufgaben
+%% ausdedruckt werden
+\stepcounter{aufgabenNummer}%%
 }{%%
 #1
 }%% end ifthenelse
 }%%
 
+\newcommand{\fragenMarkierung}{}
 
-
-
-
-
-\newcounter{aufgabenNummer}
-\setcounter{aufgabenNummer}{1}
 %% Kompendium Aufgaben
-%% #1  : Aufgabentext
-%% #2  : Lösungstext
-%% #3  : Optional, 
+%% #1 : Aufgabentext
+%% #2 : Lösungstext
+%% #3 : Optional, 
 \newcommand{\kMetaAufgabe}[3]{%%
-  \arabic{aufgabenNummer}.
+  \arabic{aufgabenNummer}. \fragenMarkierung{}:
   \isLoesungen{{\color{blue}#2}}\isAufgaben{#1}\stepcounter{aufgabenNummer}
   \isMMPapier{#3}
   \vspace{2mm}
@@ -83,15 +84,17 @@
 
 \newcommand{\kNiveauAufgabe}[3]{%%
 %%\nurNiveauBMP{\kMetaAufgabe{#1}{#2}{#3}}%%
+\renewcommand{\fragenMarkierung}{\colorbox{red!30}{(B)}}
 \kMetaAufgabe{#1}{#2}{#3}%%
 }%% end kaufgabe
 
 \newcommand{\kTrainingAufgabe}[3]{%%
+\renewcommand{\fragenMarkierung}{\colorbox{blue!30}{(E)}}
 \auchTrainingsAufgabe{\kMetaAufgabe{#1}{#2}{#3}}%%
 }%% end kaufgabe
 
 
-\renewcommand{\indexname}{Stichwortverzeichnis}%%
+\renewcommand{\indexname}{\deu{Stichwortverzeichnis}\eng{Index}}%%
 
 %% Layout erste Seite
 \newcommand{\printKFirstPage}{%%
@@ -101,11 +104,31 @@
   \begin{center} GESO \end{center}
   \begin{center} \deu{deutsche Version} \eng{englische Version} \end{center}
 
-  \begin{center} \isLoesungen{Lösungsteil} \isAufgaben{Aufgabenteil} \end{center}
+  \begin{center} \isLoesungen{\deu{Lösungsteil}\eng{Solutions}}
+    \isAufgaben{\deu{Aufgabenteil}\eng{Excercises (translate:Aufgabenteil)}} \end{center}
+
+  \vspace{20mm}
+  \begin{center}Winterthurer Ausgabe \kVersion{} \end{center}
   \thispagestyle{empty}
   \newpage
-  \tableofcontents{}
+  
+ \deu{Mit {\colorbox{blue!30}{(E)}} gekennzeichnete Aufgaben dienen
+lediglich dem Training als Einstiegsaufgaben.\\
+Mit \colorbox{red!30}{(B)} gekennzeichnete Aufgaben haben das Niveau
+  der BMP (Berufsmaturitätsprüfung).
+}%% end deu
+
+
+\eng{Questions having \colorbox{blue!30}{(E)} are only for
+    training purpouse.\\
+Questions marked with  \colorbox{red!30}{(B)} have the level BMP (Berufsmaturitätsprüfung).
+}%% end enx
+
+\tableofcontents{}
 \newpage
 \fancyhf{}%%
 \pagestyle{fancy}
 }%% end firstPage
+
+
+\input{matheMakros}
