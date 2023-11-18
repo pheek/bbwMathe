@@ -2,17 +2,73 @@
 %% (c) Nov. 2023 philipp.freimann@bbw.ch
 
 %%%%%%%%%%%%%%%  H E A D E R   &   F O O T E R %%%%%%%%%%%%%%%%%%%%
-
-%% Oben (Header) linke Seite
-%%\fancyhf[HLE]{\makebox{\includegraphics[width=37mm]{logos/bbwBreit.pdf}}} 
 \fancyhf[HL]{Kompendium} 
 \fancyhf[HR]{BMS Winterthur (\texttt{https://www.bmwin.ch})}
-%% Oben (Header) rechte Seite
 \fancyhf[FR]{\leftmark}
-%% Unten (Footer)  FRE = right even, FLE= left even, FRO = right odd,
-%% FCO = center odd
-%\fancyhf[FRE]{Kompendium}
 \fancyhf[FL]{\thepage{}/\pageref{LastPage}}
 \fancyhf[FC]{}
-%%\fancyhf[FCO]{}
 
+
+%% Einzug bei Paragraphen unterdrücken, damit alle Aufgabennummern
+%% ganz links kommen
+\setlength{\parindent}{0pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Layout erste Seite
+\newcommand{\printKFirstPage}{%%
+  \thispagestyle{empty}
+  \begin{center} {\huge{Kompendium}} \end{center}
+
+  \vspace{10mm}
+  
+  \begin{center} {\large{GESO}} \end{center}
+
+  \begin{center}
+    \isLoesungen{\deu{Lösungsteil}\eng{Solutions}}
+    \isAufgaben{\deu{Aufgabenteil}\eng{translate: Excercises}}
+  \end{center}
+
+  \vspace{10mm}
+
+  \begin{center} \deu{deutsche Version} \eng{english version} \end{center}
+  \vspace{10mm}
+
+\vspace{60mm}
+
+\begin{center}\begin{small} \deu{Autoren} \eng{Authors}\\
+Susanne Wagner (susanne.wagner@bms-zuerich.ch)\\
+Thomas Fellmann (thomas.fellmann@bms-zuerich.ch)\\
+Mirjam Bräm, Wolfgang Pfalzgraf, Ulrike Gruber
+Urs Vonaesch\\
+Christian Hersberger (christian.hersberger@bmwin.ch)\\
+Phlipp Freimann (philipp.freimann@bmwin.ch) \end{small}
+  \end{center}
+
+
+  \vspace{20mm}
+
+  \begin{center}Kantonale Ausgabe \kVersion{} Kanton Zürich \end{center}
+
+  
+\newpage
+
+  \ifthenelse{\equal{\kAufgabenNiveau}{bmp}}{%% nothing
+}{%%
+ \deu{Mit {\colorbox{blue!30}{(E)}} gekennzeichnete Aufgaben dienen
+lediglich dem Training als Einstiegsaufgaben.\\
+Mit \colorbox{red!30}{(B)} gekennzeichnete Aufgaben haben das Niveau
+  der BMP (Berufsmaturitätsprüfung).
+}%% end deu
+
+\eng{Questions having \colorbox{blue!30}{(E)} are only for
+    training purpouse.\\
+Questions marked with  \colorbox{red!30}{(B)} have the level BMP (Berufsmaturitätsprüfung).
+}%% end printKFirstPage
+}%% end if Unterscheidung BMP
+
+\newpage
+\tableofcontents{}
+\newpage
+\pagestyle{fancy}
+}%% end firstPage

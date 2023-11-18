@@ -1,108 +1,162 @@
+%% Kompendium Kapitel Gleichungen
+%% (c) Nov. 2023 philipp.freimann@bbw.ch
+
 \deu{\section{Gleichungen}\index{Gleichungen}}
 \eng{\section{Equations}\index{Equations}}
 \setcounter{aufgabenNummer}{1}
   \renewcommand{\kAufgabenBuchstabe}{G}
 
 
-\subsection{lineare Gleichungen}
-\subsubsection{Erfüllbare und unerfüllbare lineare Gleichungen}
+\subsection{\deu{Lineare Gleichungen}\eng{Linear Equations}}
+\subsubsection{\eng{translate:} Erfüllbare und unerfüllbare lineare Gleichungen}
 
-Bestimmen Sie die Lösungsmenge bezüglich der Grundmenge
+\kTrainingAufgabe{
+\eng{translate:}Bestimmen Sie die Lösungsmenge bezüglich der Grundmenge
 $G=\mathbb{R}$:
-
+\\
 \begin{enumerate}[label=\alph*)]
 \item $4x=7+3x$
 \item $3x=x$
 \item $(x+2)^2 + (x+3)^2 - (x+5)^2 = (x-2)^2 - 12$
 \item $6x + 5 = \frac{1}{3} (18x + 15)$
 \item $8x -2 = 4x + 1 - (-4x - 3.5)$
-\item $\frac{3x-1}{4} + \frac{2x+1}{5} - 1 = \frac{3x-1}{5} +6 - \frac{x+2}{3}$
 \end{enumerate}
+}{ %% Lösungsteil
+\begin{enumerate}[label=\alph*)]
+\item $\Lx = \{7\}$
+\item $\Lx = \{0\}$
+\item $\Lx = \{1\}$
+\item $\Lx = \mathbb{R}$
+\item $\Lx = \{\}$
+\end{enumerate}
+}{8}%%
 
-\subsubsection{Lineare Bruchgleichungen (Definitions- und
+
+\kNiveauAufgabe{
+\eng{translate:}Bestimmen Sie die Lösungsmenge bezüglich der Grundmenge
+$G=\mathbb{R}$:
+\\
+$\frac{3x-1}{4} + \frac{2x+1}{5} - 1 = \frac{3x-1}{5} +6 - \frac{x+2}{3}$
+}{ %% Lösungsteil
+$\Lx = \{7\}$
+}{8}%%
+
+
+\subsubsection{\eng{translate: }Lineare Bruchgleichungen (Definitions- und
   Lösungsmenge)}
 
-Nennen Sie die Definitionsmenge, lösen Sie anschliessend die Gleichung
-und bestimmen Sie die Lösungsmenge; $G=\mathbb{R}$. Exakte Werte
-angeben:
-
+\kNiveauAufgabe{
+\eng{translate:}Nennen Sie die Definitionsmenge, lösen Sie anschliessend die Gleichung
+und bestimmen Sie die Lösungsmenge; $G=\mathbb{R}$. Exakte Werte angeben:
+\\
 \begin{multicols}{2}
 \begin{enumerate}[label=\alph*)]
+%%\item $\frac{4a+6}{2a-10} + \frac{6a-43}{5-a} = -10$
 \item $\frac{4a+6}{2a-10} + \frac{6a-43}{5-a} = -10$
 \item $\frac{22.5}{a-3} + \frac{9}{-a^2 + 6a - 9} = 0$
 \item $\frac{1}{x(x-4)} + \frac{1}{x(x+4)} = \frac{2}{x^2-16}$
 \item $\frac{3.6x+8.5}{x^2-x-12} + \frac{5.2}{x-4} = \frac{1.9}{-x-3}$
-\item $\frac{21}{-x+7} = 3 + \frac{1.5x}{\left(\frac{7-x}{2}\right)}$    
+%%\item $\frac{21}{-x+7} = 3 + \frac{1.5x}{\left(\frac{7-x}{2}\right)}$    
 \end{enumerate}
 \end{multicols}
+}{%% Lösungsteil
+\begin{multicols}{2}
+\begin{enumerate}[label=\alph*)]
+%%\item $\frac{4a+6}{2a-10} + \frac{6a-43}{5-a} = -10$
+\item $\mathbb{D} = \mathbb{R}\backslash \{5\} , \Lx  = \left\{\frac23\right\}$
+\item $\mathbb{D} = \mathbb{R}\backslash \{3\} , \Lx  = \left\{3.4\right\}$
+\item $\mathbb{D} = \mathbb{R}\backslash \{-4, 0, 4\} = \Lx$
+\item $\mathbb{D} = \mathbb{R}\backslash \{-3, 4\} , \Lx  = \left\{\frac{-165}{107}\right\}$
+%%\item $\frac{21}{-x+7} = 3 + \frac{1.5x}{\left(\frac{7-x}{2}\right)}$    
+\end{enumerate}
+\end{multicols}
+}{10}%% end NiveauAufgabe
+
+
 
 \subsubsection{Lineare Gleichungen mit Parametern}
+
 
 Bestimmen Sie die Lösungen. Schreiben Sie die Ergebnisse so einfach
 wie möglich. Die Lösungsvariable ist jeweils $x$:
 
+\kNiveauAufgabe{
 \begin{enumerate}[label=\alph*)]
+\item $3x+a = x+9a$
 \item $(t+x-s)(t-x-s) = (t-x)(s+x) - st$
 \item $\frac{k-bx}{v} + x = \frac{vx-b}{v}$
 \item $(k-4)x = 4k - k^2$
 \item $\frac{1}{x} + \frac{1}{a} = \frac{1}{b}$
-  \item $\frac{x- \frac{n^2}{4}}{\frac{1}{2} - \frac{n}{4}} = x+n$
-
+%%\item $\frac{x- \frac{n^2}{4}}{\frac{1}{2} - \frac{n}{4}} = x+n$
 \end{enumerate}
+}{%% Lösungsteil
+\begin{enumerate}[label=\alph*)]
+\item $\Lx = \left\{ 4a  \right\}$
+\item $\Lx = \left\{ t-s \right\}$ für $t\ne s$. Ist $t=s$, so ist $\Lx  = \mathbb{R}$.
+\item $\Lx = \left\{ \frac{k+b}b \right\}$ für $b\ne 0$ und $v\ne
+0$. Ansonsten gibt es Spezialfälle.
+\item $\Lx = \left\{ -k  \right\}$ für $k\ne 4$.
+\item $\Lx = \left\{ \frac{ab}{a-b} \right\}$ für $a\ne b$.
+%%\item $\frac{x- \frac{n^2}{4}}{\frac{1}{2} - \frac{n}{4}} = x+n$
+\end{enumerate}
+%%
+}{8}
 
 
+\subsubsection{\eng{translate:}Textaufgaben, die auf lineare Gleichungen führen}
 
-\subsubsection{Textaufgaben, die auf lineare Gleichungen führen}
-
-\begin{enumerate}
-\item
-  Zerlegen Sie die Zahl 188 so in zwei Summanden, dass der 3. Teil des
+  \eng{translate:}Zerlegen Sie die Zahl 188 so in zwei Summanden, dass der 3. Teil des
   ersten Summanden um 12 kleiner ist als der 5. Teil des zweiten
   Summanden. Wie heissen die beiden Summanden?
 
-\item Urs addiert zu einer gedachte Zahl $x$ die Zahl 5, setzt recht
+
+
+\eng{translate:}Urs addiert zu einer gedachte Zahl $x$ die Zahl 5, setzt recht
   an die Summe die Ziffer 7, dividiert die entstandene Zahl durch 11,
   multipliziert den Quotienten mit 4 und erhält das 14-fache der
   ursprünglichen Zahl. Um welche Zahl $x$ handelt es sich?
 
-\item Jemand muss zwei Kredite von zusammen CHF 180\,000.- zu 4.5\%
+
+\eng{translate:}Jemand muss zwei Kredite von zusammen CHF 180\,000.- zu 4.5\%
   und 5.5\% verzinsen. Wären die Zinssätze vertauscht, so ergäbe sich
   ein um CHF 225.- niedriger Jahreszins. Wie hoch sind die Kredite?
 
-\item Jemand macht per 1. Juni eine Einlage von CHF 75\,000.- bei
-  einem Zinsfuss von 3.5\%. Einige Monate später erhöht sich der
-  Zinsfuss um 1.5\%, so dass am Jahresende auch ein um CHF 281.25
-  höherer Zins als ursprünglich erwartet resultiert. Wann fand die
-  Erhöhung statt?
 
-\item Eine Buchhandlung verkaufte von den vorhandenen Exemplaren eines
+\eng{translate:}Eine Buchhandlung verkaufte von den vorhandenen Exemplaren eines
   neu erschienen Krimis am ersten Tag ein Achtel und 10 Stück, am
   zweiten Tag vom Restbestand die Hälfte und 15 Stück. Danach blieben
   noch 50 Krimis übrig. Wie viele Exemplare waren ursprünglich
   vorhanden?
 
-\item Ein Kaufmann mischt 6\,kg einer Warensorte mit 14\,kg einer
+ \eng{translate:}Ein Kaufmann mischt 6\,kg einer Warensorte mit 14\,kg einer
   zweiten Sorte. Der Preis je kg der ersten Sorte ist um CHF 2.50
   höher als derjenige der zweiten Sorte. Er erhält eine Mischung, die
   CHF 8.- pro kg kostet. Wie teuer ist jede der beiden Sorten pro kg?
 
-\item Aus 60\%-igem und 65\%-igem Alkohol sollen 150 Liter 63\%-ige
+
+\eng{translate:}Aus 60\%-igem und 65\%-igem Alkohol sollen 150 Liter 63\%-ige
   Mischung hergestellt werden. Wie viele Liter von jeder Sorte muss
   man verwenden?
 
-\item Auf dem Flohmarkt wird um ein Ölbild gefeilscht. Der Händler
+
+
+\eng{translate:}Auf dem Flohmarkt wird um ein Ölbild gefeilscht. Der Händler
   verlangt CHF 590.-, während der Käufer nur CHF 410.- bezahlen
   will. Die beiden einigen sich so, dass der Händler den Preis um
   gleich viele Prozente senkt, wie der Käufer sein Angebot
   erhöht. Welches ist der Verkaufspreis und um wie viele Prozente sind
   beide von ihren Forderungen abgewichen?
 
-\item Wenn zwei Zuleitungen gleichzeitig geöffnet sind, füllen sie ein
+
+\eng{translate:}Wenn zwei Zuleitungen gleichzeitig geöffnet sind, füllen sie ein
   Bassin in 9 Minuten und 36 Sekunden. Um das Bassin alleine zu
   füllen, braucht die erste Zuleitung 12 Minuten. Wie lange benötigt
   die zweite Zuleitung, wenn sie das Bassin alleine füllen soll?
 
-\item Eine Weinhändlerin kauft 300 Liter Rotwein und 600 Liter
+
+
+
+\eng{translate:}Eine Weinhändlerin kauft 300 Liter Rotwein und 600 Liter
   Weisswein. Der Preis pro Liter Weisswein ist um CHF 1.50 höher als der
   Literpreis Rotwein. Weil der Weinbauer und die Händlerin alte
   Freunde aus der BM-Schulzeit sind, erhält die Weinhändlerin pro
@@ -111,7 +165,13 @@ wie möglich. Die Lösungsvariable ist jeweils $x$:
   Händlerin somit eine Rechnung, die um CHF 60.- zu hoch ist.
   Berechnen Sie die Literpreise für Rot- bzw. Weisswein vor Abzug der
   Rabattes.
-\end{enumerate}
+
+
+
+
+
+
+
 
 
 \subsection{quadratische Gleichungen}
