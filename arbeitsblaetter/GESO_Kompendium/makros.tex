@@ -22,15 +22,14 @@
 
 
 \NewDocumentCommand{\isLoesungen}{m}{%%
-  \ifthenelse{\equal{\kLoesungen}{true}}{%%
+\ifthenelse{\equal{\kLoesungen}{true}}{%%
 #1}{%%
 }%% end ifthenelse
 }%%
 
 \NewDocumentCommand{\isAufgaben}{m}{%%
-\ifthenelse{\equal{\kLoesungen}{true}}{%%
-}{%%
-#1
+\ifthenelse{\equal{\kLoesungen}{false}}{%%
+#1}{%%
 }%% end ifthenelse
 }%% end IS Aufgaben
 
@@ -47,7 +46,7 @@
 \NewDocumentCommand{\isMMPapier}{m}{%%
   \ifthenelse{\equal{\kMMPapier}{true}}{%%
     
-    \mmPapierZwei{#1}{15.5}
+    \mmPapierZwei{#1}{17.0}
 
 }{%%
 }%% end ifthenelse
@@ -76,6 +75,9 @@
 %% #2 : Lösungstext
 %% #3 : Optional, 
 
+%% Jedes Kapitel beginnt mit neuen Buchstaben.
+%% Algebra hat Aufgabne A1, A2. ,,, Funktionen F1, F2, ...
+%%
 \newcommand{\kAufgabenBuchstabe}{0}
 \newcommand{\kMetaAufgabe}[3]{%%
   \kAufgabenBuchstabe{}\,\arabic{aufgabenNummer}. \fragenMarkierung{}:
@@ -106,24 +108,27 @@
   
   \begin{center} {\large{GESO}} \end{center}
 
+  \begin{center}
+    \isLoesungen{\deu{Lösungsteil}\eng{Solutions}}
+    \isAufgaben{\deu{Aufgabenteil}\eng{translate: Excercises}}
+  \end{center}
+
   \vspace{10mm}
 
   \begin{center} \deu{deutsche Version} \eng{english version} \end{center}
   \vspace{10mm}
 
-\vspace{50mm}
+\vspace{60mm}
 
-\begin{center} \deu{Autoren} \eng{Authors}\\
+\begin{center}\begin{small} \deu{Autoren} \eng{Authors}\\
 Susanne Wagner (susanne.wagner@bms-zuerich.ch)\\
 Thomas Fellmann (thomas.fellmann@bms-zuerich.ch)\\
 Mirjam Bräm, Wolfgang Pfalzgraf, Ulrike Gruber
 Urs Vonaesch\\
 Christian Hersberger (christian.hersberger@bmwin.ch)\\
-Phlipp Freimann (philipp.freimann@bmwin.ch)
+Phlipp Freimann (philipp.freimann@bmwin.ch) \end{small}
   \end{center}
 
-  \begin{center} \isLoesungen{\deu{Lösungsteil}\eng{Solutions}}
-    \isAufgaben{\deu{Aufgabenteil}\eng{Excercises (translate:Aufgabenteil)}} \end{center}
 
   \vspace{20mm}
 
@@ -156,3 +161,7 @@ Questions marked with  \colorbox{red!30}{(B)} have the level BMP (Berufsmaturit�
 
 
 \input{matheMakros}
+
+%% Aufgaben die entfernt werden, können durchaus im Kompendium
+%% Qulltext bleiben.
+\newcommand{\entfernteAufgabe}[3]{}
