@@ -1,6 +1,7 @@
 \documentclass[twoside,14pt,a4paper]{extarticle}
 \usepackage[paper=a4paper,margin=17mm]{geometry}%
 \usepackage{ifthen}
+\usepackage{xparse}
 
 %% use
 %% deu for deutsch
@@ -10,18 +11,18 @@
 
 
 %% Text nur bei deutscher Sprache ausgeben:
-\newcommand{\deu}[1]{%
+\NewDocumentCommand\deu{m}{%
 \ifthenelse{\equal{\kLanguage}{deu}}{%%
 {#1}}{%%
 }%% end ifthenelse
 }% end deu
 
 %% Text nur bei englischer Sprache ausgeben:
-\newcommand{\eng}[1]{%
+\NewDocumentCommand\eng{m}{%
 \ifthenelse{\equal{\kLanguage}{eng}}{%%
 {#1}}{%%
 }%% end ifthenelse
-}% end deu
+}% end enx
 
 
 
