@@ -102,6 +102,7 @@
 
 %% Layout erste Seite
 \newcommand{\printKFirstPage}{%%
+  \thispagestyle{empty}
   \begin{center} {\huge{Kompendium}} \end{center}
 
   \vspace{10mm}
@@ -134,9 +135,8 @@ Phlipp Freimann (philipp.freimann@bmwin.ch) \end{small}
 
   \begin{center}Kantonale Ausgabe \kVersion{} Kanton Z√ºrich \end{center}
 
-  \thispagestyle{empty}
   
-  \newpage
+\newpage
 
   \ifthenelse{\equal{\kAufgabenNiveau}{bmp}}{%% nothing
 }{%%
@@ -155,7 +155,6 @@ Questions marked with  \colorbox{red!30}{(B)} have the level BMP (Berufsmaturit√
 \newpage
 \tableofcontents{}
 \newpage
-\fancyhf{}%%
 \pagestyle{fancy}
 }%% end firstPage
 
