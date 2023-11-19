@@ -3,32 +3,39 @@
 \setcounter{aufgabenNummer}{1}
   \renewcommand{\kAufgabenBuchstabe}{D}
 
-
-
-
-\subsection{Vorbemerkungen}
-\paragraph{Abkürzungen}
+\isAufgaben{
+\subsection{\deu{Vorbemerkungen}\eng{Preliminaries}}
+\deu{\paragraph{Abkürzungen}}\eng{\paragraph{Abbrevations}}
 
 $n$ = Anzahl Werte
 
-$Q_1$ = erstes Quartil
+$Q_1$ = \deu{erstes Quartil}\eng{first quartile} 
+
 
 $IQR$ = Interquartilsrange = Quartilsdifferenz (QD) = $Q_3 - Q_1$
 
-$\varsigma$ = Standardabweichung (Nenner $n$).
+\deu{$\varsigma$ = Standardabweichung (Nenner = $n$).}
 
-$\overline{x}$ = empirischer Mittelwert
+\eng{$\varsigma$ = Standard Deviation (Denominator = $n$).}
+
+$\overline{x}$ = \deu{empirischer Mittelwert}\eng{average}
 
 $med$ = Median
 
-$Q_3$ = drittes Quartil
+$Q_3$ = \deu{drittes Quartil}\eng{third quartile} 
 
 $R$ = Range = Spannweite
+}
 
-\subsection{Grundlagen}
 
-\begin{enumerate}
-\item Das Säulendiagramm zeigt die Anzahl Kinder pro Familie in einer Siedlung mit
+
+
+\subsection{\deu{Grundlagen}\eng{Basics}}
+
+\kNiveauAufgabe{
+\eng{translate:}
+
+Das Säulendiagramm zeigt die Anzahl Kinder pro Familie in einer Siedlung mit
 $n=150$ Familien (10 Familien haben keine Kinder, 25 Familien haben 1
   Kind, ...).
 
@@ -47,10 +54,26 @@ c) Erklären Sie anhand dieses Beispiels die Begriffe
   Häufigkeit\index{relative Häufigkeit}\index{Häufigkeit!relative}}
 
 d) Wie viele Kinder leben in dieser Siedlung?
+}{% Lösungen
+a)
 
-\item
+\begin{tabular}{|c|c|c|c|c|c|c|c|}\hline
+Anzahl Kinder       & 0      & 1     & 2     &  3    & 4     & 5      & 6   \\\hline
+Relative Häufigkeit & 0.063  & 0.173 & 0.293 & 0.220 & 0.107 & 0.080  & 0.060     \\\hline
+in \%               & 6.3    & 17.3  & 29.3  & 22.0  & 10.7  & 8.0    & 6.0 \\\hline
+ \end{tabular} 
 
-  Gegeben sind folgende Rohdaten:
+b) $\overline{x} \approx 2.61 $ Kinder pro Familie
+
+c) Siehe Theorie
+
+d) Es leben 391 Kinder in der Siedlung.
+
+}{10}
+
+
+\kNiveauAufgabe{
+\eng{translate:}  Gegeben sind folgende Rohdaten:
 
   7, 5, 3, 8, 1, 2, 10, 5, 8, 9, 2
 
@@ -59,31 +82,40 @@ d) Wie viele Kinder leben in dieser Siedlung?
   \item Auf welchem Rang\index{Rang} befindet sich der Wert 3?
     \item Welcher Wert befindet sich auf dem mittleren Rang?
   \end{enumerate}
+}{%% Lösungen
+a) 1 , 2 , 2 , 3 , 5 , 5 , 7 , 8 , 8 , 9 , 10
 
-  \subsubsection{}
+b) Auf dem 4. Rang.
 
-  
-\end{enumerate}
-
-
+c) Median: $\mediantilde{x}=5$
+}{8}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
 \subsection{Datenerhebung: Problematik von Ausreißern}
 
-\begin{enumerate}
-\item Das Durchschnittsvermögen in einer kleinen Gemeine mit 250
+\kNiveauAufgabe{\eng{translate:}
+ Das Durchschnittsvermögen in einer kleinen Gemeinde mit 250
   steuerpflichtigen Personen betrug CHF 175\,600.-.
 
   Durch den Zuzug einer einzigen vermögenden Person erhöhte sich
   dieser Durchschnitt auf CHF 220\,900.-. Wie hoch ist das Vermögen
   dieser Person?
+}{%% Lösung
+Das Vermögen dieser Person ist etwa CHF $11\,545\,900.--$
+}{8}
 
-\item Das monatliche Durchschnittseinkommen in einer Firma mit 850
+
+\kNiveauAufgabe{\eng{translate:}
+Das monatliche Durchschnittseinkommen in einer Firma mit 850
   Beschäftigten beträgt CHF 7\,250.-. Die drei Spitzenverdiener dieser
   Firma verdienen monatlich je CHF 86\,000.-.
   Berechnen Sie das monatliche Durchschnittseinkommen, wenn diese drei
   Spitzenwerte nicht berücksichtigt werden.
+}{%% Lösung
+Pro nicht-Spiztenverdiener sind das CHF $6\,971.05$.
+}{8}
 
-\item
-  In einer Schulklasse ergaben sich bei der Auswertung einer Prüfung
+\kTrainingAufgabe{\eng{translate:}
+In einer Schulklasse ergaben sich bei der Auswertung einer Prüfung
   folgende Punktezahlen:
 
   35, 58, 59, 4, 38, 43, 45, 52, 49, 55
@@ -91,8 +123,16 @@ d) Wie viele Kinder leben in dieser Siedlung?
   a) Berechnen Sie Mittelwert und Median.
 
   b) Berechnen sie den Mittelwert ohne den Ausreißer 4.
+}{%% Lösung
+Taschenrechner:
 
-\item
+ a) Mittelwert $\overline{x} =  43.8$ und Median $\mediantilde{x} = 47 $
+
+ b) Mittelwert $\overline{x} =  48.\overline{2}$
+
+}{8}
+
+\kNiveauAufgabe{\eng{translate:}
   10 Eier haben folgende Gewichte in Gramm:
 
   52.8, 55.9, 58.2, 57.1, 60.4, 69.1 57.9, 58.0, 62.5, 65.0
@@ -103,19 +143,21 @@ d) Wie viele Kinder leben in dieser Siedlung?
   Berechnen Sie das Gewicht des Gips-Eies.
 
   Runden Sie auf 0.1 Gramm genau.
-  
-\end{enumerate}
-
+}{%% Lösung
+Das Gips-Ei wiegt 98.0 g.
+}{8}
+\newpage
 
 \subsection{Diagramme (Säulendiagramm, Histogramm, Boxplot)}
 
-\begin{enumerate}
-\item \textbf{Säulendiagramm}
+
+\kNiveauAufgabe{
+\textbf{Säulendiagramm}
 
   In einer Ausstellung wurden im Laufe einer Woche folgende
   Besucherzahlen ermittelt:
 
-  \begin{tabular}{lllllll}
+  \begin{tabular}{ccccccc}
     Montag & Dienstag & Mittwoch & Donnerstag & Freitag & Samstag & Sonntag \\
     350    & 321      & 647      & 519        & 844     & 1\,314  & 2\,522
   \end{tabular}
@@ -123,26 +165,32 @@ d) Wie viele Kinder leben in dieser Siedlung?
   Zeichnen Sie ein \textbf{Säulendiagramm} mit den relativen
   Häufigkeiten in \%.
 
-\item \textbf{Säulendiagramm und Boxplot}
+\includegraphics[width=120mm]{img/daan/Museum_Aufgabe.png}
+
+}{%% Lösung
+\includegraphics[width=120mm]{img/daan/Museum_Loesung.png}
+}{8}
+\newpage
+
+
+
+
+
+
+\kNiveauAufgabe{
+ \textbf{Säulendiagramm und Boxplot}
 
   Hier sehen Sie die Prüfungspunkte in einer Klasse.
 
-  1) Urliste:
+  Geordnete Urliste:
 
-  76, 74, 82, 96, 66, 76, 78, 72, 52, 86, 84, 76, 78, 92, 82, 74, 88,
-  62
-
-  2) Hier sehen Sie die selben Zahlen geordnet:
-
-  52, 62, 66, 72, 74, 74, 76, 76, 76, 78, 78, 82, 82, 84, 86, 88, 92, 96
+  52, 62, 66, 72, 74, 74, 76, 76, 76, 78, 80, 82, 82, 84, 86, 88, 92, 96
 
   \begin{enumerate}[label=\alph*)]
-  \item
-    Teilen Sie die Daten in Klassen ein: [50; 60), [60; 70), usw.
+      \item
+    Teilen Sie die Daten in Klassen ein: $[50; 60[$, $[60; 70[$, usw.
         \textit{(Klassenbreite = 10 Punkte).} Zeichnen Sie ein
-        Säulendiagramm mit den relativen Häufigkeiten. Zeichnen Sie
-        die Säulen aneinanderstossend.
-
+        Histogramm mit den relativen Häufigkeiten. 
       \item
         Zeichnen Sie einen \textbf{Boxplot}.
       \item
@@ -152,8 +200,44 @@ d) Wie viele Kinder leben in dieser Siedlung?
       \item
         Bestimmen Sie die \textbf{Quartilsdifferenz} \textit{IQR}.
     \end{enumerate}
+    \mmPapierZwei{6}{17.5}
+}{%% Lösung
+Lösung ausstehend...
+%  \begin{enumerate}[label=\alph*)]
+%      \item
+%    Teilen Sie die Daten in Klassen ein: $[50; 60[$, $[60; 70[$, usw.
+%        \textit{(Klassenbreite = 10 Punkte).}        \\
+%[50;60[ : 1 Wert\\
+%[60;70[ : 2 Werte\\
+%[70;80[ : 7 Werte\\
+%[80;90[ : 6 Werte\\
+%[90;100[: 2 Werte\\
+%Total 18 Werte
+%Zeichnen Sie ein Histogramm mit den relativen Häufigkeiten.
+%      \item
+%        Zeichnen Sie einen \textbf{Boxplot}.
+%      \item
+%        Bestimmen Sie den \textbf{Mittelwert}.
+%      \item
+%        Bestimmen sie den \textbf{Modalwert} (Modus).
+%      \item
+%        Bestimmen Sie die \textbf{Quartilsdifferenz} \textit{IQR}.
+%    \end{enumerate}
+}{8}
+\newpage
 
-\item \textbf{Klassendiagramm, Säulendiagramm, Boxplot}
+
+
+
+
+
+
+
+
+
+
+
+\textbf{Klassendiagramm, Säulendiagramm, Boxplot}
  Die Messung der Körpergrösse von 100 18-jährigen Schülern liefert
  folgende Zahlen:
 
@@ -189,7 +273,19 @@ d) Wie viele Kinder leben in dieser Siedlung?
 \end{enumerate}
 
 
-\item \textbf{Vergleich zweier Boxplots}
+
+
+
+
+
+
+
+
+
+
+
+
+\textbf{Vergleich zweier Boxplots}
 
   Wurfweiten beim Ballwurf in Metern:
 
@@ -208,7 +304,14 @@ d) Wie viele Kinder leben in dieser Siedlung?
 
 
 
-  \item{Informationen aus einem Diagramm herauslesen}
+
+
+
+
+
+
+
+{Informationen aus einem Diagramm herauslesen}
 
     Praliné-Kugeln in einer Packung; Darstellung der absoluten
     Häufigkeiten:
@@ -220,7 +323,20 @@ d) Wie viele Kinder leben in dieser Siedlung?
 Bestimmen Sie Mittelwert, Median und Standardabweichung.
 Rechnen Sie mit den Klassenmitteln.
 
-\end{enumerate}
+
+\newpage
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 \subsection{Masszahlen (Mittelwert, Media, Quartile,
@@ -231,8 +347,7 @@ Rechnen Sie mit den Klassenmitteln.
   Mittelwert (mit Ausreisser-Problematik), Median, Standardabweichung,
   Quartilsdifferenz.}
 
-\begin{enumerate}
-\item In einer Klasse wurden folgende 18 Prüfungsnoten erzielt:
+ In einer Klasse wurden folgende 18 Prüfungsnoten erzielt:
 
   \begin{tabular}{llllllllll}
     3 & 3 & 3.5 & 3.5 & 4   & 4 & 4.5 & 4.5 & 4.5 & 4.5\\
@@ -242,7 +357,15 @@ Rechnen Sie mit den Klassenmitteln.
   Berechnen Sie \textbf{Mittelwert} und \textbf{Standardabweichung}
   mit Hilfe des Rechners.
 
-\item Drei \textbf{Streumasse}: \textbf{Spannweite R (Range)},
+
+
+
+
+
+
+
+
+ Drei \textbf{Streumasse}: \textbf{Spannweite R (Range)},
   \textbf{Quartilsdifferenz IQR}, \textbf{Standardabweichung $\sigma$}
 
   Gegeben sind folgende Daten, die bereits geordnet sind:
@@ -257,7 +380,5 @@ Rechnen Sie mit den Klassenmitteln.
   2 Dezimalen genau).
   
   
-  \end{enumerate}
-
 
 \newpage

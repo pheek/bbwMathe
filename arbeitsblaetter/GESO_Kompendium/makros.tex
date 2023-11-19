@@ -1,19 +1,28 @@
 %% Makros for Kompendium
-
+%% 2023_11_19 philipp.freimann@bbw.ch
 
 %% Text nur bei deutscher Sprache ausgeben:
-\NewDocumentCommand{\deu}{m}{%
-\ifthenelse{\equal{\kLanguage}{deu}}{%%
-{#1}}{%%
-}%% end ifthenelse
-}% end deu
+%\NewDocumentCommand{\deu}{m}{%
+%\ifthenelse{\equal{\kLanguage}{deu}}{%%
+%{#1}}{%%
+%}%% end ifthenelse
+%}% end deu
 
 %% Text nur bei englischer Sprache ausgeben:
-\NewDocumentCommand{\eng}{m}{%
-\ifthenelse{\equal{\kLanguage}{eng}}{%%
-{#1}}{%%
-}%% end ifthenelse
-}% end eng
+%\NewDocumentCommand{\eng}{m}{%
+%\ifthenelse{\equal{\kLanguage}{eng}}{%%
+%{#1}}{%%
+%}%% end ifthenelse
+%}% end eng
+
+%% Die folgende Lösung habe ich hier angefragt:
+%%https://tex.stackexchange.com/questions/701580/latex-equal-not-recognized-within-section-command
+\ExplSyntaxOn
+%% Text nur bei deutscher Sprache ausgeben:
+\cs_new:Npn \deu #1 { \str_if_eq:eeT {\kLanguage}{deu} {#1} }
+%% Text nur bei englischer Sprache ausgeben:
+\cs_new:Npn \eng #1 { \str_if_eq:eeT {\kLanguage}{eng} {#1} }
+\ExplSyntaxOff
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
@@ -21,17 +30,26 @@
 \setcounter{aufgabenNummer}{1}
 
 
-\NewDocumentCommand{\isLoesungen}{m}{%%
-\ifthenelse{\equal{\kLoesungen}{true}}{%%
-#1}{%%
-}%% end ifthenelse
-}%%
+%\NewDocumentCommand{\isLoesungen}{m}{%%
+%\ifthenelse{\equal{\kLoesungen}{true}}{%%
+%#1}{%%
+%}%% end ifthenelse
+%}%%
 
-\NewDocumentCommand{\isAufgaben}{m}{%%
-\ifthenelse{\equal{\kLoesungen}{false}}{%%
-#1}{%%
-}%% end ifthenelse
-}%% end IS Aufgaben
+%\NewDocumentCommand{\isAufgaben}{m}{%%
+%\ifthenelse{\equal{\kLoesungen}{false}}{%%
+%#1}{%%
+%}%% end ifthenelse
+%}%% end IS Aufgaben
+
+%% see abvove
+\ExplSyntaxOn
+%% Text nur bei deutscher Sprache ausgeben:
+\cs_new:Npn \isLoesungen #1 { \str_if_eq:eeT {\kLoesungen}{true} {#1} }
+%% Text nur bei englischer Sprache ausgeben:
+\cs_new:Npn \isAufgaben #1 { \str_if_eq:eeT {\kLoesungen}{false} {#1} }
+\ExplSyntaxOff
+
 
 
 \newcommand{\mmPapierZwei}[2]{\begin{tikzpicture}
@@ -46,27 +64,39 @@
 \NewDocumentCommand{\isMMPapier}{m}{%%
   \ifthenelse{\equal{\kMMPapier}{true}}{%%
     
-    \mmPapierZwei{#1}{17.0}
+    \mmPapierZwei{#1}{17.5}
 
 }{%%
 }%% end ifthenelse
 }%%
 
-\newcommand{\nurNiveauBMP}[1]{%%
-\ifthenelse{\equal{\kAufgabenNiveau}{bmp}}{%%
-#1
-}%% end ifthenelse
-}%%
+%\newcommand{\nurNiveauBMP}[1]{%%
+%\ifthenelse{\equal{\kAufgabenNiveau}{bmp}}{%%
+%#1
+%}%% end ifthenelse
+%}%%
 
-\newcommand{\auchTrainingsAufgabe}[1]{%%
-\ifthenelse{\equal{\kAufgabenNiveau}{bmp}}{%%
+%\newcommand{\auchTrainingsAufgabe}[1]{%%
+%\ifthenelse{\equal{\kAufgabenNiveau}{bmp}}{%%
 %% Aufgabennummern durchnummerieren, auch wenn keine Trainingsaufgaben
 %% ausdedruckt werden
-\stepcounter{aufgabenNummer}%%
-}{%%
-#1
-}%% end ifthenelse
-}%%
+%\stepcounter{aufgabenNummer}%%
+%}{%%
+%#1
+%}%% end ifthenelse
+%}%%
+
+
+\ExplSyntaxOn
+%% Text nur bei Niveau BMP Ausgeben
+\cs_new:Npn \nurNiveauBMP #1 { \str_if_eq:eeT {\kAufgabenNiveau}{nurBMP} {#1} }
+%% Text nur bei englischer Sprache ausgeben:
+\cs_new:Npn \auchTrainingsAufgabe #1 { \str_if_eq:eeT {\kAufgabenNiveau}{auchTraining} {#1} }
+\ExplSyntaxOff
+
+
+
+
 
 \newcommand{\fragenMarkierung}{}
 

@@ -3,9 +3,9 @@
 # Erstelle GESO Kompenidum
 rm *.pdf
 
-lualatex kompendium.tex
+pdflatex kompendium.tex
 makeindex kompendium.idx
-lualatex kompendium.tex
+pdflatex kompendium.tex
 
 evince *.pdf &
 

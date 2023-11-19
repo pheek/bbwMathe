@@ -60,21 +60,20 @@ Quelltext des Skripts:\\
   
 \newpage
 
-  \ifthenelse{\equal{\kAufgabenNiveau}{bmp}}{%% nothing
-}{%%
- \deu{Mit {\colorbox{blue!30}{(E)}} gekennzeichnete Aufgaben dienen
+\auchTrainingsAufgabe{
+%%
+\deu{Mit {\colorbox{blue!30}{(E)}} gekennzeichnete Aufgaben dienen
 lediglich dem Training als Einstiegsaufgaben.\\
 Mit \colorbox{red!30}{(B)} gekennzeichnete Aufgaben haben das Niveau
   der BMP (Berufsmaturitätsprüfung).
 }%% end deu
-
 \eng{Questions having \colorbox{blue!30}{(E)} are only for
     training purpouse.\\
 Questions marked with  \colorbox{red!30}{(B)} have the level BMP (Berufsmaturitätsprüfung).
-}%% end printKFirstPage
-}%% end if Unterscheidung BMP
-
+}end eng
 \newpage
+}%% end inklusive TrainingsAufgaben
+
 \tableofcontents{}
 \newpage
 \pagestyle{fancy}
