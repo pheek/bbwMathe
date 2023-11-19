@@ -18,7 +18,10 @@
 %% Layout erste Seite
 \newcommand{\printKFirstPage}{%%
   \thispagestyle{empty}
-  \begin{center} {\huge{Kompendium}} \end{center}
+
+  \begin{center} 
+\raisebox{-30mm}{\includegraphics[width=50mm]{img/layout/loewe.pdf}}
+{\huge{\textbf{Kompendium}}}\\WORKING DRAFT \end{center}
 
   \vspace{10mm}
   
@@ -39,13 +42,13 @@ Einstiegsaufgaben.}\eng{Enhancet with simple excerises.}} \end{center}
 
   \vspace{10mm}
 
-\vspace{60mm}
+\vspace{35mm}
 
 \begin{center}\begin{small} \deu{Autoren} \eng{Authors}\\
 Susanne Wagner (susanne.wagner@bms-zuerich.ch)\\
 Thomas Fellmann (thomas.fellmann@bms-zuerich.ch)\\
 Mirjam Bräm, Wolfgang Pfalzgraf, Ulrike Gruber
-Urs Vonaesch\\
+Urs Vonesch\\
 Christian Hersberger (christian.hersberger@bmwin.ch)\\
 Phlipp Freimann (philipp.freimann@bmwin.ch) \end{small}
   \end{center}
@@ -70,7 +73,7 @@ Mit \colorbox{red!30}{(B)} gekennzeichnete Aufgaben haben das Niveau
 \eng{Questions having \colorbox{blue!30}{(E)} are only for
     training purpouse.\\
 Questions marked with  \colorbox{red!30}{(B)} have the level BMP (Berufsmaturitätsprüfung).
-}end eng
+}%% end eng
 \newpage
 }%% end inklusive TrainingsAufgaben
 

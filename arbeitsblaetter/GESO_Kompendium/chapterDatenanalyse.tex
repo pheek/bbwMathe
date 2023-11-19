@@ -266,7 +266,7 @@ e) Der Modus ist 76, die Zahl kommt drei mal vor.
         Häufigkeiten in Prozent.
 
         \item Zeichnen Sie einen Boxplot mit diesen Daten.
-\end{enumerate}\newpage
+\end{enumerate}
 }{%% Löusngen
 
 \begin{tabular}{c|c|c|c|c|c|c}
@@ -280,8 +280,8 @@ e) Der Modus ist 76, die Zahl kommt drei mal vor.
 &
 \includegraphics[width=80mm]{img/daan/KoerpergroesseBoxplot.png}
 \end{tabular}
-\newpage
 }{8}
+\newpage
 
 
 
@@ -293,8 +293,7 @@ e) Der Modus ist 76, die Zahl kommt drei mal vor.
 
 
 
-
-
+\kNiveauAufgabe{
 \textbf{Vergleich zweier Boxplots}
   Wurfweiten beim Ballwurf in Metern:
 
@@ -310,6 +309,17 @@ e) Der Modus ist 76, die Zahl kommt drei mal vor.
 
   Erstellen Sie für beide Versuchsreihen je einen Boxplot (Darstellung
   mit gleicher Skala, sodass ein Vergleich möglich wird).
+}{%% Lösungen
+V1: Q1 = 33.05; Median = 33.5; Q3 = 34.2
+
+V2: Q1 = 32.4; Median = 33.6; Q3 = 34.5
+
+Zahlen unbedingt nochmals prüfen, denn die Graphik stimmt nicht (V1
+mit V2 tauschen, Q1 und Q3 nochmals kontrollieren, Mittelachse löschen)...
+
+\includegraphics[width=120mm]{img/daan/VergleicheZweiBoxplots.png}
+
+}{8}
 \newpage
 
 
@@ -318,20 +328,25 @@ e) Der Modus ist 76, die Zahl kommt drei mal vor.
 
 
 
-
-
+\kNiveauAufgabe{
 \textbf{Informationen aus einem Diagramm herauslesen}
+Praliné-Kugeln in einer Packung; Darstellung der absoluten
+Häufigkeiten in g. Bestimmen Sie
+Mittelwert, Median und Standardabweichung. Rechnen Sie mit den Klassenmitten.
 
-    Praliné-Kugeln in einer Packung; Darstellung der absoluten
-    Häufigkeiten:
+\includegraphics[width=120mm]{img/daan/HistogrammPralines.png}
     
-\begin{tikzpicture}\begin{axis}[ybar stacked,nodes near coords,bar
-    width=0.4,]\addplot
-    coordinates{(21,10) (22,15) (23, 20) (24, 25) (25, 10) (26, 5)};\end{axis}\end{tikzpicture}
+%\begin{tikzpicture}\begin{axis}[ybar stacked,nodes near coords,bar
+%    width=0.4,]\addplot
+%    coordinates{(21,10) (22,15) (23, 20) (24, 25) (25, 10) (26, 5)};\end{axis}\end{tikzpicture}
 
 Bestimmen Sie Mittelwert, Median und Standardabweichung.
-Rechnen Sie mit den Klassenmitteln.
 
+}{%% Lösungen
+$\overline{x} = 28.8$, $\mediantilde{x}=22.5$ und $\sigma=1.4$.
+
+
+}{8}
 
 \newpage
 
@@ -348,15 +363,11 @@ Rechnen Sie mit den Klassenmitteln.
 
 
 
-\subsection{Masszahlen (Mittelwert, Media, Quartile,
+\subsubsection{Masszahlen (Mittelwert, Media, Quartile,
   Standardabweichung, Quartilsdifferenz)}
 
-\textit{Einige Lehrplanziele dieses Kapitels wurden bereits in den
-  vorhergehenden Aufgaben behandelt: Geordnete Liste, Klassenbildung,
-  Mittelwert (mit Ausreisser-Problematik), Median, Standardabweichung,
-  Quartilsdifferenz.}
-
- In einer Klasse wurden folgende 18 Prüfungsnoten erzielt:
+\kNiveauAufgabe{
+\eng{translate:} In einer Klasse wurden folgende 18 Prüfungsnoten erzielt:
 
   \begin{tabular}{llllllllll}
     3 & 3 & 3.5 & 3.5 & 4   & 4 & 4.5 & 4.5 & 4.5 & 4.5\\
@@ -365,16 +376,16 @@ Rechnen Sie mit den Klassenmitteln.
 
   Berechnen Sie \textbf{Mittelwert} und \textbf{Standardabweichung}
   mit Hilfe des Rechners.
+}{%% Lösungen
+$\overline{x} = 4.64$, $\sigma=0.97$ (bzw. $s_x=1.0$)
+}{8}
 
 
 
 
 
-
-
-
-
- Drei \textbf{Streumasse}: \textbf{Spannweite R (Range)},
+\kNiveauAufgabe{
+\eng{translate:} Drei \textbf{Streumasse}: \textbf{Spannweite R (Range)},
   \textbf{Quartilsdifferenz IQR}, \textbf{Standardabweichung $\sigma$}
 
   Gegeben sind folgende Daten, die bereits geordnet sind:
@@ -385,9 +396,11 @@ Rechnen Sie mit den Klassenmitteln.
   \end{tabular}
 
   Ermitteln Sie die \textbf{Spannweite (Range)}, die
-  \textbf{Quartilsdifferenz} und die \textbf{Standardabweichung} (auf
+  \textbf{Quartilsdifferenz QD (Interquartilerange (IQR)) } und die \textbf{Standardabweichung} (auf
   2 Dezimalen genau).
-  
+}{%% Lösungen
+Spannweite (Range) = $3.55$, IQR (QD) = $1.75$ und  $\sigma=1.04$ (bzw. $s_x=1.09$)
+}{8}
   
 
 \newpage
