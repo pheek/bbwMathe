@@ -188,6 +188,8 @@ Das Gips-Ei wiegt 98.0 g.
 
   \begin{enumerate}[label=\alph*)]
       \item
+        Bestimmen Sie die \textbf{Quartilsdifferenz} \textit{IQR}.
+      \item
     Teilen Sie die Daten in Klassen ein: $[50; 60[$, $[60; 70[$, usw.
         \textit{(Klassenbreite = 10 Punkte).} Zeichnen Sie ein
         Histogramm mit den relativen Häufigkeiten. 
@@ -197,34 +199,30 @@ Das Gips-Ei wiegt 98.0 g.
         Bestimmen Sie den \textbf{Mittelwert}.
       \item
         Bestimmen sie den \textbf{Modalwert} (Modus).
-      \item
-        Bestimmen Sie die \textbf{Quartilsdifferenz} \textit{IQR}.
     \end{enumerate}
-    \mmPapierZwei{6}{17.5}
+%%    \mmPapierZwei{6}{17.5}
+\begin{tabular}{c}
+\includegraphics[width=100mm]{img/daan/HistogrammLeer.png} \\
+\includegraphics[width=120mm]{img/daan/BoxplotLeer.png}
+ \end{tabular}
+\newpage 
 }{%% Lösung
-Lösung ausstehend...
-%  \begin{enumerate}[label=\alph*)]
-%      \item
-%    Teilen Sie die Daten in Klassen ein: $[50; 60[$, $[60; 70[$, usw.
-%        \textit{(Klassenbreite = 10 Punkte).}        \\
-%[50;60[ : 1 Wert\\
-%[60;70[ : 2 Werte\\
-%[70;80[ : 7 Werte\\
-%[80;90[ : 6 Werte\\
-%[90;100[: 2 Werte\\
-%Total 18 Werte
-%Zeichnen Sie ein Histogramm mit den relativen Häufigkeiten.
-%      \item
-%        Zeichnen Sie einen \textbf{Boxplot}.
-%      \item
-%        Bestimmen Sie den \textbf{Mittelwert}.
-%      \item
-%        Bestimmen sie den \textbf{Modalwert} (Modus).
-%      \item
-%        Bestimmen Sie die \textbf{Quartilsdifferenz} \textit{IQR}.
-%    \end{enumerate}
+a) Median = 76.5; Q1 = 74;  Q3 = 84 und IQR(=QD)=10
+
+   Maximale Whisker-Länge ist somit 15 und die obere Ausreisserschwelle
+   liegt bei 99 und die untere Ausreisserschwelle bei 59. Somit ist
+   nur unten ein Ausreißer zu finden.
+   
+b) c)
+
+\begin{tabular}{cc}
+\includegraphics[width=88mm]{img/daan/HistogrammVoll.png} & \includegraphics[width=74mm]{img/daan/BoxplotVoll.png}
+ \end{tabular}
+
+d) Summe = 1396. Mittelwert = 77.555.. Punkte
+
+e) Der Modus ist 76, die Zahl kommt drei mal vor.
 }{8}
-\newpage
 
 
 
@@ -235,8 +233,7 @@ Lösung ausstehend...
 
 
 
-
-
+\kNiveauAufgabe{
 \textbf{Klassendiagramm, Säulendiagramm, Boxplot}
  Die Messung der Körpergrösse von 100 18-jährigen Schülern liefert
  folgende Zahlen:
@@ -259,19 +256,32 @@ Lösung ausstehend...
   \begin{enumerate}[label=\alph*)]
   \item Erstellen Sie eine Klasseneinteilung mit Klassenbreite 5cm:
 
-    Klasse 1: [160cm; 165cm)
+    Klasse 1: [160cm; 165cm[
 
-      Klasse 2: [165cm; 170cm)
+    Klasse 2: [165cm; 170cm[
 
         usw.
 
-        Zeichnen Sie anschliessend ein Säulendiagramm mit den relativen
-        Häufigkeiten in Prozent. Zeichnen Sie die Säulen
-        aneinanderstossend.
+        Zeichnen Sie anschliessend ein Histogramm mit den relativen
+        Häufigkeiten in Prozent.
 
         \item Zeichnen Sie einen Boxplot mit diesen Daten.
-\end{enumerate}
+\end{enumerate}\newpage
+}{%% Löusngen
 
+\begin{tabular}{c|c|c|c|c|c|c}
+[160;165[ & [165;170[ & [170;175[ & [175;180[ & [180;185[ & [185;190[  & $\Sigma$ \\\hline
+    1     &     2     &     8     &    5      &     2     &   18       &     36\\\hline
+    2\%   & 14\%      & 27\%      & 28\%      &22 \%      & 7\%       & 100\%\\
+ \end{tabular}
+ 
+\begin{tabular}{cc}
+\includegraphics[width=70mm]{img/daan/KoerpergroesseHistogramm.png}
+&
+\includegraphics[width=80mm]{img/daan/KoerpergroesseBoxplot.png}
+\end{tabular}
+\newpage
+}{8}
 
 
 
@@ -286,7 +296,6 @@ Lösung ausstehend...
 
 
 \textbf{Vergleich zweier Boxplots}
-
   Wurfweiten beim Ballwurf in Metern:
 
   Versuchsreihe 1:
@@ -301,6 +310,7 @@ Lösung ausstehend...
 
   Erstellen Sie für beide Versuchsreihen je einen Boxplot (Darstellung
   mit gleicher Skala, sodass ein Vergleich möglich wird).
+\newpage
 
 
 
@@ -310,14 +320,13 @@ Lösung ausstehend...
 
 
 
-
-{Informationen aus einem Diagramm herauslesen}
+\textbf{Informationen aus einem Diagramm herauslesen}
 
     Praliné-Kugeln in einer Packung; Darstellung der absoluten
     Häufigkeiten:
     
 \begin{tikzpicture}\begin{axis}[ybar stacked,nodes near coords,bar
-      width=0.4,]\addplot
+    width=0.4,]\addplot
     coordinates{(21,10) (22,15) (23, 20) (24, 25) (25, 10) (26, 5)};\end{axis}\end{tikzpicture}
 
 Bestimmen Sie Mittelwert, Median und Standardabweichung.
