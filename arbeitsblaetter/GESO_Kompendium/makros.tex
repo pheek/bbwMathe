@@ -90,15 +90,11 @@
 
 %% Aufgaben die entfernt werden, können durchaus im Kompendium
 %% Qulltext bleiben.
-<<<<<<< HEAD
+
 \newcommand{\entfernteAufgabe}[3]{... AUFGABE ENTFERT ...}
-=======
-\newcommand{\entfernteAufgabe}[3]{}
 
 \ExplSyntaxOn
 %% Text nur bei Niveau BMP Ausgeben
 \cs_new:Npn \kKommentar #1 { \str_if_eq:eeT {\kDraftKommentare}{true} {{\colorbox{red!10}{{\color{red} DRAFT: #1}}}} }
 \ExplSyntaxOff
 
-
->>>>>>> 9c713bd61de0efac4b23b71ef4433acf6d728bc4
