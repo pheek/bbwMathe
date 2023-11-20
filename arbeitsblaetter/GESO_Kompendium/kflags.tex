@@ -1,28 +1,39 @@
-%% Flags
+%% Kompendium - Flags
+%% 2023_11_20 philipp.freimann@bbw.ch
+%
 
+%% Sprache
+%-- ----------------------
 %% use
 %% deu for deutsch
 %% eng for english
-\newcommand{\kLanguage}{deu}
+\newcommand{\kLanguage}{eng}
 
+%% Aufgaben oder nur Lösungen: 
+%-- ----------------------
 %% nur Lösungen (ohne Aufgabentext)
-%% true: nur lösungen
+%% true
 %% (ohne Lösungen: schreibe 'false'
-\newcommand{\kLoesungen}{true}
+\newcommand{\kLoesungen}{false}
 
-%% nur Niveau Aufgaben
+%% nur Niveau Aufgaben:
+%-- ----------------------
 %% falls "nurBMP", werden nur die Aufgaben mit
 %% Prüfungsniveau ins Kompendium aufgenommen
 %% ansonsten "auchTraining", dann werden alle Aufgaben angezeigt.
-\newcommand{\kAufgabenNiveau}{auchTraining}
+\newcommand{\kAufgabenNiveau}{nurBMP}
 
 %% mit mm-Papier
+%-- ----------------------
 %% true
 %% (ohen mmMapier schreibe 'false'
 \newcommand{\kMMPapier}{false}
 
 %% Versionsbezeichnung
+%-- ----------------------
 \newcommand{\kVersion}{V0.0.1 Nov. 2023}
+
+
 
 %% Draft mit Kommenaren fürs Gremium "Prüfungserstellungsteam"
 \newcommand{\kDraftKommentare}{true}
