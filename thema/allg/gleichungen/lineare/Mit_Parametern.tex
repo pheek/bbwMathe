@@ -17,13 +17,72 @@ Parameter = (wörtlich) «Neben-Maß»
 
 Griechisch $\pi\alpha\rho\alpha$ (para), deutsch: ‚neben‘ und $\mu\epsilon\tau\rho\omega\nu$ (metron) deutsch: ‚Maß‘
 
+\newpage
+\subsection{Motivation}
+Ein Ladenpreis von CHF 500.- setzt sich zusammen aus ursprünglichem
+vom Verkäufer gewünschtem Verkaufspreis $x$ plus der Mehrwertsteuer von 7.7\%.
+
+Wie groß war der ursprüngliche Verkaufspreis $x$?
+
+\TNT{4.8}{
+  $x + 7\% \text{von} x = 500$
+
+  $x+\frac{x}{100}\cdot{7.7} = 500$
+
+  $x\cdot{}(1+\frac{7.7}{100})= 500$
+
+  $x\cdot{}(1.077)= 500$
+
+  $x = \frac{500}{1.077} \approx 464.25$
+}
+
+Ein Ladenpreis ist CHF 650.-. Darin sind 7.7\% Mehrwertsteuer
+enthalten. Was war der Preis vor der Mehrwertsteuer?
+
+\TNT{4.8}{
+  $x + 7\% \text{von} x = 650$
+
+  $x+\frac{x}{100}\cdot{7.7} = 650$
+
+  $x\cdot{}(1+\frac{7.7}{100})= 650$
+
+  $x\cdot{}(1.077)= 650$
+
+
+  $x = \frac{650}{1.077} \approx 603.53$
+  
+}
+
+Ein Ladenpreis ist CHF $p$. Darin sind 7.7\% Mehrwertsteuer
+enthalten. Was war der Preis vorher?
+
+\TNTeop{
+  $x + 7\% \text{von} x = p$
+
+  $x+\frac{x}{100}\cdot{7.7} = p$
+
+  $x\cdot{}(1+\frac{7.7}{100})= p$
+
+  $x\cdot{}(1.077)= p$
+
+
+  $x = \frac{p}{1.077}$
+}
+
+
+\newpage
+
+
 
 \TALS{\input{tals/gl1/CAS_Schieberegler}}
 
 
-\TRAINER{Aufg 247 l aus \cite{frommenwiler17alg}}
 
-\TALS{Vorzeigeaufgabe:
+
+%%\TRAINER{Aufg 247 l aus \cite{frommenwiler17alg}}
+\subsection{Vorzeigeaufgabe}
+
+\TALS{
   $$\frac{x}{n} + a - \frac{x}{m} + b = mx + c$$
 \TNTeop{
   1. Alle $x$ nach links, alle «nicht $x$» nach rechts:
@@ -41,7 +100,7 @@ Griechisch $\pi\alpha\rho\alpha$ (para), deutsch: ‚neben‘ und $\mu\epsilon\t
 }%% END TNT
 }%% END TALS
 
-\GESO{Vorzeigeaufgabe:
+\GESO{
   $$x^2 - \sqrt{2} - c = (b-x)\cdot{}(-\sqrt{5}-x)$$
 
   \TNTeop{

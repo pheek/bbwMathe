@@ -51,6 +51,17 @@ Ereignisse
 }
 \end{enumerate}
 }{%% Lösungen
+
+a) $A = \{2, 3, 5, 7\}, B = \{0, 5\}, C = \{1, 3, 5, 7, 9\}, D = \{9\}, E = \{\}, F = \{0, 1, 4, 9\},\\ G = \{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}$
+
+b) $\{0\}, \{1\}, \{2\}, \{3\}, \{4\}, \{5\}, \{6\}, \{7\}, \{8\}, \{9\}$
+
+c) $A, C, G$
+
+d) $A \cap B = \{\}, A \cap D = \{\}, A \cap E = \{\}, A \cap F = \{\}, B \cap D = \{\}, B \cap  E = \{\},\\ C \cap E = \{\}, D \cap E = \{\}, E \cap A = \{\}, E  \cap B = \{\}, E  \cap C = \{\}, E  \cap D = \{\}, E  \cap F = \{\}$
+
+e) $\overline{A} = \{0, 1, 4, 6, 8, 9\}, \overline{B} = \{1, 2, 3, 4, 6, 7, 8, 9\}, \overline{C} = \{0, 2, 4, 6, 8\}, \overline{D} = \{0, 1, 2, 3, 4, 5, 6, 7, 8\},\\
+\overline{E} = \{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}, \overline{F} = \{2, 3, 5, 6, 7, 8\}, \overline{G} = \{\}$
 }{8}
 
 
@@ -84,28 +95,41 @@ E: At least two of the removed LEDs are OK.\\
 }
 \end{enumerate}
 }{%% Lösungen
+a) $$ \Omega = \{ddd, ddn, dnd, dnn, ndd, ndn, nnd, nnn\}$$
+
+b) $A=\{ddd, ddn, dnd, dnn\}, B = \{dnn\}, C = \{ddd\}, D = \{ddn, dnd, ndd\},\\
+E = \{dnn, ndn, nnd, nnn\}$
 }{8}
 
 \kNiveauAufgabe{
-\deu{Wird beim Würfeln mit 2 gewöhnlichen Spielwürfeln Augensumme 7 (Ereignis A) oder Augensumme 8 (Ereignis B) häufiger auftreten?}\eng{When rolling 2 ordinary dice, will the sum of 7 (event A) or the sum of 8 (event B) occur more frequently?}
-\eng{}
+\deu{Wird beim Würfeln mit 2 gewöhnlichen Spielwürfeln Augensumme 7 (Ereignis A) oder Augensumme 8 (Ereignis B) häufiger auftreten?}
+\eng{When rolling 2 ordinary dice, will the sum of 7 (event A) or the sum of 8 (event B) occur more frequently?}
 }{%% Lösungen
+\eng{translate:} Wahrscheinlichkeit für Augensumme 7 oder 8 mit zwei Würfeln:\\
+
+A: Augensumme 7: $A = \{16, 25, 34, 43, 52, 61\}$
+B: Augensumme 8: $B = \{26, 35, 44, 53, 62\}$
+
+$P(A) = \frac6{36}=\frac16, P(B) = \frac5{36}$
+
+\eng{translate}Die Summe 7 tritt häufiger auf als die Summe 8.
 }{8}
 
 
-
-\subsection{\deu{Kombinatorik}\eng{Combinatorics}}
+\subsection{\deu{Kombinatorik}\eng{Combinatorics}}\index{\deu{Kombinatorik}\eng{Combinatorics}}
 
 \kNiveauAufgabe{\deu{Ein Bauer will zwei Kühe, drei Schweine und vier Legehennen von einem Viehhändler, der
 sieben Kühe, fünf Schweine und 10 Legehennen zur Auswahl anbietet, kaufen. Auf wie viele
 Arten kann der Bauer wählen?}
 \eng{A farmer wants to buy two cows, three pigs and four laying hens from a livestock dealer who offers a choice of seven cows, five pigs and 10 laying hens. In how many ways can the farmer choose?}
 }{%% Lösungen
+$m={7\choose 2} \cdot{} {5\choose 3} \cdot{} {10\choose 4} = 44\,100$
 }{8}
 
 \kNiveauAufgabe{\deu{Zehn Lernende stehen in einer Reihe in der Mensa. Auf wie viele Arten kann die Reihe gebildet
 werden?}\eng{Ten students stand in a row in the canteen. In how many ways can the row be formed?}
 }{%% Lösungen
+$$m=10! = 3\,628\,800$$
 }{8}
 
 \kNiveauAufgabe{\deu{An einer Party mit zwanzig Gästen stösst jeder Gast
@@ -113,6 +137,7 @@ mit jedem an. Wie oft erklingen die Gläser?}
 \eng{At a party with twenty guests, every guest toasts
 with everyone. How often do the glasses clink?}
 }{%% Lösungen
+$$m={20 \choose 2} = 190$$
 }{8}
 
 \kNiveauAufgabe{\deu{Wie viele Personen nehmen an einer Party teil,
@@ -120,6 +145,7 @@ wenn im ganzen 406-mal Gläser klingen (und jede Person mit jeder
 andern angestossen hat)?}
 \eng{How many people attend a party if glasses are clinked 406 times in total glasses clink (and each person has clinked glasses with every other person)?}
 }{%% Lösungen
+$$ {n\choose 2} = 406 \Longrightarrow x=29 $$
 }{8}
 
 \kNiveauAufgabe{
@@ -133,6 +159,7 @@ They are to be placed on a shelf, with books from the same subject stand next to
 In how many different ways can the books be grouped?
 }
 }{%% Lösungen
+ $$m = (1! \cdot{} 3! \cdot{} 2!  \cdot{} 4!) \cdot{} (4!) = 6912$$
 }{8}
 
 \kNiveauAufgabe{\deu{Vier Personen steigen in ein Zugsabteil. Der Zug
@@ -152,6 +179,9 @@ andern Station aussteigt?}
 get off at a different station?}
 \end{enumerate}
 }{%% Lösungen
+a) $6^4 = 1296$
+
+b) $6\cdot{}5\cdot{}4\cdot{}3 = 360$
 }{8}
 
 \kNiveauAufgabe{\deu{Die Buchstaben aus dem Wort MISSISSIPPI werden durcheinandergemischt und zufällig
@@ -161,8 +191,8 @@ können dabei entstehen?}
 How many different sequences of letters with and without meaning can
 result from this procedure?}
 }{%% Lösungen
+$$m=\frac{11!}{2!\cdot{} 4! \cdot{} 4!} = 34\,650$$
 }{8}
-
 
 
 \subsection{\deu{Wahrscheinlichkeit}\eng{Probability calculation}}
@@ -176,6 +206,8 @@ ball is drawn twice in succession and put back. Determine the
 probability of event A: "There is at least one red ball". First look
 for the event of A. Write the result in fractional form.}
 }{%% Lösungen
+$P(\overline{A}) = \frac48\cdot{}\frac48 = \frac14, P(A) =
+1-P(\overline{A}) = \frac34$
 }{8}
 
 
@@ -197,6 +229,13 @@ what probability}
 \eng{does it show neither 3 nor 5?}
 \end{enumerate}
 }{%% Lösungen
+\begin{enumerate}[label=\alph*)]
+\item $P=\frac16$
+\item $P=\frac19$
+\item $P=\frac5{36}$
+\item $P=\frac49$
+\end{enumerate}
+
 }{8}
 
 \kNiveauAufgabe{\deu{Für das einmalige Werfen eines verfälschten Spielwürfels
@@ -224,6 +263,13 @@ A: no even number\\
 B: Number greater than 4\\
 C: opposite event of A.}
 }{%% Lösungen
+$P(X=6) = 1-\frac15-\frac16-\frac2{15}-\frac2{15}-\frac16 = \frac15$
+
+$P(A) = \frac12$
+
+$P(B) = \frac{11}{30}$
+
+$P(C) = \frac12$
 }{8}
 
 \kNiveauAufgabe{\deu{Zwei Münzen werden gleichzeitig geworfen. Man schaut,
@@ -238,8 +284,12 @@ whether heads or tails falls.}
    Wahrscheinlichkeiten für 0-mal Kopf, 1-mal Kopf und 2-mal Kopf.}
    \eng{Let the random variable $X$ be "number of heads" in the toss of 2 coins. Calculate the probabilities for 0 times heads, 1 time heads and 2 times heads.}
 \end{enumerate}
-   
-}{%% Lösungen
+   }{%% Lösungen
+\begin{enumerate}[label=\alph*)]
+\item $\Omega = \{kk, kz, zk, zz\}$
+\item $P(kk) = P (kz) = P (zk) = P (zz) = \frac14$
+\item $P(X=2)=\frac14, P(X=1)=\frac12, P(X=0)=\frac14$
+\end{enumerate}
 }{8}
 
 \kNiveauAufgabe{\deu{Eine Münze wird drei Mal hintereinander geworfen. Wie gross ist die Wahrscheinlichkeit, dass
@@ -247,6 +297,12 @@ drei gleichartige Seiten oben liegen (drei Mal Kopf oder drei MalZahl)?}
 \eng{A coin is tossed three times in succession. What is the probability that three identical sides come up (three times heads or three times tails)?}
 }{%% Lösungen
 
+
+ $P(kkk) = \left(\frac12\right)^3 = \frac18$
+
+$P(zzz)= P(kkk) = \frac18$
+
+\eng{hence}\deu{somit}: $P=P(kkk) + P(zzz) = \frac14$
 }{8}
 
 \kNiveauAufgabe{\deu{Ein Glücksrad hat 8 gleich grosse Sektoren mit den Nummern 1, 2, 1, 2, 3, 2, 1, 2.
@@ -277,6 +333,12 @@ The wheel is turned five times. With what probability is the sequence of digits:
 
 \end{enumerate}
 }{%% Lösungen
+
+a) $P(\{2\}) = \frac12$
+
+b) $P(\{2-2; 1-1; 3-3\}) = \frac{13}{32}$
+
+c) $P(\{12321\}) = \frac9{2048}$
 }{8}
 
 
@@ -300,6 +362,15 @@ of this class are selected by lot. What is the probability that}
 
 \end{enumerate}
 }{%% Lösungen
+
+\deu{Siehe auch Lotto Modell}\eng{see also: lottery-model}
+
+a) $P=\frac{3}{506}$
+
+b) $P={13}{276}$
+
+c) $P = \frac{125}{132}$
+
 }{8}
 
 \kNiveauAufgabe{\deu{Aus Ihrer Klasse werden zufällig 3 Personen ausgewählt. Wie gross ist die Wahrscheinlichkeit,
@@ -310,6 +381,9 @@ in der Klasse zufällig „verteilt“ sind?}
 that their months of birth are all different, assuming that the months
 of birth are «randomly» distributed in the class?}
 }{%% Lösungen
+
+$P = \frac{12}{12} \cdot{} \frac{11}{12} \cdot{}  \frac{10}{12} = \frac{55}{72} \approx 76.4\%$
+
 }{8}
 
 \kNiveauAufgabe{\deu{In einem Gefäss befinden sich 5 rote, 5 blaue und
@@ -325,7 +399,12 @@ die Wahrscheinlichkeit, dass}
 \eng{only yellow balls are drawn?}
 \end{enumerate}
 }{%% Lösungen
+
+a) $P = \frac5{15} \cdot{} \frac4{14} \cdot{} \frac3{13} = \frac2{91} \approx  2.20\%$
+
+b) $P = \frac{10}{15} \cdot{} \frac9{14} \cdot{} \frac8{13} = \frac{24}{91} \approx  26.4\%$
 }{8}
+
 
 \kNiveauAufgabe{\deu{Ein Kasten enthält 2 schwarze, 2 rote und 6 grüne
 Kugeln. Es werden nacheinander 3 Kugeln gezogen. Bestimmen Sie die
@@ -340,6 +419,12 @@ Wahrscheinlichkeit, drei verschiedene Farben zu erhalten, wenn}
 \eng{the balls are drawn \textbf{with} putting them back.}
 \end{enumerate}
 }{%% Lösungen
+
+
+a) $P = 3! \cdot{} \frac2{10} \cdot{} \frac29 \cdot{} \frac68 = \frac15$
+
+b) $P = 3! \cdot{} \frac2{10} \cdot{} \frac2{10} \cdot{} \frac6{10} = \frac{18}{125}$
+
 }{8}
 
 \kNiveauAufgabe{\deu{Ein normaler Spielwürfel wird sechs Mal geworfen. Mit welcher Wahrscheinlichkeit treten
@@ -349,6 +434,8 @@ sechs verschiedene Augenzahlen auf?}
 \deu{(Ergebnis in \% auf 2 Stellen nach dem Komma gerundet.)}
 \eng{(Result in \% rounded to 2 decimal places).}
 }{%% Lösungen
+
+$\frac5{324} \approx 1.54\%$
 }{8}
 
 
@@ -388,6 +475,11 @@ What is the probability
 \eng{that player A will win, i.e. be the first to hit the target?}
 \end{enumerate}
 }{%% Lösungen
+
+a) $\frac9{16}$
+
+b) $\frac7{24}$ 
+
 }{8}
 
 \kNiveauAufgabe{\deu{An einem Chilbistand können ein oder mehrere Spieler
@@ -422,6 +514,11 @@ in one throw)?
 
 Result in \% rounded to 2 decimals.}%% end english
 }{%% Lösungen
+
+$0 = -\frac{11}{15}p^2 + \frac{26}{15}p -\frac14 \Longrightarrow  P
+= \frac{26-\sqrt{511}}{22} \approx 15.4\%$
+
+\eng{the second solution is impossible}\deu{die zweite Lösung ist unmöglich}
 }{8}
 
 
@@ -514,7 +611,7 @@ diesen Daten ein Histogramm (Säulenbreite = 1).
 
 
 
-\subsubsection{Kontingenztafeln und bedingte Wahrcheinlichkeit}
+\subsubsection{\deu{Kontingenztafeln und bedingte Wahrscheinlichkeit}\eng{Contingency tables and conditional probability}}
 
 
 
