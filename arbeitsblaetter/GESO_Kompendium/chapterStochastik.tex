@@ -105,14 +105,14 @@ E = \{dnn, ndn, nnd, nnn\}$
 \deu{Wird beim Würfeln mit 2 gewöhnlichen Spielwürfeln Augensumme 7 (Ereignis A) oder Augensumme 8 (Ereignis B) häufiger auftreten?}
 \eng{When rolling 2 ordinary dice, will the sum of 7 (event A) or the sum of 8 (event B) occur more frequently?}
 }{%% Lösungen
-\eng{translate:} Wahrscheinlichkeit für Augensumme 7 oder 8 mit zwei Würfeln:\\
+\deu{Wahrscheinlichkeit für Augensumme 7 oder 8 mit zwei Würfeln}\eng{Probability of a sum of 7 or 8 with two dice}:\\
 
 A: Augensumme 7: $A = \{16, 25, 34, 43, 52, 61\}$
 B: Augensumme 8: $B = \{26, 35, 44, 53, 62\}$
 
 $P(A) = \frac6{36}=\frac16, P(B) = \frac5{36}$
 
-\eng{translate}Die Summe 7 tritt häufiger auf als die Summe 8.
+\deu{Die Summe 7 tritt häufiger auf als die Summe 8.}\eng{"The sum 7 occurs more frequently than the sum 8.}
 }{8}
 
 
@@ -526,86 +526,178 @@ $0 = -\frac{11}{15}p^2 + \frac{26}{15}p -\frac14 \Longrightarrow  P
 \eng{Hypergeometric distribution (lottery-model)}}
 
 
-\kNiveauAufgabe{Beim Schweizer Zahlenlotto\footnote{Ein Swiss Lotto Tipp besteht aus 6 Zahlen (aus 42 Zahlen) sowie aus einer Glückszahl zwischen 1 und 6. Ein
+\kNiveauAufgabe{
+\deu{Beim Schweizer Zahlenlotto\footnote{Ein Swiss Lotto Tipp besteht aus 6 Zahlen (aus 42 Zahlen) sowie aus einer Glückszahl zwischen 1 und 6. Ein
 Gewinn wird erzielt, wenn mindestens 3 Gewinnzahlen der Zahlenreihe 1 bis 42 richtig getippt werden. Wer alle
 6 Zahlen zusammen mit der Glückszahl richtig voraussagt, knackt den Jackpot.} sind 6 Zahlen aus 42 (ohne
 Wiederholung) zu wählen. Zudem muss eine Zusatzzahl zwischen 1 und 6
-getippt werden.
+getippt werden.}
+\eng{In the Swiss Lotto\footnote{A Swiss Lotto entry consists of 6 numbers (out of 42 numbers) and a lucky number between 1 and 6. A win is achieved if at least 3 winning numbers from the series 1 to 42 are guessed correctly. If someone correctly predicts all 6 numbers along with the lucky number, they hit the jackpot.}, 6 numbers out of 42 (without repetition) are to be chosen. Additionally, a bonus number between 1 and 6 must be guessed.}
+
 \begin{enumerate}[label=\alph*)]
 \item
-Wie viele Auswahlmöglichkeiten gibt es für die 6 Zahlen aus 42?
+\deu{Wie viele Auswahlmöglichkeiten gibt es für die 6 Zahlen aus 42?}
+\eng{How many options are there for choosing 6 numbers out of 42?}
 
 \item
-Wie gross ist demnach die Wahrscheinlichkeit für einen Lottosechser ohne Berücksichtigung der Zusatzzahl?
+\deu{Wie gross ist demnach die Wahrscheinlichkeit für einen
+Lottosechser ohne Berücksichtigung der Zusatzzahl?}
+\eng{What is the probability, therefore, of hitting the jackpot without considering the bonus number?}
 
 \item
-Wie gross ist die Wahrscheinlichkeit, genau 3 Richtige, jedoch eine
-falsche Zusatzzahl zu haben?
+\deu{Wie gross ist die Wahrscheinlichkeit, genau 3 Richtige, jedoch eine falsche Zusatzzahl zu haben?}
+\eng{What is the probability of having exactly 3 correct numbers but a wrong bonus number?}
 \end{enumerate}
 }{%% Lösungen
+
+a) ${42 \choose 6} = 5\,245\,786$
+
+\vspace{1mm}
+
+b) $P = \frac1{5\,245\,786} \approx 1.906\cdot{}10^{-5}\%$
+
+\vspace{1mm}
+
+c) $P = \frac{{6\choose 3} \cdot{} {36\choose 3}}{{42 \choose
+6}}\cdot{} \frac56 \approx 2.26849\%$
 }{8}
 
-\kNiveauAufgabe{Ein normales französisches Kartenspiel besteht aus 36 Karten. Davon tragen 9 Karten die
+\kNiveauAufgabe{\deu{Ein normales französisches Kartenspiel besteht aus 36 Karten. Davon tragen 9 Karten die
 „Farbe“ Herz. Nun wird an einem Fest ein Glücksspiel gespielt: Je nach Geldeinsatz darf
 man mehrere Karten ziehen (ohne Zurücklegen). Die Herzkarten gelten als Glückstreffer und
 gewinnen einen kleinen Preis. Anna entnimmt dem Spiel 16 Karten. Wie gross ist die Wahrscheinlichkeit, dass unter den gezogenen Karten genau 5 Herzkarten, also Glückstreffer, dabei
-sind? (Ergebnis in % auf eine Dezimale gerundet.)
+sind? (Ergebnis in \% auf zwei Dezimalen gerundet.)}
+\eng{A standard French deck of cards consists of 36 cards. Among them, 9 cards are of the 'hearts' suit. Now, at a festival, a game of chance is played: depending on the amount of money bet, one can draw several cards (without replacement). The heart cards are considered lucky hits and win a small prize. Anna draws 16 cards from the game. What is the probability that exactly 5 heart cards, i.e., lucky hits, are among the drawn cards? (Result rounded to two decimal places as a percentage.)}
 }{%% Lösungen
+
+$P= \frac{ {9 \choose 5} \cdot{} {27 \choose 11}}{{36 \choose 16}} \approx 22.48\%$
+
 }{8}
 
-\kNiveauAufgabe{In einer Schale befinden sich 30 Smarties, darunter 12 rote. David schnappt sich blind 10
-Smarties. Wie gross ist die Wahrscheinlichkeit, dass er genau 6 rote dabei hat?
+\kNiveauAufgabe{\deu{In einer Schale befinden sich 30 Smarties, darunter 12 rote. David schnappt sich blind 10
+Smarties. Wie gross ist die Wahrscheinlichkeit, dass er genau 6 rote
+dabei hat?}
+\eng{n a bowl, there are 30 Smarties, including 12 red ones. David blindly grabs 10 Smarties. What is the probability that he has exactly 6 red ones among them?}
 }{%% Lösungen
+$P= \frac{ {12 \choose 6} \cdot{} {18 \choose 4}}{{30 \choose 10}} \approx 0.012979\%$
 }{8}
 
-\kNiveauAufgabe{Wie gross ist die Wahrscheinlichkeit, im Eurolotto drei richtige Zahlen und zwei richtige Sterne
-zu haben? (Im Eurolotto müssen von 50 Zahlen fünf angekreuzt, sowie aus neun „Sternzahlen“
-zwei ausgewählt werden.)
+\kNiveauAufgabe{\deu{Wie gross ist die Wahrscheinlichkeit, im Euromillions
+drei richtige Zahlen und zwei richtige Sterne zu haben? (Im Eurolotto müssen von 50 Zahlen fünf angekreuzt, sowie aus zwölf „Sternzahlen“
+zwei ausgewählt werden.)}
+\eng{What is the probability of having three correct numbers and two correct stars in EuroMillions? (In EuroMillions, out of 50 numbers, five must be selected, and two 'star numbers' must be chosen from twelve.)}
 }{%% Lösungen
+
+$P=
+\frac{ {5 \choose 3} \cdot{} {45 \choose 2}}{{50 \choose 5}}
+\cdot{}
+\frac{ {2 \choose 2} \cdot{} {10 \choose 0}}{{12 \choose 2}}
+\approx 0.0070796\%$
+
 }{8}
 
 
 \subsubsection{Bernoulli}
 
-\kNiveauAufgabe{Man würfelt 4-mal hintereinander mit einem gewöhnlichen Spielwürfel. Wie gross ist die
-Wahrscheinlichkeit, dass man genau 2 Sechser gewürfelt hat?
+\kNiveauAufgabe{\deu{Man würfelt 4-mal hintereinander mit einem gewöhnlichen Spielwürfel. Wie gross ist die
+Wahrscheinlichkeit, dass man genau 2 Sechser gewürfelt hat?}
+\eng{You roll a standard six-sided die four times in a row. What is the probability of rolling exactly 2 sixes?}
 }{%% Lösungen
+$P \approx 11.574\%$
 }{8}
 
-\kNiveauAufgabe{In einem bestimmten Land rechnet man bei 53.5\% der Einzelgeburten mit einem Mädchen.
-Eine Mutter hat fünf Kinder geboren (keine Mehrfachgeburten).
+\kNiveauAufgabe{\deu{In einem bestimmten Land rechnet man bei 53.5\% der Einzelgeburten mit einem Mädchen.
+Eine Mutter hat fünf Kinder geboren (keine Mehrfachgeburten).}
+\eng{In a certain country, 53.5\% of single births are expected to be girls. A mother has given birth to five children (no multiple births).}
 \begin{enumerate}[label=\alph*)]
 \item
-Berechnen Sie die Wahrscheinlichkeit, dass sie 0, 1, . . . , 5 Mädchen hat.
+\deu{Berechnen Sie die Wahrscheinlichkeit, dass sie 0, 1, . . . , 5
+Mädchen hat.}
+\eng{Calculate the probability that she has 0, 1, ..., 5 girls.}
 \item
-Veranschaulichen Sie diese Binomialverteilung in einem Histogramm: x-Achse: Anzahl
+\deu{Veranschaulichen Sie diese Binomialverteilung in einem Histogramm: x-Achse: Anzahl
 Mädchen in 5 Einzelgeburten (0, . . . , 5). y-Achse (Säulenhöhe):
-Wahrscheinlichkeit (als Dezimalzahl oder in \%) für diese Anzahl.
+Wahrscheinlichkeit (als Dezimalzahl oder in \%) für diese Anzahl.}
+
+\eng{Illustrate this binomial distribution in a histogram: x-axis: Number of girls in 5 single births (0, ..., 5). y-axis (column height): Probability (as a decimal or in \%) for each number.}
 \end{enumerate}
 
 }{%% Lösungen
+
+$P(0)\approx 2.17\%;
+ P(1) \approx 12.5\%;
+ P(2) \approx 28.8\%;
+ P(3)\approx 33.1\%;
+ P(4)\approx 19.0\%;\\
+ P(5)\approx 4.38\%$
+
+Histogram\deu{m}:
+
+\includegraphics[width=80mm]{img/stoch/HistogrammGeburten.png}
+
 }{8}
 
-\kNiveauAufgabe{Nikolas ist ein guter Basketballspieler. Seine
+\kNiveauAufgabe{\deu{Nikolas ist ein guter Basketballspieler. Seine
 Trefferquote beträgt beim Freiwurf 90\%.
 
 a) Wie wahrscheinlich ist es, dass er bei genau 8 von 10 Freiwürfen trifft?\\
 b) Wie gross ist die Wahrscheinlichkeit, dass er bei vier Freiwürfen mindestens einen Treffer
-landet? (Ergebnis in \% auf zwei Dezimale gerundet.)
+landet?}
+\eng{ "Nikolas is a good basketball player. His free throw shooting
+percentage is 90\%.
+
+a) What is the probability that he makes exactly 8 out of 10 free
+throws?
+
+b) What is the probability that he scores at least one hit in four free throws?
+}% end eng
 }{%% Lösungen
+
+a) $P\approx 19.37\%$
+
+b) $P=99.99\%$
+
 }{8}
 
 
 \kNiveauAufgabe{
 \begin{enumerate}[label=\alph*)]
-\item Wie gross ist die Wahrscheinlichkeit, mit einem gerechten Spielwürfel (Augenzahlen 1
-bis 6) in 10 Würfen zwischen 3-mal und 7-mal eine Eins zu werfen?
-\item Wie gross ist die Wahrscheinlichkeit, mit obigem Würfel in 10 Würfen entweder 0-mal
-bis 2-mal oder 8-mal bis 10-mal eine Eins zu werfen?
-\item Erstellen Sie mit Hilfe des Taschenrechners eine Wertetabelle für die Wahrscheinlichkeiten, in 10 Würfen 0-mal, 1-mal, . . . , 10-mal eine Eins zu würfeln. Erstellen Sie mit
-diesen Daten ein Histogramm (Säulenbreite = 1).
+\item \deu{Wie gross ist die Wahrscheinlichkeit, mit einem gerechten
+Spielwürfel (Augenzahlen 1 bis 6) in 10 Würfen zwischen 3-mal und 7-mal eine Eins zu werfen?}
+\eng{What is the probability, with a fair six-sided die (numbers 1 to 6), of rolling a one between 3 and 7 times in 10 rolls?}
+
+\item \deu{Wie gross ist die Wahrscheinlichkeit, mit obigem Würfel in 10 Würfen entweder 0-mal
+bis 2-mal oder 8-mal bis 10-mal eine Eins zu werfen?}
+\eng{What is the probability, with the above die, of rolling a one
+either 0 to 2 times or 8 to 10 times in 10 rolls?}
+
+\item \deu{Erstellen Sie mit Hilfe des Taschenrechners eine
+Wertetabelle für die Wahrscheinlichkeiten, in 10 Würfen 0-mal, 1-mal,
+. . . , 10-mal eine Eins zu würfeln. Erstellen Sie mit 
+diesen Daten ein Balkendiagramm.}
+
+\eng{Using the calculator, create a value table for the probabilities
+of rolling a one 0 times, 1 time, ..., 10 times in 10 rolls. Use this
+data to create a bar-chart.}
+
+\newcommand{\ppp}{\,\hspace{8mm}\,}%% Platz Platz Platz
+
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c}
+ $k$  & 0 & 1 & 2 & 3 & 4 & 5 & 6 &7 & 8 & 9 & 10 \\\hline
+ $P$  & \ppp  & \ppp  & \ppp  & \ppp  & \ppp  & \ppp  & \ppp  & \ppp &  \ppp & \ppp  &
+\ppp \end{tabular} 
+
 \end{enumerate}
 }{%% Lösungen
+
+a) $P\approx 6.946\%$
+
+b) $P\approx 77.5246\%$
+
+c)
+
+\includegraphics[width=150mm]{img/stoch/WuerfelBarChart.png}
+
 }{8}
 
 
@@ -615,45 +707,79 @@ diesen Daten ein Histogramm (Säulenbreite = 1).
 
 
 
-\kNiveauAufgabe{Von einer seltenen Krankheit sind nur 0.5\% der Bevölkerung betroffen. Ein Test zeigt bei
-Gesunden in 95\% der Fälle zu Recht ein negatives Resultat; in 5\% der Fälle zeigt der Test
+\kNiveauAufgabe{\deu{Von einer seltenen Krankheit sind nur 0.5\% der Bevölkerung betroffen. Ein Test zeigt bei
+Gesunden in 95\% der Fälle zu Recht ein negatives Resultat; in den
+restlichen 5\% der gesunden  Fälle zeigt der Test
 fälschlicherweise ein positives Ergebnis („false positive“). Bei Kranken zeigt der Test richtigerweise in 95\% der Fälle ein positives Resultat und in 5\% der Fälle fälschlicherweise ein
-negatives Resultat (Nichterkennen der Krankheit).
+negatives Resultat (Nichterkennen der Krankheit).}
+
+\eng{Only 0.5\% of the population is affected by a rare disease. A test correctly shows a negative result in 95\% of cases for healthy individuals; in the remaining 5\% of healthy cases, the test falsely indicates a positive result ('false positive'). For those with the disease, the test correctly shows a positive result in 95\% of cases and falsely indicates a negative result in 5\% of cases (failure to recognize the disease).}
 
 \begin{enumerate}[label=\alph*)]
 \item
-Stellen Sie die Situation am Beispiel eines Bevölkerungsquerschnitts von 100’000 Personen in einer Vierfeldertafel dar (absolute Zahlen eintragen).
-\item
-Wie viele (richtige und falsche) positive Testresultate sind insgesamt zu erwarten?
-\item
-Ermitteln Sie den zu erwartenden prozentualen Anteil an „false positive“-Resultaten
-gemessen an allen positiven Resultaten. Runden Sie auf eine Dezimale.
-\end{enumerate}
+\deu{Stellen Sie die Situation am Beispiel eines
+Bevölkerungsquerschnitts von 100’000 Personen in einer Vierfeldertafel
+dar (absolute Zahlen eintragen).}
+\eng{Illustrate the situation using a 2x2 table with the example of a population cross-section of 100,000 people (enter absolute numbers).}
+
 
 \renewcommand{\arraystretch}{2}
-\begin{tabular}{|c|c|c|c|}\hline
-         & positiv & negativ & Total\\\hline
-krank    &          &         &      \\\hline
-gesund   &         &         &      \\\hline
-Total    &         &         &      \\\hline
- \end{tabular}
+\begin{center}\begin{tabular}{|l|c|c|c|}\hline
+                            & positiv\eng{e}  & negativ\eng{e}
+                            & \,\,\,\,\,\,Total \,\,\,\,\, \\\hline
+\deu{krank}\eng{disease}    &                 &                &      \\\hline
+\deu{gesund}\eng{healthy}   &                 &                &      \\\hline
+Total                       &                 &                &      \\\hline
+ \end{tabular}\end{center}
 \renewcommand{\arraystretch}{1}
+
+
+\item
+\deu{Wie viele (richtige und falsche) positive Testresultate sind
+insgesamt zu erwarten?}
+\eng{How many (true and false) positive test results are to be expected in total?}
+\item
+\deu{Ermitteln Sie den zu erwartenden prozentualen Anteil an „false positive“-Resultaten
+gemessen an allen positiven Resultaten. Runden Sie auf eine Dezimale.}
+\eng{Determine the expected percentage of 'false positive' results relative to all positive results. Round to two decimal places.}
+\end{enumerate}
  
 }{%% Lösungen
+
+a)
+
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|l|r|r|r|}\hline
+                            & positiv\eng{e}  & negativ\eng{e} &   Total  \\\hline
+\deu{krank}\eng{disease}    &    475          &   25           & 500      \\\hline
+\deu{gesund}\eng{healthy}   &   4\,975        &   94\,525      & 99\,500  \\\hline
+Total                       &   5\,450        &   94\,550      & 100\,000 \\\hline
+ \end{tabular}
+\renewcommand{\arraystretch}{1}
+
+b) ca 5450 Test positiv\eng{e}
+
+c) $\frac{4975}{5450} \approx 91.28\%$
+
 }{8}
 
-\kNiveauAufgabe{Beim 1000-maligen Einschalten einer Anlage fällt Bauteil A 70-mal und Bauteil B 100-mal
-aus. 22-mal fallen dabei beide Bauteile gleichzeitig aus. Stellen Sie eine Vierfeldertafel auf
-und geben Sie die folgenden relativen Häufigkeiten an:
+\newcommand{\kHorizPlatz}{\hspace{25mm}}
+
+\kNiveauAufgabe{\deu{Beim 1000-maligen Einschalten einer Anlage fällt
+Bauteil A 70-mal und Bauteil B 100-mal aus. 22-mal fallen dabei beide
+Bauteile gleichzeitig aus. Stellen Sie eine Vierfeldertafel auf und
+geben Sie die folgenden relativen Häufigkeiten an: }
+\eng{During the 1000 activations of a system, component A fails 70 times, and component B fails 100 times. Both components fail simultaneously 22 times. Set up a 2x2 table and provide the following relative frequencies:}
 
 \begin{enumerate}[label=\alph*)]
 \item
-Mindestens eines der beiden Bauteile fällt aus.
+\deu{Mindestens eines der beiden Bauteile fällt aus.}
+\eng{At least one of the two components fails.}
 \item
-Genau eines der beiden Bauteile fällt aus.
+\deu{Genau eines der beiden Bauteile fällt aus.}
+\eng{Exactly one of the two components fails.}
 \end{enumerate}
 
-\newcommand{\kHorizPlatz}{\hspace{25mm}}
 \renewcommand{\arraystretch}{2}
 \begin{tabular}{|c|c|c|c|}\hline
  \kHorizPlatz{}       &   \kHorizPlatz{}       &  \kHorizPlatz{}     & \kHorizPlatz{}  \\\hline
@@ -665,16 +791,30 @@ Genau eines der beiden Bauteile fällt aus.
  
 
 }{%% Lösungen
+
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|c|c|c|c|}\hline
+ \kHorizPlatz{}              &   A \eng{fails}\deu{fällt aus}  & A OK  & \kHorizPlatz{}  \\\hline
+ B \eng{fails}\deu{fällt aus}& 22         &  78       & 100     \\\hline
+ B OK                        & 48        &  852       &   900   \\\hline
+                             & 70        & 930        & 1000     \\\hline
+ \end{tabular}
+\renewcommand{\arraystretch}{1}
+
+
+a) $|E| = 22+48+78 = 148 \Longrightarrow P=\frac{148}{1000} = 14.8\%$
+
+b) $|E| = 48 + 78 = 126 \Longrightarrow P=\frac{126}{1000} = 12.6\%$
 }{8}
 
 
 
 \kNiveauAufgabe{
-Eine Schafherde besteht aus 240 Tieren. Das Fell von 75% der Schafe ist einfarbig, der Rest
+\deu{Eine Schafherde besteht aus 240 Tieren. Das Fell von 75\% der Schafe ist einfarbig, der Rest
 ist mehrfarbig. Ein Drittel der Tiere ist jünger als zweijährig. 50
-Schafe sind mehrfarbig und älter oder  als zwei Jahre alt
-(oder gleich zwei Jahre). Beantworten Sie mit Hilfe einer Vierfeldertafel folgende Frage: Wie viele
-Schafe sind einfarbig und jünger als zweijährig?
+Schafe sind mehrfarbig und nicht jünger als zwei Jahre alt. Beantworten Sie mit Hilfe einer Vierfeldertafel folgende Frage: Wie viele
+Schafe sind einfarbig und jünger als zweijährig?}
+\eng{A flock of sheep consists of 240 animals. The fleece of 75\% of the sheep is solid-colored, and the rest is multicolored. One-third of the animals are younger than two years. 50 sheep are multicolored and not younger than two years old. Answer the following question using a 2x2 table: How many sheep are solid-colored and younger than two years?}
 
 \renewcommand{\arraystretch}{2}
 \begin{tabular}{|c|c|c|c|}\hline
@@ -687,26 +827,51 @@ Schafe sind einfarbig und jünger als zweijährig?
  
 
 }{%% Lösungen
+
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|c|c|c|c|}\hline
+ \kHorizPlatz{}       &  \deu{einfarbig}\eng{solid-colored}  & \deu{mehrfarbig}\eng{multi-colored}     & \kHorizPlatz{}  \\\hline
+  \deu{jung}\eng{young}       &   70       & 10        &   80   \\\hline
+  \deu{nicht jung}\eng{not young}       &  110       &   50      & 160     \\\hline
+         &   180      &     60    & 240     \\\hline
+ \end{tabular}
+\renewcommand{\arraystretch}{1}
+
+\deu{70 Tiere sind einfarbig und jünger als zweijährig.}
+\eng{70 animals are solid-colored and younger than two years.}
+
 }{8}
 
 
-\kNiveauAufgabe{Der Betreiber einer Ostseefähre hat unter seinen Passagieren eine Umfrage durchgeführt. 10\%
+\kNiveauAufgabe{
+\deu{Der Betreiber einer Ostseefähre hat unter seinen Passagieren eine Umfrage durchgeführt. 10\%
 der Passagiere reisten 1. Klasse. 65 der Passagiere der 2. Klasse waren mit den Leistungen des
 Unternehmens zufrieden. Allerdings waren 70\% der Reisenden der 1. Klasse unzufrieden.
 Betrachtet werden folgende Ereignisse:
 
 
-E: Eine befragte Person reiste 1. Klasse. E ist das Gegenereignis.
+$E$: Eine befragte Person reiste 1. Klasse. $\overline{E}$ ist das Gegenereignis.
 
-Z: Eine befragte Person war zufrieden. Z ist das Gegenereignis.
+$Z$: Eine befragte Person war zufrieden. $\overline{Z}$ ist das Gegenereignis.}
+
+\eng{
+The operator of a Baltic Sea ferry conducted a survey among its passengers. 10\% of the passengers traveled first class. 65 passengers in the second class were satisfied with the company's services. However, 70\% of the first-class travelers were dissatisfied. The following events are considered:
+
+$E$: A surveyed person traveled first class. $\overline{E}$ is the complementary event.
+
+$Z$: A surveyed person was satisfied. $\overline{Z}$ is the complementary event.
+}
 
 \begin{enumerate}[label=\alph*)]
 \item
-Erstellen Sie eine vollständig ausgefüllte Vierfeldertafel (E, E, Z, Z).
+\deu{Erstellen Sie eine vollständig ausgefüllte Vierfeldertafel (E, E, Z, Z).}
+\eng{Create a fully filled two-way table (E, E, Z, Z).}
 \item
-Als der Geschäftsleitung die Zufriedenheitszahlen der 1. Klasse mitgeteilt werden, ist
+\deu{Als der Geschäftsleitung die Zufriedenheitszahlen der 1. Klasse mitgeteilt werden, ist
 diese enttäuscht und meint, die Zufriedenheitszahlen aller Passagiere vom Vorjahr von
-77\% nicht gesteigert zu haben. Beurteilen Sie diese Aussage.
+77\% nicht gesteigert zu haben. Beurteilen Sie diese Aussage.}
+\eng{When the management is informed about the satisfaction numbers of the first class, they are disappointed and state that they have not exceeded the satisfaction numbers of all passengers from the previous year, which were 77\%. Evaluate this statement.}
+
 \end{enumerate}
 
 \renewcommand{\arraystretch}{2}
@@ -720,7 +885,27 @@ diese enttäuscht und meint, die Zufriedenheitszahlen aller Passagiere vom Vorja
  
 
 }{%% Lösungen
+
+a)
+
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|c|c|c|c|}\hline
+ \kHorizPlatz{}    &   $E$    &  $\overline{E}$   & Total \\\hline
+    $Z$            &   3\%    &  75\%             &  78\%   \\\hline
+$\overline{Z}$     &   7\%    &  15\%             & 22\%     \\\hline
+ Total             &   10\%   &   90\%            & 100\%     \\\hline
+ \end{tabular}
+\renewcommand{\arraystretch}{1}
+
+b)
+
+\deu{Das Total der Zufriedenen (78\%) ist leicht gestiegen.}
+
+\eng{The total of satisfied individuals (78\%) has slightly increased.}
+
 }{8}
+
+
 
 \subsection{\deu{Statistisches Schließen}\eng{Statistical reasoning}}
 
