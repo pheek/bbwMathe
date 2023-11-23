@@ -918,7 +918,20 @@ Resultat kann auch bei einem unverfälschten Würfel eintreten“. Wie
 gross ist diese Wahrscheinlichkeit, dass in 30 Würfen ein gerechter
 Würfel 10 oder mehr Sechsen anzeigt?}
 \eng{Lukas brings his own dice to a dice game. The suspicion arises that Lukas' dice show an above-average number of sixes. It is decided to carry out an experiment: The dice are rolled 30 times. It is agreed: If a six appears 10 times or more, we declare "Lukas'" dice to be fake. Luke says: «Even if the test produces ten or more sixes, that doesn't mean that my die is fake; the result can also occur with a genuine die». What is the probability that a fair die will show 10 or more sixes in 30 throws?}
-}{%% Lösungen
+}{%% Lösungensum
+
+$P(X\ge 10) = \sum_{x=10}^{30}{{30\choose x}} \cdot{} \left(\frac16\right)^x \cdot{} \left(\frac56\right)^{30-x}  = 1 - \sum_{i=0}^9 \approx 1.97\%$ 
+
+\deu{
+Die Wahrscheinlichkeit, dass ein nicht gezinkter Würfel bei 30 Würfen mehr
+als 9 Sechsen anzeigt ist demnach ca. 2\%.
+
+Mit ca. 2\% ist das Resultat den meisten wohl noch nicht eindeutig genug.
+}
+\eng{The probability that an unbiased die shows more than 9 sixes in
+30 rolls is therefore approximately 2\%.
+
+With about 2\%, the result may not be clear enough for most people.}%% end eng
 }{8}
 
 \newpage

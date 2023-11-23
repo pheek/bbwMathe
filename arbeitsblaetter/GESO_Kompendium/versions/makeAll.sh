@@ -5,8 +5,8 @@
 cd ..
 
 clean.sh
-killall evince
-rm *.pdf
+#killall evince
+#rm *.pdf
 
 #cp versions/kflagsDEU_Aufgaben_Raster.tex kflags.tex
 #lualatex kompendium.tex
