@@ -1,8 +1,12 @@
+%% Kapitel Funktionen
+%% GESO-Kompendium
+%% philipp.freimann@bbw.ch
+%%
+
 \deu{\section{Funktionen}\index{Funktionen}}
 \eng{\section{Functions}\index{Functions}}
 \setcounter{aufgabenNummer}{1}
 \renewcommand{\kAufgabenBuchstabe}{F}
-
 
 \subsection{\deu{Grundlagen}\eng{Basics}}
 
@@ -20,6 +24,7 @@ c) $y=x^2$
 }{%% Lösung
 \raisebox{-80mm}{\includegraphics[width=150mm]{img/fct/Fct_ssL01.png}}
 }{8}
+
 
 
 \kTrainingAufgabe{
@@ -547,8 +552,7 @@ a)
 
 
 \kNiveauAufgabe{
-\deu{Bestimmen Sie den Faktor $a$ in 
-$x\mapsto a\cdot{}x^4$ wenn der Graph durch den Punkt $A(3|3)$ verläuft.}
+\deu{Bestimmen Sie den Faktor $a$ in $x\mapsto a\cdot{}x^4$ wenn der Graph durch den Punkt $A(3|3)$ verläuft.}
 \eng{Determine the factor $a$ in $x\mapsto a \cdot x^4$ when the graph
 passes through the point $A(3|3)$.}
 }{%% Lösung
@@ -557,9 +561,97 @@ $3=3\cdot{}a^4 \Longrightarrow a=\frac1{27}$
 
 
 
-\subsection{Exponentialfunktionen}
 
-\subsubsection{Wachstum und Zerfall}
+\subsubsection{$n < 0$ \deu{Hyperbeln}\eng{Hyperbolas}}\index{\deu{Hyperbeln}\eng{Hyperbolas}}
+
+
+
+\kNiveauAufgabe{
+\deu{Bestimmen Sie den Faktor $a$ der Potenzfunktion $y=a\cdot{}x^{-3}$,
+wenn der Graph dieser Hyperbel durch den Punkt
+$A\left( 3 \middle| \frac1{54} \right)$ verläuft.}
+\eng{Determine the factor $a$ of the power function $y = a \cdot x^{-3}$ when the graph of this hyperbola passes through the point $A\left(3 \middle| \frac{1}{54}\right)$.}
+}{%% Lösungs
+$\frac1{54}=a\cdot{}3^{-3} \Longrightarrow   a=27\cdot{}\frac1{54} = \frac12$
+}{8}
+
+
+
+
+
+
+
+
+
+\kNiveauAufgabe{
+\deu{Welche Funktion gehört zu welchem Graphen? Ordnen Sie die Zahl dem Buchstaben zu.}
+\eng{Which function belongs to which graph? Match the number to the letter.}
+
+a) $y = -x^3$  \hspace{15mm}  b) $y=x^{-2}$  \hspace{15mm} c)
+$y=3\cdot{}x^{-1}$ \hspace{15mm}  d) $y=-0.5x^4$
+
+\begin{center}\includegraphics[width=150mm]{img/fct/Fct_ssA31.png}\end{center}
+
+}{%% Lösung
+a) $y = -x^3$  \hspace{15mm}  b) $y=x^{-2}$  \hspace{15mm} c)
+$y=3\cdot{}x^{-1}$ \hspace{15mm}  d) $y=-0.5x^4$
+
+\includegraphics[width=150mm]{img/fct/Fct_ssL31.png}
+
+}{4}
+
+\newpage
+
+
+
+
+
+
+
+\subsection{\eng{translate: }Exponentialfunktionen}
+
+\subsubsection{\eng{translate: }Exponentielle Prozesse, Exponentialfunktion}
+
+\textbf{\eng{translate: }Wachstums und Zerfallsprozesse}
+
+\kNiveauAufgabe{
+\deu{Zinseszins; Entwicklung eines Startkapitals bei konstantem Jahreszinssatz: Ein
+Kapital von CHF 100.- wird über viele Jahre zu einem konstanten
+\eng{Zinssatz von 2\% verzinst.}Compound interest; development of an initial capital with a constant annual interest rate: A capital of CHF 100.- is compounded over many years at a constant interest rate of 2\%.}
+
+\begin{enumerate}[label=\alph*)]
+\item
+\deu{Bestimmen Sie den Zinsfaktor.}\eng{Bestimmen Sie den Zinsfaktor.}
+\item
+\deu{Wie lautet die Funktion $K = f (t)$, K = Kapital zur Zeit $t$,
+$t$ = Zeit in Jahren?}
+\eng{What is the function K = f(t), where K is the capital at time t, and t is the time in years?}
+
+\item
+\deu{Stellen Sie die Kapitalentwicklung grafisch dar}%
+\eng{Graphically represent the capital development}:
+$0 \le t \le 320$.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=150mm]{img/fct/Fct_ssA32.png}\end{center}
+
+
+}{%% Lösung
+\begin{enumerate}[label=\alph*)]
+\item
+Der Zinsfaktor ist $1.02$.
+\item
+$K = f (t) = 100\cdot 1.02 ^ t$, $t$ = Zeit in Jahren?
+\item
+S. folgende Tabelle
+\end{enumerate}
+\includegraphics[width=150mm]{img/fct/Fct_ssL32.png}
+
+}{8}
+
+
 
 \subsubsection{Sättigung}
+
+
 \newpage
