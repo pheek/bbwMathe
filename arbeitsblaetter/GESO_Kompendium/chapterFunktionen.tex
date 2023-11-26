@@ -623,9 +623,9 @@ Kapital von CHF 100.- wird über viele Jahre zu einem konstanten
 \item
 \deu{Bestimmen Sie den Zinsfaktor.}\eng{Bestimmen Sie den Zinsfaktor.}
 \item
-\deu{Wie lautet die Funktion $K = f (t)$, K = Kapital zur Zeit $t$,
+\deu{Wie lautet die Funktion $K = f (t)$, $K$ = Kapital zur Zeit $t$,
 $t$ = Zeit in Jahren?}
-\eng{What is the function K = f(t), where K is the capital at time t, and t is the time in years?}
+\eng{What is the function $K = f(t)$, where $K$ is the capital at time $t$, and $t$ is the time in years?}
 
 \item
 \deu{Stellen Sie die Kapitalentwicklung grafisch dar}%
@@ -643,7 +643,8 @@ Der Zinsfaktor ist $1.02$.
 \item
 $K = f (t) = 100\cdot 1.02 ^ t$, $t$ = Zeit in Jahren?
 \item
-S. folgende Tabelle
+\deu{S. folgende Grafik}
+\eng{consult the following graphic}
 \end{enumerate}
 \includegraphics[width=150mm]{img/fct/Fct_ssL32.png}
 
@@ -651,7 +652,182 @@ S. folgende Tabelle
 
 
 
+
+
+\kNiveauAufgabe{
+\eng{translate:} Degressive Abschreibung:
+Eine Maschine mit einem Neuwert von CHF 20\,000.- wird de-
+gressiv abgeschrieben. Sie verliert jährlich 10\% an Wert.
+\begin{enumerate}[label=\alph*)]
+\item
+ Bestimmen Sie den Abnahmefaktor.
+\item
+ Erstellen Sie eine Wertetabelle: $t$ = Zeit in Jahren, $W=f(t)$ = Wert Maschine zur Zeit $t$.
+\item
+ Stellen Sie die Werte-Entwicklung grafisch dar: $0 \le t \le 10$.
+\item
+ Wie lautet eine möglicher Funktionsterm zu $W=f(t)$?
+\end{enumerate}
+
+\begin{center}\includegraphics[width=150mm]{img/fct/Fct_ssA33.png}\end{center}
+}{%% Lösungen
+\begin{enumerate}[label=\alph*)]
+\item
+Der Abnahmefaktor (hier Abschreibungsfaktor) ist $100\%-10\% =
+(100-10)\% = 90\% = 90\cdot{}\frac1{100} = 0.9$
+\item
+\begin{tabular}{|c|c|c|c|c|c|}\hline
+Jahr   & 0 & 1 & 2 & 3 & 4 \\\hline
+Wert   & 20\,000 & 18\,000 & 16\,200 & 14\,580 & 13\,122 \\\hline
+ \end{tabular}
+ 
+\item
+\deu{S. folgende Graphik}
+\eng{consult the following graphic}
+\end{enumerate}
+\includegraphics[width=150mm]{img/fct/Fct_ssL33.png}
+
+}{}
+
+
+\kTrainingAufgabe{
+\eng{translate:} Prozentuale Wachstumsrate $\leftrightarrow$
+Wachstumsfaktor: Suchen Sie zu folgenden
+prozentualen Wachstumsraten den zugehörigen Wachstumsfaktor:
+
+a) Rate = $4\%$
+\hspace{15mm}
+b) Rate = $2.2\%$
+\hspace{15mm}
+c) Rate = $0.5\%$
+}{%% Lösungen
+
+a) $1.04$ 
+\hspace{15mm}
+b) $1.022$
+\hspace{15mm}
+c) $1.005$
+}{4}
+
+
+\kTrainingAufgabe{
+\eng{translate:} Prozentuale Abnahmerate $\leftrightarrow$ Abnahmefaktor: Suchen Sie zu folgenden prozentualen
+Abnahmeraten den zugehörigen Abnahmefaktor:
+
+a) Rate = $4\%$
+\hspace{15mm}
+b) Rate = $20\%$
+\hspace{15mm}
+c) Rate = $5.5\%$
+}{%% Lösungen
+
+a) $0.96$ 
+\hspace{15mm}
+b) $0.8$
+\hspace{15mm}
+c) $0.945$
+}{4}
+
+
+
+\newpage
+\kNiveauAufgabe{
+\eng{tranlate:}
+\textbf{Graphen von Exponentialfunktionen:}
+
+Zeichnen Sie die Graphen von $f(x) = 2^x$ und $g(x) = 2^{-x}$ im
+Bereich $-3 \le x \le 3$.
+
+a) Vergleichen Sie die beiden Graphen. Wo schneiden sich die Graphen?
+
+b) Bestimmen Sie Definitionsbereich und Wertebereich der beiden Funktionen.
+
+c) Haben die Funktionen Nullstellen? Haben Sie Asymptoten?
+
+\bbwGraph{-4}{4}{-1}{9}{}
+
+}{%% Lösung
+\begin{center}\includegraphics[width=150mm]{img/fct/Fct_ssL36.png}\end{center}
+
+a) Die Graphen sind spiegelsymmetrisch (gespiegelt an der
+$y$-Achse. Sie schneiden sich im Punkt $(0|1)$.
+
+b) Definitonsbereich $\mathbb{D} = \mathbb{R}$ und Wertebereich
+$\mathbb{W} = \mathbb{R}^{+}\backslash \{0\}$.
+
+c) Die Funktionen haben keine Nullstellen, da der Wertebereich
+$\mathbb{R}^+\backslash{}\{0\}$ ist. Der Funktions\textbf{wert} Null
+kommt also nicht vor.
+
+Für beide Funktionen ist die $x$-Achse die Asymptote.
+}{4}
+
+\kNiveauAufgabe{
+Nennen Sie eine mögliche Exponentialfunktion $f(x) = a^x$ (also mit $f(0)=1$), bei der sich der Funktionswert
+
+a) verdoppelt, wenn man das Argument um 3 erhöht (siehe Abbildung),
+
+\begin{center}\includegraphics[width=65mm]{img/fct/Fct_ssA37.png}\end{center}
+
+b) verdoppelt, wenn man $x$ um 12 erhöht bzw.
+
+c) halbiert, wenn man $x$ um 12 erhöht.
+
+
+}{%% Lösung
+a) $f(x) = 2^\frac{x}3 =  \left(2^\frac13\right)^x
+=\left(\sqrt[3]{2}\right)^x  $
+
+b) $f(x) = 2^\frac{x}{12} =  \left(2^\frac1{12}\right)^x
+=\left(\sqrt[12]{2}\right)^x  $
+
+b) $f(x) = \left(\frac12\right)^\frac{x}{12} =  \left(\left(\frac12\right)^\frac1{12}\right)^x
+=\left(\sqrt[12]{\frac12}\right)^x  $
+
+}{8}
+
+
+\kNiveauAufgabe{
+\eng{translate:}
+
+a) Die Wachstumsrate der Bevölkerung in der Schweiz betrug im Jahr 2012 ca. 1.1\%. 2012
+zählte die Schweiz 8\,039\,100 Einwohner. Wie viele Personen werden bei gleich bleibender
+Wachstumsrate im Jahr 2030 in der Schweiz leben (auf 100 Personen
+genau)?
+
+b) Seit 1999 wächst die Wohnbevölkerung der Stadt Zürich wieder. Im Jahr 1999 zählte die
+Stadt Zürich 360\,704 Einwohner, im Jahr 2012 waren es 394\,012 Personen. Berechnen Sie
+die durchschnittliche jährliche Wachstumsrate in \% (Genauigkeit: 2 Dezimalen). (Zum
+Vergleich: Im Jahr 2012 betrug die Wachsumsrate 1\%.)
+}{%% Lösungen
+
+a) $8\,039\,100 \cdot{} 1.011^t$ mit $t=2030-2012=18$ ist $9\,788\,800$.
+
+b) $\Delta\tau = 2012-1999 = 13$, somit gilt für die Wachstumsrate
+$$q^{13} = \frac{394\,012}{360\,704} \Longrightarrow
+q=\sqrt[13]{...}\approx 1.0068$$
+Somit beträgt die jährliche Wachstumsrate ca. 0.68\%.
+}{8}
+
+
+\kNiveauAufgabe{
+Berechnen Sie die durchschnittliche jährliche Wachstumsrate in % für die Bevölkerung einer
+Stadt, die innert 10 Jahren von 70’000 Personen auf 82’000 Personen angewachsen ist. (Ge-
+nauigkeit: 1 Dezimale.)
+}{%% Lösung
+$\Delta\tau = 10$ somit gilt für den Wachstumsfaktor
+$q^{10} = \frac{82\,000}{70\,000}$. Der Faktor ist daher $q=\sqrt[10]{\frac{82}{70}} \approx 1.0159$. Die
+prozentuale Zunahme (Rate) gerundet in Prozent ist also: 1.6\%.
+
+}{8}
+
+
+
+
+
+
+
+
+
 \subsubsection{Sättigung}
-
-
 \newpage

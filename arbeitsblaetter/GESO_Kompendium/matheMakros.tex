@@ -22,3 +22,120 @@
 
 %% Tilde über Buchstabe für Median
 \newcommand*\mediantilde[1]{\widetilde{#1}}
+
+\definecolor{bbwMMFarbe}{rgb}{0.01,0.94,0.94}
+
+
+\tikzset{bbwgrid/.style={help lines,color=bbwMMFarbe!25,thick,step=0.5cm}}
+
+%% einfach die folgende Zeile neu definieren bei kleineren Graphen und
+%% scale auf z. B. 0.5 setzen
+\tikzset{graphSkalierung/.style={xscale=1,yscale=1}}
+
+%% Koordinatensystem ohne Zahlen
+\newcommand{\bbwGridPartLeer}[4]{
+ % grid:
+ \draw[bbwgrid,graphSkalierung] (#1,#3) grid (#2,#4);
+
+ % axes
+ \draw[thick,graphSkalierung] (#1,0) -- (#2,0);
+ \draw[thick,graphSkalierung] (0,#3) -- (0,#4);
+ \foreach \x in {#1, ..., -1}  \draw[graphSkalierung] (\x cm, 3pt) -- (\x cm, -3pt);%%  node[anchor=north]{$\x$};
+ \foreach \x in {1, ..., #2}   \draw[graphSkalierung] (\x cm, 3pt) -- (\x cm, -3pt);%%  node[anchor=north]{$\x$};
+ \foreach \y in {#3, ..., -1}  \draw[graphSkalierung] (-3pt, \y cm) -- (3pt, \y cm);%%  node[anchor=east]{$\y\,\,$};
+ \foreach \y in {1, ..., #4}   \draw[graphSkalierung] (-3pt, \y cm) -- (3pt, \y cm);%%  node[anchor=east]{$\y\,\,$};
+ \draw[->,thick,graphSkalierung] (#2,0) -- ({#2+0.5},0) node[anchor=west]{$x$};
+ \draw[->,thick,graphSkalierung] (0,#4) -- (0,{#4+0.5}) node[anchor=south]{$y$};
+}
+
+\newcommand{\bbwGridPart}[4]{
+ % grid:
+ \draw[bbwgrid,graphSkalierung] (#1,#3) grid (#2,#4);
+
+ % axes
+ \draw[thick,graphSkalierung] (#1,0) -- (#2,0);
+ \draw[thick,graphSkalierung] (0,#3) -- (0,#4);
+ \foreach \x in {#1, ..., -1}  \draw[graphSkalierung] (\x cm, 3pt) -- (\x cm, -3pt)  node[anchor=north,graphSkalierung]{\small $\x\,\,\,$};
+ \foreach \x in {1, ..., #2}   \draw[graphSkalierung] (\x cm, 3pt) -- (\x cm, -3pt)  node[anchor=north,graphSkalierung]{$\x$};
+ \foreach \y in {#3, ..., -1}  \draw[graphSkalierung] (-3pt, \y cm) -- (3pt, \y cm)  node[anchor=east,graphSkalierung]{\small $\y\,\,$};
+ \foreach \y in {1, ..., #4}   \draw[graphSkalierung] (-3pt, \y cm) -- (3pt, \y cm)  node[anchor=east,graphSkalierung]{$\y\,\,$};
+ \draw[->,thick,graphSkalierung] (#2,0) -- ({#2+0.5},0) node[anchor=west]{$x$};
+ \draw[->,thick,graphSkalierung] (0,#4) -- (0,{#4+0.5}) node[anchor=south]{$y$};
+ }
+
+
+%% A function within a Grid (without painting the grid)
+%% #1: funciton eg 2*\x  (x has to be backquoted)
+%% #2: Domain eg. -1:2.5
+%% #3: colour eg red
+\newcommand{\bbwFuncC}[3]{\draw[domain=#2,smooth,samples=200,variable=\x,#3] plot ({\x},{#1});
+}
+%% A function within a Grid (without painting the grid)
+\newcommand{\bbwFunc}[2]{\bbwFuncC{#1}{#2}{blue}}
+
+%% Declare a function-plot
+%% xmin,xmax,ymin,ymax,fct,domain(x-min, x-max)
+%% example: \bbwFunction{-4}{3}{-2}{5}{-\x*\x- \x + 4.5}{-3:2}
+\newcommand{\bbwFunction}[6]{\begin{tikzpicture}
+\bbwGridPart{#1}{#2}{#3}{#4}
+ \bbwFunc{#5}{#6}
+%% \draw[domain=#6,smooth,samples=200,variable=\x,blue] plot ({\x},{#5});
+\end{tikzpicture}}
+%% a whole graph having a coordinate-system #1-#4 and any tizpicture content #5:
+\newcommand{\bbwGraph}[5]{\begin{tikzpicture}\bbwGridPart{#1}{#2}{#3}{#4}#5\end{tikzpicture}}
+\newcommand{\bbwGraphLeer}[5]{\begin{tikzpicture}\bbwGridPartLeer{#1}{#2}{#3}{#4}#5\end{tikzpicture}}
+
+%% Dots and lines:
+%% Dot example: \bbwDot{-1,2}{red}{east}{A}
+\newcommand{\bbwDot}[4]{\filldraw[color=#2!60, fill=#2!5, thick](#1) circle(0.05) node[anchor=#3]{$#4$};}
+
+%% Line example: \bbwLine{-1,0}{2,3}{red}
+\newcommand{\bbwLine}[3]{\draw[thick,color=#3] (#1)--(#2);}
+
+\newcommand{\bbwArrow}[3]{\draw[thick,color=#3,->] (#1)--(#2);}
+
+%% Strecke mit zwei Endpunkten
+%% #1, #2: Koordinaten der Endpunkte
+%% #3: Ort der Beschriftung
+%% #4: Beschtiftung (z. B. "a)")
+%% #5: farbe der Strecke und der Beschriftung
+\newcommand{\bbwStrecke}[5]{%%
+\bbwLine{#1}{#2}{#5}%
+\bbwDot{#1}{#5}{west}{}%
+\bbwDot{#2}{#5}{west}{}%
+\draw (#3) node{{\color{#5}#4}};
+}%%
+
+
+
+%% Draw a single letter or small text
+% #1: Position eg  4,4
+% #2: letter eg f or blah
+% #3: colour
+\newcommand{\bbwLetter}[3]{\draw[color=#3](#1) node{$#2$};}
+
+%%% ABC-Formel
+%% usage \abcd{<a>}{<b>}{<c>}
+%% example usage: \abcd{b}{5}{\sqrt{4}}
+\newcommand{\abcd}[3]{$\frac{-(#2)\pm\sqrt{(#2)^2 - 4\cdot{}(#1)\cdot{}(#3)}}{2\cdot{}(#1)}$}
+
+
+%% coordSysBBWFlex
+%% Flexibles Koordinatensystem mit Pfeilen und Pfeilbeschriftung, aber
+%% noch ohne "ticks".
+%% #1   : Rastergröße
+%% #2-#5: Größe des Rasters in cm
+%% #6   : Beschriftung in x-Richtung (in y-Richtung ist es immer y
+%% #7   : Zu zeichnende Funktion
+%% #8   : Ticks oder was sonst noch komplexeres in die Grafik muss
+\newcommand{\bbwFunctionColour}{blue}
+\newcommand{\coordSysBBWFlex}[8]{
+\begin{tikzpicture}
+\draw[step = #1,  thin, cyan!20] (#2, #4) grid (#3, #5);
+\draw[thick, ->] (#2,0) -- (#3,0) node[anchor = west] {$#6$};
+\draw[thick, ->] (0,#4) -- (0,#5) node[anchor = south] {$y$};
+\draw[domain=#2:#3,smooth,samples=200,variable=\x,\bbwFunctionColour] plot ({\x},{#7});
+#8;
+\end{tikzpicture}
+\renewcommand{\bbwFunctionColour}{blue}
+}%% end coordSysBBW
