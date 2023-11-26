@@ -610,6 +610,7 @@ $y=3\cdot{}x^{-1}$ \hspace{15mm}  d) $y=-0.5x^4$
 
 \subsection{\eng{translate: }Exponentialfunktionen}
 
+\newcommand{\e}{\text{e}}
 \subsubsection{\eng{translate: }Exponentielle Prozesse, Exponentialfunktion}
 
 \textbf{\eng{translate: }Wachstums und Zerfallsprozesse}
@@ -810,8 +811,8 @@ Somit beträgt die jährliche Wachstumsrate ca. 0.68\%.
 }{8}
 
 
-\kNiveauAufgabe{
-Berechnen Sie die durchschnittliche jährliche Wachstumsrate in % für die Bevölkerung einer
+\kNiveauAufgabe{\eng{translate:}
+Berechnen Sie die durchschnittliche jährliche Wachstumsrate in \% für die Bevölkerung einer
 Stadt, die innert 10 Jahren von 70’000 Personen auf 82’000 Personen angewachsen ist. (Ge-
 nauigkeit: 1 Dezimale.)
 }{%% Lösung
@@ -823,11 +824,254 @@ prozentuale Zunahme (Rate) gerundet in Prozent ist also: 1.6\%.
 
 
 
+\kNiveauAufgabe{\eng{translate:}
+
+\kKommentar{Aufgabe geändert, da Begriff Eindringtiefe schon vergeben}
+
+\kKommentar{Eindringtiefe $d= 1/\ln(a)$ mit $a$=Abnahmefaktor pro cm.}
+
+Licht, das durch eine Glasplatte der Dicke $d$ geht, verliert an Intensität $I$. 
+Pro eingedrungenen cm verliert das Licht bei einer bestimmten
+Glassorte 60\% seiner Intensität. Die
+Anfangsintensität beträgt 100 Watt/m${}^2$.
+
+a) Bestimmen Sie eine mögliche Funktionsgleichung $I = f(d)$, für $I$ =
+Intensität in W/m${}^2$ und $d$ = cm der Eindringung.
+
+b) Bestimmen Sie die Intensität nach 5 cm im Glas. (Genauigkeit 3 Dezimalen.)
+
+c) Nach wie vielen cm im Glas beträgt die Lichtintensität noch 1/100 der Anfangsin-
+tensität? (Genauigkeit: auf mm genau.)
+
+}{%% Lösungen
+
+a) $I = f(d) =
+100\cdot{}0.4^d \left[\frac{\text{Watt}}{\text{m}^2}\right]$
+
+b)  $f(5) = 0.4^5 = 1.024 \left[\frac{\text{Watt}}{\text{m}^2}\right]$
+
+c) $\log_{0.4}\left(\frac1{100}\right) \approx 5.026$ cm. Gerundet: 50 mm
+}{8}
+
+
+\kNiveauAufgabe{\eng{translate:}
+Bei der Radio-Iodtherapie kommt radioaktives ${}^{131}$Iod zum Einsatz. Von anfänglich 20.000 mg
+Substanz sind nach 7 Tagen noch 10.289 mg vorhanden.
+
+a) Wie lautet eine Zerfallsfunktion $m = f(t)$, für  $m$ = Masse in g,
+und $t$ = Zeit in Tagen?
+
+
+b) Bestimmen Sie die Halbwertszeit von ${}^{131}$Iod auf 2 Dezimalen genau.
+}{%Lösung (en)
+
+a) Exakte Formen:
+
+$$f(t) = 20.000\cdot{}\left(\frac{10.289}{20.000}\right)^\frac{t}7$$
+$$f(t) = 20.000 \cdot{}
+e^\frac{\ln\left(\frac{10.289}{20.000}\right)\cdot{}t}{7}$$
+
+Annäherungen:
+
+$$f(t) \approx{}  20\cdot{} 0.51445^\frac{t}7 $$
+$$f(t) \approx{}  20\cdot{} 0.9094^t $$
+$$f(t) \approx{}  20\cdot{} \e^{\frac{-0.6647\cdot{}t}{7}}$$
+$$f(t) \approx{}  20\cdot{} \e^{-0.09495\cdot{}t}$$
+
+
+b) $t\approx 7.30 $ Tage
+}{8}
+
+
+\kNiveauAufgabe{\eng{translate:}
+Um wie viele \% nimmt der Wert einer Maschine jährlich ab, wenn ihr Wert nach 4 Jahren
+auf die Hälfte gesunken ist? (Genauigkeit: 2 Dezimalen.)
+}{%% Lösung
+Jährliche Abnahme $\approx 15.91\%$
+}{8}
+
+
+\kNiveauAufgabe{
+Bei welchem Zinssatz $p$ in \% verdoppelt sich ein Kapital in 20 Jahren? (Genauigkeit: 2 Dezimalen.)
+}{%% Lösung
+Zinssatz: $\approx 3.53\%$
+}{8}
+
+
+\kNiveauAufgabe{\eng{translate:}
+Bei einer Algenplage wird die befallene Fläche in 3 Monaten verdoppelt. Bei der Entdeckung
+beträgt die befallene Fläche 120 m${}^2$ . Wie lautet eine mögliche
+Wachstumsfunktion $A = f(t)$ mit 
+$A$ = befallene Fläche in m${}^2$, $t$ = Zeit in Monaten?
+}{%%Lösung
+Natürliche Basis (Verdopplung   = 2):
+
+$$f(t) = 120\cdot{} 2^\frac{t}3$$
+
+Basis pro natürlicher Zeiteinheit (hier 1 Monat)
+
+$$f(t) \approx 120\cdot{}  1.26^t$$
+
+Natürliche Basis:
+
+$$f(t) \approx 120\cdot{}  \e^{0.231\cdot{}t}$$
+
+}{8}
+
+\kNiveauAufgabe{\eng{translate:}
+\textbf{Zweipunkte-Aufgabe für exponentielle Prozesse}
+
+\textbf{Gegeben: (Zeitpunkt 1; Messwert 1) und (Zeitpunkt 2; Messwert 2)}
+
+30 Minuten nach Ansetzen einer Bakterienkultur zählt man 800 Keime; 50 Minuten nach
+Ansetzen der Kultur sind es bereits 1500 Keime. Wie lautet eine mögliche exponentielle Wachstums-
+funktion $N = f(t)$ mit $N$ = Anzahl Keime ab Ansetzen, $t$ =
+vergangene Zeit in Minuten ab Ansetzen?
+}{%% Lösungen
+
+Startwert sind 311 od. 312 Bakterien (Lösungen mit 312 angegeben):
+
+Natürliche Basis: Faktor 1500 zu 800:
+$$f(t) = 312 \cdot{} \left(\frac{1500}{800}\right)^\frac{t}{20}$$
+
+Basis pro Zeiteinheit (Minuten):
+$$f(t) \approx{}  312\cdot{} 1.032^t$$
+
+Basis $\e$:
+$$f(t) \approx 312 \cdot{} \e^{0.03143\cdot{}t}$$
+}{8}
+
+
+\kNiveauAufgabe{
+\eng{translate:}\textbf{C-14-Karbon-Methode:} Lebendige Pflanzen nehmen dauernd radioaktiven Kohlenstoff
+C14 auf. Jedes Gramm Kohlenstoff, das aus lebenden Pflanzen gewonnen wird, enthält deshalb
+$N=N(0 \text{Jahre}) = 6.0 \cdot{} 10^{10}$ C14-Atome. Nach dem Tod der Pflanze nimmt diese Zahl exponentiell
+ab: Nach 10\,000 Jahren beträgt die Zahl der Kerne in einem Gramm noch $1.8 \cdot{} 10^{10}$ Stück.
+
+a) Wie lautet eine Zerfallsfunktion $N(t)$? ($N$ = Anzahl Atome und $t$ = Zeit in Jahren ab Tod
+der Pflanze.)
+
+b) Nach wie vielen Jahren ist noch die Hälfte des Anfangsbestandes vorhanden (Halbwertszeit)? Auf ganze Jahre runden.
+}{%% Lösungen
+
+a) $f(t) = 6\cdot{} 10^{10} \cdot{} 0.3^{\frac{t}{10\,000}}$
+
+b) $T_{\frac12} \approx 5757 $ Jahre 
+}{8}
+\newpage
+
+
+\subsubsection{\eng{translate:}Sättigung}\index{Sättigung}
+
+
+
+\kNiveauAufgabe{
+Eine heisse Creme hat eine Anfangstemperatur von 82 ${}^\circ$C. 10
+Minuten später misst die Temperatur
+noch 65 ${}^\circ$C. Die Raumtemperatur beträgt 20 ${}^\circ$C.
+
+a) Geben Sie eine (abklingende) Sättigungsfunktion an: $y = f(t)$ mit
+$t$ = zeit in Minuten und $y$ = Temperatur in ${}^\circ$C.
+
+b) Welche Temperatur hat die Creme nach 45 Minuten?
+
+}{%% Lösungen
+
+a) $f(t) = 20 +
+62\cdot{} \left(\frac{45}{62} \right)^\frac{t}{10} \approx 20 +
+62\cdot{} \e^{-0.032\cdot{}t}$
+
+
+b) Nach 45 Minuten hat die Creme noch eine Temperatur von ca. 34.66 ${}^\circ$C.
+}{8}
+
+
+
+\kNiveauAufgabe{
+Einem Patienten werden 15 mg eines Medikaments oral verabreicht. Sei $x$ die Anzahl Stunden
+seit Einnahme des Medikaments, $y$ die Anzahl mg des Medikaments im Blut zum Zeitpunkt
+$x$ Stunden ab Einnahme. Die Funktionsgleichung für das eingenommene
+Medikament lautet:
+
+\kKommentar{Verständnisfrage: Wird das Medikament nicht wieder abgebaut?}
+
+$$f(x) = -15\cdot{} e^{-0.2x} + 15$$
+}{%%Lösungen
+
+Nach ca. 3.466 Stunden ist der halbe Sättigungswert erreicht.
+}{8}
+
+
+\kNiveauAufgabe{
+\eng{translate:} Einer Patientin wird eine Infusion verabreicht. Gleichzeitig baut sich
+das zugeführte Medikament im Körper wieder ab. Sei $x$ die Anzahl Minuten ab
+Infusionsbeginn und  $y$ die Anzahl mg
+des Medikaments im Blutkreislauf. Diese Anzahl wird durch folgende
+Funktion beschrieben:
+
+$$f:\hspace{3mm}  y= - 125\cdot{} e^{-0.04\cdot{}x} + 125$$
+
+a) Wie gross ist $y$ für $x$ = 0 (Anfangswert) und für
+$x\rightarrow \infty$ (Sättigungswert)?
+
+b) Erstellen Sie eine Grafik für $0 \le{} x \le{} 120$.
+
+
+\includegraphics[width=150mm]{img/fct/Fct_ssA49.png}
+
+
+c) Nach wie vielen Minuten ist die halbe Sättigungsmenge erreicht?
+}{%% Lösung
+
+a) $f(0) = 0$ mg
+
+   $\lim_{x\rightarrow\infty} (f(x)) = 125 $ mg  ($\lim$ = limes =
+   Limite hier für $x$ gegen unendlich.)
+
+b) Grafik:
+
+\includegraphics[width=150mm]{img/fct/Fct_ssL49.png}
+
+
+c) Nach ca. 17.33 Minuten.
+
+}{8}
 
 
 
 
 
+\kNiveauAufgabe{
+Die Anzahl mg eines durch Infusion verabreichten Medikaments im Blut verläuft gemäss der
+Funktion ($x$ = Anzahl Stunden ab Infusionsbeginn, $y$ = Anzahl mg Medikament im Blut):
 
-\subsubsection{Sättigung}
+$$f : y = -250 \cdot{} e^{-0.2\cdot{}x} + 250$$
+
+
+a) Stellen Sie die Funktion grafisch dar ($0 \le x \le 24$).
+
+\includegraphics[width=150mm]{img/fct/Fct_ssA50.png}
+
+
+b) Wie gross sind die $y$-Werte nach 3 und nach 4 Stunden ab
+Infusionsbeginn?
+
+c) Bei einer Dosis von 200 mg beginnt die Patientin plötzlich allergisch zu reagieren, worauf
+die Infusion abgebrochen werden muss. Nach wie vielen Stunden ab Infusionsbeginn ist
+dies der Fall?
+
+}{%% Lösungen
+
+a)
+Grafik:
+
+\includegraphics[width=150mm]{img/fct/Fct_ssL50.png}
+
+b) $f(3)\approx 113$ mg \hspace{4cm}  $f(4) \approx{} 138$ mg
+
+c) Nach 8.043 Stunden.
+ 
+}{8}
+
+
 \newpage
