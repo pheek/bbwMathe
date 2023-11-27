@@ -23,7 +23,13 @@
 \cs_new:Npn \isAufgaben #1 { \str_if_eq:eeT {\kLoesungen}{false} {#1} }
 \ExplSyntaxOff
 
+%% see abvove
+\ExplSyntaxOn
+%% MatheNinja ausgeben:
+\cs_new:Npn \printMatheNinja #1 { \str_if_eq:eeT {\kMatheNinja}{true} {#1} }
+\ExplSyntaxOff
 
+\newcommand{\kMatheNinjaLink}[2]{\printMatheNinja{Mathe Ninja Link: \href{#2}{#1}}}
 
 \newcommand{\mmPapierZwei}[2]{\begin{tikzpicture}
 %%  \draw[step=4mm,bbwMMFarbe,ultra thin]
@@ -66,21 +72,27 @@
 \newcommand{\kAufgabenBuchstabe}{0}
 \newcommand{\kMetaAufgabe}[3]{%%
 %  \kAufgabenBuchstabe{}\,\arabic{aufgabenNummer}. \fragenMarkierung{}:
-  \fragenMarkierung{}:
-  \isLoesungen{{\color{blue}#2}}\isAufgaben{#1}\stepcounter{aufgabenNummer}
+\begin{minipage}{\textwidth}
+\vspace{1mm}%%
+  \fragenMarkierung{}\,\,%%
+  \isLoesungen{{\color{blue}#2}}\isAufgaben{#1}
   \isMMPapier{#3}
-  \vspace{2mm}
+\vspace{1mm}
+\hrule{}%%
+\end{minipage}%%  \vspace{2mm}
 }%% end kaufgabe
 
 \newcommand{\kNiveauAufgabe}[3]{%%
 %%\nurNiveauBMP{\kMetaAufgabe{#1}{#2}{#3}}%%
 \renewcommand{\fragenMarkierung}{\colorbox{orange!30}{\kAufgabenBuchstabe{}\,\arabic{aufgabenNummer}.(B)}}
 \kMetaAufgabe{#1}{#2}{#3}%%
+\stepcounter{aufgabenNummer}
 }%% end kaufgabe
 
 \newcommand{\kTrainingAufgabe}[3]{%%
 \renewcommand{\fragenMarkierung}{\colorbox{blue!30}{\kAufgabenBuchstabe{}\,\arabic{aufgabenNummer}.(E)}}
 \auchTrainingsAufgabe{\kMetaAufgabe{#1}{#2}{#3}}%%
+\stepcounter{aufgabenNummer}
 }%% end kaufgabe
 
 
@@ -91,7 +103,7 @@
 %% Aufgaben die entfernt werden, können durchaus im Kompendium
 %% Qulltext bleiben.
 
-\newcommand{\entfernteAufgabe}[3]{... AUFGABE ENTFERT ...}
+\newcommand{\entfernteAufgabe}[3]{... AUFGABE ENTFERNT ...}
 
 \ExplSyntaxOn
 %% Text nur bei Niveau BMP Ausgeben
