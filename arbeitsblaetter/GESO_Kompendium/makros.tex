@@ -82,7 +82,13 @@
 %% Angabe \kVerweiseAltesKompendium 2018 {Seite}{Aufgabennummre}
 \newcommand{\kVerweiseAltesKompendium}[2]{\kVerweiseAltesKompendiumXX{
 
-\small{[Entspricht dem alten Kompendium (2018) Aufgabe #2 auf Seite: #1]}}}
+\small{
+\colorbox{green!70}{
+[Entspricht dem alten Kompendium (2018) Aufgabe #2 auf Seite: #1]
+}%% end colornbox
+}%% end small
+
+}}%% end newcommand
 
 %% Überschreiben mit "colorbox" o. ä.
 \newcommand{\fragenMarkierung}{}

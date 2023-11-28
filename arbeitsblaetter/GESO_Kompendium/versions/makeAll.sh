@@ -60,5 +60,7 @@ rm kompendium.pdf
 mv *.pdf versions
 ./clean.sh
 
+cp kflags_MASTER.tex kflags.tex
+
 cd versions
 evince *.pdf &
