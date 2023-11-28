@@ -1,0 +1,95 @@
+
+Kompendium zürcher Version vom Nov. 2023:
+
+- Wie soll die Zusammenarbeit Zürich/Winterthur/Uster aussehen?
+
+- Die Winterthurer Fachschaft wünscht Dokumente des Teams vor der
+  Freigabe zu sichten, damit Wünsche platziert werden können.
+
+Organisatorisch
+===============
+ * Kompendium muss von den Fachschften (Zürich,Winterthur)
+   mind. gesichtet werden können!
+ * Nummerierungszuordnung zum alten Kompendium erstellen für Lehrer,
+   welche das Kompendium im Skript verliknt haben: Oder: Das Kompendium
+   hat bis zur Lerhplanrevision eine gewisse Beständigkeit.
+    Beispiel: Nummerierungs-Stabilität (S. E-Beilage), dass auch mal
+   eine Aufgabe hinzukommen kann, ohne die alten Nummerierung zu
+   tangieren.
+ * Vorwärts-machen! Meine Rechnung:
+   Alles inkl. übersetzung ins Englische dauert 10 Arbeitstag
+	 MAXIMAL! (Mein Proof of Concept = PDFs)
+	 Abwicklunsgzeit ca. ein Quintal.
+ * Klar kommunizieren, warum gewisse gemeldete Fehler/Meldungen nicht korrigiert werden.
+ * Kompendium sollte jeweils auf Schuljahrstart veröffentlicht werden.
+
+
+Konzeptuel / Inhaltlich
+==========
+Metaebene
+ * Klar kommunizieren, was das Kompendium darstellt:
+   Aufgabensammlung mit Trainings-Effekt oder mit Prüfungs-Niveau.
+    Aufgaben in Schwierigkeitskategorien einteilen.
+    Dies ist den meisten nicht klar, daher auch der Unmut.
+ * Fachliche Fehler müssen korrigiert werden. Beispiele Begriffe wie
+   Bruchgleichungen, Hyperbelfunktion, Lösungen bei lineare Funktionen
+   wie RxR, etc.
+   Fachliche Fehler (Begriffe) müssen korrigiert sein.
+   Insb. Mathematische Fehler.
+   Aufgabenteil und Lösungsteil.
+ * Schwierigkeit der Aufgaben sollen Prüfungsniveau haben
+ * Reihenfolge der Aufgaben: Kein durcheinander wie z. B.
+   "weitere Aufgaben zur Binomialverteilung" ist irgendwo???
+   Reihenfolge der Fragen ist etwas durcheinander: Vorschlag: Mit einer
+   Schere im Schulzimmer zu zweit (oder max. zu dritt) neu sortieren.
+ * Theorien weglassen (Sättigung, Datenanalyse)
+ * Auch eine Version ohen Häuschenpapier für besseren Überblick; insb
+   auch für Lernende mit Heft in Papierform.
+ * englische Version für Bili: Mathe Fachschaft in Winti:
+   Wir können mit der deepl Übersetzung leben.
+	 Winti hat 2 Bili-Klassen
+ * Trennung in Schwierigkeits-Kategorien ("Training/Voraussetzung", "Prüfungsniveau",
+ 	"über den Lehrplan hinausgehend") (über den Lehrplan hinausgehend
+   würde ich sowieso nicht aufnehmen.)
+
+
+
+Inhaltlich
+==========
+
+ - Bruchgleichungen und Potenzgleichungen als eigene Kapitel
+   (=> eigene Kategorie, nicht unterhalb "Quadratische Gleichungen")
+
+ * Aufgaben zur Kombinatorik nicht unter Wahrscheinlichtkeit oder
+   Mengenlehre
+ * Einfache Auswahlprobleme in der Kombinatorik ergänzen
+ * Bruchgleichungen als eigenes Kapitel
+ * Potenzgleichungen als eigenes Kapitel
+ * Fachbegriffe zu Datenanalyse ergänzen/weglassen
+   Theorien zwar weglassen, doch die verwendeten Begriffe aufzählen
+ * Exponentialfunktionen nicht mit e^x nur bei Sättigung vorschlagen.
+   Nicht das Format der Lösung vorschreiben, wenn das Resultat korrekt.
+   Bsp. e^qx äquivalent zu a^x oder a^(t/tau).
+ * Taschenrechnerkompetenzen  solve (mit polysolve):   7x²-8x = 5x-16
+ 
+Technisch
+=========
+ * Innerhalb der Fragen zwei optionale makros aufrufen
+   \kAlteAufgabennummer{<seite>}{<aufgabe>}
+	 Dies kann ein- und ausgeschaltet werden
+	 ebenos:
+	 \kPlatzFuerBerechnungen{8}
+	 Dies erspart den 3. Parameter bei allen Aufgaben
+
+ * Das Flag mit/ohne (true/false) Lösungen in drei Teile:
+   >nurLoesungen
+	 >nurAufgaben
+	 >aufgabenUndLoesungen
+
+ * Pro Kapitel ein Link auf Matheninja
+   Gleichungen ->   https://matheninja.ch/linearegleichungen/
+	 Grundlagen Terme -> https://matheninja.ch/terme/
+	 Zahlmengen / Mengenleher -> https://matheninja.ch/mengenlehre/
+	 Brüche -> https://matheninja.ch/brueche/
+
+

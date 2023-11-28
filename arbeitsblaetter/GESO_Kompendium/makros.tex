@@ -50,6 +50,20 @@
 }%%
 
 
+\NewDocumentCommand{\kPlatzFuerBerechnungen}{m}{%%
+  \ifthenelse{\equal{\kMMPapier}{true}}{%%
+    
+    \mmPapierZwei{#1}{17.5}
+
+}{%%
+}%% end ifthenelse
+}%%
+
+
+%%\newcommand{\platzFuerBerechnungen}[1]{\isMMPapier{#1}}
+
+
+
 \ExplSyntaxOn
 %% Text nur bei Niveau BMP Ausgeben
 \cs_new:Npn \nurNiveauBMP #1 { \str_if_eq:eeT {\kAufgabenNiveau}{nurBMP} {#1} }
@@ -57,6 +71,18 @@
 \cs_new:Npn \auchTrainingsAufgabe #1 { \str_if_eq:eeT {\kAufgabenNiveau}{auchTraining} {#1} }
 \ExplSyntaxOff
 
+
+
+
+\ExplSyntaxOn
+%% Text nur bei Niveau BMP Ausgeben
+\cs_new:Npn \kVerweiseAltesKompendiumXX #1 { \str_if_eq:eeT {\kVerweiseAufsAlteKompendium}{true} {#1} }
+\ExplSyntaxOff
+
+%% Angabe \kVerweiseAltesKompendium 2018 {Seite}{Aufgabennummre}
+\newcommand{\kVerweiseAltesKompendium}[2]{\kVerweiseAltesKompendiumXX{
+
+\small{[Entspricht dem alten Kompendium (2018) Aufgabe #2 auf Seite: #1]}}}
 
 %% Überschreiben mit "colorbox" o. ä.
 \newcommand{\fragenMarkierung}{}
@@ -70,28 +96,28 @@
 %% Algebra hat Aufgabne A1, A2. ,,, Funktionen F1, F2, ...
 %%
 \newcommand{\kAufgabenBuchstabe}{0}
-\newcommand{\kMetaAufgabe}[3]{%%
+\newcommand{\kMetaAufgabe}[2]{%%
 %  \kAufgabenBuchstabe{}\,\arabic{aufgabenNummer}. \fragenMarkierung{}:
 \begin{minipage}{\textwidth}
 \vspace{1mm}%%
   \fragenMarkierung{}\,\,%%
   \isLoesungen{{\color{blue}#2}}\isAufgaben{#1}
-  \isMMPapier{#3}
+%%########################################################  \isMMPapier{#3}
 \vspace{1mm}
 \hrule{}%%
 \end{minipage}%%  \vspace{2mm}
 }%% end kaufgabe
 
-\newcommand{\kNiveauAufgabe}[3]{%%
+\newcommand{\kNiveauAufgabe}[2]{%%
 %%\nurNiveauBMP{\kMetaAufgabe{#1}{#2}{#3}}%%
 \renewcommand{\fragenMarkierung}{\colorbox{orange!30}{\kAufgabenBuchstabe{}\,\arabic{aufgabenNummer}.(B)}}
-\kMetaAufgabe{#1}{#2}{#3}%%
+\kMetaAufgabe{#1}{#2}%%
 \stepcounter{aufgabenNummer}
 }%% end kaufgabe
 
-\newcommand{\kTrainingAufgabe}[3]{%%
+\newcommand{\kTrainingAufgabe}[2]{%%
 \renewcommand{\fragenMarkierung}{\colorbox{blue!30}{\kAufgabenBuchstabe{}\,\arabic{aufgabenNummer}.(E)}}
-\auchTrainingsAufgabe{\kMetaAufgabe{#1}{#2}{#3}}%%
+\auchTrainingsAufgabe{\kMetaAufgabe{#1}{#2}}%%
 \stepcounter{aufgabenNummer}
 }%% end kaufgabe
 
