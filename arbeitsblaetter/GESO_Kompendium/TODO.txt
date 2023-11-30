@@ -10,19 +10,9 @@ Organisatorisch
 ===============
  * Kompendium muss von den Fachschften (Zürich,Winterthur)
    mind. gesichtet werden können!
- * Nummerierungszuordnung zum alten Kompendium erstellen für Lehrer,
-   welche das Kompendium im Skript verliknt haben: Oder: Das Kompendium
-   hat bis zur Lerhplanrevision eine gewisse Beständigkeit.
-    Beispiel: Nummerierungs-Stabilität (S. E-Beilage), dass auch mal
-   eine Aufgabe hinzukommen kann, ohne die alten Nummerierung zu
-   tangieren.
- * Vorwärts-machen! Meine Rechnung:
-   Alles inkl. übersetzung ins Englische dauert 10 Arbeitstag
-	 MAXIMAL! (Mein Proof of Concept = PDFs)
-	 Abwicklunsgzeit ca. ein Quintal.
  * Klar kommunizieren, warum gewisse gemeldete Fehler/Meldungen nicht korrigiert werden.
  * Kompendium sollte jeweils auf Schuljahrstart veröffentlicht werden.
-
+ * Kompendium sollte ein Kantonales Organ bleiben
 
 Konzeptuel / Inhaltlich
 ==========
@@ -31,6 +21,10 @@ Metaebene
    Aufgabensammlung mit Trainings-Effekt oder mit Prüfungs-Niveau.
     Aufgaben in Schwierigkeitskategorien einteilen.
     Dies ist den meisten nicht klar, daher auch der Unmut.
+ * Falls Traningsdokument:
+   Trennung in Schwierigkeits-Kategorien ("Training/Voraussetzung", "Prüfungsniveau",
+ 	 "über den Lehrplan hinausgehend") (über den Lehrplan hinausgehend
+   würde ich sowieso nicht aufnehmen.)
  * Fachliche Fehler müssen korrigiert werden. Beispiele Begriffe wie
    Bruchgleichungen, Hyperbelfunktion, Lösungen bei lineare Funktionen
    wie RxR, etc.
@@ -43,15 +37,9 @@ Metaebene
    Reihenfolge der Fragen ist etwas durcheinander: Vorschlag: Mit einer
    Schere im Schulzimmer zu zweit (oder max. zu dritt) neu sortieren.
  * Theorien weglassen (Sättigung, Datenanalyse)
- * Auch eine Version ohen Häuschenpapier für besseren Überblick; insb
-   auch für Lernende mit Heft in Papierform.
  * englische Version für Bili: Mathe Fachschaft in Winti:
    Wir können mit der deepl Übersetzung leben.
 	 Winti hat 2 Bili-Klassen
- * Trennung in Schwierigkeits-Kategorien ("Training/Voraussetzung", "Prüfungsniveau",
- 	"über den Lehrplan hinausgehend") (über den Lehrplan hinausgehend
-   würde ich sowieso nicht aufnehmen.)
-
 
 
 Inhaltlich
@@ -74,12 +62,6 @@ Inhaltlich
  
 Technisch
 =========
- * Innerhalb der Fragen zwei optionale makros aufrufen
-   \kAlteAufgabennummer{<seite>}{<aufgabe>}
-	 Dies kann ein- und ausgeschaltet werden
-	 ebenos:
-	 \kPlatzFuerBerechnungen{8}
-	 Dies erspart den 3. Parameter bei allen Aufgaben
 
  * Das Flag mit/ohne (true/false) Lösungen in drei Teile:
    >nurLoesungen
@@ -91,5 +73,3 @@ Technisch
 	 Grundlagen Terme -> https://matheninja.ch/terme/
 	 Zahlmengen / Mengenleher -> https://matheninja.ch/mengenlehre/
 	 Brüche -> https://matheninja.ch/brueche/
-
-
