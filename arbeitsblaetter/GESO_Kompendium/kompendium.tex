@@ -3,10 +3,15 @@
 
 \documentclass[twoside,14pt,a4paper]{extarticle}
 \usepackage[paper=a4paper,margin=17mm]{geometry}%
-\usepackage{makeidx}
 
-\input{version}
+%% all includes here
 \input{inputs}
+
+%% version in a separate file, because the
+%% flags have nothing to do with the actual
+%% version number.
+\input{version}
+
 \input{kflags}
 \input{layout}
 \input{makros}
