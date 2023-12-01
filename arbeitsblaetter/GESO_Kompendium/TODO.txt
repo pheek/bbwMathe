@@ -59,7 +59,9 @@ Inhaltlich
    Nicht das Format der Lösung vorschreiben, wenn das Resultat korrekt.
    Bsp. e^qx äquivalent zu a^x oder a^(t/tau).
  * Taschenrechnerkompetenzen  solve (mit polysolve):   7x²-8x = 5x-16
- 
+ * Exponentialgleichungen im Trainings-Teil auch wie sie bei
+   Exponentialfunktionen benötigt werden: 5=2·1.5^(t/4)
+
 Technisch
 =========
 
