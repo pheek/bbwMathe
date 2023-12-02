@@ -70,8 +70,3 @@ Technisch
 	 >nurAufgaben
 	 >aufgabenUndLoesungen
 
- * Pro Kapitel ein Link auf Matheninja
-   Gleichungen ->   https://matheninja.ch/linearegleichungen/
-	 Grundlagen Terme -> https://matheninja.ch/terme/
-	 Zahlmengen / Mengenleher -> https://matheninja.ch/mengenlehre/
-	 Brüche -> https://matheninja.ch/brueche/

@@ -29,7 +29,10 @@
 \cs_new:Npn \printMatheNinja #1 { \str_if_eq:eeT {\kMatheNinja}{true} {#1} }
 \ExplSyntaxOff
 
-\newcommand{\kMatheNinjaLink}[2]{\printMatheNinja{Mathe Ninja Link: \href{#2}{#1}}}
+\newcommand{\kMatheNinjaLink}[2]{\printMatheNinja{\includegraphics[width=15mm]{img/layout/matheninja.jpg}
+«Mathe Ninja»
+Link: \href{#2}{#1}\\(\href{#2}{#2})
+\hrule}}
 
 \newcommand{\mmPapierZwei}[2]{\begin{tikzpicture}
 %%  \draw[step=4mm,bbwMMFarbe,ultra thin]
