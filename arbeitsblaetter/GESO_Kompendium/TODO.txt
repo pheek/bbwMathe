@@ -44,15 +44,15 @@ Metaebene
 
 Inhaltlich
 ==========
-
+ * Kapitelstruktur genauer festlegen
  - Bruchgleichungen und Potenzgleichungen als eigene Kapitel
    (=> eigene Kategorie, nicht unterhalb "Quadratische Gleichungen")
-
- * Aufgaben zur Kombinatorik nicht unter Wahrscheinlichtkeit oder
+ - Aufgaben zur Kombinatorik nicht unter Wahrscheinlichtkeit oder
    Mengenlehre
+ - Bruchgleichungen als eigenes Kapitel
+ - Potenzgleichungen als eigenes Kapitel
+	 
  * Einfache Auswahlprobleme in der Kombinatorik ergänzen
- * Bruchgleichungen als eigenes Kapitel
- * Potenzgleichungen als eigenes Kapitel
  * Fachbegriffe zu Datenanalyse ergänzen/weglassen
    Theorien zwar weglassen, doch die verwendeten Begriffe aufzählen
  * Exponentialfunktionen nicht mit e^x nur bei Sättigung vorschlagen.
