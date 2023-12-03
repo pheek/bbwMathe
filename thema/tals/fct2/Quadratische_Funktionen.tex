@@ -61,7 +61,7 @@ quadratische Funktion in Grundform\index{Grundform!quadratische Funktion}.
 
 Spielen Sie mit \TALS{dem TI-nSpire oder mit} \texttt{geogebra.org} an den Parametern $a$, $b$ und $c$ der Funktionsgleichung $y = a\cdot{}x^2 + b\cdot{} x + c$ herum. Was bewirkt der Parameter
 
-$a$: \LoesungsRaumLang{Parabelöffnung:\\ $|a|$ klein: Breite (weite) Öffnung / $|a|$ groß: Enge, schmale Öffnung. $a < 0$: Parabel ist nach unten geöffnet. $a > 0$: Parabel ist nach oben geöffnet.}
+$a$: \LoesungsRaumLang{Formfaktor «Parabelöffnung»:\\ $|a|$ klein: Breite (weite) Öffnung / $|a|$ groß: Enge, schmale Öffnung. $a < 0$: Parabel ist nach unten geöffnet. $a > 0$: Parabel ist nach oben geöffnet.}
 
 \noTRAINER{\mmPapier{2.4}}
 
@@ -86,8 +86,7 @@ $$p: y = x^2 - 4x + \frac{7}{4}$$
 
 Wo befinden sich die charakteristischen Punkte?
 
-\TNT{2.4}{\vspace{24mm}}
-
+%%\TNT{2.4}{\vspace{24mm}}
 
 Die charakteristischen Punkte sind:
 \begin{itemize}
@@ -113,17 +112,17 @@ der Normalparabel ($a=1$) vom
 Scheitelpunkt um eine Einheit nach rechts, so muss die Parabel um eine
 $y$-Einheit nach oben anwachsen.
 
-a) Parabel durch Scheitelpunkt $P=(-3|1)$ und durch $P'=(-2|2)$ zeichnen. \TRAINER{=verschobene Normalparbel}
+a) Parabel $p$ durch Scheitelpunkt $S_p=(-3|1)$ und durch $P=(-2|2)$ zeichnen. \TRAINER{=verschobene Normalparbel}
 
 
-b) Parabel mit Scheitelpunkt $Q=(2|2)$ durch $Q'=(3|0.5)$ zeichnen.
+b) Parabel $q$ mit Scheitelpunkt $S_q=(2|2)$ durch $Q=(3|0.5)$ zeichnen.
 \TRAINER{In Aufg. b) ist das $a$ somit sofort mit  $a=-1.5$ abzulesen}
 
 \bbwGraph{-4}{4}{-4}{4}{
-\bbwDot{-3,1}{red}{north}{P}
-\bbwDot{-2,2}{red}{west}{P'}
-\bbwDot{2,2}{blue}{south}{Q}
-\bbwDot{3,0.5}{blue}{west}{Q'}
+\bbwDot{-3,1}{red}{north}{S_p}
+\bbwDot{-2,2}{red}{west}{P}
+\bbwDot{2,2}{blue}{south}{S_q}
+\bbwDot{3,0.5}{blue}{west}{Q}
 \TRAINER{  \bbwFunc{1*(\x+3)*(\x+3) + 1}{-4:-1.5}}
 \TRAINER{  \bbwFunc{-1.5*(\x-2)*(\x-2) + 2}{0:3.5}}
 }
@@ -228,7 +227,7 @@ $$S=(x_S | y_S) = (\LoesungsRaum{2} | \LoesungsRaum{-2.25}).$$
 \subsection*{Aufgaben}
 %%\TALSAadBMTA{184ff}{665. a) b) c) 666. a) b) c) e) f) g)}
 \AadBMTA{273ff}{7., 8. und 9. mit \texttt{geogebra.org}, 17. a) c),
-  18. a) c) und 28. b) c)}
+  18. a) c) und 28. b) d)}
 
 \newpage
 
@@ -414,7 +413,7 @@ $$y = \frac{1}{2}x^2 - x + 3.5$$
 \newpage
 
 
-\subsection{Computer Algebra Systeme (CAS)}\index{CAS}
+\subsubsection{Computer Algebra Systeme (CAS)}\index{CAS}
 Das eben gezeigte Beispiel wird in der Praxis meist nicht von Hand,
 sondern mit einem Computer-Algebra-System, kurz CAS, gelöst:
 
@@ -493,7 +492,7 @@ Tipp: Skizze und  die Parabelgleichung in Nullstellenform aufschreiben. Die Düs
   Mit den Nullstellen $x_1=0$ und $x_2=7$.\\
   Wir setzen den gemessenen Punkt (1|0.84) in die Gleichung ein und erhalten $0.84 = a\cdot{}(1-0)(1-7)$.\\
   Daraus ergibt sich $a=0.84/(-6) = -0.14 $.\\
-  Nun setzen wir 3.5 Meter in die Funktionsgleichung $y = -0.14(x-0)(x-7)$ ein: und erhalten $y=-01.4\cdot{}3.5\cdot{}(-3.5) = 1.715m$; das ist die höchste Parabelstelle.}
+  Nun setzen wir 3.5 Meter in die Funktionsgleichung $y = -0.14(x-0)(x-7)$ ein: und erhalten $y=-0.14\cdot{}3.5\cdot{}(-3.5) = 1.715m$; das ist die höchste Parabelstelle.}
 
 
 \subsection*{Aufgaben}%% Nullstellenform
@@ -534,7 +533,7 @@ $a$, $p$ und $q$. Was bewirken die Änderungen?
 
 
 \subsubsection{Referenzaufgabe Scheitelform}
-Von einer Parabel ist der Scheitel $S(2|3)$ gegeben. Ebenfalls ist bekannt, dass die Parabel durch den Punkt $P\left(-\frac{1}{2}\middle|1\right)$ geht.
+Von einer Parabel ist der Scheitel $S=(2|3)$ gegeben. Ebenfalls ist bekannt, dass die Parabel durch den Punkt $P=\left(-\frac{1}{2}\middle|1\right)$ geht.
 
   Berechnen Sie die Funktionsgleichung in der Grundform $y = ax^2 + bx + c$. Tipp:
   Schreiben Sie die Funktionsgleichung in der Form $y=a(x - x_S)^2 +  y_S$ und setzen anschließend den Punkt $P$ ein.
@@ -572,7 +571,7 @@ Nochmals die drei Formen im Überblick:
   \hline\\
   Normalform/Grundform & $f: y= ax^2 + bx + c$\\
   \hline\\
-  Nullstellenform, faktorisierte Form, Produktform & $f: y=a(x-x_0)(x-x_1)$\\
+  Nullstellenform, faktorisierte Form, Produktform & $f: y=a(x-x_1)(x-x_2)$\\
   \hline\\
   Scheitelform & $f: y=a(x-x_S)^2+y_S$\\
   \hline%%
