@@ -1,0 +1,23 @@
+\section{Neue Aufgaben}
+
+
+\kKommentar{Noch einpflegen als Diskussionsgrundlage}
+\kTrainingAufgabe{
+$$\left(x-3\right)\left(x+1\right) - \left(x+2)^2$$
+
+$$\left(x^2-3xy^4\right)^2$$
+
+$$
+\left(x-2\right) \cdot \left(x+1\right) \cdot \left(x-1\right)$$
+
+
+$$ 2x^2\cdot \left(2x+5\right)^2$$
+
+Faktorisieren:
+$$3x^3+6x^2+9x$$
+
+$$6ab-8ac-2a$$
+
+}{
+
+}
