@@ -121,13 +121,13 @@
 
 \newcommand{\kNiveauAufgabe}[2]{%%
 %%\nurNiveauBMP{\kMetaAufgabe{#1}{#2}{#3}}%%
-\renewcommand{\fragenMarkierung}{\colorbox{orange!30}{\kAufgabenBuchstabe{}\,\arabic{aufgabenNummer}.(B)}}
+\renewcommand{\fragenMarkierung}{\colorbox{orange!30}{\kAufgabenBuchstabe{}\,\arabic{aufgabenNummer}.(N)}}
 \kMetaAufgabe{#1}{#2}%%
 \stepcounter{aufgabenNummer}
 }%% end kaufgabe
 
 \newcommand{\kTrainingAufgabe}[2]{%%
-\renewcommand{\fragenMarkierung}{\colorbox{blue!30}{\kAufgabenBuchstabe{}\,\arabic{aufgabenNummer}.(E)}}
+\renewcommand{\fragenMarkierung}{\colorbox{blue!30}{\kAufgabenBuchstabe{}\,\arabic{aufgabenNummer}.(T)}}
 \auchTrainingsAufgabe{\kMetaAufgabe{#1}{#2}}%%
 \stepcounter{aufgabenNummer}
 }%% end kaufgabe
