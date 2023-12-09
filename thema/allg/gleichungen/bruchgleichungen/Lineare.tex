@@ -2,7 +2,7 @@
 %% 2019 07 04 Ph. G. Freimann
 %%
 
-\subsection{... lineare ...}
+\subsection{... (linear werdende) ...}
 
 \sectuntertitel{125\% der Leute können nicht Bruchrechnen. Das ist
 jeder vierte, nein mehr noch: Jeder fünfte!}
@@ -71,9 +71,74 @@ $$\frac{1+x}{x}=\frac{x+3}{x-3}$$
 }%% END TNT
 %% implicit endofpage
 
+
+\newpage
+
+\subsection{Definitionsmenge}\index{Definitionsmenge!Bruchterme}\index{Definitionsmenge@Definitionsbereich}
+
+Einstiegsbeispiel
+
+$$\frac0x = 3.84$$
+\TNT{2}{$$\cdot x \Longrightarrow   0 = x\cdot{} 3.84 \Longrightarrow
+  x = 0$$
+
+  Null ist aber keine Lösung!
+}
+
+
+
+\begin{definition}{Definitionsmenge}{}
+Die Menge aller Zahlen, die für die Variable in einen Term (\zB einen
+Bruch) eingesetzt werden darf, nennen wir
+die \textbf{Definitionsmenge} $\DefinitionsMenge{}$ oder den \textbf{Definitionsbereich}.
+\end{definition}
+
+%%\renewcommand{\arraystretch}3
+\begin{bbwFillInTabular}{c|c|l}%%
+Bruch                  & Was darf nicht eingesetzt werden? & $\DefinitionsMenge{}$ Definitionsmenge \\\hline
+$\frac1x$              & \TRAINER{0}                       & \TRAINER{$\DefinitionsMenge{}=\mathbb{R}\backslash\{0\}$}\\\hline  
+$\frac1{2-x}$          & \TRAINER{2}                       & \TRAINER{$\DefinitionsMenge{}=\mathbb{R}\backslash\{2\}$}\\\hline
+$\frac{x}{(x-5)(x+3)}$ & \TRAINER{-3; 5}                   & \TRAINER{$\DefinitionsMenge{}=\mathbb{R}\backslash\{-3; 5\}$}\\\hline
+$\frac{11}{5x^2-5x-60}$ & \TRAINER{-3; 4}                   & \TRAINER{$\DefinitionsMenge{}=\mathbb{R}\backslash\{-3; 4\}$}\\\hline
+\end{bbwFillInTabular}
+
+
+\TNT{4}{$$5x^2 - 5x - 60 $$   $$= 5(x^2-x-12) $$   $$= 5(x-4)(x+3)$$}
+
+
+\newpage
+Ein letztes Beispiel:
+
+%%\renewcommand{\arraystretch}3
+\begin{bbwFillInTabular}{c|c|l}%%
+Bruch                  & Was darf nicht eingesetzt werden? & $\DefinitionsMenge{}$ Definitionsmenge \\\hline
+$\frac{7x^4-4x+11}{3x^2-5x}$ & \TRAINER{$0; \frac53$}                   & \TRAINER{$\DefinitionsMenge{}=\mathbb{R}\backslash\{0;\frac53\}$}\\\hline
+\end{bbwFillInTabular}
+
+\TNT{10}{Wir müssen nur den Nenner (unten) betrachten:
+$$3x^2-5x\stackrel{?}{=} 0$$
+$$x\cdot{}(3x-5)\stackrel{?}{=} 0$$
+Erster Fall: $x=0$
+
+Zweiter Fall: $$3x-5 = 0$$
+
+d. h.:
+
+$$3x=5$$
+$$x=\frac53$$
+
+}
+
+\subsection*{Aufgaben}
+
+\AadBMTA{48ff}{4. a) b) und 3. c) d)}%
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
 
 \subsection*{Aufgaben}
+
+\TRAINER{Ev. Arbeitsblatt Steve}
 
 
 \GESO{\olatLinkArbeitsblatt{Bruchgleichungen (Definitionsbreich wie
@@ -83,5 +148,6 @@ $$\frac{1+x}{x}=\frac{x+3}{x-3}$$
 
 \TALS{\olatLinkArbeitsblatt{Bruchgleichungen (Definitionsbereich wie
     bei Termen)}{https://olat.bbw.ch/auth/RepositoryEntry/572162090/CourseNode/105951754967029}{1.), 2.) und 3.)}}
+
 
 \newpage
