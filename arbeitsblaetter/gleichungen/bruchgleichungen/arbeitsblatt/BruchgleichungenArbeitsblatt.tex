@@ -8,6 +8,7 @@
 \renewcommand{\bbwAufgabenBlockID}{GL\_Br}
 
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{amssymb} %% für \blacktriangleright
@@ -17,7 +18,95 @@
 \begin{document}%%
 \arbeitsblattHeader{}
 
-\section{Bruchgleichungen (die lineare werden)}
+\begin{center}Version 1.0 (Dez. 2023)\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Voraussetzungen / Repetition}
+
+Werten Sie die Terme für die gegebenen $x$-Argumente aus:
+
+\begin{bbwAufgabenBlock}
+
+\item $T(x) = -5.3\cdot{}(x-2.8)$  \\
+\vspace{3mm}\\
+$T(1)=\LoesungsRaumLang{9.54}$ 
+und $T(2.8)=\LoesungsRaumLang{0}$\abplz{4}
+
+
+
+\item $T(x) = (x-5)\cdot{}3x\cdot{}(x+18.3)$  \\
+\vspace{3mm}\\
+$T(0)=\LoesungsRaumLang{0}$ 
+und $T(5)=\LoesungsRaumLang{0}$\abplz{4}
+
+\end{bbwAufgabenBlock}
+
+\noTRAINER{\newpage}
+
+Lösen Sie die folgenden Gleichungen nach $x$ auf und geben Sie die
+Lösungsmenge $\lx$ an. Tipp: Wann ist ein Produkt gleich Null?
+
+\begin{bbwAufgabenBlock}
+
+\item $(x-4)(x+5)=0$  \hspace{10mm}  $\lx = \LoesungsRaumLang{\{-5; 4\}}$\abplz{4}
+
+\item $7.3x(x+2.84)(x-3)(x+\frac{77}{12}) = 0$  \hspace{10mm}  $\lx = \LoesungsRaumLang{\{-\frac{77}{12};-2.84;0;3\}}$\abplz{4}
+
+\item $x^2 -6x + 9 = 0$ \TRAINER{$\Longleftrightarrow (x-3)^2=0$} \hspace{10mm}  $\lx = \LoesungsRaumLang{\{3\}}$\abplz{4}
+
+\item $x^2 +3x - 28= 0$ \TRAINER{$\Longleftrightarrow (x-4)(x+7)=0$} \hspace{10mm}  $\lx = \LoesungsRaumLang{\{-7; 4\}}$\abplz{4}
+
+\end{bbwAufgabenBlock}
+
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Definitionsbereich}
+
+Füllen Sie die folgende Tabelle für Bruchterme bzw. Bruchgleichungen
+aus. Sie müssen die Gleichungen nicht lösen, sondern lediglich jeweils
+den Definitionsbreich angeben:
+
+\begin{bbwFillInTabular}{|l|c|l|}\hline
+\textbf{\textit{Term/Gleichung}} & \textbf{\textit{Was darf nicht eingesetzt
+werden?}}& Definitionsmenge $\DefinitionsMenge{}_x$\\\hline
+
+$\frac{3.8}x$   & $0$   & $\mathbb{R} \backslash \{0\}$\\\hline
+
+$\frac{2}x$     & \TRAINER{$0$}   & \TRAINER{$\mathbb{R} \backslash \{0\}$}\\\hline
+
+$\frac{x}3$     & \TRAINER{alles darf eingesetzt werden}   & \TRAINER{$\mathbb{R}$}\\\hline
+
+$\frac{x+2}{x-1}$     & \TRAINER{$1$} & \TRAINER{$\mathbb{R} \backslash \{1\}$}\\\hline
+
+$\frac{x+3}{2x}$     & \TRAINER{$0$} & \TRAINER{$\mathbb{R} \backslash \{0\}$}\\\hline
+
+$\frac{(x-3)(x+4)}{(x-5)(x+6)}$     & \TRAINER{$-6\text{ und }5$} & \TRAINER{$\mathbb{R} \backslash \{-6;5\}$}\\\hline
+
+$\frac{ax-4}{x+a}$     & \TRAINER{$-a$} & \TRAINER{$\mathbb{R} \backslash \{-a\}$}\\\hline
+
+$\frac1x = \frac{3-x}{2}$     & \TRAINER{$0$} & \TRAINER{$\mathbb{R} \backslash \{0\}$}\\\hline
+
+$\frac1{(x+3)(x-4)}$     & \TRAINER{$-3\text{ und }4$} & \TRAINER{$\mathbb{R} \backslash \{-3; 4\}$}\\\hline
+
+$\frac1{(x-3)(x-3)}$     & \TRAINER{$3$} & \TRAINER{$\mathbb{R} \backslash \{3\}$}\\\hline
+
+$\frac1{x^2-6x+9}$     & \TRAINER{$3$} & \TRAINER{$\mathbb{R} \backslash \{3\}$}\\\hline
+
+$\frac{5x-3.4}{(x-4)(x+7)}$     & \TRAINER{$-7\text{ und }4$} & \TRAINER{$\mathbb{R} \backslash \{-7; 4\}$}\\\hline
+
+$\frac{5x-3.4}{x^2+3x-28}$     & \TRAINER{$-7\text{ und }4$} & \TRAINER{$\mathbb{R} \backslash \{-7; 4\}$}\\\hline
+
+$\frac{ax+3}{x^2+3x-28} = \frac{5(x-6)}{3x - 5.7}$ & \TRAINER{$-7\text{ und }4\text{ und } 1.9$} & \TRAINER{$\mathbb{R} \backslash \{-7; 1.9; 4\}$}\\\hline
+
+
+\end{bbwFillInTabular} 
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Bruchgleichungen...}
+\subsection{... die lineare Gleichungen werden ...}
+
 Bruchgleichungen, die auf lineare Gleichungen führen
 
 Die Lösungsvariable ist $x$, sofern nichts anderes vermekrt wurde.
@@ -71,13 +160,13 @@ Lösungsvariable $x$.
 \platzFuerBerechnungenBisEndeSeite{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-\section{Bruchgleichungen (die quadratisch werden)}
+\subsection{... die quadratische Gleichungen werden}
 Die folgenden Bruchgleichungen führen auf quadratische Gleichungen.
 
 
 \begin{bbwAufgabenBlock}
-\item $\frac{12}x = \frac{x}3$ \hspace{10mm}   $\DefinitionsMenge{}= \LoesungsRaumLang{\mathbb{R}\backslash\{0\}}$  $\LoesungsMenge{}_x = \LoesungsRaumLang{\-6; 6\}}$\abplz{6}
-\item $\frac13 + \frac1x + \frac2x = \frac{1+x}3$ \hspace{10mm}   $\DefinitionsMenge{}= \LoesungsRaumLang{\mathbb{R}\backslash\{0\}}$  $\LoesungsMenge{}_x = \LoesungsRaumLang{\-3; 3\}}$\abplz{6}
+\item $\frac{12}x = \frac{x}3$ \hspace{10mm}   $\DefinitionsMenge{}= \LoesungsRaumLang{\mathbb{R}\backslash\{0\}}$  $\LoesungsMenge{}_x = \LoesungsRaumLang{\{-6; 6\}}$\abplz{6}
+\item $\frac13 + \frac1x + \frac2x = \frac{1+x}3$ \hspace{10mm}   $\DefinitionsMenge{}= \LoesungsRaumLang{\mathbb{R}\backslash\{0\}}$  $\LoesungsMenge{}_x = \LoesungsRaumLang{\{-3; 3\}}$\abplz{6}
 \item $\frac{4.5}{3-x} = \frac{3x-x^2}{2x}$ \hspace{10mm}   $\DefinitionsMenge{}= \LoesungsRaumLang{\mathbb{R}\backslash\{0;3\}}$  $\LoesungsMenge{}_x = \LoesungsRaumLang{\{6\}}$\abplz{6}\noTRAINER{\newpage}
 \item $\frac{4.5}{3-x} = \frac{x-3}{2}$ \hspace{10mm}   $\DefinitionsMenge{}= \LoesungsRaumLang{\mathbb{R}\backslash\{3\}}$  $\LoesungsMenge{}_x = \LoesungsRaumLang{\{\}}$\abplz{6}
 \item $\frac{5x^2-8x+2}{3x^2-7x-6}=\frac{4x^2+x-16}{3x^2-7x-6}$ \hspace{10mm}   $\DefinitionsMenge{}= \LoesungsRaumLang{\mathbb{R}\backslash\{3;\frac{-2}3\}}$  $\LoesungsMenge{}_x = \LoesungsRaumLang{\{6\}}$\abplz{6}
