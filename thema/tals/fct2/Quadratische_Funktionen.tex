@@ -88,13 +88,13 @@ Wo befinden sich die charakteristischen Punkte?
 
 %%\TNT{2.4}{\vspace{24mm}}
 
-Die charakteristischen Punkte sind:
+Die charakteristischen Punkte sind:\TRAINER{ noch ohne Angabe derer Berechnungen}
 \begin{itemize}
 \item Schnittpunkt mit $y$-Achse = (\LoesungsRaum{0} | \LoesungsRaum{1.75})
-\item Nullstellen(-Punkte)\footnote{Als Nullstelle wird nur die
-  $x$-Koordinate bezeichnet, daher der künstliche Begriff
-  Nullstellenpunkt}: 
+\item Nullstellen: $x_1=\LoesungsRaum{0.5}$ und $x_2=\LoesungsRaum{3.5}$
 
+  Somit Schnittpunkte mit der $x$-Achse:
+  
   $N_1=(\LoesungsRaum{0.5}| \LoesungsRaum{0})$,
 
   $N_2=( \LoesungsRaum{3.5}|\LoesungsRaum{0})$
@@ -176,6 +176,12 @@ $$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$
 \newpage
 
 
+\textbf{Diskriminannte graphisch}
+
+\noTRAINER{\bbwCenterGraphic{12cm}{tals/fct2/img/DiskriminanteLeer.png}}
+\TRAINER{\bbwCenterGraphic{12cm}{tals/fct2/img/DiskriminanteAusgefuellt.png}}
+
+
 \subsection*{Aufgaben}
 \AadBMTA{277ff}{28. a) c) }
 \newpage
@@ -226,8 +232,8 @@ $$S=(x_S | y_S) = (\LoesungsRaum{2} | \LoesungsRaum{-2.25}).$$
   
 \subsection*{Aufgaben}
 %%\TALSAadBMTA{184ff}{665. a) b) c) 666. a) b) c) e) f) g)}
-\AadBMTA{273ff}{7., 8. und 9. mit \texttt{geogebra.org}, 17. a) c),
-  18. a) c) und 28. b) d)}
+\AadBMTA{273ff}{Mit \texttt{geogebra.org}, 17. a) c),
+  18. a) c) und ohne Rechner: 29. a) e) und f)}
 
 \newpage
 
@@ -307,25 +313,34 @@ Optional:
   sein. Daher eine zweite Aufgabe.
 
   Gesucht sind $a$ und $b$ aus $y = ax^2 + bx$ bei den gegebenen
-
+\vspace{1mm}
   Punkten $(2|-6)$ und $(-3|5)$.
+
+  \vspace{1mm}
 
   Wir lösen dies wiederum durch Einsetzen der Punkte in die
   Funktionsgleichung und wir erhalten die beiden Gleichungen, welche
   wir durch das Additionsverfahren lösen können:
+
+  \vspace{2mm}
 
   \begin{tabular}{c | r  c  r | c}
     (I)  &  $-6$ & = & $4a + 2b$ & $\cdot{} 3$ \\
     (II) &   $5$ & = & $9a - 3b$ & $\cdot{} 2$ \\
   \end{tabular}
 
+  \vspace{2mm}
+
   somit:
+
+  \vspace{2mm}
   
   \begin{tabular}{c | r  c  r | c}
     (I')  & $-18$ & = & $12a + 6b$ &\, \\
      \,   & \,    & \,&   \,       & $\oplus$\\
     (II') &  $10$ & = & $18a - 6b$ &\, \\
   \end{tabular}
+\vspace{1mm}
 
   Nach Addition der Gleichungen erhalten wir
 
@@ -449,26 +464,26 @@ Dies wird mit dem \tinspire{} wie folgt gelöst:
 Die \textbf{Nullstellenform} wird auch  «faktorisierte Form» oder
 «Produktform» genannt.\index{faktorisierte Form}\index{Produktform}
 
-Beachten Sie die folgende quadr. Funktionsgleichung:
+Bestimmen Sie die Nullstellen der folgenden quadratischen Funktion:
 
 $$y = 3.1(x-5)(x+6)$$
 
-Dies ist eine quadratische Funktion in der sogenannten
-\textbf{Nullstellenform}, denn die Nullstellen (hier $x_1 = 5$ oder
-$x_2 = -6$) können direkt aus der Funktionsgleichung abgelesen werden.
-Wenn wir $y=0$ in die Gleichung setzen (Nullstelle),
+\TNT{4}{Wir lösen die Gleichng:
+  $$0 = 3.1(x-5)(x+6)$$
+  
+  $x_1 = 5$ und $x_2= -6$
 
-$$0 = 3.1(x-5)(x+6)$$
-so wird die Gleichung genau dann wahr, wenn (mind.) einer der beiden Klammerausdrücke rechts
-gleich Null ist. Die Parabelöffnung (hier 3.1) kann dabei beliebig variieren und ist (neben den Nullstellen) der einzige Parameter.
+}
+
 
 
 
 \begin{gesetz}{Nullstellenform}{}
+Ist eine quadratishce Funktion in der Form
+$$y = a(x-x_1)\cdot{}(x-x_2)$$
+gegeben, so sprechen wir von der \textbf{Nullstellenform}.
 
-  $$y = a(x-x_1)\cdot{}(x-x_2)$$
-
-  Wobei $x_1$ und $x_2$ die Nullstellen der Parabel bezeichnen. 
+Dabei bezeichnen  $x_1$ und $x_2$ die Nullstellen der Parabel.
   \end{gesetz}
 
 \newpage
@@ -554,7 +569,8 @@ Von einer Parabel ist der Scheitel $S=(2|3)$ gegeben. Ebenfalls ist bekannt, das
   }%%end TRAINER%%
 
   \subsection*{Aufgabe}
-  \AadBMTA{275}{23. a), 10. a), 16. a) c) d), 19. b), 20. b),
+  \AadBMTA{273ff}{
+    7., 8. und 9 (Dies können Sie \zB mit \texttt{geogebra.org} zeichnen). Danach von Hand: 23. a), 10. a), 16. a) c) d), 19. b), 20. b),
     21. (rot), 22. (grün), 24. a), 34. a) und 35. a)}%%16. a) c) d)}
 %%  \TALSAadBMTA{185}{679. a), 681., 695., 684. a), 700., 694., 686.(*) und  664.}}
 
@@ -564,7 +580,6 @@ Von einer Parabel ist der Scheitel $S=(2|3)$ gegeben. Ebenfalls ist bekannt, das
 \subsection{Umrechnungen der Formen}\index{Formen!der quadratischen Funktion}\index{Quadratische Funktion!Formen}
 
 Nochmals die drei Formen im Überblick:
-
 
 \begin{tabular}{c|l}
   Form & Funktionsgleichung\\
