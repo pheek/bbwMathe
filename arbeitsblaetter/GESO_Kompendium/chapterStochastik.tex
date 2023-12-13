@@ -134,6 +134,29 @@ In how many different ways can the books be grouped?
 }
 
 %% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\kKommentar{Insgesamt von allen Typen je zwei Beispiele}
+
+Fakultät, nPr, nCr, $n^k$, + mit Wiederholung ohne Reihenfolge
+
+%% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\kNiveauAufgabe{
+\eng{translate}
+\deu{Auf dem Menuplan zum Nachtessen im Hotel steht folgendes an:
+Vorspeise: Suppe oder Salat. Hauptspeise: Fisch, Huhn, Rind oder
+Tofu. Zur Nachspeise: Torte, Eis oder Früchte.
+
+a) Auf wie viele Arten kann ich ein Menu zusammenstellen, wenn genau eine
+Vorspeise, eine Hauptspeise und eine Nachspeise gewählt werden müssen?
+
+b) Wie viele Arten sind möglich, wenn bis zu zwei Gänge ausgelassen
+werden dürfen.}
+}{%% Lösung
+a) $$2\cdot{} 4\cdot{} 3 = 24$$
+
+b) $$ 24 + 6 = 30$$
+}
+
+%% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \kNiveauAufgabe{\deu{Vier Personen steigen in ein Zugsabteil. Der Zug
 fährt mit diesen vier Personen los und hält anschliessend noch an
@@ -162,15 +185,32 @@ b) $6\cdot{}5\cdot{}4\cdot{}3 = 360$
 %% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \kNiveauAufgabe{\deu{Die Buchstaben aus dem Wort MISSISSIPPI werden durcheinandergemischt und zufällig
-wieder zusammengesetzt. Wieviele verschiedene Buchstabenfolgen mit und ohne Bedeutung
+wieder zusammengesetzt.
+
+a) Wieviele verschiedene Buchstabenfolgen mit und ohne Bedeutung
 können dabei entstehen?}
 \eng{The letters from the word MISSISSIPPI are mixed up and are then randomly reassembled.
-How many different sequences of letters with and without meaning can
+
+
+a) How many different sequences of letters with and without meaning can
 result from this procedure?}
+
+b) \deu{Wie viele Wörter sind möglich, wenn die beiden P nebeneinander
+stehen müssen?}\eng{How many possibilities are there, when the letters
+P have to stand right next to each other?}
+
+c) \deu{Wie viele, wenn die P's nicht nebeneinander stehen
+dürfen?}\eng{How many, when the P's must not touch each other.}
 \kKommentar{neue Aufgabe}
 \kPlatzFuerBerechnungen{8}
 }{%% Lösungen
+a) 
 $$m=\frac{11!}{2!\cdot{} 4! \cdot{} 4!} = 34\,650$$
+
+b) \deu{Betrachte PP als einen Buchstaben}\eng{}
+$$m=\frac{10!}{4! \cdot{} 4!} = 6300$$
+
+c) $34\,650 - 6300 = 28350$
 }
 
 %% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
