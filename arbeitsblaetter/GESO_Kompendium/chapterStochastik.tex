@@ -218,7 +218,7 @@ c) $34\,650 - 6300 = 28350$
 \kNiveauAufgabe{
 \deu{Lou soll für ein Fest 12 Getränkeflaschen kaufen; genau so viele wie
 im Harass (= Getränkekiste) Platz finden. Es stehen 5 verschiedene Getränke zur
-Auswahl. Auf wie viele arten kann Lou den Harass füllen? Die
+Auswahl. Auf wie viele Arten kann Lou den Harass füllen? Die
 Reihenfolge der Flaschen im Harass spielt dabei keine Rolle.}
 \eng{Lou is supposed to buy 12 beverage bottles for a party,
 exactly the number that fits in a crate. There are 5 different drinks
@@ -228,11 +228,34 @@ In how many ways can Lou fill the crate? The order of the bottles in the crate d
 \kPlatzFuerBerechnungen{8}
 }{%%\Lsung
 \eng{There are 1820 variants.}\deu{Es gibt 1820 Varianten.}}
+\newpage
+
+\kKommentar{Aus jeder Kategorie mind 2 Beispiele}
+
+\begin{itemize}
+\item Fakultät
+\item Produktregel (Vorspeise, Hauptspeise Dessert - Aufgaben)
+\item Mit Wiederholung, Mit Reihenfolge
+\item Ohne Wiederholung, Mit Reihenfolge
+\item Mit Wiederholung, Ohne Reihenfolge
+\item Ohne Wiederholung, Ohne Reihenfolge
+
+\end{itemize}
+
+\newpage
+
+%% %%%%%%%%%%%%%%%%%%%%%%% Chapter %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \subsection{\deu{Wahrscheinlichkeit}\eng{Probability calculation}}
-%% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\kKommentar{Noch 2-3 Aufgaben zu Baumdiagramme}
+Auch noch 2-3 weitere Aufgaben, wo der Baum abbricht: Wer die Flasche
+als erster zerdeppert hat gewonnen etc. (siehe unten «Chilbi»
+
+\vspace{20mm}
+
+%% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \kNiveauAufgabe{
 \deu{Wird beim Würfeln mit 2 gewöhnlichen Spielwürfeln Augensumme 7 (Ereignis A) oder Augensumme 8 (Ereignis B) häufiger auftreten?}
@@ -528,8 +551,10 @@ $\frac5{324} \approx 1.54\%$
 
 \kNiveauAufgabe{\deu{An einem Chilbistand können ein oder mehrere Spieler
 eine Anzahl Bälle kaufen und damit 
-auf eine Scheibe werfen. Gewonnen hat jeweils der Spieler, der die
-Scheibe als erster trifft.
+auf eine Flasche werfen. Gewonnen hat jeweils der Spieler, der die
+Flasche als erster so trifft, dass sie in Brüche geht.
+
+\kKommentar{geändert, damit Baum-Abbruch klar.}
 
 Zwei Spieler, nennen wir sie A und B, kaufen je zwei Bälle, die sie einzeln und abwechselnd
 (A zuerst) werfen. A und B sind nicht gleich geschickt in diesem Spiel: A trifft jeweils mit der
@@ -559,6 +584,9 @@ What is the probability
 \deu{dass Spieler A gewinnt, d.h. die Scheibe als erster trifft?}
 \eng{that player A will win, i.e. be the first to hit the target?}
 \end{enumerate}
+
+\deu{(Zeichnen Sie dazu ein Baum-Diagramm)}
+\eng{(Draw a probability tree diagram for this.)}
 \kVerweiseAltesKompendium{48}{22}
 \kPlatzFuerBerechnungen{8}
 }{%% Lösungen
@@ -827,10 +855,45 @@ c)
 
 }%% end Frage
 
+%% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\kNiveauAufgabe{\deu{Lukas bringt zu einem Würfelspiel seinen eigenen Spielwürfel mit. Es entsteht der Verdacht
+Lukas' Würfel zeige überdurchschnittlich viele Sechsen an. Man beschliesst, einen Versuch
+durchzuführen: Es wird 30-mal gewürfelt. Es wird vereinbart: Wenn 10-mal oder öfter eine
+Sechs erscheint, erklären wir „Lukas“ Würfel als gefälscht. Lukas sagt: „Selbst wenn der Test
+zehn oder mehr Sechsen ergibt, heisst das keineswegs, dass mein Würfel gefälscht ist; das
+Resultat kann auch bei einem unverfälschten Würfel eintreten“. Wie
+gross ist diese Wahrscheinlichkeit, dass in 30 Würfen ein gerechter
+Würfel 10 oder mehr Sechsen anzeigt?}
+\eng{Lukas brings his own dice to a dice game. The suspicion arises that Lukas' dice show an above-average number of sixes. It is decided to carry out an experiment: The dice are rolled 30 times. It is agreed: If a six appears 10 times or more, we declare "Lukas'" dice to be fake. Luke says: «Even if the test produces ten or more sixes, that doesn't mean that my die is fake; the result can also occur with a genuine die». What is the probability that a fair die will show 10 or more sixes in 30 throws?}
+\kVerweiseAltesKompendium{54}{37}
+\kPlatzFuerBerechnungen{8}
+}{%% Lösungensum
+
+$P(X\ge 10) = \sum_{x=10}^{30}{{30\choose x}} \cdot{} \left(\frac16\right)^x \cdot{} \left(\frac56\right)^{30-x}  = 1 - \sum_{i=0}^9 \approx 1.97\%$ 
+
+\deu{
+Die Wahrscheinlichkeit, dass ein nicht gezinkter Würfel bei 30 Würfen mehr
+als 9 Sechsen anzeigt ist demnach ca. 2\%.
+
+Mit ca. 2\% ist das Resultat den meisten wohl noch nicht eindeutig genug.
+}
+\eng{The probability that an unbiased die shows more than 9 sixes in
+30 rolls is therefore approximately 2\%.
+
+With about 2\%, the result may not be clear enough for most people.}%% end eng
+}
+
+\newpage
 
 \subsubsection{\deu{Kontingenztafeln und bedingte Wahrscheinlichkeit}\eng{Contingency tables and conditional probability}}
+
+\kKommentar{Auch eine oder zwei Aufgaben in folgendem Stil:}
+
+In 3\% aller Verkaufsboxen ist ein Zusatzgeschenk als Werbung. Wie
+viele Boxen muss ich kaufen, damit mit 99.5\% Wahrscheinlichkeit
+sicher ein Zusatzgeschenk dabei ist?
 
 %% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -900,6 +963,8 @@ Bauteil A 70-mal und Bauteil B 100-mal aus. 22-mal fallen dabei beide
 Bauteile gleichzeitig aus. Stellen Sie eine Vierfeldertafel auf und
 geben Sie die folgenden relativen Häufigkeiten an: }
 \eng{During the 1000 activations of a system, component A fails 70 times, and component B fails 100 times. Both components fail simultaneously 22 times. Set up a 2x2 table and provide the following relative frequencies:}
+
+\kKommentar{Beschriftung entfernt! Sollten Sie sehen!}
 
 \begin{enumerate}[label=\alph*)]
 \item
@@ -1049,32 +1114,8 @@ b)
 
 \subsection{\deu{Statistisches Schließen}\eng{Statistical reasoning}}
 
+\kKommentar{Aufgaben von Mirjam/Wolfgang/Jürg}
+
+
 %% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\kNiveauAufgabe{\deu{Lukas bringt zu einem Würfelspiel seinen eigenen Spielwürfel mit. Es entsteht der Verdacht
-Lukas' Würfel zeige überdurchschnittlich viele Sechsen an. Man beschliesst, einen Versuch
-durchzuführen: Es wird 30-mal gewürfelt. Es wird vereinbart: Wenn 10-mal oder öfter eine
-Sechs erscheint, erklären wir „Lukas“ Würfel als gefälscht. Lukas sagt: „Selbst wenn der Test
-zehn oder mehr Sechsen ergibt, heisst das keineswegs, dass mein Würfel gefälscht ist; das
-Resultat kann auch bei einem unverfälschten Würfel eintreten“. Wie
-gross ist diese Wahrscheinlichkeit, dass in 30 Würfen ein gerechter
-Würfel 10 oder mehr Sechsen anzeigt?}
-\eng{Lukas brings his own dice to a dice game. The suspicion arises that Lukas' dice show an above-average number of sixes. It is decided to carry out an experiment: The dice are rolled 30 times. It is agreed: If a six appears 10 times or more, we declare "Lukas'" dice to be fake. Luke says: «Even if the test produces ten or more sixes, that doesn't mean that my die is fake; the result can also occur with a genuine die». What is the probability that a fair die will show 10 or more sixes in 30 throws?}
-\kVerweiseAltesKompendium{54}{37}
-\kPlatzFuerBerechnungen{8}
-}{%% Lösungensum
-
-$P(X\ge 10) = \sum_{x=10}^{30}{{30\choose x}} \cdot{} \left(\frac16\right)^x \cdot{} \left(\frac56\right)^{30-x}  = 1 - \sum_{i=0}^9 \approx 1.97\%$ 
-
-\deu{
-Die Wahrscheinlichkeit, dass ein nicht gezinkter Würfel bei 30 Würfen mehr
-als 9 Sechsen anzeigt ist demnach ca. 2\%.
-
-Mit ca. 2\% ist das Resultat den meisten wohl noch nicht eindeutig genug.
-}
-\eng{The probability that an unbiased die shows more than 9 sixes in
-30 rolls is therefore approximately 2\%.
-
-With about 2\%, the result may not be clear enough for most people.}%% end eng
-}
 \newpage
