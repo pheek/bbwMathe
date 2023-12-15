@@ -504,16 +504,17 @@ mit V2 tauschen, Q1 und Q3 nochmals kontrollieren, Mittelachse löschen)...
 
 \newpage
 
+\deu{\textbf{Informationen aus einem Diagramm herauslesen}:}
+\eng{\textbf{Read information from a diagram}:    }
+
 \kNiveauAufgabe{
 \deu{
-\textbf{Informationen aus einem Diagramm herauslesen}:
 
 Praliné-Kugeln in einer Packung; Darstellung der absoluten
 Häufigkeiten in g. Bestimmen Sie die Modalität und die Schiefe des Histogramms.
 }%% end deu
 
 \eng{
-\textbf{Read information from a diagram}:
 
 Chocolate truffle balls in a package; representation of absolute frequencies in grams. Determine the modality and skewness of the histogram.}%% end eng
 
@@ -529,11 +530,63 @@ Chocolate truffle balls in a package; representation of absolute frequencies in 
 \kVerweiseAltesKompendium{40}{11}
 \kPlatzFuerBerechnungen{8}
 
+\kKommentar{Geändert, da mathematisch nicht lösbar}
+
 }{%% Lösungen
 \deu{Unimodal und linksschief (rechtssteil)}
 \eng{Unimodal and left-skewed (right-tailed).}
 }%% end Aufgabe
-\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+
+
+\kNiveauAufgabe{
+\deu{
+Legoteile werden maschinell abgepackt. Bei kleinen Teilen der selben
+Sorte entstehen Abweichungen in der Anzahl pro Schachtel, welche
+korrigiert werden müssen.
+
+Das folgende Diagramm zeigt eine Testproduktion:
+
+Die $x$-Achse im folgenden Diagramm zeigt die Anzahl Teile, die pro
+Schachtel aufrgetreten sind und die $y$-Achse zeigt die Anzahl der
+Schachteln mit der entsprechenden Teile-Anzahl.
+
+a)
+Ermitteln Sie Mittelwert und Standardabweichung der Anzahl Teile pro
+Schachtel dieser hypotetischen Testproduktion.
+
+b) Erstellen Sie einen Boxplot zu den gegebenen Daten.
+}%% end deu
+
+\eng{
+translate}%% end eng
+
+\includegraphics[width=120mm]{img/daan/Legoteile.png}
+    
+%\begin{tikzpicture}\begin{axis}[ybar stacked,nodes near coords,bar
+%    width=0.4,]\addplot
+%    coordinates{(21,10) (22,15) (23, 20) (24, 25) (25, 10) (26, 5)};\end{axis}\end{tikzpicture}
+
+%\deu{Bestimmen Sie Mittelwert, Median und Standardabweichung.}
+%\eng{Determine mean, median, and standard deviation.}
+
+\kKommentar{neue Aufgabe}
+
+\kPlatzFuerBerechnungen{8}
+
+}{%% Lösungen
+a) $$\overline{x} = 29.6136; \sigma = 2.1236 (S=2.1482)$$
+
+b)
+
+\includegraphics[width=120mm]{img/daan/LegoteileBoxplot.png}
+
+}%% end Aufgabe
+
+
 \kKommentar{Aufgabe mit Säulen}
 Beispiel: Alter von Studenten 3x 20j; 4x21j; 6x 22j; 7x23j, 3x24j
 2x25j ; 1x26j und 1x 34 j.
@@ -543,7 +596,6 @@ Standardabweichung aus dem Diagramm herauslesen.
 
 \kKommentar{Aufgaben aus den Sozialwissenschaften.}
 
-\newpage
 
 \deu{\subsection{Masszahlen (Mittelwert, Median, Quartile,
   Standardabweichung, Quartilsdifferenz)}}%% end deu
