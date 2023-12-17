@@ -81,17 +81,17 @@ d) $-\frac{47}{16}$ \hspace{25mm}
 
 %% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \kTrainingAufgabe{
-\textbf{\deu{Steigungsbegriff, Mittelpunkt einer Strecke}\eng{Slope concept, midpoint of a line segment}}:
+\textbf{\deu{Steigungsbegriff}\eng{Slope concept}}:
 
-\kKommentar{Mittelpunkt ist ein geometrisches Konzept.}
-\kKommentar{Kommt im Rahmenlehrpln \textbf{nicht} vor?}
+\kKommentar{Mittelpunkt ist ein geometrisches Konzept.}\\
+\kKommentar{Geometrie nur bei TALS?}
 
-a) \deu{Bestimmen Sie die Steigungen der Strecken a bis i. Zeichnen Sie
+\deu{Bestimmen Sie die Steigungen der Strecken a bis i. Zeichnen Sie
 Steigungsdreiecke ein.}
 \eng{Determine the slopes of the line segments a to i. Draw slope triangles.}
 
-b) \deu{Bestimmen Sie die Koordinaten des Mittelpunkts jeder Strecke.}
-\eng{Determine the coordinates of the midpoint of each line segment.}
+%%b) \deu{Bestimmen Sie die Koordinaten des Mittelpunkts jeder Strecke.}
+%%\eng{Determine the coordinates of the midpoint of each line segment.}
 
 \includegraphics[width=130mm]{img/fct/Fct_ssA03.png}
 \kVerweiseAltesKompendium{20}{3}
@@ -124,14 +124,29 @@ a) $y=2x+1$ \hspace{25mm}
 b) $y=-x+3$ \hspace{25mm}
 c) $y=-0.5x+4$ \hspace{25mm}
 
+\bbwGraph{-4}{9}{-2}{6}{
+%%    \bbwFunc{-4:9}{2*\x + 1}
+}
+
 \includegraphics[width=150mm]{img/fct/Fct_ssA04.png}
 \kVerweiseAltesKompendium{21}{4}
 \kPlatzFuerBerechnungen{6}
 
-
 }{%% Lösung
 
-\raisebox{-50mm}{\includegraphics[width=150mm]{img/fct/Fct_ssL04.png}}
+%%\raisebox{-50mm}{\includegraphics[width=150mm]{img/fct/Fct_ssL04.png}}
+
+$$\text{\color{black}a)} {\color{red} 2x+1} \text{\color{black}; b)}
+  {\color{blue} -x+3} \text{\color{black}; c)} {\color{ForestGreen}-0.5x+4}$$
+
+\bbwGraph{-4}{9}{-2}{6}{
+  \bbwFuncC{2*\x + 1}{-1.5:2.5}{red} %%\bbwText{0,1}{$2x+1$}
+  \bbwDot{0,1}{red}{west}{} \bbwDot{-0.5,0}{red}{west}{}
+  \bbwFuncC{-\x + 3}{-3:5}{blue} %%\bbwText{0,1}{$-x+3$}
+  \bbwDot{0,3}{blue}{west}{} \bbwDot{3,0}{blue}{west}{}
+  \bbwFuncC{-0.5*\x + 4}{-4:9}{ForestGreen} %%\bbwText{0,1}{$-0.5x+4$}
+  \bbwDot{0,4}{ForestGreen}{west}{} \bbwDot{8,0}{ForestGreen}{west}{}
+}
 
 }
 
@@ -1351,49 +1366,49 @@ c) $\log_{0.4}\left(\frac1{100}\right) \approx 5.026$ cm. \deu{Gerundet}\eng{Rou
 
 %%In einer Probe werden 13.5 mg radioaktives Material gemessen. Pro Tag nimmt die Menge des radioaktiven Stoffes um 11 % ab. Wie lautet die Zerfallsfunktion? Wie viel des radioaktiven Stoffs sind nach 8 Tagen noch vorhanden? Wann sind weniger als 0.1 mg des Stoffs vorhanden? 
 
+\deu{
 In einem Wald verbreitet sich ein schädliches Unkraut
-exponentiell. Pro Tag nimmt die bewachsene Fläche um 0.5 \% zu. Zu Beginn sind 5.6 m${}^2$ bewachsen. Wie lautet die Wachstumsfunktion? Wie viel Fläche ist nach 120 Tagen bewachsen? Wann sind mehr als 100 m${}^2$ bewachsen? 
-  \kKommentar{neue Aufgaeb}
+exponentiell. Pro Tag nimmt die bewachsene Fläche um 0.5 \% zu. Zu
+Beginn sind 5.5 ${\text{m}}^2$ bewachsen.
+
+a) Wie lautet die Wachstumsfunktion?
+
+b) Wie viel Fläche ist nach 120 Tagen bewachsen?
+
+c) Wann werden voraussichtlich erstmals mehr als 100 ${\text{m}}^2$ bewachsen sein?
+}%% end deu
+
+\eng{
+In a forest, a harmful weed spreads exponentially. The covered area
+increases by 0.5\% per day. At the beginning, 5.5 ${\text{m}}^2$ are
+covered.
+
+a) What is the growth function?
+
+b) How much area is covered after 120 days?
+
+c) When is it expected that more than 100 ${\text{m}}^2$ will be covered for the first time?
+
+}%% end eng
+
+\kKommentar{neue Aufgabe}
 }{%% lösung
-  a) $y = 5.6 \cdot{} 1.005^t$ ($t$ in Tagen)
+  a) $y = 5.5 \cdot{} 1.005^t$ ($t$ in \deu{Tagen}\eng{days})
 
-  b) $y = ... ?? Nachrechnen!!$
+  b) $y \approx 10.006 (ca. 10.0) {\text{m}}^2$
 
-  \kKommentar{Nachrechnen}
+  c) $\approx 581.5 \text{ \deu{Tage}\eng{days} } \approx 1.6 \text{ \deu{ Jahre }\eng{ years } }$ 
 }
 
 
-%% %%%%%%%%%%%%%%%%%%%%%% Aufgabe
-%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\kNiveauAufgabe{}{% Lösunrg
-  \eng{translate}
-
-
-  Ein Computervirus in einem Netzwerk verbreitet sich gemäss der folgenden Funktion: 
-
-$f(x) = 18762\cdot{}e^{0.331\cdot{}t}$, mit $t$ = Zeit in Tagen, gemessen ab heute und $f(t)$ = Anzahl infizierter Computer 
-
- 
-a) Berechne die Anzahl infizierter Computer nach 14 Tagen. 
-
-b) Berechne die prozentuale Zunahme pro Woche. 
-
-c) Wann hat sich die Anzahl infizierter Computer im Vergleich zu heute
-verzehnfacht?
-
-  \kKommentar{neue Aufgabe}
-}{%% lösungen
-
-}
+%% %%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \kNiveauAufgabe{
 \deu{Bei der Radio-Iodtherapie kommt radioaktives ${}^{131}$Iod zum Einsatz. Von anfänglich 20.000 mg
   Substanz sind nach 7 Tagen noch 10.289 mg vorhanden.}%% end deu
-\eng{In radioiodine therapy, radioactive ${}^{131}$iodine is used. Initially, there were 20,000 mg of the substance, and after 7 days, only 10,289 mg are still present.}
+\eng{In radioiodine therapy, radioactive ${}^{131}$iodine is used. Initially, there were 20.000 mg of the substance, and after 7 days, only 10.289 mg are still present.}
 
 
 \deu{
@@ -1405,7 +1420,7 @@ b) Bestimmen Sie die Halbwertszeit von ${}^{131}$Iod auf 2 Dezimalen
 genau.}%% end deu
 
 \eng{
-a) The decay function is given by m=f(t)m=f(t), where mm is the mass in grams, and tt is the time in days.
+a) The decay function is given by $m=f(t)$, where $m$ is the mass in grams, and $t$ is the time in days.
 
 b) Determine the half-life of ${}^{131}$Iod to two decimal places.}%% end eng
 
@@ -1539,6 +1554,62 @@ $$f(t) \approx{}  312\cdot{} 1.032^t$$
 Base $\e$:
 $$f(t) \approx 312 \cdot{} \e^{0.03143\cdot{}t}$$}%% end eng
 }
+
+
+%% %%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\kNiveauAufgabe{% Lösunrg
+\deu{  
+  Ein Computervirus in einem Netzwerk verbreitet sich auf
+  MS-Windows-Geräten gemäss der folgenden Funktion}%% end deu
+\eng{A computer virus in a network spreads on MS-Windows devices according to the following function:
+}%% end eng
+
+$$f_W(t) = 203\cdot{}e^{0.381\cdot{}t}$$
+
+\deu{mit $t$ = Zeit in Tagen,
+  gemessen ab heute und $f_W(t)$ = Anzahl infizierter Computer.}%% end deu
+\eng{
+where $t$ is the time in days measured from today, and $f_W(t)$ is the number of infected computers.
+}%% end eng
+
+\deu{  Auf Linux Geräten verbreitet sich ein ananoges Virus gemäß der
+  Funktion}%% end deu
+\eng{On Linux devices, a similar virus spreads according to the function:
+}%% end eng
+  $$f_L(t) = 2530\cdot{}e^{0.014\cdot{}t}$$
+
+
+a) \deu{Wie viele Geräte waren anfänglich (am Tage 0) jeweils (pro
+  System) infiziert?}%%
+\eng{How many devices were initially (on day 0) infected in each system?}
+
+ 
+b) \deu{Berechne die Anzahl infizierter Linux-Computer nach 14 Tagen
+  (runden Sie auf ganze Zahlen).}%%
+\eng{Calculate the number of infected Linux computers after 14 days (round to whole numbers).}
+
+c) \deu{Wann wird die infizierte Menge an Windows Geräten 10\,000 Stück übersteigen?}%%
+\eng{When will the infected quantity of Windows devices exceed 10\,000?}
+
+d) \deu{An welchem Tag wird die Anzahl infizierter Windows Geräte die Anzahl infizierter Linux-Geräte übersteigen?}%%
+\eng{On which day will the number of infected Windows devices exceed the number of infected Linux devices?}
+
+\kKommentar{neue Aufgabe}
+
+}{%% lösungen
+
+  a) Windows: 203; Linux: 2530
+
+  b) ca. 3070
+
+  c) $t= \frac1{0.381}\cdot{}\ln\left(\frac{10\,000}{203}\right)
+  \approx 10.22$ \deu{ Tage}\eng{ days.}
+
+  d)$$\ln\left(\frac{2530}{203}\right)  = (0.381-0.014)\cdot{}t$$ \deu{Nach ca 6.9 Tagen} \eng{After about 6.9 days.}
+}
+
 
 %% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
