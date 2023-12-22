@@ -461,22 +461,36 @@ Dies wird mit dem \tinspire{} wie folgt gelöst:
 \subsection{Formen der quadratischen Funktion}
 \subsubsection{Nullstellenform}\index{Nullstellenform}
 
-Die \textbf{Nullstellenform} wird auch  «faktorisierte Form» oder
-«Produktform» genannt.\index{faktorisierte Form}\index{Produktform}
+Einstiegsbeispiel:
 
-Bestimmen Sie die Nullstellen der folgenden quadratischen Funktion:
 
 $$y = 3.1(x-5)(x+6)$$
 
-\TNT{4}{Wir lösen die Gleichng:
-  $$0 = 3.1(x-5)(x+6)$$
-  
-  $x_1 = 5$ und $x_2= -6$
+a) Verwandeln Sie obige Funktion in die Grundform ...
 
+\TNT{4}{
+  $$y = 3.1(x^2+x-30)$$
+  $$y= 3.1x^2 + 3.1x - 93$$
+}
+
+b) ... und bestimmen Sie die Nullstellen.
+
+\TNT{6}{
+  solve($3.1x^2+3.1x-93 = 0, x$)
+
+  liefert : $\lx = \{-6; 5\}$
+}
+
+Was fällt Ihnen auf?
+
+
+\TNTeop{
+  Aus dem faktorisierten Funktionsterm $$3.1\cdot{} (x-5)(x+6)$$ können die
+  Nullstellen direkt abgelesen werden.
 }
 
 
-
+\newpage
 
 \begin{gesetz}{Nullstellenform}{}
 Ist eine quadratishce Funktion in der Form
@@ -485,6 +499,12 @@ gegeben, so sprechen wir von der \textbf{Nullstellenform}.
 
 Dabei bezeichnen  $x_1$ und $x_2$ die Nullstellen der Parabel.
   \end{gesetz}
+
+
+
+Die \textbf{Nullstellenform} wird auch  «faktorisierte Form» oder
+«Produktform» genannt.\index{faktorisierte Form}\index{Produktform}
+
 
 \newpage
 
