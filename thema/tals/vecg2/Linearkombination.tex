@@ -29,8 +29,6 @@ darstellbar.
 \end{definition}
 
 
-
-
 \begin{beispiel}{Linearkombination}{}
 Oft wollen wir einen Vektor $\vec{c}$ durch eine Linearkombination von
 gegebenen Vektoren ausdrücken.
@@ -122,14 +120,25 @@ $$\Spvek{7;3;-1.4} =
   $$\vec{b} = \sum_{i=1}^{n}x_i\cdot{}\vec{a}_i$$
   \end{definition}
 \newpage
-\subsubsection{Linear unabhängig}\index{unabhängig!linear}
-\begin{bemerkung}{Linear unabhängig}{}
+\subsubsection{Beispiele}%%\index{unabhängig!linear}
+
+\begin{beispiel}{Linear abhängig}{}
+  Der Vektor $\Spvek{-12;-13;29}$ ist von den drei Vektoren 
+    Vektoren $\Spvek{1;2;7}$, $\Spvek{2;1;9}$
+    und $\Spvek{5;5;3}$  linear abhängig, denn
+      er kann als Linearkombination dieser drei
+      Vektoren geschrieben werden:
+      $$\Spvek{-12;-13;29} = 2\cdot{}\Spvek{1;2;7} + 3\cdot{}
+      \Spvek{2;1;9} -4\cdot{} \Spvek{5;5;3}$$
+\end{beispiel}
+
+\begin{beispiel}{Linear unabhängig}{}
   Der Vektor $\Spvek{4;5;6}$ ist von den beiden
     Vektoren $\Spvek{1;0;0}$
-    und $\Spvek{0;1;0}$  linear unabhängig, denn
+    und $\Spvek{0;1;0}$  linear \textbf{un}abhängig, denn
       er kann \textbf{nicht} als Linearkombination dieser beiden
       Einheitsvektoren geschrieben werden.
-\end{bemerkung}
+\end{beispiel}
 
 \subsection*{Aufgaben}
 %%\TALSAadBFWG{196}{ 80. a)}
