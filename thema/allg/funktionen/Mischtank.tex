@@ -1,12 +1,11 @@
 %% Sirup-Beispiel
 \subsection{Mischtank}\index{Mischtank}\index{Sirup}\label{sirup_beispiel}
-Wird ein volles Glas Wasser in ein volles Glas Sirup geschüttet, so
+Wird ein volles Glas Wasser in ein gleich großes volles Glas Sirup geschüttet, so
 
 %%\TRAINER{\bbwCenterGraphic{5cm}{allg/alg/potenzen_wurzeln/img/Schwapp.png}}%%
 %%\noTRAINER{\bbwCenterGraphic{5cm}{allg/alg/potenzen_wurzeln/img/SchwappOhneFormel.png}}
-\bbwCenterGraphic{12cm}{allg/funktionen/img/exp/Sirup.png}%%
-\begin{center}{\footnotesize Bildlegende: Sirup mischen (\textcopyright 2023
-  M. Frischknecht 6ZVG22t)}\end{center}
+\bbwCenterGraphic{9cm}{allg/funktionen/img/exp/Sirup.png}%%
+\begin{center}{\footnotesize Bildlegende: Sirup mischen}\end{center}
 
 geschieht erst mal etwas eher klebriges:
 \begin{itemize}
@@ -19,17 +18,19 @@ umrührt, so mischt sich das Wasser mit dem Sirup und je länger man
 Wasser einschüttet, umso verdünnter wird der Sirup.
 
 
-Wie viel Sirup bleibt im Glas?
+Wie viel Sirup bleibt nun im Sirupglas?
 
 \TNT{2.4}{
-Am Ende bleibt ein
-Verhältnis von Wasser : Sirup = $\left(1-\frac{1}{e}\right) : \left(\frac{1}{e}\right)$
+Am Ende bleibt ein Anteil von $$\frac1\e \approx 0.367\,879 = 36.7879\%$$ Sirup im
+Glas.
+
+M.\,a.\,W.: Ein Verhältnis von  Sirup:Wasser = $\left(\frac{1}{\e}\right) :
+\left(1-\frac{1}{\e}\right)$
+
 \vspace{1.5cm}
 }
 
-Diese Konstante wird oft in großen chemischen Mischtanks verwendet,
-gibt aber auch ein Maß an, wenn \zB in einer Minergie-Wohnung die Luft
-ausgetauscht wird. Wenn nämlich das Volumen der Wohnung einmal neu hineingepumpt (bzw. weggeblasen) wurde während sich alte die Luft im Haus permanent mit der neuen vermischt, so ist noch ein Anteil von \TRAINER{$\frac{1}{e}$}\noTRAINER{ ..... } der alten Luft im Haus.
+Diese Konstante wird auch in großen chemischen Mischtanks verwendet.
 \newpage
 
 
@@ -90,10 +91,15 @@ erhalten wir den einzuschüttenden Teil $$n=\ln(7)\approx{1.946}.$$
 \textbf{Aufgabe 2: Minerige-Haus}\\
 Wenn wir also wissen wollen, wie viel Luft in ein Minergiehaus
 eingepumpt werden muss, damit nur noch 1 Promille der alten Luft
-vorhanden ist, so erhalten wir
+vorhanden ist, so erhalten wir (unter der Annahme, dass sich die alte
+und die neue Luft permanent mischen) ...
+
+$$\text{Volumen Neuluft} = \text{Wohnungsvolumen} \cdot{} \LoesungsRaum{\ln(1000)}$$
 \TNTeop{
-  $$\text{Volumen Neuluft} = \text{Wohnungsvolumen}\cdot{}\ln(1000)$$
-  $$\ln(10000) \approx 6.9$$
+  $$\ln(1000) \approx 6.9$$
+
+  Wir pumpen also ca. 7x das Wohnungsvolumen an Luft hinein, bis nur
+  noch 1 Promille der ursprünglichen Luft vorhanden ist.
 } %% end TNT
 
 
