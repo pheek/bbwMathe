@@ -13,7 +13,7 @@ Periodische Lösungen bei trigonometrischen Gleichungen.
 \item Arkusfunktionen interpretieren und periodische Lösungen angeben
 \item Substitution bei trigonometrischen Gleichungen
 \end{itemize}
-
+\newpage
 
 
 \subsection{Einstiegsbeispiel}
@@ -27,11 +27,24 @@ Die Einstiegsaufgabe liest sich im Gradmaß also folgendermaßen:
 
 $$\cos\left(2x+20\degre\right) = 0.5$$
 
-Die Gleichung hat offensichtlich periodische Lösungen, welche wir entweder am Einheitskreis, mittels der Cosinus-Funktion oder mit dem Taschenrechner herausfinden und schlussendlich auf den vorgegebenen Definitionsbereich einschränken müssen.
+Die Gleichung hat offensichtlich periodische Lösungen, welche wir
+entweder am Einheitskreis, mittels der Cosinus-Funktion oder mit dem
+Taschenrechner herausfinden und schlussendlich auf den vorgegebenen
+Definitionsbereich einschränken müssen.
 
-\newpage
+\subsubsection{Eine Lösung von Hand}
 
+Substituiere \TRAINER{$y=2x+\frac{\pi}9$:}
+$$\cos(y) = 0.5 \Longrightarrow y=\TRAINER{\frac{\pi}3  \left(=60\degre\right)}$$
+Rücksubstitution:
+$$ 2x+\frac{\pi}9 = \TRAINER{\frac{\pi}3}$$
+\TNTeop{
+  $$  18x + \pi = 3\pi$$
+  $$x=\frac{2\pi}{18} = \frac{\pi}9 \left(=20\degre\right)$$
+}%%%
+%% \newpage
 
+\subsection{Alle Lösungen im Definitionsbereich}
 \textbf{Lösungsidee:} Substitution:
 Wir setzen $y := 2x + \frac{\pi}{9}$ und erhalten somit:
 
@@ -67,7 +80,7 @@ Als allerletztes gilt es noch durch «Abzählen» herauszufinden, welche der Lö
 
 
 \subsubsection{Referenzaufgabe}
-Berechnen Sie $x$ im Intervall $[0,2\pi]$ der Gleichung
+Berechnen Sie zwei Lösungen für $x$ im Intervall $[0,2\pi]$ für die Gleichung
 $$\sin\left(3x+\frac{\pi}{3}\right) = -\frac{\sqrt{3}}{2}.$$
 \TNTeop{1. Substitution: $y:=3x+\frac{\pi}{3}$\\
   \hrule
@@ -75,21 +88,21 @@ $$\sin\left(3x+\frac{\pi}{3}\right) = -\frac{\sqrt{3}}{2}.$$
   Daraus lesen wir $y$ bei $240\degre$ und bei $300\degre$ ab. Oder im
   Bogenmaß: $y=\frac43\pi$ oder $y=\frac53\pi$\\
   \hrule
-
   3. Periodische Lösungen:
-  $y_1 = \frac43\pi + n\cdot{}2\pi$ und $y_2=\frac53\pi +
-  n\cdot{}2\pi$\\
+  $y_1 = \frac43\pi + z\cdot{}2\pi$ und $y_2=\frac53\pi +
+  z\cdot{}2\pi$ mit $z\in\mathbb{Z}$\\
   \hrule
-  4. Resub\\
-  $$y_1: \frac{4\pi}3 + n\cdot{}2\pi = 3x + \frac{\pi}3$$
+  4. Resub $y_1$:\\
+  $$y_1: \frac{4\pi}3 + z\cdot{}2\pi = 3x + \frac{\pi}3$$
   Daraus ergibt sich $x_1$:
-  $$x_1 = \frac{\pi}9(3+6n) = ...; \frac{3\pi}9; \frac{9\pi}9; \frac{15\pi}9; \frac{21\pi}9; ...$$
+  $$x_1 = \frac{\pi}9(3+6z) = ...; \frac{3\pi}9; \frac{9\pi}9; \frac{15\pi}9; \frac{21\pi}9; ...$$
 
  \vspace{5mm}
-  
-  $$y_2: \frac{5\pi}3 + n\cdot{}2\pi = 3x + \frac{\pi}3$$
+
+ Resub $y_2$:\\
+  $$y_2: \frac{5\pi}3 + z\cdot{}2\pi = 3x + \frac{\pi}3$$
   Daraus ergibt sich $x_2$:
-  $$x_2 = \frac{2\pi}9(2+3n) = ...; \frac{4\pi}9; \frac{10\pi}9;
+  $$x_2 = \frac{2\pi}9(2+3z) = ...; \frac{4\pi}9; \frac{10\pi}9;
   \frac{16\pi}9; \frac{22\pi}9; ...$$
   \hrule
   5. Einschränken auf $[0; 2\pi[$:
