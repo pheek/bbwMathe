@@ -9,8 +9,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{amssymb} %% für \blacktriangleright
-\renewcommand{\metaHeaderLine}{Lineare Funktionen}
-\renewcommand{\arbeitsblattTitel}{\metaHeaderLine{} Arbeitsblatt (V 2.0)}
+\renewcommand{\metaHeaderLine}{Arbeitsblatt}
+\renewcommand{\arbeitsblattTitel}{Lineare Funktionen (V 3.1)}
 
 \begin{document}%%
 \arbeitsblattHeader{}
@@ -306,28 +306,6 @@ Hilfsblatt
 \newpage
 }%% END noTRAINER
 \newpage
-\subsection{Kerze}
-Eine Kerze hat anfänglich eine Höhe von 26 cm. Nun wird die Kerze
-angezündet. Nach 30 Minuten sind 4.3 cm abgebrannt.
-
-a) Wie lautet die Funktionsgleichung $y=f(x)$ mit $x$=Zeit in Minuten
-und $y$= Höhe in cm? (Tipp Steigung / $y$-Achsenabschnitt)
-
-\TNT{4}{$y=f(x)$ ; $y =-\frac{4.3}{30}x +26$}
-
-
-b) Wann ist die Kerze abgebrannt? (Tipp: Nullstelle)
-
-\TNTeop{$$0 = -\frac{4.3}{30}x +26$$
-$$-26 = -\frac{4.3}{30}x$$
-$$26 = \frac{4.3}{30}x$$
-$$26\cdot{} 30 = 4.3\cdot{}x$$
-$$\frac{26\cdot{} 30}{4.3} = x$$
-$$ x\approx  181 \text{ Minuten} \approx  \text{ in drei Stunden und einer Minute}$$
-}
-
-
-\newpage
 \subsection{Schnittpunkt mit Achsen I}
 Geben Sie von der Geraden $x\mapsto 3x-\frac45$ die Schnittpunkte mit
 den Achsen an:
@@ -430,6 +408,25 @@ b) Geben Sie die Funktionsgleichung an:
 
 $$f(x) = \LoesungsRaum{-\frac12x+1.5}$$
 \TNTeop{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Kerze}
+Eine Kerze von anfänglich 30 cm Höhe brennt langsam ab.
+
+Nach 25 Minuten sind 4.3 cm abgebrannt.
+
+a) Wie lautet die Funktionsgleichung $y=f(x)$ mit $x$=Zeit in Minuten
+nach dem Entzünden und $y$ = Höhe der Kerze in cm.
+
+b) Wann wird die Kerze abgebrannt sein?
+
+\TNTeop{
+a) $f(x) = 30 - 4.3\cdot{}\frac{x}{25} = \frac{- 4.3}{25}\cdot{}x + 30
+= -0.172x + 30$
+
+b) $x_0 = \frac{-b}a = -b : a = 30 : \frac{4.3}{25} = 30 \cdot{} 25 : 4.3 \approx 174.4 \text{
+min} = 2 \text{ h } 54.4 \text{ min}$
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Alkohol (Promille)}
 Alkohol baut sich im Körper im Durchschnitt mit
@@ -548,7 +545,7 @@ $$g: x\mapsto \frac{16x+3.68}5 \text{ ?}$$
 \vspace{5mm}
 $$\LoesungsMenge{}_S=\LoesungsRaumLang{\{\}}$$
 (Warum versagt hier der numerische \textit{Solver} des Taschenrechners?
-Tipp: Resultate immer auch noch nachprüfuen!)
+Tipp: Resultate immer auch noch nachprüfen!)
 
 \TNTeop{
 Beide Funktionen haben die selbe Steigung (3.2) aber einen verschiedenen
@@ -559,7 +556,7 @@ Schnittpunkt in $\mathbb{R}\times\mathbb{R}$
 Der numerische Taschenrechner versagt, wenn von einem Startwert >0
 ausgegangen wird. Startet der Rechner \zB{} mit $x=1$, so kann das
 Resultat gut und gerne $x=5.96 \cdot{}10^{16}$ werden. Für den Rechner
-ist dieses Resultat so ok, denn in den Größenordnungen kann der
+ist dieses Resultat so OK, denn in den Größenordnungen kann der
 Rechner die hinterste Ziffer nicht mehr genau annähern und bekommt für
 beide Seiten der Gleichung den selben $y$-Wert.
 }%% end TNT eop
@@ -598,7 +595,7 @@ lineare Funktion in ein kartesisches Koordinatensystem. Verwenden Sie
 eine $y$-Achse von $0 - 200$ cm und eine $x$-Achse von $0-12\,000$
 Jahren. Nehmen Sie selbständig eine sinnvolle Skalierung vor.
 
-\noTRAINER{\mmPapier{16}}
+\noTRAINER{\mmPapier{14}}
 
 b) Zeichnen Sie das Ende des Stalaktiten (nicht dessen Höhe) in
 dasselbe Koordinatensystem. Die Gerade beginnt für $x=0$ Jahre
@@ -678,7 +675,7 @@ $$f(x) = 3x-6 \Longleftrightarrow  2y-6x = 16$$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Punkte-Aufgaben}
 
-\subsection{Parameter finden}
+\subsection{Ordinatenabschnitt finden}
 Gegeben ist die Steigung $a=3.7$ der Funktion
 $$y=3.7x + b.$$
 
@@ -699,8 +696,63 @@ $$2 = 3.7\cdot{}2 + b$$
 nun nach $b$ auflösen
 }%% end TNTeop
 
+
+\subsection{Steigung finden}
+
+Von einer linearen Funktion ist der Ordinatenabschnitt (=
+$y$-Achsenabschnitt) $b$ gegeben. Ebenso ist bekannt, dass die
+Funktion durch den Punkt $P$ verläuft.
+
+Geben Sie jeweils die Funktionsgleichung an:
+
+a) $b=3$ und $P=(3|4)$
+
+\noTRAINER{\mmPapier{4}}\TRAINER{$y=\frac13 x + 3$}
+
+b) $b=2.5$ und $P=(6|2.5)$
+
+\noTRAINER{\mmPapier{4}}\TRAINER{$y=2.5$}
+
+c) $b=-1.4$ und $P=(\frac74|0)$
+
+\TNTeop{$y=0.8x - 1.4$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Ablesen? Rechnen!}
+
+\bbwGraph{-5}{8}{-1}{6}{%
+
+\bbwDotGerade{-5,5.1818}{8,2.8182}{-4, 5}{7,3}{ForestGreen}{g}{5,4}
+
+}%% end BBW Graph
+
+a) Wie lautet die Funktionsgleichung der abgebildeten Funktion $g$?
+
+(Die Gerade verläuft durch die beiden angegebenen Gitterpunkte.)
+
+\TNT{4}{$g:   x\mapsto \frac{-2}{11}x+\frac{47}{11}$}
+
+
+b) Gegeben ist der Punkt $P=(-3|2)$. Wie lautet die Funktionsgleichung der Funktion $h$, für die gilt
+$h||g$ und $P\in h$?
+
+Dabei steht das Symbol $||$ für «ist parallel zu».
+
+\TNTeop{
+Setze $P=(-3|2)$ in $f(x) = \frac{-2}{11}x+\frac{47}{11}$ ein:
+
+$$2 = \frac{-2}{11}\cdot{}(-3) + b$$
+Mal 11:
+$$22 = 6 + 11b$$
+-6:
+$$16=11b$$
+Durch 11:
+$$b = \frac{16}{11}$$
+$$\Longrightarrow  y = \frac{-2}{11} x + \frac{16}{11}$$
+}%% end TNTeop
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-\subsection{Parallele}
+\subsection{Parallele (Funktionsgleichung finden)}
+
 Gegeben ist die Gerade $f: y=\frac{-2}3x+9.6$.
 
 Legen Sie eine parallele Gerade zu $f$ so, dass diese Parallele durch
@@ -723,8 +775,11 @@ und lösen nach $b$ auf:
 $$7 = -6 + b$$
 $$13 = b$$
 }
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
-\subsection{Zwei Punkte Aufgabe}
+\subsection{Eine «Zwei Punkte Aufgabe»}
 Die Funktion $f$ schneide die Achsen in $\left(0\middle|\frac87\right)$ und
 $(-2|0)$. Geben Sie die Funktionsgleichung von $f$ an:
 
@@ -745,6 +800,62 @@ $$8 = a\cdot{}(14)$$
 $$4 = a\cdot{}(7)$$
 $$\frac47 = a$$
 }%% end TNT eop
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Algebraische Prüfung}
+Prüfen Sie für jeden der Punkte $A$, $B$ und $C$ algebraisch, ob sie auf dem
+Graphen der Funktion $f$ liegen:
+
+$$f = \frac34x-\frac13$$
+
+$$A = \left(0\middle|-\frac13\right), \hspace{5mm} B =
+(4|2), \hspace{5mm} C = \left(\frac49\middle|0\right)$$
+\TNTeop{$A\in f, B\not \in f, C \in f$}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Fehlende Abszisse}
+
+Bestimmen Sie die fehlende Koordinate $P_x$ sodass $P\in AB$ (also
+sodass $P$ auf der Geraden $AB$ liegt):
+
+$$A=(7|5), B=(-2|-1), P=(P_x|4)$$
+
+\TNTeop{1. Funktionsgleichung bestimmen:
+$$y = \frac23x+\frac13$$
+2. $y$ einsetzen:
+
+$$4 = \frac23x+\frac13$$
+
+3. nach $x$ auflösen:
+
+$$P_x = \frac{11}2$$
+}%% end TNTeop
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Mathematikprüfung}
+Eine Mathematikprüfung wurde mit einer linearen Notenskala bewertet.
+Das erforderliche Punktemaximum ergibt die Note 6 während Null Punkte
+die Note eins ergeben.
+
+Kim hat mit 28 Punkten die Note 5 erzielt.
+
+a) Wie lautet die lineare Funktionsgleichung $f$, welche aus einer
+Punktzahl $x$ die Note $y$ errechnet?
+
+\TNT{4}{$y = \frac17 x + 1$}
+
+b) Was war das erforderliche Punktemaximum für die Note sechs?
+
+\TNTeop{ $y$-Koordinate einsetzen:
+$$6 = \frac17 x + 1$$
+$$\Longrightarrow x = 35$$
+Das erforderliche Punktemaximum war bei 35 Punkten.
+}
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Nullstelle und Ordinatenabschnitt}
 Die Funktion $f$ habe die Nullstelle $\frac83$ und den
