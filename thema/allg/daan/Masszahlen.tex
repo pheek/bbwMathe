@@ -82,8 +82,14 @@ Auftrag: Münzwurf. Eine Münze wird 20 Mal geworfen. Wie oft zeigt sie Kopf? Wi
 \item Spannweite\index{Spannweite} = Maximum - Minimum
 
 \end{itemize}
+\newpage
+
 
 \subsubsection{Standardabweichung}\index{Standardabweichung}
+
+\bbwCenterGraphic{8cm}{allg/daan/img/Binomialverteilung.jpg}
+
+
 Die Standardabweichung gibt ein Maß an, wie weit die einzelnen Werte
 vom Mittelwert $\mittelwert{x}$ abweichen\GESO{ (S. \cite{marthaler21alg}
   S. 396 Kap. 25.2)}\footnote{Dabei wird ein spezieller «Mittelwert»
@@ -102,6 +108,43 @@ $$\sigma = \sqrt{\frac{\sum\limits_{i=1}^n(x_i-\mittelwert{x})^2}{n}}$$
 Dabei wird lediglich $n$ statt $n-1$ im Nenner der Summe verwendet. Da
 die Standardabweichung aber sowieso kein robustes Streumaß ist, kann
 dieser Unterschied meist vernachlässigt werden. Die Standardabweichung ist hingegen ein gutes Maß, um normalverteilte Stichproben oder Erhebungen miteinander zu vergleichen. 
+
+\newpage
+\subsection*{Aufgaben}
+
+Lassen Sie Ihren Taschenrechner Mittelwert und Standardabweichung der folgenden
+Datenreihe berechnen:
+
+5.0, 9.0, 9.3, 2.8, 9.0, 8.2, 6.3 und 4.3:
+
+\TNT{2}{$\overline{x} = 6.7375$, $\sigma \approx 2.33449$ und
+  $S\approx 2.49567$}
+
+
+Und noch ein Beispiel, diesmal von Schulnoten, mit Frequenzen
+(Häufigkeit / Vielfachheiten). Auch hier soll Ihr Rechner Mittelwert und
+Standardabweichung rechnen.
+
+\begin{tabular}{ll}
+1.5 & kommt 1 mal vor\\
+2.5 & kommt 1 mal vor\\
+3   & kommt 3 mal vor\\
+3.5 & kommt 2 mal vor\\
+4   & kommt 8 mal vor\\
+4.5 & kommt 6 mal vor\\
+5.0 & kommt 3 mal vor\\
+5.5 & kommt 1 mal vor\\
+6.0 & kommt 1 mal vor
+\end{tabular}
+
+\TNT{2}{$\overline{x} \approx 4.05769$, $\sigma \approx 0.9336335$ und
+  $S\approx 0.952123$}
+
+\GESO{
+\youtubeLink{https://www.youtube.com/watch?v=bC8xCefDnrs}{Mathago:
+  Statistische Werte mit dem TI-30X MathPrint}
+}%% end GESO
+
 
 \newpage
 \subsubsection{Robustheit}\index{Robustheit}
