@@ -20,7 +20,7 @@
 %% Text nur bei deutscher Sprache ausgeben:
 \cs_new:Npn \isLoesungen #1 { \str_if_eq:eeT {\kLoesungen}{true} {#1} }
 %% Text nur bei englischer Sprache ausgeben:
-\cs_new:Npn \isAufgaben #1 { \str_if_eq:eeT {\kLoesungen}{false} {#1} }
+\cs_new:Npn \isAufgaben #1 { \str_if_eq:eeT {\kAufgaben}{true} {#1} }
 \ExplSyntaxOff
 
 %% see abvove
@@ -112,7 +112,9 @@
 \begin{minipage}{\textwidth}
 \vspace{1mm}%%
   \fragenMarkierung{}\,\,%%
-  \isLoesungen{{\color{blue}#2}}\isAufgaben{#1}
+  \isAufgaben{#1}
+
+  \isLoesungen{{\color{blue}#2}}
 %%########################################################  \isMMPapier{#3}
 \vspace{1mm}
 \hrule{}%%
@@ -151,3 +153,5 @@
 
 %% Zum Beispiel:
 \newcommand{\zB}{z.\,B.}
+
+

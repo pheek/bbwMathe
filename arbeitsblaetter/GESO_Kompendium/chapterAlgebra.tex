@@ -322,7 +322,9 @@ sollten besser lauten:
 \eng{Write down each summand and calculate the value of the expression}:
 
   $$\sum_{i=1}^6 i$$
-}{\kKommentar{Lösungs ausstehend}}
+}{
+  $$=1+2+3+4+5+6 = 21$$
+}
 
 %% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -335,7 +337,7 @@ sollten besser lauten:
 \begin{multicols}{2}
 \begin{enumerate}[label=\alph*)]
  \item $$\sum_{k=1}^{k}{(2^k+k)}$$
- \item $$\sum_{k=2}^{k}{(3k+2^k)}$$
+ \item $$\sum_{k=2}^{k}{(2k+3^k)}$$
  \item $$\sum_{i=1}^{4}{(x_i-2)}$$
  \item $$\sum_{i=1}^{3}{(2a^i+4)}$$
  \item $$\sum_{i=4}^{7}3i + 6$$
@@ -345,22 +347,30 @@ sollten besser lauten:
 
 \kVerweiseAltesKompendium{7}{8}
 \kPlatzFuerBerechnungen{8}
-\kKommentar{Aufgabe a) b) und d) werden ja besser mit vorab durch }\\
+\kKommentar{Aufgabe a) b) c) und d) werden ja besser mit vorab durch }\\
 \kKommentar{Ausklammern gelöst, daher ist die Aufgabenstellung fraglich.}\\
-\kKommentar{Letzte Aufgabe besser entfernen,}\\
+\kKommentar{Aufgabe e) besser entfernen,}\\
 \kKommentar{da zum Verständnis wohl auch das}\\
 \kKommentar{Produktzeichen eingeführt werden sollte.}
 }{%%
 
 \begin{enumerate}[label=\alph*)]
- \item $\sum_{k=1}^{k=4}{(2^k+k)} = (2^1+1) + (2^2+2) + (2^3+3) + (2^4+4) = 3 + 6 + 11 + 20 = 40$
- \item $\sum_{k=2}^{k=4}{(3k+2^k)} = (6+4) + (9+8) + (12+16) = 10+17+28=55$
+ \item $\sum_{k=1}^{4}{(2^k+k)} = (2^1+1) + (2^2+2) + (2^3+3) +
+   (2^4+4) = 3 + 6 + 11 + 20 = 40$\\
+   Wird i.d.R. so gelöst:\\
+   $\sum_{k=1}^{4}{(2^k+k)} =
+   \sum_{k=1}^{4}{(2^k)}+\sum_{k=1}^{4}{(k)} = (2+2^2+2^3+2^4) +
+   \frac{4\cdot{}5}{2} = 30+10 = 40$
+
+ \item $\sum_{k=2}^{4}{(2k+3^k)} = 2\cdot{}\sum_{k=2}^4{}(k) +
+   \sum_{k=2}^4(3^k) = \\
+   2\cdot{}(2+3+4) + (3^2+3^3+3^4) = 18 + (9+27+81) = 135$
 
  \item $\sum_{i=1}^{4}{(x_i-2)} = x_1+x_2+x_3+x_4 -8$
  \item $\sum_{i=1}^{3}{(2a^i+4)}  = 2(a + a^2 + a^3) + 12$
  \item $\sum_{i=4}^{i=7}(3i) + 6 = ((12) + (15) + (18) +(21) )+6=72$
 
- \item $\sum_{s=-2}^{2}s\cdot{}2^s = 9$
+ \item $\sum_{s=-2}^{2}s\cdot{}2^s = (-2\cdot{}2^{-2}) + (-2^{-1}) + (0) + (2^1) + (2\cdot{}2^2)=9$
 
 \end{enumerate}
 }%% end Aufgbae
@@ -378,29 +388,6 @@ sollten besser lauten:
 
 
 
-
-\kKommentar{Noch einpflegen als Diskussionsgrundlage}
-
-\kTrainingAufgabe{\eng{Multiply out and simplify as far as possible:}
-\deu{Multiplizieren Sie aus und vereinfachen Sie so weit wie möglich:}
-\begin{enumerate}[label=\alph*]
- \item $\left(x-3\right)\left(x+1\right) - \left(x+2\right)^2$
- \item $\left(x^2-3xy^4\right)^2$
- \item $ \left(x-2\right) \cdot \left(x+1\right) \cdot \left(x-1\right)$
- \item $ 2x^2\cdot \left(2x+5\right)^2$
-\end{enumerate}
-
-\kKommentar{neue Aufgabe}
-}{%% Lösungen
-\begin{enumerate}[label=\alph*)]
-\item $-6x-7$
-\item $x^4-6x^3y^4+9x^2y^8$
-\item $x^3-2x^2-x+2$
-\item $8x^4+40x^3+50x^2$
-\end{enumerate}
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -431,6 +418,27 @@ sollten besser lauten:
 }%%
 
 
+\kNiveauAufgabe{\eng{Multiply out and simplify as far as possible:}
+\deu{Multiplizieren Sie aus und vereinfachen Sie so weit wie möglich:}
+\begin{enumerate}[label=\alph*]
+ \item $\left(x-3\right)\left(x+1\right) - \left(x+2\right)^2$
+ \item $\left(x^2-3xy^4\right)^2$
+ \item $ \left(x-2\right) \cdot \left(x+1\right) \cdot \left(x-1\right)$
+ \item $ 2x^2\cdot \left(2x+5\right)^2$
+\end{enumerate}
+
+\kKommentar{neue Aufgabe}
+}{%% Lösungen
+\begin{enumerate}[label=\alph*)]
+\item $-6x-7$
+\item $x^4-6x^3y^4+9x^2y^8$
+\item $x^3-2x^2-x+2$
+\item $8x^4+40x^3+50x^2$
+\end{enumerate}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%% SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -444,7 +452,7 @@ sollten besser lauten:
 
 
 
-\kKommentar{Einfache Einstiegsaufgbaen fehlen:}
+\kKommentar{Einfache Einstiegsaufgbaen fehlten:}
 
 \kTrainingAufgabe{
   
@@ -569,8 +577,8 @@ sollten besser lauten:
 \deu{Schreiben Sie das folgende Produkt bzw. die folgende Summe als vereinfachten Bruchterm.}
 \eng{Write the following product or sum as a simplified rational expression.}
 
-\deu{Was ist jeweils die Definitionsmenge $\mathbb{D}$?}
-\eng{What is the domain $\mathbb{D}$ in each case?}
+\deu{Was ist jeweils die Definitionsmenge $\definitionsmenge$?}
+\eng{What is the domain $\definitionsmenge$ in each case?}
 
 \begin{multicols}{2}
 \begin{enumerate}[label=\alph*)]
@@ -583,8 +591,8 @@ sollten besser lauten:
 }{% Lösungen
 \begin{multicols}{2}
 \begin{enumerate}[label=\alph*)]  
-  \item $\frac{2x^2-5x-12}{x^2+x-2}$  \deu{mit}\eng{width} $\mathbb{D} = \mathbb{R} \backslash \{-2; 1\}$
-  \item $\frac{3x^2 -x -11}{x^2+X-2}$ \deu{mit}\eng{width} $\mathbb{D} = \mathbb{R} \backslash \{-2; 1\}$
+  \item $\frac{2x^2-5x-12}{x^2+x-2}$  \deu{mit}\eng{width} $\definitionsmenge = \mathbb{R} \backslash \{-2; 1\}$
+  \item $\frac{3x^2 -x -11}{x^2+X-2}$ \deu{mit}\eng{width} $\definitionsmenge = \mathbb{R} \backslash \{-2; 1\}$
   \end{enumerate}
 \end{multicols}
 }%% end aufgabe
@@ -617,9 +625,9 @@ sollten besser lauten:
 
 \kNiveauAufgabe{%%
   \eng{Determine the domain and simplify as much as
-    possible.}  \deu{Bestimmen Sie die Definitionsmenge und kürzen Sie
-    soweit wie möglich.}
-  $G = \mathbb{R}$.
+    possible. Basic set:}  \deu{Bestimmen Sie die Definitionsmenge und kürzen Sie
+    soweit wie möglich. Grundmenge:}
+  $\grundmenge = \mathbb{R}$.
 \begin{multicols}{2}
 \begin{enumerate}[label=\alph*)]
 \item $\frac{x^2-16}{x^2+x-20}$
@@ -643,10 +651,10 @@ sollten besser lauten:
 
 \kNiveauAufgabe{%%
   \eng{Determine the domain and simplify as much as
-    possible.}
+    possible. Basic set:}
   \deu{Bestimmen Sie die Definitionsmenge und kürzen Sie
-    soweit wie möglich.}
-  $G = \mathbb{R}$.
+    soweit wie möglich. Grundmenge:}
+  $\grundmenge = \mathbb{R}$.
 \begin{multicols}{2}
 \begin{enumerate}[label=\alph*)]
 \item $\frac{st-3t^2}{s^2-st} + \frac{3s^2-3st-st+t^2}{s^2-2st+t^2}$
@@ -829,6 +837,39 @@ $$\frac{y^2}{(y-x)^2}$$
 
 %% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+
+
+
+\kTrainingAufgabe{%%
+\begin{multicols}{2}
+\begin{enumerate}[label=\alph*)]
+\item $\left(\frac{1}{a}\right)^{-\frac{1}{4}}$
+\item $\sqrt{x}\cdot \sqrt[3]{x^4} \cdot \sqrt[6]{x^3}$
+\item $3a\cdot \sqrt[3]{9a^2}$
+\item $\sqrt[4]{b\cdot \sqrt[3]{b^2\cdot \sqrt{b}}}$
+\item $a^{\frac13} \cdot{} \sqrt{ab} \cdot{} \sqrt[4]{b}$
+\end{enumerate}
+\end{multicols}
+\kVerweiseAltesKompendium{9}{19}
+\kPlatzFuerBerechnungen{8}
+}{%%
+\begin{multicols}{2}
+\begin{enumerate}[label=\alph*)]
+\item $\left(\frac{1}{a}\right)^{-\frac{1}{4}} = \sqrt[4]{a}$
+\item $\sqrt{x}\cdot \sqrt[3]{x^4} \cdot \sqrt[6]{x^3} = \sqrt[3]{x^7}$
+\item $3a\cdot \sqrt[3]{9a^2} = \sqrt[3]{(3a)^5}$
+\item $\sqrt[4]{b\cdot \sqrt[3]{b^2\cdot \sqrt{b}}}  = \sqrt[24]{b^{11}}$
+\item $a^{\frac13} \cdot{} \sqrt{ab} \cdot{} \sqrt[4]{b} = \sqrt[12]{a^{10}b^9}$
+\end{enumerate}
+\end{multicols}
+}%%
+
+
+
+
+%% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \kNiveauAufgabe{
   
   \kKommentar{gemischte Wurzelausdrücke fehlen}
@@ -867,39 +908,6 @@ $$\frac{y^2}{(y-x)^2}$$
    \sqrt[n]{\frac{x^{3n}}{y^{2n}}} = \sqrt[3]{\frac{y^9\cdot{}y^2}{x^{15}}}$$
  \end{enumerate}
 }%% end Aufgabe
-
-
-
-%% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-
-
-\kTrainingAufgabe{%%
-\begin{multicols}{2}
-\begin{enumerate}[label=\alph*)]
-\item $\left(\frac{1}{a}\right)^{-\frac{1}{4}}$
-\item $\sqrt{x}\cdot \sqrt[3]{x^4} \cdot \sqrt[6]{x^3}$
-\item $3a\cdot \sqrt[3]{9a^2}$
-\item $\sqrt[4]{b\cdot \sqrt[3]{b^2\cdot \sqrt{b}}}$
-\item $a^{\frac13} \cdot{} \sqrt{ab} \cdot{} \sqrt[4]{b}$
-\end{enumerate}
-\end{multicols}
-\kVerweiseAltesKompendium{9}{19}
-\kPlatzFuerBerechnungen{8}
-}{%%
-\begin{multicols}{2}
-\begin{enumerate}[label=\alph*)]
-\item $\left(\frac{1}{a}\right)^{-\frac{1}{4}} = \sqrt[4]{a}$
-\item $\sqrt{x}\cdot \sqrt[3]{x^4} \cdot \sqrt[6]{x^3} = \sqrt[3]{x^7}$
-\item $3a\cdot \sqrt[3]{9a^2} = \sqrt[3]{(3a)^5}$
-\item $\sqrt[4]{b\cdot \sqrt[3]{b^2\cdot \sqrt{b}}}  = \sqrt[24]{b^{11}}$
-\item $a^{\frac13} \cdot{} \sqrt{ab} \cdot{} \sqrt[4]{b} = \sqrt[12]{a^{10}b^9}$
-\end{enumerate}
-\end{multicols}
-}%%
-
 
 
 
@@ -947,29 +955,82 @@ $$\frac{y^2}{(y-x)^2}$$
 
 %% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\kKommentar{hier fehlen elementare Aufgaben???}
+\kKommentar{Für Logarithmen fehlen elementare Aufgaben???}
 
-\kTrainingAufgabe{
   Es gilt:
 
 $$a^x=b \Longleftrightarrow  \log_a(b) = x$$
+
+\kTrainingAufgabe{
   
   Schreiben Sie in der Potenzschreibweise:
 
-  a) $$\log_5(122+x) = 3 $$
+  \begin{enumerate}[label=\alph*)]
+   \item $$\log_5(122+x) = 3 $$
+   \item $$\log_x(8) = 3 $$
+  \end{enumerate}
 
+ \kKommentar{neue Aufgabe (nötig?)}
+}{%% Lösung
+
+  \begin{enumerate}[label=\alph*)]
+  \item $$\log_5(122+x) =
+    3 $$ $$\Longrightarrow$$ $$\doubleunderline{5^3 = 122+x}  \Longrightarrow 125=122+x \Longrightarrow x=3$$
+  \item $$\log_x(8) = 3 $$ $$\Longrightarrow$$  $$\doubleunderline{x^3
+    = 8} \Longrightarrow x=2$$
+  \end{enumerate}
+
+}
+
+%% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\kTrainingAufgabe{
+  
+  Schreiben Sie als Bruch unter der Verwendung des Logarithmus zur
+  Basis 10 ($= \lg()$) und vereinfachen Sie so weit wie möglich:
+
+  \begin{enumerate}[label=\alph*)]
+   \item $$\log_{33}(122)$$
+   \item $$\log_{0.5}(0.01)$$
+   \item $$\log_4(1000)$$
+  \end{enumerate}
+
+ \kKommentar{neue Aufgabe (nötig?)}
+}{%% Lösung
+
+
+    \begin{enumerate}[label=\alph*)]
+   \item $$\log_{33}(122)$$ $$\Longrightarrow  \frac{\lg(122)}{\lg(33)}$$
+   \item $$\log_{0.5}(0.01)$$ $$\Longrightarrow
+     \frac{\lg(0.01)}{\lg(0.5)} = \frac{-2}{\lg(0.5)}$$
+   \item $$\log_{0.1}(1000)$$ $$\Longrightarrow  \frac{\lg(1000)}{\lg(0.1)} = \frac{3}{-1} = -3$$ 
+  \end{enumerate}
+}
+
+%% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\kTrainingAufgabe{
   Schreiben Sie in der Logarithmischen Schreibweise:
 
 \kKommentar{Zwar nicht RLP, aber gut fürs Verständnis.}
   
-  b)
-  $$10^{x+2.5} = 1000$$
+  \begin{enumerate}[label=\alph*)]
+  \item $$10^{x+2.5} = 1000$$
+  \item $$10^{2x-3} = 0.01$$
+  \end{enumerate}
   
   \kKommentar{neue Aufgabe (nötig?)}
 }{%% Lösung
-  a) $$5^3 = 122+x$$
 
-  b) $$\lg(1000) = x+2.5$$
+  \begin{enumerate}[label=\alph*)]
+  \item $$\doubleunderline{10^{x+2.5} = 1000} \Longrightarrow  \lg(1000) = x+2.5  \Longrightarrow 3 = x+2.5 \Longrightarrow x=0.5$$
+  \item $$10^{2x-3} = 0.01 \Longrightarrow \log_{10}(0.01) = 2x-3
+    \Longrightarrow -2 = 2x-3 \Longrightarrow x=0.5$$
+  \end{enumerate}
+
 }
 
 
