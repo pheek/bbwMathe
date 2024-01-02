@@ -70,42 +70,27 @@ Ab bzw. bis wo lohnt sich das Unternehmen «A» bzw. «B»?
 
 \subsection{Taschenrechner}\index{Taschenrechner!Funktionen}
 
-\GESO{
-  Mit der ``TABLE''-Funktion auf Ihrem Taschenrechner lassen sich Wertetabellen ganz einfach erstellen.
+  Mit der «TABLE»-Funktion\TALS{\footnote{Im «Graphs» Modus mit
+      CTRL-T (oder über Menu 7: Tabelle mit geteiltem Bildschirm)}} auf Ihrem Taschenrechner lassen sich Wertetabellen ganz einfach erstellen.
   Füllen Sie eine Wertetabelle zur Funktion $f: y=\frac{3}{4}x  - 1.5$ aus und zeichnen Sie die Gerade in ein rechtwinkliges Koordinatensystem:
 
   \begin{tabular}{l|c|c|c|c|c|c|c}
-    $x$ & -2 & -1 & 0 & 1 & 2 & 3 \\
-    $y$ & \LoesungsRaumKurz{-3}   & \LoesungsRaumKurz{-2.25}   & \LoesungsRaumKurz{-1.5}  & \LoesungsRaumKurz{-0.75}  & \LoesungsRaumKurz{0}  &  \LoesungsRaumKurz{0.75} \\
+    $x$ & -3 & -1 & 0 & 1 & 2 & 4 \\
+    \vphantom{b}&&&&&&\\
+    $y$ & \LoesungsRaumKurz{-3.75}   & \LoesungsRaumKurz{-2.25}   & \LoesungsRaumKurz{-1.5}  & \LoesungsRaumKurz{-0.75}  & \LoesungsRaumKurz{0}  &  \LoesungsRaumKurz{1.5} \\
   \end{tabular}
 
-
+  
   \bbwGraph{-4}{4}{-4}{2}{
-    \TRAINER{\bbwFunc{0.75*\x - 1.5}{-2.5:3.5}}
-  }%% END bbw Graph
-  %%\noTRAINER{\bbwGraph{-4}{4}{-4}{2}{}}
-  %%\TRAINER{\bbwFunction{-4}{4}{-4}{2}{0.75*\x - 1.5}{-2.5:3.5}}  
-}%% END GESO
-
-\TALS{
-  Erstellen Sie einen Graphen und definieren Sie die Funktion $f1$ wie
-  folgt:
-
-  $$f1(x) : = \frac{3}{4}x - 1.5$$
-
-  Mit CTRL-T (Tabelle mit geteiltem
-  Bildschirm) erscheint sofort auch die Wertetabelle.
-
-  \begin{tabular}{l|c|c|c|c|c|c|c}
-    $x$ & -2 & -1 & 0 & 1 & 2 & 3 \\
-    $y$ & \LoesungsRaumKurz{-3}   & \LoesungsRaumKurz{-2.25}   & \LoesungsRaumKurz{-1.5}  & \LoesungsRaumKurz{-0.75}  & \LoesungsRaumKurz{0}  &  \LoesungsRaumKurz{0.75} \\
-  \end{tabular}
-
-  \bbwGraph{-4}{4}{-4}{2}{
-    \TRAINER{\bbwFunc{0.75*\x - 1.5}{-2.5:3.5}}
+    \bbwDot{-3,-3.75}{black}{north}{}
+    \TRAINER{\bbwFunc{0.75*\x - 1.5}{-2.5:3.5}
+       \bbwDot{-1,-2.25}{black}{north}{}
+       \bbwDot{0,-1.5}{black}{north}{}
+       \bbwDot{2,0}{black}{north}{}
+       \bbwDot{4,1.5}{black}{north}{}
+    }%% end Trainer
   }%% END bbw Graph
 
-}%% END TALS
 
 \newpage%%
 
@@ -113,7 +98,7 @@ Ab bzw. bis wo lohnt sich das Unternehmen «A» bzw. «B»?
 
 \begin{definition}{Lineare Funktion}{}
   Eine Funktion $f: x\mapsto f(x)$ von $\mathbb{R}$ nach $\mathbb{R}$ heißt
-\textbf{linear}\index{lineare Funktion}, wenn sie in der Grundform
+\textbf{linear}\footnote{Die linearen Funktionen werden eingeteilt in die \textbf{Proportionalitäten} für $b=0$ und in die \textbf{affinen Abbildungen} für $b\ne{}0$.}\index{lineare Funktion}, wenn sie in der Grundform
 $$f(x) = y=a\cdot{}x + b$$
 mit $a$ und $b$ in $\mathbb{R}$ dargestellt werden kann.
 \end{definition}
@@ -164,8 +149,7 @@ Ist $a=0$, so sprechen wir auch von der konstanten Funktion.
 \subsection{Charakteristiken}
 %%
 %%\subsection{Charakteristische Punkte}\index{Punkte!charakteristische}\index{charakteristische Punkte}
-Jede lineare\footnote{
-  Die linearen Funktionen werden eingeteilt in die \textbf{Proportionalitäten} für $b=0$ und in die \textbf{affinen Abbildungen} für $b\ne{}0$.} Funktion schneidet irgendwo die beiden\footnote{Ausnahme: Konstante. Eine Konstante $y=b$ schneidet nur die $y$-Achse. Der Spezialfall $y=0$ \textbf{ist} die $x$-Achse.} Achsen. Zeichnen Sie die Funktion $f: y=\frac{1}{2}x  +3$ und notieren Sie die Punkte, wo die x- bzw. die y-Achse von unserer Geraden geschnitten wird:
+Eine typische lineare Funktion schneidet irgendwo die beiden Achsen\footnote{Ausnahme: Konstante. Eine Konstante $y=b$ schneidet nur die $y$-Achse. Der Spezialfall $y=0$ \textbf{ist} die $x$-Achse.}. Zeichnen Sie die Funktion $f: y=\frac{1}{2}x  +3$ und notieren Sie die Punkte, wo die $x$- bzw. die $y$-Achse von unserer Geraden geschnitten wird:
 
 \vspace{1cm}
 
@@ -173,8 +157,8 @@ Wertetabelle:
 
 
 \begin{tabular}{c|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}}
-   x  & 0 & 1 & 2 & 4 & -4 & \TRAINER{-6}\\\hline
-   y  & \TRAINER{3} & \TRAINER{3.5} & \TRAINER{4}& \TRAINER{5}&\TRAINER{1}&0\\%%
+   $x$  & 0 & 1 & 2 & 4 & -4 & \TRAINER{-6}\\\hline
+   $y$  & \TRAINER{3} & \TRAINER{3.5} & \TRAINER{4}& \TRAINER{5}&\TRAINER{1}&0\\%%
 \end{tabular}
 
 
@@ -200,7 +184,7 @@ Wertetabelle:
     \textbf{Ordinate}\index{Ordinate} und die $x$-Koordinate wird auch
     \textbf{Abszisse}\index{Abszisse}  genannt.}) genannt.
   
-Dieser gibt an, in welcher «Höhe» die Gerade die y-Achse schneidet.
+Dieser gibt an, in welcher «Höhe» die Gerade die $y$-Achse schneidet.
 \end{definition}
 
 Wir erhalten den $y$-Achsenabschnitt, indem wir das Funktionsargument $x$
@@ -314,7 +298,7 @@ $$a=\frac{{\color{red}V}}{{\color{blue}H}}$$
 
 \subsubsection{Nullstelle}\index{Nullstelle}
 Eine steigende oder fallende lineare Funktion schneidet die $x$-Achse
-in einem Punkt. Dieser Punkt wird \textbf{Nullstelle} genannt.
+in einem Punkt; dessen $x$-Koordinate wird \textbf{Nullstelle} genannt.
 
 In der anfänglich untersuchten Funktion $f(x) = \frac12x+3$ schneidet
 der Graph die $x$-Achse bei $-6$. 
@@ -334,7 +318,9 @@ a) Lineare \textbf{Gleichung} $$ax+b=0$$
 Gesucht \textbf{Lösung} $x$:
 
 \TRAINER{$$ax+b=0 | -b$$}\noTRAINER{\mmPapier{1.2}}
+
 \vspace{1mm}
+
 \TRAINER{$$ax=-b | :a$$}\noTRAINER{\mmPapier{1.2}}
 
 $$\lx = \TRAINER{\left\{\frac{-b}{a}\right\}}  $$
@@ -349,13 +335,12 @@ die $x$-Achse in der Nullstelle $x_0$ der Geraden.
 \begin{gesetz}{Nullstelle}{}
   Die Nullstelle $x_0$ einer linearen Funktion ist die Lösung der
   entsprechenden linearen Gleichung in der Grundform.  
-  %%$$x_0 = \frac{-b}{a}$$
+  $$x_0 = \frac{-b}{a}$$
 \end{gesetz}
 
-Somit ist der
-Schnittpunkt (für $a\ne 0$) wie folgt gegeben:
-
-$$N = (x_0|y_0) = (x_0|0) =\left( \frac{-b}{a}\,\, \bigg|\,\, 0 \right) $$
+%Somit ist der
+%Schnittpunkt (für $a\ne 0$) wie folgt gegeben:
+%$$N = (x_0|y_0) = (x_0|0) =\left( \frac{-b}{a}\,\, \bigg|\,\, 0 \right) $$
 \newpage
 
 \subsection*{Aufgaben}
@@ -399,28 +384,46 @@ $$N = (x_0|y_0) = (x_0|0) =\left( \frac{-b}{a}\,\, \bigg|\,\, 0 \right) $$
 }%% END GESO
 
 \subsection{Lineare Gleichungen visualisieren\GESO{ (optional)}}\index{Gleichungen!visualisieren}\index{Visualisierung von Gleichungen}
-Wir gehen von der linearen\footnote{Eine Gleichung, bzw. ein Term
-  heißt «linear», wenn die Variable ($x$) nur in der ersten Potenz vorkommt.} Gleichung $$4x+3x -18 + 16x = 5$$ aus.
+Wir gehen von der linearen Gleichung $$(I)\hspace{5cm}5x-3.7 = 3x-0.7$$ aus.
 
 Bringen wir alle Summanden nach links, so erhalten wir folgende
 Gleichung:
 
-\TNT{2}{$$4x + 3x  -18 + 16x  - 5= 0$$}%% END TNT
+\TNT{2}{$$5x-3x-3.7+0.7= 0$$
+$$2x-3 = 0\hspace{5cm} (II)$$}%% END TNT
 
 
 Schreiben wir dies als Funktion in $x$, so können wir folgende
-Funktion definieren:
+Zuorndung definieren:
 
-$$f(x): x \mapsto y = \TRAINER{4x+3x-18+16x - 5}$$
+$$f(x): x \mapsto y = \TRAINER{2x-3}$$
 
 Stellen wir diese Funktion nun graphisch dar, so ergibt sich folgendes
 Bild:
 
-\TRAINER{\raisebox{-1cm}{\includegraphics[width=7cm]{allg/funktionen/img/FunktionsplotAusGleichung.png}}}
-\noTRAINER{\raisebox{-1cm}{\includegraphics[width=7cm]{allg/funktionen/img/KoordSystemFaktor20.png}}}
+%\TRAINER{\raisebox{-1cm}{\includegraphics[width=7cm]{allg/funktionen/img/FunktionsplotAusGleichung.png}}}
+%\noTRAINER{\raisebox{-1cm}{\includegraphics[width=7cm]{allg/funktionen/img/KoordSystemFaktor20.png}}}
 
 
-Die Lösung obiger Gleichung kann nun auf der $x$-Achse ungefähr bei $x=1.0$ abgelesen werden.
+
+
+  \bbwGraph{-1}{2}{-4}{2}{
+%%    \bbwDot{-3,-3.75}{black}{north}{}
+    \TRAINER{
+       \bbwFunc{2*\x - 3}{-0.5: 2}
+%       \bbwDot{-1,-2.25}{black}{north}{}
+%       \bbwDot{0,-1.5}{black}{north}{}
+%       \bbwDot{2,0}{black}{north}{}
+       \bbwDot{1.5,0}{black}{north}{}
+    }%% end Trainer
+  }%% END bbw Graph
+
+
+Nullstelle $x_0 = 1.5$. Das heißt, $x_0 = 1.5$ löst Gleichung $(II)$
+und somit auch Gleichung $(I)$ (die beiden Gleichungen sind äquivalent).
+
+
+%%Die Lösung obiger Gleichung kann nun auf der $x$-Achse ungefähr bei $x=1.0$ abgelesen werden.
 \newpage
 
 \subsection*{Aufgaben}
