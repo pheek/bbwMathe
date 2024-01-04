@@ -133,9 +133,31 @@ In how many different ways can the books be grouped?
  $$m = (1! \cdot{} 3! \cdot{} 2!  \cdot{} 4!) \cdot{} (4!) = 6912$$
 }
 
-%% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\kKommentar{Insgesamt von allen Typen je zwei Beispiele}
 
+%% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\kTrainingAufgabe{
+Die sieben Kollega der Dorfschule (drei Schülerinnen und vier Schüler)
+gehen zusammen ins Dorfkino. Die vorderste Reihe hat genau sieben
+Plätze.
+
+a) Auf wie viele Arten können sich die sieben Kollega auf die sieben
+Plätze anordnen?
+
+b) Wie viele Anordnungen sind möglich, wenn alle Mädchen nebeneinander
+und auch alle Jungs nebeneinander sitzen sollten?
+
+c) Wie viele Varianten gibt es, wenn einzig die Bedingung ist, dass
+die drei Mädchen nebeneinander sitzen sollten?
+\kKommentar{neue Aufgabe}
+\kPlatzFuerBerechnungen{8}
+}{%% Lösung
+a) $7! = 5040$
+
+b) $4! \cdot{} 3! + 3! \cdot{} 4! = 288$
+
+c) $3! \cdot{} 4! + 4\cdot{}3!\cdot{}3! + 2!\cdot{}3!\cdot{}2! +
+3!\cdot{}3!\cdot{}4 + 4!\cdot{} 3! = 600$
+}%% end Aufgabe
 
 %% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \kTrainingAufgabe{
@@ -149,6 +171,7 @@ Vorspeise, eine Hauptspeise und eine Nachspeise gewählt werden müssen?
 
 b) Wie viele Arten sind möglich, wenn bis zu zwei Gänge ausgelassen
 werden dürfen.}
+\kKommentar{neue Aufgabe}
 }{%% Lösung
 a) $$2\cdot{} 4\cdot{} 3 = 24$$
 
@@ -281,9 +304,9 @@ In how many ways can Lou fill the crate? The order of the bottles in the crate d
 \item Fakultät
 \item Produktregel (Vorspeise, Hauptspeise Dessert - Aufgaben)
 \item Mit Wiederholung, Mit Reihenfolge $n^k$
-\item Ohne Wiederholung, Mit Reihenfolge nPr
-\item Mit Wiederholung, Ohne Reihenfolge $\approx$ nCr
-\item Ohne Wiederholung, Ohne Reihenfolge nCr
+\item Ohne Wiederholung, Mit Reihenfolge $n$ nPr $k$
+\item Mit Wiederholung, Ohne Reihenfolge ($n+k-1$) nCr $k$
+\item Ohne Wiederholung, Ohne Reihenfolge $n$ nCr $k$  
 
 \end{itemize}
 
