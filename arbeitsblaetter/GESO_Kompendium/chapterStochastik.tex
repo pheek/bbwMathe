@@ -189,7 +189,7 @@ In how many different ways can the books be grouped?
 
 %% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \kTrainingAufgabe{
-ie sieben Kollega der Dorfschule (drei Schülerinnen und vier Schüler)
+Die sieben Kollega der Dorfschule (drei Schülerinnen und vier Schüler)
 gehen zusammen ins Dorfkino. Die vorderste Reihe hat genau sieben
 Plätze.
 
@@ -358,13 +358,8 @@ In how many ways can Lou fill the crate? The order of the bottles in the crate d
 
 \subsection{\deu{Wahrscheinlichkeit}\eng{Probability calculation}}
 
-\kKommentar{Noch 2-3 Aufgaben zu Baumdiagramme}
-Auch noch 2-3 weitere Aufgaben, wo der Baum abbricht: Wer die Flasche
-als erster zerdeppert hat gewonnen etc. (siehe unten «Chilbi»
 
-\vspace{20mm}
 %% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 
 \kNiveauAufgabe{
@@ -644,6 +639,41 @@ sechs verschiedene Augenzahlen auf?}
 }{%% Lösungen
 
 $\frac5{324} \approx 1.54\%$
+}
+
+%% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\kNiveauAufgabe{
+\eng{TRANSLATE:}
+
+Bei einem abbrechenden Würfelspiel gewinnt, wer als erster gleich viel
+oder weniger Punkte wirft, wie die aktuelle Zugnummer angibt.
+
+Wirft also Spieler A beim ersten Wurf eine 1, so endet das Spiel und
+Spieler A gewinnt. Falls Spieler A jedoch im ersten Zug nicht gewinnt,
+so gewinnt Spieler B, wenn er im 2. Wurf eine 1 oder eine 2
+wirft. Haben beide nicht gewonnen, so geht die Reihe wieder an Spieler
+A und er gewinnt nun (also im 3. Zug), wenn er 1, 2 oder 3 Augen
+wirft. Das geht so lange, bis zum 6. Zug; diesen gewinnt man so oder
+so, ob man nun noch wirft oder nicht, es erscheint ja eine Augenzahl
+von Eins bis Sechs.
+
+Wer hat die bessere Gewinnchance. Spieler A (der beginnt), oder
+Spieler B, der den 2., 4. und 6. Zug machen darf?
+
+Tipp: Wahrscheinlichkeitsbaum.
+
+
+}{%%Lösung
+Wahrscheinlichkeit Spieler A: $\frac16+\frac{5\cdot{}4\cdot{}3}{6^3} +
+\frac{5!\cdot{}5}{6^5} = \frac{169}{324}$
+
+Wahrscheinlichkeit Spieler B: $\frac{5\cdot{}2}{6^2}+\frac{5\cdot{}4\cdot{}3\cdot{}4}{6^4} +
+\frac{5!}{6^5} = \frac{155}{324}$
+
+Spieler A hat eine größere Wahrscheinlichkeit, das Spiel zu gewinnen.
+
 }
 
 %% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
