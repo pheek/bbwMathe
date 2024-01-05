@@ -112,8 +112,61 @@ b) $A=\{ddd, ddn, dnd, dnn\}, B = \{dnn\}, C = \{ddd\}, D = \{ddn, dnd, ndd\},\\
 E = \{dnn, ndn, nnd, nnn\}$
 }
 
+%% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\kNiveauAufgabe{
+\deu{Wird beim Würfeln mit 2 gewöhnlichen Spielwürfeln Augensumme 7 (Ereignis A) oder Augensumme 8 (Ereignis B) häufiger auftreten?}
+\eng{When rolling 2 ordinary dice, will the sum of 7 (event A) or the sum of 8 (event B) occur more frequently?}
+\kVerweiseAltesKompendium{44}{14}
+\kPlatzFuerBerechnungen{8}
+}{%% Lösungen
+Augensumme 7 wird häufiger auftreten.
+
+Es gibt 6 Varianten, die Augensumme 7 zu werfen: $1+6; 2+5; 3+4; 4+3;
+5+2; 6+1$
+
+Es gibt nur 5 Varianten, die Augensumme 8 zu werfen; $2+6; 3+5; 4+4;
+5+3; 6+2$
+
+}
+
+\newpage
 
 \subsection{\deu{Kombinatorik}\eng{Combinatorics}}
+
+\kNiveauAufgabe{
+In einer Urne sind fünf Bälle. Ein roter (r), ein blauer (b), ein
+grüner (g), ein schwarzer (s) und ein weißer (w).
+
+Sie nehmen vier der fünf Kugeln heraus. Auf wie viele Arten ist dies
+möglich, wenn
+
+a) die Kugeln nach jedem Ziehen wieder in die Urne zurückgelegt werden und die
+Reihenfolge der gezogenen Kugeln wesentlich ist?
+
+b) die Kugeln nach jedem Ziehen wieder in die Urne zurückgelegt werden und die
+Reihenfolge der gezogenen Kugeln \textbf{un}wesentlich ist?
+ 
+c) die Kugeln nach dem Ziehen \textbf{nicht} wieder in die Urne zurückgelegt werden und die
+Reihenfolge der gezogenen Kugeln wesentlich ist?
+
+d) die Kugeln nach dem Ziehen \textbf{nicht} wieder in die Urne zurückgelegt werden und die
+Reihenfolge der gezogenen Kugeln \textbf{un}wesentlich ist?
+
+\kKommentar{Neue Aufgabe mit allen vier Fällen.}
+\kPlatzFuerBerechnungen{4}
+}{%% Lösungen
+a) $5^4 = 625$
+
+b) ${5+4-1 \choose 4} = 70$
+
+c) $\frac{5!}{(5-4)!} = 120$
+
+d) $\frac{5!}{4!} = 5$
+
+}
+
 
 %% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -136,7 +189,7 @@ In how many different ways can the books be grouped?
 
 %% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \kTrainingAufgabe{
-Die sieben Kollega der Dorfschule (drei Schülerinnen und vier Schüler)
+ie sieben Kollega der Dorfschule (drei Schülerinnen und vier Schüler)
 gehen zusammen ins Dorfkino. Die vorderste Reihe hat genau sieben
 Plätze.
 
@@ -296,19 +349,7 @@ In how many ways can Lou fill the crate? The order of the bottles in the crate d
 \kPlatzFuerBerechnungen{8}
 }{%%\Lsung
 \eng{There are 1820 variants.}\deu{Es gibt 1820 Varianten.}}
-\newpage
 
-\kKommentar{Aus jeder Kategorie mind 2 Beispiele}
-
-\begin{itemize}
-\item Fakultät
-\item Produktregel (Vorspeise, Hauptspeise Dessert - Aufgaben)
-\item Mit Wiederholung, Mit Reihenfolge $n^k$
-\item Ohne Wiederholung, Mit Reihenfolge $n$ nPr $k$
-\item Mit Wiederholung, Ohne Reihenfolge ($n+k-1$) nCr $k$
-\item Ohne Wiederholung, Ohne Reihenfolge $n$ nCr $k$  
-
-\end{itemize}
 
 \newpage
 
@@ -322,17 +363,8 @@ Auch noch 2-3 weitere Aufgaben, wo der Baum abbricht: Wer die Flasche
 als erster zerdeppert hat gewonnen etc. (siehe unten «Chilbi»
 
 \vspace{20mm}
-
 %% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\kNiveauAufgabe{
-\deu{Wird beim Würfeln mit 2 gewöhnlichen Spielwürfeln Augensumme 7 (Ereignis A) oder Augensumme 8 (Ereignis B) häufiger auftreten?}
-\eng{When rolling 2 ordinary dice, will the sum of 7 (event A) or the sum of 8 (event B) occur more frequently?}
-\kVerweiseAltesKompendium{44}{14}
-\kPlatzFuerBerechnungen{8}
-}{%% Lösungen
-$$ {n\choose 2} = 406 \Longrightarrow x=29 $$
-}
 
 
 \kNiveauAufgabe{
