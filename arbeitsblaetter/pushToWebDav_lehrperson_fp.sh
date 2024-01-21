@@ -41,6 +41,9 @@ echo "  copying Boxplot (ALLG)"
 cp -f ./datenanalyse/boxplot/boxplot_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/datenanalyse/Boxplot/boxplot.pdf
 cp -f ./datenanalyse/boxplot/boxplot_TRAINER_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/datenanalyse/Boxplot/boxplot_Loesungen.pdf
 
+echo "  copying DiagrammeLesen (ALLG)"
+cp -f ./datenanalyse/DiagrammeLesen/*.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/datenanalyse/diagrammeLesen/
+
 echo "  Boxplot for TI 30"
 cp -f ./datenanalyse/boxplotTI30/boxplotTI30_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/daan/boxplot/boxplotTI30.pdf
 
