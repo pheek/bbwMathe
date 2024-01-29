@@ -7,16 +7,21 @@
 \TadBMTA{271}{15.6}
 
 \subsection{Referenzaufgabe}
-Gegeben ist die Gerade $g$ mit $y=-2x+3$. Unter dem Graphen von $g$
+Gegeben ist die Gerade $g$ mit $y=-0.5x+3.5$. Unter dem Graphen von $g$
 wird im ersten Quadranten ein rechtwinkliges Dreieck einbeschrieben,
 wie die Abbildung zeigt:
 
-  \bbwGraph{-1}{3}{-1}{5}{
-    \bbwFunc{-2*\x+3}{-1:2}
-    \bbwLine{0,0}{0.75,1.5}{teal}
-    \bbwLine{0,0}{0.75,0}{teal}
-    \bbwLine{0.75,0}{0.75,1.5}{teal}
-    \bbwLetter{0.6,-0.3}{\small{x_\Delta}}{teal}
+  \bbwGraph{-1}{8}{-1}{4}{
+    \bbwFunc{-0.5*\x+3.5}{-0.25:7.5}
+    \bbwLine{0,0}{3.5,1.75}{red}
+    \bbwLine{0,0}{3.5,0}{red}
+    \bbwLine{3.5,0}{3.5,1.75}{red}
+    \bbwLetter{3.5,-0.3}{x_\Delta}{red}
+    \TRAINER{
+      \bbwFunc{-0.25*(\x-3.5)*(\x-3.5)+49/16}{-0.1:7.1}%%
+      \bbwLetter{4.2,0.7}{h(x_\Delta)}{red}
+      \bbwLetter{5,3}{A(x)}{blue}
+    }%% end TRAINER
   }
   
   Welche maximale Dreiecksfläche ist unter diesen Bedingungen möglich?
@@ -29,35 +34,37 @@ wie die Abbildung zeigt:
   2. \textbf{Nebenbedingung}\index{Nebenbedingung!Extremwertaufgaben}
 
   \TNTeop{Die senkrechte Kathete $h$ darf nicht höher als der Graph von
-  $g$ sein: $h(x) \le g(x)$. Wir setzen $h(x) = -2x+3$. }
+  $g$ sein: $h(x) \le g(x)$. Wir setzen $h(x) = -0.5x + 3.5$. }
 
 3. \textbf{Zielfunktion}\index{Zielfunktion!Extremwertaufgaben} (für welches Ziel soll die Optimierung erreicht werden)
 
-\TNT{6}{Die Zielfunktion ist hier die \textbf{Fläche in Abhängigkeit von
-    $x$}.
-    $$A(x) = x \cdot{} h(x)$$ mit $h(x) = g(x)$.
+\TNT{6}{Die Zielfunktion ist hier die \textbf{Fläche $A$ in Abhängigkeit von $x$}.
+    $$A(x) = \frac12\cdot{}  x \cdot{} h(x)$$ mit $h(x) = g(x)$.
     Somit
-    $$A(x) = x \cdot{} (-2x + 3) = -x^2+\frac32\cdot{}x$$
+    $$A(x) = \frac12 \cdot{} x \cdot{} (-0.5x+3.5) = -0.25 \cdot{} x^2
+    + 1.75 x = \frac{-1}4 x^2 + \frac74\cdot{}x$$
   }
 
   4. Zielfunktion $A(x)$ \textbf{maximieren} (Dies liefert die \textbf{Extremstelle}\index{Extremstelle!Extremwertaufgaben})
 
   \TNT{6}{
-    Um $A(x) = -x^2 + \frac32\cdot{}x$ zu maximieren, suchen wir den
+    Um $A(x) =  \frac{-1}4 x^2 + \frac74\cdot{}x $ zu maximieren, suchen wir den
     Scheitelpunkt. Es gilt
-    $$x_\Delta = \frac{-b}{2a} = \frac{\frac{-3}{2}}{-(2)} = \frac34$$
+    $$x_S = x_\Delta = \frac{-b}{2a} =
+    \frac{-\left(\frac{7}4\right)}{2\cdot{} \left(\frac{-1}4\right)}
+    = 3.5 = \frac72$$
   }
 
   5. \textbf{Extremwert}\index{Extremwert!Extremwertaufgaben} rechnen
 
   \TNT{4}{
-    $$A(x_\Delta) = A\left(\frac34\right) = -\left(\frac34\right)^2 +
-    \frac32\cdot{}\left(\frac34\right) = \frac{-9}{16} + \frac98 = \frac9{16}$$
+    $$A(x_\Delta) = \frac12\cdot{} x_\Delta \cdot{} h(x_\Delta) =
+    \frac12 \cdot{} \frac72 \cdot{} \frac{7}{4} = \frac{49}{16} = 3.0625$$
   }
 
   Schlusssatz:
 
-  \TNTeop{Die maximal mögliche Fläche misst $\frac{9}{16}$ (Einheitsquadrate).}
+  \TNTeop{Die maximal mögliche Fläche misst $\frac{49}{16}$ (Einheitsquadrate).}
   
 \newpage
 
@@ -67,7 +74,7 @@ wie die Abbildung zeigt:
 
 \subsection{Taschenrechneraufgabe}
 Durch die Funktionsgleichung $y=(x-3)^2+2$ ist die Parabel $f$ definiert.
-Unter den deren Graphen wird ein Rechteck im ersten
+Unter deren Graphen wird ein Rechteck im ersten
 Quadranten so eingepasst,
 dass zwei Seiten auf den beiden Koordinatenachsen liegen. Die dem Ursprung
 gegenüberliegende Ecke liegt auf dem Graphen der Funktion aber links
