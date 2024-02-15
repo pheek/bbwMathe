@@ -1,0 +1,105 @@
+\subsection{Zerfall}
+\textit{Nicht immer ist die Wachstumsrate größer als 1}
+
+
+
+\bbwActAufgabenNr{} \textbf{Wert des Autos}
+
+Um wie viel Prozent hat der Wert eines Autos jährlich verloren, wenn
+der Wert nach 4 Jahren um 60 \% gesunken ist?
+\nextBbwAufgabenNummer%% Dies geschieht im bbwAufgabenBlock implizit
+\platzFuerBerechnungenBisEndeSeite{}
+
+\TRAINER{
+$$100 - 60 = 0.4$$
+somit
+$$0.4 = a^4$$
+$$a = \sqrt[4]{0.4} \approx 79.527\%$$
+Dies entspricht einer jährlichen Abnahme von.
+$$ 1 - 79.527\%  \approx 0.2047 $$
+Also eine Prozentuale Abnahme von 20.47\%.
+}%% END TRAINER
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bbwActAufgabenNr{} \textbf{Grogg}
+
+In der Küche der Berghütte steht eine Flasche Grogg, die genau einen Liter des
+heiß begehrten Getränks enthält. Abgemacht war unter den Bergleuten,
+dass der Grogg nach der harten Bergtour gerecht aufgeteilt werde.
+
+Nun ist es aber so, dass die Personen alle nacheinander in die Hütte
+kommen und alle denken sich, ich nehme nun nur ein Schlückchen vorab; 
+nur 8\%, nur so wenig also, dass es nicht auffällt.
+
+\begin{bbwAufgabenBlock}
+
+\item Die ersten vier Personen sind Andrea, gefolgt von Bert, dann
+  Clau und schließlich Dani.
+  Wie viel Grog ist nach der 4. Person noch in der Flasche?
+  \TRAINER{Der Abnahmefaktor beträgt $1-0.08 = 0.92 = 92\%$. Nach der 4. Flasche ist $0.92^4$ Liter also noch 7.16 dl
+    Grog in der Flasche.}
+
+\item Geben Sie an, wie viel Grog sich nach der 8. Person noch in der
+  Flasche befindet.
+  \TRAINER{$0.92^8 \approx 0.513$, also ca. 5.13 dl.}
+
+\item Geben Sie eine Formel an, die angibt wie viel Grog nach der
+  $n$-ten Person in der Flasche ist.
+  \TRAINER{$f(n) = 0.92^n$}
+  
+\item Weitere Personen erreichen die Hütte. Nach total wie vielen Personen
+  ist nur ein ein Rest von 2dl in der Flasche?
+  \TRAINER{$$0.2 = 0.92^n$$ Somit erhalten wir durch logarithmieren:
+    $$n = log_{0.92}(0.2) \approx{} 19.30$$
+  Somit ist nach der 19. Person noch etwas mehr und nach der
+  20. Person schon etwas weniger als 2 dl in der Flasche.}
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bbwActAufgabenNr{} \textbf{Wohnwagen}
+Ein Wohnwagen hat innerhalb von fünf Jahren 75\% an Wert verloren. 
+
+\begin{bbwAufgabenBlock}
+
+\item Geben Sie eine Formel für den Wert des Wohnwagens in
+Abhängigkeit der Zeit an.
+
+\item Wie viel Wert (in \%) verlor der Wohnwagen jährlich?
+  \TRAINER{$$f(t) = a^t$$ mit
+    $$0.25 = a^5$$
+    Somit ist 
+    $$a = \sqrt[5]{0.25} \approx  0.757858$$
+    
+  $$f(t) = \left(\sqrt[5]{0.25}\right)^t \approx 0.757858^t $$}
+
+\item Nach wie vielen Jahren (ab Beginn) wird der Wohnwagen noch 10\%
+seines ursprünglichen Wertes haben?
+
+\TRAINER{
+  Der Wert nach 5 Jahren beträgt noch 25\%.
+  Wenn die Formel $y=a^t$ verwendet wird mit
+
+  $y$=Wert nach $t$ Jahren.
+  
+  $t$=Anzahl Jahre
+
+  $a$=Abnahmefaktor pro Jahr
+
+  so können wir alles bekannte einsetzen:
+
+  $$y=a^t$$
+  $$25\% = a^5$$
+  $$0.25=a^5$$
+  $$\sqrt[5]{0.25} = a$$
+
+  Daraus ergibt sich der Jährliche Faktor $a \approx 0.757858$.
+  Somit verbleiben Jedes Jahr ca. 75.79\% des Wertes vorhanden, was
+  einer Abnahme von 1-0.7578... , also 24.21\% entspricht.
+}%% END TRAINER
+
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage

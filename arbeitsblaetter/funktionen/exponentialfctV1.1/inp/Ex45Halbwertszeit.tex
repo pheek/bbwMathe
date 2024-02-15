@@ -1,0 +1,133 @@
+
+\subsection{Halbwertszeit / Verdopplungszeit}
+
+
+\bbwActAufgabenNr{} \textbf{Radioaktiver Stoff}
+
+Ein radioaktiver Stoff zerfällt jedes Jahr um elf Prozent. Anfänglich ist ein kg des Stoffes vorhanden.
+
+\begin{bbwAufgabenBlock}
+\item Wie viel vom Stoff ist nach vier Jahren noch übrig?
+\TRAINER{$0.89^4 \textrm{kg} \approx 62.74\%$}
+\item Wie viel vom Stoff ist nach $n$ Jahren noch übrig?
+\TRAINER{$0,89^n \textrm{kg}$}
+\item Nach wie vielen Jahren wird noch 50\% des Stoffes übrig bleiben? (Diese Zeitspanne nennt man die Halbwertszeit $T_2$.)
+\TRAINER{$T_2 = n = \log_{0.89}(0.5)\approx 5.948$ Jahre.}
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bbwActAufgabenNr{} \textbf{Halbwertszeit}
+
+Tritium zerfällt innerhalb von 1.873 Jahren auf 90\%  (also um 10\%).
+
+
+\begin{bbwAufgabenBlock}
+\item Erstellen Sie eine Skizze, welche den Verlauf der vorhandenen
+  Menge in \% angibt. Starten Sie mit 100\%.
+
+  \TRAINER{Graph}
+
+\item Geben Sie eine mögliche Funktionsgleichung für den Tritiumgehalt
+  (in \%)
+  in Abhängigkeit der Zeit (in Jahren) an.
+
+  \TRAINER{$$f(t) = 100\% \cdot{} 0.9^{\frac{t}{1.873}}$$}
+  
+\item  
+  Wie groß ist die Halbwertszeit von Tritium?
+
+  \TRAINER{$$0.5 = (0.9)^\frac{t}{1.873}$$
+
+   $$t = 1.873 \cdot{} \log_{0.9}(0.5) \approx 12.32 \textrm{ Jahre}$$
+  }
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bbwActAufgabenNr{} \textbf{Verdopplungszeit}
+
+E. coli-Bakterien (Benannt nach Th. Escherich) durchlaufen bei
+optimalen Bedingungen pro Tag (24 h) sechs (bis sieben) Generationen. Das
+bedeutet, dass sich ein einziges Bakterium sechs mal teilt und sich
+somit die Anzahl sechs mal verdoppelt.
+
+\begin{bbwAufgabenBlock}
+
+\item Machen Sie eine aussagekräftige Skizze zur Vermehrung dieser Bakterien
+  \TNT{6}{}
+  
+\item Gehen Sie zunächst von sechs Generationen innerhalb von 24 h aus
+  und geben Sie eine Funktion an, welche die Anzahl Bakterien in
+  Abhängigkeit der Zeit (in Stunden) angibt. Gehen Sie von einer
+  Startpopulation $f(0) = \text{G}_0$ aus.
+
+  
+  \TNT{2}{$f(0) = \text{G}_0 \cdot{} (2^6)^\frac{1}{24} = \text{G}_0
+    \cdot{} 2^\frac{1}{4}$; $b$ = $\text{G}_0$; $a=2$ und $\tau=4$;
+    bzw. $a=2^6$ und $\tau=24$}%% END TNT
+  
+  
+\item Geben Sie die Zunahme $a_h$ pro Stunde an für (1.) 6 Generationen
+  und (2.) sieben Generationen pro Tag
+
+  \TNT{3.2}{
+    (1.) $a_h = 2^\frac14 \approx 1.1892$
+
+    (2.) $a_h = 2^\frac7{24} \approx 1.2241$
+
+  }%% end TNT
+ 
+
+  
+\item Wie ist die durchschnittliche Verdopplungszeit, wenn Sie von 6.5 Generationen pro
+  Tag im Schnitt ausgehen?
+  
+  \TNT{4}{$$f(t) = \text{G}_0\cdot 2^{\frac{6.5t}{24}} \Longrightarrow$$
+$$2\cdot{}\text{G}_0 = \text{G}_0 \cdot{} 2^\frac{6.5\text{T}_2}{24}
+    \Longrightarrow$$
+    $$\text{T}_2 = \log_{2^{\frac{6.5}{24}}}(2) \approx 3.6923 \text{h}$$
+  }
+
+\end{bbwAufgabenBlock}
+%%\platzFuerBerechnungenBisEndeSeite{}
+\newpage
+
+
+\bbwActAufgabenNr{} \textbf{Düngemittel}
+
+Ein Düngemittel in einem See habe eine Halbwertszeit von acht
+Monaten. Das heißt, nach acht Monaten ist jeweils noch die Hälfte der
+Düngemittelkonzentration im See vorhanden.
+
+\begin{bbwAufgabenBlock}
+
+\item Zeichnen Sie einen Graphen, der die Düngemittelkonzentration (in \%)
+  in Abhängigkeit von der Zeit (in Monaten) angibt.
+
+  \TRAINER{Graph}
+
+  
+    \item Entwerfen Sie einen Funktionsterm, der die
+      Düngemittelkonzentration in Abhängigkeit der Zeit ermitteln
+      kann.
+
+      \TRAINER{$$f(t) = 100\% \cdot\left(\frac12\right)^{\frac{t}8}$$}%% END Tranien
+
+    \item Nach welcher Zeit sind nur noch 5\% der ursprünglichen
+      Düngemittelkonzentration im See?
+
+      \TRAINER{$$5\%  = 100\% \cdot{}
+        \left(\frac12\right)^{\frac{t}8}$$
+$$t = 8\cdot{} \log_{0.5}(0.05) \approx 34.6 \textrm{ Monate}$$
+      }
+      
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

@@ -1,0 +1,337 @@
+\subsection{Startwerte}
+\textit{Andere Startwerte als eine Einheit.}
+
+
+\bbwActAufgabenNr{} \textbf{Gummiball}
+
+Ein Gummiball wird fallen gelassen. Der Ball springt jeweils 72\% der Fallhöhe wieder zurück.
+
+Anfänglich wird der Ball aus $1.7 \textrm{m}$ Höhe fallen gelassen
+
+\begin{bbwAufgabenBlock}
+
+\item Wie hoch springt der Ball nach dem 3. Aufprall wieder zurück?
+      \TRAINER{$1.7 \cdot{} 0.72^3 \approx 63.45 \textrm{cm}$}
+\item Wie hoch springt der Ball nach dem $n$. Aufprall wieder hoch?
+      \TRAINER{$1.7 \cdot{} 0.72^n$}
+\item Nach dem wievielten Aufprall springt der Ball noch 10 cm hoch?
+      \TRAINER{$1.7 \cdot{} 0.72^n = 0.1 \Longrightarrow n = \log_{0.72}\left(\frac{0.1}{1.7}\right) \approx 8.6$. Das heißt: Nach 8 Sprüngen ist der Ball noch höher als 10 cm; nach dem 9. Sprung hingegen weniger als 10 cm.}
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\bbwActAufgabenNr{} \textbf{Neophytenplage}
+
+Eine neu eingeschleppte Brombeerenart vermehrt sich im Wald exponentiell.
+
+Anfänglich werden 82 Pflanzen gezählt. Ein Jahr später sind es bereits 102 Pflanzen.
+
+\begin{bbwAufgabenBlock}
+
+\item Wie groß ist der jährliche Zunahmefaktor?
+      \TRAINER{$a = \frac{102}{82} = 1.\overline{24390}$}
+\item Wie groß ist die jährliche Zuwachsrate?
+      \TRAINER{$p = \frac{102}{82} - 1 \approx 24.39\%$}
+      
+\item Wie viele Brombeerpflanzen sind nach fünf Jahren zu erwarten?
+      \TRAINER{$82\cdot{}a^5 \approx 244$ Pflanzen}
+
+\item Wie viele Brombeerpflanzen sind nach $n$ Jahren zu erwarten?
+      \TRAINER{$82\cdot{}a^n \approx{} 82\cdot{} 1.2349^N$ Pflanzen}
+\item Nach wie vielen Jahren werden 1000 Pflanzen erwartet, wenn sich die Pflanzenart weiterhin ungehindert ausbreiten kann?
+\TRAINER{$82\cdot{} a^n = 1000 \Longrightarrow n=\log_a(\frac{1000}{82}) \approx 11.46$}
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\bbwActAufgabenNr{} \textbf{Tierpopulation}
+
+Eine Tierpopulation von fünf tausend Stück nimmt wegen verändernder Klima-
+und Umweltbedingungen jährlich um sechs Prozent ab.
+
+
+\begin{bbwAufgabenBlock}
+
+\item Skizzieren Sie die Population über die nächsten 30 Jahre.
+         \TRAINER{Graph}
+\item Wie lautet eine Funktionsgleichung, welche die Tierpopulation in
+  Abhängigkeit vom Jahr angibt?
+\TRAINER{$y = 5\,000 \cdot{} 0.94^{t}$}
+\item Um wie viele Tiere hat die Population nach 15 Jahren abgenommen?
+
+  \TRAINER{$$y = 5\,000 \cdot{} 0.94^{15} = 1976 \textrm{ Tiere sind
+      noch übrig}$$
+d.\,h.:
+  $$5000 - 1976  = 3024 \textrm{ Tiere sind «verschwunden»}$$}%% End TRAINER 
+
+  
+
+\item Wann wird die Population auf eine kritische «Größe» von 100
+  Individuen geschrumpft sein?
+  \TRAINER{$y = 100 = 5\,000 \cdot{} 0.94^{t}$
+    $$\frac{100}{5\,000} = 0.94^t$$
+$$t = \log_{0.94}\left(\frac{100}{5\,000}\right) \approx{} 63
+    \textrm{ Jahre} $$
+  }%% end TRAINER
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bbwActAufgabenNr{} \textbf{Einwohnerzahl}
+
+In Winterthur waren im Jahr 1997 89\,850 Einwohner registriert. Im Jahr 2013 waren es
+bereits 107\,799 Einwohner (Quelle: \texttt{stadt.winterthur.ch} Juli 2022).
+
+Zum Glück nimmt die Bevölkerung hier nicht exponentiell zu. Doch für
+diese Aufgabenstellung dürfen Sie das \textit{worst case}-Szenario von
+exponentiellem Wachstum annehmen.
+
+\begin{bbwAufgabenBlock}
+\item Um wie viel \% nimmt die Bevölkerung jährlich zu?
+\TRAINER{$a=\frac{107\,799}{89\,850} \approx 1.199766  $ ergo
+Zunahmefaktor = 1,.199766 in 16 Jahren. Pro Jahr:
+$a^{\frac{1}{16}}$. Zunahme also 1.145\% jährlich.}
+\item Was prognostizieren Sie bei exponentiellem Wachstum fürs Jahr 2040?
+\TRAINER{$ = 8950\cdot{}a^{\frac{43}{16}} \approx 146\,585 $ Einwohner}
+\item In wie vielen Jahren nimmt die Bevölkerung jeweils um 25\% zu?
+\TRAINER{$ 1.25 = a^{\frac{t}{16}}$ ergo
+$t=16\cdot{}\log_a(1.25)\approx 19.60$. Alle ca. 20 Jahre nimmt die
+Bevölkerung um 25\% zu.}
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\bbwActAufgabenNr{} \textbf{Licht im Wasser}
+
+In einem Wasserbecken nimmt die Lichtintensität pro Meter auf 24\% ab.
+Dies spielt keine Rolle, ob horizontal oder vertikal gemessen wird.
+
+
+\begin{bbwAufgabenBlock}
+
+ \item Um wie viel nimmt die Intensität pro Meter ab? \TRAINER{Wenn
+   etwas \textbf{auf} 24\% abnimmt, so nimmt es \textbf{um} 76\% ab.}
+  
+\item Skizzieren Sie die Intensität im Koordinatensystem wie folgt:
+   $x$-Achse = Eindringtiefe in Metern. Die Maßeinheit der
+   Lichtintensität wird in Watt pro Quadratmetern gemessen ($\textrm{W}/\textrm{m}^2$); dies
+   hat für die Aufgabe hier jedoch keine Relevanz.
+   $y$-Achse = Lichtintensität in \%. (Gestartet bei 100\%)
+         \TRAINER{Graph}
+\item Wie lautet eine Funktionsvorschrift von $\textrm{m}\mapsto \%$?
+\TRAINER{$x\mapsto 100\% \cdot{} 0.24^x$}
+\item Wie viel Prozent der ursprünglichen Lichtintensität sind nach 5
+   m noch übrig? \TRAINER{$0.24^5 \approx 0.07963 \%$}
+
+\item In wie vielen Metern ist noch 1\% der Lichtintensität übrig?
+\TRAINER{$x = \log_{0.24}(0.01) \approx  3.22 [\textrm{m}]$}
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\bbwActAufgabenNr{} \textbf{Federpendel}
+
+Ein Federpendel wird in Schwingung gebracht. Wegen diversen
+physikalischen Einflüssen (Reibung, ...) nimmt die Amplitude
+exponentiell ab.
+
+Nach einer Minute beträgt die Amplitude 5.3 cm und nach 4 Minuten nur noch
+2.6 cm.
+
+\begin{bbwAufgabenBlock}
+
+\item Machen Sie eine Skizze.
+      \TRAINER{Graph}
+\item Geben Sie die Funktionsgleichung der Amplitude in Abhängigkeit
+der Zeit an.
+      \TRAINER{... Lösung noch ausstehend ...}
+      
+\item Wie war die Amplitude zu Beginn ($t=0$)?
+      \TRAINER{... Lösung noch ausstehend ...}
+
+\item Wie groß wird die Amplitude nach 10 Minuten noch sein?
+      \TRAINER{... Lösung noch ausstehend ...}
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bbwActAufgabenNr{} \textbf{Luftdruck}
+
+Der Atmosphärische Luftdruck nimmt ab, je weiter wir uns von der
+Meereshöhe entfernen. Der Druck wird in $\textrm{hPa}$ = Hectopascal
+gemessen. Ein $\textrm{Pa}$ ist gleich $1 \textrm{N}/\textrm{m}^2$, also ein
+Pascal ist die Kraft von einem Newton pro Quadratmeter.
+
+Auf Meereshöhe ist der Luftdruck ca. $ 1013 \textrm{ hPa}$ und nimmt
+ca. 13\% pro km Höhenunterschied ab.
+
+\begin{bbwAufgabenBlock}
+
+\item Zeichnen Sie den Funktionsgraphen, der den Luftdruck ($y$-Achse)
+  in Abhängigkeit der Höhe über Meer ($x$-Achse) angibt.
+
+  \TRAINER{Graph}
+
+\item Wie lautet ein möglicher Funktionsterm, der die Abhängigkeit
+  Luftdruck ($\textrm{hPa}$) von Meereshöhe (in Metern) angibt?
+
+  \TRAINER{$y = 1013 \cdot{} 0.87^{\frac{x}{1000}}$}
+
+
+\item Wie hoch ist der Luftdruck auf dem Matterhorn (4478 Meter über
+  Meeresspiegel)?
+
+  \TRAINER{$y = 1013 \cdot{} 0.87^{\frac{4478}{1000}} \approx 543
+    \textrm{ hPa}$}
+
+\item In welcher Höhe über Meeresspiegel ist der Luftdruck nur noch
+  $500 \textrm{ hPa}$?
+
+  \TRAINER{
+    $$500 = 1013 \cdot{} 0.87^{\frac{x}{1000}}$$
+    $$\frac{500}{1013} = 0.87^{\frac{x}{1000}}$$
+    $$x = 1000 \cdot{} \log_{0.87}\left(\frac{500}{1013}\right)
+    \approx 5070 \textrm{ m}$$
+    }%% END TRAINER
+  
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\bbwActAufgabenNr{} \textbf{Temperierte Stimmung}
+
+\bbwCenterGraphic{15cm}{img/tonleiter.png}
+\begin{center}Legende: c-Dur Tonleiter\end{center}
+
+
+In der Musik wird heute fast ausschließlich die \textit{temperierte
+  Stimmung} verwendet. Dabei wird eine Oktave in zwölf gleiche
+Halbtonschritte eingeteilt. Gleich bedeutet hier, dass das Verhältnis
+der Frequenzen von zwei aufeinanderfolgenden Halbtönen jeweils immer
+gleich ist.
+
+Das Verhältnis der Frequenzen einer Oktave ist 1:2. Hat ein Ton \zB
+die Frequenz 220 Hz, so hat seine Oktave die Frequenz 440 Hz.
+
+Eine Oktave wird in die Töne c, cis, d, dis, e, f, fis, g, gis, a, b und h
+unterteilt; danach folgt das c der nächst höheren Oktave.
+
+Das Verhältnis der Frequenzen von d zu dis ist also genau gleich, wie
+das Verhältnis der Frequenzen von f zu fis.
+
+Bemerkung:  In der oben
+abgebildeten c-Dur Tonleiter sind nicht alle Halbtonschritte
+vorhanden. Eine Tonleiter mit nur Halbtonschritten wird chromatisch
+genannt.
+
+\begin{bbwAufgabenBlock}
+
+\item Gesucht ist das Verhältnis der Frequenzen zwischen zwei aufeinanderfolgenden Halbtönen. Tipp: Wird
+  das Verhältnis zwölf mal angewandt, so haben wir eine Oktave und das
+  totale Verhältnis von 1:2 erreicht.
+
+  \TRAINER{Verhältnis sei $a$. Somit gilt $1 : a^{12} = 1:2$ oder
+    $a^{12} = 2$. Lösen wir das nach $a$ auf, so erhalten wir das
+    Verhältnis von $a= \sqrt[12]{2} \approx 1.059463$}
+
+\item In der \textit{reinen Stimmung} wäre das Verhältnis von Grundton
+  (c) zur Quinte (g) 3:2. Dazwischen liegen sieben
+  Halbtonschritte. Berechnen Sie das Verhältnis der Frequenzen von c zu
+  g in der \textit{temperierten Stimmung} und vergleichen Sie das
+  Resultat mit der \textit{reinen Stimmung}.
+
+  
+
+  \TRAINER{$a^7 \approx 1.4983$, was etwas weniger als 1.5 ist. Somit
+    ist das \textit{reine} g leicht höher als das \textit{temperierte}
+    g.}%% ENd Trainer
+
+\item Der Kammerton a hat oft die Frequenz 440 Hz. Berechnen Sie die
+  Frequenz des darüber liegenden Tones c, wenn Sie wissen, dass
+  zwischen a und c drei Halbtonschritte liegen.
+
+  \TRAINER{Frequenz von c $= 440\cdot{} a^3 \approx 523.3 \textrm{ Hz}$}%% end Trainer
+
+    
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\bbwActAufgabenNr{} \textbf{Feinstaub}
+
+Nachdem die letzten Handwerker das Haus verlassen hatten; als endlich der
+Elektriker die letzten Steckdosen montiert und der Maler die letzten
+Abdeckungen zusammengesucht und in seinen Wagen geladen hatte, kehrte
+endlich Ruhe in das alte Gemäuer ein. Doch eines blieb. Der Staub!
+In allen Ritzen hatte er sich versteckt, erpicht darauf,
+jederzeit bei kleinstem Windstoß hervorzutreten und den zukünftigen
+Mietern das Husten zu erleichtern und die Ruhe zu stehlen!
+
+Der Hausherr machte sich selbst auf in den Kampf gegen den Baustellenstaub und
+begann mit Besen, Tüchern und einem Staubsauger dem beinahe
+unberechenbaren Störenfried den Garaus zu machen. Er begann ganz oben
+im Dachstock und die Putzerei endete nach einigen Stunden im Keller.
+
+Doch der Staub blieb. Er ließ sich nicht so einfach vertreiben. Etwas
+weniger war da, doch eine gewisse Erinnerung an Sisyphus der alten
+griechischen Mythologie begann im Hausherrn aufzusteigen. Der
+vorhandene Staub verteilte sich gemütlich wieder gleichmäßig in Haus
+und Ritzen und wartet auf ein nächstes Opfer.
+
+Das Putzen wurde wiederholt, doch immer noch waren Ritzen,
+Staubsaugersack, Kleider, Schuhe; kurz alles noch voller Staub.
+
+Einige weitere Male wurde die Saug- und Wisch-Aktion wiederholt. Und
+erst nachdem zum ersten Mal weniger als 0.1\% (also ein Promille) der ursprünglichen
+Staubmenge vorhanden waren, gab sich der Hausherr mit seiner Arbeit
+zufrieden.
+
+Wie oft hatte der Hausherr die Putz-Aktion durchgeführt?
+
+Gehen Sie davon aus, dass nach jedem Putzen noch 37\% der vorhandenen
+Staubmenge im Haus verbleibt.
+
+\begin{bbwAufgabenBlock}
+
+\item Machen Sie eine Skizze bei der die $x$-Achse die Anzahl der
+  Putz-Aktionen und die $y$-Achse die Staubmenge, begonnen bei 100\%,
+  aufzeigt.
+  
+\item Berechnen Sie die Anzahl der Putz-Aktionen, die nötig sind,
+    sodass maximal ein Promille der ursprünglichen Staubmenge
+    vorhanden bleibt.
+\TRAINER{
+    $$0.37^n = 0.001$$
+    Logarithmieren
+    $$n = \log_{0.37}(0.001) \approx 6.94$$
+    Nach «6.94» Putz-Aktionen wäre noch exakt 0.1\% der
+    ursprünglichen Staubmenge vorhanden. Somit kann der Hausherr nach
+    dem siebten Mal getrost aufhören und sich mit einem Promille
+    Reststaub zufrieden geben.
+}%% END Trainer
+
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newpage
