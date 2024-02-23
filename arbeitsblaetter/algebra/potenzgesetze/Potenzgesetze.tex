@@ -6,7 +6,7 @@
 
 \usepackage{amssymb} %% für \blacktriangleright
 \renewcommand{\metaHeaderLine}{Potenzgesetze}
-\renewcommand{\arbeitsblattTitel}{(BMS Version 1.1)}
+\renewcommand{\arbeitsblattTitel}{Version 1.1 Feb. 2024}
 
 \begin{document}%%
 \arbeitsblattHeader{}
@@ -17,13 +17,13 @@
 
 \newcommand\aufgabeML[3]{
 
-Aufgabe \arabic{bbwAufgabenNummerCounter}. :\,\,
-$${#2}$$ = $\LoesungsRaum{{#3}}$
+\textbf{Aufgabe \arabic{bbwAufgabenNummerCounter}.} :\,\,
+$${#2} = \TRAINER{{#3}}$$
 
 \abplz{#1}
 
 \stepcounter{bbwAufgabenNummerCounter}
-}
+}%% End command AufgabeML
 
 {\huge{Vermischte Aufgaben zu Potenzgesetzen}}
 
@@ -32,22 +32,25 @@ $${#2}$$ = $\LoesungsRaum{{#3}}$
 
 Berechnen Sie Zehnerpotenzen und vergleichen Sie:
 
-\aufgabeML{6}{(-10)^4}{10\,000}
-\aufgabeML{6}{-10^4}{-10\,000}
+\aufgabeML{2}{(-10)^4}{(-10)(-10)(-10)(-10) = 10\,000}
+\aufgabeML{2}{-10^4}{-(10^4)=-(10\cdot{}10\cdot{}10\cdot{}10) = -10\,000}
+
+\aufgabeML{2}{(-10)^5}{-100\,000}
+\aufgabeML{2}{-10^7}{-10\,000\,000}
+\aufgabeML{2}{(-10)^8}{+100\,000\,000}
+\noTRAINER{\newpage}
 
 
-\aufgabeML{6}{(-10)^5}{-100\,000}
-\aufgabeML{6}{-10^7}{-10\,000\,000}
-\aufgabeML{6}{(-10)^8}{+100\,000\,000}
-\aufgabeML{6}{-(10^6)}{-1\,000\,000}
+\aufgabeML{2}{-(10^6)}{-1\,000\,000}
 
+\aufgabeML{2}{0.1^1}{0.1}
+\aufgabeML{2}{0.1^2}{0.01}
+\aufgabeML{2}{-0.1^4}{-(0.1^4) = -0.0001}
 
-\aufgabeML{6}{0.1^1}{0.1}
-\aufgabeML{6}{0.1^2}{0.01}
-\aufgabeML{6}{-0.1^4}{-(0.1^4) = -0.0001}
 \newpage
 
-Aufgabe \arabic{bbwAufgabenNummerCounter}.: 
+\textbf{Aufgabe \arabic{bbwAufgabenNummerCounter}. }:
+
 Füllen Sie die Tabelle aus. Tipp: Welche Operation wird in den
 hinteren drei Spalten konsequent von einer Zeile zur nächsten ausgeführt?
 
@@ -65,20 +68,22 @@ $-2$           &  \TRAINER{$10^{-2}$} &  \TRAINER{$0.01$}	 & \TRAINER{Ein Hunder
 
 
 Schreiben Sie ohne Klammern und ohne Bruchstrich:
-\aufgabeML{6}{\frac1{10\,000}}{10^{-4}}
+\aufgabeML{2.4}{\frac1{10\,000}}{10^{-4}}
 
 Fassen Sie die Zehnerpotenzen zusammen und schreiben Sie
 wissenschaftlich (genau eine Ziffer vor dem Dezimalpunkt):
 
-\aufgabeML{6}{9\cdot{}10^3 + 4.7 \cdot{}10^4}{5.6\cdot{} 10^4}
-\aufgabeML{6}{2\cdot{}10^{-4} + 220.3 \cdot{} 10^{-5}}{2.403 \cdot{} 10^{-3}}
+\aufgabeML{2.4}{9\cdot{}10^3 + 4.7 \cdot{}10^4}{5.6\cdot{} 10^4}
+\aufgabeML{2.4}{2\cdot{}10^{-4} + 220.3 \cdot{} 10^{-5}}{2.403 \cdot{} 10^{-3}}
 
 
 
 Multiplizieren Sie die Zehnerpotenzen (gleiche Basis):
-\aufgabeML{6}{-0.1^4\cdot{} 0.1^5}{-0.1^{9} = -0.000\,000\,001}
+\aufgabeML{2.8}{-0.1^4\cdot{} 0.1^5}{-0.1^{9} = -0.000\,000\,001}
 
-\arabic{bbwAufgabenNummerCounter}.:
+\TRAINER{\newpage}
+\textbf{Aufgabe \arabic{bbwAufgabenNummerCounter}.} :
+
 Ein rotes Blutkörperchen hat ein Gewicht von $3\cdot{}10^{-11}$ g.
 Beim Menschen liegt die Konzentration im Blut bei $4\,000$ bis $5\,900$ Stück pro Nanoliter.
 
@@ -101,65 +106,87 @@ Nanoliter ausgehen?
 \end{bbwAufgabenBlock}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\newpage
 \section{Potenzgesetze}
 Vereinfachen Sie / Fassen Sie zusammen:
 
-\aufgabeML{4}{(-1)^{3}}{-1}
-\aufgabeML{4}{(-1)^{4}}{1}
-\aufgabeML{6}{ar^n - br^n}{(a-b)r^n}
+\aufgabeML{2}{(-1)^{3}}{-1}
+\aufgabeML{2}{(-1)^{4}}{1}
+\aufgabeML{4}{ar^n - br^n}{(a-b)r^n}
 \aufgabeML{6}{a^2(a-b)^n - b^2(a-b)^n}{(a^2-b^2)(a-b)^n = (a+b)(a-b)(a-b)^n = (a+b)(a-b)^{n+1}}
+\noTRAINER{\newpage}
 
+\aufgabeML{2}{-\left((-a)^3\right)^{10}}{-a^{30}}
 
+\aufgabeML{2}{\left(-(-x^2)\right)^7}{x^{14}}
 
-\aufgabeML{6}{-\left((-a)^3\right)^{10}}{-a^{30}}\noTRAINER{\newpage}
-
-\aufgabeML{6}{\left(-(-x^2)\right)^7}{x^{14}}
-
-
-\aufgabeML{6}{\left(-x^3\right)^4}{x^{12}}
+\aufgabeML{2}{\left(-x^3\right)^4}{x^{12}}
 %%\platzFuerBerechnungenBisEndeSeite{}
 
-\aufgabeML{6}{c^9 : c^4}{c^5}
+\aufgabeML{2}{c^9 : c^4}{c^5}
 
 
+\newpage
 \subsection{gleiche Basis}
 Multiplizieren Sie die Potenzen mit gleicher Basis:
 
-\aufgabeML{6}{x^7\cdot{} x^{n+1}}{x^{n+8}}
+\aufgabeML{4}{x^7\cdot{} x^{n+1}}{x^{n+8}}
 \aufgabeML{4}{b^{k+3}\cdot{}b^{2k-1}}{b^{(k+3)+(2k-1)} = b^{3k+2}}
 \aufgabeML{6}{-(s)^{8}\cdot{}s^7}{-s^{15}}
+\noTRAINER{\newpage}
+
+
 \aufgabeML{6}{(-s)^{8}\cdot{}s^7}{s^{15}}
 \aufgabeML{6}{-2s^4\cdot{}s^3}{-2s^7}
 \aufgabeML{6}{-(2s)^4\cdot{}s^3}{-8s^7}
+\noTRAINER{\newpage}
+
 \aufgabeML{6}{(-2s)^4\cdot{}s^3}{8s^7}
 \aufgabeML{4}{(-r)^{5}\cdot{}(-r^6)}{+r^{11}}
 \aufgabeML{4}{5\cdot{}2^{2n} + 4^n}{5\cdot{}4^n + 4^n = 6\cdot{}4^n}
-
+\noTRAINER{\newpage}
 
 \aufgabeML{6}{-b^{100}:b^{95}}{-b^5}
 \aufgabeML{6}{x^{s+10} : x^{10}}{x^s}
-\aufgabeML{6}{a^{5n-4} : a^{2n+3}}{a^{(5n-4)-(2n+3)} = b^{5n-4-2n-3} = b^{3n-7}}
+\aufgabeML{6}{a^{5n-4} : a^{2n+3}}{a^{(5n-4)-(2n+3)} = b^{5n-4-2n-3} =
+b^{3n-7}}
+\noTRAINER{\newpage}
+
+
 \aufgabeML{6}{(-a)^4:(-a^{10})}{-\frac{1}{a^6}}
 \aufgabeML{6}{a\cdot{} a^{2x+3} : a^{1-x}}{a^{3x+3}}
 \aufgabeML{6}{\left(\frac{x}{y}\right)^7:\left(\frac{-x}{y}\right)^3}{-\left(\frac{x}{y}\right)^4}
+\noTRAINER{\newpage}
+
 
 \aufgabeML{8}{\left(\left(\frac{-1}{2}\right)^3\right)^4}{\frac1{2^{12}}
 = \frac1{4096}}
 \aufgabeML{6}{(n^5)^{k-1}}{n^{5k-5}}
+\noTRAINER{\newpage}
+
+
 \aufgabeML{6}{(m^n)^n}{m^{(n^2)} = m^{n^2}}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \subsection{Gleiche Exponenten}
 
-\aufgabeML{6}{a^7 \cdot{} b^7}{(ab)^7}
-\aufgabeML{6}{x^5 \cdot{} r^5}{\left(\frac{x}{r}\right)^5}
-\aufgabeML{6}{(2x)^4\cdot{}y^4}{16(xy)^4}
-\aufgabeML{6}{2a^5\cdot{}b^5}{2(ab)^5}
-\aufgabeML{6}{1.25^{2s}\cdot{}8^{2s}}{10^{2s}}
+\aufgabeML{4}{a^7 \cdot{} b^7}{(ab)^7}
+\aufgabeML{4}{x^5 \cdot{} r^5}{\left(\frac{x}{r}\right)^5}
+\aufgabeML{4}{(2x)^4\cdot{}y^4}{16(xy)^4}
+\noTRAINER{\newpage}
+
+
+\aufgabeML{4}{2a^5\cdot{}b^5}{2(ab)^5}
+\aufgabeML{5.2}{1.25^{2s}\cdot{}8^{2s}}{10^{2s}}
 \aufgabeML{8}{\left(\frac67\right)^n : \left(\frac37\right)^n}{2^n}
+\noTRAINER{\newpage}
+
+
 \aufgabeML{8}{16x^3 : (2y)^3}{16 \cdot{} (x:(2y)))^3 = 2\cdot{}2^3 \cdot{} \left(\frac{x}{2y}\right)^3  = 2 \cdot{} \left(\frac{x}{y}\right)^3}
-\aufgabeML{6}{(-2p^3)^2 : (2q)^2}{\left((-2p^3) : (2q)\right)^2 = (-p^3:q)^3}
+\aufgabeML{6}{(-2p^3)^2 : (2q)^2}{\left((-2p^3) : (2q)\right)^2 =
+(-p^3:q)^3}
+\noTRAINER{\newpage}
 \aufgabeML{6}{(-2a)^3: (-2b)^3}{\left(\frac{a}{b}\right)^3}
 
 
@@ -183,46 +210,51 @@ Exponentenvergleich:
 \aufgabeML{2}{0.01^{-2}}{10\,000}
 \aufgabeML{2}{(-0.1)^{-2}}{100}
 
+
+\newpage
 \subsection{Mit Variablen}
 
 Geben Sie die Lösung für verschiedene $n \in \mathbb{N}$ an:
 \aufgabeML{6}{(-1)^{-(2n+1)}}{-1 \text{ für alle } n}
 
 \aufgabeML{6}{\frac{-3}{-x^{-4}}}{3x^4}
-
+\noTRAINER{\newpage}
 
 Vereinfachen Sie: 
 \aufgabeML{6}{\frac{a^2}{a^3}}{\frac{1}{a}=a^{-1}}
 
 \aufgabeML{6}{-\left(-(-a)^2\right)^0}{-1}
+\noTRAINER{\newpage}
+
 
 \aufgabeML{6}{a^5\cdot{}a^{-2}\cdot{}a^0\cdot{}a^{7}\cdot{}a\cdot{}a^{-4}}{a^{7}}
 
 \aufgabeML{4}{\left(x^{-1}\right)^{-1}}{x}
+\noTRAINER{\newpage}
+
 
 \aufgabeML{6}{(ab)^{-4} \cdot{} \left(\frac{c}{d}\right)^{-4}}{\left(\frac{abc}{d}\right)^{-4}}
 
 \aufgabeML{6}{(ab)^{-n} : \left(\frac{a}{b}\right)^{-n}}{\left(ab
 : \frac{a}{b}\right)^{-n} = \left(ab \cdot \frac{b}{a} \right)^{-n}
 = \left(b^2\right)^{-n} = b^{-2n}}
+\noTRAINER{\newpage}
 
-
-\aufgabeML{6}{-\left( -a^3\cdot{} (-a)^2 \right)^{-4}}{\frac{-1}{a^{20}} = -a^{-20}}\noTRAINER{\newpage}
+\aufgabeML{6}{-\left( -a^3\cdot{} (-a)^2 \right)^{-4}}{\frac{-1}{a^{20}} = -a^{-20}}
 
 \aufgabeML{6}{(-b)^{-6} \cdot (-b^8)}{-b^2}
 
 \aufgabeML{6}{\left(-(a^{-1})^{-2}\right)^6}{a^{12}}\noTRAINER{\newpage}
 
 \aufgabeML{6}{-\left((a^3)\cdot{}a^{-1}\right)^2}{-a^4}
-\noTRAINER{\newpage}
 
 Schreiben Sie ohne negative Exponenten:
 
-\aufgabeML{6}{2\cdot{}x^{-3}}{\frac{2}{x^3}}
+\aufgabeML{4}{2\cdot{}x^{-3}}{\frac{2}{x^3}}
 
-\aufgabeML{6}{ab^{-5}}{\frac{a}{b^5}=a\cdot{}\frac{1}{b^5}}\noTRAINER{\newpage}
-
-\aufgabeML{6}{\frac{1}{81}\cdot{}c^{-2}\cdot{}a^{-3}\cdot{}c^2\cdot{} a^3 \cdot 3^4}{1}
+\aufgabeML{4}{ab^{-5}}{\frac{a}{b^5}=a\cdot{}\frac{1}{b^5}}
+\noTRAINER{\newpage}
+\aufgabeML{4}{\frac{1}{81}\cdot{}c^{-2}\cdot{}a^{-3}\cdot{}c^2\cdot{} a^3 \cdot 3^4}{1}
 %%\platzFuerBerechnungenBisEndeSeite{}
 
 \newpage
@@ -266,9 +298,10 @@ Exponentenvergleich:
 
 \aufgabeML{6}{(a^3)^x = \frac{a^{2x}}{a^{-2}}}{3x = 2x - (-2) \Longrightarrow 3x = 2x+2 \Longrightarrow x=2}
 \aufgabeML{6}{2^x = 4^{-4}}{2^x = 2^{-8} \Longrightarrow x=-8}
+\noTRAINER{\newpage}
+
 \aufgabeML{6}{(3^x)^6 = \frac1{81}}{3^{6x = 3^{-4}} \Longrightarrow 6x
 = -4 \Longrightarrow x = -4 : 6 = \frac{-2}{3}}
-
 
 Das folgende ist keine Exponentialgleichung, kann aber gelöst werden,
 indem auf beiden Seiten der Gleichung der selbe Exponent erzwungen
@@ -277,7 +310,7 @@ wird:
 \aufgabeML{6}{x^3=125^{-1}}{x^3 = \frac1{125} = \frac1{5^3}
 = \left(\frac15\right)^3 \Longrightarrow x = \frac15}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Wurzeln}
 
