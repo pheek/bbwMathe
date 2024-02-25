@@ -109,6 +109,63 @@
 
 \TadBMTG{104}{7.1}
 \newpage
+\subsection{Drehsinn}
+Winkel werden im \textbf{mathematisch positiven Sinne} (=
+Gegenuhrzeigersinn) gemessen.
+
+Die positive $x$-Achse hat den Drehwinkel $0\degre$.
+
+Aufgaben:
+
+Geben Sie vom folgenden Punkt $P$ jeweils seinen mathematischen
+Winkel an:
+
+\newcommand{\miniEinheitskreis}{
+\tikzset{graphSkalierung/.style={xscale=2,yscale=2}}
+\bbwGraph{-1.5}{1.5}{-1.5}{1.5}{
+\bbwFuncC{ sqrt(4-\x*\x)}{-2:2}{lightgray}
+\bbwFuncC{-sqrt(4-\x*\x)}{-2:2}{lightgray}
+}
+\tikzset{graphSkalierung/.style={xscale=1,yscale=1}}
+}%% end newcommand miniEinheitskreis
+
+
+\begin{tabular}{cc}\makecell{
+  $P=(1 | 1)\TRAINER{=45\degre}$\\
+  \miniEinheitskreis{}} &
+
+  \makecell{$P=(-1 | 1)\TRAINER{=135\degre}$\\
+  \miniEinheitskreis{}} \\
+
+
+   \makecell{ $P=(1 | -1)\TRAINER{=315\degre = -45\degre}$\\
+  \miniEinheitskreis{}} &
+
+  \makecell{$P=(\sqrt{3} | -1)\TRAINER{330\degre = -30\degre}$\\
+  \miniEinheitskreis{}} \\
+
+\end{tabular}
+
+\newpage
+
+
+\begin{tabular}{cc}\makecell{
+  $P=(-4 | -4) \TRAINER{=225\degre=-135\degre}$\\
+  \miniEinheitskreis{}} &
+
+  \makecell{$P=\left( \frac{\sqrt{3}}2 \bigg| 1\right)\TRAINER{=30\degre}$\\
+  \miniEinheitskreis{}} \\
+
+  \makecell{$P=\left( \frac{\sqrt{-3}}2 \bigg| 1\right)\TRAINER{=150\degre}$\\
+  \miniEinheitskreis{}} &
+
+  \makecell{$P=(-1 | 0)\TRAINER{=180\degre = -180\degre}$\\
+  \miniEinheitskreis{}} \\
+
+\end{tabular}
+
+
+\newpage
 \subsection{Einheitskreis}\index{Einheitskreis}
 
 \TRAINER{\einheitskreis{}: Trainer: Hier nur $s$=Sinus einzeichnen!}
