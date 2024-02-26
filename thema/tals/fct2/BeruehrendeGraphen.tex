@@ -9,7 +9,7 @@ Geraden $g$ ist der $y$-Achsenabschnitt $b = -2$ gegeben.
 Gesucht ist von der Geraden $g$ die Steigung $a$ so, dass die
 Gerade die Parabel tangiert; also genau in einem Punkt berührt.
 
-Wo (in welchem Punkt $S=(x_S|y_S)$) tangiert also die Gerade $g$ die Parabel $f$?
+Wo (in welchem Punkt $B=(x_B|y_B)$) tangiert also die Gerade $g$ die Parabel $f$?
 
 In der folgenden Skizze sind drei mögliche Geraden mit $y$-Achsenabschnitt
 $-2$ gezeichnet. Nur eine dieser drei Geraden \textit{tangiert} die Parabel.
@@ -21,7 +21,7 @@ $-2$ gezeichnet. Nur eine dieser drei Geraden \textit{tangiert} die Parabel.
   \draw[color=red,variable=\x,domain=-3:5] plot ({\x},{0.5*\x - 2});
   \draw[color=cyan,thick,variable=\x,domain=-3:5] plot ({\x},{1*\x  -2});
 
-  \bbwDot{3, 1}{green}{north}{S}
+  \bbwDot{3, 1}{green}{north}{B}
 
   %%%\draw[thick,color=blue,variable=\x,domain=-1:5] plot ({\x}, {0.5*\x*\x - 2*\x + 3}); 
   %%\draw[color=red,variable=\x,domain=-1:5] plot ({\x},{0.5*\x + 1});
@@ -36,17 +36,20 @@ Geraden.
 Nun berechne die Schnittpunkte/den Schnittpunkt mit $$f(x) = g(x).$$
 
 Das $a$ ist gefunden, sobald die Gleichung $f(x)=g(x)$ genau eine
-Lösung aufweist; dann also, wenn die Diskriminante dieser Gleichung
-verschwindet.
+Lösung aufweist; dann also, wenn
 
-Den $x$-Wert dieses Schnittpunkts nennen wir $x_S$:
+
+\TNT{2}{die Diskriminante dieser Gleichung
+verschwindet.}
+
+Den $x$-Wert dieses Berührungspunktes nennen wir $x_B$:
 
 
 Ansatz:
 
-$$f(x_S) = g(x_S)$$
+$$f(x_B) = g(x_B)$$
 
-\TNT{3.2}{
+\TNT{4.4}{
  
 \begin{tabular}{rclr}
 $\frac14x_s^2-\frac12x_s+\frac14$          & $=$ &  $ax_s-2$ & \\
@@ -68,45 +71,79 @@ $$\Longrightarrow a_1 = 1 \text{ und  } a_2 = -2$$
 }%% END TNT
 \newpage
 
-Für den \textbf{Berührungspunkt} $S=(x_S|y_S)$ müssen wir nun nur doch das gefundene
+Für den \textbf{Berührungspunkt} $B=(x_B|y_B)$ müssen wir nun nur doch das gefundene
 $a$ in die Gleichung (I) einsetzen.
+
+
+\TNT{6}{
+  $$0 = \frac14x_B^2 + (-\frac12 -a ) + \frac94$$
+
+  $$x_B = x_1 = x_2 = \frac{-B \pm\sqrt{D}}{2A} = \frac{-B \pm
+    \sqrt{0}}{2A} = \frac{-B}{2A}$$
+
+  $$x_B = \frac{-B}{2A} = \frac{- (-\frac12 - a)}{\frac24} =
+  \frac{\frac12 + a}{\frac12} = (\frac12 + a) : \frac12 = (\frac12+a)
+  \cdot{} 2 = 1+2a$$
+}
+
+
 
 1. Fall: ($a_1=1$):
 
 \TNT{6}{
-$S_1: a_1 = 1:$
-$$0 = \frac14x^2+ (-\frac12 - 1) + \frac94$$
-  $$\Longrightarrow x_1 = \frac{\frac32\pm\sqrt{D}}{2\cdot{}\frac14} = \frac32 : \frac12= 3$$
-
-Bem. Der Term $\sqrt{D}$ kann weggelassen werden, denn $D$ wurde ja so
-konstruiert, dass $D=0$ sei.
-
+$B_1: a_1 = 1:$
+  $$x_B = 1+2a = 1 + 2\cdot{}(1) = 3$$
 
 Das $y$ finden wir einfach durch Einsetzen von $x$ in den
 Funktionsterm der Geradengleichung.
 
 $$y_1 = a_1x_1 - 2 = 1\cdot{}3-2 = 1$$
 und somit ist
-$$S_1 = (3 | 1)$$
+$$B_1 = (3 | 1)$$
 }%% END TNT
 
 
 
-Zweiter \textbf{Berührungspunkt} ($a_2 = -2$):
+2. Fall: ($a_1=-2$):
 
 
-\TNT{6}{
-$S_2: a_2 = -2:$
-$$0 = \frac14x^2+ (-\frac12 - (-2)) + \frac94$$
-$$\Longrightarrow x_2 = \frac{-\frac32\pm\sqrt{D}}{2\cdot{}\frac14} = -\frac32 : \frac12= -3$$
+\TNTeop{
+$B_2: a_2 = -2:$
+  $$x_B = 1+2a = 1 + 2\cdot{}(-2) = 1-4=-3$$
 
 
 $$y_2 = a_2x_2+b = -2\cdot{}3-2 = 4$$
 und somit ist
-$$S_2 = (-3 | 4)$$
+$$B_2 = (-3 | 4)$$
 
 }%% END TNT
 \newpage
+
+
+
+
+\begin{rezept}{Berührende Graphen}{}
+
+  Bei Berührungsaufgaben mit Parabeln hilft i.\,d\,R. das folgende
+  Vorgehen:
+
+  \begin{enumerate}
+  \item Funktionsterme Gleichsetzen: $$f(x) = g(x)$$
+  \item In Grundform bringen: $$f(x) - g(x) = 0  \hspace{40mm}
+    (I)$$
+  \item Diskriminante $D = 0 $ setzen, um den Parameterwert zu
+    bestimmen.
+  \item Gleichung $(I)$ auflösen mit dem Wissen $D=0$.
+    $$x = \frac{-B}{2A}$$
+
+  \item Gefundenen Parameter in $x_B=\frac{-B}{2A}$ einsetzen, um $x$
+    des Berührungspunktes zu bestimmen.
+  \item Das $y_B$ des Berührungspunktes ermitteln, indem wir $x_B$ in
+    $f$ oder $g$ einsetzen.
+    \end{enumerate}
+\end{rezept}
+
+
 \TRAINER{(Je nach Zeit wäre 699. a) noch eine Vorzeigeaufgabe.)}
 
 \subsection{Aufgaben}
@@ -145,7 +182,7 @@ Tangente an die Parabel $p$ an.
   Wo (für welches $x$) hat diese Parabel
   ihren Tiefpunkt? \TRAINER{Scheitelpunkt:}
 
-  $$x_S =   \LoesungsRaumLen{8cm}{\frac{-b}{2a} = \frac{-(-3)}{2\cdot{}2.5} = 0.6}$$
+  $$x_B =   \LoesungsRaumLen{8cm}{\frac{-b}{2a} = \frac{-(-3)}{2\cdot{}2.5} = 0.6}$$
 
   Dies ist gleichzeitig die Nullstelle der
   Steigungsfunktion:
