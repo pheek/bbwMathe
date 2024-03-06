@@ -1,0 +1,11 @@
+%% muss in bbwInput aber nun die newifs und die
+%% \input{Zielgruppe}
+%% entfernen
+
+\input{inputs/bmsNewIfs}
+
+\isTALSfalse%%
+\isGESOtrue%%
+\isTRAINERtrue%%
+
+\input{Potenzgesetze}
