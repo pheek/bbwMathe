@@ -6,6 +6,8 @@
   Funktionen}\index{Funktionen!trigonometrische}\index{Trigonometrische
   Funktionen}
 
+\TRAINER{Kahoot Winkel am Einheitskreis als Repetition sin/cos}
+
 Lernziele:
 \begin{itemize}
 \item Aufzeichnen von $\sin()$-, $\cos()-$ und $\tan()$-Funktionen
@@ -56,10 +58,27 @@ Zeichnen Sie zu jedem angegebenen Winkel von $-270\degre - 450\degre$ den zugeh�
 \newpage
 
 \subsection{Tangensfunktion}
-Zeichnen Sie zu jedem der angegebenen Winkel von $0\degre - 450\degre$ den zugehörigen
-\textbf{Tangens}-Wert ins folgende Koordinatensystem:
+Die folgende Graphik zeigt die Tangensfunktion.
 
-\bbwCenterGraphic{10cm}{tals/trig3/img/coordSystem0-450.png}
+%\bbwCenterGraphic{10cm}{tals/trig3/img/coordSystem0-450.png}
+\bbwCenterGraphic{15cm}{tals/trig3/img/tangensGeogebra.png}
+
+
+\TNT{4}{
+  \begin{itemize}
+  \item Zu $90\degre$ existiert kein Tangenswert
+  \item Die senkrechten zu $90\degre$, $270\degre$, ... sind
+    Asymtpoten
+  \item Auftrag: Skizzieren Sie die Asymtoten
+  \end{itemize}
+}
+
+\begin{bemerkung}{}{}
+  Die «Polstellen» des Tangens sind genau die Nullstellen des Cosinus, denn es gilt ja:
+  $$\tan(\alpha) = \frac{\sin(\alpha)}{\cos(\alpha)}$$
+\end{bemerkung}
+
+\newpage
 
 \subsection{Definitions- und Wertebereiche}
 
@@ -77,68 +96,19 @@ Wertebereiche an:
     z\cdot{}180\degre| z\in\mathbb{Z} \}$} & \TRAINER{$\mathbb{R}$} & \TRAINER{$z\cdot{}180\degre| z\in\mathbb{Z}$}\\ \hline
 \end{bbwFillInTabular}
 
-\begin{bemerkung}{}{}
-  Die Polstellen des Tangens sind genau die Nullstellen des Cosinus, denn es gilt ja:
-  $$\tan(\alpha) = \frac{\sin(\alpha)}{\cos(\alpha)}$$
-\end{bemerkung}
 
 \newpage
 
 
 \subsection{Amplitude, Frequenz und Phase}\index{Amplitude}\index{Frequenz}\index{Phase}
+
+\subsubsection{Translationen}
+
 \aufgabenFarbe{Lösen Sie als Einstieg das Blatt «Transformationen Aufgaben» im OLAT von M.\,\,Rohner.}
 
 
-Danach betrachten wir die folgende Funktion:
+\textbf{Referenzaufgaben zu den Translationen}
 
-$$y = f(x) = 0.7 \cdot \sin(1.5\cdot(x - 20\degre))$$
-
-\renewcommand{\bbwFunctionColour}{gray!30}\noTRAINER{\trigsysDsin{}}
-\renewcommand{\bbwFunctionColour}{blue}\TRAINER{\trigsysDFct{2*0.7*sin(1.5*(50*\x-20))}}
-
-Zum Skizzieren beginnen wir mit uns bekannten Winkeln. Winkeln also, bei denen wir die Sinus-Werte bereits kennen:
-
-$$\sin(0\degre)  = 0  ; \sin(30\degre) = 0.5; \sin(90\degre) = 1  $$
-
-\textbf{Leider}: Für $x=90\degre$ \zB erhalten wir also ... $$f(x) = f({\color{ForestGreen}90\degre}) = 0.7\cdot\sin(1.5\cdot({\color{ForestGreen}90\degre}-20\degre)) = 0.7\cdot{}\sin(105\degre)$$ ... und das macht die Sache nicht wirklich einfach.
-
-
-Wir müssen also irgendwie erreichen, dass der Term $$(1.5\cdot(x-20\degre))$$
-entweder $0\degre$, $30\degre$ oder $90\degre$ ist, dann können
-wir $$f(x) := 0.7\cdot\sin(1.5\cdot(x-20\degre))$$ einfach berechnen.
-
-
-\newpage
-\subsubsection{Charakteristische Punkte}
-
-\begin{itemize}
-\item  $0.7\cdot\sin(0\degre) = 0.7\cdot\sin(1.5\cdot(x-20\degre))$:
-  Löse $0\degre = 1.5\cdot(x-20\degre)$
-  $$\longrightarrow x=20\degre$$
-  Somit ist $f(20\degre) = 0.7\cdot{}\sin(0\degre) = 0$.
-\item  $0.7\cdot\sin(30\degre) = 0.7\cdot\sin(1.5\cdot(x-20\degre))$:
-  Löse $30\degre = 1.5\cdot(x-20\degre)$
-  $$\longrightarrow 40\degre$$
-  Somit ist $f(40\degre) = 0.7\cdot{}\sin(30\degre) = 0.7\cdot{}0.5 = 0.35$.
-\item  $0.7\cdot\sin(90\degre) = 0.7\cdot\sin(1.5\cdot(x-20\degre))$:
-  Löse $90\degre = 1.5\cdot(x-20\degre)$
-  $$\longrightarrow 80\degre$$
-  Somit ist $f(80\degre) = 0.7\cdot{}\sin(90\degre) = 0.7\cdot{}1 = 0.7$.
-\end{itemize}
-Die anderen Winkel folgen durch Symmetrieüberlegungen.
-
-
-Was fällt Ihnen auf?
-\TNTeop{
-  Die Funktion hat eine Amplitude von 0.7
-
-  Die Funktion ist um 20 Grad nach rechts verschoben
-
-  Die Frequenz nimmt zu um Faktor 1.5
-}%% END TNTeop
-%%\newpage
-
-\subsubsection{Referenzaufgaben}
 1. Sie möchten die \textbf{Sinusfunktion} um 20\% in $y$-Richtung strecken und um
 $30\degre$ nach rechts verschieben.
 
@@ -151,8 +121,8 @@ a) Wie sieht die Funktion aus?
 
 b) Wie lautet die Funktionsgleichung
 
-$$y = \LoesungsRaum{1.5 \cdot{} \sin(x - 30\degre)}$$
-
+$$y = \LoesungsRaum{1.2 \cdot{} \sin(x - 30\degre)}$$
+\newpage
 
 
 2. Sie möchten die Sinusfunktion nach links verschieben, so dass sich die neuen Nullstellen bei
@@ -191,6 +161,92 @@ Wie lautet die Funktionsgleichung?
 $$y = \LoesungsRaum{\cos\left(x\cdot\frac{90\degre}{60\degre}\right)}$$
 \newpage
 
+
+
+
+
+
+
+
+
+
+
+
+\subsubsection{Charakteristische Punkte}
+Versuchen wir, die folgende Funktion zu skizzieren:
+
+$$y = f(\varphi) = 0.7 \cdot \sin(1.5\cdot(\varphi - 20\degre))$$
+
+\renewcommand{\bbwFunctionColour}{gray!30}\noTRAINER{\trigsysDsin{}}
+\renewcommand{\bbwFunctionColour}{blue}\TRAINER{\trigsysDFct{2*0.7*sin(1.5*(50*\x-20))}}
+
+\TNTeop{
+Wir kennen:
+
+
+1.
+$$\sin(0\degre)  = 0$$
+
+Wir können also $0.7\cdot{}\sin(0\degre)$ leicht berechnen:
+$0.7\cdot{}\sin(0\degre) = 0$
+
+Ansatz
+$$0.7 \cdot \sin(1.5\cdot(\varphi - 20\degre)) = 0.7\cdot{}\sin(0\degre)$$
+und somit
+$$1.5\cdot(\varphi - 20\degre) = 0\degre \Longrightarrow  \varphi - 20\degre =
+0\degre \Longrightarrow \varphi = 20\degre$$
+(einzeichnen)
+
+
+2.
+$$\sin(90\degre)  = 1$$
+
+Wir können also $0.7\cdot{}\sin(90\degre)$ leicht berechnen:
+$0.7\cdot{}\sin(90\degre) = 0.7$
+
+Ansatz:
+$$0.7 \cdot \sin(1.5\cdot(\varphi - 20\degre)) = 0.7\cdot{}\sin(90\degre)$$
+und somit
+$$1.5\cdot(\varphi - 20\degre) = 90\degre \Longrightarrow  \varphi - 20\degre =
+60\degre \Longrightarrow \varphi = 80\degre$$
+(einzeichnen)
+
+Die restlichen Punkte entstehen durch Symmetrie
+}%% 
+%% implizit\newpage
+
+
+Was fällt Ihnen auf?
+
+
+\TNTeop{
+  Die Funktion hat eine Amplitude von 0.7
+
+  Die Funktion ist um 20 Grad nach rechts verschoben
+
+  Die Frequenz nimmt zu um Faktor 1.5
+}%% END TNTeop
+%%\newpage
+
+\subsubsection{Referenzaufgaben}
+
+Skizzieren Sie die Funktionen und geben sie explizit zwei
+charakteristische Punkte an:
+
+$y = 1.2 \cdot{} \sin(1.8\cdot(\varphi-40\degre))$
+
+\trigsysD{}\\
+
+$y = 0.8 \cdot{} \sin(0.6\cdot{}(\varphi+80\degre))$
+
+\trigsysD{}\\
+
+$y = -1.8 \cdot{} \cos(1.2\cdot{}(\varphi+50\degre))$
+
+\trigsysC{}\\
+
+
+\newpage
 
 
 
