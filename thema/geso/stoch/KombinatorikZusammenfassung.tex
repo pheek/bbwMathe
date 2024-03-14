@@ -1,0 +1,101 @@
+\subsection{Zusammenfassung}\label{kombinatorikZusammenfassung}
+
+
+%%\bbwCenterGraphic{16cm}{geso/stoch/img/KombinatorikRLP.pdf}
+$N = $
+Anzahl Möglichkeiten, um $\color{red}k$ Elemente aus total
+$\color{blue}n$ Elementen auszuwählen. Von den $n$ zur Auswahl
+stehenden Elementen werden typischerweise nicht alle ausgewählt.
+
+\begin{tabular}{p{15mm}|p{75mm}|p{75mm}}
+& $$\text{\textbf{mit} Wiederholung}$$ $$\text{(= mit
+    Zurücklegen)}$$ & $$\text{\textbf{ohne}
+    Wiederholung}$$ $$\text{(= ohne Zurücklegen)}$$ $$k\le ncd $$\\\hline
+
+%% Zeilentitel Variationen
+\rotatebox[origin=rT]{90}{\makecell{\textbf{Variation}\\Reihenfolge wesentlich}}
+&
+%% Formeln
+ \begin{center}{\fbox{$N={\color{blue}n}^{\color{red}k}$}}\end{center}
+ Bsp.: Anzahl Wörter der Länge
+ {\color{red}4}, die man aus {\color{blue}10} vorgegebenen Buchstaben bilden kann: $${\color{blue}10}^{\color{red}4} = 10\,000$$
+&
+ \begin{center}{\fbox{$N = \frac{{\color{blue}n}!}{({\color{blue}n}-{\color{red}k})!}$}}\end{center}
+ Bsp.: Anzahl Möglichkeiten, $\color{red}4$ Leute auf $\color{blue}
+ 10$ Sitzplätze zu verteilen.
+ $$\frac{{\color{blue}10}!}{({\color{blue}10}-{\color{red}4})!} = 5040$$
+
+ \\\hline
+
+%% Zeilentitel Kombinationen
+\rotatebox[origin=rT]{90}{\makecell{\textbf{Kombination}\\Reihenfolge irrelevant}}
+&
+%% Formeln
+ \begin{center}$N = {{\color{blue}n}+{\color{red}k}-1 \choose {\color{red}k}}$\end{center}
+ Bsp.: Anzahl Möglichkeiten, $\color{red}4$ Brote aus $\color{blue}10$ Sorten auszuwählen:
+ $${{\color{blue}10}+{\color{red}4}-1 \choose {\color{red}4}} = 715$$
+&
+ \begin{center}{\fbox{$N={{\color{blue}n} \choose {\color{red}k}}$}}\end{center}
+ Bsp.: Anzahl Möglichkeiten, $\color{red}4$ Karten aus {\color{blue}10} zu ziehen: $${{\color{blue}10} \choose {\color{red}4}} = 210$$
+ \end{tabular}
+\newpage
+
+
+\subsubsection{Taschenrechner}
+Taschenrechner Abkürzungen \tiprobutton{ncrnpr}.
+
+
+\begin{bbwFillInTabular}{l|c||c|c|}
+            & mit Wiederholung                & \multicolumn{2}{c}{ohne Wiederholung}     \\\hline
+            &   $n$ unabhängig von $k$         &  $n > k$ \noTRAINER{\,\,\,\,\,\,}  &  $n=k$ \\\hline
+Variation   &   \TRAINER{\tiprobutton{xhoch}}  & \TRAINER{\texttt{nPr}}          & \TRAINER{\texttt{!}} \\\hline
+Kombination &   ($n+k-1$) \texttt{nCr} $k$     & \TRAINER{\texttt{nCr}} & \TRAINER{1} \\\hline
+\end{bbwFillInTabular}
+
+Dabei bedeuten:
+
+\textbf{Mit Wiederholung} = \textbf{mit Zurücklegen}: Die ausgewählten $n$ Objekte können
+mehrfach verwendet werden (Beispiel Zahlenschloss) (Seite \pageref{kombiVariation}).
+
+\textbf{Ohne Wiederholung} = \textbf{ohne Zurücklegen}: Die ausgewählten $n$ Objekte kommen
+in der Stichprobe genau einmal vor (Beispiel: Personen auswählen)
+(Seite \pageref{kombiVariationOhneWiederholung}).
+
+\textbf{Variation} = \textbf{Reihenfolge wesentlich}: Die ausgewählten $n$ Objekte werden in
+einer Reihe aufgelistet (Seite \pageref{kombiVariation}).
+
+
+\textbf{Kombination} = \textbf{Reihenfolge} \textbf{un}wesentlich: Es geht nur darum,
+welche $n$ Objekte ausgewählt wurden, nicht an welcher Position (Seite \pageref{kombiKombination}).
+
+\newpage
+\subsubsection{Entscheidungshilfe}
+
+\bbwCenterGraphic{15cm}{geso/stoch/img/EntscheidungsHilfeBaum.png}
+
+$$\hspace{4mm}
+n^k; \hspace{24mm}
+n!; \hspace{19mm}
+\frac{n!}{(n-k)!}; \hspace{2mm}
+{n+k-1 \choose k};\hspace{22mm}
+{n\choose k}$$
+
+{\hspace{18mm}
+s. \pageref{kombiVariationMitZuruecklegen}\hspace{19mm}
+s. \pageref{kombiVariationOhneWiederholung}\hspace{19mm}
+s. \pageref{kombiVariationEinerTeilmenge}\hspace{17mm}
+ ----- \hspace{30mm}
+s. \pageref{kombiKombination}
+}
+
+%%\newpage
+
+\subsubsection{Produkt- und Summenregel}
+
+\textbf{Produktregel}: Müssen zwei Ereignisse unabhängig voneinander
+(quasi hintereinander) ausgeführt werden müssen, so sprechen wir von
+«\textbf{und}» oder der Produktregel (siehe Seite \pageref{experimentePfadUndSummenregel}).
+
+\textbf{Summenregel}: Ist von zwei alternativen Ergebnissen die Rede,
+welche «\textbf{nur entweder / oder»} eintreffen, so sprechen wir von
+Summenregel (siehe Seite \pageref{experimentePfadUndSummenregel}).

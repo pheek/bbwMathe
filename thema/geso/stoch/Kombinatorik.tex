@@ -8,6 +8,10 @@ Die Kombinatorik befasst sich damit, wie viele Möglichkeiten für
 verschiedene Konstellationen zur Wahl stehen.
 
 \input{geso/stoch/Intro}
+\newpage
+
+(Eine Zusammenfassung und Entscheidungshilfe finden Sie auf Seite
+\pageref{kombinatorikZusammenfassung} im Kapitel \ref{kombinatorikZusammenfassung}.)
 
 \subsection{Variation mit Wiederholung
   (Produktregel)}\index{Variation!mit Wiederholung}
@@ -65,7 +69,7 @@ $$N = n^k$$
 
 \subsubsection{Urnenmodell}
 \TNTeop{\bbwGraphic{12cm}{geso/stoch/img/Urnenmodell.png}\\
-Hinweis: Denken Sie an eine Wahlurne, bei der man nicht sehen darf, wie es darin aussieht. Das Urnenmodell wird oft verwendet, da alle unseren Kombinatorischen Problemstellungen damit moedelliert werden können.}%% END TNT
+Hinweis: Denken Sie an eine Wahlurne, bei der man nicht sehen darf, wie es darin aussieht. Das Urnenmodell wird oft verwendet, da alle unseren Kombinatorischen Problemstellungen damit modelliert werden können.}%% END TNT
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -112,7 +116,7 @@ möglich? Dabei darf eine Farbe im Schema auch mehrfach auftreten.}
 \TNT{2}{Jede Wahl (Pullover, Hose, Schuhe) ist von beiden anderen unabhängig. Somit gilt die Produktformel: 4 mal 3 mal 2 = 24 Varianten.}%% END TNT
 
 
-\aufgabenFarbe{Bei einem Spiel wird zunächst eine Münze geworfen (Kopf oder Zahl), danach ein Spielwürfel geworfen (1-6) und zu letzt mit dem Kompass eine der vier Himmelsrichtungen (N,O,S,W) bestimmt. Ein Möglicher Ausgang wäre (Kopf, Drei, Ost). Ein anderer möglicher Ausgang wäre (Zahl, Zwei, Süd). Wie viele solche Ausgänge sind denkbar?}
+\aufgabenFarbe{Bei einem Spiel wird zunächst eine Münze geworfen (Kopf oder Zahl), danach ein Spielwürfel geworfen (1-6) und zuletzt mit dem Kompass eine der vier Himmelsrichtungen (N,O,S,W) bestimmt. Ein Möglicher Ausgang wäre (Kopf, Drei, Ost). Ein anderer möglicher Ausgang wäre (Zahl, Zwei, Süd). Wie viele solche Ausgänge sind denkbar?}
 \TNT{4}{Jedes Ergebnis ist vom vorangehenden unabhängig. Somit gibt es zwei mal sechs mal vier Variationen = 48 Mögliche Ausgänge}
 
 
@@ -725,40 +729,8 @@ Beim Glücksspiel «Euromillions» werden fünf aus 50 Zahlen und zwei aus zwöl
 \olatLinkGESOKompendium{5.5.1}{46}{11., 12., 13., 14.*}
 \newpage
 
-\subsection{Zusammenfassung}
-%%\bbwCenterGraphic{16cm}{geso/stoch/img/KombinatorikRLP.pdf}
-$N = $
-Anzahl Möglichkeiten, um $\color{red}k$ Elemente aus total $\color{blue}n$ Elementen auszuwählen.
 
-\begin{tabular}{p{15mm}|p{75mm}|p{75mm}}
-& $$\text{\textbf{mit} Wiederholung}$$ $$\text{(= mit
-    Zurücklegen)}$$ & $$\text{\textbf{ohne}
-    Wiederholung}$$ $$\text{(= ohne Zurücklegen)}$$ $$k\le ncd $$\\\hline
+\input{geso/stoch/KombinatorikZusammenfassung}\newpage
 
-%% Zeilentitel Variationen
-\rotatebox[origin=rT]{90}{\makecell{\textbf{Variation}\\Reihenfolge wesentlich}}
-&
-%% Formeln
- \begin{center}{\fbox{$N={\color{blue}n}^{\color{red}k}$}}\end{center}
- Bsp.: Anzahl Wörter der Länge
- {\color{red}4}, die man aus {\color{blue}10} vorgegebenen Buchstaben bilden kann: $${\color{blue}10}^{\color{red}4} = 10\,000$$
-&
- \begin{center}{\fbox{$N = \frac{{\color{blue}n}!}{({\color{blue}n}-{\color{red}k})!}$}}\end{center}
- Bsp.: Anzahl Möglichkeiten, $\color{red}4$ Leute auf $\color{blue}
- 10$ Sitzplätze zu verteilen.
- $$\frac{{\color{blue}10}!}{({\color{blue}10}-{\color{red}4})!} = 5040$$
 
- \\\hline
 
-%% Zeilentitel Kombinationen
-\rotatebox[origin=rT]{90}{\makecell{\textbf{Kombination}\\Reihenfolge irrelevant}}
-&
-%% Formeln
- \begin{center}$N = {{\color{blue}n}+{\color{red}k}-1 \choose {\color{red}k}}$\end{center}
- Bsp.: Anzahl Möglichkeiten, $\color{red}4$ Brote aus $\color{blue}10$ Sorten auszuwählen:
- $${{\color{blue}10}+{\color{red}4}-1 \choose {\color{red}4}} = 715$$
-&
- \begin{center}{\fbox{$N={{\color{blue}n} \choose {\color{red}k}}$}}\end{center}
- Bsp.: Anzahl Möglichkeiten, $\color{red}4$ Karten aus {\color{blue}10} zu ziehen: $${{\color{blue}10} \choose {\color{red}4}} = 210$$
- \end{tabular}
-\newpage
