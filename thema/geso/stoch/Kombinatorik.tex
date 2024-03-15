@@ -7,14 +7,58 @@
 Die Kombinatorik befasst sich damit, wie viele Möglichkeiten für
 verschiedene Konstellationen zur Wahl stehen.
 
-\input{geso/stoch/Intro}
-\newpage
+%%%\input{geso/stoch/Intro}
 
-(Eine Zusammenfassung und Entscheidungshilfe finden Sie auf Seite
+(Eine Zusammenfassung und Entscheidungshilfe für die Formeln finden Sie auf Seite
 \pageref{kombinatorikZusammenfassung} im Kapitel \ref{kombinatorikZusammenfassung}.)
 
-\subsection{Variation mit Wiederholung
-  (Produktregel)}\index{Variation!mit Wiederholung}
+\subsection{Einstiegsbeispiel Produktregel}\index{Produktregel!Kombinatorik}
+
+\aufgabenFarbe{
+Kim hat vier Pullover, drei Paar Hosen und 2 Paar Schuhe. Auf wie viele Arten
+kann sich Kim bekleiden?}
+\TNT{6}{
+Jede Wahl (Pullover, Hose, Schuhe) ist von beiden anderen unabhängig. Somit
+gilt die Produktregel: 4 mal 3 mal 2 = 24 Varianten.}
+\noTRAINER{\vspace{10mm}}\TRAINER{\vspace{40mm}}
+\begin{gesetz}{Produktregel}{}
+  Bei unabhängigen Ereignissen multiplizieren sich die Anzahl der
+  einzelnen Möglichkeiten ($n_i$)zur Gesamtzahl aller Möglichkeiten ($N$).
+\end{gesetz}
+
+\newpage
+\subsection*{Aufgaben}
+\aufgabenFarbe{Bei einem Spiel wird zunächst eine Münze geworfen (Kopf oder Zahl), danach
+ein Spielwürfel geworfen (1-6) und zuletzt mit dem Kompass eine der vier Himmelsrichtungen (N,O,S,W) bestimmt. Ein Möglicher Ausgang wäre (Kopf, Drei,
+Ost). Ein anderer möglicher Ausgang wäre (Zahl, Zwei, Süd). Wie viele solche
+Ausgänge sind denkbar?}
+\TNT{6}{
+Jedes Ergebnis ist vom vorangehenden unabhängig. Somit gibt es zwei mal
+sechs mal vier Variationen = 48 Mögliche Ausgänge
+}
+
+\aufgabenFarbe{Herr Meyer hat vier verschiedene Suppenteller, vier
+  verschiedene Suppenlöffel, vier verschiedene
+  Tassen, vier verschiedene Gläser und vier  und vier verschiedene
+  Servietten zur Auswahl. Herr Meyer deckt heute das Mittagessen für
+  seine Tochter. Er selbst ist zum Essen weg.
+  Auf wie viele verschiedene Arten kann er den seinen Mittagstisch decken?
+}
+\TNT{6}{
+  Jedes Ergebnis ist vom vorangehenden unabhängig. Somit gibt es
+  $4\cdot{}4\cdot{}4\cdot{}4\cdot{}4$ Möglichkeiten (= $1024$).
+}
+
+
+\newpage
+
+
+\subsection{Variation mit Wiederholung}\index{Variation!mit Wiederholung}
+= Spezialfall der Produktregel
+
+\vspace{5mm}
+\textbf{Aufgabe}:
+
 Ein Zahlenschloss hat vier Ringe und auf jedem Ring sind die Zahlen
 von 1 - 6 einstellbar. Also pro Ring sechs Möglichkeiten.
 Wie viele Variationen gibt es im ganzen für dieses Zahlenschloss?
@@ -26,18 +70,27 @@ Jeder Ring hat 6 Möglichkeiten. Somit habe ich am 1. Ring sechs
 Varianten. Für jede dieser Varianten habe ich für den 2. Ring auch
 sechs Varianten. Insgesamt also
 
-$n$ = Anzahl Objekte zur Auswahl; diese müssen nicht unbedingt gewählt
-werden (hier 6 Ziffern): \textbf{Nicht jede Auswahlmöglichkeit muss
-  auch vorkommen!}
+$n$ = Anzahl Ziffern (optional)
 
-$k$ = Vorgegebene Anzahl geordnete auszuwählende Objekte (hier 4, weil
-es 4 Ringe hat): \textbf{Jede der $k$ Positionen muss verwendet werden.}
+$k$ = Anzahl Ringe (zwingend)
 
 $N$ = Anzahl Variationen
 
 $$N = n^k = 6^4 = 1296$$
 }%% END TNT eop
 
+\newpage
+
+\subsubsection{Urnenmodell}
+Auf wie viele Arten können vier Farbbänder die Wand schmücken, wenn
+nur die Farben rot, pink und grün vorkommen dürfen. Jede der drei
+Farben darf jedoch mehrfach vorkommen, die Reihenfolge ist jedoch
+wesentlich.
+
+\TNTeop{\bbwGraphic{12cm}{geso/stoch/img/Urnenmodell.png}\\
+Hinweis: Denken Sie an eine Wahlurne, bei der man nicht sehen darf, wie es darin aussieht. Das Urnenmodell wird oft verwendet, da alle unseren Kombinatorischen Problemstellungen damit modelliert werden können.}%% END TNT
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{definition}{Variation}{}\index{Variation!Definition}\label{kombiVariation}
@@ -66,12 +119,6 @@ $$N = n^k$$
 
 \end{gesetz}
 \newpage
-
-\subsubsection{Urnenmodell}
-\TNTeop{\bbwGraphic{12cm}{geso/stoch/img/Urnenmodell.png}\\
-Hinweis: Denken Sie an eine Wahlurne, bei der man nicht sehen darf, wie es darin aussieht. Das Urnenmodell wird oft verwendet, da alle unseren Kombinatorischen Problemstellungen damit modelliert werden können.}%% END TNT
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection*{Referenzaufgabe Zahlenschloss}
 Ein Zahlenschloss wie eben soll gebaut werden. Dabei hat jeder Ring
@@ -102,25 +149,25 @@ wir erst 16\,807 Variationen.
 Ferien in die acht Klassen 3a-3h eingeteilt. Auf wie viele
 Variationen ist dies möglich?}
 
-\TNT{2}{Jede der vier hat 8 Möglichkeiten: $8^4 = 4096$.}%% END TNT
+\TNT{4}{Jede der vier hat 8 Möglichkeiten: $8^4 = 4096$.}%% END TNT
 
 \aufgabenFarbe{In einer Urne liegen 20 verschiedenfarbige Kugeln. Vier
 mal nacheinander wird blindlings eine Kugel gezogen, die Farbe wird notiert und
 die Kugel wird wieder zurückgelegt. Wie viele Farbschemata sind
-möglich? Dabei darf eine Farbe im Schema auch mehrfach auftreten.}
-\TNT{2}{Jede Position im Farbschema hat unabhängig von den anderen die
+möglich? Dabei darf eine Farbe im Schema auch mehrfach auftreten, die
+Reihenfolge der Farben ist jedoch wesentlich.}
+\TNT{4}{Jede Position im Farbschema hat unabhängig von den anderen die
 20 Varianten: $20^4 = 160\,000$}
 
-
-\aufgabenFarbe{Kim hat vier Pullover, drei Paar Hosen und 2 Paar Schuhe. Auf wie viele Arten kann sich Kim bekleiden?}
-\TNT{2}{Jede Wahl (Pullover, Hose, Schuhe) ist von beiden anderen unabhängig. Somit gilt die Produktformel: 4 mal 3 mal 2 = 24 Varianten.}%% END TNT
-
-
-\aufgabenFarbe{Bei einem Spiel wird zunächst eine Münze geworfen (Kopf oder Zahl), danach ein Spielwürfel geworfen (1-6) und zuletzt mit dem Kompass eine der vier Himmelsrichtungen (N,O,S,W) bestimmt. Ein Möglicher Ausgang wäre (Kopf, Drei, Ost). Ein anderer möglicher Ausgang wäre (Zahl, Zwei, Süd). Wie viele solche Ausgänge sind denkbar?}
-\TNT{4}{Jedes Ergebnis ist vom vorangehenden unabhängig. Somit gibt es zwei mal sechs mal vier Variationen = 48 Mögliche Ausgänge}
-
-
-\newpage
+\aufgabenFarbe{Ein Kombinations-Safe mit den sechsundzwanzig
+  Buchstaben von «A» bis «Z» wird gebaut. Die Buchstaben müssen in der
+  richtigen Reihenfolge angegeben werden, um den Safe zu öffnen.
+  Wie viele Buchstaben sollte der Mechanismus vorschreiben, damit
+  mindestens $10\,000\,000$ Möglichkeiten vorhanden sind?
+}
+\TNTeop{$26^k = 10\,000\,000$, daher $k=\log_{26}(10\,000\,000\approx
+  4.95)$ ergo: Es braucht 5 Buchstaben.}%% end TNTeop impliczit newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5555
 
 \subsection{Variation ohne Wiederholung}\index{Variation!ohne Wiederholung}\label{kombiVariationOhneWiederholung}
 \subsubsection{Permutationen (Fakultät)}\index{Permutation}\index{Fakultät}
@@ -236,9 +283,19 @@ Möglichkeiten der Fakultät. $n$ = Anzahl Schüler = Anzahl Plätze, dann
 gilt $n!$ = Anzahl mögliche Sitzordnungen.
 \vspace{10mm}
 }
-
 \hrule
+\aufgabenFarbe{Jaymee will in den Sommerferien die Schulbücher
+  ordnen. Es sind: Ein Englischbuch, drei Deutschbücher, zwei Französischbücher und fünf Mathematikbücher (alle
+  Bücher sind verschieden!).
+  Sie sollen auf ein Regal nebeneinander gestellt werden,
+wobei Bücher des gleichen Fachgebietes nebeneinander stehen sollen. Wie
+viele verschiedene Gruppierungsmöglichkeiten der Bücher gibt es?}
+\TNTeop{Vier Fachgebiete, daher $4!$. Insgesamt sind innerhalb der
+  Fachgebiete aber auch Variationen möglich:
+  $$N= 4! \cdot{} (1! \cdot{} 3! \cdot{} 2! \cdot{} 5!) = 34\,560$$
+}
 
+\newpage
 Ein alter Bekannter (optional):
 
 \vspace{3mm}
@@ -258,7 +315,6 @@ Erinnern Sie sich auch an dieses Resultat? \TRAINER{$= \e \approx
 
 \hrule
 
-\olatLinkGESOKompendium{5.5.1}{46}{15.}
 
 \newpage
 
