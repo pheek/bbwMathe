@@ -25,6 +25,20 @@ $${#2} = \TRAINER{{#3}}$$
 \stepcounter{bbwAufgabenNummerCounter}
 }%% End command AufgabeML
 
+
+%% wie AufgabeML, aber ohne das Gleichheitszeichen
+\newcommand\aufgabeMLo[3]{
+
+\textbf{Aufgabe \arabic{bbwAufgabenNummerCounter}.} :\,\,
+$${#2}  \TRAINER{{#3}}$$
+
+\abplz{#1}
+
+\stepcounter{bbwAufgabenNummerCounter}
+}%% End command AufgabeMLo
+
+
+
 {\huge{Vermischte Aufgaben zu Potenzgesetzen}}
 
 
@@ -212,7 +226,9 @@ Potenzieren Sie die Potenzen:
 
 \aufgabeML{8}{16x^3 : (2y)^3}{16 \cdot{} (x:(2y)))^3 = 2\cdot{}2^3 \cdot{} \left(\frac{x}{2y}\right)^3  = 2 \cdot{} \left(\frac{x}{y}\right)^3}
 \aufgabeML{6}{(-2p^3)^2 : (2q)^2}{\left((-2p^3) : (2q)\right)^2 =
-(-p^3:q)^3}
+(-p^3:q)^2 = \left(\frac{p^3}{q}\right)^2 =\frac{p^6}{q^2}}
+\TRAINER{Das Minuszeichen fällt weg, wegen dem geraden Exponenten ($2$).}
+
 \noTRAINER{\newpage}
 \aufgabeML{6}{(-2a)^3: (-2b)^3}{\left(\frac{a}{b}\right)^3}
 
@@ -224,9 +240,9 @@ Potenzieren Sie die Potenzen:
 Bringen Sie beide Seiten auf dieselbe Basis und Lösen Sie durch
 Exponentenvergleich:
 
-\aufgabeML{6}{7^{19} \cdot{} 7^3 = 7^x}{19 + 3 = x \Longrightarrow x = 22}
-\aufgabeML{6}{\left(a^{10}\right)^x = a^{150}}{10x = 150 \Longrightarrow x = 15}
-\aufgabeML{6}{\left(a^x\right)^3 \cdot{} a^5= \left(a^2\right)^x \cdot{}a^7}{3x+5=2x+7\Longrightarrow x = 2}
+\aufgabeMLo{6}{7^{19} \cdot{} 7^3 = 7^x}{19 + 3 = x \Longrightarrow x = 22}
+\aufgabeMLo{6}{\left(a^{10}\right)^x = a^{150}}{10x = 150 \Longrightarrow x = 15}
+\aufgabeMLo{6}{\left(a^x\right)^3 \cdot{} a^5= \left(a^2\right)^x \cdot{}a^7}{3x+5=2x+7\Longrightarrow x = 2}
 
 
 \newpage
@@ -489,7 +505,7 @@ Dividieren Sie Potenzen mit gleicher Basis:
 
 \aufgabeML{3.2}{\frac{c^{\frac34}}{c^\frac12}}{c^\frac14=\sqrt[4]{c}}
 
-\aufgabeML{3.2}{b^{\frac34} : d^{\frac{-5}6}}{d^\frac{19}{12} = \sqrt[12]{b^{19}}}
+\aufgabeML{3.2}{b^{\frac34} : b^{\frac{-5}6}}{b^\frac{19}{12} = \sqrt[12]{b^{19}}}
 
 
 \noTRAINER{\newpage}
