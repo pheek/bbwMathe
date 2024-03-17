@@ -121,8 +121,8 @@ echo "  Copying Quadratische Gleichungen mit Photomath (ALLG)"
 cp -f ./photomath_quadratische_funktionen/Photomath_quadratische_Funktionen_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/photomath/Photomath_quadratische_Funktionen.pdf
 
 echo "  Copying Potenzgesetze Arbeitsblatt (GESO)"
-cp -f ./algebra/potenzgesetze_geso/Potenzgesetze_GESO.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/potenzgesetze/Potenzgesetze.pdf
-cp -f ./algebra/potenzgesetze_geso/Potenzgesetze_TRAINER_GESO.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/potenzgesetze/Potenzgesetze_TRAINER.pdf
+cp -f ./algebra/potenzgesetze/Potenzgesetze_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/potenzgesetze/Potenzgesetze.pdf
+cp -f ./algebra/potenzgesetze/Potenzgesetze_TRAINER_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/potenzgesetze/Potenzgesetze_TRAINER.pdf
 
 echo "  Copying Runden (algebra/zahlmengen/ordnungsrelationen) (ALLG)"
 cp -f ./algebra/zahlmengen/ordnungsrelationen/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/zahlmengen/ordnungsrelationen
