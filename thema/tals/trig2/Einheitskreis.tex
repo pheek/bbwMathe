@@ -1,98 +1,6 @@
 %%
 %% 2019 07 04 Ph. G. Freimann
 %%
-\newcommand{\einheitskreis}{
-\definecolor{qqwuqq}{rgb}{0,0.79,0}
-\definecolor{qqqqff}{rgb}{0,0,1}
-\definecolor{qqzzzz}{rgb}{0,0.6,0.6}
-\definecolor{ffwwqq}{rgb}{1,0.4,0}
-\definecolor{qqccww}{rgb}{0,0.8,0.4}
-\definecolor{uququq}{rgb}{0.25,0.25,0.25}
-\definecolor{xdxdff}{rgb}{0.49,0.49,1}
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=2.5cm,y=2.5cm]
-\draw[->,color=black] (-1.5,0) -- (1.5,0);
-\foreach \x in {-1.5,-1,-0.5,0.5,1}
-\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
-\draw[->,color=black] (0,-1.5) -- (0,1.5);
-\foreach \y in {-1.5,-1,-0.5,0.5,1}
-\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
-\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
-\clip(-1.5,-1.5) rectangle (1.5,1.5);
-\draw [shift={(0,0)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (0:0.28) arc (0:46.14:0.28) -- cycle;
-\draw(0,0) circle (2.5cm);
-\draw [domain=-1.5:1.5] plot(\x,{(-0-0.72*\x)/-0.69});
-\draw (0.69,-1.5) -- (0.69,1.5);
-\draw (1,-1.5) -- (1,1.5);
-\draw (1.12,0.6) node[anchor=north west,color=qqccww] {t};
-\draw (0.50,0.42) node[anchor=north west,color=ffwwqq] {s};
-\draw (0.30,0.21) node[anchor=north west,color=qqzzzz] {c};
-\draw [line width=1.2pt,color=qqccww] (1,1.04)-- (1,0);
-\draw [line width=1.2pt,color=ffwwqq] (0.69,0.72)-- (0.69,0);
-\draw [line width=1.6pt,color=qqzzzz] (0.69,0)-- (0,0);
-\begin{scriptsize}
-\fill [color=xdxdff] (0.69,0.72) circle (1.5pt);
-\draw[color=xdxdff] (0.49,0.71) node {$P$};
-\fill [color=uququq] (0.69,0) circle (1.5pt);
-\draw[color=uququq] (0.8,0.12) node {$Xp$};
-%%\fill [color=uququq] (1,1.04) circle (1.5pt);
-%%\draw[color=uququq] (1.22,0.95) node {$Yp$};
-\fill [color=uququq] (0.69,0.72) circle (1.5pt);
-\draw[color=uququq] (0.82,0.7) node {$Yp$};
-\fill [color=qqqqff] (0,0) circle (1.5pt);
-\draw(0.20,0.09) node {$\varphi$};
-\end{scriptsize}
-\end{tikzpicture}\par
-}%% END Command \einheitskreis
-
-
-\newcommand{\einheitskreisT}{%% Tangens
-\definecolor{qqwuqq}{rgb}{0,0.79,0}
-\definecolor{qqqqff}{rgb}{0,0,1}
-\definecolor{qqzzzz}{rgb}{0,0.6,0.6}
-\definecolor{ffwwqq}{rgb}{1,0.4,0}
-\definecolor{qqccww}{rgb}{0,0.8,0.4}
-\definecolor{uququq}{rgb}{0.25,0.25,0.25}
-\definecolor{xdxdff}{rgb}{0.49,0.49,1}
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=2.5cm,y=2.5cm]
-\draw[->,color=black] (-1.5,0) -- (1.5,0);
-\foreach \x in {-1.5,-1,-0.5,0.5,1}
-\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
-\draw[->,color=black] (0,-1.5) -- (0,1.5);
-\foreach \y in {-1.5,-1,-0.5,0.5,1}
-\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
-\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
-\clip(-1.5,-1.5) rectangle (1.5,1.5);
-\draw [shift={(0,0)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (0:0.28) arc (0:46.14:0.28) -- cycle;
-\draw(0,0) circle (2.5cm);
-\draw [domain=-1.5:1.5] plot(\x,{(-0-0.72*\x)/-0.69});
-\draw (0.69,-1.5) -- (0.69,1.5);
-\draw (1,-1.5) -- (1,1.5);
-\draw (1.12,0.6) node[anchor=north west,color=qqccww] {t};
-\draw (0.50,0.42) node[anchor=north west,color=ffwwqq] {s};
-\draw (0.30,0.21) node[anchor=north west,color=qqzzzz] {c};
-\draw [line width=1.2pt,color=qqccww] (1,1.04)-- (1,0);
-\draw [line width=1.2pt,color=ffwwqq] (0.69,0.72)-- (0.69,0);
-\draw [line width=1.6pt,color=qqzzzz] (0.69,0)-- (0,0);
-\begin{scriptsize}
-\fill [color=xdxdff] (0.69,0.72) circle (1.5pt);
-\draw[color=xdxdff] (0.49,0.71) node {$P$};
-\fill [color=uququq] (0.69,0) circle (1.5pt);
-\draw[color=uququq] (0.8,0.12) node {$Xp$};
-%%\fill [color=uququq] (1,1.04) circle (1.5pt);
-%%\draw[color=uququq] (1.22,0.95) node {$Yp$};
-\fill [color=uququq] (0.69,0.72) circle (1.5pt);
-\draw[color=uququq] (0.82,0.7) node {$Yp$};
-\fill [color=qqqqff] (0,0) circle (1.5pt);
-
-%% Tangens
-\draw[color=uququq] (1.27,1) node {$T=(1|t)$};
-\fill [color=qqqqff] (1,1.05) circle (1.5pt);
-
-
-\draw(0.20,0.09) node {$\varphi$};
-\end{scriptsize}
-\end{tikzpicture}\par
-}%% END Command \einheitskreisT
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Winkel am Einheitskreis}\index{Einheitskreis|textbf}
@@ -119,15 +27,6 @@ Aufgaben:
 
 Geben Sie vom folgenden Punkt $P$ jeweils seinen mathematischen
 Winkel an:
-
-\newcommand{\miniEinheitskreis}{
-\tikzset{graphSkalierung/.style={xscale=2,yscale=2}}
-\bbwGraph{-1.5}{1.5}{-1.5}{1.5}{
-\bbwFuncC{ sqrt(4-\x*\x)}{-2:2}{lightgray}
-\bbwFuncC{-sqrt(4-\x*\x)}{-2:2}{lightgray}
-}
-\tikzset{graphSkalierung/.style={xscale=1,yscale=1}}
-}%% end newcommand miniEinheitskreis
 
 
 \begin{tabular}{cc}\makecell{
