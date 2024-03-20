@@ -307,11 +307,13 @@ $\log_2(500) = \LoesungsRaum{\frac{\lg(500)}{\lg(2)}}$
  
  Logarithmieren Sie:
  
-$3.4^{\frac{x}2} = 16 \Longrightarrow x= \LoesungsRaum{\frac{2\cdot{}\lg(16)}{\lg(3.4)}}$
+$$3.4^{\frac{x}2} = 16 \Longrightarrow x=
+ \LoesungsRaum{\frac{2\cdot{}\lg(16)}{\lg(3.4)}}$$
+ 
  \TNT{2}{$$\lg\left(3.4^{\frac{x}2}\right) = \lg(16)$$
  $$\frac{x}2 \cdot{} \lg(3.4) = \lg(16)$$
-  $$\frac{x}2 = frac{\lg(16)}{\lg(3.4)}$$
-  $$x = frac{2\cdot{}\lg(16)}{\lg(3.4)}$$
+  $$\frac{x}2 = \frac{\lg(16)}{\lg(3.4)}$$
+  $$x = \frac{2\cdot{}\lg(16)}{\lg(3.4)}$$
  }%% end TNT
 
 
@@ -392,6 +394,8 @@ $\ln()$ steht für «Logarithmus Naturalis».
 \begin{definition}{Logarithmus naturalis}{}
   
   $\ln() := \log_{\e}()$ = \textit{\textbf{Logarithmus Naturalis}}
+
+  $\e\approx 2.718281828459$
 \end{definition}
 
 \paragraph{Logarithmentabellen}
@@ -403,12 +407,27 @@ Logarithmentabelle.} und dennoch $\log_a(p)$ oder das $x$ in $a^x=p$ berechnen w
   $$\log_a(p) = \frac{\ln(p)}{\ln(a)} \TRAINER{= \frac{\lg(p)}{\lg(a)}}$$
 \end{gesetz}
 
+\TALS{
 \begin{bemerkung}{Logarithmus Naturalis}{}
   Jede Potenz kann als Potenz mit der Basis $\e$ geschrieben werden:
   $$a^x = \e^{x\cdot{}\ln(a)}$$
 \end{bemerkung}
+}%% end TALS
 
 \newpage
+
+\GESO{
+  Vorzeigeaufgabe:
+  $$\ln(2\e\cdot{}x) = -2$$
+  \TNT{5.2}{
+    $$\log_{\e}(2 \e \cdot{} x) = -2$$
+    d.\,h.:
+    $$e^{-2} = 2\e\cdot{}x$$
+    $$\frac1{2\e} \cdot \e^{-2} = x$$
+    $$x = \frac12\cdot{} \e^{-3} = \frac1{2\e^3}$$
+  }
+}%% end GESO
+
 \subsection*{Aufgaben}
 \TALS{
 \aufgabenFarbe{Berechnen Sie von Hand mit Hilfe der
@@ -419,7 +438,7 @@ Logarithmentabelle.} und dennoch $\log_a(p)$ oder das $x$ in $a^x=p$ berechnen w
 
 \AadBMTA{104}{13. b), 17. c) und 18. g) h) i)}
 
-\AadBMTA{106}{33. (Schreiben Sie die Lösung mit Hilfe des $\ln()$.}
+\TALSAadBMTA{106}{33. (Schreiben Sie die Lösung mit Hilfe des $\ln()$.}
 
 \newpage
 
