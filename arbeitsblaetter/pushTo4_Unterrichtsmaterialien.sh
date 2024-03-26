@@ -18,7 +18,7 @@ echo "  ABC-Finden"
 cp -f ./gleichungen/quadratischeGleichungenABC_finden/*.pdf ${PATH_4_UM}Gleichungen/Quadratische_Gleichungen/abc_finden
 
 echo "  Arbeitsblatt potenzgesetze"
-cp -f ./algebra/potenzgesetze_geso/*.pdf ${PATH_4_UM}Arithmetik/arbeitsblatt_potenzgesetze_fp
+cp -f ./algebra/potenzgesetze/*.pdf ${PATH_4_UM}Arithmetik/arbeitsblatt_potenzgesetze_fp
 
 echo "  Arbeitsblatt Potenzgleichungen"
 cp -f ./gleichungen/potenzgleichungen/*.pdf ${PATH_4_UM}Gleichungen/Potenzgleichungen
