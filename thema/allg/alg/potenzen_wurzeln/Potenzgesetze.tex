@@ -61,8 +61,10 @@ Dabei bezeichnen
 
 \subsubsection{gleiche Basis}\index{Potenz!Gesetze}
 
-\begin{itemize}
- \item \fbox{$a^m\cdot a^n = a^{m+n}$}
+
+\begin{gesetz}{Produkt}{}
+  $$a^m\cdot a^n = a^{m+n}$$
+\end{gesetz}
 
    Begründung:
 
@@ -73,9 +75,10 @@ Dabei bezeichnen
    \GESO{$7^3\cdot{} 7^5 = (7\cdot{}7\cdot{}7)\cdot{}(7\cdot{}7\cdot{}7\cdot{}7\cdot{}7)=7^8$}%%
 }%% END TNT
 
+   \begin{gesetz}{Quotient}{}
+   $$a^m : a^n = \frac{a^m}{a^n}= a^{m-n}$$
+   \end{gesetz}
    
-   \item \fbox{$a^m : a^n = \frac{a^m}{a^n}= a^{m-n}$}
-     
      Begründung:
 
      \TNT{2.4}{%
@@ -89,14 +92,15 @@ Dabei bezeichnen
   7^{5-3}$}
      }%% END TNT
 
-  
-\item \fbox{$(a^n)^m = a^{n\cdot{}m} = (a^m)^n$}
-
+\begin{gesetz}{Potenzen von Potenzen}{}
+$$(a^n)^m = a^{n\cdot{}m} = (a^m)^n$$
+\end{gesetz}
   Begründung:
 
-  \TNT{2.4}{Beispiel $(a^4)^3$ vorrechnen \vspace{12mm}}%%
+  \TNT{2.4}{Beispiel $(a^4)^3$ vorrechnen:
+    $(a^4)^3 = a^4\cdot{}a^4\cdot{}a^4 =
+    aaaa\cdot{}aaaa\cdot{}aaaa = a^{} = a^{4\cdot{}3}$\vspace{12mm}}%%
   
-\end{itemize}
 
 
 \newpage
@@ -128,9 +132,11 @@ Gleiche Basis:
 
 \subsubsection{gleiche Exponenten}
 
-\begin{itemize}
-\item \fbox{$a^n \cdot{} b^n  = (ab)^n$}
-  
+\begin{gesetz}{Produkt}{}
+$$a^n \cdot{} b^n  = (ab)^n$$
+\end{gesetz}
+
+
   Begründung
 
   \TNT{2.4}{
@@ -142,16 +148,25 @@ Gleiche Basis:
      (5\cdot{}5\cdot{}5) = (7\cdot{}5)\cdot{} (7\cdot{}5)\cdot{} (7\cdot{}5) =(7\cdot{}5)^3$}
 }%% end TRAINER
    
-\item \fbox{$a^n : b^n = (a:b)^n$} bzw. \fbox{$\frac{a^n}{b^n} = \left(\frac{a}{b}\right)^n$} (Gilt ganz analog.)
-\end{itemize}
+\begin{gesetz}{Division}{}
+  $$a^n : b^n = (a:b)^n$$
+  bzw.
+  $$\frac{a^n}{b^n} = \left(\frac{a}{b}\right)^n$$
+\end{gesetz}
+\TNT{2}{(Gilt ganz analog.)}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \textbf{Aber Vorsicht}
 
+\begin{bemerkung}{Achtung}{}
 $$a^3 \cdot{}  b^4 \ne \, ???$$ \TRAINER{(\text{Keine gleiche Basis, kein
   gleicher Exponent})}
-$$a^3 +        b^3 \ne \, ???$$ \TRAINER{ (\text{keine Punkt-Rechunung!})}
+$$a^3 +        b^3 \ne \, ???$$ \TRAINER{ (\text{keine
+      Punkt-Rechunung!})}
+\end{bemerkung}
+
 \newpage
 
 \subsubsection{Theorieaufgaben}

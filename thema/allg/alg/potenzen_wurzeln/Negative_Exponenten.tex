@@ -28,7 +28,7 @@ $$a^{-n} := \frac{1}{a^n}$$
 \end{definition}
 
 \begin{bemerkung}{}{}
-$$\frac{1}{a^n}= 1 : \underbrace{a : a : a : ... : a}_{n \text{\ Divisoren}}$$
+$$ a^{-n} =\frac1{a^n}= 1 : \underbrace{a : a : a : ... : a}_{n \text{\ Divisoren}}$$
 \end{bemerkung}
 
 \begin{gesetz}{}{}
@@ -95,7 +95,7 @@ $$\left(\frac1a\right)^{-n} = \frac{1}{\left(\frac{1}{a}\right)^n}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-Rechenbeispiel:
+Rechenbeispiel\GESO{ (optional)}:
 
 Wurm «Wurli» schaft 3 cm pro Sekunde (= $3 \cdot{} 10^{-2} $ m pro Sekunde). Wie lange braucht «Wurli» für 12 m?
 \TNT{4}{
@@ -144,8 +144,16 @@ $\left(\frac{a}{b}\right)^{-n} = \left(\frac{b}{a}\right)^{+n}$
 
 \subsubsection{Null}
 
-Ebenso müsste $a^5 \cdot a^0 = a^{5+0} = a^5$ gelten. Dies ist aber
-nur möglich, wenn wir $a^0 := 1$ definieren ($a\ne 0$).
+Idee:
+\TNT{3.2}{$$a^5\cdot{}a^0 \stackrel{!}{=} a^{5+0} = a^5$$
+$$a^5 \cdot{} a^0 \stackrel{!}{=} a^5   \hspace{5mm} | : a^5$$
+$$a^0 = 1$$
+}%% end TNT
+
+Oder so:
+\TNT{3.2}{
+$$a^0 = a^{1-1} = a^1 : a^1 = a:a = 1$$
+}%% end TNT
 
 \begin{definition}{Exponent Null}{} Für alle Basen
 $a \in \mathbb{R}\backslash\{0\}$ definieren wir:
@@ -154,7 +162,7 @@ $a \in \mathbb{R}\backslash\{0\}$ definieren wir:
 \end{center}
 \end{definition}
 
-Zweite Begründung wenn die Rechengesetze gelten sollten: $a^0 = a^{1-1} = \frac{a^1}{a^1} = 1$
+
 
 %\textbf{Rechengesetze zusammengefasst:}
 
@@ -169,6 +177,9 @@ Zweite Begründung wenn die Rechengesetze gelten sollten: $a^0 = a^{1-1} = \frac
 
 %\item $\left(\frac{a}{b}\right)^{-n} = \left(\frac{b}{a}\right)^{+n}$ gilt daher auch. 
 %\end{itemize}
+
+
+\newpage
 
 \begin{rezept*}{«Kielholen»}{}{}
 Exponenten vertauschen ihr Vorzeichen beim Übertreten des Bruchstrichs:
