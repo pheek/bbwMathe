@@ -1,192 +1,593 @@
 \input{bmsLayoutPage}
+\renewcommand{\bbwAufgabenBlockID}{APot}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{amssymb} %% für \blacktriangleright
 \renewcommand{\metaHeaderLine}{Potenzgesetze}
-\renewcommand{\arbeitsblattTitel}{(BMS)}
+\renewcommand{\arbeitsblattTitel}{Version 1.1 Feb. 2024}
 
 \begin{document}%%
 \arbeitsblattHeader{}
 
-\newcounter{aufgabennummer}
-\setcounter{aufgabennummer}{1}
+%\newcounter{aufgabennummer}
+%\setcounter{aufgabennummer}{1}
 
-\newcommand\aufgabeML[2]{
-Aufgabe \arabic{aufgabennummer}:\,\,
-$${#1}$$ = $\LoesungsRaum{{#2}}$
+\newcommand\aufgabeML[3]{
 
-\abplz{8}
+\textbf{Aufgabe \arabic{bbwAufgabenNummerCounter}.} :\,\,
+$${#2} = \TRAINER{{#3}}$$
 
-\stepcounter{aufgabennummer}
-}
+\abplz{#1}
+
+\stepcounter{bbwAufgabenNummerCounter}
+}%% End command AufgabeML
+
+
+%% wie AufgabeML, aber ohne das Gleichheitszeichen
+\newcommand\aufgabeMLo[3]{
+
+\textbf{Aufgabe \arabic{bbwAufgabenNummerCounter}.} :\,\,
+$${#2}  \TRAINER{{#3}}$$
+
+\abplz{#1}
+
+\stepcounter{bbwAufgabenNummerCounter}
+}%% End command AufgabeMLo
+
+
 
 {\huge{Vermischte Aufgaben zu Potenzgesetzen}}
 
-\section{Ganze positive Exponenten}
 
-\aufgabeML{(-10)^5}{-100\,000}
-\aufgabeML{-10^7}{-10\,000\,000}\noTRAINER{\newpage}
-\aufgabeML{(-10)^8}{+100\,000\,000}
-\aufgabeML{-(10^6)}{-1\,000\,000}\noTRAINER{\newpage}
-\aufgabeML{-10^4}{-10\,000}
+\section{Zehnerpotenzen}
 
-\aufgabeML{-\left((-a)^3\right)^{10}}{-a^{30}}\noTRAINER{\newpage}
+Berechnen Sie Zehnerpotenzen und vergleichen Sie:
 
-\aufgabeML{\left(-(-x^2)\right)^7}{x^{14}}
+\aufgabeML{2}{(-10)^4}{(-10)(-10)(-10)(-10) = 10\,000}
+\aufgabeML{2}{-10^4}{-(10^4)=-(10\cdot{}10\cdot{}10\cdot{}10) = -10\,000}
+
+\aufgabeML{2}{(-10)^5}{-100\,000}
+\aufgabeML{2}{-10^7}{-10\,000\,000}
+\aufgabeML{2}{(-10)^8}{+100\,000\,000}
+\noTRAINER{\newpage}
 
 
-\aufgabeML{\left(-x^3\right)^4}{x^{12}}
-%%\platzFuerBerechnungenBisEndeSeite{}
+\aufgabeML{2}{-(10^6)}{-1\,000\,000}
+
+\aufgabeML{2}{0.1^1}{0.1}
+\aufgabeML{2}{0.1^2}{0.01}
+\aufgabeML{2}{-0.1^4}{-(0.1^4) = -0.0001}
 
 \newpage
-\section{Division}
 
-\aufgabeML{c^9 : c^4}{c^5}
+\textbf{Aufgabe \arabic{bbwAufgabenNummerCounter}. }:
 
-\aufgabeML{\frac{a^2}{a^3}}{\frac{1}{a}=a^{-1}}\noTRAINER{\newpage}
+Füllen Sie die Tabelle aus. Tipp: Welche Operation wird in den
+hinteren drei Spalten konsequent von einer Zeile zur nächsten ausgeführt?
 
-\aufgabeML{(-a)^4:(-a^{10})}{-\frac{1}{a^6}}
+\begin{bbwFillInTabular}{|r|r|r|l|}\hline
+Exponent       & Zehnerpotenz & Potenzwert & Name \\\hline
+$4$            &  $10^4$           &  $10\,000$        & Zehntausend         \\\hline
+$3$            &  \TRAINER{$10^3$} &  \TRAINER{$1000$} & \TRAINER{Tausend}   \\\hline
+$2$            &  \TRAINER{$10^2$} &  \TRAINER{$100$}  & \TRAINER{Hundert}   \\\hline
+$\TRAINER{1}$  &  \TRAINER{$10^1$} &  \TRAINER{$10$}   & \TRAINER{Zehn}      \\\hline
+$\TRAINER{0}$  &  \TRAINER{$10^0$} &  \TRAINER{$1$}    & \TRAINER{Eins}      \\\hline
+$\TRAINER{-1}$ &  \TRAINER{$10^{-1}$} &  \TRAINER{$0.1$}  & \TRAINER{Ein Zehntel}      \\\hline
+$-2$           &  \TRAINER{$10^{-2}$} &  \TRAINER{$0.01$}	 & \TRAINER{Ein Hundertstel}      \\\hline
+\end{bbwFillInTabular}
+\stepcounter{bbwAufgabenNummerCounter}
 
-\aufgabeML{a\cdot{} a^{2x+3} : a^{1-x}}{a^{3x+3}}\noTRAINER{\newpage}
 
-\aufgabeML{\left(\frac{x}{y}\right)^7:\left(\frac{-x}{y}\right)^3}{-\left(\frac{x}{y}\right)^4}\noTRAINER{\newpage}
+Schreiben Sie ohne Klammern und ohne Bruchstrich:
+\aufgabeML{2.4}{\frac1{10\,000}}{10^{-4}}
+
+Fassen Sie die Zehnerpotenzen zusammen und schreiben Sie
+wissenschaftlich (genau eine Ziffer vor dem Dezimalpunkt):
+
+\aufgabeML{2.4}{9\cdot{}10^3 + 4.7 \cdot{}10^4}{5.6\cdot{} 10^4}
+\aufgabeML{2.4}{2\cdot{}10^{-4} + 220.3 \cdot{} 10^{-5}}{2.403 \cdot{} 10^{-3}}
+
+
+
+Multiplizieren Sie die Zehnerpotenzen (gleiche Basis):
+\aufgabeML{2.8}{-0.1^4\cdot{} 0.1^5}{-0.1^{9} = -0.000\,000\,001}
+
+\TRAINER{\newpage}
+\textbf{Aufgabe \arabic{bbwAufgabenNummerCounter}.} :
+
+Ein rotes Blutkörperchen hat ein Gewicht von $3\cdot{}10^{-11}$ g.
+Beim Menschen liegt die Konzentration im Blut bei $4\,000$ bis $5\,900$ Stück pro Nanoliter.
+
+\begin{bbwAufgabenBlock}
+\item Geben Sie die Anzahl der roten Blutkörperchen je im Minimum und
+im Maximum pro Liter Blut mit Hilfe von Zehnerpotenzen
+an.\TRAINER{Minimal: $4000\cdot{}10^9 = 4\cdot{}10^{12}$, maximal:
+$5.9\cdot{}10^{12}$}
+
+\item Wie viele solcher Blutkörperchen hat ein Mensch, wenn wir von
+einer Konzentration von 5\,000 Stück pro Nanoliter ausgehen und von
+einer Blutmenge von 6 Litern? Wie heißt die Zahl in Worten?
+\TRAINER{$6\cdot{} 5.0\cdot{}10^{}12 = 3.0 \cdot{} 10^{13}$ = 30
+Billionen}
+
+\item Wie groß ist die Masse aller roten Blutkörperchen einer Person,
+wenn wir von 6 Liter Blut und 5\,000 roten Blutkörperchen pro
+Nanoliter ausgehen?
+\TRAINER{$3.0\cdot{}10^{13} \cdot{} 3\cdot{} 10^{-11} \text{ g } = 9\cdot{}10^2 \text{ g } = 900 \text{ g }$}
+\end{bbwAufgabenBlock}
+
+\TNTeop{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\textbf{Aufgabe \arabic{bbwAufgabenNummerCounter}.} : Ölfilter
+
+Eine Ölschicht auf einer ruhenden Wasseroberfläche sei ca. 0.08 mm
+dick.
+
+Ein Barrel (bbl.) fasst 159 Liter. Aus einem Öltanker fließen 277 bbl.
+Öl aufs Meer.
+
+\begin{bbwAufgabenBlock}
+\item Geben Sie an, wie viel m$^3$ Öl ausgeflossen sind.
+
+\TRAINER{227 bbw x 159 Liter pro bbl = 36093 Liter = 36.093 m$^3$.}
+
+\item Wie groß in m$^2$ ist der dadurch entstehende Ölteppich ungefähr?
+\TRAINER{36.093 [m$^3$] : 0.00008 [m] = 451162.5 m$^2$ $\approx$ 45 ha.}
+
+\end{bbwAufgabenBlock}
+
+\TNTeop{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Potenzgesetze}
+Vereinfachen Sie / Fassen Sie zusammen:
+
+\aufgabeML{2}{(-1)^{3}}{-1}
+\aufgabeML{2}{(-1)^{4}}{1}
+\aufgabeML{4}{ar^n - br^n}{(a-b)r^n}
+\aufgabeML{6}{a^2(a-b)^n - b^2(a-b)^n}{(a^2-b^2)(a-b)^n = (a+b)(a-b)(a-b)^n = (a+b)(a-b)^{n+1}}
+\noTRAINER{\newpage}
+
+\aufgabeML{2}{-\left((-a)^3\right)^{10}}{-a^{30}}
+
+\aufgabeML{2}{\left(-(-x^2)\right)^7}{x^{14}}
+
+\aufgabeML{2}{\left(-x^3\right)^4}{x^{12}}
+%%\platzFuerBerechnungenBisEndeSeite{}
+
+\aufgabeML{2}{c^9 : c^4}{c^5}
+
+
+\newpage
+\subsection{gleiche Basis}
+Multiplizieren Sie die Potenzen mit gleicher Basis:
+
+\aufgabeML{4}{x^7\cdot{} x^{n+1}}{x^{n+8}}
+\aufgabeML{4}{b^{k+3}\cdot{}b^{2k-1}}{b^{(k+3)+(2k-1)} = b^{3k+2}}
+\aufgabeML{6}{-(s)^{8}\cdot{}s^7}{-s^{15}}
+\noTRAINER{\newpage}
+
+
+\aufgabeML{6}{(-s)^{8}\cdot{}s^7}{s^{15}}
+\aufgabeML{6}{-2s^4\cdot{}s^3}{-2s^7}
+\aufgabeML{6}{-(2s)^4\cdot{}s^3}{-16s^7}
+\noTRAINER{\newpage}
+
+\aufgabeML{6}{(-2s)^4\cdot{}s^3}{16s^7}
+\aufgabeML{4}{(-r)^{5}\cdot{}(-r^6)}{+r^{11}}
+\aufgabeML{4}{5\cdot{}2^{2n} + 4^n}{5\cdot{}4^n + 4^n = 6\cdot{}4^n}
+\noTRAINER{\newpage}
+
+Dividieren Sie Potenzen mit gleicher Basis:
+
+\aufgabeML{6}{-b^{100}:b^{95}}{-b^5}
+\aufgabeML{6}{x^{s+10} : x^{10}}{x^s}
+\aufgabeML{6}{a^{5n-4} : a^{2n+3}}{a^{(5n-4)-(2n+3)} = b^{5n-4-2n-3} =
+b^{3n-7}}
+\noTRAINER{\newpage}
+
+
+\aufgabeML{6}{(-a)^4:(-a^{10})}{-\frac{1}{a^6}}
+\aufgabeML{6}{a\cdot{} a^{2x+3} : a^{1-x}}{a^{3x+3}}
+\aufgabeML{6}{\left(\frac{x}{y}\right)^7:\left(\frac{-x}{y}\right)^3}{-\left(\frac{x}{y}\right)^4}
+\noTRAINER{\newpage}
+
+Potenzieren Sie die Potenzen:
+
+\aufgabeML{8}{\left(\left(\frac{-1}{2}\right)^3\right)^4}{\frac1{2^{12}}
+= \frac1{4096}}
+\aufgabeML{6}{(n^5)^{k-1}}{n^{5k-5}}
+\noTRAINER{\newpage}
+
+
+\aufgabeML{6}{(m^n)^n}{m^{(n^2)} = m^{n^2}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\subsection{Gleiche Exponenten}
+
+\aufgabeML{4}{a^7 \cdot{} b^7}{(ab)^7}
+\aufgabeML{4}{x^5 : r^5}{\left(\frac{x}{r}\right)^5}
+\aufgabeML{4}{(2x)^4\cdot{}y^4}{16(xy)^4}
+\noTRAINER{\newpage}
+
+
+\aufgabeML{4}{2a^5\cdot{}b^5}{2(ab)^5}
+\aufgabeML{5.2}{1.25^{2s}\cdot{}8^{2s}}{10^{2s}}
+\aufgabeML{8}{\left(\frac67\right)^n : \left(\frac37\right)^n}{2^n}
+\noTRAINER{\newpage}
+
+
+\aufgabeML{8}{16x^3 : (2y)^3}{16 \cdot{} (x:(2y)))^3 = 2\cdot{}2^3 \cdot{} \left(\frac{x}{2y}\right)^3  = 2 \cdot{} \left(\frac{x}{y}\right)^3}
+\aufgabeML{6}{(-2p^3)^2 : (2q)^2}{\left((-2p^3) : (2q)\right)^2 =
+(-p^3:q)^2 = \left(\frac{p^3}{q}\right)^2 =\frac{p^6}{q^2}}
+\TRAINER{Das Minuszeichen fällt weg, wegen dem geraden Exponenten ($2$).}
+
+\noTRAINER{\newpage}
+\aufgabeML{6}{(-2a)^3: (-2b)^3}{\left(\frac{a}{b}\right)^3}
+
+
+
+
+\newpage
+\subsection{Erste Exponentialgleichungen}
+Bringen Sie beide Seiten auf dieselbe Basis und Lösen Sie durch
+Exponentenvergleich:
+
+\aufgabeMLo{6}{7^{19} \cdot{} 7^3 = 7^x}{19 + 3 = x \Longrightarrow x = 22}
+\aufgabeMLo{6}{\left(a^{10}\right)^x = a^{150}}{10x = 150 \Longrightarrow x = 15}
+\aufgabeMLo{6}{\left(a^x\right)^3 \cdot{} a^5= \left(a^2\right)^x \cdot{}a^7}{3x+5=2x+7\Longrightarrow x = 2}
+
 
 \newpage
 \section{negative Exponenten und die Null}
+\subsection{Zehnerpotenzen}
+\aufgabeML{2}{10^{-4}}{0.0001}
+\aufgabeML{2}{(-10)^{-3}}{-0.001}
+\aufgabeML{2}{0.01^{-2}}{10\,000}
+\aufgabeML{2}{(-0.1)^{-2}}{100}
 
-\aufgabeML{-\left(-(-a)^2\right)^0}{-1}
+\newpage
+\subsection{Mit Variablen}
 
-\aufgabeML{-\left( -a^3\cdot{} (-a)^2 \right)^{-4}}{\frac{-1}{a^{20}} = -a^{-20}}\noTRAINER{\newpage}
+Geben Sie die Lösung für verschiedene $n \in \mathbb{N}$ an:
+\aufgabeML{6}{(-1)^{-(2n+1)}}{-1 \text{ für alle } n}
 
-\aufgabeML{(-b)^{-6} \cdot (-b^8)}{-b^2}
-
-\aufgabeML{\left(-(a^{-1})^{-2}\right)^6}{a^{12}}\noTRAINER{\newpage}
-
-\aufgabeML{-\left((a^3)\cdot{}a^{-1}\right)^2}{-a^4}
+\aufgabeML{6}{\frac{-3}{-x^{-4}}}{3x^4}
 \noTRAINER{\newpage}
+
+Vereinfachen Sie: 
+\aufgabeML{6}{\frac{a^2}{a^3}}{\frac{1}{a}=a^{-1}}
+
+\aufgabeML{6}{-\left(-(-a)^2\right)^0}{-1}
+\noTRAINER{\newpage}
+
+
+\aufgabeML{6}{a^5\cdot{}a^{-2}\cdot{}a^0\cdot{}a^{7}\cdot{}a\cdot{}a^{-4}}{a^{7}}
+
+\aufgabeML{4}{\left(x^{-1}\right)^{-1}}{x}
+
+\aufgabeML{4}{\left( \left( \left(  \left(   \frac37b^{-7} \right)^{14}  \right)^0 \right)^{-3}
+\right)^8}{1}
+\noTRAINER{\newpage}
+
+
+\aufgabeML{6}{(ab)^{-4} \cdot{} \left(\frac{c}{d}\right)^{-4}}{\left(\frac{abc}{d}\right)^{-4}}
+
+\aufgabeML{6}{(ab)^{-n} : \left(\frac{a}{b}\right)^{-n}}{\left(ab
+: \frac{a}{b}\right)^{-n} = \left(ab \cdot \frac{b}{a} \right)^{-n}
+= \left(b^2\right)^{-n} = b^{-2n}}
+\noTRAINER{\newpage}
+
+\aufgabeML{6}{-\left( -a^3\cdot{} (-a)^2 \right)^{-4}}{\frac{-1}{a^{20}} = -a^{-20}}
+
+\aufgabeML{6}{(-b)^{-6} \cdot (-b^8)}{-b^2}
+
+\aufgabeML{6}{\left(-(a^{-1})^{-2}\right)^6}{a^{12}}\noTRAINER{\newpage}
+
+\aufgabeML{6}{-\left((a^3)\cdot{}a^{-1}\right)^2}{-a^4}
 
 Schreiben Sie ohne negative Exponenten:
 
-\aufgabeML{2\cdot{}x^{-3}}{\frac{2}{x^3}}
+\aufgabeML{4}{2\cdot{}x^{-3}}{\frac{2}{x^3}}
 
-\aufgabeML{ab^{-5}}{\frac{a}{b^5}=a\cdot{}\frac{1}{b^5}}\noTRAINER{\newpage}
+\aufgabeML{4}{ab^{-5}}{\frac{a}{b^5}=a\cdot{}\frac{1}{b^5}}
+\noTRAINER{\newpage}
+\aufgabeML{6}{\frac{1}{81}\cdot{}c^{-2}\cdot{}a^{-3}\cdot{}c^2\cdot{} a^3 \cdot 3^4}{1}
 
-\aufgabeML{\frac{1}{81}\cdot{}c^{-2}\cdot{}a^{-3}\cdot{}c^2\cdot{} a^3 \cdot 3^4}{1}
+\aufgabeML{6}{\frac1{125}\cdot{}b^{3}\cdot{}b^{0}\cdot{}b^6\cdot{} b^{-4} \cdot 5^2}{\frac1{5}b^5}
 %%\platzFuerBerechnungenBisEndeSeite{}
 
 \newpage
 \section{negative Exponenten mit Brüchen}
-\aufgabeML{\frac{6\cdot{} a^3 \cdot{} b^7 \cdot{} 3}{(ab)^4\cdot 9 \cdot a^{-1}}}{2b^3}
+\aufgabeML{6}{\frac{6\cdot{} a^3 \cdot{} b^7 \cdot{} 3}{(ab)^4\cdot 9 \cdot a^{-1}}}{2b^3}
 
-\aufgabeML{\left(\frac{a^2 b^{-3} c^3}{a\cdot b}\right)^{-3}\cdot \left(\frac{c^5}{ab}\right)^2}{\frac{b^{10}c}{a^5}}\noTRAINER{\newpage}
+\aufgabeML{6}{\left(\frac{a^2 b^{-3} c^3}{a\cdot b}\right)^{-3}\cdot \left(\frac{c^5}{ab}\right)^2}{\frac{b^{10}c}{a^5}}\noTRAINER{\newpage}
 
-\aufgabeML{\left(\frac{ab^{-2}c^3}{a^{-2}\cdot{}b}\right)^{-2} \cdot{} \left(\frac{a^3\cdot{} c^{2}}{b^2} \right)^3}{a^3}
-
-
-\aufgabeML{\left(\frac{a^3 \cdot{}c^{-1}}{b^{-2}}\right)^{-4} \cdot \left( \frac{a^4\cdot{}b^3}{c^{-2}} \right)^3}{bc^{10}}\noTRAINER{\newpage}
-
-\aufgabeML{\frac{a^{-5}\cdot{} (-a)^3}{a^7} : \frac{a^{-10}}{a^4} }{-a^5}
-
-\aufgabeML{\frac{ab\cdot{}b^{-2}\cdot{}b^4\cdot{}b^{-3}}{b^3\cdot{}a\cdot{}b^{-4} \cdot{} b}}{1}\noTRAINER{\newpage}
+\aufgabeML{6}{\left(\frac{ab^{-2}c^3}{a^{-2}\cdot{}b}\right)^{-2} \cdot{} \left(\frac{a^3\cdot{} c^{2}}{b^2} \right)^3}{a^3}
 
 
-\aufgabeML{\left(\frac{3x^{-2}y^2}{4x^{-4}\cdot{}y^3}\right)^{-2} : \left(\frac{2x^{-1}}{3xy^{-2}}\right)^3}{\frac{6x^2}{y^4}}
+\aufgabeML{6}{\left(\frac{a^3 \cdot{}c^{-1}}{b^{-2}}\right)^{-4} \cdot \left( \frac{a^4\cdot{}b^3}{c^{-2}} \right)^3}{bc^{10}}\noTRAINER{\newpage}
 
-\aufgabeML{4^k\cdot{} \left(\frac{1}{2}\right)^k \cdot{} \left(\frac{1}{3}\right)^{-k}}{6^k}\noTRAINER{\newpage}
+\aufgabeML{6}{\frac{a^{-5}\cdot{} (-a)^3}{a^7} : \frac{a^{-10}}{a^4} }{-a^5}
 
-\aufgabeML{\frac{a^{-2}}{a^{-3}}}{a}
-
-\aufgabeML{\left(\frac{a^4\cdot{}b^{-2}\cdot{}c}{a^2\cdot{}c^{-3}}\right)^{-2} \cdot \left(\frac{c^2\cdot{}b}{a^{-1}}\right)^4}{b^8}\noTRAINER{\newpage}
+\aufgabeML{6}{\frac{ab\cdot{}b^{-2}\cdot{}b^4\cdot{}b^{-3}}{b^3\cdot{}a\cdot{}b^{-4} \cdot{} b}}{1}\noTRAINER{\newpage}
 
 
-\aufgabeML{\left(\frac{3a^{-1}\cdot{} b^2}{2ac^{-1}}\right)^{-2} \cdot{} \frac{\left(3\cdot{}b^2\right)^2\cdot{}c^2}{4}}{a^4}
+\aufgabeML{6}{\left(\frac{3x^{-2}y^2}{4x^{-4}\cdot{}y^3}\right)^{-2} : \left(\frac{2x^{-1}}{3xy^{-2}}\right)^3}{\frac{6x^2}{y^4}}
 
-\aufgabeML{a^{-1}\cdot{} a^{-2} : a^{-3} \cdot{} a^7}{a^7}\noTRAINER{\newpage}
+\aufgabeML{6}{4^k\cdot{} \left(\frac{1}{2}\right)^k \cdot{} \left(\frac{1}{3}\right)^{-k}}{6^k}\noTRAINER{\newpage}
+
+\aufgabeML{6}{\frac{a^{-2}}{a^{-3}}}{a}
+
+\aufgabeML{6}{\left(\frac{a^4\cdot{}b^{-2}\cdot{}c}{a^2\cdot{}c^{-3}}\right)^{-2} \cdot \left(\frac{c^2\cdot{}b}{a^{-1}}\right)^4}{b^8}\noTRAINER{\newpage}
+
+
+\aufgabeML{6}{\left(\frac{3a^{-1}\cdot{} b^2}{2ac^{-1}}\right)^{-2} \cdot{} \frac{\left(3\cdot{}b^2\right)^2\cdot{}c^2}{4}}{a^4}
+
+\aufgabeML{6}{a^{-1}\cdot{} a^{-2} : a^{-3} \cdot{} a^7}{a^7}\noTRAINER{\newpage}
+\newpage
+Kürzen Sie:
+
+\aufgabeML{6}{\frac{a^{15} - a^{10}}{a^5}}{a^{10} - a^5}
+\aufgabeML{6}{\frac{b^6 + b^9}{b^7 - b^{11}}}{\frac{1+b^3}{b - b^5}}
 
 \newpage
+\subsection{vermischte Exponentialgleichungen}
+Bringen Sie beide Seiten auf dieselbe Basis und Lösen Sie durch
+Exponentenvergleich:
+
+\aufgabeMLo{6}{(a^3)^x = \frac{a^{2x}}{a^{-2}}}{3x = 2x - (-2) \Longrightarrow 3x = 2x+2 \Longrightarrow x=2}
+\aufgabeML{6}{2^x = 4^{-4}}{2^x = 2^{-8} \Longrightarrow x=-8}
+\noTRAINER{\newpage}
+
+\aufgabeMLo{6}{(3^x)^6 = \frac1{81}}{3^{6x = 3^{-4}} \Longrightarrow 6x
+= -4 \Longrightarrow x = -4 : 6 = \frac{-2}{3}}
+
+Das folgende ist keine Exponentialgleichung, kann aber gelöst werden,
+indem auf beiden Seiten der Gleichung der selbe Exponent erzwungen
+wird:
+
+\aufgabeMLo{6}{x^3=125^{-1}}{x^3 = \frac1{125} = \frac1{5^3}
+= \left(\frac15\right)^3 \Longrightarrow x = \frac15}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \section{Wurzeln}
+\subsection{Quadratwurzeln}
 
-\aufgabeML{\sqrt{a^2}}{a}
 
-\aufgabeML{\left(\sqrt[2]{x}\right)^2}{x}\noTRAINER{\newpage}
+\aufgabeML{4}{\left(\sqrt[2]{x}\right)^2}{x}
+\aufgabeML{4}{\sqrt{a^4b^2c^6}}{a^2bc^3}
 
-\aufgabeML{\sqrt[3]{b^3}}{b}
+\aufgabeML{4}{\sqrt{x} + 3\sqrt{x} - 6\sqrt{x}}{-2\sqrt{x}}\noTRAINER{\newpage}
 
-\aufgabeML{\sqrt[3]{z^9}}{z^3}\noTRAINER{\newpage}
+\aufgabeML{6}{\frac18 \sqrt{a} - \left( -\frac14 \sqrt{a} + \frac16 \sqrt{a}  \right) + \frac13 \sqrt{a}}{\frac{13}{24} \sqrt{a}}
 
-\aufgabeML{\sqrt[5]{b^{10}r^5}}{b^2r}
 
-\aufgabeML{\sqrt[4]{r^8n^{12}}}{r^2n^3}\noTRAINER{\newpage}
+Bringen Sie unter eine Wurzel und vereinfachen Sie so weit wie
+möglich:
 
-\aufgabeML{\sqrt[5]{m^4\cdot{m}}}{m}
+\aufgabeML{2}{3\sqrt{b}}{\sqrt{9b}}
 
-\aufgabeML{\sqrt{m^2+m^2 + m^2}}{\sqrt{3}\cdot{}m}\noTRAINER{\newpage}
 
-\aufgabeML{\sqrt{\sqrt[2]{x^4}}}{x}
+\aufgabeML{3.2}{\frac{\sqrt{c}}4}{\sqrt{\frac{c}{16}}}\noTRAINER{\newpage}
 
-\aufgabeML{\frac{\sqrt[3]{a^7}}{\sqrt[3]{a}}}{a^2}\noTRAINER{\newpage}
+\aufgabeML{6}{\frac{\sqrt{x^3y}}{\sqrt{xy^5}}}{\sqrt{\frac{x^2}{y^4}}
+= \frac{x}{y^2}}
 
-\aufgabeML{\sqrt[8]{r^{24}}}{r^3}
+\aufgabeML{6}{\sqrt{2ab} \cdot{}  \sqrt{\frac{8a}b}
+}{\sqrt{2ab\cdot{}\frac{8a}b} = \sqrt{16a^2} = 4a}\noTRAINER{\newpage}
+
+
+\aufgabeML{6}{\sqrt{\frac{9x^3}{5y}} : \sqrt{\frac{49x}{20y^5}}}{\frac{6xy^2}{7}}
+
+
+Vereinfachen Sie durch partielles Radizieren (teilweises
+Wurzelziehen):
+
+
+\aufgabeML{2}{\sqrt{16x}}{4\sqrt{x}}
+
+\aufgabeML{2.8}{\sqrt{8a^3}}{\sqrt{2\cdot{}4\cdot{}a^2\cdot{}a} =
+2a\sqrt{2a}}
+
+\aufgabeML{4}{\sqrt{48x^3y^5z^2}}{\sqrt{16\cdot{}3\cdot{}x^2\cdot{}x\cdot{}y^4\cdot{}y\cdot{}z^2}
+= 4xy^2z\sqrt{3xy}}\noTRAINER{\newpage}
+
+\aufgabeML{4}{\sqrt{g^3 + g^2}}{\sqrt{g^2 \cdot{} (g+1)} =
+g\cdot{}\sqrt{g+1}}
+
+\aufgabeML{6}{\sqrt{a^3+a^2b-ab^2 -b^3}}{(a+b)\cdot{}\sqrt{a-b}}
+\TRAINER{$\sqrt{a^3+a^2b-ab^2-b^3} = \sqrt{a^2(a+b)-b^2(a+b)} = \sqrt{(a^2-b^2)(a+b)}
+= \sqrt{(a+b)(a-b)(a+b)} = \sqrt{(a+b)^2 \cdot{} (a-b)} =
+(a+b)\cdot{}\sqrt{a-b}$}%% end TRAINER
+
+
+\aufgabeML{2}{\sqrt{a^2 + b^2}}{\sqrt{a^2 + b^2} \text{ kann nicht
+weiter vereinfacht werden}}
+
+
+\newpage
+\subsection{$n$-te Wurzeln}
+
+\aufgabeML{6}{\sqrt[3]{b^3}}{b}
+\aufgabeML{4}{\sqrt[6]{0.000001}}{0.1}\noTRAINER{\newpage}
+
+
+\aufgabeML{4}{\sqrt[3]{\sqrt[4]{\sqrt{2}}}}{\sqrt[24]{2}}
+
+\aufgabeML{2}{\sqrt{a^2}}{|a|}
+
+
+\aufgabeML{6}{\sqrt[3]{z^9}}{z^3}\noTRAINER{\newpage}
+
+\aufgabeML{6}{\sqrt[5]{b^{10}r^5}}{b^2r}
+
+\aufgabeML{6}{\sqrt[4]{r^8n^{12}}}{r^2|n|^3}
+
+\aufgabeML{6}{\sqrt[5]{m^4\cdot{m}}}{m}\noTRAINER{\newpage}
+
+\aufgabeML{6}{\sqrt{m^2+m^2 + m^2}}{\sqrt{3}\cdot{}m}
+
+\aufgabeML{6}{\sqrt{\sqrt[2]{x^4}}}{x}
+
+\aufgabeML{6}{\frac{\sqrt[3]{a^7}}{\sqrt[3]{a}}}{a^2}\noTRAINER{\newpage}
+
+\aufgabeML{6}{\sqrt[8]{r^{24}}}{r^3}
 \noTRAINER{\newpage}
 
 Und als Überleitung ins nächste Thema:
 
-\aufgabeML{\sqrt[6]{v^3}}{v^{\frac12} = \sqrt{v}}
-
-
+\aufgabeML{6}{\sqrt[6]{v^3}}{v^{\frac12} = \sqrt{v}}
 
 \newpage
 \section{Rationale Exponenten}
 
-\aufgabeML{a^4\cdot{}a^{\frac{1}{4}}\cdot a^5\cdot a^{\frac{-1}{5}}}{a^\frac{181}{20}}
+Schreiben Sie als Wurzel und berechnen Sie ohne Taschenrechner:
 
-\aufgabeML{\sqrt[4]{a^3}}{a^{\frac{3}{4}}}\noTRAINER{\newpage}
+\aufgabeML{4}{\left(\frac8{64}\right)^\frac13}{\frac12}
 
-\aufgabeML{\sqrt[3]{r^{\frac{3}{4}}}}{\sqrt[4]{r} = r^{\frac{1}{4}}}
+Berechnen Sie mit dem Taschenrechner und geben Sie drei signifikante
+Stellen an.
 
-\aufgabeML{\sqrt{b^\frac12}}{\sqrt[4]b = b^\frac14}\noTRAINER{\newpage}
+\aufgabeML{4}{\sqrt{\sqrt[3]{10}\cdot{}\sqrt[4]{10}}}{\sqrt[24]{10^7}\approx 1.96}
 
-\aufgabeML{\sqrt{a^\frac{1}{2}} \cdot \sqrt[4]{a\cdot{} \sqrt[5]{a^{10}}}}{a}
-
-\aufgabeML{\sqrt{x^{10}} \cdot \sqrt[4]{x^3} \cdot x^{\frac{1}{4}}}{x^6}\noTRAINER{\newpage}
-
-\aufgabeML{\sqrt[3]{a} \cdot \sqrt{a^3 \cdot \sqrt[3]{a}}}{a^2}
-
-\aufgabeML{\sqrt[3]{a^2} \cdot \sqrt[4]{a^3 \cdot \sqrt[3]{a}}}{a^{\frac{9}{6}} = \sqrt[6]{a^9} = a^\frac32 = \sqrt{a^3}}\noTRAINER{\newpage}
-
-\aufgabeML{\sqrt[3]{b\cdot \sqrt{b^3\cdot \sqrt[3]b}}}{\sqrt[9]{b^8}}
-
-\aufgabeML{\sqrt[4]{b\cdot{} \sqrt[3]{b^2\cdot \sqrt{b}}}}{b^\frac{11}{24} = \sqrt[24]{b^{11}}}\noTRAINER{\newpage}
-
-\aufgabeML{3a\cdot \sqrt[3]{9a^2}}{\sqrt[3]{3^5 a^5} = \left(3a\right)^\frac53}
-
-\aufgabeML{\sqrt{x} \cdot \sqrt[3]{x^4} \cdot \sqrt[6]{x^3}}{x^\frac73 = \sqrt[3]{x^7}}\noTRAINER{\newpage}
-
-\aufgabeML{\sqrt{a^3}\cdot \sqrt[3]{a^2}}{a^\frac{13}{6} = \sqrt[6]{a^{13}}}
-
-\aufgabeML{\sqrt{a^2 \sqrt{a}}}{a^\frac54 = \sqrt[4]{a^5}}\noTRAINER{\newpage}
-
-\aufgabeML{\sqrt{a^{-2}}}{\frac{1}{a} = a^{-1}}
-
-\aufgabeML{\sqrt[3]{a^2 \cdot b \cdot \sqrt{a\cdot b^{-1}}}}{a^\frac56 \cdot b^\frac16 = \sqrt[6]{a^5\cdot b}}\noTRAINER{\newpage}
-
-\aufgabeML{\sqrt{x^3} \cdot \left(\sqrt{x}\right)^{-3}}{1}
-
-\aufgabeML{\frac{\sqrt{a^3}}{\sqrt{a^{-1}}}}{a^2}\noTRAINER{\newpage}
-
-\aufgabeML{\left(\frac{1}{a}\right)^{-\frac14}}{\sqrt[4]a = a^\frac14}
-
-\aufgabeML{\frac{a^4}{\sqrt{a}}}{\sqrt{a^7} = (\sqrt{a})^7 = a^\frac72}\noTRAINER{\newpage}
-
-\aufgabeML{\frac{\sqrt[3]{a^2}}{\sqrt{a}}}{a^{\frac16} = \sqrt[6]{a}}
-
-\aufgabeML{\frac{-\sqrt{a^3}}{-\left(\sqrt{a}\right)^3}}{1}\noTRAINER{\newpage}
-
-\aufgabeML{\frac{\sqrt[3]{a^{13}}}{a^4}}{a^{\frac13} = \sqrt[3]{a}}
+\noTRAINER{\newpage}
 
 
-\aufgabeML{\sqrt[3]{26\cdot{} \sqrt[4]{a^3} + \sqrt[8]{a^6}}}{3\cdot{}\sqrt[4]{a}}
+Schreiben Sie als Wurzelterm:
+
+\aufgabeML{4}{a^\frac13}{\sqrt[3]{a}}
+
+\aufgabeML{4}{4xy^{\frac32}}{\sqrt{16x^2y^3}}
+
+\aufgabeML{4}{f^\frac14 + g^\frac14}{ \text{ Kann nicht vereinfacht
+werden. Oder trivial: } \sqrt{\left(f^\frac14 + g^\frac14\right)^2}}
+\noTRAINER{\newpage}
+
+\aufgabeML{6}{rst^{\frac{m+n}{m-1}}}{\sqrt[m-1]{(rs)^{m-1}t^{m+n}}}
+\noTRAINER{\newpage}
+
+Schreiben Sie als Wurzelterm und ohne negative Exponenten:
+
+\aufgabeML{4}{x^{\frac{-4}3}}{\sqrt[3]{\frac1{x^4}}}
+
+\aufgabeML{4}{3y^{-0.8}}{\sqrt[5]{3^5\cdot{} \frac1{y^4}}}
+
+\aufgabeML{6}{\left(\frac1a\right)^\frac{-3}4}{\sqrt[4]{a^3}}
+
+\noTRAINER{\newpage}
+
+Schreiben Sie als Potenz:
+
+\aufgabeML{2}{\sqrt[3]{x}}{x^\frac13}
+
+\aufgabeML{4}{\sqrt[5]{x^4}}{x^\frac45}
+
+\noTRAINER{\newpage}
+Multiplizieren Sie Potenzen mit gleicher Basis:
+
+\aufgabeML{2}{a^\frac12\cdot{} a^{\frac32}}{a^2}
+\aufgabeML{3.2}{c^{\frac{-2}3} \cdot{} c^{\frac16} \cdot{}
+c^\frac12}{c^0 = 1}
+
+\aufgabeML{4}{x^\frac{r}s \cdot{} x^\frac{t}u}{x^\frac{ru+st}{su}}
+
+\noTRAINER{\newpage}
+Dividieren Sie Potenzen mit gleicher Basis:
+
+\aufgabeML{3.2}{\frac{c^{\frac34}}{c^\frac12}}{c^\frac14=\sqrt[4]{c}}
+
+\aufgabeML{3.2}{b^{\frac34} : b^{\frac{-5}6}}{b^\frac{19}{12} = \sqrt[12]{b^{19}}}
+
+
+\noTRAINER{\newpage}
+Multiplizieren Sie die Potenzen mit gleichen Exponenten:
+
+\aufgabeML{2}{72^\frac12 \cdot{} 0.5^\frac12}{36^\frac12 = 6}
+
+\aufgabeML{2}{r^\frac37 \cdot{} \left(\frac1r\right)^\frac37}{1}
+
+\aufgabeML{4}{\left(\frac{5s}{7t}\right)^{\frac{-1}4}  \cdot{}  \left(\frac{7t}{5u}\right)^\frac{-1}4}{\left(\frac{s}u\right)^\frac{-1}{4}
+= \left(\frac{u}s\right)^\frac14 = \sqrt[4]{\frac{u}s}}
+
+\noTRAINER{\newpage}
+
+Dividieren Sie Potenzen mit denselben Exponenten:
+
+\aufgabeML{3.2}{\left(\frac1{r^2}\right)^\frac{-2}3  :   r^\frac{-2}3}{r^2}
+\aufgabeML{4}{(a-b)^\frac13 :
+(a^2-b^2)^\frac13}{\left(\frac{a-b}{(a-b)(a+b)}\right)^\frac13
+= \sqrt[3]{\frac1{a+b}} = \frac1{(a+b)^\frac13}}
+
+
+
+
+\noTRAINER{\newpage}
+Vereinfachen Sie:
+
+
+\aufgabeML{4}{\left(s^\frac{-2}5\right)^\frac{-5}6}{s^\frac13
+= \sqrt[3]{s}}
+
+\aufgabeML{2}{(49x^2)^\frac{-1}2}{\frac1{7x}}
+
+\aufgabeML{4}{\frac{(e-1)^\frac73}{(e-1)^\frac{8}3}}{(e-1)^\frac{-1}3
+= \left(\frac1{e-1}\right)^\frac13 = \sqrt[3]{\frac1{e-1}}}
+
+\aufgabeML{6}{a^4\cdot{}a^{\frac{1}{4}}\cdot a^5\cdot a^{\frac{-1}{5}}}{a^\frac{181}{20}}
+
+\aufgabeML{6}{\sqrt[4]{a^3}}{a^{\frac{3}{4}}}\noTRAINER{\newpage}
+
+\aufgabeML{6}{\sqrt[3]{r^{\frac{3}{4}}}}{\sqrt[4]{r} = r^{\frac{1}{4}}}
+
+\aufgabeML{6}{\sqrt{b^\frac12}}{\sqrt[4]b = b^\frac14}\noTRAINER{\newpage}
+
+\aufgabeML{6}{\sqrt{a^\frac{1}{2}} \cdot \sqrt[4]{a\cdot{} \sqrt[5]{a^{10}}}}{a}
+
+\aufgabeML{6}{\sqrt{x^{10}} \cdot \sqrt[4]{x^3} \cdot x^{\frac{1}{4}}}{x^6}\noTRAINER{\newpage}
+
+\aufgabeML{6}{\sqrt[3]{a} \cdot \sqrt{a^3 \cdot \sqrt[3]{a}}}{a^2}
+
+\aufgabeML{6}{\sqrt[3]{a^2} \cdot \sqrt[4]{a^3 \cdot \sqrt[3]{a}}}{a^{\frac{9}{6}} = \sqrt[6]{a^9} = a^\frac32 = \sqrt{a^3}}\noTRAINER{\newpage}
+
+\aufgabeML{6}{\sqrt[3]{b\cdot \sqrt{b^3\cdot \sqrt[3]b}}}{\sqrt[9]{b^8}}
+
+\aufgabeML{6}{\sqrt[4]{b\cdot{} \sqrt[3]{b^2\cdot \sqrt{b}}}}{b^\frac{11}{24} = \sqrt[24]{b^{11}}}\noTRAINER{\newpage}
+
+\aufgabeML{6}{3a\cdot \sqrt[3]{9a^2}}{\sqrt[3]{3^5 a^5} = \left(3a\right)^\frac53}
+
+\aufgabeML{6}{\sqrt{x} \cdot \sqrt[3]{x^4} \cdot \sqrt[6]{x^3}}{x^\frac73 = \sqrt[3]{x^7}}\noTRAINER{\newpage}
+
+\aufgabeML{6}{\sqrt{a^3}\cdot \sqrt[3]{a^2}}{a^\frac{13}{6} = \sqrt[6]{a^{13}}}
+
+\aufgabeML{6}{\sqrt{a^2 \sqrt{a}}}{a^\frac54 = \sqrt[4]{a^5}}\noTRAINER{\newpage}
+
+\aufgabeML{6}{\sqrt{a^{-2}}}{\frac{1}{a} = a^{-1}}
+
+\aufgabeML{6}{\sqrt[3]{a^2 \cdot b \cdot \sqrt{a\cdot b^{-1}}}}{a^\frac56 \cdot b^\frac16 = \sqrt[6]{a^5\cdot b}}\noTRAINER{\newpage}
+
+\aufgabeML{6}{\sqrt{x^3} \cdot \left(\sqrt{x}\right)^{-3}}{1}
+
+\aufgabeML{6}{\frac{\sqrt{a^3}}{\sqrt{a^{-1}}}}{a^2}\noTRAINER{\newpage}
+
+\aufgabeML{6}{\left(\frac{1}{a}\right)^{-\frac14}}{\sqrt[4]a = a^\frac14}
+
+\aufgabeML{6}{\frac{a^4}{\sqrt{a}}}{\sqrt{a^7} = (\sqrt{a})^7 = a^\frac72}\noTRAINER{\newpage}
+
+\aufgabeML{6}{\frac{\sqrt[3]{a^2}}{\sqrt{a}}}{a^{\frac16} = \sqrt[6]{a}}
+
+\aufgabeML{6}{\frac{-\sqrt{a^3}}{-\left(\sqrt{a}\right)^3}}{1}\noTRAINER{\newpage}
+
+\aufgabeML{6}{\frac{\sqrt[3]{a^{13}}}{a^4}}{a^{\frac13} = \sqrt[3]{a}}
+
+
+\aufgabeML{6}{\sqrt[3]{26\cdot{} \sqrt[4]{a^3} + \sqrt[8]{a^6}}}{3\cdot{}\sqrt[4]{a}}
 %%\platzFuerBerechnungenBisEndeSeite{}
 
 \end{document}
