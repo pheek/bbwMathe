@@ -1,1 +1,1 @@
-./dirMake.sh
+dirMake.sh
