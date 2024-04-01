@@ -2,16 +2,9 @@
 # Transition 2024
 # uses no "Zielgruppe" any more.
 
-export TEXINPUTS=".:/home/phi/mgit/framework:/home/phi/mgit/cnt/thema:"
+export TEX_FILE_NAME=TALS_S_VECG2_TALS
+../dirMake.sh
 
-pdflatex  TALS_S_VECG2_TALS.tex
-bibtex    TALS_S_VECG2_TALS.aux
-pdflatex  TALS_S_VECG2_TALS.tex
-makeindex TALS_S_VECG2_TALS.idx
-pdflatex  TALS_S_VECG2_TALS.tex
+export TEX_FILE_NAME=TALS_S_VECG2_TRAINER_TALS
+../dirMake.sh
 
-pdflatex  TALS_S_VECG2_TRAINER_TALS.tex
-bibtex    TALS_S_VECG2_TRAINER_TALS.aux
-pdflatex  TALS_S_VECG2_TRAINER_TALS.tex
-makeindex TALS_S_VECG2_TRAINER_TALS.idx
-pdflatex  TALS_S_VECG2_TRAINER_TALS.tex
