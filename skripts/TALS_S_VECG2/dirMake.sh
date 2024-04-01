@@ -4,5 +4,8 @@
 
 export TEXINPUTS=".:/home/phi/mgit/framework:/home/phi/mgit/cnt/thema:"
 pdflatex TALS_S_VECG2_TALS.tex
-pdflatex TALS_S_VECG2_TALS_TRAINER.tex
-
+pdflatex TALS_S_VECG2_TALS.tex
+pdflatex TALS_S_VECG2_TALS.tex
+pdflatex TALS_S_VECG2_TRAINER_TALS.tex
+pdflatex TALS_S_VECG2_TRAINER_TALS.tex
+pdflatex TALS_S_VECG2_TRAINER_TALS.tex
