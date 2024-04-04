@@ -23,7 +23,6 @@
 \TadBMTA{135}{9}
 \newpage
 
-
 \subsection{Einstiegsbeispiel}
 Ein Apfel koste CHF $a$, eine Banane CHF $b$. Wenn ich drei Äpfel und zwei Bananen kaufe, bezahle ich CHF 3.10. Wenn ich hingegen vier Äpfel und fünf Bananen kaufe, so muss ich CHF 6.00 bezahlen. Wie viel kostet ein Apfel, wie viel eine Banane?
 
@@ -51,8 +50,6 @@ beiden Gleichungen als sortiertes \textit{(lineares)} Gleichungssystem auf:
 
 \subsection{Einsetzungsverfahren}\label{einsetzungsverfahren}\index{Einsetzungsverfahren!Gleichungssysteme}
 Beim Einsetzungsverfahren wird aus einer der beiden Gleichungen eine der beiden Variablen alleine gestellt. Zum Beispiel hier aus der zweiten Gleichung $b = ...$; danach wird dieser $b$-Term in die \textbf{andere} Gleichung eingesetzt, und so erhalten wir eine Gleichung mit einer Unbekannten.
-
-
 
 
 
@@ -130,7 +127,7 @@ Gleichungssysteme lösen:
 Lösungsweg:
   \TNT{10.8}{
     Erstens aus der ersten Gleichung das $b$ separieren:
-    $$b = \frac{72}a$$
+    $$b = \frac{72}a \hspace{40mm} (I)$$
     Und dieses $b$ nun in die \textbf{andere} Gleichung einsetzen:
     $$a^4\cdot{}\frac12\cdot{}\frac{72}{a} = 288$$
     
@@ -140,8 +137,10 @@ Lösungsweg:
 
     $$a^3 = 8$$
 
-    ergibt $a=2$. Dies nun in die «separierte
-    Gleichung» einsetzen: $b=\frac{72}{a} = \frac{72}2 = 36$.
+    ergibt $a=2$.
+
+    Dies nun in die «separierte
+    Gleichung» $(I)$ einsetzen: $b=\frac{72}{a} = \frac{72}2 = 36$.
 
     Hinweis: Hier hätte man gleich von vornherein die zweite Gleichung
     durch die erste dividieren können (dies wäre dann aber nicht mehr
@@ -153,7 +152,7 @@ Lösungsweg:
 
 \subsection{Abkürzende Verfahren}
 \subsubsection{Additions- bzw. Subtraktionsverfahren}\index{Additionsverfahren!lineare Gleichungen}\index{Subtraktionsverfahren!Gleichungssysteme}
-Eine weitere Möglichkeit Gleichungen mit mehreren Unbekannten zu lösen ist das Verfahren, die linke und die rechte Seite miteinander zu addieren (bzw. voneinander zu subtrahieren), sodass eine Variable wegfällt. Dazu müssen die Gleichungen vorher so \textit{präpariert} werden, dass in einer Variablen (hier \zB $a$) die Koeffizienten übereinstimmen:
+Eine weitere Möglichkeit lineare Gleichungssysteme mit mehreren Unbekannten zu lösen ist das Verfahren, die linke und die rechte Seite miteinander zu addieren (bzw. voneinander zu subtrahieren), sodass eine Variable wegfällt. Dazu müssen die Gleichungen vorher so \textit{präpariert} werden, dass in einer Variablen (hier \zB $a$) die Koeffizienten übereinstimmen:
 
 \gleichungsSystemNummeriert{4x+4y}{48}{3x-6y}{-27}
 %%\gleichungZZ{4x+4y}{48\hspace{10mm}\text{ (I)}}{3x-6y}{-27\hspace{5mm}\text{ (II) }}
@@ -299,18 +298,21 @@ Koordinatensystem ein und lesen Sie die Lösung \TRAINER{bei $(5|2)$} ab:
 \newpage
 
 
-\GESO{\subsection*{Aufgabe Graphisch}
+\subsection*{Aufgabe Graphisch}
   Lösen Sie die folgende Aufgabe graphisch. Bringen Sie die beiden Gleichungen erst in die Form $y=ax+b$ der linearen Funktionen. Zeichnen Sie danach beide Funktionen in ein Koordinatensystem ($x$ von -6 bis 1 und $y$ von -3 bis 5). Schätzen Sie die Lösung, bevor Sie diese berechnen.
-\GESOAadBMTA{151}{8. g)}
-}
+\AadBMTA{151}{8. g)}
+
 
 \olatLinkGESOKompendium{2.2.4.}{15}{39. bis 41.}
 
 \newpage
 
 
-\GESO{\input{allg/gls/Spezialfaelle}}
+\input{allg/gls/Spezialfaelle}
 \newpage
+
+\TALS{\input{tals/gls/DreiMalDreiSysteme}
+\newpage}
 
 \TALS{\input{allg/gls/Lineare_Abhaengigkeit}
 \newpage}
