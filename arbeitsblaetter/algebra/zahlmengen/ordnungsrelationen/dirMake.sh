@@ -4,5 +4,5 @@
 # uses no "Zielgruppe" any more.
 
 export TEXINPUTS=".:/home/phi/mgit/framework:/home/phi/mgit/cnt/thema:"
-pdflatex LogarithmenArbeitsblatt_ALLG.tex
-pdflatex LogarithmenArbeitsblatt_TRAINER_ALLG.tex
+pdflatex Ordnungsrelationen_ALLG.tex
+pdflatex Ordnungsrelationen_TRAINER_ALLG.tex
