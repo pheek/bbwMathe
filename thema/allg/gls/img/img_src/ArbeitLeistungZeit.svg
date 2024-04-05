@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="106.35734mm"
+   height="86.662918mm"
+   viewBox="0 0 106.35734 86.662918"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="ArbeitLeistungZeit.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.5447391"
+     inkscape:cx="319.14775"
+     inkscape:cy="240.81737"
+     inkscape:window-width="1824"
+     inkscape:window-height="1055"
+     inkscape:window-x="48"
+     inkscape:window-y="2"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-44.418147,-41.928778)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3.77301;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="M 94.161122,43.815113 46.304514,126.70519 H 148.88914 Z"
+       id="path236" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3.81863;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="M 73.541482,97.24006 H 117.38769"
+       id="path954" />
+    <text
+       xml:space="preserve"
+       style="font-size:14.6777px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:17.4423;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       x="93.638863"
+       y="71.028801"
+       id="text1010"
+       transform="scale(0.828752,1.2066336)"><tspan
+         sodipodi:role="line"
+         id="tspan1008"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:17.4422"
+         x="93.638863"
+         y="71.028801">Arbeit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12.7542px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:15.1565;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       x="69.180206"
+       y="102.22079"
+       id="text1066"
+       transform="scale(0.87339197,1.1449613)"><tspan
+         sodipodi:role="line"
+         id="tspan1064"
+         style="fill:#000000;fill-opacity:1;stroke-width:15.1565"
+         x="69.180206"
+         y="102.22079">Leistung · Zeit</tspan></text>
+  </g>
+</svg>
