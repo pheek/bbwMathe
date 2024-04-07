@@ -20,29 +20,55 @@ Am Anfang ist $1 \textrm{ m}^2$ der Wand mit dem Pilz bedeckt. Jeden Tag nimmt d
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\bbwActAufgabenNr{} \textbf{Karton}
 
-\bbwActAufgabenNr{} \textbf{Einwohnerzahl}
+Ein Karton von einem Millimeter (mm) Dicke wird halbiert
+und aufeinandergelegt, sodass ein Karton der Dicke 2 mm entsteht.
 
-In Winterthur waren im Jahr 1997 89\,850 Einwohner registriert. Im Jahr 2013 waren es
-bereits 107\,799 Einwohner (Quelle: \texttt{stadt.winterthur.ch} Juli 2022).
-
-Zum Glück nimmt die Bevölkerung hier nicht exponentiell zu. Doch für
-diese Aufgabenstellung dürfen Sie das \textit{worst case}-Szenario von
-exponentiellem Wachstum annehmen.
+Dieses Verfahren wird nun wiederholt und nach einer zweiten
+Verdopplung hat der Karton eine Dicke von 4 mm.
 
 \begin{bbwAufgabenBlock}
-\item Um wie viel \% nimmt die Bevölkerung jährlich zu?
-\TRAINER{$a=\frac{107\,799}{89\,850} \approx 1.199766  $ ergo
-Zunahmefaktor = 1,.199766 in 16 Jahren. Pro Jahr:
-$a^{\frac{1}{16}}$. Zunahme also 1.145\% jährlich.}
-\item Was prognostizieren Sie bei exponentiellem Wachstum fürs Jahr 2040?
-\TRAINER{$ = 8950\cdot{}a^{\frac{43}{16}} \approx 146\,585 $ Einwohner}
-\item In wie vielen Jahren nimmt die Bevölkerung jeweils um 25\% zu?
-\TRAINER{$ 1.25 = a^{\frac{t}{16}}$ ergo
-$t=16\cdot{}\log_a(1.25)\approx 19.60$. Alle ca. 20 Jahre nimmt die
-Bevölkerung um 25\% zu.}
+  \item Wie dick ist der Karton nach einer weiteren Verdopplung, also
+    nach der 3. Verdopplung der Dicke?
+    \TRAINER{Der Karton wird nun 8mm dick. 8 mm = 4 mm + 4 mm =
+      2$\cdot{}$4 mm}
+    
+  \item Wie dick ist der Karton nach fünf Verdopplungen?
+    \TRAINER{Der Karton wird $2^5$ mm = $32$ mm dick.}
+
+  \item Wie dick ist der Karton nach 7 Verdopplungen?
+    \TRAINER{Der Karton wird nun $2^7$ = $128$ mm dick.}
+
+  \item Wie dick ist der Karton nach $n$ Verdopplungen ($n \in \mathbb{N}$)?
+      \TRAINER{Der Karton wird nun $2^n$ mm dick, wobei wir das $n$
+        natürlich beliebieg wählen können.}
+    \item Nach wie vielen Verdopplungen ist der Karton 1 m dick?
+      \TRAINER{Hier kann man a) auspropieren und kommt bei 10
+        Verdopplungen auf 1.024 m. Natürlich geht das auch mit einer
+        Formel:
+        $$2^n = 1000$$
+        Logarithmieren
+        $$n = \log_2(1000) \approx 9.966 $$
+        Das heißt, so gut wie exakt ein Meter dick wäre es bei 9.966
+        Verdopplungen. Dies ist aber technisch nicht möglich, somit
+        müssen wir auf die nächste Verdopplung aufrunden und erhalten
+        auch 10 Verdopplungen.
+      }
+
+    \item Nach wie vielen Verdopplungen wäre der Karton bereits über 100 m
+      hoch, also mind. so hoch wie das Sulzer Hochhaus? Wie wiel höher als
+      des Gebäude von 100 m würde der Karton dadurch?
+      \TRAINER{$$2^n = 100\,000$$ $$n = \log_2(100\,000)\approx
+        16.61$$ Somit brauche ich 17 Verdopplungen. Da $2^{17} =
+        131072$ ergibt, wäre der Kartonstapel bereits 31.072 m höher
+        als das Gebäude.}
+    
 \end{bbwAufgabenBlock}
+
+
 \platzFuerBerechnungenBisEndeSeite{}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

@@ -40,34 +40,33 @@ $$t = 5.5 \cdot{} \log_2(10) \approx 18.27 \textrm{Stunden}$$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\bbwActAufgabenNr{} \textbf{Halbwertszeit}
+\bbwActAufgabenNr{} \textbf{Einwohnerzahl}
 
-Tritium zerfällt innerhalb von 1.873 Jahren auf 90\%  (also um 10\%).
+In Winterthur waren im Jahr 1997 89\,850 Einwohner registriert. Im Jahr 2013 waren es
+bereits 107\,799 Einwohner (Quelle: \texttt{stadt.winterthur.ch} Juli 2022).
 
+Zum Glück nimmt die Bevölkerung hier nicht exponentiell zu. Doch für
+diese Aufgabenstellung dürfen Sie das \textit{worst case}-Szenario von
+exponentiellem Wachstum annehmen.
 
 \begin{bbwAufgabenBlock}
-\item Erstellen Sie eine Skizze, welche den Verlauf der vorhandenen
-  Menge in \% angibt. Starten Sie mit 100\%.
-
-  \TRAINER{Graph}
-
-\item Geben Sie eine mögliche Funktionsgleichung für den Tritiumgehalt
-  (in \%)
-  in Abhängigkeit der Zeit (in Jahren) an.
-
-  \TRAINER{$$f(t) = 100\% \cdot{} 0.9^{\frac{t}{1.873}}$$}
-  
-\item  
-  Wie groß ist die Halbwertszeit von Tritium?
-
-  \TRAINER{$$0.5 = (0.9)^\frac{t}{1.873}$$
-
-   $$t = 1.873 \cdot{} \log_{0.9}(0.5) \approx 12.32 \textrm{ Jahre}$$
-  }
+\item Um wie viel \% nimmt die Bevölkerung jährlich zu?
+\TRAINER{$a=\frac{107\,799}{89\,850} \approx 1.199766  $ ergo
+Zunahmefaktor = 1.199766 in 16 Jahren. Pro Jahr:
+$a^{\frac{1}{16}}$. Zunahme also als Faktor: 1.01145; als Rate 1.145\% jährlich.}
+\item Was prognostizieren Sie bei exponentiellem Wachstum fürs Jahr 2040?
+\TRAINER{$ = 8950\cdot{}a^{\frac{43}{16}} \approx 146\,585 $ Einwohner}
+\item In wie vielen Jahren nimmt die Bevölkerung jeweils um 25\% zu?
+\TRAINER{$ 1.25 = a^{\frac{t}{16}}$ ergo
+$t=16\cdot{}\log_a(1.25)\approx 19.60$. Alle ca. 20 Jahre nimmt die
+Bevölkerung um 25\% zu.}
 \end{bbwAufgabenBlock}
 \platzFuerBerechnungenBisEndeSeite{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 
 \bbwActAufgabenNr{} \textbf{Bakterien}
  Ohne Nahrungsmangel und ohne Platzmangel wächst eine Bakterienkultur
@@ -123,108 +122,28 @@ $$t = 5\cdot{} \log_{16}\left(\frac{150}{2\,500}\right) \approx
   Resultat in \% auf eine Dezimale gerundet an.
 
       \TRAINER{$p = \sqrt[5]{1.165} \approx 1.031$ somit ist die
-        jährliche Rate = 3.1\% gerundet.}
+        jährliche Rate = 3.1\%.}
 
-    \item Eine Schubkarre kostete vor 5 Jahren 80.- \euro{}. Welcher
+    \item Eine Schubkarre kostete vor 6 Jahren 80.- \euro{}. Welcher
       Preis ist heute zu erwarten?
 
-      \TRAINER{$80 \cdot{} a^5$ mit $a=\sqrt[5]{1.165}$ ergibt:
-        $80\cdot{}a^5=80\cdot{}1.165 = 93.20$}
+    \TRAINER{$80 \cdot{} a^6$ mit $a=\sqrt[5]{1.165}$ ergibt:
+        $80\cdot{}a^6 \approx 96.09$ \euro{}}
       
     \item Gehen wir von gleichbleibender Inflationsrate während der
       letzten sieben Jahre aus: Ein Bürostuhl kostet heute \euro{}
       75.-. Wie viel hat der Stuhl vor sieben Jahren gekostet?
-\TRAINER{$p$ = Preis vor sieben Jahren. Es gilt: $p\cdot{}a^7 = 75.-$
-  und somit: $p = \frac{75}{a^7}\approx 60.56$ \euro{}.}
+
+      \TRAINER{$p$ = Preis vor sieben Jahren. Es gilt: $p\cdot{}a^7 = 75.-$ und somit: $p = \frac{75}{a^7}\approx 60.56$ \euro{}.}
+      
+
+
       
 \end{bbwAufgabenBlock}
 \platzFuerBerechnungenBisEndeSeite{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\bbwActAufgabenNr{} \textbf{Verdopplungszeit}
-
-E. coli-Bakterien (Benannt nach Th. Escherich) durchlaufen bei
-optimalen Bedingungen pro Tag (24 h) sechs (bis sieben) Generationen. Das
-bedeutet, dass sich ein einziges Bakterium sechs mal teilt und sich
-somit die Anzahl sechs mal verdoppelt.
-
-\begin{bbwAufgabenBlock}
-
-\item Machen Sie eine aussagekräftige Skizze zur Vermehrung dieser Bakterien
-  \TNT{6}{}
-  
-\item Gehen Sie zunächst von sechs Generationen innerhalb von 24 h aus
-  und geben Sie eine Funktion an, welche die Anzahl Bakterien in
-  Abhängigkeit der Zeit (in Stunden) angibt. Gehen Sie von einer
-  Startpopulation $f(0) = \text{G}_0$ aus.
-
-  
-  \TNT{2}{$f(0) = \text{G}_0 \cdot{} (2^6)^\frac{1}{24} = \text{G}_0
-    \cdot{} 2^\frac{1}{4}$; $b$ = $\text{G}_0$; $a=2$ und $\tau=4$;
-    bzw. $a=2^6$ und $\tau=24$}%% END TNT
-  
-  
-\item Geben Sie die Zunahme $a_h$ pro Stunde an für (1.) 6 Generationen
-  und (2.) sieben Generationen pro Tag
-
-  \TNT{3.2}{
-    (1.) $a_h = 2^\frac14 \approx 1.1892$
-
-    (2.) $a_h = 2^\frac7{24} \approx 1.2241$
-
-  }%% end TNT
- 
-
-  
-\item Wie ist die durchschnittliche Verdopplungszeit, wenn Sie von 6.5 Generationen pro
-  Tag im Schnitt ausgehen?
-  
-  \TNT{4}{$$f(t) = \text{G}_0\cdot 2^{\frac{6.5t}{24}} \Longrightarrow$$
-$$2\cdot{}\text{G}_0 = \text{G}_0 \cdot{} 2^\frac{6.5\text{T}_2}{24}
-    \Longrightarrow$$
-    $$\text{T}_2 = \log_{2^{\frac{6.5}{24}}}(2) \approx 3.6923 \text{h}$$
-  }
-
-\end{bbwAufgabenBlock}
-%%\platzFuerBerechnungenBisEndeSeite{}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\bbwActAufgabenNr{} \textbf{Düngemittel}
-
-Ein Düngemittel in einem See habe eine Halbwertszeit von acht
-Monaten. Das heißt, nach acht Monaten ist jeweils noch die Hälfte der
-Düngemittelkonzentration im See vorhanden.
-
-\begin{bbwAufgabenBlock}
-
-\item Zeichnen Sie einen Graphen, der die Düngemittelkonzentration (in \%)
-  in Abhängigkeit von der Zeit (in Monaten) angibt.
-
-  \TRAINER{Graph}
-
-  
-    \item Entwerfen Sie einen Funktionsterm, der die
-      Düngemittelkonzentration in Abhängigkeit der Zeit ermitteln
-      kann.
-
-      \TRAINER{$$f(t) = 100\% \cdot\left(\frac12\right)^{\frac{t}8}$$}%% END Tranien
-
-    \item Nach welcher Zeit sind nur noch 5\% der ursprünglichen
-      Düngemittelkonzentration im See?
-
-      \TRAINER{$$5\%  = 100\% \cdot{}
-        \left(\frac12\right)^{\frac{t}8}$$
-$$t = 8\cdot{} \log_{0.5}(0.05) \approx 34.6 \textrm{ Monate}$$
-      }
-      
-\end{bbwAufgabenBlock}
-\platzFuerBerechnungenBisEndeSeite{}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 
 
