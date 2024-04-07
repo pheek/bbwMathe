@@ -35,13 +35,13 @@ Diese Konstante wird auch in großen chemischen Mischtanks verwendet.
 
 
 \textbf{Begründung:}\\
-1. Gedanke: Jedes eingefüllte Glas, vermindert die vorhandene
+\textbf{1. Gedanke}: Jedes eingefüllte Glas, vermindert die vorhandene
 Sirupkonzentration um den selben Faktor. Ergo handelt es sich um
 einen exponentiellen Zerfall.
 
 \leserluft
 
-2. Gedanke: Wir tauschen drei Mal $\frac13$ aus. Nehmen also im
+\textbf{2. Gedanke}: Wir tauschen drei Mal $\frac13$ aus. Nehmen also im
 \begin{itemize}
 \item \textbf{ersten Schritt} $\frac13$ des Sirups weg (und ersetzen diesen mit Wasser).
   Es bleiben $\frac23$ Sirup. Den Rest füllen wir mit Wasser auf.
@@ -59,7 +59,7 @@ $\left(\frac23\right)^3 = \left(1-\frac13\right)^3$ der ursprünglichen Konzentr
 \end{itemize}
 \leserluft
 
-3. Gedanke: Das Experiment vom vorherigen Gedanken können wir natürlich auch mit immer kleineren\TALS{, sogenannten infinitesimalen,} Schritten durchführen.
+\textbf{3. Gedanke}: Das Experiment vom vorherigen Gedanken können wir natürlich auch mit immer kleineren\TALS{, sogenannten infinitesimalen,} Schritten durchführen.
 Mit Centilitern \zB im dl-Glas ersetzen wir 10 Mal je $\frac1{10}$. 
 So verbleibt am Schluss $\left(1-\frac{1}{10}\right)^{10}\approx 0.35$ Sirup.
 
@@ -94,9 +94,12 @@ eingepumpt werden muss, damit nur noch 1 Promille der alten Luft
 vorhanden ist, so erhalten wir (unter der Annahme, dass sich die alte
 und die neue Luft permanent mischen) ...
 
-$$\text{Volumen Neuluft} = \text{Wohnungsvolumen} \cdot{} \LoesungsRaum{\ln(1000)}$$
+$$\text{Volumen Neuluft} = \text{Wohnungsvolumen} \cdot{}
+\LoesungsRaum{\ln(1000)}$$
+\vspace{7mm}
+$$= \text{Wohnugsvolumen} \cdot{} \LoesungsRaumLen{70mm}{\left( -\ln \left( \frac1{1000}  \right) \right)}$$
 \TNTeop{
-  $$\ln(1000) \approx 6.9$$
+  $$\ln(1000) = -\ln\left(\frac1{1000} \right) \approx 6.9$$
 
   Wir pumpen also ca. 7x das Wohnungsvolumen an Luft hinein, bis nur
   noch 1 Promille der ursprünglichen Luft vorhanden ist.

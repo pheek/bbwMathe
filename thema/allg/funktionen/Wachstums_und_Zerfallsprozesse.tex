@@ -82,7 +82,7 @@ c) Skizzieren Sie beide Varianten:
 \begin{definition}{Exponentialfunktion}{}\index{Exponentialfunktion!Definition}
   Eine Funktion der Form $$f(x): x \mapsto a^x$$
   bzw. $$y = a^x$$
-  heißt \textbf{Exponentialfunktion}.
+  mit $a\in \mathbb{R}^{+}\backslash\{1\}$ heißt \textbf{Exponentialfunktion}.
 \end{definition}
 
 Zeichnen Sie $f: y=2^x$ und $g: y=1.4^x$ ins selbe Koordinatensystem:
@@ -151,7 +151,7 @@ Zeichnen Sie die Funktionen $f: y=2^x$, $g: y=2^{-x}$ und $h: y=\left(\frac12\ri
   \TRAINER{\bbwLetter{-5,4}{g(x)=2^{-x}=\left(\frac{1}{2}\right)^x=h(x)}{red}}
 }
 
-Bemerkung: \TRAINER{$$2^{-x} = \frac1{2^x} = \left(\frac12\right)^x$$}
+Bemerkung: \TRAINER{$$2^{-x} = \frac1{2^x} = \frac{1^x}{2^x}= \left(\frac12\right)^x$$}
 \newpage
 
 \subsubsection{Grundform} \index{Exponentieller Prozess! Grundform}
@@ -229,7 +229,7 @@ eine \textbf{allgemeinere Form der Exponentialfunktion}.
   Ein Pilzbefall an einer Wand nehme täglich um 23\% der Fläche
   zu\footnote{Je nach Organismus ist auch ein quadratisches Wachstum
   vorhanden, doch für unser Experiment verwenden wir exponentielles Wachstum.}.
-  Anfänglich wird eine Fläche von $35 \text{cm}^2$ gemessen.
+  Anfänglich wird eine Fläche von $35$ $\text{cm}^2$ gemessen.
   Welche Fläche ist nach einem, nach zwei, nach fünf, nach zehn
   bzw. nach $n$ 
   Tagen zu erwarten?
@@ -251,7 +251,7 @@ eine \textbf{allgemeinere Form der Exponentialfunktion}.
 
      $$\frac{50\,000}{35} = 1.23^n$$
 
-     $$n = \log_{1.23}(\frac{50\,000}{35}) \approx 35.1 \text{Tage}$$
+     $$n = \log_{1.23}\left(\frac{50\,000}{35}\right) \approx 35.1 \text{Tage}$$
 
    }%% END TNT
 
@@ -341,8 +341,8 @@ Zeichnen Sie die Algenpopulation als Graph in eine Koordinatensystem
 \textbf{Funktionsgleichung}
 
 Wir betrachten die selbe Algenpopulation mit einer
-Ver\textbf{dopplung} der Fläche alle \textbf{fünf} Tage bei einer
-Startfläche von \textbf{zwanzig} $\text{m}^2$.
+Ver\textbf{\color{blue}dopplung} der Fläche alle \textbf{\color{red}fünf} Tage bei einer
+Startfläche von \textbf{\color{green}zwanzig} $\text{m}^2$.
 
 Geben Sie eine Funktionsgleichung an, welche das Wachstum der
 Algenpopulation beschreibt...
@@ -367,22 +367,30 @@ Algenpopulation beschreibt...
 
 \leserluft
 \begin{center}
-  $f(t):\,\,\, y=\LoesungsRaumLang{20\cdot{} 2 ^{\frac{t}{5}}}$
+  $f(t):\,\,\, y=\LoesungsRaumLang{{\color{green}20}\cdot{} {\color{blue}2} ^{\frac{t}{\color{red}5}}}$
   \end{center}
-\TNTeop{
+\TNT{4}{
 Dabei bezeichnet\\20 den Startwert,\\2 den Zunahmefaktor und \\5 die Beobachtungszeitspanne.}%%
 
+Merke:
+\TNTeop{Ich muss für $t$ fünf Tage einsetzen, um auf eine Verdopplung
+  zu kommen.
+
+  Setze ich $t=0$ ein, so erhalte ich den Startwert zwanzig m$^2$.
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Allgemeiner exponentieller Prozess}\index{Exponentieller Prozess! allgemeine Form}
 
-Die allgemeine Formel für exponentielle Prozesse lautet:
-
 \begin{definition}{Wachstumsprozess}{}
+  Die Funktion
   $$y = b\cdot{}a^{\frac{t}{\tau}}$$
   bzw.
   $$f(t) = b\cdot{}a^{\frac{t}{\tau}}$$
-  
+  beschreibt einen allgemeinen exponentiellen Wachstumsprozess mit
+  $$a=\text{Wachstumsfaktor}$$
+  $$b=\text{Startwert}$$
+  $$\tau=\text{Beobachtungszeitspanne}$$
 \end{definition}
 
 Alternativ «die harte Tour» (ohne das $\tau$ mit anderer Basis):
@@ -415,7 +423,7 @@ Alternativ «die harte Tour» (ohne das $\tau$ mit anderer Basis):
 
 \newpage
 
-\subsubsection{Graphische Erläuterung}
+\subsubsection{Graphische Erläuterung (optional)}
 
 
 \begin{tabular}{cc}%%
@@ -566,13 +574,16 @@ Die Halbwertszeit wird insbesondere
 Beispiel: Ein Stoff nimmt innerhalb von sieben Tagen auf 80\% ab. Wie
 groß ist seine Halbwertszeit $T_{1/2}$?
 
-\TNT{6}{
-  $f(t) = a^t$. $80\%$ und $7$ Tage einsetzen:
+\TNTeop{
+  Ansatz: $f(t) = b\cdot{}a^t$.
+
+  $80\%$ und $7$ Tage einsetzen:
 
   $$f(0) \cdot 0.8 = f(7)$$
 
   Somit:
 
+  $$b\cdot{}a^0 \cdot{} 0.8 = b\cdot{}a^7$$
   $$a^0 \cdot{} 0.8 = a^7$$
   $$a = \sqrt[7]{0.8}$$
 
@@ -584,6 +595,7 @@ groß ist seine Halbwertszeit $T_{1/2}$?
   
   Bemerkung: $$f(t) =b\cdot{}0.8^\frac{t}7 \approx b\cdot{}\left(\frac12\right)^\frac{t}{21.74}$$
 }%% END TNT
+\newpage
 
 \begin{gesetz}{Stoffmenge}{}
   Ist die Halbwertszeit $T_{1/2}$ und die anfängliche Stoffmenge $b$
@@ -591,7 +603,6 @@ groß ist seine Halbwertszeit $T_{1/2}$?
   folgenden Funktion $f$ angegeben werden:
   $$f(t) = b\cdot{}\left(\frac12\right)^\frac{t}{T_{1/2}}$$
 \end{gesetz}
-\newpage
   
 \begin{gesetz}{Halbwertzszeit}{}
   Die Halbwertszeit $T_{1/2}$ berechnet sich wie folgt:
@@ -618,7 +629,7 @@ groß ist seine Halbwertszeit $T_{1/2}$?
       $$\log_a\left(\frac12\right) = T_{1/2}$$
     }%% END TNT
 
-
+\newpage
 \GESO{Optional:}
 
 \subsection{Verdopplungszeit}\index{Verdopplungszeit}
@@ -627,7 +638,6 @@ Analog gilt das Gesetz zur Verdopplung (s. obiges Beispiel Bevölkerung Irlands)
 \begin{gesetz}{Verdopplungszeit}{}
   $$T_2 = \log_a(2)$$
 \end{gesetz}
-\newpage
 
 
 \subsection*{Aufgaben}
