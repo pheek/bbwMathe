@@ -4,5 +4,8 @@
 # uses no "Zielgruppe" any more.
 
 export TEXINPUTS=".:/home/phi/mgit/framework:/home/phi/mgit/cnt/thema:"
+# je 2x wegen Seitennummern
 pdflatex ExponentialfunktionenAufgaben_ALLG.tex
+pdflatex ExponentialfunktionenAufgaben_ALLG.tex
+pdflatex ExponentialfunktionenAufgaben_TRAINER_ALLG.tex
 pdflatex ExponentialfunktionenAufgaben_TRAINER_ALLG.tex

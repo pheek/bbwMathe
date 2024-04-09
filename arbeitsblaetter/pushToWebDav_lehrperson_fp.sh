@@ -67,10 +67,6 @@ cp -f ./formeleditor/AufgabenFormeleditor_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson
 cp -f ./formeleditor/AufgabenFormeleditor_TRAINER_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/idaf/formeleditor/
 
 echo "  copying leere Koordinatensysteme"
-echo "  erst Koordinatensysteme doppelseitig"
-cd funktionen/funktionen_leere_koordinatensysteme
-./doppelseitig.sh
-cd ../..
 cp -f ./funktionen/funktionen_leere_koordinatensysteme/LeereKoordinatensysteme.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/funktionen/koordinatensystem/LeereKoordinatensysteme.pdf
 
 echo "  copying Begriffe Koordinatensystem Selbsteinschätzung"
