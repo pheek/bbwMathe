@@ -1,1 +1,1 @@
-../../../../makeBoth.sh
+dirMake.sh

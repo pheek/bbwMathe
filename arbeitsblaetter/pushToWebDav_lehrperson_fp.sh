@@ -136,7 +136,7 @@ cp -f ./gleichungen/potenzgleichungen/Potenzgleichungen_TRAINER_ALLG.pdf ${BBW_W
 
 echo "  copying Sin Cos Tan (TALS)"
 cp -f ./geometrie/trigonometrie/60Uebungen/60Uebungen_TALS.pdf        ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig1/60_uebungen/60Uebungen.pdf
-cp -f ./geometrie/trigonometrie/60Loesungen/60Loesungen_TALS.pdf      ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig1/60_uebungen/60Loesungen.pdf
+cp -f ./geometrie/trigonometrie/60Loesungen/60Loesungen_TRAINER_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig1/60_uebungen/60Loesungen.pdf
 cp -f ./geometrie/trigonometrie/hoehenmessung/Hoehenmessung_TALS.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig1/Hoehenmessung/Hoehenmessung_TALS.pdf
 cp -f ./geometrie/trigonometrie/hoehenmessung/HoehenmessungLeer.ods   ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig1/Hoehenmessung/HoehenmessungLeer.ods
 cp -f ./geometrie/trigonometrie/trig_coords/Trig_Coords_TALS.pdf      ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/trig3/koordinatensysteme/Trig_Coords.pdf
