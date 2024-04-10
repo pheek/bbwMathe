@@ -7,30 +7,19 @@ echo "Dir: $CURRENT_DIR"
 
 export MAKE_ALL_AT_ONCE=WAHR
 
-find . -iwholename './*/makeBoth.sh' -printf "$CURRENT_DIR/%h\n" > tmpAllDirs.log
-find . -iwholename './*/makepdf.sh'  -printf "$CURRENT_DIR/%h\n" >> tmpAllDirs.log
+find . -iwholename './*/dirMake.sh' -printf "$CURRENT_DIR/%h\n" > tmpAllDirs.log
 
 for currdir in `cat tmpAllDirs.log`; do
 		cd $currdir
-		if [ -f 'makeBoth.sh' ] ; then
+		if [ -f 'dirMake.sh' ] ; then
 				cd ${currdir}
 #				PPWWDD=`pwd`
 #				echo "I'm in: ${PPWWDD}"
-        ./makeBoth.sh
-				./clean.sh
-		fi
-
-		if [ -f 'makepdf.sh' ] ; then
-				cd ${currdir}
-#				PPWWDD=`pwd`
-#				echo "I'm in: ${PPWWDD}"
-        ./makepdf.sh
+        ./dirMake.sh
 				./clean.sh
 		fi
 
 		echo "... done"
 done
-
-export MAKE_ALL_AT_ONCE=FALSCH
 
 rm ${CURRENT_DIR}/tmpAllDirs.log
