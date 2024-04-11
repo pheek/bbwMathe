@@ -1,0 +1,2 @@
+pdflatex GESO_S_AA2_GESO.tex
+pdflatex GESO_S_AA2_TRAINER_GESO.tex

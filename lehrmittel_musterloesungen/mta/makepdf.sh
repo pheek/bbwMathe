@@ -1,1 +1,1 @@
-../makepdf.sh
+dirMake.sh

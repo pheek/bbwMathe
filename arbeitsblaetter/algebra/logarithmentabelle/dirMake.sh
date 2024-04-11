@@ -1,4 +1,3 @@
-
 #!/usr/bin/bash
 # Transition 2024
 # uses no "Zielgruppe" any more.
