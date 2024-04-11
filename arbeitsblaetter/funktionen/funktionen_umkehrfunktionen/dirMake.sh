@@ -2,7 +2,9 @@
 # Transition 2024
 # uses no "Zielgruppe" any more.
 
-export TEXINPUTS=".:/home/phi/mgit/framework:/home/phi/mgit/cnt/thema:"
+export TEX_FILE_NAME=Umkehrfunktionen_TALS
+../../dirMake2.sh
 
-pdflatex Umkehrfunktionen_TALS.tex
-pdflatex Umkehrfunktionen_TRAINER_TALS.tex
+export TEX_FILE_NAME=Umkehrfunktionen_TRAINER_TALS
+../../dirMake2.sh
+

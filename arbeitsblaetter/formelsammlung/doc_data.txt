@@ -1,0 +1,118 @@
+InfoBegin
+InfoKey: ModDate
+<<<<<<< HEAD
+InfoValue: D:20240411141510+02&apos;00&apos;
+=======
+<<<<<<< HEAD
+InfoValue: D:20240411044235+02'00'
+InfoBegin
+InfoKey: PTEX.Fullbanner
+InfoValue: This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) kpathsea version 6.2.2
+InfoBegin
+InfoKey: CreationDate
+InfoValue: D:20240411044235+02'00'
+InfoBegin
+InfoKey: Creator
+InfoValue: LaTeX with hyperref package
+InfoBegin
+InfoKey: Producer
+InfoValue: pdfTeX-1.40.17
+PdfID0: fad916fdb661a3f484816a659002703c
+PdfID1: fad916fdb661a3f484816a659002703c
+=======
+InfoValue: D:20240410220502+02&apos;00&apos;
+>>>>>>> 8ab53a822a5025efcd7d484a967bfa6e8161c653
+InfoBegin
+InfoKey: CreationDate
+InfoValue: D:20240411141510+02&apos;00&apos;
+InfoBegin
+InfoKey: Producer
+InfoValue: pdfTeX-1.40.25
+InfoBegin
+InfoKey: PTEX.Fullbanner
+<<<<<<< HEAD
+InfoValue: This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) kpathsea version 6.3.5
+PdfID0: 97f387127b49464ab353caa55af68b87
+PdfID1: 97f387127b49464ab353caa55af68b87
+=======
+InfoValue: This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) kpathsea version 6.3.1
+PdfID0: 38082b5d210e688cf3b3659e8418219d
+PdfID1: 38082b5d210e688cf3b3659e8418219d
+>>>>>>> 30aaeafc572bdaf418f64af00170785d2579409c
+>>>>>>> 8ab53a822a5025efcd7d484a967bfa6e8161c653
+NumberOfPages: 15
+PageMediaBegin
+PageMediaNumber: 1
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 2
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 3
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 4
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 5
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 6
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 7
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 8
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 9
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 10
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 11
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 12
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 13
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 14
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 15
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
