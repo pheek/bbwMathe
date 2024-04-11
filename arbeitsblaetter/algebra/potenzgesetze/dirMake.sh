@@ -3,7 +3,7 @@
 # uses no "Zielgruppe" any more.
 
 export TEX_FILE_NAME=Potenzgesetze_ALLG
-../../dirMake.sh
+../../dirMake2.sh
 
 export TEX_FILE_NAME=Potenzgesetze_TRAINER_ALLG
-../../dirMake.sh
+../../dirMake2.sh

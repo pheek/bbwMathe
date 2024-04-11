@@ -2,6 +2,8 @@
 # Transition 2024
 # uses no "Zielgruppe" any more.
 
-export TEXINPUTS=".:/home/phi/mgit/framework:/home/phi/mgit/cnt/thema:"
-pdflatex A1Be_ALLG.tex
-pdflatex A1Be_TRAINER_ALLG.tex
+export TEX_FILE_NAME=A1Be_ALLG
+../../dirMake2.sh
+
+export TEX_FILE_NAME=A1Be_TRAINER_ALLG
+../../dirMake2.sh
