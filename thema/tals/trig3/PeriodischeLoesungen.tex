@@ -23,10 +23,6 @@ Lösen Sie die folgende Gleichung im Definitionsbereich $x \in \DefinitionsMenge
 
 $$\cos\left(2x+\frac{\pi}{9}\right) = 0.5$$
 
-Die Einstiegsaufgabe liest sich im Gradmaß also folgendermaßen:
-
-$$\cos\left(2x+20\degre\right) = 0.5$$
-
 Die Gleichung hat offensichtlich periodische Lösungen, welche wir
 entweder am Einheitskreis, mittels der Cosinus-Funktion oder mit dem
 Taschenrechner herausfinden und schlussendlich auf den vorgegebenen
@@ -35,51 +31,100 @@ Definitionsbereich einschränken müssen.
 \subsubsection{Eine Lösung von Hand}
 
 Substituiere \TRAINER{$y=2x+\frac{\pi}9$:}
-$$\cos(y) = 0.5 \Longrightarrow y=\TRAINER{\frac{\pi}3  \left(=60\degre\right)}$$
+$$\cos(y) = 0.5 \Longrightarrow y=\TRAINER{\frac{\pi}3} \left(=60\degre\right)$$
 Rücksubstitution:
 $$ 2x+\frac{\pi}9 = \TRAINER{\frac{\pi}3}$$
-\TNTeop{
+\TNT{4}{
   $$  18x + \pi = 3\pi$$
-  $$x=\frac{2\pi}{18} = \frac{\pi}9 \left(=20\degre\right)$$
+  $$x=\frac{2\pi}{18} = \frac{\pi}9 $$
 }%%%
+
+Probe:
+\TNTeop{
+  $x= \frac{\pi}9$
+
+  $\cos\left(2\cdot{}\frac\pi9 + \frac\pi9\right) =
+  \cos\left(\frac{3\pi}9\right) = \cos\left(\frac{\pi}3\right) = 0.5$
+}
 %% \newpage
 
-\subsection{Alle Lösungen im Definitionsbereich}
+\subsubsection{Alle Lösungen im Definitionsbereich}
 \textbf{Lösungsidee:} Substitution:
-Wir setzen $y := 2x + \frac{\pi}{9}$ und erhalten somit:
+Wir setzen wieder $y := 2x + \frac{\pi}{9}$ und erhalten somit:
 
-\TNT{4}{
-$$\cos(y) = 0.5.$$
+\TNT{2}{
+$$y:= 2x+\frac{\pi}{3} \Longrightarrow \cos(y) = 0.5.$$
 }
 
 
-Aus dem Einheitskreis lesen wir die Lösung für $y$ bei $y_1=60\degre = \frac{\pi}{3}$ und bei $y_2=300\degre = \frac{5\pi}{3}$ ab. Nun sind aber alle periodischen Erweiterungen dieser beiden Lösungen auch Lösungen der Gleichung:
+Aus dem Einheitskreis lesen wir die Lösung für $y$ ab:
 
-$$y \in {\color{blue}\left\{\frac{\pi}{3} + z\cdot{}2\pi: z\in\mathbb{Z}\right\}} \cup {\color{ForestGreen}\left\{\frac{5\pi}{3}+ z\cdot{}2\pi: z\in\mathbb{Z}\right\}}$$
 
-Beachten Sie, dass $n$ in $\mathbb{Z}$ liegt; also auch negative Lösungen sind zugelassen.
+\TNT{2}{$y_1= \frac{\pi}{3}$  und   $y_2=\frac{5\pi}{3}$
+}
 
-Bei einer Substitution dürfen wir die Rücksubstitution nicht vergessen! Wie lautet nun unser $x$?
 
-Für ${\color{blue}y_1}$ erhalten wir: ${\color{blue}y_1= 2x_1 + \frac{\pi}{9}}$ und somit ${\color{blue}\frac{\pi}{3} + z\cdot{}2\pi = 2x_1 + \frac{\pi}{9}}$. Durch Abziehen von $\frac{\pi}{9}$ und Teilen durch 2 erhalten wir (mit $z\in\mathbb{Z}$)
+Alle periodischen Lösungen (auch negative!):
 
-$${\color{blue}x_1 = \frac{\pi}{9} + z\cdot{}\pi}.$$
+\TNT{4}{
+  $$y_1 ={\color{blue} \frac{\pi}{3} + z\cdot{}2\pi: z\in\mathbb{Z}}$$
+  
+  $$y_2 = {\color{green}\frac{5\pi}{3}+ z\cdot{}2\pi: z\in\mathbb{Z}}$$
+}
 
-Analog für ${\color{ForestGreen}x_2}$: ${\color{ForestGreen}y_2 = 2x_2 + \frac{\pi}{9}}$ und somit ${\color{ForestGreen}\frac{5\pi}{3} + z\cdot{}2\pi = 2x_2 + \frac{\pi}{9}}$. Ebenfalls durch Abziehen von $\frac{\pi}{9}$ und Halbieren ergibt sich
 
-$${\color{ForestGreen}x_2 = \frac{7\pi}{9} + z\cdot{}\pi.}$$
+Rücksubstituton $y_1$:
+\TNT{6}{
+  $${\color{blue}y_1= 2x_1 + \frac{\pi}{9}}$$
 
-Als allerletztes gilt es noch durch «Abzählen» herauszufinden, welche der Lösungen im vorgegebenen Definitionsbereich $\DefinitionsMenge{} = [0, 2\pi[$ liegen:
+  $${\color{blue}\frac\pi3 + z\cdot{}2\pi = 2x_1 + \frac{\pi}{9}}$$
+  $${\color{blue}\frac{2\pi}9 + z\cdot{}2\pi = 2x_1}$$
+  $${\color{blue}\frac{\pi}9  + z\cdot{}\pi = x_1}$$
+}%% end TNT
 
-    Für ${\color{blue}x_1}$ sind dies ${\color{blue}\frac{\pi}{9}}$ und ${\color{blue}\frac{\pi}{9} + \pi}$.
+Analog ${\color{ForestGreen}x_2}$:
+\TNTeop{
+${\color{ForestGreen}\frac{5\pi}{3} + z\cdot{}2\pi = 2x_2 +
+    \frac{\pi}{9}}$.
 
-    Für ${\color{ForestGreen}x_2}$ sind dies ${\color{ForestGreen}\frac{7\pi}{9}}$ und ${\color{ForestGreen}\frac{7\pi}{9} + \pi}$.
-   
-    Zusammengefasst haben wie die folgenden Schritte verwendet:
+  Ebenfalls durch Abziehen von $\frac{\pi}{9}$ und Halbieren ergibt sich
+
+  $${\color{ForestGreen}x_2 = \frac{7\pi}{9} + z\cdot{}\pi.}$$
+}%% end TNTeop
+%% implicit \newpage
+
+
+Als allerletztes gilt es noch durch «Abzählen» herauszufinden, welche
+der Lösungen im vorgegebenen Definitionsbereich $\DefinitionsMenge{} =
+[0, 2\pi[$ liegen:
+
+    $$x_1= \frac\pi9 + z\cdot{}\pi$$
+    $$x_2= \frac{7\pi}9 + z\cdot{}\pi$$
+
+    Für ${\color{blue}x_1}$ sind dies:
+
+    \TNT{4}{${\color{blue}\frac{\pi}{9}}$ und
+      ${\color{blue}\frac{\pi}{9} + 1\cdot{}\pi}$}%% end TNT
+
+    
+      \vspace{5mm}
+      
+      Für ${\color{ForestGreen}x_2}$ sind dies:
+
+      \TNT{4}{
+      ${\color{ForestGreen}\frac{7\pi}{9}}$ und
+        ${\color{ForestGreen}\frac{7\pi}{9} + 1\cdot{} \pi}$.
+      }%% end TNT
+
+      \vspace{5mm}
+
+      $$\lx = \LoesungsRaumLen{80mm}{\left\{ \frac\pi9; \frac{7\pi}9;
+        \frac{10\pi}9; \frac{16\pi}9\right\}}$$
+      
 \newpage
 
 
-\subsubsection{Referenzaufgabe}
+\subsection{Referenzaufgabe}
 Berechnen Sie zwei Lösungen für $x$ im Intervall $[0,2\pi]$ für die Gleichung
 $$\sin\left(3x+\frac{\pi}{3}\right) = -\frac{\sqrt{3}}{2}.$$
 \TNTeop{1. Substitution: $y:=3x+\frac{\pi}{3}$\\
@@ -111,6 +156,7 @@ $$\sin\left(3x+\frac{\pi}{3}\right) = -\frac{\sqrt{3}}{2}.$$
 }%% END TNTeop
 %% implicit \newpage
 
+    \TNT{12}{... Platz für weitere Berechnungen ...}
 
 \begin{rezept}{Periodische Lösungen}{}
 \begin{itemize}
