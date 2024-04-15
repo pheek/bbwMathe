@@ -1,0 +1,49 @@
+\subsubsection{Für Applikationsentwickler\LoesungsRaum{\,($\mathrm{atan2}()$)}}
+
+Wir betrachten ein kleines Computerspiel, bei dem von einer
+Abschussrampe im Punkt $O=(0|0)$ in einem Winkel $\varphi$ ein Geschoss
+abgeschossen wird (siehe folgende beiden Graphiken). Die Längen sind
+in Einheiten von \texttt{px}\footnote{Ein \texttt{px} ist ein
+  sog. \textit{picture element} (kurz \textit{Pixel}) und ist
+  ursprünglich die kleinste adressierbare Einheit auf dem Computerdisplay.} gegeben.
+
+\begin{tabular}{p{11cm}c}
+\textbf{Problem I}: Gegeben ist ein Winkel von $107\degre$ von der
+Abschussrampe aus gesehen und gesucht sind die Koordinaten des Punktes
+$P=(x_P|y_P)$, der in der Entfernung von 350 [px].
+&
+\raisebox{-4cm}{\includegraphics[width=5cm]{tals/trig3/img/atan2PunktGesucht.jpg}}\\
+\end{tabular}
+
+Lösung: $P=( \LoesungsRaumLang{350[px]\cdot{}\cos(107\degre)\approx{}-102[px]} | \LoesungsRaumLang{350[px]\cdot{}\sin(107\degre)\approx{}335[px]})$
+
+
+\begin{tabular}{p{11cm}c}
+\textbf{Problem II}: Gegeben ist neben dem Ursprung $O = (0 | 0)$ ein
+weiterer Punkt $P=(x_P|y_P)$. In welchem Winkel $\varphi$ befindet sich
+$P$ von $O$ aus gesehen? Gesucht ist der Winkel $\varphi$ im
+mathematisch positiven Sinne.
+
+&
+\raisebox{-4cm}{\includegraphics[width=5cm]{tals/trig3/img/atan2WinkelGesucht.jpg}}\\
+\end{tabular}
+
+Beispiele und Lösung:
+
+\begin{tabular}{l|l|l}
+  Punkt          & Winkel                  & allgemeine Formel? \\ \hline
+  $P=(+10 |  60)$ & $\varphi = \LoesungsRaum{80.5\degre}$  & $\varphi=\LoesungsRaum{\arctan(\frac{y}{x})}$ \\ \hline
+  $P=(-10 |  60)$ & $\varphi = \LoesungsRaum{99.46\degre}$ & $\varphi=\LoesungsRaum{180\degre - \arctan(\frac{y}{x})}$ \\ \hline
+  $P=(  0 |  70)$ & $\varphi = \LoesungsRaum{90\degre}$    & $\varphi=$\LoesungsRaum{Sonderfall, sonst Division durch 0} \\ \hline
+  $P=(-20 |   0)$ & $\varphi = \LoesungsRaum{180\degre}$   & $\varphi=\LoesungsRaum{\arctan(\frac{y}{x}) + 180\degre}$ \\ \hline
+  $P=(x_P | y_P)$ & allgemeiner Fall?      & $\varphi=\LoesungsRaum{\text{\textbf{atan2}}(\textbf{y}, \textbf{x})}$\\ \hline
+\end{tabular}
+
+\TNT{2.8}{
+Beispiel unter \texttt{html-css-js.com}: im HTML-Fenster: \texttt{<p
+  id='test'/>} und im javascript-Fenster (tippen, nicht copy, da
+versteckte Sonderzeichen vorhanden):
+
+\texttt{document.getElementById('test').innerHTML = Math.atan2(60, -10)}%%
+\texttt{... = 180 * Math.atan2(60, -10) / Math.PI}%%
+}%% END TNT
