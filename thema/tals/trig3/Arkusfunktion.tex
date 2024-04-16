@@ -17,7 +17,7 @@ A) \texttt{arcsin(0.6)}
 
 B) \texttt{solve(0.6=sin(x), x)}
 
-Was fällt Ihnen bei den Löusngen auf?
+Was fällt Ihnen bei den Lösungen auf?
 \newpage
 
 
@@ -30,18 +30,38 @@ Füllen Sie die folgende Tabelle aus und übertragen Sie die Werte ins nachstehe
 Koordinatensystem (Winkel im Bogenmaß):
 
 
-\begin{bbwFillInTabular}{l|l|l|l||l|l}
-  \multicolumn{4}{c||}{Winkel} & \multicolumn{2}{c}{$\sin()$-Wert} \\\hline
-  Grad & \multicolumn{3}{c||}{Bogenmaß} & \multicolumn{2}{c}{}\\\hline
-  & exakt &  & Dezimalzahl & Dezimalzahl & exakt \\\hline\hline
-  $-30^\circ$ & \TRAINER{$-\frac{\pi}6$} & \TRAINER{$\arcsin(-\frac12)$} & \TRAINER{$-0.52...$} & \TRAINER{$-0.5$} & \TRAINER{$-\frac12$}\\\hline
-  $0^\circ$ & $ \TRAINER{0} $ & \TRAINER{$\arcsin(0)$} & \TRAINER{$0$} & \TRAINER{$0$} & \TRAINER{$0$}\\\hline
-  $30^\circ$ & $ \frac{\pi}6 $ & $\arcsin\left(\frac12\right)$ \noTRAINER{\,\,\,\,\,\,\,\,\,\,}& $0.52...$ & $0.5$ & $\frac12$\\\hline
-  $45^\circ$ & $ \TRAINER{\frac{\pi}4} $ & \TRAINER{$\arcsin\left(\frac{\sqrt{2}}2\right)$} & \TRAINER{$0.785...$} & \TRAINER{$0.7071...$} & \TRAINER{$\frac{\sqrt{2}}2$}\\\hline
-  $60^\circ$ & $ \TRAINER{\frac{\pi}3} $ & \TRAINER{$\arcsin \left( \frac{\sqrt{3}}2 \right) $} & \TRAINER{$1.047...$} & \TRAINER{$0.8660...$} & \TRAINER{$\frac{\sqrt{3}}2$}\\\hline
-  $90^\circ$ & $ \TRAINER{\frac{\pi}2} $ & \TRAINER{$\arcsin(1)$} &   \TRAINER{$1.570796...$} & \TRAINER{$1.000...$} & \TRAINER{$1$}\\\hline
-  $120^\circ$ & $ \TRAINER{\frac{2\pi}3} $ & \TRAINER{$\pi-\arcsin(\frac{\sqrt{3}}{2})$} &   \TRAINER{$2.094...$} & \TRAINER{$0.8660...$} & \TRAINER{$\frac{\sqrt{3}}2$}\\\hline
+%\begin{bbwFillInTabular}{l|l|l|l||l|l}
+%  \multicolumn{4}{c||}{Winkel} & \multicolumn{2}{c}{$\sin()$-Wert} \\\hline
+%  Grad & \multicolumn{3}{c||}{Bogenmaß} & \multicolumn{2}{c}{}\\\hline
+%  & exakt &  & Dezimalzahl & Dezimalzahl & exakt \\\hline\hline
+%  $-30^\circ$ & \TRAINER{$-\frac{\pi}6$} & \TRAINER{$\arcsin(-\frac12)$} & \TRAINER{$-0.52...$} & \TRAINER{$-0.5$} & \TRAINER{$-\frac12$}\\\hline
+%  $0^\circ$ & $ \TRAINER{0} $ & \TRAINER{$\arcsin(0)$} & \TRAINER{$0$} & \TRAINER{$0$} & \TRAINER{$0$}\\\hline
+%  $30^\circ$ & $ \frac{\pi}6 $ & $\arcsin\left(\frac12\right)$ \noTRAINER{\,\,\,\,\,\,\,\,\,\,}& $0.52...$ & $0.5$ & $\frac12$\\\hline
+%  $45^\circ$ & $ \TRAINER{\frac{\pi}4} $ & \TRAINER{$\arcsin\left(\frac{\sqrt{2}}2\right)$} & \TRAINER{$0.785...$} & \TRAINER{$0.7071...$} & \TRAINER{$\frac{\sqrt{2}}2$}\\\hline
+%  $60^\circ$ & $ \TRAINER{\frac{\pi}3} $ & \TRAINER{$\arcsin \left( \frac{\sqrt{3}}2 \right) $} & \TRAINER{$1.047...$} & \TRAINER{$0.8660...$} & \TRAINER{$\frac{\sqrt{3}}2$}\\\hline
+%  $90^\circ$ & $ \TRAINER{\frac{\pi}2} $ & \TRAINER{$\arcsin(1)$} &   \TRAINER{$1.570796...$} & \TRAINER{$1.000...$} & \TRAINER{$1$}\\\hline
+%  $120^\circ$ & $ \TRAINER{\frac{2\pi}3} $ & \TRAINER{$\pi-\arcsin(\frac{\sqrt{3}}{2})$} &   \TRAINER{$2.094...$} & \TRAINER{$0.8660...$} & \TRAINER{$\frac{\sqrt{3}}2$}\\\hline
+%\end{bbwFillInTabular}
+
+
+\begin{bbwFillInTabular}{r||r|r||rcr}
+Winkel      & \multicolumn{2}{c||}{$\sin$-Wert} & \multicolumn{3}{c}{Winkel} \\\hline
+$\varphi$   & $\sin(\varphi)$                    & dezimal & $\arcsin$        & $=$  & Winkel         \\\hline
+$-30\degre$ & $\frac{-1}2$                       & $-0.5$  & $\arcsin(-0.5)$  & $=$  & $-30\degre$    \\\hline 
+$  0\degre$ & $0$                                & $0$     & $\arcsin(0)$     & $=$  & $0\degre$		   \\\hline 
+$ 30\degre$ & $\frac12$                          & $0.5$   & $\arcsin(0.5)$   & $=$  & $30\degre$	   \\\hline 
+$ 60\degre$ & \TRAINER{$\frac{\sqrt{3}}2$}       & \TRAINER{$0.8660$}   & \TRAINER{$\arcsin(0.8660)$}   & $=$  & \TRAINER{$60\degre$}	   \\\hline 
+$ 90\degre$ & \TRAINER{$1$}       & \TRAINER{$1$}   & \TRAINER{$\arcsin(1)$}   & $=$  & \TRAINER{$90\degre$}	   \\\hline 
+$120\degre$ & \TRAINER{$\frac{\sqrt{3}}2$}       & \TRAINER{$0.8660$}   & \TRAINER{$\arcsin(0.8660)$}   & $=$  & \TRAINER{$60\degre$}	   \\\hline 
+$135\degre$ & \TRAINER{$\frac{\sqrt{2}}2$}       & \TRAINER{$0.7071$}   & \TRAINER{$\arcsin(0.7071)$}   & $=$  & \TRAINER{$45\degre$}	   \\\hline 
+$150\degre$ & \TRAINER{$\frac12$}       & \TRAINER{$0.5$}   & \TRAINER{$\arcsin(0.5)$}   & $=$  & \TRAINER{$30\degre$}	   \\\hline 
+$180\degre$ & \TRAINER{$$}       & \TRAINER{$0$}   & \TRAINER{$\arcsin(0)$}   & $=$  & \TRAINER{$0\degre$}	   \\\hline 
 \end{bbwFillInTabular}
+
+
+
+
+
 
 
 \TNTeop{Achtung: Für den $\sin$-Wert 0.8660... existieren mehrere
@@ -51,8 +71,8 @@ Koordinatensystem (Winkel im Bogenmaß):
 \newpage
 
 \subsubsection{Graph der Arcussinus-Funktion}
-\noTRAINER{\bbwCenterGraphic{12cm}{tals/trig3/img/py_system.png}}
-\TRAINER{\bbwCenterGraphic{8cm}{tals/trig3/img/arcsin.png}}
+\noTRAINER{\bbwCenterGraphic{12cm}{tals/trig3/img/ArcsinLeer.png}}
+\TRAINER{\bbwCenterGraphic{12cm}{tals/trig3/img/Arcsin.png}}
 
 Geben Sie den Definitionsbereich der Arcus-Sinus-Funktion an:
 
@@ -60,7 +80,7 @@ $$\DefinitionsMenge{} = \LoesungsRaum{\left[-1; 1\right]}$$
 
 Geben Sie den Wertebereich der Arcus-Sinus-Funktion einmal im Bogenmaß,
 einmal im Gradmaß an:
-$$\Wertebereich{} = \LoesungsRaum{\left[-\frac{\pi}{2}; \frac{\pi}{2}\right]}  =  \LoesungsRaum{[-90\degre; 90\degre]}$$
+$$\Wertebereich{} =  \LoesungsRaum{[-90\degre; 90\degre] = \LoesungsRaum{\left[-\frac{\pi}{2}; \frac{\pi}{2}\right]}  }$$
 \newpage
 
 
@@ -87,17 +107,17 @@ d) $\sin(265\degre) = -\sin(\delta)$ \TRAINER{ $\delta=85\degre$ und $\delta=95\
 e) $\sin(-53\degre) = \sin(\varepsilon)$ \TRAINER{ $\varepsilon =   233\degre$ und $\varepsilon = 307\degre$} \\
 f) $-\sin(\omega) = \sin(-113\degre)$ \TRAINER{ $\omega = 67\degre$ und $\omega = 113\degre$} \\
 }
-\TALSAadBFWG{102ff}{85. e) f) g) und h)}
+%%\TALSAadBFWG{102ff}{85. e) f) g) und h)}
 
 
 \TNTeop{}
 %%\newpage
 
-\subsection{Arccuscosinus}
+\subsection{Arcuscosinus}
 Zeichnen Sie die Umkehrfunktion des Cosinus und geben Sie den Definitionsbereich an.
 
-\noTRAINER{\bbwCenterGraphic{8cm}{tals/trig3/img/py_system.png}}
-\TRAINER{\bbwCenterGraphic{8cm}{tals/trig3/img/arccos.png}}
+\noTRAINER{\bbwCenterGraphic{12cm}{tals/trig3/img/ArccosLeer.png}}
+\TRAINER{\bbwCenterGraphic{12cm}{tals/trig3/img/Arccos.png}}
 
 
 $$\DefinitionsMenge{} = \LoesungsRaum{[-1; 1]}$$
@@ -117,8 +137,22 @@ Ohne Taschenrechner:\\
 %%\TALSAadBFWG{102ff}{86. c) und e)}
 b) $\cos(\beta) = -\cos(37\degre)$ \TRAINER{ $\beta = 143\degre$ und $\beta = 217\degre $}\\
 c) $\cos(-\gamma) = \cos(96\degre)$ \TRAINER{ $\gamma = 96\degre$ und $\gamma = 264\degre$}\\
-d) $-\cos(-24\degre) = \cos(\delta)$ \TRAINER{ $\delta=156\degre$ und $\delta=204\degre$}\\
-}
+d) $-\cos(-24\degre) = \cos(\delta)$ \TRAINER{ $\delta=156\degre$ und  $\delta=204\degre$}\\
+e) $ \sin(72\degre) = -\cos(\varphi)$ \TRAINER{ $\varphi=162\degre$ und  $\varphi=198\degre$}\\
+f) $-\sin(\epsilon) = \cos(52)$ \TRAINER{ $\epsilon=281\degre$ und  $\epsilon=322\degre$}\\
+g) $sin(\alpha)\cdot{}\cos(\alpha) = 0$ \TRAINER{ Alle Nullstellen von  $\sin$ bzw. $\cos$: $0\degre$, $90\degre$, $180\degre$, $270\degre$}\\
+}%% end aufgabenFrabe
+
+\aufgabenFarbe{Vereinfachen Sie:\\
+  \begin{itemize}
+  \item
+    $\cos(180\degre + x) = \TRAINER{-\cos(x)}$
+  \item
+    $\cos(\frac\pi2 + x) = \TRAINER{-\sin(x)}$
+  \item
+    $-\sin(270\degre + x) = \TRAINER{\cos(x)}$
+  \end{itemize} 
+}%% end aufgabenFrabe
 \TNTeop{}
 %%\newpage
 
@@ -126,15 +160,15 @@ d) $-\cos(-24\degre) = \cos(\delta)$ \TRAINER{ $\delta=156\degre$ und $\delta=20
 \subsection{Arcustangens}
 Zeichnen Sie die Umkehrfunktion des Tangens (im Bogenmaß) und geben Sie den Definitionsbereich an.
 
-\noTRAINER{\bbwCenterGraphic{8cm}{tals/trig3/img/py_system.png}}
-\TRAINER{\bbwCenterGraphic{8cm}{tals/trig3/img/arctan.png}}
+\noTRAINER{\bbwCenterGraphic{16cm}{tals/trig3/img/ArctanLeer.png}}
+\TRAINER{\bbwCenterGraphic{16cm}{tals/trig3/img/Arctan.png}}
 
 
 $$\DefinitionsMenge{} = \LoesungsRaum{\mathbb{R}}$$
 
 Geben Sie den Wertebereich der Arcus-Sinus-Funktion einmal im Bogenmaß,
 einmal im Gradmaß an:
-$$\Wertebereich{} = \LoesungsRaum{\left]-\frac{\pi}{2}; \frac{\pi}{2}\right[}  = \LoesungsRaum{\left]-90\degre; 90\degre\right[}$$
+$$\Wertebereich{} = \LoesungsRaum{\left]-90\degre; 90\degre\right[ = \LoesungsRaum{\left]-\frac{\pi}{2}; \frac{\pi}{2}\right[} }$$
 
 Beachten Sie, dass im Wertebereich $\Wertebereich{}$ die Grenzen ($-90\degre$und $+90\degre$) nicht enthalten sind. Warum ist das so?
 
@@ -142,61 +176,17 @@ Beachten Sie, dass im Wertebereich $\Wertebereich{}$ die Grenzen ($-90\degre$und
 \aufgabenFarbe{
   Mit Taschenrechner:\\
 %%\TALSAadBFWG{102ff}{87. a)}
-a) $\tan(\alpha) = 0.706$ \TRAINER{ $\alpha\approx 35.22 \degre$ und
-  $\alpha\approx 215.22\degre$}\\
+a) $\tan(\alpha) = 0.706$ \TRAINER{ $\alpha\approx 35.22 \degre$ und $\alpha\approx 215.22\degre$}\\
+b) $\sin(\beta) = 0.3$ \TRAINER{ $\beta\approx 17.458 \degre$ und $\beta\approx 162.54\degre$}\\
+c) $\tan(\gamma) = 30$ \TRAINER{ $\gamma\approx 88.091\degre$ und $\gamma\approx 268.09\degre$}\\
 Ohne Taschenrechner:\\
 %%\TALSAadBFWG{102ff}{87. c)}
-b) $-\tan(\beta) = -tan(-13\degre)$ \TRAINER{ $\beta = 167\degre$ und $\beta=347\degre$}\\
+d) $-\tan(\alpha) = -tan(-13\degre)$ \TRAINER{ $\alpha = 167\degre$ und $\alpha=347\degre$}\\
+e) $\cos(\beta) = 45$ \TRAINER{ Keine Lösung}\\
+f) $\tan(\varphi) = \cos(\pi)$ \TRAINER{$\varphi = \frac{3\pi}4$ oder
+  $\varphi = \frac{7\pi}4$}
 }
 \TNTeop{}
 %%\newpage
 
-
-\subsubsection{Für Applikationsentwickler\LoesungsRaum{\,($\mathrm{atan2}()$)}}
-
-Wir betrachten ein kleines Computerspiel, bei dem von einer
-Abschussrampe im Punkt $O=(0|0)$ in einem Winkel $\varphi$ ein Geschoss
-abgeschossen wird (siehe folgende beiden Graphiken). Die Längen sind
-in Einheiten von \texttt{px}\footnote{Ein \texttt{px} ist ein
-  sog. \textit{picture element} (kurz \textit{Pixel}) und ist
-  ursprünglich die kleinste adressierbare Einheit auf dem Computerdisplay.} gegeben.
-
-\begin{tabular}{p{11cm}c}
-\textbf{Problem I}: Gegeben ist ein Winkel von $107\degre$ von der
-Abschussrampe aus gesehen und gesucht sind die Koordinaten des Punktes
-$P=(x_P|y_P)$, der in der Entfernung von 350 [px].
-&
-\raisebox{-4cm}{\includegraphics[width=5cm]{tals/trig3/img/atan2PunktGesucht.jpg}}\\
-\end{tabular}
-
-Lösung: $P=( \LoesungsRaumLang{350[px]\cdot{}\cos(107\degre)\approx{}-102[px]} | \LoesungsRaumLang{350[px]\cdot{}\sin(107\degre)\approx{}335[px]})$
-
-
-\begin{tabular}{p{11cm}c}
-\textbf{Problem II}: Gegeben ist neben dem Ursprung $O = (0 | 0)$ ein
-weiterer Punkt $P=(x_P|y_P)$. In welchem Winkel $\varphi$ befindet sich
-$P$ von $O$ aus gesehen? Gesucht ist der Winkel $\varphi$ im
-mathematisch positiven Sinne.
-
-&
-\raisebox{-4cm}{\includegraphics[width=5cm]{tals/trig3/img/atan2WinkelGesucht.jpg}}\\
-\end{tabular}
-
-Beispiele und Lösung:
-
-\begin{tabular}{l|l|l}
-  Punkt          & Winkel                  & allgemeine Formel? \\ \hline
-  $P=(+10 |  60)$ & $\varphi = \LoesungsRaum{80.5\degre}$  & $\varphi=\LoesungsRaum{\arctan(\frac{y}{x})}$ \\ \hline
-  $P=(-10 |  60)$ & $\varphi = \LoesungsRaum{99.46\degre}$ & $\varphi=\LoesungsRaum{180\degre - \arctan(\frac{y}{x})}$ \\ \hline
-  $P=(  0 |  70)$ & $\varphi = \LoesungsRaum{90\degre}$    & $\varphi=$\LoesungsRaum{Sonderfall, sonst Division durch 0} \\ \hline
-  $P=(-20 |   0)$ & $\varphi = \LoesungsRaum{180\degre}$   & $\varphi=\LoesungsRaum{\arctan(\frac{y}{x}) + 180\degre}$ \\ \hline
-  $P=(x_P | y_P)$ & allgemeiner Fall?      & $\varphi=\LoesungsRaum{\text{\textbf{atan2}}(\textbf{y}, \textbf{x})}$\\ \hline
-\end{tabular}
-
-\TNT{2.8}{
-Beispiel unter \texttt{html-css-js.com}: im HTML-Fenster: \texttt{<p
-  id='test'/>} und im javascript-Fenster (tippen, nicht copy, da
-versteckte Sonderzeichen vorhanden):
-
-\texttt{document.getElementById('test').innerHTML = 180 * Math.atan2(10, 5) / Math.PI;}%%
-}%% END TNT
+\input{tals/trig3/ApplikationsentwicklerAtan2}
