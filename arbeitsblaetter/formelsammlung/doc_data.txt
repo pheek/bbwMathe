@@ -1,4 +1,4 @@
-GAGA
+GAGAGUGU
 InfoBegin
 InfoKey: Creator
 InfoValue: LaTeX with hyperref
