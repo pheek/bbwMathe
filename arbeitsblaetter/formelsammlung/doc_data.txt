@@ -1,20 +1,20 @@
 InfoBegin
-InfoKey: Creator
-InfoValue: LaTeX with hyperref
-InfoBegin
 InfoKey: ModDate
-InfoValue: D:20240413210259+02&apos;00&apos;
-InfoBegin
-InfoKey: CreationDate
-InfoValue: D:20240413210259+02&apos;00&apos;
-InfoBegin
-InfoKey: Producer
-InfoValue: pdfTeX-1.40.20
+InfoValue: D:20240424043932+02'00'
 InfoBegin
 InfoKey: PTEX.Fullbanner
-InfoValue: This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) kpathsea version 6.3.1
-PdfID0: 4344b4caed68a1b819d8a3c5d0152492
-PdfID1: 4344b4caed68a1b819d8a3c5d0152492
+InfoValue: This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) kpathsea version 6.2.2
+InfoBegin
+InfoKey: CreationDate
+InfoValue: D:20240424043932+02'00'
+InfoBegin
+InfoKey: Creator
+InfoValue: LaTeX with hyperref package
+InfoBegin
+InfoKey: Producer
+InfoValue: pdfTeX-1.40.17
+PdfID0: 3c7bc480655c671f2a3549ae7b85fdfa
+PdfID1: 3c7bc480655c671f2a3549ae7b85fdfa
 NumberOfPages: 15
 PageMediaBegin
 PageMediaNumber: 1
