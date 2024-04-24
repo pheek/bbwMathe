@@ -18,5 +18,5 @@ pdflatex FormelsammlungGESO_DEST.tex
 ./mkSteve.sh
 mv steve.pdf FormelsammlungGESO_DEST.pdf
 
-
+rm ./doc_data.txt
 ./clean.sh

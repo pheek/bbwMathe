@@ -4,7 +4,7 @@
 # uses no "Zielgruppe" any more.
 
 export TEXINPUTS=".:/home/phi/mgit/framework:/home/phi/mgit/cnt/thema:"
-pdflatex GegenseitigeLage_TALS.tex
-pdflatex GegenseitigeLage_TALS.tex
-pdflatex GegenseitigeLage_TRAINER_TALS.tex
-pdflatex GegenseitigeLage_TRAINER_TALS.tex
+export TEX_FILE_NAME="GegenseitigeLage_TALS"
+../../../dirMake2.sh
+export TEX_FILE_NAME="GegenseitigeLage_TRAINER_TALS"
+../../../dirMake2.sh
