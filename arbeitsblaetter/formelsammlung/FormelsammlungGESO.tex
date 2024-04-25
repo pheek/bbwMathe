@@ -9,8 +9,8 @@
 %% ... Auswahlen
 %\input{VERSION.sty}
 
-\newcommand{\versionsDatumFoSa}{2023-04-07}
-\newcommand{\versionIdSubRev}{0.5.0}
+\newcommand{\versionsDatumFoSa}{2024-04-25}
+\newcommand{\versionIdSubRev}{0.5.1}
 \newcommand{\versionsnummerFoSa}{\versionsDatumFoSa{} \versionIdSubRev\,\,\versionMANDANT}
 
 \input{bmsLayoutPage}
@@ -240,7 +240,7 @@ Beispiel
 \section*{Potenzen}
 \begin{tcolorbox}[colback=white]
 \bbwCenterGraphic{5cm}{img/Potenzbegriff.png}
-$$a^n = \underbrace{a\cdot{}a\cdot{}a\cdot{}...\cdot{}a}_{n\textrm{ Faktoren}}$$
+$$a^n = \POTENZEINSDAZU{1\cdot{}} \underbrace{a\cdot{}a\cdot{}a\cdot{}...\cdot{}a}_{n\textrm{ Faktoren}}$$
 Für $a\ne 0$ gilt:
 $$a^{-n} = \frac1{a^n}$$
   $$a^0 = 1$$
@@ -360,8 +360,8 @@ $$\Longrightarrow x= \frac{a+b}{a^2-b^2} = \frac{a+b}{(a-b)(a+b)}=\frac{1}{a-b}$
   $$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$
 \end{tcolorbox}
 \textbf{Diskriminante} $D = b^2-4ac$\\
-$D>0\Longrightarrow$ Zwei Lösungen;\\
-$D=0\Longrightarrow$ Eine Lösung;\\
+$D>0\Longrightarrow$ Zwei Lösungen\\
+$D=0\Longrightarrow$ Eine Lösung\\
 $D<0\Longrightarrow$ Keine Lösung
 
 \subsubsection*{Spezialfälle}

@@ -8,7 +8,7 @@
 %%  Mandant: Für wen wurde die Formelsammlung erstellt
 %% Überschreiben mit "\renewcommand{\versionMANDANT}{XYZ}
 %%
-\newcommand{\versionMANDANT}
+\newcommand{\versionMANDANT}{Rahmenlehrplan}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%        L A Y O U T   O P T I O N E N
@@ -103,3 +103,10 @@
 #1%%
 \fi}%% End New Command ROBUSTDEFINITION
 \isROBUSTDEFINITIONtrue%%
+
+\newif\ifisPOTENZEINSDAZU%% a^n = 1* a*a... anstatt a*a*...
+\newcommand\POTENZEINSDAZU[1]{\ifisPOTENZEINSDAZU%%
+#1%%
+\fi}%% End New Command SCHWARZETITEL
+\isPOTENZEINSDAZUfalse%%
+
