@@ -336,6 +336,21 @@ abfangen kann?
 \TRAINER{Einstiegs-Viedo: \texttt{https://www.youtube.com/watch?v=WC5O317JzW0}}
 
 
+\begin{gesetz}{Bernoulli-Formel (Binomialverteilung)}{}
+  $$P(X=k) = {{n}\choose {k}}\cdot{}p^k\cdot{}(1-p)^{n-k}$$
+
+
+%%\renewcommand{\arraystretch}{2}
+\begin{bbwFillInTabular}{rcl}
+  $n$ &=& \TRAINER{Anzahl Durchführungen (Baumtiefe)}\\
+  $p$ &=& \TRAINER{Gewinnwahrscheinlichkeit pro Durchführung}\\
+  $k$ &=& \TRAINER{Anzahl geforderte Treffer}\\
+\end{bbwFillInTabular}
+
+  
+\end{gesetz}
+
+
 \begin{beispiel}{Sieben mal Würfeln}{}
 Wie groß ist die Wahrscheinlichkeit, mit einem Würfel bei
 siebenmaligem Werfen genau fünf mal eine der Zahlen \epsdice{1} oder
@@ -367,22 +382,9 @@ Mal eine \epsdice{1} oder eine \epsdice{2} erzielen.
 
 Nun gilt
 
-\begin{gesetz}{Bernoulli-Formel (Binomialverteilung)}{}
-  $$P(X=k) = {{n}\choose {k}}\cdot{}p^k\cdot{}(1-p)^{n-k}$$
-
-
-%%\renewcommand{\arraystretch}{2}
-\begin{bbwFillInTabular}{rcl}
-  $n$ &=& \TRAINER{Anzahl Durchführungen (Baumtiefe)}\\
-  $p$ &=& \TRAINER{Gewinnwahrscheinlichkeit pro Durchführung}\\
-  $k$ &=& \TRAINER{Anzahl geforderte Treffer}\\
-\end{bbwFillInTabular}
-
-  
-\end{gesetz}
-
 In obigem Beispiel ergibt sich:
-$$P(X=5) = \LoesungsRaumLang{{7\choose 5} \cdot{} \left(\frac26\right)^5 \cdot{} \left(1-\frac26\right)^{7-5}} = \LoesungsRaumLang{{7\choose 5} \cdot{} \left(\frac26\right)^5 \cdot{} \left(\frac46\right)^2}$$
+\vspace{2mm}
+$$P(X=5) = \LoesungsRaumLen{70mm}{{7\choose 5} \cdot{} \left(\frac26\right)^5 \cdot{} \left(1-\frac26\right)^{7-5}} = \LoesungsRaumLen{60mm}{{7\choose 5} \cdot{} \left(\frac26\right)^5 \cdot{} \left(\frac46\right)^2}$$
 
 \newpage
 \textbf{Taschenrechner}:
@@ -425,7 +427,7 @@ Die Wahrscheinlichkeit, dass er von 20 Würfen \textbf{genau} 17 Mal trifft, ken
 bereits von der Formel von Bernoulli (Bernoulli-Experiment/Binomialverteilung):
 
 $$P(X=17) = \LoesungsRaumLang{{20 \choose 17}\cdot 0.85^{17}\cdot(1-0.85)^{20-17}}=$$
-$$\LoesungsRaumLang{{20 \choose 17}\cdot 0.85^{17}\cdot (0.15)^{3}}\approx{}\LoesungsRaum{24.29\%}$$
+$$\LoesungsRaumLang{{20 \choose 17}\cdot 0.85^{17}\cdot (0.15)^{3}}\approx{}\LoesungsRaum{24.28\%}$$
 Dabei bezeichnet $E$ das Ereignis ``siebzehn Treffer in den 20 Würfen''.
 
 \begin{beispiel}{Kumulierte Wahrscheinlichkeit}{}
