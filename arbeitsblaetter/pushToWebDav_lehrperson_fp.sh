@@ -203,6 +203,9 @@ echo "  copying Hypothesentest (GESO)"
 cp -f ./stochastik/hypothesentest/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/stoch/hypothesentest/
 cp -f ./stochastik/hypothesentest/*.ods ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/stoch/hypothesentest/
 
+echo "  copying Optimierungsaufgaben (TALS)"
+cp -f ./funktionen/extremwert/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/optimieren/
+
 
 
 
