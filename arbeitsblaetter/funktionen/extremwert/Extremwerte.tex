@@ -14,12 +14,9 @@
 
 Weitere Aufgaben:
 
-Marthaler Algebra:
-   Seite 320: Aufg. 16., 17. und 18.
-
 Neue Wege TALS (Jürg Klötzli)
-Seite 302 Aufg. 40 und 41
-Seite 456 Aufg. 6, 7, 8 und 9
+
+Seite 456 Aufg. 7, 8 und 9
 Seite 460 Aufg. 9, 10
 
 Himmelslaterne (Siehe Skript $\varphi$)
@@ -271,15 +268,123 @@ Marthaler Algebra S. 282 Aufg. 59
 }%% end TNT eop
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Gewölbegang}
 
+Ein Gewölbegang hat einen Querschnitt
+von der Form eines Rechtecks mit aufgesetztem Halbkreis. Der Umfang
+des Querschnitts ist mit $U=10 \text{ m}$ fest vorgegeben.
+Wie muss das Gewölbe gestaltet werden, damit die Querschnitsfläche
+möglichst groß wird?
+
+\bbwCenterGraphic{40mm}{Gewoelbegang.png}
+
+\TNTeop{
+
+Mathematik neue Wege (J. Klötzli et al) Seite 302 Aufgabe 41.
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{nicht quadratische Funktionen (TR)}
 Bei den folgenden Aufgaben reicht die Scheitelpunkts-Bestimmung der
-quadratischen Funktionen nicht aus.
+quadratischen Funktionen nicht aus. Hoch- bzw. Tiefpunkte können mit
+einem Computer-Algebra-System (CAS) gefunden werden.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Rechteck unter Parabel}
+
+Aus der Fläche zwischen $x$-Achse und der
+Parabel mit $y=4-x^2$ wird ein Rechteck heraus-
+geschnitten:
+
+\bbwCenterGraphic{80mm}{RechteckUnterParabel.png}
+a) 
+Geben Sie die Funktionsgleichung an,
+welche die Abhängigkeit der Rechtecksfläche A von der waagrechten
+Rechteckseite beschreibt.
+
+b) 
+Wie gross muss die waagrechte Seite des
+Rechtecks gewählt werden, damit die
+Rechtecksfläche möglichst groß wird?
+
+c)
+Wie groß ist die maximale Rechtecksfläche?
+
+\TNTeop{
+a) $A(x) = 2xy = -2x^3+8x$
+
+b)
+\bbwCenterGraphic{80mm}{RechteckUnterParabelLsg.png}
+
+Hochpunkt $H=(1.155; 6.158)$ Die waagrechte Seite ist $2x \approx 2.31$.
+
+c) $6.158$
+
+Marthaler Algabra S. 321 Aufg. 17
+}%% end TNT eop
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Marmorplatte}
+
+Eine Marmorplatte ist bei der Bearbeitung zerbrochen. Die Bruchkante lässt sich durch die Funktions-
+gleichung $y=x^2 - 4.6x + 4.93$ einigermassen annähern.
+
+Der Produzent will aus diesem Bruchstück einen kleinen rechteckigen Tisch mit möglichst großer
+Fläche $A$ herstellen.
+
+\bbwCenterGraphic{80mm}{Marmorplatte.png}
+
+a)
+Geben Sie eine mögliche Funktionsgleichung an, welche die Abhängigkeit
+der Rechtecksfläche $A$ von der Seite $a=x$ beschreibt.
+
+b) Wie groß muss $a$ gewählt werden, damit die Rechtecksfläche $A$
+möglichst groß wird?
+
+c) Geben Sie die maximale Rechtecksfläche an.
+
+\TNTeop{
+a) Zielfunktion $A(x) = xy$ mit $y=x^2-4.6x+4.93$
+$$A(x) = x(x^2-4.6x+4.93)$$
+\newpage
+b)
+\bbwCenterGraphic{80mm}{MarmorplatteLsg.png}
+
+Hochpunkt: $H=(0.692; 1.540)$
+
+Die waagrechte Setie a ist $a=x=0.692$
+
+c)
+Die Maximale Rechtechsfläche beträgt $1.540$.
+
+Marthaler Algebra S. 321 Aufg. 18
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Radiergummi}
+Die Firma Flamingo produziert Radiergummis. Die dabei entstehenden
+Kosten werden durch die Kostenfunktion
+$$K(x) = 2.5x^3 = 16x^2 + 10x + 10$$
+beschrieben.
+
+$x = \text{ Stückzahl in 100}$ und $K = \text{ Kosten in CHF}$
+
+Marktanalysen zeigen, dass 100 Stück zu einem Preis von jeweils CHF 40
+abgesetzt werden können.
+
+a) In welchem Bereich kann Gewinn erwirtschaftet werden?
+
+b) Bei welcher Stückzahl wird der Gewinn maximal?
+
+c) Wie groß ist der Maximale Gewinn?
+
+\TNTeop{
+
+Mathematik Neue Wege (J. Klötzli et al) Seite 302 Aufg. 40
+}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Truthähne}
 Eine Gruppe wilder Truthähne wird auf einer Insel ohne natürliche Feinde ausgesetzt. Biologen haben
 herausgefunden, dass die Anzahl der Truthähne zum Zeitpunkt $t$ mit
@@ -543,17 +648,6 @@ Frommenwiler S. 173 Aufg. 231.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Halbkugel auf Zylinder}
-Ein Kôrper mit einer Oberfläche von $4 \text{ m}^2$ besteht aus einem geraden Zylinder (Radius $r$, Hôhe $h$) mit aufgesetzter Halbkugel (Radius $r$). Wie sind die Masse $r$ und $h$ zu wählen, damit der Körper ein möglichst grosses Volumen hat?
-
-\TNTeop{
-$r = h = 50.5 \text{ cm}$
-
-Frommenwiler S. 174. Aufg 232. }%% end TNTeop
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \subsection{Kegel um Kugel}
 
 Ein gerader Kegel hat eine lnkugel mit $4 \text{ cm}$
@@ -565,6 +659,57 @@ Radius. Wie gross muss man den Grundflächenradius des Kegels wählen, damit des
 Frommenwiler S. 174. Aufg 233. }%% end TNTeop
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Halbkugel auf Zylinder}
+Ein Kôrper mit einer Oberfläche von $4 \text{ m}^2$ besteht aus einem geraden Zylinder (Radius $r$, Hôhe $h$) mit aufgesetzter Halbkugel (Radius $r$). Wie sind die Masse $r$ und $h$ zu wählen, damit der Körper ein möglichst grosses Volumen hat?
+
+\TNTeop{
+$r = h = 50.5 \text{ cm}$
+
+Frommenwiler S. 174. Aufg 232. }%% end TNTeop
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Tankwagen}
+
+Ein Lastwagen hat einen Flüssigkeitsbehälter, dessen
+Form sich aus einem Zylinder und zwei Halbkugeln zusammensetzt. Der Zylinder und die Halbkugeln haben den
+gleichen Radius $x$. Die Länge des Behälters beträgt $4.2 \text{ m}$.
+
+\bbwCenterGraphic{90mm}{Tankwagen.png}
+
+a) 
+Geben Sie die Funktionsgleichung der Abhängigkeit $x \mapsto \text{ Bhältervolumen } V$ an.
+
+b)
+Zeichnen Sie den Graphen der Funktion.
+
+c)
+Zwischen welchen Werten muss der Radius $x$ liegen?
+
+d)
+Wie muss $x$ gewählt werden, damit der Behälter genau $25 \text{ m}^3$
+fasst?
+
+e)
+Mit welchem Radius $x$ wird das Volumen $V$ am größten?
+
+\TNTeop{
+
+a) $x\mapsto  \frac43\pi\cdot{}x^3 + x^2\pi\cdot{}h = \frac43\pi\cdot{}x^3+x^2\pi(4.2-2x)=\pi(4.2x^2-\frac23x^3)$
+
+b)
+
+\bbwCenterGraphic{90mm}{TankwagenGraph.png}
+
+c) $0\le x \le 2.1 [\text{m}]$
+
+d) $x\approx 1.59235 \text{ m}$
+
+e) Die Kugel hat das größte Volumen $\Longrightarrow x=\frac{4.2}2 =
+2.1 \text{ m}$
+
+Marthaler Algebra S. 320 Aufgabe 16}%% end TNT eop
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -578,6 +723,8 @@ $293.9\degre$
 Frommenwiler Geometrie S. 174 Aufg. 234}%% end TNTeop
 
 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Zündholzschachtel}
 Eine Zündholzschachtel --- bestehend aus Hülle und Innenteil ---
@@ -588,6 +735,24 @@ soll $5 \text{ cm}$ lang sein  und ein Volumen von $25 \text{ cm}^3$ aufweisen. 
 Höhe: 1.94 cm ; Breite: 2.58 cm
 
 Frommenwiler Geometrie S. 174 Aufg. 235}%% end TNTeop
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Schmuckdose}
+
+Eine Schmuckdose soll eine Länge von $7 \text{ cm}$ und ein Volumen
+von $49 \text{ cm}^3$ aufweisen. Wie hoch und wie breit soll die
+Schmuckdose sein, damit zur Herstellung möglichst wenig Material
+verwendet werden muss?
+
+\TNTeop{
+Der Würfel hat minimale Oberfläche aller Quader.
+
+$a = h = \sqrt{7} \approx 2.56 \text{ dm}$
+
+Mathematik neue Wege (J. Klötzli et al) Seite 456 Aufg. 6
+}%% end TNTeop
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
