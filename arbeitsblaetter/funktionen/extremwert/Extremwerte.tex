@@ -574,6 +574,46 @@ c) $V_{\text{max}} = 379.0378 \text{ cm}^3$
 Marthaler Algebra S. 320 Aufg. 12
 }%% end TNTeop
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Streichholzschachtel}
+
+Eine Streichholzschachtel besteht aus einem Innenteil und einer Hülle
+(s. Graphik):
+
+\bbwCenterGraphic{160mm}{Streichholzschachtel.png}
+
+Die Länge von $l = 5 \text{ cm}$ wird durch die Streichholzlänge
+bestimmt.
+
+Ebenso soll der Inhalt mit einem Volumen $V = 45\text{ cm}^3$
+vorgegeben sein.
+
+Berechnene Sie die Höhe $h$, wenn möglichst wenig Karton zur
+Herstellung verwendet werden soll.
+
+\TNTeop{
+Sei $S$ die «surface»:
+
+$S(b, h) = 2bh + 3bl + 4lh$ mit
+$V = 45 = lbh$ und mit $l=5$ und $V=45$ gilt:
+
+$$45 = 5bh \Longrightarrow b = \frac9h$$
+
+Damit wird $S(b, h)$ zu $S(h)$:
+
+$$S(h) = 2\cdot{}\frac9h\cdot{}h + 3\cdot{}\frac9h\cdot{}5 +
+4\cdot{}5\cdot{}h = 18 + \frac{135}h + 20\cdot{}h$$
+
+Maximieren:
+
+\texttt{S(h):= 18 + 135/h + 20h}
+
+\texttt{fMin(S(h), h, 0, 3)} liefert
+
+$h_{\text{max}} = \frac{3\cdot{}\sqrt{3}}{2} \approx 2.598 \text{ cm}$
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Toblerone?}
 
 Von einem Blechstück der Form eines gleichseitigen Dreiecks mit der
