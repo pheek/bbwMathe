@@ -574,17 +574,24 @@ c) $V_{\text{max}} = 379.0378 \text{ cm}^3$
 Marthaler Algebra S. 320 Aufg. 12
 }%% end TNTeop
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Toblerone?}
+\subsection{Streichholzschachtel}
 
-Von einem Blechstück der Form eines gleichseitigen Dreiecks mit der
-Seitenlänge $53 \text{ cm}$
-wird durch Abschneiden der drei Drachenvierecke ein oben offener Behälter hergestellt.
+Eine Streichholzschachtel besteht aus einem Innenteil und einer Hülle
+(s. Graphik):
 
-Berechnen Sie die Höhe $h$ für maximales Volumen des Behälters.
+\bbwCenterGraphic{160mm}{Streichholzschachtel.png}
 
-\bbwCenterGraphic{80mm}{TobleroneMax.png}
+Die Länge von $l = 5 \text{ cm}$ wird durch die Streichholzlänge
+bestimmt.
+
+Ebenso soll der Inhalt mit einem Volumen $V = 45\text{ cm}^3$
+vorgegeben sein.
+
+Berechnene Sie die Höhe $h$, wenn möglichst wenig Karton zur
+Herstellung verwendet werden soll.
 
 \TNTeop{
+<<<<<<< HEAD
 Seien $s$ die $53 \text{ cm}$ und $t$ die Seite der Grundfläche, so
 gilt $t = s-2\sqrt{3}h$ und somit für das Volumen:
 $$V(h) = G(h) \cdot{} h = \left(\frac{t}2 \right)^2 \sqrt{3} \cdot{}
@@ -600,22 +607,29 @@ Bemerkung: Die zweite Extremstelle $h_2 = \frac1{2\sqrt{3}}\cdot{}3$
 ist ein Minimum (hier wird das Volumen = 0.
 
 Frommenwiler Algebra S. 244 Aufg. 927.
+=======
+Sei $S$ die «surface»:
+
+$S(b, h) = 2bh + 3bl + 4lh$ mit
+$V = 45 = lbh$ und mit $l=5$ und $V=45$ gilt:
+
+$$45 = 5bh \Longrightarrow b = \frac9h$$
+
+Damit wird $S(b, h)$ zu $S(h)$:
+
+$$S(h) = 2\cdot{}\frac9h\cdot{}h + 3\cdot{}\frac9h\cdot{}5 +
+4\cdot{}5\cdot{}h = 18 + \frac{135}h + 20\cdot{}h$$
+
+Maximieren:
+
+\texttt{S(h):= 18 + 135/h + 20h}
+
+\texttt{fMin(S(h), h, 0, 3)} liefert
+
+$h_{\text{max}} = \frac{3\cdot{}\sqrt{3}}{2} \approx 2.598 \text{ cm}$
+
+>>>>>>> 9c41ef6896ff7bb1c9675df56b9641fb68a88999
 }
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\subsection{Tipi}
-
-Aus vier 5 m langen Stangen soll ein
-pyramidenförmiges Zeit mit quadratischer Grundfläche errichtet werden.
-
-Wie hoch wird es, wenn sein Volumen möglichst groß sein soll?
-
-\TNTeop{Höhe = 2.89 m
-
-Frommenwiler Geometrie/Stereometrie Aufg 222 Seit 173
-}%% end TNTeop
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -635,6 +649,72 @@ Ergo $a = \sqrt{\frac46} = \sqrt{\frac{4\cdot{}6}{36}}
 
 Frommenwiler Geometrie Seite 173 Aufg 223
 }%% end TNTeop
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Gehege aus Hühnergitter}
+
+ Gegeben ein Drahtgitter von $2 \text{ m}^2$, das wir beliebig ausschneiden
+    und beliebig zusammenfügen können.
+    
+    Gesucht ein quaderförmiges Gehege (4 Seiten + 1 Deckel) mit einer 
+    rechteckigen Deck- und Grundfläche von $ab$ mit $a:b = 1:\sqrt{3}$.
+    Wie
+    hoch wird das Gehege, wenn maximales Volumen gefordert ist;
+    vorausgesetzt, wir können ohne Drahtgitterresten alles zu 100\%
+    verwerten?
+
+a) Machen Sie eine Skizze
+
+b) Finden Sie die Zielfunktion und die Nebenbedingnug (=
+Einschränkung)
+
+c) Geben Sie die drei Kantenlängen des Geheges an.
+
+\TNTeop{
+$$S=2ah + 2a\sqrt{3}\cdot{}h + a^2\sqrt{3} = 2 \text{ m}^2$$
+$$\Longrightarrow h=\frac{2-a^2\sqrt{3}}{2a+2\sqrt{3}a}$$
+$$V =abh= a\cdot{}a\sqrt{3}\cdot{}h$$
+$$V(a) =
+a^2\sqrt{3}\cdot{}  \frac{2-a^2\sqrt{3}}{2a+2\sqrt{3}\cdot{}a}$$
+$V$ maximieren:
+$$a_{\text{max}} = \frac{\sqrt[4]{3}\cdot{}\sqrt{2}}{3} \approx
+0.62040324 $$
+$$h_{\text{max}} = \frac{\frac[4]{3^3}\cdot{} (\sqrt{3}-1)\cdot{} \sqrt{2}}{6} \approx 0.39331989$$
+}%% end TNT eop
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Toblerone?}
+
+Von einem Blechstück der Form eines gleichseitigen Dreiecks mit der
+Seitenlänge $53 \text{ cm}$
+wird durch Abschneiden der drei Drachenvierecke ein oben offener Behälter hergestellt.
+
+Berechnen Sie die Höhe $h$ für maximales Volumen des Behälters.
+
+\bbwCenterGraphic{80mm}{TobleroneMax.png}
+
+\TNTeop{
+$h = \frac{s\sqrt{3}}{18} \approx 0.0962250 \cdot{} s$ mit $s=53cm$
+erhalten wir $h \approx 5.099927 \text{ cm}$.
+
+Frommenwiler Algebra S. 244 Aufg. 927.
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Tipi}
+
+Aus vier 5 m langen Stangen soll ein
+pyramidenförmiges Zeit mit quadratischer Grundfläche errichtet werden.
+
+Wie hoch wird es, wenn sein Volumen möglichst groß sein soll?
+
+\TNTeop{Höhe = 2.89 m
+
+Frommenwiler Geometrie/Stereometrie Aufg 222 Seit 173
+}%% end TNTeop
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Würfel in Pyramide}
