@@ -585,8 +585,19 @@ Berechnen Sie die Höhe $h$ für maximales Volumen des Behälters.
 \bbwCenterGraphic{80mm}{TobleroneMax.png}
 
 \TNTeop{
-$h = \frac{s\sqrt{3}}{18} \approx 0.0962250 \cdot{} s$ mit $s=53cm$
+Seien $s$ die $53 \text{ cm}$ und $t$ die Seite der Grundfläche, so
+gilt $t = s-2\sqrt{3}h$ und somit für das Volumen:
+$$V(h) = G(h) \cdot{} h = \left(\frac{t}2 \right)^2 \sqrt{3} \cdot{}
+h = \frac{(s-2h\sqrt{3})^2}{4} \cdot{} \sqrt{3}\cdot{} h$$
+
+
+Lösung:
+
+$h = h_1 = \frac{s\sqrt{3}}{18} \approx 0.0962250 \cdot{} s$ mit $s=53cm$
 erhalten wir $h \approx 5.099927 \text{ cm}$.
+
+Bemerkung: Die zweite Extremstelle $h_2 = \frac1{2\sqrt{3}}\cdot{}3$
+ist ein Minimum (hier wird das Volumen = 0.
 
 Frommenwiler Algebra S. 244 Aufg. 927.
 }
