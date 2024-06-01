@@ -49,37 +49,39 @@ angibt.
 b) Geben Sie die Funktionsgleichung $f(t)$ an, welche den Prozess
 beschreibt.
 
-c) Wann ist die Temperatur auf angenehme 37 Grad gesunken?
+c) Wie warm ist der Tee nach 5 Minuten?  
+
+d) Wann ist die Temperatur auf angenehme 37 Grad gesunken?
 
 \noTRAINER{\bbwCenterGraphic{17cm}{allg/funktionen/img/saettigung/Tee.png}}
 
-\TNTeop{1. Idee mit gleicher Formel klappt nicht, denn der
+\TNTeop{a) Idee mit gleicher Formel klappt nicht, denn der
   Standard-Exponentielle Zerfall geht nach Null!
 
   Skizze mit 75 Grad, 20 Grad (Sättigung) und 61 Grad.
 
-2. Idee: verschiebe die Skala um 20 Einheiten nach unten. Nun
+Idee: verschiebe die Skala um 20 Einheiten nach unten. Nun
 funktioniert es: $g(t) = 55\cdot{}\left(\frac{41}{55}\right)^{\frac{t}{3}}$
 
-3. Verschiebe wieder zurück: ACHTUNG: Das $b$ ist nun jedoch die
+Verschiebe wieder zurück: ACHTUNG: Das $b$ ist nun jedoch die
 Sättigungs\textbf{differenz} zum Zeitpunkt $t_0=0$ und \textbf{nicht} mehr der Startwert! 
 
+b)
 $$f(t) = 20 + g(t) = 20 + 55\cdot{}\left(\frac{41}{55}\right)^{\frac{t}{3}}$$
 
-4. Berechnung: Wann sind 37 Grad erreicht? Einsetzen
+c) $f(5) = 20 + 55\cdot{} \left(\frac{41}{55}\right)^{\frac{5}{3}}
+\approx  53.7\degre$
+
+d) Berechnung: Wann sind 37 Grad erreicht? Einsetzen
 in die Funktionsgleichung:
 
 $$37\degre = y=f(t) = 20 + 55\cdot{}\left(\frac{41}{55}\right)^{\frac{t}{3}}$$
 
-$$17=55\cdot\left(\frac{41}{55}\right)^\frac{t}{3}$$
+Solver (num-solv):
+$$37\degre 20 + 55\cdot{}\left(\frac{41}{55}\right)^{\frac{x}{3}}$$
 
-$$\frac{17}{55}=\left(\frac{41}{55}\right)^\frac{t}{3}$$
+$$\Longrightarrow t \approx 11.99 \text{ min}$$
 
-$$\frac{t}3 = \log_{\left(\frac{41}{55}\right)}\left(\frac{17}{55}\right)$$
-
-
-$$t=3\cdot{}\log_{\left(\frac{41}{55}\right)}\left(\frac{17}{55}\right)\approx
-11.99 \text{ min.}$$
 
 }%% END TNT
 
@@ -185,31 +187,6 @@ Die Variable haben die folgenden Bedeutungen:
 \end{itemize}
 
 
-\subsubsection{Bemerkungen}
-\begin{bemerkung}{}{}
-  Für die Sättigungsdifferenz gilt:
-
-\TNT{4}{$$m = m(t) = c - f(t) = c - \left(c-b\cdot{}a^{\frac{t}{\tau}}\right) = + b\cdot{}a^{\frac{t}{\tau}}$$
-
-und somit:
-
-$$m_0 = m(0) = b\cdot{}a^0 = b$$}%% END TNT
-\end{bemerkung}
-
-\TRAINER{ Bemerkung (Trainer/mündlich):
-  
-Das $a$ kann aus zwei \textbf{beliebigen} Sättigungsdifferenz-Werten berechnet werden (die um die
-Zeitdifferenz $\tau$ auseinander liegen):
-$$\frac{m_2}{m_1} = \frac{b\cdot{}a^{\frac{t_2}{\tau}}}{b\cdot{}
-  a^{\frac{t_1}{\tau}}} = a^{\frac{t_2}{\tau}} : a^{\frac{t_1}{\tau}} =
-a^{\frac{t_2-t_1}{\tau}} = a^{\frac{\tau}{\tau}} = a$$%% 
-}%% END Trainer
-
-
-\begin{bemerkung}{}{}
-Meistens ist $m_0$ zum Zeitpunkt $t=0$ bekannt und somit ist $b=m_0$. Es reicht, die Messung zum Zeitpunkt $t_0$ und zu einem weiteren Zeitpunkt durchzuführen. Wenn zusätzlich die Sättigungsgrenze $c$ bekannt ist, kann die Funktion $f$ komplett bestimmt werden.
-\end{bemerkung} 
-
 \newpage
 
 \subsection{Referenzaufgaben}
@@ -230,14 +207,14 @@ Zeichnen Sie die gegebenen Größen in ein Koordinatensystem ein und markieren S
 \noTRAINER{$b = ..........................$}
 \TRAINER{$b = m_0 = c-f(0) = 9 - 4 = 5$}
 
-\noTRAINER{$m =  ..........................$}
-\TRAINER{$m = m_1 = c-f(\tau) = 9 - 7 = 2$}
-
-\noTRAINER{$a = .........................$}
-\TRAINER{$a=\frac{m}{b} = \frac{m_1}{m_0} = \frac{2}{5} = 0.4$}
-
 \noTRAINER{$\tau = .........................$}
 \TRAINER{$\tau = 6$ ($e_x$ = eine Stunde)}
+
+\noTRAINER{$m =  ..........................$}
+\TRAINER{$m = m_\tau = c-f(\tau) = 9 - 7 = 2$}
+
+\noTRAINER{$a = .........................$}
+\TRAINER{$a=\frac{m}{b} = \frac{m_\tau}{m_0} = \frac{2}{5} = 0.4$}
 
 
 \noTRAINER{$f(t) = c - b\cdot{}a^{\frac{t}{\tau}} = ..... - .....\cdot{}(.....)^{\frac{t}{.....}}$}
@@ -264,6 +241,32 @@ Zeichnen Sie die gegebenen Größen in ein Koordinatensystem ein und markieren S
 }
 \newpage
 
+\subsubsection{Bemerkungen}
+\begin{bemerkung}{}{}
+  Für die Sättigungsdifferenzen $m_0$ und $m_\tau$ gilt:
+  $$m_0 = m(0) = c- f(0) = c- (c-b\cdot{}a^0 = c-(c-0) = 0$$
+
+  und
+
+  $$\frac{m_\tau}{m_0} = \frac{c-f(\tau)}{b} =
+  \frac{c-(c-b\cdot{}a^\frac{\tau}{\tau})}{b}  = \frac{+b\cdot{}a}{a} = b$$
+\end{bemerkung}
+
+\TRAINER{ Bemerkung (Trainer/mündlich):
+  
+Das $a$ kann aus zwei \textbf{beliebigen} Sättigungsdifferenz-Werten berechnet werden (die um die
+Zeitdifferenz $\tau$ auseinander liegen):
+$$\frac{m_2}{m_1} = \frac{b\cdot{}a^{\frac{t_2}{\tau}}}{b\cdot{}
+  a^{\frac{t_1}{\tau}}} = a^{\frac{t_2}{\tau}} : a^{\frac{t_1}{\tau}} =
+a^{\frac{t_2-t_1}{\tau}} = a^{\frac{\tau}{\tau}} = a$$%% 
+}%% END Trainer
+
+
+\begin{bemerkung}{}{}
+Meistens ist $m_0$ zum Zeitpunkt $t=0$ bekannt und somit ist $b=m_0$. Es reicht, die Messung zum Zeitpunkt $t_0$ und zu einem weiteren Zeitpunkt durchzuführen. Wenn zusätzlich die Sättigungsgrenze $c$ bekannt ist, kann die Funktion $f$ komplett bestimmt werden.
+\end{bemerkung} 
+
+\newpage
 \subsubsection{Referenzaufgabe Sättigung: Pneu (optional)}\index{Reifen}\index{Pneu}
 
 Ein Reifen (Pneu) ist anfänglich ganz leer und enthält «nur» 1 atm, nämlich den

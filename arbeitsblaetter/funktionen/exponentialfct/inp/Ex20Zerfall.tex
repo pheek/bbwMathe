@@ -2,6 +2,42 @@
 \textit{Nicht immer ist die Wachstumsrate größer als 1}
 
 
+\bbwActAufgabenNr{} \textbf{Grogg}
+
+In der Küche der Berghütte steht eine Flasche Grogg, die genau einen Liter des
+heiß begehrten Getränks enthält. Abgemacht war unter den Bergleuten,
+dass der Grogg nach der harten Bergtour gerecht aufgeteilt werde.
+
+Nun ist es aber so, dass die Personen alle nacheinander in die Hütte
+kommen und alle denken sich, ich nehme nun nur ein Schlückchen vorab; 
+nur 8\%, nur so wenig also, dass es nicht auffällt.
+
+\begin{bbwAufgabenBlock}
+
+\item Die ersten vier Personen sind Andrea, gefolgt von Bert, dann
+  Clau und schließlich Dani.
+  Wie viel Grog ist nach der 4. Person noch in der Flasche?
+  \TRAINER{Der Abnahmefaktor beträgt $1-0.08 = 0.92 = 92\%$. Nach der 4. Flasche ist $0.92^4$ Liter also noch 7.16 dl
+    Grog in der Flasche.}
+
+\item Geben Sie an, wie viel Grog sich nach der 8. Person noch in der
+  Flasche befindet.
+  \TRAINER{$0.92^8 \approx 0.513$, also ca. 5.13 dl.}
+
+\item Geben Sie eine Formel an, die angibt wie viel Grog nach der
+  $n$-ten Person in der Flasche ist.
+  \TRAINER{$f(n) = 0.92^n$}
+  
+\item Weitere Personen erreichen die Hütte. Nach total wie vielen Personen
+  ist nur ein ein Rest von 2dl in der Flasche?
+  \TRAINER{$$0.2 = 0.92^n$$ Somit erhalten wir durch logarithmieren:
+    $$n = log_{0.92}(0.2) \approx{} 19.30$$
+  Somit ist nach der 19. Person noch etwas mehr und nach der
+  20. Person schon etwas weniger als 2 dl in der Flasche.}
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \bbwActAufgabenNr{} \textbf{Wert des Autos}
 
@@ -41,41 +77,6 @@ Also eine Prozentuale Abnahme von 12.0\%.
 }%% END TRAINER
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\bbwActAufgabenNr{} \textbf{Grogg}
-
-In der Küche der Berghütte steht eine Flasche Grogg, die genau einen Liter des
-heiß begehrten Getränks enthält. Abgemacht war unter den Bergleuten,
-dass der Grogg nach der harten Bergtour gerecht aufgeteilt werde.
-
-Nun ist es aber so, dass die Personen alle nacheinander in die Hütte
-kommen und alle denken sich, ich nehme nun nur ein Schlückchen vorab; 
-nur 8\%, nur so wenig also, dass es nicht auffällt.
-
-\begin{bbwAufgabenBlock}
-
-\item Die ersten vier Personen sind Andrea, gefolgt von Bert, dann
-  Clau und schließlich Dani.
-  Wie viel Grog ist nach der 4. Person noch in der Flasche?
-  \TRAINER{Der Abnahmefaktor beträgt $1-0.08 = 0.92 = 92\%$. Nach der 4. Flasche ist $0.92^4$ Liter also noch 7.16 dl
-    Grog in der Flasche.}
-
-\item Geben Sie an, wie viel Grog sich nach der 8. Person noch in der
-  Flasche befindet.
-  \TRAINER{$0.92^8 \approx 0.513$, also ca. 5.13 dl.}
-
-\item Geben Sie eine Formel an, die angibt wie viel Grog nach der
-  $n$-ten Person in der Flasche ist.
-  \TRAINER{$f(n) = 0.92^n$}
-  
-\item Weitere Personen erreichen die Hütte. Nach total wie vielen Personen
-  ist nur ein ein Rest von 2dl in der Flasche?
-  \TRAINER{$$0.2 = 0.92^n$$ Somit erhalten wir durch logarithmieren:
-    $$n = log_{0.92}(0.2) \approx{} 19.30$$
-  Somit ist nach der 19. Person noch etwas mehr und nach der
-  20. Person schon etwas weniger als 2 dl in der Flasche.}
-\end{bbwAufgabenBlock}
-\platzFuerBerechnungenBisEndeSeite{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bbwActAufgabenNr{} \textbf{Wohnwagen}
 Ein Wohnwagen hat innerhalb von fünf Jahren 75\% an Wert verloren. 

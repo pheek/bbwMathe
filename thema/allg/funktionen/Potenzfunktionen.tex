@@ -30,18 +30,7 @@ mit $z \in \mathbb{Z}\backslash\{0\}$\TRAINER{ $z=0$ ist eine
   Proportionalität und somit hier unspannend}.
 
 \newpage
-
-
-
 \subsubsection{\GESO{Beispiel}\TALS{Repetition}: Reinquadratische Funktion}\index{quadratische Funktion}\index{Funktion!quadratische}
-
-Zeichnen Sie den Graphen der Funktion $f: y= \frac16 x^2$:
-
-\bbwGraph{-7}{7}{-1}{6.5}{%%
-  \TRAINER{
-    \bbwFunc{\x*\x/6}{-6:6}
-  }
-}%%
 
 \begin{definition}{Reinquadratische Funktion}{}
 Die Funktion
@@ -51,7 +40,29 @@ $f: y = a\cdot{}x^2$
 heißt \textbf{Parabel zweiter Ordnung} oder rein-quadratische Funktion.
 \end{definition}
 
+Zeichnen Sie den Graphen der Funktion $f: y= \frac16 x^2$:
 
+\bbwGraph{-7}{7}{-1}{6.5}{%%
+  \TRAINER{
+    \bbwFunc{\x*\x/6}{-6:6}
+  }
+}%%
+
+
+\begin{bbwFillInTabular}{|c|c||c|c|}\hline
+  x & \,\,\,\,\,y\,\,\,\,\, & x & \,\,\,\,\,y\,\,\,\,\, \\\hline\hline
+  $0$ & \TRAINER{$0$}               &        &    \\\hline
+  $1$ & \TRAINER{$\frac16$}         &  $-1$  & \TRAINER{$\frac16$} \\\hline
+  $2$ & \TRAINER{$\frac23$}         &  $-2$  & \TRAINER{$\frac23$} \\\hline
+  $3$ & \TRAINER{$\frac32$}         &  $-3$  & \TRAINER{$\frac32$} \\\hline
+  $4$ & \TRAINER{$\frac32$}         &  $-4$  & \TRAINER{$\frac83$} \\\hline
+  $5$ & \TRAINER{$4.1\overline{6}$} &  $-5$  & \TRAINER{$4.1\overline{6}$} \\\hline
+  $6$ & \TRAINER{$6$}               &  $-6$  & \TRAINER{$6$} \\\hline
+\end{bbwFillInTabular} 
+
+
+
+\TALS{\newpage}
 \TALS{
 \begin{bemerkung}{}{}
 Eine allgemeine quadratische Funktion besitzt auch noch einen linearen ($bx$) und einen konstanten ($c$) Anteil. Die allgemeine quadratische Funktion hat die Form
@@ -65,15 +76,7 @@ $$f: y= ax^2 + bx + c$$
   Seite 273.}%% END TALS
 
 \newpage
-
 \subsection{Parabel}\index{Parabel}
-
-Zeichnen Sie $y = \frac{1}{16}x^4$ im Bereich $[-3; 3]$ indem Sie für jeden 0.5-er $x$-Wert das zugehörige $y$ berechnen:
-
-\bbwGraph{-4}{4}{-1}{6.5}{%%
-  \TRAINER{\bbwFunc{\x*\x*\x*\x/16}{-3:3}}
-}%%
-
 
 \begin{definition}{Parabel}{definition_parabel}
   Ist $n\in \mathbb{N}_{\ge 2}$, so wird der Graph der Potenzfunktion
@@ -81,8 +84,30 @@ Zeichnen Sie $y = \frac{1}{16}x^4$ im Bereich $[-3; 3]$ indem Sie für jeden 0.5
   \textbf{Parabel} $n$-ter Ordnung genannt.
 \end{definition}
 
+
+Zeichnen Sie $y = \frac{1}{16}x^4$ im Bereich $[-3; 3]$ indem Sie für jeden 0.5-er $x$-Wert das zugehörige $y$ berechnen:
+
+\bbwGraph{-4}{4}{-1}{6.5}{%%
+  \TRAINER{\bbwFunc{\x*\x*\x*\x/16}{-3:3}}
+}%%
+
+\begin{tabular}{|c|c||c|c|}\hline
+  x & \,\,\,\,\,\,\,\,\,y\,\,\,\,\,\,\,\,\, & x & \,\,\,\,\,\,\,\,\,y\,\,\,\,\,\,\,\,\, \\\hline\hline
+  $  0$ & \TRAINER{$0    $}          &          &                    \\\hline
+  $0.5$ & \TRAINER{$0.004$}          &  $-0.5$  & \TRAINER{$0.004$} \\\hline
+  $1  $ & \TRAINER{$0.063$}          &  $-1  $  & \TRAINER{$0.063$} \\\hline
+  $1.5$ & \TRAINER{$0.316$}          &  $-1.5$  & \TRAINER{$0.316$} \\\hline
+  $2  $ & \TRAINER{$1.000$}          &  $-2  $  & \TRAINER{$1.000$} \\\hline
+  $2.5$ & \TRAINER{$2.441$}          &  $-2.5$  & \TRAINER{$2.441$} \\\hline
+  $3  $ & \TRAINER{$5.063$}          &  $-3  $  & \TRAINER{$5.063$} \\\hline
+\end{tabular} 
+
+\TRAINER{Was fällt auf? Der Graph von $x^4$ ist um $0$ viel flacher
+  als der Graph von $x^2$.}%% end Trainer
+
 \TALS{%%
-\begin{bemerkung}{Potenzfunktion}{definition_potenzfunktion}
+  \newpage
+  \begin{bemerkung}{Potenzfunktion}{definition_potenzfunktion}
   Eine Funktion der Art
 $$f: y=a\cdot{}x^r$$
   mit $r \in \mathbb{R}\backslash\{0\}$ heißt \textbf{Potenzfunktion}.
@@ -116,7 +141,8 @@ Boltzmannsches T-hoch-vier-Gesetz\index{Boltzmann!$T^4$-Gesetz}
 
 Die Funktion $P(T) = \sigma\cdot\varepsilon\cdot
   A\cdot{}T^4$ beschreibt, welche Strahlungsleistung $P$ ein Körper der
-  Oberfläche $A$ (in $ \text{m}^2$) bei Temperatur $T$ (in Kelvin) aussendet.
+  Oberfläche $A$ (in $ \text{m}^2$) bei Temperatur $T$ (in
+  $\degre$Kelvin $= {}\degre\-\text{C}+273.15$) aussendet.
 
   $\sigma$ = Bolzmann Konstante = $5.6\cdot{}10^{-8}$
   
@@ -313,9 +339,8 @@ Vergleichen Sie die neue Funktion mit der Parabel $y=x^3$.
   ($x$-Richtung) verschoben worden.}
 }%% END GESO
 
-\AadBMTA{304ff}{5. a) c) d) e), 9. a) d) e)}
+\AadBMTA{304ff}{9. a) d) e)., 5 a) c) d) e)}
 
- 
 \TALS{
   \aufgabenFarbe{Zeichnen Sie mit \texttt{geogebra.org} die Funktion
     $f(x) = \frac1{10}(x^3 - 3x^2 + 3)$
