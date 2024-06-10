@@ -285,7 +285,7 @@ Bernoulli-Prozess manchmal auch Bernoulli-Kette genannt. Quelle
 \item Das Einzelexperiment hat genau zwei Ausgänge: Erfolg/Misserfolg.
 \item Jedes Einzelexperiment hat für die erfolgreichen Ausgänge die gleiche
       Wahrscheinlichkeit $p$ (somit ist die Wahrscheinlichkeit für den
-      Misserfolg gleich $1-p$).
+      Misserfolg jeweils gleich $1-p$).
 \item Die Einzelexperimente sind voneinander unabhängig.
 \end{itemize}
 \end{definition}
@@ -346,16 +346,8 @@ abfangen kann?
   $p$ &=& \TRAINER{Gewinnwahrscheinlichkeit pro Durchführung}\\
   $k$ &=& \TRAINER{Anzahl geforderte Treffer}\\
 \end{bbwFillInTabular}
-
-  
 \end{gesetz}
 
-
-\begin{beispiel}{Sieben mal Würfeln}{}
-Wie groß ist die Wahrscheinlichkeit, mit einem Würfel bei
-siebenmaligem Werfen genau fünf mal eine der Zahlen \epsdice{1} oder
-\epsdice{2} zu erreichen?
-\end{beispiel}
 
 Bei der sog. Bernoulli-Kette handelt es sich um ein
 Bernoulli-Experiment
@@ -363,6 +355,12 @@ in einem mehrstufigen Baum ($n$ Versuche). Dabei interessiert
 uns, wie groß die Wahrscheinlichkeit ist, dass von den beiden
 möglichen Ausgängen (Treffer / Niete) einer davon $k$-mal auftritt.
 
+\newpage
+\begin{beispiel}{Sieben mal Würfeln}{}
+Wie groß ist die Wahrscheinlichkeit, mit einem Würfel bei
+siebenmaligem Werfen genau fünf mal eine der Zahlen \epsdice{1} oder
+\epsdice{2} zu erreichen?
+\end{beispiel}
 Dabei legen wir fest (vgl. Beispiel oben: Siebenmaliges Würfeln):
 \begin{itemize}
 
@@ -384,9 +382,12 @@ Nun gilt
 
 In obigem Beispiel ergibt sich:
 \vspace{2mm}
-$$P(X=5) = \LoesungsRaumLen{70mm}{{7\choose 5} \cdot{} \left(\frac26\right)^5 \cdot{} \left(1-\frac26\right)^{7-5}} = \LoesungsRaumLen{60mm}{{7\choose 5} \cdot{} \left(\frac26\right)^5 \cdot{} \left(\frac46\right)^2}$$
+$$P(X=5) = \LoesungsRaumLen{70mm}{{7\choose 5} \cdot{}
+  \left(\frac26\right)^5 \cdot{} \left(1-\frac26\right)^{7-5}} =
+\LoesungsRaumLen{60mm}{{7\choose 5} \cdot{} \left(\frac26\right)^5
+  \cdot{} \left(\frac46\right)^2}$$
 
-\newpage
+
 \textbf{Taschenrechner}:
 
 \leserluft
@@ -408,7 +409,7 @@ $$\LoesungsRaumLang{( 7 \text{\,\,nCr\,\,} 5 ) *\left(\frac26\right)^5 *
   $p=2/6$ & bei \texttt{p(\text{success})} und \\
   $k=5$   & bei \texttt{x} eintragen.
 \end{tabular} 
-
+\newpage
 
 
 \subsection*{Aufgaben}
@@ -446,6 +447,8 @@ $$P(X\le 17) = $$
 \TNT{6}{$$P(X=0) + P(X=1) + P(X=2) + ... + P(X=16) + P(X=17)$$
 $$={20\choose 0}\cdot 0.85^0 \cdot 0.15^{20} + {20\choose 1}\cdot 0.85^1 \cdot 0.15^{19} + {20\choose 2}\cdot 0.85^2 \cdot 0.15^{18} + ... $$
 
+$$... + {20 \choose 17}\cdot{} 0.85^{17} \cdot{0.15}^3$$
+  
 }%% END TNT
 
 Dies können wir auch mit dem Summenzeichen ($\Sigma$) schreiben:
@@ -488,14 +491,19 @@ $k=17$ bei $x$ eintragen.
 \end{tabular}
 
 \end{gesetz}
-
-
-\subsection*{Aufgaben}
-
-\olatLinkGESOKompendium{5.7}{53ff}{ 36. a) b)  (gerechter Würfel) und 37. (gezinkter Würfel)}
 \newpage
 
 \subsection*{Aufgaben}
+
+\aufgabenFarbe{Wie groß ist die Wahrscheinlichkeit, dass
+  Cristiano Ronaldo (*1985, Fußballspieler), dessen durchschnittliche Trefferwahrscheinlichkeit bei 84\% liegt,
+  in einem Training mit 40 Torschüssen maximal 35 Tore erzielt?
+\TRAINER{p=0.84; n=40; k=35 $P(X\le 35) \approx 78.90\%$}
+}
+
+
+\olatLinkGESOKompendium{5.7}{53ff}{ 36. a) b)  (gerechter Würfel) und 37. (gezinkter Würfel)}
+
 
 Zeichnen Sie in folgender Aufgabe beide Diagramme: Die
 Wahrscheinlichkeiten für die genaue Anzahl Treffern, aber auch die
