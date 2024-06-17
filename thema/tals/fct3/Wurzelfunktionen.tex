@@ -7,13 +7,33 @@ Die geforderte Länge $l$ (in m) eines Pendels lässt sich wie folgt ermitteln:
 $$l = g \cdot{} \left(\frac{t}{2\pi}\right)^2$$
 
 
-Dabei ist $t$ die gewünschte Schwingungsdauer in Sekunden, $g$ die
+Dabei ist $t$ die gewünschte Schwingungsdauer in
+Sekunden\footnote{Gemessen hin und zurück.} und $g$ die
 Erdbeschleunigung (9.81).
+
+Berechnen Sie die Schwingdauer für ein Pendel von 44 cm Länge.
+
+\vspace{4mm}
+
+Die Schwingdauer bei 44 cm beträgt ca. \LoesungsRaum{1.3} Sekunden.
+
+\TNT{3.2}{
+  $$0.44 = 9.81\cdot{}  \left( \frac{t}{2\pi}\right)^2$$
+  $$\sqrt{\frac{0.44}{9.81}} = \frac{t}{2\pi}$$
+  $$t\approx 1.33$$
+}
 
 Geben Sie die Schwingungsdauer $t$ in Abhängigkeit der Länge $l$ des
 Pendels an.
 
 $$t = t(l) = \LoesungsRaumLen{40mm}{2\pi \cdot{} \sqrt{\frac{l}{g}}}$$
+
+\TNT{3.2}{
+  Herleitung
+  $$4 = g\cdot{}  \left( \frac{t}{2\pi}\right)^2$$
+  $$\sqrt{\frac{l}{g}} = \frac{t}{2\pi}$$
+  $$2\pi\cdot{}\sqrt{\frac{l}{g}} = t$$
+}
 
 
 
@@ -48,36 +68,6 @@ $$y=\sqrt[n]{x}.$$
 \newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection*{Aufgaben}
-
-%%\TALSAadBMTA{213ff}{803. n), 804. h), 805. c), 806. c), 807. a) c) 808. b)}
-\TALSAadBMTA{310}{41. f), 42. a), 43. g), 44. b), 45. a) }
-
-\olatLinkTALSStrukturaufgabenSPF{Teil 2}{14ff}{46. und 50.}
-\aufgabenFarbe{Strukturaufgaben SPF (V4.0) S. 14ff: Aufg. 46. und 50.}
-
-\newpage
-
-\subsection{Transformationen an der Wurzelfunktion}
-
-$$y = a\cdot{} \sqrt{b\cdot{}x + c} + d$$
-
-Was bedeuten die Parameter $a$, $b$, $c$ und $d$.
-
-Geben Sie den Definitionsbereich der folgenden Funktionsterme an und skizzieren Sie:
-
-$$\sqrt{x}; \sqrt{3x}; \sqrt{x-3}; \sqrt{x} - 3;
-\sqrt{-x}; 2\sqrt{x}$$
-
-\TNT{8}{Achtung: Parameter $a$ und $b$ sind nicht eindeutig: $\sqrt{4a}$ = $2\sqrt{a}$}
-
-Geben Sie von den folgenden Graphen den zugehörigen Funktionsterm
-an. (Bei $f$ ist $a=1$, bei $g$ ist $b=1$ und bei $h$ ist $c=1$.)
-
-\bbwCenterGraphic{13cm}{tals/fct3/img/WurzelfunktionenAblesen.png}
-
-\newpage
-
 \subsection{Wurzelfunktion als Umkehrfunktion}\index{Umkehrfunktion!der Wurzelfunktion}\index{Funktionen!Umkehrfunktion}
 
 \subsection*{Lernziele}
@@ -108,9 +98,37 @@ Skizzieren Sie $f: y = \sqrt[2]{x}$ und $g: y=x^2$ im Bereich $[-2; 9]$ indem Si
 Funktionen, welche beim Spiegeln an $x=y$ mehrere «Funktionswerte»
 erhalten würden, sind nur \textbf{eingeschränkt} umkehrbar.
 \end{bemerkung}
+
+\newpage
+\subsection*{Aufgaben}
+Skizzieren Sie
+a) $y=x^3$ und $y=\sqrt[3]{x}$ ins selbe Koordinatensystem:
+
+\bbwGraph{-7}{7}{-5}{5}{
+  \TRAINER{\bbwFuncC{exp(0.333*ln(\x))}{0.01:7}{blue}}
+  \TRAINER{\bbwFuncC{\x*\x*\x}{-1.7:1.7}{red}}
+}
+
+b) Was fällt auf?
+
+\TNT{2}{Im positiven Ast ist $\sqrt[3]{x}$ die Umkehrung von $x^3$
+  (gespiegelt an der Halbierenden des 1. Quadranten.}
+
+c) Geben Sie von $y=x^3$ und von $y=\sqrt[3]{x}$ jeweils den
+Definitionsbereich und den Werteberech an.
+
+\TNT{4}{
+  $$x^3: \mathbb{D}=\mathbb{W}=\mathbb{R}$$
+
+  $$\sqrt[3]{x}: \mathbb{D}=\mathbb{W}=\mathbb{R}^+_0$$
+  Obschon die Funktion auch Umkehrbar ist, ist die Wurzel von
+  negativen Zahlen in $\mathbb{R}$ nicht definiert.
+}%% end TNT
+
 \newpage
 
 
+\subsubsection{Punkte-Aufgaben}
 
 \subsection*{Aufgaben}
 
@@ -123,6 +141,88 @@ $n$.
 \TNT{6}{Idee: Beide nach $a$ auflösen und gleichsetzen. $n=4$ und $a=-2$.}
 
 \TRAINER{Hat es hier Aufgaben im Buch?}
+\newpage
+
+
+\subsection{Transformationen an der Wurzelfunktion}
+
+\subsubsection{Wurzelfunktionen skizzieren}
+
+
+Geben Sie den Definitionsbereich der folgenden Funktionsterme an und skizzieren Sie:
+
+$$\sqrt{x}; \sqrt{3x}; \sqrt{x-3}; \sqrt{x} - 3;
+\sqrt{-x}; -\sqrt{x+3} + 2; 2\sqrt{x}$$
+
+\newpage
+
+
+\subsubsection{Parameter und «Scheitelform»}\index{Scheitelform!Wurzelfunktion}
+$$y = a\cdot{} \sqrt{b\cdot{}x + c} + d$$
+
+Was bedeuten die Parameter $a$, $b$, $c$ und $d$. Nutzen Sie die
+Erkenntnisse aus der vorangehenden Aufgabe.
+
+\TNT{6}{
+  $a$: Formfaktor (Streckung entlang der $y$-Achse
+
+  $b$: Stauchung entlang der $x$-Achse
+
+  $c$: Verschiebung gegüber der $x$-Achse
+
+  $d$: Verschiebung entlang der $y$-Achse
+}
+
+Skizzieren Sie a) $y=2\sqrt{x}$ und $y=\sqrt{4x}$.
+
+Was fällt auf?
+
+\TNTeop{
+  Die Faktoren $a$ und $b$ sind austauschbar. Entweder kann $a$, oder
+  $b$ ermittelt werden, dies sobald der andere der beiden Faktoren
+  bekannt ist.
+
+  $$a\sqrt{bx}  = (a\sqrt{b})\cdot{}\sqrt{x} = \sqrt{a^2bx}$$
+}%% end TNTeop
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+
+
+\begin{definition}{Wurzelfunktion in «Scheitelform»}{}
+  An einer Wurzelfunktion der Form
+  $$f: y = a\cdot{}\sqrt{x-X_S} + Y_S$$
+  kann sofort der «Scheitelpunkt» abgelesen werden.
+\end{definition}
+
+\begin{gesetz}{Scheitelform}
+Bei  $$f: y = a\cdot{}\sqrt{x-X_S} + Y_S$$
+liegt der Scheitelpunkt bei $S=(X_S | Y_S)$ und der Formfaktor $a$ kann
+entweder durch Einsetzen in die Funktionsgleichung oder durch ablesen
+bei $x=X_S+1$ ermittelt werden.
+\end{gesetz}
+
+\newpage
+\newpage
+
+
+
+\subsubsection{Wurzelfunktionen ablesen}
+
+\TNT{8}{Achtung: Parameter $a$ und $b$ sind nicht eindeutig: $\sqrt{4a}$ = $2\sqrt{a}$}
+
+Geben Sie von den folgenden Graphen den zugehörigen Funktionsterm
+an. (Bei $f$ ist $a=1$, bei $g$ ist $b=1$ und bei $h$ ist $c=1$.)
+
+\bbwCenterGraphic{13cm}{tals/fct3/img/WurzelfunktionenAblesen.png}
+
+\newpage
+\subsection*{Aufgaben}
+
+%%\TALSAadBMTA{213ff}{803. n), 804. h), 805. c), 806. c), 807. a) c) 808. b)}
+\TALSAadBMTA{310}{41. f), 42. a), 43. g), 44. b), 45. a) }
+
+\olatLinkTALSStrukturaufgabenSPF{Teil 2}{14ff}{46. und 50.}
+\aufgabenFarbe{Strukturaufgaben SPF (V4.0) S. 14ff: Aufg. 46. und 50.}
+
 \newpage
 
 
