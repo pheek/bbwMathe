@@ -60,9 +60,39 @@ Casino-Betreiber, also für Sie ausgeht?
 
 \begin{definition}{Erwartungswert}{}
 	Mit $\mu$ wird der \textbf{Erwartungswert} bezeichnet.
-	$\mu$ ist das arithmetische Mittel, das die Zufallsvariable
+	$\mu$ ist das gewichtete arithmetische Mittel, das die Zufallsvariable
 	annimmt.
 \end{definition}
+
+\begin{beispiel}{Erwartungswert}{}
+  Bei einem Spiel sind in einer Urne drei rote und eine grüne
+  Kugel. Der Spieleinsatz sind CHF 1.-. Nun darf eine Kugel gezogen
+  werden. Es gelten die folgenden Regeln:
+  \begin{itemize}
+  \item «rot» gilt als Verlust und der Einsatz (CHF 1.-) ist verloren
+  \item «grün» gilt als Gewinn und man erhält CHF 6.- minus den Einsatz
+  \end{itemize}
+  Die Zufallsvariable sind also wie folgt zu definieren:
+  \begin{itemize}
+  \item $X(\text{«rot»}) = \LoesungsRaum{-1}$
+  \item $X(\text{«grün»}) = \LoesungsRaum{+5}$
+  \end{itemize}
+
+  Weil wir aber viel häufiger «rot» ziehen werden, erwarten wir bei
+  vier Spielen drei Verluste und einen Gewinn. Bei vier Spielen ist
+  (sofern jede Kugel genau einmal gezogen wurde) unser Gewinn
+
+  $$ \mu = \LoesungsRaumLen{50mm}{( -1 -1 -1 + 5) / 4} = \LoesungsRaumLen{50mm}{\frac{3\cdot{}(-1) + 1\cdot{}5}{3+1}}
+  = ... = \LoesungsRaumLen{12mm}{0.50} CHF$$
+\end{beispiel}
+
+Allgemein wird der Erwartungswert $\mu$ wie folgt berechnet:
+
+\begin{gesetz}{Erwartungswert}{}\index{Erwartungswert!Formel}
+$$\mu = \sum P(\omega_i)\cdot{} X(\omega_i)$$
+\end{gesetz}
+
+
 \newpage
 
 

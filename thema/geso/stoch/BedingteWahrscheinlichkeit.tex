@@ -43,6 +43,37 @@ $$P(K\cap P) = \LoesungsRaumLang{\frac{95}{123} \approx 77.2\%}$$
 
 \newpage
 
+\subsubsection{Beispiel und Referenzaufgabe}
+Betrachten wir (nochmals) die folgende Kontingenztafel:
+
+  \begin{tabular}{|l|r|r|r|r|}\hline
+                 & Test positiv (P) & Test negativ (N)& Total & relativ (\%) \\\hline
+    krank (K)    & 95               & 2               & 97    & 78.9 \%      \\\hline    
+    gesund (G)   & 4                & 22              & 26    & 21.1 \%      \\\hline
+    Total        & 99               & 24              & 123   &  --- \%      \\\hline
+    relativ (\%) & 80.5\%           &19.5\%           & ---   &   100\%      \\\hline
+  \end{tabular}
+
+  
+Dabei wurden 24 Personen von 123 negativ getestet: $P(N) =\frac{24}{123}\approx 19.5\%$.
+
+Wenn ich die negativen Tests nun aber nur bei den kranken Personen
+(total 97) betrachte, so erhalte ich
+$$P(N|K) = \frac{2}{97} \approx 2.06\%.$$
+
+
+\subsection{Aufgabe}
+Wie groß ist die Wahrscheinlichkeit, dass eine positiv getestete Person
+wirklich krank ist?
+\TNTeop{
+  S. BMP 2018 Serie 4 Aufgabe 14\\
+  $$P(K|P) = \frac{95}{99}\approx 96.0\%$$
+}%%
+\newpage
+
+
+
+
 
 \begin{definition}{Bedingte Wahrscheinlichkeit}{}
 Die \textbf{Bedingte Wahrscheinlichkeit} oder \textit{konditionale
@@ -78,8 +109,8 @@ eingetreten ist.
 
 \newpage
 
-\subsection{Beispiel und Referenzaufgabe}
-Betrachten wir (nochmals) die folgende Kontingenztafel:
+
+\subsection*{Aufgabe}
 
   \begin{tabular}{|l|r|r|r|r|}\hline
                  & Test positiv (P) & Test negativ (N)& Total & relativ (\%) \\\hline
@@ -88,15 +119,9 @@ Betrachten wir (nochmals) die folgende Kontingenztafel:
     Total        & 99               & 24              & 123   &  --- \%      \\\hline
     relativ (\%) & 80.5\%           &19.5\%           & ---   &   100\%      \\\hline
   \end{tabular}
-  
-Dabei wurden 24 Personen von 123 negativ getestet: $P(N) =
-\frac{24}{123}\approx 19.5\%$.
-Wenn ich die negativen Tests nun aber nur bei den kranken Personen
-(total 97) betrachte, so erhalte ich
-$$P(N|K) = \frac{2}{97} \approx 2.06\%.$$
-
 
 Berechnen Sie für die obige Tafel die folgenden Wahrscheinlichkeiten:
+
 
 %%\renewcommand{\arraystretch}{2}
 \begin{bbwFillInTabular}{rr}
@@ -126,14 +151,6 @@ $P(G|N) = \LoesungsRaum{\frac{22}{24} \approx{} 91.7\%}$\\
 %%\renewcommand{\arraystretch}{1}
 
 \newpage
-
-\subsection{Aufgabe}
-Wie groß ist die Wahrscheinlichkeit, dass eine positiv getestete Person
-wirklich krank ist?
-\TNTeop{
-  S. BMP 2018 Serie 4 Aufgabe 14\\
-  $$P(K|P) = \frac{95}{99}\approx 96.0\%$$
-}%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
 
 \subsection*{Aufgaben}
