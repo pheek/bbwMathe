@@ -1,0 +1,184 @@
+
+\subsection{Polarkoordinaten (optional)}\index{Polarkoordinaten}
+\sectuntertitel{Opposite of a polarbear? A cartesian bear!}
+
+\bbwCenterGraphic{16cm}{tals/vecg1/img/polen.jpg}
+
+\newpage
+
+\subsection{Winkel in Vektoren (optional)}
+
+Kim schwimmt über den 200 m breiten Fluss mit einer Geschwindigkeit
+von 0.9 m/s und einem Winkel gegenüber dem Ufer (gegen die Strömung,
+welche 2.6 m/s beträgt)
+von 62\degre.
+
+Wo und an welcher Stelle wird Kim auf der anderen Flussseite ankommen?
+
+a) Skizzieren Sie die Geschwindigkeiten als Vektoren
+
+\bbwCenterGraphic{14cm}{tals/vecg1/img/FlussLeer.png}
+
+b) Geben Sie für Fließ- und Schwimmrichtung die Vektoren an:
+$$\vec{f} = \LoesungsRaumLen{30mm}{\Spvek{2.6; 0}}; \vec{s} =
+\LoesungsRaumLen{30mm}{0.9\cdot{}\Spvek{-\cos(62\degre);\sin(62\degre)}
+  =  0.9\cdot{}\Spvek{\cos(118\degre);\sin(62\degre)}}$$
+
+c) Es sei $t$ die Zeit (in Sekunden) und $x$ die $x$-Koordinate der
+Ankunft auf der anderen Flusseite. Diskutieren Sie die folgende
+Gleichnug:
+
+$$t\cdot{} (\vec{s}+\vec{f}) = \Spvek{x;200}$$
+
+d) Lösen Sie obige Gleichug mit dem Taschenrechner nach $t$ und $x$
+auf.
+
+Lösung für die Zeit $t = \LoesungsRaumLen{25mm}{251}$ s und für $x =
+\LoesungsRaumLen{25mm}{548}$ m.
+
+\vspace{2mm}
+e)
+Lösen Sie mit diesem Wissen die drei Fluss-Probleme A, B und C der
+Einstiegsaufgabe \totalref{woLandenDieSchwimmer}.
+\newpage
+
+
+Anstelle der $x$- und der $y$-Komponente können wir mit dem selben
+Informationsgehalt auch den Winkel ($\varphi$)
+(in mathematisch positiver Richtung) und die Länge ($r$) eines Vektors
+angeben.
+
+\bbwCenterGraphic{10cm}{tals/vecg1/img/polar.png}
+
+Dieser Winkel wird im mathematisch positiven Sinne ab der $x$-Achse
+angegeben. Der Vektor
+$\Spvek{0;1}$ hat somit den Winkel $90\degre$.
+  \begin{definition}{Polarkoordinaten}{}
+    Vektoren in Polarkoordinaten werden in der Reihenfolge (Länge |
+    Winkel) angegeben:
+    $$\vec{a} = (r | \varphi)$$
+    Dabei ist $r$ die Länge und $\varphi$ der Winkel im
+    Gegenuhrzeigersinn ab der $x$-Achse gemessen.
+  \end{definition}
+
+  \begin{beispiel}{Polarkoordinaten}{}
+    $$\vec{a} = (2 | 60\degre) = \LoesungsRaum{\left(1\atop \sqrt{3}\right)}$$
+  \end{beispiel}
+  
+  \begin{bemerkung}{Nullvektor}{}\index{Nullvektor}
+    Der Nullvektor hat keine Richtung.
+    \end{bemerkung}
+  \newpage
+  
+\subsection{Transformation (optional)}\index{Transformation!Polar-
+    vs. Kartesische Koordinaten}
+  Die Umrechnung von Polar- zu kartesischen
+  Koordinaten und umgekehrt wird Transformation genannt.
+  
+  Dank unseren Freunden \textit{Sinus} und \textit{Cosinus} ist die
+  Transformation aus Polarkoordinaten relativ einfach:
+  \begin{rezept}{Transformation «polar» nach «kartesisch»}{}
+
+    Gegeben:  Winkel $\varphi$ und Länge $r$
+
+    Gesucht: $x$ und $y$ in kartesischen Koordinaten
+
+    $$x = r\cdot{}\cos(\varphi)$$
+    $$y = r\cdot{}\sin(\varphi)$$
+  \end{rezept}
+
+  Die Umkehrung ist etwas komplizierter, denn dabei müssen wir
+  beachten, in welchen Quadranten die Pfeilspitze des Ortsvektors
+  zeigt.
+  Zum Glück nimmt uns das der Taschenrechner ab.
+
+  \subsubsection{Kartesische Koordinaten aus Polarkoordinaten}
+  Der Taschenrechner verwandelt Polarkoordinaten automatisch immer in
+  kartesische Koordinaten um:
+
+    \bbwCenterGraphic{5cm}{tals/vecg1/img/Polar2Kartesisch.png}
+    \newpage
+
+    
+\subsubsection{Polarkoordinaten aus kartesischen}
+  \begin{beispiel}{kartesisch zu polar}{}
+    Gegeben der Vektor $\vec{a} = \left(-\sqrt{3} \atop 1\right)$:
+
+    Eine Skizze zeigt uns rasch, dass es sich um $150\degre$ und eine
+    Länge von $2$ handeln muss.
+
+    \bbwCenterGraphic{5cm}{tals/vecg1/img/Kartesisch2Polar.png}
+    \end{beispiel}
+
+Rechnen Sie in kartesische Koordinaten um:
+
+\begin{tabular}{rcl}
+  $(2   | 30\degre)$ & $=$ & \LoesungsRaum{$\left(\sqrt3\atop 1\right)$}\\
+  $(321 | 270\degre)$ & $=$ & \LoesungsRaum{$\left(0\atop -321\right)$}\\
+  $(0   | 103.83346\degre)$ & $=$ & \LoesungsRaum{$\left(0\atop 0\right)$}
+\end{tabular}
+
+Rechnen Sie in Polarkoordinaten um:
+
+\begin{tabular}{rcl}\vspace{2mm}
+  $\left(2\atop 2 \right)$ & $=$ & \LoesungsRaum{$(2\cdot{}\sqrt2|45\degre)$}\\\vspace{2mm}
+  $\left(0\atop -13 \right)$ & $=$ & \LoesungsRaum{$(13|270\degre)$}\\\vspace{2mm}
+  $\left(-5\atop 1 \right)$ & $=$ & \LoesungsRaum{$(\sqrt{26}\cdot{} | {180\degre - \arctan(\frac15)}) \approx (5.099 | 168.69\degre)$}\\\vspace{2mm}
+  $\left(0\atop 0 \right)$ & $=$ & \LoesungsRaum{$(0|18.35\degre) = (0|299.68\degre)= ...$} \\\vspace{2mm}
+  
+\end{tabular}
+
+Berechnen Sie den Abstand der beiden Endpunkte der Ortsvektoren $(3|30\degre)$ und $(2|45\degre)$:
+
+\TNTeop{
+
+  Abstand $\approx 1.1870$
+
+  $$a := (3; < 30)$$
+  $$b := (2; <45)$$
+  $$c:=b-a$$
+  $$\text{norm}(c)$$
+}
+%% implicit \newpage
+
+
+\subsubsection{Drei Schwimmer im Taschenrechner}
+Mit dem Taschenrechner wird unsere Einstiegs-Aufgabe mit den drei
+Schwimmern stark vereinfacht. Wir geben die Geschwindigkeit und
+Richtung des Schwimmers «A» in Polarkoordinaten an
+(\textbf{\texttt{schwimmera}}).
+
+Die Geschwindigkeit und Richtung des Flusses können wir auch in kartesischen
+Koordinaten angeben (\texttt{\textbf{fluss}}).
+
+Der resultierende Vektor aus Schwimmer und Fluss ist einfach
+die Summe der beiden Vektoren.
+
+Wir suchen nun also ein Vielfaches ($t$) der resultierenden
+Geschwindigkeit, sodass in $y$-Richtung gerade die 0.2 km erreicht
+wird. Die «Verschiebung» am anderen Ufer in $x$-Richtung bezeichnen
+wir einfach mit $x$.
+
+\bbwCenterGraphic{12cm}{tals/vecg1/img/TR_DreiSchwimmer.png}
+
+\begin{bemerkung}{}{}
+  Auch wenn es nur eine Gleichung mit zwei Unbekannten ist, dürfen wir
+  nicht vergessen, das Vektoren in der Ebene aus zwei Komponenten
+  bestehen, somit haben wir genau genommen auch ein lineares
+  Gleichungssystem mit zwei Gleichungen und zwei Unbekannten zu lösen.
+  \end{bemerkung}
+\newpage
+  
+\subsection*{Aufgaben}
+
+Berechnen Sie mit dem Taschenrechner auch noch die Ankunftszeiten ($t$) und die Orte am anderen Ufer
+($s$) für die beiden anderen Schwimmenden (B und C) aus der
+Einstiegsaufgabe zur Vektorgeometrie.
+
+
+\TALSAadBMTG{248}{19.}
+%%\TALSAadBMTA{181ff}{18., 21. und 24.}
+%%Mit Taschenrechner:
+%%\TALSAadBMTA{181ff}{23.}
+\newpage
+9
