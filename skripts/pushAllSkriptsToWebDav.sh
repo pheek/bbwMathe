@@ -24,6 +24,12 @@ else
 fi
 
 
+
+exit
+
+
+
+
 BBW_WEBDAV_PATH_FP=/mnt/${BBW_WEBDAV_PATH}/lehrperson/fp
 
 echo "pushing skripts into: ${BBW_WEBDAV_PATH_FP}"
