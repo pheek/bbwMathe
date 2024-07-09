@@ -20,7 +20,11 @@ echo "OLAT_MOUNT_POINTS = ${OLAT_MOUNT_POINTS}"
 
 
 ##BBW_WEBDAV_PATH=`ls -l /mnt/ | grep "${OLAT_MOUNT_POINTS}" | grep "6_MAT_Ressourcen" | grep "lehrperson" | awk '{print $9}'`
+<<<<<<< HEAD
 BBW_WEBDAV_PATH=`ls -l /mnt/ | grep "MAT_Ressourcen\/$" |  awk '{print $9}'`
+=======
+BBW_WEBDAV_PATH=`ls -l /mnt/ | grep ${OLAT_MOUNT_POINTS} | grep "MAT_Ressourcen/\$" | awk '{print $9}'`
+>>>>>>> 3dd123ba13f1a9e133f9866ad93b545fbd021950
 
 echo "BBW_WEBDAV_PATH :: ${BBW_WEBDAV_PATH} ::"
 

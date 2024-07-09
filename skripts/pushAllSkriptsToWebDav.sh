@@ -5,7 +5,8 @@ OLAT_MOUNT_POINTS=`mount | grep olat | awk '{print $3}'`
 
 echo "OLAT_MOUNT_POINTS:: ${OLAT_MOUNT_POINTS} ::"
 
-BBW_WEBDAV_PATH=`ls -l /mnt/ | grep "${OLAT_MOUNT_POINTS}" | grep "6_MAT_Ressourcen/\$" | awk '{print $9}'`
+#BBW_WEBDAV_PATH=`ls -l /mnt/ | grep "${OLAT_MOUNT_POINTS}" | grep "6_MAT_Ressourcen/\$" | awk '{print $9}'`
+BBW_WEBDAV_PATH=`ls -l /mnt/ | grep "${OLAT_MOUNT_POINTS}" | grep "MAT_Ressourcen/\$" | awk '{print $9}'`
 
 echo "BBW_WEBDAV_PATH hier gefunden:  ${BBW_WEBDAV_PATH} ::"
 
@@ -17,7 +18,7 @@ else
     sudo /home/phi/bin/net/bbw_up_webdav.sh
  
     OLAT_MOUNT_POINTS=`mount | grep olat | awk '{print $3}'`
-    BBW_WEBDAV_PATH=`ls -l /mnt/ | grep "${OLAT_MOUNT_POINTS}" | grep "6_MAT_Ressourcen/\$" | awk '{print $9}'`
+    BBW_WEBDAV_PATH=`ls -l /mnt/ | grep "${OLAT_MOUNT_POINTS}" | grep "MAT_Ressourcen/\$" | awk '{print $9}'`
 
 #   exit
 fi
@@ -26,7 +27,6 @@ fi
 BBW_WEBDAV_PATH_FP=/mnt/${BBW_WEBDAV_PATH}/lehrperson/fp
 
 echo "pushing skripts into: ${BBW_WEBDAV_PATH_FP}"
-
 
 echo "copying GESO gesamtes Skript"
 cp -f ./GESO_1J/*.pdf      ${BBW_WEBDAV_PATH_FP}/i_geso/skripts
