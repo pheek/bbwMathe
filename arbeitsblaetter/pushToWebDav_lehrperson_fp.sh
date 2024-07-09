@@ -20,9 +20,10 @@ echo "OLAT_MOUNT_POINTS = ${OLAT_MOUNT_POINTS}"
 
 
 ##BBW_WEBDAV_PATH=`ls -l /mnt/ | grep "${OLAT_MOUNT_POINTS}" | grep "6_MAT_Ressourcen" | grep "lehrperson" | awk '{print $9}'`
-BBW_WEBDAV_PATH=`ls -l /mnt/ | grep ${OLAT_MOUNT_POINTS} | grep "6_MAT_Ressourcen/\$" | awk '{print $9}'`
+BBW_WEBDAV_PATH=`ls -l /mnt/ | grep "MAT_Ressourcen\/$" |  awk '{print $9}'`
 
 echo "BBW_WEBDAV_PATH :: ${BBW_WEBDAV_PATH} ::"
+
 
 if [ -d "/mnt/${BBW_WEBDAV_PATH}/lehrperson" ] ; then
 		echo "found mountpath at /mnt/${BBW_WEBDAV_PATH}"

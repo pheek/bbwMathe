@@ -4,7 +4,7 @@
 ## Finde lehrperson/fp
 OLAT_MOUNT_POINTS=`mount | grep olat | awk '{print $3}'`
 
-BBW_WEBDAV_PATH=`ls -l /mnt/ | grep ${OLAT_MOUNT_POINTS} | grep "6_MAT_Ressourcen/\$" | awk '{print $9}'`
+BBW_WEBDAV_PATH=`ls -l /mnt/ | grep "MAT_Ressourcen/\$" | awk '{print $9}'`
 
 echo "BBW_WEBDAV_PATH :: ${BBW_WEBDAV_PATH} ::"
 

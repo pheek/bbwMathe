@@ -3,9 +3,9 @@
 
 # Pach to 4_Unterrichtsmaterial
 # dies sollte auf allen PCS gleich gemountet sein.
-PATH_4_UM="/mnt/bbw/webdav/coursefolders/_other/6_MAT_Fachschaft/_courseelementdata/4_Unterrichtsmaterial/a_nach_Themen/"
-echo "Pfad zu Unterrichtsmaterial: ${PATH_4_UM}"
+PATH_4_UM="/mnt/bms/webdav/coursefolders/_other/MAT_Fachschaft/_courseelementdata/4a_Unterrichtsmaterial/a_nach_Themen/"
 
+echo "Pfad zu Unterrichtsmaterial: ${PATH_4_UM}"
 
 echo "Pusching copies to 4_Unterrichtsmaterial..."
 # Pach to 4_Unterrichtsmaterial PATH_4_UM
