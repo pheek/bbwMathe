@@ -103,9 +103,9 @@ Beachten Sie die folgenden typischen Fälle:
 
  \begin{bbwFillInTabular}{l|l|l}
                         & $a>0$                                  & $a<0$                      \\\hline
-  $n$ gerade            & $\lx =\LoesungsRaum{\{-\sqrt[n]{a}; +\sqrt[n]{a}\}}$ & $\lx=\LoesungsRaum{\{\}}$               \\\hline
-  $n$ \textbf{un}gerade & $\lx = \LoesungsRaum{\{+\sqrt[n]{a}\}}$
-   & $\lx = \LoesungsRaum{ \{\text{ TR:  }  \sqrt[n]{a} \}  = \{-\sqrt[n]{|a|}\}}$
+  $n$ gerade            & $\lx =\LoesungsRaumLen{45mm}{\{-\sqrt[n]{a}; +\sqrt[n]{a}\}}$ & $\lx=\LoesungsRaumLen{45mm}{\{\}}$               \\\hline
+  $n$ \textbf{un}gerade & $\lx = \LoesungsRaumLen{45mm}{\{+\sqrt[n]{a}\}}$
+   & $\lx = \LoesungsRaumLen{45mm}{ \{\text{ TR:  }  \sqrt[n]{a} \}  = \{-\sqrt[n]{|a|}\}}$
  \end{bbwFillInTabular}  
 
 
@@ -126,8 +126,10 @@ Steht eine Gleichung schon in der folgenden Form da, so ist es
 sinnvoll, gleich die Wurzel zu ziehen. Ansonsten versuchen Sie, die
 Gleichung in diese Form zu bringen.
 
-$$(x-5)^8=9$$
+$$(x-5)^8 - 9 =0$$
 \TNT{8}{
+  Potenz-Form:
+  $$(x-5)^8 = 9$$
   8-te Wurzel ziehen (Plus / Minus beachten, da gerade Wurzel)
 
   $$x-5 = \pm\sqrt[8]{9}$$
@@ -139,6 +141,12 @@ $$(x-5)^8=9$$
   $$\lx = \{5-\sqrt[8]{9}; 5+\sqrt[8]{9}\}$$
 }
 
+\begin{rezept}{Potenzgleichung}{}
+  Bringen Sie die Potenzgleichungen am besten zuerst in die Form:
+  $$\left(T(x)\right)^n = B$$
+  Beispiel:
+  $$\left(x^2-2x+6\right)^9 = \frac73$$
+  \end{rezept}
 
 \subsection*{Aufgaben}
 
