@@ -31,22 +31,22 @@ Verschiedene Lösungsansätze
 
 
 a) Taschenrechner: \LoesungsRaumLang{\texttt{solve($x^3+70 \ge 4x^2 +
-    31$, x)}}
+    31$, x)} liefert $x\ge -2.458$}
 
 \leserluft{}
 
 b) Graphisch auch mit TR (ablesen aus Graph):
 
-\TNT{2}{\texttt{g(x) := $x^3 + 70$} und \texttt{h(x) := $4x^2 + 31$}
+\TNTeop{\texttt{g(x) := $x^3 + 70$} und \texttt{h(x) := $4x^2 + 31$}
   
-Lies ab, wo nun $g(x) \ge h(x)$\vspace{6mm}
-}%% ENd TNT
+  Lies ab, wo nun $g(x) \ge h(x)$\vspace{6mm}
+
 
   
-c) Die harte Tour\footnote{Solche und ähnliche Verfahren wendet auch der
+  optional
+
+  c) Die harte Tour\footnote{Solche und ähnliche Verfahren wendet auch der
   Taschenrechner an.}:
-
-\TNT{14}{
   \begin{enumerate}
   \item Wie bei einer quadratischen Gleichung alles auf eine Seite
     nehmen: $$x^3 - 4x^2 -31x + 70 \ge{} 0$$
@@ -67,20 +67,43 @@ c) Die harte Tour\footnote{Solche und ähnliche Verfahren wendet auch der
 }%% END TNT
 \newpage
 
+
+
 \subsubsection{halbgraphische Methode}
-... weiter im Beispiel ...
-\TNT{14}{
-Halbgraphische Methode mit $(x-2)$, $(x-5)$ und $(x+7)$ zeichnen und
+
+Finden Sie die Lösungsmenge $\lx$:
+$$\frac{(x^2+7x)}{3-2x} \le 0$$
+
+\TNTeop{
+  1. Faktorisieren:
+
+  $$\frac{x\cdot{}(x+7)}{3-2x} \le 0$$
+
+  Halbgraphische Methode mit $x$, $x+7$ und $3-2x$ zeichnen und
 interpretieren:
-\bbwCenterGraphic{15cm}{tals/gl3_1/img/HalbgraphischeMethode.png}
-\vspace{3cm} 
+
+
+\bbwCenterGraphic{15cm}{tals/gl3_1/img/HalbgraphischEinstiegsbeispiel.png}
+
+
 }%% END TNT
+
 
 
 
 %%Erstellen Sie zu einer der folgenden Aufgaben eine Musterlösung für OLAT!
 
 \subsection*{Aufgaben}
+
+Finden Sie die Lösungsmenge für die Ungleichung
+$$(x^2-7x+10)\cdot{}(x+7) \ge 0.$$
+
+\TNT{13.2}{
+  erst faktorisieren:
+  
+\bbwCenterGraphic{15cm}{tals/gl3_1/img/HalbgraphischeMethode.png}
+}
+
 %%\TALSAadBMTA{157ff}{555. (TR), 559., 561., 562., 564., 568., 572., 574.,
 %%  575. und Seite 203: 761., 762 und 763. \TRAINER{764. gehört zu den
 %%    Ungleichungen (anderes Skript).}}
