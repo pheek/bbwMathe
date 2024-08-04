@@ -1,22 +1,61 @@
 %% 2020 12 25 ph. g. Freimann
 %%
-\section{Gegenseitige Lage von Geraden}
+\section{Gegenseitige Lage von Geraden}\index{gegenseitige Lage!von Geraden}
 
 \subsection*{Lernziele}
 \begin{itemize}
-\item identisch
-\item parallel
-\item schneidend
-\item windschief
+  \item die Gegenseitige Lage zweier Geraden bestimmen (identisch,
+    zusammenfallend
+    \index{identisch!Geradengleichung}\index{zusammenfallend!Geradengleichung},
+    parallel\index{parallel!Geradengleichung},
+    schneidend\index{schneidend!Geradengleichung}, windschief\index{windschief!Geradengleichung})
 \end{itemize}
 
 
-\subsection{Entscheidungshilfe}
-Mit folgendem Entscheidungsbaum können wir leicht sehen, ob zwei
-geraden \textit{identisch}, \textit{parallel}, \textit{schneidend}
-oder \textit{windschief} sind:
+\begin{definition}{windschief}{}
+  Zwei Geraden stehen \textbf{windschief} (zueinander), wenn sie nicht
+  parallel sind und auch keinen gemeinsamen Schnittpunkt aufweisen.
+\end{definition}
 
-\bbwCenterGraphic{18cm}{tals/vecg2/img/WindschiefEntscheidung.png}
+\subsection{Entscheidungshilfe}
+Das folgende Diagramm gibt uns eine Entscheidungshilfe, um die
+gegenseitige Lage zweier Geraden zu bestimmen:
+
+\vspace{3mm}
+
+\begin{tabular}{p{60mm}|p{50mm}|p{50mm}}
+  & Die Richtungsvektoren sind kollinear. &  \textbf{nicht} kollinear\\\hline
+Die Geraden haben mind. einen gemeinsamen Punkt.  & zusammenfallend, identisch& schneidend\\\hline
+\textbf{k}einen gemeinsamen Punkt & parallel & windschief
+\end{tabular}
+
+
+\begin{bemerkung}{Gemeinsamer Punkt}{}
+  Zwei Geraden haben mind. einen gemeinsamen Punkt, wenn auf einer der
+  beiden Geraden mind. ein Stützpunkt der anderen Geraden liegt.  
+\end{bemerkung}
+
+\begin{bemerkung}{Erst Parallelität prüfen}{}
+Tipp: Es lohnt sich also, zunächst zu prüfen, ob zwei Geraden parallel
+sind.
+
+Ist dies nämlich der Fall, so ist für die Identität (zusammenfallende
+Geraden) nur noch zu prüfen, ob ein beliebiger Stützpunkt auf der
+jeweils anderen Geraden liegt.
+\end{bemerkung}
+
+
+
+
+%%Mit folgendem Entscheidungsbaum können wir leicht sehen, ob zwei
+%%geraden \textit{identisch}, \textit{parallel}, \textit{schneidend}
+%%oder \textit{windschief} sind:
+
+%%\bbwCenterGraphic{18cm}{tals/vecg2/img/WindschiefEntscheidung.png}
+
+
+
+\newpage
 
 
 \subsection*{Aufgaben}
@@ -30,3 +69,4 @@ oder \textit{windschief} sind:
 }
 
 \TALSAadBMTG{305ff}{25., 27.}
+\newpage
