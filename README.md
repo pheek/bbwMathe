@@ -9,7 +9,7 @@ clone
 -----
 wie klonen:
 git clone https://github.com/pheek/bbwMathe
--> ins Verzeichnis "cnt"
+-> ins Verzeichnis "cnt" (steht für «Content»)
 
 Die relativen Pfade für das Kompilieren der LaTeX-Quellen sind in den
 make-files beschrieben.

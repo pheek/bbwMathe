@@ -19,31 +19,158 @@
 \setcounter{aufgabennummer}{1}
 
 
-\newcommand\aufgabeML[2]{\begin{samepage}%%
-Aufgabe \arabic{aufgabennummer}:\,\,\\
-#1\\  #2
-
-\abplz{3.2}
-\end{samepage}
+\newcommand\aufgabeNr[1]{\begin{samepage}%%
+\subsection*{Aufgabe \arabic{aufgabennummer}}\,\,\\
+#1
+%%\abplz{3.2}
+\end{samepage}%%
 \stepcounter{aufgabennummer}%%
 }%%
 
 
 \section{Parameterdarstellung der Geradengleichung}
 
- Es bezeichne jeweils $g: \vec{r} = \vec{s} + t\cdot{}\vec{u}$, mit
- Stützvektor $\vec{s}$ und Richtungsvektor $\vec{u}$.
+ Es bezeichne jeweils $g: \vec{r} = \vec{a} + t\cdot{}\vec{u}$, mit
+ Stützvektor $\vec{a} = \overrightarrow{OA}$ und Richtungsvektor $\vec{u}$.
 
 
+\aufgabeNr{Gegeben ist die Gerade
+
+$$\vec{r}(t) = \Spvek{4;-2;6} + t\cdot{}\Spvek{-0.5;3;4} .$$
+
+a) Welcher Punkt auf der Geraden wird durch den Parameter $t=2$
+besschrieben?
+\TNT{2}{P(t) = (3|4|14)}
+
+b) Bestimmen Sie zwei weitere Punkte $P=P(t)$ auf $g$ und geben Sie explizit
+den Parameter $t$ an.
+\TNT{4}{$P(0) = (4|-2|6)$ und $P(-1) = (4.5 | -5 | 2)$}
+
+c) Prüfen Sie, ob der Punkt $Q = (1|16|30)$ auf der Geraden $g$
+liegt. Falls ja, geben Sie $t$ an.
+\TNT{4}{Ja, mit $t=6$ liegt $Q$ auf der Geraden $g$.}
+\noTRAINER{\newpage}
+d) Prüfen Sie, ob der Punkt $R = (5.5| -11 | 6)$ auf der Geraden $g$
+liegt. Falls ja, geben Sie $t$ an.
+\TNT{4}{Nein, $R$ liegt nicht auf $g$. Beispielsweise läge $(5.5 | -11 | -6)$ auf $g$.}
+}
+
+
+\aufgabeNr{
+%%Analog Marthaler S. 30 Aufg. 2. a) c)
+Geben Sie eine Parametergleichung der Geraden $g$ an, welche durch die
+Punkte $A$ und $B$ verläuft:
+
+a) $A=(1|6)$; $B=(3|3)$
+\TNT{4}{Beispiel $A$=Stützvektor. Dann ist $$g:\,\,\, \vec{r}(t) = \Spvek{1;6} + t\cdot{}\Spvek{3-1;3-6} = \Spvek{1;6} + t\cdot{}\Spvek{2;-3}$$}
+
+b) $A=(1|-2|4)$; $B=(1|-5|2)$
+\TNTeop{Beispiel $A$=Stützvektor. Dann ist $$g: \,\,\, \vec{r}(t)
+= \Spvek{1;-2;4} + t\cdot{}\Spvek{1-1;-2-(-5);4-2} =  \Spvek{1;-2;4} + t\cdot{}\Spvek{0;3;2} $$}%% end TNTeop
+}%% end Aufgabe
+
+
+\noTRAINER{\newpage}
+\aufgabeNr{
+%% Analog Marthaler S. 30ff Aufg. 5
+
+Gegeben ist die Gerade $$g: \,\,\, \vec{r}(t) = \overrightarrow{OA}+t\cdot{}\vec{u}= \Spvek{5;-1;0} + t\cdot{}\Spvek{\frac13; 2; 8}$$.
+
+Bestimmen Sie eine weitere Gleichung der selben Geraden, welche die
+folgende Eigenschaft hat:
+
+a) Die neue Gleichung hat denselben Stützvektor $\overrightarrow{OA}$.
+\TNT{2}{Wähle \zB $t=3$:
+$$\vec{r}(t) = \Spvek{5;-1;0} + t\cdot{} \Spvek{1;6;24}$$}
+
+b) Die neue Gleichung hat denselben Richtungsvektor $\vec{u}$.
+\TNT{4}{Setze \zB $t=3$:
+$$\vec{r}(t) =\Spvek{5+3 \cdot{} \frac13; -1 + 3\cdot{}2; 0 + 3\cdot{}8} + t \cdot{} \Spvek{\frac13;2;8}$$
+$$ = \Spvek{6; 5; 24} + t \cdot{} \Spvek{\frac13;2;8}$$
+}%% end TNT 
+}%% end Aufgabe
+
+
+\noTRAINER{\newpage}
+\aufgabeNr{
+(Grafik aus Marthaler Geometrie Seite 303 Aufg. 7)\\
+Gegeben ist die folgende Pyramide in $\mathbb{R}^3$:
+
+\bbwCenterGraphic{12cm}{img/Pyramide.png}\,
+
+Die angegebenen Punkte sind jeweils Eckpunkte oder Mittelpunkte.
+
+Bestimmen Sie mögliche Geradengleichungen der vier eingezeichneten Geraden.
+\TNTeop{
+$$g_1:  \vec{r}(t) = \Spvek{ 0;13;0} + t\cdot{} \Spvek{ 6; 6;-3}$$
+$$g_2:  \vec{r}(t) = \Spvek{-2; 7;3} + t\cdot{} \Spvek{ 2;-2; 3}$$
+$$g_3:  \vec{r}(t) = \Spvek{-2; 7;3} + t\cdot{} \Spvek{-4; 4; 0}$$
+$$g_4:  \vec{r}(t) = \Spvek{ 0;13;0} + t\cdot{} \Spvek{ 6; 2;-3}$$
+}%% end TNTeop
+}%% end aufgabe
+
+\aufgabeNr{
+Gegeben ist die Funktionsgleichung der Geraden $g$. Bestimmen
+Sie eine vektorielle Parametergleichung der Geraden $g$.
+
+Gegeben:
+$$y = 0.5x - 1.5$$
+
+Gesucht
+$$\vec{r}(t) = \overrightarrow{OA} + t \cdot{} \vec{u}$$
+\TNT{4}{
+Wähle \zB den $y$-Achsenabschnitt als Stützvektor und den Vektor vom
+Stützvektor zur Nullstelle ($x_0=3$)als $\vec{u}$.
+
+$$\vec{r}(t) = \Spvek{0; -1.5} + t \cdot{} \Spvek{3-0; 0-(-1.5)}
+= \Spvek{0;-1.5} + t \cdot{} \Spvek{3;1.5}$$
+
+}%% end TNT
+}%% end Aufgabe 
+
+.... hier weiter mit einer zweiten Aufgabe analog 8. b) aus Marthaler.
+Bei der nächsten Aufgabe (Umkehrung) unbedingt auch eine senkrechte
+Gerade einbauen! Diskussion: Mit der Parameterdarstellung sind auch
+senkrechte Geraden im Koordinatensystem möglich.          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\aufgabeNr{
 %% Maturaprüfng 2022 Aufg. 4 (Teil 2 mit TR)
-\aufgabeML{
 Gegeben sind die Gerade $g$ und die Punkte $A$ und $B$.
 
 $$g : \vec{r} = \Spvek{2;1;1} + t\cdot{}\Spvek{0;2;1}\hspace{20mm} A=(6|4| 1), B=(-2|5|7)$$
 
 Berechnen Sie die Punkte $P$ der Geraden $g$, für die gilt: $\angle
-APB = 35\degre$.}{}
-
-
+APB = 35\degre$.}
 
 \end{document}
