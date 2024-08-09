@@ -2,9 +2,11 @@
 ## Push All Generated Skripts to Webdav
 
 ## Finde lehrperson/fp
-OLAT_MOUNT_POINTS=`mount | grep olat | awk '{print $3}'`
-echo "OLAT_MOUNT_POINTS = ${OLAT_MOUNT_POINTS}"
-##BBW_WEBDAV_PATH=`ls -l /mnt/ | grep ${OLAT_MOUNT_POINTS} | grep "6_MAT_Ressourcen/\$" | awk '{print $9}'`
+#OLAT_MOUNT_POINTS=`mount | grep olat | awk '{print $3}'`
+#echo "OLAT_MOUNT_POINTS = ${OLAT_MOUNT_POINTS}"
+#
+
+#BBW_WEBDAV_PATH=`ls -l /mnt/ | grep ${OLAT_MOUNT_POINTS} | grep "6_MAT_Ressourcen/\$" | awk '{print $9}'`
 
 #ls -l /mnt/ > bbw1.tmp
 ## debug
