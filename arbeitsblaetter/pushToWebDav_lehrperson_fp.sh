@@ -159,6 +159,10 @@ echo "  copying Vektorgeometrie 2: Skalarprodukt (TALS)"
 cp -f ./geometrie/vektorgeometrie/vecg2/Skalarprodukt/Skalarprodukt_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/vecg2/aufgabenblaetter/Skalarprodukt_Aufgben.pdf
 cp -f ./geometrie/vektorgeometrie/vecg2/Skalarprodukt/Skalarprodukt_TRAINER_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/vecg2/aufgabenblaetter/Skalarprodukt_Loesungen.pdf
 
+echo "  copying Vektorgeometrie 2: Geradengleichung (TALS)"
+cp -f ./geometrie/vektorgeometrie/vecg2/Geradengleichung/Geradengleichung_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/vecg2/aufgabenblaetter/Geradengleichung_Aufgben.pdf
+cp -f ./geometrie/vektorgeometrie/vecg2/Geradengleichung/Geradengleichung_TRAINER_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/vecg2/aufgabenblaetter/Geradengleichung_Loesungen.pdf
+
 echo "  copying Auftrag Logarithmentabelle (TALS)"
 cp -f ./algebra/logarithmentabelle/LogarithmenArbeitsblatt_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/aa2/auftrag_logarithmentabelle/AuftragLogarithmentabelle.pdf
 cp -f ./algebra/logarithmentabelle/LogarithmenArbeitsblatt_TRAINER_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/aa2/auftrag_logarithmentabelle/AuftragLogarithmentabelleLoesungsweg.pdf
