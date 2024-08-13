@@ -108,6 +108,52 @@ Taschenrechner:
 
 $$d = |\vec{d} | = \frac{5\sqrt{3}}{3} \approx 2.88675$$
 \newpage
+\subsubsection{Referenzaufgabe von Hand}
+
+Gegeben sind die Geraden
+%% beispiel von hier: https://www.mathelike.de/abiturskript-mathematik-bayern/2-geometrie/2.4-abstandsbestimmungen/2.4.3-abstand-windschiefer-geraden.html
+$$g: \,\,\, \vec{r}(t) = \Spvek{2;6;2} + t\cdot{}\Spvek{0;1;0} \text{
+  und }  h: \,\,\, \vec{r}(t) = \Spvek{6;-2;8} + s\cdot{}\Spvek{-3;1;0} $$
+
+\TNTeop{
+  1. $P$ und $Q$ auf $g$ und $h$ wählen:
+  $$P = \Spvek{2;6+ t;2} \text{ und } Q = \Spvek{6-3s;-2+s;8} $$
+
+  2. $\overrightarrow{PQ}$ bestimmen:
+  $$\overrightarrow{PQ} = \Spvek{(2)-(6-3s); (6+t)-(-2+s); (2)-(8)} =
+  \Spvek{3s-4; 8+t-s; -6}$$
+
+  3. $\overrightarrow{PQ}$  senkrecht auf beide Richtungsvektoren
+  stellen (je Skalarprodukt = Null setzen):
+  $$(3s-4)\cdot{}0     + (8+t-s)\cdot{}1+ (-6)\cdot{} 0 = 0 \Longleftrightarrow t-s=-8$$
+  und 
+  $$(3s-4)\cdot{}(-3)  + (8+t-s)\cdot{}1+ (-6)\cdot{} 0 = 0 \Longleftrightarrow -10s + t = -20$$
+
+  4. Gleichungssystem nach $s$ und $t$ auflösen:
+  $$s=\frac43 \text{ und } t = \frac{-20}3$$
+  
+  5. $s$ und $t$ in  $\overrightarrow{PQ}$  einsetzen:
+  $\overrightarrow{PQ} = \Spvek{3\cdot{}\frac43 -4 ; 8+\frac{-20}3
+    -\frac43 ; -6} = \Spvek{0;0;-6}$
+
+  6. Länge (mit Pythagoras) besitmmen
+  $$d = \sqrt{0^2 + 0^2 + (-6)^2}  = 6$$
+}%% end TNTeop
+
+\newpage
+\begin{rezept}{Abstand von Hand}{}
+  \begin{enumerate}
+  \item $P$ und $Q$ auf $g$ und $h$ wählen (Ansatz $s$ und $t$ bekannt)
+  \item $\overrightarrow{PQ}$ bestimmen in Abhängikgkeit von $s$ und $t$.
+  \item $\overrightarrow{PQ}$  senkrecht auf beide Richtungsvektoren
+  stellen (je Skalarprodukt = Null setzen)
+  \item Gleichungssystem nach $s$ und $t$ auflösen:
+  \item $s$ und $t$ in  $\overrightarrow{PQ}$  einsetzen:
+  \item Länge (Norm) bestimmen (Pythagoras)
+  \end{enumerate}
+\end{rezept}
+
+\newpage
 
 \subsection*{Aufgaben}
 
