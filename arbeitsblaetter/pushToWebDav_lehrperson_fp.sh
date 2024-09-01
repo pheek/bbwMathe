@@ -151,6 +151,9 @@ echo "  copying Stereometrie Lagen im Raum (TALS)"
 cp -f ./geometrie/stereometrie/lage/GegenseitigeLage_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/stereo/schnittebenen/bech/Schnittebenen_Aufgaben.pdf
 cp -f ./geometrie/stereometrie/lage/GegenseitigeLage_TRAINER_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/stereo/schnittebenen/bech/Schnittebenen_Loesungen.pdf
 
+echo "  copying Koerper Begriffe (TALS)"
+cp -f ./geometrie/stereometrie/koerper/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/stereo/koerper/
+
 echo "  copying Vektorgeometrie 2: Komponenten in R3 (TALS)"
 cp -f ./geometrie/vektorgeometrie/vecg2/Komponenten/Komponenten_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/vecg2/aufgabenblaetter/Komponenten_Aufgben.pdf
 cp -f ./geometrie/vektorgeometrie/vecg2/Komponenten/Komponenten_TRAINER_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/vecg2/aufgabenblaetter/Komponenten_Loesungen.pdf
