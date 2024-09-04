@@ -19,6 +19,10 @@ was da stehen: clear oder 2nd 'quit'}
 \section{Grundoperationen und Vorrangregeln}
 Wir berechnen $7 + 8(5-2)$  (Stimmts? 31) und $7 + 8\cdot 5 - 2$ (Stimmts? 45).
 
+\section{Fehlerkorrektur}
+Mit \tiprobutton{delete} kann die letzte Eingabe, mit \tiprobutton{clear}
+kann das ganze Display gelöscht werden.
+
 \section{Genau vs. verständlich}
 Berechnen Sie nun $9 \div 8$ (\tiprobutton{enter}) und schalten Sie mit der
 Taste \tiprobutton{approx} zwischen $1.125$ und $\frac{9}{8}$ um.
@@ -41,22 +45,19 @@ $$3* (-8)$$
 
 
 \section{ANS und STO}
-Um mit dem Resultat der vorangehenden Rechnung weiterzufahren
-existiert die Taste \tiprobutton{2nd} \tiprobutton{neg_answer}. ANS steht für den Wert des
-Resultates der zuletzt ausgeführten Operation. Wir Berechnen $16.3 +
-19.8$ ... (ergibt 36.1).
+ANS steht für den Wert des
+Resultates der zuletzt ausgeführten Operation. Wir Berechnen $2 * 7.8$ ... (ergibt 15.6).
 
-Nun können wir mit dem Resultat direkct weiterrechnen: 
+Nun können wir mit dem Resultat weiterrechnen: 
 
+\tiprobutton{plus} \tiprobutton{2} \tiprobutton{enter} ergibt $17.6$.
 
+Das Resultat kann auch in der Mitte einer Rechnung verwendet werden.
 
-und danach das Resultat $\cdot4$.
+2.4 \tiprobutton{plus} \tiprobutton{2nd} \tiprobutton{neg_answer} \tiprobutton{enter}
 
+(ergibt 20)
 
-Starten Sie
-eine Rechnung mit einem Operationszeichen (\zB \tiprobutton{mult}\tiprobutton{4}), so
-wird \texttt{ans} vorangestellt und gleich mit der Antwort
-weitergerechnet. (Stimmts? $36.1 \cdot{} 4 = 144.4$). 
 
 \subsection{sto: $x$, $y$, $z$, $t$, $a$, $b$, $c$ und $d$}
 Daneben gibt es die Möglichkeit, Zwischenresultate in nummerierte
