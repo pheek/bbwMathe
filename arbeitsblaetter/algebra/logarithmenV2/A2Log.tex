@@ -1,0 +1,330 @@
+\input{bmsLayoutPage}
+\renewcommand{\bbwAufgabenBlockID}{A2Log}
+
+\renewcommand{\metaHeaderLine}{Logarithmen}
+\renewcommand{\arbeitsblattTitel}{Algebra: Logarithmen}
+
+\begin{document}
+\arbeitsblattHeader{}
+
+\begin{center}V 1.1 (2024-09-17) \end{center}
+\section{Zehnerlogarithmen}
+
+\textbf{\bbwAufgabenNummer{}.}
+Berechnen Sie von Hand den Wert des Termes und prüfen Sie mit dem Taschenrechner:
+
+\begin{bbwAufgabenBlock}
+\item $\lg(1000) = \LoesungsRaumLang{3}$\abplz{2}
+\item $\lg(10) = \LoesungsRaumLang{1}$\abplz{2}
+\item $\lg(1) = \LoesungsRaumLang{0}$\abplz{2}
+\item $\lg(0.1) = \LoesungsRaumLang{-1}$\abplz{2}
+\item $\lg\left(\frac1{10^5}\right) = \LoesungsRaumLang{-5}$\abplz{2}
+\item $\lg\left(10^{-6}\right) = \LoesungsRaumLang{-6}$\abplz{2}
+\item $\lg\left(0.0001\right) = \LoesungsRaumLang{-4}$\abplz{2}
+\item $\lg\left(\sqrt{10}\right) = \LoesungsRaumLang{0.5}$\abplz{2}
+\item $\lg\left(\sqrt[5]{10^3}\right) = \LoesungsRaumLang{0.6}$\abplz{2}
+\end{bbwAufgabenBlock}
+
+%\platzFuerBerechnungenBisEndeSeite{}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+\textbf{\bbwAufgabenNummer{}.}
+Schreiben Sie die Gleichung in der $\lg$-Form und berechnen Sie $x$:
+
+Beispiel:
+
+$$10^x=\sqrt[5]{100} \Longrightarrow   x=\lg\left(\sqrt[5]{100}\right)
+= \lg\left(10^{\frac25}\right) = \frac25$$
+
+\begin{bbwAufgabenBlock}
+\item $10^x = 10\,000$ $\LoesungsRaum{x=4}$\abplz{4}
+
+% neu:
+\item $10 = \sqrt[x]{1000}$ $\LoesungsRaum{\Longrightarrow 10^x=1000 \Longrightarrow x=\lg{1000} = 3}$\abplz{4}
+
+\item $10^x = \sqrt[4]{10}$ $\LoesungsRaum{x=\frac14}$\abplz{4}
+\item $10^x = \sqrt[7]{\frac1{10^3}}$ $\LoesungsRaum{x=\frac{-3}{7}}$\abplz{4}
+\item $10^x = \frac{1}{\sqrt{10}}$ $\LoesungsRaum{x=\frac{-1}2}$\abplz{4}
+\item $100^x = 10^5$ $\LoesungsRaum{x=2.5}$\abplz{4}
+
+\vspace{2mm} Taschenrechner:
+\item $10 = \sqrt[x]{500}$ $\LoesungsRaum{\Longrightarrow 10^x=500 \Longrightarrow x=\lg{}(500) \approx 2.6990}$\abplz{4}
+
+
+\end{bbwAufgabenBlock}
+
+%%\platzFuerBerechnungenBisEndeSeite{}
+\newpage
+
+\textbf{\bbwAufgabenNummer{}.}
+Schätzen Sie die folgenden Logarithmen und prüfen Sie mit dem
+Taschenrechner. Zwischen welchen beiden ganzen Zahlen liegt der Logarithmus?
+
+
+\begin{bbwAufgabenBlock}
+\item $\lg(1001) \approx  \LoesungsRaum{3.0004}$\abplz{3.2}
+\item $\lg(5) \approx  \LoesungsRaum{0.69897}$\abplz{3.2}
+\item $\lg(0.02) \approx  \LoesungsRaum{-1.69897}$\abplz{3.2}
+\item $\lg(10\cdot{}\pi) \approx  \LoesungsRaum{1.497}$\abplz{3.2}
+\item $\lg\left(\left(10\right)^{10}\right)^{10} \approx  \LoesungsRaum{100 \text{ exakt }}$\abplz{3.2}
+
+\end{bbwAufgabenBlock}
+%%\platzFuerBerechnungenBisEndeSeite{}
+\newpage
+
+\textbf{\bbwAufgabenNummer{}.}
+Vereinfachen Sie mit Hilfe des Gesetzes $10^{\lg(n)} = n$.
+
+
+\begin{bbwAufgabenBlock}
+\item $10^{\lg(5)} =  \LoesungsRaum{5}$\abplz{2}
+\item $10^{1+\lg(4)} =  \LoesungsRaum{40}$\abplz{4}
+\item $10^{3-\lg(0.4)} =  \LoesungsRaum{2\,500}$\abplz{4}
+\item $10^{500-\lg(8^{500})} = \LoesungsRaum{1.25^{500} \approx 2.851\cdot{}10^{48}}$\abplz{6}
+\end{bbwAufgabenBlock}
+
+
+%%\platzFuerBerechnungenBisEndeSeite{}
+\newpage
+
+\textbf{\bbwAufgabenNummer{}.}
+Bestimmen Sie $x$, indem Sie die logarithmische Gleichung erst in die
+Potenz-Form bringen:
+$$\lg(x) = p \Longleftrightarrow 10^p = x$$
+
+Prüfen Sie Ihr Resultat, indem Sie das gefundene $x$ wieder in die
+ursprüngliche Gleichung einsetzen.
+
+\begin{bbwAufgabenBlock}
+\item $\lg(x+1)= 3  \LoesungsRaum{x=999}$\abplz{4}
+\item $\lg(\frac12 x - 14)= 2  \LoesungsRaum{x=228}$\abplz{4}
+\item $\lg(2x+3)= 6  \LoesungsRaum{x=499\,998.5}$\abplz{4}
+\item $\lg\left(\sqrt{x}\right)= 2  \LoesungsRaum{x=10\,000}$\abplz{4}
+\item $\lg\left(\frac2{x+3}\right)=
+1  \LoesungsRaum{x=\frac{-14}5}$\abplz{4}
+
+challenge:
+
+\item $10 = \sqrt[x+3]{35000}   \LoesungsRaum{10^{x+3} = 35000 \Longrightarrow x+3 = 35\,000 \Longrightarrow 10^x = 35 \Longrightarrow x=\lg{}(35) \approx 1.5441}$\abplz{4}
+
+
+\item $\lg\left( x^2-2x+1.1 \right)= -1  \LoesungsRaum{x=1}$\abplz{4}
+
+\end{bbwAufgabenBlock}
+
+%%\platzFuerBerechnungenBisEndeSeite{}
+\newpage
+\section{andere Basen}
+
+\textbf{\bbwAufgabenNummer{}.}
+Schreiben Sie in der Potenzschreibweise und berechnen Sie $x$ von
+Hand.
+Prüfen Sie Ihr Resultat mit dem Taschenrechner.
+
+
+\begin{bbwAufgabenBlock}
+\item $x = \log_{10}(100)  \LoesungsRaum{x=2}$\abplz{2}
+%neu:
+\item $3 = \sqrt[x]{81}  \LoesungsRaum{\Longrightarrow 3^x=81 \Longrightarrow x=\log_3{}(81) = \log_3{3^4} = 4}$\abplz{2}
+
+\item $x = \log_3(9)  \LoesungsRaum{x=2}$\abplz{2}
+\item $x = \log_2(8)  \LoesungsRaum{x=3}$\abplz{2}
+
+%neu
+\item $2 = \sqrt[x]{512}  \LoesungsRaum{\Longrightarrow 2^x=512 \Longrightarrow x=\log_2{}(512) = \log_2{2^9} = 9}$\abplz{2}
+
+
+\item $x = \log_{25}(5)  \LoesungsRaum{x=0.5}$\abplz{2}
+\noTRAINER{\newpage}
+\item $x = \log_3(81)  \LoesungsRaum{x=4}$\abplz{2}
+\item $x = \log_2\left(\frac1{16}\right)  \LoesungsRaum{x=-4}$\abplz{2}
+\end{bbwAufgabenBlock}
+
+%%\platzFuerBerechnungenBisEndeSeite{}
+\newpage
+
+\textbf{\bbwAufgabenNummer{}.}
+Schreiben Sie in der logarithmischen Form und berechnen Sie die
+Unbekannte anschließend von Hand oder mit dem Taschenrechner.
+
+\begin{bbwAufgabenBlock}
+\item $2^x = 10$   \LoesungsRaum{$x=\log_2(10) \approx 3.322$}\abplz{2}
+%neu
+\item $10=\sqrt[x]{500}$ \LoesungsRaum{$10^x=500 \Longrightarrow x=\lg{500} \approx 2.6990$}\abplz{3.2}
+
+\item $2^y = \frac{1}{64}$   \LoesungsRaum{$x=-6$}\abplz{3.2}
+\item $2^z = \sqrt{2^6}$   \LoesungsRaum{$x=3$}\abplz{2}
+\item $4^t= 1$   \LoesungsRaum{$x=0$}\abplz{2}
+\end{bbwAufgabenBlock}
+
+
+
+%%\platzFuerBerechnungenBisEndeSeite{}
+\newpage
+
+\textbf{\bbwAufgabenNummer{}.}
+Bestimmen Sie die folgenden Logarithmen von Hand.
+
+\begin{bbwAufgabenBlock}
+\item $\log_4(16)     =    \LoesungsRaum{2}$\abplz{2}
+\item $\log_{17}(1)     =    \LoesungsRaum{0}$\abplz{2}
+\item $\log_4(2)     =    \LoesungsRaum{0.5}$\abplz{2}
+\item $\log_{25}(\sqrt{5})     =    \LoesungsRaum{0.25}$\abplz{2}
+\item $\log_{27}(9)     =    \LoesungsRaum{\frac23}$\abplz{2}
+\end{bbwAufgabenBlock}
+
+%%\platzFuerBerechnungenBisEndeSeite{}
+\newpage
+
+\textbf{\bbwAufgabenNummer{}.}
+Bestimmen Sie die Basis $x$:
+
+\begin{bbwAufgabenBlock}
+\item $\log_x(8) = 3 \Longrightarrow x =    \LoesungsRaum{2}$\abplz{2}
+\item $\log_x(0.125) = -3 \Longrightarrow x =    \LoesungsRaum{2}$\abplz{2}
+\item $\log_x(2) = \frac12 \Longrightarrow x =    \LoesungsRaum{4}$\abplz{2}
+\item $\log_x\left(\frac17\right) = -1 \Longrightarrow x =    \LoesungsRaum{7}$\abplz{2}
+\item $\log_x\left(\frac1{5^4}\right) = \frac15 \Longrightarrow x =    \LoesungsRaum{4}$\abplz{2}
+
+\end{bbwAufgabenBlock}
+
+
+%%\platzFuerBerechnungenBisEndeSeite{}
+\newpage
+
+\textbf{\bbwAufgabenNummer{}.}
+Bestimmen Sie den Numerus $x$:
+
+\begin{bbwAufgabenBlock}
+\item $\log_{10}(x) = 3 \Longrightarrow x =    \LoesungsRaum{1000}$\abplz{2}
+\item $\log_{2}(x) = 5 \Longrightarrow x =    \LoesungsRaum{32}$\abplz{2}
+\item $\log_{0.5}(x) = 16 \Longrightarrow x =    \LoesungsRaum{\frac1{2^{16}}\approx 15.3\cdot{}10^{-6}}$\abplz{2}
+\item $\log_{3}(x) = -4 \Longrightarrow x =    \LoesungsRaum{\frac1{81}}$\abplz{2}
+\end{bbwAufgabenBlock}
+
+
+
+%%\platzFuerBerechnungenBisEndeSeite{}
+\newpage
+
+\textbf{\bbwAufgabenNummer{}.}
+Berechnen Sie jeweils $x$:
+
+\begin{bbwAufgabenBlock}
+\item $x=\log_p(p) \Longrightarrow x =    \LoesungsRaum{1}$\abplz{1.6}
+\item $x=\log_c(1) \Longrightarrow x =    \LoesungsRaum{0}$\abplz{1.6}
+%%
+\item $c^2= \sqrt[x]{c^4} \Longrightarrow x =    \LoesungsRaum{2}$\abplz{2}
+
+\item $x=\log_r(r^3) \Longrightarrow x =    \LoesungsRaum{3}$\abplz{1.6}
+\item $x=\log_5\left(\sqrt[4]{5}\right) \Longrightarrow x =    \LoesungsRaum{0.25}$\abplz{3.2}
+\item $x=\log_t\left(t^2\cdot{}\sqrt[3]{t}\right) \Longrightarrow x =    \LoesungsRaum{\frac73}$\abplz{3.2}
+\noTRAINER{\newpage}
+\item $x=\log_a\left( \frac1{a^{-2}\cdot{} \sqrt{a}} \right) \Longrightarrow x =    \LoesungsRaum{1.5}$\abplz{4}
+\item $25=\sqrt[a\cdot{}x]{5^3}  \Longrightarrow x =    \LoesungsRaum{\frac3{2a}}$\abplz{4}
+
+\end{bbwAufgabenBlock}
+
+
+%%\platzFuerBerechnungenBisEndeSeite{}
+\newpage
+
+\textbf{\bbwAufgabenNummer{}.}
+Berechnen Sie jeweils $x$ mit dem Taschenrechner. Schreiben Sie die
+Gleichung wenn nötig vorab in der Potenzschreibweise:
+
+$$x=\log_b(p) \Longleftrightarrow b^x=p$$
+
+\begin{bbwAufgabenBlock}
+\item $x=\log_2(5) \Longrightarrow x \approx    \LoesungsRaum{2.322}$\abplz{2}
+\item $11.3 = \log_6(x) \Longrightarrow x \approx    \LoesungsRaum{621 \text{ Mio.}}$\abplz{2}
+\item $12 = \log_x(2) \Longrightarrow x \approx    \LoesungsRaum{1.059}$\abplz{2}
+\item $x = \log_{16}(15)  \Longrightarrow x \approx    \LoesungsRaum{0.9767}$\abplz{2}
+\item $10 = \log_{1.5}(x)  \Longrightarrow x \approx    \LoesungsRaum{57.67}$\abplz{2}
+\item $\frac34 = \log_{x}\left(\frac52\right)  \Longrightarrow x \approx    \LoesungsRaum{3.393}$\abplz{2}\\
+
+\noTRAINER{\newpage}
+
+challenge:
+
+\item $70=20 + 25 \cdot{} 1.43^{\frac{x}3}  \Longrightarrow x \approx    \LoesungsRaum{5.814}$\abplz{2}
+
+\end{bbwAufgabenBlock}
+
+%%\platzFuerBerechnungenBisEndeSeite{}
+\newpage
+
+\section{Logarithmus Naturalis}
+
+$$\ln = \log_e$$
+$$e\approx 2.71828 \text{ (= Eulersche Zahl)}$$
+
+
+
+\textbf{\bbwAufgabenNummer{}.}
+Berechnen Sie $x$ von Hand:
+
+\begin{bbwAufgabenBlock}
+\item $\e^x = \frac1{\sqrt[4]{\e^7}}  \Longrightarrow x =    \LoesungsRaum{\frac{-7}4}$\abplz{2}
+\item $x = \ln\left(\e^3\right)  \Longrightarrow x =    \LoesungsRaum{3}$\abplz{2}
+\item $\ln\left(\sqrt{x}\right)  = \frac12  \Longrightarrow x =    \LoesungsRaum{\e}$\abplz{4}
+\item $\ln\left(x\cdot{} \e \right)  = -2  \Longrightarrow x =    \LoesungsRaum{\e^{-3}}$\abplz{4}
+\noTRAINER{\newpage}
+\item $\ln(x+1) = 2 \Longrightarrow x =    \LoesungsRaum{\e^2 - 1}$\abplz{3.2}
+\item $x=\frac{\e^{\ln(2)+1}}{\e} \Longrightarrow x =    \LoesungsRaum{2}$\abplz{2}
+\item $3 = \e^{\frac{x}4} \Longrightarrow x=    \LoesungsRaum{4\cdot{} \ln(3) (\approx 4.394)}$\abplz{4}
+\item $e^2 = \sqrt[x]{100} \Longrightarrow x= \LoesungsRaum{\frac12\cdot{}\ln(100)}$\abplz{4}
+\end{bbwAufgabenBlock}
+
+%%\platzFuerBerechnungenBisEndeSeite{}
+\newpage
+
+\section{Anwenden der Logarithmengesetze}
+\TRAINER{nur TALS}
+
+\textbf{\bbwAufgabenNummer{}.}
+Zerlegen Sie mit Hilfe der Logarithmengesetze so weit wie möglich.
+
+Beispiel $$\log\left(a\cdot{}b^3\right) = \log(a) + 3\cdot{}\log(b)$$
+
+\begin{bbwAufgabenBlock}
+\item $\log_x(ab)  \LoesungsRaum{\log_x(a) + \log_x(b)}$\abplz{2}
+\item $\log_x(3xy)  \LoesungsRaum{\log_x(3) + 1 + \log_x(y)}$\abplz{3.2}
+\item $\ln(12u+4uv)  \LoesungsRaum{\ln(4) + \ln(u) + \ln(3+v)}$\abplz{3.2}
+\item $\log_a(16p^8-p^4) \LoesungsRaum{4\cdot{}\log_a(p)+ \log_a(2p+1) + \log_a(2p-1)+ \log_a(4p^2+1)}$\abplz{6}
+\noTRAINER{\newpage}
+
+\item $\lg\left(\frac{c}{10}\right)  \LoesungsRaum{\lg(c) - 1}$\abplz{2}
+\item $\log_a\left( m^2n^3 \right)  \LoesungsRaum{2\cdot{}\log_a(m) + 3\cdot{}\log_a(n)}$\abplz{2}
+\item $\log_a\left( \frac{p^3}{a^2 \cdot{} \sqrt[3]{p^4}} \right)  \LoesungsRaum{\left(3-\frac43\right)\cdot{}\log_a(p)- 2}$\abplz{6}
+\item
+$\lg\left(\left(\frac{a^3}{b^4}\right)^{10}\right)  \LoesungsRaum{10\cdot{}\left(3 \cdot{}\lg(a) - 4\cdot{} \lg(b)\right)}$\abplz{6}
+\noTRAINER{\newpage}
+
+\item $\log \left( \sqrt[5]{a^2-b^2}\right)  \LoesungsRaum{\frac15\left(\log(a+b) + \log(a-b)\right)}$\abplz{6}
+
+\end{bbwAufgabenBlock}
+
+%%\platzFuerBerechnungenBisEndeSeite{}
+\newpage
+
+
+\textbf{\bbwAufgabenNummer{}.}
+Fassen Sie zu einem einzigen Logarithmus zusammen und vereinfachen Sie
+so weit wie möglich:
+
+\begin{bbwAufgabenBlock}
+\item $\lg(b^2) - \lg(b) - \lg(c) \LoesungsRaum{\lg\left(\frac{b}c\right)}$\abplz{3.2}
+\item $\log(x^2-y^2) - \log(x+y) \LoesungsRaum{\log(x-y)}$\abplz{4}
+\item $1+\lg(a)+2\lg(b)  \LoesungsRaum{\lg\left( 10ab^2 \right)}$\abplz{4}
+\item $\ln\left(\e^2-1\right) + \frac16 - \ln(\e-1) \LoesungsRaum{\ln\left((e+1)\cdot{}\sqrt[6]{e}\right)}$\abplz{6}
+\item $\log(2n-8) - \log\left(n^2+n-20\right) \LoesungsRaum{\log\left(\frac{2}{n+5}\right)}$\abplz{4}
+
+\end{bbwAufgabenBlock}
+
+
+
+\platzFuerBerechnungenBisEndeSeite{}%
+\end{document}%
