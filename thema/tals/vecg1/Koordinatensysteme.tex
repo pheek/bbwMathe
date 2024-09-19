@@ -45,9 +45,9 @@ Tragen Sie die fehlenden Werte in die Tabelle ein\footnote{Der
   $x$-Komponente & \TRAINER{3}\noTRAINER{\hspace{10em}}      & \TRAINER{-1}\noTRAINER{\hspace{10em}}   \\\hline
   $y$-Komponente & \TRAINER{1}      & \TRAINER{2}     \\\hline
   Betrag\index{Betrag!eines Vektors} (=Länge) & \TRAINER{$\sqrt{10}$}     & \TRAINER{$\sqrt{5}$}     \\\hline
-  math. pos. Winkel  & \TRAINER{$\arctan{}\left(\frac13\right)\approx
-    18.43\degre$} & \TRAINER{$90\degre +
-    \arctan{}\left(\frac12\right)\approx 116.6\degre$}               \\\hline
+%  math. pos. Winkel  & \TRAINER{$\arctan{}\left(\frac13\right)\approx
+%    18.43\degre$} & \TRAINER{$90\degre +
+%    \arctan{}\left(\frac12\right)\approx 116.6\degre$}               \\\hline
 \end{bbwFillInTabular}
 
 Koordinatenschreibweise von $\color{blue}\vec{a}$ und $\color{red}\vec{b}$:\,\,
@@ -71,9 +71,22 @@ $$\vec{a} + \vec{b} =   \left(x_a \atop y_a \right)  + \left( x_b \atop y_b \rig
   \end{beispiel}
 
 \begin{definition}{Ortsvektor}{}\index{Ortsvektor}
-  Derjenige Repräsentant eines Vektors, welcher im Ursprung $(0|0)$
+  Derjenige Repräsentant eines Vektors, welcher im Ursprung $\mathcal{O} = (0|0)$
   startet, wird \textbf{Ortsvektor} genannt.
-  \end{definition}
+\end{definition}
+
+\bbwGraph{-1}{5}{-1}{4}{
+\bbwLetter{3.5,0.5}{\vec{a}}{blue}
+\draw [->,blue] (1,0.5) -- (4,1.5);
+\bbwLetter{4.5,2.5}{\vec{b}}{blue}
+\draw [->,blue] (4,1.5) -- (3,3.5);
+\TRAINER{%%
+\bbwLetter{2,2.5}{\vec{c}}{red}
+\draw [->,red] (1,0.5) -- (3,3.5);
+}%% end TRAINER
+}%% END bbwGraph
+
+
 
 \subsection*{Aufgaben}    
 %%    \TALSAadBFWG{188}{46. a) c) und d), 47. und 48.}

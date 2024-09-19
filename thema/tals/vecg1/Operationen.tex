@@ -61,26 +61,26 @@ Fahrzeugs) haben, da es jedoch keine Bewegung hat, spielt die
 
 \begin{definition}{Nullvektor}{}
   Der Nullvektor wird mit
-  $$\vec{0}$$
+  $$\overrightarrow{0}$$
   bezeichnet.
 
   Der Nullvektor hat weder Länge noch Richtung.
 \end{definition}
 
 \begin{gesetz}{}{}
-  $$\overrightarrow{AA} = \vec{0}$$
+  $$\overrightarrow{AA} = \overrightarrow{0}$$
   \end{gesetz}
 
 \begin{bemerkung}{}{}
   Der Nullvektor ist neutral gegenüber der Addition:
-  $$\vec{a} + \vec{0}  = \vec{a}$$
+  $$\vec{a} + \overrightarrow{0}  = \vec{a}$$
 \end{bemerkung}
 
 \subsection*{Aufgabe}
 %%\TALSAadBFWG{180}{8.}
 Die drei Vektoren $\vec{a}$, $\vec{b}$ und $\vec{c}$ haben alle den
 selben Betrag. Zeichnen Sie die drei Vektoren so, dass
-gilt $$\vec{a}+\vec{b}+\vec{c} = \vec{0}$$
+gilt $$\vec{a}+\vec{b}+\vec{c} = \overrightarrow{0}$$
 \TNTeop{Lösung: Gleichseitiges Dreieck}
 
 \newpage
@@ -97,7 +97,7 @@ gilt $$\vec{a}+\vec{b}+\vec{c} = \vec{0}$$
 
 \begin{bemerkung}{Gegenvektor}{}
   Für den Gegenvektor $(-\vec{a})$ zum Vektor $\vec{a}$ gilt:
-  $$\vec{a} + (-\vec{a}) = \vec{0}$$
+  $$\vec{a} + (-\vec{a}) = \overrightarrow{0}$$
   
 \end{bemerkung}
 
@@ -157,9 +157,22 @@ gilt $$\vec{a}+\vec{b}+\vec{c} = \vec{0}$$
 \end{beispiel}
 \newpage
 
-\subsection*{Aufgaben}
-\TALSAadBMTG{245}{5. c) }
+\subsection*{Aufgabe}
+Zeichnen Sie einen Repräsentaten des Vektors $\frac34\vec{a}$ und einen Repräsentanten des Vektors $-1.25 \cdot{} \vec{a}$!
+
+
+\bbwGraphLeer{-5}{7}{-2}{4}{
+\bbwLetter{2,2}{\vec{a}}{blue}
+\draw [->,blue] (1,1) -- (5,3);
+\TRAINER{%%
+\bbwLetter{5,1}{\frac34\vec{a}}{red}
+\draw [->,red] (3,1) --(6, 2.5);
+\bbwLetter{-3,1}{-1.25\vec{a}}{red}
+\draw [->,red] (2,2.5) --(-4,-0.5);
+}%% end TRANIER
+}%% end bbwGraph
 \newpage
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Subtraktion}\index{Subtraktion!von Vektoren}
@@ -192,7 +205,7 @@ Grafik: Es gilt: $\vec{x} + \vec{b} = \vec{a}$ und das heißt $\vec{a}
 
 \subsection*{Aufgaben}
 %%\TALSAadBFWG{179ff}{6. (2) und (4), 7. b) c) 9. und 10. a) c) i)}
-\TALSAadBMTG{245ff}{5. d) e) f), 6. a) c), 7.}
+\TALSAadBMTG{245ff}{5. c) d) e) f), 6. a) c), 7.}
 %%\TALSAadBMTG{264}{29. a) d)}
 \newpage
 
@@ -261,9 +274,8 @@ In obigem Beispiel ist
 
   Mittels Division durch $2$ erhalten wir $\vec{c}$:
 
-  $\vec{c} = -\frac18\vec{a\vphantom{b}} + \frac12 \vec{b}$
+  $\vec{c} = -\frac18\vec{a\vphantom{b}} + \frac12 \vec{b}.$
 
-  .
 
   Geometrisch: Setze zwei Parallele zu $\vec{a}$ und $\vec{b}$ durch
   je die entgegengesetzten Enden von $\vec{c}$.
@@ -271,19 +283,18 @@ In obigem Beispiel ist
 %%\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Welche Spezialfälle kommen Ihnen in den Sinn, wodurch eine solche Zerlegung
-nicht eindeutig möglich ist?
+In einigen Fällen ist eine solche \textbf{Zerlegung in Linearfaktoren nicht} möglich:
 
-\TNT{15.2}{
-Die Zerlegung ist nicht eindeutig möglich, wenn $\vec{a}$ parallel zu $\vec{b}$
-ist.
+\begin{itemize}
+\item $\vec{a}$ kollinear zu $\vec{b}$ und $\vec{c}$ nicht parallel dazu: \LoesungsRaumLen{58mm}{Zerlegung nicht möglich}
 
-1. Fall $\vec{c}$ ist nicht parallel zu $\vec{a}$ (und $\vec{b}$),
-dann gibt es keine Zerlegung.
+\item $\vec{a}$ kollinear zu $\vec{b}$ und $\vec{c}$ parallel zu $\vec{a}$ bzw. $\vec{b}$: \LoesungsRaumLen{56mm}{Zerlegung nicht eindeutig}
 
-2. Fall $\vec{c}$ ist auch parallel zu $\vec{a}$ (und $\vec{b}$), dann
-gibt es unendlich viele Zergelungsmöglichkeiten.
-}
+\item $\vec{a} = \overrightarrow{0}$ und $\vec{b}  \ne \overrightarrow{0}$: \LoesungsRaumLen{105mm}{Zerlegung nur möglich, wenn $\vec{c}$ parallel zu $\vec{b}$.}
+
+  
+\end{itemize}
+
 
 \subsection*{Aufgaben}
 
