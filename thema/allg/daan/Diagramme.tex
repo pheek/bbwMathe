@@ -220,20 +220,37 @@ Ein weiteres Lagemaß ist der \textbf{Median}:
 
 Gegeben sind die folgenden Messwerte:
 
-\begin{center}7.1; 3.2; 8.1; 4.3; 9.6; 9.5; 2.4; 7.7\end{center}
+
+
+
+\begin{center}8; 2; 3; 2; 11; 5; 7\end{center}
 
 1. Schritt: Sortieren
 
-\begin{center}2.4; 3.2; 4.3; 7.1; 7.7; 8.1; 9.5; 9.6\end{center}
+\begin{center}2; 2; 3; 5; 7; 8; 11\end{center}
 
 2. Schritt: Mittleren Wert finden:
 
-\begin{center}2.4; 3.2; 4.3; \textbf{7.1}; 7.7; 8.1; 9.5; 9.6\end{center}
+\begin{center}2; 2; 3; \textbf{5}; 7; 8; 11\end{center}
 
+  $$\mediantilde{x} = \LoesungsRaumLen{20mm}{5}$$
+  
 \begin{definition}{Median}{}
   Der mittlere Wert einer sortierten Datenreihe wird
-  \textbf{Median}\index{Median} genannt.
+  \textbf{Median}\index{Median} genannt und wird mit $\mediantilde{x}$ bezeichnet.
+
+  Bei einer geraden Anzahl von Messwerten wird der Durchschnitt der beiden mittleren Werte genommen.
 \end{definition}
+
+
+\begin{beispiel}{Median bei gerader Anzahl Werte}{}
+In der folgenden sortierten Messreihe hat es zwei «mittlere Werte»
+\begin{center}2.4; 3.2; 4.3; \textbf{7.1}; \textbf{7.7}; 8.1; 9.5; 9.6\end{center}
+  Der Median ist demnach
+
+  $$\mediantilde{x} = \frac{7.1 + 7.7}2 = \LoesungsRaumLen{25mm}{7.4}$$
+
+\end{beispiel}
 
 \subsection*{Aufgaben}
 \olatLinkGESOKompendium{4.2}{37}{5.}
