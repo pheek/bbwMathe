@@ -86,11 +86,3 @@ cp -f ./TALS_S_VECG2/*.pdf  ${BBW_WEBDAV_PATH_FP}/i_tals/thema/spf/vecg2/skript
 
 echo 'copying TALS Einzelkapitel'
 cp -f ./TALS_S_Faktorisieren/*.pdf ${BBW_WEBDAV_PATH_FP}/i_tals/thema/glf/aa1/faktorisieren
-
-
-
-
-
-
-
-
