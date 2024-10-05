@@ -6,9 +6,15 @@
 
 \input{bmsLayoutPage}
 
+\ifisNURAUFGABEN{
+\newcommand{\LoesungsBlock}[1]{\TRAINER{Lösung:#1
+\vspace{1mm}
+\hrule}}%% end new Command "LoesungsBlock"
+\else
 \newcommand{\LoesungsBlock}[1]{\noTRAINER{\TNTeop{}}\TRAINER{Lösung:#1
 \vspace{1mm}
-\hrule}}
+\hrule}}%% end new Command "LoesungsBlock"
+\fi
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{amssymb} %% für \blacktriangleright
