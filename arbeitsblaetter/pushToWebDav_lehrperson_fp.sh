@@ -51,6 +51,9 @@ cp -f ./datenanalyse/DiagrammeLesen/*.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_al
 echo "  Boxplot for TI 30"
 cp -f ./datenanalyse/boxplotTI30/boxplotTI30_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/daan/boxplot/boxplotTI30.pdf
 
+echo "  Bruchrechnen Arbeitsblatt"
+cp -f ./algebra/bruchrechnen/Uebungen/*.pdf /${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/bruchrechnen/uebungen/
+
 echo "  Bruchrechnen GESO"
 cp -f ./algebra/bruchrechnen/GESO_Abschlusspruefungsaufgaben/BruchrechnenGESO_Maturaaufgaben_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/aa1/bruchrechnen/BruchrechenenGESO_Maturaaufgaben.pdf
 cp -f ./algebra/bruchrechnen/GESO_Abschlusspruefungsaufgaben/BruchrechnenGESO_Maturaaufgaben_TRAINER_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/aa1/bruchrechnen/BruchrechenenGESO_Maturaaufgaben_Trainer.pdf
@@ -58,6 +61,8 @@ cp -f ./algebra/bruchrechnen/GESO_Abschlusspruefungsaufgaben/BruchrechnenGESO_Ma
 echo "  Bruchrechnen Arbeitsblatt 1: Wann Kürzen"
 cp -f ./algebra/bruchrechnen/WannBruecheKuerzen/WannBruecheKuerzen_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/bruchrechnen/wannKuerzen/WannBruecheKuerzen_ALLG.pdf
 cp -f ./algebra/bruchrechnen/WannBruecheKuerzen/WannBruecheKuerzen_TRAINER_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/bruchrechnen/wannKuerzen/WannBruecheKuerzen_TRAINER_ALLG.pdf
+
+
 
 echo "  Logarithme Arbeitsblatt"
 cp -f ./algebra/logarithmen/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/logarithmus/arbeitsblatt/
