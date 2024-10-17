@@ -62,7 +62,8 @@ echo "  Bruchrechnen Arbeitsblatt 1: Wann Kürzen"
 cp -f ./algebra/bruchrechnen/WannBruecheKuerzen/WannBruecheKuerzen_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/bruchrechnen/wannKuerzen/WannBruecheKuerzen_ALLG.pdf
 cp -f ./algebra/bruchrechnen/WannBruecheKuerzen/WannBruecheKuerzen_TRAINER_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/bruchrechnen/wannKuerzen/WannBruecheKuerzen_TRAINER_ALLG.pdf
 
-
+echo "  Lineare Gleichungen Arbeitsblatt"
+cp -f ./gleichungen/lineare/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/lineare/arbeitsblatt/
 
 echo "  Logarithme Arbeitsblatt"
 cp -f ./algebra/logarithmen/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/logarithmus/arbeitsblatt/

@@ -1,0 +1,238 @@
+%%
+%% Meta: TI nSpire Einführung
+%%       Ziel: Damit die Grundoperationen damit durchgeführt werden können.
+%%             Damit man sich an den Rechner gewöhnt.
+%%
+
+\input{bmsLayoutPage}
+\renewcommand{\bbwAufgabenBlockID}{Gl1Li}
+
+\ifisNURAUFGABEN{
+\newcommand{\LoesungsBlock}[1]{\TRAINER{#1
+\vspace{1mm}
+\hrule}}%% end new Command "LoesungsBlock"
+\else
+\newcommand{\LoesungsBlock}[1]{\noTRAINER{\TNTeop{}}\TRAINER{#1
+\vspace{1mm}
+\hrule}}%% end new Command "LoesungsBlock"
+\fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amssymb} %% für \blacktriangleright
+\renewcommand{\metaHeaderLine}{Arbeitsblatt Lineare Gleichungen}
+\renewcommand{\arbeitsblattTitel}{Lineare Gleichungen Trainingsaufgaben}
+
+\newcommand{\TNTeopS}[1]{\TRAINER{#1}\noTRAINER{\TNTeop{}}}
+
+\begin{document}%%
+\arbeitsblattHeader{}
+
+\begin{center}\textit{\tiny{V 0.99 17. Okt. 2024}}\end{center}
+
+\tableofcontents{}
+
+\newpage
+
+\section{Nach $x$ auflösen}
+Lösen Sie nach der Variable $x$ auf:
+
+
+%%\nextBbwAufgabenNummer{}
+
+\begin{bbwAufgabenBlock}
+\item $$5x + 2 = 7x -4$$
+\LoesungsBlock{$\lx = \{3\}$}
+
+\item $$3x-(5-6x)=2-x$$
+\LoesungsBlock{$\lx=\{0.u7\} = \{\frac7{10}\}$}
+
+\item $$\sqrt{2}\cdot{}x + 3 = \sqrt{7} - x$$
+\LoesungsBlock{$\lx=\{\frac{\sqrt{7}-3}{\sqrt{2}+1}\}
+= \{\sqrt{14}-\sqrt{7} -3\sqrt{2}+3 \} \approx -0.146735$}
+
+\item $$5-x(x-4) = 5x-x^2+6$$
+\LoesungsBlock{$\lx=\{-1\}$}
+
+\item $$\frac15 + \frac{3x(1-x)}{8} = \frac14 - \frac{(3x-3)(x-2)}{8}$$
+\LoesungsBlock{$\lx=\{\frac{16}{15}\}$}
+
+\item $$(3x-2)^2 -x(x-3(x-4))  + 5 = 11x^2$$
+\LoesungsBlock{$\lx=\{\frac38\}$}
+
+\end{bbwAufgabenBlock}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+\section{Lösungsmenge}
+Geben Sie die Lösungsmenge $\lx$ an:
+
+\begin{bbwAufgabenBlock}
+
+\item $$5x+3 = 5x-2$$
+\LoesungsBlock{$\lx=\{\}$}
+
+\item $$3(x-1)-x = 2x=3$$
+\LoesungsBlock{$\lx=\mathbb{R}$}
+
+\item $$2(2x-1)-x+1 = 3(x+1)$$
+\LoesungsBlock{$\lx=\{\}$}
+
+\item $$7x+2 = -(18x - 2)$$
+\LoesungsBlock{$\lx=\{0\}$}
+
+\item $$\frac{3(x+2)}2 - 1 = \frac32 \cdot{} x + 2$$
+\LoesungsBlock{$\lx=\mathbb{R}$}
+
+\item $$5x^2 + 2 = -5(x+2)(-x+2)$$
+\LoesungsBlock{$\lx=\{\}$}
+
+\item $$\frac{x}{10} + \frac{75}{77} = \frac{7x+6}{14} - \frac{22x-30}{55}$$
+\LoesungsBlock{$\lx=\mathbb{R}$}
+
+\end{bbwAufgabenBlock}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\section{Parameter}
+Lösen Sie jeweils nach $x$ auf. (Eine Fallunterscheidung ist nicht verlangt.)
+\begin{bbwAufgabenBlock}
+\item $$4x-4t = x+ 11t$$
+\LoesungsBlock{$\lx=\{5t\}$}
+
+\item $$5x-3a = 3x+2a-4$$
+\LoesungsBlock{$\lx=\{\frac{5a}{2} - 2\} = \{\frac{5a-4}{2}\}$}
+
+\item $$a^2x+a = a^3 -a$$
+\LoesungsBlock{$\lx=\{\frac{-2}{a(1-a)}\}$}
+
+\item $$ax + 2b = 3cx +4d$$
+\LoesungsBlock{$\lx=\{\frac{4d-2b}{a-3c}\}$}
+
+\item $$ax = -x-a-1$$
+\LoesungsBlock{$\lx=\{1\}$}
+
+\item $$\sqrt{7}\left(\sqrt{28}ax+3b\right) = -x-bx\left(1-\frac17a\right)$$
+\LoesungsBlock{$\lx=\left\{\frac{-6 -3\sqrt{7}b}{14a+b-\frac{ab}7}\right\}
+= \left\{\frac{-42 -21\sqrt{7}b}{98a+7b-ab}\right\}$}
+
+\item $$(x+2s)^2 = 2x(x+3s)-x(x+3)$$
+\LoesungsBlock{$\lx=\left\{\frac{4s^2}{2s-3}\right\}$}
+
+\item $$\frac13(a+x) = \frac12 a + \frac{x}5$$
+\LoesungsBlock{$\lx=\{\frac54\cdot{}a\}$}
+
+\item $$$$
+\LoesungsBlock{$\lx=\{\}$}
+\end{bbwAufgabenBlock}
+\newpage
+\section{Andere Variable als $x$}
+Lösen Sie nach anderen Variablen auf:
+
+\begin{bbwAufgabenBlock}
+
+\item Lösen Sie nach $r$ auf:
+ $$S= 2G + 2r\pi\cdot{}h$$
+\LoesungsBlock{$r = \frac{S-2G}{2\pi h}$}
+
+\item
+Lösen Sie nach $p$ auf:
+$$K_1 = K_0 + K_0 \cdot{}\frac{p}{100}$$
+\LoesungsBlock{$p = \frac{100}{K_0} \cdot{} (K_1 - K_0 )$}
+
+\item Lösen SIe nach $a$ auf:
+$$T = \frac13 (ab + ac + bc)$$
+\LoesungsBlock{$a = \frac{3T - bc}{b+c}$}
+
+\end{bbwAufgabenBlock}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+\section{TALS: Mit Fallunterscheidung}
+Lösen Sie nach $x$ auf und diskutieren Sie die Sonderfälle, die durch
+die gegebenen Parameter entstehen können:
+\begin{bbwAufgabenBlock}
+\item $$(a-5)x = 0$$
+\LoesungsBlock{$\lx=\{0\}$. Soderfall $a=5$, dann: $\lx = \mathbb{R}$.}
+
+\item $$a^2x+a = a^3x - a$$
+\LoesungsBlock{$\lx=\{\frac{2a}{a^3-a^2}\}$. Sonderfälle $a=0$, dann:
+$\lx = \mathbb{R}$ und $a=1$, dann: $\lx = \{\}$.}
+
+\item $$(s^2 + 3s - 10)x = s-2$$
+\LoesungsBlock{$\lx=\left\{\frac{1}{s+5}\right\}$. Sonderfälle $s=2$,
+dann: $\lx = \mathbb{R}$ und $s=-5$, dann $\lx = \{\}$.}
+
+\item $$ax+b^2 = a^2 - bx$$
+\LoesungsBlock{$\lx=\{a-b\}$. Sonderfall $a=-b$, dann $\lx = \mathbb{R}$.}
+
+\item $$a^2x-b = a+b^2x$$
+\LoesungsBlock{$\lx=\left\{\frac1{a-b}\right\}$. Sonderfall $a=b=0$,
+dann $\lx = \mathbb{R}$; Sonderfall $a=b\ne 0$, dann $\lx = \{\}$;
+Sonderfall $a=-b$, dann $\lx=\mathbb{R}$.}
+\end{bbwAufgabenBlock}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Kontrolle (Testen Sie Ihr Können)}
+
+Aus alten Aufnahme und Abschlussprüfungen
+
+\subsection{Aufnahmeprüfung 2023 Serie D}
+Aufgabe 4.
+
+$$2b = \frac{ab+8}{7}$$
+
+a) Lösen Sie die (obige) Gleichung nach der Variable $a$ auf.
+
+\LoesungsBlock{$$a = \frac{14b-8}{b}$$ (Falls $b\ne 0$)}
+
+b) Lösen Sie die (obige) Gleichung nach der Variable $b$ auf.
+
+\LoesungsBlock{$$b = \frac8{14-a}$$ (Falls $a\ne 14$)}
+
+\subsection{Aufnahmeprüfung 2021 Serie A1}
+Aufgabe 2. b)
+
+Berechnen Sie die Lösung der Gleichung
+
+$$\frac{21x}{4} - \frac{18(4-x)}{8} = 6x$$
+
+\LoesungsBlock{$x=6$}
+
+\subsection{Abschlussprüfung GESO 2023 Serie 1}
+Aufgabe 4
+
+Lösen Sie die Gleichung nach $x$ auf. Notieren Sie das Ergebnis so
+einfach wie möglich.
+
+$$ax + 50a = 2a^3 + 5x$$
+
+\LoesungsBlock{$x = 2a(a+5)$}
+
+\subsection{Abschulssprüfung GESO 2022 Serie 1}
+Aufgabe 4
+
+Lösen Sie die Gleichung nach $x$ auf. Notieren Sie das Ergebnis so
+einfach wie möglich.
+
+$$5ax - c = a(x+1) = 2(c+x)$$
+
+\LoesungsBlock{$x = \frac{a-c}{4a+2}$}
+
+subsection{Abschulssprüfung GESO 2017 Serie 1}
+Aufgabe 7
+
+$$7a -x -c = \frac{7b^2 -ac +bx}{a}$$
+
+\LoesungsBlock{$x = 7(a+b)$}
+
+\subsection{Abschulssprüfung TALS GLF 2023 Serie 1}
+(GLF = Grundlagenfach)
+
+Aufgabe 2. b)
+
+Berechnen Sie $x$ in Abhängigkeit von $p$:
+
+$$2px + 1 = (p+1)(x+3)$$
+
+\LoesungsBlock{$x = \frac{3p + 2}{p-1}$}
+
+\end{document}
