@@ -281,40 +281,55 @@ Mathematik neue Wege (J. Klötzli et al) Seite 302 Aufgabe 41.
 Bei den folgenden Aufgaben reicht die Scheitelpunkts-Bestimmung der
 quadratischen Funktionen nicht aus. Hoch- bzw. Tiefpunkte können mit
 einem Computer-Algebra-System (CAS) gefunden werden.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Tagestemperatur}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Rechteck unter Parabel}
+Die Temperatur $T$ in $\degre$C einer Stadt kann für eine Periode von 24 Stunden mit der folgenden Funktion
+angenähert werden:
+ $$T(t) = 0.01t(t-24)(t-18)+10$$
+ Dabei wird $t=0$ um 8:00 Uhr morgens betrachtet.
 
-Aus der Fläche zwischen $x$-Achse und der
-Parabel mit $y=4-x^2$ wird ein Rechteck heraus-
-geschnitten:
-
-\bbwCenterGraphic{80mm}{RechteckUnterParabel.png}
-a) 
-Geben Sie die Funktionsgleichung an,
-welche die Abhängigkeit der Rechtecksfläche A von der waagrechten
-Rechtecksseite beschreibt.
+a)
+Zeichnen Sie den Graphen der Funktion.
 
 b) 
-Wie groß muss die waagrechte Seite des
-Rechtecks gewählt werden, damit die
-Rechtecksfläche möglichst groß wird?
+Geben Sie die Definitionsmenge $\mathbb{D}$ und die Wertemenge
+$\mathbb{W}$ der Funktion an.
 
 c)
-Wie groß ist die maximale Rechtecksfläche?
+Bestimmen Sie höchste und tiefste Temperatur und ihre Uhrzeit.
+
+d)
+Wann beträgt die Temperatur 20 $\degre$C?
 
 \TNTeop{
-a) $A(x) = 2xy = -2x^3+8x$
+a)
+\bbwCenterGraphic{90mm}{Tagestemperatur.png}
 
-b)
-\bbwCenterGraphic{80mm}{RechteckUnterParabelLsg.png}
 
-Hochpunkt $H=(1.155; 6.158)$ Die waagrechte Seite ist $2x \approx 2.31$.
+b) Hochpunkt: $H = 6.79; 23.1)$
 
-c) $6.158$
+Tiefpunkt: $T = (21.2; 8.1)$
 
-Marthaler Algebra S. 321 Aufg. 17
-}%% end TNT eop
+$\mathbb{D} = [0;24]$
+
+$\mathbb{W} = [8.1; 23.1]$
+
+c)
+
+Tiefste Temperatur 8.1 $\degre$C um 5:13 Uhr
+
+Höchste Temperatur 23.1 $\degre$C um 14:47 Uhr
+
+d) 
+$20 = 0.01t(t-24)(t-18)+10$
+
+Es folgt: $t_1 = 3.28$, $t_2 = 11.01$ (und $t_3=27.71$ entfällt)
+
+Uhrzeiten: 11:17 Uhr und 19:00 Uhr
+
+Marthaler Algebra Seite 320 Aufgabe 15. 
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Marmorplatte}
 
@@ -350,6 +365,40 @@ Die Maximale Rechtecksfläche beträgt $1.540$.
 
 Marthaler Algebra S. 321 Aufg. 18
 }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Rechteck unter Parabel}
+
+Aus der Fläche zwischen $x$-Achse und der
+Parabel mit $y=4-x^2$ wird ein Rechteck heraus-
+geschnitten:
+
+\bbwCenterGraphic{80mm}{RechteckUnterParabel.png}
+a) 
+Geben Sie die Funktionsgleichung an,
+welche die Abhängigkeit der Rechtecksfläche A von der waagrechten
+Rechtecksseite beschreibt.
+
+b) 
+Wie groß muss die waagrechte Seite des
+Rechtecks gewählt werden, damit die
+Rechtecksfläche möglichst groß wird?
+
+c)
+Wie groß ist die maximale Rechtecksfläche?
+
+\TNTeop{
+a) $A(x) = 2xy = -2x^3+8x$
+
+b)
+\bbwCenterGraphic{80mm}{RechteckUnterParabelLsg.png}
+
+Hochpunkt $H=(1.155; 6.158)$ Die waagrechte Seite ist $2x \approx 2.31$.
+
+c) $6.158$
+
+Marthaler Algebra S. 321 Aufg. 17
+}%% end TNT eop
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Radiergummi}
 Die Firma Flamingo produziert Radiergummis. Die dabei entstehenden
@@ -405,55 +454,6 @@ Vermehrung, zu wenig Nahrung, Krankheiten, ...
 
 Marthaler Algebra Seite 320 Aufg 14.
 }%% end TNT eop
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Tagestemperatur}
-
-Die Temperatur $T$ in $\degre$C einer Stadt kann für eine Periode von 24 Stunden mit der folgenden Funktion
-angenähert werden:
- $$T(t) = 0.01t(t-24)(t-18)+10$$
- Dabei wird $t=0$ um 8:00 Uhr morgens betrachtet.
-
-a)
-Zeichnen Sie den Graphen der Funktion.
-
-b) 
-Geben Sie die Definitionsmenge $\mathbb{D}$ und die Wertemenge
-$\mathbb{W}$ der Funktion an.
-
-c)
-Bestimmen Sie höchste und tiefste Temperatur und ihre Uhrzeit.
-
-d)
-Wann beträgt die Temperatur 20 $\degre$C?
-
-\TNTeop{
-a)
-\bbwCenterGraphic{90mm}{Tagestemperatur.png}
-
-
-b) Hochpunkt: $H = 6.79; 23.1)$
-
-Tiefpunkt: $T = (21.2; 8.1)$
-
-$\mathbb{D} = [0;24]$
-
-$\mathbb{W} = [8.1; 23.1]$
-
-c)
-
-Tiefste Temperatur 8.1 $\degre$C um 5:13 Uhr
-
-Höchste Temperatur 23.1 $\degre$C um 14:47 Uhr
-
-d) 
-$20 = 0.01t(t-24)(t-18)+10$
-
-Es folgt: $t_1 = 3.28$, $t_2 = 11.01$ (und $t_3=27.71$ entfällt)
-
-Uhrzeiten: 11:17 Uhr und 19:00 Uhr
-
-Marthaler Algebra Seite 320 Aufgabe 15. 
-}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Kanal}
@@ -828,8 +828,6 @@ Frappéglases sein muss, damit er möglichst viel Frappé hinein füllen
 kann. Die Mantellinie des Glases ist fest vorgegeben.
 
 \TNTeop{
-
-
 
 Mathematik neue Wege TALS (J. Klötzli et al) Seite 460 Aufg. 10
 }
