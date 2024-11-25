@@ -1002,4 +1002,34 @@ Mathematik neue Wege TALS (J. Klötzli et al) Seite 460 Aufg. 9
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\subsection{Pyramide in Kugel}
+Einer gegebenen Kugel soll eine reguläre quadratische Pyramide so einbeschrieben werden, dass das Volumen der Pyramide maximal wird.
+
+Geben Sie die Höhe der Pyramide in Abhängigkeit vom Radius $r$ an.
+
+\TNTeop{
+Lösung
+
+Zielgröße = Volumen (bei Höhe $h$ und Quadratseite $s$):
+
+$$\frac13 s^2 h$$
+
+Nebenbedingung: Die Pyramide ist in der Kugel (o. B. d. A $r=1$) einbeschieben. Pythagoras im Aufriss:
+
+$$(h-1)^2 + \left(\frac{a\cdot{}\sqrt{2}}{2}\right)^2 = 1^2$$
+Daraus
+
+$$a^2 = 2-2(h-1)^2$$
+
+Zielfunktion:
+
+$$V(h) = \frac13 a^2 h = \frac13 \left(2-2(h-1)^2\right) \cdot h$$
+
+TR: fmax(V(h), h, 0, 2) liefert $h=\frac43$ (r).
+}%% end TNTeop
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \end{document}
