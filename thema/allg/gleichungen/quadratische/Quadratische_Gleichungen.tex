@@ -42,14 +42,14 @@ Lösung:
 Lösungsstrategien:
 
 \TNTeop{
-  Wie sieht es bei $10$ Personen aus?
-  Alle $10$ senden es $9$ Personen weiter.
+  Wie sieht es bei $3$ Personen aus?
+  Alle $3$ senden es $2$ Personen weiter.
 
-  $$10\cdot{}9 = 90\text{ snaps}$$
-Wie sieht es bei 15 Personen aus?
-  $$15\cdot{}14 = 210$$
+  $$3\cdot{}2 = 6\text{ snaps}$$
+Wie sieht es bei 10 Personen aus?
+  $$10\cdot{}9 = 90$$
 
-  Es sollen aber $29501192$ sein.
+  Es sollen aber $29\,501\,192$ sein.
   
   $n$ sei die Anzahl Schüler.
 
@@ -86,8 +86,11 @@ d) $(9-2)^2 = \TRAINER{49}$
 
 e) $(9-16)^2 = \TRAINER{49}$
 
-f) $(9-x)^2 = 49; \lx = {\LoesungsRaumLang{\{2; 16\}}}$
+\GESO{
+  Challenge: Wer schon fertig ist, soll die beiden Gleichungen auf der
+nächsten Seite versuchen.
 
+}
 \TNTeop{
 }%% end TNTeop
 }%% end GESO
@@ -95,38 +98,7 @@ f) $(9-x)^2 = 49; \lx = {\LoesungsRaumLang{\{2; 16\}}}$
 \TALS{\input{tals/gl2/Voraussetzungen}}%%
 %%
 
-\newpage
 
-Bemerkung:
-\TNT{1.2}{ Mathematisches Verfahren = \textbf{Algorithmus}\index{Algorithmus}}%% END TNT
-
-
-\subsubsection{Al Chwarizmi}\index{Khwarizmi s. Al Chwarizmi}\index{Al Chwarizmi}\index{Chwarizmi (Al Chwarizmi)}
-
-(auch Al Khwarizmi)
-
-\noTRAINER{\bbwCenterGraphic{9cm}{allg/gleichungen/img/AlKhwarizmiBriefmarke.png}}
-\TRAINER{\bbwCenterGraphic{4cm}{allg/gleichungen/img/AlKhwarizmiBriefmarke.png}}
-Bildlegende: Al Chwarizmi auf einer russischen Briefmarke zum
-1200jährigen Gedenken. Quelle: \texttt{de.wikipedia.org} 2021.
-
-\TRAINER{Bemerkung Name: Abu Dscha'far Muhammad ibn Musa al-Chwarismi.}
-
-Al-Chwarizmis Buch (
-al-Kit\={a}b al-muhta\d{s}ar f\={i} \d{h}is\={a}b al-$\check{\text{g}}$abr
-wa-\'{}l-muq\={a}bala)
-
-\textit{«Kleines Büchlein über die Rechenverfahren durch Ergänzen und Ausgleichen»}
-
-trägt zum Namen \LoesungsRaumLang{«Algebra»} bei.
-
-
-
-\TRAINER{In seinem Buch wird die
-quadratische Gleichung in sechs Varianten gelöst.}
-
-
-\TRAINER{al-$\check{\text{g}}$abr = «Wieder herstellen», «vervollständigen», «ganz machen»}
 
 \newpage
 
@@ -177,7 +149,10 @@ $$(x-2)^2=49$$
 
 
   
- danach unbedingt Probe vorzeigen.
+  danach unbedingt Probe vorzeigen:
+
+  $$x_1 = -5: (-5-2)^2 = (-7)^2 = 49$$
+  $$x_2 = 9: (9-2)^2 = (7)^2 = 49$$
 
 }%% END TNT
 
@@ -303,20 +278,54 @@ $$x^2 + 4x = 12$$
 
 
 \newpage
+
+\subsubsection{Al Chwarizmi}\index{Khwarizmi s. Al Chwarizmi}\index{Al Chwarizmi}\index{Chwarizmi (Al Chwarizmi)}
+
+(auch Al Khwarizmi)
+
+\noTRAINER{\bbwCenterGraphic{9cm}{allg/gleichungen/img/AlKhwarizmiBriefmarke.png}}
+\TRAINER{\bbwCenterGraphic{4cm}{allg/gleichungen/img/AlKhwarizmiBriefmarke.png}}
+Bildlegende: Al Chwarizmi auf einer russischen Briefmarke zum
+1200jährigen Gedenken. Quelle: \texttt{de.wikipedia.org} 2021.
+
+\TRAINER{Bemerkung Name: Abu Dscha'far Muhammad ibn Musa al-Chwarismi.}
+
+Al-Chwarizmis Buch (
+al-Kit\={a}b al-muhta\d{s}ar f\={i} \d{h}is\={a}b al-$\check{\text{g}}$abr
+wa-\'{}l-muq\={a}bala)
+
+\textit{«Kleines Büchlein über die Rechenverfahren durch Ergänzen und Ausgleichen»}
+
+trägt zum Namen \LoesungsRaumLang{«Algebra»} bei.
+
+
+
+\TRAINER{In seinem Buch wird die
+quadratische Gleichung in sechs Varianten gelöst.}
+
+
+\TRAINER{al-$\check{\text{g}}$abr = «Wieder herstellen», «vervollständigen», «ganz machen»}
+
+
+Bemerkung:
+\TNT{1.2}{ Mathematisches Verfahren = \textbf{Algorithmus}\index{Algorithmus}}%% END TNT
+
+
+\newpage
 \TALS{\input{tals/gl2/QuadratischeErgaenzung}}
 
 \newpage
 
 
 
-\subsubsection{$a$-$b$-$c$ -- Formel}\index{abc-Formel!quadratische Gleichung}\index{Mitternachtsformel}
+\subsubsection{ABC-Formel}\index{ABR-Formel!quadratische Gleichung}\index{Mitternachtsformel}
 (Auch Mitternachtsformel)
 
 %%Einführendes Youtube Video: \texttt{youtu.be/ZywdPuXR0S0}
 \youtubeLink{https://youtu.be/ZywdPuXR0S0}{Dorfuchs: Quadratische Gleichung}
 
 
-\begin{gesetz}{$a$-$b$-$c$ --Formel}{}
+\begin{gesetz}{ABC-Formel}{}
 Ist eine quadratische Gleichung in Grundform ($a\ne 0$) gegeben,
 $$ax^2 + bx + c = 0$$
 so ist die Lösung durch die folgende Formel bestimmt:
@@ -326,7 +335,7 @@ $$x_{1,2}=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 \newpage
 
 
-\subsubsection{Beweis der abc-Formel \GESO{(optional)}}\index{Mitternachtsformel!Beweis}\index{abc-Formel!Beweis}
+\subsubsection{Beweis der ABC-Formel \GESO{(optional)}}\index{Mitternachtsformel!Beweis}\index{ABC-Formel!Beweis}
 \TRAINER{nach dorfuchs: [$-c$] [$\cdot{}4a$] [$+b^2$] [TU:
     bin. Formel] [$\pm\sqrt{\,\,}$] [$-b$] [$/2a$]}
 \TRAINER{oder hier einfach das VIDEO von Dorfuchs zeigen; ca. 3
@@ -363,8 +372,8 @@ $x     = 1 \pm \frac14\sqrt{128}$ &                              &  $x=\frac{-b\
 \newpage
 
 
-\subsubsection{Anwenden der $a$-$b$-$c$ $-$ Formel}
-\begin{rezept}{$a$-$b$-$c$-Formel}{rezept_abc_formel}
+\subsubsection{Anwenden der ABC-Formel}
+\begin{rezept}{ABC-Formel}{rezept_abc_formel}
   Beispiel $$3x^2 = 9x - 6$$
 
   1. in Grundform bringen: 
@@ -395,7 +404,7 @@ $x     = 1 \pm \frac14\sqrt{128}$ &                              &  $x=\frac{-b\
 \end{rezept}
 
 \subsection*{Aufgaben}
-Mit der $a$-$b$-$c$ $-$ Formel:
+Mit der ABC-Formel:
 \GESOAadBMTA{181}{6. d), 8. a), b) d) 5. a) e) und  7. a)  e)}
 \newpage
 
@@ -460,9 +469,6 @@ $$\lx = \{-s; 2s  \}$$
 
 
 \GESOAadBMTA{182}{13. a) b)}
-\GESO{Challenge:
-\GESOAadBMTA{183}{16. a) b)}
-}
 
 Wer fertig ist:\\
 
@@ -474,7 +480,7 @@ Wer fertig ist:\\
 
 
 %%\TALSAadBFWA{95ff}{269. a), 275. a) b) d), 276. a) b) f)}%%
-\TALSAadBMTA{181}{[Alle entweder mit $abc$-Formel oder mit einfacherem Verfahren] 4. a) c) e), 5. a) c) e), 6. d),
+\TALSAadBMTA{181}{[Alle entweder mit ABC-Formel oder mit einfacherem Verfahren] 4. a) c) e), 5. a) c) e), 6. d),
  7. a) e) und 9. a) c) e)}
 \newpage
 
@@ -527,10 +533,13 @@ $$72x^2 - 605 x + 848 = 0$$
     $\lx=\{\}$\\
     \hline
   \end{tabular}
-  
+  \newpage
   Lösen Sie mit dem Taschenrechner:
 $$5x^2 - 7x + 2 = 0$$
-\TNT{2}{$x_{1,2} = 1, 0.4$\vspace{16mm}}
+  \TNT{2}{$x_{1,2} = 1, 0.4$\vspace{16mm}}
+  $$x^2 -6x  = - 11$$
+  \TNT{2}{Keine Lösung $\lx=\{\}$}
+  
 $$1001x^2 + x  = -1$$
 \TNT{2}{$x_{1,2} = \text{keine reelle Lsg. Das }i\text{ verschwindet
     aus dem Sichtfeld}$\vspace{16mm}}%% END TNT
@@ -560,8 +569,7 @@ Lösen Sie: $$4.1x^2+6x=-15$$
 
 \GESO{und Textaufgaben:}
 
-\olatLinkGESOKompendium{2.3.4.}{17ff}{55. bis 59.}
-
+\olatLinkGESOKompendium{2.3.4.}{17ff}{56. bis 58.}
 
 \newpage
 
@@ -575,39 +583,45 @@ Lösen Sie: $$4.1x^2+6x=-15$$
 \subsection{Welches Verfahren (optional)}
 Wann soll welches Verfahren eingesetzt werden? Dies ist eine
 individuelle Fragestellung. Je mehr Erfahrung man hat, umso eher sieht
-man die Spezialfälle. Die $a$-$b$-$c$-Formel funktioniert immer, doch
+man die Spezialfälle. Die ABC-Formel funktioniert immer, doch
 die anderen Verfahren (Binome, weitere Spezialfälle, Taschenrechner)
 sind oft sinnvoller. Hier ein Versuch eines Überblicks:
 
+\begin{rezept}{Welches Verfahren}{}
+
 \GESO{
-\begin{tabular}{|p{44mm}|p{53mm}|p{64mm}|}
+\begin{tabular}{|p{30mm}|p{53mm}|p{64mm}|}
 	\hline
 	Spezialfall $b=0$               & $5x^2 = 3$                   & Durch 5 dividieren, dann positive und negative Wurzel ziehen.\\
 	\hline
 	Spezialfall $c=0$               & $3x^2 = 5x$                   & Fallunterscheidung $x$ = 0 und $x \ne 0$\\
 	\hline
-	Bereits faktorisiert       & $(x-4.6 + b)\cdot{}(x+a) = 0$ & Lösungen hier $x_1=4.6-b$ und $x_2 = -a$\\
+	quadratische Form            & $(x-2)^2 = 49$ & $\pm\sqrt{}$: \hspace{3mm}  $x-2=\pm 7$\\
 	\hline
-	Einfache Zahlen            & $x^2 -2x + 1= 0$           & $a$-$b$-$c$--Formel (Mitternachtsformel) oder faktorisieren $x^2-2x+1=(x-1)^2$ und danach jeden einzelnen Faktor $=0$ setzen.\\
+	faktorisiert       & $(x-4.6 + b)\cdot{}(x+a) = 0$ & Lösungen hier $x_1=4.6-b$ und $x_2 = -a$\\
+	\hline
+	Einfache Zahlen            & $x^2 -2x + 1= 0$           & ABC-Formel (Mitternachtsformel) oder faktorisieren $x^2-2x+1=(x-1)^2$ und danach jeden einzelnen Faktor $=0$ setzen.\\
 	\hline
 	Komplizierte Zahlen        & $7.3x^2 - 8x - 3.4 = 0$       & Taschenrechner \tiprobutton{cos_poly-solv}             \\
 	\hline
-	Variable (Parameter)       & $7.3x^2 - cx + 2.6=0$         & $a$-$b$-$c$-Formel (Mitternachtsformel) \\
+	Variable (Parameter)       & $7.3x^2 - cx + 2.6=0$         & ABC-Formel (Mitternachtsformel) \\
 	\hline
 \end{tabular}
 \newpage
 }
 
 \TALS{
-\begin{tabular}{|p{49mm}|p{53mm}|p{60mm}|}
+\begin{tabular}{|p{35mm}|p{53mm}|p{60mm}|}
 	\hline
 	Spezialfall $b=0$               & $5x^2 = 3$                   & Durch 5 dividieren, dann positive und negative Wurzel ziehen.\\
 	\hline
 	Spezialfall $c=0$               & $3x^2 = 5x$                   & Fallunterscheidung $x$ = 0 und $x \ne 0$\\
-  \hline
-	Bereits faktorisiert & $(x-4.6 + b)\cdot{}(x+a) = 0$ & Lösungen hier $x_1=4.6-b$ und $x_2 = -a$\\
 	\hline
-	Einfache Zahlen      & $6x^2 -3x - 18 = 0$               & $a$-$b$-$c$-Formel (Mitternachtsformel) \\
+	quadratische Form            & $(x-2)^2 = 49$ & $\pm\sqrt{}$: \hspace{3mm}  $x-2=\pm 7$\\
+  \hline
+	faktorisiert & $(x-4.6 + b)\cdot{}(x+a) = 0$ & Lösungen hier $x_1=4.6-b$ und $x_2 = -a$\\
+	\hline
+	Einfache Zahlen      & $6x^2 -3x - 18 = 0$               & ABC-Formel (Mitternachtsformel) \\
 	\hline
 	Komplizierte Zahlen  & $7.3x^2 - 8x - 3.4 = 0$           & Taschenrechner (solve())                \\
 	\hline
@@ -617,4 +631,6 @@ sind oft sinnvoller. Hier ein Versuch eines Überblicks:
 	\hline
 \end{tabular} 
 }
+
+\end{rezept}
 \newpage
