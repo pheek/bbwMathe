@@ -5,10 +5,10 @@
 \section{Zehnerlogarithmus}\index{Logarithmus!Basis
   10}\index{Zehnerlogarithmus}
 \sectuntertitel{Der Logarithmus erzählt nie über seine Vergangenheit,
-  weil er Angst hat vor negativen Zahlen.}
+  weil er Angst hat vor Negativem.}
 
 \begin{center}
-  \textit{logos}: Das Verhältnis, \textit{arithmos}: Die Zahl
+  \textit{logos}: \LoesungsRaumLen{50mm}{Das Verhältnis}, \textit{arithmos}: \LoesungsRaumLen{50mm}{Die Zahl}
 \end{center}
 
 \GESOTadBMTA{97}{6.1}
@@ -95,15 +95,15 @@ Wir erinnern uns: $$\sqrt{10} =\LoesungsRaum{ 10^\frac12}$$
 \end{beispiel}
 
 \subsubsection{Notation}
-Der Zehnerlogarithmus $\lg()$ wird oft auch explizit mit der Basis 10
-angegeben; dann wird $\log_{10}(\,\,)$ anstelle von $\lg(\,\,)$ geschrieben:
+Der Zehnerlogarithmus $\lg()$ kann auch explizit zur Basis 10
+angegeben werden; dann wird $\log_{10}(\,\,)$ anstelle von $\lg(\,\,)$ geschrieben:
 
 \begin{center}
 \fbox{$\lg = \log_{10}$ }
 \end{center}
 
 \begin{bemerkung}{Taschenrechner}{}
-  Auf vielen Taschenrechnern steht $\log$ anstatt $\lg$.
+  Auf den amerikanischen Taschenrechnern steht $\log$ für den Zehnerlogarithmus $\lg$.
 
   \GESO{  \tiprobutton{ln_log}}
   \TALS{  \nspirebutton{10xlog}}
@@ -167,16 +167,17 @@ $$\lg(10^x) = x \Longrightarrow 10^{\lg(10^x)} = 10^x
 \end{gesetz}
 
 Begründung:
-\TNT{6.0}{
-$10^n \cdot{} 10^m = 10^{n+m}.$
-\\
-Zahlenbeispiel:
-$$\log(10^2\cdot{}10^4) = \log(10^{2+4}) = 2+4
-= \log(10^2) + \log(10^4) $$
 
-Oder allgemein (für $r = 10^n$ und $s = 10^m$)\footnote{\TRAINER{Wobei hier $n$ und $m$ nicht notwendigerweise in $\mathbb{N}$}}:
-$$\lg(r \cdot s) = \lg(10^n \cdot 10^m) = \lg(10^{(n+m)}) = n+m = \lg(10^n) + \lg(10^m) = \lg(r) + \lg(s).$$
-\vspace{15mm}
+\TNT{6.0}{
+
+$$\lg(10^n \cdot 10^m) = \lg(10^{(n+m)}) = n+m = \lg(10^n) + \lg(10^m)$$
+  Setzen wir nun $r:=10^n$ und $s:=10^m$, so erhalten wir\footnote{\TRAINER{Wobei hier $n$ und $m$ nicht notwendigerweise in
+    $\mathbb{N}$}}:
+
+$$\lg(r\cdot{}s) = \lg(10^n \cdot 10^m) = ... = \lg(10^n) + \lg(10^m)  = \lg(r) + \lg(s)$$
+
+  
+  \vspace{15mm}
 }%% END TNT
 
 Beispiel: \TRAINER{Beim Vorzeigen mit den beiden 8ern von links und
