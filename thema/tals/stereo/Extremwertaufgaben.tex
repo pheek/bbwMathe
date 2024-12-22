@@ -14,8 +14,8 @@
 \item Zielfunktion und Zielgröße
 \end{itemize}
 
-
 \newpage
+
 
 \subsection{Erinnerung}
 Die Funktion $f: y = 4x + 3x^2 - 6$ hat ein Extremum (Minimum oder
@@ -43,7 +43,7 @@ Maximum). Wo liegt dieses? Handelt es sich um ein Minimum oder ein Maximum?
 %%Algebrabuch (falls nicht schon im GLF\footnote{GLF = Grundlagenfach} behandelt):
 %%\TALSAadMTA{192ff}{715., 717., 718.*}
 
-\olatLinkArbeitsblatt{Extremwertaufgaben}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/109831007505402}{2.1 Tagestemperatur}
+\olatLinkArbeitsblatt{Extremwertaufgaben}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/109831007505402}{2.1: Tagestemperatur}
 %%\TALSAadBMTA{320}{15.}
 \newpage
 
@@ -52,7 +52,7 @@ Maximum). Wo liegt dieses? Handelt es sich um ein Minimum oder ein Maximum?
 Gegeben ist die Funktion
 $$f:\,\,\, y = 0.1 x^3 + 0.07 x^2 - 0.8 x + 2$$
 
-Wir suchen diejenige positive $x$-Position, wo der Wert kleinsten ist.
+Wir suchen diejenige positive $x$-Position, wo der Wert am kleinsten ist.
 
 Vorgehen:
 \begin{enumerate}
@@ -79,7 +79,7 @@ Algebrabuch:
 %%\TALSAadBMTA{242}{915. a) b) c) [ohne Wertebereiche]} %% Weitere mögliche: , 916., 917., 918. und 919.}
 %\TALSAadBMTA{321}{18.}
 
-\olatLinkArbeitsblatt{Extremwertaufgaben}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/109831007505402}{2.2 Marmorplatte}
+\olatLinkArbeitsblatt{Extremwertaufgaben}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/109831007505402}{2.2: Marmorplatte}
 
 \newpage
 \subsection{Das Tipi}\index{Tipi}
@@ -93,15 +93,22 @@ Wie hoch wird es, wenn sein Volumen möglichst groß sein soll?»
 \TNTeop{Verschiedene Lösungswege sind denkbar;
 
   Variable $h$ = Höhe:
-  $$V(h) = \frac13 G(h)\cdot{}h$$ \TRAINER{$h\approx 2.89$, $V=\frac{500\sqrt{3}}{27}\approx 32.1$}
+  $$V(h) = \frac13 G(h)\cdot{}h = \frac13\left(50-2h^2\right)\cdot{}h $$
+  $\Longrightarrow h_{\text{max}}  = \frac{5\sqrt{3}}{3} \approx 2.88675$
 
   Variable $\alpha$ = Winkel einer Zeltstange gegenüber dem Boden:
-  $$V(\alpha) = \frac13 G(\alpha)\cdot{}h(\alpha)$$ \TRAINER{$\alpha \approx 35.3\degre$}
+  $$V(\alpha) = \frac13 G(\alpha)\cdot{}h(\alpha) = \frac13 \cdot{}2
+  \cdot{} 5^2 \cdot{} \cos^2(\alpha)\cdot{}5\cdot{}\sin(\alpha)$$
+  $\Longrightarrow \alpha_{\text{max}} \approx 35.2644\degre$
 
   Variable $a$ = Seitenlänge des Grundseitenquadrates:
-  $$V(a) = \frac13\cdot{}a^2h(a)$$ \TRAINER{$a \approx 5.77$}
+  $$V(a) = \frac13\cdot{}G(a)\cdot{}h(a) = \frac13 a^2 \cdot{} \sqrt{25-\frac{a^2}2}$$
+  $\Longrightarrow a_{\text{max}} = \frac{10\sqrt{3}}{3} \approx 5.7735$
 
-  allen gemeinsam: Mit einer Größe (Parameter) wird «gespielt», um das Volumen zu berechnen.
+  allen gemeinsam: Mit einer Größe (Parameter) wird «gespielt», um das
+  Volumen zu berechnen.
+
+  $V=\frac{500\sqrt{3}}{27}\approx 32.075$
 }%% END TNTeop
 %%\newpage
 
@@ -125,9 +132,8 @@ Hier ist Platz für eine Skizze:
 \subsubsection{Rezept}
   \begin{enumerate}
   \item \textbf{Zielgröße} festlegen: Dies ist hier die zu maximierende Oberfläche. Also sind die gesuchten Variable die Höhe $h$ und die Quadratseite $x$. Die zu maximierende Fläche ist
-    \TNT{2.8}{$$F(x) = x^2 + 4\cdot{}x\cdot{}h$$\vspace{2cm}}
+    \TNT{2.8}{Oberfläche: $$x^2 + 4\cdot{}x\cdot{}h$$\vspace{2cm}}
     
-
   \item \textbf{Nebenbedingung} berücksichtigen (identifizieren und danach umformen). Die Nebenbedingung hier ist, dass wir nur beschränktes Material an Stabilisierungsstangen (Holz) zur Verfügung haben (8m).
     Es gilt also
     \TNT{2.8}{$$8 = 8x+4h$$\vspace{2cm}}
@@ -176,7 +182,7 @@ Repetition quadratische Funktionen:
 Nicht quadratische Optimierungsaufgaben:
 
 \olatLinkArbeitsblatt{Extremwertaufgaben}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/109831007505402}{Aufg. 2.3
-  Rechteck unter Parabel und 2.4 Radiergummi}
+  Rechteck unter Parabel}
 
 Optimierungsaufgaben aus der Stereometrie:
 
@@ -214,9 +220,9 @@ Betrachten Sie $A$ in Abhängigkeit von $r$ und finden Sie mit einem
 Computeralgebra-System erst
 \begin{itemize}
 \item
-  den optimalen Radius $r=\LoesungsRaum{0.542}\text{dm}$ und dann
+  den optimalen Radius $r=\LoesungsRaum{0.542} \text{ dm}$ und dann
 \item
-  die minimale Oberfläche $A= \LoesungsRaum{5.54}\text{dm}^2$.
+  die minimale Oberfläche $A= \LoesungsRaum{5.54} \text{ dm}^2$.
 \end{itemize}
 \newpage
 
