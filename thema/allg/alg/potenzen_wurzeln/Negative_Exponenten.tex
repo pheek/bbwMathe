@@ -1,3 +1,88 @@
+%% 2024_12_28 umgestellt 
+\subsubsection{Null}
+
+Ein Blatt Papier wird 3 mal übe die Mitte gefaltet. Somit
+sind \LoesungsRaumLen{30mm}{8} Schichten übereinander.
+
+Wie viele Schichten sind es bei 4 mal falten? Bei 4 mal falten werden
+es\\ \LoesungsRaumLen{20mm}{$16 = 2^4$} Schichten.
+
+Die Formel bei $n$ maligem Falten lautet:
+
+$$\text{Dicke} = \LoesungsRaumLen{30mm}{2^n}\text{ Schichten}$$
+
+
+Wie Dick ist der Karton ohne ihn zu falten? Richtig:
+$\LoesungsRaumLen{20mm}{2^0 = 1 \text{ Schicht}}$
+
+Idee:
+\TNT{2}{
+$$a^0 = a^{n-n} = a^n : a^n = 1$$
+}%% end TNT
+
+Oder so:
+\TNT{4}{
+$$a^5\cdot{}a^0 \stackrel{!}{=} a^{5+0} = a^5$$
+$$a^5 \cdot{} a^0 \stackrel{!}{=} a^5   \hspace{5mm} | : a^5$$
+$$a^0 = 1$$
+}%% end TNT
+
+\begin{definition}{Exponent Null}{} Für alle Basen
+$a \in \mathbb{R}\backslash\{0\}$ definieren wir:
+\begin{center}
+\fbox{$a^0 := 1$}
+\end{center}
+\end{definition}
+
+
+%\textbf{Rechengesetze zusammengefasst:}
+
+%\begin{itemize}
+%\item  $\frac{a^m}{a^n} = a^{m-n}$ (Dies gilt auch wenn $n > m$.)
+ 
+%\item $a^{-n} := a^{0-n}=\frac{a^0}{a^n} = \frac{1}{a^n} = \left(\frac{1}{a}\right)^n$
+
+%\item
+%$\left(\frac{1}{a}\right)^{-n} = \frac{1}{\left(\frac{1}{a}\right)^n} = a^n$
+
+
+%\item $\left(\frac{a}{b}\right)^{-n} = \left(\frac{b}{a}\right)^{+n}$ gilt daher auch. 
+%\end{itemize}
+
+%% TODO: Nur Aufgaben mit 0
+\subsection*{Aufgaben}
+\GESO{\olatLinkArbeitsblatt{Potenzgesetze}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/102690264435484}{Kapitel
+    3.1 Aufg. 56. - 59.}}%% END olatLinkArbeitsblatt
+\TALS{\olatLinkArbeitsblatt{Potenzgesetze}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/104915210426569}{Kapitel
+    3.1 Aufg. 56. - 59.}}%% END olatLinkArbeitsblatt
+
+
+\newpage
+\subsection*{Repetition negative Zehnerpotenzen}
+
+\begin{gesetz}{negative Zehnerpotenzen}{}
+$$10^{-n} = \frac{1}{10^n}$$
+\end{gesetz}
+
+\begin{beispiel}{negative Zehnerpotenzen}{}
+$$10^{-3} = 0.001 = \frac1{1000} = \frac1{10^3}$$
+\end{beispiel}
+
+
+\subsection*{Aufgaben}
+\GESO{\olatLinkArbeitsblatt{Potenzgesetze}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/102690264435484}{Kapitel
+    3.2 Aufg. 60. - 63.  }}%% END olatLinkArbeitsblatt
+\TALS{\olatLinkArbeitsblatt{Potenzgesetze}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/104915210426569}{Kapitel
+    3.2 Aufg. 60. - 63.}}%% END olatLinkArbeitsblatt
+
+\newpage
+
+
+
+
+
+
+
 \subsubsection{Negative Exponenten}
 \sectuntertitel{Nicht für alle ist die Potenzrechnung \textit{positiv}.}
 \subsubsection*{Permanenzprinzip (optional)}\index{Permanentsprnzip}
@@ -168,54 +253,21 @@ $\left( \frac{a}{b} \right)^{-n}  =
        $}} %% END TNT END GESO
 
 %%$$\left(\frac{1}{a}\right)^{-n} = \frac{1}{\left(\frac{1}{a}\right)^n} = a^n$$
-\newpage
 
-
-
-\subsubsection{Null}
-
-Idee:
-\TNT{3.2}{$$a^5\cdot{}a^0 \stackrel{!}{=} a^{5+0} = a^5$$
-$$a^5 \cdot{} a^0 \stackrel{!}{=} a^5   \hspace{5mm} | : a^5$$
-$$a^0 = 1$$
-}%% end TNT
-
-Oder so:
-\TNT{3.2}{
-$$a^0 = a^{1-1} = a^1 : a^1 = a:a = 1$$
-}%% end TNT
-
-\begin{definition}{Exponent Null}{} Für alle Basen
-$a \in \mathbb{R}\backslash\{0\}$ definieren wir:
-\begin{center}
-\fbox{$a^0 := 1$}
-\end{center}
-\end{definition}
-
-
-
-%\textbf{Rechengesetze zusammengefasst:}
-
-%\begin{itemize}
-%\item  $\frac{a^m}{a^n} = a^{m-n}$ (Dies gilt auch wenn $n > m$.)
- 
-%\item $a^{-n} := a^{0-n}=\frac{a^0}{a^n} = \frac{1}{a^n} = \left(\frac{1}{a}\right)^n$
-
-%\item
-%$\left(\frac{1}{a}\right)^{-n} = \frac{1}{\left(\frac{1}{a}\right)^n} = a^n$
-
-
-%\item $\left(\frac{a}{b}\right)^{-n} = \left(\frac{b}{a}\right)^{+n}$ gilt daher auch. 
-%\end{itemize}
 
 
 \subsection*{Aufgaben}
 \GESO{\olatLinkArbeitsblatt{Potenzgesetze}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/102690264435484}{Kapitel
-    3 Aufg. 56. - 59., 61., 63., 64. - 68.  }}%% END olatLinkArbeitsblatt
+    3.3 Aufg. 64. - 79.  }}%% END olatLinkArbeitsblatt
 \TALS{\olatLinkArbeitsblatt{Potenzgesetze}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/104915210426569}{Kapitel
-    3 Aufg. 56. - 59., 61., 63., 64. - 68.}}%% END olatLinkArbeitsblatt
+    3.3 Aufg. 64. - 79.}}%% END olatLinkArbeitsblatt
 
 \newpage
+
+
+
+
+\subsection{Negative Exponenten in Brüchen}
 
 \begin{rezept*}{«Kielholen»}{}{}
 Exponenten vertauschen ihr Vorzeichen beim Übertreten des Bruchstrichs:
@@ -240,17 +292,16 @@ $$\frac{a^{-3}b^2}{c^5b^{-6}} = \LoesungsRaumLang{\frac{b^2\cdot{}b^{+6}}{a^{+3}
 Mit Brüchen:
 
 \GESO{\olatLinkArbeitsblatt{Potenzgesetze}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/102690264435484}{Kapitel
-    4 Aufg. 77., 78., 81., 82., 83., 89.  }}%% END olatLinkArbeitsblatt
+    4.1 Aufg. 80., 81., 84., 85., 86., 92.  }}%% END olatLinkArbeitsblatt
 \TALS{\olatLinkArbeitsblatt{Potenzgesetze}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/104915210426569}{Kapitel
-    4 Aufg. 77., 78., 81., 82., 83., 89. }}%% END olatLinkArbeitsblatt
-
+    4.1 Aufg.  80., 81., 84., 85., 86., 92. }}%% END olatLinkArbeitsblatt
 
 vermischte Exponentialgleichungen:
 
 \GESO{\olatLinkArbeitsblatt{Potenzgesetze}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/102690264435484}{Kapitel
-    4.1 Aufg. 91. - 94.  }}%% END olatLinkArbeitsblatt
+    4.2 Aufg. 94. - 97.  }}%% END olatLinkArbeitsblatt
 \TALS{\olatLinkArbeitsblatt{Potenzgesetze}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/104915210426569}{Kapitel
-    4.1 Aufg. 91. - 94. }}%% END olatLinkArbeitsblatt
+    4.2 Aufg. 94. - 97. }}%% END olatLinkArbeitsblatt
 
-\TRAINER{Alle anderen Aufgaben vom Blatt der Nummern 56. - 90. optional als Training}
+\TRAINER{Alle anderen Aufgaben vom Blatt der Nummern 56. - 97. optional als Training}
 \newpage
