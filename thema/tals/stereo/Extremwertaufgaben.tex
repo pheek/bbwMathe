@@ -189,7 +189,7 @@ Optimierungsaufgaben aus der Stereometrie:
 \olatLinkArbeitsblatt{Extremwertaufgaben}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/109831007505402}{Kap. 3
   Auswahl: 3.1 Kartonschachtel, 3.2 Streichhozschatel, 3.5 Toblerone,
   3.6 Tipi, 3.7 Würfel in Pyramide, 3.11 Zylinder in Kegel, 3.14
-  Zylindermantel in Kugel, 3.16: Kegel in Kugel}
+  Zylindermantel in Kugel, 3.16: Kegel in Kugel, 3.20: Halbkugel auf Zylinder}
 
 
 %\TALSAadBMTA{282}{58.}
@@ -214,7 +214,7 @@ $$h = \frac{1}{r^2\pi}$$
 Die Oberfläche $A$ berechnet sich aus Deckel+Boden+Mantel:  
 $$A=r^2\pi + r^2\pi + 2r\pi\cdot{}h$$
 Wenn wir die Höhe $h$ aus dem Volumen hier einsetzen, erhalten wir für die Oberfläche:
-$$A=2r\pi\left(r+\frac{1}{r^2\pi}\right)$$
+$$A=2r\pi\cdot{}\left(r+\frac{1}{r^2\pi}\right)$$
 
 Betrachten Sie $A$ in Abhängigkeit von $r$ und finden Sie mit einem
 Computeralgebra-System erst
@@ -234,13 +234,13 @@ Skizze
 
 \TNT{6}{\bbwCenterGraphic{7.2cm}{tals/stereo/img/RechteckUnterParabel.jpg}}%% END TNT
 
-$$p(x) := a(x-7)(x-4)$$
+$$p(x) := a\cdot{}(x-7)(x-4)$$
 
 Der Scheitelpunkt soll auf Höhe $y=5$ liegen (spielt jedoch keine Rolle. Man könnte einfach auch $a<0$ verlangen.
 
-Somit ist $p(\frac{7+4}2) = p(5.5) = 5$ zu setzen:
+Somit ist $p\left(\frac{7+4}2\right) = p(5.5) = 5$ zu setzen:
 
-\TNT{2}{$$p(5.5) := 5 = a(5.5-7)(5.5-4) = a(-1.5)(1.5) = -2.25 a = \frac{-9}4 a$$} %% END TNT
+\TNT{2}{$$p(5.5) := 5 = a\cdot{}(5.5-7)(5.5-4) = a\cdot{}(-1.5)(1.5) = -2.25 a = \frac{-9}4 a$$} %% END TNT
 
 
 Daraus ergibt sich das $a$:
@@ -264,7 +264,7 @@ Nebenbedingung: $b = \LoesungsRaum{p(5.5 + d) = p(5.5-d)}$
 Zielfunktion: $F(d) = \LoesungsRaum{l\cdot{}b = 2d\cdot{}p(5.5+d) = 2d\cdot{}\frac{-20}9\cdot((5.5+d)-7)((5.5+d)-4)}$
 
 Vereinfachen:
-$F(d) = \LoesungsRaum{\frac{-40}9\cdot{}d(d^2-\frac94)}$
+$F(d) = \LoesungsRaum{\frac{-40}9\cdot{}d\cdot{}(d^2-\frac94)}$
 
 Maximieren: Diese Funktion $F(d)$ soll nun im Bereich $0<d<1.5$ maximiert werden TR: $d = \LoesungsRaum{\pm\frac{\sqrt{3}}2}$
 
