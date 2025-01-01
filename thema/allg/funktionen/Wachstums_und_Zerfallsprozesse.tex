@@ -172,8 +172,8 @@ $$f(x): x \mapsto a^x$$
   Faktor $a$:
 
   \begin{itemize}
-    \item $a>1$: Wachstum
-    \item $0<a<1$: Zerfall
+    \item \LoesungsRaumLen{40mm}{$a>1$: Wachstum}\vspace{3mm}
+    \item \LoesungsRaumLen{40mm}{$0<a<1$: Zerfall}
   \end{itemize}
   
 \end{gesetz}
@@ -236,18 +236,18 @@ eine \textbf{allgemeinere Form der Exponentialfunktion}.
           Zehn Tage:  $35\cdot{} 1.23^{10} \approx{} 277.4 \text{cm}^2$\\
           $n$  Tage:  $35\cdot{} 1.23^n = 35\cdot{}1.23^n$}%% END TNT
 
-  Wann wird die ganze Wand ($5 \text{m}^2$) mit dem Pilz befallen
+  Wann wird die ganze Wand ($6 \text{ m}^2$) mit dem Pilz befallen
   sein?
   
-\TNT{6}{$5 \text{m}^2 = 50\,000 \text{cm}^2$
+\TNT{6}{$6 \text{ m}^2 = 60\,000 \text{ cm}^2$
      
-     ergo: $50\,000 = 35 \cdot{} 1.23^n$
+     ergo: $60\,000 = 35 \cdot{} 1.23^n$
 
      (durch 35 teilen, dann logarithmieren)
 
-     $$\frac{50\,000}{35} = 1.23^n$$
+     $$\frac{60\,000}{35} = 1.23^n$$
 
-     $$n = \log_{1.23}\left(\frac{50\,000}{35}\right) \approx 35.1 \text{Tage}$$
+     $$n = \log_{1.23}\left(\frac{60\,000}{35}\right) \approx 35.97 \text{Tage}$$
 
    }%% END TNT
 
@@ -257,7 +257,7 @@ eine \textbf{allgemeinere Form der Exponentialfunktion}.
 
 
 \begin{gesetz}{Exponentialfunktion mit frei wählbarem Startwert}{}
-$$f: y = b\cdot{}a^x$$
+$$f: y = \LoesungsRaumLen{40mm}{b\cdot{}a^x}$$
 
 Auch hier gibt der Parameter $a$ den Wachstumsfaktor pro Zeiteinheit $e_x$ an.
 
@@ -376,44 +376,42 @@ Merke:
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Allgemeiner exponentieller Prozess}\index{Exponentieller Prozess! allgemeine Form}
+\subsubsection{Exponentieller Prozess (allgemein)}\index{Exponentieller Prozess! allgemeine Form}
 
-\begin{definition}{Wachstumsprozess}{}
+\begin{gesetz}{Wachstumsprozess}{}
   Die Funktion
-  $$y = b\cdot{}a^{\frac{t}{\tau}}$$
-  bzw.
-  $$f(t) = b\cdot{}a^{\frac{t}{\tau}}$$
+
+  $$y = f(t) = \LoesungsRaumLen{40mm}{b\cdot{}a^{\frac{t}{\tau}}}$$
+  
   beschreibt einen allgemeinen exponentiellen Wachstumsprozess mit
-  $$a=\text{Wachstumsfaktor}$$
-  $$b=\text{Startwert}$$
-  $$\tau=\text{Beobachtungszeitspanne}$$
-\end{definition}
+  $$   a=\LoesungsRaumLen{50mm}{\text{Wachstumsfaktor während } \tau \text{ Tagen} }$$
+  $$   b=\LoesungsRaumLen{50mm}{\text{Startwert}}$$
+  $$\tau=\LoesungsRaumLen{50mm}{\text{Beobachtungszeitspanne}}$$
+\end{gesetz}
 
 Alternativ «die harte Tour» (ohne das $\tau$ mit anderer Basis):
 
 \TNTeop{
-  Die Algenzahl verdoppelt sich alle fünf Tage (Startwert $b$):
+
 
   $$f(t) = b\cdot{}A^t$$
 
-  $$f(0) = b\cdot{}A^0 = b \cdot{} 1$$
+  $A$ = Faktor pro Tag, $t$ = Anzahl Tage, Startwert $b=f(0)$
+  
+  Bsp.: Die Algenzahl verdoppelt sich alle fünf Tage:
 
-  und
-  $$f(5) = b\cdot{}A^5$$
+  $$f(5)        = 2 \cdot{} f(0)$$
+  $$b\cdot{}A^5 = 2 \cdot{} b $$
 
-  Nach fünf Tagen verdoppeln: Ansatz:
-  $$f(5) = 2\cdot{}f(0)$$
-  $$b\cdot{}A^5 = 2\cdot{}b\cdot{} A^0 = 2\cdot{} b \cdot{} 1$$
-  $$b\cdot{}A^5 = 2\cdot{} b$$
-  $$A^5 = 2 | \sqrt[5]{\,\,}$$
-  $$A = \sqrt[5]{2} = 2^{\frac15}$$
+  $$A^5 = 2$$
 
-  Somit:
+  $$A = \sqrt[5]{2} = 2^{\frac15} \approx 1.1487$$
 
-  $$b \cdot{} A^t =
-  b \cdot{} \left( \sqrt[5]{2} \right)^t  =
-  b \cdot{} \left( 2^{\frac15} \right)^t =
-  b \cdot{} 2^{\frac{t}5}$$
+  Einsetzen in $f(t) = b\cdot{} A^t$
+
+  $$f(t) = b\cdot{} \left(\sqrt[5]{2}\right)^t  = b\cdot{}
+  \left(2^{\frac15}\right)^t=b\cdot{} 2^{\frac{t}5} \approx b\cdot{} 1.1487^t$$
+
 }%% end TNTeop
 
 
@@ -477,7 +475,7 @@ Irland hatte 1990 3.51 Mio. Einwohner. Im Jahr 2019 waren es bereits 4.93 Mio.
 
   $m=f(\tau) = 4.93$ [Mio EW] = Messwert nach $\tau$ Jahren.
 
-  $a=\frac{m}{b}=\frac{4.93}{3.51} = 1.404...$ pro 29 Jahre (Taschenrechner! STO). 
+  $a=\frac{m}{b}=\frac{4.93}{3.51} \approx 1.4046$ pro 29 Jahre (Taschenrechner! STO). 
 
   $$f(t) = b\cdot{}a^\frac{t}{\tau}=b\cdot{}a^\frac{t}{29}$$
 
@@ -490,35 +488,40 @@ Irland hatte 1990 3.51 Mio. Einwohner. Im Jahr 2019 waren es bereits 4.93 Mio.
 
     $$f(35) = b\cdot{}a^\frac{35}{29}\approx 5.28899$$
 
-  }%% END TNT
+}%% END TNT
 \newpage
 
-\textbf{Frage 2}: In wie vielen Jahren hat sich die Bevölkerung verdoppelt?
+\subsection*{Aufgaben}
+
+\GESO{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/106029175831971}{Kap. 1.5: Aufg. 18. a) b)}}
+\TALS{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/106029175777725}{Kap. 1.5:     Aufg. 18. a) b) }}
+
+\newpage
+
+\textbf{Frage 2}: In wie vielen Jahren hat sich die Bevölkerung verdreifacht?
 
 \TNTeop{
-  Gesucht $T_2$ = Verdopplungszeitpunkt.
+  Gesucht $T_3$ = Verdreifachungszeitpunkt.
 
-  $$f(T_2) = 2\cdot{}f(0)$$
+  $$f(T_3) = 3\cdot{}f(0)$$
 
   Funktionsgleichung einsetzen:
 
-  $$b\cdot{}a^\frac{T_2}{\tau} = 2\cdot{} b\cdot{} a^\frac0\tau$$
+  $$b\cdot{}a^\frac{T_3}{\tau} = 3\cdot{} b\cdot{} a^\frac0\tau$$
 
-  Weil $a^\frac0\tau = 1$ folgt:
+  Weil $a^{\frac{0}{\tau}} = 1$ folgt:
 
-  $$b\cdot{}a^\frac{T_2}{\tau} = 2\cdot{} b$$
+  $$b\cdot{}a^\frac{T_3}{\tau} = 3\cdot{} b$$
 
-  Durch $b$ teilen:
-
-  $$a^\frac{T_2}{\tau} = 2$$
+  $$a^\frac{T_3}{\tau} = 3$$
 
   Def. Logarithmus:
 
-  $$\frac{T_2}{\tau} = \log_a(2)$$
+  $$\frac{T_3}{\tau} = \log_a(3)$$
 
-$$T_2 = \tau\cdot{}\log_a(2) = 29\cdot{}\log_a(2) \approx 59.17$$
-Die Bevölkerung wird sich voraussichtlich alle 59.17 Jahren
-verdoppeln.
+$$T_3 = \tau\cdot{}\log_a(3) = 29\cdot{}\log_a(3) \approx 93.8$$
+Die Bevölkerung wird sich voraussichtlich alle 94 Jahren
+verdreifachen.
 
 }%% END Trainer
 \newpage
@@ -528,9 +531,9 @@ verdoppeln.
 
 
 \GESO{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/106029175831971}{Kap. 1.5:
-    Aufg. 18. - 21.}}
+    Aufg. 18. c), 19. - 21.}}
 \TALS{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/106029175777725}{Kap. 1.5:
-    Aufg. 18. - 21. }}
+    Aufg. 18. c), 19. - 21. }}
 
 \AadBMTA{338}{28. Bakterien}
 \AadBMTA{352ff}{2. (Hasenpopulation), 7., 1. (optional)}
@@ -599,33 +602,25 @@ groß ist seine Halbwertszeit $T_{1/2}$?
   Ist die Halbwertszeit $T_{1/2}$ und die anfängliche Stoffmenge $b$
   bekannt, so kann die Soffmenge zu jedem Zeitpunkt $t$ mit der
   folgenden Funktion $f$ angegeben werden:
-  $$f(t) = b\cdot{}\left(\frac12\right)^\frac{t}{T_{1/2}}$$
+  $$f(t) = \LoesungsRaumLen{50mm}{b\cdot{}\left(\frac12\right)^\frac{t}{T_{1/2}}}$$
 \end{gesetz}
   
 \begin{gesetz}{Halbwertzszeit}{}
   Die Halbwertszeit $T_{1/2}$ berechnet sich wie folgt:
-  $$T_{1/2} = \log_a\left(\frac12\right)$$
-  Dabei ist $a$ der Abnahmefaktor pro Zeiteinheit.
+  $$T_{1/2} = \LoesungsRaumLen{70mm}{\log_A\left(\frac12\right) = \tau
+  \cdot{} \log_a\left(\frac12\right)}$$
+  Dabei ist $A$ der Abnahmefaktor pro Zeiteinheit; $a$ während $\tau$ Zeiteinheiten.
 \end{gesetz}
 
 
+Herleitung:
 
-  Herleitung. Es gilt ja:
-  $$b=f(0) \text{ bei unserer Notation } f(t) = b\cdot{}a^t$$
-  Und es soll gelten:
-  $$\frac{b}2 = f(T_{1/2})$$
-
-  Daraus ergibt sich:
-  $$\frac{b}2 = b\cdot{}a^{T_{1/2}}$$
-
-    Nach Auf"|lösen ergibt sich:
-
-    \TNT{4}{
-      Durch $b$ teilen:
-      $$\frac12 = a^{T_{1/2}}$$
-      logarithmieren:
-      $$\log_a\left(\frac12\right) = T_{1/2}$$
-    }%% END TNT
+\TNTeop{
+  $$\frac12 \cdot{} f(0) = f(T_{1/2})$$
+  $$\frac12 \cdot{} b    = b\cdot{}A^{T_{1/2}}$$
+  $$\frac12 = A^{T_{1/2}}$$
+  $$\log_A \left(\frac12\right) = T_{1/2}$$
+}
 
 \newpage
 \GESO{Optional:}
@@ -634,16 +629,19 @@ groß ist seine Halbwertszeit $T_{1/2}$?
 
 Analog gilt das Gesetz zur Verdopplung (s. obiges Beispiel Bevölkerung Irlands):
 \begin{gesetz}{Verdopplungszeit}{}
-  $$T_2 = \log_a(2)$$
+  $$T_2 = \LoesungsRaumLen{40mm}{\log_A(2) = \tau \cdot{} \log_a(2)}$$
+
+  $A$: der Abnahmefaktor pro Zeiteinheit; $a$ während $\tau$ Zeiteinheiten.
+  
 \end{gesetz}
 
 
 \subsection*{Aufgaben}
 
 \GESO{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/106029175831971}{Kap. 1.6:
-    Halbwertszeit/Verdopplungszeit: Aufg. 22. - 25}}
+    Halbwertszeit/Verdopplungszeit: Aufg. 22. - 25.}}
 \TALS{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/106029175777725}{Kap. 1.6:
-    Halbwertszeit/Verdopplungszeit: Aufg. 22. - 25}}
+    Halbwertszeit/Verdopplungszeit: Aufg. 22. - 25.}}
 
 \AadBMTA{352ff}{3. (Taucherin), 4. [Glasfaser ohne Teilaufgabe
     Eindringtiefe 4. b)] und 5. b) (radioaktiver Zerfall)}
