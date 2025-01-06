@@ -547,6 +547,39 @@ im halben Sektor einzeichnen $\Longrightarrow V(x) =
 Frommenwiler Algebra S. 245 Aufg. 933
 }%% end TNT eop
 
+
+\subsection{Strandweg}
+
+Kims Eiswagen steht am Strandweg. Du kommst soeben vom Ufer und willst Dir ein Eis kaufen. Du könntest nun die 200 m über den Sandstrand zum Strandweg gehen und danach die 600 m dem Strandweg entlang spazieren:
+
+\bbwCenterGraphic{150mm}{Strandweg.png}
+
+Auf dem Sand hast Du eine Geschwindigkeit von ca. 3 km  pro Stunde und auf dem Strandweg sind es 5 km pro Stunde.
+Wäre es da nicht sinnvoller, direkt leicht schräg auf Kims Eiswagen zuzusteuern?
+
+Wie groß muss die Strecke $x$ gewählt werden, damit Du so rasch wie möglich bei Kims Eiswagen ankommst?
+
+\TNTeop{
+Die Strecke zu Kims Eiswagen besteht aus zwei Teilstrecken (Alles in km und h):
+
+$a$: Strecke vom Ufer bis zum Strandweg (verwende Pythagoras): $b=\sqrt{x^2 + 0.200^2}$
+
+$b$: Reststück auf dem Strandweg = $b=0.600 - x$
+
+
+Nun wird die Strecke $a$ mit $3$ km/h und $b$ mit $5$ km / h zurückgelegt. Somit ist die Gesamtzeit
+
+$$t = t(x) = \frac{\sqrt{0.2^2 + x^2}}{3} + \frac{0.6 - x}{5}$$
+
+TR: FMin(t(x), x, 0, 0.6) liefert 0.15
+
+Das heißt, bei $x=0.15$ km (= $150$ m) ist das Optimum an Wegzeit. Du musst also zuerst bis zur Markierung $150$ m auf dem Sandstrand gehen, danach $450$ m auf dem rascheren Strandweg.
+
+
+}%% end TNT eop
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage\section{Stereometrie (TR)}
