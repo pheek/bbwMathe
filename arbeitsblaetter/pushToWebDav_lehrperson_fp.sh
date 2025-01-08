@@ -65,6 +65,9 @@ cp -f ./algebra/bruchrechnen/WannBruecheKuerzen/WannBruecheKuerzen_TRAINER_ALLG.
 echo "  Lineare Gleichungen Arbeitsblatt"
 cp -f ./gleichungen/lineare/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/lineare/arbeitsblatt/
 
+echo "  Lineare Gleichungen Textaufgaben"
+cp -f ./gleichungen/lineare_textaufgaben/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/lineare/textaufgaben/
+
 echo "  Logarithme Arbeitsblatt"
 cp -f ./algebra/logarithmen/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/logarithmus/arbeitsblatt/
 
