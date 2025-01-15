@@ -479,11 +479,11 @@ errechnet werden.
   \begin{gesetz}{Produktregel}{} 
     $$\log_a(u\cdot{}v)= \LoesungsRaumLen{50mm}{\log_a(u) + \log_a(v)}$$
   \end{gesetz}
-  \TNT{3.2}{Beweis: $$a^u\cdot{}a^v = a^{u+v}$$
-    logarithmieren:
-    $$\log_a(a^u\cdot{}a^v) = \log_a{a^{u+v} = u+v = \log_a(a^u) + \log_a(a^v)}$$
-    Setze $x=a^u$ und $y=a^v$:
-    $$\log_a(x\cdot{}y)  = \log_a(x) + \log_a(y)$$
+  \TNT{3.2}{Beweis:
+
+    $$a^{\log_a(u\cdot{}v)} = u\cdot{} v = a^{\log_a(u)} \cdot{} a^{\log_a(v)} = a^{\log_a(u) + \log_a(v)}$$
+    Gesetz gilt nun durch Exponentenvergleich.
+    
   }
     \begin{gesetz}{Quotientenregel}{}
   $$\log_a\left(\frac{u}{v}\right)= \LoesungsRaumLen{50mm}{\log_a(u) - \log_a(v)}$$
