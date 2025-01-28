@@ -145,7 +145,8 @@ Je nach Aufgabe ist die linke oder die rechte Notation einfacher.
 
 
 
- \subsection{Logarithmengesetze}
+\subsection{Logarithmengesetze}
+\subsubsection{Basiswechsel}
 Aus obigem Beispiel («die Harte Tour» \totalref{harteTourLogarithmen}) folgt direkt das folgende Gesetz:
 
 \begin{gesetz}{Basiswechsel}{}\index{Basiswechsel!Logarithmen}
@@ -175,14 +176,12 @@ Aus obigem Beispiel («die Harte Tour» \totalref{harteTourLogarithmen}) folgt d
     $$\Longleftrightarrow 10^{\lg(p)} = 10^{x\cdot{}\lg(a)}$$
     $$\Longleftrightarrow \lg(p) = x\cdot{}\lg(a)$$
     $$\Longleftrightarrow x = \frac{\lg(p)}{\lg(a)} \stackrel{(II)}{=} \log_a(p)$$
-    
-
 }%% END TNTeop
 }%% END TALS
 
 
 \GESO{\begin{beispiel}{Logarithmen-Basiswechsel}{}
-\TNT{4}{ $$\log_2(32) = \frac{\lg(32)}{\lg(2)} = 5$$\vspace{11mm}}
+\TNT{3.2}{ $$\log_2(32) = \frac{\lg(32)}{\lg(2)} = 5$$\vspace{11mm}}
   \end{beispiel}%%
 }%% END GESO
 
@@ -191,12 +190,12 @@ Aus obigem Beispiel («die Harte Tour» \totalref{harteTourLogarithmen}) folgt d
   Lösen Sie die folgende Gleichung und schreiben Sie das Resultat mit
   Hilfe von Zehnerlogarithmen:
   $$5^x = 30$$
-  \TNT{6}{Definition Logarithmus:
+  \TNT{4.8}{Definition Logarithmus:
     $$x = \log_5(30)$$
     Basiswechsel-Gesetz:
     $$x = \log_5(30) = \frac{\lg(30)}{\lg(5)} \approx
     \frac{1.4771}{0.69897} \approx 2.113$$
-    \vspace{25mm}
+    \vspace{2mm}
   }%% END TNT
 \end{beispiel}
 \newpage
@@ -243,27 +242,27 @@ Einstigesbeispiel:
 %}%% END GESO
 
 
-\subsubsection{Logarithmengesetze: Beispiele}\index{Beispiele!Logarithmen}\index{Gesetze!Logarithmen}\index{Logarithmus!Beispiele,Gesetze}
+\subsubsection{Beispiele und Gesetze}\index{Beispiele!Logarithmen}\index{Gesetze!Logarithmen}\index{Logarithmus!Beispiele,Gesetze}
  
- \begin{bemerkung}{}{}
+ \begin{beispiel}{}{}
    $$\log_a(a^7) = \LoesungsRaum{7}$$
-\end{bemerkung}
+\end{beispiel}
 
-\begin{bemerkung}{}{}
+\begin{gesetz}{}{}
   $$\log_a(a^n) = \LoesungsRaum{n}$$
-\end{bemerkung}
+\end{gesetz}
 
-  \begin{bemerkung}{}{}
+\begin{beispiel}{}{}
    $$\log_a(a\cdot{}a) = \LoesungsRaum{2} \text{ , denn } \TRAINER{a\cdot{}a = a^2}$$
-\end{bemerkung}
+\end{beispiel}
 
- \begin{bemerkung}{}{}
+ \begin{gesetz}{}{}
    $$\log_a(a) = \LoesungsRaum{1} \text{ , denn } \TRAINER{a^1 = a}$$
-\end{bemerkung}
+\end{gesetz}
 
- \begin{bemerkung}{}{}
+ \begin{gesetz}{}{}
    $$\log_a(1) = \LoesungsRaum{0} \text{ , denn } \TRAINER{a^0 = 1}$$
-\end{bemerkung}
+\end{gesetz}
 
 
 
@@ -373,7 +372,7 @@ Vermischte Aufgaben:
 \newpage
 
 
-\subsubsection{Die Eulersche Konstante}\index{$\e$!Eulersche Konstante}
+\subsubsection{Die Eulersche Konstante\GESO{ (optional)}}\index{$\e$!Eulersche Konstante}
 
 Die Basis $\e$ ($\e$ = Eulersche\footnote{Leonhard Euler (1707-1783)} Konstante $\e\approx 2.71828182846$) wird vor allem bei Wachstums- und Zerfallsprozessen verwendet.
 
