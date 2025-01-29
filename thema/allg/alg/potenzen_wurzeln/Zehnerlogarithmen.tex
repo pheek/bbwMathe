@@ -222,12 +222,25 @@ Begründung:
 
 \TNT{6.0}{
 
+  \GESO{
 $$\lg(10^n \cdot 10^m) = \lg(10^{(n+m)}) = n+m = \lg(10^n) + \lg(10^m)$$
   Setzen wir nun $r:=10^n$ und $s:=10^m$, so erhalten wir\footnote{\TRAINER{Wobei hier $n$ und $m$ nicht notwendigerweise in
     $\mathbb{N}$}}:
 
 $$\lg(r\cdot{}s) = \lg(10^n \cdot 10^m) = ... = \lg(10^n) + \lg(10^m)  = \lg(r) + \lg(s)$$
+  }%% end GESO
 
+  \TALS{Es gilt $$10^x=p \Longleftrightarrow \lg(p) = x$$ Setzen wir
+    $x$ aus $x=\lg(p)$ in $10^x=p$ ein, so erhalten wir
+    $$10^{\lg(p)} = p $$
+
+    Somit gilt (beim Vorzeigen mit $ab$ in der Mitte beginnen:
+
+$$10^{\lg(ab)} = a\cdot{}b = 10^{\lg(a)} \cdot{} 10^{\lg(b)} =
+    10^{\lg(a) + \lg(b)}  $$
+    Exponentenvergleich liefert
+    $$\lg(ab) = \lg(a) + \lg(b)$$
+  }%% end TALS
   
   \vspace{15mm}
 }%% END TNT
@@ -241,12 +254,9 @@ Beispiel: \TRAINER{Beim Vorzeigen mit den beiden 8ern von links und
 \TALS{
   \textbf{Multiplizieren durch Addieren}\\
 
-  Nach dem ebene gezeigten Gesetz gilt:
-  \TNT{1.2}{  $$\lg(a\cdot{}b) = \lg(a) + \lg(b)$$}
-  
-  Daraus folgt:
-\TNT{1.2}{  $$a\cdot{}b = 10^{\lg(a\cdot{}b)} = 10^{\lg(a) +
-    \lg(b)}$$}
+  Nach dem ebene gezeigten Gesetz folgt:
+
+\TNT{1.2}{  $$a\cdot{}b = 10^{\lg(a\cdot{}b)} = 10^{\lg(a) +  \lg(b)}$$}
 
   Und somit können wir zwei Zahlen multiplizieren, indem wir ihre
   Logarithmen addieren:
