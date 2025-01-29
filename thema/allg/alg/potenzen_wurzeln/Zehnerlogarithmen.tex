@@ -18,7 +18,6 @@
 
 \begin{itemize}
 \item Zehnerpotenzen
-\item wissenschaftliche Notation (Repetition)
 \item Zehnerlogarithmus
 \item Notation
 \TALS{\item Logarithmengesetze I}
@@ -47,10 +46,6 @@ eingeführt. Zur Erinnerung:\totalref{wissenschaftlicheNotation}.
 
 Allgemein für ${\color{red}z}\in \mathbb{Z}$:
 
-\begin{gesetz}{Logarithmus = Exponent}{}
-  $$\lg({\color{ForestGreen} 10^z}) = {\color{red} z}$$
-\end{gesetz}
-
 
 Definition für $x\in\mathbb{R}, p \in \mathbb{R}^{+}\backslash\{0\}$:
 \begin{definition}{Logarithmus zur Basis 10}{}
@@ -60,6 +55,13 @@ Definition für $x\in\mathbb{R}, p \in \mathbb{R}^{+}\backslash\{0\}$:
     ${\color{red}x} = {\color{blue}\lg}({\color{ForestGreen}p})$
     \end{center}
 \end{definition}
+
+
+\begin{gesetz}{Logarithmus = Exponent}{}
+  $$\TRAINER{\lg({\color{ForestGreen} 10^z})} = \TRAINER{{\color{red} z}}$$
+\end{gesetz}
+
+
 
 \begin{bemerkung}{}{}\index{Logarithmus!Definition}
   Der \textbf{Logarithmus} (hier $\color{red}x$) eines Potenzwertes
@@ -86,6 +88,18 @@ $\lg(\frac1{1000}\cdot{} 1\,000\,000 \cdot{} 0.01)
 \LoesungsRaumLen{30mm}{-3 + 6 - 2} = \LoesungsRaum{1}$
 
 \newpage
+
+
+
+\begin{gesetz}{}{}
+$$\lg(10) = \LoesungsRaumLen{10mm}{1}$$
+\end{gesetz}
+
+\begin{gesetz}{}{}
+$$\lg(1) = \LoesungsRaumLen{10mm}{0}$$
+\end{gesetz}
+
+
 \subsubsection{Logarithmus der Wurzel}
 Wir erinnern uns: $$\sqrt{10} =\LoesungsRaum{ 10^\frac12}$$
 \begin{beispiel}{Logarithmus der
@@ -116,7 +130,7 @@ $\lg(10^{2.5}) = \LoesungsRaum{2.5}$
 
 \leserluft{}
 
-$\lg(316.23) \approx \LoesungsRaum{2.500}$
+$\lg(316.23) \approx \LoesungsRaum{2.5000}$
 
 
 \begin{bemerkung}{Taschenrechner}{}
@@ -143,26 +157,27 @@ $\lg(316.23) \approx \LoesungsRaum{2.500}$
 
 \newpage
 
-\subsection{Rechengesetze}
-Per Definition gilt:
+\subsection{Rechenregeln}
+\subsubsection{Umkehrung}
 
-\begin{gesetz}{}{}
-$$\lg(10) = \LoesungsRaumLen{10mm}{1}$$
-\end{gesetz}
-
-\begin{gesetz}{}{}
-$$\lg(1) = \LoesungsRaumLen{10mm}{0}$$
-\end{gesetz}
+Der Logarithmus ist die Umkehrung des Exponenzierens.
 
 \begin{gesetz}{}{}
   $$10^{\lg(p)} = \LoesungsRaumLen{10mm}{p}$$
 \end{gesetz}
 
 Begründung:
-\TNT{2.4}{ Durch beidseitiges Exponenzieren der Definition...
+\TNT{2.4}{
 
-$$\lg(10^x) = x \Longrightarrow 10^{\lg(10^x)} = 10^x
-\stackrel{p:=10^x}{\Longrightarrow} 10^{\lg(p)} = p$$
+  \TALS{$$10^x = p \Longleftrightarrow  \lg(p)=x$$
+    nun das $x$ von $x=\lg(p)$ in die linke Seite einsetzen.
+    $$10^{\lg(p)} = p$$
+  }%% end TALS
+
+  \GESO{Beispiel $$10^{\lg(1000)} = 1000$$
+\TRAINER{\vspace{12mm}}
+  }
+
 }%% END TNT
 
 \begin{bemerkung}{negative Exponenten}{}
@@ -171,12 +186,21 @@ $$\lg(10^x) = x \Longrightarrow 10^{\lg(10^x)} = 10^x
 
   $$\lg(a) \text{ ist definiert für } a\in\mathbb{R}^+\backslash\{0\}$$
   \end{bemerkung}
+\newpage
+
 
 
 \subsection*{Aufgaben}
 Denken Sie immer daran, dass der Logarithmus als Potenz geschrieben
 werden kann:
 $${\color{red}x}=\lg({\color{ForestGreen}p}) \Longleftrightarrow  10^{\color{red}x}={\color{ForestGreen}p}$$
+
+Beispiel:
+
+\TNT{2.4}{
+  Berechnen Sie $x$: $\lg(x-4) = 2$
+  Dies heißt aber$$10^2 = x-4$$ und somit $$104 = x$$
+}
 
 
 \GESO{
