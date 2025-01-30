@@ -166,24 +166,33 @@ $$e^{m\cdot{} 0}\cdot{} 2 =e^{m\cdot{} 5}$$
     \textbf{ $\tau$ und $a$ sind voneinander abhängig!}}
   \end{center}
 
-Es gilt:
-\begin{center}\fbox{$b\cdot{}a^{\frac{t}{\tau}} = b\cdot{}a_2^{\frac{t}{\tau_2}} =
-    b\cdot{}\e^{m\cdot{}t}$}
+\begin{beispiel}{Basiswechsel}{}
+  Warum ist $$b\cdot{}2^{\frac{t}7} = b \cdot{} 8^{\frac{t}{21}}$$
+  \TNT{1.2}{Lösung: 2x in 7h = 4x in 14 h = 8x in 21 h}
+\end{beispiel}
+
+
+Ansatz:
+\begin{center}\fbox{$b\cdot{}a^{\frac{t}{\tau}} =
+    b\cdot{}a_2^{\frac{t}{\tau_2}} \TALS{ =    b\cdot{}\e^{m\cdot{}t}}  $}
 \end{center}
 
-... oder nach ziehen der $t$-ten Wurzel:
+(Teilen durch $b$ und Ziehen der $t$-ten Wurzel:)
 
 \begin{gesetz}{Basiswechsel}{}
 
-  \begin{center}\fbox{\fbox{$a^{\frac{1}{\tau}} =     a_2^{\frac{1}{\tau_2}} = \e^{m}$}}\end{center}
+  \begin{center}\fbox{\fbox{$a^{\frac{1}{\tau}} =
+        a_2^{\frac{1}{\tau_2}} \TALS{ = \e^{m}}$}}\end{center}
 
  
   $a=$ Wachstumsfaktor\\
   $\tau=$ Beobachtungszeitraum\\
   $a_2, \tau_2=$ Entsprechend neuer Wachstumsfaktor $a_2$ bzw. neues
   Beobachtungsintervall $\tau_2$ nach dem Basiswechsel\\
-  $\e= $ Eulersche Konstante (2.718...)\\
-  $m = $ \textit{Wachstumsexponent} bei Basis $e$ \\
+  \TALS{
+    $\e= $ Eulersche Konstante (2.718...)\\
+    $m = $ \textit{Wachstumsexponent} bei Basis $e$ \\
+ }%% end TALS
   \hrule
   \vspace{3mm}
 \begin{center}\fbox{\fbox{  $a = a_2^{\frac{\tau}{\tau_2}}$}}\end{center}
@@ -191,8 +200,10 @@ Es gilt:
   $a_2 = a^{\frac{\tau_2}{\tau}}$\\
   \vspace{3mm}
   $\tau_2=1 : \left(\log_{a_2}\left(a^\frac1\tau\right)\right)$\\
-  \vspace{3mm}
-  $m=\ln\left(a^\frac1\tau\right) =  \ln\left(a_2^\frac1{\tau_2}\right)$\\
+\TALS{  \vspace{3mm}
+  $m=\ln\left(a^\frac1\tau\right) =
+  \ln\left(a_2^\frac1{\tau_2}\right)$\\
+  }%% end TALS
 \end{gesetz}
 \newpage
 
