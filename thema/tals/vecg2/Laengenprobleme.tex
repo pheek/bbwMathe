@@ -13,15 +13,24 @@ mit dem Satz des Pythagoras ermittelt werden.
   $$|\vec{a}| =  \left|\Spvek{a_x;a_y;a_z}\right| = \sqrt{a_x^2 + a_y^2 + a_z^2}$$
 \end{gesetz}
 
+
+\begin{definition}{Einheitsvektor}{}\index{Einheitsvektor}
+  Ein Vektor der Länge 1 heißt \textbf{Einheitsvektor}.
+\end{definition}
+
+\newpage
+
+\begin{bemerkung}{Taschenrechner \texttt{norm}}{}
 Bemerkung Taschenrechner: Im Taschenrechner kann die Länge (Distanz
 \texttt{d}) mit der \texttt{norm}\index{norm!Vektorlänge} ermittelt
 werden:
 
 \texttt{d:=norm(vec)}
+\end{bemerkung}
 
-\begin{definition}{Einheitsvektor}{}\index{Einheitsvektor}
-  Ein Vektor der Länge 1 heißt \textbf{Einheitsvektor}.
-\end{definition}
+Berechnen Sie damit die Norm des Vektors $\vec{a}$:
+$$\vec{a} =\Spvek{1;2;3} \Longrightarrow \left| \vec{a} \right| = \LoesungsRaumLen{30mm}{3.74}$$
+
 
 \subsection*{Aufgaben}
 %%\TALSAadBFWG{196}{77. a), 83.}
@@ -61,14 +70,14 @@ verkürzt werden. Diese Operation nennen wir auch hier
 \end{bemerkung}
 \newpage
 
-\subsection{Normieren}\index{Vektor!normiert}\index{normierter Vektor}
+\subsection{Normierte Vektoeren}\index{Vektor!normiert}\index{normierter Vektor}
 
 \begin{gesetz}{Vektor normieren}{}
   Sei $\vec{a}$ ein Vektor der Länge $a$.
   Somit ist $\frac1a = \frac1{|\vec{a}|}$ der Kehrwert der Länge
   des Vektors.
 
-  Der Vektor $$\vec{n} := \frac1{|\vec{a}|}\cdot{}\vec{a} =  \frac1a \cdot{}\vec{a} $$ hat somit
+  Der Vektor $$\vec{n} = \LoesungsRaumLen{40mm}{\frac1{|\vec{a}|}\cdot{}\vec{a}} =  \LoesungsRaumLen{40mm}{\frac1a \cdot{}\vec{a} }$$ hat somit
   die Länge 1 und ist der \textit{normierte} Vektor zu $\vec{a}$.
 \end{gesetz}
 
