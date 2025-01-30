@@ -303,7 +303,7 @@ Begründung:
 
 
 \subsection{Beobachtungszeitspanne}
-\subsubsection{Einstgiesbeispiel}
+\subsubsection{Einstiegsbeispiel}
 \bbwCenterGraphic{17cm}{allg/funktionen/img/tuerlersee2.jpg}
 \begin{center}{\small Legende: Türlersee April 2022}\end{center}
 
@@ -387,9 +387,9 @@ Merke:
   $$\tau=\LoesungsRaumLen{50mm}{\text{Beobachtungszeitspanne}}$$
 \end{gesetz}
 
-Alternativ «die harte Tour» (ohne das $\tau$ mit anderer Basis):
 
 \TNTeop{
+\GESO{(optional) }Alternativ «die harte Tour» (ohne das $\tau$ mit anderer Basis):
 
 
   $$f(t) = b\cdot{}A^t$$
@@ -581,20 +581,44 @@ groß ist seine Halbwertszeit $T_{1/2}$?
 
   Halber Wert:
   
-  $$\frac{b}2= b\cdot{} 0.8^\frac{T_{1/2}}{7}$$
-  $$\frac12  = 0.8^\frac{T_{1/2}}{7}$$
+  $$\frac{b}2= b\cdot{} 0.8^\frac{T}{7}$$
+  $$\frac12  = 0.8^\frac{T}{7}$$
 
   Solver (num-solv): 21.74 (Tage) ...
 
  ... oder mit der Definition des Logarithmus:
   
-  $$\frac{T_{1/2}}7 = \log_{0.8}\left(\frac12\right)$$
-  $$T_{1/2} = 7\cdot{} \log_{0.8}\left(\frac12\right) \approx 21.74$$
+  $$\frac{T}7 = \log_{0.8}\left(\frac12\right)$$
+  $$T_{1/2} := T = 7\cdot{} \log_{0.8}\left(\frac12\right) \approx 21.74$$
 
 
-  Bemerkung: $$f(t) =b\cdot{}0.8^\frac{t}7 \approx b\cdot{}\left(\frac12\right)^\frac{t}{21.74}$$
+%%  Bemerkung: $$f(t) =b\cdot{}0.8^\frac{t}7 \approx b\cdot{}\left(\frac12\right)^\frac{t}{21.74}$$
 }%% END TNT
 \newpage
+
+
+\GESO{Aus obiger Rechnung ergibt sich sofort das folgenden Gesetz:}%% end geso
+
+\TALS{
+Allgemenie Herleitung:
+
+\TNT{8}{
+  $$\frac12 \cdot{} f(0) = f(T_{1/2})$$
+  $$\frac12 \cdot{} b    = b\cdot{}A^{T_{1/2}}$$
+  $$\frac12 = A^{T_{1/2}}$$
+  $$\log_A \left(\frac12\right) = T_{1/2}$$
+}
+
+}%% end tals
+
+\begin{gesetz}{Halbwertzszeit}{}
+  Die Halbwertszeit $T_{1/2}$ berechnet sich wie folgt:
+  $$T_{1/2} = \LoesungsRaumLen{70mm}{\tau \cdot{} \log_a\left(\frac12\right)}$$
+  Dabei ist $A$ der Abnahmefaktor pro Zeiteinheit; $a$ während $\tau$ Zeiteinheiten.
+\end{gesetz}
+
+Ist die Halbwertszeit $T = T_{1/2}$ bekannt, so gilt mit
+$\tau=T_{1/2}$ und mit $a=\frac12$:
 
 \begin{gesetz}{Stoffmenge}{}
   Ist die Halbwertszeit $T_{1/2}$ und die anfängliche Stoffmenge $b$
@@ -603,23 +627,6 @@ groß ist seine Halbwertszeit $T_{1/2}$?
   $$f(t) = \LoesungsRaumLen{50mm}{b\cdot{}\left(\frac12\right)^\frac{t}{T_{1/2}}}$$
 \end{gesetz}
   
-\begin{gesetz}{Halbwertzszeit}{}
-  Die Halbwertszeit $T_{1/2}$ berechnet sich wie folgt:
-  $$T_{1/2} = \LoesungsRaumLen{70mm}{\log_A\left(\frac12\right) = \tau
-  \cdot{} \log_a\left(\frac12\right)}$$
-  Dabei ist $A$ der Abnahmefaktor pro Zeiteinheit; $a$ während $\tau$ Zeiteinheiten.
-\end{gesetz}
-
-
-Herleitung:
-
-\TNTeop{
-  $$\frac12 \cdot{} f(0) = f(T_{1/2})$$
-  $$\frac12 \cdot{} b    = b\cdot{}A^{T_{1/2}}$$
-  $$\frac12 = A^{T_{1/2}}$$
-  $$\log_A \left(\frac12\right) = T_{1/2}$$
-}
-
 \newpage
 \GESO{Optional:}
 
@@ -627,7 +634,7 @@ Herleitung:
 
 Analog gilt das Gesetz zur Verdopplung (s. obiges Beispiel Bevölkerung Irlands):
 \begin{gesetz}{Verdopplungszeit}{}
-  $$T_2 = \LoesungsRaumLen{40mm}{\log_A(2) = \tau \cdot{} \log_a(2)}$$
+  $$T_2 = \LoesungsRaumLen{40mm}{ \tau \cdot{} \log_a(2)}$$
 
   $A$: der Abnahmefaktor pro Zeiteinheit; $a$ während $\tau$ Zeiteinheiten.
   
