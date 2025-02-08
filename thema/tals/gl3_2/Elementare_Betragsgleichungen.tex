@@ -1,3 +1,105 @@
-\section{Elementare Betragsgleichungen}\index{Betragsgleichungen}\index{elementare Betragsgleichungen}
+\section{Elementare Betragsgleichungen}\index{Betrag!Gleichung}\index{elementare Betragsgleichungen}\index{Gleichnug!Betragsgleichung}
 
-Coming soon...
+\textbf{Repetition}
+
+Der Abstand von Zürich ($z$)  nach Bern ($b$) ist natürlich gleich groß, wie der
+Abstand von Bern nach Zürich. Mathematisch könnte das etwa so
+dargestellt werden:
+
+$$|z-b| = |b-z|$$
+
+Bei Differenzen sprechen wir i.\,d.\,R. nur vom positiven Abstand. Der
+Betrag ist definiert als
+
+\begin{definition}{Betrag}{}
+
+  $$|a| = \left\{  \begin{aligned} a & \text{ falls } a > 0 \\ (-a) &
+    \text{ sonst. }  \end{aligned} \right.$$
+\end{definition}
+
+
+\begin{definition}{Betragsgleichung}{}
+  Unter einer Betragsgleichung verstehen wir eine Gleichung, bei der
+  die Gesuchte im Betrag vorkommt.
+\end{definition}
+
+\begin{beispiel}{Betragsgleichung}{}
+  $$|x-3| - 4x = x$$
+\end{beispiel}
+
+\newpage
+\subsection{Einstiegsbeispiele}
+Eine elementare Betragsgleichung könnte nun so aussehen:
+
+$$|A| = 5$$
+
+Zum Lösen haben wir zwei Fälle.
+
+\TNTeop{
+\textbf{1. Fall:} Ist nämlich $A>0$; hier hat der Betrag keinen Einfluss. So lautet die Gleichung einfach
+$A=5$ und wir haben damit auch schon eine Lösung gefunden.
+
+\textbf{2. Fall:} Ist hingegen $A \le{} 0$, so müssen wir von $A$ die
+\textbf{Gegegzahl}\index{Gegenzahl} einsetzen:
+$$-(A) = 5$$
+Dies führt uns sofort auf $A=-5$.
+
+Daher lautet die Lösungsmenge $\mathbb{L}_A = \{-5; 5\}$
+
+}%% end TNTeop
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Ein zweites Beispiel sieht nun etwas komplizierter aus:
+
+  $$|x-3| - 4x = x$$
+
+\TNTeop{
+Als erstes separieren wir den Betrag:
+
+  $$|x-3| = 5x$$
+
+\textbf{1. Fall:} $(x-3)> 0$ führt zu $$x-3 = 5x$$ (minus
+$x$) $$-3=4x$$ und somit $$x_1 = \frac{-3}4$$
+
+\textbf{2. Fall:} $(x-3) \le{} 0$. Jetzt nehmen wir die Gegenzahl des
+Betragsargumentes: $$-(x-3) = 5x$$ (plus
+$x$) $$3=6x$$ und somit $$x_2 = \frac12$$
+
+\textbf{Probe 1:}
+Die Probe bei Betragsgleichungen ist unerläßlich:
+
+$$|x_1 -3 | \stackrel{?}{=} 5x$$
+Bitte nachrechnen $|-\frac34 -3 | \stackrel{?}{=}
+5\cdot{}\frac{-3}4$. Dies ist nicht möglich, weil die rechte Seite der
+Gleichung negativ wird.
+
+NEIN! Die Lösung $x_1$ fällt also weg.
+
+\textbf{Probe 2:}
+
+$$|x_2 -3 | \stackrel{?}{=} 5x$$
+$$\left|\frac12 -3 \right| \stackrel{?}{=} 5\cdot{} \frac12$$
+$$|-2.5| \stackrel{!}{=} 2.5$$
+
+Dies ist korrekt und es bleibt
+$$\lx = \left\{\frac12 \right\}$$
+
+
+}%% end TNTeop
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{rezept}{Betragsgleichung}{}
+  \begin{enumerate}
+  \item Betrag separieren (alleine auf eine Seite nehmen)
+  \item Zwei Gleichungen erstellen, einmal einfach Betragszeichen
+    weglassen und einmal mit der Gegenzahl $|A(x)|$ wird $-(A(x))$.
+  \item Beide Gleichungen separat Lösen
+  \item Mit beiden Resultaten die Probe machen
+  \end{enumerate}
+  
+\end{rezept}
+
+\subsection*{Aufgaben}
+
+\AadBMTA{259}{49. Lösen Sie die Aufgaben erstens mit obigem Rezept und
+zweitens Graphisch, indem Sie je den Term links und den Term
+rechts des Gleichheitszeichens als Funktionsterm auffassen.}
