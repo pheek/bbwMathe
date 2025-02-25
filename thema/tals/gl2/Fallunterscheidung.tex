@@ -1,0 +1,45 @@
+\subsection{Fallunterscheidung}
+
+Aus den Strukturaufgaben:
+
+
+\aufgabenFarbe{Berechnen Sie die Lösung für $x\in\mathbb{R}$ in Abhängigkeit von $k$ mit einer vollständigen Fallunterscheidung für alle Parameterwerte $k\in\mathbb{R}$.
+}
+
+$$kx^2 - x^2 + 3x = 2$$
+
+\TNTeop{
+
+  \begin{tabular}{c|c|c}
+    A & B & C  \\\hline
+    $k-1$ & $3$ & $-2$ 
+    \end{tabular}
+
+    $$D = 9-4\cdot{} (k-1)\cdot{}(-2)$$
+    $$D = 9 + 8(k-1) = 8k + 1$$
+Allgemeine Lösung:
+    $$x_{1,2} = \frac{-3 \pm \sqrt{8k+1}}{2k-2}$$
+
+ 1. Soderfall Nenner: $k=1$ ist nicht möglich.
+
+    Mit $k-1$ reduziert sich die ursprüngliche Gleichung jedoch auf:
+    $$ 3x = 2 \Longrightarrow x = \frac23$$
+
+2. Sonderfall: Diskriminante = 0:
+Das heißt $8k+1=0$ und somit ist $k=\frac{-1}8$.
+
+Somit erhalten wir für $x$ eingesetzt in die allgemeine Lösung nur noch eine Lösung:
+
+$$x = \frac{-3\pm\sqrt{0}}{2\cdot{}\left(\frac{-1}{8} - 1\right)} = \frac43$$
+
+3. Sonderfall: Diskriminante ist kleiner als 0:
+
+$$8k+1 < 0 \Longleftrightarrow k <\frac{-1}8  \Longrightarrow  \lx=\{\}$$
+
+Abgesehen von den Sonderfällen $k=1$ und $k<\frac{-1}8$ gilt die allgemeine Lösung.
+    
+
+    
+    
+}%% end TNT eop
+%% \newpage implicit  

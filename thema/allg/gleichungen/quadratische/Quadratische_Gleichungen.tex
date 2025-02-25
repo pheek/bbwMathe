@@ -15,14 +15,11 @@
 \begin{itemize}
 \item Grundform $ax^2+bx+c=0$
 \item Lösungsmethoden 
-  \begin{itemize}
-    \item{Fallunterscheidung}
-    \item{Zerlegung in Linearfaktoren}
-    \item{Substitution}
-  \end{itemize}
 \item Allgemeine Form, ABC-Formel (Mitternachtsformel) $x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2a} $
 %%   \item Rationale Gleichungen (<- die Bruchgleichungen haben ein eigenes Kapitel)
-\item Definitiosnbereich
+\item Diskriminante
+\TALS{\item{Parameter}}
+\TALS{\item{Fallunterscheidung}}
 \item Taschenrechner: \GESO{Ohne Parameter} \TALS{Mit und ohne Parameter}
 \TALS{\item Taschenrechner: Visualisierung, Interpretation}
 \end{itemize}
@@ -70,33 +67,10 @@ Wie sieht es bei 10 Personen aus?
 
 \newpage
 
-\GESO{Repetitionsaufgaben:
-  
 \subsubsection{Voraussetzungen}
-Berechnen Sie:
 
-a) $7^2 = \TRAINER{49}$
-
-b) $-7^2 = \TRAINER{-49}$
-
-c) $(-7)^2 = \TRAINER{49}$
-
-d) $(9-2)^2 = \TRAINER{49}$
-
-e) $(-5 - 2)^2 = \TRAINER{49}$
-
-\GESO{
-  Challenge: Wer schon fertig ist, soll die beiden Gleichungen auf der
-nächsten Seite versuchen.
-
-}
-\TNTeop{
-}%% end TNTeop
-}%% end GESO
-
-\TALS{\input{tals/gl2/Voraussetzungen}}%%
-%%
-
+\GESO{\input{geso/gl1/Voraussetzungen}}
+\TALS{\input{tals/gl2/Voraussetzungen}}
 
 
 \newpage
@@ -192,9 +166,9 @@ Lernzielkontrolle: Kahoot: Quadratische Gleichungen.}%% end TNT
 %%\newpage
 
 
-\TALS{
-  \input{tals/gl2/BinomeBilden}}%% END TALS 
-\newpage
+%\TALS{
+%  \input{tals/gl2/BinomeBilden}}%% END TALS 
+%\newpage
 
 
 
@@ -247,10 +221,6 @@ $(x-5)(x-8)=(x-3)^2$ &
   
 \end{bbwFillInTabular}
 \newpage
-
-
-\TALS{
-\input{tals/gl2/Spezialfaelle}}%% END TALS
 
 
 \subsection{Lösungsformel}
@@ -311,8 +281,8 @@ Bemerkung:
 \TNT{1.2}{ Mathematisches Verfahren = \textbf{Algorithmus}\index{Algorithmus}}%% END TNT
 
 
-\newpage
-\TALS{\input{tals/gl2/QuadratischeErgaenzung}}
+%%\newpage
+%%\TALS{\input{tals/gl2/QuadratischeErgaenzung}}
 
 \newpage
 
@@ -483,11 +453,14 @@ Wer fertig ist:\\
 \TALSAadBMTA{181}{[Alle entweder mit ABC-Formel oder mit einfacherem Verfahren] 4. a) c) e), 5. a) c) e), 6. d),
  7. a) e) und 9. a) c) e)}
 \newpage
+\TALS{\input{tals/gl2/Spezialfaelle}}%% END TALS
+\newpage
 
-\TALS{\input{tals/gl2/Mit_Parametern}
-\newpage}
 
-\subsubsection{Taschenrechner Tipps}
+\input{allg/gleichungen/quadratische/Diskriminante}
+\newpage
+
+\subsubsection{Taschenrechner: Visualisierung}
 
 \TALS{Der CAS\footnote{CAS = Computer Algebra System}-Rechner kann
   quadratische Gleichungen einfach mit der \texttt{solve}-Funktion
@@ -571,14 +544,15 @@ Lösen Sie: $$4.1x^2+6x=-15$$
 
 \olatLinkGESOKompendium{2.3.4.}{17ff}{56. bis 58.}
 
-\newpage
-
-\input{allg/gleichungen/quadratische/Diskriminante}
 
 %%\input{allg/gleichungen/substitution/Substitution}
 
 \newpage
 
+\TALS{\input{tals/gl2/Mit_Parametern}}
+\newpage
+\TALS{\input{tals/gl2/Fallunterscheidung}}
+\newpage
 
 \subsection{Welches Verfahren (optional)}
 Wann soll welches Verfahren eingesetzt werden? Dies ist eine
