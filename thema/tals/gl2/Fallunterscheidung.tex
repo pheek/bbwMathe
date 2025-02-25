@@ -1,5 +1,65 @@
 \subsection{Fallunterscheidung}
+Einstiegsbeispiel: Ein Ball wird mit 30 m/s senkrecht nach oben geworfen.
+Die Höhe kann wie folgt berechnet werden:
 
+$$h(t)  = v_0 \cdot{} t -\frac{g}{2}\cdot{}t^2$$
+Dabei ist $g$ die «Fallbeschläunigung»: $g\approx 9.8 \frac{\text{m}}{\text{s}} \approx 10$.
+
+Mit Zahlen:
+
+$$h(t) = 30\cdot{} t - \frac{10}2 t^2$$
+
+Mit unseren bekannten Variablen:
+$$h = 30x - 5x^2$$
+
+$y=h(t)$ in 10 m Schritten, $x=t$ Zeit in s:
+
+\bbwGraph{-1}{10}{-1}{5}{
+  \TRAINER{
+      \bbwFunc{-0.5*(\x-3)*(\x-3)+4.5}{0:6}   
+%%    \bbwFunc{-18*(\x-0.5)*(\x-0.5)+4.5){0:1}
+    }
+}%% end bbwGraph
+
+\newpage
+
+Wann ist der Ball 25 m hoch?
+
+\TNTeop{
+$$25 = 30x - 5x^2$$
+  $$5x^2 - 30x + 25 = 0$$
+  $$x^2 -6x + 5 = 0 \Longleftrightarrow (x-5)(x-1) = 0$$
+  $$\lx=\{1 \text{ s } , 5 \text{ s }\}$$
+
+  
+  Je nach Höhe ergibt sich eine andere Anzahl der Lösungen für die Zeit:
+
+
+  $$h = 30x - 5x^2 \Longleftrightarrow -5x^2 + 30x - h = 0$$
+
+  Ist die Diskrimiienante = 0, so haben wir genau eine Lösung für die Zeit
+
+  $$D = 30^2 - 4\cdot{} (-5) \cdot{} (-h) = 900 - 20h$$
+
+
+
+  a) Berechnen $h$ für $D=0$  :
+
+  $900 - 20h = 0 \Longrightarrow h = 45$
+
+  b) was bedeutet dies? Bei $h=45$ Metern hat die Gleichung geanu eine Lösung: Da ist der Ball ganz oben.
+  $$h = 45 = 30x - 5x^2\,\,\,\, | : 5$$ 
+  $$9 = 6x-x^2$$
+  sortieren
+  $$x^2 - 6x + 9 = 0$$
+  $$(x-3)^2 = 0$$
+  Nur eine Lösung, nämilch $x=t=3$ s.
+  
+  }%% end TNT
+
+
+
+\newpage
 Aus den Strukturaufgaben:
 
 
