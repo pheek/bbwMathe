@@ -7,18 +7,17 @@
 \input{bmsLayoutPage}
 \renewcommand{\bbwAufgabenBlockID}{GlQuad}
 
-\ifisNURAUFGABEN{
-\newcommand{\LoesungsBlock}[1]{\TRAINER{#1
+\ifisNURAUFGABEN
+\newcommand{\LoesungsBlock}[1]{\TRAINER{#1%%
 \vspace{1mm}
 \hrule}}%% end new Command "LoesungsBlock"
 \else
-\newcommand{\LoesungsBlock}[1]{\noTRAINER{\TNTeop{}}\TRAINER{#1
+\newcommand{\LoesungsBlock}[1]{\noTRAINER{\TNTeop{}}\TRAINER{#1%%
 \vspace{1mm}
 \hrule}}%% end new Command "LoesungsBlock"
 \fi
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{amssymb} %% für \blacktriangleright
 \renewcommand{\metaHeaderLine}{Arbeitsblatt Quadratische Gleichungen}
 \renewcommand{\arbeitsblattTitel}{Quadratische Gleichungen: Aufgaben}
 
