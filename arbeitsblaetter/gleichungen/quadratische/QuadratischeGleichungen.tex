@@ -1,0 +1,259 @@
+%
+%% Meta: TI nSpire Einführung
+%%       Ziel: Damit die Grundoperationen damit durchgeführt werden können.
+%%             Damit man sich an den Rechner gewöhnt.
+%%
+
+\input{bmsLayoutPage}
+\renewcommand{\bbwAufgabenBlockID}{GlQuad}
+
+\ifisNURAUFGABEN{
+\newcommand{\LoesungsBlock}[1]{\TRAINER{#1
+\vspace{1mm}
+\hrule}}%% end new Command "LoesungsBlock"
+\else
+\newcommand{\LoesungsBlock}[1]{\noTRAINER{\TNTeop{}}\TRAINER{#1
+\vspace{1mm}
+\hrule}}%% end new Command "LoesungsBlock"
+\fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amssymb} %% für \blacktriangleright
+\renewcommand{\metaHeaderLine}{Arbeitsblatt Quadratische Gleichungen}
+\renewcommand{\arbeitsblattTitel}{Quadratische Gleichungen: Aufgaben}
+
+\newcommand{\TNTeopS}[1]{\TRAINER{#1}\noTRAINER{\TNTeop{}}}
+
+\begin{document}%%
+\arbeitsblattHeader{}
+
+\begin{center}\textit{\tiny{V 0.99 --- 3. März 2025}}\end{center}
+
+\tableofcontents{}
+
+\newpage
+
+\section{Lösungsformel (von a bis z)}
+Lösen Sie diese Aufgaben der Reihe nach. Wenn Sie eine Aufgabe nicht lösen können, so versuchen Sie, die Aufgabe auf eine bekannte vorangehende zurückzuführen.
+
+
+%%\nextBbwAufgabenNummer{}
+
+\begin{bbwAufgabenBlock}
+\item $x^3=8$
+\LoesungsBlock{$\lx = \{2\}$}
+
+\item $x^2 = 9$
+\LoesungsBlock{$\lx = \{-3; 3  \}$}
+
+\item $x^2-25 = 0$
+\LoesungsBlock{$\lx=\{-5; 5$\} }
+
+\item $x^2 = 12$
+\LoesungsBlock{$\lx=\{-\sqrt{12}; \sqrt{12}\} = \{-2\sqrt{3}; 2\sqrt{3}\} \approx \{-3.464; +3.464\}$}
+
+\item $x^2 - 6 = 0$
+\LoesungsBlock{$\lx=\{\-\sqrt{6};\sqrt{6}  \}$}
+
+\item $x^2=-3$
+\LoesungsBlock{$\lx=\{ \}$}
+
+\item $2x^2-32 = 0$
+\LoesungsBlock{$\lx = \{-4; 4\}$}
+
+
+\item $|x-3| = 5$
+\LoesungsBlock{$\lx=\left\{ -2; 8\right\}$}
+
+
+\item $(x-3)^2 = 25 $
+\LoesungsBlock{$\lx = \left\{ -2; 8 \right\}$}
+
+\item $x^2-6x+9 = 25$
+\LoesungsBlock{$\lx = \left\{ -2; 8 \right\}$}
+
+\item $(x-6)^2 = -25 $
+\LoesungsBlock{$\lx = \left\{ \right\}$}
+
+\item $(x+6)^2 = 49$
+\LoesungsBlock{$\lx = \left\{-13; 1 \right\}$}
+
+\item $x^2+12x+36 = 9 $
+\LoesungsBlock{$\lx = \left\{-9; 3 \right\}$}
+
+\item $x^2-10x+25 = 0  $
+\LoesungsBlock{$\lx = \left\{ -5 \right\}$}
+
+\item $x^2 + 4x +4 = 36$
+\LoesungsBlock{$\lx = \left\{ -8; 4 \right\}$}
+
+\item $x^2+4x+5 = 37$
+\LoesungsBlock{$\lx = \left\{ -8; 4\right\}$}
+
+\item $x^2 -12 x + 36 = 7$
+\LoesungsBlock{$\lx = \left\{6+\sqrt{7}; 6-\sqrt{7} \right\}$}
+
+\item $ x^2 - 8x + 16= -5$
+\LoesungsBlock{$\lx = \left\{ \right\}$}
+
+\item $ x^2 -8x + 18 = 1$
+\LoesungsBlock{$\lx = \left\{ \right\}$}
+
+\item $x^2-8x+20 = 50  $
+\LoesungsBlock{$\lx = \left\{4-\sqrt{46} ; 4+ \sqrt{46} \right\}$}
+
+\item $ 2x^2 -16x + 40 = 100$
+\LoesungsBlock{$\lx = \left\{4-\sqrt{46} ; 4+ \sqrt{46} \right\}$}
+
+\item $ 2x^2 - 20x + 50 = \frac{49}{8} $
+\LoesungsBlock{$\lx = \left\{\frac{13}{4} ; \frac{27}{4} \right\}$}
+
+\item $ 2x^2 - 16 x= \frac{-207}{8}$
+\LoesungsBlock{$\lx = \left\{\frac{9}4 ; \frac{23}4 \right\}$}
+
+\item $ x^2 + px + \frac{p^2}{4}= q$
+\LoesungsBlock{$\lx = \left\{-\frac{p}{2} - \sqrt{q};-\frac{p}{2} + \sqrt{q} \right\}$}
+
+\item $ x^2 + px =  q$
+\LoesungsBlock{$\lx = \left\{ \frac12\left( -p-\sqrt{4q+p^2}\right); \frac12\left( -p+\sqrt{4q+p^2}\right) \right\}$}
+
+\item $ ax^2+bx+c=0 $
+\LoesungsBlock{$\lx = \left\{ \frac{-b-\sqrt{b^2-4ac}}{2a} ;  \frac{-b+\sqrt{b^2-4ac}}{2a}\right\}$}
+
+
+\end{bbwAufgabenBlock}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+\section{Lösungsmengsformel}
+Lösen Sie mit der $abc$-Formel (Mitternachtsformel):
+
+$$ax^2+bx+c \Longleftrightarrow x_{1,2}=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+
+\begin{bbwAufgabenBlock}
+\item $2x^2+2x -4 = 0$
+\LoesungsBlock{$\lx=\left\{ -2; 1 \right\}$}
+
+\item $2x^2 - x - 6 = 0$
+\LoesungsBlock{$\lx=\left\{ -1; \frac32 \right\}$}
+
+\item $2x^2-3x-7 = 0$
+\LoesungsBlock{$\lx=\left\{\frac34 - \frac{\sqrt{65}}4 ; \frac34 + \frac{\sqrt{65}}4 \right\}$}
+
+\item $4x^2+\frac43 x + \frac1{12} =0 $
+\LoesungsBlock{$\lx=\left\{\frac{-1}4 ;\frac{-1}{12} \right\}$}
+
+\item $ 2x^2 -20x + 50 = 0 $
+\LoesungsBlock{$\lx=\left\{ 5 \right\}$}
+
+\item $2x^2 -8x +9 =0 $
+\LoesungsBlock{$\lx=\left\{  \right\}$}
+
+\item $ x^2-7x= 0$
+\LoesungsBlock{$\lx=\left\{0 ;7 \right\}$}
+
+\item $ x^2-25 =0 $
+\LoesungsBlock{$\lx=\left\{-5 ; 5\right\}$}
+
+\item $11x=2x^2+15 $
+\LoesungsBlock{$\lx=\left\{ \frac52; 3 \right\}$}
+
+
+\end{bbwAufgabenBlock}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\section{Erst in Grundform}
+Bringen Sie die folgenden Aufgaben erst in die Grundform und lösen Sie anschließend mit der Lösungsformel.
+
+$$a\cdot{}x^2 + b\cdot{}x + c = 0$$
+
+\begin{bbwAufgabenBlock}
+\item $ x^2+x= 6$
+\LoesungsBlock{$\lx=\left\{ -3; 2   \right\}$}
+
+\item $4x^2-x =12x-3 $
+\LoesungsBlock{$\lx=\left\{ \frac14; 3   \right\}$}
+
+\item $ 2x^2+2x+5 = 3-5x-x^2 $
+\LoesungsBlock{$\lx=\left\{ -2 ; \frac{-1}3    \right\}$}
+
+\item $ 8x + 5 = -3x^2 $
+\LoesungsBlock{$\lx=\left\{  \frac{-5}3 ; -1  \right\}$}
+
+\item $x^2 + 70 = -3x$
+\LoesungsBlock{$\lx=\left\{    \right\}$}
+
+\item $ x^2+3= 13x-3x^2$
+\LoesungsBlock{$\lx=\left\{\frac14 ; 3    \right\}$}
+
+\end{bbwAufgabenBlock}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\section{$a$, $b$ und $c$ finden}
+Bestimmen Sie die Parameter $a$, $b$ und $c$ der folgenden quadratischen Gleichungen für die Grundform $ax^2 +bx +c = 0$. Eine Lösung der Gleichung wird nicht verlangt.
+\begin{bbwAufgabenBlock}
+\item $5x^2+3x+7 = 0$
+\LoesungsBlock{$a= 5;   b= 3;   c= 7$}
+
+\item $5x^2-3x+7 = 0$
+\LoesungsBlock{$a=5 ;   b=-3 ;   c= 7$}
+
+\item $5x^2 + 3x = $
+\LoesungsBlock{$a= 5;   b= 3;   c= 0$}
+
+\item $ x^2+3x-4= 0$
+\LoesungsBlock{$a=1 ;   b=3 ;   c=-4 $}
+
+\item $3x^2 =16 $
+\LoesungsBlock{$a= 3;   b= 0;   c=-16 $}
+
+\item $3\mu x = 5z - rx^2 $
+\LoesungsBlock{$a= r;   b=3\mu ;   c= -5z$}
+
+\item $ x^2+x+2x= 0$
+\LoesungsBlock{$a= 1;   b= 3;   c= 0$}
+
+\item $ax^2 + c = bx $
+\LoesungsBlock{$A= a;   B= -b;   C= c$}
+
+\item $bx^2 -axc = -b^2$
+\LoesungsBlock{$A= b;   B= -ac;   C= b^2$}
+
+\item $ux^2 -x+w = vx^2 $
+\LoesungsBlock{$a= u-v;   b= -1;   c= w$}
+
+\item $\frac12\cdot{}x^2 -2x+3 = \frac12 x + b$
+\LoesungsBlock{$A= \frac12;   B=\frac{-5}2 ;   C= 3-b$}
+
+\item $rx^2-x+5 = -t^2x +r$
+\LoesungsBlock{$a= r;   b= t^2-1;   c= s-r$}
+
+\item $ 3-7x+(2-5x^230 = 3\cdot{}(5-x)(2x+3k) $
+\LoesungsBlock{$a= 1;   b= 9k-37 ;   c= 5-45k$}
+
+\item $ \sqrt2x^2 - \frac13x + \pi = \mu x^2 \log(5)\cdot{}x - 0.111 $
+\LoesungsBlock{$a=\sqrt{2} - \mu ;   b= \log(5) -\frac13;   c= \pi   + 0.111$}
+
+\end{bbwAufgabenBlock}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\section{...}
+...
+\begin{bbwAufgabenBlock}
+\item $ = $
+\LoesungsBlock{$\lx= \left\{ ;  \right\}$}
+
+\end{bbwAufgabenBlock}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\section{...}
+...
+\begin{bbwAufgabenBlock}
+\item $ = $
+\LoesungsBlock{$\lx= \left\{ ;  \right\}$}
+
+
+\end{bbwAufgabenBlock}
+\newpage
+\end{document}
