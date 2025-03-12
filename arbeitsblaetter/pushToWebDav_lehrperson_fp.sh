@@ -168,15 +168,15 @@ echo "  copying Koerper Begriffe (TALS)"
 cp -f ./geometrie/stereometrie/koerper/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/stereo/koerper/
 
 echo "  copying Vektorgeometrie 2: Komponenten in R3 (TALS)"
-cp -f ./geometrie/vektorgeometrie/vecg2/Komponenten/Komponenten_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/vecg2/aufgabenblaetter/Komponenten_Aufgben.pdf
+cp -f ./geometrie/vektorgeometrie/vecg2/Komponenten/Komponenten_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/vecg2/aufgabenblaetter/Komponenten_Aufgaben.pdf
 cp -f ./geometrie/vektorgeometrie/vecg2/Komponenten/Komponenten_TRAINER_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/vecg2/aufgabenblaetter/Komponenten_Loesungen.pdf
 
 echo "  copying Vektorgeometrie 2: Skalarprodukt (TALS)"
-cp -f ./geometrie/vektorgeometrie/vecg2/Skalarprodukt/Skalarprodukt_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/vecg2/aufgabenblaetter/Skalarprodukt_Aufgben.pdf
+cp -f ./geometrie/vektorgeometrie/vecg2/Skalarprodukt/Skalarprodukt_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/vecg2/aufgabenblaetter/Skalarprodukt_Aufgaben.pdf
 cp -f ./geometrie/vektorgeometrie/vecg2/Skalarprodukt/Skalarprodukt_TRAINER_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/vecg2/aufgabenblaetter/Skalarprodukt_Loesungen.pdf
 
 echo "  copying Vektorgeometrie 2: Geradengleichung (TALS)"
-cp -f ./geometrie/vektorgeometrie/vecg2/Geradengleichung/Geradengleichung_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/vecg2/aufgabenblaetter/Geradengleichung_Aufgben.pdf
+cp -f ./geometrie/vektorgeometrie/vecg2/Geradengleichung/Geradengleichung_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/vecg2/aufgabenblaetter/Geradengleichung_Aufgaben.pdf
 cp -f ./geometrie/vektorgeometrie/vecg2/Geradengleichung/Geradengleichung_TRAINER_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/vecg2/aufgabenblaetter/Geradengleichung_Loesungen.pdf
 
 echo "  copying Auftrag Logarithmentabelle (TALS)"
