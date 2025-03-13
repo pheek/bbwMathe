@@ -98,6 +98,9 @@ cp -f ./funktionen/funktionsbegriff_arbeitsblatt/*.pdf ${BBW_WEBDAV_PATH}/lehrpe
 echo "  copying Lineare Funktionen Arbeitsblatt SAN"
 cp -f ./funktionen/funktionen_lineare_arbeitsblatt/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/funktionen/lineare_funktionen/ArbeitsblattSAN/
 
+echo "  copying Arbeitsblatt Sammlung quadratischer Gleichungen" 
+cp -f ./gleichungen/quadratische/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/sammlung/
+
 echo "  copying Quadratische Gleichungen GESO alte Maturaprüfungen"
 cp -f ./gleichungen/quadratischeGleichungen/GESO_Abschlusspruefungsaufgaben/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/gl1/maturapruefungen/
 
