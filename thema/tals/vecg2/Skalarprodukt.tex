@@ -69,10 +69,7 @@ $$\Spvek{1;2;3}\circ{}\Spvek{-1;p;\sqrt{2}} \Longrightarrow p =
 
 \subsection{Skalarprodukt und Winkel}\index{Skalarprodukt!Winkel}
 
-Herleitung des Skalarproduktes:
-
-\bbwCenterGraphic{5cm}{tals/vecg2/img/skalarprodukt.png}
-
+\bbwCenterGraphic{6cm}{tals/vecg2/img/skalarprodukt.png}
 
 \TNTeop{
   $\vec{b} + \vec{c} = \vec{a} \Longrightarrow   \vec{c} = \vec{a} - \vec{b}$
@@ -169,14 +166,22 @@ beiden Vektoren den Winkel $59\degre$ einschließen:
 
 $$\vec{a} = \Spvek{5;3;p} \hspace{11mm} \vec{b} = \Spvek{6;p;9}$$
 
-  \TNTeop{
+\TNTeop{
+
+  Es gilt:
+
+  $$\vec{a}\circ{}\vec{b} = 5\cdot{}6 + 3\cdot{}p + p\cdot{}9 =
+  \left| \vec{a} \vphantom{\vec{b}}\right| \cdot{} \left|\vec{b} \right| \cdot{} \cos(59\degre)$$
+
+  
 a)
 
-    TR: solve ($\cos(59) = \frac{5\cdot{}6 + 3p + p\cdot{} 9 }{|a|\cdot{}|b|}$, p)
+    TR: solve ($\cos(59) = \frac{5\cdot{}6 + 3p + p\cdot{} 9
+    }{\text{norm}(a) \cdot{} \text{norm}(b)}$, p)
 
 b)
 
-    TR: solve ($\cos(59) = \frac{\text{dotp}(a, b)}{|a|\cdot{}|b|}$, p)
+    TR: solve ($\cos(59) = \frac{\text{dotp}(a, b)}{\text{norm}(a)\cdot{}\text{norm}(b)}$, p)
 
     
     Es gibt zwei Lösungen: p1 = 0.20926... und  p2=22.60099
