@@ -1,6 +1,8 @@
 %% 2020 12 25 ph. g. Freimann
 %%
-\section{Winkel}\index{Winkel!bei Vektoren}
+\section{Skalarprodukt}\index{Skalarprodukt}
+
+
 
 % Weglassen, da nur ein Lernziel und so gibt es mehr Platz auf der Seite
 %\subsection*{Lernziele}
@@ -8,32 +10,65 @@
 %\item Skalarprodukt
 %\end{itemize}
 
-\subsection{Skalarprodukt}\index{Skalarprodukt}
+\subsection{Komponentenweise}\index{Komponentenweise!Skalarprodukt}
 \TALSTadBMTG{266}{18}
-
-
-Einstiegsaufgabe:
-
-a) Geben Sie einen Vektor an, der zum Vektor $\vec{a} = \Spvek{-3;2}$
-orthogonal steht.
-
-b) Geben Sie alle Vektoren an, die senkrecht zum obigen Vektor $\vec{a}$ sind.
-
-c) Geben Sie alle Vektoren an, die im rechten Winkel zum Vektor $\vec{v} = \Spvek{v_x;
-  v_y}$ stehen.
-
-\TNTeop{
-  a) Entweder $\Spvek{2;3}$ oder $\Spvek{-2;-3}$. (und alle Vielfachen davon)
-
-  b) $\left\{\vec{v} \middle| \vec{v} = k\cdot{}\Spvek{2;3} \text{ und } k\in\mathbb{R}\right\}$
-
-  c) $\left\{\vec{v} \middle| \vec{v} = k\cdot{}\Spvek{-v_y; v_x} \text{ und } k\in\mathbb{R}\right\}$
-
-}
 
 %%\TALSTadBFWG{201}{4.5}
 
+Ein Geschäft verkauft seine Produkte zu folgenden Preisen.
+
+$$\vec{p} = \Spvek{3.20; 2.40; 1.80; 1.75; 4.20} \text{ entsprechende Produkte: }
+\Spvek{\text{Brot};\text{Milch (lt)}; \text{Mehl (kg)}; \text{Zucker
+    (kg)}; \text{Teigwaren}}$$
+
+Vera $\vec{v}$ und Walter $\vec{w}$ kaufen dem entsprechend wie folgt ein. Was sind die
+jeweiligen Totalpreise?
+
+$$\vec{v} = \Spvek{1;0;0;2;2}; \vec{w} = \Spvek{2;1;1;2;0} $$
+
+\TNT{6}{Vera: $1\cdot{} 3.20 + 0\cdot{} 2.40 + 0\cdot{}1.80 + 2\cdot{}
+  1.75 + 2\cdot{}4.20 = 15.10$
+
+Walter: $2\cdot{}3.20 + 1\cdot{}2.40 + 1\cdot{}1.80 + 2\cdot{}1.75 +
+0\cdot{}4.20 = 14.10$}
+
+\vspace{3mm}
+Verka kauft für CHF \LoesungsRaumLen{30mm}{15.10} und Walter für CHF
+\LoesungsRaumLen{30mm}{14.10} ein.
+
+\TRAINER{Vektoren sind nicht auf $\mathbb{R}^2$ oder $\mathbb{R}^3$ beschränkt!}
 \newpage
+
+\begin{definition}{Skalarprodukt}{}\index{Skalarprodukt|textbf}
+  $$\vec{a\vphantom{b}}\circ\vec{b} := a_1\cdot{}b_1 + a_2 \cdot{} b_2
+  + a_3\cdot{}b_3 + ...$$
+\end{definition}
+
+\begin{gesetz}{Skalarprodukt ist ein Skalar}{}
+  Das Skalarprodukt zwischen zwei Vektoren liefert eine skalare Größe.
+\end{gesetz}
+
+Berechnen Sie mit diesem Wissen die folgenden Skalarprodukte:
+
+\vspace{3mm}
+
+
+$$\Spvek{1;1;2} \circ \Spvek{3;4;-3.5} = \LoesungsRaumLen{30mm}{0}$$
+$$\Spvek{\frac1{2\pi};\sqrt{3};\sqrt{2}} \circ \Spvek{\pi;
+  \sqrt{3};\frac{7}{\sqrt{8}}} = \LoesungsRaumLen{30mm}{7}$$
+
+Berechnen Sie den fehlenden Parameter $p$ so, dass das Skalarprodukt = 0 wird:
+\vspace{3mm}
+
+$$\Spvek{1;2;3}\circ{}\Spvek{-1;p;\sqrt{2}} \Longrightarrow p =
+\LoesungsRaumLen{30mm}{\frac{1-3\sqrt{2}}{2} \approx -1.6213}$$
+
+
+\newpage
+
+
+\subsection{Skalarprodukt und Winkel}\index{Skalarprodukt!Winkel}
+
 Herleitung des Skalarproduktes:
 
 \bbwCenterGraphic{5cm}{tals/vecg2/img/skalarprodukt.png}
@@ -100,15 +135,12 @@ oder mit $\gamma$ als Zwischenwinkel von $\vec{a}$ und $\vec{b}$:
 \end{definition}
 
 
-\begin{gesetz}{Winkel und
-    Skalarprodukt}{}\index{Skalarprodukt!Zwischenwinkel}
 
-
-  Mit $a=|\vec{\vphantom{b}a}|$ und $b = |\vec{b}|$ gilt:
-  
-  $$\cos(\gamma) = \LoesungsRaumLen{35mm}{\frac{\vec{a\vphantom{b}}\circ\vec{b}}{a\cdot b}}$$
+\begin{gesetz}{Winkel und Skalarprodukt}{}
+Für den Zwischenwinkel zwischen $\vec{a}$ und $\vec{b}$ gilt:
+  $$\cos(\gamma) = \LoesungsRaumLen{35mm}{\frac{\vec{a\vphantom{b}}\circ\vec{b}}{|\vec{\vphantom{b}a}|\cdot |\vec{\vphantom{b}b}|}}$$
   bzw.:
-  $$\gamma = \LoesungsRaumLen{45mm}{\arccos{} \left(\frac{\vec{a\vphantom{b}}\circ\vec{b}}{a\cdot b}\right)}$$
+  $$\gamma = \LoesungsRaumLen{45mm}{\arccos{} \left(\frac{\vec{a\vphantom{b}}\circ\vec{b}}{|\vec{\vphantom{b}a}|\cdot |\vec{\vphantom{b}b}|}\right)}$$
   
 \end{gesetz}
 
@@ -129,7 +161,9 @@ berechnet.
     (https://www.geogebra.org/m/AEbtvksE)}{https://www.geogebra.org/m/AEbtvksE}
 \end{bemerkung}
 \newpage
-\subsection{Referenzaufgabe}
+
+
+\subsubsection{Referenzaufgabe}
 Berechnen Sie den fehlenden Parameter $p$, wenn Sie wissen, dass die
 beiden Vektoren den Winkel $59\degre$ einschließen:
 
@@ -183,6 +217,28 @@ sind Übungsmaterial und gedacht, sich für die Prüfungen vorzubereiten.
 \newpage
 
 \subsection{Orthogonale Vektoren}\index{orthogonal!Vektor}
+
+
+Einstiegsaufgabe:
+
+a) Geben Sie einen Vektor an, der zum Vektor $\vec{a} = \Spvek{-3;2}$
+orthogonal steht.
+
+b) Geben Sie alle Vektoren an, die senkrecht zum obigen Vektor $\vec{a}$ sind.
+
+c) Geben Sie alle Vektoren an, die im rechten Winkel zum Vektor $\vec{v} = \Spvek{v_x;
+  v_y}$ stehen.
+
+\TNTeop{
+  a) Entweder $\Spvek{2;3}$ oder $\Spvek{-2;-3}$. (und alle Vielfachen davon)
+
+  b) $\left\{\vec{v} \middle| \vec{v} = k\cdot{}\Spvek{2;3} \text{ und } k\in\mathbb{R}\right\}$
+
+  c) $\left\{\vec{v} \middle| \vec{v} = k\cdot{}\Spvek{-v_y; v_x} \text{ und } k\in\mathbb{R}\right\}$
+
+}
+
+
 
 \begin{gesetz}{Orthogonale Vektoren}{}
   Zwei von Null verschiedene Vektoren $\vec{a}$ und $\vec{b}$ sind genau dann
