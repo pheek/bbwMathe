@@ -3,7 +3,6 @@
 %% Ergänzung für TALS zu Quadratischen Gleichungen I (Ohne Parameter)
 %%
 
-\newpage
 \subsection{Quadratische Gleichungen II (mit Parametern)}\index{Gleichungen!quadratische mit Parametern}
 \sectuntertitel{Welches ist denn nun die Gesuchte?}
 
@@ -42,5 +41,63 @@ binomische Formel:
 %%\newpage
 
 \subsection{Aufgaben}
-\AadBMTA{182ff}{13. a) b)}%%\TALSAadBMTA{99}{ab 279}
+%\AadBMTA{182ff}{13. a) b)}%%\TALSAadBMTA{99}{ab 279}
+\TALS{\olatLinkArbeitsblatt{GlQuad}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/111365560138736}{Aufgabe 9.}
+  }%% end GESO
+
+\newpage
+
+\subsection*{Typ «genau eine Lösung»}
+
+Bestimmen Sie den Parameter $b$ so, dass die folgende Gleichung genau
+eine Lösung hat:
+$$x^2+b+2 = -2bx$$
+\TNTeop{
+  Vorzeigeaufgabe: S. 183.: 16. b):%%
+  Grundform:
+  $$x^2+2bx+b+2=0$$
+  Diskriminante = 0 setzen:
+  $$4b^2 - 4(b+2) = 0$$
+  Grundform $b$:
+  $$b^2-b-2 = 0$$
+  $$\LoesungsMenge{}_b = \{-1; 2\}$$
+}%% END TNT
+
+
+\subsection*{Aufgaben}
+\TALS{\olatLinkArbeitsblatt{GlQuad}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/111365560138736}{Aufgabe 10.}
+  }%% end GESO
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%5
+\subsubsection{Taschenrechner}
+Das selbe Beispiel können wir ganz einfach auch mit dem Taschenrechner lösen:
+\begin{beispiel}{Taschenrechner}{}
+  Bestimmen Sie den Parameter $b$ so, dass die quadratische
+  Gleichung $$x^2+b+2=-2bx$$
+  genau eine Lösung hat:
+
+  \TNT{2}{\texttt{solve($x^2+b+2=-2bx$, x)} liefert
+
+  $$x_{1,2} = \pm\sqrt{b^2-b-2} - b$$}
+  
+  nun die Diskriminante suchen
+
+  \TNT{2}{\texttt{D = $b^2-b-2$}}
+
+  jetzt Diskriminante = 0 setzen:
+
+  \TNT{2}{\texttt{solve($b^2-b-2$ = 0,b)}
+
+    liefert
+
+  $$b_{1,2} = -1 \text{ oder } 2$$}%% end tnt
+\end{beispiel}%%  
+
+
+\subsection*{Aufgaben}
+
+\TALS{\olatLinkArbeitsblatt{GlQuad}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/111365560138736}{Aufgabe 10.}
+  }%% end GESO
+
+%\AadBMTA{182ff}{16. a) c) d)}
 \newpage
