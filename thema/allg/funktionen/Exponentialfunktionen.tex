@@ -20,7 +20,94 @@
 %%\GESO{(\cite{marthaler21alg}       S.322 (Kap. 19))}
 \newpage
 
-\subsection{Punkte einsetzen}
+\subsection{Aussehen von Exponetialfunktionen}
+
+
+Zeichnen Sie $f: y=2^x$ und $g: y=1.4^x$ ins selbe Koordinatensystem:
+
+
+\bbwGraph{-5}{5}{-1}{5}{
+\TRAINER{  \bbwFuncC{pow(2.0,\x)}{-3.5:2.1}{blue}
+  \bbwFuncC{pow(1.4,\x)}{-3.5:3}{green}
+  \bbwLetter{1,3}{$f$}{blue}
+  \bbwLetter{2.5,2}{$g$}{green}
+}%% end TRAINER
+}%% end graph
+
+\begin{definition}{Exponentialfunktion}{}\index{Exponentialfunktionen!Definition}
+  Eine Funktion der Form $$f(x): x \mapsto a^x$$
+  bzw. $$y = a^x$$
+  mit $a\in \mathbb{R}^{+}\backslash\{1\}$ heißt \textbf{Exponentialfunktion}.
+\end{definition}
+
+
+\begin{bemerkung}{Zunahmefaktor}{}\index{Zunahmefaktor|textbf}
+Der Parameter $a$ gibt den Wachstumsfaktor pro Zeiteinheit $e_x$ an.
+\end{bemerkung}
+
+
+\subsubsection*{Aufgaben}
+\GESO{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/106029175831971}{Kap. 1.2:
+    Einfache Wachstumsprozesse: Aufgaben 4. bis 6.}}
+\TALS{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/106029175777725}{Kap. 1.2:
+    Einfache Wachstumsprozesse: Aufgaben 4. bis 6.}}
+
+\newpage
+
+\subsection{Formen der Darstellung}
+Zeichnen Sie die Funktionen $f: y=2^x$, $g: y=2^{-x}$ und $h: y=\left(\frac12\right)^x$ in dasselbe Koordinatensystem:
+
+\bbwGraph{-6}{6}{-1}{5}{
+  \TRAINER{\bbwFuncC{exp(0.69314718*\x)}{-6:2}{blue}}
+  \TRAINER{\bbwFuncC{exp(-0.69314718*\x)}{-2:6}{red} }
+  \TRAINER{\bbwLetter{1.5,4}{2^x}{blue}}
+  \TRAINER{\bbwLetter{-5,4}{g(x)=2^{-x}=\left(\frac{1}{2}\right)^x=h(x)}{red}}
+}
+
+Bemerkung: \TRAINER{$$2^{-x} = \frac1{2^x} = \frac{1^x}{2^x}= \left(\frac12\right)^x$$}
+\newpage
+
+
+
+\subsubsection{Umkehrung (Optional)}
+Um aus einem Wachstum einen Zerfall zu modellieren können wir entweder
+die Zeitachse umdrehen oder den Kehrwert der Basis verwenden.
+umgedreht werden:
+
+Mit $d := \frac1a $ gilt:
+
+\begin{center}
+  \fbox{$a^{+t} = \left(\frac1a\right)^{-t} = d^{-t} $}
+\end{center}
+
+\newpage
+
+\newpage
+
+\subsection{Verschiebung und Streckung \GESO{(optional)}}
+
+Eine Verschiebung der Exponentialfunktion $y=b\cdot{}a^x$ in der Zeit ($x$-Richtung) kann auch in Form einer Veränderung der Startfaktors $b$ umgeschrieben werden.
+
+Verschieben wir \zB $$y=2^x$$ um fünf Einheiten nach rechts, so liest sich die neue Funktionsgleichung wie folgt:
+$$y=2^{x-5}.$$
+
+(Zeichnen Sie in \texttt{geogebra.org} a) $y=2^x$ und b) $y=2^{x-5}$.)
+
+Dies kann jedoch auch umgeschrieben werden:
+
+$$2^{x-5} = 2^x \cdot{} 2^{-5} = 2^{-5} \cdot{} 2^x = \frac{1}{2^5} \cdot{} 2^x =
+\frac{1}{32}\cdot{}2^x$$
+
+\bbwCenterGraphic{8cm}{allg/funktionen/img/exp/verschiebung_gleich_streckung.png}
+Bildlegende: Eine Verschiebung ($x$-Richtung) der Exponentialfunktion entspricht einer Stauchung ($y$-Richtung) der selben Exponentialfunktion.
+
+\TALS{Es gilt hier $$a^{x-b}=\frac{a^x}{k}$$ mit
+$k=a^b$ und mit $b=\log_a(k)$.}
+
+\newpage
+
+
+\subsection{Punkte einsetzen\GESO{ (optional)}}
 Wie bei den linearen Funktionen oder bei den Potenzfunktionen können auch Exponentialfunktionen gefunden werden, wenn bereits Punkte auf dem Graphen bekannt sind:
 
 \textbf{Referenzaufgabe}
@@ -56,247 +143,4 @@ $$4 = 2a\cdot{} a^2$$
 \AadBMTA{336}{23. d}
 
 \newpage
-
-
-
-\subsection{Umrechnungen\GESO{ (optional)}}
-Die Algen (im Türlersee) verdoppeln sich alle fünf Tage.
-
-$$\tau = 5; a= 2$$
-
-Die Exponentialfunktion bei Startwert $b$ lautet also:
-
-\TNT{2.4}{$$f(t) = b\cdot{} 2^\frac{t}5 \left(\stackrel{!}{=} b\cdot{} 4^{\frac{t}{10}}\right)$$}
-
-
-Um wie viel nehmen sie ...
-
-\begin{enumerate}
-\item ... alle 15 Tage zu?
-\item ... alle 7 Tage zu?
-\item In wie vielen Tagen verdreifachen sie sich?
-\end{enumerate}
-\subsubsection{Natürliche Basen}
-
-\begin{enumerate}[resume]
-\item Wie viel nehmen die Algen pro Tag (= pro (Zeit)einheit) zu?
-\item Wie sieht es mit der Basis $\e$ aus? Mit welchem $m$ kann man die
-  Zunahme als $f(t) = b \cdot{} \e^{m\cdot{}t}$ angeben?
-\end{enumerate}
-\newpage
-
-
-\subsubsection*{Lösungen...}
-
-Zu Punkt 1.: $\tau_2=15$:
-\TNT{3.2}{$2^\frac15 = a_2^\frac1{15}$ Nun auf beiden Seiten ``hoch
-  15'' und somit
-
-  $a_2 = (2^{\frac15})^{15} = 2^3 = 8$.
-
-Ergo $b\cdot{}2^\frac{t}5 = b\cdot{} 8^\frac{t}{15}$}
-
-Zu Punkt 2.: $\tau_2=7$:
-\TNT{3.2}{$2^\frac15 = a_2^\frac1{7}$ Nun auf beiden Seiten ``hoch
-  7'' und somit
-
-  $a_2 = (2^{\frac15})^{7} = 2^{\frac75} \approx 2.639$.
-
-Ergo $b\cdot{}2^\frac{t}5 \approx b\cdot{} 2.639^\frac{t}{7}$}
-
-Zu Punkt 3.: $a_2 = 3$ (verdreifachen):
-\TNT{4}{$2^\frac15 = 3^\frac{1}{\tau_2}$ (Definition Logarithmus):
-
-  $\frac1{\tau_2} = \log_3\left(2^\frac15\right)$
-
-  $\tau_2 = \frac1{\log_3\left(2^\frac15\right)}\approx 7.925$ Tage.
-
-Also: Sie verdreifachen sich ca. alle 8 Tage.
-
-  Ergo: $b\cdot{}2^\frac{t}5 \approx b\cdot{}3^\frac{t}{7.925}$
-}%% end TNT
-\newpage
-\subsubsection*{... natürliche Basen}
-Zu Punkt 4.: Pro Tag.
-\TNT{5.6}{
-  Generell: $f(t) = b\cdot{} a^t$ mit $a$ = Zunahme pro Zeiteinheit (hier
-  pro Tag)
-  
-$$f(0) \cdot{} 2 = f(5)$$
-  Einsetzen:
-  $$b\cdot{}a^0 \cdot{} 2 = b\cdot{} a^5$$
-  $$2 = a^5 | \sqrt[5]{\,}$$
-  $$a = \sqrt[5]{2} \approx 1.1487$$
-  ergo
-  $$f(t)\approx b\cdot{} 1.1487^t$$
-}%% END TNT
-
-Zu Punkt 5.: $f(t) = b\cdot{}\e^{m\cdot{}t}$ (Basis $\e$):
-\TNT{6.8}{
-  Auch hier:
- 
-$$f(0) \cdot{} 2 = f(5)$$
-  Funktinosterm einsetzen:
-  $$b\cdot{} e^{m\cdot{} 0} \cdot{} 2= b\cdot{} e^{m\cdot{} 5}$$
-
-  Beidseitig durch $b$ teilen: \\
-
-$$e^{m\cdot{} 0}\cdot{} 2 =e^{m\cdot{} 5}$$
-  $e^0 = 1$, daher:
-  $$2 = e^{m\cdot{}5}$$
-  Beidseitig logarithmieren ($\ln$):
-  $$\ln(2) = m \cdot{} 5$$
-  $$m = \frac{\ln(2)}{5} \approx 0.1386$$
-
-  Somit lautet die Funktion:
-  $$f(t) \approx  b\cdot{} e^{0.1386\cdot{} t}$$
-  
-  Bedeutung: Gerade $g(t): y=0.1386\cdot{}t+b$ zeichnen: Dies ist die
-  Tangente an die Exponentialfunktion $b\cdot{}2^\frac{t}{5} = b\cdot{}4^\frac{t}{10}$
-}%% END TNT
-\newpage
-
-\subsection*{Aufgaben}
-%%\TALSAadBMTA{215ff}{809-830}
-\AadBMTA{335ff}{11. a) b),\\15. a) b) [Zeichnen mit \texttt{geogebra.org}],\\ 17. a) b) e), 22. a) b), 25. a) b)}
-
-\newpage
-\subsubsection{Basiswechsel (optional)}
-\begin{center}\fbox{
-    \textbf{ $\tau$ und $a$ sind voneinander abhängig!}}
-  \end{center}
-
-\begin{beispiel}{Basiswechsel}{}
-  Warum ist $$b\cdot{}2^{\frac{t}7} = b \cdot{} 8^{\frac{t}{21}}$$
-  \TNT{1.2}{Lösung: 2x in 7h = 4x in 14 h = 8x in 21 h}
-\end{beispiel}
-
-
-Ansatz:
-\begin{center}\fbox{$b\cdot{}a^{\frac{t}{\tau}} =
-    b\cdot{}a_2^{\frac{t}{\tau_2}} \TALS{ =    b\cdot{}\e^{m\cdot{}t}}  $}
-\end{center}
-
-(Teilen durch $b$ und Ziehen der $t$-ten Wurzel:)
-
-\begin{gesetz}{Basiswechsel}{}
-
-  \begin{center}\fbox{\fbox{$a^{\frac{1}{\tau}} =
-        a_2^{\frac{1}{\tau_2}} \TALS{ = \e^{m}}$}}\end{center}
-
- 
-  $a=$ Wachstumsfaktor\\
-  $\tau=$ Beobachtungszeitraum\\
-  $a_2, \tau_2=$ Entsprechend neuer Wachstumsfaktor $a_2$ bzw. neues
-  Beobachtungsintervall $\tau_2$ nach dem Basiswechsel\\
-  \TALS{
-    $\e= $ Eulersche Konstante (2.718...)\\
-    $m = $ \textit{Wachstumsexponent} bei Basis $e$ \\
- }%% end TALS
-  \hrule
-  \vspace{3mm}
-\begin{center}\fbox{\fbox{  $a = a_2^{\frac{\tau}{\tau_2}}$}}\end{center}
-  \vspace{3mm}
-  $a_2 = a^{\frac{\tau_2}{\tau}}$\\
-  \vspace{3mm}
-  $\tau_2=1 : \left(\log_{a_2}\left(a^\frac1\tau\right)\right)$\\
-\TALS{  \vspace{3mm}
-  $m=\ln\left(a^\frac1\tau\right) =
-  \ln\left(a_2^\frac1{\tau_2}\right)$\\
-  }%% end TALS
-\end{gesetz}
-\newpage
-
-\newpage
-
-\subsection{Beispiel: Wissenschaftliche Publikation\GESO{ (optional)}}
-
-
-\begin{bemerkung}{Konstante $\e$}{}
-  Mit der Eulerschen Konstanten $\e$ als Basis wird lediglich ein einziger
-  Parameter (meist $m$ oder $q$) verwendet, um die Form der
-  Exponentialfunktion zu beschreiben.
-
-  $$\text{Wir schreiben }\, b\cdot{}\e^{mt} \,\text{ anstelle von }\, b\cdot{}a^{\frac{t}{\tau}}$$
-
-  Eine Abhängigkeit von $a$ zu $\tau$ fällt weg.
-
-  Dabei ist $m$ die Tangentensteigung an die Funktion $$f(t) = \e^{mt}$$
-  im Punkt $$\left(0\middle|1\right).$$
-\end{bemerkung}
-
-\subsection*{Rechenbeispiel}
-
-In einem wissenschaftlichen Journal ist angegeben, dass eine Population annähernd folgendes Verhalten an den Tag lege [$t$ = Tage]:
-$$f(t) = 3\,000\cdot{}\e^{1.504\cdot{}t}$$
-
-Berechnen Sie die tägliche Zunahme $a$ und geben Sie somit die Funktionsgleichung ohne Bruch im Exponenten ($\tau = 1$) und mit dem neu berechneten $a$ in der Basis an:
-
-$$f(t) = 3\,000\cdot{}\e^{1.504\cdot{}t} = b\cdot{}a^t \approx \LoesungsRaum{3\,000\cdot{}5.000^t}$$
-
-\TNTeop{Tipp: Setzen Sie $t=0$, um den Startwert $b$ zu erhalten
-  ($b=3\,000$) und danach $t=1$ ein:
- $$3000\cdot{}a^t = 3000\cdot{} e^{1.504t}$$
- $$a^t =  e^{1.504t}$$
-  $$a = \e^{1.504} \approx 5.000$$
-\vspace{3cm}}
-
-
-\subsubsection*{Aufgaben}
-\GESO{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/106029175831971}{Kap. 2.2:
-    E-Funktion / Basiswechsel}}
-\TALS{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/106029175777725}{Kap. 2.2:
-    E-Funktion / Basiswechsel}}
-\newpage
-
-
-\subsection{Verschiebung und Streckung \GESO{(optional)}}
-
-Eine Verschiebung der Exponentialfunktion $y=b\cdot{}a^x$ in der Zeit ($x$-Richtung) kann auch in Form einer Veränderung der Startfaktors $b$ umgeschrieben werden.
-
-Verschieben wir \zB $$y=2^x$$ um fünf Einheiten nach rechts, so liest sich die neue Funktionsgleichung wie folgt:
-$$y=2^{x-5}.$$
-
-(Zeichnen Sie in \texttt{geogebra.org} a) $y=2^x$ und b) $y=2^{x-5}$.)
-
-Dies kann jedoch auch umgeschrieben werden:
-
-$$2^{x-5} = 2^x \cdot{} 2^{-5} = 2^{-5} \cdot{} 2^x = \frac{1}{2^5} \cdot{} 2^x =
-\frac{1}{32}\cdot{}2^x$$
-
-\bbwCenterGraphic{8cm}{allg/funktionen/img/exp/verschiebung_gleich_streckung.png}
-Bildlegende: Eine Verschiebung ($x$-Richtung) der Exponentialfunktion entspricht einer Stauchung ($y$-Richtung) der selben Exponentialfunktion.
-
-\TALS{Es gilt hier $$a^{x-b}=\frac{a^x}{k}$$ mit
-$k=a^b$ und mit $b=\log_a(k)$.}
-
-\newpage
-
-\subsection{Bedeutung der Zahl $\e$ (optional)}
-
-\paragraph{$45\degre$ auf der $y$-Achse:}
-Die E-Funktion $y=\e^x$ hat die $45\degre$-Steigung genau auf der $y$-Achse; sie beginnt im Gegensatz zu anderen Exponentialfunktionen genau bei $x=0$ so «richtig zu wachsen»\TALS{\footnote{Wenn wir in einem Punkt $x$ den Wert der $\e$-Funktion ($\e^x$) betrachten, so ist ihr Funktionswert exakt gleich der Steigung einer Tangente bei diesem $x$-Wert.}}.
-
-\bbwGraph{-4}{3}{-1}{5}{
-  \bbwFunc{pow(2.71828,\x)}{-3.5:1.5}
-  \bbwFuncC{\x+1}{-2:2}{green}
-}%% end graph
-
-Dies ist ein weiterer Grund, warum die Zahl $\e$ eine solche Bedeutung bei
-exponentiellen Prozessen einnimmt.
-
-
-\TALS{
-\paragraph{Tangente an die E-Funktion}\index{E-Funktion}
-Als \textbf{E-Funktion} bezeichnen wir die Exponentialfunktion zur
-Basis $\e \approx 2.71828172846$; also:
-$$f(x) = \e^x$$
-Diese Funktion ist von allen Exponentialfunktionen insofern speziell,
-als dass für jedes $x$ der Funktionswert $y=\e^x$ genau die Steigung
-der Tangente an $\e^x$ im Punkt $P_x=\left(x | \e^x\right)$ angibt.
-
-So ist die Tangentensteigung im Punkt $(0|\e^0) = (0 | 1)$ genau 1 und die Steigung im
-Punkt $(1|\e^1) = (1|\e)$ genau $\e$. 
-
-}%% END TALS
 

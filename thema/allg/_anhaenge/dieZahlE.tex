@@ -1,0 +1,73 @@
+\subsection{Die Zahl $e$}
+
+
+\subsubsection{Beispiel: Wissenschaftliche Publikation\GESO{ (optional)}}
+
+
+\begin{bemerkung}{Konstante $\e$}{}
+  Mit der Eulerschen Konstanten $\e$ als Basis wird lediglich ein einziger
+  Parameter (meist $m$ oder $q$) verwendet, um die Form der
+  Exponentialfunktion zu beschreiben.
+
+  $$\text{Wir schreiben }\, b\cdot{}\e^{mt} \,\text{ anstelle von }\, b\cdot{}a^{\frac{t}{\tau}}$$
+
+  Eine Abhängigkeit von $a$ zu $\tau$ fällt weg.
+
+  Dabei ist $m$ die Tangentensteigung an die Funktion $$f(t) = \e^{mt}$$
+  im Punkt $$\left(0\middle|1\right).$$
+\end{bemerkung}
+
+\subsubsection*{Rechenbeispiel}
+
+In einem wissenschaftlichen Journal ist angegeben, dass eine Population annähernd folgendes Verhalten an den Tag lege [$t$ = Tage]:
+$$f(t) = 3\,000\cdot{}\e^{1.504\cdot{}t}$$
+
+Berechnen Sie die tägliche Zunahme $a$ und geben Sie somit die Funktionsgleichung ohne Bruch im Exponenten ($\tau = 1$) und mit dem neu berechneten $a$ in der Basis an:
+
+$$f(t) = 3\,000\cdot{}\e^{1.504\cdot{}t} = b\cdot{}a^t \approx \LoesungsRaum{3\,000\cdot{}5.000^t}$$
+
+\TNTeop{Tipp: Setzen Sie $t=0$, um den Startwert $b$ zu erhalten
+  ($b=3\,000$) und danach $t=1$ ein:
+ $$3000\cdot{}a^t = 3000\cdot{} e^{1.504t}$$
+ $$a^t =  e^{1.504t}$$
+  $$a = \e^{1.504} \approx 5.000$$
+\vspace{3cm}}
+
+
+\subsubsection*{Aufgaben}
+\GESO{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/106029175831971}{Kap. 2.2:
+    E-Funktion / Basiswechsel}}
+\TALS{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/106029175777725}{Kap. 2.2:
+    E-Funktion / Basiswechsel}}
+\newpage
+
+
+\subsubsection{Bedeutung der Zahl $\e$ (optional)}
+
+\paragraph{$45\degre$ auf der $y$-Achse:}
+Die E-Funktion $y=\e^x$ hat die $45\degre$-Steigung genau auf der $y$-Achse; sie beginnt im Gegensatz zu anderen Exponentialfunktionen genau bei $x=0$ so «richtig zu wachsen»\TALS{\footnote{Wenn wir in einem Punkt $x$ den Wert der $\e$-Funktion ($\e^x$) betrachten, so ist ihr Funktionswert exakt gleich der Steigung einer Tangente bei diesem $x$-Wert.}}.
+
+\bbwGraph{-4}{3}{-1}{5}{
+  \bbwFunc{pow(2.71828,\x)}{-3.5:1.5}
+  \bbwFuncC{\x+1}{-2:2}{green}
+}%% end graph
+
+Dies ist ein weiterer Grund, warum die Zahl $\e$ eine solche Bedeutung bei
+exponentiellen Prozessen einnimmt.
+
+
+\TALS{
+\paragraph{Tangente an die E-Funktion}\index{E-Funktion}
+Als \textbf{E-Funktion} bezeichnen wir die Exponentialfunktion zur
+Basis $\e \approx 2.71828172846$; also:
+$$f(x) = \e^x$$
+Diese Funktion ist von allen Exponentialfunktionen insofern speziell,
+als dass für jedes $x$ der Funktionswert $y=\e^x$ genau die Steigung
+der Tangente an $\e^x$ im Punkt $P_x=\left(x | \e^x\right)$ angibt.
+
+So ist die Tangentensteigung im Punkt $(0|\e^0) = (0 | 1)$ genau 1 und die Steigung im
+Punkt $(1|\e^1) = (1|\e)$ genau $\e$. 
+
+}%% END TALS
+
+\newpage
