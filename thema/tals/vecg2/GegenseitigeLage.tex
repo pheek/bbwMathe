@@ -34,7 +34,7 @@ Die\,Geraden\,haben mind.\,einen\,gemeinsamen Punkt.  & zusammenfallend, identis
 \end{bemerkung}
 
 \begin{bemerkung}{Erst Parallelität prüfen}{}
-Tipp: Es lohnt sich also, zunächst zu prüfen, ob zwei Geraden parallel
+Tipp: Es lohnt sich ab und zu, zunächst zu prüfen, ob zwei Geraden parallel
 sind.
 
 Ist dies nämlich der Fall, so ist für die Identität (zusammenfallende
@@ -42,8 +42,34 @@ Geraden) nur noch zu prüfen, ob ein beliebiger Stützpunkt auf der
 jeweils anderen Geraden liegt.
 \end{bemerkung}
 
+\newpage
+\subsection{Referenzaufgabe}
+Prüfen Sie die gegenseitige Lage von $g$ und $h$:
 
+$$g:\,\,\, \vec{r}(t) = \Spvek{1;1;0} + t\cdot{} \Spvek{1;0;1} = \TRAINER{\Spvek{1+t;1;t}}$$
 
+$$h:\,\,\, \vec{r}(t) = \Spvek{0;1;1} + s\cdot{} \Spvek{2;2;2} = \TRAINER{\Spvek{2s;1+2s;1+2s}}$$
+
+a) Sind sie parallel (Richtungsvektoren kollinear)?
+
+$$\Spvek{1;0;1} \stackrel{?}{=} k\cdot{} \Spvek{2;2;2}$$
+\TNT{2}{
+Aus der $y$ Komponente folgt, dass $k=0$ sein muss, und somit stimmen
+die $x$-Komponenten nicht überein.
+Also sind sie nicht parallel.}%% end TNT
+
+b) Gibt es einen genmeinsamen Schnittpunkt?
+Prüfe:
+$$\Spvek{1+t;1;t} \stackrel{?}{=} \Spvek{2s;1+2s;1+2s} $$
+
+\TNT{8}{Aus der $y$-Komonente folgt $s=0$. Ergo:
+  $$\Spvek{1+t;1;t} \stackrel{?}{=} \Spvek{0;1;1}$$
+  Aus der $z$-Komonente folgt $t=1$.
+  $$\Spvek{2;1;1} \stackrel{?}{=} \Spvek{0;1;1}$$
+  Falsch, somit sind sie nicht schneidend.
+
+  Also \textbf{windschief}!
+}
 
 %%Mit folgendem Entscheidungsbaum können wir leicht sehen, ob zwei
 %%geraden \textit{identisch}, \textit{parallel}, \textit{schneidend}
@@ -58,13 +84,6 @@ jeweils anderen Geraden liegt.
 
 \subsection*{Aufgaben}
 
-\TRAINER{
-  mögliche Aufgaben:
-
-  Prüfen Sie, ob zwei Geraden einen gemeinsamen Schnittpunkt haben.
-  
-  Prüfen Sie, ob zwei Geraden parallel sind.
-}
 
 \olatLinkArbeitsblatt{Geradengleichung}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/110262782958559}{Kap. 2
 (Aufg. 7. - 11.)}
