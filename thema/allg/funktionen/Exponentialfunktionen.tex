@@ -45,13 +45,6 @@ Zeichnen Sie $f: y=2^x$ und $g: y=1.4^x$ ins selbe Koordinatensystem:
 Der Parameter $a$ gibt den Wachstumsfaktor pro Zeiteinheit $e_x$ an.
 \end{bemerkung}
 
-
-\subsubsection*{Aufgaben}
-\GESO{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/106029175831971}{Kap. 1.2:
-    Einfache Wachstumsprozesse: Aufgaben 4. bis 6.}}
-\TALS{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/106029175777725}{Kap. 1.2:
-    Einfache Wachstumsprozesse: Aufgaben 4. bis 6.}}
-
 \newpage
 
 \subsection{Formen der Darstellung}
@@ -69,10 +62,9 @@ Bemerkung: \TRAINER{$$2^{-x} = \frac1{2^x} = \frac{1^x}{2^x}= \left(\frac12\righ
 
 
 
-\subsubsection{Umkehrung (Optional)}
+\subsubsection{Umkehrung\GESO{ (Optional)}}
 Um aus einem Wachstum einen Zerfall zu modellieren können wir entweder
 die Zeitachse umdrehen oder den Kehrwert der Basis verwenden.
-umgedreht werden:
 
 Mit $d := \frac1a $ gilt:
 
@@ -95,11 +87,18 @@ $$y=2^{x-5}.$$
 
 Dies kann jedoch auch umgeschrieben werden:
 
+\TNT{2.8}{
 $$2^{x-5} = 2^x \cdot{} 2^{-5} = 2^{-5} \cdot{} 2^x = \frac{1}{2^5} \cdot{} 2^x =
 \frac{1}{32}\cdot{}2^x$$
+}%% end TNT
 
-\bbwCenterGraphic{8cm}{allg/funktionen/img/exp/verschiebung_gleich_streckung.png}
-Bildlegende: Eine Verschiebung ($x$-Richtung) der Exponentialfunktion entspricht einer Stauchung ($y$-Richtung) der selben Exponentialfunktion.
+\TRAINER{\bbwCenterGraphic{8cm}{allg/funktionen/img/exp/verschiebung_gleich_streckung.png}
+}%%
+\noTRAINER{\bbwFunction{-1}{10}{-1}{5}{0}{-1:10}
+}%% end NoTrainer
+
+
+Eine Verschiebung ($x$-Richtung) der Exponentialfunktion entspricht einer Stauchung ($y$-Richtung) der selben Exponentialfunktion.
 
 \TALS{Es gilt hier $$a^{x-b}=\frac{a^x}{k}$$ mit
 $k=a^b$ und mit $b=\log_a(k)$.}
