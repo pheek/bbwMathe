@@ -24,23 +24,20 @@
 \subsection{Taschenrechner}
 Beispiel
 
-$$x^3 + 70 \ge{} 4x^2 + 31$$
+$$x^3 + 11x \ge{} 70 - 10x^2$$
 
 Verschiedene Lösungsansätze
 
 
-
-a) Taschenrechner: \LoesungsRaumLang{\texttt{solve($x^3+70 \ge 4x^2 +
-    31$, x)} liefert $x\ge -2.458$}
+a) Taschenrechner: \LoesungsRaumLang{\texttt{solve($..., x$)} liefert $-7 \le x \le -5 or x\ge 2$}
 
 \leserluft{}
 
 b) Graphisch auch mit TR (ablesen aus Graph):
 
-\TNTeop{\texttt{g(x) := $x^3 + 70$} und \texttt{h(x) := $4x^2 + 31$}
+\TNTeop{\texttt{f(x) := $x^3 + 11x$} und \texttt{g(x) := $70 - 10x^2$}
   
-  Lies ab, wo nun $g(x) \ge h(x)$\vspace{6mm}
-
+  Lies ab, wo nun $f(x) \ge g(x)$ oder wo $f(x) - g(x) \ge 0$ \vspace{6mm}
 
   
   optional
@@ -49,7 +46,7 @@ b) Graphisch auch mit TR (ablesen aus Graph):
   Taschenrechner an.}:
   \begin{enumerate}
   \item Wie bei einer quadratischen Gleichung alles auf eine Seite
-    nehmen: $$x^3 - 4x^2 -31x + 70 \ge{} 0$$
+    nehmen: $$x^3 +10x^2 -11x -70 = 0$$
 
   \item Annähern, pröbeln  ($x=0, x=1, x=2$)
     Hier finden wir, dass $x=2$ die Ungleichung (bzw. die Gleichung) löst.
@@ -58,11 +55,10 @@ b) Graphisch auch mit TR (ablesen aus Graph):
     $$(x-2)\cdot(x + ???)\cdot(x + ???) = 0$$
 
   \item (optional Vorzeigen) Polynomdivison:
-    $$(x^3 - 4x^2 - 31x + 70) = (x-2) \cdot (???)$$
-    $$(x^3 - 4x^2 - 31x + 70) : (x-2) = (x^2 + 2x - 35)$$
+    $$(x^3 + 10x^2 + 11x - 70) = (x-2) \cdot (???)$$
+    $$(x^3 + 10x^2 + 11x - 70) : (x-2) = (x^2 + 12x + 35)$$
 
-  \item Lösung: $$x^3 - 4x^2 -31x + 70 = (x-2)\cdot(x-5)\cdot(x+7)$$
-    Somit gilt $$-7, 2 \text{ und } 5 \in \lx $$
+  \item Lösung: $$x^3 - 4x^2 -31x + 70 = (x-2)\cdot(x+5)\cdot(x+7)$$
 \end{enumerate}
 }%% END TNT
 \newpage
@@ -89,8 +85,6 @@ interpretieren:
 }%% END TNT
 
 
-
-
 %%Erstellen Sie zu einer der folgenden Aufgaben eine Musterlösung für OLAT!
 
 \subsection*{Aufgaben}
@@ -110,4 +104,11 @@ $$(x^2-7x+10)\cdot{}(x+7) \ge 0.$$
 %%\TALSAadBMTA{203}{761-764}
 \TALSAadBMTA{131}{22. b), 23. b)}
 \TALSAadBMTA{184}{32. e), 33. b)}
+
+
+\TALS{
+Strukturaufgaben:%%
+}%% end TALS
+
+\olatLinkTALSStrukturaufgabenSPF{SPF Teil 1}{7}{10}
 
