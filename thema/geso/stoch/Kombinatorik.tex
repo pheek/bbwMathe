@@ -26,7 +26,7 @@ gilt die Produktregel: 4 mal 3 mal 2 = 24 Varianten.}
   einzelnen Möglichkeiten ($n_i$) zur Gesamtzahl aller Möglichkeiten
   ($N$).
 
-  Beispiel bei $k$ unabhängigen Erignissen:
+  Beispiel bei $k$ unabhängigen Ereignissen:
   $$N = n_1 \cdot{} n_2 \cdot{} n_3 \cdot{} ... \cdot{} n_k$$
 \end{gesetz}
 
@@ -55,7 +55,7 @@ sechs mal vier Variationen = 48 Mögliche Ausgänge
 
 \newpage
 \aufgabenFarbe{Johann W. G. aus Frankfurt schrieb viele Texte. Er
-  wollte vielleicht auch einmal die acht Vorsiblen «ver», «vor», «be», «über», «an», «ab», «fort» und
+  wollte vielleicht auch einmal die acht Vorsilben «ver», «vor», «be», «über», «an», «ab», «fort» und
 «zu» in einem Gedicht verwenden und diese mit den sechs Verben
 «gehen», «geben», «laufen», «lassen», «schlagen» und «ziehen»
 kombinieren. Wie viele solche Kombinationen aus Vorsilbe und Verb (wie
@@ -517,6 +517,38 @@ und alle Vertauschungen: $10\cdot{}9\cdot{}8\cdot{}7 +
 \newpage
 
 
+\subsubsection{Mississippi-Formel}\index{Mississippi-Formel}\index{Multinomialkoeffizient}
+Der sog. Multinomialkoeffizient ist eine spezielle Form der Fakultät.
+
+Auf wie viele Arten können die Buchstaben des Wortes Mississippi in
+eine Reihe gebracht werden? Anders gefragt: Wie viel Sinn- und
+Unsinnwörter sind mit den elf Buchstaben des Wortes «Mississippi»
+möglich?
+
+Lösung: Mit den Buchstaben des Wortes
+{\color{red}M}{\color{blue}i}{\color{orange}ss}{\color{blue}i}{\color{orange}ss}{\color{blue}i}{\color{violet}pp}{\color{blue}i}
+können wie folgt Wörter gebildet werden:
+
+\TNT{6}{
+
+  $$\frac{11!}{{\color{red}1!}\cdot{}{\color{blue}4!}\cdot{}{\color{orange}4!}\cdot{}{\color{violet}2!}}
+  = 34650$$
+
+}%% END TNT
+
+Die allgemeine Formel wird wie folgt angewendet:
+
+\TNT{4}{
+  $$\frac{n!}{k_1! \cdot{} k_2! \cdot{} k_3! \cdot{} k_4! \cdot{}
+    ...}$$
+  Dabei ist $n$ die Anzahl aller Objekte und $k_i$ die Anzahl
+  gleichartiger Objekte zum Typ $i$ (\zB Buchstabe $i$ = «s»).
+}%% end TNTeop
+
+\subsection*{Aufgabe}
+\aufgabenFarbe{Auf wie viele Arten kann ich die Buchstaben des Wortes «banana» neu permutieren?}
+\TNTeop{$$\frac{6!}{1! \cdot{} 2! \cdot{} 3!} = 60$$}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 
 \subsection{Kombinationen}\index{Kombination}\label{kombiKombination}
@@ -691,34 +723,6 @@ Objekte $(n-k)!$ davon weg, es bleibt: $$\frac{n!}{k!(n-k)!}$$
   $${n \choose k} = \frac{n!}{k!(n-k)!} = \frac{\text{ «nPr» }}{k!}$$
   \end{bemerkung}
 \newpage
-
-\subsubsection{Mississippi-Formel}\index{Mississippi-Formel}\index{Multinomialkoeffizient}
-Der sog. Multinomialkoeffizient ist eine Verallgemeinerung des Binomialkoeffizienten.
-
-Auf wie viele Arten können die Buchstaben des Wortes Mississippi in
-eine Reihe gebracht werden? Anders gefragt: Wie viel Sinn- und
-Unsinnwörter sind mit den elf Buchstaben des Wortes «Mississippi»
-möglich?
-
-Lösung: Mit den Buchstaben des Wortes
-{\color{red}M}{\color{blue}i}{\color{orange}ss}{\color{blue}i}{\color{orange}ss}{\color{blue}i}{\color{violet}pp}{\color{blue}i}
-können wie folgt Wörter gebildet werden:
-
-\TNT{6}{
-
-  $$\frac{11!}{{\color{red}1!}\cdot{}{\color{blue}4!}\cdot{}{\color{orange}4!}\cdot{}{\color{violet}2!}}
-  = 34650$$
-
-}%% END TNT
-
-Die allgemeine Formel wird wie folgt angewendet:
-
-\TNTeop{
-  $$\frac{n!}{k_1! \cdot{} k_2! \cdot{} k_3! \cdot{} k_4! \cdot{}
-    ...}$$
-  Dabei ist $n$ die Anzahl aller Objekte und $k_i$ die Anzahl
-  gleichartiger Objekte zum Typ $i$ (\zB Buchstabe $i$ = «s»).
-}%% end TNTeop
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Name Binomialkoeffizient (optional)}
 
@@ -816,4 +820,38 @@ Beim Glücksspiel «Euromillions» werden fünf aus 50 Zahlen und zwei aus zwöl
 \newpage
 
 
+\subsection{Kombinationen mit Wiederholung}\index{Kombination!mit Wiederholung}
+
+Auf wie viele Arten kann ich 10 Brote aus einer Auswahl von 3 Sorten auswählen?
+
+\begin{gesetz}{Kombination mit Wiederholung}{}
+
+  (Ziehen mit Zurücklegen / Reihenfolge egal)
+
+  
+Im Urnenmodell entspricht dies dem Ziehen von $k$ Kugeln aus einer
+Urne mit $n$ verschiedenen Kugeln mit zurücklegen und ohne Beachtung der Reihenfolge.
+\begin{itemize}
+\item
+  Die Reihenfolge der gewählten Kugeln ist hier nicht relevant.
+\item Die Kugeln werden \textbf{nicht} zurückgelegt (ohne Wiederholung).
+\end{itemize}
+
+$$N = {n+k-1 \choose k}$$
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{rcl}
+  $N$ &=& \TRAINER{Anzahl Kombinationen (Reihenfolge egal)}\\
+  $n$ &=& \TRAINER{Objekte zur (optionalen) Auswahl}\\
+  $k$ &=& \TRAINER{auszuwählende \textbf{wiederholbare} Objekte}
+\end{tabular}
+\renewcommand{\arraystretch}{1}
+\end{gesetz}
+
+
+\TNT{2}{ohne Beweis.}
+
+\newpage
+
+
 \input{geso/stoch/KombinatorikZusammenfassung}\newpage
+
