@@ -13,9 +13,9 @@ Füllen Sie dazu folgende Tabelle aus. Dabei bedeuten
   $p$     & Zunahme\textbf{rate}\index{Zunahmerate}\index{Rate} während $\tau$ Einheiten in \%. Ist $p$ negativ, handelt es sich um eine Abnahme\\\hline
   $a$ & Zunahme\textbf{faktor}\index{Zunahmefaktor} während
   $\tau$ Einheiten. Ist $a<1$, handelt es sich um einen Abnahmefaktor
-  ($a_{\tau} = 1+\frac{p}{100\%}$)\\\hline
+  ($a = a_{\tau} = 1+\frac{p}{100\%}$)\\\hline
   $A$ (Formel)   & Zunahme pro Einheit (als Faktor). Aufgeschrieben
-  als Formel $=a_{\tau}^{\frac1{\tau}}$\\\hline
+  als Formel $=a^{\frac1{\tau}}$\\\hline
   $\approx A$ (Zahl)  & Zunahme pro Einheit (als Näherungswert).\\\hline
   $p_E$   & Prozentuale Zunahme pro Zeiteinheit $=(A-1)\cdot{}100\%$\\\hline
   \end{tabular} 
@@ -26,7 +26,7 @@ Füllen Sie dazu folgende Tabelle aus. Dabei bedeuten
 \newcommand{\ph}[1]{\noTRAINER{...........}\TRAINER{#1}}
 
 %%\renewcommand{\arraystretch}{1.7}
-$$f(t) = a^{\frac{t}\tau} = A^t$$
+$$f(t) = a^{\frac{t}\tau} = \left(a^{\frac1\tau}\right)^t= A^t$$
 \TNT{1.6}{1. Zeile: Eine Zunahme von 56\% pro 3h entspricht einer
   Zunahme von 15.98\% pro Stunde.}
 %% probably turn off auto-fill-mode in emacs when editing long lines

@@ -155,8 +155,8 @@ $$f(x): x \mapsto a^x$$
 \AadBMTA{354}{9. (Bauchspeicheldrüse)}
 \olatLinkGESOKompendium{3.4.1}{27ff}{33., 35., 36., 39. und 41.}
 
-%\newpage
-%\input{allg/funktionen/Mischtank}
+\newpage
+\input{allg/funktionen/Mischtank}
 \newpage
 
 
@@ -442,7 +442,7 @@ Irland hatte 1990 3.51 Mio. Einwohner. Im Jahr 2019 waren es bereits 4.93 Mio.
 \subsection*{Aufgaben}
 
 \GESO{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/106029175831971}{Kap. 1.5: Aufg. 18. a) b)}}
-\TALS{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/106029175777725}{Kap. 1.5: Aufg. 18. a) b) }}
+\TALS{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/106029175777725}{Kap. 1.5:     Aufg. 18. a) b) }}
 
 \newpage
 
