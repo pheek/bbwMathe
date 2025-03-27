@@ -520,12 +520,25 @@ und alle Vertauschungen: $10\cdot{}9\cdot{}8\cdot{}7 +
 \subsubsection{Mississippi-Formel}\index{Mississippi-Formel}\index{Multinomialkoeffizient}
 Der sog. Multinomialkoeffizient ist eine spezielle Form der Fakultät.
 
-Auf wie viele Arten kann ich die Buchstaben im Namen «OTTO» neu anordnen?
+Auf wie viele Arten kann ich die Buchstaben im Namen «MAMMA» neu anordnen?
 
-\TNT{3.2}{OOTT, TTOO,  OTOT, TOTO, TOOT, OTTO
+\TNT{3.2}{
+  MMMAA MMAMA MMAAM MAMMA MAMAM
 
-  $$N = \frac{4!}{2!\cdot{} 2!} = \frac{24}{2\cdot{}2} = 6$$
+  MAAMM AMMMA AMMAM AMAMM AAMMM
+
+  $$N = \frac{5!}{2!\cdot{} 3!} = \frac{120}{2\cdot{}6} = 10$$
+
+  \vspace{3mm}
 }
+
+\begin{gesetz}{Multinomialkoeffizient}{}
+  $$N = \LoesungsRaumLen{40mm}{\frac{n!}{k_1! \cdot{} k_2! \cdot{} k_3! \cdot{} k_4! \cdot{}  ...}}$$
+  \noTRAINER{\vspace{6mm}}
+  Dabei ist $n$ die Anzahl aller Objekte und $k_i$ die Anzahl
+  gleichartiger Objekte zum Typ $i$ (\zB Buchstabe $i$ = «M», $k_k=3$).
+\end{gesetz}
+
 
 \subsection*{Aufgaben}
 
@@ -545,18 +558,6 @@ können wie folgt Wörter gebildet werden:
   
   \vspace{1cm}
 }%% END TNT
-
-Die allgemeine Formel wird wie folgt angewendet:
-
-\TNT{4}{
-  $$\frac{n!}{k_1! \cdot{} k_2! \cdot{} k_3! \cdot{} k_4! \cdot{}
-    ...}$$
-  Dabei ist $n$ die Anzahl aller Objekte und $k_i$ die Anzahl
-  gleichartiger Objekte zum Typ $i$ (\zB Buchstabe $i$ = «s»).
-
-  \vspace{10mm}
-}%% end TNTeop
-
 \aufgabenFarbe{Auf wie viele Arten kann ich die Buchstaben des Wortes «banana» neu permutieren?}
 \TNTeop{$$\frac{6!}{1! \cdot{} 2! \cdot{} 3!} = 60$$}
 
