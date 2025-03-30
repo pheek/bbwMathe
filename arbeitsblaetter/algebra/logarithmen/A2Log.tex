@@ -4,6 +4,17 @@
 \renewcommand{\metaHeaderLine}{Logarithmen}
 \renewcommand{\arbeitsblattTitel}{Algebra: Logarithmen}
 
+\ifisNURAUFGABEN
+\renewcommand{\abplz}[1]{\vspace{1mm}}
+\fi
+
+\newcommand{\seitenUmbruchImAufgabenteil}{
+\ifisNURAUFGABEN
+\else
+\noTRAINER{\newpage}
+\fi
+}%%
+
 \begin{document}
 \arbeitsblattHeader{}
 
@@ -67,7 +78,8 @@ Taschenrechner. Zwischen welchen beiden ganzen Zahlen liegt der Logarithmus?
 \item $\lg(1001) \approx  \LoesungsRaum{3.0004}$\abplz{4}
 \item $\lg(5) \approx  \LoesungsRaum{0.69897}$\abplz{4}
 \item $\lg(0.02) \approx  \LoesungsRaum{-1.69897}$\abplz{4}
-\item $\lg(10\cdot{}\pi) \approx  \LoesungsRaum{1.497}$\abplz{4}\newpage
+\item $\lg(10\cdot{}\pi) \approx  \LoesungsRaum{1.497}$\abplz{4}
+\seitenUmbruchImAufgabenteil{}
 \item $\lg\left(\left(10^{10}\right)^{10}\right) =  \LoesungsRaum{100 \text{ exakt }}$\abplz{6}
 \item $\left(\lg\left(10^{10}\right)\right)^{10} =  \LoesungsRaum{10^{10}}$\abplz{6}
 
@@ -136,7 +148,8 @@ Hand. Prüfen Sie Ihr Resultat mit dem Taschenrechner.
 \item $2 = \sqrt[x]{512}  \LoesungsRaum{\Longrightarrow 2^x=512 \Longrightarrow x=\log_2{}(512) = \log_2{2^9} = 9}$\abplz{2}
 
 \item $x = \log_{25}(5)  \LoesungsRaum{x=0.5}$\abplz{2}
-\noTRAINER{\newpage}
+
+\seitenUmbruchImAufgabenteil{}
 
 \item $x = \log_3(81)  \LoesungsRaum{x=4}$\abplz{2}
 
@@ -256,7 +269,7 @@ Berechnen Sie jeweils $x$:
 \item $x=\log_r(r^3) \Longrightarrow x =    \LoesungsRaum{3}$\abplz{1.6}
 \item $x=\log_5\left(\sqrt[4]{5}\right) \Longrightarrow x =    \LoesungsRaum{0.25}$\abplz{3.2}
 \item $x=\log_t\left(t^2\cdot{}\sqrt[3]{t}\right) \Longrightarrow x =    \LoesungsRaum{\frac73}$\abplz{3.2}
-\noTRAINER{\newpage}
+\seitenUmbruchImAufgabenteil{}
 \item $x=\log_a\left( \frac1{a^{-2}\cdot{} \sqrt{a}} \right) \Longrightarrow x =    \LoesungsRaum{1.5}$\abplz{4}
 \item $25=\sqrt[a\cdot{}x]{5^3}  \Longrightarrow x =    \LoesungsRaum{\frac3{2a}}$\abplz{4}
 
@@ -306,7 +319,7 @@ Berechnen Sie $x$ von Hand:
 \item $x = \ln\left(\e^3\right)  \Longrightarrow x =    \LoesungsRaum{3}$\abplz{2}
 \item $\ln\left(\sqrt{x}\right)  = \frac12  \Longrightarrow x =    \LoesungsRaum{\e}$\abplz{4}
 \item $\ln\left(x\cdot{} \e \right)  = -2  \Longrightarrow x =    \LoesungsRaum{\e^{-3}}$\abplz{4}
-\noTRAINER{\newpage}
+\seitenUmbruchImAufgabenteil{}
 \item $\ln(x+1) = 2 \Longrightarrow x =    \LoesungsRaum{\e^2 - 1}$\abplz{3.2}
 \item $x=\frac{\e^{\ln(2)+1}}{\e} \Longrightarrow x =    \LoesungsRaum{2}$\abplz{2}
 \item $3 = \e^{\frac{x}4} \Longrightarrow x=    \LoesungsRaum{4\cdot{} \ln(3) (\approx 4.394)}$\abplz{4}
@@ -329,8 +342,7 @@ Beispiel $$\log\left(a\cdot{}b^3\right) = \log(a) + 3\cdot{}\log(b)$$
 \item $\log_x(3xy)  \LoesungsRaum{\log_x(3) + 1 + \log_x(y)}$\abplz{3.2}
 \item $\ln(12u+4uv)  \LoesungsRaum{\ln(4) + \ln(u) + \ln(3+v)}$\abplz{3.2}
 \item $\log_a(16p^8-p^4) \LoesungsRaum{4\cdot{}\log_a(p)+ \log_a(2p+1) + \log_a(2p-1)+ \log_a(4p^2+1)}$\abplz{6}
-\noTRAINER{\newpage}
-
+\seitenUmbruchImAufgabenteil{}
 \item $\lg\left(\frac{c}{10}\right)  \LoesungsRaum{\lg(c) - 1}$\abplz{2}
 \item $\log_a\left( m^2n^3 \right)  \LoesungsRaum{2\cdot{}\log_a(m) + 3\cdot{}\log_a(n)}$\abplz{2}
 \item $\log_a\left( \frac{p^3}{a^2 \cdot{} \sqrt[3]{p^4}} \right)  \LoesungsRaum{\left(3-\frac43\right)\cdot{}\log_a(p)- 2}$\abplz{6}
