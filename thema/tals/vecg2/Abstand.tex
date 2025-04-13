@@ -59,6 +59,9 @@ $s=|\vec{s}|$ gerade den Abstand zwischen Gerade und Punkt angibt.
   Abstand $s=\sqrt{10}$. (Bem.: $t=2$)
 }
 \newpage
+
+\subsubsection*{Rezept}
+
 \begin{rezept}{Abstand Punkt zu Gerade}{}
   Gegeben sind die Gerade $g$ und der Punkt $P$:
   $$g: \,\,\, \vec{r}(t) = \vec{a} + t\cdot{} \vec{u}$$
@@ -66,9 +69,9 @@ $s=|\vec{s}|$ gerade den Abstand zwischen Gerade und Punkt angibt.
 
   Mit dem Distanzvektor $\vec{d}$ gilt:
 
-  $$\vec{d} := \vec{p} - (\vec{a} + t\cdot{}\vec{u})$$
+  $$(I) \,\,\, \vec{d} := \vec{p} - (\vec{a} + t\cdot{}\vec{u})$$
   und
-  $$\vec{d} \circ \vec{u} = 0$$
+  $$(II) \hspace{25mm}  \vec{d} \circ \vec{u} = 0$$
 
   Dies ist ein Gleichungssystem mit den Unbekannten $t$ und
   $\vec{d}$. Dabei kann $\vec{d}$ wie folgt angenommen werden:
@@ -77,6 +80,22 @@ $s=|\vec{s}|$ gerade den Abstand zwischen Gerade und Punkt angibt.
 
   Nun noch die Länge (\texttt{norm}) von $\vec{d}$ bestimmen.
 \end{rezept}
+
+\begin{bemerkung}{Abstand Punkt-Gerade}{}
+  Der Taschenrechner tiNSpire kann die beiden Gleichungstypen Vektor (I)
+  und Skalar (II) nicht gleichzeitig in ein und demselben Gleichungssystem
+  lösen. Es ist hier nötig, die Vektorgleichung in drei Gleichungen
+  aufzuteilen:
+
+  Anstelle von 
+  $$\vec{d} = \vec{p} - (\vec{a} + t\cdot{}\vec{u})$$
+  schreiben Sie
+  
+  $$x = p_x - (a_x + t\cdot{}u_x)$$
+  $$y = p_y - (a_y + t\cdot{}u_y)$$
+  $$z = p_z - (a_z + t\cdot{}u_z)$$
+    
+\end{bemerkung}
 
 \newpage
 \subsection*{Aufgaben}
@@ -95,10 +114,8 @@ Dabei ist $\vec{a} = \overrightarrow{OA}$ ein Stützvektor der Geraden
 und $\vec{u}$ ein Richtungsvektor.
 
 Nennen wir unsere zwei Geraden $g_1$ und $g_2$:
-$$g_1:\,\,\,\, \vec{r}_1(t) =  \vec{a}_1+t\cdot{}\vec{u}_1 \text{ mit } \vec{a}_1
-= \Spvek{3;2;1} \text{ und } \vec{u}_1= \Spvek{2;2;0}$$
-$$g_2:\,\,\,\,  \vec{r}_2(t)\vec{a}_2+s\cdot{}\vec{u}_2 \text{ mit } \vec{a}_2
-= \Spvek{7;2;0} \text{ und } \vec{u}_2= \Spvek{1;0;1}$$
+$$g_1:\,\,\,\, \vec{r}_1(t) =  \vec{a}_1+t\cdot{}\vec{u}_1 \text{ mit } \vec{a}_1 = \Spvek{3;2;1} \text{ und } \vec{u}_1= \Spvek{2;2;0}$$
+$$g_2:\,\,\,\,  \vec{r}_2(t) = \vec{a}_2+s\cdot{}\vec{u}_2 \text{ mit } \vec{a}_2 = \Spvek{7;2;0} \text{ und } \vec{u}_2= \Spvek{1;0;1}$$
 
 \begin{rezept}{Grundidee Abstand}{}
 
@@ -128,7 +145,13 @@ Taschenrechner:
 \bbwCenterGraphic{12cm}{tals/vecg2/img/abstandTR.png}
 
 $$d = |\vec{d} | = \frac{5\sqrt{3}}{3} \approx 2.88675$$
+
+\subsection*{Aufgaben}
+\olatLinkArbeitsblatt{Geradengleichung}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/110262782958559}{Kap. 3.2
+  (Aufg. 16. a) und b) mit TR)}
 \newpage
+
+
 \subsubsection*{Referenzaufgabe von Hand}
 
 Gegeben sind die Geraden $g$ und $h$. Berechnen Sie deren Abstand.
@@ -141,24 +164,23 @@ $$g: \,\,\, \vec{r}(t) = \Spvek{2;6;2} + t\cdot{}\Spvek{0;1;0} \text{
   $$P = (2 | 6+ t | 2 ) \text{ und } Q = (6-3s|-2+s|8) $$
 
   2. $\overrightarrow{PQ}$ bestimmen:
-  $$\overrightarrow{PQ} = \Spvek{(2)-(6-3s); (6+t)-(-2+s); (2)-(8)} =
-  \Spvek{3s-4; 8+t-s; -6}$$
+  $$\overrightarrow{PQ} = \Spvek{(6-3s) - 2; (-2+s)- (6+t); 8 - 2} =
+  \Spvek{4-3s; s-t-8; 6}$$
 
   3. $\overrightarrow{PQ}$  senkrecht auf beide Richtungsvektoren
   stellen (je Skalarprodukt = Null setzen):
-  $$(3s-4)\cdot{}0     + (8+t-s)\cdot{}1+ (-6)\cdot{} 0 = 0 \Longleftrightarrow t-s=-8$$
+  $$(4-3s)\cdot{}0     + (s-t-8)\cdot{}1+ (6)\cdot{} 0 = 0 \Longleftrightarrow t-s=-8$$
   und 
-  $$(3s-4)\cdot{}(-3)  + (8+t-s)\cdot{}1+ (-6)\cdot{} 0 = 0 \Longleftrightarrow -10s + t = -20$$
+  $$(4-3s)\cdot{}(-3)  + (s-t-8)\cdot{}1+ (6)\cdot{} 0 = 0 \Longleftrightarrow 10s - t = 20$$
 
   4. Gleichungssystem nach $s$ und $t$ auflösen:
   $$s=\frac43 \text{ und } t = \frac{-20}3$$
   
   5. $s$ und $t$ in  $\overrightarrow{PQ}$  einsetzen:
-  $\overrightarrow{PQ} = \Spvek{3\cdot{}\frac43 -4 ; 8+\frac{-20}3
-    -\frac43 ; -6} = \Spvek{0;0;-6}$
+  $\overrightarrow{PQ} = \Spvek{4 - 3\cdot{}\frac43 ; \frac43 + \frac{20}3 -8; 6} = \Spvek{0;0;6}$
 
   6. Länge (mit Pythagoras) besitmmen
-  $$d = \sqrt{0^2 + 0^2 + (-6)^2}  = 6$$
+  $$d = \sqrt{0^2 + 0^2 + 6^2}  = 6$$
 }%% end TNTeop
 
 \newpage
@@ -174,11 +196,10 @@ $$g: \,\,\, \vec{r}(t) = \Spvek{2;6;2} + t\cdot{}\Spvek{0;1;0} \text{
   \end{enumerate}
 \end{rezept}
 
-\newpage
-
 \subsection*{Aufgaben}
 
-\olatLinkArbeitsblatt{Geradengleichung}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/110262782958559}{Kap. 3.2 (Aufg. 16.)}
+\olatLinkArbeitsblatt{Geradengleichung}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/110262782958559}{Kap. 3.2
+  (Aufg. 16. a) b) von Hand)}
 
 \TALSAadBMTG{307ff}{35. und Flugzeug: 38. bis 43.}
 
