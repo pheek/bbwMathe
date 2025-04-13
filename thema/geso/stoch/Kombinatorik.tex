@@ -65,7 +65,8 @@ sechs mal vier Variationen = 48 Mögliche Ausgänge
 «schreiben», «setzen», «tragen», «werfen» und «ziehen»
 \\
 kombinieren. Wie viele solche Kombinationen aus Vorsilbe und Verb (wie
-«fortlassen» oder «angeben») sind damit möglich? Ergeben alle diese Wörter einen Sinn?}
+«fortlassen» oder «angeben») sind damit möglich? Ergeben alle diese
+Wörter einen Sinn? Sind alle davon Verben?}
 \TNT{6}{
 Theoretisch gibt es $10\cdot{}12 = 120$ Möglichkeiten. Welche Bedeutung
 dem Wort «fortschlagen» zukommt sei hier jedoch zweitrangig.}
@@ -118,8 +119,8 @@ Eine \textbf{Variation} ist eine \textbf{geordnete} Stichprobe.
 \end{definition}
 
 \subsubsection{Variation mit Zurücklegen}\label{kombiVariationMitZuruecklegen}
-Dieses Experiment entspricht im \textbf{Urnenmodell}\index{Urnenmodell} dem...
-\begin{gesetz}{Variation mit Wiederholung}{}
+Dieses Experiment entspricht im \textbf{Urnenmodell}\index{Urnenmodell} der...
+\begin{gesetz}{...Variation mit Wiederholung}{}
 
 (Ziehen \textbf{mit} Zurücklegen / Reihenfolge wesentlich)
   
@@ -181,6 +182,13 @@ möglich? Dabei darf eine Farbe im Schema auch mehrfach auftreten, die
 Reihenfolge der Farben ist jedoch wesentlich.}
 \TNT{4}{Jede Position im Farbschema hat unabhängig von den anderen die
 20 Varianten: $20^4 = 160\,000$}
+
+\aufgabenFarbe{Ein Monitor-Pixel (\textit{picture element}) hat die
+  Möglichkeit in den Grundfarben \textbf{rot}, \textbf{grün} und
+  \textbf{blau} (RGB) zu leuchten. Jede dieser Grundfarben kann dabei $2^8$
+  Helligkeitstufen verwenden. Wie viele Farben lassen sich damit mischen?}
+\TNT{4}{$$N = \left(2^8\right)^3 = 16\,777\,216$$}
+\newpage
 
 \aufgabenFarbe{Ein Kombinations-Safe mit den sechsundzwanzig
   Buchstaben von «A» bis «Z» wird gebaut. Die Buchstaben müssen in der
@@ -263,8 +271,8 @@ Diese Rechnung ist im Taschenrechner unter der Operation ``Fakultät''
 bekannt und wird üblicherweise mit der Taste \fbox{n!} bezeichnet. Auf
 Ihrem Rechner ist es die Taste \tiprobutton{ncrnpr}.
 
-Dies entspricht im Urnenmodell dem ...
-\begin{gesetz}{Fakultät}{}
+Dies entspricht im Urnenmodell der...
+\begin{gesetz}{...Fakultät}{}
 
   (Ziehen aller Objekte \textbf{ohne} Zurücklegen / Reihenfolge wesentlich)
 
@@ -290,7 +298,8 @@ $$N = n\cdot{} (n-1) \cdot{} (n-2) \cdot{} (n-3) \cdot{}
 
 
 \sectuntertitel{$25-5:5 \text{ ergibt } 4!$}
-\TRAINER{$25-5:5 = 25-(5:5) = 25 - 1 = 24 = 4\cdot{}3\cdot{}2\cdot{}1 = 4!$}
+\TRAINER{$25-5:5 = 25-(5:5) = 25 - 1 = 24 = 4\cdot{}3\cdot{}2\cdot{}1
+  = 4!$, aber $(25-5):4 = 4 (!)$}
 
 
 \aufgabenFarbe{Berechnen Sie die Fakultät von 3, 4, 5 und 20 mit dem Taschenrechner.}
@@ -390,11 +399,12 @@ Das sind fünf Blöcke mit je vier Objekten = $5\cdot{}4 = \frac{5!}{(5-2)!}$.
 \newpage
 
 \begin{bemerkung}{}{}
-Wenn wir alle $n$ Objekte geordnet auswählen, so erhalten wir
+Wenn wir \textbf{alle} $n$ Objekte geordnet auswählen, so erhalten wir
 $\frac{n!}{(n-n)!} = n!$, was dem bereits bekannten Spezialfall der \textbf{Permutation}
 entspricht.
 \end{bemerkung}
 
+\TNT{2}{$$0! := 1$$}
 
 \GESO{%%
 \begin{bemerkung}{}{}
@@ -487,6 +497,10 @@ Wie viele dreibuchstabige Akronyme mit nur verschiedenen dieser Buchstaben
 sind denkbar?}%% ENd Aufgabe
 \TNT{2.4}{«Ohne Zurücklegen»: $\frac{7!}{(7-3)!} = 210$}%% END TNT
 
+\aufgabenFarbe{Auf wie viele Arten können sich Hanna, Igor, Jana, Karl
+und Lena auf die acht Plätze ganz hinten im Bus platzieren?}
+\TNT{3.2}{$$N=\frac{8!}{(8-5)!}  = \frac{8!}{3!} = 336$$}
+
 \aufgabenFarbe{Ein Zahlenschloss mit vier Ringen wird verdreht. Jeder
 Ring hat alle Ziffern von 0..9 (also zehn Ziffern) als wählbare
 Möglichkeiten. Auf wie viele Arten kann ich das Zahlenschloss
@@ -504,23 +518,37 @@ dass die erste Ziffer dreimal und die zweite Ziffer einmal
 vorkommt. Nun haben wir für diese 90 Varianten aber immer vier
 Möglichkeiten zu wählen, wo die einzelne Ziffer steht. Somit
 $\frac{10!}{(10-2)!}\cdot 4$ = 10 mal 9 mal 4 = 360.}
+\newpage
 
-\aufgabenFarbe{(optional; schwierig) Das selbe Zahlenschloss wird so verdreht, dass eine
+
+\aufgabenFarbe{
+Vier Personen steigen in einen Lift im Parterre. Der Lift fährt mit diesen vier
+Personen nach oben los und kann dabei in 6 darüberliegenden
+Stockwerken anhalten.
+\\
+a) Auf wie viele Variationen können die vier Personen die Stockwerke
+wählen, wenn auch mehrere Personen im selben Stockwerk (gleichzeitig)
+den Lift verlassen können?
+\\
+b) Wie viele Variationen gibt es, wenn jeder Fahrgast ein anderes
+Stockwerk auswählt?}
+\TNT{6}{a) $$N = 6^4 = 1296$$
+b) $$N = \frac{6!}{(6-4)!} = 360$$}
+
+\aufgabenFarbe{(optional; schwierig) Das obige Zahlenschloss (vier
+  Ringe, zehn Ziffern) wird so verdreht, dass eine
 Ziffer maximal zweimal auftreten kann. Wie viele Varianten gibt es nun?}
-\TNT{3.2}{Es sind 9630 Varianten. Dies geht am einfachsten mit
+\TNTeop{Es sind 9630 Varianten. Dies geht am einfachsten mit
 Abzählen. Von den Total $10\,000$ Varianten fallen die zehn weg bei denen
 alle Ziffern gleich sind und ebenso fallen die 360 weg, bei denen drei
 gleiche Ziffern vorkommen (s. obige Aufgabe). Somit verbleiben
-$10000-10-360=9630$. (2. Rechenweg: Muster «XYZT» + «XYZZ» + «XXYY» + «XYXY»+ «XYYX»
+$10000-10-360=9630$.
+\\
+2. Rechenweg: Muster «XYZT» + «XYZZ»(6x) + «XXYY»(3x)
 und alle Vertauschungen: $10\cdot{}9\cdot{}8\cdot{}7 +
-6\cdot{}(10\cdot{}9\cdot{}8) + (10\cdot{}9+ 10\cdot{}9\cdot{} +
-10\cdot{} 9) = 9630$
-}
-\newpage
-
-\olatLinkGESOKompendium{5.5.1}{46}{16.}
-
-\newpage
+6\cdot{}(10\cdot{}9\cdot{}8) + 3\cdot{}(10\cdot{}9) = 9630$
+}%% implicit \newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \subsubsection{Mississippi-Formel}\index{Mississippi-Formel}\index{Multinomialkoeffizient}
@@ -868,8 +896,14 @@ $$N = {n+k-1 \choose k}$$
 
 \TNT{2}{ohne Beweis.}
 
-\newpage
+\begin{beispiel}{Kombination mit Wiederholung}{}
+Ein Bäcker bietet \textit{Gipfeli} in drei Sorten an. Ich muss zehn
+\textit{Gipfeli} kaufen. Wie viele Kombinationen gibt es?
 
+\TNT{3.2}{$$N= { {3+10-1} \choose {10} } = {12 \choose 10}  = 66$$}
+\end{beispiel}
+
+\newpage
 
 \input{geso/stoch/KombinatorikZusammenfassung}\newpage
 

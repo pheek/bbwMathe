@@ -9,17 +9,17 @@
 
 \begin{itemize}
  \item Zuordnung
- \item Mengenbegriffe: Definitionsmenge\index{Definitionsmenge} (= Definitionsbereich\index{Definitionsbereich}) vs. Quellbereich\index{Quellbereich}
+ \item Mengenbegriffe: Definitionsmenge (= Definitionsbereich) vs. Quellbereich
  \item Wertebereich (= Bildmenge) vs. Wertevorrat (= Zielmenge)
  \item Darstellungsarten
    \begin{itemize}
       \item Wertetabelle
-      \item Graphen\index{Graph}
+      \item Graphen
       \item Funktionsterm
    \end{itemize}
  \item verschiedene Notationen
  \item Gleichungen visualisieren
- \item Achsen\index{Achse!bei Funktionen}
+ \item Achsen
  \item Funktionsgleichung
  \item Abhängige, unabhängige Variable / Argument, Parameter, Funktionswert
 \end{itemize}
@@ -29,7 +29,7 @@
 
 \TadBMTA{211}{13}
 \newpage
-\subsection{Allgemeiner Funktionsbegriff\GESO{ (optioinal)}}\index{Funktion!allgemeiner Begriff}
+\subsection{Allgemeiner Funktionsbegriff\GESO{ (optional)}}\index{Funktion!allgemeiner Begriff}
 Mengenbezeichnungen bei Gleichungen (Diese Mengen sind bereits
 bekannt\footnote{Die Definitionsmenge bezeichnet hier die Menge aller
   Zahlen für die alle Terme definiert sind.}):
@@ -56,19 +56,16 @@ Mengenbezeichnungen bei Funktionen:
 \end{center}
 }%% END no TRAINER
 
-\begin{definition}{Wertebereich}{}
-Die Menge aller getroffenen Werte aus dem Wertvorrat wird \textbf{Wertebereich}\index{Wertebereich}
-(oder Bildmenge) genannt. Bemerkung: im Buch \cite{marthaler21alg} wird
-  mit dem Begriff «Bildmenge» der Wertevorrat bezeichnet!
-\end{definition}
-
 \newpage
 \subsubsection{Definition Funktionsbegriff\GESO{ (optional)}}
 
 \begin{definition}{Funktion}{}\index{Funktion!Definition}
     Eine \textbf{Funktion}\index{Funktion} ist eine eindeutige \textbf{Zuordnung}\index{Zuordnung}, die jeder Zahl
     $x$ aus einem Definitionsbereich \textbf{genau} eine Zahl $y$ aus
-    einem Wertevorrat\index{Wertevorrat} (= Zielmenge)\index{Zielmenge} zuordnet.\\
+    einem Wertevorrat\index{Wertevorrat} (=
+    Zielmenge)\index{Zielmenge} zuordnet.
+
+    $$f: \mathbb{D} \mapsto{} \mathbb{W}$$
 \end{definition}
 
 \TRAINER{Hier Graphen von Funktionen zeigen (\zB OLAT).}
@@ -91,14 +88,14 @@ Die Menge aller getroffenen Werte aus dem Wertvorrat wird \textbf{Wertebereich}\
 
 \begin{bemerkung}{}{}
   Zum Wertebereich: Wo der Begriff Quellbereich (eine theoretische Obermenge
-  des \textbf{Definitionsbereichs}\index{Definitionsbereich|textbf}) kaum praktische Bedeutung hat,
+  des \textbf{Definitionsbereichs}\index{Definitionsbereich}) kaum praktische Bedeutung hat,
   wird jedoch in speziellen Fällen statt dem Wertebereich der
   Wertevorrat\index{Wertevorrat}\footnote{Der Wertevorrat
     wird auch Zielbereich, Zielmenge\index{Zielmenge},
     Cobereich\index{Cobereich} oder Nachbereich\index{Nachbereich}
     genannt (\cite{FormelnUndTafeln19}).}
   angegeben; meist daher, weil der
-  Wertebereich in komplexen, fraktalen, sprungstetigen oder sonstwie komplizierten Funktionen schlicht
+  Wertebereich in komplexen, fraktalen, sprungstetigen oder sonst wie komplizierten Funktionen schlicht
   und ergreifend nicht bekannt ist.\footnote{\textbf{Beispiel 1}: Bei der Funktion
     «mittlere Tagestemperatur» ist zwar der Wertevorrat ($\mathbb{R}[{}^\circ]$)
     bekannt, jedoch sind die effektiv getroffenen Bildwerte meist nur
@@ -126,7 +123,6 @@ Die Menge aller getroffenen Werte aus dem Wertvorrat wird \textbf{Wertebereich}\
   1.2 (1.1 optional)}
 }%% end GESO
 
-
 \newpage
 
 
@@ -138,34 +134,77 @@ Die Menge aller getroffenen Werte aus dem Wertvorrat wird \textbf{Wertebereich}\
     \hline\\
     $f(x)=y=x^2-1$ & \LoesungsRaumKurz{3} & \LoesungsRaumKurz{0} & \LoesungsRaumKurz{-1} & \LoesungsRaumKurz{0} & \LoesungsRaumKurz{3} & \LoesungsRaumKurz{5.25}\\ 
 \end{tabular}
-\item Graphen im rechtwinkligen Koordinatensystem
+\item \textbf{Graphen}\index{Graph} im rechtwinkligen Koordinatensystem
   
 \noTRAINER{\bbwGraph{-3}{4}{-1.5}{6}{}}
 \TRAINER{  \bbwFunction{-3}{4}{-1.5}{6}{\x*\x - 1 }{-2:2.5}}
 
 \item Funktionsschreibweise (verschiedene Notationen)\\
-  $f: \DefinitionsMenge{} \rightarrow \Wertebereich{}$\\
-  $y=f(x)$ \zB $y=x^2-1$\\
-  $f: x\mapsto y$ mit $x \in \DefinitionsMenge{}$ und $y \in \Wertebereich{}$\\
-  Alternative Notation: $f: x\mapsto{} f(x)$ oder $x\mapsto x^2-1$\\
+\noTRAINER{\vspace{15mm}}\TRAINER{$$y=x^2-1$$}
 
+\noTRAINER{\vspace{15mm}}\TRAINER{$$f(x)=x^2-1$$}
 
-  \subsubsection*{Begriffe}
-
-  \begin{tabular}{l|l}
-    \textit{Begriff} & \textit{Beispiel(e)}\\\hline
-    \textbf{Funktionsgleichung}\index{Funktion!Gleichung}\index{Gleichungen!Funktion}        & \TRAINER{$y=x^2-1$, $f(x)=x^2-1$, $y=f(x)$}\\\hline
-    \textbf{Funktionsargumente}\index{Funktion!Argument}\index{Argument!Funktionen}        & \TRAINER{$x$-Werte:  -2, -1, 0, 1, ...}\\\hline
-    \textbf{Funktionswert}     \index{Funktion!Wert}\index{Wert!einer Funktion}            & \TRAINER{$y$-Werte: 3, 0, -1, 0, ... }\\\hline
-    Funktionsterm\index{Funktion!Term}\index{Funktionsterm}\index{Terme!Funktionsterm}      & \TRAINER{$x^2-1$}\\\hline
-    Funktionsvorschrift\index{Funktion!Vorschrift}\index{Vorschrift!Funktionsvorschrift}   & \TRAINER{$x\mapsto{}x^2-1$}\\\hline
-%%    \textbf{Funktionsparameter}\index{Funktion!Parameter}\index{Parameter!Funktionen} & \TRAINER{$x$}\noTRAINER{\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,}\\\hline
-  \end{tabular}
+\noTRAINER{\vspace{15mm}}\TRAINER{$$x \mapsto x^2-1$$}
 
 \end{itemize}
 \newpage
 
+\subsubsection{Definitions- und Wertemenge}
+
+\begin{definition}{Definitionsmenge $\mathbb{D}$}{}
+  
+Mit \textbf{Definitionsmenge}\index{Definitionsmenge|textbf} $\mathbb{D}$ (auch
+Definitionsbereich\index{Definitionsbereich|textbf}) wird die Menge aller
+möglichen Funktionsargumente bezeichnet, kurz alle Zahlen, die für $x$
+eingesetzt werden dürfen. 
+\end{definition}
+
+\begin{definition}{Wertemenge $\mathbb{W}$}{}
+Unter der \textbf{Wertemenge}\index{Wertemenge|textbf} (auch Wertebereich\index{Wertebereich|textbf} oder Bildmenge\index{Bildmenge}) $\mathbb{W}$
+verstehen wir die Menge aller getroffenen Werte aus der
+Grundmenge.\footnote{Bemerkung: im Buch \cite{marthaler21alg} wird
+  mit dem Begriff «Bildmenge» der Wertevorrat bezeichnet!}
+\end{definition}
+
+\begin{definition}{Grundmenge $\mathbb{G}$}{}
+Die \textbf{Grundmenge}\index{Grundmenge} ($\mathbb{G}$) und der \textbf{Wertevorrat}
+sind bei uns stets $\mathbb{R}$. Definitions- und Wertemenge sind also
+Teilmengen von $\mathbb{R}$.
+  \end{definition}
+
+
+
+\begin{beispiel}{Definitions- und Wertemenge}{}
+  In obigem Beispiel $f(x) = x^2-1$ sind:
+
+  \vspace{3mm}
+  $$\mathbb{D} = \LoesungsRaum{\mathbb{R}}$$
+
+
+  \vspace{3mm}
+  $$\mathbb{W} = \LoesungsRaum{[-1; \infty{}[}$$
+
+\end{beispiel}
+
+\subsubsection*{Begriffe}
+
+  \begin{tabular}{l|l}
+    \textit{Begriff} & \textit{Beispiel(e)}\\\hline
+    \textbf{Funktionsgleichung}\index{Funktion!Gleichung}\index{Gleichungen!Funktion}              & \TRAINER{$y=x^2-1$, $f(x)=x^2-1$}\\\hline
+    \textbf{Funktionsargumente}\index{Funktion!Argument}\index{Argument!Funktionen}                & \TRAINER{$x$-Werte:  -2, -1, 0, 1, ...}\\\hline
+    \textbf{unabhängige Variable}\index{Funktion!unabhängige Variable}\index{unabhängige Variable} & \TRAINER{$x$}\\\hline
+    \textbf{Funktionswert}     \index{Funktion!Wert}\index{Wert!einer Funktion}                    & \TRAINER{$y$-Werte: 3, 0, -1, 0, ... }\\\hline
+    \textbf{abhängige Variable}\index{Funktion!abhängige Variable}\index{abhängige Variable}       & \TRAINER{$y$}\\\hline
+    Funktionsterm\index{Funktion!Term}\index{Funktionsterm}\index{Terme!Funktionsterm}             & \TRAINER{$x^2-1$}\\\hline
+    Funktionsvorschrift\index{Funktion!Vorschrift}\index{Vorschrift!Funktionsvorschrift}           & \TRAINER{$x\mapsto{}x^2-1$}\\\hline
+%%    \textbf{Funktionsparameter}\index{Funktion!Parameter}\index{Parameter!Funktionen} & \TRAINER{$x$}\noTRAINER{\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,}\\\hline
+  \end{tabular}
+
+\newpage
+
+
 \GESO{
+  \subsection*{Beispiel Jahreszins (optional)}
   \begin{beispiel}{Jahreszins}{}
     Jahreszins bei gegebenem Zinssatz von 3\% und Ausgangskapital $K$:
 
@@ -193,10 +232,10 @@ Die Menge aller getroffenen Werte aus dem Wertvorrat wird \textbf{Wertebereich}\
 
     \textbf{Funktionswert: } $1.5$ (bei $K=50.-$) oder $6.-$ (bei $K = 200.-$)
     \end{beispiel}
-}
 
+\newpage%
+}%
 
-\newpage
 
 \subsection*{Aufgaben}
 
