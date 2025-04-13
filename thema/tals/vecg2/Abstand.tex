@@ -58,7 +58,27 @@ $s=|\vec{s}|$ gerade den Abstand zwischen Gerade und Punkt angibt.
   Daraus folgt $\vec{s}=\left(1\atop -3\right)$ und somit ist der
   Abstand $s=\sqrt{10}$. (Bem.: $t=2$)
 }
+\newpage
+\begin{rezept}{Abstand Punkt zu Gerade}{}
+  Gegeben sind die Gerade $g$ und der Punkt $P$:
+  $$g: \,\,\, \vec{r}(t) = \vec{a} + t\cdot{} \vec{u}$$
+  $$\vec{p} = \overrightarrow{OP}$$
 
+  Mit dem Distanzvektor $\vec{d}$ gilt:
+
+  $$\vec{d} := \vec{p} - (\vec{a} + t\cdot{}\vec{u})$$
+  und
+  $$\vec{d} \circ \vec{u} = 0$$
+
+  Dies ist ein Gleichungssystem mit den Unbekannten $t$ und
+  $\vec{d}$. Dabei kann $\vec{d}$ wie folgt angenommen werden:
+
+  $$\vec{d} = \Spvek{x;y} \text{ bzw. } \vec{d} = \Spvek{x;y;z}$$
+
+  Nun noch die Länge (\texttt{norm}) von $\vec{d}$ bestimmen.
+\end{rezept}
+
+\newpage
 \subsection*{Aufgaben}
 %%\AadBMTG{305}{18. a) b) c) d), 19., 20. und 21.}
 \olatLinkArbeitsblatt{Geradengleichung}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/110262782958559}{Kap. 3.1 (Aufg. 12. - 15.)}
