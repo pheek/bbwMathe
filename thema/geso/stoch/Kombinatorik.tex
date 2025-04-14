@@ -770,6 +770,42 @@ Objekte $(n-k)!$ davon weg, es bleibt: $$\frac{n!}{k!(n-k)!}$$
   \end{bemerkung}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Referenzaufgabe Euromillions}
+Beim Glücksspiel «Euromillions» werden fünf aus 50 Zahlen und zwei aus zwölf Sternen angekreuzt. Auf wie viel Arten ist dies möglich?
+
+\TNTeop{${50 \choose 5} \cdot {12 \choose 2} =139\,838\,160$
+
+  ..., denn jede der gewählten Zahlenkombinationen kann auch mit jeder
+  Stern-Kombination verwendet (also kombiniert) werden. Daher das
+  «Mal» ($\cdot$) im Resultat.
+}%% END TNT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage
+
+
+\subsection*{Aufgaben}
+
+\aufgabenFarbe{Berechnen Sie ${15\choose4} = $ \LoesungsRaum{1365}}
+
+\aufgabenFarbe{Begründen Sie, warum «5 aus 7» dasselbe ist, wie «2 aus
+  7»:}
+\TNT{2.8}{«5 aus 7» bedeutet auch, ich habe 2 \textbf{nicht}
+  ausgewählt.}
+
+\aufgabenFarbe{Auf wie viele Arten kann ich eine Delegation von drei
+  Klassendelegierten aus einer Klasse von 21 Schülerinnen
+  bzw. Schülern auswählen?}
+\TNT{2}{$21\choose3$ = 21 nCr 3 = 1330}
+
+\aufgabenFarbe{Swiss LOTTO (ohne den Stern): Auf wie viele Arten
+  können Sie den Swiss-LOTTO Schein ausfüllen? Sie müssen 6 Zahlen aus
+  42 möglichen Zahlen ankreuzen:}
+  \TNT{2.4}{${42\choose 6}$ \TRAINER{$ = 5\,245\,786$}}%% END TNT
+
+\olatLinkGESOKompendium{5.5.1}{46}{11., 12., 13., 14.*}
+\newpage
+
 \subsubsection{Name Binomialkoeffizient (optional)}
 
  Wie viele ``Teilmengen'', nicht nur mit drei Personen, gibt es in obiger
@@ -821,7 +857,7 @@ Für jede Person muss ich die Entscheidung ``dabei'' (x), ``nicht dabei'' (-) tr
 \newpage
 
 
-\begin{bemerkung}{Binomialkoeffizient}{}
+\begin{bemerkung}{Binomialkoeffizient (optional)}{}
   Zudem gilt für \textbf{Binome}:
   $$(a+b)^3 = {3\choose 3} a^3+ {3\choose 2} a^2b + {3\choose1} ab^2 + {3\choose 0}b^3 = a^3 + 3a^2b + 3ab^2 + b^3$$
   $$$$
@@ -829,41 +865,8 @@ Für jede Person muss ich die Entscheidung ``dabei'' (x), ``nicht dabei'' (-) tr
 \TNT{2}{
 $$(a+b)^3 = (a^2 + 2ab + b^2)\cdot{}(a+b) = 1\cdot{}a^3 + 3a^2b +
   3ab^2 + b^3$$}%% END TNT
-
-\subsubsection{Referenzaufgabe Euromillions}
-Beim Glücksspiel «Euromillions» werden fünf aus 50 Zahlen und zwei aus zwölf Sternen angekreuzt. Auf wie viel Arten ist dies möglich?
-
-\TNTeop{${50 \choose 5} \cdot {12 \choose 2} =139\,838\,160$
-
-  ..., denn jede der gewählten Zahlenkombinationen kann auch mit jeder
-  Stern-Kombination verwendet (also kombiniert) werden. Daher das
-  «Mal» ($\cdot$) im Resultat.
-}%% END TNT
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%\newpage
-
-
-\subsection*{Aufgaben}
-
-\aufgabenFarbe{Berechnen Sie ${15\choose4} = $ \LoesungsRaum{1365}}
-
-\aufgabenFarbe{Begründen Sie, warum «5 aus 7» dasselbe ist, wie «2 aus
-  7»:}
-\TNT{2.8}{«5 aus 7» bedeutet auch, ich habe 2 \textbf{nicht}
-  ausgewählt.}
-
-\aufgabenFarbe{Auf wie viele Arten kann ich eine Delegation von drei
-  Klassendelegierten aus einer Klasse von 21 Schülerinnen
-  bzw. Schülern auswählen?}
-\TNT{2}{$21\choose3$ = 21 nCr 3 = 1330}
-
-\aufgabenFarbe{Swiss LOTTO (ohne den Stern): Auf wie viele Arten
-  können Sie den Swiss-LOTTO Schein ausfüllen? Sie müssen 6 Zahlen aus
-  42 möglichen Zahlen ankreuzen:}
-  \TNT{2.4}{${42\choose 6}$ \TRAINER{$ = 5\,245\,786$}}%% END TNT
-
-\olatLinkGESOKompendium{5.5.1}{46}{11., 12., 13., 14.*}
 \newpage
+
 
 
 \subsection{Kombinationen mit Wiederholung}\index{Kombination!mit Wiederholung}
@@ -893,8 +896,7 @@ $$N = {n+k-1 \choose k}$$
 \renewcommand{\arraystretch}{1}
 \end{gesetz}
 
-
-\TNT{2}{ohne Beweis.}
+\TRAINER{ohne Beweis.}
 
 \begin{beispiel}{Kombination mit Wiederholung}{}
 Ein Bäcker bietet \textit{Gipfeli} in drei Sorten an. Ich muss zehn
@@ -902,6 +904,23 @@ Ein Bäcker bietet \textit{Gipfeli} in drei Sorten an. Ich muss zehn
 
 \TNT{3.2}{$$N= { {3+10-1} \choose {10} } = {12 \choose 10}  = 66$$}
 \end{beispiel}
+
+\newpage
+\subsection*{Aufgaben}
+\aufgabenFarbe{
+  Süßgetränke werden in 10 Sorten Angeboten. Ich kaufe für einen
+  Grillabend 3 Getränkeflaschen. Wie viele Kombinationen sind möglich,
+  wenn die Reihenfolge keine Rolle spielt und jede Getränkesorte auch
+  mehrfach ausgewählt werden darf?
+}%%
+\TNT{2}{${3+10-1 \choose 3} = 220$}
+
+
+\aufgabenFarbe{Smarties gibt es in 8 Farbsorten. Ich entnehme einer
+  großen Packung 16 Smarties für meine Schülerinnen bzw. Schüler. Wie viele Farbkombinationen sind
+  möglich, wenn die Reihenfolge keine Rolle spielt?
+}
+\TNT{2}{${8+16-1 \choose 16} = 245\,157$}
 
 \newpage
 

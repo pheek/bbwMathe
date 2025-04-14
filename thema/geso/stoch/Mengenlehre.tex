@@ -5,117 +5,12 @@
 
 \section{Mengenlehre in der Stochastik}\index{Stochastik}\index{Wahrscheinlichkeitsrechnung}
 
-\textbf{Stochastik}\index{Stochastik} ist der Oberbegriff über
-Wahrscheinlichkeitsrechnung und Statistik. Wir befassen
-uns (auch mit Hilfe der Kombinatorik) vor allem mit...
 
-\subsection*{Lernziele}
-\begin{itemize}
-	\item ...elementarer Wahrscheinlichkeitsrechnung und
-	\item Zufallsexperimenten.
-\end{itemize}
+Sie kennen bereits den Ergebnisraum $\Omega$ (s.\ref{ergebnisraum} auf
+Seite \pageref{ergebnisraum}).
 
 
-\subsection*{Einstieg}
-Am einfachsten beginnen wir mit einem Münzwurf-Experiment.
-
-Werfen Sie eine Münze dreimal hintereinander (oder werfen Sie drei
-Münzen, eine erste, eine zweite und eine dritte). Jede Münze hat die
-Möglichkeit auf Kopf oder Zahl (alles andere heißt: nochmals werfen).
-
-Notieren Sie den Ausgang Ihres Wurfexperimentes
-
-\TNT{2.4}{%
-\zB Kopf, Kopf, Zahl}%%
-
-\TRAINER{\vspace{24mm}}
-
-Wiederholen Sie das Experiment nun noch weitere drei Male:
-
-\noTRAINER{\mmPapier{1.2}}
-
-\noTRAINER{\mmPapier{1.2}}
-
-\noTRAINER{\mmPapier{1.2}}
-\newpage
-
-
-Ob beim Werfen «Kopf»-«Kopf»-«Kopf» nun
-vorgekommen ist oder nicht, spielt hier keine Rolle. Die Menge \textbf{aller}
-möglichen Ergebnisse nennen wir
-
-
-Notieren Sie die Ergebnismenge $\Omega$ zu obigem
-Zufallsexperiment «Münze dreimal werfen». Notiert wird dies üblich in der Mengennotation:
-
-$$\Omega = \{ (Kopf-Kopf-Kopf), (Kopf-Kopf-Zahl), ...\}$$
-
-$\Omega = ...$\TRAINER{$\{(Kp.-Kp.-Kp.); (Kp.-Kp.-Zl.); (Kp.-Zl.-Kp);
-  (Kp.-Zl.-Zl.);$
-  
-  $(Zl.-Kp.-Kp.); (Zl.-Kp.-Zl.); (Zl.-Zl.-Kp); (Zl.-Zl.-Zl.)\}$}
-
-\TNT{2.4}{\vspace{30mm}}
-
-
-\subsubsection{Ein zweites Beispiel (optional)}
-Notieren Sie die Ergebnismenge $\Omega$ zum Wurf nacheinander mit zwei
-Spielwürfeln.\footnote{Achtung: Es gibt 36 mögliche Ergebnisse!}
-
-$\Omega=...$
-
-\TRAINER{$...= \{$
-
-  $  (1,1); (1,2); (1,3); (1, 4); (1,5); (1,6);$
-
-  $  (2,1); (2,2); (2,3); (2, 4); (2,5); (2,6);$
-
-  $  (3,1); (3,2); (3,3); (3, 4); (3,5); (3,6);$
-
-  $  (4,1); (4,2); (4,3); (4, 4); (4,5); (4,6);$
-
-  $  (5,1); (5,2); (5,3); (5, 4); (5,5); (5,6);$
-
-  $  (6,1); (6,2); (6,3); (6, 4); (6,5); (6,6)$
-
-  $\}$}
-
-\TNTeop{}
-
-\newpage
-\subsection{Ereignis}\index{Ereignis}
-\begin{definition}{Ereignis}{}
-Der Begriff \textbf{Ereignis} bezeichnet eine Menge möglicher
-Ergebnisse.
-\end{definition}
-
-Da die Begriffe nahe beieinander liegen, schauen wir
-nochmals das Münzwurf-Experiment an. Wir haben acht mögliche
-Ergebnisse. 
-
-
-Das \textbf{Ereignis} «Es wurde genau zweimal Kopf geworfen» besteht
-aus den Ergebnissen
-
-\begin{itemize}
-\item Kopf-Kopf-Zahl
-\item Kopf-Zahl-Kopf
-\item Zahl-Kopf-Kopf
-\end{itemize}
-
-Notieren Sie für obigen dreimaligen Münzwurf das Ereignis $E$ in Mengennotation «Es wurde mindestens
-zweimal Zahl geworfen»:
-
-$E = \{\noTRAINER{...}\TRAINER{ZZZ,ZZK, ZKZ, KZZ\}}$
-
-\TNT{2.8}{Es gibt vier mögliche Ergebnisse mit besagter Eigenschaft,
-  wobei das Ergebnis dreimal Zahl beim Ereignis mit dabei sein
-  muss.
-\vspace{1cm}
-}
-
-\newpage
-\subsubsection{Elementarereignis}
+\subsection{Elementarereignis}
 \begin{bemerkung}{}{}
   Ein Ereignis kann natürlich auch aus genau einem Ergebnis
   bestehen. So ist bei einem einmaligen Wurf mit einem Würfel die Zahl
@@ -135,74 +30,9 @@ Besteht ein Ereignis genau aus einem Ergebnis, so sprechen wir von einem \textbf
 
   $$E = \{ZZZ\}$$
 \end{beispiel}
-
-
-
-
 \newpage
-\subsubsection{Gegenereignis}\index{Gegenereignis}
-\begin{definition}{Gegenereignis}{}
-  Das Gegenereignis zu einem bestimmten Ereignis $E$ sind alle möglichen Ergebnisse,
-  die im Ereignis $E$ nicht vorkommen.
-\end{definition}
 
-\begin{beispiel}{Gegenereignis}{}
-So ist das Gegenereignis beim dreimaligen Münzwurf zu «\textit{Es wurde mindestens zwei mal Zahl
-geworfen}» wäre folglich «\textit{Es wurde keinmal oder einmal Zahl geworfen}».
-\end{beispiel}
-
-\vspace{2mm}
-
-
-\begin{definition}{}{}
-Das Gegenereignis wird mit einem Strich über dem Ereignis angegeben:
-
-$$\bar{E} = \Omega \backslash E$$
-\end{definition}
-
-\textbf{Beispiel drei Münzwürfe}
-
-Notieren Sie das \textbf{Ereignis} und das \textbf{Gegenereignis} von «\textit{Der erste von drei Münzwürfen
-  ist Zahl.}» in der Mengenschreibweise, indem Sie alle
-möglichen Ergebnisse in Mengenklammern angeben:
-
-$$E = \{
-\noTRAINER{.........................................................}\TRAINER{ZZZ,
-ZKZ, ZZK, ZKK\}}$$
-
-$$\bar{E} = \{
-\noTRAINER{.........................................................}\TRAINER{KZZ,
-KKZ, KZK, KKK\}}$$
-
-
-Sprich: Das Gegenereignis $E$-Strich ist gleich Omega($\Omega$) ohne die Elemente
-aus $E$.
-\newpage
-\textbf{Beispiel mit zwei Würfeln}
-
-
-Gehen wir zurück zum Würfelexperiment. Diesmal werden
-\textbf{zwei} Spielwürfeln nacheinander geworfen:
-
-Notieren Sie das Gegenereignis zu folgendem
-Würfelereignis (einerseits in Worten, andererseits in der Mengennotation):
-
-$E=$ «Bei mindestens einem der beiden Würfel liegen
-mehr als zwei Augen.».
-
-$\bar{E} = ...$
-
-\TNTeop{$...= \{(1,1); (1,2); (2,1); (2,2)\}$
-  
-In Worten: \begin{itemize}
-  \item «Bei beiden Würfeln liegt höchstens eine Zwei»
-  \item «Bei jedem Wurf zeigt sich maximal die Zwei»
-  \item «Auf beiden Würfeln liegt weniger als eine Drei»
-  \item «Bei keinem der Würfel liegen mehr als zwei Augen»»
-\end{itemize}}%% END TNTeop
-%%\newpage
-
-\subsubsection{Sicheres ...}\index{Ereignis!unmögliches}\index{Ereignis!sicheres}
+\subsection{Sicheres ...}\index{Ereignis!unmögliches}\index{Ereignis!sicheres}
 Unter dem sicheren Ereignis verstehen wir nichts anderes als die Menge
 $\Omega$ selbst. Ein Ergebnis muss ja zutreffen, und da in $\Omega$
 \textbf{alle} möglichen Ergebnisse zusammengefasst sind, bezeichnen
