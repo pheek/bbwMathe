@@ -1,4 +1,4 @@
-\section{Grundlagen}\index{Grundlagen!Stochastik}
+\section{Grundbegriffe}\index{Grundbegriffe!Stochastik}
 
 \sectuntertitel{Mit an Sicherheit grenzender Wahrscheinlichkeit...}
 
@@ -40,8 +40,12 @@ Zufallsexperiments.
 
 \subsubsection{Ergebnismenge oder Ergebnisraum}\index{Ergebnismenge}\index{Ergebnisraum}\label{ergebnisraum}
 
-Die Menge aller möglichen Ausgänge nennen wir Ergebnismenge (oder Ergebnisraum)
-und bezeichnen diese als $\Omega$\index{Omega!Ergebnismenge}\index{$\Omega$ s. Omega}.
+\begin{definition}{Ergebnismenge}{}
+  Unter \textbf{Ergebnismenge} oder \textbf{Ergebnisraum} bezeichnen
+  wir die Menge $\Omega$\index{$\Omega$ s. Omega}, welche alle möglichen Ausgänge eines
+  Zufallsexperiments enthält.
+\end{definition}
+
 
 \bbwCenterGraphic{5cm}{geso/stoch/img/omega.jpg}
 \begin{center}{\small{(Foto 2023) Zürich}}\end{center}
@@ -49,11 +53,6 @@ Zeichnen Sie drei schöne {\huge $\Omega$}-Symbole
 
 \TNT{2}{}
 
-\begin{definition}{Ergebnismenge}{}
-  Unter \textbf{Ergebnismenge} oder \textbf{Ergebnisraum} bezeichnen
-  wir die Menge $\Omega$, welche alle möglichen Ausgänge eines
-  Zufallsexperiments enthält.
-\end{definition}
 
 \newpage
 
@@ -131,70 +130,9 @@ $E = \{\noTRAINER{...}\TRAINER{ZZZ,ZZK, ZKZ, KZZ\}}$
 \vspace{1cm}
 }
 
+\olatLinkGESOKompendium{5.2}{44}{7.}
+
 \newpage
 
-
-\subsubsection{Gegenereignis}\index{Gegenereignis}
-\begin{definition}{Gegenereignis}{}
-  Das \textbf{Gegenereignis} zu einem bestimmten Ereignis $E$ sind alle möglichen Ergebnisse,
-  die im Ereignis $E$ \textbf{nicht} vorkommen.
-\end{definition}
-
-\begin{beispiel}{Gegenereignis}{}
-So ist das Gegenereignis beim dreimaligen Münzwurf zu «\textit{Es wurde mindestens zwei mal Zahl
-geworfen}» wäre folglich «\textit{Es wurde keinmal oder einmal Zahl geworfen}».
-\end{beispiel}
-
-\vspace{2mm}
-
-
-\begin{definition}{}{}
-Das Gegenereignis wird mit einem Strich über dem Ereignis angegeben:
-
-$$\bar{E} = \Omega \backslash E$$
-\end{definition}
-
-\subsection*{Aufgabe(n)}
-
-\textbf{Beispiel drei Münzwürfe}
-
-\aufgabenFarbe{Notieren Sie das \textbf{Ereignis} und das \textbf{Gegenereignis} von «\textit{Der erste von drei Münzwürfen
-  ist Zahl.}» in der Mengenschreibweise, indem Sie alle
-möglichen Ergebnisse in Mengenklammern angeben:}
-
-$$E = \{
-\noTRAINER{.........................................................}\TRAINER{ZZZ,
-ZKZ, ZZK, ZKK\}}$$
-
-$$\bar{E} = \{
-\noTRAINER{.........................................................}\TRAINER{KZZ,
-KKZ, KZK, KKK\}}$$
-
-
-Sprich: Das Gegenereignis $E$-Strich ist gleich Omega($\Omega$) ohne die Elemente
-aus $E$.
 \newpage
-\textbf{Beispiel mit zwei Würfeln (optional)}
 
-
-\aufgabenFarbe{Gehen wir zurück zum Würfelexperiment. Diesmal werden
-\textbf{zwei} Spielwürfeln nacheinander geworfen:
-\\
-Notieren Sie das Gegenereignis zu folgendem
-Würfelereignis (einerseits in Worten, andererseits in der
-Mengennotation)}%% end Aufgabenfarbe
-
-$E=$ «Bei mindestens einem der beiden Würfel liegen
-mehr als zwei Augen.».
-
-$\bar{E} = ...$
-
-\TNTeop{$...= \{(1,1); (1,2); (2,1); (2,2)\}$
-  
-In Worten: \begin{itemize}
-  \item «Bei beiden Würfeln liegt höchstens eine Zwei»
-  \item «Bei jedem Wurf zeigt sich maximal die Zwei»
-  \item «Auf beiden Würfeln liegt weniger als eine Drei»
-  \item «Bei keinem der Würfel liegen mehr als zwei Augen»»
-\end{itemize}}%% END TNTeop
-%%\newpage

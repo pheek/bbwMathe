@@ -1,0 +1,173 @@
+\subsection{Gegenereignis}
+
+\begin{definition}{Gegenereignis}{}
+  Das \textbf{Gegenereignis} zu einem bestimmten Ereignis $E$ sind alle möglichen Ergebnisse,
+  die im Ereignis $E$ \textbf{nicht} vorkommen.
+\end{definition}
+
+\begin{beispiel}{Gegenereignis}{}
+So ist das Gegenereignis beim dreimaligen Münzwurf zu «\textit{Es wurde mindestens zwei mal Zahl
+geworfen}» wäre folglich
+
+\vspace{3mm}
+\LoesungsRaumLen{120mm}{«\textit{Es wurde keinmal oder einmal Zahl geworfen}»}.
+\end{beispiel}
+
+\vspace{2mm}
+
+
+\begin{definition}{}{}
+Das Gegenereignis wird mit einem Strich über dem Ereignis angegeben:
+
+$$\bar{E} = \Omega \backslash E$$
+
+Sprich «Omega ohne E»
+\end{definition}
+
+\newpage
+\textbf{Beispiel drei Münzwürfe}
+
+\aufgabenFarbe{Notieren Sie das \textbf{Ereignis} und das \textbf{Gegenereignis} von «\textit{Der erste von drei Münzwürfen
+  ist Zahl.}» in der Mengenschreibweise, indem Sie alle
+möglichen Ergebnisse in Mengenklammern angeben:}
+
+$$E = \{
+\noTRAINER{.........................................................}\TRAINER{ZZZ,
+ZKZ, ZZK, ZKK\}}$$
+
+$$\bar{E} = \{
+\noTRAINER{.........................................................}\TRAINER{KZZ,
+KKZ, KZK, KKK\}}$$
+
+
+Sprich: Das Gegenereignis $E$-Strich ist gleich Omega($\Omega$) ohne die Elemente
+aus $E$.
+\newpage
+\textbf{Beispiel mit zwei Würfeln (optional)}
+
+
+\aufgabenFarbe{Gehen wir zurück zum Würfelexperiment. Diesmal werden
+\textbf{zwei} Spielwürfeln nacheinander geworfen:
+\\
+Notieren Sie das Gegenereignis zu folgendem
+Würfelereignis (einerseits in Worten, andererseits in der
+Mengennotation)}%% end Aufgabenfarbe
+
+$E=$ «Bei mindestens einem der beiden Würfel liegen
+mehr als zwei Augen.».
+
+$\bar{E} = ...$
+
+\TNTeop{$...= \{(1,1); (1,2); (2,1); (2,2)\}$
+  
+In Worten: \begin{itemize}
+  \item «Bei beiden Würfeln liegt höchstens eine Zwei»
+  \item «Bei jedem Wurf zeigt sich maximal die Zwei»
+  \item «Auf beiden Würfeln liegt weniger als eine Drei»
+  \item «Bei keinem der Würfel liegen mehr als zwei Augen»»
+\end{itemize}}%% END TNTeop
+
+\newpage
+
+
+
+
+Es gelten folgende Gesetze, Kolmogorow-Axiome genannt\footnote{Andrei Nikolajewitsch
+  Kolmogorow 1903-1987}:
+
+\begin{gesetz}{}{}
+\begin{itemize}
+
+\item $P(E) \ge 0$: Die Wahrscheinlichkeit, dass ein bestimmtes Ereignis eintritt, ist nie kleiner als 0.
+
+\item $P(\Omega) = 1$: Die Wahrscheinlichkeit, dass irgend etwas eintritt, ist immer 100\%, also 1.
+
+\item Bei Ereignissen $A$ und $B$, die keine gemeinsamen Ergebnisse aufweisen, gilt die Summenregel:   $$P(A\cup B) = P(A) + P(B)$$
+
+\end{itemize}
+\end{gesetz}
+
+Aus den obigen Gesetzen kann die folgende nützliche Rechenregel abgeleitet werden:
+
+\begin{gesetz}{}{}
+  Es gilt für das Gegenereignis $\overline{E}$
+
+  $$P(\overline{E}) = 1-P(E).$$
+
+  Mit anderen Worten: Die
+  Wahrscheinlichkeit, dass ein Ereignis \textbf{nicht} eintritt ist
+  gleich 100\% \textbf{minus} die Wahrscheinlichkeit, dass das
+  Ereignis eintritt.\TRAINER{\footnote{Diese Tatsache gehört nicht zu
+      Kolmogorows Axiomen, kann jedoch einfach daraus abgeleitet
+      werden und wird häufig verwendet. Herleitung: $E$ und
+      $\overline{E}$ sind unvereinbar und $\Omega = E \cup
+      \overline{E}.$ Und somit ist $1 = P(E) + P(\overline{E})$.}}
+\end{gesetz}
+
+\TNTeop{
+  Beweis optional:
+
+  $P(\Omega) = 1$ und $\Omega = E \cup{} \overline{E}$
+
+  $$\Longrightarrow  1 = P(\Omega) = P(E\cup{} \overline{E}) = P(E) +
+  P(\overline{E} )$$
+  $$\Longrightarrow$$
+  $$P(\overline{E}) = 1 - P(E)$$
+}%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{beispiel}{}{}\textbf{Ziehen einer Kugel aus einer Urne}
+
+Aus einer Urne mit 4 roten ($r$), 3 schwarzen ($s$) und 2 weißen ($w$) Kugeln wird eine Kugel gezogen.
+
+Ergebnisraum: $\Omega = \{r, s, w\}$
+
+
+Wahrscheinlichkeiten für die Elementarereignisse:
+
+\noTRAINER{\leserluft\leserluft\leserluft}
+$P(\{r\}) = \LoesungsRaum{\frac49}$
+
+\noTRAINER{\leserluft\leserluft\leserluft}
+$P(\{s\}) = \LoesungsRaum{\frac39}$
+
+\noTRAINER{\leserluft\leserluft\leserluft}
+$P(\{w\}) = \LoesungsRaum{\frac29}$
+
+Wie groß ist nun die Wahrscheinlichkeit \textbf{eine rote oder eine schwarze} Kugel zu ziehen?
+Wir definieren $E_1$ als das günstige Ereignis, dass eine rote oder eine schwarze Kugel gezogen wird.
+
+$E_1 = \{r\} \cup \{s\} = \{r,s\}$
+
+\noTRAINER{\leserluft\leserluft\leserluft}
+$P(E_1) = \LoesungsRaumLen{50mm}{\frac49 + \frac39 = \frac79}$
+
+
+Wie groß wäre dabei die Wahrscheinlichkeit $P(E_2)$, weder eine rote noch eine schwarze Kugel zu ziehen?
+
+$E_2 := \{w\}$
+
+$P(E_2) = \frac29$, denn $E_2 = \overline{E_1}$ und somit
+
+\noTRAINER{\leserluft\leserluft}
+$P(E_2) = P(\overline{E_1}) = \LoesungsRaumLen{90mm}{1 - P(E_1) = 1 - \frac79 = \frac29 . }$
+
+\end{beispiel}
+\newpage
+
+\subsection*{Aufgaben}
+
+\aufgabenFarbe{Wie groß ist die Wahrscheinlichkeit, mit drei Würfeln
+  maximal zwei gleiche Augenzahlen zu erzielen?}
+\TNT{7.6}{Gegenereignis = Alle drei Würfe sind gleich. Die
+  Wahrscheinlichkeit von «alle drei sind gleich» liegt bei
+  $\frac6{6^3}$ und somit ist die gesuchte Wahrscheinlichkeit
+
+  $P=1-\frac6{6^3} =  \frac{210}{216}  = \frac{35}{36} \approx 97.2\%$.}
+
+\olatLinkGESOKompendium{5.3}{44}{5., 6., 8., 9. und 10.}
+
+\newpage
+
+
+
