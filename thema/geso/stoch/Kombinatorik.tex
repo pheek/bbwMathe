@@ -578,7 +578,7 @@ Auf wie viele Arten kann ich die Buchstaben im Namen «MAMMA» neu anordnen?
 
 Auf wie viele Arten können die Buchstaben des Wortes Mississippi in
 eine Reihe gebracht werden? Anders gefragt: Wie viel Sinn- und
-Unsinnwörter sind mit den elf Buchstaben des Wortes «Mississippi»
+Unsinnsworte sind mit den elf Buchstaben des Wortes «Mississippi»
 möglich?
 
 Lösung: Mit den Buchstaben des Wortes
@@ -801,9 +801,38 @@ Beim Glücksspiel «Euromillions» werden fünf aus 50 Zahlen und zwei aus zwöl
 \aufgabenFarbe{Swiss LOTTO (ohne den Stern): Auf wie viele Arten
   können Sie den Swiss-LOTTO Schein ausfüllen? Sie müssen 6 Zahlen aus
   42 möglichen Zahlen ankreuzen:}
-  \TNT{2.4}{${42\choose 6}$ \TRAINER{$ = 5\,245\,786$}}%% END TNT
+  \TNTeop{${42\choose 6}$ \TRAINER{$ = 5\,245\,786$}}%% END TNT
+  \newpage
+  
+\aufgabenFarbe{Mittagessen: Ein Koch kann auf dem Markt aus vier
+  Gemüsesorten, sechs Arten von Pilzen, drei
+  Salatsorten und aus acht Arten von Früchten auswählen.
+\\
+  Er will ein Menu aus zwei Gemüsesorten, drei Pilzarten und einem
+  Salat herstellen. Zum Dessert wählt er drei Arten von
+  Früchten aus.
+\\
+  Auf wie viele Arten kann sich der Koch entscheiden?}
+  \TNT{2.4}{${4 \choose 2} \cdot{} {6 \choose 3} \cdot{} {3 \choose 1}
+    \cdot{} {8 \choose 3} = 20\,160$}%% END TNT
 
-\olatLinkGESOKompendium{5.5.1}{46}{11., 12., 13., 14.*}
+
+\aufgabenFarbe{Aus einem Team von 13 Fußballerinnen soll eine
+  Delegation von drei Mitgliedern und aus dieser Delegation eine
+  Sprecherin bestimmt werden. Auf wie viele Arten ist dies möglich?}
+\TNT{2.4}{${13 \choose 3} \cdot{} {3 \choose 1} = 858$}
+
+\aufgabenFarbe{An einer Party mit vierundzwanzig Gästen stößt jeder
+  Gast mit jedem an. Wie oft erklingen die Gläser?}
+\TNT{2.4}{${24 \choose 2} = 276$}
+
+
+\aufgabenFarbe{Wie viele Personen nehmen an einer Party teil, wenn im
+  ganzen 595 Mal die Gläser erklingen (und dabei jede Person mit jeder andern angestoßen hat)?}
+\TNTeop{${n \choose 2} = \frac{n \cdot{} (n-1)}2 = 595
+  \Longleftrightarrow \frac12n^2 - \frac12n -595 = 0
+  \Longrightarrow a=0.5, b=-0.5, c=-595 $. Danach die
+  Mitternachtsformel: $n=35$, die negative Lösung ist hier nicht von Belang.}
 \newpage
 
 \subsubsection{Name Binomialkoeffizient (optional)}
