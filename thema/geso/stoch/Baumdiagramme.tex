@@ -101,50 +101,6 @@ Mehrstufige Zufallsexperimente:
 \olatLinkGESOKompendium{5.2}{43ff}{Aufg. 4. (Glücksrad), 17. (Klasse), 19., 20. (Kugeln) und 21. (Würfel)}
 \newpage
 
-\textbf{Glücksrad (optional)}
-
-
-Ein Glücksrad verspricht eine kleine
-Gewinnwahrscheinlichkeit von $\frac1{32}$, jedoch einen hohen Gewinn.
-
-Wie oft muss ich an diesem Rad drehen, damit die Wahrscheinlichkeit zu
-gewinnen mindestens 99\% beträgt?
-
-Tipp: Gegenwahrscheinlichkeit
-
-
-\TNTeop{
-Die Wahrscheinlichkeit zu verlieren ist somit $\frac{31}{32}$. Die
-Wahrscheinlichkeit zweimal hintereinander zu verlieren ist damit
-$\left(\frac{31}{32}\right)^2$. Dabei habe ich nie gewonnen. Dies kann
-man gut im entarteten Baum mit einem einzigen Verlierer-Ast sehen.
-
-
-$n$ mal hintereinander zu verlieren, ergibt somit eine Wahrscheinlichkeit
-von $\left(\frac{31}{32}\right)^n$.
-
-Dies soll aber mit einer Wahrscheinlichkeit von 0.01 (=1\%)
-eintreten. Nun könnte ich so lange die Anzahl ausprobieren, bis die
-Potenz $\left(\frac{31}{32}\right)^n$ unter 1\% sinkt. Das erhalte ich
-aber auch, wenn ich die Potenz mit dem einen Prozent gleichsetze.
-
-$$\left(\frac{31}{32}\right)^n = 0.01$$
-
-Das Lösen dieser Exponentialgleichung liefert für $n$:
-
-$$n = \log_{\frac{31}{32}}(0.01) =
-\frac{\lg(0.01)}{\lg(\frac{31}{32})} = \frac{-2}{\lg(\frac{31}{32})} \approx  145.05$$
-
-Somit muss ich 146 mal am Rad drehen, damit die
-Gewinnwahrscheinlichkeit 99\% übersteigt.
-
-Die Gegenwahrscheinlichkeit der Gewinnwahrscheinlichkeit von 99\%
-mindestens einmal zu gewinnen ist ja
-gerade die 1\% Verlustwahrscheinlichkeit aller Spiele.
-}%% end TNTeop
-
-\newpage
-
 \textbf{Aufgabe Schweizer Münzen (optional)}
 
 In zwei Urnen sind Münzen. In jeder Urne kommt jede Schweizer Münzart
