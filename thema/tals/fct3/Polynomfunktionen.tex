@@ -15,7 +15,19 @@
 \end{itemize}
 
 \TALSTadBMTG{315}{18}
-\newpage
+
+Rückblick über bereits bekannte Funktionen
+
+\TNTeop{
+  \begin{tabular}{|c|c|}\hline
+    Polynomfunktionen   & andere Funktionen\\\hline
+    $y=3$               & $\sin(x), \cos(x), \tan(x)$ \\
+    $y\frac12 x -5$     & $x^{-2}, \frac{1}{x^3}$\\
+    $y=2x^2-5x+3 $      & \\
+    $y=(x-4)^6 + 3$     & \\\hline
+    \end{tabular} 
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 
 \subsection{Einstieg}
 Vergleichen Sie die Graphen der Funktion
@@ -32,6 +44,14 @@ $$g: y=\frac1{10}\cdot{}(x-4)\cdot{}(x+3)\cdot{}(x-1)$$
 }%% END bbwGraph
 
 \newpage
+
+
+\begin{beispiel}{Polynomfunktion}{}
+  $$y=\LoesungsRaumLen{50mm}{4x^5 + 3x^2 -2x + 4}$$
+\end{beispiel}
+
+
+
 \begin{definition}{Polynomfunktion}{}
   Eine \textbf{Polynomfunktion} in ihrer Grundform ist eine Funktion
   der Art
@@ -48,15 +68,34 @@ $$g: y=\frac1{10}\cdot{}(x-4)\cdot{}(x+3)\cdot{}(x-1)$$
 \end{bemerkung}
 
 
-
-\begin{beispiel}{Polynomfunktion}{}
-  $$y=4x^5 + 3x^2 -2x + 4$$
-\end{beispiel}
-
-
 \subsection*{Aufgaben}
 %%\TALSAadBFWA{200ff}{746. $f_3$) $f_4$) $f_8$) $f_9$)}
-\TALSAadBMTA{318ff}{2.}
+\aufgabenFarbe{Welche der folgenden Funktionen sind Polynomfunktionen?}
+
+$y=x^7\TRAINER{ (P)}$
+
+$y=4x^2-0.6x^3+2x -4\TRAINER{ (P)}$
+
+$y=x^2-\frac1{x}$
+
+$y=(x-5)^6 + 1.5\TRAINER{ (P)}$
+
+$y=-x^{0}\TRAINER{ (P)}$
+
+$y=5^x-3$
+
+$y=\frac{4x^3-2x^2-6x}{0.6}\TRAINER{ (P)}$
+
+$y=x^{1.3}$
+
+$y=4\TRAINER{ (P)}$
+
+$y=\sqrt{x}$
+
+$y=4-x^2\TRAINER{ (P)}$
+
+$y=x^2 + x^1 + x^0 + x^{-1}$
+
 \newpage
 
 \subsection{gerade und ungerade Funktionen}
@@ -131,16 +170,13 @@ $$g: y=\frac1{10}\cdot{}(x-4)\cdot{}(x+3)\cdot{}(x-1)$$
 }
 
 %%\TALSAadBFWA{201}{749. a) b), 750. $f_3$) $f_4$), 751. $f_3$) $f_9$)}
-\TALSAadBMTA{318}{3., 4., 7. a) b) c) }
+\TALSAadBMTA{318}{3. und 4.}
 
-\olatLinkTALSStrukturaufgabenSPF{Teil1}{6}{7. (Grad ist $n=4$)}
 %\aufgabenFarbe{Strukturaufgaben Seite 6 Teil 1 ohne Taschenrechner
 %  Aufgabe 7. (Grad ist $n = 4$)}
 
 
 \newpage
-
-
 
 \subsection{Charakteristische Punkte und Extremwerte}
 
@@ -167,7 +203,41 @@ ungefähr an:
 \end{bbwFillInTabular}%%
 \newpage
 
-\subsection*{Referenzaufgabe}
+\subsection{Punkte-Aufgaben}
+
+\subsection*{Einführungsaufgabe}
+
+Gesucht ist die Polynomfunktion minimalen Grades, deren Graph durch die folgenden vorgegebenen Punkte geht:
+
+$$(2|0); (1|-16); (0|-30); (-1|-36)$$
+
+\TNTeop{
+  1. Grad bestimmen: 4 Punkte -> 3. Grad
+
+  2. Ansatz mit TR:
+  $$f(x) := a\cdot{}x^3 + b\cdot{}x^2 + c\cdot{}x + d$$
+
+  3. Gleichungssystem:
+$$
+\text{gls} := 
+\left\{
+\begin{array}{lcl}
+f(2) &=& 0\\
+f( 1) &=& -16 \\
+f( 0) &=& -30\\
+f(-1) &=& -36\\
+\end{array}
+\right.
+$$
+
+4. mit dem Solver Lösen: \texttt{solve(gls, \{a, b, c, d\})}
+
+Lösung: $f(x) = -x^3 + 4x^2 + 11x - 30$
+}%% end TNTeop
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+
+\subsection*{Aufgaben}
 \aufgabenFarbe{
   Gesucht ist $p$, eine Polynomfunktion 3. Grades. Die Funktion hat
   bei 2 ihren $y$-Achsenabschnitt. Ferner wissen wir, dass die Funktion die
@@ -180,12 +250,12 @@ ungefähr an:
 
 $$p: x\mapsto \LoesungsRaum{\frac{1}{15}}x^3 + \LoesungsRaum{\frac{-4}{15}}x^2 +\LoesungsRaum{\frac{-11}{15}}x + \LoesungsRaum{2}$$
 
-%\TNTeop{}
 
-\subsection*{Aufgaben}
-\olatLinkTALSStrukturaufgabenSPF{Teil 2}{15ff}{48. und 51. (Tipp zu
-  Aufgabe 51: Definieren Sie $g(x) := \frac{f(x) -
-    1\,000\,000\,000}{3\,000\,000}$.)}
+\TALSAadBMTA{318}{7. a) b) c) }
+
+\olatLinkTALSStrukturaufgabenSPF{Teil1 (ohne TR)}{6}{7. (Grad ist $n=4$)}
+
+\olatLinkTALSStrukturaufgabenSPF{Teil 2 (mit TR)}{15ff}{48. und 51. (Bestimmen Sie zuerst die Nullstellen)}
 %%\TALS{\aufgabenFarbe{Strukturaufgaben SPF Teil 2: Taschenrechner: S. 15ff:  Aufg. 48. und 51.}%% END Aufgabenfarbe
 %%}%% END TALS
 
@@ -194,9 +264,96 @@ $$p: x\mapsto \LoesungsRaum{\frac{1}{15}}x^3 + \LoesungsRaum{\frac{-4}{15}}x^2 +
 
 \newpage
 
+
 \subsection{Linearfaktoren und Nullstellenform}
 
-\subsection*{Einstiegsaufgabe}
+Ziel: Wie lautet die Funktionsgleichung der folgenden Funktion?
+
+\noTRAINER{  \bbwCenterGraphic{120mm}{tals/fct3/img/SechsLinearfaktoren.png}}
+\TRAINER{  \bbwCenterGraphic{70mm}{tals/fct3/img/SechsLinearfaktoren.png}}
+
+\newpage
+
+\subsubsection{Voraussetzungen}
+
+Zeichnen Sie die folgenden Polynomfunktionen mit \texttt{geogebra.org}
+und diskutieren Sie Nullstellen und die Lage von Extremwerten:
+
+\begin{itemize}
+\item $f(x) = -x + 2 $ Nullstelle(n) bei \LoesungsRaum{$x=2$} 
+\item $f(x) = (x+3)$ Nullstelle(n) bei \LoesungsRaum{$x=-3$}
+\item $f(x) = (x+3)\cdot{}(2-x)$ Nullstelle(n) bei \LoesungsRaum{-3 und 2}
+  
+  Lokales Extremum
+  \TNT{0.8}{zwischen -3 und 2.}%% end TNT
+  
+\item $f(x) = (x+3)\cdot{}(x+3)$ \LoesungsRaum{\textbf{doppelte }}
+  Nullstelle bei \LoesungsRaum{$x=-3$}
+  
+\item $f(x) = (x-3)(x+3)(x-5)$ Nullstelle(n) bei \LoesungsRaum{$x=-3,
+  3, 5$}
+  
+Lokale Minima/Maxima: 
+  \TNT{2}{Hochpunkt zwischen -3 und 3 und Tiefpunkt zwischen 3 und 5.}
+  
+\item $f(x) = (-x+5)(x+3)(x+3)(x+7)$ Nullstelle(n) bei
+  \LoesungsRaum{$x=-7, -3 \text{ (doppelt) und } 5$}
+  
+  Lokale Maxima, Minima
+
+  \TNT{3.2}{zwischen -7 und -3; bei -3 und auch zwischen -3 und 5.}
+
+\item $f(x) = 0.1 \cdot{} (x+1)\cdot{}(x-2)^3$\\
+  Lokales Minimum zwischen \LoesungsRaumLen{30mm}{-1 und 2}.
+
+  Die Nullstelle bei 2 wird \LoesungsRaumLen{50mm}{dreifache} Nullstelle genannt.
+  
+\end{itemize}
+
+
+\begin{definition}{Linearfaktor}{}
+  Ein Term der Form
+  $$T(x) = (x+a)$$
+  heißt Linearfaktor in $x$.
+\end{definition}
+
+\begin{beispiel}{Linearfaktor}{}
+  Die folgende Funktion $f$ ist ein Polynom 4. Grades und hat einen
+  Funktionsterm bestehend aus dem «Formfaktor» 7 sowie vier \textbf{Linearfaktoren}:
+  $$f(x) = 7\cdot{}(x+3)\cdot{}(x+4)\cdot{}(x-2)\cdot{}(x+0)$$
+\end{beispiel}
+
+
+
+
+\newpage
+\subsubsection{Grobverlauf}
+Bei Polynomfunktionen reicht es, auf den Summanden mit dem höchsten Exponenten zu schauen, um den Grobverlauf des Graphen voraussagen zu können ($a$ sei $> 0$):
+
+\noTRAINER{%%
+\begin{tabular}{|c|c|}\hline
+  \includegraphics[width=7cm]{tals/fct3/img/KSLeer.png} &   \includegraphics[width=7cm]{tals/fct3/img/KSLeer.png}\\
+  $ax^4+bx^3+...$ & $-ax^4 + bx^3 +...$ \\ \hline
+
+     \includegraphics[width=7cm]{tals/fct3/img/KSLeer.png} &   \includegraphics[width=7cm]{tals/fct3/img/KSLeer.png}\\
+  $ax^5+bx^4+...$ & $-ax^5 + bx^4 +...$ \\ \hline
+\end{tabular}
+}%% end noTRAINER
+
+\TRAINER{   \includegraphics[width=15cm]{tals/fct3/img/Grobverlauf.png}}
+
+\begin{rezept}{Grobverlauf}{}
+  Beachten Sie nur den größten Exponenten und den zugehörigen Koeffizienten (hier $a$).
+
+  Gerade Exponenten verhalten sich im Großen wie $x^2$ und ungerade wie $x^3$.
+
+  Das Vorzeichen des Koeffizienten $a$ kann den Graphen an der $x$-Achse spiegeln.
+\end{rezept}
+
+\newpage
+
+
+\subsection*{Referenzaufgabe}
 
 \olatLinkTALSStrukturaufgabenSPF{Teil 2 [mit Taschenrechner]}{16}{52.}
 %%\aufgabenFarbe{\textit{Strukturaufgabe [SPF] S. 16 Aufg 52. \textbf{mit} Taschenrechner!}
@@ -233,45 +390,6 @@ dargestellt ist:
 
 \newpage
 
-
-\begin{definition}{Linearfaktor}{}
-  Ein Term der Form
-  $$(x+a)$$
-  heißt Linearfaktor in $x$.
-\end{definition}
-
-\begin{beispiel}{Linearfaktor}{}
-  Die folgende Funktion $f$ ist ein Polynom 4. Grades und hat einen
-  Funktionsterm bestehend aus dem Streckungsfaktor 7 sowie vier \textbf{Linearfaktoren}:
-  $$f(x) = 7\cdot{}(x+3)\cdot{}(x+4)\cdot{}(x-2)\cdot{}(x+0)$$
-\end{beispiel}
-
-
-
-\subsection*{Aufgaben}
-
-Zeichnen Sie die folgenden Polynomfunktionen mit \texttt{geogebra.org}
-und diskutieren Sie Nullstellen und die Lage von Extremwerten:
-
-\begin{itemize}
-\item $f(x) = -x + 2 $ Nullstelle(n) bei \LoesungsRaum{$x=2$} 
-\item $f(x) = (x+3)$ Nullstelle(n) bei \LoesungsRaum{$x=-3$}
-\item $f(x) = (x+3)\cdot{}(2-x)$ Nullstelle(n) bei
-  \LoesungsRaum{$x=-3$ und $x=2$. Ein lokales Extremum liegt demnach
-    zwischen -3 und 2.}
-\item $f(x) = (x+3)\cdot{}(x+3)$ \LoesungsRaum{\textbf{doppelte }}
-  Nullstelle bei \LoesungsRaum{$x=-3$}
-\item $f(x) = (x-3)(x+3)(x-5)$ Nullstelle(n) bei \LoesungsRaum{$x=-3,
-  3, 5$}\\
-  Lokale Maxima, Minima bei \LoesungsRaum{zwischen -3 und 3
-    bzw. zwischen 3 und 5.}
-\item $f(x) = (-x+5)(x+3)(x+3)(x+7)$ Nullstelle(n) bei
-  \LoesungsRaum{$x=-7, -3 \text{ (doppelt) und } 5$}\\
-  Lokale Maxima, Minima bei \LoesungsRaum{zwischen -7 und -3  bzw. bei
-    -3 und auch zwischen -3 und 5.}
-\end{itemize}
-
-\newpage
 %%\noTRAINER{\newpage}
 
 \subsubsection{Linearfaktoren erkennen}
@@ -305,7 +423,33 @@ Gegeben ist folgender Graph:
 
 
 \subsection*{Aufgaben}
-\AadBMTA{321}{17.}
+
+\aufgabenFarbe{Gesucht ist eine Polynomfunktion $f$ mit den Nullstellen $-3$, $6$ und $8$, welche durch den Punkt $(4|3)$ verläuft.}
+
+\TNT{4}{
+  Ansatz: $f(x) = a\cdot{}(x+3)(x-6)(x-8)$
+
+  Punkt $(4|3)$ einsetzen:
+
+  $$3 = a\cdot{}(4+3)(4-6)(4-8) = a\cdot{}56$$
+  ergo: $a=\frac{3}{56}$ und somit
+  $$f(x) = \frac{3}{56}(x+3)(x-6)(x-8)$$
+}
+
+
+\aufgabenFarbe{Gesucht ist eine Polynomfunktion $g$, welche die $x$-Achse in $x_0=7$ berührt und durch den Punkt $(1|6)$ verläuft.}
+
+\TNT{6}{
+  Ansatz: $f(x) = a\cdot{}(x-7)(x-7)$
+
+  Punkt $(1|6)$ einsetzen:
+
+  $$6 = a\cdot{}(1-7)(1-7) = 36 a$$
+  ergo: $a=\frac{1}{6}$ und somit
+  $$f(x) = \frac{1}{6}(x-7)(x-7)$$
+}
+
+
 
 \olatLinkTALSStrukturaufgabenSPF{Teil 1 [ohne TR]}{6}{6. und 10.}
 %%\aufgabenFarbe{Strukturaufgaben: SPF V. 4.0 Seite 6ff: \textbf{Ohne} Taschenrechner: Aufg. 6. und 10.}
@@ -316,7 +460,12 @@ Gegeben ist folgender Graph:
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Aus alter Maturprüfung}
+\subsection{Extremwertaufgaben}
+
+\AadBMTA{321}{17.}
+
+
+\subsubsection{Aus alter Maturprüfung}
 
 \aufgabenFarbe{Gegeben ist die Funktion $f(x) = x\cdot{}(3-\sqrt{x})$,
   $x\in[0;\infty[$.\\
