@@ -56,6 +56,31 @@ $x^4 = 81$ heißt, $x=\pm \sqrt[4]{81} = \pm 3$
 \subsubsection{Vorzeichen}
 Vorsicht ist geboten bei negativen Zahlen.
 
+Beachten Sie die folgenden typischen Fälle:
+
+%% \renewcommand{\arraystretch}{2}
+
+\TNT{1.6}{$c$ = Potenzwert, $n$ = Exponent}
+
+\vspace{4mm}
+
+\begin{bbwFillInTabular}{c|l|c|c}
+  $x^n=c$  & $\lx$ & $c$ & $n$ \\
+  \hline
+  $x^4 =  81 $ & $\lx=\{-3; +3\}$                            &  $>0$   &   gerade  \\\hline
+  $x^3 =-125 $ & $\lx=\{-5\}$                               &  $<0$   & ungerade  \\\hline
+
+  $x^2 =    4$ & $\lx=\LoesungsRaumLang{\{-2; +2\}}$        &\LoesungsRaumLen{20mm}{$>0$}&\LoesungsRaumLen{40mm}{gerade}\\\hline
+  $x^3 =    8$ & $\lx=\LoesungsRaumLang{\{2\}}$             &\LoesungsRaumLen{20mm}{$>0$}&\LoesungsRaumLen{40mm}{ungerade}\\\hline
+  $x^3 =   -8$ & $\lx=\LoesungsRaumLang{\{-2\}}$            &\LoesungsRaumLen{20mm}{$<0$}&\LoesungsRaumLen{40mm}{ungerade}\\\hline
+  $x^6 =   -5$ & $\lx=\LoesungsRaumLang{\{\,\}}$            &\LoesungsRaumLen{20mm}{$<0$}&\LoesungsRaumLen{40mm}{gerade}\\\hline
+  $x^7 =   -5$ & $\lx=\LoesungsRaumLang{\{-\sqrt[7]{5}\}}$  &\LoesungsRaumLen{20mm}{$<0$}&\LoesungsRaumLen{40mm}{ungerade}\\
+  \end{bbwFillInTabular} 
+
+ \renewcommand{\arraystretch}{1}
+
+
+
 \begin{gesetz}{}{}
   Gerade Exponenten (2, 4, 6,
 8, ...) zwingen die Potenz immer dazu, positiv zu werden. Beispiel:
@@ -71,26 +96,7 @@ $$(-3)^5 = \LoesungsRaumLang{((-1)\cdot{}(3))^5} = \LoesungsRaum{(-1)^5 \cdot 3^
 \end{gesetz}
 
 
-Beachten Sie die folgenden typischen Fälle:
-
-%% \renewcommand{\arraystretch}{2}
-
-\TNT{1.6}{$a$ = Potenzwert, $n$ = Exponent}
-
-\vspace{4mm}
-
-\begin{bbwFillInTabular}{c|l|c|c}
-  $x^n=a$  & $\lx$ & $a$ & $n$ \\
-  \hline
-  $x^2 =  4$ & $\lx=\LoesungsRaumLang{\{-2; +2\}}$        &\LoesungsRaumLen{20mm}{$>0$}&\LoesungsRaumLen{40mm}{gerade}\\\hline
-  $x^3 =  8$ & $\lx=\LoesungsRaumLang{\{2\}}$             &\LoesungsRaumLen{20mm}{$>0$}&\LoesungsRaumLen{40mm}{ungerade}\\\hline
-  $x^3 = -8$ & $\lx=\LoesungsRaumLang{\{-2\}}$            &\LoesungsRaumLen{20mm}{$<0$}&\LoesungsRaumLen{40mm}{ungerade}\\\hline
-  $x^6 = -5$ & $\lx=\LoesungsRaumLang{\{\,\}}$            &\LoesungsRaumLen{20mm}{$<0$}&\LoesungsRaumLen{40mm}{gerade}\\\hline
-  $x^7 = -5$ & $\lx=\LoesungsRaumLang{\{-\sqrt[7]{5}\}}$  &\LoesungsRaumLen{20mm}{$<0$}&\LoesungsRaumLen{40mm}{ungerade}\\
-  \end{bbwFillInTabular} 
-
- \renewcommand{\arraystretch}{1}
-
+ 
  \newpage
  
 \begin{gesetz}{}{}
@@ -121,7 +127,7 @@ Bemerkung zu $a<0$ und $n$ \textbf{un}gerade: Für den TI-Taschenrechner ist $-\
 
 \subsubsection{Erst umformen, dann die Wurzel}%%$\sqrt{\,\vphantom{b}}$}
 
-Steht eine Gleichung schon in der folgenden Form da, so ist es
+Steht eine Gleichung schon in der Form $\left(T(x)\right)^n = B$ da, so ist es
 sinnvoll, gleich die Wurzel zu ziehen. Ansonsten versuchen Sie, die
 Gleichung in diese Form zu bringen.
 
@@ -187,7 +193,7 @@ $$\lx = \left\{-\frac12; \frac12\right\}$$}%% END TNT
 %%  OLAT Arbeitsblatt
 \GESO{\olatLinkArbeitsblatt{Potenz- und
     Wurzelgleichungen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/101937264586296}{Kap. 2.1
-Aufg. 4.a) bis 4. d)}}%% END olatLinkArbeitsblatt
+Aufg. 4. a) bis 4. d)}}%% END olatLinkArbeitsblatt
 \TALS{\olatLinkArbeitsblatt{Potenz- und
     Wurzelgleichungen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/105177901239296}{Kap. 2.1
 Aufg. 4. a) bis 4. d)}}%% END olatLinkArbeitsblatt
