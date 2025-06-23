@@ -93,12 +93,12 @@ Skizzieren Sie $f: y = \sqrt[2]{x}$ und $g: y=x^2$ im Bereich $[-2; 9]$ indem Si
 
 \begin{bemerkung}{Umkehrfunktion}{}
   Eine \textbf{Umkehrfunktion} ist das Spiegelbild der der Funktion
-  gespiegelt an der Geraden \LoesungsRaum{$y=x$}.
+  gespiegelt an der Geraden \LoesungsRaumLen{60mm}{$f(x)=x$ bzw. $y=x$}.
 \end{bemerkung}  
 
 \begin{bemerkung}{Einschränkung}{}
 Funktionen, welche beim Spiegeln an $x=y$ mehrere «Funktionswerte»
-erhalten würden, sind nur \textbf{eingeschränkt} umkehrbar.
+erhalten würden, sind nur \LoesungsRaumLen{60mm}{eingeschränkt} umkehrbar.
 \end{bemerkung}
 
 \newpage
@@ -111,21 +111,16 @@ a) $y=x^3$ und $y=\sqrt[3]{x}$ ins selbe Koordinatensystem:
   \TRAINER{\bbwFuncC{\x*\x*\x}{-1.7:1.7}{red}}
 }
 
-b) Was fällt auf?
 
-\TNT{2}{Im ersten Quadranten ist $\sqrt[3]{x}$ die Umkehrung von $x^3$
-  (gespiegelt an der Halbierenden des 1. Quadranten.}
+\TNTeop{
+ Im ersten Quadranten ist $\sqrt[3]{x}$ die Umkehrung von $x^3$
+  (gespiegelt an der Halbierenden des 1. Quadranten).
 
-c) Geben Sie von $y=x^3$ und von $y=\sqrt[3]{x}$ jeweils den
-Definitionsbereich und den Wertebereich an.
+        Obschon $x^3$ auf ganz $\mathbb{R}$ umkehrbar ist, so sind die Wurzeln negativer Zahlen in $\mathbb{R}$ weiterhin nicht definiert.
 
-\TNT{4}{
-  $$x^3: \mathbb{D}=\mathbb{W}=\mathbb{R}$$
-
-  $$\sqrt[3]{x}: \mathbb{D}=\mathbb{W}=\mathbb{R}^+_0$$
-  Obschon die Funktion auch Umkehrbar ist, ist die Wurzel von
-  negativen Zahlen in $\mathbb{R}$ nicht definiert.
-}%% end TNT
+        $$f^{-1}(x) = \begin{cases} \sqrt[3]{x} \text{ für } x\ge 0 \\ -\sqrt[3]{-x} \text{ für } x < 0  \end{cases}$$
+        
+}%% end TNTeop
 
 \newpage
 
@@ -172,7 +167,7 @@ $$\sqrt{x}; \sqrt{3x}; \sqrt{x-3}; \sqrt{x} - 3;
 
 
 \subsection*{Aufgaben}
-\AadBMTA{310}{41. c) f)}
+\AadBMTA{310}{41. c), g) und f)}
 
 
 \newpage
@@ -189,7 +184,7 @@ Erkenntnisse aus der vorangehenden Aufgabe.
 
   $b$: Stauchung entlang der $x$-Achse
 
-  $c$: Verschiebung gegüber der $x$-Achse
+  $c$: Verschiebung gegenüber der $x$-Achse
 
   $d$: Verschiebung entlang der $y$-Achse
 }
@@ -215,7 +210,7 @@ Was fällt auf?
 \end{definition}
 
 \begin{gesetz}{Scheitelform}{}
-  Bei der Funtkion
+  Bei der Funktion
   $$f: y = a\cdot{}\sqrt{\pm(x-X_S)} + Y_S$$
 liegt der Scheitelpunkt bei $S=(X_S | Y_S)$ und der Formfaktor $a$ kann
 entweder durch Einsetzen in die Funktionsgleichung oder durch ablesen
@@ -226,11 +221,33 @@ Wurzelast nach links abgeht.
 \end{gesetz}
 
 \newpage
-
-
-
 \subsubsection{Wurzelfunktionen ablesen}
 
+Geben Sie die Funktionsgleichung an.
+\noTRAINER{\bbwCenterGraphic{90mm}{tals/fct3/img/WurzelAblesen.png}}
+\TRAINER{\bbwCenterGraphic{80mm}{tals/fct3/img/WurzelAblesen.png}}
+
+\TNTeop{
+  Ansatz: $y = a \sqrt{-(x-(-4))} + 2 = a \sqrt{-x-4} + 2$
+
+  Weg 1: Punkt $B=(-8 | -3)$ einsetzen:
+  $$-3 = a \sqrt{-(-8) - 4} + 2$$
+  $$-3 = a \sqrt{4} + 2$$
+  $$-5 = a\cdot{}2$$
+  
+  $$ a=\frac{-5}2 \text{ und somit } f(x) = \frac{-5}{2}\sqrt{-x-4}+2$$
+
+  Weg 2: Wir stellen uns $A$ im Ursprung vor. Somit ist «$B-A$» = $(-4 | -5)$.
+
+  Die normale Wurzel hätte bei einem $x$-Abstand zum Nullpunkt den Wert $\sqrt{4}=2$. Unsere Funktion geht aber auf diese Distanz 5 Einheiten nach unten.
+
+  Wir müssen die Wurzelfunktion zuerst um 2 stauchen und dann um -5 strecken, was einen Faktor $a$ von $a=\frac{-5}{2}$ ergibt.
+}%% end  TNTeop
+
+
+
+\newpage
+\subsection*{Aufgaben}
 Geben Sie von den folgenden Graphen\footnote{Ursprüngliche Graphik: M. Mohr} den zugehörigen Funktionsterm
 in der Scheitelform an und vereinfachen Sie danach so weit wie möglich: $$y=a\cdot{}\sqrt{\pm(x - X_S)}+Y_S$$
 
@@ -254,7 +271,7 @@ in der Scheitelform an und vereinfachen Sie danach so weit wie möglich: $$y=a\c
 \TALSAadBMTA{310}{40., 43. g), 44. b), 45. a) }
 
 \olatLinkTALSStrukturaufgabenSPF{Teil 2}{14ff}{46. und 50.}
-\aufgabenFarbe{Strukturaufgaben SPF (V4.0) S. 14ff: Aufg. 46. und 50.}
+
 
 \newpage
-
+%%
