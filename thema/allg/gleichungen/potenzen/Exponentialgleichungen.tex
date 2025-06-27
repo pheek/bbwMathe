@@ -15,18 +15,29 @@
 \newpage
 \TadBMTA{199}{12}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection*{Lernziele}
+\TALS{%
+  \subsection*{Lernziele}
 
 \begin{itemize}
 \item Exponentialgleichungen
 \TALS{\item logarithmische Gleichungen (\cite{marthaler21alg} S. 203 Kap. 12.2)}
 \TALS{\item Exponentialgleichungen mit Parametern}
 \end{itemize}
+}%% end TALS
+
 
 \GESO{\matheNinjaLink{Exponentialgleichungen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/106029166783298}}
 \TALS{\matheNinjaLink{Exponentialgleichungen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/106261459129069}}
 
-\newpage
+\subsection*{Einstiegsbeispiel}
+Im wievielten Jahr ist ein Vermögen von anfänglich 1\,234.50 CHF bei gleichbleibendem Zinsfuß von 3 \% mit Zins und Zinseszins auf 1\,500.- CHF angewachsen?
+
+\TNTeop{
+  $$1500 = 1234.5 \cdot{} 1.03^n$$
+  $$n = \log_{1.03}\left(\frac{1\,500}{1\,234.50}\right) \approx 6.6$$
+  Im 7. Jahr ist das Vermögen auf 1\,500 angewachsen.
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555555
 
 \subsection{Exponentialgleichungen}\index{Exponentialgleichungen}
 \subsubsection{vier Stufen}
@@ -107,7 +118,7 @@ Minuten noch 69\degre C warm ist?
 
 $$37 = 18 + (95-18)\left(\frac{69-18}{95-18}\right)^{\frac{x}3}$$
 
-\TRAINER{Tipp: Erst TR-Lösung, dann Konntrolle von Hand! Dies ist
+\TRAINER{Tipp: Erst TR-Lösung, dann Kontrolle von Hand! Dies ist
 die richtige Reihenfolge!}
 
 \TNT{12}{
