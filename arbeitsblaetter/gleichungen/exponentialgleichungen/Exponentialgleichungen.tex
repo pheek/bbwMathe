@@ -14,31 +14,46 @@
 \renewcommand{\metaHeaderLine}{Arbeitsblatt}
 \renewcommand{\arbeitsblattTitel}{Exponentialgleichungen}
 
+
+\ifisNURAUFGABEN
+\renewcommand{\abplz}[1]{\vspace{1mm}}
+\fi
+
+
+\newcommand{\seitenUmbruchImAufgabenteil}{
+\ifisNURAUFGABEN
+\else
+\noTRAINER{\newpage}
+\fi
+}%%
+
+
+
 \begin{document}%%
 \arbeitsblattHeader{} (V 1.6 2025-03-06)
 
 \section{Exponentenvergleich}
 
-\newcommand{\plz}{\noTRAINER{\\ \mmPapier{5.2}}}
+% \newcommand{\plz}{\noTRAINER{\\ \mmPapier{5.2}}}
 
 Lösen Sie durch Exponentenvergleich:
 
 \begin{bbwAufgabenBlock}
-\item $5^{2x+1} = 5^{x-2}$                        $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{-3\}}$ \plz{}
-\item $7^x \cdot 7^{12} = 7^{21}$                 $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{9\}}$ \plz{}
-\item $(r^x)^3 \cdot{} r^2 = r^{x+5} \cdot{} r^x$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{3\}}$ \plz{}\noTRAINER{\newpage}
-\item $a^4 = \frac{a^{3x}}{a^{-6}}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{-\frac23\}}$ \plz{}
-\item $(f^{-7})^x \cdot{} f^3 = \frac{1}{f^{2x}} : \frac{f^{-1}}{f^{-x}}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac12\}}$ \plz{}
-\item $2^x=32$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{5\}}$ \plz{}
-\item $10^x=0.000\,01$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{-5\}}$ \plz{}\noTRAINER{\newpage}
-\item $10^{3x}=\sqrt{10}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac16\}}$ \plz{}
-\item $10^{3x-8}=1$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac83\}}$ \plz{}
-\item $10^{x-2}=1\,000$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{5\}}$ \plz{}
+\item $5^{2x+1} = 5^{x-2}$                        $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{-3\}}$ \abplz{7.2}
+\item $7^x \cdot 7^{12} = 7^{21}$                 $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{9\}}$ \abplz{7.2}\noTRAINER{\seitenUmbruchImAufgabenteil{}}
+\item $(r^x)^3 \cdot{} r^2 = r^{x+5} \cdot{} r^x$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{3\}}$ \abplz{7.2}
+\item $a^4 = \frac{a^{3x}}{a^{-6}}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{-\frac23\}}$ \abplz{7.2}\noTRAINER{\seitenUmbruchImAufgabenteil{}}
+\item $(f^{-7})^x \cdot{} f^3 = \frac{1}{f^{2x}} : \frac{f^{-1}}{f^{-x}}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac12\}}$ \abplz{7.2}
+\item $2^x=32$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{5\}}$ \abplz{7.2}\noTRAINER{\seitenUmbruchImAufgabenteil{}}
+\item $10^x=0.000\,01$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{-5\}}$ \abplz{7.2}
+\item $10^{3x}=\sqrt{10}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac16\}}$ \abplz{7.2}\noTRAINER{\seitenUmbruchImAufgabenteil{}}
+\item $10^{3x-8}=1$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac83\}}$ \abplz{7.2}
+\item $10^{x-2}=1\,000$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{5\}}$ \abplz{7.2}\noTRAINER{\seitenUmbruchImAufgabenteil{}}
 
-\item $3^{\frac{x-1}{3}} = \frac1{9^{\frac{x+1}{4}}}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{-\frac15\}}$ \plz{}
-\item $9^x = 8\cdot{}3^x + 3^x$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{2\}}$ \plz{}
+\item $3^{\frac{x-1}{3}} = \frac1{9^{\frac{x+1}{4}}}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{-\frac15\}}$ \abplz{7.2}
+\item $9^x = 8\cdot{}3^x + 3^x$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{2\}}$ \abplz{7.2}
 \end{bbwAufgabenBlock}
-\newpage%%
+\newpage
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -51,82 +66,85 @@ Formel
 $$\log_b(a) = \frac{\lg(a)}{\lg(b)}$$
 
 \begin{bbwAufgabenBlock}
-\item $10^{x-4}=1000$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{7\}}$ \plz{}
-\item $2^x=30$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(30)}{\lg(2)}\approx 4.91\}}$ \plz{}\noTRAINER{\newpage}
-\item $13^x=1000$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(1000)}{\lg(13)}\approx 2.69\}}$ \plz{}
-\item $5\cdot{}7^x = 19$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(19)-\lg(5)}{\lg(7)}\approx 0.686\}}$ \plz{}
-\item $7\cdot{}3^x = 2 + 4\cdot{}3^x$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(2)-\lg(3)}{\lg(3)}\approx  \}}$ \plz{}\noTRAINER{\newpage}
-\item $3\cdot{}6^x - 36 = 6^x$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(18)}{\lg(6)} \approx  1.61 \}}$ \plz{}
-\item $2^{5x} = 5^{2x}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{0\}}$ \plz{}
+\item $10^{x-4}=1000$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{7\}}$ \abplz{7.2}
+\item $2^x=30$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(30)}{\lg(2)}\approx 4.91\}}$ \abplz{7.2}\noTRAINER{\seitenUmbruchImAufgabenteil{}}
+\item $13^x=1000$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(1000)}{\lg(13)}\approx 2.69\}}$ \abplz{7.2}
+\item $5\cdot{}7^x = 19$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(19)-\lg(5)}{\lg(7)}\approx 0.686\}}$ \abplz{7.2}\noTRAINER{\seitenUmbruchImAufgabenteil{}}
+\item $7\cdot{}3^x = 2 + 4\cdot{}3^x$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(2)-\lg(3)}{\lg(3)}\approx  \}}$ \abplz{7.2}
+\item $3\cdot{}6^x - 36 = 6^x$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(18)}{\lg(6)} \approx  1.61 \}}$ \abplz{7.2}\noTRAINER{\seitenUmbruchImAufgabenteil{}}
+\item $2^{5x} = 5^{2x}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{0\}}$ \abplz{7.2}
 \end{bbwAufgabenBlock}
 
 \newpage
+
 \section{Form $a^{T} = b$}
 Bringen Sie die folgenden Gleichungen erst in die Form $a^T=b$, wobei
 $T=T(x)$ ein Term in $x$ ist.
 
 \begin{bbwAufgabenBlock}
-\item $8\cdot{} 5^{2x+1} = 200$  $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{ 0.5 \}}$ \plz{}
+\item $8\cdot{} 5^{2x+1} = 200$  $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{ 0.5 \}}$ \abplz{7.2}
 
 
-\item $\frac12 \cdot{} 4^{7x-32} = 32$  $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{ 5 \}}$ \plz{}
+\item $\frac12 \cdot{} 4^{7x-32} = 32$  $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{ 5 \}}$ \abplz{7.2}\noTRAINER{\seitenUmbruchImAufgabenteil{}}
 
 Lösen Sie exakt von Hand und runden Sie das Resultat anschließend mit dem Taschenrechner auf vier signifikante Stellen.
 
 \item $3.4^{\frac{x}2} = 16$  $\Longrightarrow$
-$\lx=\LoesungsRaumLang{\{2\cdot{} \frac{\lg(16)}{\lg(3.4)} \approx 4.531 \}}$ \plz{}
-\noTRAINER{\newpage}
+$\lx=\LoesungsRaumLang{\{2\cdot{} \frac{\lg(16)}{\lg(3.4)} \approx 4.531 \}}$ \abplz{7.2}
+\noTRAINER{\seitenUmbruchImAufgabenteil{}}
 \item $6^{\frac{x}3} = 14$  $\Longrightarrow$
-$\lx=\LoesungsRaumLang{\{3\cdot{} \frac{\lg(14)}{\lg(6)} \approx 4.419 \}}$ \plz{}
+$\lx=\LoesungsRaumLang{\{3\cdot{} \frac{\lg(14)}{\lg(6)} \approx 4.419 \}}$ \abplz{7.2}
 
 \item $1.8^{\frac{x}5+1} = 100$  $\Longrightarrow$
-$\lx=\LoesungsRaumLang{\{5\cdot{}\left(\frac{2}{\lg(1.8)} - 1\right) \approx 34.17 \}}$ \plz{}
+$\lx=\LoesungsRaumLang{\{5\cdot{}\left(\frac{2}{\lg(1.8)} - 1\right) \approx 34.17 \}}$ \abplz{7.2}\noTRAINER{\seitenUmbruchImAufgabenteil{}}
 
 
-\item $3 = 4 - 5\cdot{}6^\frac{x}7$  $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{ 7\cdot{} \log_{6}\left(\frac{3-4}{-5}\right)  \approx  -6.288 \}}$ \plz{}
+\item $3 = 4 - 5\cdot{}6^\frac{x}7$  $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{ 7\cdot{} \log_{6}\left(\frac{3-4}{-5}\right)  \approx  -6.288 \}}$ \abplz{7.2}
 
-\item $8 = 7 + 6\cdot{}5^\frac{x}4$  $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{ 4\cdot{} \log_{5}\left(\frac{8-7}{6}\right)  \approx -4.453 \}}$ \plz{}
+\item $8 = 7 + 6\cdot{}5^\frac{x}4$  $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{ 4\cdot{} \log_{5}\left(\frac{8-7}{6}\right)  \approx -4.453 \}}$ \abplz{7.2}\noTRAINER{\seitenUmbruchImAufgabenteil{}}
 
-\item $40 = 50 - 40\cdot{}0.8^\frac{t}7$  $\Longrightarrow$ $\mathbb{L}_t=\LoesungsRaumLang{\{ 7\cdot{} \log_{0.8}\left(\frac{40-50}{-30}\right)  \approx 43.49 \}}$ \plz{}
+\item $40 = 50 - 40\cdot{}0.8^\frac{t}7$  $\Longrightarrow$ $\mathbb{L}_t=\LoesungsRaumLang{\{ 7\cdot{} \log_{0.8}\left(\frac{40-50}{-30}\right)  \approx 43.49 \}}$ \abplz{7.2}
 \\
 
 
 
 
-\item $1200=3\cdot{} 5^{\frac{t}{4}} \Longrightarrow$ $L_t = \LoesungsRaumLang{\{ 4\cdot{}\log_5(\frac{1200}3)\approx 14.89   \}}$ \plz{}
+\item $1200=3\cdot{} 5^{\frac{t}{4}} \Longrightarrow$ $L_t = \LoesungsRaumLang{\{ 4\cdot{}\log_5(\frac{1200}3)\approx 14.89   \}}$ \abplz{7.2}\noTRAINER{\seitenUmbruchImAufgabenteil{}}
 
 \item $0.93^{\frac{t}4}=\frac12 \Longrightarrow$ $L_t
 = \LoesungsRaumLang{\{
-4\cdot{}\log_{0.93}\left(\frac12\right) \approx 38.205   \}}$ \plz{}
+4\cdot{}\log_{0.93}\left(\frac12\right) \approx 38.205   \}}$ \abplz{7.2}
 
-\noTRAINER{\newpage}
+\noTRAINER{\seitenUmbruchImAufgabenteil{}}
 
 \item $28 = 4 + 3\cdot{} 2^\frac{t}{4} \Longrightarrow$ $L_t
-= \LoesungsRaumLang{\{ 4\cdot{} \log_2\left(\frac{28-4}3\right) = 12 \}}$ \plz{}
+= \LoesungsRaumLang{\{ 4\cdot{} \log_2\left(\frac{28-4}3\right) = 12 \}}$ \abplz{7.2}
 
 
 \item $4.7 = 8 - 0.6\cdot{} 1.25^{\frac{t}{3}} \Longrightarrow$ $L_t
 = \LoesungsRaumLang{\{
-3\cdot{} \log_{1.25}\left(\frac{4.7-8}{-0.6}\right) \approx 22.9191  \}}$ \plz{}
+3\cdot{} \log_{1.25}\left(\frac{4.7-8}{-0.6}\right) \approx 22.9191  \}}$ \abplz{7.2}
 
-\noTRAINER{\newpage}
+\noTRAINER{\seitenUmbruchImAufgabenteil{}}
 
 
 Lösen Sie von Hand:
 
-\item $5 \cdot{} 3^{\frac{7-x}{2}} = 45$  $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{  3   \}}$ \plz{}
+\item $5 \cdot{} 3^{\frac{7-x}{2}} = 45$  $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{  3   \}}$ \abplz{7.2}
 
-\item $39 =  6\cdot{} 2 ^{5\cdot{} \lg(x) - 7} - 9$  $\Longrightarrow$ $\lx = \LoesungsRaumLang{\{ 100 \}}$ \plz{}
+\item $39 =  6\cdot{} 2 ^{5\cdot{} \lg(x) - 7} - 9$  $\Longrightarrow$ $\lx = \LoesungsRaumLang{\{ 100 \}}$ \abplz{7.2}
+\noTRAINER{\seitenUmbruchImAufgabenteil{}}
 
 Lassen Sie das exakte Resultat stehen:
 
-\item $5^{\lg(x)+2} = 100$  $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{  10^{\log_5(100)-2}   \}}$ \plz{}
+\item $5^{\lg(x)+2} = 100$  $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{  10^{\log_5(100)-2}   \}}$ \abplz{7.2}
 
 
 
 \end{bbwAufgabenBlock}
 
-\platzFuerBerechnungenBisEndeSeite{}\TRAINER{\newpage}
+\platzFuerBerechnungenBisEndeSeite{}
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Verschiedene Basen}
@@ -138,19 +156,15 @@ Brüche, Logarithmen) an; aber auch mit Hilfe des Taschenrechners auf drei
 signifikante Stellen.
 
 \begin{bbwAufgabenBlock}
-\item $3^x=2^{x+2}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{2\cdot{}\lg(2)}{\lg(3)-\lg(2)} \approx  3.42  \}}$ \plz{}
-\item $7^x=8\cdot{}6^{x+1}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(48)}{\lg(7)-\lg(6)} \approx 25.1   \}}$ \plz{}
-\item $2\cdot{}3^{x+7}=4\cdot{}6^{x+5}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(\frac{4\cdot{}6^5}{2\cdot{}3^7})}{\lg(\frac12)} \approx  -2.83  \}}$ \plz{}
-
-\noTRAINER{\newpage}
-
-
-\item $5^{x-1}\cdot{}2^{1-x}=6^{2x}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(5)-\lg(2)}{\lg(5)-\lg(2)-2\lg(6)} \approx -0.344   \}}$ \plz{}
-\item $10\cdot{}3^{4x} = 6^{1-x}\cdot{}4^{3x}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(6)-\lg(10)}{\lg(6\cdot{}3^4 - \lg(4^3))} \approx -0.252   \}}$ \plz{}
+\item $3^x=2^{x+2}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{2\cdot{}\lg(2)}{\lg(3)-\lg(2)} \approx  3.42  \}}$ \abplz{7.2}
+\item $7^x=8\cdot{}6^{x+1}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(48)}{\lg(7)-\lg(6)} \approx 25.1   \}}$ \abplz{7.2}\noTRAINER{\seitenUmbruchImAufgabenteil{}}
+\item $2\cdot{}3^{x+7}=4\cdot{}6^{x+5}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(\frac{4\cdot{}6^5}{2\cdot{}3^7})}{\lg(\frac12)} \approx  -2.83  \}}$ \abplz{7.2}
+\item $5^{x-1}\cdot{}2^{1-x}=6^{2x}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(5)-\lg(2)}{\lg(5)-\lg(2)-2\lg(6)} \approx -0.344   \}}$ \abplz{7.2}\noTRAINER{\seitenUmbruchImAufgabenteil{}}
+\item $10\cdot{}3^{4x} = 6^{1-x}\cdot{}4^{3x}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\lg(6)-\lg(10)}{\lg(6\cdot{}3^4 - \lg(4^3))} \approx -0.252   \}}$ \abplz{7.2}
 \end{bbwAufgabenBlock}
 
-\platzFuerBerechnungenBisEndeSeite{}
-
+%\platzFuerBerechnungenBisEndeSeite{}
+\noTRAINER{\seitenUmbruchImAufgabenteil{}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Logarithmus Naturalis}
@@ -159,19 +173,19 @@ Geben Sie die Lösung einerseits mit dem «Logarithmus Naturalis»
 Resultat auf drei signifikante Stellen.
 
 \begin{bbwAufgabenBlock}
-\item $4^x=7^{x+2}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{2\cdot{}\ln(7)}{\ln(4)-\ln(7)} \approx -6.95   \}}$ \plz{}
-\item $\left(\frac14\right)^{3x-1} = \left(\frac15\right)^{2-x}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{-2\ln(5)-\ln(4)}{-3\ln(4)-\ln(5)} \approx 0.798   \}}$ \plz{}
+\item $4^x=7^{x+2}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{2\cdot{}\ln(7)}{\ln(4)-\ln(7)} \approx -6.95   \}}$ \abplz{7.2}
+\item $\left(\frac14\right)^{3x-1} = \left(\frac15\right)^{2-x}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{-2\ln(5)-\ln(4)}{-3\ln(4)-\ln(5)} \approx 0.798   \}}$ \abplz{7.2}\noTRAINER{\seitenUmbruchImAufgabenteil{}}
 \item $12^x+4\cdot{}3^{4-x}=0$ $\Longrightarrow$
-$\lx=\LoesungsRaumLang{\{   \}}$  \plz{} \noTRAINER{\newpage}
-\item $2^{x+1}=5^x + 5^{x-1}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\ln(3)-\ln(5)}{\ln(2)-\ln(5)} \approx 0.554   \}}$ \plz{}
-\item $2^r=3\cdot{}2^{r-3} + 12\cdot{}5^{r-3} - 2\cdot{}5^{r-2}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{ 4 \}}$ \plz{}
-\item $5^x + 5^{x+2} = 2600$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\ln(100)}{\ln(5)} \approx 2.86   \}}$ \plz{}
-\item $7^{2x+1} = 100 + 7^{2x-1}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\ln(100) - \ln(7-\frac17)}{2\cdot{}\ln(7)} \approx  0.689  \}}$ \plz{}\noTRAINER{\newpage}
-\item $\e^x + \e^{x+1} + \e^{x+2} = 1$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\left(\frac{1}{1+\e+\e^2}\right) \approx -2.41  \}}$ \plz{}
+$\lx=\LoesungsRaumLang{\{   \}}$  \abplz{7.2} 
+\item $2^{x+1}=5^x + 5^{x-1}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\ln(3)-\ln(5)}{\ln(2)-\ln(5)} \approx 0.554   \}}$ \abplz{7.2} \noTRAINER{\seitenUmbruchImAufgabenteil{}}
+\item $2^r=3\cdot{}2^{r-3} + 12\cdot{}5^{r-3} - 2\cdot{}5^{r-2}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{ 4 \}}$ \abplz{7.2}
+\item $5^x + 5^{x+2} = 2600$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\ln(100)}{\ln(5)} \approx 2.86   \}}$ \abplz{7.2} \noTRAINER{\seitenUmbruchImAufgabenteil{}}
+\item $7^{2x+1} = 100 + 7^{2x-1}$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\frac{\ln(100) - \ln(7-\frac17)}{2\cdot{}\ln(7)} \approx  0.689  \}}$ \abplz{7.2}
+\item $\e^x + \e^{x+1} + \e^{x+2} = 1$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{\left(\frac{1}{1+\e+\e^2}\right) \approx -2.41  \}}$ \abplz{7.2}
 
 \end{bbwAufgabenBlock}
 
-\platzFuerBerechnungenBisEndeSeite{}
+\newpage{}%%%\platzFuerBerechnungenBisEndeSeite{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Substitution}
@@ -179,13 +193,14 @@ Die folgenden Exponentialgleichungen können mit Hilfe einer geeigneten
 Substitution auf quadratische Gleichungen zurückgeführt werden.
 
 \begin{bbwAufgabenBlock}
-\item $4^x + 4^{2x} = 20$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{  1   \}}$ \plz{}
+\item $4^x + 4^{2x} = 20$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\{  1   \}}$ \abplz{7.2}
 \item $2\cdot{}5^{2r} = 3.6\cdot{}5^r - 1$ $\Longrightarrow$
 $\lx=\LoesungsRaumLang{\left\{   \frac{\ln\left(\frac{9\pm\sqrt{31}}{10}\right)}{\ln(5)} \approx
 0.234; -0.664 \right\}
-}$
+}$\abplz{7.2}
 
-\noTRAINER{\mmPapier{10}\newpage}
+\noTRAINER{\seitenUmbruchImAufgabenteil{}}
+%%\noTRAINER{\mmPapier{10}\seitenUmbruchImAufgabenteil{}}
 
 \item $10^x - 10^{-x} = 1$ $\Longrightarrow$ $\lx=\LoesungsRaumLang{\left\{  \frac{\ln\left(\frac{1+\sqrt{5}}{2}\right)}{\ln(10)} \approx  0.209   \right\}}$ 
 
@@ -194,19 +209,19 @@ $\lx=\LoesungsRaumLang{\left\{   \frac{\ln\left(\frac{9\pm\sqrt{31}}{10}\right)}
 
 %%\platzFuerBerechnungenBisEndeSeite{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
+\seitenUmbruchImAufgabenteil{}
 \section{In Textform}
 \subsection{Kapital I}
 Ein Kapital von CHF $22\,000.-$ wird zu $3.5\%$ Jahreszins angelegt.
 \begin{bbwAufgabenBlock}
 \item Auf welchen Betrag ist das Kapital nach 7 Jahren
-angewachsen?\TRAINER{ 27 990.14 CHF} \plz{}
+angewachsen?\TRAINER{ 27 990.14 CHF} \abplz{7.2}
 \item Auf welchen Betrag ist das Kapital nach 50 Jahren
-angewachsen? \TRAINER{ 122868.39 CHF} \plz{}
+angewachsen? \TRAINER{ 122868.39 CHF} \abplz{7.2}
 \item Auf welchen Betrag ist das Kapital nach $n$ Jahren
-angewachsen? \TRAINER{  $22\,000\cdot{} 1.035^n$} \plz{} \noTRAINER{\newpage}
+angewachsen? \TRAINER{  $22\,000\cdot{} 1.035^n$} \abplz{7.2} \noTRAINER{\seitenUmbruchImAufgabenteil{}}
 \item Nach wie vielen Jahren wird das Kapital auf $31\,000.-$ CHF
-angewachsen sein? \TRAINER{ 9.97 Jahre} \plz{}
+angewachsen sein? \TRAINER{ 9.97 Jahre} \abplz{7.2}
 \end{bbwAufgabenBlock}
 \platzFuerBerechnungenBisEndeSeite{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -214,13 +229,13 @@ angewachsen sein? \TRAINER{ 9.97 Jahre} \plz{}
 Ein Kapital von CHF $13\,000.-$ wird zu $0.3\%$ jährlichem Zins angelegt.
 \begin{bbwAufgabenBlock}
 \item Auf welchen Betrag ist das Kapital nach 4 Jahren
-angewachsen? \TRAINER{ 13\,156.70 CHF} \plz{}
+angewachsen? \TRAINER{ 13\,156.70 CHF} \abplz{7.2}
 \item Auf welchen Betrag ist das Kapital nach 10 Jahren
-angewachsen? \TRAINER{ 13\,395.31 CHF} \plz{}
+angewachsen? \TRAINER{ 13\,395.31 CHF} \abplz{7.2}
 \item Auf welchen Betrag ist das Kapital nach $n$ Jahren
-angewachsen? \TRAINER{ $13\,000\cdot{} 1.003^n$} \plz{} \noTRAINER{\newpage}
+angewachsen? \TRAINER{ $13\,000\cdot{} 1.003^n$} \abplz{7.2} \noTRAINER{\seitenUmbruchImAufgabenteil{}}
 \item Nach wie vielen Jahren wird das Kapital auf $15\,000.-$ CHF
-angewachsen sein? \TRAINER{ Nach 47.8 Jahren.} \plz{}
+angewachsen sein? \TRAINER{ Nach 47.8 Jahren.} \abplz{7.2}
 \end{bbwAufgabenBlock}
 \platzFuerBerechnungenBisEndeSeite{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -230,14 +245,14 @@ zum Neupreis von 9 870.- eingekauft.
 
 \begin{bbwAufgabenBlock}
 \item  Wie viel Wert hat der Computer (Modell «X») nach 3 Jahren
-noch? \TRAINER{ 4866.29 CHF } \plz{}
+noch? \TRAINER{ 4866.29 CHF } \abplz{7.2}
 \item Wie viel Wert hat der Computer nach 15 Jahren noch? \TRAINER{
-287.56 CHF} \plz{}
-\item Wie viel Wert hat der Computer nach n Jahren? \TRAINER{ $ 0.79^n \cdot 9870.-$ } \plz{} \noTRAINER{\newpage}
+287.56 CHF} \abplz{7.2}
+\item Wie viel Wert hat der Computer nach n Jahren? \TRAINER{ $ 0.79^n \cdot 9870.-$ } \abplz{7.2} \noTRAINER{\seitenUmbruchImAufgabenteil{}}
 \item Wann ist der Wert des Computers auf einen Wert von 10\% des
-Neuwertes gesunken? \TRAINER{ 9.77 Jahre} \plz{}
+Neuwertes gesunken? \TRAINER{ 9.77 Jahre} \abplz{7.2}
 \item Wann hat der Wert des Computer 60\% des Neuwertes
-verloren? \TRAINER{ 3.89 Jahre} \plz{}
+verloren? \TRAINER{ 3.89 Jahre} \abplz{7.2}
 \end{bbwAufgabenBlock}
 
 \platzFuerBerechnungenBisEndeSeite{}
@@ -256,11 +271,11 @@ Nach dem zweiten Durchgang sind also bereits 4 Schichten übereinander.
 \begin{bbwAufgabenBlock}
 \item Wie viele Schichten («Blätter») sind nach fünf Durchgängen
 vorhanden? \TRAINER{32 «Blätter» sind nach fünf Durchgängen
-vorhanden.} \plz{}
+vorhanden.} \abplz{7.2}
 
 \item Wie viele «Blätter» sind nach $n$ Durchgängen
 vorhanden? \TRAINER{Nach $n$ Durchgängen sind es $2^n$ Schichten
-vorhanden.} \plz{}
+vorhanden.} \abplz{7.2}
 
 \item Nach wie vielen Durchgängen sind es tatsächlich tausend
 Schichten, sodass «mille feuilles» seinem Namen gerecht
@@ -272,18 +287,19 @@ Schichten. Rechnung: $$2^n=1000 \Longrightarrow   n
 
 \platzFuerBerechnungenBisEndeSeite{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\TRAINER{\newpage}
 \subsection{Wäldchen}
 Ein Wäldchen wächst jedes Jahr um 15\% Waldfläche. (Die anfängliche Fläche werde mit
 100\% bezeichnet.)
 \begin{bbwAufgabenBlock}
-\item Auf wie viel \% ist der Wald nach 5 Jahren angewachsen? \TRAINER{ 201\%} \plz{}
-\item Um wie viel \% ist der Wald nach 5 Jahren angewachsen? \TRAINER{ 101\%} \plz{}
+\item Auf wie viel \% ist der Wald nach 5 Jahren angewachsen? \TRAINER{ 201\%} \abplz{7.2}
+\item Um wie viel \% ist der Wald nach 5 Jahren angewachsen? \TRAINER{ 101\%} \abplz{7.2}
 \item Auf wie viel \% ist der Wald nach n Jahren
-angewachsen? \TRAINER{ $1.15^n [\cdot{} 100\%]$} \plz{} \noTRAINER{\newpage}
+angewachsen? \TRAINER{ $1.15^n [\cdot{} 100\%]$} \abplz{7.2} \noTRAINER{\seitenUmbruchImAufgabenteil{}}
 \item Nach wie vielen Jahren hat sich die Waldfläche
-verdreifacht? \TRAINER{ 7.86 Jahre} \plz{}
+verdreifacht? \TRAINER{ 7.86 Jahre} \abplz{7.2}
 \item Nach wie vielen Jahren sind 100\% Waldfläche
-dazugekommen? \TRAINER{nach 4.96 Jahren } \plz{}
+dazugekommen? \TRAINER{nach 4.96 Jahren } \abplz{7.2}
 \end{bbwAufgabenBlock}
 
 \platzFuerBerechnungenBisEndeSeite{}

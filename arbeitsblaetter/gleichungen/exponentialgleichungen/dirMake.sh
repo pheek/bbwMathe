@@ -8,5 +8,7 @@ pdflatex Exponentialgleichungen_ALLG.tex
 pdflatex Exponentialgleichungen_ALLG.tex
 pdflatex Exponentialgleichungen_TRAINER_ALLG.tex
 pdflatex Exponentialgleichungen_TRAINER_ALLG.tex
+pdflatex Exponentialgleichungen_NurAufgaben.tex
+pdflatex Exponentialgleichungen_NurAufgaben.tex
 
 
