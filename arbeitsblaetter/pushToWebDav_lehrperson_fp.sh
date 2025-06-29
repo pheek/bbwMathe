@@ -215,6 +215,8 @@ cp -f ./funktionen/funktionen_umkehrfunktionen/Umkehrfunktionen_TRAINER_TALS.pdf
 echo "  copying Arbeitsblatt Gleichungen: Exponentialgleichungen (GESO und TALS)"
 cp -f ./gleichungen/exponentialgleichungen/Exponentialgleichungen_ALLG.pdf          ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/exponentialgleichungen/arbeitsblatt/ExponentialgleichungenArbeitsblatt.pdf
 cp -f ./gleichungen/exponentialgleichungen/Exponentialgleichungen_TRAINER_ALLG.pdf          ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/exponentialgleichungen/arbeitsblatt/ExponentialgleichungenArbeitsblattLoesungen.pdf
+cp -f ./gleichungen/exponentialgleichungen/Exponentialgleichungen_NurAufgaben.pdf          ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/exponentialgleichungen/arbeitsblatt/ExponentialgleichungenArbeitsblattNurAufgaben.pdf
+
 
 echo "  copying Arbeitsblatt Exponentialfunktionen (GESO und TALS)"
 cp -f ./funktionen/exponentialfct/*.pdf                               ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/funktionen/exponentialfunktion/arbeitsblatt/
