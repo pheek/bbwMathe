@@ -1,5 +1,4 @@
-%%
-%% Meta: Formelsammlung GESO BBW
+%% Formelsammlung GESO BBW
 %% 2023 fp @ bbw.ch
 %%
 
@@ -17,31 +16,23 @@
 
 \newcommand{\geometrieErsteSeite}{}
 
-\ifdefined\versionDEST%%
-\renewcommand{\metaHeaderLine}{}
-\renewcommand{\geometrieErsteSeite}{\newgeometry{left=3mm,right=3mm,top=2mm,bottom=4mm}}
-\else
-\renewcommand{\metaHeaderLine}{Formelsammlung --- gesundheitlich-soziale BM}%% END HEADERFOOTER
+\renewcommand{\metaHeaderLine}{Formelsammlung --- gesundheitlich-soziale Berufsmaturität}%% END HEADERFOOTER
 \renewcommand{\geometrieErsteSeite}{\newgeometry{left=7mm,right=7mm,top=22mm,bottom=15mm}}
-\fi%% END version DEST
+
+\fancyhfoffset[RO]{0mm}
+\fancyhfoffset[LO]{2mm}
 
 %%\fancyhf[LE,FLO,FRE,FRO]{}%% Überscrheibe Titel
 %%\MITHEADERFOOTER{\fancyhf[LE,FLO,FR]{Seite \thepage{}}}%% Überscrheibe Titel
 \newcommand{\headerUndFooterErsteSeite}{%%
-\ifdefined\versionDEST%%
-\thispagestyle{empty}%%
-\else
-\thispagestyle{fancy} \fancyhf[HC]{\metaHeaderLine} \fancyhf[HR]{\thepage{}} \fancyhf[FR]{}%%
-\fi%% version DEST
+\thispagestyle{fancy} \fancyhf[HC]{\metaHeaderLine} \fancyhf[HR]{\thepage{}} \fancyhf[HL]{}  \fancyhf[FR]{} \fancyhf[FC]{}%%
 }%% END newcommand "headerUndFooterJedeSeite
 
 \newcommand{\headerUndFooterJedeSeite}{%%
-\ifdefined\versionDEST%%
-\thispagestyle{empty}%%
-\else
-\thispagestyle{fancy} \fancyhf[HLE]{} \fancyhf[HC]{} \fancyhf[HR]{\thepage{}} \fancyhf[FR]{}%%
-\fi%% version DEST
+\thispagestyle{fancy} \fancyhf[HRE]{} \fancyhf[HRO]{\thepage{}} \fancyhf[HC]{} \fancyhf[HLO]{} \fancyhf[HLE]{\thepage{}} \fancyhf[FR]{} \fancyhf[FC]{}%%
 }%% END newcommand "headerUndFooterJedeSeite
+
+\renewcommand{\footrulewidth}{0pt}
 
 
 \newcommand{\forceCB}{\vfill\null\columnbreak\headerUndFooterJedeSeite{}}
@@ -54,7 +45,7 @@
 
 \usepackage{makecell}
 
-\renewcommand{\shortAuthor}{fp he @ bbw.ch [\versionsnummerFoSa{}]}
+\renewcommand{\shortAuthor}{grph hech @ bms-w.ch [\versionsnummerFoSa{}]}
 
 \renewcommand{\arbeitsblattTitel}{}%%{Formelsammlung --- gesundheitlich-soziale BM\TRAINER{ (V \versionIdSubRev)}}
 
@@ -63,8 +54,6 @@
 
 %% Listen nicht einrücken:
 \setlist[itemize]{leftmargin=*}
-
-%%\definecolor{FarnFarbe}{HTML}{4F8F00}
 
 %%\renewcommand{\arbeitsblattHeader}{}
 
@@ -81,6 +70,16 @@
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}%%
 }%%
+
+\FORMELNARIAL{%%
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{helvet} % Or uarial
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{mathastext} % Tries to use the text font for math
+
+}%% end FORMELNARIAL
 
 \begin{document}%%
 
@@ -102,20 +101,20 @@
 
 \section*{Dezimalzahlen}
 \subsection*{Runden}
-Bsp.: Runden auf \textbf{\color{farnFarbe}vier}  Dezimalen.
+Bsp.: Runden auf \textbf{\color{farnFarb}vier}  Dezimalen.
 Betrachte die nächste Ziffer und runde auf, falls diese
 {\color{red}Ziffer} $\ge 5$. Bsp.:
 
-$3.\mathbf{\color{farnFarbe}4729}\mathbf{\color{red}6}44 \approx 3.\mathbf{\color{farnFarbe}4730}$; \hfill{ }
-$70.\mathbf{\color{farnFarbe}0031}\mathbf{\color{red}4}998\approx 70.\mathbf{\color{farnFarbe}0031}$
+$3.\mathbf{\color{farnFarb}4729}\mathbf{\color{red}6}44 \approx 3.\mathbf{\color{farnFarb}4730}$; \hfill{ }
+$70.\mathbf{\color{farnFarb}0031}\mathbf{\color{red}4}998\approx 70.\mathbf{\color{farnFarb}0031}$
 
 (Alle vier Dezimalen sind anzugeben.)
 
 \MITSIGNIFIKANTENSTELLEN{\subsection*{Signifikante Stellen}
 Führende Nullen zählen nicht, nachfolgende Nullen
-zählen. Bsp. \textbf{\color{farnFarbe}vier} signifikante Stellen:
+zählen. Bsp. \textbf{\color{farnFarb}vier} signifikante Stellen:
 
-$$\mathbf{\color{farnFarbe}208.0} \textrm{ cm} = \mathbf{\color{farnFarbe}2.080} \textrm{ m} = 0.00\mathbf{\color{farnFarbe}2080} \textrm{ km}$$
+$$\mathbf{\color{farnFarb}208.0} \textrm{ cm} = \mathbf{\color{farnFarb}2.080} \textrm{ m} = 0.00\mathbf{\color{farnFarb}2080} \textrm{ km}$$
 }%% END MITSIGNIFIKANTENSTELLEN
 
 \MITWISSENSCHAFTLICHERNOTATION{%%
@@ -184,7 +183,7 @@ Geometrisch: Abstand zum Nullpunkt.
 %%\hrulefill
 
 \section*{Bruchterme}
-    $\frac{a}b = a : b$,\phantom{ and }  $\frac{a}b : \frac{x}y = \frac{a}b\cdot{}\frac{y}x = \frac{ay}{bx}$
+    $\frac{a}b = a : b$ \hspace{2cm}  $\frac{a}b : \frac{x}y = \frac{a}b\cdot{}\frac{y}x = \frac{ay}{bx}$
     
 \subsection*{Faktorisieren (Beispiele)}
 
@@ -218,13 +217,13 @@ $$x^2+2x-15 = (x+5)(x-3)$$
 
 \subsection*{Summenzeichen}
 
-  $${\color{farnFarbe}\sum_{{\color{red}k}{{\color{farnFarbe}{\color{black}=}\color{blue}1}}}^{\color{blue}n\color{farnFarbe}}}
-  {\color{orange}T(}{{\color{red}k}}{\color{orange})} = {\color{orange}T(}{\color{blue}1}{\color{orange})} {\color{farnFarbe}+} {\color{orange}T(}{\color{blue}2}{\color{orange})} {\color{farnFarbe}+}
-  ... {\color{farnFarbe}+} {\color{orange}T(}{\color{blue}n}{\color{orange})}$$
+  $${\color{farnFarb}\sum_{{\color{red}k}{{\color{farnFarb}{\color{black}=}\color{blue}1}}}^{\color{blue}n\color{farnFarb}}}
+  {\color{orange}T(}{{\color{red}k}}{\color{orange})} = {\color{orange}T(}{\color{blue}1}{\color{orange})} {\color{farnFarb}+} {\color{orange}T(}{\color{blue}2}{\color{orange})} {\color{farnFarb}+}
+  ... {\color{farnFarb}+} {\color{orange}T(}{\color{blue}n}{\color{orange})}$$
 
 Beispiel
 
-  $${\color{farnFarbe}\sum_{{\color{red}x}{{\color{farnFarbe}{\color{black}=}\color{blue}3}}}^{\color{blue}5\color{farnFarbe}}}  {\color{red}x}^{{\color{orange}7}} = {\color{blue}3}^{\color{orange}7} {\color{farnFarbe}+} {\color{blue}4}^{\color{orange}7} {\color{farnFarbe}+} {\color{blue}5}^{\color{orange}7}$$
+  $${\color{farnFarb}\sum_{{\color{red}x}{{\color{farnFarb}{\color{black}=}\color{blue}3}}}^{\color{blue}5\color{farnFarb}}}  {\color{red}x}^{{\color{orange}7}} = {\color{blue}3}^{\color{orange}7} {\color{farnFarb}+} {\color{blue}4}^{\color{orange}7} {\color{farnFarb}+} {\color{blue}5}^{\color{orange}7}$$
 
 \TRAINER{TR nur am Schluss?}
 %%Taschenrechner (\texttt{sum}): \tiprobutton{math}\tiprobutton{5}
@@ -254,31 +253,30 @@ $a^m\cdot{}a^n = a^{m+n}$ \hspace{2cm} $a^m:a^n=a^{m-n}$
 $\left(a^m\right)^n = a^{m\cdot{}n}$ 
 
 \subsection*{gleicher\,Exponent}
-\begin{tabular}{cc}
-$a^n\cdot{}b^n = (a\cdot{}b)^n,$ & $\frac{a^n}{b^n} =\left(\frac{a}b\right)^n $
- \end{tabular}
 
+$a^n\cdot{}b^n = (a\cdot{}b)^n $ \hspace{2cm} $\frac{a^n}{b^n} =\left(\frac{a}b\right)^n $
+
+\begin{samepage}
 \subsection*{Vorzeichen}
 Fall: $n$ \textbf{gerade}:
 
 \begin{tabular}{cc}
- $-(a^n) = -a^n,$ & aber: $(-a)^n = +a^n$
- \end{tabular} 
+ $-(a^n) = -a^n$ & aber: $(-a)^n = +a^n$
+\end{tabular} 
 
 Fall: $n$ \textbf{un}gerade:
 
 \begin{tabular}{cc}
  $-(a^n) = -a^n,$ & aber: $(-a)^n = -a^n$
  \end{tabular} 
-
+\end{samepage}
 
 \subsection*{negative Exponenten}
 
 %%Für Basis $a\ne 0, b\ne 0$ und $m \in\mathbb{Q}$ gilt:
 
-\begin{tabular}{cc}
-$a^{-m} = \frac1{a^m},$ & $\left(\frac{a}b\right)^{-m} = \left(\frac{b}a\right)^m$
- \end{tabular}
+$a^{-m} = \frac1{a^m}$ \hspace{2cm} $\left(\frac{a}b\right)^{-m} = \left(\frac{b}a\right)^m$
+
 
 Exponenten vertauschen ihr Vorzeichen beim Übertreten des
 Bruchstrichs. Beispiel:
@@ -287,7 +285,7 @@ $$\frac{a^{-3}b^2}{c^5d^{-6}} = \frac{b^2d^6}{a^3c^5}$$
 %%\forceCB{}
 
 \subsection*{$n$-te Wurzel}
-$\sqrt[n]{a} = \left(a\right)^\frac1n$\hfill{}Bsp.: $8^{\frac13}=\sqrt[3]{8}=2$
+$\sqrt[n]{a} = \left(a\right)^\frac1n$\hspace{2cm}Bsp.: $8^{\frac13}=\sqrt[3]{8}=2$
 
 \begin{tcolorbox}[colback=white]
 $$a^{\frac{m}n} = \sqrt[n]{a^m} = \left(\sqrt[n]a\right)^m$$
@@ -329,9 +327,9 @@ $$e \approx 2.71828 \textrm{ = Eulersche Konstante}$$
 \ALLELOGGESETZE{$$\log(u : v) = \log(u) - \log(v)$$}
 
 \FAKTORBA{$$\log(b^x) = x\cdot{}\log(b)$$
-$$\log_{\color{farnFarbe}a}({\color{red}b}) = \frac{\lg({\color{red}b})}{\lg({\color{farnFarbe}a})} = \frac{\ln({\color{red}b})}{\ln({\color{farnFarbe}a})}$$}
+$$\log_{\color{farnFarb}a}({\color{red}b}) = \frac{\lg({\color{red}b})}{\lg({\color{farnFarb}a})} = \frac{\ln({\color{red}b})}{\ln({\color{farnFarb}a})}$$}
 \FAKTORAQ{$$\log(a^x) = x\cdot{}\log(a)$$
-$$\log_{\color{farnFarbe}b}({\color{red}a}) = \frac{\lg({\color{red}a})}{\lg({\color{farnFarbe}b})} = \frac{\ln({\color{red}a})}{\ln({\color{farnFarbe}b})}$$}
+$$\log_{\color{farnFarb}b}({\color{red}a}) = \frac{\lg({\color{red}a})}{\lg({\color{farnFarb}b})} = \frac{\ln({\color{red}a})}{\ln({\color{farnFarb}b})}$$}
 \end{tcolorbox}%
 %
 %%\RLP{\forceCB{}}%%
@@ -436,12 +434,12 @@ $$\LoesungsMenge{}_{(x | y)} = \{(8 | -3)\}$$
 \subsection*{Substitution}
 Beispiel Bruchgleichungssysteme:
 
-\gleichungZZ{{\color{farnFarbe}\frac6{x+1}} + {\color{red}\frac8{y-2}}}{11}{{\color{farnFarbe}\frac2{x+1}} - {\color{red}\frac{10}{y-2}}}{-9}
+\gleichungZZ{{\color{farnFarb}\frac6{x+1}} + {\color{red}\frac8{y-2}}}{11}{{\color{farnFarb}\frac2{x+1}} - {\color{red}\frac{10}{y-2}}}{-9}
 Substituiere
-${\color{farnFarbe}a}={\color{farnFarbe}\frac1{x+1}}$ und
+${\color{farnFarb}a}={\color{farnFarb}\frac1{x+1}}$ und
 ${\color{red}b} = {\color{red}\frac1{y-2}}$:
 
-\gleichungZZ{{6\color{farnFarbe}a} + 8{\color{red}b}}{11}{2{\color{farnFarbe}a} - 10{\color{red}b}}{-9}
+\gleichungZZ{{6\color{farnFarb}a} + 8{\color{red}b}}{11}{2{\color{farnFarb}a} - 10{\color{red}b}}{-9}
 
 $$a=\frac12, b=1$$
 Dann: Rücksubstitution
@@ -498,21 +496,16 @@ $$p = -3\% \Longleftrightarrow{}  a = 0.97 $$
 
 
 Eine Funktion ist eine {\color{red} eindeutige Zuordnung}. Dabei wird
-jedem {\color{farnFarbe}x} aus der {\color{farnFarbe}Definitionsmenge
+jedem {\color{farnFarb}x} aus der {\color{farnFarb}Definitionsmenge
 $\DefinitionsMenge{}$} eindeutig ein {\color{blue}y} aus der
 {\color{blue}Wertemenge $\Wertebereich{}$} zugeordnet. Beispiel:
 
 \bbwCenterGraphic{8cm}{FunktionDefinition.pdf}
 
 
-\ifdefined\versionDEST%
-\else%%
-\forceCB{}%%
-\fi%%
-
 \subsection*{Lineare Funktionen}
 
-$$f\-:\,\,\,\,\, y = f(x) = a\cdot{}x + b \RLP{\textrm{\,\,\,\,oder\,\,\,\,} f(x)=m\cdot{}x + q}$$
+$$f(x) = a\cdot{}x + b \RLP{\textrm{\,\,\,\,oder\,\,\,\,} f(x)=m\cdot{}x + q}$$
 
 
 \bbwCenterGraphic{8cm}{img/FunktionenLineareEinfuehrungHECH.pdf}
@@ -538,8 +531,8 @@ $$g\-:\,\,\,  y=0\cdot{}x+b \Rightarrow y=b$$
 
 \ifdefined\versionHECH%%
 \subsubsection*{Punkt- / Steigungsform}
-Gerade durch Punkt $P=(P_x|P_y)$ mit gegebener Steigung $a$:
-$$y = a(x-P_x) + P_y$$
+Gerade durch Punkt $P=(x_P|y_P)$ mit gegebener Steigung $a$:
+$$y = a(x-x_P) + y_P$$
 \fi
 
 \subsection*{Achsenschnittpunkte}
@@ -588,8 +581,9 @@ unter \tiprobutton{data} eingeben. Danach unter
 \texttt{LinReg ax+b}.
 
 \end{multicols}
-
+%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\headerUndFooterJedeSeite{}
 \newpage
 \headerUndFooterJedeSeite{}
 
@@ -674,16 +668,16 @@ Wachstum:
 
 \begin{tcolorbox}[colback=white]
 Wachstum bezogen auf eine Zeitspanne  
-  $$f(t) = {\color{blue}\FAKTORBA{b}\FAKTORAQ{a}}\cdot{}{\color{red}\FAKTORBA{a}\FAKTORAQ{q}}^{\frac{t}{\color{farnFarbe}\tau}}$$
+  $$f(t) = {\color{blue}\FAKTORBA{b}\FAKTORAQ{a}}\cdot{}{\color{red}\FAKTORBA{a}\FAKTORAQ{q}}^{\frac{t}{\color{farnFarb}\tau}}$$
   \begin{tabular}{ccp{60mm}}
-$\color{farnFarbe}\tau$ &=& Beobachtungsintervall zu $\color{red}\FAKTORBA{a}\FAKTORAQ{q}$\\
-    $\color{red}\FAKTORBA{a}\FAKTORAQ{q}$ &=& Wachstums(bzw. Zerfalls)rate im Zeit\-raum $\color{farnFarbe}\tau$
+$\color{farnFarb}\tau$ &=& Beobachtungsintervall zu $\color{red}\FAKTORBA{a}\FAKTORAQ{q}$\\
+    $\color{red}\FAKTORBA{a}\FAKTORAQ{q}$ &=& Wachstums(bzw. Zerfalls)rate im Zeit\-raum $\color{farnFarb}\tau$
     \end{tabular}
 
 Beispiel: Die Algen mit Startwert von ${\color{blue}3} \textrm{ m}^2$ ver{\color{red}vier}fachen
-sich alle {\color{farnFarbe}fünf} Tage:\\
-${\color{blue}\FAKTORBA{b}\FAKTORAQ{a}}={\color{blue}3}$, ${\color{red}\FAKTORBA{a}\FAKTORAQ{q}}={\color{red}4}$, ${\color{farnFarbe}\tau}={\color{farnFarbe}5}$
-$$f(t)= {\color{blue}3}\cdot{}{\color{red}4}^\frac{t}{\color{farnFarbe}5}$$
+sich alle {\color{farnFarb}fünf} Tage:\\
+${\color{blue}\FAKTORBA{b}\FAKTORAQ{a}}={\color{blue}3}$, ${\color{red}\FAKTORBA{a}\FAKTORAQ{q}}={\color{red}4}$, ${\color{farnFarb}\tau}={\color{farnFarb}5}$
+$$f(t)= {\color{blue}3}\cdot{}{\color{red}4}^\frac{t}{\color{farnFarb}5}$$
 \end{tcolorbox}
 \FAKTORAQ{\bbwCenterGraphic{8cm}{ExponentialfctAQ.png}}
 \FAKTORBA{\bbwCenterGraphic{8cm}{ExponentialfctAB.png}}
@@ -778,6 +772,7 @@ $$f(0) = c-a$$}
 
 %%\mmPapier{14}
 
+\headerUndFooterJedeSeite{}
 \newpage
 \headerUndFooterJedeSeite{}
 
@@ -939,8 +934,8 @@ $p_i = f_i\cdot{}100\%$ &$=$& prozentuale Häufigkeit%%\\
 %\item Daten in TR eingeben \tiprobutton{data}...
 %\item ... und mit \tiprobutton{2nd} \tiprobutton{data_stat-reg-distr} auslesen.
 %\item {\color{orange} Median ($\mediantilde{x} = x_{\textrm{MED}}$)},
-%und Quartile ({\color{blue}$Q_1$}, {\color{farnFarbe}$Q_3$})einzeichnen
-%\item IQR := {\color{farnFarbe}Q3}-{\color{blue}Q1} rechnen
+%und Quartile ({\color{blue}$Q_1$}, {\color{farnFarb}$Q_3$})einzeichnen
+%\item IQR := {\color{farnFarb}Q3}-{\color{blue}Q1} rechnen
 %\item IQR mit 1.5 multiplizieren
 %\item {\color{red} untere Ausreisserschwelle\\ uAs} $ = Q_1 -
 %1.5\cdot{}\textrm{IQR}$\\ und {\color{red} obere Ausreisserschwelle\\ oAs} $=Q_3 + 1.5\cdot{}\textrm{IQR}$\\ (ausradierbar) fein markieren (gehören nicht zum Boxplot)
@@ -965,10 +960,10 @@ $p_i = f_i\cdot{}100\%$ &$=$& prozentuale Häufigkeit%%\\
 Schritte zum Boxplot:\\
 Fühler (Whisker) werden auf max. $1.5\cdot\textrm{IQR}$ begrenzt ({\color{blue} Ausreisserschwellen blau})
 \ifdefined\versionHECH%%
-danach nach \textit{\color{farnFarbe}innen} gehen
+danach nach \textit{\color{farnFarb}innen} gehen
 \fi%%
 : Fühler sind die von der Box
-entferntesten Nicht-Ausreisser ({\color{farnFarbe}grün}). Ausreisser
+entferntesten Nicht-Ausreisser ({\color{farnFarb}grün}). Ausreisser
 ({\color{red} rot}) werden markiert.
 \bbwCenterGraphic{18cm}{boxplotRLP.png}
 
@@ -1011,14 +1006,14 @@ Bei $n$ Elementen gibt es $n!$ Permutationen (=Vertauschungen):
 
 
 
-\def\missifarbig{M{\color{farnFarbe}i}{\color{red}ss}{\color{farnFarbe}i}{\color{red}ss}{\color{farnFarbe}i}{\color{cyan}pp}{\color{farnFarbe}i}}
+\def\missifarbig{M{\color{farnFarb}i}{\color{red}ss}{\color{farnFarb}i}{\color{red}ss}{\color{farnFarb}i}{\color{cyan}pp}{\color{farnFarb}i}}
 
 \vspace{3mm}
 \textbf{Permutation mit Wiederholung}
 
 oder «\missifarbig»-Formel: Sind bei einer Permutation (Vertauschung) einige Elemente gleich, so reduziert
 sich die Anzahl der Möglichkeiten. Wie viele verschiedene Wörter sind mit den Buchstaben des Wortes «\missifarbig» bildbar?
-$$N = \frac{11!}{{\color{farnFarbe}4}!\cdot{}{\color{red}4}!\cdot{}{\color{cyan}2}!}$$
+$$N = \frac{11!}{{\color{farnFarb}4}!\cdot{}{\color{red}4}!\cdot{}{\color{cyan}2}!}$$
 
 
 
@@ -1088,16 +1083,16 @@ $$P(E) = \frac{\textrm{Anzahl Ergebnisse in
 Bsp.: Zwei Mal eine \textit{unfaire} Münze werfen
 \bbwCenterGraphic{75mm}{img/WahrscheinlichkeitBaumdiagramm.pdf}
 
-Wahrscheinlichkeiten {\color{farnFarbe}entlang} eines Pfades werden {\color{farnFarbe}multipliziert}:
+Wahrscheinlichkeiten {\color{farnFarb}entlang} eines Pfades werden {\color{farnFarb}multipliziert}:
 $$P(KK) = 0.6\cdot0.6=0.36$$
 
 Wahrscheinlichkeiten {\color{red}verschiedener} Pfade werden
 {\color{red}addiert}:
 
 \begin{tabular}{rcl}
-${\color{red}P}({\color{farnFarbe}KK} \textrm{\color{red} oder } {\color{blue}ZZ})$ &=&
-  $P({\color{farnFarbe}KK}) {\color{red}+} P({\color{blue}ZZ})$\\
-  &=&${\color{farnFarbe}0.6\cdot0.6} {\color{red}+} {\color{blue}0.4\cdot0.4}$
+$P({\color{farnFarb}KK} \textrm{\color{red}\, oder\, } {\color{blue}ZZ})$ &=&
+  $P({\color{farnFarb}KK})\ {\color{red}+}\ P({\color{blue}ZZ})$\\
+  &=&${\color{farnFarb}0.6\cdot0.6} \ {\color{red}+}\ {\color{blue}0.4\cdot0.4}$
 \end{tabular}
 
 \forceCB{}
@@ -1135,7 +1130,7 @@ $p$ = Trefferwahrscheinlichkeit\\
 Taschenrechner: \textbf{\texttt{binomialcdf}}
 \end{tcolorbox}
 
-%%\forceCB{}
+\forceCB{}
 
 \subsection*{Lottomodell}
 (Hypergeometrische Verteilung)
@@ -1211,16 +1206,16 @@ Beispiel: 3 Münzen gleichzeitig werfen K = „Kopf“, Z = „Zahl“.
 Zufallsgrösse $X$ sei \zB die Anzahl „Köpfe“.
 Dem Ergebnis (KKZ) wird somit die Zahl 2 zugeordnet.
 
-\subsubsection*{Erwartungswert $\mu$ derZufallsgrösse $\mathbf{X}$}
-$\mu$ gibt den auf lange Sicht zu erwartenden Mittelwert der
-Zufallsgrösse an:
+%\subsubsection*{Erwartungswert $\mu$ derZufallsgrösse $\mathbf{X}$}
+%$\mu$ gibt den auf lange Sicht zu erwartenden Mittelwert der
+%Zufallsgrösse an:
 
-\begin{tabular}{cp{5cm}}
-\hline\\
-\raisebox{-4mm}{\fbox{$\mu=\sum\limits_{i=1}^n x_i\cdot{}p_i$}} & $x_i$ = $i$-ter Wert der
-Zufallsgrösse. $p_i$ = Wahrscheinlichkeit  $P(X=x_i)$\\
- \hline
- \end{tabular}
+%\begin{tabular}{cp{5cm}}
+%\hline\\
+%\raisebox{-4mm}{\fbox{$\mu=\sum\limits_{i=1}^n x_i\cdot{}p_i$}} & $x_i$ = $i$-ter Wert der
+%Zufallsgrösse. $p_i$ = Wahrscheinlichkeit  $P(X=x_i)$\\
+% \hline
+% \end{tabular}
 
 %%\forceCB{}
 
@@ -1276,6 +1271,7 @@ $$P(G | F) = \frac{\textrm{Anzahl gesunde Frauen}}{\textrm{Anzahl Frauen}}=  \fr
 
 
 %% Leerseiten für Notizen
+\headerUndFooterJedeSeite{}
 \newpage
 \headerUndFooterJedeSeite{}
 
