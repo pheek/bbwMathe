@@ -13,10 +13,10 @@ pdflatex FormelsammlungGESO_RLP.tex
 pdflatex FormelsammlungGESO_RLP.tex
 
 #Sonderwunsch Steve: Weiße Blätter dazwischen
-pdflatex FormelsammlungGESO_DEST.tex
-pdflatex FormelsammlungGESO_DEST.tex
-./mkSteve.sh
-mv steve.pdf FormelsammlungGESO_DEST.pdf
+#pdflatex FormelsammlungGESO_DEST.tex
+#pdflatex FormelsammlungGESO_DEST.tex
+#./mkSteve.sh
+#mv steve.pdf FormelsammlungGESO_DEST.pdf
 
 rm ./doc_data.txt
 ./clean.sh

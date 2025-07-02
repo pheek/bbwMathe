@@ -1,15 +1,9 @@
 %% Formelsammlung GESO BBW
-%% 2023 fp @ bbw.ch
+%% 2023-2025 fp @ bbw.ch
 %%
 
-
-%% Alle Kommandos und entsprechende...
-%\input{IFCOMMANDS.sty}
-%% ... Auswahlen
-%\input{VERSION.sty}
-
-\newcommand{\versionsDatumFoSa}{2024-04-25}
-\newcommand{\versionIdSubRev}{0.5.1}
+\newcommand{\versionsDatumFoSa}{2025-07-02}
+\newcommand{\versionIdSubRev}{0.5.2}
 \newcommand{\versionsnummerFoSa}{\versionsDatumFoSa{} \versionIdSubRev\,\,\versionMANDANT}
 
 \input{bmsLayoutPage}
@@ -19,17 +13,23 @@
 \renewcommand{\metaHeaderLine}{Formelsammlung --- gesundheitlich-soziale Berufsmaturität}%% END HEADERFOOTER
 \renewcommand{\geometrieErsteSeite}{\newgeometry{left=7mm,right=7mm,top=22mm,bottom=15mm}}
 
+\definecolor{dunklesGruen}{HTML}{408000}%% muss noch angepasst werden
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Aussehen von Header/Footer
+
+% offset: Wie weit von links/bzw rechts ist die Seitennummerierung:
 \fancyhfoffset[RO]{0mm}
 \fancyhfoffset[LO]{2mm}
 
-%%\fancyhf[LE,FLO,FRE,FRO]{}%% Überscrheibe Titel
-%%\MITHEADERFOOTER{\fancyhf[LE,FLO,FR]{Seite \thepage{}}}%% Überscrheibe Titel
+%% leere alle Header/footer
+\fancyhf[FL,FC,FR,HL,HC,HR]{}%% Überscrheibe Titel
 \newcommand{\headerUndFooterErsteSeite}{%%
-\thispagestyle{fancy} \fancyhf[HC]{\metaHeaderLine} \fancyhf[HR]{\thepage{}} \fancyhf[HL]{}  \fancyhf[FR]{} \fancyhf[FC]{}%%
+\thispagestyle{fancy} \fancyhf[HC]{\metaHeaderLine} \fancyhf[HR]{\thepage{}}%%
 }%% END newcommand "headerUndFooterJedeSeite
 
 \newcommand{\headerUndFooterJedeSeite}{%%
-\thispagestyle{fancy} \fancyhf[HRE]{} \fancyhf[HRO]{\thepage{}} \fancyhf[HC]{} \fancyhf[HLO]{} \fancyhf[HLE]{\thepage{}} \fancyhf[FR]{} \fancyhf[FC]{}%%
+\thispagestyle{fancy} \fancyhf[HRE]{} \fancyhf[HRO]{\thepage{}} \fancyhf[HLO]{} \fancyhf[HLE]{\thepage{}}%%
 }%% END newcommand "headerUndFooterJedeSeite
 
 \renewcommand{\footrulewidth}{0pt}
@@ -101,20 +101,20 @@
 
 \section*{Dezimalzahlen}
 \subsection*{Runden}
-Bsp.: Runden auf \textbf{\color{farnFarb}vier}  Dezimalen.
+Bsp.: Runden auf \textbf{\color{dunklesGruen}vier}  Dezimalen.
 Betrachte die nächste Ziffer und runde auf, falls diese
 {\color{red}Ziffer} $\ge 5$. Bsp.:
 
-$3.\mathbf{\color{farnFarb}4729}\mathbf{\color{red}6}44 \approx 3.\mathbf{\color{farnFarb}4730}$; \hfill{ }
-$70.\mathbf{\color{farnFarb}0031}\mathbf{\color{red}4}998\approx 70.\mathbf{\color{farnFarb}0031}$
+$3.\mathbf{\color{dunklesGruen}4729}\mathbf{\color{red}6}44 \approx 3.\mathbf{\color{dunklesGruen}4730}$; \hfill{ }
+$70.\mathbf{\color{dunklesGruen}0031}\mathbf{\color{red}4}998\approx 70.\mathbf{\color{dunklesGruen}0031}$
 
 (Alle vier Dezimalen sind anzugeben.)
 
 \MITSIGNIFIKANTENSTELLEN{\subsection*{Signifikante Stellen}
 Führende Nullen zählen nicht, nachfolgende Nullen
-zählen. Bsp. \textbf{\color{farnFarb}vier} signifikante Stellen:
+zählen. Bsp. \textbf{\color{dunklesGruen}vier} signifikante Stellen:
 
-$$\mathbf{\color{farnFarb}208.0} \textrm{ cm} = \mathbf{\color{farnFarb}2.080} \textrm{ m} = 0.00\mathbf{\color{farnFarb}2080} \textrm{ km}$$
+$$\mathbf{\color{dunklesGruen}208.0} \textrm{ cm} = \mathbf{\color{dunklesGruen}2.080} \textrm{ m} = 0.00\mathbf{\color{dunklesGruen}2080} \textrm{ km}$$
 }%% END MITSIGNIFIKANTENSTELLEN
 
 \MITWISSENSCHAFTLICHERNOTATION{%%
@@ -217,13 +217,13 @@ $$x^2+2x-15 = (x+5)(x-3)$$
 
 \subsection*{Summenzeichen}
 
-  $${\color{farnFarb}\sum_{{\color{red}k}{{\color{farnFarb}{\color{black}=}\color{blue}1}}}^{\color{blue}n\color{farnFarb}}}
-  {\color{orange}T(}{{\color{red}k}}{\color{orange})} = {\color{orange}T(}{\color{blue}1}{\color{orange})} {\color{farnFarb}+} {\color{orange}T(}{\color{blue}2}{\color{orange})} {\color{farnFarb}+}
-  ... {\color{farnFarb}+} {\color{orange}T(}{\color{blue}n}{\color{orange})}$$
+  $${\color{dunklesGruen}\sum_{{\color{red}k}{{\color{dunklesGruen}{\color{black}=}\color{blue}1}}}^{\color{blue}n\color{dunklesGruen}}}
+  {\color{orange}T(}{{\color{red}k}}{\color{orange})} = {\color{orange}T(}{\color{blue}1}{\color{orange})} {\color{dunklesGruen}+} {\color{orange}T(}{\color{blue}2}{\color{orange})} {\color{dunklesGruen}+}
+  ... {\color{dunklesGruen}+} {\color{orange}T(}{\color{blue}n}{\color{orange})}$$
 
 Beispiel
 
-  $${\color{farnFarb}\sum_{{\color{red}x}{{\color{farnFarb}{\color{black}=}\color{blue}3}}}^{\color{blue}5\color{farnFarb}}}  {\color{red}x}^{{\color{orange}7}} = {\color{blue}3}^{\color{orange}7} {\color{farnFarb}+} {\color{blue}4}^{\color{orange}7} {\color{farnFarb}+} {\color{blue}5}^{\color{orange}7}$$
+  $${\color{dunklesGruen}\sum_{{\color{red}x}{{\color{dunklesGruen}{\color{black}=}\color{blue}3}}}^{\color{blue}5\color{dunklesGruen}}}  {\color{red}x}^{{\color{orange}7}} = {\color{blue}3}^{\color{orange}7} {\color{dunklesGruen}+} {\color{blue}4}^{\color{orange}7} {\color{dunklesGruen}+} {\color{blue}5}^{\color{orange}7}$$
 
 \TRAINER{TR nur am Schluss?}
 %%Taschenrechner (\texttt{sum}): \tiprobutton{math}\tiprobutton{5}
@@ -327,9 +327,9 @@ $$e \approx 2.71828 \textrm{ = Eulersche Konstante}$$
 \ALLELOGGESETZE{$$\log(u : v) = \log(u) - \log(v)$$}
 
 \FAKTORBA{$$\log(b^x) = x\cdot{}\log(b)$$
-$$\log_{\color{farnFarb}a}({\color{red}b}) = \frac{\lg({\color{red}b})}{\lg({\color{farnFarb}a})} = \frac{\ln({\color{red}b})}{\ln({\color{farnFarb}a})}$$}
+$$\log_{\color{dunklesGruen}a}({\color{red}b}) = \frac{\lg({\color{red}b})}{\lg({\color{dunklesGruen}a})} = \frac{\ln({\color{red}b})}{\ln({\color{dunklesGruen}a})}$$}
 \FAKTORAQ{$$\log(a^x) = x\cdot{}\log(a)$$
-$$\log_{\color{farnFarb}b}({\color{red}a}) = \frac{\lg({\color{red}a})}{\lg({\color{farnFarb}b})} = \frac{\ln({\color{red}a})}{\ln({\color{farnFarb}b})}$$}
+$$\log_{\color{dunklesGruen}b}({\color{red}a}) = \frac{\lg({\color{red}a})}{\lg({\color{dunklesGruen}b})} = \frac{\ln({\color{red}a})}{\ln({\color{dunklesGruen}b})}$$}
 \end{tcolorbox}%
 %
 %%\RLP{\forceCB{}}%%
@@ -434,12 +434,12 @@ $$\LoesungsMenge{}_{(x | y)} = \{(8 | -3)\}$$
 \subsection*{Substitution}
 Beispiel Bruchgleichungssysteme:
 
-\gleichungZZ{{\color{farnFarb}\frac6{x+1}} + {\color{red}\frac8{y-2}}}{11}{{\color{farnFarb}\frac2{x+1}} - {\color{red}\frac{10}{y-2}}}{-9}
+\gleichungZZ{{\color{dunklesGruen}\frac6{x+1}} + {\color{red}\frac8{y-2}}}{11}{{\color{dunklesGruen}\frac2{x+1}} - {\color{red}\frac{10}{y-2}}}{-9}
 Substituiere
-${\color{farnFarb}a}={\color{farnFarb}\frac1{x+1}}$ und
+${\color{dunklesGruen}a}={\color{dunklesGruen}\frac1{x+1}}$ und
 ${\color{red}b} = {\color{red}\frac1{y-2}}$:
 
-\gleichungZZ{{6\color{farnFarb}a} + 8{\color{red}b}}{11}{2{\color{farnFarb}a} - 10{\color{red}b}}{-9}
+\gleichungZZ{{6\color{dunklesGruen}a} + 8{\color{red}b}}{11}{2{\color{dunklesGruen}a} - 10{\color{red}b}}{-9}
 
 $$a=\frac12, b=1$$
 Dann: Rücksubstitution
@@ -496,7 +496,7 @@ $$p = -3\% \Longleftrightarrow{}  a = 0.97 $$
 
 
 Eine Funktion ist eine {\color{red} eindeutige Zuordnung}. Dabei wird
-jedem {\color{farnFarb}x} aus der {\color{farnFarb}Definitionsmenge
+jedem {\color{dunklesGruen}x} aus der {\color{dunklesGruen}Definitionsmenge
 $\DefinitionsMenge{}$} eindeutig ein {\color{blue}y} aus der
 {\color{blue}Wertemenge $\Wertebereich{}$} zugeordnet. Beispiel:
 
@@ -668,16 +668,16 @@ Wachstum:
 
 \begin{tcolorbox}[colback=white]
 Wachstum bezogen auf eine Zeitspanne  
-  $$f(t) = {\color{blue}\FAKTORBA{b}\FAKTORAQ{a}}\cdot{}{\color{red}\FAKTORBA{a}\FAKTORAQ{q}}^{\frac{t}{\color{farnFarb}\tau}}$$
+  $$f(t) = {\color{blue}\FAKTORBA{b}\FAKTORAQ{a}}\cdot{}{\color{red}\FAKTORBA{a}\FAKTORAQ{q}}^{\frac{t}{\color{dunklesGruen}\tau}}$$
   \begin{tabular}{ccp{60mm}}
-$\color{farnFarb}\tau$ &=& Beobachtungsintervall zu $\color{red}\FAKTORBA{a}\FAKTORAQ{q}$\\
-    $\color{red}\FAKTORBA{a}\FAKTORAQ{q}$ &=& Wachstums(bzw. Zerfalls)rate im Zeit\-raum $\color{farnFarb}\tau$
+$\color{dunklesGruen}\tau$ &=& Beobachtungsintervall zu $\color{red}\FAKTORBA{a}\FAKTORAQ{q}$\\
+    $\color{red}\FAKTORBA{a}\FAKTORAQ{q}$ &=& Wachstums(bzw. Zerfalls)rate im Zeit\-raum $\color{dunklesGruen}\tau$
     \end{tabular}
 
 Beispiel: Die Algen mit Startwert von ${\color{blue}3} \textrm{ m}^2$ ver{\color{red}vier}fachen
-sich alle {\color{farnFarb}fünf} Tage:\\
-${\color{blue}\FAKTORBA{b}\FAKTORAQ{a}}={\color{blue}3}$, ${\color{red}\FAKTORBA{a}\FAKTORAQ{q}}={\color{red}4}$, ${\color{farnFarb}\tau}={\color{farnFarb}5}$
-$$f(t)= {\color{blue}3}\cdot{}{\color{red}4}^\frac{t}{\color{farnFarb}5}$$
+sich alle {\color{dunklesGruen}fünf} Tage:\\
+${\color{blue}\FAKTORBA{b}\FAKTORAQ{a}}={\color{blue}3}$, ${\color{red}\FAKTORBA{a}\FAKTORAQ{q}}={\color{red}4}$, ${\color{dunklesGruen}\tau}={\color{dunklesGruen}5}$
+$$f(t)= {\color{blue}3}\cdot{}{\color{red}4}^\frac{t}{\color{dunklesGruen}5}$$
 \end{tcolorbox}
 \FAKTORAQ{\bbwCenterGraphic{8cm}{ExponentialfctAQ.png}}
 \FAKTORBA{\bbwCenterGraphic{8cm}{ExponentialfctAB.png}}
@@ -934,8 +934,8 @@ $p_i = f_i\cdot{}100\%$ &$=$& prozentuale Häufigkeit%%\\
 %\item Daten in TR eingeben \tiprobutton{data}...
 %\item ... und mit \tiprobutton{2nd} \tiprobutton{data_stat-reg-distr} auslesen.
 %\item {\color{orange} Median ($\mediantilde{x} = x_{\textrm{MED}}$)},
-%und Quartile ({\color{blue}$Q_1$}, {\color{farnFarb}$Q_3$})einzeichnen
-%\item IQR := {\color{farnFarb}Q3}-{\color{blue}Q1} rechnen
+%und Quartile ({\color{blue}$Q_1$}, {\color{dunklesGruen}$Q_3$})einzeichnen
+%\item IQR := {\color{dunklesGruen}Q3}-{\color{blue}Q1} rechnen
 %\item IQR mit 1.5 multiplizieren
 %\item {\color{red} untere Ausreisserschwelle\\ uAs} $ = Q_1 -
 %1.5\cdot{}\textrm{IQR}$\\ und {\color{red} obere Ausreisserschwelle\\ oAs} $=Q_3 + 1.5\cdot{}\textrm{IQR}$\\ (ausradierbar) fein markieren (gehören nicht zum Boxplot)
@@ -960,10 +960,10 @@ $p_i = f_i\cdot{}100\%$ &$=$& prozentuale Häufigkeit%%\\
 Schritte zum Boxplot:\\
 Fühler (Whisker) werden auf max. $1.5\cdot\textrm{IQR}$ begrenzt ({\color{blue} Ausreisserschwellen blau})
 \ifdefined\versionHECH%%
-danach nach \textit{\color{farnFarb}innen} gehen
+danach nach \textit{\color{dunklesGruen}innen} gehen
 \fi%%
 : Fühler sind die von der Box
-entferntesten Nicht-Ausreisser ({\color{farnFarb}grün}). Ausreisser
+entferntesten Nicht-Ausreisser ({\color{dunklesGruen}grün}). Ausreisser
 ({\color{red} rot}) werden markiert.
 \bbwCenterGraphic{18cm}{boxplotRLP.png}
 
@@ -1006,14 +1006,14 @@ Bei $n$ Elementen gibt es $n!$ Permutationen (=Vertauschungen):
 
 
 
-\def\missifarbig{M{\color{farnFarb}i}{\color{red}ss}{\color{farnFarb}i}{\color{red}ss}{\color{farnFarb}i}{\color{cyan}pp}{\color{farnFarb}i}}
+\def\missifarbig{M{\color{dunklesGruen}i}{\color{red}ss}{\color{dunklesGruen}i}{\color{red}ss}{\color{dunklesGruen}i}{\color{cyan}pp}{\color{dunklesGruen}i}}
 
 \vspace{3mm}
 \textbf{Permutation mit Wiederholung}
 
 oder «\missifarbig»-Formel: Sind bei einer Permutation (Vertauschung) einige Elemente gleich, so reduziert
 sich die Anzahl der Möglichkeiten. Wie viele verschiedene Wörter sind mit den Buchstaben des Wortes «\missifarbig» bildbar?
-$$N = \frac{11!}{{\color{farnFarb}4}!\cdot{}{\color{red}4}!\cdot{}{\color{cyan}2}!}$$
+$$N = \frac{11!}{{\color{dunklesGruen}4}!\cdot{}{\color{red}4}!\cdot{}{\color{cyan}2}!}$$
 
 
 
@@ -1083,16 +1083,16 @@ $$P(E) = \frac{\textrm{Anzahl Ergebnisse in
 Bsp.: Zwei Mal eine \textit{unfaire} Münze werfen
 \bbwCenterGraphic{75mm}{img/WahrscheinlichkeitBaumdiagramm.pdf}
 
-Wahrscheinlichkeiten {\color{farnFarb}entlang} eines Pfades werden {\color{farnFarb}multipliziert}:
+Wahrscheinlichkeiten {\color{dunklesGruen}entlang} eines Pfades werden {\color{dunklesGruen}multipliziert}:
 $$P(KK) = 0.6\cdot0.6=0.36$$
 
 Wahrscheinlichkeiten {\color{red}verschiedener} Pfade werden
 {\color{red}addiert}:
 
 \begin{tabular}{rcl}
-$P({\color{farnFarb}KK} \textrm{\color{red}\, oder\, } {\color{blue}ZZ})$ &=&
-  $P({\color{farnFarb}KK})\ {\color{red}+}\ P({\color{blue}ZZ})$\\
-  &=&${\color{farnFarb}0.6\cdot0.6} \ {\color{red}+}\ {\color{blue}0.4\cdot0.4}$
+$P({\color{dunklesGruen}KK} \textrm{\color{red}\, oder\, } {\color{blue}ZZ})$ &=&
+  $P({\color{dunklesGruen}KK})\ {\color{red}+}\ P({\color{blue}ZZ})$\\
+  &=&${\color{dunklesGruen}0.6\cdot0.6} \ {\color{red}+}\ {\color{blue}0.4\cdot0.4}$
 \end{tabular}
 
 \forceCB{}

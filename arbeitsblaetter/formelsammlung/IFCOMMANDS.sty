@@ -63,12 +63,14 @@
 \fi}%% End New Command HALBWERTSZEITMITTAU
 \isHALBWERTSZEITMITTAUfalse%%
 
+
 %% Zeigt die Grafik "Skalentypen" bei Datenanalyse
 \newif\ifisMITSKALENTYPEN%%
 \newcommand\MITSKALENTYPEN[1]{\ifisMITSKALENTYPEN%%
 #1%%
 \fi}%% End New Command MITSKALENTYPEN
 \isMITSKALENTYPENfalse%%
+
 
 %% Zeigt bei Zahldarstellungen/Runden auch das Kapitel
 %% «Mit Signifikanten Stellen Runden»
@@ -78,6 +80,7 @@
 \fi}%% End New Command MITSIGNIFIKANTENSTELLEN
 \isMITSIGNIFIKANTENSTELLENfalse%%
 
+
 %% Zeigt bei Zahldarstellungen/Runden auch das Kapitel
 %% «Mit Wissenschaftliche Notation»
 \newif\ifisMITWISSENSCHAFTLICHERNOTATION%%
@@ -85,6 +88,7 @@
 #1%%
 \fi}%% End New Command MITWISSENSCHAFTLICHERNOTATION
 \isMITWISSENSCHAFTLICHERNOTATIONtrue%%
+
 
 %% Sollen ALLE drei Log-Gesetze gezeigt werden, dann TRUEN
 %% Ansonsten werden nur die im Rahmenlehrplan geforderten
@@ -95,6 +99,7 @@
 \fi}%% End New Command ALLE LOG GESETZE
 \isALLELOGGESETZEfalse%%
 
+
 %%
 %% DEfinition, was bei statistischen Variablen ROBUST sein soll.
 %%
@@ -104,12 +109,15 @@
 \fi}%% End New Command ROBUSTDEFINITION
 \isROBUSTDEFINITIONtrue%%
 
+
 \newif\ifisPOTENZEINSDAZU%% a^n = 1* a*a... anstatt a*a*...
 \newcommand\POTENZEINSDAZU[1]{\ifisPOTENZEINSDAZU%%
 #1%%
 \fi}%% End New Command SCHWARZETITEL
 \isPOTENZEINSDAZUfalse%%
 
+
+%% Formeln erscheinen in ARIAL, nicht Times
 \newif\ifisFORMELNARIAL%%
 \newcommand\FORMELNARIAL[1]{\ifisFORMELNARIAL%%
 #1%%
