@@ -17,28 +17,30 @@ Drücken Sie $k$ durch $r$ aus!
 
 
 \TNTeop{
-  Pythagoras in den beiden Dreiecken:
+  Pythagoras in den beiden Dreiecken
+  (o.\,B.\,d.\,A.\footnote{o.\,B.\,d.\,A. = ohne Beschränkung der Allgemeinheit}: $r=1$):
 
-  $$(r+x)^2 + k^2 = (r+k)^2$$
-  $$x^2 + k^2 = (r-k)^2$$
+  $$(1+x)^2 + k^2 = (1+k)^2$$
+  $$x^2 + k^2 = (1-k)^2$$
 
   Von Hand (obwohl mit TR rascher)
   Erste Gleichung ausmultiplizieren und vereinfachen:
   
-  $$(I)  \hspace{18mm} 2rx + x^2 = 2rk$$
-  $$(II) \hspace{18mm}  x^2 = r^2-2rk \Longrightarrow  x = \sqrt{r^2-2rk}$$
+  $$(I)  \hspace{18mm} 1+2x+x^2 + k^2 = 1+2k+k^2 \Longrightarrow 2x + x^2 = 2k$$
+  $$(II) \hspace{18mm}  x^2 = 1-2k \Longrightarrow  x = \sqrt{1-2k}$$
   (II) in (I) einsetzen:
-  $$2r\sqrt{r^2-2rk} + r^2 -2rk = 2rk$$
+  $$2\sqrt{1-2k} + 1 -2k = 2k$$
   zusammenfassen:
-  $$2r\sqrt{r^2 - 2rk} = 4rk-r^2$$
-  durch $2r$ teilen
-  $$\sqrt{r^2-2rk} = 2 k-\frac{r}2$$
-  quadrieren
-  $$r^2-2rk = 4k^2-2rk+\frac14 r^2$$
-  zusammenfassen
-  $$\frac34 r^2 = 4k^2$$
-  durch 16 teilen und die Wurzel ziehen:
-  $$k^2 = \frac{3r^2}{16} \Longrightarrow   k = \frac{\sqrt{3}r}{4}$$
+  $$2\sqrt{1 - 2k} = 4k-1$$
+  durch $2$ teilen
+  $$\sqrt{1-2k} =  2k-\frac12$$
+  quadrieren (rechts: binom. Formel)
+  $$1-2k = 4k^2-2k+\frac14$$
+  $+2k$, dann zusammenfassen
+  $$\frac34  = 4k^2$$
+  durch 4 teilen und die Wurzel ziehen:
+  $$k^2 = \frac3{16} \Longrightarrow   k = \frac{\sqrt{3}}4$$
+  Da $r=1$ folgt $k = \frac{\sqrt{3}}4 \cdot{}r \approx 0.433 \cdot{} r$
 
   
 }%% END TNT
