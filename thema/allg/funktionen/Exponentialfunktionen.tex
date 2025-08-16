@@ -57,20 +57,20 @@ Zeichnen Sie die Funktionen $f: y=2^x$, $g: y=2^{-x}$ und $h: y=\left(\frac12\ri
   \TRAINER{\bbwLetter{-5,4}{g(x)=2^{-x}=\left(\frac{1}{2}\right)^x=h(x)}{red}}
 }
 
-Bemerkung: \TRAINER{$$2^{-x} = \frac1{2^x} = \frac{1^x}{2^x}= \left(\frac12\right)^x$$}
-\newpage
+Bemerkung:
+\TNT{2}{$$2^{-x} = \frac1{2^x} = \frac{1^x}{2^x}= \left(\frac12\right)^x$$}
+%%\newpage
 
 
 
-\subsubsection{Umkehrung\GESO{ (optional)}}
-Um eine Exponentialfunktion an der $y$-Achse zu spiegeln, können wir entweder
-die Zeitachse umdrehen oder den Kehrwert der Basis verwenden.
+\subsubsection{Spiegelung an der $y$-Achse\GESO{ (optional)}}
 
-Mit $d := \frac1a $ gilt:
-
-\begin{center}
-  \fbox{$a^{+x} = \left(\frac1a\right)^{-x} = d^{-x} $}
-\end{center}
+\begin{bbwFillInTabular}{c|c}
+  Original & Spiegelbild \\\hline
+  $f(x)$ & $g(x)$ \\\hline
+  $a^x$  & \TRAINER{$a^{-x}$}\noTRAINER{\hspace{3cm}}  \\\hline
+  $a^x$  & \TRAINER{$\left({\frac1a}\right)^{x}$}\noTRAINER{\hspace{3cm}}  \\
+  \end{bbwFillInTabular}
 
 
 \newpage
@@ -79,27 +79,27 @@ Mit $d := \frac1a $ gilt:
 
 Eine Verschiebung der Exponentialfunktion $y=b\cdot{}a^x$ in der Zeit ($x$-Richtung) kann auch in Form einer Veränderung der Startfaktors $b$ umgeschrieben werden.
 
-Verschieben wir \zB $$y=2^x$$ um fünf Einheiten nach rechts, so liest sich die neue Funktionsgleichung wie folgt:
-$$y=2^{x-5}.$$
+Verschieben wir \zB $$y=2^x$$ um \textbf{fünf Einheiten nach rechts}, so liest sich die neue Funktionsgleichung wie folgt:
+\TNT{1.2}{$$y=2^{x-5}.$$}
 
-(Zeichnen Sie in \texttt{geogebra.org} a) $y=2^x$ und b) $y=2^{x-5}$.)
+Zeichnen Sie noch $y=2^{x-5}$:
 
-Dies kann jedoch auch umgeschrieben werden:
+\TRAINER{\bbwCenterGraphic{10cm}{allg/funktionen/img/exp/verschiebung_gleich_streckung.png}
+}%%
+\noTRAINER{\bbwFunction{-1}{10}{-1}{5}{exp(0.69315*\x)}{-1:2.322}
+}%% end NoTrainer
 
-\TNT{2.8}{
+
+$2^{x-5}$ kann jedoch auch umgeschrieben werden:
+
+\TNT{2}{
 $$2^{x-5} = 2^x \cdot{} 2^{-5} = 2^{-5} \cdot{} 2^x = \frac{1}{2^5} \cdot{} 2^x =
 \frac{1}{32}\cdot{}2^x$$
 }%% end TNT
 
-\TRAINER{\bbwCenterGraphic{10cm}{allg/funktionen/img/exp/verschiebung_gleich_streckung.png}
-}%%
-\noTRAINER{\bbwFunction{-1}{10}{-1}{5}{0}{-1:10}
-}%% end NoTrainer
-
-
 Eine Verschiebung ($x$-Richtung) der Exponentialfunktion entspricht einer Stauchung ($y$-Richtung) der selben Exponentialfunktion.
 
-\TALS{Es gilt hier $$a^{x-b}=\frac{a^x}{k}$$ mit
+\TALS{Es gilt hier $$a^{x-b}=\frac1k \cdot{} a^x$$ mit
 $k=a^b$ und mit $b=\log_a(k)$.}
 
 \TALS{
