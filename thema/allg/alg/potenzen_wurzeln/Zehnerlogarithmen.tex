@@ -98,7 +98,7 @@ $$\lg(10) = \LoesungsRaumLen{10mm}{1}$$
 \end{gesetz}
 
 \begin{gesetz}{}{}
-$$\lg(1) = \LoesungsRaumLen{10mm}{0}$$
+$$\lg(1) = \LoesungsRaumLen{10mm}{\lg\left(10^0\right) = 0}$$
 \end{gesetz}
 
 
@@ -111,23 +111,22 @@ Wir erinnern uns: $$\sqrt{10} =\LoesungsRaum{ 10^\frac12}$$
 \end{beispiel}
 
 
-\textbf{Beispiel} $\lg(316.23)$ :\\
+\textbf{Beispiel}
+
+Berechnen Sie $x$:
+$$10^x = \sqrt[3]{10^4}$$
 
 
-$\sqrt{10} = 10^{0.5} \approx \LoesungsRaum{3.16227766}$
-\leserluft{}
+Wegen $10^x = p \Longleftrightarrow x=\lg(p)$...
 
-$10^{2.5} \approx \LoesungsRaum{316.227766}$\\
-\TRAINER{, denn $10^{2.5} = 10^{2+0.5} = 10^2 \cdot{} 10^{0.5} = 100\cdot{}\sqrt{10}$.}
-\leserluft{}
+\TNTeop{
+  $$x = \lg\left(\sqrt[3]{10^4}\right)$$
+  $$x = \lg\left(10^{\frac43}\right)$$
+  $$x = \frac43$$
+}%% end TNTeop
 
-$\lg(10^{2.5}) = \LoesungsRaum{2.5}$
-
-\leserluft{}
-
-$\lg(316.23) \approx \LoesungsRaum{2.5000}$
-
-
+  \newpage
+  \subsubsection{Taschenrechner}
 \begin{bemerkung}{Taschenrechner}{}
   Auf vielen amerikanischen Taschenrechnern steht $\log$ für den Zehnerlogarithmus $\lg$.
 
