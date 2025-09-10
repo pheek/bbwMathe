@@ -695,11 +695,15 @@ $$\frac12 \cdot{} f(0) = f(T_{1/2})$$
 Die Halbwertszeit wird insbesondere
   beim radioaktiven Zerfall verwendet. Typische Frage: Nach wie viel
   Jahren strahlt ein Stoff nur noch die Hälfte?
-
+\hrule
 Beispiel: Ein Stoff nimmt innerhalb von sieben Tagen auf 80\% ab. Wie
 groß ist seine Halbwertszeit $T_{1/2}$?
 
+\noTRAINER{\bbwCenterGraphic{85mm}{allg/funktionen/img/exp/HalbwertszeitLeer.png}}
+  \TRAINER{\bbwCenterGraphic{75mm}{allg/funktionen/img/exp/Halbwertszeit.png}}
+
 \TNTeop{
+  
   Ansatz «halber Wert»: $\frac12\cdot{}f(0) = f(T_{1/2})$.
 
   Funktionsgleichung $f(t) = b\cdot{} a^{\frac{t}\tau}$ einsetzen
@@ -707,14 +711,9 @@ groß ist seine Halbwertszeit $T_{1/2}$?
   $$\frac12 \cdot{} b\cdot{} a^{\frac0\tau} = b\cdot{} a^{\frac{T_{1/2}}{\tau}}$$
 
   Vereinfachen
-  $$\frac12 = a^{\frac{T_{1/2}}{\tau}}$$
+  $$\frac12 = a^{\frac{T_{1/2}}{\tau}} \stackrel{\log}{\Longrightarrow}  \log_a\left(\frac12\right) = \frac{T_{1/2}}{\tau}$$
 
-  Logarithmus:
-
-  $$\log_a\left(\frac12\right) = \frac{T_{1/2}}{\tau}$$
-
-  somit
-  $$T_{1/2} = \tau \cdot{} \log_a\left(\frac12\right)$$
+  $$\Longrightarrow T_{1/2} = \tau \cdot{} \log_a\left(\frac12\right)$$
   
   $80\%$ und $7$ Tage einsetzen:
 
@@ -741,7 +740,7 @@ $\tau=T_{1/2}$ und mit $a=\frac12$:
   folgenden Funktion $f$ angegeben werden:
   \leserluft{}
   \leserluft{}  
-  $$f(t) = \LoesungsRaumLen{50mm}{b\cdot{}\left(\frac12\right)^\frac{t}{T_{1/2}}}$$
+  $$f(t) = \LoesungsRaumLen{50mm}{b\cdot{}\left(\frac12\right)^{\frac{t}{T_{1/2}}}}$$
 \end{gesetz}
   
 \newpage
@@ -753,10 +752,23 @@ Analog gilt das Gesetz zur Verdopplung (s. obiges Beispiel Bevölkerung Irlands)
 \begin{gesetz}{Verdopplungszeit}{}
   $$T_2 = \LoesungsRaumLen{40mm}{ \tau \cdot{} \log_a(2)}$$
 
-  $a$: Abnahmefaktor pro Zeiteinheit $\tau$.
-  
+  $a$: Zunahmefaktor pro Zeiteinheit $\tau$.
 \end{gesetz}
 
+\begin{bemerkung}{Verdopplungszeit}{}
+  Ansatz:$$2 \cdot{} f(0) = f(T_2)$$
+  Funktionsterm einsetzen:
+  %%  $$2 \cdot{} b \cdot{} a^{\frac{0)\tau} = b \cdot{} a^{\frac{T_2}\tau}$$
+  $$2 \cdot{} b \cdot{} a^{\frac{0}{\tau}} = b \cdot{} a^{\frac{T_2}{\tau}}$$
+    $$2 = a^{\frac{T_2}\tau}$$
+\end{bemerkung}
+
+\begin{gesetz}{Vervielfachungszeit $T_q$}{}
+  Die Vervielfachungszeit $T_q$ kann durch die Vervielfachung $q$ ausgedrückt werden. Es gilt:
+  $$T_q = \tau\cdot{}\log_a(q)$$
+  und
+  $$f(t) = b\cdot{} q^{\frac{t}{T_q}}$$
+  \end{gesetz}
 
 \subsection*{Aufgaben}
 
