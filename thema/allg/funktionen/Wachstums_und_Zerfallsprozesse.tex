@@ -290,8 +290,17 @@ Zeichnen Sie die Algenpopulation als Graph in eine Koordinatensystem
 (beginnen Sie mit dem Ursprung ganz links unten. $x$-Achse in Tagen ($t$). $y$-Achse in $\text{m}^2$.
 
 \noTRAINER{\bbwCenterGraphic{170mm}{allg/funktionen/img/exp/WachstumTuerlerseeLeer.png}}
-\TRAINER{\bbwCenterGraphic{10cm}{allg/funktionen/img/exp/tuerlerAlgen.png}}
+\TRAINER{\bbwCenterGraphic{150mm}{allg/funktionen/img/exp/tuerlerAlgen.png}}
+
+\TRAINER{In Graphik die Skala $t=$ Tage und $y=\text{m}^2$ noch eintragen.}
+
+\TALS{challenge: Wie lautet die zugehörige Funktionsgleichung?
+
+$$y = f(t) = \LoesungsRaumLen{40mm}{20\cdot{}2^{\frac{t}5}}$$}
+
 \newpage
+
+
 
 \textbf{Funktionsgleichung}
 
@@ -478,7 +487,7 @@ Irland hatte 1990 3.51 Mio. Einwohner. Im Jahr 2019 waren es bereits 4.93 Mio.
 
   $$\frac{T_3}{\tau} = \log_a(3)$$
 
-$$T_3 = \tau\cdot{}\log_a(3) = 29\cdot{}\log_a(3) \approx 93.8$$
+$$T_3 = \tau\cdot{}\log_a(3) = 29\cdot{}\log_{\left(\frac{4.93}{3.51}\right)}(3) \approx 93.8$$
 Die Bevölkerung wird sich voraussichtlich alle 94 Jahren
 verdreifachen.
 
@@ -515,7 +524,7 @@ Maturaprüfung 2018 (Serie 3), Aufg. 11 (Müll)
 \input{allg/funktionen/RateVsFaktor}
 \newpage
 
-\subsection{Umrechnungen\GESO{ (optional)}}
+\subsection{Basistransformtaionen\GESO{ (optional)}}
 Die Algen (im Türlersee) verdoppeln sich alle fünf Tage.
 
 $$\tau = 5; a= 2$$
@@ -544,24 +553,34 @@ Um wie viel nehmen sie ...
 
 \subsubsection*{Lösungen...}
 
-Zu Punkt 1.: $\tau_2=15$:
-\TNT{3.2}{$2^\frac15 = a_2^\frac1{15}$ Nun auf beiden Seiten ``hoch
+Zu Punkt 1.: «Um wie viel nehmen sie alle 15 Tag zu?» $\tau_2=15$:
+
+\TNT{4}{
+
+  $2^\frac15 = a_2^\frac1{15}$ Nun auf beiden Seiten ``hoch
   15'' und somit
 
   $a_2 = (2^{\frac15})^{15} = 2^3 = 8$.
 
 Ergo $b\cdot{}2^\frac{t}5 = b\cdot{} 8^\frac{t}{15}$}
 
-Zu Punkt 2.: $\tau_2=7$:
-\TNT{3.2}{$2^\frac15 = a_2^\frac1{7}$ Nun auf beiden Seiten ``hoch
+Zu Punkt 2.: «Um wie viel nehmen sie alle 7 Tage zu?» $\tau_2=7$:
+
+\TNT{4}{
+
+  $2^\frac15 = a_2^\frac1{7}$ Nun auf beiden Seiten ``hoch
   7'' und somit
 
   $a_2 = (2^{\frac15})^{7} = 2^{\frac75} \approx 2.639$.
 
 Ergo $b\cdot{}2^\frac{t}5 \approx b\cdot{} 2.639^\frac{t}{7}$}
 
-Zu Punkt 3.: $a_2 = 3$ (verdreifachen):
-\TNT{4}{$2^\frac15 = 3^\frac{1}{\tau_2}$ (Definition Logarithmus):
+Zu Punkt 3.: «In wie vielen Tagen verdreifachen sie sich?» $a_2 = 3$
+(verdreifachen):
+
+\TNTeop{
+
+  $2^\frac15 = 3^\frac{1}{\tau_2}$ (Definition Logarithmus):
 
   $\frac1{\tau_2} = \log_3\left(2^\frac15\right)$
 
@@ -572,33 +591,36 @@ Also: Sie verdreifachen sich ca. alle 8 Tage.
   Ergo: $b\cdot{}2^\frac{t}5 \approx b\cdot{}3^\frac{t}{7.925}$
 }%% end TNT
 \newpage
+
+
 \subsubsection*{... natürliche Basen}
-Zu Punkt 4.: Pro Tag.
+Zu Punkt 4.: «Wie viel nehmen die Algen pro Tag (= pro Zeiteinheit) zu?»
 \TNT{5.6}{
-  Generell: $f(t) = b\cdot{} a^t$ mit $a$ = Zunahme pro Zeiteinheit (hier
+
+  Generell: $f(t) = b\cdot{} A^t$ mit $A$ = Zunahme pro Zeiteinheit (hier
   pro Tag)
-  
-$$f(0) \cdot{} 2 = f(5)$$
+
+  Ansatz:
+  $$2\cdot{} f(0) = f(5)$$
+
   Einsetzen:
-  $$b\cdot{}a^0 \cdot{} 2 = b\cdot{} a^5$$
-  $$2 = a^5 | \sqrt[5]{\,}$$
-  $$a = \sqrt[5]{2} \approx 1.1487$$
+  $$2\cdot{} b\cdot{}A^0 = b\cdot{} A^5$$
+  $$2 = A^5 | \sqrt[5]{\,}$$
+  $$A = \sqrt[5]{2} = 2^{\frac15} \approx 1.1487$$
   ergo
   $$f(t)\approx b\cdot{} 1.1487^t$$
 }%% END TNT
 
-Zu Punkt 5.\GESO{ (optional)}: $f(t) = b\cdot{}\e^{m\cdot{}t}$ (Basis $\e$):
-\TNT{6.8}{
-  Auch hier:
+Zu Punkt 5.\GESO{ (optional)}: »Wie sieht es mit der Basis $\e$ aus?» $f(t) = b\cdot{}\e^{m\cdot{}t}$ (Basis $\e$):
+\TNTeop{
+
+  
+  Auch hier Ansatz:
  
-$$f(0) \cdot{} 2 = f(5)$$
+$$2\cdot{} f(0) = f(5)$$
   Funktionsterm einsetzen:
-  $$b\cdot{} e^{m\cdot{} 0} \cdot{} 2= b\cdot{} e^{m\cdot{} 5}$$
+  $$2 \cdot{} b\cdot{} e^{m\cdot{} 0} = b\cdot{} e^{m\cdot{} 5}$$
 
-  Beidseitig durch $b$ teilen: \\
-
-$$e^{m\cdot{} 0}\cdot{} 2 =e^{m\cdot{} 5}$$
-  $e^0 = 1$, daher:
   $$2 = e^{m\cdot{}5}$$
   Beidseitig logarithmieren ($\ln$):
   $$\ln(2) = m \cdot{} 5$$
@@ -617,7 +639,7 @@ $$e^{m\cdot{} 0}\cdot{} 2 =e^{m\cdot{} 5}$$
 \AadBMTA{335ff}{11. a) b),\\15. a) b) [Zeichnen mit \texttt{geogebra.org}],\\ 17. a) b) e), 22. a) b), 25. a) b)}
 
 \newpage
-\subsubsection{Basiswechsel (optional)}
+\subsubsection{Zusammenfassung\GESO{ (optional)}}
 \begin{center}\fbox{
     \textbf{ $\tau$ und $a$ sind voneinander abhängig!}}
   \end{center}
@@ -628,13 +650,6 @@ $$e^{m\cdot{} 0}\cdot{} 2 =e^{m\cdot{} 5}$$
 \end{beispiel}
 
 
-Ansatz:
-\begin{center}\fbox{$b\cdot{}a^{\frac{t}{\tau}} =
-    b\cdot{}a_2^{\frac{t}{\tau_2}} \TALS{ =    b\cdot{}\e^{m\cdot{}t}}  $}
-\end{center}
-
-(Teilen durch $b$ und Ziehen der $t$-ten Wurzel:)
-
 \begin{gesetz}{Basiswechsel}{}
 
   \begin{center}\fbox{\fbox{$a^{\frac{1}{\tau}} =
@@ -642,24 +657,26 @@ Ansatz:
 
  
   $a=$ Wachstumsfaktor\\
+  $b=$ Startwert\\
   $\tau=$ Beobachtungszeitraum\\
-  $a_2, \tau_2=$ Entsprechend neuer Wachstumsfaktor $a_2$ bzw. neues
-  Beobachtungsintervall $\tau_2$ nach dem Basiswechsel\\
+
+  Basis $a$ zum Beobachtungsintervall $\tau$:
+  $$y = b\cdot{} a^{\frac{t}\tau}$$
+
+  Natürliche Basis $A$ zur (Zeit)Einheit:
+
+  $$y = b\cdot{}A^t$$
+  mit $$A=a^{\frac1\tau}$$
+
   \TALS{
-    $\e= $ Eulersche Konstante (2.718...)\\
+    Natürliche Basis $\e\,\, (=2.718...)$:
+
+    $$y=b\cdot{}e^{mt}$$
+mit $$m=\frac{\ln(a)}{\tau}$$
+    
+
     $m = $ \textit{Wachstumsexponent} bei Basis $e$ \\
  }%% end TALS
-  \hrule
-  \vspace{3mm}
-\begin{center}\fbox{\fbox{  $a = a_2^{\frac{\tau}{\tau_2}}$}}\end{center}
-  \vspace{3mm}
-  $a_2 = a^{\frac{\tau_2}{\tau}}$\\
-  \vspace{3mm}
-  $\tau_2=1 : \left(\log_{a_2}\left(a^\frac1\tau\right)\right)$\\
-\TALS{  \vspace{3mm}
-  $m=\ln\left(a^\frac1\tau\right) =
-  \ln\left(a_2^\frac1{\tau_2}\right)$\\
-  }%% end TALS
 \end{gesetz}
 \newpage
 
@@ -671,54 +688,43 @@ Die Zeitspanne, in der sich ein Wert bei exponentiellem Zerfall halbiert, nennen
 \textbf{Halbwertszeit} und bezeichnen diese Zeit mit:
 
 $$T_{1/2}$$
+Ansatz:
+$$\frac12 \cdot{} f(0) = f(T_{1/2})$$
 \end{definition}
 
 Die Halbwertszeit wird insbesondere
-  beim radioaktiven Zerfall verwendet.\footnote{Beispiel: Nach wie viel tausend Jahren strahlt
-  ein Stoff nur noch die Hälfte.}
-
+  beim radioaktiven Zerfall verwendet. Typische Frage: Nach wie viel
+  Jahren strahlt ein Stoff nur noch die Hälfte?
 
 Beispiel: Ein Stoff nimmt innerhalb von sieben Tagen auf 80\% ab. Wie
 groß ist seine Halbwertszeit $T_{1/2}$?
 
-\TNT{16}{
-  Ansatz: $f(t) = b\cdot{}a^{\frac{t}{\tau}}$.
+\TNTeop{
+  Ansatz «halber Wert»: $\frac12\cdot{}f(0) = f(T_{1/2})$.
 
+  Funktionsgleichung $f(t) = b\cdot{} a^{\frac{t}\tau}$ einsetzen
+
+  $$\frac12 \cdot{} b\cdot{} a^{\frac0\tau} = b\cdot{} a^{\frac{T_{1/2}}{\tau}}$$
+
+  Vereinfachen
+  $$\frac12 = a^{\frac{T_{1/2}}{\tau}}$$
+
+  Logarithmus:
+
+  $$\log_a\left(\frac12\right) = \frac{T_{1/2}}{\tau}$$
+
+  somit
+  $$T_{1/2} = \tau \cdot{} \log_a\left(\frac12\right)$$
+  
   $80\%$ und $7$ Tage einsetzen:
 
-  $$f(t) = b\cdot{} 0.8^{\frac{t}{7}}$$
-
-  Halber Wert:
-
-$$\frac12\cdot{} f(0) = f(T) \Longleftrightarrow \frac{b}2= b\cdot{} 0.8^\frac{T}{7}$$
-  $$\frac12  = 0.8^\frac{T}{7}$$
-
-  Solver (num-solv): 21.74 (Tage) ...
-
- ... oder mit der Definition des Logarithmus:
-  
-  $$\frac{T}7 = \log_{0.8}\left(\frac12\right)$$
-  $$T_{1/2} := T = 7\cdot{} \log_{0.8}\left(\frac12\right) \approx 21.74$$
-
-
+  $$T_{1/2} = 7 \cdot{} \log_{0.8}\left(\frac12\right) \approx 21.74$$
+    
 %%  Bemerkung: $$f(t) =b\cdot{}0.8^\frac{t}7 \approx b\cdot{}\left(\frac12\right)^\frac{t}{21.74}$$
-}%% END TNT
-\newpage
+
+}%% END TNTeop
 
 
-\GESO{Aus obiger Rechnung ergibt sich sofort das folgenden Gesetz:}%% end geso
-
-\TALS{
-Allgemeine Herleitung:
-
-\TNT{8}{
-  $$\frac12 \cdot{} f(0) = f(T_{1/2})$$
-  $$\frac12 \cdot{} b    = b\cdot{}A^{T_{1/2}}$$
-  $$\frac12 = A^{T_{1/2}}$$
-  $$\log_A \left(\frac12\right) = T_{1/2}$$
-}
-
-}%% end tals
 
 \begin{gesetz}{Halbwertszeit}{}
   Die Halbwertszeit $T_{1/2}$ berechnet sich wie folgt:
