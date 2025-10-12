@@ -579,13 +579,18 @@ Zu Punkt 3.: «In wie vielen Tagen verdreifachen sie sich?» $a_2 = 3$
 (verdreifachen):
 
 \TNTeop{
+  $$f(t) = b\cdot{} 2^{\frac{t}{5}}$$
+  
+$$f(0)\cdot{} 3 = f(\tau_3)$$
 
-  $2^\frac15 = 3^\frac{1}{\tau_2}$ (Definition Logarithmus):
+  $$b\cdot{}3 = b\cdot{} 2^{\frac{\tau_3}{5}}$$
 
-  $\frac1{\tau_2} = \log_3\left(2^\frac15\right)$
+  $$3 =2^{\frac{\tau_3}{5}}$$
 
-  $\tau_2 = \frac1{\log_3\left(2^\frac15\right)}\approx 7.925$ Tage.
+  $$3^5 =2^{\tau_3}$$
 
+  $$\tau_3 = \log_2{3^5} \approx 7.925$$
+  
 Also: Sie verdreifachen sich ca. alle 8 Tage.
 
   Ergo: $b\cdot{}2^\frac{t}5 \approx b\cdot{}3^\frac{t}{7.925}$
@@ -608,7 +613,7 @@ Zu Punkt 4.: «Wie viel nehmen die Algen pro Tag (= pro Zeiteinheit) zu?»
   $$2 = A^5 | \sqrt[5]{\,}$$
   $$A = \sqrt[5]{2} = 2^{\frac15} \approx 1.1487$$
   ergo
-  $$f(t)\approx b\cdot{} 1.1487^t$$
+  $$f(t) = b\cdot{} \left( 2^\frac15 \right)^t \approx b\cdot{} 1.1487^t$$
 }%% END TNT
 
 Zu Punkt 5.\GESO{ (optional)}: »Wie sieht es mit der Basis $\e$ aus?» $f(t) = b\cdot{}\e^{m\cdot{}t}$ (Basis $\e$):
@@ -636,7 +641,7 @@ $$2\cdot{} f(0) = f(5)$$
 
 \subsection*{Aufgaben}
 %%\TALSAadBMTA{215ff}{809-830}
-\AadBMTA{335ff}{11. a) b),\\15. a) b) [Zeichnen mit \texttt{geogebra.org}],\\ 17. a) b) e), 22. a) b), 25. a) b)}
+\AadBMTA{335ff}{17. a) b) d), 22. a)}
 
 \newpage
 \subsubsection{Zusammenfassung\GESO{ (optional)}}
@@ -652,8 +657,12 @@ $$2\cdot{} f(0) = f(5)$$
 
 \begin{gesetz}{Basiswechsel}{}
 
-  \begin{center}\fbox{\fbox{$a^{\frac{1}{\tau}} =
-        a_2^{\frac{1}{\tau_2}} \TALS{ = \e^{m}}$}}\end{center}
+  \begin{center}\fbox{\fbox{
+          $a^{\frac{1}{\tau}} =
+        \LoesungsRaumLen{30mm}{a_2^{\frac{1}{\tau_2}}}
+        \TALS{ = \LoesungsRaumLen{30mm}{\e^{m}}}$
+    }}
+  \end{center}
 
  
   $a=$ Wachstumsfaktor\\
@@ -665,14 +674,14 @@ $$2\cdot{} f(0) = f(5)$$
 
   Natürliche Basis $A$ zur (Zeit)Einheit:
 
-  $$y = b\cdot{}A^t$$
-  mit $$A=a^{\frac1\tau}$$
+  $$y = \LoesungsRaumLen{30mm}{b\cdot{}A^t}$$
+  mit $$A=\LoesungsRaumLen{30mm}{a^{\frac1\tau} = \sqrt[\tau]{a}}$$
 
   \TALS{
     Natürliche Basis $\e\,\, (=2.718...)$:
 
-    $$y=b\cdot{}e^{mt}$$
-mit $$m=\frac{\ln(a)}{\tau}$$
+    $$y=\LoesungsRaumLen{30mm}{b\cdot{}e^{mt}}$$
+mit $$m=\LoesungsRaumLen{30mm}{\frac{\ln(a)}{\tau}}$$
     
 
     $m = $ \textit{Wachstumsexponent} bei Basis $e$ \\
@@ -755,20 +764,23 @@ Analog gilt das Gesetz zur Verdopplung (s. obiges Beispiel Bevölkerung Irlands)
   $a$: Zunahmefaktor pro Zeiteinheit $\tau$.
 \end{gesetz}
 
+(optional:)
+
 \begin{bemerkung}{Verdopplungszeit}{}
   Ansatz:$$2 \cdot{} f(0) = f(T_2)$$
   Funktionsterm einsetzen:
   %%  $$2 \cdot{} b \cdot{} a^{\frac{0)\tau} = b \cdot{} a^{\frac{T_2}\tau}$$
   $$2 \cdot{} b \cdot{} a^{\frac{0}{\tau}} = b \cdot{} a^{\frac{T_2}{\tau}}$$
-    $$2 = a^{\frac{T_2}\tau}$$
+    $$2 = a^{\frac{T_2}\tau} \Longrightarrow  T_2 = \tau \cdot{} \log_a(2)$$
 \end{bemerkung}
 
-\begin{gesetz}{Vervielfachungszeit $T_q$}{}
-  Die Vervielfachungszeit $T_q$ kann durch die Vervielfachung $q$ ausgedrückt werden. Es gilt:
-  $$T_q = \tau\cdot{}\log_a(q)$$
-  und
-  $$f(t) = b\cdot{} q^{\frac{t}{T_q}}$$
-  \end{gesetz}
+
+%\begin{gesetz}{Vervielfachungszeit $T_q$}{}
+%  Die Vervielfachungszeit $T_q$ kann durch die Vervielfachung $q$ ausgedrückt werden. Es gilt:
+%  $$T_q = \tau\cdot{}\log_a(q)$$
+%  und
+%  $$f(t) = b\cdot{} q^{\frac{t}{T_q}}$$
+%  \end{gesetz}
 
 \subsection*{Aufgaben}
 
