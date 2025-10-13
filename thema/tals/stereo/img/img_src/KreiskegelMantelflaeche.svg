@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="26.288908mm"
+   height="16.942724mm"
+   viewBox="0 0 26.288909 16.942724"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="KreiskegelMantelflaeche.svg"
+   inkscape:export-filename="KreiskegelMantelflaeche.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="7.319248"
+     inkscape:cx="65.443881"
+     inkscape:cy="21.791856"
+     inkscape:window-width="1722"
+     inkscape:window-height="1247"
+     inkscape:window-x="1235"
+     inkscape:window-y="438"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-98.756612,-112.45789)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1"
+       id="path788"
+       sodipodi:type="arc"
+       sodipodi:cx="100.26517"
+       sodipodi:cy="112.70789"
+       sodipodi:rx="17.918936"
+       sodipodi:ry="18.840534"
+       sodipodi:start="0"
+       sodipodi:end="1.0501189"
+       sodipodi:arc-type="slice"
+       d="m 118.1841,112.70789 a 17.918936,18.840534 0 0 1 -9.00484,16.34383 l -8.91409,-16.34383 z" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1"
+       id="path790"
+       cx="120.39843"
+       cy="119.18097"
+       rx="3.1515784"
+       ry="3.2274427" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.039484;stroke-dasharray:none;stroke-opacity:1"
+       id="path790-8"
+       cx="120.53611"
+       cy="119.04916"
+       rx="0.25303832"
+       ry="0.25067011" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.51293px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.868177;stroke-dasharray:none;stroke-opacity:1"
+       x="100.73044"
+       y="127.06837"
+       id="text1023"
+       transform="scale(1.0691015,0.93536487)"><tspan
+         sodipodi:role="line"
+         id="tspan1021"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.51293px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.868177"
+         x="100.73044"
+         y="127.06837">M</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.0105px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.631575;stroke-dasharray:none;stroke-opacity:1"
+       x="104.41922"
+       y="117.55622"
+       id="text1023-6"
+       transform="scale(0.96019402,1.0414562)"><tspan
+         sodipodi:role="line"
+         id="tspan1021-0"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.0105px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.631575"
+         x="104.41922"
+         y="117.55622">m</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.69703px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.419029;stroke-dasharray:none;stroke-opacity:1"
+       x="116.10715"
+       y="125.84126"
+       id="text1521"
+       transform="scale(0.97974409,1.0206747)"><tspan
+         sodipodi:role="line"
+         id="tspan1519"
+         style="stroke-width:0.419029"
+         x="116.10715"
+         y="125.84126">U=2πr</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.98601px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.225098;stroke-dasharray:none;stroke-opacity:1"
+       x="126.6859"
+       y="112.88229"
+       id="text1525"
+       transform="scale(0.95558316,1.0464814)"><tspan
+         sodipodi:role="line"
+         id="tspan1523"
+         style="stroke-width:0.225098"
+         x="126.6859"
+         y="112.88229">r</tspan></text>
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-dasharray:none;stroke-opacity:1"
+       d="m 120.54316,119.05274 2.90779,-1.30218"
+       id="path1778" />
+  </g>
+</svg>

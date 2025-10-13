@@ -25,7 +25,7 @@ cp -f ./gleichungen/potenzgleichungen/*.pdf ${PATH_4_UM}Gleichungen/Potenzgleich
 
 echo "  60 trigo übungen von Jürg"
 cp -f ./geometrie/trigonometrie/60Uebungen/60Uebungen_TALS.pdf   ${PATH_4_UM}Geometrie/Trigonometrie/60Uebungen_fp/UebungenSinCosTan.pdf
-cp -f ./geometrie/trigonometrie/60Loesungen/60Loesungen_TALS.pdf ${PATH_4_UM}Geometrie/Trigonometrie/60Uebungen_fp/LoesungenSinCosTan.pdf
+cp -f ./geometrie/trigonometrie/60Loesungen/60Loesungen_TRAINER_TALS.pdf ${PATH_4_UM}Geometrie/Trigonometrie/60Uebungen_fp/LoesungenSinCosTan.pdf
 
 echo "  Trigonometrische Koordinatensysteme"
 cp -f ./geometrie/trigonometrie/trig_coords/Trig_Coords_TALS.pdf ${PATH_4_UM}Geometrie/Trigonometrie/Koordinatensysteme/Trig_Coords.pdf

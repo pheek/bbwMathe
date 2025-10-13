@@ -48,30 +48,30 @@ cp -f ./datenanalyse/boxplot/boxplot_TRAINER_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrpe
 echo "  copying DiagrammeLesen (ALLG)"
 cp -f ./datenanalyse/DiagrammeLesen/*.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/datenanalyse/diagrammeLesen/
 
-echo "  Boxplot for TI 30"
+echo "  copying Boxplot for TI 30"
 cp -f ./datenanalyse/boxplotTI30/boxplotTI30_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/daan/boxplot/boxplotTI30.pdf
 
-echo "  Bruchrechnen Arbeitsblatt"
+echo "  copying Bruchrechnen Arbeitsblatt"
 cp -f ./algebra/bruchrechnen/Uebungen/*.pdf /${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/bruchrechnen/uebungen/
 
-echo "  Bruchrechnen GESO"
+echo "  copying Bruchrechnen GESO"
 cp -f ./algebra/bruchrechnen/GESO_Abschlusspruefungsaufgaben/BruchrechnenGESO_Maturaaufgaben_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/aa1/bruchrechnen/BruchrechenenGESO_Maturaaufgaben.pdf
 cp -f ./algebra/bruchrechnen/GESO_Abschlusspruefungsaufgaben/BruchrechnenGESO_Maturaaufgaben_TRAINER_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/aa1/bruchrechnen/BruchrechenenGESO_Maturaaufgaben_Trainer.pdf
 
-echo "  Bruchrechnen Arbeitsblatt 1: Wann Kürzen"
+echo "  copying Bruchrechnen Arbeitsblatt 1: Wann Kürzen"
 cp -f ./algebra/bruchrechnen/WannBruecheKuerzen/WannBruecheKuerzen_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/bruchrechnen/wannKuerzen/WannBruecheKuerzen_ALLG.pdf
 cp -f ./algebra/bruchrechnen/WannBruecheKuerzen/WannBruecheKuerzen_TRAINER_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/bruchrechnen/wannKuerzen/WannBruecheKuerzen_TRAINER_ALLG.pdf
 
-echo "  Lineare Gleichungen Arbeitsblatt"
+echo "  copying Lineare Gleichungen Arbeitsblatt"
 cp -f ./gleichungen/lineare/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/lineare/arbeitsblatt/
 
-echo "  Lineare Gleichungen Textaufgaben"
+echo "  copying Lineare Gleichungen Textaufgaben"
 cp -f ./gleichungen/lineare_textaufgaben/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/lineare/textaufgaben/
 
-echo "  Logarithme Arbeitsblatt"
+echo "  copying Logarithmen Arbeitsblatt"
 cp -f ./algebra/logarithmen/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/logarithmus/arbeitsblatt/
 
-echo "  Befragung Datenanalyse offline"
+echo "  copying Befragung Datenanalyse offline"
 cp -f ./datenanalyse/befragung/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/datenanalyse/befragung/
 
 echo "  copying Finde_den_Fehler (ALLG)"
@@ -103,18 +103,18 @@ cp -f ./gleichungen/quadratische/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/t
 echo "  copying Quadratische Gleichungen GESO alte Maturaprüfungen"
 cp -f ./gleichungen/quadratischeGleichungen/GESO_Abschlusspruefungsaufgaben/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/thema/gl1/maturapruefungen/
 
-echo "  Copying Quadratische Gleichungen ABC-Finden (ALLG)"
+echo "  copying Quadratische Gleichungen ABC-Finden (ALLG)"
 cp -f ./gleichungen/quadratischeGleichungenABC_finden/abc_finden_ALLG.pdf          ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/abc_finden/abc_finden.pdf
 cp -f ./gleichungen/quadratischeGleichungenABC_finden/abc_finden_TRAINER_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/abc_finden/abc_loesungen.pdf
 
 
 #### GEHT DAS NUN?
-echo "  Copying Quadratische Gleichungen 14-Schritte nach Gallin (ALLG)"
+echo "  copying Quadratische Gleichungen 14-Schritte nach Gallin (ALLG)"
 cp -f ./gleichungen/quadratische_gleichung_gallin/QuadratischeGleichung_ALLG.pdf          ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/14Schritte/QuadratischeGleichung.pdf
 cp -f ./gleichungen/quadratische_gleichung_gallin/QuadratischeGleichung_TRAINER_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/14Schritte/QuadratischeGleichung.mitLoesungen.pdf
 
 
-echo "  Copying Quadratische Gleichungen Einführung zur Quadr. Ergänzung (ALLG)"
+echo "  copying Quadratische Gleichungen Einführung zur Quadr. Ergänzung (ALLG)"
 cp -f ./gleichungen/einfuehrung_ergaenzung_formel/QuadratischeGleichung_ALLG.pdf          ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/EinfuerhungErgaenzung/QuadratischeGleichungEinfuerhungErgaenzung.pdf
 cp -f ./gleichungen/einfuehrung_ergaenzung_formel/QuadratischeGleichung_TRAINER_ALLG.pdf          ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/EinfuerhungErgaenzung/QuadratischeGleichungEinfuerhungErgaenzung_TRAINER.pdf
 
@@ -123,29 +123,29 @@ cp -f ./gleichungen/einfuehrung_ergaenzung_formel/QuadratischeGleichung_TRAINER_
 #cp -f ./gleichungen/quadratische_gleichung_gallin/QuadratischeGleichung_TRAINER_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/14Schritte/QuadratischeGleichung.mitLoesungen.pdf
 
 
-echo "  Copying Lernen mit Wappen"
+echo "  copying Lernen mit Wappen"
 cp -f ./lernenMitWappen/lernen_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/lernen/LernenMitWappen.pdf
 
-echo "  Copying Quadratische funktionen Arbeitsblatt Formen"
+echo "  copying Quadratische funktionen Arbeitsblatt Formen"
 cp -f ./funktionen/funktionen_quadratische_formen/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/glf/fct2/formen
 
 echo "  Copying Systematisches Lösen von Textaufgaben (ALLG)"
 cp -f ./gleichungen/textaufgaben/Textaufgaben_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/textaufgaben/SystematischesLoesenVonTextaufgaben.pdf
 
-echo "  Copying Quadratische Gleichungen mit Photomath (ALLG)"
+echo "  copying Quadratische Gleichungen mit Photomath (ALLG)"
 cp -f ./photomath_quadratische_funktionen/Photomath_quadratische_Funktionen_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/quadratische/arbeitsblaetter/photomath/Photomath_quadratische_Funktionen.pdf
 
-echo "  Copying Potenzgesetze Arbeitsblatt (GESO)"
+echo "  copying Potenzgesetze Arbeitsblatt (GESO)"
 cp -f ./algebra/potenzgesetze/Potenzgesetze_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/potenzgesetze/Potenzgesetze.pdf
 cp -f ./algebra/potenzgesetze/Potenzgesetze_TRAINER_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/potenzgesetze/Potenzgesetze_TRAINER.pdf
 
-echo "  Copying Runden (algebra/zahlmengen/ordnungsrelationen) (ALLG)"
+echo "  copying Runden (algebra/zahlmengen/ordnungsrelationen) (ALLG)"
 cp -f ./algebra/zahlmengen/ordnungsrelationen/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/zahlmengen/ordnungsrelationen
 
-echo "  Copying Runden (algebra/zahlmengen/runden) (ALLG)"
+echo "  copying Runden (algebra/zahlmengen/runden) (ALLG)"
 cp -f ./algebra/zahlmengen/runden/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/zahlmengen/runden
 
-echo "  Copying Potenzgleichungen Arbeitsblatt (ALLG)"
+echo "  copying Potenzgleichungen Arbeitsblatt (ALLG)"
 cp -f ./gleichungen/potenzgleichungen/Potenzgleichungen_ALLG.pdf         ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/potenzgleichungen/Potenzgleichungen.pdf
 cp -f ./gleichungen/potenzgleichungen/Potenzgleichungen_TRAINER_ALLG.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/potenzgleichungen/Potenzgleichungen_TRAINER.pdf
 
@@ -207,6 +207,9 @@ cp -f ./algebra/algebra1Faktorisieren/A1F_TRAINER_ALLG.pdf           ${BBW_WEBDA
 echo "  copying Arbeitsblatt Gleichungen: Bruchgleichungen (GESO und TALS)"
 cp -f ./gleichungen/bruchgleichungen/arbeitsblatt/BruchgleichungenArbeitsblatt_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/bruchgleichungen/arbeitsblatt/BruchgleichungenArbeitsblatt.pdf
 cp -f ./gleichungen/bruchgleichungen/arbeitsblatt/BruchgleichungenArbeitsblatt_TRAINER_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/bruchgleichungen/arbeitsblatt/BruchgleichungenArbeitsblattLoesungen.pdf
+
+echo "  copying Arbeitsblatt Gleichungssysteme"
+cp -f ./gleichungen/gleichungssysteme/*.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/gleichungen/gleichungssysteme/
 
 echo "  copying Umkehrfunktionen (GESO und TALS)"
 cp -f ./funktionen/funktionen_umkehrfunktionen/Umkehrfunktionen_TALS.pdf          ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/fct3/umkehrfunktionen/ArbeitsblattUmkehrfunktionen.pdf

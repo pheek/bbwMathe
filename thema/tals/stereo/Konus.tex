@@ -56,10 +56,17 @@ Dahschur erbaut.}
   eine Pyramide bestehend aus vier gleichseitigen Dreiecken.
 \end{definition}
 
-\bbwCenterGraphic{58mm}{tals/stereo/img/TetrapakWerbung.png}
+\TRAINER{\bbwCenterGraphic{35mm}{tals/stereo/img/TetrapakWerbung.png}}
+\noTRAINER{\bbwCenterGraphic{58mm}{tals/stereo/img/TetrapakWerbung.png}}
+
 \begin{center}{\small{Legende: Werbung 1970er Jahre für Tetrapak}}\end{center}
 \begin{center}\tiny{Foto: ENNSTALMILCH}\end{center}
 \subsection*{Aufgaben}
+
+
+\TRAINER{\bbwCenterGraphic{150mm}{tals/stereo/img/tetraederTipp.png}}
+\noTRAINER{\bbwCenterGraphic{80mm}{tals/stereo/img/tetraederTippLeer.png}}
+
 \TALSAadBMTG{41}{39.}
 \TALSAadBMTG{212}{7.}
 
@@ -77,25 +84,51 @@ Dahschur erbaut.}
   $$V = \frac13\cdot{} G\cdot{}h = \LoesungsRaumLang{\frac13 \cdot{} r^2\pi \cdot{} h}$$
 \end{gesetz}
 
-
-
-\begin{gesetz}{Oberfläche eines Kreiskegels}{}
-
-  $m$ = Mantellinie = $\LoesungsRaum{\sqrt{h^2 + r^2}}$
-  
-  $M$ = Mantelfläche = $\LoesungsRaum{\frac{2r\pi \cdot{} m}2 = r\pi\cdot{}m}$
-  
-  $$S = G + M = \LoesungsRaum{r^2\pi + r\pi m} = \LoesungsRaum{r\pi\cdot{}(r+m)}$$
-\end{gesetz}
-
-
 \begin{bemerkung}{Mantellinie}{}
   Die Mantellinie $m$ ist immer größer oder gleich der Höhe $h$:
   $$m \ge{} h$$
 \end{bemerkung}
 
+Spezialfall: Gerader Kreiskegel
+
+\begin{gesetz}{Mantellinie eines geraden Kreiskegels}{}
+
+  $m$ = Mantellinie = $\LoesungsRaum{\sqrt{h^2 + r^2}}$
+  
+\end{gesetz}
+
+
+
+\newpage
+\subsubsection{Mantelfläche}
+
+
+
+\begin{gesetz}{Mantelfläche des geraden Kreiskegels}{}
+  \TRAINER{Tipp: Bogenmaß, bzw. betrachte den «Pizza»-Sektor wie ein
+    Dreieck: Grundfläche mal Höhe durch 2.}
+  
+$$M = \LoesungsRaumLen{50mm}{U\cdot{}m\cdot{}\frac12}$$
+$$M = \LoesungsRaumLen{50mm}{2r\pi\cdot{} m\cdot{}\frac12}$$
+
+$M$ = Mantelfläche = $\LoesungsRaum{r\pi\cdot{}m}$
+
+\end{gesetz}
+
+\noTRAINER{\vspace{20mm}}
+
+\bbwCenterGraphic{80mm}{tals/stereo/img/KreiskegelMantelflaeche.png}
+
+
+\begin{gesetz}{Oberfläche einse geraden Kreiskegels}{}
+
+  $$S = G + M = \LoesungsRaum{r^2\pi + r\pi m} = \LoesungsRaum{r\pi\cdot{}(r+m)}$$
+\end{gesetz}
+
+
+\newpage
 \subsection*{Aufgaben}
-\TALSAadBMTG{214}{21.}
+\TALSAadBMTG{214}{21. (Oberfläche), 24. (Oberfläche), 27. (Trichter)}
 \newpage
 
 \subsubsection{Winkel am Kegel}
@@ -119,7 +152,7 @@ Dahschur erbaut.}
 
 
 
-Beweis der $\sin()$-Formel:
+Beweis der $\sin()$-Formel (optional):
 
 \TNTeop{
   Skizze Kegel mit a) $m$ - Mantellinie und Radius $r$ und b) Abwicklung mit $\varphi$, $m$ und $2r\pi$ als Bogenlänge.
@@ -148,6 +181,6 @@ Beweis der $\sin()$-Formel:
 
 %%\TALSAadBMTA{158ff}{150., 151., 157. (Netzabw.), 158. (Pyramide in
 %%Kegel), 163. (zwei Kegel im Zylinder)}
-\TALSAadBMTG{214}{22.,24., 27., 28.}
+\TALSAadBMTG{214}{22. (Abwicklung), 28. (Trichter)}
 \newpage
 
