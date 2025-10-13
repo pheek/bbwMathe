@@ -1,0 +1,285 @@
+%%
+%% Meta: Gleichungssysteme
+%%
+
+\input{bmsLayoutPage}
+\renewcommand{\bbwAufgabenBlockID}{GLS}
+
+\ifisNURAUFGABEN
+\newcommand{\LoesungsBlock}[1]{\TRAINER{Lösung:#1
+\vspace{1mm}
+\hrule}}%% end new Command "LoesungsBlock"
+\else
+\newcommand{\LoesungsBlock}[1]{\noTRAINER{\TNTeop{}}\TRAINER{Lösung:\,\,\,\,#1
+\vspace{1mm}
+\hrule}}%% end new Command "LoesungsBlock"
+\fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amssymb} %% für \blacktriangleright
+\renewcommand{\metaHeaderLine}{Arbeitsblatt Gleichungssysteme}
+\renewcommand{\arbeitsblattTitel}{Lineare Gleichungssysteme}
+
+\newcommand{\TNTeopS}[1]{\TRAINER{#1}\noTRAINER{\TNTeop{}}}
+
+\begin{document}%%
+\arbeitsblattHeader{}
+
+\begin{center}\textit{\tiny{V 0.0 - 13. Okt. 2025}}\end{center}
+
+\tableofcontents{}
+
+\newpage
+
+
+\textbf{Vorgehen}
+
+
+\begin{enumerate}
+\item 
+Lösen Sie von jedem Kapitel 1-2 Aufgaben. Wenn Sie Mühe haben, lösen
+Sie auch die anderen Übungen ansonsten probieren Sie noch die letzte
+Übung des Kapitels, bevor Sie zum nächsten Kapitel übergehen.
+\end{enumerate}
+
+\newpage
+
+\section{Einsetzverfahren}
+\begin{enumerate}[label=\alph*)]
+\item
+
+\gleichungZZ{2x+11y}{57}{x-3y}{-14}
+
+
+\LoesungsBlock{$\mathbb{L}_{(x;y)} = \left\{ (1;5) \right\}  $}
+
+%%%%%%%%%%%%%%%%%
+
+\item
+\gleichungZZ{4a+2b}{22}{3a-5b}{36}
+
+\LoesungsBlock{$\mathbb{L}_{(a;b)} = \left\{ (7;-3) \right\}  $}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\item 
+\gleichungZZ{s+3t}{4}{5s-32}{21t}
+
+\LoesungsBlock{$\mathbb{L}_{(s;t)} = \left\{ \left(5;\frac{-1}{3}\right) \right\}  $}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\item 
+\gleichungZZ{x+y}{-5}{x-y}{10}
+
+\LoesungsBlock{$\mathbb{L}_{(x;y)} = \left\{ \left( 2.5;-7.5 \right) \right\}  $}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\item 
+\gleichungZZ{y}{2x-3}{y}{-0.5x+1}
+
+\LoesungsBlock{$\mathbb{L}_{(x;y)} = \left\{ \left( 1.6; 0.2 \right)= \left( \frac85 ; \frac15 \right) \right\}  $}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\item 
+\gleichungZZ{y}{8x+4}{y}{-7x+2}
+
+\LoesungsBlock{$\mathbb{L}_{(x;y)} = \left\{ \left( \frac{-2}{15} ; \frac{44}{15} \right) \right\}  $}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\item 
+\gleichungZZ{3(2x+y)}{18}{9(4x+2y)+20y}{28}
+
+\LoesungsBlock{$\mathbb{L}_{(x;y)} = \left\{ \left( 5; -4 \right) \right\}  $}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\item 
+\gleichungZZ{3+2(y-3)}{-\frac{3(x+5)}{2}}{2x+7}{\frac15\left( 6(2y-1)+11\right)}
+
+\LoesungsBlock{$\mathbb{L}_{(x;y)} = \left\{ \left( -3; 0 \right) \right\}  $}
+
+
+
+\end{enumerate}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{nicht lineare Systeme}
+(Optional bei GESO.)
+
+\begin{enumerate}[label=\alph*)]
+%%%%%%%%%%%%%%%%%%%%%%%
+\item 
+\gleichungZZ{x^3}{y+107}{3x^3+2y}{411}
+
+\LoesungsBlock{$\mathbb{L}_{(x;y)} = \left\{ \left( 5;18 \right) \right\}  $}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\item 
+\gleichungZZ{x^5-y}{27}{x^5+4y}{52}
+
+\LoesungsBlock{$\mathbb{L}_{(x;y)} = \left\{ \left( 2;5 \right) \right\}  $}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\item 
+\gleichungZZ{a^2+b^2}{20}{a+b}{3}
+
+\LoesungsBlock{$\mathbb{L}_{(a;b)}
+= \left\{ \left(\frac{3-\sqrt{31}}2; \frac{3+\sqrt{31}}2  \right), \left( \frac{3+\sqrt{31}}2; \frac{3-\sqrt{31}}2\right) \right\}  $}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\item 
+\gleichungZZ{\sqrt{x} + y}{13.5}{x-7y}{103.5}
+
+\LoesungsBlock{$\mathbb{L}_{(x;y)}
+= \left\{ \left( 121; 2.5 \right) \right\}  $}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item
+Die Summe, das Produkt und der Quotient $\left(\frac{a}{b}\right)$ von
+zwei Zahlen $a$ und $b$ sind gleich. Berechnen Sie $a$ und $b$
+
+\LoesungsBlock{$\mathbb{L}_{(a;b)}
+= \left\{ \left( \frac12; -1 \right) \right\}  $}
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Additions- bzw. Subtraktionsverfahren}
+
+\begin{enumerate}[label=\alph*)]
+\item 
+\gleichungZZ{7x+6y}{32}{11x-4y}{10}
+
+\LoesungsBlock{$\mathbb{L}_{(x;y)}
+= \left\{ \left( 2; 3 \right) \right\}  $}
+%%%%%%%%%%%%%%%%%%%%%%
+\item 
+\gleichungZZ{7x-11y}{-6}{9x+12y}{18}
+
+\LoesungsBlock{$\mathbb{L}_{(x;y)}
+= \left\{ \left( \frac{42}{61}; \frac{60}{61} \right) \right\}  $}
+%%%%%%%%%%%%%%%%%%%%%%
+\item 
+\gleichungZZ{4x-9y}{11}{-x+8y}{3}
+
+\LoesungsBlock{$\mathbb{L}_{(x;y)}
+= \left\{ \left( 5;1 \right) \right\}  $}
+%%%%%%%%%%%%%%%%%%%%%%
+\item 
+\gleichungZZ{2s+5t}{1}{6s+7t}{3}
+
+\LoesungsBlock{$\mathbb{L}_{(s;t)}
+= \left\{ \left( \frac12; 0 \right) \right\}  $}
+%%%%%%%%%%%%%%%%%%%%%%
+\item 
+\gleichungZZ{2x+30y}{150-4y}{6x+7y}{110-10y}
+
+\LoesungsBlock{$\mathbb{L}_{(x;y)}
+= \left\{ \left( 7; 4 \right) \right\}  $}
+%%%%%%%%%%%%%%%%%%%%%%
+\item 
+\gleichungZZ{\frac{c}2 + \frac{d}3}{7}{\frac{c}3 + \frac{d}2}{8}
+
+\LoesungsBlock{$\mathbb{L}_{(c;d)}
+= \left\{ \left( 6; 12 \right) \right\}  $}
+%%%%%%%%%%%%%%%%%%%%%%
+\item 
+\gleichungZZ{0.16a - 0.04b}{1}{0.38a - 0.22b}{2}
+
+\LoesungsBlock{$\mathbb{L}_{(a; b)}
+= \left\{ \left( 7; 3 \right) \right\}  $}
+%%%%%%%%%%%%%%%%%%%%%%
+\item 
+\gleichungZZ{x \cdot{} \sqrt{2}}{y+\sqrt{2}}{2}{x+y}
+
+\LoesungsBlock{$\mathbb{L}_{(x;y)}
+= \left\{ \left( \sqrt{2} ;
+2-\sqrt{2} \right) \right\}  \approx \{(1.41; 0.5858)\}$}
+%%%%%%%%%%%%%%%%%%%%%%
+\item
+Erstellen Sie ein lineares Gleichungssystem und lösen Sie dieses.
+
+$$a-1 = 2a-3b+4 = b$$
+
+\LoesungsBlock{$\mathbb{L}_{(a; b)}
+= \left\{ \left( 4; 3 \right) \right\}  $}
+
+\end{enumerate}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Taschenrechner}
+Bringen Sie jeweils zunächst in die Grundform.
+
+
+\begin{enumerate}[label=\alph*)]
+\item
+\gleichungZZ{-231x + 1155y}{1386}{\frac{-5}3 x + \frac{25y}3}{10}
+
+
+\LoesungsBlock{Es gibt unendlich viele Lösungen: Die beiden
+Gleichungen sind linear abhängig. Die zugehörigen Geraden sind
+zusammenfallend.
+
+$\mathbb{L}_{(x;y)} =
+ \left\{ (x|y) \in \mathbb{R}\times\mathbb{R} \middle| y = \frac{6+x}{5} \right\}
+=
+\left\{ (x|y)\in \mathbb{R}\times\mathbb{R} \middle| x = 5y -6 \right\}
+$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item
+
+\gleichungZZ{x\cdot{}\frac23 + \frac{2y}9}{400}{0.66 x  + 0.22y}{400}
+
+\LoesungsBlock{$\mathbb{L}_{(x;y)} = \left\{ \right\}$}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item
+
+\gleichungZZ{3x}{18+4y}{5y}{7x+2}
+
+\LoesungsBlock{$\mathbb{L}_{(x;y)} = \left\{ \left(\frac{98}{13} ; \frac{15}{13}\right)\right\}$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item
+
+\gleichungZZ{6x}{27-3y}{\frac{14x}3 - 14}{\frac{-7}{3}\cdot{}y}
+
+\LoesungsBlock{$\mathbb{L}_{(x;y)} = \left\{ \right\}$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item
+\gleichungZZ{5x+3}{7y}{10x-14y}{-6}
+
+
+\LoesungsBlock{Es gibt unendlich viele Lösungen: Die beiden
+Gleichungen sind linear abhängig. Die zugehörigen Geraden sind
+zusammenfallend.
+
+$\mathbb{L}_{(x;y)} =
+ \left\{ (x|y) \in \mathbb{R}\times\mathbb{R} \middle| y = \frac57 x
+ + \frac37 \right\}
+=
+\left\{ (x|y)\in \mathbb{R}\times\mathbb{R} \middle| x = \frac75 y - \frac35 \right\}
+$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item
+\gleichungZZ{200x + 5y}{116}{400x}{81y+177}
+
+\LoesungsBlock{$
+\mathbb{L}_{(x;y)} =
+ \left\{ \left(0.555 ; \frac59 \right) \right\} =
+ \left\{ \left(\frac{111}{200} ; \frac59 \right) \right\} 
+$}
+
+\end{enumerate}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Graphische Interpretation}
+\begin{enumerate}[label=\alph*)]
+\item ...
+\end{enumerate}
+
+\end{document}
