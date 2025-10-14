@@ -1,0 +1,52 @@
+
+\subsection{Additions- bzw. Subtraktionsverfahren}\index{Additionsverfahren!lineare Gleichungen}\index{Subtraktionsverfahren!Gleichungssysteme}
+Eine weitere Möglichkeit lineare Gleichungssysteme mit mehreren Unbekannten zu lösen ist das Verfahren, die linke und die rechte Seite miteinander zu addieren (bzw. voneinander zu subtrahieren), sodass eine Variable wegfällt. Dazu müssen die Gleichungen vorher so \textit{präpariert} werden, dass in einer Variablen (hier \zB $x$) die Koeffizienten übereinstimmen:
+
+\gleichungsSystemNummeriert{6x+7y}{3}{8x-2y}{38}
+%%\gleichungZZ{4x+4y}{48\hspace{10mm}\text{ (I)}}{3x-6y}{-27\hspace{5mm}\text{ (II) }}
+
+Wir wählen \zB in obigem Beispiel die Variable $x$ und suche zunächst
+das kleinste gemeinsame Vielfache 24. Nun multiplizieren wir die obere
+Gleichung mit 4 und die untere mit 3 und erhalten:
+
+
+%%\TNT{2.8}{\gleichungZZ{12x+12y}{144 \hspace{8mm}(I)}{12x-24y}{-108\hspace{5mm} (II)}}
+\TNT{2.8}{\gleichungsSystemNummeriert{24x+28y}{12}{24x-6y}{114}}
+
+
+Nun können wir die untere Gleichung (II) von der oberen Gleichung (I) abziehen (damit die Variable $x$ eliminiert wird)
+und erhalten:
+  
+\TNT{3.2}{
+ (I) - (II)
+  $$(24x+28y)  - (24x-6y)  = 12 - 114$$
+  $$24x+28y  - 24x+6y  = -102$$
+  $$0x + 34y = -102$$
+  $$y=-3$$
+}
+
+
+  Dieses $y$ setzen wir \zB in die Gleichung $8x-2y=38$ ein:
+  \TNTeop{
+    $$8x -2 \cdot{}(-3) = 38 \hspace{5mm}| TU$$
+    $$8x +6 = 38 \hspace{5mm}| -6$$
+    $$8x  = 32 \hspace{5mm}| :8$$
+    $$x = 4$$
+
+    $$\mathbb{L}_{(x;y)} = \left\{ (4; -3)  \right\}$$
+}
+\newpage
+
+
+  \begin{rezept}{Rechengesetz Additionsverfahren}{gesetz_additionsverfahren}
+    Eine beliebige Variable wird gewählt und danach beide Gleichungen so multipliziert,
+    dass die Zahlen vor dieser Variable in beiden Gleichungen gleich werden.
+
+    Dies funktioniert
+    immer mit einem gemeinsamen Vielfachen der beiden Zahlen.
+  \end{rezept}
+
+\subsection*{Aufgaben}
+\AadBMTA{150}{7. g) b) c) e)}
+
+\newpage

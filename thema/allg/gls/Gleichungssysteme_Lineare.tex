@@ -147,199 +147,30 @@ Lösungsweg:
     das Einsetzungsverfahren).
   }%%
 
-  \newpage
-  %%%%%%%%%%%
-
-\subsection{Additions- bzw. Subtraktionsverfahren}\index{Additionsverfahren!lineare Gleichungen}\index{Subtraktionsverfahren!Gleichungssysteme}
-Eine weitere Möglichkeit lineare Gleichungssysteme mit mehreren Unbekannten zu lösen ist das Verfahren, die linke und die rechte Seite miteinander zu addieren (bzw. voneinander zu subtrahieren), sodass eine Variable wegfällt. Dazu müssen die Gleichungen vorher so \textit{präpariert} werden, dass in einer Variablen (hier \zB $x$) die Koeffizienten übereinstimmen:
-
-\gleichungsSystemNummeriert{6x+7y}{3}{8x-2y}{38}
-%%\gleichungZZ{4x+4y}{48\hspace{10mm}\text{ (I)}}{3x-6y}{-27\hspace{5mm}\text{ (II) }}
-
-Wir wählen \zB in obigem Beispiel die Variable $x$ und suche zunächst
-das kleinste gemeinsame Vielfache 24. Nun multiplizieren wir die obere
-Gleichung mit 4 und die untere mit 3 und erhalten:
-
-
-%%\TNT{2.8}{\gleichungZZ{12x+12y}{144 \hspace{8mm}(I)}{12x-24y}{-108\hspace{5mm} (II)}}
-\TNT{2.8}{\gleichungsSystemNummeriert{24x+28y}{12}{24x-6y}{114}}
-
-
-Nun können wir die untere Gleichung (II) von der oberen Gleichung (I) abziehen (damit die Variable $x$ eliminiert wird)
-und erhalten:
+\newpage
+%%%%%%%%%%%
+\input{allg/gls/Additionsverfahren}
   
-\TNT{3.2}{
- (I) - (II)
-  $$(24x+28y)  - (24x-6y)  = 12 - 114$$
-  $$24x+28y  - 24x+6y  = -102$$
-  $$0x + 34y = -102$$
-  $$y=-3$$
-}
-
-
-  Dieses $y$ setzen wir \zB in die Gleichung $8x-2y=38$ ein:
-  \TNTeop{
-    $$8x -2 \cdot{}(-3) = 38 \hspace{5mm}| TU$$
-    $$8x +6 = 38 \hspace{5mm}| -6$$
-    $$8x  = 32 \hspace{5mm}| :8$$
-    $$x = 4$$
-
-    $$\mathbb{L}_{(x;y)} = \left\{ (4; -3)  \right\}$$
-}
-\newpage
-
-
-  \begin{rezept}{Rechengesetz Additionsverfahren}{gesetz_additionsverfahren}
-    Eine beliebige Variable wird gewählt und danach beide Gleichungen so multipliziert,
-    dass die Zahlen vor dieser Variable in beiden Gleichungen gleich werden.
-
-    Dies funktioniert
-    immer mit einem gemeinsamen Vielfachen der beiden Zahlen.
-  \end{rezept}
-
-\subsection*{Aufgaben}
-\AadBMTA{150}{7. g) b) c) e)}
-
-\newpage
+\input{allg/gls/GraphischeMethode}
 
 \input{allg/gls/TaschenRechnerSysSolve}
-\newpage
 
-
-\subsection{Graphische Methode}\index{graphische Methode!Gleichungssysteme}
-
-\subsubsection{Gleichsetzungsverfahren (optional)}\label{lin_gl_gleichsetzungsverfahren}\index{Gleichsetzungsverfahren}
-Beim Gleichsetzungsverfahren werden zwei Gleichungen nach der selben Variable \textit{aufgelöst} und die beiden Gleichungen der Form $a = ...$ einander gleichgesetzt.
-
-\gleichungZZ{a}{{\color{orange}\frac{3.10 -  2b}{3}}}{a}{{\color{ForestGreen}\frac{6.00 - 5b}{4}}}%%
-\vspace{22mm}
-
-Setzen wir nun die beiden Terme gleich, so erhalten wir die
-folgende Gleichung:
-
-\TNT{8}{$${\color{orange}\frac{3.10 - 2b}{3}} =
-  {\color{ForestGreen}\frac{6.00 - 5b}{4}}$$
-  \vspace{10mm}
-
-  Links mit 4, rechts mit 3 erweitern
-  $$4\cdot{}(3.10-2b) = 3\cdot{}(6.00-5b)$$
-  $$12.40 - 8b = 18 - 15b$$
-  $$7b = 5.60$$
-  
-}%% END TNT
-
-%%Nach Auf"|lösung erhalten wir $b=\LoesungsRaum{0.80}$ (CHF) und das $a$ erhalten wir danach durch Einsetzen in eine der beiden bereits nach $a$ aufgelösten Gleichungen: $a=\LoesungsRaum{0.50}$ (CHF).
-Nach Auf"|lösung erhalten wir $b=\LoesungsRaum{0.80}$ (CHF) und das
-$a$ erhalten wir danach durch Einsetzen in eine der beiden bereits
-nach $a$ aufgelösten Gleichungen:
-
-\TNT{4}{
-$$a=\frac{3.10 -2b}{3} =\frac{3.10 - 2\cdot{}0.80}{3} =  \frac{3.10 -
-    1.60}{3} =  \frac{1.50}{3} = 0.50 $$
-}
-Das Gleichsetzungsverfahren ist ein Spezialfall des
-Einsetzungsverfahrens\totalref{einsetzungsverfahren}.
-\newpage
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsubsection{Ablesen}
-Das Gleichsetzungsverfahren\totalref{lin_gl_gleichsetzungsverfahren} kann auch als Schnittpunkt zweier linearer Funktionen\totalref{lineare_funktionen}
-aufgefasst werden. Betrachten wir folgende beiden Gleichungen:
-
-\gleichungZZ{2x - 10y}{-10}{6x+15y}{60}
-
-Lösen wir beide Gleichungen nach $y$ auf, so erhalten wir zwei Funktionsgleichungen:
-
-\gleichungZZ{f: y}{\noTRAINER{...............}\TRAINER{0.2x + 1}}{g:y}{\noTRAINER{...............}\TRAINER{-\frac{2}{5}x + 4}}
-
-
-Zeichnen Sie die beiden linearen Funktionen als Graph ins folgende
-Koordinatensystem ein und lesen Sie die Lösung \TRAINER{bei $(5|2)$} ab:
-
-\noTRAINER{
-  \bbwGraph{-6}{8}{-1}{6}{}
-}
-\TRAINER{
-  \bbwGraph{-6}{8}{-1}{6}{
-    \bbwFuncC{\x * 0.2 + 1}{-5.5:8}{green}
-    \bbwLetter{7.5,3}{f}{green}
-    \bbwFuncC{-0.4*\x + 4}{-1:7}{blue}
-    \bbwLetter{7.5,1}{g}{blue}
-  }
-}
-\newpage
-
-
-\subsection*{Aufgabe Graphisch}
-  Lösen Sie die folgende Aufgabe graphisch. Bringen Sie die beiden Gleichungen erst in die Form $y=ax+b$ der linearen Funktionen. Zeichnen Sie danach beide Funktionen in ein Koordinatensystem ($x$ von -6 bis 1 und $y$ von -3 bis 5). Schätzen Sie die Lösung, bevor Sie diese berechnen.
-\AadBMTA{151}{8. g)}
-
-
-\olatLinkGESOKompendium{2.2.4.}{15}{39. bis 41.}
-
-\newpage
-
-\TALS{\input{allg/gls/Lineare_Abhaengigkeit}
-\newpage}
+\input{allg/gls/Lineare_Abhaengigkeit}
 
 \input{allg/gls/Spezialfaelle}
-\newpage
+
 
 %\TALS{\input{allg/gls/DreiUnbekannte}
 %\newpage}
 
-\TALS{\input{tals/gls/DreiMalDreiSysteme}
-\newpage}
-
+\TALS{\input{tals/gls/DreiMalDreiSysteme}}
 
 \input{allg/gls/Substitution}
-\newpage
 
+\input{allg/gls/VermischteAufgaben}
 
-\subsection{Vermischte Aufgaben}\index{Bruchgleichungen!Gleichungssysteme}
-Oft kommen auch in Gleichungssystemen Bruchgleichungen vor. Tipp:
-bevor Sie die nachfolgenden Aufgaben lösen, betrachten Sie die folgende
-Abkürzung: Um die folgende Bruchgleichung zu vereinfachen...
+\TALS{\input{tals/gls/GLS_mit_Parametern}}
 
-\gleichungZZ{\frac{\color{ForestGreen}2-x}{\color{red}2x-3}}{\frac{\color{red}5-y}{\color{ForestGreen}2y-4}}{8}{5x-3y}
-... wird die erste Gleichung mit «übers Kreuz multiplizieren» zu:
-
-$$({\color{ForestGreen}2-x})({\color{ForestGreen}2y-4}) =
-({\color{red}2x-3})({\color{red}5-y})$$
-Nun wie gewohnt auflösen:
-\TNT{3.2}{
-  $$4y-8-2xy+4x=10x-2xy-15+3y$$
-  $$\Rightarrow y+7=6x$$
-}
-Grundform:
-\TNT{3.2}{
-  \gleichungZZ{6x-y}{7}{5x-3y}{8}
-  Additionsverfahren: Obere Gleichung mit 3 multiplizieren:
-  \gleichungZZ{18x-3y}{21}{5x-3y}{8}
-}%% END TNT
-
-$$\LoesungsMenge{}_{(x;y)} = \LoesungsRaumLang{\{(1; -1)\}}$$
-
-Lösen Sie die folgenden Aufgaben mit der für Sie am besten geeigneten Methode, indem Sie die
-Gleichungen in der Regel zunächst in die Grundform bringen.
-  \AadBMTA{151}{9. b) d) e) und f)}
-\TALS{  \AadBMTA{158}{58. (Quader) mit Taschenrechner}}
-
-\olatLinkGESOKompendium{2.2.1}{13}{31. bis 32.}
-
-\newpage
-
-
-
-\TALS{\input{allg/gls/GLS_mit_Parametern}
-\newpage}
-
-\TALS{\input{allg/gls/Sonderfaelle}
-\newpage}
-
+\TALS{\input{tals/gls/Fallunterscheidung}}
 
 \input{allg/gls/Gleichungssysteme_Textaufgaben}
-\newpage
