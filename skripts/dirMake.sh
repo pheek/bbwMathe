@@ -5,11 +5,15 @@ l
 
 export TEXINPUTS=".:/home/phi/mgit/framework:/home/phi/mgit/cnt/thema:"
 
-latexmk -pdf -silent -use-make ${TEX_FILE_NAME}.tex
+# folgender code würde eigentlich nur die LaTeX ertellen, die
+# wirklich nötig sind. Leider Leider: läuft latexmk nicht auf meinem
+# alten Debian-Server.
 
-#pdflatex  ${TEX_FILE_NAME}.tex
-#bibtex    ${TEX_FILE_NAME}.aux
-#makeindex ${TEX_FILE_NAME}.idx
-#pdflatex  ${TEX_FILE_NAME}.tex
-#makeindex ${TEX_FILE_NAME}.idx
-#pdflatex  ${TEX_FILE_NAME}.tex
+#latexmk -pdf -silent -use-make ${TEX_FILE_NAME}.tex
+
+pdflatex  ${TEX_FILE_NAME}.tex
+bibtex    ${TEX_FILE_NAME}.aux
+makeindex ${TEX_FILE_NAME}.idx
+pdflatex  ${TEX_FILE_NAME}.tex
+makeindex ${TEX_FILE_NAME}.idx
+pdflatex  ${TEX_FILE_NAME}.tex
