@@ -5,7 +5,7 @@
 
 \usepackage{amssymb} %% für \blacktriangleright
 \renewcommand{\metaHeaderLine}{Potenzgesetze}
-\renewcommand{\arbeitsblattTitel}{Version 1.4 Dez. 2024}
+\renewcommand{\arbeitsblattTitel}{Version 1.5 Okt. 2025}
 
 \begin{document}%%
 \arbeitsblattHeader{}
@@ -337,6 +337,51 @@ Schreiben Sie ohne negative Exponenten:
 %%\platzFuerBerechnungenBisEndeSeite{}
 
 \newpage
+
+\textbf{Aufgabe \arabic{bbwAufgabenNummerCounter}.} :\,\,
+
+Die Koch Kurve, nach dem Schwedischen Mathematiker Helge von Koch, ist
+ein sogenanntes Fraktal.
+
+\noTRAINER{\bbwCenterGraphic{80mm}{img/koch.png}}
+\TRAINER{\bbwCenterGraphic{50mm}{img/koch.png}}
+
+Dabei wird mit einem Generator, einer Strecke der Länge 1,
+begonnen. Dies ist in der Graphik mit $G0$ bezeichnet. Dieser
+Generator wird in drei gleich lange Teile zerlegt und über der
+mittleren Strecke wird, gleich einem gleichseitigen Dreieck, eine
+Spitze so aufgesetzt, dass nun 4 gleich lange Strecken entstehen. Dies
+wird als 1. Generation ($G1$) bezeichnet. Gleichzeitig sind die vier
+Strecken von $G1$ vier Generatoren für die nächste Generation
+$G2$. Mit diesen vier Generatoren verfahren wir genau gleich.
+
+Dies wird theoretisch unendlich oft fortgesetzt, bis man am Ende
+zur Koch-Kurve $K$ gelangt (unten in der Graphik).
+
+Berechnen Sie nun für jede Generation ($G1$, $G2$, $G3$, ..., $Gn$)
+die beiden folgenden Kennzahlen.
+\begin{itemize}
+\item $N_i$ = die Anzahl der Teilstrecken in Generation $i$.
+\item $G_i$ = die Gesamtlänge der Kochkurve der Generation $i$
+\end{itemize}
+
+\begin{bbwFillInTabular}{c|c|c|c|c|c|c|c}%%
+       & $G0$& $G1$   & $G2$ & $G3$  & $G4$ & ... & $Gn$\\\hline%%
+$N_i$  & $1$ & $4$      & \LoesungsRaum{$16$} & \LoesungsRaum{$64$}
+& \LoesungsRaum{$4^4$} & ... & \LoesungsRaum{$4^n$}\\\hline%%
+$G_i$  & $1$ & $\frac43$ & \LoesungsRaum{$\left(\frac43\right)^2$}
+& \LoesungsRaum{$\left(\frac43\right)^3$}
+& \LoesungsRaum{$\left(\frac43\right)^4$}
+& ...
+& \LoesungsRaum{$\left(\frac43\right)^n$}
+\end{bbwFillInTabular}%% 
+
+\stepcounter{bbwAufgabenNummerCounter}
+
+
+%% aufgabe ML
+\newpage
+
 \section{negative Exponenten mit Brüchen}
 \subsection{Bruchterme}
 
