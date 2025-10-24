@@ -4,5 +4,7 @@
 
 export TEXINPUTS=".:/home/phi/mgit/framework:/home/phi/mgit/cnt/thema:"
 
-pdflatex  ${TEX_FILE_NAME}.tex
+latexmk -pdf -silent -use-make ${TEX_FILE_NAME}.tex
+
+#pdflatex  ${TEX_FILE_NAME}.tex
 
