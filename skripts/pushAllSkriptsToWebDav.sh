@@ -3,12 +3,12 @@
 
 OLAT_MOUNT_POINTS=`mount | grep olat | awk '{print $3}'`
 
-echo "OLAT_MOUNT_POINTS:: ${OLAT_MOUNT_POINTS} ::"
+echo "OLAT_MOUNT_POINTS ((${OLAT_MOUNT_POINTS}))"
 
 #BBW_WEBDAV_PATH=`ls -l /mnt/ | grep "${OLAT_MOUNT_POINTS}" | grep "6_MAT_Ressourcen/\$" | awk '{print $9}'`
 BBW_WEBDAV_PATH=`ls -l /mnt/ | grep "${OLAT_MOUNT_POINTS}" | grep "MAT_Ressourcen/\$" | awk '{print $9}'`
 
-echo "BBW_WEBDAV_PATH hier gefunden:  ${BBW_WEBDAV_PATH} ::"
+echo "BBW_WEBDAV_PATH hier gefunden:  ((${BBW_WEBDAV_PATH}))"
 
 if [ -d "/mnt/${BBW_WEBDAV_PATH}/lehrperson" ] ; then
 		echo "found mountpath at /mnt/${BBW_WEBDAV_PATH}"
