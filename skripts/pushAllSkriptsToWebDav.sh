@@ -28,6 +28,14 @@ BBW_WEBDAV_PATH_FP=/mnt/${BBW_WEBDAV_PATH}/lehrperson/fp
 
 echo "pushing skripts into: ${BBW_WEBDAV_PATH_FP}"
 
+exit
+
+
+
+
+
+
+
 
 echo "copying GESO gesamtes Skript"
 cp -f ./GESO_1J/*.pdf      ${BBW_WEBDAV_PATH_FP}/i_geso/skripts
