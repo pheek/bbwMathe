@@ -1,28 +1,73 @@
-\subsection{Lineare Abhängigkeit}\index{abhängig!linear}\index{lineare Abhängigkeit}
+%
+% Spezialfälle linearer Gleichungssysteme (leere menge/unendlich viele Lösungen)
+%
+\subsection{Lineare Abhängigkeit}
 
-Lösen Sie das folgende Gleichungssystem vorerst mit dem
-Taschenrechner:
+\textbf{TYP A:} Keine Lösung
 
-\gleichungZZ{9x-6y}{18}{30x-20y}{60}
+Bestimmen Sie die Lösungsmenge des folgenden linearen Gleichungssystems:
 
-Die Lösung ist nicht vielsagend.
+\gleichungZZ{2x-y}{1}{4x-2y}{3}           
 
-Durch die Additionsmethode erhalten wir folgendes Gleichungssystem:
+\TNT{2}{Additionsverfahren liefert $$(4x-2y)-2\cdot{}(2x-y) = 3 - 2\cdot{}(1) \Longrightarrow 0 = 1$$}
 
-\TNT{3.2}{\gleichungZZ{90x-60y}{180}{90x-60y}{180}}
+Die Gleichung hat keine Lösung. Geometrisch: Die Geraden sind parallel.
 
-oder nach der Subtraktion:
+$$\LoesungsMenge{}_{(x;y)} = \LoesungsRaumLang{\{\}}$$
 
-\TNT{1.6}{$$0=0.$$}
+\textbf{TYP B:} Beliebig viele Lösungen (lineare Abhängigkeit)\index{abhängig!linear}\index{lineare Abhängigkeit}
 
-Dies bedeutet, wir haben durch Äquivalenzumformungen nun zweimal die selbe
-Gleichung da stehen. Wir können $x$ nur in Abhängigkeit von $y$
-berechnen (mehr nicht):
-\TNT{4}{(I) $\Longrightarrow$ $9x=18+6y$ $\Longrightarrow$ $x=\frac{6y+18}{9}$}
-$$x=\noTRAINER{\hspace{20mm}}\TRAINER{\frac{2y+6}{3}}$$
 
-Oder wir können $y$ in Abhängigkeit von $x$ berechnen:
-$$y=\noTRAINER{\hspace{20mm}}\TRAINER{\frac{3x-6}{2}}$$
+Bestimmen Sie die Lösungsmenge des folgenden linearen Gleichungssystems:
 
-Wichtig ist vor allem, dass Sie auch die Antwort des Taschenrechners verstehen!
+\gleichungZZ{2x-y}{1}{4x-2y}{2}           
+
+\TNT{2}{Additionsverfahren liefert $$(4x-2y)-2\cdot{}(2x-y) = 2 - 2\cdot{}(1) \Longrightarrow 0 = 0$$}
+
+Hier gibt es unendlich viele Lösungen. Die entsprechenden Geraden sind zusammefallend.
+
+$$\LoesungsMenge{}_{(x;y)} = \LoesungsRaumLen{50mm}{ \left\{(x;y) \text{ mit } y = 2x-1 \Longleftrightarrow x = \frac{y+1}2 \right\} }$$
+
+%%\TRAINER{$y = \frac{9x-4.2}{4.8}$ ist die Funktionsgleichung beider Geraden.}
+\newpage
+
+\subsection*{Repetition: Lösungsmenge}\index{Lösungsmenge}
+Auch graphisch kann die Lösungsmenge ermittelt werden. Die Angaben
+sind ananolg zu den Gleichungen mit einer Variable.
+\begin{center}
+\begin{tabular}{c|c|c}
+schneidend                 & parallel      &
+zusammenfallend\\
+ & & \\
+\vspace{0.5mm}
+$\gleichungZZ{y}{x+1}{y}{8}$ & $\gleichungZZ{y}{x+5}{y}{x+7}$ & $\gleichungZZ{y}{x+3}{2y}{2x+6}$   \\
+& & \\\hline
+& & \\
+$\times$                   & //            &   \textbf{/}      \\
+ & & \\\hline
+$x=7; y=8$                 & $5=7$         &  $3=3$            \\
+ & & \\
+$\mathbb{L}_{(x;y)}=\LoesungsRaumLen{11mm}{\{(7; 8)\}}$       & $\lx=\mathbb{L}_{(x;y)}=\LoesungsRaumLen{11mm}{\{\}}$    & $\lx=\LoesungsRaumLen{11mm}{\mathbb{R}}$ \\ 
+ & & $\mathbb{L}_y=\LoesungsRaumLen{11mm}{\mathbb{R}}$\\
+ & & $\mathbb{L}_{(x;y)}=\left\{ (x;y) \in \mathbb{R}\times\mathbb{R}
+\text{ mit } y=x+3 \right\}$\\
+
+
+&&\LoesungsRaumLen{70mm}{}\\
+&&\LoesungsRaumLen{70mm}{}\\
+&&\LoesungsRaumLen{70mm}{Es gibt unendlich}\\
+&&\LoesungsRaumLen{70mm}{viele Lösungen}\\
+\end{tabular} 
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection*{Aufgaben}
+%%\TALSAadBMTA{125ff}{382. 383., 389. a) 410. a), 411. a) b)}
+%\GESO{\olatLinkArbeitsblatt{Gleichungssysteme}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/112603866030292}{Kap. 1: a) b) c) g) h)}}
+%\TALS{\olatLinkArbeitsblatt{Gleichungssysteme}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/112603866140343}{Kap. 1: a) b) c) g) h)}}
+%\AadBMTA{153ff}{Falls nötig zuerst in Grundform bringen. Schreiben Sie $x$, $y$ und $z$ streng untereinander. Danach mit Taschenrechner lösen: 18. a) b) c) und e)}
+
+%Optionale Aufgaben zu linearen Funktionen mit Taschenrechner:
+%\AadBMTA{253}{24. b) c) d)  25. a)}
+
 \newpage
