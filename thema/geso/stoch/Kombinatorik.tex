@@ -38,7 +38,7 @@ Ost). Ein anderer möglicher Ausgang wäre (Zahl, Zwei, Süd). Wie viele solche
 Ausgänge sind denkbar?}
 \TNT{6}{
 Jedes Ergebnis ist vom vorangehenden unabhängig. Somit gibt es zwei mal
-sechs mal vier Variationen = 48 Mögliche Ausgänge
+sechs mal vier Variationen = 48 mögliche Ausgänge
 }
 
 \aufgabenFarbe{Herr Meyer hat vier verschiedene Suppenteller, vier
@@ -190,7 +190,7 @@ Reihenfolge der Farben ist jedoch wesentlich.}
 \aufgabenFarbe{Ein Monitor-Pixel (\textit{picture element}) hat die
   Möglichkeit in den Grundfarben \textbf{rot}, \textbf{grün} und
   \textbf{blau} (RGB) zu leuchten. Jede dieser Grundfarben kann dabei $2^8$
-  Helligkeitstufen verwenden. Wie viele Farben lassen sich damit mischen?}
+  Helligkeitsstufen verwenden. Wie viele Farben lassen sich damit mischen?}
 \TNT{4}{$$N = \left(2^8\right)^3 = 16\,777\,216$$}
 \newpage
 
@@ -425,14 +425,14 @@ $$n \ge{} k.$$
 \end{gesetz}
 \newpage
 
-\subsubsection{Freie Plätze?}
+\subsubsection{Freie Plätze? (optional)}
 
 Wie viele Möglichkeiten hat eine Klasse mit $k$ Lernenden, sich auf
 $k+1$ Plätze zu verteilen?
 
 \TNT{2.4}{Hier stellt man sich einfach einen ``Phantom-Schüler'' vor,
 der unsichtbar auf der leeren Bank sitzt (somit: $n=k+1$). Somit gilt auch hier: Die
-Anzahl der Möglichen Sitzordnungen = Fakultät der Anzahl Plätze = $n!
+Anzahl der möglichen Sitzordnungen = Fakultät der Anzahl Plätze = $n!
 = (k+1)!$.}
 
 Wie viele Sitzordnungen sind möglich, wenn es zwei oder mehr freie Plätze gibt?
@@ -473,7 +473,7 @@ Nicht immer sind die zur Verfügung stehenden Objekte die Personen und nicht imm
 
 \begin{tabular}{|p{62mm}|c|p{55mm}|}\hline
 \includegraphics[width=5cm]{geso/stoch/img/fuenfPersonenAufDreiStuehle.png}
-& \raisebox{20mm}{\parbox{40mm}{$$n=5$$ $$k=3$$}} & \includegraphics[width=5cm]{geso/stoch/img/dreiPersonenAufFuenfStuehle.png}\\\hline
+& \raisebox{20mm}{\parbox{40mm}{Wieder gilt:$$n=5\,\LoesungsRaumLen{27mm}{\text{optional}}$$ $$k=3\,\LoesungsRaumLen{27mm}{\text{zwingend}}$$}} & \includegraphics[width=5cm]{geso/stoch/img/dreiPersonenAufFuenfStuehle.png}\\\hline
 Hier sind fünf Personen \textbf{zur Auswahl}, somit ist $n=5$. Die Ordnung wird als Reihenfolge der Stühle betrachtet $(k=3)$. &\raisebox{-10mm}{$N=\frac{5!}{(5-3)!}$}&
 Hier sind fünf Stühle \textbf{zur Auswahl}, somit ist $n=5$. Die
 Ordnung wird als Reihenfolge der Personen (\zB 1. Person auf Stuhl C)
@@ -601,8 +601,23 @@ können wie folgt Wörter gebildet werden:
 \TNTeop{$$\frac{6!}{1! \cdot{} 2! \cdot{} 3!} = 60$$}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+\clearpage
 
 \subsection{Kombinationen}\index{Kombination}\label{kombiKombination}
+
+\AddToShipoutPictureBG{
+    \AtPageLowerLeft{
+        \put(\LenToUnit{132mm},\LenToUnit{211mm}){
+            \includegraphics[
+                width=\LenToUnit{60mm},
+                height=\LenToUnit{40mm},
+                keepaspectratio=false
+            ]{geso/stoch/img/Familie_G_aus_W.png}
+        }
+    }
+}
+
+
 Im Folgenden betrachten wir die Familie G. aus W.:
 \begin{itemize}
 \item Mutter, klein, dunkelhaarig, ...
@@ -638,7 +653,8 @@ Suchen Sie für einige «\textbf{Dreiergruppen}» der Familie G. eine treffende 
   Vater und Teenager
   \vspace{30mm}
 }% END TNT
-
+\clearpage
+\ClearShipoutPicture
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -813,7 +829,7 @@ Beim Glücksspiel «Euromillions» werden fünf aus 50 Zahlen und zwei aus zwöl
   Gemüsesorten, sechs Arten von Pilzen, drei
   Salatsorten und aus acht Arten von Früchten auswählen.
 \\
-  Er will ein Menu aus zwei Gemüsesorten, drei Pilzarten und einem
+  Er will ein Menü aus zwei Gemüsesorten, drei Pilzarten und einem
   Salat herstellen. Zum Dessert wählt er drei Arten von
   Früchten aus.
 \\
