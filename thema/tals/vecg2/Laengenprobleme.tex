@@ -18,6 +18,19 @@ mit dem Satz des Pythagoras ermittelt werden.
   Ein Vektor der Länge 1 heißt \textbf{Einheitsvektor}.
 \end{definition}
 
+\begin{bemerkung}{Längen}{}
+  Die Länge einer Strecke $\overline{AB}$ wird mit
+  $$\overline{AB} \text{ oder mit } \left| \overrightarrow{AB} \right|$$
+  bezeichnet. Es gilt:
+  $$\overline{AB} = \left| \overrightarrow{AB} \right|  = \left| \overrightarrow{BA}\right|$$
+
+  mit
+
+  $$\overrightarrow{AB} = \overrightarrow{OB} - \overrightarrow{OA}$$
+\end{bemerkung}
+
+  
+
 \newpage
 
 \begin{bemerkung}{Taschenrechner \texttt{norm}}{}
@@ -31,12 +44,26 @@ werden:
 Berechnen Sie damit die Norm des Vektors $\vec{a}$:
 $$\vec{a} =\Spvek{1;2;3} \Longrightarrow \left| \vec{a} \right| = \LoesungsRaumLen{30mm}{3.74}$$
 
+\begin{beispiel}{Mit Taschenrechner}{}
+  Gegeben ist der Vektor $\vec{v}$:
+$$\vec{v} = \Spvek{2;y;-3}$$
+  Finde $y$ so, dass $|\vec{v}| = 4$.
+
+  \TNT{4}{
+    \texttt{v := [2, y, -3]}
+    
+    \texttt{solve(norm(v)=4, y)}
+
+    Lösung: $\pm \sqrt{3}$
+  }%% end TNT
+  \TRAINER{\vspace{30mm}}
+\end{beispiel}
+
 
 \subsection*{Aufgaben}
 %%\TALSAadBFWG{196}{77. a), 83.}
 \olatLinkArbeitsblatt{Vecg II
-  Komponenten}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/108600437225393}{6. bis
-  13. }%% end link
+  Komponenten}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/108600437225393}{6. bis 13. }%% end link
 
 \newpage
 
@@ -60,7 +87,7 @@ verkürzt werden. Diese Operation nennen wir auch hier
 
   $$2.5\cdot{} \Spvek{4;-2.5;1.1} \;
   = \Spvek{\TRAINER{2.5\cdot{} 4}\noTRAINER{\hspace{25mm}} ;    \TRAINER{2.5\cdot{} (-2.5)} ; \TRAINER{2.5\cdot{} 1.1}  }
-  = \Spvek{\TRAINER{10}\noTRAINER{\hspace{12mm}} ; \TRAINER{-6.25} ; \TRAINER{2.65}}$$
+  = \Spvek{\TRAINER{10}\noTRAINER{\hspace{12mm}} ; \TRAINER{-6.25} ; \TRAINER{2.75}}$$
 \end{beispiel}
 
 «Das Entgegengesetz»
@@ -94,9 +121,28 @@ Auch im dreidimensionalen Raum kann der Taschenrechner die Länge mit
 dem Befehl \texttt{norm} ermitteln.
 \end{bemerkung}
 
+Beispiel:
+Normiere den Vektor $\vec{a}$ mit $$\vec{a} = \Spvek{6;3;2}$$
+\TNTeop{
+  Von Hand: $|\vec{a}| = \sqrt{6^2 + 3^2 + 2^2} = \sqrt{49} = 7$
+
+  Somit ist der normierte Vektor $\Spvek{\frac67; \frac37; \frac27}$
+
+  Mit dem TR:
+
+  \texttt{a := [6,3,2]}
+
+  \texttt{1 / norm(a) * a}
+}%% end TNTeop
+
+\newpage
 \subsection*{Aufgaben}
 %%\TALSAadBFWG{197}{86.}
 %%\TALSAadBMTG{264}{30. a) b) }
 
 \olatLinkArbeitsblatt{Vecg II
-  Komponenten}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/108600437225393}{14. bis 21.} %% end link
+  Komponenten}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/108600437225393}{Von
+  Hand: 14., 15. und 16. Mit Taschenrechner: 20.} %% end link
+
+\TRAINER{Noch im Aufgabendokument nachtragen: Von Hand: 14/15/16/17/18
+mit TR: 19/20/21}

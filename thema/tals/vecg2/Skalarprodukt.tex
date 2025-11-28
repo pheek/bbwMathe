@@ -15,29 +15,30 @@
 
 %%\TALSTadBFWG{201}{4.5}
 
-Ein Geschäft verkauft seine Artikel $\vec{a}$ zu folgenden Preisen $\vec{p}$.
+Ein Geschäft\footnote{Es handelt sich um fiktive Preise.} verkauft seine Artikel $\vec{a}$ zu folgenden Preisen $\vec{p}$.
 
 $$
-\vec{a} = \Spvek{\text{Brot};\text{Milch (lt)}; \text{Mehl (kg)}; \text{Zucker
-    (kg)}; \text{Teigwaren}}
+\vec{a} = \Spvek{\text{Kaffee (207 g)};\text{Seife}; \text{Reis (770
+    g)}; \text{Kokosfett (1 kg)}; \text{Zucker (2093 g)};
+\text{Hörnli (1.25 kg)}}
 \text{ entsprechende Preise: }
-\vec{p} = \Spvek{3.20; 2.40; 1.80; 1.75; 4.20}
+\vec{p} = \Spvek{1.50; 0.75; 0.45; 1.50; 1.75; 1.00}
 $$
 
 Vera $\vec{v}$ und Walter $\vec{w}$ kaufen dem entsprechend wie folgt ein. Was sind die
 jeweiligen Totalpreise?
 
-$$\vec{v} = \Spvek{1;0;0;2;2}; \vec{w} = \Spvek{2;1;1;2;0} $$
+$$\vec{v} = \Spvek{1;0;0;2;2;0}; \vec{w} = \Spvek{2;1;1;2;0;1} $$
 
-\TNT{6}{Vera: $1\cdot{} 3.20 + 0\cdot{} 2.40 + 0\cdot{}1.80 + 2\cdot{}
-  1.75 + 2\cdot{}4.20 = 15.10$
+\TNT{6}{Vera: $1\cdot{} 1.50 + 0\cdot{} 0.75 + 0\cdot{}0.45 + 2\cdot{}
+  1.50 + 2\cdot{}1.75 + 0\cdot{}1.00 = 8.00$
 
-Walter: $2\cdot{}3.20 + 1\cdot{}2.40 + 1\cdot{}1.80 + 2\cdot{}1.75 +
-0\cdot{}4.20 = 14.10$}
+Walter: $2\cdot{}1.50 + 1\cdot{}0.75 + 1\cdot{}0.45 + 2\cdot{}1.50 +
+0\cdot{}1.75 + 1\cdot{}1.00 = 8.20$}
 
 \vspace{3mm}
-Verka kauft für CHF \LoesungsRaumLen{30mm}{15.10} und Walter für CHF
-\LoesungsRaumLen{30mm}{14.10} ein.
+Verka kauft für CHF \LoesungsRaumLen{30mm}{8.00} und Walter für CHF
+\LoesungsRaumLen{30mm}{8.20} ein.
 
 \TRAINER{Vektoren sind nicht auf $\mathbb{R}^2$ oder $\mathbb{R}^3$ beschränkt!}
 \newpage
@@ -77,43 +78,44 @@ $$\Spvek{1;2;3}\circ{}\Spvek{-1;p;\sqrt{2}} \Longrightarrow p =
 \TNTeop{
   $\vec{b} + \vec{c} = \vec{a} \Longrightarrow   \vec{c} = \vec{a} - \vec{b}$
 
-  $\Longrightarrow   c_x = a_x - b_x \text{ und } c_y = a_y - b_y$
+  $\Longrightarrow   c_x = a_x - b_x \text{ und } c_y = a_y - b_y
+  \text{ und } c_z=a_z-b_z$
 
   $a = |\vec{a}|, b=|\vec{b}| \text{ und } c = |\vec{c}|$
 
   Pythagoras:
-  $c^2 = c_x^2 + c_y^2$
+  $c^2 = c_x^2 + c_y^2 + c_z^2$
 
-  $a_x-b_x$ anstelle von $c_x$ einsetzen (analog $c_y=a_y-b_y$):
+  Differenzen einsetzen:
 
-  $c^2 = (a_x-b_x)^2 + (a_y - b_y)^2$
+  $c^2 = (a_x-b_x)^2 + (a_y - b_y)^2 + (a_z - b_z)^2$
 
-  Wir erinnern an den Cosinussatz: $c^2 = a^2 + b^2 -
+  Erinnerung Cosinussatz: $c^2 = a^2 + b^2 -
   2ab\cdot{}\cos(\gamma)$
 
-  Setzen wir beide Gleichungen gleich (via $c^2$), so erhalten wir:
+  $c^2$ gleichsetzen:
 
-  $(a_x-b_x)^2 + (a_y-b_y)^2 = a^2 + b^2 - 2ab\cdot{}\cos(\gamma)$
+  $(a_x-b_x)^2 + (a_y-b_y)^2 + (a_z-b_z)^2= a^2 + b^2 - 2ab\cdot{}\cos(\gamma)$
 
-  Rechts Pythagoras: $a^2 = a_x^2 + a_y^2$ und $b^2 = b_x^2 + b_y^2$.
+  Rechts Pythagoras: $a^2 = a_x^2 + a_y^2 + a_z^2$ und $b^2 = b_x^2 +
+  b_y^2 + b_z^2$.
   
-  $(a_x-b_x)^2 + (a_y-b_y)^2 = \overbrace{a_x^2 + a_y^2}^{|\vec{a}|^2=a^2}
-  + \overbrace{b_x^2 + b_y^2}^{b^2} - 2ab\cdot{}\cos(\gamma)$
+  $(a_x-b_x)^2 + (a_y-b_y)^2 + (a_z-b_z)^2= \overbrace{a_x^2 + a_y^2 +
+  a_z^2}^{|\vec{a}|^2=a^2}
+  + \overbrace{b_x^2 + b_y^2 + b_z^2}^{b^2} - 2ab\cdot{}\cos(\gamma)$
 
   jetzt links ausmultiplizieren:
   
-  $a_x^2 - 2a_xb_x +b_x^2 + a_y^2 - 2a_yb_y + b_y^2 = a_x^2 + a_y^2 +
-  b_x^2 + b_y^2 - 2ab\cdot{}\cos(\gamma)$
+  $a_x^2 - 2a_xb_x +b_x^2 + a_y^2 - 2a_yb_y + b_y^2 + a_z^2 - 2a_zb_z
+  + b_z^2 = a_x^2 + a_y^2 + a_z^2 + 
+  b_x^2 + b_y^2 + b_z^2 - 2ab\cdot{}\cos(\gamma)$
 
   nun beginnt der Spaß mit dem Wegstreichen:
 
-  $-2a_xb_x - 2a_yb_y = -2ab\cdot{}\cos(\gamma)$
+  $-2a_xb_x - 2a_yb_y  -2a_zb_z= -2ab\cdot{}\cos(\gamma)$
 
   und noch kürzen mit $-2$:
-  $$ a_xb_x + a_yb_y = ab\cdot{}\cos(\gamma)$$
-  Bem.: Dieser Beweis funktioniert exakt gleich im $\mathbb{R}^3$, es
-  fallen dann fünf weitere Summanden an, von denen sich vier aber auch
-  wieder wegstreichen:
+  $$ a_xb_x + a_yb_y + a_zb_z= ab\cdot{}\cos(\gamma)$$
 
   \texttt{https://www.youtube.com/watch?v=RQ\_7laap-rM}
   }
