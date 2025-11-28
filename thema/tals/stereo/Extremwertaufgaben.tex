@@ -209,15 +209,14 @@ In eine Konservendose (Zylinderform) passt genau ein Liter Zwiebelsuppe. Gesucht
 Das Volumen $V$ berechnet sich aus
 
 $$V = r^2\pi\cdot{}h$$
-Da das Volumen V = 1 (Liter) ist, gilt für die Höhe:
+Da das Volumen V = 1 (Liter = Kubikdezimeter) ist, gilt für die Höhe:
 $$h = \frac{1}{r^2\pi}$$
 Die Oberfläche $A$ berechnet sich aus Deckel+Boden+Mantel:  
 $$A=r^2\pi + r^2\pi + 2r\pi\cdot{}h$$
 Wenn wir die Höhe $h$ aus dem Volumen hier einsetzen, erhalten wir für die Oberfläche:
-$$A=2r\pi\cdot{}\left(r+\frac{1}{r^2\pi}\right)$$
+$$A=2r^2\pi + 2r\pi \cdot{} \frac1{r^2\pi}$$
 
-Betrachten Sie $A$ in Abhängigkeit von $r$ und finden Sie mit einem
-Computeralgebra-System erst
+Betrachten Sie $A$ in Abhängigkeit von $r$ und finden Sie mit dem TR erst
 \begin{itemize}
 \item
   den optimalen Radius $r=\LoesungsRaum{0.542} \text{ dm}$ und dann
@@ -259,7 +258,7 @@ Skizze:
 Zielgröße: $F = l\cdot{}b$ (Länge mal Breite). Dabei ist das $l$ der doppelte Abstand $d$ (Distanz) zur Parabelachse.
 Also $F = 2db$
 
-Nebenbedingung: $b = \LoesungsRaum{p(5.5 + d) = p(5.5-d)}$
+Nebenbedingung: $b = \LoesungsRaum{p(x) = p(5.5 + d) = p(5.5-d)}$
 
 Zielfunktion: $F(d) = \LoesungsRaum{l\cdot{}b = 2d\cdot{}p(5.5+d) = 2d\cdot{}\frac{-20}9\cdot((5.5+d)-7)((5.5+d)-4)}$
 
@@ -268,7 +267,7 @@ $F(d) = \LoesungsRaum{\frac{-40}9\cdot{}d\cdot{}(d^2-\frac94)}$
 
 Maximieren: Diese Funktion $F(d)$ soll nun im Bereich $0<d<1.5$ maximiert werden TR: $d = \LoesungsRaum{\pm\frac{\sqrt{3}}2}$
 
-Zweite Größe (hier Fläche) finden: $F(d) = \LoesungsRaum{F\left(\frac{\sqrt{3}}2\right) \approx 5.77 [e^2]}$
+Zweite Größe (hier Fläche) finden: $F(d) = \LoesungsRaum{F\left(\frac{\sqrt{3}}2\right) \approx 5.77 }$
 
 
 %% Die folgende Aufgabe wurde neu bei den Wurzelfunktionen untergebracht.
