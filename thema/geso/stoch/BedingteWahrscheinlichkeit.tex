@@ -22,7 +22,7 @@ Wie groß ist die Wahrscheinlichkeit eine
 
 a) Kranke (K) , positiv getestete (P) Person zu treffen? \LoesungsRaum{95/123}
 
-b) \textbf{Unter kranken ((K)} eine positiv getestete Person (P) zu finden? \LoesungsRaum{95/97}
+b) \textbf{Unter den Kranken} eine positiv getestete Person (P) zu finden? \LoesungsRaum{95/97}
 
 c) Eine kranke Person (K) von den positiv getesteten (P) zu treffen?? \LoesungsRaum{95/99}
 
@@ -60,19 +60,23 @@ Dabei wurden 24 Personen von 123 negativ getestet: $P(N) =\frac{24}{123}\approx 
 
 \subsection*{Aufgaben}
 
-Frage: Wie viele Prozente der negativ Getesteten sind trotzdem krank?
+Frage 1: Wie viele Prozente der negativ Getesteten sind trotzdem krank?
 
 \TNT{2}{
 $P(K|N) = \frac2{24} = \frac1{12} \approx 8.3\%$}
 
 
-
+Frage 2: 
 Wie groß ist die Wahrscheinlichkeit eine gesunde Person von den negativ getesteten zu treffen?
-wirklich krank ist?
+
 \TNTeop{
-  S. BMP 2018 Serie 4 Aufgabe 14\\
-  $$P(K|P) = \frac{22}{24}\approx 91.7\%$$
+  $$P(G|N) = \frac{22}{24}\approx 91.7\%$$
+
+
+  Mögliche weitere Aufgabe: BMP 2018 Serie 4 Aufgabe 14
 }%%
+
+
 \newpage
 
 
@@ -80,7 +84,7 @@ wirklich krank ist?
 
 
 \begin{definition}{Bedingte Wahrscheinlichkeit}{}
-Die \textbf{Bedingte Wahrscheinlichkeit} oder \textit{konditionale
+Die \textbf{bedingte Wahrscheinlichkeit} oder \textit{konditionale
   Wahrscheinlichkeit} ist die Wahrscheinlichkeit eines Ereignisses
 \textbf{unter der Bedingung}, dass ein anderes Ereignis bereits
 eingetreten ist.
@@ -97,16 +101,16 @@ eingetreten ist.
 
 \end{bemerkung}
 
-\begin{beispiel}{bedingte Wahrscheinlichkeit}{}
+\begin{beispiel}{Bedingte Wahrscheinlichkeit}{}
   Wie groß ist die Wahrscheinlichkeit unter den Kranken, eine positiv
-  getestet Person zu finden?
+  getestete Person zu finden?
 
   \leserluft
 
   $$P(\LoesungsRaum{P|K})  = \LoesungsRaumLang{\frac{95}{97} \approx 97.9\%}$$
 \end{beispiel}
 
-\begin{gesetz}{bedingte Wahrscheinlichkeit}{}
+\begin{gesetz}{Bedingte Wahrscheinlichkeit}{}
   Es gilt
   $$P(A|B) = \TRAINER{\frac{|A\cap B|}{|B|}}$$  
 \end{gesetz}

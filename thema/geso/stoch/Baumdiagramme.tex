@@ -227,7 +227,9 @@ Das Gesamtexperiment besteht darin, fünf Einzelexperimente
 durchzuführen. Jedesmal ist die Wahrscheinlichkeit, eine blaue Kugel
 zu erwischen, gleich groß und wir sprechen von einem Bernoulli-Experiment.
 
-\item Dreifaches Drehen am Glücksrad: Wie groß ist die Wahrscheinlichkeit, genau zweimal «Gewinn» zu erzielen?
+\item Vierfaches Drehen am Glücksrad: Wie groß ist die
+  Wahrscheinlichkeit, genau zweimal «Gewinn» zu erzielen, wenn pro
+  Drehung ein Gewinn mit 28 \% Wahrscheinlichkeit auftritt?
 
 \item Siebenfaches Würfeln mit einem Spielwürfel, bei dem wir
   interessiert sind, wie groß die Wahrscheinlichkeit ist, dass genau fünf mal ein kleinerer Wurf als eine \epsdice{3} gewürfelt wird.
@@ -241,6 +243,8 @@ Wahrscheinlichkeit von 38\%.
 Wie groß ist die Wahrscheinlichkeit, dass er genau sechs von zehn Torschüssen
 abfangen kann?
 \end{itemize}
+
+\TRAINER{Diese Aufgaben allenfalls auch aufs Stochastik-Aufgabenblatt.}
 \newpage
 
 
@@ -322,7 +326,7 @@ Dies kann mit dem Taschenrechner gelöst werden:
 Entweder direkt ...
 
 $$\LoesungsRaumLang{( 7 \text{\,\,nCr\,\,} 5 ) *\left(\frac26\right)^5 *
-\left(1-\frac26\right)^{7-5}} \approx \LoesungsRaum{0.03841 = 3.841\%}$$
+\left(1-\frac26\right)^{7-5}} \approx \LoesungsRaum{0.03841 = 3.841\% =\frac{28}{729}}$$
 
 ... oder aber mit der eingespeicherten Formel bei
 \tiprobutton{data_stat-reg-distr} und dort unter \texttt{DISTR: 4
@@ -499,31 +503,12 @@ Es seien:
 $$P(X=t) = \frac{ {T\choose t} \cdot{} {{N}\choose {n}}}{{{T+N} \choose {t+n}}}$$
 \end{gesetz}
 
-\textbf{Beispiele} mit obigen sieben Kugeln (drei Treffer und vier
-Nieten)
-\leserluft
+Wie groß ist die Wahrscheinlichkeit, beim Zahlenlotto (Euromillions)
+genau 3 Treffer aus 50 zu erzielen, wenn 5 aus 50 gezogen worden sind.
 
-$$T=\LoesungsRaum{3}, N=\LoesungsRaum{4}, T+N=\LoesungsRaum{7}$$
+$$P(X=3) = \LoesungsRaumLen{100mm}{\frac{ {5 \choose 3} \cdot{} {45
+      \choose 2} }{{50 \choose 5}} \approx 0.467 \%}$$
 
-
-\textbf{Beispiel 1}: Ich will bei zwei gezogenen Kugeln zwei
-verschiedene Kugeln, also \textbf{genau einen Treffer}:
-
-($t=1$) mit zwei Ziehungen ($t+n=2$), somit eine Niete ($n=1$).
-Wir erhalten:
-
-$$P(X=1) = \frac{ {T\choose t} \cdot{} {{N}\choose {n}}}{{{T+N}
-    \choose {t+n}}} = \LoesungsRaumLang{\frac{ {3\choose 1} \cdot{} {{4}\choose {1}}}{{7
-    \choose 2}} = \frac{3\cdot{4}}{21} = \frac{12}{21} \approx 0.57}$$
-
-\textbf{Beispiel 2}: Ich will bei zwei gezogenen Kugeln \textbf{je einen Treffer}:
-
-($t=2$) mit zwei Ziehungen ($t+n=2$), somit keine Niete ($n=0$).
-Wir erhalten:
-
-$$P(X=2) = \frac{ {T\choose t} \cdot{} {{N}\choose {n}}}{{{T+N}
-    \choose {t+n}}} = \LoesungsRaumLang{\frac{ {3\choose 2} \cdot{} {{4}\choose {0}}}{{7
-    \choose 2}} = \frac{3\cdot{}1}{21} = \frac17 \approx 0.14}$$
 \newpage
 
 \subsection*{Aufgaben}
@@ -561,5 +546,5 @@ b) $$P(x > 1) = P(x=1) + P(x=2) = \frac{70}{171} +
 
 \olatLinkGESOKompendium{5.5.3}{49}{25. (Herz-Karten), 26. (Smarties), 24. (Zahlenlotto) und optional
   27. (Euromillions)}
-
+\TRAINER{Auch noch weitere Aufgaben sammeln (S. Sammlung M. Bräm).}
 \newpage
