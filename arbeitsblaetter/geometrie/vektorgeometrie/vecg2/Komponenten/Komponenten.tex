@@ -87,13 +87,24 @@ $s=-8$, $t=\frac9{10}$, $m=0$}%% end TRAINER
 
 \aufgabeML{Gegeben sind die Punkte:
 $$A= (7 | 5.5 | -3) \text{ und } B=(5|-2|0)$$
+\\
+Berechnen Sie die folgenden Terme:\\
+a) $\overrightarrow{OA}$,\\
+b) $\overrightarrow{BA}$ und\\
+c) $\overrightarrow{OA} + 3\cdot{} \overrightarrow{AB}$
+}{
 
-Berechnen Sie die folgenden Terme:
-$\overrightarrow{OA}$ und $\overline{AB}$
+a) $$\overrightarrow{OA} = \Spvek{7;5.5;-3}$$
+b) $$\overrightarrow{BA} = \Spvek{7;5.5;-3} - \Spvek{5;-2;0} = \Spvek{2;7.5;-3}$$
+c)
+$$\overrightarrow{OA} + 3\cdot{} \overrightarrow{AB} =
+\Spvek{7;5.5;-3} + 3\cdot{} \Spvek{-2;-7.5;3} =
+\Spvek{7-3\cdot{}(-2); 5.5+3\cdot{}(-7.5); -3 + 3\cdot{}3} =
+\Spvek{13;-17;6}$$
+}
 
-}{$$\overrightarrow{OA}
-=\LoesungsRaum{\Spvek{7;5.5;-3}}$$
-$$\overline{AB} \approx \LoesungsRaum{8.3217}$$}
+
+
 
 
 \aufgabeML{Gegeben sind die Punkte $A=(5|1)$ und $B=(8|5)$.
@@ -222,7 +233,7 @@ $$\overrightarrow{CA} = \Spvek{7-0;2-0;6-8}       = \Spvek{7;2;-2}$$
 
 \aufgabeML{Bestimmen Sie die Länge der Seitenhalbierenden $s_a$ im
 Dreieck $\Delta ABC$\\
-(es gelte $e_x=e_y=e_z=1$):
+(es gelte $\e_x = \e_y = \e_z=1$):
 
 $$A=(1|1|2); B=(3|4|5); C=(2|9|6)$$
 
@@ -283,10 +294,15 @@ weit entfernt?
 
 \aufgabeML{Berechnen Sie $\vec{b}$ so, dass $\vec{b}$ den Betrag 1 hat
 und dem Vektor $\vec{a}$ entgegengesetzt ist:
-$$\vec{a} = \Spvek{4;0;-3}$$
+$$\vec{a} = \Spvek{3;0;-4}$$
 
 \vspace{12mm}
-}{$$\vec{b} = \LoesungsRaum{\Spvek{-0.8;0;0.6}}$$}
+}{
+Entgegengesetzt: $\Spvek{-3;0;4}$
+
+Länge von $\vec{a} = \sqrt{(-3)^2 + 4^2} = \sqrt{9+16}= \sqrt{25} = 5$
+
+$$\vec{b} = \frac15 \cdot{} \Spvek{-3;0;4} = \Spvek{-0.6;0;0.8}$$}%% end AufgabeML
 \newpage
 
 
@@ -393,7 +409,7 @@ $$\Spvek{0.7; k; \frac1{10}}$$
 (Mit Taschenrechner auf 3 signifikante Stellen angeben.)
 
 
-}{Lösung = \LoesungsRaumLang{$k=\pm \sqrt{2}/2 \approx \pm 0.707$}}
+}{Lösung = \LoesungsRaumLang{$k=\pm \frac{\sqrt{2}}{2} \approx \pm 0.707$}}
 
 \newpage
 
@@ -409,10 +425,10 @@ $$\Spvek{3;9;1} \pm \frac{\sqrt{35}}{5}\cdot{}\Spvek{3;-1;-5}$$
 }%% end TRAINER
 }%% end AufgabeML
 
-
 \newpage
-\subsection{Linearkombination}
 
+
+\subsection{Linearkombination}
 
 \aufgabeML{Gegeben seien die Vektoren $\vec{a}$, $\vec{b}$ und
 $\vec{c}$.

@@ -25,20 +25,20 @@ darstellbar.
 
   $$\vec{b} = x_1\cdot{}\vec{a_1} +  x_2\cdot{}\vec{a_2} +
   x_3\cdot{}\vec{a_3} + ...$$
-  eine Linearkombination der gegebenen Vektoren $\vec{a_1}$, $\vec{a_2}$, $\vec{a_3}$, ... 
+  eine \textbf{Linearkombination} der gegebenen Vektoren $\vec{a_1}$, $\vec{a_2}$, $\vec{a_3}$, ... 
 \end{definition}
 
 
 \begin{beispiel}{Linearkombination}{}
-Oft wollen wir einen Vektor $\vec{c}$ durch eine Linearkombination von
-gegebenen Vektoren ausdrücken.
+Oft wollen wir einen gegebenen Vektor $\vec{g}$ durch eine Linearkombination von
+anderen gegebenen Vektoren ausdrücken.
 
-Gegeben: $\vec{a\vphantom{b}}$, $\vec{b}$ und $\vec{c\vphantom{b}}$
+Gegeben:$\vec{g}$ und die Vektoren $\vec{a\vphantom{b}}$, $\vec{b}$ und $\vec{c\vphantom{b}}$
 
-Gesucht $t$ und $s$ in $\mathbb{R}$, sodass
+Gesucht $r$, $s$ und $t$ in $\mathbb{R}$, sodass gilt:
 
-$$\vec{c} = t\cdot{}\vec{a\vphantom{b}} + s\cdot{}\vec{b}$$
-gilt.
+$$\vec{g} = r\cdot{}\vec{a\vphantom{b}} + s\cdot{}\vec{b} + t\cdot{} \vec{c\vphantom{b}}$$
+
 
 \end{beispiel}
 
@@ -95,9 +95,9 @@ Raum aufzuspannen.
 
 \begin{bemerkung}{Drei Dimensionen}{}
   Die drei Einheitsvektoren
-  $$\vec{e}_1=\Spvek{1;0;0} ;
-  \vec{e}_2=\Spvek{0;1;0} \text{ und }
-  \vec{e}_3=\Spvek{0;0;1}$$
+  $$\vec{\e}_1=\Spvek{1;0;0} ;
+  \vec{\e}_2=\Spvek{0;1;0} \text{ und }
+  \vec{\e}_3=\Spvek{0;0;1}$$
 spannen den dreidimensionalen Raum derart auf, dass jeder weitere
 erdenkliche Vektor als
 Linearkombination aus diesen drei Vektoren geschrieben werden kann:
@@ -116,11 +116,11 @@ $$\Spvek{7;3;-1.4} =
 \end{gesetz}
 
 \begin{definition}{Linear abhängig}{}
-  Ein Vektor $\vec{b}\ne \vec{0}$ heißt von den Vektoren $\vec{a}_1, \vec{a}_2,
-  \vec{a}_3, ... , \vec{a}_n$ \textbf{linear abhängig}, wenn es eine
-  Linearkombination mit $x_i \in \mathbb{R}$ gibt, für die gilt:
+  Ein Vektor $\vec{b}\ne \vec{0}$ heißt von den Vektoren $\vec{a}$,
+  $\vec{b}$ und $\vec{c}$ \textbf{linear abhängig}, wenn es eine
+  Linearkombination mit $r$, $s$ und $t \in \mathbb{R}$ gibt, für die gilt:
 
-  $$\vec{b} = \sum_{i=1}^{n}x_i\cdot{}\vec{a}_i$$
+  $$\vec{b} = r\cdot{}\vec{a\vphantom{b}} + s\cdot{}\vec{b} + t\cdot{}\vec{c\vphantom{b}}$$
   \end{definition}
 \newpage
 \subsubsection{Beispiele}%%\index{unabhängig!linear}
@@ -146,4 +146,4 @@ $$\Spvek{7;3;-1.4} =
 \subsection*{Aufgaben}
 %%\TALSAadBFWG{196}{ 80. a)}
 \olatLinkArbeitsblatt{Vecg II
-  Komponenten}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/108600437225393}{26. bis 29.}%% end
+  Komponenten}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/108600437225393}{Von Hand: 26. bis 29.}%% end
