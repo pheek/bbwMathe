@@ -25,4 +25,28 @@ ist $a$ die Steigung\footnote{Steigung: Eine Einheit nach rechts: Um wie viele E
   \item $a$ = Steigung der Geraden pro eine Einheit nach rechts (in $x$-Richtung)
   \item $\frac{-b}{a}$ = Lösung der Gleichung $ax+b=0$. Dies ist der $x$-Achsenabschnitt.
   \end{itemize}
+\newpage
+
+Mit diesem Gedanken können wir lineare Gleichungen auch lösen, wenn
+diesen nicht in der Grundform stehen:
+
+$$3x+1 = 2x$$
+
+
+$\text{term1} := 3x+1$\\
+  $\text{term2} := 2x$\\
+  solve($\text{term1}=\text{term2}$, $x$)\\
+  Diese letzte Variante hat den Vorteil, dass wir die Terme leicht als Funktionen in $x$ auffassen können und diese im Graph-Modus sofort anzeigen können:
+  \begin{enumerate}
+    \item Neue «Page» (1.2) erstellen (+page) als Graph. 
+    \item Tippe $f1(x)=\text{term1}$
+    \item Tippe \fbox{CTRL} \fbox{G} (oder mehrmals die \fbox{TAB}-Taste), um die Eingabezeile wieder zu aktivieren.
+      \item $f2(x)=\text{term2}$
+  \end{enumerate}
+
+\bbwCenterGraphic{6cm}{tals/gl1/img/nspire_zwei_gleichungen.png}
+%  \begin{center}
+%   \raisebox{-1cm}{\includegraphics[width=6cm]{img/nspire_zwei_gleichungen.png}}
+%  \end{center}
+  Der Schnittpunkt der beiden Geraden zeigt die Variable $x$ (hier $-1$) und den Wert der beiden Terme (links bzw. rechts) des Gleichheitszeichens als Variable $y$ (hier $-2$) an.
 
