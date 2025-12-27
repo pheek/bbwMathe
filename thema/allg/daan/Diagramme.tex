@@ -117,9 +117,72 @@ Umrechnungen:
   Kreisdiagramm:
   
   \AadBMTA{402}{10. und 12.}
-
+   
+  \olatLinkGESOKompendium{4.2}{36}{1 (Anzahl Kinder)}
 
 \newpage
+
+\subsection{Prozentuale Zunahme/Abnahme}\index{Zunahme!prozentual}\index{Abnahme!prozentual}\index{Prozent}\index{\%}
+Um die prozentuale Zunahme zu rechnen, muss immer von einem «hundert
+Prozent» ausgegangen werden. Bei einer Zunahme (bzw. Abnahme) wird in
+der Regel vom vorangegangenen Wert ausgegangen. Oft ist dieser Wert
+aber auch bereits in Prozenten angegeben. So ist bei der prozentualen
+Zunahme von der alten Prozentzahl auszugehen.
+
+Beispiele
+
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  ursprünglich $(u)$  &  neu $(n)$& absolute $(a)$... & ... und prozentuale $(p)$ Zunahme       \\
+  \hline
+  ({\color{blue}100\%}) &   ---    & ---       & ---                         \\
+  \hline
+  31 Stk. &  38 Stk. & +7 Stk.   & {\color{blue}22.6\%} Zunahme              \\
+  \hline
+  20 {\color{red}m}    &  18 {\color{red}m}    & - 2 {\color{red}m}
+  & {\color{blue}-10 \%} Zunahme = {\color{blue} +10\%} Abnahme              \\
+  \hline
+\end{tabular}
+
+Ganz analog gilt das für \textbf{Quoten}\index{Quote} = prozentuale Anteile.
+
+\begin{bbwFillInTabular}{|c|c|c|c|}\hline
+  \hline
+  ursprünglich  &  neu & absolute ... & ... und prozentuale  Zunahme       \\\hline
+  20 {\color{red}\%}   &  23 {\color{red}\%}   & + 3 {\color{red}\%}    & {\color{blue}15 \%} (relative, prozentuale) Zunahme              \\
+  \hline
+  38 \%   &  44\%    & +6\%      & {\color{blue}15.8\%} Zunahme              \\
+  \hline
+  87\%    &  23\%    & -64\%     &\TRAINER{73.6\% Abnahme!}    \\
+  \hline
+  6 \%    &  38\%    & +32\%     &\TRAINER{533.3\%(!) Zunahme} \\
+  \hline
+  9 \%    &  11\%    & \noTRAINER{\,\,\,\,\,}\TRAINER{2}\%     &\TRAINER{22.2...\% Zunahme} \\
+  \hline
+  52 \%   & \noTRAINER{\,\,\,\,\,\,} \TRAINER{42.64} \%    & \noTRAINER{\,\,\,\,\,\,}\TRAINER{-9.36}\%  & 18\% Abnahme\\
+  \hline
+  \noTRAINER{\,\,\,\,\,}\TRAINER{50} \%   & \noTRAINER{\,\,\,\,\,\,\,}\TRAINER{57}\% & +7\% & 14\% Zunahme\\
+  \hline
+\end{bbwFillInTabular}
+
+\newpage
+Formeln:
+
+\TNTeop{
+$$n = u+a = u\cdot{} (1 + \frac{p}{100})  = \frac{a\cdot(100+p)}{p}$$
+
+$$a=n-u= \TRAINER{\frac{u\cdot{}p}{100}  = \frac{n\cdot{}p}{100+p}  }  $$
+
+$$u=n-a= \frac{a}p\cdot{}100 = \frac{n}{1+\frac{p}{100}}$$
+
+$$p= \frac{a}{u}\cdot{}100 $$
+  
+}%% END TNT
+
+
+%\TALSAadBMTA{S. 252}{948. 949.}
+%}
+\newpage%%
 
 
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -255,6 +318,57 @@ In der folgenden sortierten Messreihe hat es zwei «mittlere Werte»
 \olatLinkGESOKompendium{4.2}{37}{5.}
 
 \AadBMTA{409}{39., 40. und 41.}
+\newpage
+\subsubsection{Quartile}\index{Quartil}
+Der Median wird auch 50 \%-Quantil\index{Quantil} oder $Q_{50\%} = Q_{0.5}$ genannt. Ein
+Datensatz kann aber nicht nur in der Mitte (50 \%), sondern bei jeder
+prozentualen Anzahl der Werte aufgeteilt werden. Es bezeichnen:
+
+\begin{definition}{Quartil}{}
+
+  \begin{tabular}{ccccccc}
+  
+  \textbf{Q1} &=& unteres Quartil & 25 \%-Quantil & $Q_{25 \%}$ &=& $Q_{0.25}$ \\
+
+  $\mediantilde{x}$ &=&  Median & 50 \%-Quantil &  $Q_{50 \%}$ &=& $Q_{0.5}$ \\
+
+  \textbf{Q3} &=& oberes Quartil & 75 \%-Quantil &  $Q_{75 \%}$ &=& $Q_{0.75}$
+  \end{tabular}
+  \end{definition}
+
+Teilen Sie die folgenden Datensätze in die Quartile und bestimmen Sie
+Q1, Median und Q3.
+
+2, 3, 3, 4, 5, 6, 8, 8, 9, 10
+
+Q1= \LoesungsRaumLen{30mm}{3}
+
+Median = \LoesungsRaumLen{30mm}{5.5}
+
+Q3 = \LoesungsRaumLen{30mm}{8}
+
+\begin{rezept}{Quartile}{}
+  
+  Q1 ist der Median der linken Hälfte der Daten und
+
+  Q3 ist der Median der rechten
+  Hälfte der Daten.
+
+  Bei einer ungeraden Anzahl an Werten wird der Median aus der
+  Datenreihe gestrichen um Q1 und Q3 zu bestimmen.
+\end{rezept}
+
+
+Beispiel
+2, 3, 4, 4, 5, 6, 8, 9, 9
+
+Q1= \LoesungsRaumLen{30mm}{3.5}
+
+Median = \LoesungsRaumLen{30mm}{5}
+
+Q3 = \LoesungsRaumLen{30mm}{8.5}
+
+
 
 \newpage
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
