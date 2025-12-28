@@ -410,15 +410,21 @@ $$\alpha=\arccos\left(\frac{17}{18}\right) \approx 19.1881\degre$$
 
 \subsection{Parameter mit TR bestimmen}
 
-
-\aufgabeML{Bestimmen Sie den Parameter $x$ von Hand so, dass die beiden
+\aufgabeML{Bestimmen Sie den Parameter $p$ so, dass die beiden
 Vektoren $\vec{u}$ und $\vec{v}$ einen Winkel von 45 Grad
 einschließen:
-$$\vec{u} = \Spvek{1;1;0} \hspace{11mm} \vec{v}=\Spvek{2;1;x}$$}%%
-{$$t = \LoesungsRaum{\pm 2}$$ }%% end aufgabeML
-\TRAINER{..., denn $\cos{45\degre} = \frac{\sqrt2}2$ und dies ist
-gleich $\frac{\vec{u}\circ\vec{v}}{uv} = \frac{1+2}{\sqrt{2}\cdot{}\sqrt{x^2+5}}$}
-
+$$\vec{u} = \Spvek{1;1;0} \hspace{11mm} \vec{v}=\Spvek{2;1;p}$$
+$$p = \LoesungsRaum{\pm 2}$$
+}%%
+{Lösung von Hand:
+$$uv\cdot{}\cos(45\degre) = \vec{u}\circ{}\vec{v}$$
+Mit $\cos(45\degre)=\frac{\sqrt{2}}{2}$ folgt:
+$$\sqrt{1+1} \cdot{} \sqrt{4+1+p^2} \cdot{} \frac{\sqrt{2}}{2} = 2 + 1$$
+auflösen:
+$$\sqrt{p^2+5} = 3$$
+$$p^2+5 = 9$$
+und somit $p=\pm 2$
+}%% end aufgabeML
 
 
 \aufgabeML{Bestimmen Sie den Parameter $s$ mit dem Taschenrechner so, dass die beiden
@@ -428,8 +434,6 @@ $$\vec{a} = \Spvek{2;3;4} \hspace{11mm} \vec{b}=\Spvek{5;s;8}$$}%%
 {$$s = \LoesungsRaum{\frac{\sqrt{222691}-504}{7}\approx{}-4.5855}$$}
 \TRAINER{Lösung mit TR: a und b definieren, danach cos(60) =
 dotp(a,b) / (norm(a) * norm(b)).}
-
-
 
 
 \aufgabeML{%%
