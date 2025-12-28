@@ -9,7 +9,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{amssymb} %% für \blacktriangleright
-\renewcommand{\metaHeaderLine}{Arbeitsblatt (V 2.0)}
+\renewcommand{\metaHeaderLine}{Arbeitsblatt (V 2.1)}
 \renewcommand{\arbeitsblattTitel}{Vektorgeometrie in $\mathbb{R}^3$: Skalarprodukt}
 
 \begin{document}%%
@@ -33,56 +33,156 @@
 
 \section{Skalarprodukt}
 
- Es bezeichne jeweils $a = |\vec{a}|$.
+ Es bezeichne jeweils $a = |\vec{a}|$, $b = |\vec{b}|$, etc.
+
+
+\subsection{Skalarprodukt aus gegebenen Vektoren}
+
+\aufgabeML{Berechnen Sie $\vec{r}\circ\vec{s}$:
+$$\vec{r} = \Spvek{6;-5} \hspace{11mm}\vec{s}=\Spvek{-6;-4}$$}%%
+{$$\vec{r}\circ{}\vec{s} = \LoesungsRaum{-16}$$}%% end AufgabeML
+
+
+\aufgabeML{%%
+Bestimmen Sie das Skalarprodukt der Vektoren $\vec{u}$ und $\vec{v}$:
+%% RoMi
+$$\vec{u} = \Spvek{3;-4;6} \text{ und } \vec{v} = \Spvek{2;3;-1}$$
+}{%%
+$6-12-6 = -12$
+}%% end AufgabeML
+%%\TRAINER{\newpage}
+
+\aufgabeML{Berechnen Sie $\vec{r}\circ\vec{s}$:
+$$\vec{r} = \Spvek{6;6;-3} \hspace{11mm} \vec{s}=\Spvek{-0.5;5;9}$$}%%
+{$$\vec{r}\circ{}\vec{s} = \LoesungsRaum{0 \hspace{11mm}(=-3+30-27)}$$}%% end AufgabeML
+
+
+\aufgabeML{%%
+Gegeben sind die Vektoren $\vec{u} = \Spvek{2;0;-1}$, $\vec{v}
+= \Spvek{1;-1;1}$ und $\vec{w} = \Spvek{0;1;-2}$.
+
+Berechnen Sie die folgende Summe:
+$$(4\vec{u}\circ{}\vec{v}) + (\vec{u}\circ{}2\vec{w})
+= \LoesungsRaum{8}$$
+%%Tipp: \texttt{dotp} berechnet das Skalarprodukt auf dem tiNSpire.
+}{%%
+$4\vec{u} \circ \vec{v} + \vec{u}\circ{}2\vec{w} =$
+
+$\Spvek{8;0;-4} \circ{} \Spvek{1;-1;1} + \Spvek{2;0;-1} \circ{} \Spvek{0;2;-4} =$
+
+$(8-4) + 4 = 8$
+}%% end AufgabeML
+
+
+\aufgabeML{%%
+Gegeben sind die Vektoren $\vec{a} = \Spvek{1;2}$,
+$\vec{b}=\Spvek{-3;2}$, $\vec{c}=\Spvek{-4;-1}$ und $\vec{d}
+= \Spvek{-1;3}$.
+
+Berechnen Sie $(\vec{a} - 2\vec{c})\circ{}(3\vec{b}-\vec{d})$
+}{%%
+ Lösung: $-60$
+}%% end AufgabeML
 
 
 
+\subsection{Fehlende Parameter}
+
+\aufgabeML{%%
+Bestimmen Sie den Parameter $p$ so, dass gilt:
+$$\Spvek{2;-7;0}\circ{}\Spvek{p;0;p} = 6$$
+}{%%
+$2p -7\cdot{}0 + 0p =6 \Longrightarrow p = 3$
+}%% end AufgabeML
 
 
-\subsection{Formel zum Skalarprodukt}
+\aufgabeML{%%
+Bestimmen Sie den Parameter $q$ so, dass gilt:
+$$\Spvek{q;4;5}\circ{}\Spvek{q;q;0} = 21$$
+}{%%
+$q^2+4q - 21 = 0$
+
+faktorisieren (oder mit Mitternachtsformel):
+
+$(q+7)(q-3)=0$ ergo
+
+$$\mathbb{L}_q = \{-7; 3\}$$
+
+}%% end AufgabeML
 
 
-\aufgabeML{ Gegeben sind die Vektoren $\vec{p}$ und $\vec{q}$ mit
-$$p=37\hspace{11mm}q=42\hspace{1mm}\text{ und } \angle
-(\vec{p},\vec{q}) = 18\degre$$
-Berechnen Sie das Skalarprodukt!
-}%%
-{$$\vec{p}\circ\vec{q} = \LoesungsRaum{37\cdot{}42\cdot\cos(18\degre)\approx 1477.9418}$$}
+
+\aufgabeML{%%
+Bestimmen Sie den Parameter $x$ so, dass gilt:
+$$\Spvek{\sqrt{2}\cdot{}x;3x;2}\circ{}\Spvek{\sqrt{2}\cdot{}x;3;-x} = 15$$
+}{%%
+$2x^2 + 9x -2x = 15$
+
+$2x^2 +7x -15 = 0$
+faktorisieren (oder mit Mitternachtsformel):
+
+$(2x-3)(x+5)=0$ ergo
+
+$$\mathbb{L}_x = \{-5; \frac32\}$$
+
+}%% end AufgabeML
 
 
-\aufgabeML{
+\subsection{Skalarprodukt aus Winkel und Längen}
+\aufgabeML{%%
 Gegeben sind die Vektoren $\vec{r}$ und $\vec{s}$ mit: 
 $$r=20\hspace{11mm}s=30\hspace{1mm}\text{ und } \angle
 (\vec{r},\vec{s}) = 0\degre$$
-$$\vec{r}\circ\vec{s} = \LoesungsRaum{20\cdot{}30\cdot\cos(0\degre)=600}$$}{}
+$$\vec{r}\circ\vec{s} = \LoesungsRaum{20\cdot{}30\cdot\cos(0\degre)=600}$$}{}%% end AufgabeML
 
+\aufgabeML{%%
+Gegeben sind die Vektoren $\vec{a}$ und $\vec{b}$ mit: 
+$$a=6.98\hspace{11mm}b=11.2\hspace{1mm}\text{ und } \angle
+(\vec{a},\vec{b}) = 90\degre$$
+$$\vec{r}\circ\vec{s} = \LoesungsRaum{a\cdot{}b\cdot\cos(90\degre)=0}$$}{Hinweis: $\cos(90\degre) = 0$}%% end AufgabeML
 
-\aufgabeML{Berechnen Sie den Winkel zwischen $\vec{a}$ und $\vec{b}$.
-$$\vec{a}\circ\vec{b}=18\hspace{11mm}a=9\hspace{11mm}b=8$$
-$$\angle(\vec{a},\vec{b})= \LoesungsRaum{=\arccos\left(\frac{\vec{a}\circ\vec{b}}{a\cdot{}b}\right)
-  = \arccos{}\left(\frac{18}{9\cdot{}8}\right)\approx 75.52\degre}$$}{}
-
-\aufgabeML{Berechnen Sie den Winkel zwischen $\vec{a}$ und $\vec{b}$.
-$$\vec{a}\circ\vec{b}=56\hspace{11mm}a=7\hspace{11mm}b=8$$
-
-$$\angle(\vec{a},\vec{b})= \LoesungsRaum{
-=\arccos  \left( \frac{\vec{a}\circ\vec{b}}{a\cdot{}b}  \right)
-= \arccos \left( \frac{56}{7\cdot{}8} \right)
-= 0\degre }$$}{}
-
-
-
-\aufgabeML{Berechnen Sie den Winkel zwischen $\vec{a}$ und $\vec{b}$.
-$$\vec{a}\circ\vec{b}=0\hspace{11mm}a=1.41421\hspace{11mm}b=1.73205$$
-
-$$\angle(\vec{a},\vec{b})= \LoesungsRaum{=\arccos\left(\frac{\vec{a}\circ\vec{b}}{a\cdot{}b}\right)
-  = \arccos{}\left(\frac{0}{a\cdot{}b}\right)\approx 90\degre}$$}{}
 
 \aufgabeML{Berechnen Sie den Wert des Skalarproduktes, wenn bekannt
   ist, dass der Winkel zwischen den zwei Vektoren $\vec{u}$ und
   $\vec{v}$ $45\degre$ beträgt und zusätzlich folgendes gilt:
  $$|\vec{u}|= 3 \text{ und } |\vec{v}|=4$$
-}{$$\vec{u} \circ \vec{v} = u\cdot{}v\cdot{}\cos(45\degre) = 3\cdot{}4\cdot{}\frac{\sqrt{2}}{2} = 6\cdot{}\sqrt{2} \approx 8.49$$}
+}{$$\vec{u} \circ \vec{v} = u\cdot{}v\cdot{}\cos(45\degre) = 3\cdot{}4\cdot{}\frac{\sqrt{2}}{2} = 6\cdot{}\sqrt{2} \approx 8.49$$}%% end aufgabeML
+
+
+
+\aufgabeML{Gegeben sind zwei Vektoren $\vec{a}$ und $\vec{b}$ und ihr Zwischenwinkel $\varphi$:
+
+$a = 5$
+
+$b=10$
+
+$\varphi = 60\degre$
+
+Berechnen Sie aus diesen Angaben das Skalarprodukt:
+
+$\vec{a}\circ{}\vec{b} = \LoesungsRaumLen{30mm}{25}$
+}{%%
+$$\vec{a}\circ{}\vec{b} = a \cdot{} b \cdot{} \cos(\varphi) = 5\cdot{}10\cdot{}\frac12 = 25$$
+}%% end aufgabeML
+
+
+
+\aufgabeML{Gegeben sind zwei Vektoren $\vec{a}$ und $\vec{b}$ und ihr Zwischenwinkel $\varphi$:
+
+$a = \Spvek{2;3;6}$
+
+$b=3\cdot{}\sqrt{2}$
+
+$\varphi = 45\degre$
+
+Berechnen Sie aus diesen Angaben das Skalarprodukt:
+
+$\vec{a}\circ{}\vec{b} = \LoesungsRaumLen{30mm}{21}$
+}{%%
+$$a = \sqrt{2^2 + 3^2 + 6^2} = 7$$
+
+$$\vec{a} \circ{} \vec{b} = a \cdot{} b \cdot{} \cos(\varphi) = 7 \cdot{} 3 \cdot{} \sqrt{2} \cdot{} \frac1{\sqrt{2}} = 21$$
+}%% end aufgabeML
 
 
 \aufgabeML{Seien $\vec{u}$ und $\vec{v}$ zwei Vektoren. Berechnen Sie
@@ -90,12 +190,20 @@ den Zwischenwinkel, wenn gilt:
 
 a) $\vec{u}\circ{}\vec{v} = -u\cdot{}v$
 
-b) $ \frac12uv = \vec{u}\circ{}\vec{v} $
+b) $ \frac12uv = \vec{u}\circ{}\vec{v} $ (Tipp: Halbes gleichseitiges Dreieck)
+
+}{%%
+Mit Zwischenwinkel $\varphi$ gilt $\vec{u}\circ{}\vec{v} = u\cdot{}v\cdot{}\cos(\varphi)$.
 
 
-}{a) $\arccos(-1) = 180\degre = \pi$
 
-b) $\arccos{0.5} = 60\degre = \frac{\pi}{3}$}
+a)$u\cdot{}v\cdot{}\cos{\varphi} = -u\cdot{}v \Longrightarrow \cos(\varphi) = -1$
+
+$\arccos(-1) = 180\degre = \pi$
+
+b) $\arccos(0.5) = 60\degre = \frac{\pi}{3}$}%% end AufgabeML
+
+
 
 \aufgabeML{Zeigen Sie, mit der Definition des Skalarproduktes über den Cosinus, dass gilt:
 
@@ -110,23 +218,162 @@ Wenn die Vektoren kollinear sind, so ist $\gamma=0$ und $\cos(\gamma)
 Somit ist
 
 $$\vec{u}\circ{}\vec{u} = u\cdot{}u\cdot{}\cos(0\degre) = u\cdot{}u = u^2$$
-}
+}%% end aufgabeML
 
+
+
+
+
+\subsection{Skalarprodukt mit Taschenrechner}
+Im Taschenrechner kann das Skalarprodukt $\vec{a}\circ{}\vec{b}$ mit dem Befehl \texttt{dotp(a, b)} ermittelt werden.
 
 \aufgabeML{%%
-Gegeben sind die Vektoren $\vec{u} = \Spvek{2;0;-1}$, $\vec{v}
-= \Spvek{1;-1;1}$ und $\vec{w} = \Spvek{0;1;-2}$.
+Bestimmen Sie mit dem Taschenrechner das Skalarprodukt zwischen $\vec{a}$ und $\vec{b}$ auf drei signifikante Stellen:
 
-Berechnen Sie mit dem Taschenrechner die folgende Summe:
-$$(4\vec{u}\circ{}\vec{v}) + (\vec{u}\circ{}2\vec{w})
-= \LoesungsRaum{8}$$
-Tipp: \texttt{dotp} berechnet das Skalarprodukt auf dem tiNSpire.
+$$\vec{a} = \Spvek{-2;\pi;7.2}\hspace{30mm}\vec{b} = \Spvek{0;\sqrt{7};5}$$
+
+$$\vec{a}\circ{}\vec{b} \approx \LoesungsRaumLen{30mm}{44.3}$$
 }{%%
-TR
+TR: \texttt{dotp(a, b)}
+}%% end aufgabeML
+
+\aufgabeML{%%
+Vorausgesetzt wird, dass $s>0$ sei.
+Bestimmen Sie von Hand das Skalarprodukt zwischen $\vec{u}$ und $\vec{v}$ und kontrollieren Sie mit dem Taschenrechner.
+
+$$\vec{u} = \Spvek{7;s;\sqrt{s}}\hspace{30mm}\vec{v} = \Spvek{\frac17;-s;\sqrt{s^3}}$$
+
+$$\vec{u}\circ{}\vec{v} = \LoesungsRaumLen{30mm}{1}$$
+
+Hinweis:
+
+Da der Taschenrechner von sich aus nicht davon ausgeht, dass $s>0$ gilt, müssen wir ihm das noch mit \texttt{|s>0} hinter dem \texttt{dotp()} angeben.
+}{%%
+TR: \texttt{dotp(a, b)| s>0}
+}%% end aufgabeML
+
+
+\aufgabeML{ Gegeben sind die Vektoren $\vec{p}$ und $\vec{q}$ mit
+$$p=37\hspace{11mm}q=42\hspace{1mm}\text{ und } \angle
+(\vec{p},\vec{q}) = 18\degre$$
+Berechnen Sie das Skalarprodukt!
+}%%
+{$$\vec{p}\circ\vec{q} = \LoesungsRaum{37\cdot{}42\cdot\cos(18\degre)\approx 1477.9418}$$}%% end aufgabeML
+
+
+\aufgabeML{ Gegeben sind die Vektoren $\vec{u}$ und $\vec{v}$:
+
+$$u=6\hspace{11mm}v=7\hspace{1mm}\text{ und } \angle
+(\vec{u},\vec{v}) = 125\degre$$
+Berechnen Sie das Skalarprodukt!
+}%%
+{$$\vec{u}\circ\vec{v} = \LoesungsRaum{6 \cdot{} 7 \cdot\cos(125\degre)\approx -24.090}$$}%% end aufgabeML
+
+
+
+\subsection{Winkel berechnen...}
+
+\subsubsection{... von Hand}
+
+
+\aufgabeML{Berechnen Sie den Winkel zwischen $\vec{a}$ und $\vec{b}$.
+$$\vec{a}\circ\vec{b}=0\hspace{11mm}a=1.41421\hspace{11mm}b=1.73205$$
+
+$$\angle(\vec{a},\vec{b})= \LoesungsRaum{=\arccos\left(\frac{\vec{a}\circ\vec{b}}{a\cdot{}b}\right)
+  = \arccos{}\left(\frac{0}{a\cdot{}b}\right)\approx 90\degre}$$}{}%% end aufgabML
+
+
+\aufgabeML{Berechnen Sie den Winkel zwischen $\vec{a}$ und $\vec{b}$.
+$$\vec{a\vphantom{b}}\circ\vec{b}=56\hspace{11mm}a=7\hspace{11mm}b=8$$
+
+$$\angle(\vec{a\vphantom{b}},\vec{b})= \LoesungsRaum{
+=\arccos  \left( \frac{\vec{a}\circ\vec{b}}{a\cdot{}b}  \right)
+= \arccos \left( \frac{56}{7\cdot{}8} \right)
+= 0\degre }$$}{}%% end aufgabML
+
+
+\aufgabeML{Berechnen Sie den Winkel zwischen $\vec{u}$ und $\vec{v}$ wenn folgendes bekannt ist:
+
+$$\vec{u}\circ\vec{v}=18\hspace{11mm}u=9\hspace{11mm}v=4$$
+
+$$\angle(\vec{u},\vec{v})= \LoesungsRaum{\arccos\left(\frac{18}{9\cdot{} 4}\right) = 60\degre}$$
+}{}%% end aufgabML
+
+
+
+\aufgabeML{Bestimmen Sie von Hand den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
+$$\vec{u} = \Spvek{-1;2;5} \hspace{11mm}\vec{v}= \Spvek{2;1;0}$$}%%
+{$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{90\degre}$$}%% end aufgabeML
+
+
+\aufgabeML{Bestimmen Sie von Hand den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
+$$\vec{u} = \Spvek{0;3;4} \hspace{11mm}\vec{v}= \Spvek{\sqrt{11};5;0}$$}%%
+{$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{60\degre}$$}
+
+
+\aufgabeML{Bestimmen Sie von Hand den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
+$$\vec{u} = \Spvek{1;1;9} \hspace{11mm}\vec{v}= \Spvek{0.5;\frac12;4.5}$$}%%
+{$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{0\degre}$$}%% end aufgabeML
+
+
+\aufgabeML{Bestimmen Sie von Hand den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
+$$\vec{u} = \Spvek{-1;3;5.5}\hspace{11mm}\vec{v}=\Spvek{2;-6;-11}$$}%%
+{$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{180\degre}$$
 }%% end AufgabeML
 
+\aufgabeML{Bestimmen Sie von Hand den Winkel $\delta$ zwischen Sie $\vec{a}$ und $ \vec{b}$ mit
+
+$a = 2$
+
+$b=3$
+
+und
+
+$\vec{a\vphantom{b}}\circ{}\vec{b} = -3$
 
 
+$$\delta = \LoesungsRaumLen{30mm}{120}\degre$$
+}%%
+{$$\angle(\vec{a},\vec{b}) = \arccos\left( \frac{-3}{2\cdot{}3} \right) = \arccos\left( \frac{-1}{2} \right) = 120\degre$$
+}%% end AufgabeML
+
+\subsubsection{... mit Taschenrechner}
+
+
+\aufgabeML{Berechnen Sie den Winkel zwischen $\vec{a}$ und $\vec{b}$.
+$$\vec{a}\circ\vec{b}=18\hspace{11mm}a=9\hspace{11mm}b=8$$
+$$\angle(\vec{a},\vec{b})= \LoesungsRaum{=\arccos\left(\frac{\vec{a}\circ\vec{b}}{a\cdot{}b}\right)
+  = \arccos{}\left(\frac{18}{9\cdot{}8}\right)\approx 75.52\degre}$$}{}%% end aufgabeML
+
+\aufgabeML{
+Gegeben sind die Längen und das Skalarprodukt der Vektoren $\vec{a}$ und $\vec{b}$:
+
+$|\vec{a}| = 3$
+
+$|\vec{b}| = 5$
+
+$\vec{a} \circ{} \vec{b} = -6$
+
+Bestimmen Sie den Zwischenwinkel $\angle$ zwischen $\vec{a}$ und $\vec{b}$:
+
+$$\angle \approx \LoesungsRaumLen{30mm}{113.58}\degre$$
+
+}{%% Lösungsteil:
+Solver:
+
+\texttt{solve(3 * 5 * cos(gamma) = -6, gamma)| 0 < gamma < 180}
+}%% end aufgabeML
+
+
+\aufgabeML{Bestimmen Sie den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
+$$\vec{u} = \Spvek{-1;-2;-3} \hspace{11mm} \vec{v}=\Spvek{4;5;-6}$$}%%
+{$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{\arccos\left(\frac{2\cdot{}\sqrt{22}}{77}\right) \approx 83.00\degre}$$}
+
+
+
+\aufgabeML{Bestimmen Sie den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
+$$\vec{u} = \Spvek{-12;-7.5;-3.4} \hspace{11mm} \vec{v}=\Spvek{-4.5;2.4;3.8}$$}%%
+{$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{\arccos\left(\frac{2\cdot{}\sqrt{22}}{77}\right) \approx 75.6\degre}$$}
 
 
 \aufgabeML{Für das Skalarprodukt gilt das Distributivgesetz
@@ -158,43 +405,10 @@ $$17 = 18\cos{\alpha}$$
 Nach $\alpha$ auflösen:
 $$\alpha=\arccos\left(\frac{17}{18}\right) \approx 19.1881\degre$$
 
-}
-
-\subsection{Skalarprodukt aus gegebenen Vektoren berechnen}
+}%% end aufgabeML
 
 
-\aufgabeML{Berechnen Sie $\vec{r}\circ\vec{s}$:
-$$\vec{r} = \Spvek{6;-5} \hspace{11mm}\vec{s}=\Spvek{-6;-4}$$}%%
-{$$\vec{r}\circ{}\vec{s} = \LoesungsRaum{-16}$$}
-
-\aufgabeML{Berechnen Sie $\vec{r}\circ\vec{s}$:
-$$\vec{r} = \Spvek{6;6;-3} \hspace{11mm} \vec{s}=\Spvek{-0.5;5;9}$$}%%
-{$$\vec{r}\circ{}\vec{s} = \LoesungsRaum{0 \hspace{11mm}(=-3+30-27)}$$}
-\TRAINER{\newpage}
-
-
-\aufgabeML{%%
-Bestimmen Sie das Skalarprodukt der Vektoren $\vec{u}$ und $\vec{v}$:
-%% RoMi
-$$\vec{u} = \Spvek{3;-4;6} \text{ und } \vec{v} = \Spvek{2;3;-1}$$
-}{%%
-}%% end AufgabeML
-
-
-
-\aufgabeML{%%
-Gegeben sind die Vektoren $\vec{a} = \Spvek{1;2}$,
-$\vec{b}=\Spvek{-3;2}$, $\vec{c}=\Spvek{-4;-1}$ und $\vec{d}
-= \Spvek{-1;3}$.
-
-Berechnen Sie $(\vec{a} - 2\vec{c})\cdot{}(3\vec{b}-\vec{d})$
-}{%%
- Lösung: $-60$
-}%% end AufgabeML
-
-
-\subsection{Parameter bestimmen, wenn Winkel gegeben}
-
+\subsection{Parameter mit TR bestimmen}
 
 
 \aufgabeML{Bestimmen Sie den Parameter $x$ von Hand so, dass die beiden
@@ -227,42 +441,7 @@ $x=-1.22$ (mit TR)
 
 
 
-
-\subsection{Winkel bestimmen}
-\subsubsection{von Hand}
-
-\aufgabeML{Bestimmen Sie von Hand den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
-$$\vec{u} = \Spvek{-1;3;5.5}\hspace{11mm}\vec{v}=\Spvek{2;-6;-11}$$}%%
-{$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{180\degre}$$
-}%% end AufgabeML
-
-
-\aufgabeML{Bestimmen Sie von Hand den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
-$$\vec{u} = \Spvek{1;1;9} \hspace{11mm}\vec{v}= \Spvek{0.5;\frac12;4.5}$$}%%
-{$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{0\degre}$$}
-
-
-\aufgabeML{Bestimmen Sie von Hand den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
-$$\vec{u} = \Spvek{0;3;4} \hspace{11mm}\vec{v}= \Spvek{\sqrt{11};5;0}$$}%%
-{$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{60\degre}$$}
-
-\aufgabeML{Bestimmen Sie von Hand den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
-$$\vec{u} = \Spvek{-1;2;5} \hspace{11mm}\vec{v}= \Spvek{2;1;0}$$}%%
-{$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{90\degre}$$}
-
-\subsubsection{mit Taschenrechner}
-
-\aufgabeML{Bestimmen Sie den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
-$$\vec{u} = \Spvek{-1;-2;-3} \hspace{11mm} \vec{v}=\Spvek{4;5;-6}$$}%%
-{$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{\arccos\left(\frac{2\cdot{}\sqrt{22}}{77}\right) \approx 83.00\degre}$$}
-
-
-\aufgabeML{Bestimmen Sie den Winkel zwischen Sie $\vec{u}$ und $ \vec{v}$:
-$$\vec{u} = \Spvek{-12;-7.5;-3.4} \hspace{11mm} \vec{v}=\Spvek{-4.5;2.4;3.8}$$}%%
-{$$\angle(\vec{u},\vec{v}) = \LoesungsRaum{\arccos\left(\frac{2\cdot{}\sqrt{22}}{77}\right) \approx 75.6\degre}$$}
-
 \subsection{Winkel zwischen Koordinatenachsen}
-
 
 
 \aufgabeML{%%i
