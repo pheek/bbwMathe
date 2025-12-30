@@ -44,6 +44,9 @@ Vera kauft für CHF \LoesungsRaumLen{30mm}{8.00} und Walter für CHF
 \newpage
 
 \begin{definition}{Skalarprodukt}{}\index{Skalarprodukt|textbf}
+Für $\vec{a} = \Spvek{a_1;a_2;a_3;\vdots}$ und
+$\vec{b}=\Spvek{b_1;b_2;b_3;\vdots}$ definieren wir das
+\textbf{Skalarprodukt} wie folgt:
   $$\vec{a\vphantom{b}}\circ\vec{b} := a_1\cdot{}b_1 + a_2 \cdot{} b_2
   + a_3\cdot{}b_3 + ...$$
 \end{definition}
@@ -124,15 +127,19 @@ $$\Spvek{1;2;3}\circ{}\Spvek{-1;p;\sqrt{2}} \Longrightarrow p =
 Dies gilt auch in $\mathbb{R}^3$:
 
 \begin{gesetz}{}{}
-  Für zwei Vektoren $\vec{a}$ und $\vec{b}$ gilt:\\
-  $$\LoesungsRaumLen{60mm}{a_x\cdot{}b_x + a_y\cdot{}b_y  + a_z\cdot{}b_z} = \LoesungsRaumLen{60mm}{|\vec{a}|\cdot{}|\vec{b}|\cdot{}\cos(\gamma)}$$
+  Für zwei Vektoren $\vec{a}$ und $\vec{b}$ mit Zwischenwinkel $\gamma$ gilt:\\
+  $$\LoesungsRaumLen{60mm}{a_x\cdot{}b_x + a_y\cdot{}b_y  +
+    a_z\cdot{}b_z} =
+  \LoesungsRaumLen{60mm}{|\vec{a}|\cdot{}|\vec{b}|\cdot{}\cos(\gamma)}$$
+  und somit auch
+  $$\vec{a}\circ{}\vec{b} = \LoesungsRaumLen{60mm}{|\vec{a}|\cdot{}|\vec{b}|\cdot{}\cos(\gamma)}$$
 \end{gesetz}
  
 
-Nach obigem Gesetz sind die beiden folgenden Definitionen identisch:
+
 \begin{definition}{Skalarprodukt im $\mathbb{R}^3$}{}\index{Skalarprodukt|textbf}
-  $$\vec{a\vphantom{b}}\circ\vec{b} := a_x\cdot{}b_x + a_y \cdot{} b_y + a_z\cdot{}b_z$$
-oder mit $\gamma$ als Zwischenwinkel von $\vec{a}$ und $\vec{b}$:
+Mit $\gamma$ als Zwischenwinkel von $\vec{a}$ und $\vec{b}$ definieren
+wir somit sinnvoll:
   $$\vec{a\vphantom{b}}\circ\vec{b} := |\vec{\vphantom{b}a}| \cdot{} |\vec{b}| \cdot{}\cos({\gamma})$$
 \end{definition}
 
