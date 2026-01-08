@@ -27,7 +27,7 @@ sondern in $\text{rad}$ angegeben.
 \begin{gesetz}{Bogenmaß}{}
 $$1 \text{ rad } = \frac{180}{\pi}\degre \approx 57.30\degre$$
 $$1\degre = \frac{\pi}{180} \text{ rad } \approx 0.01745 \text{ rad }$$
-$$\stackrel{\frown}{\alpha} \text{rad} = \left(\frac{\alpha\cdot{}180}{\pi}\right)^\circ$$
+$$\stackrel{\frown}{\alpha} \text{rad} = \left(\frac{{\stackrel{frown}{\alpha}}\cdot{}180}{\pi}\right)^\circ$$
 $$\alpha\degre = \left(\frac{\alpha\pi}{180}\right) \text{ rad }$$  
 \end{gesetz}
 \newpage
@@ -45,14 +45,43 @@ $\frac{3}{4}\pi\,\text{rad}$ unseren bekannten $\LoesungsRaum{135}\degre$ in der
   oder im Bogenmaß vor uns haben.
   Eine Aufgabe im Stil
   $$0.75 = \sin(x + 2\pi + 40\degre + 1.5)$$
-  \textbf{wird} \textbf{nicht behandelt}, da bei $1.5$ nicht klar ist, ob es sich nun um eine Zahl im Grad- oder im Bogenmaß handelt.
+  \textbf{ist nicht sinnvoll}, da bei $1.5$ nicht klar ist, ob es sich nun um eine Zahl im Grad- oder im Bogenmaß handelt.
 \end{bemerkung}%%
 
 
 \subsection*{Aufgaben}
 
 \olatLinkArbeitsblatt{Bogenmaß}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/103430829669712}{1.1 bis 1.5}
+\newpage
+\subsection{Bogenlänge und Fläche}
+Die Bogenlänge ist proportional zum Radius.
 
+Daher kann die Bogenänge (und auch die Sektorfläche) mit dem Bogenmaß einfacher berechnet werden als im Gradmaß.
+
+\begin{gesetz}{Bogenlänge und Sektorfläche}{}
+  Ist von einem Sektor der Radius $r$ und der Sektorwinkel $\stackrel{\frown}{\alpha}$ im Bogenmaß gegeben, so lassen sich Bogenlänge $b$ und Sektorfläche $A$ wie folgt berechnen:
+
+  $$b = r \cdot{} \stackrel{\frown}{\alpha}$$
+  $$A = \frac12 \cdot{} b\cdot{} r = \frac{1}{2} \cdot{} r^2 \stackrel{\frown}{\alpha}$$
+\end{gesetz}
+
+Beispiel:
+
+Berechnen Sie Bogenlänge $b$ und Fläche $A$ eines Kreissektors mit Radius $r = 1.4$ und Sektorwinkel $\stackrel{\frown}{\alpha} = 0.36$ (im Bogenmaß).
+
+
+\TNTeop{
+  Bogenlänge:
+
+  $b = r \cdot{} \stackrel{\frown}{\alpha} = 1.4 \cdot{} 0.36 = 0.504 $
+
+  Fläche
+
+  $A = \frac12 \cdot{} r^2\stackrel{\frown}{\alpha} = \frac12 \cdot{}1.4^2 \cdot{} 0.36 = 0.3528$
+}%% end TNT eop
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
+\subsection*{Aufgaben}
 \olatLinkTALSStrukturaufgabenGLF{Teil 1}{3}{3. m) v) x)}
 
 \AadBMTG{97ff}{1. b), 2. b) und 10. b)}
