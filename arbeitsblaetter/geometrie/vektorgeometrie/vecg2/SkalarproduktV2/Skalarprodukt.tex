@@ -536,10 +536,40 @@ Mit der $z$-Achse: 64.8 Grad
 
 \aufgabeML{%%i
 Ein Ortsvektor bildet mit der $x$-Achse einen Winkel von $38\degre$
-und mit der $y$-Achse einen von $117\degre$. Berechnen Sie den Winkel
+und mit der $y$-Achse einen von $63\degre$. Berechnen Sie den Winkel
 mit der $z$-Achse.
 }{%%
-$\alpha_z = 65.427\degre$
+$$\vec{v}=\Spvek{x;y;z} \text{ und } \vec{e_x}
+= \Spvek{1;0;0}; \vec{e_y} = \Spvek{0;1;0}; \vec{e_z} = \Spvek{0;0;1}$$
+
+damit ist
+
+$$\vec{v}\circ\vec{e_x} = x = v\cdot{}1\cdot{}\cos(38\degre)$$
+$$\vec{v}\circ\vec{e_y} = y = v\cdot{}1\cdot{}\cos(63\degre)$$
+
+Es gilt
+$|\vec{v}| = v = \sqrt{x^2 + y^2 + z^2}$
+
+Sei (o. B. d. A.) $\vec{v}$ normiert ($|\vec{v}| = v = 1$) so gilt:
+
+$$x=\vec{v}\circ\vec{e_x} = \cos(38\degre)$$
+$$y=\vec{v}\circ\vec{e_y} = \cos(63\degre)$$
+$$\vec{v} = \Spvek{\cos(38\degre); \cos(63\degre); z}$$
+Da $|\vec{v}| = 1$ gilt
+
+$$\cos^2(38\degre) + \cos^2(63\degre) + z^2 = 1$$
+also
+$$z = \sqrt{1-\cos^2(38\degre) - \cos^2(63\degre)}$$
+
+ergo
+
+$$\vec{v} = \Spvek{\cos(38\degre); \cos(63\degre); \sqrt{1-\cos^2(38\degre)-\cos^2(63\degre)}}$$
+
+Es gilt mit der $z$-Achse:
+
+$$\vec{v}\circ{}\vec{e_z} = v\cdot{} 1 \cdot{} \cos(\gamma_z)= 1\cdot{} 1 \cdot{} \cos(\gamma_z)$$
+
+$\gamma_z = \arccos\left(\frac{\sqrt{1-\cos^2(38\degre)-\cos^2(63\degre)}}{1}\right) \approx 65.427\degre$
 }%% end AufgabeML
 
 
