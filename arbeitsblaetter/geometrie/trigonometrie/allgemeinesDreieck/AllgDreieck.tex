@@ -25,6 +25,7 @@
 \begin{center}V 0.1 (2026-02-03) \end{center}
 \section{Teil 1: Aufgaben mit Skizzen}
 
+Bei allen Aufgaben sind die Resultate auf drei signifikante Stellen zu runden.
 
 \textit{Berechnen Sie die gesuchten Größen (markiert mit ?). Die Skizzen sind nicht maßstabsgetreu.}
 
@@ -55,6 +56,18 @@
     \end{enumerate}
 \end{minipage}
 
+
+
+\begin{enumerate}[resume=aufgaben]
+    \item Gegeben sind in einem allgemeinen Dreieck $\gamma = 71\degre$, $b=5$ cm und $c=49$
+    mm. Berechnen Sie Winkel $\alpha$ und Seite $a$.
+    \item In einem allgemeinen Dreieck sind $\alpha=21\degre$, Seite
+    $a=31$ mm und Seite $b=7.1$ cm. Berechnen Sie die fehlenden Seiten
+    und Winkel.
+\end{enumerate}
+
+
+
 \TNTeop{}
 
 
@@ -64,8 +77,8 @@
         \item $\beta = ?$\\
         \begin{tikzpicture}[scale=1.2, thick]
             \coordinate (A) at (0,0); \coordinate (B) at (3.5,0); \coordinate (C) at (1.5,1.5);
-            \draw (A) -- (B) -- (C) node[midway, right]{$a=5$} -- cycle;
-            \draw (A) -- (C) node[midway, left]{$b=4$};
+            \draw (A) -- (B) -- (C) node[midway, right]{$\,\,a=5$} -- cycle;
+            \draw (A) -- (C) node[midway, left]{$b=4\,\,$};
             \pic[draw, angle radius=0.9cm, "\,\,$40\degre$", angle eccentricity=1.3] {angle = B--A--C};
             \pic[draw, angle radius=0.8cm, "\hspace{-3mm}$\beta=?$", angle eccentricity=1.4] {angle = C--B--A};
         \end{tikzpicture}
@@ -77,10 +90,10 @@
         \item $\beta = ?$\\
         \begin{tikzpicture}[scale=1.2, thick]
             \coordinate (A) at (0,0); \coordinate (B) at (3.5,0); \coordinate (C) at (2.5,2);
-            \draw (A) -- (B) -- (C) node[midway, right]{$a=12$} -- cycle;
-            \draw (A) -- (C) node[midway, left]{$b=11$};
+            \draw (A) -- (B) -- (C) node[midway, right]{$a=12\text{ mm}$} -- cycle;
+            \draw (A) -- (C) node[midway, left]{$b=1.1 \text{ cm}$};
             \pic[draw, angle radius=0.9cm, "\,\,$50\degre$", angle eccentricity=1.3] {angle = B--A--C};
-            \pic[draw, angle radius=0.8cm, "$\beta=?$", angle eccentricity=1.4] {angle = C--B--A};
+            \pic[draw, angle radius=0.8cm, "$\hspace{-2mm}\beta=?$", angle eccentricity=1.4] {angle = C--B--A};
         \end{tikzpicture}
     \end{enumerate}
 \end{minipage}
@@ -270,7 +283,8 @@
         \item $\alpha = ?$ \\
         \begin{tikzpicture}[scale=0.7, thick]
             \coordinate (A) at (0,0); \coordinate (B) at (4,0); \coordinate (C) at (3,3);
-            \draw (A) -- (B) node[midway, below]{$12$} -- (C) node[midway, right]{$9$} -- cycle;
+            \draw (A) -- (B) node[midway, below]{$1.2 \text{ cm}$} --
+        (C) node[midway, right]{$9 \text{ mm}$} -- cycle;
             \pic[draw, angle radius=0.9cm, "\hspace{3mm}$\alpha=?$", angle eccentricity=1.4] {angle = B--A--C};
             \pic[draw, angle radius=0.8cm, "$50\degre$", angle eccentricity=1.4] {angle = A--C--B};
         \end{tikzpicture}
@@ -342,36 +356,41 @@ Winkel $DCA=48.3\degre$, Winkel $ACB = 92.5\degre$
 \begin{enumerate}[series=loesungen]
     \item $b \approx 9.38$
     \item $a \approx 7.81$
-    \item $\beta \approx 30.95\degre$
-    \item $\beta \approx 44.60\degre$
-    \item $\alpha \approx 34.75\degre$ od. $\approx 145.25\degre$
+    \item \textbf{Zweideutig} $\alpha_1 \approx  34.2\degre $,
+    $\alpha_2 \approx 3.76\degre $, $a_1 \approx 29.2$ mm, $a_2 \approx 3.39$ mm
+    \item \textbf{Zweideutig} $\beta_1 \approx  55.2\degre $,
+    $\beta_2 \approx 125.\degre $,$\gamma_1 \approx  104.\degre $,
+    $\gamma_2 \approx 34.2\degre $, $c_1 \approx 84.0$ mm, $c_2 \approx 48.6$ mm
+    \item $\beta \approx 31.0\degre$
+    \item $\beta \approx 44.6\degre$
+    \item  \textbf{Zweideutig} $\alpha \approx 34.8\degre$ od. $\approx 145.\degre$
     \item \textit{keine Lösung: ($\sin \beta > 1$)}
-    \item $\gamma \approx 35.33\degre$
-    \item $\alpha \approx 108.92\degre$ od. $9.076\degre$
-    \item $\beta \approx 105.41\degre$ od. $4.59\degre$
-    \item $c \approx 6.703$
-    \item $b \approx 9.244$ od. $6.816$
+    \item $\gamma \approx 35.3\degre$
+    \item \textbf{Zweideutig}  $\alpha \approx 109.\degre$ od. $9.08\degre$
+    \item \textbf{Zweideutig}  $\beta \approx 105.\degre$ od. $4.59\degre$
+    \item $c \approx 6.70$
+    \item \textbf{Zweideutig}  $b \approx 9.24$ od. $6.82$
     \item $\alpha \approx 51.6\degre$
-    \item $\gamma \approx 100.3\degre$
 \end{enumerate}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.45\textwidth}
 \begin{enumerate}[resume=loesungen]
-    \item $x \approx 4.347$ od. $18.63$
+    \item $\gamma \approx 100.\degre$
+    \item \textbf{Zweideutig}  $x \approx 4.35$ od. $18.6$
     \item $\beta \approx 53.1\degre$
     \item $y \approx 8.70$
     \item $\alpha \approx 35.1\degre$
-    \item $z \approx 12.75$
+    \item $z \approx 12.8$
     \item $\epsilon \approx 70.5\degre$
-    \item $\beta \approx 53.13\degre$
-    \item $c \approx 15.95$ m
-    \item $b \approx 12.46$ cm
-    \item \textbf{Zweideutig:}  $\beta \approx 48.6\degre$ od. $131.4\degre$
-    \item \textbf{Zweideutig:} $c \approx 20.84$ od. $5.38$
+    \item $\beta \approx 53.1\degre$
+    \item $c \approx 16.0$ m
+    \item $b \approx 12.5$ cm
+    \item \textbf{Zweideutig:}  $\beta \approx 48.6\degre$ od. $131.\degre$
+    \item \textbf{Zweideutig:} $c \approx 20.8$ od. $5.38$
     \item \textbf{Zweideutig:} $\gamma \approx 91.4\degre$
     od. $8.6\degre$
-    \item Fläche $\approx 2359 \text{ m}^2$
+    \item Fläche $\approx 2.36 \cdot{} 10^3 \text{ m}^2$
 \end{enumerate}
 \end{minipage}
 
