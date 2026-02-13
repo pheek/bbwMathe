@@ -49,7 +49,7 @@ Bei allen Aufgaben sind die Resultate auf drei signifikante Stellen zu runden.
         \begin{tikzpicture}[scale=1.2, thick]
             \coordinate (A) at (0,0); \coordinate (B) at (3.5,0); \coordinate (C) at (2.5,2);
             \draw (A) -- (B) -- (C) node[midway, right]{$a=?$} -- cycle;
-            \draw (A) -- (C) node[midway, above left]{$b=7$};
+            \draw (A) -- (C) node[midway, above left]{$b=7$ dm};
             \pic[draw, angle radius=0.8cm, "\,\,$75\degre$", angle eccentricity=1.3] {angle = B--A--C};
             \pic[draw, angle radius=0.8cm, "$45\degre$", angle eccentricity=1.3] {angle = A--C--B};
         \end{tikzpicture}
@@ -184,8 +184,9 @@ Bei allen Aufgaben sind die Resultate auf drei signifikante Stellen zu runden.
         \item $c = ?$\\
         \begin{tikzpicture}[scale=1.1, thick]
             \coordinate (A) at (0,0); \coordinate (B) at (3.5,0); \coordinate (C) at (2.5,2.5);
-            \draw (A) -- (B) node[midway, below]{$c=?$} -- (C) node[midway, right]{$a=6$} -- cycle;
-            \draw (A) -- (C) node[midway, left]{$b=8$};
+            \draw (A) -- (B) node[midway, below]{$c=?$} -- (C)
+        node[midway, right]{$a=0.60$ dm} -- cycle;
+            \draw (A) -- (C) node[midway, left]{$b=80$ mm};
             \pic[draw, angle radius=0.8cm, "$55\degre$", angle eccentricity=1.3] {angle = A--C--B};
         \end{tikzpicture}
     \end{enumerate}
@@ -384,7 +385,7 @@ $\angle ABC= \beta_2 = 60\degre$
 \begin{minipage}[t]{0.45\textwidth}
 \begin{enumerate}[series=loesungen]
     \item $b \approx 9.38$
-    \item $a \approx 7.81$
+    \item $a \approx 7.81$ dm
     \item \textbf{Zweideutig} $\alpha_1 \approx  34.2\degre $,
     $\alpha_2 \approx 3.76\degre $, $a_1 \approx 29.2$ mm, $a_2 \approx 3.39$ mm
     \item \textbf{Zweideutig} $\beta_1 \approx  55.2\degre $,
@@ -397,7 +398,7 @@ $\angle ABC= \beta_2 = 60\degre$
     \item $\gamma \approx 35.3\degre$
     \item \textbf{Zweideutig}  $\alpha \approx 109.\degre$ od. $9.08\degre$
     \item \textbf{Zweideutig}  $\beta \approx 105.\degre$ od. $4.59\degre$
-    \item $c \approx 6.70$
+    \item $c \approx 6.70$ cm
     \item \textbf{Zweideutig}  $b \approx 9.24$ od. $6.82$
     \item $\alpha \approx 51.6\degre$
 \end{enumerate}
