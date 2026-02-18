@@ -20,14 +20,14 @@ Schätzen Sie in den folgenden Dreiecken den Winkel $\beta$:
 \bbwCenterGraphic{4cm}{tals/trig1/img/Ae13.png}
 $$\beta\approx \LoesungsRaum{44\degre - 45\degre}$$
 
-\bbwCenterGraphic{6cm}{tals/trig1/img/Ae10.png}
-$$\beta\approx \LoesungsRaum{30\degre - 31\degre}$$
+\bbwCenterGraphic{6cm}{tals/trig1/img/Ae27.png}
+$$\beta\approx \LoesungsRaum{26\degre - 28\degre}$$
 
-\bbwCenterGraphic{3.5cm}{tals/trig1/img/Ae11.png}
-$$\beta\approx \LoesungsRaum{59\degre - 60\degre}$$
+\bbwCenterGraphic{3.5cm}{tals/trig1/img/Ae58.png}
+$$\beta\approx \LoesungsRaum{57\degre - 59\degre}$$
 
-\bbwCenterGraphic{6cm}{tals/trig1/img/Ae12.png}
-$$\beta\approx \LoesungsRaum{30\degre - 31\degre}$$
+\bbwCenterGraphic{6cm}{tals/trig1/img/Ae29.5.png}
+$$\beta\approx \LoesungsRaum{29\degre - 30\degre}$$
 
 \newpage
 
@@ -45,7 +45,7 @@ $$\frac{b}{a} = \frac{b'}{a'} = \text{ konstant}$$
 
 \begin{gesetz}{Seiten und Winkel im rechtwinkligen Dreieck}{}
 Im rechtwinkligen Dreieck reicht es, zwei Seiten zu kennen, um die
-Winkel zu bestimmen.
+Winkel näherungsweise zu bestimmen.
 \end{gesetz}
 
 
@@ -74,6 +74,8 @@ sind die \textbf{Seitenverhältnisse} eindeutig bestimmt.
 Das zu einem Winkel gehörige \textbf{Seitenverhältnis} der beiden
 Katheten (gegenüberliegende Kathete zu anliegender Kathete) wird als
 
+\bbwCenterGraphic{50mm}{tals/trig1/img/Tan.png}
+
 \begin{center}\textbf{Tangens} des Winkels\end{center}
   bezeichnet:
 
@@ -91,8 +93,48 @@ Beispiele (berechnen Sie mit dem Taschenrechner):
 \end{tabular}
 
 
-
 \newpage
+\textbf{Nochmals eine Höhe rechnen:}
+
+\textbf{Gegeben}:
+
+Augenhöhe ($a$) $1.68$ m
+
+Abstand zum Haus ($d$): $20$ m
+
+Winkel (Elevation) ($\epsilon$): $28\degre$
+
+\textbf{Gesucht}:
+
+Wie hoch ($h$) ist das Haus?
+
+Berechne dazu die Gegenkathete $g$ und addiere die Augenhöhe $a$ dazu.
+\TNT{6.4}{
+
+  $\frac{g}{d} = \tan(\epsilon)$
+
+$\Longrightarrow g = d\cdot{} \tan(\epsilon)$
+
+$\Longrightarrow h = a + g = a + d\cdot{} \tan(\epsilon) = 1.68 + 20.0
+\cdot{} \tan(28\degre) \approx 12.3 \text{ m}$
+
+
+  
+}% end TNT
+
+Ermitteln Sie die fehlende Größe ($b$, $a$, $c$) mit dem Taschenrechner:
+
+\begin{tabular}{ccc}\hline
+  \includegraphics[width=50mm]{tals/trig1/img/Tan3.25.png} &
+  \includegraphics[width=65mm]{tals/trig1/img/Tan4.66.png} &
+  \includegraphics[width=50mm]{tals/trig1/img/Tan5.84.png} 
+\end{tabular}
+
+\TNTeop{$b\approx 3.25 \text{ m }, a \approx 4.66 \text{ dm }, c
+  \approx 5.84 $}%% end TNTeop
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Arcustangens}\index{Arcustangens}
 \begin{definition}{Arcustanges}{}
@@ -117,52 +159,25 @@ sog.
 
   \end{bemerkung}
 
+\subsection*{Aufgaben}
 
-\subsection{Sinus und Cosinus}\index{Sinus|textbf}\index{Cosinus|textbf}
+Ermitteln Sie den Winkel $\beta$ dem Taschenrechner:
 
-\begin{definition}{Sinus}{}
-  Das Verhältnis der dem Winkel $\alpha$ \textbf{gegen}überliegenden \textbf{Kathete} zur \textbf{Hypotenuse}
-  wird als \textbf{Sinus} des Winkels $\alpha$ bezeichnet:
-
-  $$\sin(\alpha) = \frac{\text{Gegenkathete } a \text{ zu } \alpha}
-  {\text{Hypotenuse } c}$$
-\end{definition}
-
-\begin{definition}{Cosinus}{}
-  Das Verhältnis der dem Winkel $\alpha$ \textbf{an}liegenden \textbf{Kathete} zur \textbf{Hypotenuse}
-  wird als \textbf{Cosinus}  des Winkels $\alpha$ bezeichnet:
-
-  $$\cos(\alpha) = \frac{\text{Ankathete } b \text{ zu } \alpha}
-  {\text{Hypotenuse } c}$$
-\end{definition}
-
-\newpage
-
-\subsection{Zusammenfassung}
-Es gelten die folgenden Gesetze:
-
-\begin{gesetz}{Sin / Cos / Tan}{}
-  
-  \begin{tabular}{|c|c|}\hline
-  $\sin(\varphi) = \frac{\text{Gegenkathete } g}{\text{Hypotenuse }  h}$  & $\arcsin\left(\frac{g}h\right) = \varphi$\\\hline
-  $\cos(\varphi) = \frac{\text{Ankathete    } a}{\text{Hypotenuse }  h}$  & $\arccos\left(\frac{a}h\right) = \varphi$\\\hline
-  $\tan(\varphi) = \frac{\text{Gegenkathete } g}{\text{Ankathete  }  a}$  & $\arctan\left(\frac{g}a\right) = \varphi$\\\hline
+\begin{tabular}{ccc}
+\includegraphics[width=58mm]{tals/trig1/img/Atan41.6.png}  &
+\includegraphics[width=55mm]{tals/trig1/img/Atan36.9.png}  &
+\includegraphics[width=58mm]{tals/trig1/img/Atan22.6.png} 
   \end{tabular}
-  
-\end{gesetz}
 
+\TNTeop{
+  links: $\beta \approx 41.6\degre$
 
-\TRAINER{Platz für das Dreieck mit Winkel $\varphi$. \vspace{5cm}}
-\noTRAINER{\mmPapier{5.6}}
+  mitte: $\beta \approx 36.9\degre$
 
+  rechts: $\beta \approx 22.6\degre$
+}%% end TNTeop{}
 
-\olatLinkArbeitsblatt{Sinus/Cosinus/Tangens}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/101586242856840}{Täglich
-5-10 Minuten}
-
-\youtubeLink{https://www.youtube.com/watch?v=RjFwqJRTgKo}{Mathe Mann
-  und das rechtwinklige Dreieck}
-\newpage
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 
 \subsection{Steigung vs. Winkel}\index{Steigung}
 \TadBMTG{95}{Steigungswinkel}
@@ -205,12 +220,91 @@ berechenbar:
 %% Aufgabe 18 gestrichen, denn die linearen Funktionen sind ja bei
 %% TALS noch nicht durch.
 \AadBMTG{100}{16. a) c), 17. a) c), 19. und 20.}
+
+
 \newpage
+
+\subsection{Sinus und Cosinus}\index{Sinus|textbf}\index{Cosinus|textbf}
+
+\begin{definition}{Sinus}{}
+  Das Verhältnis der dem Winkel $\alpha$ \textbf{gegen}überliegenden \textbf{Kathete} zur \textbf{Hypotenuse}
+  wird als \textbf{Sinus} des Winkels $\alpha$ bezeichnet:
+
+  $$\sin(\alpha) = \frac{\text{Gegenkathete } a \text{ zu } \alpha}
+  {\text{Hypotenuse } c}$$
+\end{definition}
+
+\begin{definition}{Cosinus}{}
+  Das Verhältnis der dem Winkel $\alpha$ \textbf{an}liegenden \textbf{Kathete} zur \textbf{Hypotenuse}
+  wird als \textbf{Cosinus}  des Winkels $\alpha$ bezeichnet:
+
+  $$\cos(\alpha) = \frac{\text{Ankathete } b \text{ zu } \alpha}
+  {\text{Hypotenuse } c}$$
+\end{definition}
+
+\newpage
+
+\subsection{Zusammenfassung}
+Es gelten die folgenden Gesetze:
+
+\begin{gesetz}{Sin / Cos / Tan}{}
+  
+  \begin{tabular}{|c|c|}\hline
+  $\sin(\varphi) = \frac{\text{Gegenkathete } g}{\text{Hypotenuse }  h}$  & $\arcsin\left(\frac{g}h\right) = \varphi$\\\hline
+  $\cos(\varphi) = \frac{\text{Ankathete    } a}{\text{Hypotenuse }  h}$  & $\arccos\left(\frac{a}h\right) = \varphi$\\\hline
+  $\tan(\varphi) = \frac{\text{Gegenkathete } g}{\text{Ankathete  }  a}$  & $\arctan\left(\frac{g}a\right) = \varphi$\\\hline
+  \end{tabular}\hspace{12mm}
+  \raisebox{-5mm}{\includegraphics[width=58mm]{tals/trig1/img/gah.png}}
+\end{gesetz}
+
+
+%\TRAINER{Platz für das Dreieck mit Winkel $\varphi$. \vspace{5cm}}
+%\noTRAINER{\mmPapier{5.6}}
+
+
+\subsection*{Aufgaben}
+\olatLinkArbeitsblatt{Sinus/Cosinus/Tangens}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/101586242856840}{Täglich
+5-10 Minuten}
+
+\AadBMTG{100ff}{21., 23., 27., 30. b), 32., 33. und 36.}
+
+
+\youtubeLink{https://www.youtube.com/watch?v=RjFwqJRTgKo}{Mathe Mann
+  und das rechtwinklige Dreieck}
+\newpage
+
 
 
 %% Sinushand
 
-\subsection{Merkregel der wichtigsten Sinus-Werte}\index{Sinushand}
+\subsection{Die wichtigsten Winkel}
+
+\subsection*{Einstiegsaufgaben}
+
+Berechnen Sie die fehlenden mit «?» markierten Größen von Hand und
+geben Sie die Resultate exakt an:
+
+
+\begin{tabular}{ccc}
+  \includegraphics[width=60mm]{tals/trig1/img/WW4_30.png}  &
+  \includegraphics[width=50mm]{tals/trig1/img/WW2.png}  &
+  \includegraphics[width=40mm]{tals/trig1/img/WW7.png}  
+
+\end{tabular}
+
+\TNTeop{  
+Erstes Dreieck: Gegenwinkel = 60 Grad. Hypotenuse AB = 8 cm und Kathete BC = $4\cdot{}
+\sqrt{3}$ cm
+
+Mittleres Dreieck: Beide Winkel 45 Grad (halbes Quadrat) und 2. Kathete = 1
+
+Rechtes Dreieck: Oberer Winkel = 30 Grad. Kurze Kathete = 7/2 =
+3.5. Die lange Kathete ist somit $\frac{7}{2} \cdot{} \sqrt{3} = 3.5\cdot{}\sqrt{3}$
+}%% end TNTeop
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Merkregel der wichtigsten Sinus-Werte}\index{Sinushand}
 
 Anstelle des Ablesens im gleichseitigen Dreieck kann man sich die wichtigsten Werte
 auch mit folgender «Sinushand» merken:
@@ -242,8 +336,7 @@ auch mit folgender «Sinushand» merken:
 }%% END noTRANIER
 \newpage
 
-\subsection*{Aufgaben}
-\AadBMTG{100ff}{21., 23., 27., 30. b), 32., 33. und 36.}
+%%\subsection*{Aufgaben}
 %%\TALSAadBFWG{84ff}{2. alle 3. a) b) e) 4. a) c) 6. a) 8. 9. 15. 23. 26. a) b) c) 30.}%
 
 \newpage

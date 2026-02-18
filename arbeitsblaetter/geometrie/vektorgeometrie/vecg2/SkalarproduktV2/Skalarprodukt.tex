@@ -536,10 +536,40 @@ Mit der $z$-Achse: 64.8 Grad
 
 \aufgabeML{%%i
 Ein Ortsvektor bildet mit der $x$-Achse einen Winkel von $38\degre$
-und mit der $y$-Achse einen von $117\degre$. Berechnen Sie den Winkel
+und mit der $y$-Achse einen von $63\degre$. Berechnen Sie den Winkel
 mit der $z$-Achse.
 }{%%
-$\alpha_z = 65.427\degre$
+$$\vec{v}=\Spvek{x;y;z} \text{ und } \vec{e_x}
+= \Spvek{1;0;0}; \vec{e_y} = \Spvek{0;1;0}; \vec{e_z} = \Spvek{0;0;1}$$
+
+damit ist
+
+$$\vec{v}\circ\vec{e_x} = x = v\cdot{}1\cdot{}\cos(38\degre)$$
+$$\vec{v}\circ\vec{e_y} = y = v\cdot{}1\cdot{}\cos(63\degre)$$
+
+Es gilt
+$|\vec{v}| = v = \sqrt{x^2 + y^2 + z^2}$
+
+Sei (o. B. d. A.) $\vec{v}$ normiert ($|\vec{v}| = v = 1$) so gilt:
+
+$$x=\vec{v}\circ\vec{e_x} = \cos(38\degre)$$
+$$y=\vec{v}\circ\vec{e_y} = \cos(63\degre)$$
+$$\vec{v} = \Spvek{\cos(38\degre); \cos(63\degre); z}$$
+Da $|\vec{v}| = 1$ gilt
+
+$$\cos^2(38\degre) + \cos^2(63\degre) + z^2 = 1$$
+also
+$$z = \sqrt{1-\cos^2(38\degre) - \cos^2(63\degre)}$$
+
+ergo
+
+$$\vec{v} = \Spvek{\cos(38\degre); \cos(63\degre); \sqrt{1-\cos^2(38\degre)-\cos^2(63\degre)}}$$
+
+Es gilt mit der $z$-Achse:
+
+$$\vec{v}\circ{}\vec{e_z} = v\cdot{} 1 \cdot{} \cos(\gamma_z)= 1\cdot{} 1 \cdot{} \cos(\gamma_z)$$
+
+$\gamma_z = \arccos\left(\frac{\sqrt{1-\cos^2(38\degre)-\cos^2(63\degre)}}{1}\right) \approx 65.427\degre$
 }%% end AufgabeML
 
 
@@ -746,25 +776,8 @@ b) Mit den gefundenen $x$ und $z$ Werten kann die Fläche mit
 $|\vec{a}|\cdot{}|\vec{b}| = 210.125$ errechnet werden.
 }%% end AufgabeML
 
-
+\newpage
 \subsubsection{Quadrat}
-
-\aufgabeML{%%i
-Von einem Quadrat $ABCD$ kennt man die Ecke $B=(3|4|5)$ und den
-Mittelpunkt $M=(1|3|2)$. Die Ecke $A$ liegt in der
-$xy$-Ebene. Berechnen Sie mit dem Taschenrechner die Ecken $D$ und $A$.
-}{%%
-$D=(-1|2|-1)$
-
-Für $A$ gibt es zwei Lösungen:
-
-$$A_1 \approx (2.652 | 5.697 | 0)$$
-und 
-$$A_2 \approx (4.148 | 2.703 | 0)$$
-}%% end AufgabeML
-
-
-
 
 \aufgabeML{%%i
 Die beiden Vektoren $\vec{a}=\Spvek{-3;1;z}$ und
@@ -772,10 +785,83 @@ $\vec{b}=\Spvek{1;y;3}$ spannen ein Quadrat auf. Wie groß ist der
 Flächeninhalt und wie groß ist der Umfang dieses Quadrates?
 }{%%
 
-$(y_1 = -1.5; z_1=1.5); U_1=14; A_1=12.25$
+Wir definieren erst im Taschenrechner $\vec{a}$ und $\vec{b}$:
 
-$(y_2 = 0.75; z_2=0.75); U_2=13; A_2=10.563$
+\vspace{3mm}
+
+$$a := \Spvek{-3; 1; z}$$
+$$b := \Spvek{ 1; y; 3}$$
+
+\vspace{3mm}
+
+Nun können wir ein Gleichungssystem mit zwei Gleichungen eingeben:
+
+\vspace{3mm}
+
+(I) \texttt{norm(a)=norm(b)} (weil die Seiten gleich lang sein
+sollten)
+
+(II) \texttt{dotp(a, b) = 0} (weil die Seiten senkrecht zueinander
+stehen sollten)
+
+(III) \texttt{u = 4 norm(a)} (weil der Umfang vier Seitenlängen ausmacht)
+
+(IV) \texttt{Fl = norm(a)*norm(a)} (weil der Flächeninhalt ein Quadrat
+ist)
+
+
+Dieses Gleichungssystem lösen wir mit \texttt{solve} nach den
+Variablen $y, z, u$ und $Fl$ und wir erhalten:
+
+
+$(y_1 = -1.5; z_1=1.5); U_1=14; Fl_1=12.25$
+
+$(y_2 = 0.75; z_2=0.75); U_2=13; Fl_2=10.563$
 }%% end AufgabeML
+
+
+
+\aufgabeML{%%i
+Von einem Quadrat $ABCD$ kennt man die Ecke $B=(3|4|5)$ und den
+Mittelpunkt $M=(1|3|2)$. Die Ecke $A$ liegt in der
+$xy$-Ebene. Berechnen Sie mit dem Taschenrechner die Ecken $D$ und $A$.
+}{%%
+
+Zuerst berechnen wir den Vektor 
+$\overrightarrow{BM}$.
+Der Vektor $\overrightarrow{AM}$ muss dann die selbe Länge haben und
+senkrech dazu stehen.
+
+
+$\overrightarrow{BM} = \overrightarrow{OM} - \overrightarrow{OB}
+= \vec{m} - \vec{b} = 
+\Spvek{1;3;2} - \Spvek{3;4;5} = \Spvek{-2; -1; -3}$
+
+Als Vektor $\overrightarrow{OA}$ nemen wir den Ansatz
+$\overrightarrow{OA} =\vec{a} =  \Spvek{x;y;0}$, da der Vektor in der $xy$-Ebene
+liegt.
+
+Der Vektor $\overrightarrow{AM}$ berechnet sich nun als
+$$\overrightarrow{AM} = \vec{m} - \vec{a} = \Spvek{1;3;2}
+- \Spvek{x;y;0} = \Spvek{1-x; 3-y; 2}$$
+
+Mit dem Taschenrechner lösen wir nun folgendes Gleichungssystem nach
+$x$ und $y$ auf:
+
+\vspace{3mm}
+(I) \texttt{norm(bm) = norm(am)}
+
+(II) \texttt{dotP(am, bm) = 0}
+\vspace{3mm}
+
+Für $x$ und $y$ beziehungsweise den Punkt $A$ gibt es dann zwei Lösungen:
+
+$$A_1 \approx (2.652 | 5.697 | 0)$$
+und 
+$$A_2 \approx (4.148 | 2.703 | 0)$$
+}%% end AufgabeML
+
+
 
 \subsubsection{Quader}
 

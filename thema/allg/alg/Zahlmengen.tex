@@ -92,9 +92,9 @@ $$\mathbb{Z} = \{..., -3, -2, -1, 0, 1, 2, 3,  4, ... \}$$
 
 Mit den ganzen Zahlen sind uneingeschränkt durchführbar:
 \begin{itemize}
-\item Addition ($+$)
+  \item Addition ($+$)
   \item Multiplikation ($\cdot$)
-\item \LoesungsRaumLang{\textbf{Subtraktion} ($-$)}\TRAINER{ [Minuend - Subtrahend = Differenz]}
+  \item \LoesungsRaumLang{\textbf{Subtraktion} ($-$)}\TRAINER{kein Lernziel: [Minuend - Subtrahend = Differenz]}
   \end{itemize}
 
 
@@ -133,7 +133,8 @@ $$\mathbb{Q} =\left\{ q = \frac{a}{b} \,\,\, \middle| \,\,\, a,b \in
 \mathbb{Z}, b \ne 0 \right\}$$
 \end{definition}
 
-\TNT{2.8}{$$\frac{A}{B} = \frac{\text{Zähler}}{\text{Nenner}}$$}
+\TNT{2.8}{$$\frac{A}{B} = \frac{\text{Zähler}}{\text{Nenner}} := (A)
+  : (B)$$}
 
 \subsubsection{Beispiele}
 
@@ -180,12 +181,19 @@ Für periodische, nicht abbrechende
 Dezimalbrüche\index{Dezimalbruch!periodisch}\index{periodische Dezimalbrüche} sieht die Sache etwas komplizierter aus,
 gilt jedoch auch (sprich «Null Komma Periode Eins-Drei»):
 
-$$0.\overline{13} = 0.131313... = \LoesungsRaumLang{13\cdot{}\frac1{99}=\frac{13}{99} = 13 : 99}$$
+\TNT{2}{$$\frac{1}{9} = 0.\overline{1}, \frac{1}{99} = 0.\overline{01}, ..., \frac{1}{99999} =
+  0.\overline{00001}$$
 
-\TNTeop{Bem.: $\frac{1}{9} = 0.111\overline{1}$, $\frac{1}{99} = 0.0101\overline{01}$, $\frac{1}{999} = 0.001001\overline{001}$, ...}
+Daher ist}%% end TNT
 
+
+$$0.\overline{13} = 0.131313... = \LoesungsRaumLang{13\cdot{}\frac1{99}=\frac{13}{99}}$$
+
+%\TNTeop{Bem.: $\frac{1}{9} = 0.111\overline{1}$, $\frac{1}{99} =
+%0.0101\overline{01}$, $\frac{1}{999} = 0.001001\overline{001}$, ...}
+
+\TNTeop{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
   \subsection*{Aufgaben}
   Zeigen Sie, dass die folgenden Dezimalzahlen rational sind. Schreiben Sie dazu diese Zahlen als gewöhnliche, gekürzte Brüche:
 
@@ -198,7 +206,7 @@ $$0.\overline{13} = 0.131313... = \LoesungsRaumLang{13\cdot{}\frac1{99}=\frac{13
   \TNTeop{
     Um einen Dezimalbruch in einen echten Bruch zu verwandeln, hilft
     der Taschenrechner. Periodische Dezimalbrüche werden so weit wie
-    möglich repetitiv eingegeben.
+    möglich repetitiv eingegeben. Achtung, dies geht jedoch nicht immer!
     
 \GESO{TI-30X Pro MathPrint: «Zahl»
   \tiprobutton{approx}\tiprobutton{enter}}
@@ -221,7 +229,9 @@ $$0.\overline{13} = 0.131313... = \LoesungsRaumLang{13\cdot{}\frac1{99}=\frac{13
 
 \youtubeLink{https://www.youtube.com/watch?v=tPfnEByx9r0}{Dorfuchs: Wurzel zwei ist irrational.}
 
+\begin{definition}{Irrational}{}
   Zahlen auf der Zahlengerade, welche nicht als Bruch $\frac{a}{b}$ mit $a\in\mathbb{Z}$, $b \in \mathbb{N}$ dargestellt werden können, werden als \textbf{irrational}\index{irrational} bezeichnet.
+\end{definition}
 
 Wichtigste Vertreter:
 

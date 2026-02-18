@@ -105,7 +105,7 @@ $$f(x): x \mapsto a^x$$
 \subsubsection{Beispiele}
 \begin{itemize}
 	\item \Lueckentext{Zinsliche Abschreibungen (\zB Wert eines Autos)}
-	\item \Lueckentext{Radioaktiver Zerfall}
+	\item \Lueckentext{Radioaktiver Zerfall / C14-Methode (Turiner Grabtuch[1260-1390])}
 	\item \Lueckentext{Lichtintensität in Medium (Gas / Flüssigkeit / Glasfaser), dies gilt vertikal, wie auch horizontal}
 	\item \Lueckentext{Atmosphärischer Luftdruck in Metern über Meer}
   \item \Lueckentext{Entladen einer Batterie bzw. eines Kondensators}
@@ -238,9 +238,8 @@ Begründung:
 
   $y_1 = b\cdot{}a^{x_1}$ und $y_2 = b\cdot{}a^{x_2}$.
 
-  Setzen wir nun $x_1 + 1$ für $x_2$ ein, so erhalten wir:
-
-  $$y_2 = f(x_2) = b\cdot{}a^{x_2} = b\cdot{} a^{x_1+1} =  b\cdot{}a^{x_1} \cdot{} a^1 = y_1\cdotp{} a$$
+  $y_1\cdot{}a = f(x_1)\cdot{}a = b\cdot{}a^{x_1}\cdot{}a=
+  b\cdot{}a^{x_1+1} = b\cdot{}a^{x_2} = f(x_2) = y_2$
 }
 \newpage
 
@@ -320,10 +319,12 @@ Algenpopulation beschreibt...
   \TRAINER{40}\noTRAINER{\hspace{15mm}} &    \cellcolor{gray!75}  &
   \TRAINER{80}\noTRAINER{\hspace{15mm}} &         \cellcolor{gray!75}       &
   \TRAINER{160}\noTRAINER{\hspace{15mm}} &\\\hline
-  Faktor    & $v$ & \TRAINER{$v=2^z$}    & \TRAINER{1}  &  \cellcolor{gray!75}    & \TRAINER{2}  &   \cellcolor{gray!75}   & \TRAINER{4}  &    \cellcolor{gray!75}            & \TRAINER{8} &\\\hline
   Intervalle & $z$ & \TRAINER{$z=\frac{t}{5}$}    & \TRAINER{0}  &  \cellcolor{gray!75}    & \TRAINER{1.}  & \cellcolor{gray!75}     & \TRAINER{2.}  &   \cellcolor{gray!75}             & \TRAINER{3.} &\\\hline
+  Faktor    & $v$ & \TRAINER{$v=2^z$}    & \TRAINER{1}  &  \cellcolor{gray!75}    & \TRAINER{2}  &   \cellcolor{gray!75}   & \TRAINER{4}  &    \cellcolor{gray!75}            & \TRAINER{8} &\\\hline
   Potenz     &\TRAINER{$2^z$} & \TRAINER{$2^\frac{t}{5}$}     & \TRAINER{$2^0$}  &   \cellcolor{gray!75}   & \TRAINER{$2^1$}  &   \cellcolor{gray!75}   & \TRAINER{$2^2$}  &  \cellcolor{gray!75}              & \TRAINER{$2^3$} &\\\hline
 \end{bbwFillInTabular}
+
+\TRAINER{Trainerhinweis: 1. Nur alle Zahlen einfüllen, 2. die Formeln einfüllen.}
 
 \TRAINER{Falls nicht mit Tabelle: 1. Tipp $f(0)=20; f(5)=40;
   f(10)=80;...$, dann 2. Tipp $f_B(0) = 20; f_B(1)=40; ...$ $B$=Anzahl
@@ -677,7 +678,9 @@ $$2\cdot{} f(0) = f(5)$$
   Natürliche Basis $A$ zur (Zeit)Einheit:
 
   $$f(t) = y = \LoesungsRaumLen{30mm}{b\cdot{}A^t}$$
-  mit $$A=\LoesungsRaumLen{30mm}{a^{\frac1\tau} = \sqrt[\tau]{a}}$$
+  mit $$A=\LoesungsRaumLen{30mm}{A_1 = \frac{f(1)}{f(0)} =
+    \frac{b\cdot{}a^{\frac{1}{\tau}}}{b\cdot{}a^{\frac{0}{\tau}}}=
+    a^{\frac{1}{\tau} - \frac{0}{\tau}}= a^{\frac1\tau} = \sqrt[\tau]{a}}$$
 
   \TALS{
     \hrule\vspace{1mm}
@@ -691,6 +694,24 @@ mit $$m=\LoesungsRaumLen{30mm}{\frac{\ln(a)}{\tau}}$$
     $m = $ \textit{Wachstumsexponent} bei Basis $e$ \\
  }%% end TALS
 \end{gesetz}
+
+Berechnen Sie den Zunahmefaktor und die Zuwachsrate pro Zeiteinheit
+($t$=Tage; $m$=Monate)
+
+\begin{bbwFillInTabular}{c|c|c}\hline
+Vorgabe                & $\approx$\, natürliche Basis $A=A_1$ & $\approx$ \, Zunahmerate pro
+Zeiteinheit\\\hline
+
+$b\cdot{} 5^\frac{t}3$  & \TRAINER{$b\cdot{}1.71^t$}  & \TRAINER{71\%
+  täglich}\\\hline
+
+$2^\frac{t}{14}$  & \TRAINER{$1.0816^t$}  & \TRAINER{+8.16\%
+  täglich}\\\hline
+
+$ 0.8^\frac{m}{12}$  & \TRAINER{$0.9816^m$}  & \TRAINER{-1.84\%
+ monatlich}
+  \end{bbwFillInTabular}
+
 \newpage
 
 
