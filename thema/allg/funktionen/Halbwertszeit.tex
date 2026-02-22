@@ -1,0 +1,237 @@
+%%
+%% Halbwertszeit
+\subsection{Halbwertszeit, Verdopplungszeit}\index{Halbwertszeit}\index{Verdopplungszeit}
+
+
+\begin{definition}{Halbwertszeit}{}
+Die Zeitspanne, in der sich ein Wert bei exponentiellem Zerfall halbiert, nennen wir
+\textbf{Halbwertszeit} und bezeichnen diese Zeit mit:
+
+$$T_{1/2}$$
+Ansatz:
+$$\frac12 \cdot{} f(0) = f(T_{1/2})$$
+\end{definition}
+
+
+\textbf{Einstiegsbeispiel}
+
+\begin{beispiel}{Halbwertszeit (A)}{}
+Strontium 90 hat eine Halbwertszeit von 29 Tagen. Um wie viel Prozent
+nimmt Strontium 90 innerhalb von 50 Tagen ab?
+
+\TNT{8}{
+  Ansatz:
+  $$a = \frac{1}{2}$$
+  $$\tau=29 \text{ Tage}$$
+  $$f(t) = 100\% \cdot{} \left(\frac{1}{2}\right)^{\frac{t}{29}}$$
+
+  50 Tage einsetzen:
+
+  $$f(50) = 100\% \cdot{} \left(\frac{1}{2}\right)^{\frac{t}{50}}
+  \approx 0.30268$$
+  Somit nimmt Strontium innerhalb von 50 Tagen um ca. 70 \% ab.
+
+  \vspace{20mm}
+}
+
+\end{beispiel}
+
+
+
+Ist die Halbwertszeit $T = T_{1/2}$ bekannt, so gilt mit
+$\tau=T_{1/2}$ und mit $a=\frac12$:
+
+\begin{gesetz}{Stoffmenge}{}
+  Ist die Halbwertszeit $T_{1/2}$ und die anfängliche Stoffmenge $b$
+  bekannt, so kann die Stoffmenge zu jedem Zeitpunkt $t$ mit der
+  folgenden Funktion $f$ angegeben werden:
+  \leserluft{}
+  \leserluft{}  
+  $$f(t) = \LoesungsRaumLen{50mm}{b\cdot{}\left(\frac12\right)^{\frac{t}{T_{1/2}}}}$$
+\end{gesetz}
+\newpage
+
+
+
+\subsection*{Aufgaben}
+Uran 235 (U-235) hat eine Halbwertszeit von 704 Millionen Jahren. Wie viel ist
+von einem Kilogramm U-235 nach 100 Millionen Jahren noch vorhanden?
+
+\TNT{4}{
+  
+  $$f(100 \cdot{}10^6) =
+  1 \text{ kg} \cdot{}
+  \left( \frac{1}{2} \right)^{ \frac{100\cdot{} 10^6}{704 \cdot{} 10^6}}
+  \approx 906 \text{ g}
+  $$
+
+}
+
+
+
+Der Luftdruck ab Meereshöhe nimmt innerhalb von 5400 Metern
+(Höhenunterschied) um jeweils 50\% ab (abgesehen von der
+Wetterdynamik). Bei 0 M. ü. M. (Meeresspiegel) ist der
+durchschnittliche Luftdruck ca. bei 1\,013.25 hPa (Hektopascal).
+
+Wie hoch ist der durchschnittliche Luftdruck hier in Winterthur auf
+einer Meereshöhe von 444\,m?
+
+
+\TNT{4}{
+  
+  $$f(400) = 1\,013.25 \text{ hP } \cdot{}  \left( \frac{1}{2} \right)^{\frac{400}{5400}}
+  \approx 962.54 \text{ hP }
+  $$
+
+}
+
+
+\newpage
+
+\subsubsection*{Wie berechnen wir die Halbwertszeit?}
+
+\noTRAINER{\bbwCenterGraphic{85mm}{allg/funktionen/img/exp/HalbwertszeitLeer.png}}
+  \TRAINER{\bbwCenterGraphic{75mm}{allg/funktionen/img/exp/Halbwertszeit.png}}
+
+\begin{beispiel}{Halbwertszeit (B)}{}
+Beispiel: Ein Stoff nimmt innerhalb von sieben Tagen auf 80\% ab. Wie
+groß ist seine Halbwertszeit $T_{1/2}$?
+\end{beispiel}
+
+\TNTeop{
+  Generell gilt: $f(t) = b\cdot{}a^\frac{t}\tau$
+
+  Gesucht $T = T_{1/2} = $ \, Halbwertszeit
+
+  Ansatz (S. Grafik)
+
+  $$\frac{f(0)}{2} = f(T)$$
+
+  mit ($f(0) = b$) gilt
+
+  $$\frac{b}{2} = f(T)$$
+
+  $$\frac{b}{2}  = b \cdot{} a^{\frac{T}{\tau}}$$
+
+  Auflösen
+
+  $$\frac{1}{2} = a^{\frac{T}{\tau}}$$
+
+  $$\frac{T}{\tau} = \log_a\left(\frac{1}{2}\right)$$
+
+  $$T_{1/2} = T = \tau\cdot{}\log_a\left(\frac{1}{2}\right)$$
+
+  80 \% und 7 Tage einsetzen:
+
+  $$T_{1/2} = 7 \cdot{} \log_{0.8} \left(\frac{1}{2}\right) \approx
+  21.74 \text{ (Tage)}$$
+
+}%% END TNTeop
+
+
+
+\begin{gesetz}{Halbwertszeit}{}
+  Die Halbwertszeit $T_{1/2}$ berechnet sich wie folgt:
+  $$T_{1/2} = \LoesungsRaumLen{70mm}{\tau \cdot{} \log_a\left(\frac12\right)}$$
+  Dabei ist $a$ der Abnahmefaktor pro Zeiteinheit $\tau$.
+\end{gesetz}
+
+
+\subsection*{Aufgaben}
+
+Das Isotop C14 (Kohlenstoff) zerfällt innerhalb von 200 Jahren auf
+97.61\%. Wie groß ist seine Halbwertszeit?
+
+\TNT{6}{
+  $$T = T_{1/2} = \tau \cdot{} \log_a\left(\frac{1}{2}\right)$$
+
+  $$a = 97.61\% = 0.9761$$
+  
+  $$= 200 \cdot{} \log_{0.9761}\left(\frac{1}{2}\right) \approx 5731
+  \text{ (Jahre)}$$
+}%end TNT
+
+
+Das radioaktive Isotop Beryllium 7 (Be7) nimmt innerhalb von 10 Tagen um
+12.23 \% ab. Wie groß ist seine Halbwertszeit?
+
+\TNT{6}{
+  $$T = T_{1/2} = \tau \cdot{} \log_a\left(\frac{1}{2}\right)$$
+
+  $$a = 100\% - 12.23\% = 87.77\% = 0.8777$$
+  
+  $$= 10 \cdot{} \log_{0.8777}\left(\frac{1}{2}\right) \approx 53.13
+  \text{ (Tage)}$$
+}%% end TNT
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+
+\GESO{Optional:}
+
+
+
+
+
+\subsection{Verdopplungszeit}\index{Verdopplungszeit|textbf}
+
+Analog gilt das Gesetz zur Verdopplung (s. obiges Beispiel Bevölkerung Irlands):
+\begin{gesetz}{Verdopplungszeit}{}
+  $$T_2 = \LoesungsRaumLen{40mm}{ \tau \cdot{} \log_a(2)}$$
+
+  $a$: Zunahmefaktor pro Zeiteinheit $\tau$.
+\end{gesetz}
+
+(optional:)
+
+\begin{bemerkung}{Verdopplungszeit}{}
+  Ansatz:$$2 \cdot{} f(0) = f(T_2)$$
+  Funktionsterm einsetzen:
+  %%  $$2 \cdot{} b \cdot{} a^{\frac{0)\tau} = b \cdot{} a^{\frac{T_2}\tau}$$
+  $$2 \cdot{} b \cdot{} a^{\frac{0}{\tau}} = b \cdot{} a^{\frac{T_2}{\tau}}$$
+    $$2 = a^{\frac{T_2}\tau} \Longrightarrow  T_2 = \tau \cdot{} \log_a(2)$$
+\end{bemerkung}
+\newpage
+
+%\begin{gesetz}{Vervielfachungszeit $T_q$}{}
+%  Die Vervielfachungszeit $T_q$ kann durch die Vervielfachung $q$ ausgedrückt werden. Es gilt:
+%  $$T_q = \tau\cdot{}\log_a(q)$$
+%  und
+%  $$f(t) = b\cdot{} q^{\frac{t}{T_q}}$$
+%  \end{gesetz}
+
+\subsection*{Aufgaben}
+
+\GESO{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/106029175831971}{Kap. 1.6:
+    Halbwertszeit/Verdopplungszeit: Aufg. 22. - 25.}}
+\TALS{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/106029175777725}{Kap. 1.6:
+    Halbwertszeit/Verdopplungszeit: Aufg. 22. - 25.}}
+
+\AadBMTA{352ff}{3. (Taucherin), 4. [Glasfaser ohne Teilaufgabe
+    Eindringtiefe 4. b)] und 5. b) (radioaktiver Zerfall)}
+
+\olatLinkGESOKompendium{3.4}{28ff}{42., 43. und 47.}
+
+\GESO{\aufgabenFarbe{
+    Maturaprüfung 2020, Aufg 11 (Käfer)\\
+    Maturaprüfung 2018 (Serie 4), Aufg 10 (Cäsium 137)\\
+    Maturaprüfung 2018 (Serie 2), Aufg 11 (Plutonium)\\
+    Maturaprüfung 2018 (Serie 1), Aufg 11 (radioaktive Substanz)\\
+    Maturaprüfung 2016, Aufg. 9 (Jod-131)
+}}
+
+\olatLinkGESOKompendium{3.4}{27ff}{32. bis 47.}
+
+\newpage
