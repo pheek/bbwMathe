@@ -13,7 +13,19 @@ $360\degre$ Grad sondern im Verhältnis zum Radius dargestellt. Mit
 anderen Worten: Bei gegebenem Winkel $\alpha$ ist das Bogenmaß nichts
 anderes als die Länge des Bogens zum Winkel $\alpha$ gemessen im Einheitskreis\index{Einheitskreis}.
 
-\bbwGraphic{5cm}{tals/trig2/img/bogenmass.png}
+\bbwGraphic{5cm}{tals/trig2/img/bogenmass.png}\hspace{20mm}entspricht \hspace{20mm}\bbwGraphic{7cm}{tals/trig2/img/gradmass.png}
+
+
+\begin{bbwFillInTabular}{c|c}\hline
+  Bogenlänge                                  &  Winkel  \\\hline
+  $b = 2\pi$                                  & $\beta = \LoesungsRaumLen{30mm}{360\degre}$ \\\hline
+  $b = \frac{\pi}{2}$                         &  $\beta = \LoesungsRaumLen{30mm}{ 90\degre}$ \\\hline
+  $b = \frac{\pi}{3}$                         & $\beta = \LoesungsRaumLen{30mm}{ 60\degre}$ \\\hline
+  $b = \LoesungsRaumLen{30mm}{\frac{\pi}{4}}$ & $\beta = 45\degre$ \\\hline
+  \end{bbwFillInTabular}
+
+
+\newpage
 
 \begin{definition}{Bogenmaß}{}
 $$360\degre \entspricht 2\cdot\pi \text{\,\,rad}$$
@@ -24,13 +36,27 @@ Der Winkel im Bogenmaß wird nicht in der Maßeinheit Grad (${}\degre$)
 sondern in $\text{rad}$ angegeben.
 \end{bemerkung}
 
+
+\begin{beispiel}{Bogenmaß}{}
+
+$$30\degre = \frac{30\degre}{360\degre}\cdot2\pi = \frac{30\degre\cdot{}\pi}{180\degre} = \frac{1}{6} \text{ rad}$$
+$$\frac{2}{3}\pi \text{ rad} = \frac{2}{3} \pi \cdot{} \frac{360\degre}{2\pi} = \LoesungsRaumLen{80mm}{\frac{2}{3}\pi \cdot{} \frac{180\degre}{\pi} = \frac{2}{3}\cdot{}180\degre = 120\degre}$$
+  $$1 \text{ rad } = \LoesungsRaumLen{40mm}{\frac{180}{\pi}\degre \approx 57.30\degre}$$
+$$1\degre = \LoesungsRaumLen{50mm}{\frac{\pi}{180} \text{ rad } \approx 0.01745 \text{ rad }}$$
+\end{beispiel}
+
+  
 \begin{gesetz}{Bogenmaß}{}
-$$1 \text{ rad } = \frac{180}{\pi}\degre \approx 57.30\degre$$
-$$1\degre = \frac{\pi}{180} \text{ rad } \approx 0.01745 \text{ rad }$$
-$$\stackrel{\frown}{\alpha} \text{rad} = \left(\frac{{\stackrel{frown}{\alpha}}\cdot{}180}{\pi}\right)^\circ$$
-$$\alpha\degre = \left(\frac{\alpha\pi}{180}\right) \text{ rad }$$  
+
+  Umwandeln ins Bogenmaß:
+  $$\alpha\degre = \left(\frac{\alpha\pi}{180}\right) \text{ rad }$$
+  Umwandeln ins Gradmaß:
+$$\stackrel{\frown}{\alpha} \text{rad} = \left(\frac{\alpha\cdot{}180}{\pi}\right)^\circ$$
 \end{gesetz}
+
 \newpage
+
+
 \begin{beispiel}{Bogenmaß}{}
  Zum Beispiel entspricht
 $\frac{3}{4}\pi\,\text{rad}$ unseren bekannten $\LoesungsRaum{135}\degre$ in der
@@ -53,6 +79,8 @@ $\frac{3}{4}\pi\,\text{rad}$ unseren bekannten $\LoesungsRaum{135}\degre$ in der
 
 \olatLinkArbeitsblatt{Bogenmaß}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/103430829669712}{1.1 bis 1.5}
 \newpage
+
+
 \subsection{Bogenlänge und Fläche}
 Die Bogenlänge ist proportional zum Radius.
 
@@ -61,23 +89,26 @@ Daher kann die Bogenänge (und auch die Sektorfläche) mit dem Bogenmaß einfach
 \begin{gesetz}{Bogenlänge und Sektorfläche}{}
   Ist von einem Sektor der Radius $r$ und der Sektorwinkel $\stackrel{\frown}{\alpha}$ im Bogenmaß gegeben, so lassen sich Bogenlänge $b$ und Sektorfläche $A$ wie folgt berechnen:
 
-  $$b = r \cdot{} \stackrel{\frown}{\alpha}$$
-  $$A = \frac12 \cdot{} b\cdot{} r = \frac{1}{2} \cdot{} r^2 \stackrel{\frown}{\alpha}$$
+  Bogenlänge $b$: 
+  $$b = \LoesungsRaumLen{50mm}{r \cdot{} \stackrel{\frown}{\alpha}}$$
+
+  Sektorfläche $A$:
+  $$A = \LoesungsRaumLen{50mm}{\frac12 \cdot{} r\cdot{} b = \frac{1}{2} \cdot{} r^2 \stackrel{\frown}{\alpha}}$$
 \end{gesetz}
 
 Beispiel:
 
-Berechnen Sie Bogenlänge $b$ und Fläche $A$ eines Kreissektors mit Radius $r = 1.4$ und Sektorwinkel $\stackrel{\frown}{\alpha} = 0.36$ (im Bogenmaß).
+Berechnen Sie Bogenlänge $b$ und Fläche $A$ eines Kreissektors mit Radius $r = 1.4 \text{ cm }$ und Sektorwinkel $\stackrel{\frown}{\alpha} = 0.36$ (im Bogenmaß).
 
 
 \TNTeop{
   Bogenlänge:
 
-  $b = r \cdot{} \stackrel{\frown}{\alpha} = 1.4 \cdot{} 0.36 = 0.504 $
+  $b = r \cdot{} \stackrel{\frown}{\alpha} = 1.4 \cdot{} 0.36 = 0.504 \text{ cm} $
 
   Fläche
 
-  $A = \frac12 \cdot{} r^2\stackrel{\frown}{\alpha} = \frac12 \cdot{}1.4^2 \cdot{} 0.36 = 0.3528$
+  $A = \frac12 \cdot{} r^2\stackrel{\frown}{\alpha} = \frac12 \cdot{}1.4^2 \cdot{} 0.36 = 0.3528 \text{ cm}^2$
 }%% end TNT eop
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
