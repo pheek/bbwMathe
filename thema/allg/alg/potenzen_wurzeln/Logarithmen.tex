@@ -422,12 +422,12 @@ Logarithmentabelle.} und dennoch $\log_a(p)$ oder das $x$ in $a^x=p$ berechnen w
 \end{bemerkung}
 
 \TNTeop{
-  $$a^x = \left(e^{\ln(a)}\right)^x = e^{x\cdot{}\ln(a)}$$
+  $$a^x = \left(\e^{\ln(a)}\right)^x = \e^{x\cdot{}\ln(a)}$$
 
   oder so:
 
   Aus $a =e^{\ln(a)}$ folgt durch exponenzieren mit $x$:
-  $$a^x= \left( e^{\ln(a)} \right)^x$$
+  $$a^x= \left( \e^{\ln(a)} \right)^x$$
   }
 }%% end TALS
 
@@ -453,6 +453,9 @@ errechnet werden.
 
   \begin{center}{\texttt{ x = exp(log(5.3) * 7.2) }}\end{center}
 
+  denn es gilt:
+  $$x = \e^{\ln(x)} = \e^{\ln\left(5.3^{7.2}\right)} = \e^{7.2\cdot{}\ln(5.3)}$$
+
 \end{beispiel}
 
 
@@ -474,7 +477,7 @@ errechnet werden.
 \subsection*{Aufgaben}
 \TALS{
 \aufgabenFarbe{Berechnen Sie von Hand: $\ln\left(\e^{3.5}\right) + \ln\left(\sqrt{\e}\right)$}
-\TNT{2}{$\ln(\e^{3.5}) + \ln( \sqrt{e}) = 3.5 + \ln(e^{0.5})  = 3.5 + 0.5 = 4$}
+\TNT{2}{$\ln(\e^{3.5}) + \ln( \sqrt{\e}) = 3.5 + \ln(\e^{0.5})  = 3.5 + 0.5 = 4$}
 }%% end TALS
 
 
@@ -523,6 +526,20 @@ errechnet werden.
   $$\log_a\left(\frac{1}{v}\right)=\LoesungsRaumLen{25mm}{-\log_a(v)}$$
   \TNT{2}{$$\log_a\left(\frac1{v}\right) = \log_a(1)-\log_a(v) =0 -\log_a(v)$$}
 \end{bemerkung}
+
+Beispiel (optional)
+\TNT{5.2}{
+aus  $a^x=v \Longleftrightarrow \left(\frac{1}{a}\right)^x = \frac{1}{v}$
+
+folgt $\log_a(v) = \log_{\frac{1}{a}}\left(\frac{1}{v}\right)$
+
+Sirup Beispiel (Wann ist genau 1 \% der alten Luft noch da?)
+
+$$\left(\frac{1}{\e}\right)^n = 0.01 \Longrightarrow n =
+\log_{\frac{1}{e}}\left(\frac{1}{100}\right) \Longleftrightarrow
+n=\ln(100)\approx 4.6$$
+}%% end TNT
+
 
 }%% END TALS
 
