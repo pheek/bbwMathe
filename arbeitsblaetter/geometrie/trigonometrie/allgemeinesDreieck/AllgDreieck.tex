@@ -151,7 +151,7 @@ Bei allen Aufgaben sind die Resultate auf drei signifikante Stellen zu runden.
         \item $\alpha = ?$ \\
         \begin{tikzpicture}[scale=1.6, thick]
             \coordinate (A) at (0,0); \coordinate (B) at (3,-1); \coordinate (C) at (0,2);
-            \draw (A) -- (B) node[midway, below]{$c=5$} -- (C) -- cycle;
+            \draw (A) -- (B) node[midway, below]{$\hspace{-8mm}c=5$} -- (C) -- cycle;
             \draw (C) -- (A) node[midway, left]{$b=4$} ;
             \pic[draw, angle radius=0.5cm, "\hspace{7mm}$\alpha=?$", angle eccentricity=1.4] {angle = B--A--C};
             \pic[draw, angle radius=0.6cm, "$31\degre$", angle eccentricity=1.4] {angle = C--B--A};
@@ -166,7 +166,7 @@ Bei allen Aufgaben sind die Resultate auf drei signifikante Stellen zu runden.
         \item $\beta = ?$ \\
         \begin{tikzpicture}[scale=1.6, thick]
             \coordinate (A) at (0,0); \coordinate (B) at (1,1.5); \coordinate (C) at (3.5,0);
-            \draw (A) -- (B) node[midway, left]{\hspace{-4mm}$A=4.5$} -- (C) node[midway, right]{\hspace{1mm}$c=5$} -- cycle;
+            \draw (A) -- (B) node[midway, left]{\hspace{-4mm}$a=4.5$} -- (C) node[midway, right]{\hspace{2mm}$c=5$} -- cycle;
             \pic[draw, angle radius=0.4cm, "$\beta=?$", angle eccentricity=1.5] {angle = A--B--C};
             \pic[draw, angle radius=0.7cm, "$35\degre$", angle eccentricity=1.4] {angle = B--C--A};
         \end{tikzpicture}
