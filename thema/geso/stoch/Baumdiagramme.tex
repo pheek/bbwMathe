@@ -97,13 +97,6 @@ zweiter würfeln darf, hat eine leicht höhere Gewinnchance.}%% END TNT eop
 %%\newpage
 \newpage
 
-\subsection*{Aufgaben}
-
-Mehrstufige Zufallsexperimente:
-
-\olatLinkGESOKompendium{5.2}{43ff}{Aufg. 4. (Glücksrad), 17. (Klasse), 19., 20. (Kugeln) und 21. (Würfel)}
-\newpage
-
 \textbf{Aufgabe Schweizer Münzen (optional)}
 
 In zwei Urnen sind Münzen. In jeder Urne kommt jede Schweizer Münzart
@@ -149,6 +142,88 @@ Wie groß ist die Wahrscheinlichkeit:
     $$P(X= \text{ Mehr als CHF 3.- } ) = \frac{14}{49} \approx 28.57\%$$
   }
   
+
+\newpage
+
+\subsection*{Aufgaben}
+
+Mehrstufige Zufallsexperimente:
+
+
+\aufgabenFarbe{
+Ein Glücksrad hat 8 gleich grosse Sektoren mit den Nummern
+1, 2, 1, 2, 3, 2, 1, 2. Nach Stillstand des Rades zeigt der oberhalb des Rades
+fix montierte Pfeil auf einen Sektor mit Nummer.
+\\
+a) Das Rad wird einmal gedreht. Mit welcher Wahrscheinlichkeit erscheint 2?\\
+b) Das Rad wird zweimal gedreht. Mit welcher Wahrscheinlichkeit sind beide
+Ziffern gleich?\\
+c) Das Rad wird fünfmal gedreht. Mit welcher Wahrscheinlichkeit ist die
+Ziffernfolge 1 - 2 - 3 - 2 - 1?
+}
+\TNT{5.2}{
+  a) $\frac{4}{8} = \frac{1}{2}$
+
+  b) $(1;1), (2;2), (3;3): \frac{3}{8}\cdot{}\frac{3}{8} +
+  \frac{4}{8}\cdot{}\frac{4}{8} + \frac{1}{8}\cdot{}\frac{1}{8} =
+  \frac{13}{32} \approx 40.63\%  $
+}%% end TNT
+
+\aufgabenFarbe{Eine Klasse besteht aus 10 Schülerinnen und 14 Schülern. Durch das Los
+werden 5 Personen dieser Klasse ausgewählt. Wie gross ist die
+Wahrscheinlichkeit, dass\\
+a) alle fünf Personen Schülerinnen sind\\
+b) alle fünf Personen Schüler sind\\
+d) unter den 5 Personen Schülerinnen und Schüler vorkommen?
+}
+\TNTeop{
+a) $\frac{10}{24}\cdot{}\frac{9}{23}\cdot{}\frac{8}{22}
+  \cdot{} \frac{7}{21} \cdot{} \frac{6}{20} = \frac{3}{506} \approx
+  0.59\%$
+
+b)$\frac{14}{24}\cdot{}\frac{13}{23}\cdot{}\frac{12}{22}
+  \cdot{} \frac{11}{21} \cdot{} \frac{10}{20} = \frac{13}{256} \approx
+  4.71\%$
+
+c) $1 - \frac{3}{506} - \frac{13}{256} = \frac{125}{132} \approx 94.70\%$
+}%% end TNT eop
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\aufgabenFarbe{
+In einem Gefäss befinden sich 5 rote, 5 blaue und 5 gelbe Kugeln. Es werden
+drei Kugeln aufs Mal gezogen. Wie gross ist die Wahrscheinlichkeit, dass\\
+a) nur blaue Kugeln gezogen werden?\\
+b) keine gelben Kugeln gezogen werden?
+}%% end Aufgabenfarbe
+
+\TNT{4}{
+  a) $\frac{5}{15} \cdot{} \frac{4}{14} \cdot{} \frac{3}{13} =   \frac{2}{91} \approx 2.20\%$
+
+  b) $\frac{10}{15} \cdot{} \frac{9}{14} \cdot{} \frac{8}{13} =   \frac{24}{91} \approx 26.37\%$
+  
+}%% end TNT
+
+
+\aufgabenFarbe{
+Ein Kasten enthält 2 schwarze, 2 rote und 6 grüne Kugeln. Es werden
+nacheinander 3 Kugeln gezogen. Bestimmen Sie die Wahrscheinlichkeit, drei
+verschiedene Farben zu erhalten, wenn\\
+a) ohne Zurücklegen\\
+b) mit Zurücklegen\\
+gezogen wird.
+}%% end Aufgabenfarbe
+
+\TNTeop{
+  a) $\frac{1}{5} = 20\%$
+
+  b) $\frac{18}{125} = 14.4\%$
+}%% end TNT eop
+%%%
+
+\aufgabenFarbe{Ein normaler Spielwürfel wird sechs Mal geworfen. Mit welcher
+Wahrscheinlichkeit treten sechs verschiedene Augenzahlen auf?}%% end AufgabenFarbe
+
+\TNT{8}{$\frac{6!}{6^6}\approx 1.54\%$}%% end TNT
 
 \newpage
 

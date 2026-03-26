@@ -189,8 +189,16 @@ $$\LoesungsRaumLang{( 7 \text{\,\,nCr\,\,} 5 ) *\left(\frac26\right)^5 *
 
 \subsection*{Aufgaben}
 
-\olatLinkGESOKompendium{5.5.4}{50}{28. und 29}
-\aufgabenFarbe{Maturaprüfungen: 2016 (GESO) Aufgabe 11 (Geburten), 2017 (GESO) Aufgabe 17. (borkenkäferresistent), 2018 (GESO) Serie 1 Aufg. 16. (Papayasendung), 2018 (GESO) Serie 2 Aufg. 15. (Sprössling), 2018 (GESO) Serie 3 Aufg. 14. (Ikosaeder)}
+\aufgabenFarbe{Man würfelt 4-mal hintereinander mit einem gewöhnlichen Spielwürfel. Wie
+gross ist die Wahrscheinlichkeit, dass man genau 2 Sechser gewürfelt
+hat?}
+\TNT{4}{
+  $$P(X=2) = {4 \choose 2} \cdot{} \left(\frac{1}{6}\right)^2 \cdot{}
+  \left(\frac{5}{6}\right)^{4-2} \approx 11.57\%$$
+}%% end TNT
+
+
+\aufgabenFarbe{Maturaprüfungen:\\2016 (GESO) Aufgabe 11 (Geburten)\\2017 (GESO) Aufgabe 17. (borkenkäferresistent)\\2018 (GESO) Serie 1 Aufg. 16. (Papayasendung)\\2018 (GESO) Serie 2 Aufg. 15. (Sprössling)\\2018 (GESO) Serie 3 Aufg. 14. (Ikosaeder)}
 
 
 \newpage
@@ -314,21 +322,55 @@ $p=0.84$; $n=40$; $k=35$ somit $P(X\le 35) \approx 78.90\%$
   $p=0.1$ und  $x=1$ solange mit $n$, bis die Wahrscheinlichkeit maximal 1 Spielzeug zu erreichen kleiner als 5\% wird. Dies ist erstmals bei 46. Packungen der Fall.
 }%% end TNT
 
+
+
+\aufgabenFarbe{
+Wie groß ist die Wahrscheinlichkeit mit einem Spielwürfel
+(\epsdice{1} bis \epsdice{6}) in 10 Würfen...\\
+a) ... genau viermal eine \epsdice{6} zu werfen?\\
+b) ... maximal eine \epsdice{6} zu werfen?\\
+c) ... nicht viermal eine eine \epsdice{6} zu werfen?\\
+d) ... mehr als dreimal eine \epsdice{6} zu werfen?\\
+}%% end Aufgabenfarbe
+\TNT{6}{
+a) $P(X=4) = {10 \choose 4} \cdot{} \left( \frac16 \right)^4 \cdot{}
+\left(\frac56\right)^6 \approx 5.23\%$
+
+b) $P(X \le 1) =\sum_{k=0}^{1} {10 \choose k} \cdot{} \left( \frac16 \right)^k \cdot{}
+\left(\frac56\right)^{10-k} \approx 48.45\%$
+
+c) $P(X \ne 4) = 1- P(X = 4) \approx 1 - 0.0523 = 94.77\%$
+
+d) $P(X > 3) = 1-P(X\le 3) = 1 - \sum_{k=0}^{3} {10 \choose k} \cdot{} \left( \frac16 \right)^k \cdot{}
+\left(\frac56\right)^{10-k} \approx 6.97\%$
+
+}%% end TNT
 \newpage
 
-\olatLinkGESOKompendium{5.7}{53ff}{ 36. a) b)  (gerechter Würfel) und 37. (gezinkter Würfel)}
+\aufgabenFarbe{Lukas bringt zu einem Würfelspiel seinen eigenen Spielwürfel mit. Im Verlauf
+des Spiels entsteht der Verdacht, Lukas’ Würfel zeige überdurchschnittlich
+viele Sechsen an.\\
+Man beschliesst, einen Versuch durchzuführen: Es wird 30-mal gewürfelt. Es
+wird vereinbart: Wenn 10-mal oder öfter eine Sechs erscheint, erklären wir
+Lukas’ Würfel als gefälscht.\\
+Lukas sagt: «Selbst wenn der Test zehn oder mehr Sechsen ergibt, heisst das
+keineswegs, dass mein Würfel gefälscht ist; das Resultat kann auch bei einem
+unverfälschten Würfel eintreten.»\\
+Wie gross ist diese Wahrscheinlichkeit, dass
+in 30 Würfen ein gerechter Würfel 10 oder mehr Sechsen anzeigt?
+}
 
-\aufgabenFarbe{Erstellen Sie mit Hilfe des Taschenrechners eine Wertetabelle für die
-Wahrscheinlichkeiten, in 10 Würfen 0-mal, 1-mal, 2-mal, ... , 10-mal eine Sechs zu
-würfeln.
-\\
-Erstellen Sie mit diesen Daten ein Balkendiagarmm.\vspace{3mm}
-\\
-Erstellen Sie zusätzlich eine Wertetabelle mit den kumulierten Wahrscheinlichkeiten:
-Wie groß ist die Wahrscheinlichkeit mit einem fairen Würfel in 10 Würfen \textbf{maximal} 0-mal, 1-mal, 2-mal, ..., 10-mal eine Sechs zu würfeln. Fürs Verständnis: «maximal 3-mal» heißt «weniger als 4-mal». Erstellen Sie auch hierzu ein Balkendiagramm.
-}%% end Aufgabenfarbe
+\TNTeop{
+ $P(X \ge 10) = \sum_{k=10}^{30} {30 \choose k} \cdot{} \left( \frac16 \right)^k \cdot{}
+  \left(\frac56\right)^{30-k} \approx 1.97\%$
 
-\TNTeop{}
+  Mit ca. $2\%$ Wahrscheinlichkeit tritt auch bei einem gerechten Würfel ein derart
+extremes Ergebnis auf. Ein gerechter Würfel wird mit ca. 98\% Wahrscheinlichkeit
+ein moderateres Ergebnis zeigen (weniger als 10 Sechsen). Man wird also
+eher an eine Fälschung glauben. Wer sagt, es sei ein gefälschter
+Würfel irrt sich nur mit ca. $2\%$ Wahrscheinlichkeit (Hier:
+\textbf{Irrtumswahrscheinlichkeit = Fehlerwahrscheinlichkeit} $\approx 2\%$).
+}%% end TNTeop
 
 
 \newpage

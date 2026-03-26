@@ -603,6 +603,7 @@ können wie folgt Wörter gebildet werden:
 \aufgabenFarbe{Auf wie viele Arten kann ich die Buchstaben des Wortes «banana» neu permutieren?}
 \TNTeop{$$\frac{6!}{1! \cdot{} 2! \cdot{} 3!} = 60$$}
 
+%\newpage  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 \clearpage
 
@@ -612,9 +613,12 @@ können wie folgt Wörter gebildet werden:
     \AtPageLowerLeft{
         \put(\LenToUnit{132mm},\LenToUnit{211mm}){
             \includegraphics[
-                width=\LenToUnit{60mm},
-                height=\LenToUnit{40mm},
-                keepaspectratio=false
+%                width=\LenToUnit{60mm}, %% dies war der KI vorschlag
+%                \LenToUnit. doch mit exakter länge geht es wohl besser???:
+%                height=\LenToUnit{40mm},
+                width=60mm,
+                height=40mm,
+           %     keepaspectratio=false
             ]{geso/stoch/img/Familie_G_aus_W.png}%
         }%
     }%
