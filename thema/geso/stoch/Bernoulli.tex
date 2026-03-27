@@ -309,20 +309,6 @@ $p=0.84$; $n=40$; $k=35$ somit $P(X\le 35) \approx 78.90\%$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% Gegenwahrscheinlichkeit:
-\aufgabenFarbe{Ein Frühstücksflocken-Hersteller behauptet, in jeder 10. Packung ist ein Spielzeug enthalten. Sie kaufen 10 Packungen.\\
-  a) Mit welcher Wahrscheinlichkeit haben Sie mindestens zwei Spielzeuge in Ihren 10 Packungen?\\
-  b) (*) Wie viele Packungen müssen Sie kaufen, damit Sie mit über 95\% Wahrscheinlichkeit mindestens zwei Spielzeuge dabei haben?}
-
-\TNT{3.2}{
-  Gegenwahrscheinlichkeit:
-  
-  a) $$P(X \ge 2) = 1 - P(X \le 1) = 1 - 73.61\% \approx 26.39\%$$
-  b) 46 Stück. Pröbeln Sie mit binomialcdf mit
-  $p=0.1$ und  $x=1$ solange mit $n$, bis die Wahrscheinlichkeit maximal 1 Spielzeug zu erreichen kleiner als 5\% wird. Dies ist erstmals bei 46. Packungen der Fall.
-}%% end TNT
-
-
 
 \aufgabenFarbe{
 Wie groß ist die Wahrscheinlichkeit mit einem Spielwürfel
@@ -345,6 +331,22 @@ d) $P(X > 3) = 1-P(X\le 3) = 1 - \sum_{k=0}^{3} {10 \choose k} \cdot{} \left( \f
 \left(\frac56\right)^{10-k} \approx 6.97\%$
 
 }%% end TNT
+
+
+%% Gegenwahrscheinlichkeit:
+\aufgabenFarbe{Ein Frühstücksflocken-Hersteller behauptet, in jeder 10. Packung ist ein Spielzeug enthalten. Sie kaufen 10 Packungen.\\
+  a) Mit welcher Wahrscheinlichkeit haben Sie mindestens zwei Spielzeuge in Ihren 10 Packungen?\\
+  b) (*) Wie viele Packungen müssen Sie kaufen, damit Sie mit über 95\% Wahrscheinlichkeit mindestens zwei Spielzeuge dabei haben?}
+
+\TNT{3.2}{
+  Gegenwahrscheinlichkeit:
+  
+  a) $$P(X \ge 2) = 1 - P(X \le 1) = 1 - 73.61\% \approx 26.39\%$$
+  b) 46 Stück. Pröbeln Sie mit binomialcdf mit
+  $p=0.1$ und  $x=1$ solange mit $n$, bis die Wahrscheinlichkeit maximal 1 Spielzeug zu erreichen kleiner als 5\% wird. Dies ist erstmals bei 46. Packungen der Fall.
+}%% end TNT
+
+
 \newpage
 
 \aufgabenFarbe{Lukas bringt zu einem Würfelspiel seinen eigenen Spielwürfel mit. Im Verlauf
