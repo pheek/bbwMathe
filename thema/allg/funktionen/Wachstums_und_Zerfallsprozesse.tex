@@ -313,14 +313,14 @@ Algenpopulation beschreibt...
 
 
 \begin{bbwFillInTabular}{c|c|c||c|c|c|c|c|c|c|c}\hline
-  Tage      & $t$ & \cellcolor{gray!75}\noTRAINER{\hspace{2cm}} & 0            & \tiny{1-4} & 5            & \tiny{6-9} & 10           & \tiny{11-14} & 15           &\\\hline
+  Tage       & $t$ & \cellcolor{gray!75}\noTRAINER{\hspace{2cm}} & 0            & \tiny{1-4} & 5            & \tiny{6-9} & 10           & \tiny{11-14} & 15           &\\\hline
   Fläche     & $A$ & \TRAINER{$20\cdot v$}    &
   \TRAINER{20}\noTRAINER{\hspace{15mm}} &  \cellcolor{gray!75}    &
   \TRAINER{40}\noTRAINER{\hspace{15mm}} &    \cellcolor{gray!75}  &
   \TRAINER{80}\noTRAINER{\hspace{15mm}} &         \cellcolor{gray!75}       &
   \TRAINER{160}\noTRAINER{\hspace{15mm}} &\\\hline
-  Intervalle & $z$ & \TRAINER{$z=\frac{t}{5}$}    & \TRAINER{0}  &  \cellcolor{gray!75}    & \TRAINER{1.}  & \cellcolor{gray!75}     & \TRAINER{2.}  &   \cellcolor{gray!75}             & \TRAINER{3.} &\\\hline
   Faktor    & $v$ & \TRAINER{$v=2^z$}    & \TRAINER{1}  &  \cellcolor{gray!75}    & \TRAINER{2}  &   \cellcolor{gray!75}   & \TRAINER{4}  &    \cellcolor{gray!75}            & \TRAINER{8} &\\\hline
+  Intervalle & $z$ & \TRAINER{$z=\frac{t}{5}$}    & \TRAINER{0}  &  \cellcolor{gray!75}    & \TRAINER{1.}  & \cellcolor{gray!75}     & \TRAINER{2.}  &   \cellcolor{gray!75}             & \TRAINER{3.} &\\\hline
   Potenz     &\TRAINER{$2^z$} & \TRAINER{$2^\frac{t}{5}$}     & \TRAINER{$2^0$}  &   \cellcolor{gray!75}   & \TRAINER{$2^1$}  &   \cellcolor{gray!75}   & \TRAINER{$2^2$}  &  \cellcolor{gray!75}              & \TRAINER{$2^3$} &\\\hline
 \end{bbwFillInTabular}
 
@@ -378,9 +378,12 @@ Merke:
 
   Einsetzen in $f(t) = b\cdot{} A^t$
 
-  $$f(t) = b\cdot{} \left(\sqrt[5]{2}\right)^t  = b\cdot{}
+
+  $$f(t) = b\cdot{}A^1 = b\cdot{} \left(\sqrt[5]{2}\right)^t  = b\cdot{}
   \left(2^{\frac15}\right)^t=b\cdot{} 2^{\frac{t}5} \approx b\cdot{} 1.1487^t$$
 
+  In Worten: «in 5 Tagen eine Verdopplung» = «Pro Tag eine Zunahme von
+  14.87 \%»
 }%% end TNTeop
 
 
