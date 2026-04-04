@@ -40,6 +40,42 @@ Herleitung:\\
   $\frac{a}{\sin(\alpha)} = \frac{b}{\sin(\beta)}$
 }%% END TNT
 \newpage
+
+\subsection*{Referenzaufgabe}
+Gegeben in einem Dreieck sind:
+
+$a=30.9$
+
+$c=19.8$
+
+$\gamma=34.6\degre$
+
+Skizzieren Sie das Dreieck möglichst genau und geben Sie die fehlenden
+Winkel und Seiten an.
+
+\begin{tabular}{cc}
+\raisebox{20mm}{\includegraphics[width=60mm]{tals/trig2/img/SinussatzDoppelloesung1.png}} & \TRAINER{\includegraphics[width=45mm]{tals/trig2/img/SinussatzDoppelloesung2.png}}  \\
+ \end{tabular}
+\noTRAINER{\vspace{30mm}}
+%\bbwCenterGraphic{50mm}{tals/trig2/img/SinussatzDoppelloesung1.png}
+
+\hrule
+
+Rechnung:
+\TNTeop{%%
+$$\frac{\sin(\gamma)}{c} = \frac{\sin(\alpha)}{a}$$
+$$\sin(\alpha) = \frac{\sin(\gamma)\cdot{}a}{c}$$
+$$\Longrightarrow \alpha \approx 62.39\degre; \alpha_2 \approx 117.6\degre$$
+
+
+$$\Longrightarrow \beta \approx 83.0\degre ; \beta_2 \approx 28.0\degre$$
+
+$$b   = \frac{\sin(\beta)\cdot{} c}{\sin(\gamma)}$$
+$$\Longrightarrow b \approx 34.6; b_2 \approx 16.3$$
+
+} %% end TNT eop (implicit end of page)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \TALS{Den \textbf{Sinussatz} können Sie auch im Taschenrechner
   abspeichern und jederzeit verwenden, indem Sie nur die gegebenen
   Größen verändern:%% (Frommenwiler: Aufgabe 98. b) Seite 104):
@@ -63,9 +99,11 @@ Herleitung:\\
 
 (auch Kosinussatz)
 
-\begin{gesetz}{Cosinussatz}{}
-$$c^2 = a^2 + b^2 - 2ab\cdot{}\cos{(\gamma)}$$
-\end{gesetz}
+\subsection*{Einstiegsbeispiel}
+Gegeben in einem Dreieck sin die Seiten $a=4$ cm, $b=5$ cm und $c=6$
+cm. Berechnen Sie Winkel $\gamma$.
+
+\TNT{2}{Für den Sinussatz fehlt uns ein Winkel!}
 
 Herleitung:\\
 
@@ -73,7 +111,7 @@ Herleitung:\\
 \noTRAINER{\bbwCenterGraphic{12cm}{tals/trig2/img/KosinussatzLeer.png}}
 %\raisebox{-1cm}{\includegraphics[width=8cm]{img/Kosinussatz.png}}
 
-\TNT{9.2}{Zeichne die Höhe ein und betrachte beide rechtwinkligen
+\TNTeop{Zeichne die Höhe ein und betrachte beide rechtwinkligen
   Höhe $h$:
 
 $$b^2 - e^2 = h^2 = c^2 - d^2$$
@@ -87,12 +125,16 @@ $$\Longrightarrow c^2 = a^2 + b^2 -2ae$$
 Weil $e =  b\cdot{}\cos(\gamma)$ folgt:
 
 $$c^2 = a^2 + b^2 -2ab\cos(\gamma)$$
-}%% END TNT
+}%% END TNTeop
 
-Gilt dies auch im rechtwinkligen Dreieck?
-\TRAINER{ja: $\cos(90) = 0$}
-\noTRAINER{\vspace{2cm}}
-\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55555555555
+
+
+
+\begin{gesetz}{Cosinussatz}{}
+$$c^2 = a^2 + b^2 - 2ab\cdot{}\cos{(\gamma)}$$
+\end{gesetz}
+
 
 Wie der Sinussatz kann auch der Cosinussatz mit dem Taschenrechner
 automatisiert werden. Die Definition «\texttt{dreieck:=}» kann hier
@@ -101,6 +143,10 @@ selben \textit{Problem} befinden.
 
 \bbwCenterGraphic{10cm}{tals/trig2/img/cosinussatz_ti_nspire.png}
 
+
+Gilt dies auch im rechtwinkligen Dreieck?
+\TRAINER{ja: $\cos(90) = 0$}
+\noTRAINER{\vspace{2cm}}
 
 \subsection*{Aufgaben}
 \olatLinkArbeitsblatt{Cosinussatz}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/113179227873145}{Aufgaben ab (D) ab Nr. 9.}
