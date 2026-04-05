@@ -12,8 +12,12 @@ Lernziele
 \item Nullhypothese $H_0$ = Alles ist zufällig bzw. gleich verteilt.
 
 \item Alternativhypothese ($H_1$) = Es kann kein Zufall sein
+  (Behauptung, Vermutung). 
 
-\item Signifikanzniveau\index{Signifikanzniveau} typischerweise 99\% o. ä.
+\item Fehler 1. Art ($\alpha$-Fehler) und 2. Art ($\beta$-Fehler)
+  
+\item Signifikanzniveau\index{Signifikanzniveau} typischerweise 99\%
+  o.\,ä. bei binomialverteilten Zufallsvariablen.
 
 \item $p$-Wert
   
@@ -67,17 +71,30 @@ etwa gleich häufig auftritt. Hierzu ein Begriff:
 
 \begin{center}\textbf{Nullhypothese} oder {$H_0$}.\end{center}
 
+\begin{definition}{Nullhypothese}{}
 Die \textbf{Nullhypothese $H_0$} nimmt an, dass bloß der reine Zufall
 im Spiel war und sonst nichts.
+\end{definition}
 
+\begin{definition}{Alternativhypothese}{}
 Die \textbf{Alternativhypothese $H_1$} hingegen behauptet, dass das
-Ergebnis nicht allein durch den Zufall zustande kommt.
+Ergebnis nicht allein durch den Zufall zustande kommt; es steht eine
+«\textbf{Vermutung}» oder eine «\textbf{Behauptung}» im Raum.
+\end{definition}
+
 
 In unserem Beispiel lautet die
 
-\textbf{Nullhypothese}: Es ist ein «fairer» Würfel.
+\textbf{Nullhypothese}:
 
-Die Alternativhypothese lautet hier: Der Würfel ist nicht fair.
+\TNT{2}{Es ist ein «fairer» Würfel, der ca. ein
+Sechstel aller Würfe eine \epsdice{3} zeigt.}
+
+
+Die Alternativhypothese lautet hier:
+
+\TNT{2}{Der Würfel ist nicht fair und
+zeigt mehr Dreien als der bloße Zufall.}
 
 Wie oft erwarten wir nun vom «fairen» Würfel, das Auftreten
 einer \epsdice{3} bei 29 maligem Würfeln?
@@ -94,46 +111,42 @@ Ab wann werden wir nicht mehr glauben, dass der Würfel fair ist?
 Zeigt der Würfel ein Resultat, das extrem unwahrscheinlich ist, dann
 können wir annehmen, dass der Würfel irgendwie gezinkt ist.
 
-Auch wenn der Würfeln nun nicht exakt fünf mal die Drei bringt, können
+Auch wenn der Würfel nun nicht exakt fünf mal die Drei bringt, können
 wir eventuell annehmen, dass der Würfel fair ist und ein dreimaliges
-Auftreten kann genausogut eine Laune des Zufalls sein, wie ein
-fünfmaliges Auftreten.
+Auftreten kann genauso gut eine Laune des Zufalls sein, wie ein
+sechsmaliges Auftreten.
 
 Berechnen Sie, wie groß die Wahrscheinlichkeit ist, dass ein «fairer»
-Würfel bei 29maligem Werfen \textbf{genau} zwei Mal eine \epsdice{3}
+Würfel bei 29maligem Werfen \textbf{maximal} sechs Mal eine \epsdice{3}
 zeigt:
 
-\TNT{1.6}{Bernoulli $P(X=2 \text{ Mal }  = {29  \choose
-2} \left(\frac16\right)^2\times \left(\frac56\right)^{29-2}\approx 8.21\% $}
+\TNT{1.6}{Bernoulli $P(X\le 6 \text{ Mal die }\epsdice{3})  = \sum_{k=0}^6{29  \choose
+k} \left(\frac16\right)^k \cdot{} \left(\frac56\right)^{29-k}\approx 80.22\% $}
 \newpage
 Berechnen Sie mit dem Taschenrechner alle Wahrscheinlichkeiten, dass
-$n$ mal eine \epsdice{3} geworfen wird innerhalb von $29$ Würfen.
+$k$ mal eine \epsdice{3} geworfen wird innerhalb von $29$ Würfen.
 
-\begin{bbwFillInTabular}{|c|p{8cm}|}\hline
-$n$  & Wahrscheinlichkeit, genau $n$-mal eine \epsdice{3} zu erzielen
+\begin{bbwFillInTabular}{|c|p{10cm}|}\hline
+$k$  & Wahrscheinlichkeit, genau $k$-mal eine \epsdice{3} zu erzielen
 bei 29maligem werfen: \\\hline\hline
-
- 0   & \\\hline
- 1   & \\\hline
- 2   & \\\hline
- 3   & \\\hline
- 4   & \\\hline
- 5   & \\\hline
- 6   & \\\hline
- 7   & \\\hline
- 8   & \\\hline
- 9   & \\\hline
-10   & \\\hline 
-11   & \\\hline
-     & \\\hline
+ 3   & \TRAINER{26.42 \%}\\\hline
+ 4   & \TRAINER{45.64 \%}\\\hline
+ 5   & \TRAINER{64.85 \%}\\\hline
+ 6   & \TRAINER{80.22 \%}\\\hline
+ 7   & \TRAINER{90.31 \%}\\\hline
+ 8   & \TRAINER{95.87 \%}\\\hline
+ 9   & \TRAINER{98.46 \%}\\\hline
 \end{bbwFillInTabular}
 \newpage
 \subsubsection{Erwartete Verteilungen}
-\bbwCenterGraphic{6cm}{geso/stoch/img/wuerfeltabelle.png}
+\bbwCenterGraphic{12cm}{geso/stoch/img/wuerfeltabelle.png}
+\newpage
 
-Mit 95.36\% Wahrscheinlichkeit liefert der normale Würfel 1 - 8 Mal die \epsdice{3}.
+Mit 95.87 \% Wahrscheinlichkeit liefert der normale Würfel bis max. 8 Mal die \epsdice{3}.
 
-Mit 95.28\% Wahrscheinlichkeit liefert der gezinkte  Würfel 5 - 14 Mal die \epsdice{3}.
+Mit 93.16 \% Wahrscheinlichkeit liefert unser gezinkte  Würfel bis
+max. 13 Mal die \epsdice{3}. \TRAINER{Diese Berechnung funktioniert
+  bei uns natürlich nur, weil die die Art des «Zinkens» kennen.}
 
 \bbwCenterGraphic{17cm}{geso/stoch/img/wuerfelverteilung.png}
 \newpage
@@ -141,14 +154,22 @@ Mit 95.28\% Wahrscheinlichkeit liefert der gezinkte  Würfel 5 - 14 Mal die \eps
 \subsubsection{Aufstellen der Hypothese}
 Behauptung (Hypothese):
 
-\begin{center} $H_0$:
-\textbf{Ein fairer Würfel} liefert bei 29 maligem Werfen maximal
-sieben mal die \epsdice{3}.
+\begin{center} $H_0$ (Nullhypothese):
+
+\TNT{2}{\textbf{Der Würfel ist fair}: Er liefert bei 29-maligem Werfen
+typischerweise nicht mehr als 4 bis 5 Mal die \epsdice{3}.}
 \end{center}
 
+\begin{center} $H_1$ (Alternativhypothese):
+
+\TNT{2}{\textbf{Der Würfel ist nicht fair}: Er liefert bei 29-maligem Werfen
+mehr als 5 Mal die \epsdice{3}.}
+\end{center}
+
+
 Bemerkung: Wir sprechen hier von einer \textbf{einseitigen} Hypothese
-/ bzw. vom einseitigen Hypothesentest. Ein \textbf{zweiseitiger} Hypothesentest würde auch
-das Minimum festlegen.
+/ bzw. vom einseitigen Hypothesentest. Ein \textbf{zweiseitiger}
+Hypothesentest würde auch das Minimum festlegen.
 
 \subsubsection{Unsere Resultate}
 
@@ -156,16 +177,13 @@ Füllen wir in der Klasse gemeinsam die folgende Tabelle aus:
 
 \begin{bbwFillInTabular}{p{5cm}|p{5cm}|p{5cm}}
     & Würfel ist «fair» ($H_0$) & Würfel ist gezinkt ($H_1$)\\\hline
-Würfel wird als «fair» gewertet (weniger als acht \epsdice{3}er).&
-& \TRAINER{fehler 2. Art}\\\hline
+Würfel wird als «fair» gewertet (weniger als acht \epsdice{3}-er).&
+& \TRAINER{Fehler 2. Art}\\\hline
 Würfel wird als gezinkt gewertet (mehr als
-sieben \epsdice{3}er).& \TRAINER{fehler erster Art}& \\\hline
+sieben \epsdice{3}-er).& \TRAINER{Fehler erster Art}& \\\hline
 \end{bbwFillInTabular}
 
-
-
 \newpage
-
 
 
 \subsection{Fehler erster und Fehler zweiter Art}
@@ -177,13 +195,23 @@ Beim etwa \LoesungsRaum{6-8} maligem Auftreten der \epsdice{3} sind wir
 wohl am unsichersten.
 
 Legen wir fest: Ein Würfel, der weniger als acht Mal
-eine \epsdice{3} zeigt bei 25maligem würfeln, gelte noch als «fair».
+eine \epsdice{3} zeigt bei 29-maligem würfeln, gelte noch als «fair».
 
 \subsubsection{Signifikanzniveau}
-Das Signifikanzniveau für «Ein fairer Würfel liefert weniger als acht
-Mal die \epsdice{3} bei 29maligem Würfeln» liegt also bei:
+Das Signifikanzniveau wird in Sozialwissenschaften oft als 95 \%
+Wahrscheinlichkeit «sich nicht zu irren» angenommen.
+
+Da wir die «Art des Zinkens» bei unseren Würfeln kennen, legen wir das
+Signifikanzniveau da fest, wo wir die größte Unsicherheit haben, ob
+es ein fairer Würfel mit zufälligerweise vielen \epsdice{3}-ern ist,
+oder ob es ein gezinkter Würfel mit ausnahmsweise wenigen
+\epsdice{3}-ern ist.
+
+Das Signifikanzniveau legen wir als bei «weniger als acht Mal die
+\epsdice{3} bei 29maligem Würfeln» fest (siehe obige Graphik):
 \vspace{15mm}
 \textbf{Signifikanzniveau} = \LoesungsRaum{90.31\%}
+
 
 \subsubsection{Fehler erster Art}
 Fehler erster Art (Alpha ($\alpha$)-Fehler) = Fälschliche Zurückweisung der Nullhypothese.
@@ -193,10 +221,11 @@ Der «faire» Würfel wird als gezinkt kategorisiert.
 Dies kann auch in einer Beobachtungsstudie passieren, wenn \zB
 angenommen wird, dass die Winterthurer häufiger krank sind als der
 Rest der Schweiz, nur weil die Winterthurer in der Statistik
-zufälligerweise häufiger Krankeitssymptome zeigen als andere. Dies
+zufälligerweise häufiger Krankheitssymptome zeigen als andere. Dies
 kann verschiedene Ursachen haben: Zu kleine Stichprobe und
 zufälligerweise einige Kranke erwischt; oder Bias in der Stichprobe,
-weil die Umfrage zu nahe am Kantonsspital stattgefunden hat etc.
+weil die Umfrage zu nahe am Kantonsspital stattgefunden hat oder ganz
+einfach weil das Resultat zufälligerweise zustande kommt etc.
 
 \subsubsection{Fehler zweiter Art}
 Fehler zweiter Art (Beta ($\beta$)-Fehler) = Fälschliche Annahme der Alternativhypothese.
@@ -210,7 +239,69 @@ Der gezinkte Würfel wird als «fair» angesehen.
   Ablehnungsbreich}\index{Annahmebereich}\index{Ablehnungsbereich}
 (bei Binomialverteilungen)
 
-... coming soon ...
+Wir beobachten, dass der Würfel mehr als angenommen eine \epsdice{3}
+zeigt und wir \textbf{vermuten}, dass der Würfel gezinkt ist.
 
+\textbf{Nullhypothese} $H_0$: Der Würfel ist fair und zeigt in
+$\frac16$ der Fälle eine \epsdice{3}.
+
+\textbf{Alternativhypothese} $H_1$: Der Würfel zeigt in mehr als
+$\frac{1}{6}$ der Fälle eine \epsdice{3}.
+
+Wir wollen für unsere Annahme ($H_1$) mit minimal 95 \%-iger
+Wahrscheinlichkeit sicher gehen.
+
+Wir werfen also 29 Mal und wir wollen herausfinden, bis wie viele
+\epsdice{3}-er denn noch \textbf{normal} sind:
+Also: Mit mit 95 \%-iger Wahrscheinlichkeit kommen 0 bis k
+\epsdice{3}-er vor in einem normalen Würfel:
+
+\texttt{binomil\textbf{c}df} $n=29; p=\frac16$
+
+Dies liefert: 0-8 mal kommt die \epsdice{3} mit 95.87 \%-iger
+Wahrscheinlichkeit vor. Nur die restlichen ca 4.13\% der
+Versuchsreihen kommt die \epsdice{3} mehr als 8 mal vor.
+
+Somit ist der
+
+\TNT{2}{\textbf{Annahmebereich} = 0 bis 8 \epsdice{3}-ern und der}
+
+\TNT{2}{\textbf{Ablehnungsbereich} liegt bei 9 bis 29 \epsdice{3}-ern.}
 
 \newpage
+
+
+\subsection*{Referenzaufgabe}
+Eine groß angelegte Statistik zeigt, dass im Vorschulalter 11 \% der
+Mädchen Linkshänderinnen sind. Es wird \textbf{vermutet}, dass nach
+vollendeter Schulzeit prozentual weniger Abgängerinnen
+Linkshänderinnen sind. Sie haben 45 Schulabgängerinnen zur Überprüfung
+Ihrer Hypothese zur Verfügung.
+
+a) Wie lautet die $H_0$-Hypothese (Nullhypothese)? Und wie die
+Alternativhypothese ($H_1$), also die Hypothese zur \textbf{Vermutung}?
+
+\TNT{4}{
+$H_0$ Hypothese: (weiterhin) 11 \% der (Schul-)Abgängerinnen sind
+  Linkshänderinnen.
+
+$H_1$ Hypothese: Es sind weniger als 11 \% der (Schul-)Abgängerinnen Linkshänderinnen.
+}%% end TNT
+
+b) Geben Sie den Annahmebereich und den Ablehnungsbereich der
+Nullhypothese auf einem 95\% Signifikanzniveau (Heißt $\alpha \le
+5\%$) an bei einer Stichprobe von 45 Abgängerinnen.
+
+\TNTeop{
+Binomial\textbf{c}df liefert bei $n=1$ 3.46 \% und bei $n=2$ bereits
+11.45 \%. Somit ist der Annahmebereich der $H_0$-Hypothese (also der
+Nullhypothese) 2 bis 45.
+
+Der Ablehnungsbereich der $H_0$ Hypothese entspricht somit 0 und
+1. Wenn also keine oder nur eine Abgängerin Linkshänderin ist, so
+können wir mit über 95 \%-iger Wahrscheinlichkeit davon ausgehen, dass
+die Nullhypothese verworfen wird. In diesem Fall können wir sagen,
+dass mit großer Wahrscheinlichkeit die «Linkshändigkeit» während der
+Schulzeit abnimmt.
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
