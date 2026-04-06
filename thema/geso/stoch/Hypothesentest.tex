@@ -25,11 +25,6 @@ Lernziele
 
 \newpage
 
-
-
-%%... coming soon ...
-
-
 \subsection{Würfelexperiment}
 
 %%
@@ -71,30 +66,48 @@ etwa gleich häufig auftritt. Hierzu ein Begriff:
 
 \begin{center}\textbf{Nullhypothese} oder {$H_0$}.\end{center}
 
-\begin{definition}{Nullhypothese}{}
+\begin{definition}{Nullhypothese\index{Nullhypothese}}{}
 Die \textbf{Nullhypothese $H_0$} nimmt an, dass bloß der reine Zufall
 im Spiel war und sonst nichts.
 \end{definition}
 
-\begin{definition}{Alternativhypothese}{}
+\begin{definition}{Alternativhypothese\index{Alternativhypothese}, Forschungshypothese\index{Forschungshypothese}}{}
 Die \textbf{Alternativhypothese $H_1$} hingegen behauptet, dass das
 Ergebnis nicht allein durch den Zufall zustande kommt; es steht eine
-«\textbf{Vermutung}» oder eine «\textbf{Behauptung}» im Raum.
+«\textbf{Vermutung}» oder eine «\textbf{Behauptung}» im Raum. 
 \end{definition}
 
 
-In unserem Beispiel lautet die
 
-\textbf{Nullhypothese}:
+\subsubsection*{Aufstellen der Hypothese}
 
-\TNT{2}{Es ist ein «fairer» Würfel, der ca. ein
-Sechstel aller Würfe eine \epsdice{3} zeigt.}
+\begin{center} $H_0$ (Nullhypothese):
+
+\TNT{2}{\textbf{Der Würfel ist fair}: Er liefert mit $\frac{1}{6}$
+  aller Würfe eine \epsdice{3}. (Bei 29-maligem Werfen
+typischerweise nicht mehr als 4 bis 5 Mal die \epsdice{3}.)}%% end TNT
+\end{center}
+
+Behauptung:
+
+\begin{center} $H_1$ (Alternativhypothese):
+
+\TNT{2}{\textbf{Der Würfel ist nicht fair}: Er zeigt mehr
+  \epsdice{3}-er als der bloße Zufall. Er liefert bei 29-maligem Werfen
+mehr als 5 Mal die \epsdice{3}.}
+\end{center}
 
 
-Die Alternativhypothese lautet hier:
+\begin{bemerkung}{Einseitiger Hypothesentest}{}
+  Wir sprechen hier von einer \textbf{einseitigen} Hypothese
+/ bzw. vom einseitigen Hypothesentest. Ein \textbf{zweiseitiger}
+Hypothesentest würde auch das Minimum festlegen.
+\end{bemerkung}
+\newpage
 
-\TNT{2}{Der Würfel ist nicht fair und
-zeigt mehr Dreien als der bloße Zufall.}
+
+\newpage
+\subsubsection{Erwartete Resultate}
 
 Wie oft erwarten wir nun vom «fairen» Würfel, das Auftreten
 einer \epsdice{3} bei 29 maligem Würfeln?
@@ -104,20 +117,19 @@ $\frac{29}{6}\approx 4.83$ Mal. Es ist jedoch \textbf{nicht} zu erwarten, dass
 auch ein fairer Würfel \textbf{immer} genau 4 oder 5 Mal die \epsdice{3} zeigen wird!
 }
 
-\newpage
-\subsubsection{Erwartetes Resultat}
+
 Ab wann werden wir nicht mehr glauben, dass der Würfel fair ist?
 
 Zeigt der Würfel ein Resultat, das extrem unwahrscheinlich ist, dann
 können wir annehmen, dass der Würfel irgendwie gezinkt ist.
 
-Auch wenn der Würfel nun nicht exakt fünf mal die Drei bringt, können
-wir eventuell annehmen, dass der Würfel fair ist und ein dreimaliges
+Auch wenn der Würfel nun nicht exakt fünf mal die \epsdice{3} bringt, können
+wir eventuell annehmen, dass der Würfel fair ist und ein zweimaliges
 Auftreten kann genauso gut eine Laune des Zufalls sein, wie ein
 sechsmaliges Auftreten.
 
 Berechnen Sie, wie groß die Wahrscheinlichkeit ist, dass ein «fairer»
-Würfel bei 29maligem Werfen \textbf{maximal} sechs Mal eine \epsdice{3}
+Würfel bei 29-maligem Werfen \textbf{maximal} sechs Mal eine \epsdice{3}
 zeigt:
 
 \TNT{1.6}{Bernoulli $P(X\le 6 \text{ Mal die }\epsdice{3})  = \sum_{k=0}^6{29  \choose
@@ -127,8 +139,8 @@ Berechnen Sie mit dem Taschenrechner alle Wahrscheinlichkeiten, dass
 $k$ mal eine \epsdice{3} geworfen wird innerhalb von $29$ Würfen.
 
 \begin{bbwFillInTabular}{|c|p{10cm}|}\hline
-$k$  & Wahrscheinlichkeit, genau $k$-mal eine \epsdice{3} zu erzielen
-bei 29maligem werfen: \\\hline\hline
+$k$  & Wahrscheinlichkeit, \textbf{maximal} $k$-mal eine \epsdice{3} zu erzielen
+bei 29-maligem werfen: \\\hline\hline
  3   & \TRAINER{26.42 \%}\\\hline
  4   & \TRAINER{45.64 \%}\\\hline
  5   & \TRAINER{64.85 \%}\\\hline
@@ -138,7 +150,7 @@ bei 29maligem werfen: \\\hline\hline
  9   & \TRAINER{98.46 \%}\\\hline
 \end{bbwFillInTabular}
 \newpage
-\subsubsection{Erwartete Verteilungen}
+\subsubsection*{Erwartete Verteilungen}
 \bbwCenterGraphic{12cm}{geso/stoch/img/wuerfeltabelle.png}
 \newpage
 
@@ -150,27 +162,6 @@ max. 13 Mal die \epsdice{3}. \TRAINER{Diese Berechnung funktioniert
 
 \bbwCenterGraphic{17cm}{geso/stoch/img/wuerfelverteilung.png}
 \newpage
-
-\subsubsection{Aufstellen der Hypothese}
-Behauptung (Hypothese):
-
-\begin{center} $H_0$ (Nullhypothese):
-
-\TNT{2}{\textbf{Der Würfel ist fair}: Er liefert bei 29-maligem Werfen
-typischerweise nicht mehr als 4 bis 5 Mal die \epsdice{3}.}
-\end{center}
-
-\begin{center} $H_1$ (Alternativhypothese):
-
-\TNT{2}{\textbf{Der Würfel ist nicht fair}: Er liefert bei 29-maligem Werfen
-mehr als 5 Mal die \epsdice{3}.}
-\end{center}
-
-
-Bemerkung: Wir sprechen hier von einer \textbf{einseitigen} Hypothese
-/ bzw. vom einseitigen Hypothesentest. Ein \textbf{zweiseitiger}
-Hypothesentest würde auch das Minimum festlegen.
-
 \subsubsection{Unsere Resultate}
 
 Füllen wir in der Klasse gemeinsam die folgende Tabelle aus:
@@ -235,9 +226,10 @@ Der gezinkte Würfel wird als «fair» angesehen.
 \TNTeop{}
 \newpage
 
-\subsection{Annahmebereich /
-  Ablehnungsbreich}\index{Annahmebereich}\index{Ablehnungsbereich}
-(bei Binomialverteilungen)
+
+\subsection{Entscheidungsregel}
+\subsubsection*{Annahmebereich / Ablehnungsbreich}\index{Annahmebereich}\index{Ablehnungsbereich}
+(Wir betrachten nur Binomialverteilungen)
 
 Wir beobachten, dass der Würfel mehr als angenommen eine \epsdice{3}
 zeigt und wir \textbf{vermuten}, dass der Würfel gezinkt ist.
@@ -248,25 +240,30 @@ $\frac16$ der Fälle eine \epsdice{3}.
 \textbf{Alternativhypothese} $H_1$: Der Würfel zeigt in mehr als
 $\frac{1}{6}$ der Fälle eine \epsdice{3}.
 
-Wir wollen für unsere Annahme ($H_1$) mit minimal 95 \%-iger
-Wahrscheinlichkeit sicher gehen.
+Wir wollen für unsere Annahme ($H_1$) maximal mit 5 \%-iger
+Wahrscheinlichkeit falsch liegen.
 
 Wir werfen also 29 Mal und wir wollen herausfinden, bis wie viele
 \epsdice{3}-er denn noch \textbf{normal} sind:
 Also: Mit mit 95 \%-iger Wahrscheinlichkeit kommen 0 bis k
 \epsdice{3}-er vor in einem normalen Würfel:
 
-\texttt{binomil\textbf{c}df} $n=29; p=\frac16$
+\texttt{binomial\textbf{c}df} $n=29; p=\frac16$
 
 Dies liefert: 0-8 mal kommt die \epsdice{3} mit 95.87 \%-iger
 Wahrscheinlichkeit vor. Nur die restlichen ca 4.13\% der
 Versuchsreihen kommt die \epsdice{3} mehr als 8 mal vor.
 
-Somit ist der
 
-\TNT{2}{\textbf{Annahmebereich} = 0 bis 8 \epsdice{3}-ern und der}
+Annahmebereich:
 
-\TNT{2}{\textbf{Ablehnungsbereich} liegt bei 9 bis 29 \epsdice{3}-ern.}
+\TNT{2}{0 bis 8 \epsdice{3}-ern und der}
+
+Ablehungsbereich:
+
+\TNT{2}{\textbf{Ablehnungsbereich} liegt bei 9 bis 29 \epsdice{3}-ern.
+Wir sprechen hier von einem «rechtsseitigen» Hypothesentest.
+}
 
 \newpage
 
@@ -278,8 +275,11 @@ vollendeter Schulzeit prozentual weniger Abgängerinnen
 Linkshänderinnen sind. Sie haben 45 Schulabgängerinnen zur Überprüfung
 Ihrer Hypothese zur Verfügung.
 
-a) Wie lautet die $H_0$-Hypothese (Nullhypothese)? Und wie die
-Alternativhypothese ($H_1$), also die Hypothese zur \textbf{Vermutung}?
+a) Durch einen Hypothesentest will man zeigen, dass bei den
+Schulabgängerinnen $P < 0.11$ gilt. Wie lautet die $H_0$-Hypothese
+(Nullhypothese)? Und wie die Alternativhypothese ($H_1$), also die
+Hypothese zur \textbf{Vermutung}? Gehen Sie von einer
+Binomialverteilung aus.
 
 \TNT{4}{
 $H_0$ Hypothese: (weiterhin) 11 \% der (Schul-)Abgängerinnen sind
@@ -287,15 +287,21 @@ $H_0$ Hypothese: (weiterhin) 11 \% der (Schul-)Abgängerinnen sind
 
 $H_1$ Hypothese: Es sind weniger als 11 \% der (Schul-)Abgängerinnen Linkshänderinnen.
 }%% end TNT
-
-b) Geben Sie den Annahmebereich und den Ablehnungsbereich der
-Nullhypothese auf einem 95\% Signifikanzniveau (Heißt $\alpha \le
-5\%$) an bei einer Stichprobe von 45 Abgängerinnen.
+ 
+b) Geben Sie den Annahmebereich von $H_0$ ($[k; 45]$ und den
+Ablehnungsbereich von $H_0$ ($[0; k-1]$) der
+Nullhypothese auf einem  5\% Signifikanzniveau (Heißt $\alpha \le
+5\%$ «Wir können der Entscheidungsregel zu 95 \% vertrauen.») an bei einer Stichprobe von 45 Abgängerinnen.
 
 \TNTeop{
-Binomial\textbf{c}df liefert bei $n=1$ 3.46 \% und bei $n=2$ bereits
+Der Erwartungswert liegt bei 4.95 linkshändigen Mädchen. Wir machen
+einen \textbf{linksseitigen} Hypothesentest
+
+Ansatz: $P(X \le k-1) \le 0.05$
+  
+Binomial\textbf{c}df liefert bei $n\le 1$ noch 3.46 \% und bei $n\le 2$ bereits
 11.45 \%. Somit ist der Annahmebereich der $H_0$-Hypothese (also der
-Nullhypothese) 2 bis 45.
+Nullhypothese) 2 bis (und mit) 45: $k=2$.
 
 Der Ablehnungsbereich der $H_0$ Hypothese entspricht somit 0 und
 1. Wenn also keine oder nur eine Abgängerin Linkshänderin ist, so
@@ -304,4 +310,6 @@ die Nullhypothese verworfen wird. In diesem Fall können wir sagen,
 dass mit großer Wahrscheinlichkeit die «Linkshändigkeit» während der
 Schulzeit abnimmt.
 }
+
+\olatLinkVideo{Hypothesentest}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/113436965452103}{Detaillierte Erklärung}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
