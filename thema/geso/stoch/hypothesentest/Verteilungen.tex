@@ -1,0 +1,66 @@
+%%
+%% 2020 - 08 -03 φ
+%%
+
+\subsection{Wahrscheinlichkeitsverteilungen ...}\index{Wahrscheinlichkeitsverteilung}
+
+Für ein Bernoulli-Experiment können wir uns auch Balkendiagramm\index{Balkendiagramm} aufzeichnen.
+
+Nehmen wir wieder unseren Basketballspieler «Basil», der mit Wahrscheinlichkeit von 85\% jeweils trifft. Vorhin hatten wir uns gefragt, wie groß die Wahrscheinlichkeit ist, dass er in 20 Würfen genau 17 Mal [bzw. maximal 17 Mal] trifft.
+
+Dies können wir in einer Wertetabelle und somit auch in einem Balkendiagramm darstellen.
+\newpage
+
+
+\subsubsection{... genaue Anzahl Treffer}
+Notieren wir uns, wie groß die Wahrscheinlichkeit ist, dass Basil \textbf{genau} $n$ Mal trifft innerhalb von 20 Würfen:
+
+\begin{tabular}{c|cccccccccccccccc}
+  n & 0 & 1 & ... & 8 & 9 & 10   & 11   & 12   & 13  & 14  & 15 & 16 & 17 & 18 & 19 &  20\\
+  \%& 0 & 0 & ... & 0 & 0 & 0.02 & 0.11 & 0.46 & 1.6 & 4.5 & 10 & 18 & 24 & 23 & 14 & 3.9
+\end{tabular}
+
+Wenn wir diese Zahlen in ein Balkendiagramm eintragen, so erhalten wir
+eine (diskrete) Wahrscheinlichkeitsverteilung:
+
+
+\bbwCenterGraphic{10cm}{geso/stoch/img/BernoulliSingleBasil.png}
+
+
+\subsubsection{... kumulierte Anzahl Treffer}
+Wie im vorangehenden Kapitel können wir uns die Wahrscheinlichkeiten
+auch zusammenzählen und \zB fragen, wie groß ist die
+Wahrscheinlichkeit, dass Basil Ballisti (er trifft mit 85\%
+Wahrscheinlichkeit) bei 20 Würfen \textbf{maximal} 17
+Treffer landet. Dabei darf er für maximal 17 Treffer natürlich auch
+weniger Treffer landen. So werden für ein Anzahl Treffer alle
+Wahrscheinlichkeiten der weniger erzielten Treffer hinzugezählt. So
+erklären sich auch die 100\% um maximal 20 Treffer in 20 Würfen zu
+landen.
+
+\begin{tabular}{c|cccccccccccccccc}
+  n  & 0 & 1 & ... & 8 & 9 & 10  & 11   & 12   & 13  & 14  & 15 & 16 &  17 & 18 & 19 &  20\\
+  \% & 0 & 0 & ... & 0 & 0 &  0.02  &0.13   & 0.59 & 2.2 & 6.7 & 17 & 35 &  60 & 82 & 96 & 100
+\end{tabular}
+
+Das entsprechende Diagramm sieht wie folgt aus:
+
+\bbwCenterGraphic{10cm}{geso/stoch/img/BernoulliCumulativeBasil.png}
+\newpage
+
+\subsection*{Aufgaben}
+
+\olatLinkGESOKompendium{5.5.4}{50}{29.}
+
+
+\aufgabenFarbe{Erstellen Sie mit Hilfe des Taschenrechners eine Wertetabelle für die
+Wahrscheinlichkeiten, in 10 Würfen 0-mal, 1-mal, 2-mal, ... , 10-mal eine Sechs zu
+würfeln.
+\\
+Erstellen Sie mit diesen Daten ein Balkendiagarmm.\vspace{3mm}
+\\
+Erstellen Sie zusätzlich eine Wertetabelle mit den kumulierten Wahrscheinlichkeiten:
+Wie groß ist die Wahrscheinlichkeit mit einem fairen Würfel in 10 Würfen \textbf{maximal} 0-mal, 1-mal, 2-mal, ..., 10-mal eine Sechs zu würfeln. Fürs Verständnis: «maximal 3-mal» heißt «weniger als 4-mal». Erstellen Sie auch hierzu ein Balkendiagramm.
+}%% end Aufgabenfarbe
+
+\TNTeop{}
