@@ -130,15 +130,76 @@ Dabei ist:
 \subsection*{Aufgaben}
 
 
-\GESOAadBMTA{359}{35. (Kuchen) und 36. (Ovomaltine)}
+\aufgabenFarbe{
+Ein Apfelkuchen wird bei 150 Grad aus dem Ofen genommen und im
+     Zimmer mit 19 Grad abgekühlt. Vier Minuten später wird der Kuchen auf 115 Grad gemessen.
+     \begin{enumerate}[label=\alph*)]
+		 \item Skizzieren Sie grob den Verlauf
+		 \item Geben Sie die Funktionsgleichung an: $t$ =  Zeit in Minuten; $f(t)$ = Grad
+        Celsius
+		 \item Wie warm war der Kuchen eine Minute nach dem Herausnehmen?
+     \item  Wann wird der Kuchen 37\degre Grad erreichen?
+     \end{enumerate}
+}%% end Aufgabenfarbe
 
-\TRAINER{Bei Gelegenheit: Zwei gleicheartige Beispiele wie oben aufs
-  Aufgabenblatt übernehmen}
+\TNTeop{
+  \begin{enumerate}[label=\alph*)]
+  \item Skizze
+  \item $$f(t) = 19 + (150-19)\cdot{}\left( \frac{150-115}{115-19} \right)^{\frac{t}{4}} = 19+131\cdot{}\ \left( \frac{96}{131} \right)^{\frac{t}4}$$
+  \item 140.2\degre
+  \item 25.54 Min.
+  \end{enumerate}
+}
 
-\GESO{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/106029175831971}{Kap. 3.1:
-    Sättigung: Begrenzter Zerfall}}
-\TALS{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/106029175777725}{Kap. 3.:
-    Sättigung: Begrenzter Zerfall}}
+
+\aufgabenFarbe{
+ Ein Stein lag bei einer Feuerstelle und hat sich auf 85 Grad aufgewärmt
+	    nun wird er in einen Teich mit 11 Grad gelegt.
+			Der Stein kühlt sich umso langsamer ab, umso näher die
+	    Temperatur des Steins bei der Teichtemperatur liegt.
+			(Vernachläßigen Sie, dass sich der Teich durch den Stein leicht
+			aufwärmen wird.)
+			Nach 800 Sekunden ist der Stein durchschnittlich noch 18 Grad
+	    warm.
+      \begin{enumerate}[label=\alph*)]
+      \item
+        Skizzieren Sie den Temperaturverlauf in einem
+	        Koordinatensystem
+			  \item
+          Geben Sie eine mögliche Temperaturfunktion f(t) in Grad (t in
+	        Sekunden) an.
+				\item
+          Wie "kalt" ist der Stein nach 20 Minuten?
+				  (LSG: 20 min = 1200 Sek -> 13.15 Grad)
+				\item
+          Wann wird die Steintemperatur noch 12 Grad betragen?
+				  (LSG: 1460 Sekunden = 24 Minuten und 20 Sekunden)
+          \end{enumerate}
+}%% end Aufgabenfarbe
+
+\TNTeop{
+  \begin{enumerate}[label=\alph*)]
+  \item Skizze
+  \item $$f(t) = 11 + (85-11)\cdot{}\left( \frac{18-11}{85-11} \right)^{\frac{t}{800}} = 11+74\cdot{}\ \left( \frac{7}{74} \right)^{\frac{t}{800}}$$
+  \item 1200 Sek liefert ca 13.15 Grad\degre
+  \item ca. 1460 Sekunden (24 Minuten und 20 Sekunden)
+  \end{enumerate}
+}
+%%%%%%%%%%%%55
+
+\aufgabenFarbe{In einem $200 \text{ m}^2$ Teich werden anfänglich $30 \text{ m}^2$ Algendecke gemessen.
+    Nach 18 Tagen war der Teich zum ersten mal ganz mit Algen bedeckt.
+		Wir gehen von einem exponentiellen Wachstum der Algenfläche aus:
+ 		Wie groß ist der tägliche Wachstumsfaktor? Wie groß ist die tägliche
+		Wachstumsrate?
+}%% end Aufgabefarbe
+\TNT{4}{
+		Lösung Wachstumsfaktor: $\sqrt[18]{\frac{200}{30}} \approx 1.11115$ dies entspricht einer täglichen Wachstumsrate von 11.12\%. }%% end TNT
+
+
+\providecommand{\tempA}{Kap. 3.1: Sättigung: Begrenzter Zerfall}
+\GESO{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/106029175831971}{\tempA}}
+\TALS{\olatLinkArbeitsblatt{Exponentialfunktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/106029175777725}{\tempA}}
 
 \olatLinkGESOKompendium{3.4.2}{33}{48. (Achtung: Das
   Kompendium verwendet andere Buchstaben: Das dortige $a$ ist unser $b$.)}
