@@ -28,9 +28,62 @@ $\epsdice{3},\epsdice{4},\epsdice{5}$ oder $\epsdice{6}$ & \\\hline
 \epsdice{1} oder \epsdice{2} & \\\hline
 \end{bbwFillInTabular}
 
+<<<<<<< HEAD
+=======
 \newpage
 
-\subsubsection{Unsere Resultate}
+\subsubsection{Begriffe}
+
+Angenommen, der Würfel ist «fair», so erwarten wir, dass jede Seite
+etwa gleich häufig auftritt.
+
+
+$H_0$ :
+
+\TNT{3.2}{Die \textbf{Nullhypothese} $H_0$ sagt, dass einzig der Zufall
+  im Spiel war. Wir erwarten $\frac{1}{6}$ mal eine \epsdice{3}.
+}%% end TNT
+
+Vermutung, Behauptung:
+
+\TRAINER{
+Wir \textbf{vermuten} jedoch, dass hier etwas nicht mit rechten Dingen
+zugeht und formulieren die Alternativhypothese:
+}%% end TRAINER
+
+$H_1$:
+
+\TNT{3.2}{
+Unsere \textbf{Alternativhypothese}: Es kommt häufiger
+die \epsdice{3} als mit $\frac{1}{6}$ Wh'keit.
+}%% end TNT
+
+
+Wenn wir \textbf{mehr} \textbf{vermuten}, so sprechen wir von einem
+
+\TNT{1.2}{... rechtsseitigen Test.}
+
+Die Anzahl der geworfenen \epsdice{3}-ern nennen wir
+
+\TNT{1.2}{\textbf{Testgröße} und bezeichnen diese mit $X$}
+
+Die erwartete Anzahl an \epsdice{3}-ern bei 29x Werfen ist
+$\frac{29}{6}\approx 4.8$. Diese Größe nennen wir den
+
+\TNT{2.4}{... \textbf{Erwartungswert}  $\mathbb{E}(X)$ der
+  Nullhypothese}
+\newpage
+
+\subsubsection*{Bernoulli}
+\TRAINER{Lüften wir spätestens jetzt das Mysterium der gezinkten
+  Würfel.}
+
+\bbwCenterGraphic{12cm}{geso/stoch/img/wuerfeltabelle.png}
+>>>>>>> 41cb9bbfd6257dc221a59bd2325ea1df0b6ca185
+\newpage
+
+\subsection*{Unsere Resultate}
+
 
 Füllen wir in der Klasse gemeinsam die folgende Tabelle aus:
 
@@ -42,4 +95,70 @@ Würfel wird als gezinkt gewertet (mehr als
 sieben \epsdice{3}-er).& \TRAINER{Fehler erster Art}& \\\hline
 \end{bbwFillInTabular}
 
+
+Wenn ein «fairer» Würfel nun zufälligerweise als «gezinkter» taxiert
+wird, so sprechen wir von ...
+
+\TNT{2}{ ... einem \textbf{Fehler erster Art ($\alpha$-Fehler)}}%% end TNT
+
+Wird ein «gezinkter Würfel» ($H_1$) als «fair» taxiert ($H_0$), so
+sprechen wirr von einem ...
+
+\TNT{2}{... \textbf{Fehler 2. Art} (= \textbf{$\beta$-Fehler}).}
+
+
+Typischerweise wollen wir diese Fehler vermeiden und legen ein
+
+\TNT{2.8}{... \textbf{Signifikanzniveau} fest.
+
+Das \textbf{Signifikanzniveau} ist üblicherweise bei $\alpha=5 \%,
+\alpha=1 \%$ o.\,ä. festgesetz}%% end TNT
+
+Somit gilt bei einem Signifikanzniveau von 5 \%
+folgendes:
+
+Wer mehr als \textbf{sieben} mal eine \epsdice{3} wirft, fällt bereits
+unter die 5 \%, die wir noch «glauben».
 \newpage
+
+Wir suchen also eine
+
+\TNT{1.2}{... Entscheidungsregel ...,}
+
+die uns angibt in welchen Bereichen wir unsere Nullhypothese ($H_0$)
+im angegebenen Signifikanzniveau annehmen sollten bzw. in welchem
+Bereich wir die Nullhypothese verwerfen (ablehnen). Beim
+Rechtsseitigen Hypothesentest suchen wir also ein $k$ sodass gilt:
+
+\TNT{4}{
+  \textbf{Annahmebereich} von $H_0$: $X\in \{0, 1, 2, ...k\}$
+
+  \textbf{Ablehnungsbereich} von $H_0$: $X \in \{k+1, k+2, ... n-2, n-1, n\}$ 
+  }%% end TNT
+
+Unsere Verteilung zeigt, dass bei maximal sechs \epsdice{3}-ern immer
+noch etwa 11 \% Irrtumswahrscheinlichkeit vorhanden ist. Anders
+ausgedrückt: Wenn wir bei «wir glauben maximal 6 \epsdice{3}er»
+bleiben, so wird aber mit ca 11 \% wahrscheinlichkeit mehr als 6 mal
+die \epsdice{3} geworfen. Wir müssen also noch höher gehen.
+Wenn wir die Entscheidungsregel bei $k=7$ ansetzen, so sagen wir: Es
+ist noch gut wahrscheinlich maximal $k=7$ mal eine \epsdice{3} zu
+erzielen. Mehr als sieben Mal hingegen unterschreitet unser 5 \%
+Signifikanzniveau. Dies bringt und zum nächsten Begriff:
+
+
+Unsere \textbf{Entscheidungsregel}:
+
+\begin{bbwFillInTabular}{c|c}
+  Bereich & von ... bis \\\hline
+  \TRAINER{Annahmebereich}\noTRAINER{\hspace{60mm}}    & \TRAINER{[0; 7]} \hspace{30mm}\\\hline
+  \TRAINER{Ablehnungsbereich}& \TRAINER{[8; 29]} 
+\end{bbwFillInTabular}
+
+\newpage
+
+
+
+
+
+
