@@ -5,5 +5,101 @@
 
 
 \subsection{Annahmebereich /
-  Ablehnungsbreich}\index{Annahmebereich}\index{Ablehnungsbereich}
+  Ablehnungsbereich}\index{Annahmebereich}\index{Ablehnungsbereich}
+
+\subsection*{Durchgängiges Beispiel}
+
+\begin{beispiel}{Medikament}{}
+  Ein Pharma-Hersteller\footnote{... dessen Name hier nicht genannt
+    werden möchte...} behauptet, dass sein Medikament bei 80 \% aller
+  Patienten zur Linderung führt. Wir haben bisher weder Gründe noch Hinweise,
+  dies in Frage zu stellen. Es sei hier irrelevant, wie lange die
+  Linderung dauert, was die Symptome sind und was die effektive
+  Gesundheitsbeeinträchtigung war.
+
+  Wir haben vor, das Medikament an 100 Personen zu testen.
+
+  $$p = 0.8; n=100$$
+\end{beispiel}
+
+Angenommen, die Aussage des Pharma-Herstellers sei korrekt, so gehen
+wir stets von der \textbf{Nullhypothese} aus:
+
+\begin{definition}{Nullhypothese\index{Nullhypothese}}{}
+Die \textbf{Nullhypothese $H_0$} nimmt an, dass bei einer Stichprobe
+bloß der reine Zufall im Spiel war. Auch dann, wenn wir nicht exakt
+den Erwartungswert $\mathbb{E}(X)$ erzielen.
+\end{definition}
+
+a) Wie groß ist der Erwartungswert $\mathbb{E}(X)$ in einer Stichprobe
+von 100 Probanden, die das Medikament mit 80 \% Linderungsversprechen
+zu sich nehmen, dass tatsächlich Linderung eintrifft?
+
+\TNT{2}{$$\mathbb{E}(X) = n\cdot{}{} = 100\cdot{}0.8 = 80 \text{ Personen}$$}
+
+b) Berechnen Sie die Wahrscheinlichkeit, dass genau bei 78, 79, 80, 81
+bzw. 82 Personen von 100 Personen Linderung eintritt:
+
+$$P(X=78) = \LoesungsRaumLen{30mm}{8.49 \%}$$
+$$P(X=79) = \LoesungsRaumLen{30mm}{9.46 \%}$$
+$$P(X=80) = \LoesungsRaumLen{30mm}{9.93 \%}$$
+$$P(X=81) = \LoesungsRaumLen{30mm}{9.81 \%}$$
+$$P(X=82) = \LoesungsRaumLen{30mm}{9.09 \%}$$
+
+\newpage
+c) Berechnen Sie die Wahrscheinlichkeit, dass bei maximal 80 Personen
+aus unserer Stichprobe Linderung eintritt.
+
+$$P(X \le 80) = \LoesungsRaumLen{30mm}{53.98 \%}$$
+
+d) Bei einer speziellen Stichprobe von 100 Probanden trat nur bei 67
+Personen Linderung ein. Wie groß ist die Wahrscheinlichkeit, dass bei
+weniger als 68 Personen Linderung eintritt, wenn das Medikament bei
+80\,\% der Personen Linderung verspricht? Was könnte hier
+geschehen sein?
+
+$$P(X \le 68) = \LoesungsRaumLen{30mm}{0.155\,\%}$$
+
+\TNT{8}{Die Wahrscheinlichkeit dass nur bei max. 67 Personen Linderung
+  eintritt liegt bei 0.155 \%. Dies ist extrem unwahrscheinlich. Es
+  könnte eines der folgenden Szenarien eingetreten sein:
+  \begin{itemize}
+    
+  \item Wir haben Symptome falsch eingeschätzt und effektiv das
+    falsche Medikament eingesetzt.
+  \item Wir haben zwar das richtige Medikament eingesetzt, aber es wurde falsch
+    angewendet (Falsche Dosierung, ...).
+  \item Wir haben mit der Stichprobe zufälligerweise Pech gehabt. Dies
+    kann na in einer von 600 - 700 Stichproben tatsächlich passieren.
+  \item Die Wirksamkeit ist weniger als 80\,\%.
+  \end{itemize}
+  }%% end TNT
+
+e) Der Ablehnungsbereich unserer Nullhypothese (80 \% Linderung) sei bei
+$0 \le k \le 75$ festgesetzt. Mit welcher Wahrscheinlichkeit tritt
+dieser Ablehnungsbereich ein, wenn im Durchschnitt tatsächlich bei 80\,\% der 100
+Patienten Linderung eintritt? Ist dieser Ablehnugsbereich berechtigt?
+
+$$P(X \le 75) = \LoesungsRaumLen{40mm}{13.14\,\%}$$
+
+\TNT{4}{Der Ablehnungsbereich erlaubt immerhin noch ca. 13\,\%
+  Fehlinterpretation. Er ist nicht schlecht, aber es könnte doch etwas
+besser sein.}
+
+f) Der Annahmebereich unserer Nullhypothese (80 \% Linderung) sei
+diesmal bei $71 \le k \le 100$ festgesetzt. Mit welcher Wahrscheinlichkeit tritt
+der Annahmebereich ein, wenn effektiv im Mittel bei 80\,\% der 100
+Patienten Linderung eintritt?
+
+$$P(X \ge 71) = \LoesungsRaumLen{100mm}{1 - P(X \le 70) \approx 1 - 0.011249 \approx 98.88\%}$$
+
+
+g) Einstig «Signifikanzniveau». Suchen Sie den Annahmebereich und den
+Ablehnungsbereich so, dass wir nur mit einer Wahrscheinlichkeit von
+weniger als 5\,\% aller Stichproben im Ablehnungsbereich landen
+werden.
+
+
+
+
 \newpage
