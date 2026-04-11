@@ -28,16 +28,59 @@ $\epsdice{3},\epsdice{4},\epsdice{5}$ oder $\epsdice{6}$ & \\\hline
 \epsdice{1} oder \epsdice{2} & \\\hline
 \end{bbwFillInTabular}
 
-\subsubsection{Ergebnis}
-
-Wie oft ist die \epsdice{3} erschienen? ....................
-\vspace{15mm}
-
-Wie oft kam mehr als die \epsdice{2}? .......................
-
 \newpage
 
-\subsubsection{Unsere Resultate}
+\subsubsection{Begriffe}
+
+Angenommen, der Würfel ist «fair», so erwarten wir, dass jede Seite
+etwa gleich häufig auftritt.
+
+
+$H_0$ :
+
+\TNT{3.2}{Die \textbf{Nullhypothese} $H_0$ sagt, dass einzig der Zufall
+  im Spiel war. Wir erwarten $\frac{1}{6}$ mal eine \epsdice{3}.
+}%% end TNT
+
+Vermutung, Behauptung:
+
+\TRAINER{
+Wir \textbf{vermuten} jedoch, dass hier etwas nicht mit rechten Dingen
+zugeht und formulieren die Alternativhypothese:
+}%% end TRAINER
+
+$H_1$:
+
+\TNT{3.2}{
+Unsere \textbf{Alternativhypothese}: Es kommt häufiger
+die \epsdice{3} als mit $\frac{1}{6}$ Wh'keit.
+}%% end TNT
+
+
+Wenn wir \textbf{mehr} \textbf{vermuten}, so sprechen wir von einem
+
+\TNT{1.2}{... rechtsseitigen Test.}
+
+Die Anzahl der geworfenen \epsdice{3}-ern nennen wir
+
+\TNT{1.2}{\textbf{Testgröße} und bezeichnen diese mit $X$}
+
+Die erwartete Anzahl an \epsdice{3}-ern bei 29x Werfen ist
+$\frac{29}{6}\approx 4.8$. Diese Größe nennen wir den
+
+\TNT{2.4}{... \textbf{Erwartungswert}  $\mathbb{E}(X)$ der
+  Nullhypothese}
+\newpage
+
+\subsubsection*{Bernoulli}
+\TRAINER{Lüften wir spätestens jetzt das Mysterium der gezinkten
+  Würfel.}
+
+\bbwCenterGraphic{12cm}{geso/stoch/img/wuerfeltabelle.png}
+\newpage
+
+\subsection*{Unsere Resultate}
+
 
 Füllen wir in der Klasse gemeinsam die folgende Tabelle aus:
 
@@ -50,73 +93,45 @@ sieben \epsdice{3}-er).& \TRAINER{Fehler erster Art}& \\\hline
 \end{bbwFillInTabular}
 
 
-\subsubsection{Nullhypothese / Alternativhypothese}
-Angenommen, der Würfel ist «fair», so erwarten wir, dass jede Seite
-etwa gleich häufig auftritt.
+Wenn ein «fairer» Würfel nun zufälligerweise als «gezinkter» taxiert
+wird, so sprechen wir von ...
 
-\begin{center}\textbf{Nullhypothese} oder {$H_0$}.\end{center}
+\TNT{2}{ ... einem \textbf{Fehler erster Art ($\alpha$-Fehler)}}%% end TNT
 
-Die \textbf{Nullhypothese} $H_0$ sagt, dass einzig der Zufall im Spiel war,
-sonst nichts.
+Wird ein «gezinkter Würfel» ($H_1$) als «fair» taxiert ($H_0$), so
+sprechen wirr von einem ...
 
-Wir \textbf{vermuten} jedoch, dass hier etwas nicht mit rechten Dingen
-zugeht und formulieren die Alternativhypothese:
-
-Die \textbf{Alternativhypothese} lautet hier \zB «Es kommt häufiger
-die \epsdice{3} als wenn der bloße Zufall $\left(\frac{1}{6}\right)$
-im Spiel ist».
-
-\subsubsection{Rechsseitig / Linksseitig}
-Es handelt sich um einen \textbf{rechtsseitigen} Test, da wir
-vermuten, dass das Resultat häufiger auftritt als erwartet.
-
-\subsubsection{Testgröße}
-Die \textbf{Testgröße} wird typischerweise mit $X$ bezeichnet und soll
-hier die Anzahl der geworfenen \epsdice{3}-ern angeben.
-
-\subsubsection{Erwartungswert}
-Der \textbf{Erwartungswert} $\mathbb{E}(X)$ der Nullhypothese bei
-29-maligem Würfeln liegt bei $\frac{29}{6} \approx 4.8$. Einige haben
-mehr als 4 mal die \epsdice{3} geworfen. Bis wo hin glauben wir noch
-an einen «fairen» Würfel? Hier kommt Bernoulli ins Spiel:
+\TNT{2}{... \textbf{Fehler 2. Art} (= \textbf{$\beta$-Fehler}).}
 
 
-\bbwCenterGraphic{12cm}{geso/stoch/img/wuerfeltabelle.png}
+Typischerweise wollen wir diese Fehler vermeiden und legen ein
 
-\subsubsection{Signifikanzniveau}
-Mit 89.08 \% Wahrscheinlichkeit werfe ich weniger als \textbf{sieben}
-mal eine \epsdice{3} mit einem normalen Würfel. Wer also mehr als
-\textbf{sechs} mal eine \epsdice{3} geworfen hat, ist schon eher
-\textbf{verdächtig}. Hier kommt der Begriff \textbf{Signifikanzniveau} ins
-Spiel. Wir wollen erst «anklagen», wenn wir zu 95 \% sicher sind, dass
-der Würfel gezinkt war. Unser Signifikanzniveau legen wir mehr oder
-weniger willkürlich  bei $\alpha = 0.05 = 5 \%$ fest. Mit $95.53 \%$
-Wahrscheinlichkeit werfe ich maximal \textbf{sieben} \epsdice{3}-er.
+\TNT{2.8}{... \textbf{Signifikanzniveau} fest.
+
+Das \textbf{Signifikanzniveau} ist üblicherweise bei $\alpha=5 \%,
+\alpha=1 \%$ o.\,ä. festgesetz}%% end TNT
 
 Somit gilt bei einem Signifikanzniveau von 5 \%
 folgendes:
 
 Wer mehr als \textbf{sieben} mal eine \epsdice{3} wirft, fällt bereits
 unter die 5 \%, die wir noch «glauben».
+\newpage
 
-\subsubsection{Fehler erster Art ($\alpha$-Fehler)}
+Wir suchen also eine
 
-Es kann nun durchaus passieren, dass ein «fairer» Würfel als «gezinkt»
-kategorisiert wird. Dieses fälschliche Zurückweisen der Nullhypothese
-wird als \textbf{Fehler erster Art} oder als \textbf{$\alpha$-Fehler}
-bezeichnet.
+\TNT{1.2}{... Entscheidungsregel ...,}
 
-Der \textbf{Fehler 2. Art} (= \textbf{$\beta$-Fehler}) wäre dann die
-fälschliche Beibehaltung der Nullhypothese; also dass ein «gezikter»
-Würfel als «fair» taxiert wird.
+die uns angibt in welchen Bereichen wir unsere Nullhypothese ($H_0$)
+im angegebenen Signifikanzniveau annehmen sollten bzw. in welchem
+Bereich wir die Nullhypothese verwerfen (ablehnen). Beim
+Rechtsseitigen Hypothesentest suchen wir also ein $k$ sodass gilt:
 
-\subsubsection{Entscheidungsregel}
-Gesucht ist die Anzahl \epsdice{3}-er, wo der «normale» Bereich
-«kippt». Wir gehen von einem Signifikanzniveau von 95 \% aus. Das
-heißt: Bis zu welcher Anzahl $k$ ist die Anzahl geworfener
-\epsdice{3}-er noch mit 95 \% Wahrscheinlichkeit «normal»?
+\TNT{4}{
+  \textbf{Annahmebereich} von $H_0$: $X\in \{0, 1, 2, ...k\}$
 
-Mit 95 \% Wahrscheinlichkeit kommen also 0 bis k \epsdice{3}-er?
+  \textbf{Ablehnungsbereich} von $H_0$: $X \in \{k+1, k+2, ... n-2, n-1, n\}$ 
+  }%% end TNT
 
 Unsere Verteilung zeigt, dass bei maximal sechs \epsdice{3}-ern immer
 noch etwa 11 \% Irrtumswahrscheinlichkeit vorhanden ist. Anders
@@ -128,12 +143,14 @@ ist noch gut wahrscheinlich maximal $k=7$ mal eine \epsdice{3} zu
 erzielen. Mehr als sieben Mal hingegen unterschreitet unser 5 \%
 Signifikanzniveau. Dies bringt und zum nächsten Begriff:
 
-\subsubsection{Annahmebereich / Ablehnugngsbereich}
 
-Der Annahmebereich der Nullhypothese liegt bei uns mit einem 5 \%
-Signifikanzniveau also bei 0 bis 7. Der Ablehnungsbereich unserer
-Nullhypothese liegt somit bei 8 bis 29 mal. 
+Unsere \textbf{Entscheidungsregel}:
 
+\begin{bbwFillInTabular}{c|c}
+  Bereich & von ... bis \\\hline
+  \TRAINER{Annahmebereich}\noTRAINER{\hspace{60mm}}    & \TRAINER{[0; 7]} \hspace{30mm}\\\hline
+  \TRAINER{Ablehnungsbereich}& \TRAINER{[8; 29]} 
+\end{bbwFillInTabular}
 
 \newpage
 

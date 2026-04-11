@@ -5,50 +5,6 @@
 \subsection{Erwartungswert}\index{Erwartungswert}
 
 
-Ich schlage Ihnen folgendes Würfelspiel vor.
-
-Sie Würfeln und erhalten dabei die Quadratzahl der erzielten
-Würfelpunkte in CHF ausbezahlt. Wenn Sie \zB eine \epsdice{5} werfen,
-so erhalten Sie CHF 25.-.
-
-Natürlich müssen Sie einen Grundeinsatz bezahlen, damit Sie bei meinem
-Spiel überhaupt mitmachen dürfen.
-
-Drehen wir nun die Rollen einmal um und betrachten Sie sich selbst als
-Betreiber dieses «Casinos», also dieses Spiels.
-
-Wie viel CHF soll der Spieler pro Wurf als Einsatz bezahlen, sodass
-dieses Spiel mit minimaler Wahrscheinlichkeit besser für den
-Casino-Betreiber, also für Sie ausgeht?
-
-\TNTeop{
-  Dazu berechnen wir zuerst das, was wir erwarten, wenn dieses Spiel
-  oft gespielt wird. Jedes Würfelresultat wird mit $\frac16$
-  Wahrscheinlichkeit auftreten. Somit muss jeder Gewinn ja nur mit
-  $\frac16$ Wahrscheinlichkeit ausbezahlt werden.
-
-  Wenn wir nun alle Rückzahlungen mit $\frac16$ multiplizieren und
-  diese CHF-Werte zusammenzählen, erhalten wir
-
-  $$\frac16\cdot{} (1 + 4 + 9 + 16 + 25 + 36) = 15.166...$$
-
-  Diese Zahl nennen wir den \textbf{Erwartungswert}.
-
-  In obigem Beispiele ist $\mu = 15.166...$ und die Zufallsvariable
-  ordnet jedem Ergebnis (1..6) seinen auszuzahlenden Wert zu.
-
-  Zufallsvariable hier:
-
-  $$X(\omega) = 1.- \text{ für } \epsdice{1}; 4.- \text{ für }
-  \epsdice{2} ; ...$$
-  
-  Wenn wir als Einsatz CHF 16.- verlangen, wird sich dieses Spiel im
-  Endeffekt positiv für das «Casino» auswirken. Wenn wir hingegen nur
-  CHF 15.- als Einsatz verlangen, wird früher oder später der Spieler
-  mehr auf dem Konto haben.
-}%% END TNTeop
-%%\newpage
-
 \begin{definition}{Zufallsvariable}{}
 	Eine Zufallsvariable $X(\omega)$ ordnet jedem Ergebnis eine Zahl
 	(typischerweise den Gewinn oder Verlust) zu.
@@ -80,7 +36,7 @@ Casino-Betreiber, also für Sie ausgeht?
   (sofern jede Kugel genau einmal gezogen wurde) unser Gewinn
 
   $$ \mu = \LoesungsRaumLen{50mm}{( -1 -1 -1 + 5) / 4} = \LoesungsRaumLen{50mm}{\frac{3\cdot{}(-1) + 1\cdot{}5}{3+1}}
-  = ... = \LoesungsRaumLen{12mm}{0.50} CHF$$
+  = ... = \LoesungsRaumLen{12mm}{0.50} \text{ CHF}$$
 \end{beispiel}
 
 Allgemein wird der Erwartungswert $\mu$ wie folgt berechnet:
@@ -88,6 +44,57 @@ Allgemein wird der Erwartungswert $\mu$ wie folgt berechnet:
 \begin{gesetz}{Erwartungswert}{}\index{Erwartungswert!Formel}
 $$\mu = \sum P(\omega_i)\cdot{} X(\omega_i)$$
 \end{gesetz}
+\newpage
+
+
+\subsection*{Referenzaufgabe (optional)}
+
+Ich schlage Ihnen folgendes Würfelspiel vor.
+
+Sie Würfeln und erhalten dabei die Quadratzahl der erzielten
+Würfelpunkte in CHF ausbezahlt. Wenn Sie \zB eine \epsdice{5} werfen,
+so erhalten Sie CHF 25.-.
+
+Natürlich müssen Sie einen Grundeinsatz bezahlen, damit Sie bei meinem
+Spiel überhaupt mitmachen dürfen.
+
+Drehen wir nun die Rollen einmal um und betrachten Sie sich selbst als
+Betreiber dieses «Casinos», also dieses Spiels.
+
+Wie viel CHF soll der Spieler pro Wurf als Einsatz bezahlen, sodass
+dieses Spiel mit minimaler Wahrscheinlichkeit besser für den
+Casino-Betreiber, also für Sie ausgeht?
+
+\TNTeop{
+  Dazu berechnen wir zuerst das, was wir erwarten, wenn dieses Spiel
+  oft gespielt wird. Jedes Würfelresultat wird mit $\frac16$
+  Wahrscheinlichkeit auftreten. Somit muss jeder Gewinn ja nur mit
+  $\frac16$ Wahrscheinlichkeit ausbezahlt werden.
+
+  Wenn wir nun alle Rückzahlungen mit $\frac16$ multiplizieren und
+  diese CHF-Werte zusammenzählen, erhalten wir
+
+  $$\frac16\cdot{} (1 + 4 + 9 + 16 + 25 + 36) = 15.166... CHF$$
+
+  Diese Zahl nennen wir den \textbf{Erwartungswert}.
+
+  In obigem Beispiele ist $\mu = 15.166...$ CHF und die Zufallsvariable
+  ordnet jedem Ergebnis (1..6) seinen auszuzahlenden Wert zu.
+
+  Zufallsvariable hier:
+
+  $$X(\omega) = 1.- \text{ für } \epsdice{1}; 4.- \text{ für }
+  \epsdice{2} ; ...$$
+  
+  Wenn wir als Einsatz CHF 16.- verlangen, wird sich dieses Spiel im
+  Endeffekt positiv für das «Casino» auswirken. Wenn wir hingegen nur
+  CHF 15.- als Einsatz verlangen, wird früher oder später der Spieler
+  mehr auf dem Konto haben.
+}%% END TNTeop
+%%\newpage
+
+
+\subsection*{Erwartungswert bei Binomialverteilungen}
 
 \begin{gesetz}{Erwartungswert bei Binomialverteilungen}{}
   Bei Binomialverteilungen mit Wahrscheinlichkeit $p$ und
@@ -96,4 +103,17 @@ $$\mu = \sum P(\omega_i)\cdot{} X(\omega_i)$$
   $$\mathbb{E}(X) = n\cdot{}p$$
   Anstelle von $\mu$ schreiben wir bei Binomialverteilungen in $X$ auch $\mathbb{E}(X)$.
 \end{gesetz}
+
+
+\subsection*{Referenzaufgabe}
+Basil Ballisti der Basketballspieler trifft mit einer
+Wahrscheinlichkeit von 85 \%. Er wirft 20 Bälle. Was ist sein
+Erwartungswert $\mathbb{E}(X)$, wenn $X$ die Anzahl der Treffer sein
+soll?
+
+$$\mathbb{E}(X) = \LoesungsRaumLen{80mm}{n\cdot{}p = 20 \cdot{} 0.85 = 17 \text{ Treffer}}$$
+
+
+Basil Ballisti wird mit der höchsten Wahrscheinlichkeit um die
+\LoesungsRaumLen{30mm}{17} Treffer landen.
 \newpage
