@@ -64,5 +64,34 @@ c) Geben Sie eine Entscheidungsregel an ($k$, Ablehnungsbereich, Annahmebereich)
 
 \newpage
 \subsubsection{Referenzaufgabe: Rechtsseitiger Hypothesentest}
-... coming soon ...
+Ein Hersteller von Kanülen behauptet, dass maximal 0.1\,\% seiner Verpackungen beschädigt seien. Sie wollen einen Test mit 1000 Stück durchführen.
+
+Erstellen Sie einen Hypothesentest auf einem Signifikanzniveau von $\alpha \le 1\,\%$.
+
+\TNTeop{
+  Eine Tabelle mit $n=1000, p=0.001$ liefert:
+
+  \begin{tabular}{cc}
+    $k$ & $P(X <= k)$ \\\hline
+    0   & 36.77\,\% \\\hline
+    1   & 73.58\,\% \\\hline
+    2   & 91.98\,\% \\\hline
+    3   & 98.11\,\% \\\hline
+    4   & 99.64\,\% \\\hline
+    5   & 99.94\,\% \\\hline
+    6   & ...\,\%\\\hline
+  \end{tabular}
+  
+  Naiv könnte man auf die Idee kommen bei $k=3$ haben wir das linksseitige Intervall gefunden. Doch wenn wir nun das Intervall $[0;3]$ als Annahmebereich festlegen, wäre $[4;1000]$ unser Ablehnungsbereich.
+  der Annhmebereich von $[0;3]$ hat aber eine Wahrscheinlichkeit von 98.11\,\%, was dem Ablehnungsbereich eine Wahrscheinlichkeit von $1-0.9811$, also von 1.9\% gibt. Damit ist unser $k=3$ noch zu klein. Da binomialcdf immer von links rechnet, müssen wir noch eins dazunehmen, damit wir im Ablehnungsbereich definitiv unter 1\,\% fallen.
+
+  Unser $k$ ist 4, der Annahmebereich ist $[0;4]$ und der Ablehnungsbereich liegt bei $[5;1000]$. Wenn also mehr als vier Verpackungen defekt sind, haben wir Grund zur Annahme, dass etwas an den 0.1\,\% nicht stimmt.
+  }
+
+\begin{rezept}{Rechtsseitiger Ablehnungsbereich}{}
+  Beim rechtsseitigen Ablehnungsbereich ist typischerweie unser $k$ eins höher zu wählen, da \texttt{binomial\textbf{c}df} immer von links her addiert.
+
+  Im Zweifelsfalle machen Sie die Probe: Wie viel Prozent liegt denn nun im Ablehnungsbereich?
+\end{rezept}
 \newpage
+
