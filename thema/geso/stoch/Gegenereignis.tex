@@ -116,41 +116,47 @@ Aus den obigen Gesetzen kann die folgende nützliche Rechenregel abgeleitet werd
 }%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{beispiel}{}{}\textbf{Ziehen einer Kugel aus einer Urne}
+\begin{beispiel}{}{}\textbf{Ziehen dreier Kugeln aus einer Urne}
 
-Aus einer Urne mit 4 roten ($r$), 3 schwarzen ($s$) und 2 weißen ($w$) Kugeln wird eine Kugel gezogen.
+Aus einer Urne mit einer schwarzen ($s$), einer grauen ($g$), einer
+weißen ($w$), einer roten ($r$), einer blauen ($b$), einer violetten
+($v$), einer pinken ($p$) und einer lila ($l$) Kugeln wird eine Kugel gezogen.
 
-Ergebnisraum: $\Omega = \{r, s, w\}$
+Ergebnisraum: $\Omega = \{s, g, w, r, b, v, p, l\}$
 
 
 Wahrscheinlichkeiten für die Elementarereignisse:
 
 \noTRAINER{\leserluft\leserluft\leserluft}
-$P(\{r\}) = \LoesungsRaum{\frac49}$
+$P(\{s\}) = \LoesungsRaum{\frac18}$
 
 \noTRAINER{\leserluft\leserluft\leserluft}
-$P(\{s\}) = \LoesungsRaum{\frac39}$
+$P(\{p\}) = \LoesungsRaum{\frac18}$
 
-\noTRAINER{\leserluft\leserluft\leserluft}
-$P(\{w\}) = \LoesungsRaum{\frac29}$
+...
 
-Wie groß ist nun die Wahrscheinlichkeit \textbf{eine rote oder eine schwarze} Kugel zu ziehen?
-Wir definieren $E_1$ als das günstige Ereignis, dass eine rote oder eine schwarze Kugel gezogen wird.
+\vspace{5mm}
+Wie groß ist nun die Wahrscheinlichkeit \textbf{eine schwarze, eine
+  graue oder eine weiße} Kugel zu ziehen?
+Wir definieren $E_1$ als das günstige Ereignis, dass eine schwarze,
+eine graue odereine weiße Kugel gezogen wird.
 
-$E_1 = \{r\} \cup \{s\} = \{r,s\}$
+$E_1 = \{s\} \cup \{g\} \cup \{w\} = \{s,g,w\}$
 
-\noTRAINER{\leserluft\leserluft\leserluft}
-$P(E_1) = \LoesungsRaumLen{50mm}{\frac49 + \frac39 = \frac79}$
+\vspace{3mm}
 
+$P(E_1) = \LoesungsRaumLen{50mm}{\frac18 + \frac18 + \frac18 = \frac38}$
 
-Wie groß wäre dabei die Wahrscheinlichkeit $P(E_2)$, weder eine rote noch eine schwarze Kugel zu ziehen?
+\vspace{5mm}
+Wie groß wäre dabei die Wahrscheinlichkeit $P(E_2)$, eine \textbf{bunte Kugel}
+zu ziehen?
 
-$E_2 := \{w\}$
+$E_2 := \{r, b, v, p, l\}$
 
-$P(E_2) = \frac29$, denn $E_2 = \overline{E_1}$ und somit
+$P(E_2) = \frac58$, denn $E_2 = \overline{E_1}$ und somit
 
 \noTRAINER{\leserluft\leserluft}
-$P(E_2) = P(\overline{E_1}) = \LoesungsRaumLen{90mm}{1 - P(E_1) = 1 - \frac79 = \frac29 . }$
+$P(E_2) = P(\overline{E_1}) = \LoesungsRaumLen{90mm}{1 - P(E_1) = 1 - \frac38 = \frac58 . }$
 
 \end{beispiel}
 \newpage

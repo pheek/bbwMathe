@@ -1,4 +1,4 @@
-
+%% Bernoulli - Ketten
 \subsection{Bernoulli-Ketten}\index{Verteilung!Bernoulli}\index{Bernoulli}
 (Binomialverteilung)
 
@@ -28,6 +28,9 @@ Zeichnen Sie das zugehörige Baumdiagramm:
   \vspace{10cm}%%
 }%% END TNT
 \newpage
+
+\bbwCenterGraphic{5cm}{geso/stoch/img/BernoulliJakobI_phi.jpg}
+\begin{center}\textit{Jakob Bernoulli I (1654-1705)}\end{center}
 
 
 \subsubsection{Bernoulli-Experiment}\index{Experiment!Bernoulli}\index{Bernoulli-Experiment}
@@ -248,6 +251,20 @@ $$\LoesungsRaumLang{\sum_{x=0}^{17}\left(( 20 \text{\,\,nCr\,\,} x ) * 0.85^x *
 0.15^{20-x}\right)} \approx \LoesungsRaum{0.5951}$$
 
 
+
+
+\begin{gesetz}{Kumulierte Wahrscheinlichkeit}{}
+  $$P(X \le k_{\text{max}}) = \sum_{k=0}^{k_{\text{max}}} {n \choose k} \cdot{} p^k \cdot{} (1-p)^{n-k}$$
+
+
+\begin{tabular}{rcl}
+  $n$ &=& Anzahl Durchführungen (Baumtiefe)\\
+  $p$ &=& Trefferwahrscheinlichkeit pro Durchführung\\
+  $k_{\text{max}}$ &=& \textbf{Maximal} erreichte Treffer\\
+\end{tabular}
+\end{gesetz}
+
+
 Doch auch hierzu gibt es eine eingespeicherte Formel
 bei
 \tiprobutton{data_stat-reg-distr} und dort unter \texttt{DISTR: 5
@@ -259,21 +276,8 @@ $n=20$ bei $n$,
 
 $p=0.85$ bei $p(\text{success})$ und
 
-$k=17$ bei $x$ eintragen.
+$k_{\text{max}}=17$ bei $x$ eintragen.
 
-
-
-\begin{gesetz}{Kumulierte Wahrscheinlichkeit}{}
-  $$P(X \le k) = \sum_{i=0}^k {n \choose i} \cdot{} p^i \cdot{} (1-p)^{n-i}$$
-
-
-\begin{tabular}{rcl}
-  $n$ &=& Anzahl Durchführungen (Baumtiefe)\\
-  $p$ &=& Trefferwahrscheinlichkeit pro Durchführung\\
-  $k$ &=& \textbf{Maximal} gewünschte Treffer\\
-\end{tabular}
-
-\end{gesetz}
 \newpage
 
 \subsection*{Aufgaben}
