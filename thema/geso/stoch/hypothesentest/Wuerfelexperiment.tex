@@ -31,6 +31,29 @@ $\epsdice{3},\epsdice{4},\epsdice{5}$ oder $\epsdice{6}$ & \\\hline
 
 \subsubsection{Begriffe}
 
+Die Anzahl der geworfenen \epsdice{3}-ern nennen wir
+
+\TNT{1.2}{\textbf{Testgröße} und bezeichnen diese \textbf{Zufallsvariable} mit $X$}
+
+Die erwartete Anzahl an \epsdice{3}-ern bei 29x Werfen ist
+$\frac{29}{6}\approx 4.8$. Diese Größe nennen wir den
+
+\TNT{2.4}{... \textbf{Erwartungswert}  $\mathbb{E}(X)$}
+
+
+Wer hat nun mehr als 5 mal eine \epsdice{3} geworfen?
+
+\vspace{3mm}
+
+Schülerinnen bzw. Schüler mit mehr als fünf mal einer \epsdice{3}:
+.......................
+
+\vspace{3mm}
+
+Schülerinnen bzw. Schüler mit weniger als sechs mal einer \epsdice{3}:
+.......................
+
+
 Angenommen, der Würfel ist «fair», so erwarten wir, dass jede Seite
 etwa gleich häufig auftritt.
 
@@ -52,7 +75,7 @@ $H_1$:
 
 \TNT{3.2}{
 Unsere \textbf{Alternativhypothese}: Es kommt häufiger
-die \epsdice{3} als mit $\frac{1}{6}$ Wh'keit.
+die \epsdice{3} als mit $\frac{1}{6}$ Wahrscheinlichkeit.
 }%% end TNT
 
 
@@ -60,73 +83,52 @@ Wenn wir \textbf{mehr} \textbf{vermuten}, so sprechen wir von einem
 
 \TNT{1.2}{... rechtsseitigen Test.}
 
-Die Anzahl der geworfenen \epsdice{3}-ern nennen wir
-
-\TNT{1.2}{\textbf{Testgröße} und bezeichnen diese mit $X$}
-
-Die erwartete Anzahl an \epsdice{3}-ern bei 29x Werfen ist
-$\frac{29}{6}\approx 4.8$. Diese Größe nennen wir den
-
-\TNT{2.4}{... \textbf{Erwartungswert}  $\mathbb{E}(X)$ der
-  Nullhypothese}
 \newpage
 
 \subsubsection*{Bernoulli}
 \TRAINER{Lüften wir spätestens jetzt das Mysterium der gezinkten
-  Würfel.}
+  Würfel. Sie haben teilweise normale und teilweise gezinkte Würfel erhalten.
+}%% end TRAINER
 
 \bbwCenterGraphic{12cm}{geso/stoch/img/wuerfeltabelle.png}
 
 \newpage
 
-\subsection*{Unsere Resultate}
+\subsection*{Gezinkte Würfel}
 
-
-Füllen wir in der Klasse gemeinsam die folgende Tabelle aus:
-
-\begin{bbwFillInTabular}{p{5cm}|p{5cm}|p{5cm}}
-    & Würfel ist «fair» ($H_0$) & Würfel ist gezinkt ($H_1$)\\\hline
-Würfel wird als «fair» gewertet (weniger als acht \epsdice{3}-er).&
-& \TRAINER{Fehler 2. Art}\\\hline
-Würfel wird als gezinkt gewertet (mehr als
-sieben \epsdice{3}-er).& \TRAINER{Fehler erster Art}& \\\hline
-\end{bbwFillInTabular}
-
-
-Wenn ein «fairer» Würfel nun zufälligerweise als «gezinkter» taxiert
-wird, so sprechen wir von ...
-
-\TNT{2}{ ... einem \textbf{Fehler erster Art ($\alpha$-Fehler)}}%% end TNT
-
-Wird ein «gezinkter Würfel» ($H_1$) als «fair» taxiert ($H_0$), so
-sprechen wir von einem ...
-
-\TNT{2}{... \textbf{Fehler 2. Art} (= \textbf{$\beta$-Fehler}).}
+Wie können wir allein aufgrund unserer 29 mal werfen
+herausfinden, welche Würfel «fair» und welche «gezinkt» waren?
 
 Typischerweise wollen wir diese beiden Fehler vermeiden und legen ein
 
 \TNT{2.8}{... \textbf{Signifikanzniveau} fest.
 
-Das \textbf{Signifikanzniveau} ist üblicherweise bei $\alpha=5\,\%,
-\alpha=1\,\%$ o.\,ä. festgesetz}%% end TNT
+Das \textbf{Signifikanzniveau} ist üblicherweise bei $\alpha=5\,\%, \alpha=1\,\%$ o.\,ä. festgesetz}%% end TNT
 
 Somit gilt bei einem Signifikanzniveau von 5\,\%
 folgendes:
 
-Wer mehr als \textbf{sieben} mal eine \epsdice{3} wirft, fällt bereits
-unter die 5\,\%, die wir noch «glauben».
-\newpage
+Wer mehr als eine bestimmte Anzahl mal eine \epsdice{3} wirft, fällt unter die 5\,\%, die wir noch «glauben».
 
-Wir suchen also eine
+Wir suchen eine
 
 \TNT{1.2}{... Entscheidungsregel ...,}
 
 die uns angibt in welchen Bereichen wir unsere Nullhypothese ($H_0$)
 im angegebenen Signifikanzniveau annehmen sollten bzw. in welchem
-Bereich wir die Nullhypothese verwerfen (ablehnen). Beim
-Rechtsseitigen Hypothesentest suchen wir also ein $k$ sodass gilt:
+Bereich wir die Nullhypothese verwerfen (ablehnen).
+\newpage
 
-\TNT{4}{
+
+Beim
+rechtsseitigen Hypothesentest suchen wir also ein $k$ sodass gilt:
+
+\TNT{12}{
+
+\vspace{100mm}
+  
+  ... Platz für Skizze ...
+  
   \textbf{Annahmebereich} von $H_0$: $X\in \{0, 1, 2, ...k\}$
 
   \textbf{Ablehnungsbereich} von $H_0$: $X \in \{k+1, k+2, ... n-2, n-1, n\}$ 
@@ -141,7 +143,7 @@ Wir müssen also noch höher gehen.
 Wenn wir die Entscheidungsregel bei $k=8$ ansetzen, so sagen wir: Es
 ist noch gut wahrscheinlich maximal $k=8$ mal eine \epsdice{3} zu
 erzielen. Mehr als sieben Mal hingegen unterschreitet unser 5\,\%
-Signifikanzniveau. Dies bringt und zum nächsten Begriff:
+Signifikanzniveau.
 
 
 Unsere \textbf{Entscheidungsregel}:
@@ -151,5 +153,120 @@ Unsere \textbf{Entscheidungsregel}:
   \TRAINER{Annahmebereich}\noTRAINER{\hspace{60mm}}    & \TRAINER{[0; 8]} \hspace{30mm}\\\hline
   \TRAINER{Ablehnungsbereich}& \TRAINER{[9; 29]} 
 \end{bbwFillInTabular}
+\newpage
+
+\subsection*{Unsere Resultate}
+\TRAINER{
+Füllen wir in der Klasse gemeinsam die folgende Tabelle aus:
+}
+
+Bis und mit acht mal die \epsdice{3} gilt als «normaler» Würfel, die
+$H_0$-Hypothese wird bis zu 8 mal angenommen.
+
+\begin{bbwFillInTabular}{p{5cm}|p{5cm}|p{5cm}}
+    & Würfel ist «fair» ($H_0$) & Würfel ist gezinkt ($H_1$)\\\hline
+Würfel wird als «fair» gewertet (weniger als acht \epsdice{3}-er).&
+& \TRAINER{Fehler 2. Art}\\\hline
+Würfel wird als gezinkt gewertet (mehr als
+sieben \epsdice{3}-er).& \TRAINER{Fehler erster Art}& \\\hline
+\end{bbwFillInTabular}
+
+
+
+
+Wenn ein «fairer» Würfel nun zufälligerweise als «gezinkter» taxiert
+wird, so sprechen wir von ...
+
+=\TNT{1.6}{ ... einem \textbf{Fehler erster Art ($\alpha$-Fehler)}}%% end TNT
+
+Wird ein «gezinkter Würfel» ($H_1$) als «fair» taxiert ($H_0$), so
+sprechen wir von einem ...
+
+\TNT{1.6}{... \textbf{Fehler 2. Art} (= \textbf{$\beta$-Fehler}).}
+
+
 
 \newpage
+\subsection{Fehler}
+\subsubsection*{Fehler 1. Art}
+
+\begin{definition}{Fehler 1. Art}{}\index{Fehler
+    1. Art}\index{beta@$\beta$-Fehler}
+  Wird die Alternativhypothese $H_1$ fälschlicherweise verworfen, 
+  sprechen wir von einem $\alpha$-Fehler oder \textbf{Fehler erster Art}.
+\end{definition}
+
+Gehen wir von unserer eben gefundenen Entscheidungsregel aus, dass die
+Alternativhypothese noch verworfen wird, wenn wir mehr als 8 mal eine
+\epsdice{3} werfen.
+
+Mit anderen Worten:
+
+
+\TNT{3.2}{Mit welcher Wahrscheinlichkeit wird ein normaler Würfel als
+  gezinkt?}
+
+\TNTeop{%%
+Die Wahrscheinlichkeit, dass ein normaler Würfel eine \epsdice{3}
+zeigt liegt $P(X=\epsdice{3}) = \frac16$.
+
+$p=\frac16$
+
+$n= 29$
+
+Wir berechnen $P(k > 8)$.
+
+$P(k > 8) = 1 - P(k \le 8)$
+
+binomial\textbf{c}df(n=29; p=1/6; k=8) liefert: 95.87\,\%.
+
+Somit ist die Gegenwahrscheinlichkeit $P(k > 8) \approx 4.13\,\%$.
+
+Mit 4.13\,\% Wahrscheinlichkeit liefert ein normaler Würfel mehr als
+acht \epsdice{3}er.
+
+Dies hatten wir ja so gewählt, dass das Signifikanzniveau $\alpha$
+kleiner als 5\,\% ist.
+
+}%% end TNTeop (implicit \newpage)
+
+
+
+
+
+\subsubsection*{Fehler 2. Art}
+
+\begin{definition}{Fehler 2. Art}{}\index{Fehler
+    1. Art}\index{beta@$\beta$-Fehler}
+  Wird die Nullhypothese $H_0$ fälschlicherweise angenommen, so
+  sprechen wir von einem $\beta$-Fehler oder \textbf{Fehler zweiter Art}.
+\end{definition}
+
+
+Gehen wir von unserer eben gefundenen Entscheidungsregel aus, dass die
+Nullhypothese noch angenommen wird, wenn wir maximal 8 mal eine
+\epsdice{3} werfen.
+
+Mit anderen Worten:
+
+\TNT{3.2}{Mit welcher Wahrscheinlichkeit wird einer unserer gezinkter Würfel als
+  normal taxiert?}
+
+\TNTeop{%%
+Die Wahrscheinlichkeit, dass unser gezinkter Würfel eine \epsdice{3}
+zeigt,
+
+liegt bei $P(X=\epsdice{3}) = \frac13$.
+
+$p=\frac13$
+
+$n= 29$
+
+$k_{\text{max}} = 8$
+
+binomial\textbf{c}df(n=29; p=1/3; k=8) liefert: 32.97\,\%.
+
+Mit 32.97\,\% Wahrscheinlichkeit liefert ein gezinkter Würfel weniger
+als neun \epsdice{3}er. 
+}%% end TNTeop (implicit \newpage ) 
+
