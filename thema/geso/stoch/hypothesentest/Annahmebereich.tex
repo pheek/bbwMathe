@@ -4,40 +4,21 @@
 %%
 
 
-\subsection{Annahmebereich /
+\subsubsection{Annahmebereich /
   Ablehnungsbereich}\index{Annahmebereich}\index{Ablehnungsbereich}
-
-\subsection*{Durchgängiges Beispiel}
-
-\begin{beispiel}{Medikament}{}
-  Ein Pharma-Hersteller\footnote{... dessen Name hier nicht genannt
-    werden möchte...} behauptet, dass sein Medikament bei 80 \% aller
-  Patienten zur Linderung führt. Wir haben bisher weder Gründe noch Hinweise,
-  dies in Frage zu stellen. Es sei hier irrelevant, wie lange die
-  Linderung dauert, was die Symptome sind und was die effektive
-  Gesundheitsbeeinträchtigung war.
-
-  Wir haben vor, das Medikament an 100 Personen zu testen.
-
-  $$p = 0.8; n=100$$
-\end{beispiel}
 
 Angenommen, die Aussage des Pharma-Herstellers sei korrekt, so gehen
 wir stets von der \textbf{Nullhypothese} aus:
 
-\begin{definition}{Nullhypothese\index{Nullhypothese}}{}
-Die \textbf{Nullhypothese $H_0$} nimmt an, dass bei einer Stichprobe
-bloß der reine Zufall im Spiel war. Auch dann, wenn wir nicht exakt
-den Erwartungswert $\mathbb{E}(X)$ erzielen.
-\end{definition}
+«Das Medikament verspricht bei 80\,\% der Patienten Linderung.»
 
-a) Wie groß ist der Erwartungswert $\mathbb{E}(X)$ in einer Stichprobe
+*) Wie groß ist der Erwartungswert $\mathbb{E}(X)$ in einer Stichprobe
 von 100 Probanden, die das Medikament mit 80 \% Linderungsversprechen
 zu sich nehmen, dass tatsächlich Linderung eintrifft?
 
 \TNT{2}{$$\mathbb{E}(X) = n\cdot{}{} = 100\cdot{}0.8 = 80 \text{ Personen}$$}
 
-b) Berechnen Sie die Wahrscheinlichkeit, dass genau bei 78, 79, 80, 81
+*) Berechnen Sie die Wahrscheinlichkeit, dass genau bei 78, 79, 80, 81
 bzw. 82 Personen von 100 Personen Linderung eintritt:
 
 $$P(X=78) = \LoesungsRaumLen{30mm}{8.49 \%}$$
@@ -51,12 +32,12 @@ $$P(X=82) = \LoesungsRaumLen{30mm}{9.09 \%}$$
 \TRAINER{Hier vorzeigen, wie im TI-30X Plus MathPrint die drei Listen
   gefüllt werden mit L1: Alle Zahlen von 60-95; L2 binomialpdf und L3 binomialcdf}
 
-c) Berechnen Sie die Wahrscheinlichkeit, dass bei maximal 80 Personen
+*) Berechnen Sie die Wahrscheinlichkeit, dass bei maximal 80 Personen
 aus unserer Stichprobe Linderung eintritt.
 
 $$P(X \le 80) = \LoesungsRaumLen{30mm}{53.98 \%}$$
 
-d) Bei einer speziellen Stichprobe von 100 Probanden trat nur bei 67
+*) Bei einer speziellen Stichprobe von 100 Probanden trat nur bei 67
 Personen Linderung ein. Wie groß ist die Wahrscheinlichkeit, dass bei
 weniger als 68 Personen Linderung eintritt, wenn das Medikament bei
 80\,\% der Personen Linderung verspricht? Was könnte hier
@@ -81,7 +62,46 @@ $$P(X \le 68) = \LoesungsRaumLen{30mm}{0.155\,\%}$$
 \newpage
 
 
-e) Der Ablehnungsbereich unserer Nullhypothese (80 \% Linderung) sei bei
+\begin{definition}{Annahmebereich}{}\index{Annahmebereich|textbf}
+  Unter dem \textbf{Annahmebereich} bei einem Hypothesentest verstehen
+  wir die Menge derjenigen Ausgänge, bei denen wir der
+  \textbf{Nullhypothese} noch trauen.
+\end{definition}
+
+\begin{definition}{Ablehnungsbereich}{}\index{Ablehnungsbereich|textbf}
+  Unter dem \textbf{Ablehnungsbereich} bei einem Hypothesentest verstehen
+  wir die Menge derjenigen Ausgänge, bei denen wir der
+  \textbf{Nullhypothese} \textbf{nicht mehr} trauen.
+\end{definition}
+
+
+
+
+Das \textbf{weniger} oder \textbf{mehr} kann uns leicht den Annahmebereich und den Ablehnungsbereich der Nullhypothese angeben.
+
+\begin{gesetz}{Ablehnungsbereich}{}
+  Der Ablehnungsbereich darf maximal mit einer Wahrscheinlchkeit des Signifikanzniveaus eintreten. Dabei wird in der Vorgabe jeweils zwischen $<$ und $\le$ bereits unterschieden.
+\end{gesetz}
+
+\begin{gesetz}{Annahmebereich}{}
+  Der Annahmebereich ist das Gegenereignis zum Ablehnugsbereich.
+\end{gesetz}
+
+
+\begin{definition}{Einseitiger Hypothesentest}{}
+Unter einem \textbf{einseitigen} Hypothesentest verstehen wir einen Ablehnungsbereich von weniger als $\alpha$ auf der einen Seite unserer Binomialverteilung. Beim \textbf{linksseitigen} Hypothesentest liegt der Ablehnungsbereich unserer Nullhypothese im Intervall $[0; k]$, während beim \textbf{rechtsseitigen} Hypothesentest den Ablehnungsbereich im Intervall $[k+1;n]$ liegt.
+  \end{definition}
+
+\newpage
+
+
+
+*) Geben Sie eine Entscheidungsregel an ($k$, Ablehnungsbereich, Annahmebereich) für ein Signifikanzniveau von $\alpha \le 1\%$.
+
+\TNT{4}{$P(X \le 69) \approx 0.61\,\%$ und $P(X \le 70) \approx 1.1\,\%$. Somit ist unser $k=69$ für den Ablehnungsbereich $[0;k] = [0;69]$. Der Annahmebereich unserer Nullhypothese liegt bei $[70;100]$ «Genesungen».}
+
+
+*) Der Ablehnungsbereich unserer Nullhypothese (80 \% Linderung) sei bei
 $0 \le k \le 75$ festgesetzt. Mit welcher Wahrscheinlichkeit tritt
 dieser Ablehnungsbereich ein, wenn im Durchschnitt tatsächlich bei 80\,\% der 100
 Patienten Linderung eintritt? Ist dieser Ablehnugsbereich berechtigt?
@@ -92,7 +112,7 @@ $$P(X \le 75) = \LoesungsRaumLen{40mm}{13.14\,\%}$$
   Fehlinterpretation. Er ist nicht schlecht, aber es könnte doch etwas
 besser sein.}
 
-f) Der Annahmebereich unserer Nullhypothese (80 \% Linderung) sei
+*) Der Annahmebereich unserer Nullhypothese (80 \% Linderung) sei
 diesmal bei $71 \le k \le 100$ festgesetzt. Mit welcher Wahrscheinlichkeit tritt
 der Annahmebereich ein, wenn effektiv im Mittel bei 80\,\% der 100
 Patienten Linderung eintritt?

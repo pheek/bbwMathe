@@ -5,6 +5,79 @@
 
 
 \subsection{Fehler 1. Art / Fehler 2. Art}
-... coming soon ...
 
-\newpage
+
+\begin{definition}{Fehler 1. Art}{}\index{Fehler
+    1. Art}\index{beta@$\beta$-Fehler}
+  Wird die Nullhypothese $H_0$ fälschlicherweise verworfen, obschon
+  sie wahr ist, so sprechen wir von einem $\alpha$-Fehler oder \textbf{Fehler erster Art}.
+\end{definition}
+
+\begin{bemerkung}{Fehler 1. Art}{}
+  Fehler 1. Art bedeutet:
+
+  Wir beschuldigen einen «fairen» Anbieter/Würfel/....
+  \end{bemerkung}
+
+Wir können für unser Pharma-Unternehmen, das weiterhin behauptet, dass
+80\,\% der Patienten mit ihrem Medikament geheilt werden.
+
+Unser Annahmebereich sei von 73 bis 100 Personen mit Linderung
+festgesetz. Der Ablehnungsbereich somit von 0 bis 72 Personen.
+
+Mit welcher Wahrscheinlichkeit wird in diesem Fall die $H_0$-Hypothese
+fälschlicherweise verworfen, obschon das Medikament zu 80\,\% wirkt?
+
+Mit welcher Wahrscheinlichkeit also landen wir im Ablehnungsbereich,
+obschon das Medikament zu 80\,\% wirkt?
+
+\TNTeop{
+Selbst bei einer Wirkung von 80
+  Von 0 bis max 72 werden  3.42\,\% aller Tests mit
+  100 Probanden abschneiden. In diesen 3.42\,\% sprechen wir von einem
+  Fehler 1. Art ($\alpha$-Fehler)
+
+  Diese 3.42\% sind in unserem Fall gleichzeitig das Signifikanzniveau $\alpha$.
+
+}%% end TNTeop (implicit \newpage)
+
+\begin{definition}{Fehler 2. Art}{}\index{Fehler
+    1. Art}\index{beta@$\beta$-Fehler}
+  Wird die Nullhypothese $H_0$ fälschlicherweise angenommen (obschon
+  $H_1$ wahr ist), so
+  sprechen wir von einem $\beta$-Fehler oder \textbf{Fehler zweiter Art}.
+\end{definition}
+\begin{bemerkung}{Fehler 2. Art}{}
+  Fehler 2. Art bedeutet:
+
+  Wir lassen einen «Schuldigen», «gezinkten Würfel», ... laufen.
+
+  Wir übersehen die Unwirksamkeit, den gezinkten Würfeln, ...
+\end{bemerkung}
+
+
+Nehmen wir diesmal wieder den Annahmebereich für unser Pharma-Test an 100
+Probanden von 73 bis 100 Personen mit eintretenden Linderung.
+
+Es hat sich aber herausgestellt, dass das Medikament nur mit 75\,\%
+Linderung anbieten kann (die ersten Behauptungen mit 80\,\% des
+Unternehmens waren falsch).
+
+Mit welcher Wahrscheinlichkeit landen wir also fälschlicherweise im Annahmebereich (73-100),
+obschon das Medikament nur zu 75\,\% wirkt?
+
+\begin{bemerkung}{$\beta$-Fehler}{}
+  Den Fehler 2 Art ($\beta$-Fehler) können wir erst rechnen,
+  wenn wir die effektive, erst verborgene, Prozentzahl kennen.
+\end{bemerkung}
+
+
+\TNTeop{
+
+  $$P(X \ge 73) = 1-P(X \le 72) \approx 1-27.76\,\% \approx 72.24\,\%$$
+
+Wir können in 72.24\,\% aller Fälle nicht entscheiden, ob das
+Medikament nun zu 80\,\% wirkt oder weniger.
+
+
+}%% end TNTeop (implicit \newpage)
