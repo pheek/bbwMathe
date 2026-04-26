@@ -3,18 +3,137 @@
 %% 2023 - 05 - 24 φ
 %%
 
-\subsubsection{Signifikanzniveau}\index{Signifikanzniveau}
+\subsubsection{Siginfikanzniveau / $k$-Wert / Ablehnungsbereich}
+
+\subsubsection*{Annahmebereich /
+  Ablehnungsbereich}\index{Annahmebereich}\index{Ablehnungsbereich}
+
+\aufgabenFarbe{Berechnen Sie die Wahrscheinlichkeit, dass bei maximal 80 Personen
+aus unserer Stichprobe Linderung eintritt.}
+
+$$P(X \le 80) = \LoesungsRaumLen{30mm}{53.98 \%}$$
+
+\aufgabenFarbe{Bei einer speziellen Stichprobe von 100 Probanden trat nur bei 67
+Personen Linderung ein. Wie groß ist die Wahrscheinlichkeit, dass bei
+weniger als 68 Personen Linderung eintritt, wenn das Medikament bei
+80\,\% der Personen Linderung verspricht? Was könnte hier
+geschehen sein?}
+
+$$P(X \le 68) = \LoesungsRaumLen{30mm}{0.155\,\%}$$
+
+\TNT{8}{Die Wahrscheinlichkeit dass nur bei max. 67 Personen Linderung
+  eintritt liegt bei 0.155 \%. Dies ist extrem unwahrscheinlich. Es
+  könnte eines der folgenden Szenarien eingetreten sein:
+  \begin{itemize}
+    
+  \item Wir haben Symptome falsch eingeschätzt und effektiv das
+    falsche Medikament eingesetzt.
+  \item Wir haben zwar das richtige Medikament eingesetzt, aber es wurde falsch
+    angewendet (Falsche Dosierung, ...).
+  \item Wir haben mit der Stichprobe zufälligerweise Pech gehabt. Dies
+    kann in einer von 600 - 700 Stichproben tatsächlich passieren.
+  \item Die Wirksamkeit ist weniger als 80\,\%.
+  \end{itemize}
+  }%% end TNT
+\newpage
+
+\begin{definition}{Annahmebereich}{}\index{Annahmebereich|textbf}
+  Unter dem \textbf{Annahmebereich} bei einem Hypothesentest verstehen
+  wir die Menge derjenigen Ausgänge, bei denen wir der
+  \textbf{Nullhypothese} noch trauen.
+\end{definition}
+
+\begin{definition}{Ablehnungsbereich}{}\index{Ablehnungsbereich|textbf}
+  Unter dem \textbf{Ablehnungsbereich} bei einem Hypothesentest verstehen
+  wir die Menge derjenigen Ausgänge, bei denen wir der
+  \textbf{Nullhypothese} \textbf{nicht mehr} trauen.
+\end{definition}
+
+\begin{beispiel}{Signifikanzniveau / $k$-Wert / Ablehnungsbereich}{}
+In unserem Beispiel $P(X \le 68)$ ist das \textbf{Signifikanzniveau} bei
+0.155\,\%.
+
+Wir können den \textbf{Ablehnungsbereich} auf einem
+Signifikanzniveau von $\alpha \approx 0.155\,\%$ festlegen und unser Ablehnungsbereich
+wären alle möglichen Ausgänge von 0 Linderungen bis und mit 68
+Linderungen. Wenn also ein Versuch an 100 Probanden mit weniger als 69
+Linderungen ausfällt, verwerfen wir die Nullhypothese auf einem
+Signifikanzniveau von 0.155\,\%. Der \textbf{Annahmebereich} für
+unsere Nullhypothese wäre hier der Bereich [69;100].
+
+Der $k$-Wert gibt uns an, wo die Trennung zwischen Annahmebereich und
+Ablehnungsbereich sei.
+
+Beim linksseitigen Test gilt:
+
+Ablehnungsbereich: [0..$k$]
+
+Annahmebereich: [$k$+1; n]
+\end{beispiel}
+
+\aufgabenFarbe{Berechnen Sie im Pharma-Beispiel das Signifikanzniveau
+für einen Ablehnungsbereich von [0;71].}
+
+\TNTeop{$P(X \le 71) \approx 2.002\,\%$ und $P(X \le 72) \approx 3.42\,\%$.
+Somit kann jeder Wert zwischen 2.002 und 3.4 als Signifikanzniveau für
+diesen Ablehnungsbereich angenommen werden.}%% end TNTeop
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Das \textbf{weniger} oder \textbf{mehr} kann uns leicht den Annahmebereich und den Ablehnungsbereich der Nullhypothese angeben.
+
+\begin{gesetz}{Ablehnungsbereich}{}
+  Der Ablehnungsbereich darf maximal mit einer Wahrscheinlchkeit des Signifikanzniveaus eintreten. Dabei wird in der Vorgabe jeweils zwischen $<$ und $\le$ bereits unterschieden.
+\end{gesetz}
+
+\begin{gesetz}{Annahmebereich}{}
+  Der Annahmebereich ist das Gegenereignis zum Ablehnugsbereich.
+\end{gesetz}
 
 
+\newpage
+
+Zurück zum Pharma-Beispiel:
+
+\aufgabenFarbe{Der Ablehnungsbereich unserer Nullhypothese (80 \% Linderung) sei bei
+$0\,\le\,k\,\le 75$ festgesetzt. Mit welcher Wahrscheinlichkeit tritt
+dieser Ablehnungsbereich ein, wenn im Durchschnitt tatsächlich bei 80\,\% der 100
+Patienten Linderung eintritt? Ist dieser Ablehnugsbereich berechtigt?}
+
+$$P(X \le 75) = \LoesungsRaumLen{40mm}{13.14\,\%}$$
+
+\TNT{4}{Der Ablehnungsbereich erlaubt immerhin noch ca. 13\,\%
+Fehlinterpretation. Er ist nicht schlecht, aber es könnte doch etwas
+besser sein.}
+
+
+\aufgabenFarbe{Geben Sie für unser Pharma-Beispiel eine \textbf{Entscheidungsregel}\index{Entscheidungsregel} an ($k$, Ablehnungsbereich, Annahmebereich) für ein Signifikanzniveau von $\alpha \le 1\%$.}
+
+\TNT{6}{Wählen wir $k=69$, so eralten wir $P(X \le 69) \approx 0.61\,\%$ und somit $P(X \ge
+70) \approx 99.39\,\%$.
+
+Wählen wir $k=70$, so eralten wir bereits $P(X \le 70) \approx 1.1\,\%$ und
+$P(X\ge 71)\approx 98.9\,\%$ .
+
+Somit ist unser $k=69$ für den Ablehnungsbereich $[0;k] = [0;69]$. Der Annahmebereich unserer Nullhypothese liegt bei $[70;100]$ «Genesungen».}
+
+
+\aufgabenFarbe{Der Annahmebereich unserer Nullhypothese (80 \% Linderung) sei
+diesmal bei $71 \le k \le 100$ festgesetzt. Mit welcher Wahrscheinlichkeit tritt
+der Annahmebereich ein, wenn effektiv im Mittel bei 80\,\% der 100
+Patienten Linderung eintritt?}
+
+$$P(X \ge 71) = \LoesungsRaumLen{100mm}{1 - P(X \le 70) \approx 1 - 0.011249 \approx 98.88\%}$$
+
+
+\newpage
 
 
 Die nächste Aufgabe geht von unserem Pharma-Unternehmen aus, das in 80\,\% der Fälle mit Ihrem Medikament Linderung verspricht und nochmals machen wir einen Test an 100 Probanden:
 
-
-Suchen Sie den Annahmebereich und den
+\aufgabenFarbe{Suchen Sie den Annahmebereich und den
 Ablehnungsbereich so, dass wir nur mit einer Wahrscheinlichkeit von
 weniger als 5\,\% aller Stichproben im Ablehnungsbereich landen
-werden.
+werden.}
 
 
 \TNT{6}{... Platz für eine Skizze ...}
@@ -40,4 +159,12 @@ Annahmebereich:  $[\LoesungsRaumLen{25mm}{73}; 100]$
 
   Typische Werte sind $\alpha \le 5\,\%$ oder $\alpha < 1\,\%$, ...
 \end{definition}
+
+
+
+\begin{definition}{Einseitiger Hypothesentest}{}
+Unter einem \textbf{einseitigen} Hypothesentest verstehen wir einen Ablehnungsbereich von weniger als $\alpha$ auf der einen Seite unserer Binomialverteilung. Beim \textbf{linksseitigen} Hypothesentest liegt der Ablehnungsbereich unserer Nullhypothese im Intervall $[0; k]$, während beim \textbf{rechtsseitigen} Hypothesentest den Ablehnungsbereich im Intervall $[k+1;n]$ liegt.
+  \end{definition}
+
+
 \newpage
