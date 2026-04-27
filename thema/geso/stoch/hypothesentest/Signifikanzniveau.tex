@@ -3,7 +3,7 @@
 %% 2023 - 05 - 24 φ
 %%
 
-\subsubsection{Siginfikanzniveau / $k$-Wert / Ablehnungsbereich}
+\subsubsection{Signifikanzniveau / $k$-Wert / Ablehnungsbereich}
 
 \subsubsection*{Annahmebereich /
   Ablehnungsbereich}\index{Annahmebereich}\index{Ablehnungsbereich}
@@ -82,22 +82,23 @@ diesen Ablehnungsbereich angenommen werden.}%% end TNTeop
 Das \textbf{weniger} oder \textbf{mehr} kann uns leicht den Annahmebereich und den Ablehnungsbereich der Nullhypothese angeben.
 
 \begin{gesetz}{Ablehnungsbereich}{}
-  Der Ablehnungsbereich darf maximal mit einer Wahrscheinlchkeit des Signifikanzniveaus eintreten. Dabei wird in der Vorgabe jeweils zwischen $<$ und $\le$ bereits unterschieden.
+  Der Ablehnungsbereich darf maximal mit einer Wahrscheinlichkeit des Signifikanzniveaus eintreten. Dabei wird in der Vorgabe jeweils zwischen $<$ und $\le$ bereits unterschieden.
 \end{gesetz}
 
 \begin{gesetz}{Annahmebereich}{}
-  Der Annahmebereich ist das Gegenereignis zum Ablehnugsbereich.
+  Der Annahmebereich ist das Gegenereignis zum Ablehnungsbereich.
 \end{gesetz}
 
 
 \newpage
 
+\subsubsection*{Berechnung von $k$ aus gegebenem $\alpha$}
 Zurück zum Pharma-Beispiel:
 
 \aufgabenFarbe{Der Ablehnungsbereich unserer Nullhypothese (80 \% Linderung) sei bei
-$0\,\le\,k\,\le 75$ festgesetzt. Mit welcher Wahrscheinlichkeit tritt
+$0\,\le\,k=75$ festgesetzt. Mit welcher Wahrscheinlichkeit tritt
 dieser Ablehnungsbereich ein, wenn im Durchschnitt tatsächlich bei 80\,\% der 100
-Patienten Linderung eintritt? Ist dieser Ablehnugsbereich berechtigt?}
+Patienten Linderung eintritt? Ist dieser Ablehnungsbereich berechtigt?}
 
 $$P(X \le 75) = \LoesungsRaumLen{40mm}{13.14\,\%}$$
 
@@ -108,10 +109,10 @@ besser sein.}
 
 \aufgabenFarbe{Geben Sie für unser Pharma-Beispiel eine \textbf{Entscheidungsregel}\index{Entscheidungsregel} an ($k$, Ablehnungsbereich, Annahmebereich) für ein Signifikanzniveau von $\alpha \le 1\%$.}
 
-\TNT{6}{Wählen wir $k=69$, so eralten wir $P(X \le 69) \approx 0.61\,\%$ und somit $P(X \ge
+\TNT{6}{Wählen wir $k=69$, so erhalten wir $P(X \le 69) \approx 0.61\,\%$ und somit $P(X \ge
 70) \approx 99.39\,\%$.
 
-Wählen wir $k=70$, so eralten wir bereits $P(X \le 70) \approx 1.1\,\%$ und
+Wählen wir $k=70$, so Erhalten wir bereits $P(X \le 70) \approx 1.1\,\%$ und
 $P(X\ge 71)\approx 98.9\,\%$ .
 
 Somit ist unser $k=69$ für den Ablehnungsbereich $[0;k] = [0;69]$. Der Annahmebereich unserer Nullhypothese liegt bei $[70;100]$ «Genesungen».}

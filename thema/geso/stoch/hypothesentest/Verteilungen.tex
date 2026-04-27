@@ -15,16 +15,51 @@ Dies können wir in einer Wertetabelle und somit auch in einem Balkendiagramm da
 \subsubsection*{... genaue Anzahl Treffer}
 Notieren wir uns, wie groß die Wahrscheinlichkeit ist, dass Basil \textbf{genau} $n$ Mal trifft innerhalb von 20 Würfen:
 
-\begin{tabular}{c|cccccccccccccccc}
+\TRAINER{\begin{tabular}{c|cccccccccccccccc}
   n & 0 & 1 & ... & 8 & 9 & 10   & 11   & 12   & 13  & 14  & 15 & 16 & 17 & 18 & 19 &  20\\
   \%& 0 & 0 & ... & 0 & 0 & 0.02 & 0.11 & 0.46 & 1.6 & 4.5 & 10 & 18 & 24 & 23 & 14 & 3.9
-\end{tabular}
+\end{tabular}}%% end TRAINER
+\noTRAINER{\begin{bbwFillInTabular}{c|cccccccccccccccc}
+  n & 0 & 1 & ... & 8 & 9 & 10   & 11   & 12   & 13  & 14  & 15 & 16 & 17 & 18 & 19 &  20\\
+  \%& 0 & 0 & ... & 0 &   &      &      &      &     &     &    &    &    &    &    &    
+\end{bbwFillInTabular}}%% end no TRAINER
+
 
 Wenn wir diese Zahlen in ein Balkendiagramm eintragen, so erhalten wir
 eine (diskrete) Wahrscheinlichkeitsverteilung:
 
 
 \bbwCenterGraphic{10cm}{geso/stoch/img/BernoulliSingleBasil.png}
+
+\TNTeop{Wie geht das mit dem TR?
+MITSCHREIBEN! (Wir füllen die Tabelle von 10 bis 20 zusammen aus)
+
+DATA -> (4): clear all
+
+DATA -> (rechts) OPS: (3): Sequence (L1)
+
+EXPR IN x:x\\
+START x:10\\
+END   x:20\\
+STEP-SIZE: 1\\
+  -> SEQUENCE FILL\\
+
+dann bidomialpdf:
+
+stat-reg/distr (2nd data)\\
+-> DISTR (4): binomialpdf\\
+wähle LIST\\
+TRIALS=n=20\\
+p(SUCCESS)=17/20\\
+ENTER\\
+xLIST: L1\\
+SAVE TO: L2\\
+CALC (ENTER)
+
+Nun die Werte in L2 ablesen
+
+
+}%% end TNTeop
 
 
 \subsubsection*{... kumulierte Anzahl Treffer}
@@ -38,17 +73,25 @@ Wahrscheinlichkeiten der weniger erzielten Treffer hinzugezählt. So
 erklären sich auch die 100\% um maximal 20 Treffer in 20 Würfen zu
 landen.
 
+
+\TRAINER{
 \begin{tabular}{c|cccccccccccccccc}
   n  & 0 & 1 & ... & 8 & 9 & 10  & 11   & 12   & 13  & 14  & 15 & 16 &  17 & 18 & 19 &  20\\
   \% & 0 & 0 & ... & 0 & 0 &  0.02  &0.13   & 0.59 & 2.2 & 6.7 & 17 & 35 &  60 & 82 & 96 & 100
-\end{tabular}
+\end{tabular}}%% end TRAINER
+
+\noTRAINER{
+\begin{tabular}{c|cccccccccccccccc}
+  n  & 0 & 1 & ... & 8 & 9 & 10  & 11   & 12   & 13  & 14  & 15 & 16 &  17 & 18 & 19 &  20\\
+  \% & 0 & 0 & ... & 0 & 0 &     &      &      &     &     &    &    &     &    &    &     
+\end{tabular}}%% end noTRAINER
 
 Das entsprechende Diagramm sieht wie folgt aus:
 
 \bbwCenterGraphic{10cm}{geso/stoch/img/BernoulliCumulativeBasil.png}
 \newpage
 
-Der Vollständigkeit halber hier die Verteliungen unseres
+Der Vollständigkeit halber hier die Verteilungen unseres
 Würfelexperimentes (grün: Normaler Würfel; orange: Gezinkter Würfel):
 
 
@@ -63,10 +106,33 @@ Würfelexperimentes (grün: Normaler Würfel; orange: Gezinkter Würfel):
 Wahrscheinlichkeiten, in 10 Würfen 0-mal, 1-mal, 2-mal, ... , 10-mal eine Sechs zu
 würfeln.
 \\
-Erstellen Sie mit diesen Daten ein Balkendiagarmm.\vspace{3mm}
+Erstellen Sie mit diesen Daten ein Balkendiagramm.\vspace{3mm}
 \\
 Erstellen Sie zusätzlich eine Wertetabelle mit den kumulierten Wahrscheinlichkeiten:
 Wie groß ist die Wahrscheinlichkeit mit einem fairen Würfel in 10 Würfen \textbf{maximal} 0-mal, 1-mal, 2-mal, ..., 10-mal eine Sechs zu würfeln. Fürs Verständnis: «maximal 3-mal» heißt «weniger als 4-mal». Erstellen Sie auch hierzu ein Balkendiagramm.
 }%% end Aufgabenfarbe
 
 \TNTeop{}
+
+\aufgabenFarbe{Erstellen Sie einen Ausschnitt des «Histogramms» für
+unser Pharma-Unternehmen, bei dem wir ein Medikament, das zu 80\,\%
+Linderung verspricht an 100 Personen testen.\\
+Skizzieren Sie den Ausschnitt von $k$ = 76 bis $k$=84 Personen, indem
+Sie jeweils für $k$ angeben, wie groß die Wahrscheinlichkeit ist,
+dass \textbf{genau} $k$ Personen Linderung verspüren werden.\\
+In $y$-Richtung brauchen Sie Werte von 0 bis 10\,\%.
+\\
+Für welches $k$ ist diese Wahrscheinlichkeit am größten?
+}
+
+\TNTeop{
+78: 8.49\,\%
+
+79: 9.46\,\%
+
+80: 9.93\,\%
+
+81: 9.81\,\%
+
+Am größten also bei $k$=80
+}%
