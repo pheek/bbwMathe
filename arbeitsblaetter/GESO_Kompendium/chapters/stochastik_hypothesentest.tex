@@ -1,72 +1,72 @@
-
-\newpage
+%% 
 \subsection{\deu{Statistisches Schließen}\eng{Statistical reasoning}}
 
+\chapterIntro{%%
+Einseitige Hypothesentests an der Binomialverteilung
+}{%%
+Voraussetzung ist ein Taschenrechner, der die Binomialverteilung kumuliert für mehrere Werte Gleichzeitig berechnen kann.
 
-\kNiveauAufgabe{
-Ein Spieler besitzt einen sechsseitigen Würfel. Der Würfel wird 60-mal geworfen. Sei $X =$ Die Anzahl der geworfenen Sechsen.
+\begin{itemize}
+    \item Die Beispiele wurden mit TI 30 X Plus MathPrint berechnet.
+    \item Allen Beispielen liegt die Binomialverteilung zu Grunde.
+    \item Es sollen Säulendiagramme zu den Verteilungen gezeichnet werden können.
+    \item Bei gegebenem $\alpha$-Signifikanzniveau soll der Annahmebereich ($0..k$) und der Ablehnugsbereich ($k+1..n$) ermittelt werden können.
+    \item Die Wahrscheinlichkeit für Fehler 1. und 2. Art ($\alpha$- und $\beta$-Fehler) werden verlangt
+\end{itemize}
+    
+}%% end chapterIntro
 
-a) Wir nehmen vorerst an, der Würfel sei fair. Bestimmen Sie den Erwartungswert für die Anzahl der geworfenen Sechsen bei 60 Würfen. 
-
-b) Bestimmen Sie die Wahrscheinlichkeit, dass in 60 Würfen mit einem fairen Würfel genau 14 Sechsen fallen.
-
-
-Nun besteht im Laufe eines Spieleabends der Verdacht, dass der Würfel manipuliert ist und häufiger eine 6 zeigt als ein fairer Würfel.
-
-c) Formulieren Sie eine geeignete Nullhypothese H${}_0$ und eine Alternativhypothese H${}_1$ für diese Vermutung.
-
-d) Bestimmen Sie auf dem Signifikanzniveau $\alpha = 1$ % eine Entscheidungsregel für eine Stichprobe von 60 Würfen, mit der beurteilt werden kann, ob der Würfel als fair angesehen wird.
-
-e) Wie gross ist die Wahrscheinlichkeit für Fehler erster Art? Was bedeutet ein Fehler erster Art am Beispiel mit dem Würfel?
-
-f) Im Laufe des Abends gibt der Spieler zu, dass der Würfel tatsächlich manipuliert ist und mit $p = 0.3$ die Augenzahl 6 erscheint. Berechnen Sie die Wahrscheinlichkeit für Fehler zweiter Art mit Ihrer Entscheidungsregel von Aufgabe d).
-}{%% Lösungen
- ... not yet ...
-}
 
 
 \kNiveauAufgabe{
-Die Statistiker eines Landes behaupten, die Anzahl weißer Personenwagen (PW) betrage 35\%.
-Ein Student hat 260 PW ausgezählt. Die Nullhypothese ist $H_0: p=0.35$. 
+Die Statistiker eines Landes behaupten, die Anzahl weißer Personenwagen (PW) betrage \textbf{minimal} 20\,\%.
+Ein Student hat darauf hin 260 PW ausgezählt und glaubt, es sind weniger als die 20\,\%. Die Nullhypothese ist $H_0: p=0.20$. 
 
 a) Wie lautet die Alternativhypothese? 
 
-b) Berechnen Sie den Ablehnungsbereich auf dem Signifikanzniveau $\alpha = 1\,\%$.
+b) Berechnen Sie den Ablehnungsbereich auf dem Signifikanzniveau $\alpha < 1\,\%$.
 }{%% lösungen
-a) Es sind nicht 35\% der Autos weiß
+a) $H_1$: Es sind weniger als 20\% der Autos weiß
 
-b) $z = 2.567 \sigma$ Aktzeptiert werden also 72 bis 110 Autos. Nicht akzeptiert < 72 oder > 110 Autos.
+b) Bei $k$ = 36 liefert binomial\textbf{c}df 0.637\,\% (danach bereits > 1\,\%). Der Annahmebereich "minimal 20" ist also [37;260]. Der Ablehnungsbereich liegt bei «nur 0 bis 36» Autos sind weiß.
 }
 
 
-
-
-\kNiveauAufgabe{%% aufgabe
-Marktforscher X.  behauptet, dass in 46 \% der Haushalte ein Mikrowellengerät
-vorhanden ist; andere Marktforscher bezweifeln diese Angabe. Bei einer
-Stichprobe des Statistischen Bundesamtes in 380 Haushalten wird
-u.\,a. auch nach der Ausstattung des Haushalts gefragt.
-
-a) Bei welchen Stichprobenergebnissen würde man die Angaben des Marktforschers 
-X. für falsch ansehen?
-
-Geben Sie  eine Entscheidungsregel auf dem $\alpha< 5\,\%$-Niveau  an!
- 
-b) Wie groß ist die Wahrscheinlichkeit für einen Fehler I. Art?
-}{% Lösungen
-not yet
-}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \kNiveauAufgabe{
-Bei der Produktion von einfachen USB-Sticks als Werbegeschenke
-sind erfahrungsgemäß einige defekt. Wie groß darf der Anteil defekter
-USB-Sticks höchstens sein, damit in einer Packung von 
-200 USB-Sticks mit einer Wahrscheinlichkeit von 95\,\% höchstens 7 defekt sind?
-}{%% Loesung
-not yet
-}
+Christian und Philipp besitzen je einen klassischen sechsseitigen Spielwürfel. Ein Würfel wird 60-mal geworfen. Sei $X =$ Die Anzahl der geworfenen Sechsen.
 
+a) Wir nehmen vorerst an, die beiden Würfel seien fair. Bestimmen Sie den Erwartungswert für die Anzahl der geworfenen Sechsen bei 60 Würfen. 
+
+b) Bestimmen Sie die Wahrscheinlichkeit, dass in 60 Würfen mit einem fairen Würfel genau 14 Sechsen fallen.
+
+\vspace{3mm}
+
+Nun besteht im Laufe eines Spieleabends der Verdacht, dass der Würfel von Philipp manipuliert ist und häufiger eine 6 zeigt als ein fairer Würfel.
+
+c) Formulieren Sie eine geeignete Nullhypothese H${}_0$ und eine Alternativhypothese H${}_1$ für diese Vermutung.
+
+d) Bestimmen Sie auf dem Signifikanzniveau $\alpha = 1$\,\% eine Entscheidungsregel für eine Stichprobe von 60 Würfen, mit der beurteilt werden kann, ob der Würfel als fair angesehen wird.
+
+e) Wie gross ist die Wahrscheinlichkeit für Fehler erster Art für die Entscheidungsregel aus Aufgabe d)? Was bedeutet ein Fehler erster Art am Beispiel mit dem Würfel?
+
+f) Im Laufe des Abends gibt Philipp zu, dass sein Würfel tatsächlich manipuliert ist und mit $p = 0.3 =\frac{3}{10} $ die Augenzahl 6 erscheint. Berechnen Sie die Wahrscheinlichkeit für Fehler zweiter Art mit Ihrer Entscheidungsregel von Aufgabe d).
+}{%% Lösungen
+a) $$\mathbb{E}(\epsdice{6})=\frac{1}{6}\cdot{}60 = 10$$
+
+b) 5.04\,\% = Binomialpdf(60, 1/6, 14)
+
+c) $H_0$: Der Würfel ist fair und es fällt mit $\frac16$ Wahrscheinlichkeit eine \epsdice{6}.
+
+$H_1$: Alternativhypothese: Der Würfel ist unfair und es fallen mit mehr als $\frac16$ Wahrscheinlichkeit eine \epsdice{6}.
+
+d) Binomial\textbf{c}df(60, 1/6, 16) ist 98.35\,\%; Binomial\textbf{c}df(60,1/6, 17) ist hingegen 99.25\,\%. Somit ist von 0 bis und mit 17 mal eine \epsdice{6} zu werfen noch «normal» im $\alpha$=1\,\%-Signifikanzniveau. Die Entscheidungsregel lautet: «Der Annahmebereich der Nullhypothese liegt von 0 bis 17 mal eine \epsdice{6} zu werfen bei 60 mal werfen auf einem 1\,\% Signifikanzniveau.
+
+e) Der Fehler 1. Art sagt, dass der faire Würfel als unfair taxiert wird. Bei einem Signifikanzniveau von 1\,\% müsste das auch 1\,\% sein. Da wir aber den Annahmebereich inklusive die 17 mal Werfen genommen haben, ist der Ablehnungsbereich = [18,60], was mit einer Wahrscheinlichkeit von 0.744\,\% eintreten wird: $P(X\ge 18) = 1-P(X\le 17) \approx 1- 0.9926 = 0.00744$
+
+f) $P(X\le 17; 0.3; 60) \approx 45.14\,\%$ Mit ca 45\,\% Wahrscheinlichkeit wird ein gezinkter Würfel immer noch als fair angesehen, wenn wir [0;17] als Annahmebereich der Nullhypothese beibehalten.
+}%
 
 \kNiveauAufgabe{
 Bei einer Lieferung von 250 Gläsern mit Brotaufstrich werden einige gefunden, die
@@ -79,8 +79,7 @@ Signifikanzniveau von 10\,\% durchgeführt;
 Gib den Ablehnungsbereich an und überprüfe das Ergebnis.
 }{%% Lösungen
 not yet
-}
-
+}%
 
 \kNiveauAufgabe{
 Bestimme mit einem linksseitigen Hypothesentest den Ablehnungsbereich
@@ -108,6 +107,40 @@ b) sechs Linkshänder darunter sind
 not yet
 }
 
+
+\kNiveauAufgabe{
+Bei der Produktion von einfachen USB-Sticks als Werbegeschenke
+sind erfahrungsgemäß einige defekt. Wie groß darf der durchschnittliche Anteil defekter
+USB-Sticks höchstens sein, damit in einer Packung von 
+200 USB-Sticks mit einer Wahrscheinlichkeit von 95\,\% höchstens 7 defekt sind?
+
+Wählen Sie aus:
+
+\begin{itemize}
+    \item 1\,\%
+    \item 1.5\,\%
+    \item 2\,\%
+    \item 2.5\,\%
+\end{itemize}
+}{%% Loesung
+Ausprobieren: $p$ = $p$-Defekt $\approx$ 2.0057\,\%. Dabei habe ich maximal 7 defekte mit Wahrscheinlichkeit von 94.9997\,\%. Die beste Lösung aus der Auswahl sind 2\,\%. 
+}
+
+\kNiveauAufgabe{%% aufgabe
+Marktforscher X.  behauptet, dass in 46 \% der Haushalte ein Mikrowellengerät
+vorhanden ist; andere Marktforscher bezweifeln diese Angabe. Bei einer
+Stichprobe des Statistischen Bundesamtes in 380 Haushalten wird
+u.\,a. auch nach der Ausstattung des Haushalts gefragt.
+
+a) Bei welchen Stichprobenergebnissen würde man die Angaben des Marktforschers 
+X. für falsch ansehen?
+
+Geben Sie  eine Entscheidungsregel auf dem $\alpha< 5\,\%$-Niveau  an!
+ 
+b) Wie groß ist die Wahrscheinlichkeit für einen Fehler I. Art?
+}{% Lösungen
+not yet
+}
 
 %% %%%%%%%%%%%%%%%%%%%%%%% Aufgabe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage

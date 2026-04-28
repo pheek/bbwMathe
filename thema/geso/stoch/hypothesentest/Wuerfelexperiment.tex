@@ -67,8 +67,8 @@ $H_0$ :
 Vermutung, Behauptung:
 
 \TRAINER{
-Wir \textbf{vermuten} jedoch, dass hier etwas nicht mit rechten Dingen
-zugeht und formulieren die Alternativhypothese:
+\textit{Wir \textbf{vermuten} jedoch, dass hier etwas nicht mit rechten Dingen
+zugeht und formulieren die Alternativhypothese:}
 }%% end TRAINER
 
 $H_1$:
@@ -103,7 +103,7 @@ Typischerweise wollen wir diese beiden Fehler vermeiden und legen ein
 
 \TNT{2.8}{... \textbf{Signifikanzniveau} fest.
 
-Das \textbf{Signifikanzniveau} ist üblicherweise bei $\alpha=5\,\%, \alpha=1\,\%$ o.\,ä. festgesetz}%% end TNT
+Das \textbf{Signifikanzniveau} ist üblicherweise bei $\alpha<5\,\%, \alpha<1\,\%$ o.\,ä. festgesetz}%% end TNT
 
 Somit gilt bei einem Signifikanzniveau von 5\,\%
 folgendes:
@@ -138,7 +138,7 @@ Unsere Verteilung zeigt: Wenn wir sagen der Würfel zeigt maximal
 \textbf{sieben} mal die \epsdice{3}, so stimmt das nur in ca 90.3\,\%
 aller Fälle. Mit ca 9.7\,\% irren wir uns.
 
-Wir müssen also noch höher gehen.
+Wir müssen für ein 5\,\% Signifikanzniveau noch höher gehen.
 
 Wenn wir die Entscheidungsregel bei $k=8$ ansetzen, so sagen wir: Es
 ist noch gut wahrscheinlich maximal $k=8$ mal eine \epsdice{3} zu
@@ -148,10 +148,11 @@ Signifikanzniveau.
 
 Unsere \textbf{Entscheidungsregel}:
 
-\begin{bbwFillInTabular}{c|c}
-  Bereich & von ... bis \\\hline
-  \TRAINER{Annahmebereich}\noTRAINER{\hspace{60mm}}    & \TRAINER{[0; 8]} \hspace{30mm}\\\hline
-  \TRAINER{Ablehnungsbereich}& \TRAINER{[9; 29]} 
+\begin{bbwFillInTabular}{c|c|c}
+  Bereich & von ... bis & \% kumulierte \\\hline
+  \TRAINER{Annahmebereich}\noTRAINER{\hspace{60mm}}    & \TRAINER{[0;
+      8]} \hspace{30mm} & \TRAINER{95.87\,\%}\\\hline
+  \TRAINER{Ablehnungsbereich}& \TRAINER{[9; 29]} & \TRAINER{4.13\,\%} 
 \end{bbwFillInTabular}
 \newpage
 
