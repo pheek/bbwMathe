@@ -22,7 +22,7 @@ allgemein zwischen zwei (windschiefen) Geraden im Raum.
 \subsubsection{Abstand Gerade / Punkt}\index{Abstand!Gerade/Punkt}
 
 \begin{beispiel}{Abstand}{}
-Gegeben ist der Ortsvektor $\vec{a}_A=\vec{a} = \left(1 \atop 2\right)$, der
+Gegeben sind der Ortsvektor $\vec{a}_A=\vec{a} = \left(1 \atop 2\right)$, der
 einen Punkt $A$ auf der
 Geraden $g$ repräsentiert und ein Richtungsvektor
 $\vec{u}=\left(3\atop 1\right)$, der
@@ -44,6 +44,7 @@ $d=|\vec{d}|$ gerade den Abstand zwischen Gerade und Punkt angibt.
   $$\vec{a}+t\vec{u}+\vec{d}=\vec{p}$$
   $$\Longrightarrow \vec{d} = \vec{p} - \vec{a} - t\vec{u} = \Spvek{8-1-3t;1-2-t} = \Spvek{7-3t;-1-t}$$
 }%% end TNT
+%%%%%%%%%%%%%%% implicit: \newpage
 
 \TNTeop{%% neue Leere Seite
   Senkrecht:
@@ -61,8 +62,33 @@ $d=|\vec{d}|$ gerade den Abstand zwischen Gerade und Punkt angibt.
   
   \bbwCenterGraphic{12cm}{tals/vecg2/img/AbstandGeradePunktTR.png}
 }
-
 \newpage
+\subsubsection{Referenzaufgabe}
+
+Bestimmen Sie den Abstand der Geraden $g$ zum Punkt $P$:
+
+$$P=(7;6;5),\,\,\, g: \,\,\, \vec{r}(t) = \Spvek{1;-1;9} +
+t\cdot{}\Spvek{6;6;3}$$
+
+\TNTeop{
+  a := [1;-1;9]
+ 
+  u := [6;6;3]
+
+  p := [7;6;5]
+
+  d := p - (a + tu) = [6-6t; 7-6t; -4 -3t]
+
+  Gleichungssystem: dotP(u,d) = 0 und len = norm(d)
+
+  solve(gls, len)
+
+  len = $\frac{5\cdot{}\sqrt{17}}{3} \approx 6.87$
+
+  Bemerkung t =22/27 = 0.8148
+}%% end tnteop (implicit \newpage)
+
+
 
 \subsubsection*{Rezept}
 
@@ -86,7 +112,7 @@ $d=|\vec{d}|$ gerade den Abstand zwischen Gerade und Punkt angibt.
 
   3. Mit dem bekannten $t$ kann nun der Abstandsvektor $\vec{d} = \vec{d}(t)$ ermittelt werden.
 
-  4. Zuletzt wird mit die Länge $|\vec{d}|$ (TR \texttt{norm}) des Abstandsvektors bestimmt.
+  4. Zuletzt wird mit die Länge $\left| \vec{d} \,\right|$ (TR \texttt{norm}) des Abstandsvektors bestimmt.
 \end{rezept}
 
 \newpage
@@ -141,14 +167,14 @@ $$\vec{d} =  \vec{b} + s\cdot{}\vec{v} - (\vec{a} + t\cdot{} \vec{u})$$
 %%  $$\vec{d}=\vec{r}_1(t)-\vec{r}_2(s)$$
 
   4. Der Abstand ist dann durch die \textbf{Länge} (Norm) des Vektors gegeben:
-  $$\text{len} = \text{norm}(\vec{d})$$
+  $$\text{len} = \text{norm}\left(\vec{d}\right)$$
   
 \end{rezept}
 \newpage
 
 Zahlenbeispiel mit TR:
 $$g:\,\,\,\, \vec{r}_1(t) =  \vec{a}+t\cdot{}\vec{u} = \Spvek{3;2;1} + t \cdot{} \Spvek{2;2;0}$$
-$$h:\,\,\,\,  \vec{r}_2(t) = \vec{b}+s\cdot{}\vec{v} = \Spvek{7;2;0} + s \cdot{} \Spvek{1;0;1}$$
+$$h:\,\,\,\,  \vec{r}_2(s) = \vec{b}+s\cdot{}\vec{v} = \Spvek{7;2;0} + s \cdot{} \Spvek{1;0;1}$$
 
 Lösung der Abstands-Aufgabe zwischen zwei windschiefen Geraden mit dem
 Taschenrechner:
@@ -169,7 +195,7 @@ $$d = |\vec{d} | = \frac{5\sqrt{3}}{3} \approx 2.88675$$
 Gegeben sind die Geraden $g$ und $h$. Berechnen Sie deren Abstand.
 %% beispiel von hier: https://www.mathelike.de/abiturskript-mathematik-bayern/2-geometrie/2.4-abstandsbestimmungen/2.4.3-abstand-windschiefer-geraden.html
 $$g: \,\,\, \vec{r}(t) = \Spvek{2;6;2} + t\cdot{}\Spvek{0;1;0} \text{
-  und }  h: \,\,\, \vec{r}(t) = \Spvek{6;-2;8} + s\cdot{}\Spvek{-3;1;0} $$
+  und }  h: \,\,\, \vec{r}(s) = \Spvek{6;-2;8} + s\cdot{}\Spvek{-3;1;0} $$
 
 \TNTeop{
   1. $P$ und $Q$ auf $g$ und $h$ in parametrisierter Darstellung:

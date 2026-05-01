@@ -430,7 +430,9 @@ $$\Spvek{3;9;1} \pm \frac{\sqrt{35}}{5}\cdot{}\Spvek{3;-1;-5}$$
 
 \subsection{Linearkombination}
 
-\aufgabeML{Gegeben seien die Vektoren $\vec{a}$, $\vec{b}$ und
+\aufgabeML{(von Hand)
+
+Gegeben seien die Vektoren $\vec{a}$, $\vec{b}$ und
 $\vec{c}$.
 
 Des weiteren ist die folgende Beziehung bekannt:
@@ -442,7 +444,9 @@ $\vec{a}$, $\vec{b}$ und $\vec{c}$ an:
 }{$$\vec{d}  = \LoesungsRaumLang{-\vec{a} -\frac{13}{20}\cdot{} \vec{b} + \frac25\cdotp{}\vec{c}}$$}
 
 
-\aufgabeML{Stellen Sie den Vektor $\vec{z}$ als Linearkombination von
+\aufgabeML{(mit TR)
+
+Stellen Sie den Vektor $\vec{z}$ als Linearkombination von
 $\vec{a}$, $\vec{b}$ und $\vec{c}$ dar.
 $$\vec{a} = \Spvek{4;2;-7};
   \vec{b} = \Spvek{1;-4;-5};
@@ -455,7 +459,9 @@ $$\vec{a} = \Spvek{4;2;-7};
 \newpage
 
 
-\aufgabeML{Lässt sich der Vektor $\vec{a}$ als Linearkombination von
+\aufgabeML{(von Hand)
+
+Lässt sich der Vektor $\vec{a}$ als Linearkombination von
 $\vec{u}$, $\vec{v}$ und $\vec{w}$ schreiben? Falls ja, geben Sie die
 Linearkombination explizit an, falls nein, begründen Sie warum nicht.
 $$\vec{a} = \Spvek{5;6;-7}$$
@@ -498,19 +504,83 @@ $$-\Spvek{1;0;0} +13\Spvek{1;1;0}-7\Spvek{1;1;1} = \Spvek{5;6;-7}$$
 
 
 
-\aufgabeML{Gegeben sind die Vektoren
+\aufgabeML{(von Hand)
+
+Gegeben sind die Vektoren
 $$\vec{a}= \Spvek{-5;3;-7},
  \vec{b} = \Spvek{-3;-3;2} \text{ und }
  \vec{c} = \Spvek{0;2;-2}$$
-
 
 Berechnen Sie $\vec{d}$ so, dass
 $\vec{a}+\vec{b}+\vec{c}+\vec{d}=\vec{0}$ ergibt.
 \vspace{22mm}
 }{$\vec{d} = \LoesungsRaum{\Spvek{8;-2;7}}$}
+\newpage
 
+
+\aufgabeML{ (mit TR)
+
+Gegeben sind die Eckpunkte eines Dreiecks:
+ $A=(7|7|7)$, $B=(8|8|6)$ und $C=(3|4|-1)$
+
+Gesucht ist die Länge der Winkelhalbierenden
+$\left| \overrightarrow{w_\gamma} \right| = w_\gamma$
+
+Tipp: Bestimmen Sie zunächst von den Seiten $a$ und $b$ normierte
+Vektoren $\overrightarrow{n_a}$ und $\overrightarrow{n_b}$ (Länge
+1). Dann liegt der Vektor $\overrightarrow{n_a}
++ \overrightarrow{n_b}$ definitiv auf der Winkelhalbierenden des
+Winkels $\gamma$.
+
+Auf den Schnittpunkt der Winkelhalbierenden mit der Seite $c$ gelangen
+wir nun auf zwei Wege: 1. entlang der Winkelhalbierenden, 2. entlang
+der Seite $c$ von $A$ oder $B$ aus.
+
+
+}{%% Lösung
+$\overrightarrow{n_a} := \frac{\vec{a}}{a} = \frac{\overrightarrow{CB}}{|\vec{a}|}$
+
+$\overrightarrow{n_b} := \frac{\vec{b}}{b} = \frac{\overrightarrow{CA}}{|\vec{b}|}$
+
+Für ein $i$ und ein $k$ gilt:
+
+$\overrightarrow{w_\gamma} = i\cdot{} (\overrightarrow{n_a}
++ \overrightarrow{n_b}) = \vec{a} + k\cdot{}(\overrightarrow{BA})$
+
+Zudem:
+
+$$\vec{a} = \overrightarrow{CB} = \Spvek{5;4;7}; a = \sqrt{90}$$
+$$\vec{b} = \overrightarrow{CA} = \Spvek{4;3;8}; b = \sqrt{89}$$
+$$\vec{c} = \vec{b} - \vec{a} = \Spvek{-1; -1; 1}$$
+
+
+$$\overrightarrow{n_a} = \frac{1}{\sqrt{90}} \cdot{} \Spvek{5;4;7}$$
+$$\overrightarrow{n_b} = \frac{1}{\sqrt{89}} \cdot{} \Spvek{4;3;8}$$
+$$\overrightarrow{n_a} + \overrightarrow{n_b} =
+\Spvek{\frac{5}{\sqrt{90}} + \frac{4}{\sqrt{89}}; \frac{4}{\sqrt{90}} + \frac{3}{\sqrt{89}}; \frac{7}{\sqrt{90}} + \frac{8}{\sqrt{89}}}$$
+
+Mit den beiden «Wegen» ab Punkt $C$ zur gegenüberliegenden Seite gilt:
+
+$$i\cdot{} (\overrightarrow{n_a}
++ \overrightarrow{n_b}) = \vec{a} + k\cdot{}(\overrightarrow{BA})$$
+$$i\cdot{}\Spvek{\frac{5}{\sqrt{90}} + \frac{4}{\sqrt{89}}; \frac{4}{\sqrt{90}} + \frac{3}{\sqrt{89}}; \frac{7}{\sqrt{90}} + \frac{8}{\sqrt{89}}} = \Spvek{5-k; 4-k; 7-k}$$
+
+Zwei dieser drei Gleichungen mit TR nach $i$ und $k$ aufgelöst ergeben
+%$i=90\cdot{}\sqrt{89} -267\cdot{}\sqrt{10}$ und $k=90-3\cdot{}\sqrt{890}$.
+
+Somit ist
+
+$$\overrightarrow{w_\gamma} = \vec{a} + k\cdot{}\vec{c} = \Spvek{5;4;7} + (90-3\cdot{}\sqrt{890})\cdot{}\Spvek{-1;-1;1} = \Spvek{3\cdot{}\sqrt{890} -85; 3\cdot{}\sqrt{890} - 86; 97 - 3\cdot{}\sqrt{890}}$$
+
+ergo
+$$|\overrightarrow{w_\gamma}| = w_\gamma = \text{norm}\left({\overrightarrow{w_\gamma}}\right) \approx 9.4206$$
+}%% end aufgabeML
+
+
+
+
+\newpage
 \subsection{lineare Abhängigkeit}
-
 
 \aufgabeML{Sind die beiden folgenden Vektoren voneinander linear
 abhängig?
