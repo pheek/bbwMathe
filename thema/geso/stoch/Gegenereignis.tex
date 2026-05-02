@@ -167,8 +167,11 @@ $P(E_2) = P(\overline{E_1}) = \LoesungsRaumLen{90mm}{1 - P(E_1) = 1 - \frac38 = 
   maximal zwei gleiche Augenzahlen zu erzielen?}
 \TNT{7.6}{Gegenereignis = Alle drei Würfe sind gleich. Die
   Wahrscheinlichkeit von «alle drei sind gleich» liegt bei
-  $\frac6{6^3}$ und somit ist die gesuchte Wahrscheinlichkeit
+  $\frac{|\overline{E}|}{|\Omega|} = \frac{6}{6^3} = \frac{1}{6^2} = \frac{1}{36}$ und somit ist die gesuchte Wahrscheinlichkeit
 
+  
+
+  
   $$P=1-\frac6{6^3} =  \frac{210}{216}  = \frac{35}{36} \approx 97.2\%$$.}
 
 \TNTeop{}%% implicit \newpage
@@ -193,7 +196,7 @@ man gut im entarteten Baum mit einem einzigen Verlierer-Ast sehen.
 $n$ mal hintereinander zu verlieren, ergibt somit eine Wahrscheinlichkeit
 von $\left(\frac{31}{32}\right)^n$.
 
-Dies soll aber mit einer Wahrscheinlichkeit von 0.01 (=1\%)
+Dies soll aber mit einer Wahrscheinlichkeit von $\le$  0.01 (=1\%)
 eintreten. Nun könnte ich so lange die Anzahl ausprobieren, bis die
 Potenz $\left(\frac{31}{32}\right)^n$ unter 1\% sinkt. Das erhalte ich
 aber auch, wenn ich die Potenz mit dem einen Prozent gleichsetze.
@@ -202,8 +205,7 @@ $$\left(\frac{31}{32}\right)^n = 0.01$$
 
 Das Lösen dieser Exponentialgleichung liefert für $n$:
 
-$$n = \log_{\frac{31}{32}}(0.01) =
-\frac{\lg(0.01)}{\lg(\frac{31}{32})} = \frac{-2}{\lg(\frac{31}{32})} \approx  145.05$$
+$$n = \log_{\frac{31}{32}}(0.01) = \approx  145.05$$
 
 Somit muss ich 146 mal am Rad drehen, damit die
 Gewinnwahrscheinlichkeit 99\% übersteigt.
@@ -216,7 +218,7 @@ gerade die 1\% Verlustwahrscheinlichkeit aller Spiele.
 \newpage
 
 
-\olatLinkGESOKompendium{5.3}{44}{5., 6., 8., 9. und 10.}
+\olatLinkGESOKompendium{5.3}{44}{6., 8., 9. und 10.}
 
 \newpage
 

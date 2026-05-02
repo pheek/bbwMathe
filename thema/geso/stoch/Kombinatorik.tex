@@ -136,12 +136,18 @@ $$N = n^k$$
 %%\renewcommand{\arraystretch}{1.8}
 \begin{bbwFillInTabular}{rcp{14cm}}
   $N$ &=& \TRAINER{\textbf{Anzahl Variationen}}\\
+
+  \noTRAINER{\vspace{40mm}}
+  
   $n$ &=& \TRAINER{\textbf{Anzahl} der pro «Ziehung» zur Verfügung stehenden
     Objekte (\textbf{optionale} Auswahl).}
-\noTRAINER{\vspace{20mm}}
-    \TRAINER{Dabei muss nicht jedes der $n$
-    \textbf{Objekte} gezogen werden.}\\
-  $k$ &=& \TRAINER{\textbf{Anzahl vorgeschriebene Ziehungen}}\noTRAINER{\vspace{20mm}}\\
+  
+\TRAINER{Dabei muss nicht jedes der $n$
+      \textbf{Objekte} gezogen werden.}\\
+
+\noTRAINER{\vspace{16mm}}
+    
+  $k$ &=& \TRAINER{\textbf{Vorgeschriebene Anzahl an Ziehungen}}\noTRAINER{\vspace{10mm}}\\
 \end{bbwFillInTabular}
 %%\renewcommand{\arraystretch}{1}
 
@@ -361,7 +367,7 @@ Erinnern Sie sich auch an dieses Resultat? \TRAINER{$= \e \approx
 \subsubsection{Permutation einer Teilmenge}\index{Permutation!einer Teilmenge}\label{kombiVariationEinerTeilmenge}
 Stellen wir uns vor, wir könnten sechs Kunstbände (Bücher) in ein schmales
 Regal stellen. Mehr geht nicht, weniger wollen wir nicht.
-Nun haben wir zehn solcher Bücher zur Auswahl. Auf wie viele Arten können wir nun sechs Bücher in unser Regal einordnen?
+Nun haben wir zehn solcher Bücher zur Auswahl. Auf wie viele Arten können wir nun sechs Bücher in unser Regal einreihen?
 
 \TNT{6}{
   \bbwCenterGraphic{14cm}{geso/stoch/img/ZehnBuecher.png}
@@ -557,7 +563,7 @@ und alle Vertauschungen: $10\cdot{}9\cdot{}8\cdot{}7 +
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\subsubsection{Mississippi-Formel}\index{Mississippi-Formel}\index{Multinomialkoeffizient}
+\subsubsection{Mississippi-Formel (optional)}\index{Mississippi-Formel}\index{Multinomialkoeffizient}
 Der sog. Multinomialkoeffizient ist eine spezielle Form der Fakultät.
 
 Auf wie viele Arten kann ich die Buchstaben im Namen «MAMMA» neu anordnen?
@@ -574,7 +580,9 @@ Auf wie viele Arten kann ich die Buchstaben im Namen «MAMMA» neu anordnen?
 
 \begin{gesetz}{Multinomialkoeffizient}{}
   $$N = \LoesungsRaumLen{40mm}{\frac{n!}{k_1! \cdot{} k_2! \cdot{} k_3! \cdot{} k_4! \cdot{}  ...}}$$
+
   \noTRAINER{\vspace{6mm}}
+
   Dabei ist $n$ die Anzahl aller Objekte und $k_i$ die Anzahl
   gleichartiger Objekte zum Typ $i$ (\zB Buchstabe $i=2$  für «M»: $k_i=k_2=3$).
 
@@ -795,7 +803,8 @@ Objekte $(n-k)!$ davon weg, es bleibt: $$\frac{n!}{k!(n-k)!}$$
   Die Variation ohne Wiederholung berechnet sich mit
   $$\frac{n!}{(n-k)!} = \text{ «nPr» }.$$
   Somit ist der Binomialkoeffizient nur eine Erweiterung:
-  $${n \choose k} = \frac{n!}{k!(n-k)!} = \frac{\text{ «nPr» }}{k!}$$
+  $${n \choose k} = \frac{n!}{k!(n-k)!} = \frac{n \text{ «nPr» } k}{k!} =
+  n \text{ «nCr»} k$$
   \end{bemerkung}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

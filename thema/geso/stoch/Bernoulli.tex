@@ -208,6 +208,14 @@ hat?}
 \newpage
 \subsubsection{Kumulierte Wahrscheinlichkeit}
 
+\subsubsection*{Motivation}
+
+\begin{beispiel}{Hygienemasken}{}
+  0.2\,\% der hergestellten Hygienemasken sind defekt. Ich kaufe 1000
+  Stk. Wie groß ist die Wahrscheinlichkeit, dass weniger als 6 defekt sind?
+  \end{beispiel}
+\newpage
+
 Basketballspieler «Basil Ballisti» trifft mit einer
 Wahrscheinlichkeit von 85\%.
 
@@ -283,12 +291,18 @@ $k_{\text{max}}=17$ bei $x$ eintragen.
 
 \subsection*{Aufgaben}
 
+\aufgabenFarbe{Wir wissen: 0.2\,\% der hergestellten Hygienemasken
+  sind defekt. Wie groß ist die Wahrscheinlichkeit, dass von zufällig
+  ausgewählten 1000 Stück maximal 5 defekt sind?}
+
+\TNT{2}{$p=0.002$, $n=1000$, $P(X \le 5) \approx 98.35\,\%$}
+
 \aufgabenFarbe{Wie groß ist die Wahrscheinlichkeit, dass
   Cristiano Ronaldo (*1985, Fußballspieler), dessen durchschnittliche Trefferwahrscheinlichkeit bei 84\% liegt,
-  in einem Training mit 40 Torschüssen maximal 35 Tore erzielt?
+  in einem Training mit 40 Torschüssen weniger als 36 Tore erzielt?
 }
 \TNT{2}{
-$p=0.84$; $n=40$; $k=35$ somit $P(X\le 35) \approx 78.90\%$
+$p=0.84$; $n=40$; $k=35$ somit $P(X < 36) = P(X\le 35) \approx 78.90\,\%$
 }
 
 
@@ -303,12 +317,12 @@ $p=0.84$; $n=40$; $k=35$ somit $P(X\le 35) \approx 78.90\%$
     b) $37.25\%$ (binomialpdf mit $n=25; p=0.045; x=1$)\\
     c) $97.57\%$ (binomial\textbf{c}df mit $n=25; p=0.045; x=3$)\\
 }%% end TNT
-
+\newpage
 
 
 \aufgabenFarbe{Die Herstellung von LEDs (Licht emittierende Dioden) hat einen Ausschuss (= defekte Teile) von 0.5\%. Sie kaufen 30 solcher Dioden (LEDs) für ein Nachtlicht.
   Mit welcher Wahrscheinlichkeit sind maximal zwei davon defekt?}
-\TNTeop{
+\TNT{3.2}{
   $$P(X \le 2) = \sum_{k=0}^{2}{30 \choose k} \cdot{}0.005^k \cdot{} 0.995^{30-k} \approx 99.954\%$$
 }%% end TNT
 
@@ -323,7 +337,7 @@ b) ... maximal eine \epsdice{6} zu werfen?\\
 c) ... nicht viermal eine eine \epsdice{6} zu werfen?\\
 d) ... mehr als dreimal eine \epsdice{6} zu werfen?\\
 }%% end Aufgabenfarbe
-\TNT{6}{
+\TNTeop{
 a) $P(X=4) = {10 \choose 4} \cdot{} \left( \frac16 \right)^4 \cdot{}
 \left(\frac56\right)^6 \approx 5.43\%$
 
@@ -335,7 +349,7 @@ c) $P(X \ne 4) = 1- P(X = 4) \approx 1 - 0.0543 = 94.57\%$
 d) $P(X > 3) = 1-P(X\le 3) = 1 - \sum_{k=0}^{3} {10 \choose k} \cdot{} \left( \frac16 \right)^k \cdot{}
 \left(\frac56\right)^{10-k} \approx 6.97\%$
 
-}%% end TNT
+}%% end TNTeop (implicit \newpage)
 
 
 %% Gegenwahrscheinlichkeit:
@@ -343,7 +357,7 @@ d) $P(X > 3) = 1-P(X\le 3) = 1 - \sum_{k=0}^{3} {10 \choose k} \cdot{} \left( \f
   a) Mit welcher Wahrscheinlichkeit haben Sie mindestens zwei Spielzeuge in Ihren 10 Packungen?\\
   b) (*) Wie viele Packungen müssen Sie kaufen, damit Sie mit über 95\% Wahrscheinlichkeit mindestens zwei Spielzeuge dabei haben?}
 
-\TNT{3.2}{
+\TNT{4}{
   Gegenwahrscheinlichkeit:
   
   a) $$P(X \ge 2) = 1 - P(X \le 1) = 1 - 73.61\% \approx 26.39\%$$
@@ -352,7 +366,6 @@ d) $P(X > 3) = 1-P(X\le 3) = 1 - \sum_{k=0}^{3} {10 \choose k} \cdot{} \left( \f
 }%% end TNT
 
 
-\newpage
 
 \aufgabenFarbe{Lukas bringt zu einem Würfelspiel seinen eigenen Spielwürfel mit. Im Verlauf
 des Spiels entsteht der Verdacht, Lukas’ Würfel zeige überdurchschnittlich
