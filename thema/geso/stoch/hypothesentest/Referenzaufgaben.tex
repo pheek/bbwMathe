@@ -2,11 +2,43 @@
 %%
 
 \subsection{Referenzaufgaben}
+\subsubsection{Referenzaufgabe: Linksseitiger Hypothesentest}
+
+Ein Hersteller von Kanülen behauptet, dass maximal 0.1\,\% seiner
+Verpackungen beschädigt seien. Er glaubt sogar, dass weniger defekt
+sind.
+Seine Qualitätsabteilung soll einen Test mit 10\,000 Stück durchführen.
+
+Erstellen Sie einen Hypothesentest für seine Annahme auf einem
+Signifikanzniveau von $\alpha \le 5\,\%$ und geben Sie Annahme- und
+Ablehnungsbereich an.
+
+
+\TNTeop{
+  Eine Tabelle mit $n=10\,000, p=0.001$ liefert:
+
+  \begin{tabular}{cc}
+    $k$ & $P(X <= k)$ \\\hline
+    2   &  0.28\,\% \\\hline
+    3   &  1.03\,\% \\\hline
+    4   &  2.92\,\% \\\hline
+    5   &  6.70\,\% \\\hline
+    6   &  ...\,\%\\\hline
+  \end{tabular}
+
+  Unsere Trennung zwischen 5\,\% Annahmebereich und dem
+  Ablehnungsbereich liegt bei $k=4$ und $k+1=5$. Mit anderen Worten:
+  Der Annahmebereich ist [0;4] defekte Kanülen und der
+  Ablehnungsbereich sind [5;10\,000] defekte Kanülen.
+ }
+\newpage
+
 
 \subsubsection{Referenzaufgabe: Rechtsseitiger Hypothesentest}
-Ein Hersteller von Kanülen behauptet, dass maximal 0.1\,\% seiner Verpackungen beschädigt seien. Sie wollen einen Test mit 1000 Stück durchführen.
+Ein Hersteller von Kanülen behauptet, dass maximal 0.1\,\% seiner
+Verpackungen beschädigt seien. Wir glauben, dass mehr defekt sind. Sie wollen einen Test mit 1000 Stück durchführen.
 
-Erstellen Sie einen Hypothesentest auf einem Signifikanzniveau von $\alpha \le 1\,\%$.
+Erstellen Sie einen Hypothesentest für unsere Annahme auf einem Signifikanzniveau von $\alpha \le 1\,\%$.
 
 \TNTeop{
   Eine Tabelle mit $n=1000, p=0.001$ liefert:
@@ -42,4 +74,3 @@ denn nun effektiv in den Annahmebereich und wie viel \% in den
 Ablehnungsbereich fallen.}
 
 \newpage
-
