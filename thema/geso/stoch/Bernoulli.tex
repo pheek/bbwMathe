@@ -334,19 +334,22 @@ Wie groß ist die Wahrscheinlichkeit mit einem Spielwürfel
 (\epsdice{1} bis \epsdice{6}) in 10 Würfen...\\
 a) ... genau viermal eine \epsdice{6} zu werfen?\\
 b) ... maximal eine \epsdice{6} zu werfen?\\
-c) ... nicht viermal eine eine \epsdice{6} zu werfen?\\
-d) ... mehr als dreimal eine \epsdice{6} zu werfen?\\
+c) ... höchstens eine \epsdice{6} zu werfen?\\
+d) ... nicht viermal eine eine \epsdice{6} zu werfen?\\
+e) ... mehr als dreimal eine \epsdice{6} zu werfen?\\
 }%% end Aufgabenfarbe
 \TNTeop{
 a) $P(X=4) = {10 \choose 4} \cdot{} \left( \frac16 \right)^4 \cdot{}
-\left(\frac56\right)^6 \approx 5.43\%$
+\left(\frac56\right)^6 \approx 5.43\,\%$
 
 b) $P(X \le 1) =\sum_{k=0}^{1} {10 \choose k} \cdot{} \left( \frac16 \right)^k \cdot{}
-\left(\frac56\right)^{10-k} \approx 48.45\%$
+\left(\frac56\right)^{10-k} \approx 48.45\,\%$
 
-c) $P(X \ne 4) = 1- P(X = 4) \approx 1 - 0.0543 = 94.57\%$
+c) ca. 48.45\,\%: Dies ist die selbe Aufgabe wie b)
 
-d) $P(X > 3) = 1-P(X\le 3) = 1 - \sum_{k=0}^{3} {10 \choose k} \cdot{} \left( \frac16 \right)^k \cdot{}
+d) $P(X \ne 4) = 1- P(X = 4) \approx 1 - 0.0543 = 94.57\,\%$
+
+e) $P(X > 3) = 1-P(X\le 3) = 1 - \sum_{k=0}^{3} {10 \choose k} \cdot{} \left( \frac16 \right)^k \cdot{}
 \left(\frac56\right)^{10-k} \approx 6.97\%$
 
 }%% end TNTeop (implicit \newpage)
