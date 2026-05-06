@@ -12,15 +12,18 @@ Voraussetzung ist ein Taschenrechner, der die Binomialverteilung kumuliert für 
     \item Es sollen Säulendiagramme zu den Verteilungen gezeichnet werden können.
     \item Bei gegebenem $\alpha$-Signifikanzniveau soll der Annahmebereich ($0..k$) und der Ablehnugsbereich ($k+1..n$) ermittelt werden können.
     \item Die Wahrscheinlichkeit für Fehler 1. und 2. Art ($\alpha$- und $\beta$-Fehler) werden verlangt
+    \item Es werden nur einseitige Hypothesentests betrachtet
 \end{itemize}
     
 }%% end chapterIntro
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \kNiveauAufgabe{
 Die Statistiker eines Landes behaupten, die Anzahl weißer Personenwagen (PW) betrage \textbf{minimal} 20\,\%.
 Ein Student hat darauf hin 260 PW ausgezählt und glaubt, es sind weniger als die 20\,\%. Die Nullhypothese ist $H_0: p=0.20$. 
+
+Wir gehen von einer Binomialverteilung aus.
 
 a) Wie lautet die Alternativhypothese? 
 
@@ -35,15 +38,15 @@ b) Bei $k$ = 36 liefert binomial\textbf{c}df 0.637\,\% (danach bereits > 1\,\%).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \kNiveauAufgabe{
-Christian und Philipp besitzen je einen klassischen sechsseitigen Spielwürfel. Ein Würfel wird 60-mal geworfen. Sei $X =$ Die Anzahl der geworfenen Sechsen.
+Christian und Philipp gönnen sich ab und zu einen Spieleabend. Sie besitzen klassische sechsseitige Spielwürfel. Ein Würfel wird 60-mal geworfen. Sei $X =$ Die Anzahl der geworfenen \epsdice{6}-er.
 
-a) Wir nehmen vorerst an, die beiden Würfel seien fair. Bestimmen Sie den Erwartungswert für die Anzahl der geworfenen Sechsen bei 60 Würfen. 
+a) Wir nehmen vorerst an, alle Würfel seien fair. Bestimmen Sie den Erwartungswert für die Anzahl der geworfenen Sechsen bei 60 Würfen. 
 
 b) Bestimmen Sie die Wahrscheinlichkeit, dass in 60 Würfen mit einem fairen Würfel genau 14 Sechsen fallen.
 
 \vspace{3mm}
 
-Nun besteht im Laufe eines Spieleabends der Verdacht, dass der Würfel von Philipp manipuliert ist und häufiger eine 6 zeigt als ein fairer Würfel.
+Nun besteht im Laufe eines Spieleabends der Verdacht, dass der mitgebrachte Würfel von Philipp manipuliert ist und häufiger eine 6 zeigt als ein fairer Würfel.
 
 c) Formulieren Sie eine geeignete Nullhypothese H${}_0$ und eine Alternativhypothese H${}_1$ für diese Vermutung.
 
@@ -53,7 +56,7 @@ e) Wie gross ist die Wahrscheinlichkeit für Fehler erster Art für die Entschei
 
 f) Im Laufe des Abends gibt Philipp zu, dass sein Würfel tatsächlich manipuliert ist und mit $p = 0.3 =\frac{3}{10} $ die Augenzahl 6 erscheint. Berechnen Sie die Wahrscheinlichkeit für Fehler zweiter Art mit Ihrer Entscheidungsregel von Aufgabe d).
 }{%% Lösungen
-a) $$\mathbb{E}(\epsdice{6})=\frac{1}{6}\cdot{}60 = 10$$
+a) $$\mathbb{E}(\epsdice{6})= n\cdot{} p  = 60 \cdot{} \frac{1}{6} = 10$$
 
 b) 5.04\,\% = Binomialpdf(60, 1/6, 14)
 
@@ -68,18 +71,30 @@ e) Der Fehler 1. Art sagt, dass der faire Würfel als unfair taxiert wird. Bei e
 f) $P(X\le 17; 0.3; 60) \approx 45.14\,\%$ Mit ca 45\,\% Wahrscheinlichkeit wird ein gezinkter Würfel immer noch als fair angesehen, wenn wir [0;17] als Annahmebereich der Nullhypothese beibehalten.
 }%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \kNiveauAufgabe{
 Bei einer Lieferung von 250 Gläsern mit Brotaufstrich werden einige gefunden, die
-zu wenig Gewicht haben. Der Vertrieb behauptet, dass mindestens 95\,\% das Norm-
-gewicht haben. Zur Prüfung wird ein
-linksseitiger Test mit 60 Gläsern und einem
+zu wenig Gewicht haben. Der Vertrieb behauptet, dass mindestens 95\,\% das Normgewicht haben. Wir gehen von einer Binomialverteilung aus. Zur Prüfung wird ein linksseitiger Test mit 60 Gläsern und einem
 Signifikanzniveau von 10\,\% durchgeführt;
 49 Gläser haben das angegebene Gewicht, 11 nicht.
 
 Gib den Ablehnungsbereich an und überprüfe das Ergebnis.
 }{%% Lösungen
-not yet
+$H_0$: 95\,\% der Dosen sind OK. $n=60$, $p=0.95$, $\alpha\le10\,\%$
+
+Linksseitiger Test:
+
+Ablehnungsbereich: [0;54], Annahmebereich [55;60] Die 49 guten Gläser liegen im Ablehnungsbereich; die Hypothese 95\,\% sind OK wird verworfen.
+
+Alternativ: Rechtsseitiger Test
+
+$H_0$ max 5\,\% der Dosen sind fehlerhaft
+
+Der Annahmebereich ist [0;5], der Ablehungsbereich [6;60]. Die 11 fehlerhaften Gläser liegen im Ablehungsbereich. Auch diese mit dem Gegenereignis formulierte Nullhypothese kann verworfen werden. 
 }%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \kNiveauAufgabe{
 Bestimme mit einem linksseitigen Hypothesentest den Ablehnungsbereich
@@ -95,6 +110,7 @@ c) $\alpha = 0.01$
 }{% Lösungen
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \kNiveauAufgabe{
 Laut einer Studie sind ca. 14\,\% der Bevölkerung in Deutschland Linkshänder. Berechne, wie groß
@@ -107,6 +123,7 @@ b) sechs Linkshänder darunter sind
 not yet
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \kNiveauAufgabe{
 Bei der Produktion von einfachen USB-Sticks als Werbegeschenke
@@ -125,6 +142,8 @@ Wählen Sie aus:
 }{%% Loesung
 Ausprobieren: $p$ = $p$-Defekt $\approx$ 2.0057\,\%. Dabei habe ich maximal 7 defekte mit Wahrscheinlichkeit von 94.9997\,\%. Die beste Lösung aus der Auswahl sind 2\,\%. 
 }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \kNiveauAufgabe{%% aufgabe
 Marktforscher X.  behauptet, dass in 46 \% der Haushalte ein Mikrowellengerät
