@@ -128,7 +128,7 @@ Mengenbezeichnungen bei Funktionen:
 
 \subsection{Arten der Darstellung}
 \begin{itemize}
-\item Wertetabelle\index{Wertetabelle}:
+\item \textbf{Wertetabelle}\index{Wertetabelle}:
 
   \begin{tabular}{c|cccccc}$x$ & -2 & -1 & 0 & 1 & 2 & 2.5\\
     \hline\\
@@ -139,107 +139,23 @@ Mengenbezeichnungen bei Funktionen:
 \noTRAINER{\bbwGraph{-3}{4}{-1.5}{6}{}}
 \TRAINER{  \bbwFunction{-3}{4}{-1.5}{6}{\x*\x - 1 }{-2:2.5}}
 
-\item Funktionsschreibweise (verschiedene Notationen)\\
+\item \textbf{Term}: Funktionsschreibweise (verschiedene Notationen)\\
 
-Funktionsgleichung...:
-\noTRAINER{\vspace{15mm}}\TRAINER{$$y=x^2-1$$}
 
-... mit Namen:
-\noTRAINER{\vspace{15mm}}\TRAINER{$$f(x)=x^2-1$$}
-\noTRAINER{\vspace{15mm}}\TRAINER{$$f:\,\,\, y = x^2-1$$}
+  \begin{bbwFillInTabular}{l|c|c|c}
+    &1. Beispiel&2. Beispiel& 3. Beispiel\\\hline
+    Funktionsgleichung & $y=x^2-1$ & \TRAINER{$y=3x-4$} & $y=\frac1x$ \hspace{5mm} \\\hline\
+    ... mit Namen      & $f(x) = x^2-1$ & $g(x) = 3x-4$ & $h(x)=\TRAINER{\frac1x}$ \\\hline
+    
+            & $f:  y = x^2-1$ & \TRAINER{$g: y = 3x-4$} & $\TRAINER{h:  y= \frac{1}{x}}$ \\\hline
+    Funktionsvorschrift & $x\mapsto x^2-1$ & $x\mapsto{} 3x-4$&
+    $\TRAINER{x\mapsto \frac{1}{x}}$\\\hline
 
-Funktionsvorschrift:
-\noTRAINER{\vspace{15mm}}\TRAINER{$$x \mapsto x^2-1$$}
-
+    Term \TRAINER{ist allen gemeinsam} &\TRAINER{$x^2-1$}&\TRAINER{$3x-4$}&$\frac{1}{x}$\\\hline
+  \end{bbwFillInTabular}
+  
 \end{itemize}
 \newpage
-
-\subsubsection{Definitions- und Wertemenge}
-
-\begin{definition}{Definitionsmenge $\mathbb{D}$}{}
-  
-Mit \textbf{Definitionsmenge}\index{Definitionsmenge|textbf} $\mathbb{D}$ (auch
-Definitionsbereich\index{Definitionsbereich|textbf}) wird die Menge aller
-möglichen Funktionsargumente bezeichnet, kurz alle Zahlen, die für $x$
-eingesetzt werden dürfen. 
-\end{definition}
-
-\begin{definition}{Wertemenge $\mathbb{W}$}{}
-Unter der \textbf{Wertemenge}\index{Wertemenge|textbf} (auch Wertebereich\index{Wertebereich|textbf} oder Bildmenge\index{Bildmenge}) $\mathbb{W}$
-verstehen wir die Menge aller getroffenen Werte aus der
-Grundmenge.\footnote{Bemerkung: im Buch \cite{marthaler21alg} wird
-  mit dem Begriff «Bildmenge» der Wertevorrat bezeichnet!}
-\end{definition}
-
-\begin{definition}{Grundmenge $\mathbb{G}$}{}
-Die \textbf{Grundmenge}\index{Grundmenge} ($\mathbb{G}$) und der \textbf{Wertevorrat}
-sind bei uns stets $\mathbb{R}$. Definitions- und Wertemenge sind also
-Teilmengen von $\mathbb{R}$.
-  \end{definition}
-
-
-
-\begin{beispiel}{Definitions- und Wertemenge}{}
-  In obigem Beispiel $f(x) = x^2-1$ sind:
-
-  \vspace{3mm}
-  $$\mathbb{D} = \LoesungsRaum{\mathbb{R}}$$
-
-
-  \vspace{3mm}
-  $$\mathbb{W} = \LoesungsRaum{[-1; \infty{}[}$$
-
-\end{beispiel}
-
-\subsubsection*{Begriffe}
-
-  \begin{tabular}{l|l}
-    \textit{Begriff} & \textit{Beispiel(e)}\\\hline
-    \textbf{Funktionsgleichung}\index{Funktion!Gleichung}\index{Gleichungen!Funktion}              & \TRAINER{$y=x^2-1$, $f(x)=x^2-1$}\\\hline
-    \textbf{Funktionsargumente}\index{Funktion!Argument}\index{Argument!Funktionen}                & \TRAINER{$x$-Werte:  -2, -1, 0, 1, ...}\\\hline
-    \textbf{unabhängige Variable}\index{Funktion!unabhängige Variable}\index{unabhängige Variable} & \TRAINER{$x$}\\\hline
-    \textbf{Funktionswert}     \index{Funktion!Wert}\index{Wert!einer Funktion}                    & \TRAINER{$y$-Werte: 3, 0, -1, 0, ... }\\\hline
-    \textbf{abhängige Variable}\index{Funktion!abhängige Variable}\index{abhängige Variable}       & \TRAINER{$y$}\\\hline
-    Funktionsterm\index{Funktion!Term}\index{Funktionsterm}\index{Terme!Funktionsterm}             & \TRAINER{$x^2-1$}\\\hline
-    Funktionsvorschrift\index{Funktion!Vorschrift}\index{Vorschrift!Funktionsvorschrift}           & \TRAINER{$x\mapsto{}x^2-1$}\\\hline
-%%    \textbf{Funktionsparameter}\index{Funktion!Parameter}\index{Parameter!Funktionen} & \TRAINER{$x$}\noTRAINER{\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,}\\\hline
-  \end{tabular}
-
-\newpage
-
-
-\GESO{
-  \subsection*{Beispiel Jahreszins (optional)}
-  \begin{beispiel}{Jahreszins}{}
-    Jahreszins bei gegebenem Zinssatz von 3\% und Ausgangskapital $K$:
-
-    \vspace{5mm}
-    
-    $\DefinitionsMenge{} = \LoesungsRaum{\mathbb{R}^{+}_0}$
-
-    \vspace{5mm}
-    
-    $\Wertebereich{} = \LoesungsRaum{\mathbb{R}_0^{+}}$
-
-    \vspace{5mm}
-    
-    $\text{Zinsfunktion}: \LoesungsRaum{\mathbb{R}_0^{+} \rightarrow
-      \mathbb{R}_0^{+}}$
-
-    \vspace{5mm}
-
-    $\text{ mit } K \LoesungsRaum{\mapsto{} K\cdot{}3 \cdot{}
-      \frac1{100}}$
-
-    \textbf{Funktionsterm: } $K\cdot{}3 : 100$
-
-    \textbf{Funktionsargument: } $K$
-
-    \textbf{Funktionswert: } $1.5$ (bei $K=50.-$) oder $6.-$ (bei $K = 200.-$)
-    \end{beispiel}
-
-\newpage%
-}%
 
 
 \subsection*{Aufgaben}

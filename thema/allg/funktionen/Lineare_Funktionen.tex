@@ -52,7 +52,7 @@ Ab bzw. bis wo lohnt sich das Unternehmen «A» bzw. «B»?
 
   Ablesen bei ca. 13-14 km.
 
-  Rechnerisch:
+  Rechnerisch (A(x): Preis Unternehmen A in CHF für x km):
 
   $$A(x) = 10\text{[CHF]}
   +x\text{[km]}\cdot{} 0.60 \left[\frac{\text{CHF}}{\text{km}}\right] $$
@@ -68,6 +68,63 @@ Ab bzw. bis wo lohnt sich das Unternehmen «A» bzw. «B»?
 }%% end noTRAINER
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Definitions- und Wertemenge}
+
+\begin{definition}{Definitionsmenge $\mathbb{D}$}{}
+  
+Mit \textbf{Definitionsmenge}\index{Definitionsmenge|textbf} $\mathbb{D}$ (auch
+Definitionsbereich\index{Definitionsbereich|textbf}) wird die Menge aller
+möglichen Funktionsargumente bezeichnet, kurz alle Zahlen, die für $x$
+eingesetzt werden dürfen. 
+\end{definition}
+
+\begin{definition}{Wertemenge $\mathbb{W}$}{}
+Unter der \textbf{Wertemenge}\index{Wertemenge|textbf} (auch Wertebereich\index{Wertebereich|textbf} oder Bildmenge\index{Bildmenge}) $\mathbb{W}$
+verstehen wir die Menge aller getroffenen Werte aus der
+Grundmenge.\footnote{Bemerkung: im Buch \cite{marthaler21alg} wird
+  mit dem Begriff «Bildmenge» der Wertevorrat bezeichnet!}
+\end{definition}
+
+\begin{definition}{Grundmenge $\mathbb{G}$}{}
+Die \textbf{Grundmenge}\index{Grundmenge} ($\mathbb{G}$) und der \textbf{Wertevorrat}
+sind bei uns stets $\mathbb{R}$. Definitions- und Wertemenge sind also
+Teilmengen von $\mathbb{R}$.
+\end{definition}
+\newpage
+
+\begin{beispiel}{Definitions- und Wertemenge}{}
+  In obigem Taxi-Beispiel $A(x) = 0.6\cdot{}x + 10$ sind:
+
+  \vspace{3mm}
+  $$\mathbb{D} = \LoesungsRaum{\mathbb{R^{+}}}$$
+
+
+  \vspace{3mm}
+  $$\mathbb{W} = \LoesungsRaum{[10; \infty{}[}$$
+
+\end{beispiel}
+
+\subsubsection*{Begriffe}
+
+  \begin{bbwFillInTabular}{l|l}
+    \textit{Begriff} & \textit{Beispiel(e)}\\\hline
+    \textbf{Funktionsgleichung}\index{Funktion!Gleichung}\index{Gleichungen!Funktion}
+    & \TRAINER{$y=0.6x+10$}\noTRAINER{\hspace{70mm}\,}\\\hline
+    \textbf{Funktionsargumente}\index{Funktion!Argument}\index{Argument!Funktionen}
+    & \TRAINER{$x$-Argumente:  1, 2, 5 (km)}\\\hline
+    \textbf{Funktionswert}     \index{Funktion!Wert}\index{Wert!einer
+      Funktion}                    & \TRAINER{$y$-Werte: 10.60, 11.20,
+      13.- (CHF)}\\\hline
+    \textbf{unabhängige Variable}\index{Funktion!unabhängige Variable}\index{unabhängige Variable} & \TRAINER{$x$}\\\hline
+    \textbf{abhängige Variable}\index{Funktion!abhängige Variable}\index{abhängige Variable}       & \TRAINER{$y$}\\\hline
+    Funktionsterm\index{Funktion!Term}\index{Funktionsterm}\index{Terme!Funktionsterm}
+    & \TRAINER{$0.6x+10$}\\
+  \end{bbwFillInTabular}
+
+
+\newpage
+
 
 \subsection{Taschenrechner}\index{Taschenrechner!Funktionen}
 
@@ -134,6 +191,53 @@ Ist $a=0$, so sprechen wir auch von der konstanten Funktion.
 
 \vspace{3mm}
 \hrule
+\newpage
+
+\subsection*{In Grundform bringen}
+
+Bringen Sie die folgenden Funktionen in die Grundform (falls es sich
+um lineare Funktionen handelt):
+
+$$f(x)=\frac{x}{3} - \sqrt{2} + \pi\cdot{}x - \frac{1}{7}\cdot{}x + \frac{5}{3} -2.5x$$
+\TNT{4}{
+  sortieren:
+  
+  $f(x) = \frac{1}{3}\cdot{}x + \pi\cdot{}x - \frac{1}{7}x -2.5x +
+  \frac{5}{3} - \sqrt{2}$
+
+  $x$ ausklammern und wo möglich zusammenfassen
+
+  $f(x) = \left(\frac{1}{3} - \frac{1}{7} + \pi - 2.5\right)\cdot{}x +
+  \left(\frac{5}{3} - \sqrt{2}\right) = \left(\frac{-97}{42} +
+  \pi\right)x + \left(\frac{5}{3} - \sqrt{2}\right) $
+}
+
+$y=x+2x-7+\frac{x}3$
+
+\TNT{1.2}{ist linear: $y= \frac{10}{3}x-7$}
+
+$f(x) = x+3x + x^2$
+
+\TNT{1.2}{ist nicht linear!}
+
+$2y+x = 4$
+
+\TNT{1.2}{ist linear: $2y=4-x$ ergo $y = \frac{-1}{2}\cdot{}x + 4$}
+
+$x\mapsto \frac{1}{3}x+\frac13 + \frac{x}{4} -\frac14$
+
+\TNT{1.2}{ist linear $x\mapsto \frac{7}{12}x + \frac{1}{12}$}
+
+$y = \frac{x}{3} + \frac{3}{x}$
+
+\TNT{1.2}{ist nicht linear}
+
+$g(x) = \frac{x}{a} + c + bx$
+
+\TNT{1.2}{ist linear $g(x) = \left(\frac{1}{a} + b\right)\cdot{}x +
+  c$}
+\newpage
+
 
 \subsection*{Aufgaben}
 %%\GESOAadBMTA{250}{6. a) b)}
@@ -199,6 +303,13 @@ $$y=a\cdot{}0+b$$
 $$y=b$$
 Was uns zeigt, dass der  Punkt $P=(0|b)$ der Geraden immer auf der $y$-Achse liegt.
 
+\begin{beispiel}{$y$-Achsenabschnitt}{}
+  Was ist der y-Achsenabschnitt der Funktion $y=\frac78 x- 13.45$
+
+  \TNT{2}{$y$-Achsenabschnitt ist hier $-13.45$}
+\end{beispiel}
+
+
 \subsection*{Aufgaben}
 %%\GESOAadBMTA{250}{6. a) b)}
 
@@ -250,6 +361,7 @@ wozu einfach zwei Punkte auf der Geraden zu verwenden sind:
   \bbwDot{3,-1}{black}{north}{}
 }
 
+\TRAINER{Das Dreieck $V:H$ ist ähnlich zum Dreieck $a:1$, somit $\frac{V}{H}=a$}
 
 Steigt die Gerade in $x$-Richtung an, so ist ${\color{blue}a}$ positiv
 (${\color{blue}a>0}$) {\color{blue} «Steigung»};\index{Steigung}
@@ -291,8 +403,26 @@ $$a=\frac{{\color{red}V}}{{\color{blue}H}}$$
 \newpage
 
 
+
+\textbf{Ablesen}
+
+\bbwCenterGraphic{180mm}{allg/funktionen/img/LineareFunktionenAblesen.png}
+
+\TNTeop{
+  rot       : $f_1(x) =  \frac{ 2}{3}x + 2   $\\
+  braun     : $f_2(x) =  \frac{ 6}{7}x - 2   $\\
+  dunkelgrün: $f_3(x) =  \frac{-2}{5}x + 3   $\\
+  ultramarin: $f_4(x) =  \frac{-1}{3}x + 5   $\\
+  fuchsia   : $f_5(x) =  \frac{-3}{5}x       $\\
+  hellgrün  : $f_6(x) =               -  3   $\\
+  lila      : $f_7(x) = -3           x-  4   $\\
+  orange    : $f_8(x) = \frac{1}{4}x -\frac12$
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
+
 \subsection*{Aufgaben}
 %%\GESOAadBMTA{250}{6. a) b)}
+
 
 \GESO{\olatLinkArbeitsblatt{Lineare
     Funktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/102901171745363}{3. Steigung}}
