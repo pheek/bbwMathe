@@ -330,7 +330,7 @@ Was uns zeigt, dass der  Punkt $P=(0|b)$ der Geraden immer auf der $y$-Achse lie
   
 Der Parameter $a$ wird Steigung der Geraden genannt. Dies entspricht
 dem $y$-Anstieg\footnote{Bei negativem $a$ sprechen wir von \textbf{Gefälle}\index{Gefälle},
-  Abstieg, Neigung, Senkung, ...} der Geraden pro Einheit in $x$-Richtung ($e_x$):
+  Abstieg, Neigung, Senkung, ...} der Geraden pro Einheit in $x$-Richtung ($\e_x$):
 
 
 %% Steigungsgraph: Eins nach rechts -> a noch oben (oder -a nach unten)
@@ -452,15 +452,16 @@ a) Lineare \textbf{Gleichung} $$ax+b=0$$
 
 Gesucht \textbf{Lösung} $x$:
 
-\TRAINER{$$ax+b=0 | -b$$}\noTRAINER{\mmPapier{1.2}}
 
-\vspace{1mm}
+\TNT{6}{
+  $$ax+b=0 | -b$$
+  $$ax=-b | :a$$
+  
+}%% end TNT
 
-\TRAINER{$$ax=-b | :a$$}\noTRAINER{\mmPapier{1.2}}
 
+\vspace{3mm}
 $$\lx = \TRAINER{\left\{\frac{-b}{a}\right\}}  $$
-
-\hrule
 
 \newpage
 b) Lineare \textbf{Funktion} $$f: y=ax+b$$
@@ -503,25 +504,15 @@ die $x$-Achse in der Nullstelle $x_0$ der Geraden.
 
 \subsection{Referenzaufgaben}\index{Lineare Funktion!Referenzaufgaben}\index{Referenzaufgaben zu linearen Funktionen}
 
-\GESO{\input{allg/funktionen/ReferenzaufgabeSchnittpunktGESO}}
-\TALS{\input{allg/funktionen/ReferenzaufgabeSchnittpunktTALS}}
-\newpage
+\input{allg/funktionen/ReferenzaufgabeSchnittpunkt}
 
-\input{allg/funktionen/ReferenzaufgabeParallele}
-
-\subsection*{Aufgaben}
-\GESO{\olatLinkArbeitsblatt{Lineare Funktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/102901171745363}{6. Parallele}}
-\TALS{\olatLinkArbeitsblatt{Lineare Funktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/106131926046623}{6. Parallele}}
-\newpage
+\input{allg/funktionen/ReferenzaufgabeParalleleSenkrechte}
 
 \input{allg/funktionen/ReferenzaufgabeEinPunktGegeben}
-\newpage
 
 \input{allg/funktionen/ReferenzaufgabeGeradeDurchZweiPunkte}
-\newpage
 
-\TALS{\input{tals/fct1/ReferenzaufgabeAbstand1}
-\newpage}
+\input{tals/fct1/ReferenzaufgabeAbstand1}
 
 \GESO{
 \subsection*{Vermischte Aufgaben zu linearen Funktionen}
@@ -578,12 +569,11 @@ und somit auch Gleichung $(I)$ (die beiden Gleichungen sind äquivalent).
 %% 604. 605. a) c) e) 606. a) c) 607. c) d) g) 608. a) 609. a) 610. a)
 %% 611. a) 613. a) 616. c) 622. Flächen: 626. 628. und 629.}
 
+\DeclareRobustCommand{\tempA}{7.12 und 7.13: Taxi}
 \GESO{\olatLinkArbeitsblatt{Lineare
-    Funktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/102901171745363}{7.12
-    und 7.13: Taxi}}
+    Funktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/102901171745363}{\tempA}}
 \TALS{\olatLinkArbeitsblatt{Lineare
-    Funktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/106131926046623}{7.12
-    und 7.13: Taxi}}
+    Funktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/106131926046623}{\tempA}}
 
 \GESO{\olatLinkGESOKompendium{3.2}{25}{27.}}
 
@@ -593,6 +583,5 @@ und somit auch Gleichung $(I)$ (die beiden Gleichungen sind äquivalent).
   \olatLinkArbeitsblatt{Alte Maturprüfungsaufgaben zu linearen Funktionen}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/107461640594784}{05\_Lineare\_Funktionen\_alte\_Prüfungsaufgaben\_GESO.pdf}
   %%\newpage \input{allg/funktionen/AusAltenMaturapruefungenGESO}
 }%% end GESO
-
 
 \newpage%%
