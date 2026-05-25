@@ -49,8 +49,11 @@ cp -f ./GESO_S_GL2/*.pdf   ${BBW_WEBDAV_PATH_FP}/i_geso/thema/gl2/skript
 cp -f ./GESO_S_GLS/*.pdf   ${BBW_WEBDAV_PATH_FP}/i_geso/thema/gls/skript
 cp -f ./GESO_S_STOCH/*.pdf ${BBW_WEBDAV_PATH_FP}/i_geso/thema/stoch/skript
 
-echo 'copying GESO Einzelkapitel'
+echo 'copying GESO Einzelkapitel Faktorisieren'
 cp -f ./GESO_S_Faktorisieren/*.pdf ${BBW_WEBDAV_PATH_FP}/i_geso/thema/aa1/faktorisieren
+
+echo 'copying GESO Einzelkapitel Wuerfelexperiment'
+cp -f ./GESO_S_Wuerfelexperiment/*.pdf ${BBW_WEBDAV_PATH_FP}/i_geso/thema/stoch/hypothesentest/wuerfelexperiment
 
 
 echo "copying TALS gesamtes Skript"
