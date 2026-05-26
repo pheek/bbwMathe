@@ -21,7 +21,10 @@
 
 \input{tals/gl3_1/Produkt_gleich_Null}\newpage
 
-\subsection{Taschenrechner}
+
+\subsection{Ungleichungen}
+\subsubsection{Taschenrechner}
+
 Beispiel
 
 $$x^3 + 11x  \ge{} 70 - 10x^2$$
@@ -29,9 +32,11 @@ $$x^3 + 11x  \ge{} 70 - 10x^2$$
 Verschiedene Lösungsansätze
 
 
-a) Taschenrechner: \LoesungsRaumLang{\texttt{solve($..., x$)} liefert $-7 \le x \le -5 \text{ or } x\ge 2$}
+a) Taschenrechner:
 
-\leserluft{}
+
+\TNT{1.6}{\texttt{solve($..., x$)} liefert $-7 \le x \le -5 \text{ or } x\ge 2$}
+
 
 b) Graphisch auch mit TR (ablesen aus Graph):
 
@@ -40,13 +45,13 @@ b) Graphisch auch mit TR (ablesen aus Graph):
   Lies ab, wo nun $f(x) \ge g(x)$ oder wo $f(x) - g(x) \ge 0$ \vspace{6mm}
 
   
-  optional
+c)  optional
 
-  c) Die harte Tour\footnote{Solche und ähnliche Verfahren wendet auch der
+  Die harte Tour\footnote{Solche und ähnliche Verfahren wendet auch der
   Taschenrechner an. Erinnerung an Primarschule: Schriftliches Multiplizieren 1573:13 = 121 (ist mit $x=10$ auch eine Polynomdivision).}:
   \begin{enumerate}
   \item Wie bei einer quadratischen Gleichung alles auf eine Seite
-    nehmen: $$x^3 +10x^2 -11x -70 = 0$$
+    nehmen: $$x^3 +10x^2 + 11x - 70 = 0$$
 
   \item Annähern, pröbeln  ($x=0, x=1, x=2$)
     Hier finden wir, dass $x=2$ die Ungleichung (bzw. die Gleichung) löst.

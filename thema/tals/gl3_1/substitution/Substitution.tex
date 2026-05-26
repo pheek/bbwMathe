@@ -9,8 +9,8 @@
 Zur Erinnerung beim Faktorisieren:
 
 \TNT{2.8}{
-$7x\cdot{}(\sqrt{x}+b)^2 + 5z\cdot{}(b+\sqrt{x}) = 7x\cdot{}u +
-  5z\cdot{}u = (7x+5z)\cdot{}u = (7x+5z)\cdot{}(\sqrt{x}+b)$
+$7x\cdot{}(\sqrt{x}+b)^2 + 5z\cdot{}(b+\sqrt{x})^2 = 7x\cdot{}u +
+  5z\cdot{}u = (7x+5z)\cdot{}u = (7x+5z)\cdot{}(\sqrt{x}+b)^2$
 }
 
 Oft können kompliziertere Gleichungen mittels einer geeigneten \textbf{Substitution} (= Ersetzung\footnote{lat. \textbf{substitu\=o} = an die Stelle \textit{jmds. o. einer Sache} setzen.
@@ -59,15 +59,22 @@ $$\LoesungsMenge{}_u=\LoesungsRaumLang{\{\LoesungsRaum{-2}; \LoesungsRaum{5}\}}$
 
 
 \textbf{\TRAINER{Rücksubstitution}\noTRAINER{.............................................}}\index{Rücksubstitution}\\
-Nun setzen wir die Lösungen anstelle der substituierten Variable ein:
+Nach der ursprünglichen Variable ($x$) auflösen:
 
 
 \TNTeop{
-$$1.: u_1 = -2 = \tmpPart{} \Rightarrow -6 = 5x+0.5 \Rightarrow
-  -6.5 = 5x \Rightarrow -1.3 = x$$
+  $$u=\frac13 \cdot{} (5x+0.5) \Longleftrightarrow
+  3u = 5x+0.5 \Longleftrightarrow
+  3u-0.5 = 5x \Longleftrightarrow
+  x = \frac{3u-0.5}{5}$$
 
-$$2.: u_2 = 5 = \tmpPart{} \Rightarrow 15=5x+0.5 \Rightarrow 14.5 = 5x
-  \Rightarrow x = 2.9$$
+Die gefundenen $u$-Werte (-2 und 5) einsetzen:
+
+  
+$$u_1 = -2: x_1 = \frac{3(-2)-0.5}{5} = \frac{-6.5}{5} = -1.3$$
+
+$$u_2 =  5: x_2 = \frac{3( 5)-0.5}{5} = \frac{14.5}{5} =  2.9$$
+
 
 $$\lx=\{\LoesungsRaum{-1.3}; \LoesungsRaum{2.9}\}$$}%% END TNTeop
 
@@ -75,13 +82,6 @@ $$\lx=\{\LoesungsRaum{-1.3}; \LoesungsRaum{2.9}\}$$}%% END TNTeop
 \newpage
 
 \subsection*{Aufgaben}
-
-\GESO{\olatLinkArbeitsblatt{GlQuad}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/111365559999287}{Aufgabe
-    14. a) bis d) }}%% end GESO
-\TALS{\olatLinkArbeitsblatt{GlQuad}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/111365560138736}{Aufgabe
-    14. e) bis i)}}%% end TALS
-
-
 
 \olatLinkGESOKompendium{2.3.3}{17}{52}
 
@@ -158,6 +158,16 @@ $$u^2 - 2u +1 = 0$$
 \subsection*{Aufgaben}
   
 
+\DeclareRobustCommand{\tempA}{Aufgabe 14. e) bis i)}
+\GESO{\olatLinkArbeitsblatt{GlQuad}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/111365559999287}{\tempA{}}}%% end GESO
+\TALS{\olatLinkArbeitsblatt{GlQuad}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/111365560138736}{\tempA{}}}%% end TALS
+
+\GESO{\olatLinkGESOKompendium{2.3.3.}{17}{53. und 54.}}
+
+\TALS{\AadBMTA{184}{28. a), d)}}
+\newpage
+
+\subsection*{Referenzaufgabe Wurzelgleichung mit Substitution}
 \TALS{
   \aufgabenFarbe{
     $$-6\sqrt{x-5} + (x-5)=-9$$
@@ -173,16 +183,37 @@ $$u^2 - 2u +1 = 0$$
     $$9=x-5$$
     $$\LoesungsMenge{}_x = \{14\}$$
   }%% END TNT
+\newpage
+}%% END TALS
+
+\subsection*{Aufgaben}
+\TALS{
+  \aufgabenFarbe{
+    $$\sqrt{x-1} + x-1 = 12$$
+    }%% end Aufgabenfarbe
+  \TNT{18}{
+
+    $$u:= \sqrt{x-1}$$
+    $$u + u^2 = 12$$
+    $$u^2 + u - 12 = 0$$
+    $$(u+4)(u-3)=0$$
+    $$u_1=-4; u_2 = 3$$
+    Rücksubst:
+
+    $$x -1=u^2$$
+    $$x = u^2 + 1$$
+    $$u_1: x_1 = (-4)^2 + 1 = 17$$
+    $$u_2: x_2 = (3)^2 + 1 = 10$$
+    Probe: Nur $x_2 = 10$ funktioniert. $\lx = \{10\}$
+  }%% END TNT
 }%% END TALS
 
 
-\DeclareRobustCommand{\tempA}{Aufgabe 14. e) bis i)}
-\GESO{\olatLinkArbeitsblatt{GlQuad}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/111365559999287}{\tempA{}}}%% end GESO
-\TALS{\olatLinkArbeitsblatt{GlQuad}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/111365560138736}{\tempA{}}}%% end TALS
 
-\GESO{\olatLinkGESOKompendium{2.3.3.}{17}{53. und 54.}}
+\TALS{\AadBMTA{197}{8. b, c)}}
 
-\TALS{\AadBMTA{184}{28. a) d)}}
+
+
 
 
 \newpage
