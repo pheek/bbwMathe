@@ -58,7 +58,7 @@ Binomialverteilung aus und geben Sie Annahme- und Ablehnungsbereich an.
   \end{tabular}
   
   Naiv könnte man auf die Idee kommen bei $k=3$ haben wir das linksseitige Intervall gefunden. Doch wenn wir nun das Intervall $[0;3]$ als Annahmebereich festlegen, wäre $[4;1000]$ unser Ablehnungsbereich.
-  der Annhmebereich von $[0;3]$ hat aber eine Wahrscheinlichkeit von 98.11\,\%, was dem Ablehnungsbereich eine Wahrscheinlichkeit von $1-0.9811$, also von 1.9\% gibt. Damit ist unser $k=3$ noch zu klein. Da binomialcdf immer von links rechnet, müssen wir noch eins dazunehmen, damit wir im Ablehnungsbereich definitiv unter 1\,\% fallen.
+  der Annhmebereich von $[0;3]$ hat aber eine Wahrscheinlichkeit von 98.11\,\%, was dem Ablehnungsbereich eine Wahrscheinlichkeit von $1-0.9811$, also von 1.9\,\% gibt. Damit ist unser $k=3$ noch zu klein. Da binomialcdf immer von links rechnet, müssen wir noch eins dazunehmen, damit wir im Ablehnungsbereich definitiv unter 1\,\% fallen.
 
   Unser $k$ ist 4, der Annahmebereich ist $[0;4]$ und der Ablehnungsbereich liegt bei $[5;1000]$. Wenn also mehr als vier Verpackungen defekt sind, haben wir Grund zur Annahme, dass etwas an den 0.1\,\% nicht stimmt.
   }

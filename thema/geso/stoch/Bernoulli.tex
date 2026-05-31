@@ -88,7 +88,7 @@ Es müssen aber nicht immer Würfel, Münzen oder Kugeln in Urnen sein:
 Der Torwart Alex Calderoni\footnote{Alex Calderoni * 1976: Bekannter
   italienischer Torwart beim Fußballspiel (Quelle Wikipedia 2022).}
 fängt womöglich einen Ball mit einer
-Wahrscheinlichkeit von 38\%.
+Wahrscheinlichkeit von 38\,\%.
 Wie groß ist die Wahrscheinlichkeit, dass er genau sechs von zehn Torschüssen
 abfangen kann?
 \end{itemize}
@@ -175,7 +175,7 @@ Dies kann mit dem Taschenrechner gelöst werden:
 Entweder direkt ...
 
 $$\LoesungsRaumLang{( 7 \text{\,\,nCr\,\,} 5 ) *\left(\frac26\right)^5 *
-\left(1-\frac26\right)^{7-5}} \approx \LoesungsRaum{0.03841 = 3.841\% =\frac{28}{729}}$$
+\left(1-\frac26\right)^{7-5}} \approx \LoesungsRaum{0.03841 = 3.841\,\% =\frac{28}{729}}$$
 
 ... oder aber mit der eingespeicherten Formel bei
 \tiprobutton{data_stat-reg-distr} und dort unter \texttt{DISTR: 4
@@ -198,7 +198,7 @@ gross ist die Wahrscheinlichkeit, dass man genau 2 Sechser gewürfelt
 hat?}
 \TNT{4}{
   $$P(X=2) = {4 \choose 2} \cdot{} \left(\frac{1}{6}\right)^2 \cdot{}
-  \left(\frac{5}{6}\right)^{4-2} \approx 11.57\%$$
+  \left(\frac{5}{6}\right)^{4-2} \approx 11.57\,\%$$
 }%% end TNT
 
 
@@ -217,13 +217,13 @@ hat?}
 \newpage
 
 Basketballspieler «Basil Ballisti» trifft mit einer
-Wahrscheinlichkeit von 85\%.
+Wahrscheinlichkeit von 85\,\%.
 
 Die Wahrscheinlichkeit, dass er von 20 Würfen \textbf{genau} 17 Mal trifft, kennen wir
 bereits von der Formel von Bernoulli (Bernoulli-Experiment/Binomialverteilung):
 
 $$P(X=17) = \LoesungsRaumLang{{20 \choose 17}\cdot 0.85^{17}\cdot(1-0.85)^{20-17}}=$$
-$$\LoesungsRaumLang{{20 \choose 17}\cdot 0.85^{17}\cdot (0.15)^{3}}\approx{}\LoesungsRaum{24.28\%}$$
+$$\LoesungsRaumLang{{20 \choose 17}\cdot 0.85^{17}\cdot (0.15)^{3}}\approx{}\LoesungsRaum{24.28\,\%}$$
 Dabei bezeichnet $E$ das Ereignis ``siebzehn Treffer in den 20 Würfen''.
 
 \begin{beispiel}{Kumulierte Wahrscheinlichkeit}{}
@@ -298,7 +298,7 @@ $k_{\text{max}}=17$ bei $x$ eintragen.
 \TNT{2}{$p=0.002$, $n=1000$, $P(X \le 5) \approx 98.35\,\%$}
 
 \aufgabenFarbe{Wie groß ist die Wahrscheinlichkeit, dass
-  Cristiano Ronaldo (*1985, Fußballspieler), dessen durchschnittliche Trefferwahrscheinlichkeit bei 84\% liegt,
+  Cristiano Ronaldo (*1985, Fußballspieler), dessen durchschnittliche Trefferwahrscheinlichkeit bei 84\,\% liegt,
   in einem Training mit 40 Torschüssen weniger als 36 Tore erzielt?
 }
 \TNT{2}{
@@ -306,24 +306,24 @@ $p=0.84$; $n=40$; $k=35$ somit $P(X < 36) = P(X\le 35) \approx 78.90\,\%$
 }
 
 
-\aufgabenFarbe{In einer Stadt sind 4.5\% der Autos rot. Sie stehen an der Ampel und betrachten 25 vorbeifahrende Autos.\\
+\aufgabenFarbe{In einer Stadt sind 4.5\,\% der Autos rot. Sie stehen an der Ampel und betrachten 25 vorbeifahrende Autos.\\
   a) mit welcher Wahrscheinlichkeit ist kein rotes Auto dabei?\\
   b) mit welcher Wahrscheinlichkeit ist genau ein rotes Auto dabei?\\
   c) mit welcher Wahrscheinlichkeit sind maximal 3 rote Autos dabei (also weniger als 4 rote Autos)?
 }
 
 \TNT{4}{
-    a) $31.63\%$ (binomialpdf mit $n=25; p=0.045; x=0$)\\
-    b) $37.25\%$ (binomialpdf mit $n=25; p=0.045; x=1$)\\
-    c) $97.57\%$ (binomial\textbf{c}df mit $n=25; p=0.045; x=3$)\\
+    a) $31.63\,\%$ (binomialpdf mit $n=25; p=0.045; x=0$)\\
+    b) $37.25\,\%$ (binomialpdf mit $n=25; p=0.045; x=1$)\\
+    c) $97.57\,\%$ (binomial\textbf{c}df mit $n=25; p=0.045; x=3$)\\
 }%% end TNT
 \newpage
 
 
-\aufgabenFarbe{Die Herstellung von LEDs (Licht emittierende Dioden) hat einen Ausschuss (= defekte Teile) von 0.5\%. Sie kaufen 30 solcher Dioden (LEDs) für ein Nachtlicht.
+\aufgabenFarbe{Die Herstellung von LEDs (Licht emittierende Dioden) hat einen Ausschuss (= defekte Teile) von 0.5\,\%. Sie kaufen 30 solcher Dioden (LEDs) für ein Nachtlicht.
   Mit welcher Wahrscheinlichkeit sind maximal zwei davon defekt?}
 \TNT{3.2}{
-  $$P(X \le 2) = \sum_{k=0}^{2}{30 \choose k} \cdot{}0.005^k \cdot{} 0.995^{30-k} \approx 99.954\%$$
+  $$P(X \le 2) = \sum_{k=0}^{2}{30 \choose k} \cdot{}0.005^k \cdot{} 0.995^{30-k} \approx 99.954\,\%$$
 }%% end TNT
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -350,7 +350,7 @@ c) ca. 48.45\,\%: Dies ist die selbe Aufgabe wie b)
 d) $P(X \ne 4) = 1- P(X = 4) \approx 1 - 0.0543 = 94.57\,\%$
 
 e) $P(X > 3) = 1-P(X\le 3) = 1 - \sum_{k=0}^{3} {10 \choose k} \cdot{} \left( \frac16 \right)^k \cdot{}
-\left(\frac56\right)^{10-k} \approx 6.97\%$
+\left(\frac56\right)^{10-k} \approx 6.97\,\%$
 
 }%% end TNTeop (implicit \newpage)
 
@@ -358,14 +358,14 @@ e) $P(X > 3) = 1-P(X\le 3) = 1 - \sum_{k=0}^{3} {10 \choose k} \cdot{} \left( \f
 %% Gegenwahrscheinlichkeit:
 \aufgabenFarbe{Ein Frühstücksflocken-Hersteller behauptet, in jeder 10. Packung ist ein Spielzeug enthalten. Sie kaufen 10 Packungen.\\
   a) Mit welcher Wahrscheinlichkeit haben Sie mindestens zwei Spielzeuge in Ihren 10 Packungen?\\
-  b) (*) Wie viele Packungen müssen Sie kaufen, damit Sie mit über 95\% Wahrscheinlichkeit mindestens zwei Spielzeuge dabei haben?}
+  b) (*) Wie viele Packungen müssen Sie kaufen, damit Sie mit über 95\,\% Wahrscheinlichkeit mindestens zwei Spielzeuge dabei haben?}
 
 \TNT{4}{
   Gegenwahrscheinlichkeit:
   
-  a) $$P(X \ge 2) = 1 - P(X \le 1) = 1 - 73.61\% \approx 26.39\%$$
+  a) $$P(X \ge 2) = 1 - P(X \le 1) = 1 - 73.61\,\% \approx 26.39\,\%$$
   b) 46 Stück. Pröbeln Sie mit binomialcdf mit
-  $p=0.1$ und  $x=1$ solange mit $n$, bis die Wahrscheinlichkeit maximal 1 Spielzeug zu erreichen kleiner als 5\% wird. Dies ist erstmals bei 46. Packungen der Fall.
+  $p=0.1$ und  $x=1$ solange mit $n$, bis die Wahrscheinlichkeit maximal 1 Spielzeug zu erreichen kleiner als 5\,\% wird. Dies ist erstmals bei 46. Packungen der Fall.
 }%% end TNT
 
 
@@ -385,14 +385,14 @@ in 30 Würfen ein gerechter Würfel 10 oder mehr Sechsen anzeigt?
 
 \TNTeop{
  $P(X \ge 10) = \sum_{k=10}^{30} {30 \choose k} \cdot{} \left( \frac16 \right)^k \cdot{}
-  \left(\frac56\right)^{30-k} \approx 1.97\%$
+  \left(\frac56\right)^{30-k} \approx 1.97\,\%$
 
-  Mit ca. $2\%$ Wahrscheinlichkeit tritt auch bei einem gerechten Würfel ein derart
-extremes Ergebnis auf. Ein gerechter Würfel wird mit ca. 98\% Wahrscheinlichkeit
+  Mit ca. $2\,\%$ Wahrscheinlichkeit tritt auch bei einem gerechten Würfel ein derart
+extremes Ergebnis auf. Ein gerechter Würfel wird mit ca. 98\,\% Wahrscheinlichkeit
 ein moderateres Ergebnis zeigen (weniger als 10 Sechsen). Man wird also
 eher an eine Fälschung glauben. Wer sagt, es sei ein gefälschter
-Würfel irrt sich nur mit ca. $2\%$ Wahrscheinlichkeit (Hier:
-\textbf{Irrtumswahrscheinlichkeit = Fehlerwahrscheinlichkeit} $\approx 2\%$).
+Würfel irrt sich nur mit ca. $2\,\%$ Wahrscheinlichkeit (Hier:
+\textbf{Irrtumswahrscheinlichkeit = Fehlerwahrscheinlichkeit} $\approx 2\,\%$).
 }%% end TNTeop
 
 
