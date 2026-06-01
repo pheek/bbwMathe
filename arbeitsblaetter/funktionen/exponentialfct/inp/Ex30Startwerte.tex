@@ -248,6 +248,81 @@ genannt.
 \platzFuerBerechnungenBisEndeSeite{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bbwActAufgabenNr{} \textbf{Bauchspeicheldrüse}
+
+Einem Patienten werden zum Testen der Funktion der Bauchspeicheldrüse
+350 mg eines Farbstoffs injiziert.
+
+Eine normal funktionierende Bauchspeicheldrüse scheidet normalerweise
+pro Minute 4\,\% der noch vorhandenen Farbstoffmenge aus.
+
+Nach 45 Minuten sind beim Patienten noch 110 mg Farbstoff vorhanden.
+
+\begin{bbwAufgabenBlock}
+\item Wie viel Farbstoff müsste bei Patienten mit normal funktionierender
+  Bauchspeicheldrüse nach 45 Minuten noch vorhanden sein?
+
+  \TRAINER{$f(t) = 350 [\text{mg}] \cdot{} 0.96^t$. Damit ergibt sich
+    nach 45 Minuten: $f(45) = 350\cdot{}0.96^{45} \approx 56$ mg.}
+
+\item Welchen prozentualen Anteil an Farbstoff scheidet die aktuell
+  untersuchte Bauchspeicheldrüse pro Minute aus?
+
+  \TRAINER{$350\cdot{}a^{45} = 110$. Somit:
+    $$\frac{110}{350} = a^{45}$$
+    Mit der 45-sten Wurzel erhalten wir
+    $$a= \sqrt[45]{\frac{110}{350}} \approx 0.9746$$
+    Somit verbleiben pro Minute 97.46\,\%, was einem Verlust pro
+    Minute von ca. 2.54\,\% entspricht. Das ist deutlich unter den
+    erwarteten 4\,\%. 
+  }
+\end{bbwAufgabenBlock}
+
+\platzFuerBerechnungenBisEndeSeite{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bbwActAufgabenNr{} \textbf{Bierschaum}
+
+Die Höhe des Bierschaums auf einem frisch gezapften Hefeweizen
+nimmt exponentiell mit der Zeit ab.
+
+Anfänglich seien 45\,mm Bierschaum vorhanden.
+
+Pro Minute sollte die Höhe bei gutem dunklen Hefeweizen um ca. 25\,\%
+abnehmen. Wir gehen von guter Qualität aus:
+
+\begin{bbwAufgabenBlock}
+\item Berechnen Sie die Höhe des Bierschaums nach einer Minute und
+  nach 7 Minuten.
+
+  \TRAINER{Erst Aufgabe b) lösen: $f(t) = 45 [\text{mm}] \cdot{} 0.75^t$
+    Nun gilt $f(1) = 45\cdot{} 0.75 = 33.75 \text{mm}$.
+
+    Ebenso $f(7) = 45\cdot{} 0.75^7 \approx 6.01\,\text{mm}$.
+  }
+  
+\item Geben Sie die Funktionsgleichung $f(t)$ an, welche die Höhe
+  des Bierschaums ($f$) nach $t$ Minuten angibt.
+  \TRAINER{$$f(t) = 45 \cdot{}0.75^t$$
+  $f$ in mm; $t$ in Minuten}
+
+\item Nach wie vielen Minuten misst die Höhe des Bierschaums noch
+  0.25\,cm?
+  \TRAINER{0.25\,\text{cm} = 2.5\,\text{mm}. Somit lösen wir folgende
+    Exponentialgleichnug:
+    $$2.5 = 45\cdot{} 0.75^t$$
+    $$\frac{2.5}{45} = 0.75^t$$
+    Logarithmieren:
+    $$t = \log_{0.75}\left(\frac{2.5}{45}\right)\approx 10.05\,\text{Minuten}$$
+  }
+      
+\end{bbwAufgabenBlock}
+\platzFuerBerechnungenBisEndeSeite{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 
 
 \bbwActAufgabenNr{} \textbf{Feinstaub}
@@ -307,6 +382,58 @@ Staubmenge im Haus verbleibt.
 \platzFuerBerechnungenBisEndeSeite{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+... und als Vorbereitung auf die Beobachtungszeitspanne:
+
+\bbwActAufgabenNr{} \textbf{Algen}
+
+Ein See ist zu 1.4\,\% mit Algen bedeckt. Die algenfläche verdoppelt
+sich alle fünf Tage.
+
+\begin{bbwAufgabenBlock}
+  \item Wie viel Prozent der Seefläche sind nach 15 Tagen mit Algen
+    bedeckt?
+
+\TRAINER{15 Tage sind drei Zeiteinheiten. Somit ist die Vervielfachung
+  der Zunahme nach drei Zeiteinheiten gleich $2^3= 8$.
+  Damit werden die 1.4\,\% mit 8 multipliziert. Die Vervielfachung
+  nach 15 Tagen ist demnach $1.4\,\% \cdot{} 2^3 \approx 14.76\,\%$.
+
+Nach 15 Tagen werden also ca. 14.76\,\% der Seeoberfläche mit Algen
+bedeckt sein.}
+    
+    \item Geben Sie eine Funktionsgleichung an, welche die Algenfläche
+      in Prozent nach der gegebenen Zeit in Tagen angibt ($t$=Tage,
+      $f(t)$ = Prozent der Seefläche, die mit Algen bedeckt ist).
+
+\TRAINER{Die Funktionsgleichung ist hier etwas spezieller, als in der
+  täglichen Zunahme. Wir müssen die Anzahl Tage zunächst durch 5
+  teilen, um die Anzahl der Verdopplungen zu erhalten.
+
+  $$f(t) = 1.4 \cdot{} 2^{\frac{t}5}$$}%% end TRAINER
+      
+      \item Wann werden voraussichtlich 80\,\% der Seefläche mit Algen
+        bedeckt sein?
+
+        \TRAINER{Wir haben nun also die Vervielfachung gegeben und
+          setzten die 80\,\% in die Funktionsgleichung ein:
+          $$80 = 1.4 \cdot{}  2^{\frac{t}5}$$
+          Zum Auflösen zunächst durch 1.4 teilen:
+
+          $$\frac{80}{1.4} = 2^{\frac{t}{5}}$$
+          Nun können wir mit dem Zweierlogarithmus den Exponenten
+          bestimmen:
+
+          $$\frac{t}{5} = \log_2\left(\frac{80}{1.4}\right)$$
+          Um $t$ zu erhalten müssen wir nun noch mit der
+          Beobachtungszeitspanne (hier fünf Tage) multiplizieren:
+
+          $$t = 5 \cdot{} \log_2\left(\frac{80}{1.4}\right) \approx
+          29.2\text{ Tage}$$
+        }%% end TRAINER
+
+        
+  \end{bbwAufgabenBlock}
+
 
 
 \newpage
