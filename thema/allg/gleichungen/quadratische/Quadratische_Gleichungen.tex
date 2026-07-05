@@ -18,9 +18,9 @@
 \item Allgemeine Form, ABC-Formel (Mitternachtsformel) $x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2a} $
 %%   \item Rationale Gleichungen (<- die Bruchgleichungen haben ein eigenes Kapitel)
 \item Diskriminante
-\TALS{\item{Parameter}}
-\TALS{\item{Fallunterscheidung}}
-\item Taschenrechner: \GESO{Ohne Parameter} \TALS{Mit und ohne Parameter}
+\TALS{\item Parameter}
+\TALS{\item Fallunterscheidung}
+\TALS{\item Taschenrechner: Mit und ohne Parameter}
 \TALS{\item Taschenrechner: Visualisierung, Interpretation}
 \end{itemize}
 \newpage
@@ -503,7 +503,7 @@ $$\lx = \{-s; 2s  \}$$
 \TALS{\input{tals/gl2/Mit_Parametern}}
 
 \TALS{\input{tals/gl2/Taschenrechner}}
-\GESO{\input{geso/gl1/Taschenrechner}}
+%%\GESO{\input{geso/gl1/Taschenrechner}}%% nicht mehr RLP 2030
 
 \newpage
 
@@ -517,7 +517,7 @@ $$\lx = \{-s; 2s  \}$$
 Wann soll welches Verfahren eingesetzt werden? Dies ist eine
 individuelle Fragestellung. Je mehr Erfahrung man hat, umso eher sieht
 man die Spezialfälle. Die ABC-Formel funktioniert immer, doch
-die anderen Verfahren (Binome, weitere Spezialfälle, Taschenrechner)
+die anderen Verfahren (Binome, weitere Spezialfälle, ...)
 sind oft sinnvoller. Hier ein Versuch eines Überblicks:
 
 \begin{rezept}{Welches Verfahren}{}
@@ -534,10 +534,10 @@ sind oft sinnvoller. Hier ein Versuch eines Überblicks:
 	\hline
 	faktorisiert       & $(x-4.6 + b)\cdot{}(x+a) = 0$ & Lösungen hier $x_1=4.6-b$ und $x_2 = -a$\\
 	\hline
-	Einfache Zahlen            & $x^2 -2x + 1= 0$           & ABC-Formel (Mitternachtsformel) oder faktorisieren $x^2-2x+1=(x-1)^2$ und danach jeden einzelnen Faktor $=0$ setzen.\\
+	Grundform            & $x^2 -2x + 1= 0$           & ABC-Formel (Mitternachtsformel) oder faktorisieren $x^2-2x+1=(x-1)^2$ und danach jeden einzelnen Faktor $=0$ setzen.\\
 	\hline
-	Komplizierte Zahlen        & $7.3x^2 - 8x - 3.4 = 0$       & Taschenrechner \tiprobutton{cos_poly-solv}             \\
-	\hline
+%	Komplizierte Zahlen        & $7.3x^2 - 8x - 3.4 = 0$       & Taschenrechner \tiprobutton{cos_poly-solv}             \\
+%	\hline
 %	Variable (Parameter)       & $7.3x^2 - cx + 2.6=0$         & ABC-Formel (Mitternachtsformel) \\
 %	\hline
 \end{tabular}
@@ -558,8 +558,8 @@ sind oft sinnvoller. Hier ein Versuch eines Überblicks:
 	\hline
 	Einfache Zahlen      & $6x^2 -3x - 18 = 0$               & ABC-Formel (Mitternachtsformel) \\
 	\hline
-	Komplizierte Zahlen  & $7.3x^2 - 8x - 3.4 = 0$           & Taschenrechner (solve())                \\
-	\hline
+%%	Komplizierte Zahlen  & $7.3x^2 - 8x - 3.4 = 0$           & Taschenrechner (solve())                \\
+%%	\hline
 	Variable (Parameter) & $7.3x^2 - cx + 2.6=0$         & Taschenrechner                          \\
 	\hline
 	Anzahl Lösungen auf eine beschränken & $7.3x^2 - cx + 2.6 = 	0$     & 	Diskriminante mit Taschenrechner Null setzen.\\

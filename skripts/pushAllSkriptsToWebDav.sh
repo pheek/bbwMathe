@@ -65,7 +65,7 @@ echo 'copying TALS GLF Kapitel...'
 cp -f ./TALS_S_010/*.pdf   ${BBW_WEBDAV_PATH_FP}/i_tals/thema/glf/010/skript
 cp -f ./TALS_S_AA1/*.pdf   ${BBW_WEBDAV_PATH_FP}/i_tals/thema/glf/aa1/skript
 cp -f ./TALS_S_GL1/*.pdf   ${BBW_WEBDAV_PATH_FP}/i_tals/thema/glf/gl1/skript
-cp -f ./TALS_S_AA2/*.pdf   ${BBW_WEBDAV_PATH_FP}/i_tals/thema/spf/aa2/skript
+cp -f ./TALS_S_AA2/*.pdf   ${BBW_WEBDAV_PATH_FP}/i_tals/thema/glf/aa2/skript
 cp -f ./TALS_S_TRIG1/*.pdf ${BBW_WEBDAV_PATH_FP}/i_tals/thema/glf/trig1/skript
 cp -f ./TALS_S_TRIG2/*.pdf ${BBW_WEBDAV_PATH_FP}/i_tals/thema/glf/trig2/skript
 cp -f ./TALS_S_FCT1/*.pdf  ${BBW_WEBDAV_PATH_FP}/i_tals/thema/glf/fct1/skript
@@ -78,15 +78,15 @@ cp -f ./TALS_S_PLANI/*.pdf ${BBW_WEBDAV_PATH_FP}/i_tals/thema/glf/plani/skript
 cp -f ./TALS_S_DAAN/*.pdf  ${BBW_WEBDAV_PATH_FP}/i_tals/thema/glf/daan/skript
 
 echo 'copying TALS SPF Kapitel...'
-cp -f ./TALS_S_VECG1/*.pdf  ${BBW_WEBDAV_PATH_FP}/i_tals/thema/spf/vecg1/skript
+cp -f ./TALS_S_VECG1/*.pdf   ${BBW_WEBDAV_PATH_FP}/i_tals/thema/spf/vecg1/skript
 cp -f ./TALS_S_STEREO/*.pdf  ${BBW_WEBDAV_PATH_FP}/i_tals/thema/spf/stereo/skript
-cp -f ./TALS_S_AA3/*.pdf   ${BBW_WEBDAV_PATH_FP}/i_tals/thema/spf/aa3/skript
-cp -f ./TALS_S_TRIG4/*.pdf ${BBW_WEBDAV_PATH_FP}/i_tals/thema/glf/trig4/skript
-cp -f ./TALS_S_GL3/*.pdf  ${BBW_WEBDAV_PATH_FP}/i_tals/thema/spf/gl3/skript
-cp -f ./TALS_S_FCT3/*.pdf  ${BBW_WEBDAV_PATH_FP}/i_tals/thema/spf/fct3/skript
-cp -f ./TALS_S_FCT4/*.pdf  ${BBW_WEBDAV_PATH_FP}/i_tals/thema/spf/fct4/skript
-cp -f ./TALS_S_VECG2/*.pdf  ${BBW_WEBDAV_PATH_FP}/i_tals/thema/spf/vecg2/skript
-cp -f ./TALS_S_GL4/*.pdf  ${BBW_WEBDAV_PATH_FP}/i_tals/thema/spf/gl4/skript
+cp -f ./TALS_S_AA3/*.pdf     ${BBW_WEBDAV_PATH_FP}/i_tals/thema/spf/aa3/skript
+cp -f ./TALS_S_TRIG4/*.pdf   ${BBW_WEBDAV_PATH_FP}/i_tals/thema/spf/trig4/skript
+cp -f ./TALS_S_GL3/*.pdf     ${BBW_WEBDAV_PATH_FP}/i_tals/thema/spf/gl3/skript
+cp -f ./TALS_S_FCT3/*.pdf    ${BBW_WEBDAV_PATH_FP}/i_tals/thema/spf/fct3/skript
+cp -f ./TALS_S_FCT4/*.pdf    ${BBW_WEBDAV_PATH_FP}/i_tals/thema/spf/fct4/skript
+cp -f ./TALS_S_VECG2/*.pdf   ${BBW_WEBDAV_PATH_FP}/i_tals/thema/spf/vecg2/skript
+cp -f ./TALS_S_GL4/*.pdf     ${BBW_WEBDAV_PATH_FP}/i_tals/thema/spf/gl4/skript
 
 
 echo 'copying TALS Einzelkapitel'
