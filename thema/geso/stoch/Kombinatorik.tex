@@ -41,42 +41,7 @@ Jedes Ergebnis ist vom vorangehenden unabhängig. Somit gibt es zwei mal
 sechs mal vier Variationen = 48 mögliche Ausgänge
 }
 
-\aufgabenFarbe{Herr Meyer hat vier verschiedene Suppenteller, vier
-  verschiedene Suppenlöffel, vier verschiedene
-  Tassen, vier verschiedene Gläser und vier verschiedene
-  Servietten zur Auswahl. Herr Meyer deckt heute das Mittagessen für
-  seine Tochter. Er selbst ist zum Essen weg.
-  Auf wie viele verschiedene Arten kann er den Mittagstisch decken?
-}
-\TNT{6}{
-  Jedes Ergebnis ist vom vorangehenden unabhängig. Somit gibt es
-  $4\cdot{}4\cdot{}4\cdot{}4\cdot{}4$ Möglichkeiten (= $1024$).
-}
-
 \newpage
-\aufgabenFarbe{Johann W. G. aus Frankfurt schrieb viele Texte. Er
-  wollte vielleicht auch einmal die Vorsilben
-\\
-  «ab», «an», «aus», «be», «fort», «nach», «über», «unter», «ver», «vor» und «zu»
-\\
-  in einem Gedicht verwenden und diese mit den Verben
-\\
-«fahren», «gehen», «geben», «kommen», «laufen», «lassen», «schlagen»,\\
-«schreiben», «setzen», «tragen», «werfen» und «ziehen»
-\\
-kombinieren. Wie viele solche Kombinationen aus Vorsilbe und Verb (wie
-«fortlassen» oder «angeben») sind damit möglich? Ergeben alle diese
-Wörter einen Sinn? Sind alle davon Verben? Finden Sie einige unsinnige
-Wörter, oder Kombinationen, die keine Verben ergeben.}
-\TNTeop{
-Theoretisch gibt es $11\cdot{}12 = 132$ Möglichkeiten. Welche Bedeutung
-dem Wort «fortschlagen», «überkommen», «unterfahren», «untertragen» zukommt sei hier jedoch zweitrangig. Ebenso
-sind nicht alles unbedingt nur Verben: «ich bin verschlagen», «das Abkommen», «der Antrag,
-aber «beantragen, herantragen», «untergeben», «untersetzt»}%% ent TNTeop
-
-%% implicit
-%%\newpage
-
 
 \subsection{Variation mit Wiederholung}\index{Variation!mit Wiederholung}
 = Spezialfall der Produktregel
@@ -185,30 +150,7 @@ Variationen ist dies möglich?}
 
 \TNT{4}{Jede der vier hat 8 Möglichkeiten: $8^4 = 4096$.}%% END TNT
 
-\aufgabenFarbe{In einer Urne liegen 20 verschiedenfarbige Kugeln. Vier
-mal nacheinander wird blindlings eine Kugel gezogen, die Farbe wird notiert und
-die Kugel wird wieder zurückgelegt. Wie viele Farbschemata sind
-möglich? Dabei darf eine Farbe im Schema auch mehrfach auftreten, die
-Reihenfolge der Farben ist jedoch wesentlich.}
-\TNT{4}{Jede Position im Farbschema hat unabhängig von den anderen die
-20 Varianten: $20^4 = 160\,000$}
-
-\aufgabenFarbe{Ein Monitor-Pixel (\textit{picture element}) hat die
-  Möglichkeit in den Grundfarben \textbf{rot}, \textbf{grün} und
-  \textbf{blau} (RGB) zu leuchten. Jede dieser Grundfarben kann dabei $2^8$
-  Helligkeitsstufen verwenden. Wie viele Farben lassen sich damit mischen?}
-\TNT{4}{$$N = \left(2^8\right)^3 = 16\,777\,216$$}
 \newpage
-
-\aufgabenFarbe{Ein Kombinations-Safe mit den sechsundzwanzig
-  Buchstaben von «A» bis «Z» wird gebaut. Die Buchstaben müssen in der
-  richtigen Reihenfolge angegeben werden, um den Safe zu öffnen.
-  Wie viele Buchstaben sollte der Mechanismus vorschreiben, damit
-  mindestens $10\,000\,000$ Möglichkeiten vorhanden sind?
-}
-\TNTeop{$26^k = 10\,000\,000$, daher $k=\log_{26}(10\,000\,000\approx
-  4.95)$ ergo: Es braucht 5 Buchstaben.}%% end TNTeop impliczit newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5555
 
 \subsection{Variation ohne Wiederholung}\index{Variation!ohne Wiederholung}\label{kombiVariationOhneWiederholung}
 \subsubsection{Permutationen (Fakultät)}\index{Permutation}\index{Fakultät}
@@ -328,17 +270,6 @@ verteilen? Machen Sie die Überlegung so, wie es aussehen würde, wenn es keine 
 Möglichkeiten der Fakultät. $n$ = Anzahl Schüler = Anzahl Plätze, dann
 gilt $n!$ = Anzahl mögliche Sitzordnungen.
 \vspace{10mm}
-}
-\hrule
-\aufgabenFarbe{Jaymee will in den Sommerferien die Schulbücher
-  ordnen. Es sind: Ein Englischbuch, drei Deutschbücher, zwei Französischbücher und fünf Mathematikbücher (alle
-  Bücher sind verschieden!).
-  Sie sollen auf ein Regal nebeneinander gestellt werden,
-wobei Bücher des gleichen Fachgebietes nebeneinander stehen sollen. Wie
-viele verschiedene Gruppierungsmöglichkeiten der Bücher gibt es?}
-\TNTeop{Vier Fachgebiete, daher $4!$. Insgesamt sind innerhalb der
-  Fachgebiete aber auch Variationen möglich:
-  $$N= 4! \cdot{} (1! \cdot{} 3! \cdot{} 2! \cdot{} 5!) = 34\,560$$
 }
 
 \newpage
@@ -503,68 +434,13 @@ Bemerkung/Konvention: Das $n$ ist immer die größere der beiden Zahlen: $\fbox{
 \aufgabenFarbe{Auf wie viele Arten können sich Hanna, Igor, Jana, Karl
 und Lena auf die acht Plätze ganz hinten im Bus platzieren?}
 \TNT{3.2}{$$N=\frac{8!}{(8-5)!}  = \frac{8!}{3!} = 6720$$}
-
-\aufgabenFarbe{In einer Urne sind sieben Kugeln beschriftet mit «A», «B», «C», «D», «E», «F» und «G».
-Sie ziehen drei davon heraus, ohne diese wieder zurückzulegen, um ein dreibuchstabiges Akronym für ihr
-«Startup-Unternehmen» zu schaffen. Beispiel «EFC», «DAB», «GEA», ...\\
-Wie viele dreibuchstabige Akronyme mit nur verschiedenen dieser Buchstaben
-sind denkbar? Wie sähe es aus, wenn die Buchstaben wiederholt werden könnten (BBC, ABB)?}%% ENd Aufgabe
-\TNT{2.4}{«Ohne Zurücklegen»: $\frac{7!}{(7-3)!} = 210$. «Mit Zurücklegen»: $7^3=343$}%% END TNT
-
-
-\aufgabenFarbe{Ein Zahlenschloss mit vier Ringen wird verdreht. Jeder
-Ring hat alle Ziffern von 0..9 (also zehn Ziffern) als wählbare
-Möglichkeiten. Auf wie viele Arten kann ich das Zahlenschloss
-verdrehen, wenn jede Ziffer genau einmal vorkommen darf?}
-\TNT{3.2}{1. Ring: 10 Möglichkeiten, 2. Ring 9, 3. Ring 8 und 4. Ring 7:
-Also $10\cdot{}9\cdot{}8\cdot{}7 = \frac{10!}{(10-4)!} = 5040$}
 \newpage
 
-\aufgabenFarbe{(\textit{kombinierte Aufgabe}) Das selbe Zahlenschloss wird so verdreht, dass eine
-Ziffer dreimal und eine andere Ziffer einmal vorkommt. Wie viele Varianten
-sind das?}
-\TNT{2.4}{Es sind 360 Varianten. Nämlich 10 Varianten für die Ziffer,
-die dreimal vorkommt, und noch 9 Varianten für die Ziffer
-einmal vorkommt. Dies macht 90 Varianten zwei Ziffern so auszuwählen,
-dass die erste Ziffer dreimal und die zweite Ziffer einmal
-vorkommt. Nun haben wir für diese 90 Varianten aber immer vier
-Möglichkeiten zu wählen, wo die einzelne Ziffer steht. Somit
-$\frac{10!}{(10-2)!}\cdot 4$ = 10 mal 9 mal 4 = 360.}
-
-
-
-\aufgabenFarbe{
-Vier Personen steigen in einen Lift im Parterre. Der Lift fährt mit diesen vier
-Personen nach oben los und kann dabei in 6 darüber liegenden
-Stockwerken anhalten.
-\\
-a) Auf wie viele Variationen können die vier Personen die Stockwerke
-wählen, wenn auch mehrere Personen im selben Stockwerk (gleichzeitig)
-den Lift verlassen können?
-\\
-b) Wie viele Variationen gibt es, wenn jeder Fahrgast ein anderes
-Stockwerk auswählt?}
-\TNT{6}{a) $$N = 6^4 = 1296$$
-b) $$N = \frac{6!}{(6-4)!} = 360$$}
-
-\aufgabenFarbe{(optional; schwierig) Das obige Zahlenschloss (vier
-  Ringe, zehn Ziffern) wird so verdreht, dass eine
-Ziffer maximal zweimal auftreten kann. Wie viele Varianten gibt es nun?}
-\TNTeop{Es sind 9630 Varianten. Dies geht am einfachsten mit
-Abzählen. Von den Total $10\,000$ Varianten fallen die zehn weg bei denen
-alle Ziffern gleich sind und ebenso fallen die 360 weg, bei denen drei
-gleiche Ziffern vorkommen (s. obige Aufgabe). Somit verbleiben
-$10000-10-360=9630$.
-\\
-2. Rechenweg: Muster «XYZT» + «XYZZ»(6x) + «XXYY»(3x)
-und alle Vertauschungen: $10\cdot{}9\cdot{}8\cdot{}7 +
-6\cdot{}(10\cdot{}9\cdot{}8) + 3\cdot{}(10\cdot{}9) = 9630$
-}%% implicit \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\subsubsection{Mississippi-Formel (optional)}\index{Mississippi-Formel}\index{Multinomialkoeffizient}
-Der sog. Multinomialkoeffizient ist eine spezielle Form der Fakultät.
+\subsubsection{Mississippi-Formel}\index{Mississippi-Formel}\index{Multinomialkoeffizient}
+Der sog. \textbf{Multinomialkoeffizient} ist eine spezielle Form der Fakultät.
 
 Auf wie viele Arten kann ich die Buchstaben im Namen «MAMMA» neu anordnen?
 
@@ -589,7 +465,7 @@ Auf wie viele Arten kann ich die Buchstaben im Namen «MAMMA» neu anordnen?
   $N$ ist die Anzahl Permutationen unter Berücksichtigung, dass jeweils $k_i$ Elemente nicht unterscheidbar sind.
 \end{gesetz}
 
-
+\newpage
 \subsection*{Aufgaben}
 
 Auf wie viele Arten können die Buchstaben des Wortes Mississippi in
@@ -810,13 +686,10 @@ Objekte $(n-k)!$ davon weg, es bleibt: $$\frac{n!}{k!(n-k)!}$$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Referenzaufgabe Euromillions}
-Beim Glücksspiel «Euromillions» werden fünf aus 50 Zahlen und zwei aus zwölf Sternen angekreuzt. Auf wie viel Arten ist dies möglich?
+Beim Glücksspiel «Euromillions» werden fünf aus 50 Zahlen angekreuzt. Auf wie viel Arten ist dies möglich?
 
-\TNTeop{${50 \choose 5} \cdot {12 \choose 2} =139\,838\,160$
-
-  ..., denn jede der gewählten Zahlenkombinationen kann auch mit jeder
-  Stern-Kombination verwendet (also kombiniert) werden. Daher das
-  «Mal» ($\cdot$) im Resultat.
+\TNTeop{
+  ${50 \choose 5} =2\,118\,760$
 }%% END TNT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%\newpage
@@ -836,43 +709,8 @@ Beim Glücksspiel «Euromillions» werden fünf aus 50 Zahlen und zwei aus zwöl
   bzw. Schülern auswählen?}
 \TNT{2}{$21\choose3$ = 21 nCr 3 = 1330}
 
-\aufgabenFarbe{Swiss LOTTO (ohne den Stern): Auf wie viele Arten
-  können Sie den Swiss-LOTTO Schein ausfüllen? Sie müssen 6 Zahlen aus
-  42 möglichen Zahlen ankreuzen:}
-  \TNTeop{${42\choose 6}$ \TRAINER{$ = 5\,245\,786$}}%% END TNT
   \newpage
   
-\aufgabenFarbe{Mittagessen: Ein Koch kann auf dem Markt aus vier
-  Gemüsesorten, sechs Arten von Pilzen, drei
-  Salatsorten und aus acht Arten von Früchten auswählen.
-\\
-  Er will ein Menü aus zwei Gemüsesorten, drei Pilzarten und einem
-  Salat herstellen. Zum Dessert wählt er drei Arten von
-  Früchten aus.
-\\
-  Auf wie viele Arten kann sich der Koch entscheiden?}
-  \TNT{2.4}{${4 \choose 2} \cdot{} {6 \choose 3} \cdot{} {3 \choose 1}
-    \cdot{} {8 \choose 3} = 20\,160$}%% END TNT
-
-
-\aufgabenFarbe{Aus einem Team von 13 Fußballerinnen soll eine
-  Delegation von drei Mitgliedern und aus dieser Delegation eine
-  Sprecherin bestimmt werden. Auf wie viele Arten ist dies möglich?}
-\TNT{2.4}{${13 \choose 3} \cdot{} {3 \choose 1} = 858$}
-
-\aufgabenFarbe{An einer Party mit vierundzwanzig Gästen stößt jeder
-  Gast mit jedem an. Wie oft erklingen die Gläser?}
-\TNT{2.4}{${24 \choose 2} = 276$}
-
-
-\aufgabenFarbe{Wie viele Personen nehmen an einer Party teil, wenn im
-  ganzen 595 Mal die Gläser erklingen (und dabei jede Person mit jeder andern angestoßen hat)?}
-\TNTeop{${n \choose 2} = \frac{n \cdot{} (n-1)}2 = 595
-  \Longleftrightarrow \frac12n^2 - \frac12n -595 = 0
-  \Longrightarrow a=0.5, b=-0.5, c=-595 $. Danach die
-  Mitternachtsformel: $n=35$, die negative Lösung ist hier nicht von Belang.}
-\newpage
-
 \subsubsection{Name Binomialkoeffizient (optional)}
 
  Wie viele ``Teilmengen'', nicht nur mit drei Personen, gibt es in obiger
@@ -964,17 +802,53 @@ $$N = {n+k-1 \choose k}$$
 \renewcommand{\arraystretch}{1}
 \end{gesetz}
 
-\TRAINER{ohne Beweis.}
+\newpage
 
 \begin{beispiel}{Kombination mit Wiederholung}{}
 Ein Bäcker bietet \textit{Gipfeli} in drei Sorten an. Ich muss zehn
 \textit{Gipfeli} kaufen. Wie viele Kombinationen gibt es?
 
-\TNT{3.2}{$$N= { {3+10-1} \choose {10} } = {12 \choose 10}  = 66$$}
+\TNT{8}{$n=3, k=10$
+
+  $$N= { {3+10-1} \choose {10} } = {12 \choose 10}  = 66$$}
 \end{beispiel}
 
+\TNTeop{
+Begründung, falls verlangt:
+  
+  1 = Gipfeli Sorte 1 (Bsp. Butter)
+
+  2 = Gipfeli Sorte 2 (Bsp. Laugen)
+
+  3 = Gipfeli Sorte 3 (Bsp. Vollkorn)
+
+  $n=3$
+
+  $k=10$
+
+  Varianten:
+
+  1. Sorte | 2. Sorte | 3. Sorte
+
+  Beispiele
+  
+  xxxxxxxxxx | | «10 der 1. Sorte»
+
+  xxxxxx | | xxxx   «6 der 1. Sorte 4 der 3. Sorte»
+
+  xx |xxx| xxxxx  «2 der 1. Sorte, 3 der 2. Sotre, 5 der 3. Sorte
+
+  Total $n$ Kreuze + $k-1$ Balken
+
+  Kombinationen wie Mississippi - Formel
+
+  $$\frac{(n+k-1)!}{n! \cdot{} (k-1)!} = {(n+k-1) \choose (k-1)}$$
+  
+}
+
+
 \newpage
-\subsection*{Aufgaben}
+\subsection*{Aufgabe}
 \aufgabenFarbe{
   Süßgetränke werden in 10 Sorten Angeboten. Ich kaufe für einen
   Grillabend 3 Getränkeflaschen. Wie viele Kombinationen sind möglich,
@@ -982,6 +856,138 @@ Ein Bäcker bietet \textit{Gipfeli} in drei Sorten an. Ich muss zehn
   mehrfach ausgewählt werden darf?
 }%%
 \TNT{2}{${3+10-1 \choose 3} = 220$}
+
+\newpage
+\input{geso/stoch/KombinatorikZusammenfassung}\newpage%
+
+
+\newpage
+
+\subsection{Vermischte Aufgaben}
+
+
+\aufgabenFarbe{Herr Meyer hat vier verschiedene Suppenteller, vier
+  verschiedene Suppenlöffel, vier verschiedene
+  Tassen, vier verschiedene Gläser und vier verschiedene
+  Servietten zur Auswahl. Herr Meyer deckt heute das Mittagessen für
+  seine Tochter. Er selbst ist zum Essen weg.
+  Auf wie viele verschiedene Arten kann er den Mittagstisch decken?
+}
+\TNT{6}{
+  Jedes Ergebnis ist vom vorangehenden unabhängig. Somit gibt es
+  $4\cdot{}4\cdot{}4\cdot{}4\cdot{}4$ Möglichkeiten (= $1024$).
+}
+
+
+
+
+\aufgabenFarbe{Ein Kombinations-Safe mit den sechsundzwanzig
+  Buchstaben von «A» bis «Z» wird gebaut. Die Buchstaben müssen in der
+  richtigen Reihenfolge angegeben werden, um den Safe zu öffnen.
+  Wie viele Buchstaben sollte der Mechanismus vorschreiben, damit
+  mindestens $10\,000\,000$ Möglichkeiten vorhanden sind?
+}
+\TNTeop{$26^k = 10\,000\,000$, daher $k=\log_{26}(10\,000\,000\approx
+  4.95)$ ergo: Es braucht 5 Buchstaben.}%% end TNTeop impliczit newpage
+
+\newpage
+\aufgabenFarbe{Johann W. G. aus Frankfurt schrieb viele Texte. Er
+  wollte vielleicht auch einmal die Vorsilben
+\\
+  «ab», «an», «aus», «be», «fort», «nach», «über», «unter», «ver», «vor» und «zu»
+\\
+  in einem Gedicht verwenden und diese mit den Verben
+\\
+«fahren», «gehen», «geben», «kommen», «laufen», «lassen», «schlagen»,\\
+«schreiben», «setzen», «tragen», «werfen» und «ziehen»
+\\
+kombinieren. Wie viele solche Kombinationen aus Vorsilbe und Verb (wie
+«fortlassen» oder «angeben») sind damit möglich? Ergeben alle diese
+Wörter einen Sinn? Sind alle davon Verben? Finden Sie einige unsinnige
+Wörter, oder Kombinationen, die keine Verben ergeben.}
+\TNTeop{
+Theoretisch gibt es $11\cdot{}12 = 132$ Möglichkeiten. Welche Bedeutung
+dem Wort «fortschlagen», «überkommen», «unterfahren», «untertragen» zukommt sei hier jedoch zweitrangig. Ebenso
+sind nicht alles unbedingt nur Verben: «ich bin verschlagen», «das Abkommen», «der Antrag,
+aber «beantragen, herantragen», «untergeben», «untersetzt»}%% ent TNTeop
+
+
+
+
+%% implicit
+%%\newpage
+
+
+
+\aufgabenFarbe{Ein Monitor-Pixel (\textit{picture element}) hat die
+  Möglichkeit in den Grundfarben \textbf{rot}, \textbf{grün} und
+  \textbf{blau} (RGB) zu leuchten. Jede dieser Grundfarben kann dabei $2^8$
+  Helligkeitsstufen verwenden. Wie viele Farben lassen sich damit mischen?}
+\TNT{4}{$$N = \left(2^8\right)^3 = 16\,777\,216$$}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5555
+
+
+
+\aufgabenFarbe{Aus einem Team von 13 Fußballerinnen soll eine
+  Delegation von drei Mitgliedern und aus dieser Delegation eine
+  Sprecherin bestimmt werden. Auf wie viele Arten ist dies möglich?}
+\TNT{2.4}{${13 \choose 3} \cdot{} {3 \choose 1} = 858$}
+
+
+
+
+\aufgabenFarbe{Ein Zahlenschloss mit vier Ringen wird verdreht. Jeder
+Ring hat alle Ziffern von 0..9 (also zehn Ziffern) als wählbare
+Möglichkeiten. Auf wie viele Arten kann ich das Zahlenschloss
+verdrehen, wenn jede Ziffer genau einmal vorkommen darf?}
+\TNT{3.2}{1. Ring: 10 Möglichkeiten, 2. Ring 9, 3. Ring 8 und 4. Ring 7:
+Also $10\cdot{}9\cdot{}8\cdot{}7 = \frac{10!}{(10-4)!} = 5040$}
+\newpage
+
+
+\aufgabenFarbe{
+Vier Personen steigen in einen Lift im Parterre. Der Lift fährt mit diesen vier
+Personen nach oben los und kann dabei in 6 darüber liegenden
+Stockwerken anhalten.
+\\
+a) Auf wie viele Variationen können die vier Personen die Stockwerke
+wählen, wenn auch mehrere Personen im selben Stockwerk (gleichzeitig)
+den Lift verlassen können?
+\\
+b) Wie viele Variationen gibt es, wenn jeder Fahrgast ein anderes
+Stockwerk auswählt?}
+\TNT{6}{a) $$N = 6^4 = 1296$$
+b) $$N = \frac{6!}{(6-4)!} = 360$$}
+
+\aufgabenFarbe{(optional; schwierig) Das obige Zahlenschloss (vier
+  Ringe, zehn Ziffern) wird so verdreht, dass eine
+Ziffer maximal zweimal auftreten kann. Wie viele Varianten gibt es nun?}
+\TNTeop{Es sind 9630 Varianten. Dies geht am einfachsten mit
+Abzählen. Von den Total $10\,000$ Varianten fallen die zehn weg bei denen
+alle Ziffern gleich sind und ebenso fallen die 360 weg, bei denen drei
+gleiche Ziffern vorkommen (s. obige Aufgabe). Somit verbleiben
+$10000-10-360=9630$.
+\\
+2. Rechenweg: Muster «XYZT» + «XYZZ»(6x) + «XXYY»(3x)
+und alle Vertauschungen: $10\cdot{}9\cdot{}8\cdot{}7 +
+6\cdot{}(10\cdot{}9\cdot{}8) + 3\cdot{}(10\cdot{}9) = 9630$
+}%% implicit \newpage
+
+
+
+\aufgabenFarbe{An einer Party mit vierundzwanzig Gästen stößt jeder
+  Gast mit jedem an. Wie oft erklingen die Gläser?}
+\TNT{2.4}{${24 \choose 2} = 276$}
+
+
+\aufgabenFarbe{Wie viele Personen nehmen an einer Party teil, wenn im
+  ganzen 595 Mal die Gläser erklingen (und dabei jede Person mit jeder andern angestoßen hat)?}
+\TNTeop{${n \choose 2} = \frac{n \cdot{} (n-1)}2 = 595
+  \Longleftrightarrow \frac12n^2 - \frac12n -595 = 0
+  \Longrightarrow a=0.5, b=-0.5, c=-595 $. Danach die
+  Mitternachtsformel: $n=35$, die negative Lösung ist hier nicht von Belang.}
+\newpage
 
 
 \aufgabenFarbe{Smarties gibt es in 8 Farbsorten. Ich entnehme einer
@@ -992,4 +998,25 @@ Ein Bäcker bietet \textit{Gipfeli} in drei Sorten an. Ich muss zehn
 
 \newpage
 
-\input{geso/stoch/KombinatorikZusammenfassung}\newpage%
+
+
+\aufgabenFarbe{In einer Urne liegen 20 verschiedenfarbige Kugeln. Vier
+mal nacheinander wird blindlings eine Kugel gezogen, die Farbe wird notiert und
+die Kugel wird wieder zurückgelegt. Wie viele Farbschemata sind
+möglich? Dabei darf eine Farbe im Schema auch mehrfach auftreten, die
+Reihenfolge der Farben ist jedoch wesentlich.}
+\TNT{4}{Jede Position im Farbschema hat unabhängig von den anderen die
+20 Varianten: $20^4 = 160\,000$}
+
+
+\aufgabenFarbe{In einer Urne sind sieben Kugeln beschriftet mit «A», «B», «C», «D», «E», «F» und «G».
+Sie ziehen drei davon heraus, ohne diese wieder zurückzulegen, um ein dreibuchstabiges Akronym für ihr
+«Startup-Unternehmen» zu schaffen. Beispiel «EFC», «DAB», «GEA», ...\\
+Wie viele dreibuchstabige Akronyme mit nur verschiedenen dieser Buchstaben
+sind denkbar? Wie sähe es aus, wenn die Buchstaben wiederholt werden könnten (BBC, ABB)?}%% ENd Aufgabe
+\TNT{2.4}{«Ohne Zurücklegen»: $\frac{7!}{(7-3)!} = 210$. «Mit Zurücklegen»: $7^3=343$}%% END TNT
+
+\aufgabenFarbe{Swiss LOTTO (ohne den Stern): Auf wie viele Arten
+  können Sie den Swiss-LOTTO Schein ausfüllen? Sie müssen 6 Zahlen aus
+  42 möglichen Zahlen ankreuzen:}
+  \TNTeop{${42\choose 6}$ \TRAINER{$ = 5\,245\,786$}}%% END TNT
