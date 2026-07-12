@@ -863,7 +863,7 @@ Begründung, falls verlangt:
 
 \newpage
 
-\subsection{Vermischte Aufgaben}
+\subsection{Vermischte Aufgaben zur Kombinatorik}
 
 
 \aufgabenFarbe{Herr Meyer hat vier verschiedene Suppenteller, vier
@@ -879,8 +879,6 @@ Begründung, falls verlangt:
 }
 
 
-
-
 \aufgabenFarbe{Ein Kombinations-Safe mit den sechsundzwanzig
   Buchstaben von «A» bis «Z» wird gebaut. Die Buchstaben müssen in der
   richtigen Reihenfolge angegeben werden, um den Safe zu öffnen.
@@ -890,7 +888,7 @@ Begründung, falls verlangt:
 \TNTeop{$26^k = 10\,000\,000$, daher $k=\log_{26}(10\,000\,000\approx
   4.95)$ ergo: Es braucht 5 Buchstaben.}%% end TNTeop impliczit newpage
 
-\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5555
 \aufgabenFarbe{Johann W. G. aus Frankfurt schrieb viele Texte. Er
   wollte vielleicht auch einmal die Vorsilben
 \\
@@ -911,20 +909,14 @@ dem Wort «fortschlagen», «überkommen», «unterfahren», «untertragen» zuk
 sind nicht alles unbedingt nur Verben: «ich bin verschlagen», «das Abkommen», «der Antrag,
 aber «beantragen, herantragen», «untergeben», «untersetzt»}%% ent TNTeop
 
-
-
-
-%% implicit
-%%\newpage
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
 
 \aufgabenFarbe{Ein Monitor-Pixel (\textit{picture element}) hat die
   Möglichkeit in den Grundfarben \textbf{rot}, \textbf{grün} und
   \textbf{blau} (RGB) zu leuchten. Jede dieser Grundfarben kann dabei $2^8$
   Helligkeitsstufen verwenden. Wie viele Farben lassen sich damit mischen?}
 \TNT{4}{$$N = \left(2^8\right)^3 = 16\,777\,216$$}
-\newpage
+%\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5555
 
 
@@ -996,9 +988,6 @@ und alle Vertauschungen: $10\cdot{}9\cdot{}8\cdot{}7 +
 }
 \TNT{2}{${8+16-1 \choose 16} = 245\,157$}
 
-\newpage
-
-
 
 \aufgabenFarbe{In einer Urne liegen 20 verschiedenfarbige Kugeln. Vier
 mal nacheinander wird blindlings eine Kugel gezogen, die Farbe wird notiert und
@@ -1013,10 +1002,18 @@ Reihenfolge der Farben ist jedoch wesentlich.}
 Sie ziehen drei davon heraus, ohne diese wieder zurückzulegen, um ein dreibuchstabiges Akronym für ihr
 «Startup-Unternehmen» zu schaffen. Beispiel «EFC», «DAB», «GEA», ...\\
 Wie viele dreibuchstabige Akronyme mit nur verschiedenen dieser Buchstaben
-sind denkbar? Wie sähe es aus, wenn die Buchstaben wiederholt werden könnten (BBC, ABB)?}%% ENd Aufgabe
-\TNT{2.4}{«Ohne Zurücklegen»: $\frac{7!}{(7-3)!} = 210$. «Mit Zurücklegen»: $7^3=343$}%% END TNT
+sind denkbar? Wie sähe es aus, wenn die Buchstaben wiederholt werden
+könnten (BBC, ABB)?}
+%% End Aufgabe
+\TNTeop{«Ohne Zurücklegen»: $\frac{7!}{(7-3)!} = 210$. «Mit
+  Zurücklegen»: $7^3=343$}%% implicit \newpage
+
+
+%%%%%%%%%%%%%%%%%%
 
 \aufgabenFarbe{Swiss LOTTO (ohne den Stern): Auf wie viele Arten
   können Sie den Swiss-LOTTO Schein ausfüllen? Sie müssen 6 Zahlen aus
   42 möglichen Zahlen ankreuzen:}
-  \TNTeop{${42\choose 6}$ \TRAINER{$ = 5\,245\,786$}}%% END TNT
+  \TNT{4}{${42\choose 6}$ \TRAINER{$ = 5\,245\,786$}}%% END TNT
+
+  \newpage
