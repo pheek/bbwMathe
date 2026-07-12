@@ -1,0 +1,14 @@
+\part{Wahrscheinlichkeitsrechnung}\index{Wahrscheinlichkeitsrechnung|textbf}\index{Stochastik|textbf}
+
+\textbf{Stochastik}\index{Stochastik} ist der Oberbegriff über
+Kombinatorik, Wahrscheinlichkeitsrechnung und Statistik.
+
+\renewcommand{\bbwPartID}{STOCH}
+\input{geso/stoch/Kombinatorik}
+\input{geso/stoch/Wahrscheinlichkeit}
+\input{geso/stoch/Kontingenztafeln}
+\input{geso/stoch/BedingteWahrscheinlichkeit}
+
+\input{geso/stoch/hypothesentest/Hypothesentest}
+
+\newpage
