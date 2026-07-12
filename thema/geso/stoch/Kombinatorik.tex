@@ -491,7 +491,7 @@ können wie folgt Wörter gebildet werden:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 \clearpage
 
-\subsection{Kombinationen}\index{Kombination}\label{kombiKombination}
+\subsection{Kombinationen ohne Wiederholung}\index{Kombination}\label{kombiKombination}
 
 \AddToShipoutPictureBG{
     \AtPageLowerLeft{
@@ -699,11 +699,6 @@ Beim Glücksspiel «Euromillions» werden fünf aus 50 Zahlen angekreuzt. Auf wi
 
 \aufgabenFarbe{Berechnen Sie ${15\choose4} = $ \LoesungsRaum{1365}}
 
-\aufgabenFarbe{Begründen Sie, warum «5 aus 7» dasselbe ist, wie «2 aus
-  7»:}
-\TNT{2.8}{«5 aus 7» bedeutet auch, ich habe 2 \textbf{nicht}
-  ausgewählt.}
-
 \aufgabenFarbe{Auf wie viele Arten kann ich eine Delegation von drei
   Klassendelegierten aus einer Klasse von 21 Schülerinnen
   bzw. Schülern auswählen?}
@@ -722,7 +717,7 @@ Beim Glücksspiel «Euromillions» werden fünf aus 50 Zahlen angekreuzt. Auf wi
 %%\TNT{2}{0 oder alle gewählt: je eine Variante, 1 oder 4 gewählt:
 %%je 5 Varianten oder 3 oder 2 gewählt: je 10 Varianten. Total also $32 = 2^5$.}%% END TNT
 
-\textbf{Erklärung:} Zahlenschloss (Variation mit Wiederholung):
+\textbf{Erklärung:}
 
 Für jedes Objekt hat es zwei Optionen:``dabei'' (x) bzw. ``nicht dabei'' (-):
 
@@ -775,7 +770,7 @@ $$(a+b)^3 = (a^2 + 2ab + b^2)\cdot{}(a+b) = 1\cdot{}a^3 + 3a^2b +
 
 
 
-\subsubsection{Kombinationen mit Wiederholung\TRAINER{ (optional)}}\index{Kombination!mit Wiederholung}\label{kombiVariationMitWiederholung}
+\subsection{Kombinationen mit Wiederholung}\index{Kombination!mit Wiederholung}\label{kombiVariationMitWiederholung}
 
 Auf wie viele Arten kann ich 10 Brote aus einer Auswahl von 3 Sorten auswählen?
 
@@ -808,7 +803,9 @@ $$N = {n+k-1 \choose k}$$
 Ein Bäcker bietet \textit{Gipfeli} in drei Sorten an. Ich muss zehn
 \textit{Gipfeli} kaufen. Wie viele Kombinationen gibt es?
 
-\TNT{8}{$n=3, k=10$
+\TNT{8}{$n=3$: Optional zur Auswal,
+
+  $k=10: Müssen gewählt werden$
 
   $$N= { {3+10-1} \choose {10} } = {12 \choose 10}  = 66$$}
 \end{beispiel}
@@ -816,11 +813,11 @@ Ein Bäcker bietet \textit{Gipfeli} in drei Sorten an. Ich muss zehn
 \TNTeop{
 Begründung, falls verlangt:
   
-  1 = Gipfeli Sorte 1 (Bsp. Butter)
+Gipfeli Sorte 1 (Bsp. Butter)
 
-  2 = Gipfeli Sorte 2 (Bsp. Laugen)
+Gipfeli Sorte 2 (Bsp. Laugen)
 
-  3 = Gipfeli Sorte 3 (Bsp. Vollkorn)
+Gipfeli Sorte 3 (Bsp. Vollkorn)
 
   $n=3$
 
@@ -838,6 +835,7 @@ Begründung, falls verlangt:
 
   xx |xxx| xxxxx  «2 der 1. Sorte, 3 der 2. Sotre, 5 der 3. Sorte
 
+  
   Total $n$ Kreuze + $k-1$ Balken
 
   Kombinationen wie Mississippi - Formel
@@ -918,16 +916,6 @@ aber «beantragen, herantragen», «untergeben», «untersetzt»}%% ent TNTeop
 \TNT{4}{$$N = \left(2^8\right)^3 = 16\,777\,216$$}
 %\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5555
-
-
-
-\aufgabenFarbe{Aus einem Team von 13 Fußballerinnen soll eine
-  Delegation von drei Mitgliedern und aus dieser Delegation eine
-  Sprecherin bestimmt werden. Auf wie viele Arten ist dies möglich?}
-\TNT{2.4}{${13 \choose 3} \cdot{} {3 \choose 1} = 858$}
-
-
-
 
 \aufgabenFarbe{Ein Zahlenschloss mit vier Ringen wird verdreht. Jeder
 Ring hat alle Ziffern von 0..9 (also zehn Ziffern) als wählbare
@@ -1016,4 +1004,10 @@ könnten (BBC, ABB)?}
   42 möglichen Zahlen ankreuzen:}
   \TNT{4}{${42\choose 6}$ \TRAINER{$ = 5\,245\,786$}}%% END TNT
 
+
+\aufgabenFarbe{Begründen Sie, warum «5 aus 7» dasselbe ist, wie «2 aus
+  7»:}
+\TNT{2.8}{«5 aus 7» bedeutet auch, ich habe 2 \textbf{nicht}
+  ausgewählt.}
+  
   \newpage
