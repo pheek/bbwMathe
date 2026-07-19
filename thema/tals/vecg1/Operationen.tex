@@ -310,7 +310,7 @@ linear unabhängig sind:
 %%\TALSAadBFWG{180ff}{12. b) c), 13., 16. b) d) e) und 17. a) b)}
 \newpage
 
-\subsection*{Graphische Beispiele}
+\subsection*{Graphische Beispiele (Vorzeigeaufgabe)}
 
 Gegeben im Viereck $OBCA$ sind die linear unabhängigen Vektoren $\vec{a}$ und
 $\vec{b}$\TRAINER{\footnote{Die Graphik ist nicht maßstabsgetreu}}:
@@ -364,7 +364,7 @@ $\overrightarrow{OC} = 3\vec{b} + \left(\vec{a} - \vec{b}\right) =
 }%% end TNT eop implicit \newpage
 
 
-\subsection*{Referenzaufgabe}
+\subsection*{Referenzaufgabe 1}
 
 Gegeben im Viereck $OCBA$ sind die linear unabhängigen Vektoren $\vec{a}$ und
 $\vec{b}$\TRAINER{\footnote{Auch hier: Die Graphik ist nicht maßstabsgetreu}}:
@@ -410,6 +410,67 @@ $\overrightarrow{OA} + \overrightarrow{AC} = \overrightarrow{OC}$
   $s = \frac{2t}{5} = \frac{2\cdot{}3}{5\cdot{}5} = \frac{6}{25}$
 
   Somit ist $\vec{v} = 5s\vec{b} = 5\cdot{}\frac6{25}\vec{b} = \frac{6}{5}\vec{b}$
+  
+  
+}%% end TNT eop somit implizites \newpage
+
+
+
+
+\subsection*{Referenzaufgabe 2}
+
+Gegeben im Viereck $OBCA$ sind die linear unabhängigen Vektoren $\vec{a}$ und
+$\vec{b}$\TRAINER{\footnote{Auch hier: Die Graphik ist nicht maßstabsgetreu}}:
+
+\bbwCenterGraphic{72mm}{tals/vecg1/img/LinearkombiBsp3.png}
+
+
+Es gilt: $\overrightarrow{OA} = 6\vec{a}$,
+$\overrightarrow{OB}=5\vec{b}$,
+$\overrightarrow{OC} = 10\vec{a}+9\vec{b}$ und $X$ liegt sowohl auf
+$\overline{OC}$ wie auch auf $\overline{AB}$.
+Drücken Sie der Vektor $\vec{v}=\overrightarrow{OX}$ als
+Linearkombination von $\vec{a}$ und $\vec{b}$ aus.
+
+\TNTeop{
+
+
+
+  
+$\overrightarrow{OA} + \overrightarrow{AB} = \overrightarrow{OB}$
+  somit ist $\overrightarrow{AB} = \overrightarrow{OB} -
+  \overrightarrow{OA} = 5\vec{b} - 6\vec{a}$
+
+  $\vec{v}$ auf zwei Arten darstellen:
+
+  $\vec{v} = s\cdot{}\left(10\vec{a} + 9\vec{b} \right) = 10s\vec{a} +
+  9s\vec{b}$ und
+  
+  $\vec{v}= 6\vec{a} + t\cdot{} \overrightarrow{AB} = 6\vec{a} +
+  t\cdot{} \left(5\vec{b} - 6\vec{a} \right) = 6\vec{a} + 5t\vec{b} -
+  6t\vec{a}$
+  
+
+  Gleichsetzen: 
+  $10s\vec{a} + 9s\vec{b} = 6\vec{a} + 5t\vec{b} - 6t\vec{a}$
+
+  Sortieren und ausklammern:
+  $10s\vec{a} - 6\vec{a}+6t\vec{a} = 5t\vec{b} - 9s\vec{b}$
+
+  $(10s-6+6t)\vec{a} = (5t-9s)\vec{b}$
+
+  Dies ist (wiederum) nur möglich, wenn die Faktoren vor den linear
+  unabhängigen Vektoren gleich Null sind:
+  
+  $10s+6t-6 = 0$ und $5t-9s = 0$
+
+  $\Longrightarrow t = \frac{27}{52}$ 
+  und
+  $s = \frac{15}{52}$
+
+  Somit ist $\vec{v} = s\cdot{} \left(10\vec{a} + 9\vec{b}\right) =
+  \frac{150}{52} \vec{a} + \frac{15\cdot{}9}{52} \vec{b} =
+  \frac{75}{26}\vec{a} + \frac{135}{52}\vec{b}$
   
   
 }%% end TNT eop somit implizites \newpage

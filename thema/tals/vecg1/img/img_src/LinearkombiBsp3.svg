@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   sodipodi:docname="LinearkombiBsp3.svg"
+   inkscape:export-filename="../LinearkombiBsp3.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.741413"
+     inkscape:cx="377.27983"
+     inkscape:cy="336.50834"
+     inkscape:window-width="1818"
+     inkscape:window-height="1049"
+     inkscape:window-x="50"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="marker5"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Dart arrow"
+       markerWidth="3"
+       markerHeight="3"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         transform="scale(-0.5)"
+         id="path5" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker4"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Dart arrow"
+       markerWidth="3"
+       markerHeight="3"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         transform="scale(-0.5)"
+         id="path4" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DartArrow"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Dart arrow"
+       markerWidth="3"
+       markerHeight="3"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         transform="scale(-0.5)"
+         id="path6" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker5-3-5"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Dart arrow"
+       markerWidth="2"
+       markerHeight="2"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         transform="scale(-0.5)"
+         id="path5-1-0" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker5-3-5-2"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Dart arrow"
+       markerWidth="2"
+       markerHeight="2"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         transform="scale(-0.5)"
+         id="path5-1-0-0" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker5-3-5-6"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Dart arrow"
+       markerWidth="2"
+       markerHeight="2"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         transform="scale(-0.5)"
+         id="path5-1-0-5" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker5-3-5-5"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Dart arrow"
+       markerWidth="2"
+       markerHeight="2"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         transform="scale(-0.5)"
+         id="path5-1-0-2" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DartArrow-1"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Dart arrow"
+       markerWidth="3"
+       markerHeight="3"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         transform="scale(-0.5)"
+         id="path6-4" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker5-3-5-6-9"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Dart arrow"
+       markerWidth="2"
+       markerHeight="2"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         transform="scale(-0.5)"
+         id="path5-1-0-5-2" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#000000;stroke-width:0.265;stroke:#000000;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#DartArrow)"
+       d="M 31.595745,106.7234 78.638296,39.319149"
+       id="path1" />
+    <path
+       style="fill:#000000;stroke:#9e1b9e;stroke-width:0.465;stroke-dasharray:none;stroke-opacity:0.6;marker-end:url(#DartArrow-1)"
+       d="m 31.818963,106.22342 40.519818,-4.6741"
+       id="path1-0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.264999;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5)"
+       d="m 31.595743,106.37234 45.359386,35.34838"
+       id="path2"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.264999;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker4)"
+       d="M 31.406501,106.37716 171.21722,90.131024"
+       id="path3"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#000000;stroke:#808080;stroke-width:0.264999;stroke-dasharray:none;stroke-opacity:1"
+       d="M 81.306829,35.106382 80.816839,144.38255"
+       id="path8"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:10.4611px;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.872944;stroke-dasharray:none"
+       x="81.037056"
+       y="31.842115"
+       id="text1"
+       transform="scale(0.96690701,1.0342256)"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.872944;stroke-dasharray:none"
+         x="81.037056"
+         y="31.842115">A</tspan></text>
+    <g
+       id="g4"
+       transform="translate(-3.3425921,2.8867841)">
+      <path
+         style="fill:#000000;stroke:#000000;stroke-width:0.205191;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5-3-5-2)"
+         d="m 52.301104,59.693183 2.63661,0.04455"
+         id="path2-7-0-5"
+         sodipodi:nodetypes="cc" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.4611px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.872944;stroke-dasharray:none"
+         x="47.872772"
+         y="65.257072"
+         id="text1-7"
+         transform="scale(0.96690702,1.0342256)"><tspan
+           sodipodi:role="line"
+           id="tspan1-9"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.4611px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.872944;stroke-dasharray:none"
+           x="47.872772"
+           y="65.257072">6a</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.4611px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.872944;stroke-dasharray:none"
+       x="182.45731"
+       y="89.980896"
+       id="text1-3"
+       transform="scale(0.96690702,1.0342256)"><tspan
+         sodipodi:role="line"
+         id="tspan1-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.4611px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.872944;stroke-dasharray:none"
+         x="182.45731"
+         y="89.980896">C</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.4611px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.872944;stroke-dasharray:none"
+       x="86.662849"
+       y="93.389969"
+       id="text1-3-7"
+       transform="scale(0.96690702,1.0342256)"><tspan
+         sodipodi:role="line"
+         id="tspan1-5-2"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.4611px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.872944;stroke-dasharray:none"
+         x="86.662849"
+         y="93.389969">X</tspan></text>
+    <g
+       id="layer1-1"
+       transform="translate(71.134285,104.47123)">
+      <text
+         xml:space="preserve"
+         style="font-size:10.4611px;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.872944;stroke-dasharray:none"
+         x="8.0730782"
+         y="46.730244"
+         id="text1-2"
+         transform="scale(0.96690702,1.0342256)"><tspan
+           sodipodi:role="line"
+           id="tspan1-7"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.4611px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.872944;stroke-dasharray:none"
+           x="8.0730782"
+           y="46.730244">B</tspan></text>
+    </g>
+    <g
+       id="layer1-6"
+       transform="translate(-56.254902,78.762135)">
+      <text
+         xml:space="preserve"
+         style="font-size:10.4611px;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.872944;stroke-dasharray:none"
+         x="81.037056"
+         y="31.842115"
+         id="text1-0"
+         transform="scale(0.96690701,1.0342256)"><tspan
+           sodipodi:role="line"
+           id="tspan1-6"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.4611px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.872944;stroke-dasharray:none"
+           x="81.037056"
+           y="31.842115">O</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.805;stroke-dasharray:none"
+       x="73.372337"
+       y="126.73404"
+       id="text3"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         style="stroke-width:1.805"
+         x="73.372337"
+         y="126.73404" /></text>
+    <g
+       id="g3"
+       transform="translate(-50.952331,71.389255)">
+      <path
+         style="fill:#000000;stroke:#000000;stroke-width:0.205191;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5-3-5-6)"
+         d="m 98.971467,55.536721 c 0.87887,0.0148 1.757743,0.0297 2.636613,0.0445"
+         id="path2-7-0-3" />
+      <g
+         id="layer1-3"
+         transform="translate(-22.275082,93.339241)">
+        <text
+           xml:space="preserve"
+           style="font-size:10.4611px;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.872944;stroke-dasharray:none"
+           x="117.95335"
+           y="-27.033661"
+           id="text1-75"
+           transform="scale(0.96690702,1.0342256)"><tspan
+             sodipodi:role="line"
+             id="tspan1-92"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.4611px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.872944;stroke-dasharray:none"
+             x="117.95335"
+             y="-27.033661">5b</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g2"
+       transform="translate(-15.050927,13.419636)">
+      <g
+         id="g5">
+        <path
+           style="fill:#9e1b9e;fill-opacity:0.6;stroke:#9e1b9e;stroke-width:0.205191;stroke-dasharray:none;stroke-opacity:0.6;marker-end:url(#marker5-3-5-6-9)"
+           d="m 74.413995,92.950387 c 0.87887,0.0148 1.757742,0.0297 2.636612,0.0445"
+           id="path2-7-0-3-9" />
+        <g
+           id="layer1-3-5"
+           transform="translate(-4.1389825,67.762389)"
+           style="fill:#9e1b9e;fill-opacity:0.6;stroke:none;stroke-opacity:0.6">
+          <text
+             xml:space="preserve"
+             style="font-size:10.4611px;writing-mode:lr-tb;direction:ltr;fill:#9e1b9e;fill-opacity:0.6;stroke:none;stroke-width:0.872944;stroke-dasharray:none;stroke-opacity:0.6"
+             x="81.037056"
+             y="31.842115"
+             id="text1-75-0"
+             transform="scale(0.96690701,1.0342256)"><tspan
+               sodipodi:role="line"
+               id="tspan1-92-4"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.4611px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#9e1b9e;fill-opacity:0.6;stroke:none;stroke-width:0.872944;stroke-dasharray:none;stroke-opacity:0.6"
+               x="81.037056"
+               y="31.842115">v</tspan></text>
+        </g>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.805;stroke-dasharray:none"
+       x="85.195831"
+       y="124.88333"
+       id="text4"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         style="stroke-width:1.805"
+         x="85.195831"
+         y="124.88333" /></text>
+    <g
+       id="g1"
+       transform="translate(-41.942347,-10.630133)">
+      <path
+         style="fill:#000000;stroke:#000000;stroke-width:0.205191;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5-3-5)"
+         d="m 190.05256,108.15168 2.63661,0.0446"
+         id="path2-7-0"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:#000000;stroke:#000000;stroke-width:0.205191;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5-3-5-5)"
+         d="m 171.59531,109.65169 2.63661,0.0446"
+         id="path2-7-0-7"
+         sodipodi:nodetypes="cc" />
+      <g
+         id="layer1-7"
+         transform="translate(74.43389,72.05048)">
+        <text
+           xml:space="preserve"
+           style="font-size:10.4611px;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.872944;stroke-dasharray:none"
+           x="86.509834"
+           y="43.098526"
+           id="text1-36"
+           transform="scale(0.96690702,1.0342256)"><tspan
+             sodipodi:role="line"
+             id="tspan1-1"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.4611px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.872944;stroke-dasharray:none"
+             x="86.509834"
+             y="43.098526">10a+9b</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
