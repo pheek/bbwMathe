@@ -236,16 +236,18 @@ allgemeinen Fall ein
 dritter Vektor $\vec{c}$\, als sog. Linearkombination der beiden
 gegebenen Vektoren angegeben werden:
 
-\begin{gesetz}{Linearkombination}{}
+\begin{definition}{Linearkombination}{}
 
-  Gegeben sind zwei linear unabhängige Vektoren $\vec{a}$ und
+  Gegeben sind zwei Vektoren $\vec{a}$ und
   $\vec{b}$. Zudem ist ein dritter Vektor $\vec{c}$ gegeben.
 
-  Gesucht ist eine \textbf{Linearkombination} $s\cdot{}\vec{a} +
-  t\cdot{}\vec{b}$ (namentlich $s$ und $t$), sodass gilt:
+  Gesucht ist sind Skalare $s$ und $t$, sodass gilt:
 
   $$\vec{c} = s\cdot{}\vec{a} + t\cdot{}\vec{b}$$
-\end{gesetz}
+
+  Ist diese Zerlegung möglich, so nennt man $\vec{c}$
+  eine \textbf{Linearkombination} aus den Vektoren $\vec{a}$ und $\vec{b}$.
+\end{definition}
 \newpage
 
 
@@ -283,7 +285,13 @@ In obigem Beispiel ist
 %%\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-In einigen Fällen ist eine solche \textbf{Zerlegung in Linearfaktoren nicht} möglich:
+\subsection{Spezialfälle der Zerlegung}
+
+$$\vec{c} = s\cdot{}\vec{a} + t\cdot{}\vec{b}$$
+
+In einigen Fällen ist eine eindeutige \textbf{Zerlegung in Linearfaktoren
+  nicht} möglich. Dann nämlich, wenn $\vec{a}$ und $\vec{b}$ nicht
+linear unabhängig sind:
 
 \begin{itemize}
 \item $\vec{a}$ kollinear zu $\vec{b}$ und $\vec{c}$ nicht parallel dazu: \LoesungsRaumLen{58mm}{Zerlegung nicht möglich}
@@ -301,3 +309,56 @@ In einigen Fällen ist eine solche \textbf{Zerlegung in Linearfaktoren nicht} m�
 \TALSAadBMTG{246ff}{8., 9., 11., 12.}
 %%\TALSAadBFWG{180ff}{12. b) c), 13., 16. b) d) e) und 17. a) b)}
 \newpage
+
+\subsection*{Graphische Beispiele}
+
+Gegeben im Viereck $OBCA$ sind die linear unabhängigen Vektoren $\vec{a}$ und
+$\vec{b}$\TRAINER{\footnote{Die Graphik ist nicht maßstabsgetreu}}:
+
+\bbwCenterGraphic{72mm}{tals/vecg1/img/LinearkombiBsp1.png}
+
+
+Es gilt: $\overrightarrow{OA} = 2\vec{a}$,
+$\overrightarrow{OB}=3\vec{b}$,
+$\overrightarrow{BC} = \vec{a}-\vec{b}$ und $X$ liegt sowohl auf
+$\overline{AB}$ wie auch auf $\overline{OC}$.
+Drücken Sie der Vektor $\vec{v}=\overrightarrow{OX}$ als Linearkombination von $\vec{a}$
+und $\vec{b}$ aus.
+
+\TNTeop{
+$\overrightarrow{OA} + \overrightarrow{AB} = 3\vec{b} \Longrightarrow
+  \overrightarrow{AB} = 3\vec{b} - \overrightarrow{OA} =
+  3\vec{b}-2\vec{a}$
+
+$\overrightarrow{OC} = 3\vec{b} + \left(\vec{a} - \vec{b}\right) =
+  2\vec{b}+\vec{a}$
+
+  Drücke $\vec{v}$ über zwei Wege aus:
+
+  $\vec{v} = s\cdot{}\overrightarrow{OC} =
+  s\cdot{}\left(2\vec{b}+\vec{a}\right) = 2s\vec{b} + s\vec{a}$
+
+  und
+
+  $\vec{v} = 2\vec{a} + t\cdot{}\overrightarrow{AB} = 2\vec{a} +
+  t\cdot{}\left(3\vec{b} - 2\vec{a} \right) =
+  2\vec{a} + 3t\vec{b} - 2t\vec{a}$
+
+  Gleichsetzen:   $2s\vec{b} + s\vec{a} = 2\vec{a} + 3t\vec{b} -2t\vec{a}$
+
+  Sortieren (alle $\vec{a}$ nach links, alle $\vec{b}$ nach rechts):
+
+  $s\vec{a}-2\vec{a} + 2t\vec{a} = 3t\vec{b}-2s\vec{b}$
+
+  $\vec{a}$ und $\vec{b}$ ausklammern:   $(s-2+2t)\cdot{}\vec{a} = (3t-2s)\cdot{}\vec{b}$
+
+  Da $\vec{a}$ und $\vec{b}$ linear unabhängig sind, folgt, dass dies nur
+  möglich ist, wenn die Skalare vor den Vektoren gleich Null sind:
+
+  $s-2+2t = 0$ und $3t-2s=0$
+  Auflösen mit TR liefert $s=\frac67$ und $t=\frac47$.
+
+  $\vec{v} = 2s\vec{b} + s\vec{a} = \frac67\vec{a} + \frac{12}7 \vec{b}$
+  
+  
+}%% end TNT eop implicit \newpage
