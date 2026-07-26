@@ -1,21 +1,12 @@
+%% muss in bbwInput aber nun die newifs und die
+%% \input{Zielgruppe}
+%% entfernen
 
-%%
-%% Meta: Master Document
-%% GESO 1jährig
-%%
+%% only while transition 2024
+\input{inputs/bmsNewIfs}
 
-\input{bmsLayoutDoc}
+\isTALSfalse%%
+\isGESOtrue%%
+\isTRAINERfalse%%
 
-\renewcommand{\author}{Philipp G. Freimann}
-\renewcommand{\grafikautor}{Ph. G. Freimann}
-\renewcommand{\authoremail}{philipp.freimann@bms-w.ch}
-\renewcommand{\erstellungsdatum}{\versionGESOMajorDate}
-\renewcommand{\docversion}{\versionGESOMajorVSR}
-
-%%\renewcommand{\modulnummer}{Arithmetik und Algebra I}
-\renewcommand{\doctitel}{Lineare Gleichungssysteme}
-\renewcommand{\fachthema}{Lösungsmethoden}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Lineare Gleichungssysteme
-\defaultScript{geso/gls/AllGESO}
+\input{GESO_S_GLS_CNT}

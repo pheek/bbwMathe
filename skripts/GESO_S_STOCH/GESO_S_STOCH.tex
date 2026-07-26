@@ -1,19 +1,13 @@
-%%
-%% Meta: Master Document
-%% GESO 1jährig
-%%
 
-\input{bmsLayoutDoc}
+%% muss in bbwInput aber nun die newifs und die
+%% \input{Zielgruppe}
+%% entfernen
 
-\renewcommand{\author}{Philipp G. Freimann}
-\renewcommand{\grafikautor}{Ph. G. Freimann}
-\renewcommand{\authoremail}{philipp.freimann@bms-w.ch}
-\renewcommand{\erstellungsdatum}{\versionGESOMajorDate}
-\renewcommand{\docversion}{\versionGESOMajorVSR}
+%% only while transition 2024
+\input{inputs/bmsNewIfs}
 
-\renewcommand{\doctitel}{Wahrscheinlichkeitsrechnung}
-\renewcommand{\fachthema}{Kombinatorik und Wahrscheinlichkeit}
+\isTALSfalse%%
+\isGESOtrue%%
+\isTRAINERfalse%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\defaultScript{geso/stoch/AllGESO}
+\input{GESO_S_STOCH_CNT}

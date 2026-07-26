@@ -2,11 +2,10 @@
 # Transition 2024
 # uses no "Zielgruppe" any more.
 
-export TEX_FILE_NAME=TALS_4J_SPF_ALL_TALS
-../dirMake.sh
+export TEX_FILE_NAME=TALS_4J_SPF_ALL
 ../dirMake.sh
 
-export TEX_FILE_NAME=TALS_4J_SPF_ALL_TRAINER_TALS
+export TEX_FILE_NAME=TALS_4J_SPF_ALL_TRAINER
 ../dirMake.sh
-../dirMake.sh
+
 

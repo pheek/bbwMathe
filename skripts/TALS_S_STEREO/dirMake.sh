@@ -2,9 +2,9 @@
 # Transition 2024
 # uses no "Zielgruppe" any more.
 
-export TEX_FILE_NAME=TALS_S_STEREO_TALS
+export TEX_FILE_NAME=TALS_S_STEREO
 ../dirMake.sh
 
-export TEX_FILE_NAME=TALS_S_STEREO_TRAINER_TALS
+export TEX_FILE_NAME=TALS_S_STEREO_TRAINER
 ../dirMake.sh
 
