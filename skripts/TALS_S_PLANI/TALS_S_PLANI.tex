@@ -1,20 +1,13 @@
-%%
-%% Meta: Master Document
-%% Arithmetik und Algebra I
-%% 
-%%
 
-\input{bmsLayoutDoc}
+%% muss in bbwInput aber nun die newifs und die
+%% \input{Zielgruppe}
+%% entfernen
 
-\renewcommand{\author}{Philipp G. Freimann}
-\renewcommand{\grafikautor}{Ph. G. Freimann}
-\renewcommand{\authoremail}{philipp.freimann@bms-w.ch}
-\renewcommand{\erstellungsdatum}{\versionTALSMajorDate}
-\renewcommand{\docversion}{\versionTALSMajorVSR}
+%% only while transition 2024
+\input{inputs/bmsNewIfs}
 
-%%\renewcommand{\modulnummer}{Arithmetik und Algebra I}
-\renewcommand{\doctitel}{Planimetrie}
-\renewcommand{\fachthema}{Elementare Objekte und Zusammenhänge}
+\isTALStrue%%
+\isGESOfalse%%
+\isTRAINERfalse%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\defaultScript{tals/plani/AllTALS}
+\input{TALS_S_PLANI_CNT}

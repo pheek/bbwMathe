@@ -2,9 +2,9 @@
 # Transition 2024
 # uses no "Zielgruppe" any more.
 
-export TEX_FILE_NAME=TALS_S_GL1_TALS
+export TEX_FILE_NAME=TALS_S_GL1
 ../dirMake.sh
 
-export TEX_FILE_NAME=TALS_S_GL1_TRAINER_TALS
+export TEX_FILE_NAME=TALS_S_GL1_TRAINER
 ../dirMake.sh
 

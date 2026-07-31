@@ -1,20 +1,13 @@
-%%
-%% Meta: Master Document
-%% GESO 1jährig
-%%
 
-\input{bmsLayoutDoc}
+%% muss in bbwInput aber nun die newifs und die
+%% \input{Zielgruppe}
+%% entfernen
 
-\renewcommand{\author}{Philipp G. Freimann}
-\renewcommand{\grafikautor}{Ph. G. Freimann}
-\renewcommand{\authoremail}{philipp.freimann@bms-w.ch}
-\renewcommand{\erstellungsdatum}{\versionTALSMajorDate}
-\renewcommand{\docversion}{\versionTALSMajorVSR}
+%% only while transition 2024
+\input{inputs/bmsNewIfs}
 
-%%\renewcommand{\modulnummer}{Arithmetik und Algebra I}
-\renewcommand{\doctitel}{Algebra III}
-\renewcommand{\fachthema}{Potenzen, Wurzeln, Logarithmen}
+\isTALStrue%%
+\isGESOfalse%%
+\isTRAINERfalse%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\defaultScript{tals/aa3/AllTALS}
+\input{TALS_S_AA3_CNT}
