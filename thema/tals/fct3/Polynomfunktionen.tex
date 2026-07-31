@@ -103,7 +103,7 @@ $y=x^2 + x^1 + x^0 + x^{-1}$
 
 \begin{definition}{gerade Funktion}{}\index{Funktion!gerade}\index{gerade Funktion}
   Funktionen, welche an der $y$-Achse gespiegelt sind, werden
-  \textbf{gerade} Funktionen genannt und haben die Eigenschaft
+  \textbf{gerade} Funktionen genannt und haben die Eigenschaft:
 
   $$f(x) = f(-x)$$
 \end{definition}
@@ -112,7 +112,7 @@ $y=x^2 + x^1 + x^0 + x^{-1}$
 \begin{gesetz}{gerade Exonenten}{}
   Polynomfunktionen mit ausschließlich \textbf{geraden} Exponenten sind gerade Funktionen.
 
-  Begründung:
+  Begründung: Für $i\in\mathbb{Z}$ gilt:
 
   $$(-x)^{2\cdot{}i} = ((-1)\cdot{}x)^{2\cdot{}i} = (-1)^{2\cdot{}i} \cdot{} x^{2\cdot{}i} = \left((-1)^2\right)^i \cdot{} x^{2\cdot{}i} = 1^i\cdot{}x^{2\cdot{}i} = x^{2\cdot{}i}$$
 \end{gesetz}
@@ -126,7 +126,7 @@ $y=x^2 + x^1 + x^0 + x^{-1}$
 \subsubsection{Ungerade Funktionen}
 \begin{definition}{ungerade Funktion}{}\index{Funktion!ungerade}\index{ungerade Funktion}
   Funktionen, welche am Ursprung $O = (0|0)$ gespiegelt sind, werden
-  \textbf{ungerade} Funktionen genannt und haben die Eigenschaft
+  \textbf{ungerade} Funktionen genannt und haben die Eigenschaft:
 
   $$f(-x) = -f(x)$$
 \end{definition}
@@ -137,7 +137,7 @@ $y=x^2 + x^1 + x^0 + x^{-1}$
 \begin{gesetz}{\textbf{un}gerade Exponenten}{}
   Polynomfunktionen mit ausschließlich \textbf{un}geraden Exponenten sind \textbf{un}gerade Funktionen.
 
-  Begründung:
+  Begründung: Für $i\in\mathbb{Z}$ gilt:
 
   $$(-x)^{2\cdot{}i + 1} = ((-1)\cdot{}x)^{2\cdot{}i+1} = (-1)^{2\cdot{}i+1} \cdot{} x^{2\cdot{}i+1} = (-1)\cdot{}x^{2\cdot{}i+1} = -\left(x^{2\cdot{}i+1}\right)$$
 
@@ -154,7 +154,7 @@ $y=x^2 + x^1 + x^0 + x^{-1}$
 \subsection*{Aufgaben}
 
  
-\aufgabenFarbe{Zeichnen Sie Funktionen obiger beiden Beispiele mit dem
+\aufgabenFarbe{Zeichnen Sie Graphen obiger beiden Beispiele mit dem
   Taschenrechner:
   $$ x \mapsto 0.3x^6+2x^2+4$$
   $$ x \mapsto 0.3x^5 + 2x$$%%
@@ -255,7 +255,7 @@ $$p: x\mapsto \LoesungsRaum{\frac{1}{15}}x^3 + \LoesungsRaum{\frac{-4}{15}}x^2 +
 
 \olatLinkTALSStrukturaufgabenSPF{Teil1 (ohne TR)}{6}{7. (Grad ist $n=4$)}
 
-\olatLinkTALSStrukturaufgabenSPF{Teil 2 (mit TR)}{15ff}{48. und 51. (Bestimmen Sie zuerst die Nullstellen)}
+\olatLinkTALSStrukturaufgabenSPF{Teil 2 (mit TR)}{15}{48.}
 %%\TALS{\aufgabenFarbe{Strukturaufgaben SPF Teil 2: Taschenrechner: S. 15ff:  Aufg. 48. und 51.}%% END Aufgabenfarbe
 %%}%% END TALS
 
@@ -310,11 +310,12 @@ Lokale Minima/Maxima:
   
 \end{itemize}
 
+\newpage
 
 \begin{definition}{Linearfaktor}{}
-  Ein Term der Form
+  Ein Term in $x$ der Form
   $$T(x) = (x+a)$$
-  heißt Linearfaktor in $x$.
+  mit $a\in\mathbb{R}$ heißt Linearfaktor in $x$.
 \end{definition}
 
 \begin{beispiel}{Linearfaktor}{}
@@ -328,7 +329,9 @@ Lokale Minima/Maxima:
 
 \newpage
 \subsubsection{Grobverlauf}
-Bei Polynomfunktionen reicht es, auf den Summanden mit dem höchsten Exponenten zu schauen, um den Grobverlauf des Graphen voraussagen zu können ($a$ sei $> 0$):
+Bei Polynomfunktionen reicht es, auf den Summanden mit dem höchsten
+Exponenten zu schauen, um den Grobverlauf des Graphen voraussagen zu
+können (sei $a > 0$):
 
 \noTRAINER{%%
 \begin{tabular}{|c|c|}\hline
@@ -355,7 +358,8 @@ Bei Polynomfunktionen reicht es, auf den Summanden mit dem höchsten Exponenten 
 
 \subsection*{Referenzaufgabe}
 
-\olatLinkTALSStrukturaufgabenSPF{Teil 2 [mit Taschenrechner]}{16}{52.}
+\olatLinkTALSStrukturaufgabenSPF{Teil 2 [mit
+    Taschenrechner]}{16}{51. (erst die Nullstellen bestimmen) und 52.}
 %%\aufgabenFarbe{\textit{Strukturaufgabe [SPF] S. 16 Aufg 52. \textbf{mit} Taschenrechner!}
 %%\\
 
@@ -380,11 +384,11 @@ dargestellt ist:
 
   Ansatz:
   $$f(x)=a(x-3)(x-3)(x-b)(x-c)(x-d)$$
-  Danach ein Gleichungssystem erstellen
+  Danach ein Gleichungssystem mit den gegebenen Punkten erstellen
 
   Lösung:
 
-  $$b=-4, c=-10, d=20, a=.....$$
+  $$b=-4, c=-10, d=20, a=\frac{1}{50}$$
   (und alle Vertauschungen)
 }%% END TNT eop
 
@@ -405,17 +409,17 @@ Gegeben ist folgender Graph:
   \item Grad bestimmen. Anzahl Nullstellen
     \TRAINER{(inkl. doppelte, dreifache)} \LoesungsRaum{6}
   \item Klammeransatz $f(x) =
-    \LoesungsRaumLang{(x-\Box)(x-\Box)(x-\Box)(x-\Box)(x-\Box)(x-\Box)}$
+    \LoesungsRaumLang{a\cdot{}(x-\Box)(x-\Box)(x-\Box)(x-\Box)(x-\Box)(x-\Box)}$
   \item Nullstellen (inkl. doppelte\footnote{Doppelte Nullstellen heißen auch
       Nullstellen mit Vielfachheit\index{Vielfachheit} zwei (analog
       dreifach etc.).} eintragen)
-    $$f(x) = \LoesungsRaumLang{(x+1)(x-1)(x-1)(x-3)(x-3)(x-3)}$$
+    $$f(x) = \LoesungsRaumLang{a\cdot{}(x+1)(x-1)(x-1)(x-3)(x-3)(x-3)}$$
   \item Allenfalls Vorfaktor $a$ bestimmen:
     $$f(0) = \LoesungsRaumLang{-2.7 = a \cdot{}(1)(-1)(-1)(-3)(-3)(-3)}$$
     $$\Longrightarrow a= \LoesungsRaumLang{\frac{-2.7}{(-3)(-3)(-3)}}$$
     $$a  = \LoesungsRaumLang{\frac{-2.7}{-27} = 0.1}$$
 
-  \item Lösung: $f() = \LoesungsRaumLang{0.1 (x+1)(x-1)^2(x-3)^3}$ 
+  \item Lösung: $f(x) = \LoesungsRaumLang{0.1 (x+1)(x-1)^2(x-3)^3}$ 
     \end{enumerate}
   
   \end{rezept}
@@ -451,7 +455,7 @@ Gegeben ist folgender Graph:
 
 
 
-\olatLinkTALSStrukturaufgabenSPF{Teil 1 [ohne TR]}{6}{6. und 10.}
+\olatLinkTALSStrukturaufgabenSPF{Teil 1 [ohne TR]}{6ff}{6. und 10.}
 %%\aufgabenFarbe{Strukturaufgaben: SPF V. 4.0 Seite 6ff: \textbf{Ohne} Taschenrechner: Aufg. 6. und 10.}
 
 \TNTeop{}%%\noTRAINER{\mmPapier{10}}

@@ -13,7 +13,7 @@
 \subsection{Einstieg}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Beispiel: Rationale Funktion\GESO{ (optional)}}
+\subsubsection{Beispiel: (gebrochen) rationale Funktion\GESO{ (optional)}}
 
 Betrachten wir einmal die Funktion $f: y = 0.1x^3 + x^2 + 2x + 3 - x^{-1}$ \zB mit Geogebra (\texttt{www.geogebra.org}).
 
@@ -224,10 +224,14 @@ $Q=\left(-4\middle|8192\right)$ verläuft.
   $$\frac{8192}{1458} = \left(\frac{-4}3\right)^k$$
   Problem: Logarithmen mit negativen Basen (hier $\frac{-4}3$)
   funktionieren nicht!
+
+  Weil aber $\frac{8192}{1458} > 0$ ist, folgt, dass $k$ gerade ist.
   
-  Weil nun $k$ gerade sein muss, folgt dass $\left(\frac{-4}3\right)^k
-  = \left(\frac43\right)^k$. Daraus ergibt sich
-  $$\frac{8192}{1458} = \left(\frac{4}3\right)^k \Longrightarrow k =
+  Und weil nun $k$ gerade ist, folgt dass $\left(\frac{-4}3\right)^k
+  = \left(\frac43\right)^k$.
+
+  Daraus ergibt sich
+  $$\frac{8192}{1458} = \left(\frac{-4}3\right)^k \Longrightarrow  \frac{8192}{1458} = \left(\frac{4}3\right)^k \Longrightarrow k =
   \log_{\frac43}\left(\frac{8192}{1458}\right) = 6$$
   Dieses $k$ nun in die Gleichung (I) einsetzen; dies
   liefert
@@ -399,17 +403,17 @@ Vergleichen Sie die neue Funktion mit der Parabel $y=x^3$.
   \aufgabenFarbe{Zeichnen Sie mit \texttt{geogebra.org} die Funktion
     $f(x) = \frac1{10}(x^3 - 3x^2 + 3)$
     \\
-    Definieren Sie anschließend die Funktion $$g(x) = a\cdot{}f((x+s)\cdot{}b)+r.$$
+    Definieren Sie anschließend die Funktion $$g(x) = a\cdot{}f\left(\frac{x-d}{b}\right)+c.$$
 \\
-    Entscheiden Sie, welche Veränderungen die Parameter $a$, $b$, $r$
-    und $s$ bewirken.\\
-    Starten Sie mit $a=1$, $b=1$, $r=0$ und $s=0$.
+    Entscheiden Sie, welche Veränderungen die Parameter $a$, $b$, $c$
+    und $d$ bewirken.\\
+    Starten Sie mit $a=1$, $b=1$, $c=0$ und $d=0$.
   }%% END Aufgabenfarbe
   \TNT{4}{
-    $r$: Verschiebung nach oben\\
-    $s$: Verschiebung nach links\\
+    $c$: Verschiebung nach oben\\
+    $d$: Verschiebung nach rechts\\
     $a$: Streckung in $y$-Richtung\\
-    $b$: Stauchung in $x$-Richtung
+    $b$: Streckung in $x$-Richtung
   }%% END TNT
 }%% END TALS
 

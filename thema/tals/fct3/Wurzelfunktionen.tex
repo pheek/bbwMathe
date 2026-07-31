@@ -14,12 +14,12 @@
 
 \subsection{Motivation}
 
-Die geforderte Länge $l$ (in m) eines Pendels lässt sich wie folgt ermitteln:
+Die geforderte Länge $l$ (in m) eines Pendels lässt sich wie folgt annähern:
 
 $$l = g \cdot{} \left(\frac{t}{2\pi}\right)^2$$
 
 
-Dabei ist $t$ die gewünschte Schwingungsdauer in
+Dabei ist $t$ die gemessene Schwingungsdauer in
 Sekunden\footnote{Gemessen hin und zurück.} und $g$ die
 Erdbeschleunigung (9.81).
 
@@ -42,7 +42,7 @@ $$t = t(l) = \LoesungsRaumLen{40mm}{2\pi \cdot{} \sqrt{\frac{l}{g}}}$$
 
 \TNT{3.2}{
   Herleitung
-  $$4 = g\cdot{}  \left( \frac{t}{2\pi}\right)^2$$
+  $$l = g\cdot{}  \left( \frac{t}{2\pi}\right)^2$$
   $$\sqrt{\frac{l}{g}} = \frac{t}{2\pi}$$
   $$2\pi\cdot{}\sqrt{\frac{l}{g}} = t$$
 }
@@ -203,17 +203,11 @@ Was fällt auf?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 
 
-\begin{definition}{Wurzelfunktion in «Scheitelform»}{}
-
-  $$f: y = a\cdot{}\sqrt{\pm(x-X_S)} + Y_S$$
-
-\end{definition}
-
 \begin{gesetz}{Scheitelform}{}
   Bei der Funktion
-  $$f: y = a\cdot{}\sqrt{\pm(x-X_S)} + Y_S$$
-liegt der Scheitelpunkt bei $S=(X_S | Y_S)$ und der Formfaktor $a$ kann
-entweder durch Einsetzen in die Funktionsgleichung oder durch ablesen
+  $$f: y = \LoesungsRaumLen{50mm}{a\cdot{}\sqrt{\pm(x-X_S)} + Y_S}$$
+liegt der \textit{Scheitelpunkt} bei $S=(X_S | Y_S)$ und der Formfaktor $a$ kann
+entweder durch Einsetzen in die Funktionsgleichung oder durch Ablesen
 bei $x=X_S+1$ ermittelt werden.
 
 Das $\pm$ unter der Wurzel wird zu einem Minus ($-$), sofern der
@@ -228,7 +222,7 @@ Geben Sie die Funktionsgleichung an.
 \TRAINER{\bbwCenterGraphic{80mm}{tals/fct3/img/WurzelAblesen.png}}
 
 \TNTeop{
-  Ansatz: $y = a \sqrt{-(x-(-4))} + 2 = a \sqrt{-x-4} + 2$
+  Ansatz: $y = a\cdot{}\sqrt{\pm(x-X_S)} + Y_S = a \sqrt{-(x-(-4))} + 2 = a \sqrt{-x-4} + 2$
 
   Weg 1: Punkt $B=(-8 | -3)$ einsetzen:
   $$-3 = a \sqrt{-(-8) - 4} + 2$$
@@ -259,7 +253,9 @@ in der Scheitelform an und vereinfachen Sie danach so weit wie möglich: $$y=a\c
 
   $h: y=-\sqrt{2} \cdot{} \sqrt{+(x+0)} + 5 = -\sqrt{2x} + 5$ und
 
-  $i: y=2\cdot{} \sqrt{-(x-4)} + 3 = 2\cdot{} \sqrt{4-x} + 3$
+  $j: y=2\cdot{} \sqrt{-(x-4)} + 3 = 2\cdot{} \sqrt{4-x} + 3$
+
+  $k: y=\frac{-1}2 \cdot{} \sqrt{-(x+1)} + 8$
 }%% end TNT
 
 %%\newpage implicit
@@ -268,7 +264,7 @@ in der Scheitelform an und vereinfachen Sie danach so weit wie möglich: $$y=a\c
 \subsection*{Aufgaben}
 
 %%\TALSAadBMTA{213ff}{803. n), 804. h), 805. c), 806. c), 807. a) c) 808. b)}
-\TALSAadBMTA{310}{40., 43. g), 44. b), 45. a) }
+\TALSAadBMTA{310}{40., 43. g) , 45. a) und optional 44. b)}
 
 \olatLinkTALSStrukturaufgabenSPF{Teil 2}{14ff}{46. und 50.}
 
