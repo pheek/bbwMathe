@@ -6,6 +6,8 @@
 \sectuntertitel{Sei $A$ ein Punkt $Q$; wir wollen ihn $M$ nennen}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+{\color{red} WIRD NICHT MEHR VERWENDET!}
+
 \TALSTadBFWG{25}{1.2.2}
 
 \TALSTadBFWG{29}{1.2.4}
@@ -40,7 +42,6 @@ Um geometrische Aufgaben zu lösen, hat bei mir folgendes meist geholfen:
 \item Geben Sie Gegebenem und Gesuchtem Namen
 \item Verwenden Sie Farben für Gegebenes
 \item Verwenden Sie die selben Farben (od. Symbole) für die selben Streckenlängen, Winkel, Flächen
-\item Bei Aufgaben mit Kreisen: Verbinden Sie die Mittelpunkte 
 \item Suchen Sie rechtwinklige Dreiecke (Pythagoras)
 
 \end{enumerate}

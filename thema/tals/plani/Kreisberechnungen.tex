@@ -75,19 +75,72 @@ Herleitung
   $A_{\text{Sektor}}=A_{\text{SK}}$ wie folgt berechnet:
   
   $$b = 2r\pi \cdot{}\frac{\varphi}{360\degre} = r\cdot{} \varphi
-  \cdot{} \frac{\pi}{180\degre}= r\cdot{} \stackrel{\frown}{\varphi}$$
+  \cdot{} \frac{\pi}{180\degre}$$
   $$A_{\text{SK}} = r^2\pi\cdot{}\frac{\varphi}{360\degre} = \frac12\cdot{}b\cdot{}r$$
 \end{gesetz}
 
 
-Begründung \LoesungsRaumLang{Dreisatz}
-\TNT{6}{Bogen: Es gilt das Verhältnis
+Begründung
+
+
+\TNT{6}{Dreisatz: Bogen: Es gilt das Verhältnis
   $$b : (2r\pi) = \varphi : 360\degre$$
 
   Analog Fläche:
   $$A_{\text{SK}} : (r^2\pi) = \varphi : 360\degre$$
   $$A_{\text{SK}} \cdot{} 360\degre = r^2\pi\cdot{}\varphi$$
 }
+
+\begin{gesetz}{Bogenmaß}{}\index{Kreissektor}\index{Kreisbogen}
+  Im Bogenmaß gilt:
+
+  $$b = r\cdot{} \stackrel{\frown}{\varphi}$$
+  und
+
+  $$A_{\text{SK}} = \frac{r^2}{2}\cdot{} \stackrel{\frown}{\varphi}$$
+\end{gesetz}
+
+\newpage
+
+\subsection*{Referenzaufgabe}
+Zu einem Halbkreis mit Radius 1 (eine Einheit) wird ein rechtwinkliges
+Dreieck $MAB$ wie folgt konstruiert:
+
+
+\bbwCenterGraphic{6cm}{tals/plani/img/ReferenzaufgabeKreisbogen.png}
+
+
+Berechnen Sie den Winkel $\stackrel{\frown}{\varphi}$ (bzw. $\varphi$)
+so, dass die beiden beschrifteten Flächen $F_1$ und $F_2$ gleich groß
+werden.
+
+\TNTeop{
+  Lösung
+
+  $F_1 = \frac{1}{2} \cdot{} \stackrel{\frown}{\varphi}$
+
+  $F_2 = F_1 = \text{halbe Dreiecksfläche}$
+
+  Dreiecksfläche: $\overline{AB}:1 = \tan\left(\stackrel{\frown}{\varphi}\right)$
+  Daher: Dreiecksfläche = $\frac12 \cdot{}\tan
+  \left(\stackrel{\frown}{\varphi}\right) $
+
+  und halbe Dreiecksfläche = $F_1 = F_2 = \frac{1}{4} \cdot{} \tan \left(\stackrel{\frown}{\varphi}\right)$
+
+  
+  Nun lösen wir mit dem Taschenrechner im Bogenmaß:
+
+  $$F_1 = F_2$$
+
+  also: SOLVE (gl,$\varphi$) mit gl:  
+
+  $$\frac{1}{2} \cdot{} \stackrel{\frown}{\varphi} = \frac{1}{4} \cdot{} \tan\left(\stackrel{\frown}{\varphi}\right)$$
+
+  Einschränken auf $\varphi < \pi : 2$ liefert $\varphi \approx
+  1.166$ im Bogenmaß $\approx 66.78$ Grad.
+  
+}
+\newpage
 
 \subsection*{Aufgaben}
 
@@ -120,10 +173,12 @@ Begründung \LoesungsRaumLang{Dreisatz}
 \end{gesetz}
 
 \begin{bemerkung}{Bogenmaß}{}
-  Alternativ kann der Sektor auch mit dem Bogenmaß, bzw. die
+  Alternativ kann der Sektor auch mit dem Bogenmaß $(\stackrel{\frown}{\varphi})$, bzw. die
   Dreiecksfläche mit der Flächenformel berechnet werden:
 
-  $$A_{\text{SG}} = \frac{\stackrel{\frown}{\varphi}\cdot{} r}2 - \frac12 r^2  \sin(\varphi)$$
+  $$A_{\text{SG}} = \frac{\stackrel{\frown}{\varphi}\cdot{} r^2}2 -
+  \frac12 r^2  \sin(\stackrel{\frown}{\varphi}) = r^2 \cdot{}
+  \frac{\stackrel{\frown}{\varphi} - \sin(\stackrel{\frown}{\varphi})}{2}$$
 \end{bemerkung}
 
 \newpage
