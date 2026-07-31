@@ -30,13 +30,17 @@ $A$, $B$ und $C$ bestimmen, dazu zuerst $x$ ausklammern:
 \\
 $$b\cdot{}x^2 + (\sqrt{2} - \lambda b) \cdot x - \lambda \sqrt{2} = 0$$
 $$\Longrightarrow  A = b; B = (\sqrt{2} - \lambda{} b); C = -\lambda \sqrt{2}$$
-Einsetzen in $\frac{-B \pm \sqrt{B^2-4AC}}{2A} $:
-$$x_{1,2} = \frac{\lambda b - \sqrt{2} \pm \sqrt{(2-2\sqrt{2}\lambda b) + \lambda^2 b^2 + 4b\lambda\sqrt{2}}}{2b}$$
-$$  = \frac{\lambda b - \sqrt{2} \pm \sqrt{2+2\sqrt{2}\lambda b+ \lambda^2 b^2 }}{2b} $$
-binomische Formel: 
-  $$  = \frac{\lambda b - \sqrt{2} \pm \sqrt{(\sqrt{2} + \lambda b)^2 }}{2b} $$
-  $$  = \frac{\lambda b - \sqrt{2} \pm (\sqrt{2} + \lambda b)}{2b}$$
-  $$x_1 = \frac{-\sqrt{2}}{b}; x_2 = \frac{2\lambda b}{2b} = \lambda $$
+
+Diskriminante: $$D = B^2-4AC = (\sqrt{2}-\lambda b)^2 - 4\cdot{} b \cdot{}
+(-\lambda \sqrt{2}) = $$
+$$ = (2 -2\sqrt{2} \lambda b + \lambda^2 b^2) + 4b\lambda\sqrt{2} =
+2 + 2\sqrt{2} \lambda b + \lambda^2 b^2 = (\sqrt{2} + \lambda b)^2$$
+ergo
+$$\sqrt{D} = \sqrt{2} + \lambda b$$
+
+$$x_{1,2} = \frac{\lambda b - \sqrt{2} \pm \sqrt{D}}{2b}$$
+$$  = \frac{\lambda b - \sqrt{2} \pm (\sqrt{2} + \lambda b)}{2b} $$
+  $$x_1 = \frac{2\lambda b}{2b} = \lambda ; x_2 = \frac{-2\sqrt{2}}{2b} = \frac{-\sqrt{2}}{b}$$
 }%% END TNT
 %%\newpage
 
@@ -65,7 +69,7 @@ $$x^2+b+2 = -2bx$$
 
 
 \subsection*{Aufgaben}
-\TALS{\olatLinkArbeitsblatt{GlQuad}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/111365560138736}{Aufgabe 10.}
+\TALS{\olatLinkArbeitsblatt{GlQuad}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/111365560138736}{Aufgabe 10. a) }
   }%% end GESO
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%5
@@ -96,7 +100,7 @@ Das selbe Beispiel können wir ganz einfach auch mit dem Taschenrechner lösen:
 
 \subsection*{Aufgaben}
 
-\TALS{\olatLinkArbeitsblatt{GlQuad}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/111365560138736}{Aufgabe 10.}
+\TALS{\olatLinkArbeitsblatt{GlQuad}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/111365560138736}{Aufgabe 10. b) c)}
 }%% end TALS
 
 %\AadBMTA{182ff}{16. a) c) d)}
