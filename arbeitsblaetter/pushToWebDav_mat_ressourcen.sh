@@ -40,7 +40,7 @@ cp -f ./taschenrechner/tr_ti30_Plus_geso_wichtige_befehle/TR_TI30_GESO_Wichtige_
   "${BBW_WEBDAV_PATH}/5_Buecher_Lehrmittel_Taschenrechner/Taschenrechner/TI30_PLUS_MathPrint/TR_TI30_GESO_Wichtige_Befehle.pdf"
 
 echo "  copying Formelsammlung"
-GESO_BBW_FS_DIR="${BBW_WEBDAV_PATH}/3_Pruefungen/e_Formelsammlungen/GESO/Formelsammlung_BBW"
+GESO_BBW_FS_DIR="${BBW_WEBDAV_PATH}/3_Pruefungen/e_Formelsammlungen/GESO/Formelsammlung_BMSW"
 cp -f ./formelsammlung/FormelsammlungGESO_RLP.pdf  "${GESO_BBW_FS_DIR}/daily/FormelsammlungGESO_Daily.pdf"
 ##cp -f ./formelsammlung/FormelsammlungGESO_RLP.pdf  "${GESO_BBW_FS_DIR}FormelsammlungGESO_Daily_RLP.pdf"
 cp -f ./formelsammlung/FormelsammlungGESO_GRPH.pdf  "${GESO_BBW_FS_DIR}/mandanten/FormelsammlungGESO_Daily_GRPH.pdf"

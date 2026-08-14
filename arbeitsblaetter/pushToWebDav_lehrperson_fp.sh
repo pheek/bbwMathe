@@ -183,8 +183,8 @@ cp -f ./geometrie/vektorgeometrie/vecg2/Geradengleichung/Geradengleichung_TALS.p
 cp -f ./geometrie/vektorgeometrie/vecg2/Geradengleichung/Geradengleichung_TRAINER_TALS.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/vecg2/aufgabenblaetter/Geradengleichung_Loesungen.pdf
 
 echo "  copying Auftrag Logarithmentabelle (TALS)"
-cp -f ./algebra/logarithmentabelle/LogarithmenArbeitsblatt_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/aa2/auftrag_logarithmentabelle/AuftragLogarithmentabelle.pdf
-cp -f ./algebra/logarithmentabelle/LogarithmenArbeitsblatt_TRAINER_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/aa2/auftrag_logarithmentabelle/AuftragLogarithmentabelleLoesungsweg.pdf
+cp -f ./algebra/logarithmentabelle/LogarithmenArbeitsblatt_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/aa3/auftrag_logarithmentabelle/AuftragLogarithmentabelle.pdf
+cp -f ./algebra/logarithmentabelle/LogarithmenArbeitsblatt_TRAINER_ALLG.pdf  ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/spf/aa3/auftrag_logarithmentabelle/AuftragLogarithmentabelleLoesungsweg.pdf
 
 echo "  copying Arbeitsblatt Algebra I Grundoperationen (GESO und TALS)"
 cp -f ./algebra/algebra1Grundoperationen/A1G_ALLG.pdf           ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/algebra/grundoperationen/A1G_Aufgaben.pdf
