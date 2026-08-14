@@ -2,15 +2,15 @@
 %% 2023-2025 fp @ bbw.ch
 %%
 
-\newcommand{\versionsDatumFoSa}{2025-07-02}
-\newcommand{\versionIdSubRev}{0.5.2}
+\newcommand{\versionsDatumFoSa}{2026-08-14}
+\newcommand{\versionIdSubRev}{1.0.0}
 \newcommand{\versionsnummerFoSa}{\versionsDatumFoSa{} \versionIdSubRev\,\,\versionMANDANT}
 
 \input{bmsLayoutPage}
 
 \newcommand{\geometrieErsteSeite}{}
 
-\renewcommand{\metaHeaderLine}{Formelsammlung --- gesundheitlich-soziale Berufsmaturität}%% END HEADERFOOTER
+\renewcommand{\metaHeaderLine}{Formelsammlung (RLP 2030)--- gesundheitlich-soziale Berufsmaturität}%% END HEADERFOOTER
 \renewcommand{\geometrieErsteSeite}{\newgeometry{left=7mm,right=7mm,top=22mm,bottom=15mm}}
 
 \definecolor{dunklesGruen}{HTML}{4E8F00}%%
@@ -366,13 +366,6 @@ $D<0\Longrightarrow$ Keine Lösung
 \begin{itemize}
 \item Lösen durch Faktorisieren:\\
 $x^2+2x-15=0 \Longrightarrow (x-3)(x+5)=0 \Longrightarrow \lx=\{-5; 3\}$ %% DMK: (-5, 3) statt ;
-
-\item Lösen durch Substitution:\\
-$x^4+2x^2-15=0 \stackrel{y=x^2}{\Longrightarrow}\\
-y^2+2y-15=0 \Longrightarrow \LoesungsMenge{}_y=\{-5;3\} \stackrel{x=\pm{}\sqrt{y}}{\Longrightarrow}
-\textrm{ (Rücksubstitution) } \lx=\{\pm\sqrt{3}\}\\
-\textrm{(} \pm\sqrt{-5} \textrm{ \, sind keine reelen Lösungen. )}$
-
 \end{itemize}
 
 \subsection*{Bruchgleichungen}
@@ -430,22 +423,6 @@ $$\LoesungsMenge{}_{(x | y)} = \{(8 | -3)\}$$
 %%\forceCB
 
 \headerUndFooterJedeSeite{}
-
-\subsection*{Substitution}
-Beispiel Bruchgleichungssysteme:
-
-\gleichungZZ{{\color{dunklesGruen}\frac6{x+1}} + {\color{red}\frac8{y-2}}}{11}{{\color{dunklesGruen}\frac2{x+1}} - {\color{red}\frac{10}{y-2}}}{-9}
-Substituiere
-${\color{dunklesGruen}a}={\color{dunklesGruen}\frac1{x+1}}$ und
-${\color{red}b} = {\color{red}\frac1{y-2}}$:
-
-\gleichungZZ{{6\color{dunklesGruen}a} + 8{\color{red}b}}{11}{2{\color{dunklesGruen}a} - 10{\color{red}b}}{-9}
-
-$$a=\frac12, b=1$$
-Dann: Rücksubstitution
-$$a=\frac12=\frac{1}{x+1} \Longrightarrow  x=1$$
-$$b=1=\frac{1}{y-2} \Longrightarrow  y=3$$
-
 
 %%\forceCB
 %%\headerUndFooterJedeSeite{}
@@ -587,54 +564,19 @@ unter \tiprobutton{data} eingeben. Danach unter
 \newpage
 \headerUndFooterJedeSeite{}
 
-\subsection*{Potenzfunktionen}
-
-\begin{tabular}{cc}
-$k$ > 0: Parabel ($k$ gerade) & $k$ > 0: Parabel ($k$ ungerade)\\   %%\bbwCenterGraphic{8cm}{PotenzFkt.pdf}
-  \includegraphics[width=73mm]{PotenzFktx2x4.pdf} &
-  \includegraphics[width=73mm]{PotenzFktx3x5.pdf}\\
-
-$k<0$: Hyperbel  ($k$ gerade) & $k<0$: Hyperbel ($k$ ungerade)\\
-  \includegraphics[width=73mm]{PotenzFkt1overx2x4.pdf}&
-  \includegraphics[width=73mm]{PotenzFkt1overx3x5.pdf}
-  \end{tabular}
-
-
-\begin{multicols}2
-
-\begin{tcolorbox}[colback=white]
-  \textbf{Grundform der Potenzfunktion}
-$$y=ax^k$$
-$k \in \{...-2, -1, 2, 3, 4, ...\}$
-\end{tcolorbox}
-
-$k$ gerade: Achsensymmetrisch ($y$-Achse)
-
-$k$ ungerade: Punktsymmetrisch (Ursprung $O=(0|0)$)
-
-%%Ist ${\color{green}a>0}$, so sind Graphen mit
-%%geraden Exponenten nach oben geöffnet bzw. mit ungeraden Exponenten im
-%%Quadranten I und III.
-
-%%Ist ${\color{blue}a<0}$, so werden Graphen der obigen Funktionen an der $x$-Achse gespiegelt.
-
-%% \includegraphics[width=4cm]{allg/funktionen/img/potenzfct/potenzFunktionenGerade.png}\hfill{}\includegraphics[width=4cm]{allg/funktionen/img/potenzfct/potenzFunktionenUngerade.png}
-  \subsection*{Streckung / Spiegelung}
-  Der Faktor $a$ in $y=a\cdot{}x^k$ streckt die Funktion in
-  $y$-Richtung, bzw. spiegelt die Funktion an der $x$-Achse, wenn
-  $a<0$ ist.
-  \bbwCenterGraphic{73mm}{PotenzFktTransformation.pdf}
-
-
 
 %%\hrulefill  
-\forceCB
+%%\forceCB
 %%\headerUndFooterJedeSeite{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%               Wachstumsmodelle                     %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section*{Wachstumsmodelle}
+
+\begin{multicols}{2}
+
 
 \textbf{Lineares Wachstum}
 $$f(t) = \FAKTORBA{a}\FAKTORAQ{m}\cdot t + \FAKTORBA{b}\FAKTORAQ{q}$$
@@ -1268,6 +1210,44 @@ $$P(F | G) = \frac{\textrm{Anzahl gesunde Frauen}}{\textrm{Anzahl Gesunde}} =  \
 $$P(G | F) = \frac{\textrm{Anzahl gesunde Frauen}}{\textrm{Anzahl Frauen}}=  \frac{30}{70}$$
 
 \end{multicols}
+
+\headerUndFooterJedeSeite{}
+\newpage
+\headerUndFooterJedeSeite{}
+
+\subsection{Hypothesentest}
+Einseitiger Hypothesentest mit vorgegebenem Signifikanzniveau.
+Bekannt:
+
+Anzahl Versuche, Anzahl Beobachtungen: $n$ (Beispiel $n=30$)
+
+Trefferwahrscheinlichkeit pro Versuch: $p$ (Beispiel $p=0.7$)
+
+Nullhyphthese: mindestens. 70\% «Treffer»
+
+Typische Alternativhypothese: Weniger als 70\% «Treffer»
+
+Signifikanzniveau $\alpha$ \zB  $\alpha = 10\,\%$
+
+Tabelle TR mit «BinomialCdf»
+
+\begin{tabular}{ccc}\hline
+  $k$ & CDF \\\hline
+  23  & 0.84 \\
+  24  & 0.92 \\
+  25  & 0.96
+  \end{tabular}
+
+Annahmebereich: 0..24 (mit 92\,\% Wahrscheinlichkeit)
+
+Ablehnugsbereich 25..30 (mit 7.66\,\% Wahrscheinlichkeit)
+
+Fehler 1. Art: Ein in Realität faires Ergebnis wird als «gezinkt» taxiert.
+
+Fehler 2. Art: Ein in Realität «gezinktes» Ergebnis wird als fair taxiert.
+
+
+
 
 
 %% Leerseiten für Notizen
