@@ -1215,9 +1215,11 @@ $$P(G | F) = \frac{\textrm{Anzahl gesunde Frauen}}{\textrm{Anzahl Frauen}}=  \fr
 \newpage
 \headerUndFooterJedeSeite{}
 
-\subsection{Hypothesentest}
+\section{Hypothesentest}
 Einseitiger Hypothesentest mit vorgegebenem Signifikanzniveau.
-Bekannt:
+
+\textbf{Gegeben}:
+
 
 Anzahl Versuche, Anzahl Beobachtungen: $n$ (Beispiel $n=30$)
 
@@ -1228,6 +1230,8 @@ Nullhyphthese: mindestens. 70\% «Treffer»
 Typische Alternativhypothese: Weniger als 70\% «Treffer»
 
 Signifikanzniveau $\alpha$ \zB  $\alpha = 10\,\%$
+
+\textbf{Gesucht}: Annahmebereich [0;k], Ablehnungsbereich [k+1; n]
 
 Tabelle TR mit «BinomialCdf»
 
@@ -1263,7 +1267,7 @@ Fehler 2. Art: Ein in Realität «gezinktes» Ergebnis wird als fair taxiert.
 \begin{tabular}{cc}
 
 
-\raisebox{-45mm}{\includegraphics[width=45mm]{img/tiprobuttonimages/ti30.png}}
+\raisebox{-45mm}{\includegraphics[width=45mm]{img/tiplusbuttonimages/ti30.png}}
 &
 
 \begin{tabular}{c|c|p{80mm}}\hline
@@ -1278,10 +1282,6 @@ und \texttt{calc} drücken für Standardabweichung, Q1, Q3, Median, Min,
 Max, Mittelwert etc.\\
                            &\texttt{distr}    & Bernoulliformel $\rightarrow$ 4: Binomial\textbf{p}df\\
                            &                  & Kumuliert $\rightarrow$ 5: Binomial\textbf{c}df\\\hline
-\tiprobutton{cos_poly-solv}&\texttt{poly-solv}&  Quadratische Gleichungen in Grundform $ax^2+bx+c=0$\\
-                           &                  &  (Auch für Zweiklammeransatz)\\\hline
-\tiprobutton{tan_sys-solv} &\texttt{sys-solv} &  Lineare Gleichungssysteme\\\hline
-\tiprobutton{sin_num-solv} &\texttt{num-solv} &  Gleichungen ($7^x=3^{2x+1}$) mit Zahlen nach $x$ auf\/lösen (hier $x\approx{}-4.37$).\\\hline
 \tiprobutton{table}        & table            &  Wertetabelle für diverse Funktionen: Lineare Fkt., Potenzfkt., Exponentialfkt.\\\hline
 \tiprobutton{ncrnpr}       &Kombinatorik      &  Fakultät: {\color{red}\textbf{!}}\\
                            &                  &  Kombination $n \choose k$ tippe $n$ nCr $k$\\
