@@ -81,7 +81,8 @@ Fahrzeugs) haben, da es jedoch keine Bewegung hat, spielt die
 Die drei Vektoren $\vec{a}$, $\vec{b}$ und $\vec{c}$ haben alle den
 selben Betrag. Zeichnen Sie die drei Vektoren so, dass
 gilt $$\vec{a}+\vec{b}+\vec{c} = \overrightarrow{0}$$
-\TNTeop{Lösung: Gleichseitiges Dreieck}
+\TNTeop{Lösung: Gleichseitiges Dreieck, oder drei Kräfte, die auf den
+  selben Punkt wirken im Winkel von je 120\degre zueinander.}
 
 \newpage
 
@@ -137,25 +138,32 @@ gilt $$\vec{a}+\vec{b}+\vec{c} = \overrightarrow{0}$$
 \end{definition}
 
 
+\begin{beispiel}{Brüche und negative Faktoren}{}
+  Es gilt auch: 
+  $$\frac12\cdot{}\vec{a} + \frac12\cdot{}\vec{a} = \vec{a}$$
+  \TRAINER{Zweimal die Hälfte macht ein Ganzes.}
+  $$-2.5\vec{a} = (-1)\cdot{}\left(2.5\cdot{}\vec{a}\right)$$
+\TRAINER{$2.5\vec{a}$ ist Gegenvektor zu $2.5\vec{a}$.}
+  
+  Als skalare Faktoren vor den Vektoren können auch Brüche oder
+  negative Zahlen verwendet werden.
+\end{beispiel}
+\newpage
+
+\TRAINER{(optional: Formale Definition)}
+
 \begin{definition}{Vielfaches}{}
   Für $k$ in $\mathbb{R}$ ist $k\cdot{}\vec{a}$ ein Vektor mit
-  folgenden Eigenschaften.
+  $k$-facher Länge von $\vec{a}$. Es gilt zudem:
 
   \begin{itemize}
   \item $k>0$, so zeigen $k\cdot{}\vec{a}$ und $\vec{a}$ in die selbe Richtung.
   \item $k<0$, so zeigen $k\cdot{}\vec{a}$ und $\vec{a}$ in die entgegengesetzte Richtung.
-  \item Die Länge von $k\cdot{}\vec{a}$ ist das $k$-Fache der Länge
-    von $\vec{a}$: $$|k\cdot{}\vec{a}| = |k|\cdot{}|\vec{a}|$$
+%%  \item Die Länge von $k\cdot{}\vec{a}$ ist das $k$-Fache der Länge
+%%    von $\vec{a}$: $$|k\cdot{}\vec{a}| = |k|\cdot{}|\vec{a}|$$
    \end{itemize}
 \end{definition}
 
-\begin{beispiel}{Brüche}{}
-  Wegen
-  $$\frac12\cdot{}\vec{a} + \frac12\cdot{}\vec{a} = \vec{a}$$
-  gilt, dass auch Brüche und sogar  negative Zahlen als Skalar
-  verwendet werden können.
-\end{beispiel}
-\newpage
 
 \subsection*{Aufgabe}
 Zeichnen Sie einen Repräsentaten des Vektors $\frac34\vec{a}$ und einen Repräsentanten des Vektors $-1.25 \cdot{} \vec{a}$!
@@ -224,7 +232,7 @@ Grafik: Es gilt: $\vec{x} + \vec{b} = \vec{a}$ und das heißt $\vec{a}
 
 \subsubsection{lineare Unabhängigkeit}
 \begin{definition}{linear unabhängig}{}\index{linear unabhängig}\index{unabhängig!linear}
-Zwei Vektoren heißen \textbf{linear unabhängig}, wenn sie nicht
+Zwei Vektoren heißen \textbf{linear unabhängig}, wenn sie \textbf{nicht}
 kollinear sind.
 \end{definition}
   %%\subsubsection*{Aufgaben}
@@ -257,28 +265,21 @@ Stellen Sie den Vektor $\vec{c}$ als Linearkombination der Vektoren
 $\vec{a}$ und $\vec{b}$ dar.
 
 \bbwGraphLeer{-1}{8}{-1}{5}{
-\bbwLetter{3,1.5}{\vec{a}}{blue}
-\draw [->,blue] (1,2) -- (5,2);
+\bbwLetter{3.5,1}{\vec{a}}{blue}
+\draw [->,blue] (1.5,1.5) -- (5.5,1.5);
 \bbwLetter{1.2,3.5}{\vec{b}}{blue}
 \draw [->,blue] (1,2) -> (2,3.999);
-\bbwLetter{6.5,3}{\vec{c}}{ForestGreen}
-\draw [->,ForestGreen] (6,2) -- (6,3);
+\bbwLetter{6.5,3.5}{\vec{c}}{ForestGreen}
+\draw [->,ForestGreen] (6,2) -- (6,5);
+\TRAINER{\draw [-,gray] (4.5,2) -- (6,5);}
+\TRAINER{\draw [-,gray] (4.5,2) -- (6,2);}
 }%% END bbwGraph
 
 In obigem Beispiel ist
 
 \TNTeop{
-	$\frac14 \vec{a\vphantom{b}} + 2 \vec{c}  = \vec{b}$
+	$\frac{-3}{8} \vec{a\vphantom{b}} + 1.5 \vec{b}  = \vec{c}$
   
-	und somit
-
-	$2 \vec{c} =\vec{b}  -\frac14 \vec{a\vphantom{b}}$
-
-  Mittels Division durch $2$ erhalten wir $\vec{c}$:
-
-  $\vec{c} = -\frac18\vec{a\vphantom{b}} + \frac12 \vec{b}.$
-
-
   Geometrisch: Setze zwei Parallele zu $\vec{a}$ und $\vec{b}$ durch
   je die entgegengesetzten Enden von $\vec{c}$.
 }%% END TNTeop
