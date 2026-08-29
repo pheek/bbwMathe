@@ -318,8 +318,8 @@ $$\log_b{}(a)=x \Longleftrightarrow{} b^x = a$$
 Logarithmen sind Exponenten zu einer fest gewählten Basis. Häufige Basen:
 
 $$\lg = \log_{10} $$
-$$\ln = \log_e$$
-$$e \approx 2.71828 \textrm{ = Eulersche Konstante}$$
+$$\ln = \log_{\e}$$
+$$\e \approx 2.71828 \textrm{ = Eulersche Konstante}$$
 
 
 \begin{tcolorbox}[colback=white]
@@ -624,50 +624,46 @@ $$f(t)= {\color{blue}3}\cdot{}{\color{red}4}^\frac{t}{\color{dunklesGruen}5}$$
 \FAKTORAQ{\bbwCenterGraphic{8cm}{ExponentialfctAQ.png}}
 \FAKTORBA{\bbwCenterGraphic{8cm}{ExponentialfctAB.png}}
 
-\subsection*{Basis $e$, Zeitvariable $x$}
-$e$ = Eulersche Konstante $\approx 2.71828$
-\FAKTORBA{$$y=b\cdot{}a^x$$ entspricht
-$$y=b\cdot{}e^{mx}$$}
+\subsection*{Zeitvariable $x$}
+%%$\e$ = Eulersche Konstante $\approx 2.71828$
+\FAKTORBA{$$y=b\cdot{}a^x$$} %%entspricht $$y=b\cdot{}e^{mx}$$}
 
-\FAKTORAQ{$$y=a\cdot{}q^x$$ entspricht
-$$y=a\cdot{}e^{bx}$$}
+\FAKTORAQ{$$y=a\cdot{}q^x$$} %%entspricht $$y=a\cdot{}e^{bx}$$}
 
-\FAKTORBA{$\textrm{mit } a = e^m \,\,\textrm{ oder }  m = \ln(a)$}%
-\FAKTORAQ{$\textrm{mit }  q = e^b \,\,\textrm{ oder }  b = \ln(q)$}%
+%\FAKTORBA{$\textrm{mit } a = \e^m \,\,\textrm{ oder }  m = \ln(a)$}%
+%\FAKTORAQ{$\textrm{mit } q = \e^b \,\,\textrm{ oder }  b = \ln(q)$}%
 
-\vspace{2mm}
+%\vspace{2mm}
 
-\hrulefill
+%\hrulefill
 
 Und mit Zeitintervall $\tau$:
 
-\FAKTORBA{$$y=b\cdot{}a^\frac{x}\tau$$ entspricht
-$$y=b\cdot{}e^{mx}$$}
-\FAKTORAQ{$$y=a\cdot{}q^\frac{x}\tau$$ entspricht
-$$y=a\cdot{}e^{bx}$$}
+\FAKTORBA{$$y=b\cdot{}a^\frac{x}\tau$$} %% entspricht %$$y=b\cdot{}\e^{mx}$$}
+\FAKTORAQ{$$y=a\cdot{}q^\frac{x}\tau$$} %% entspricht %$$y=a\cdot{}\e^{bx}$$}
 
-\FAKTORBA{$\textrm{mit } a = e^{m\tau}  \,\,\textrm{ oder }    m=\ln\left(a^\frac1\tau\right) = \frac1\tau \cdot{}\ln(a)$}
-\FAKTORAQ{$\textrm{mit }  q = e^{b\tau}  \,\,\textrm{ oder }    b=\ln\left(q^\frac1\tau\right) = \frac1\tau \cdot{}\ln(q)$}
+%\FAKTORBA{$\textrm{mit } a = e^{m\tau}  \,\,\textrm{ oder }    m=\ln\left(a^\frac1\tau\right) = \frac1\tau \cdot{}\ln(a)$}
+%\FAKTORAQ{$\textrm{mit }  q = e^{b\tau}  \,\,\textrm{ oder }    b=\ln\left(q^\frac1\tau\right) = \frac1\tau \cdot{}\ln(q)$}
 
 \hrulefill
 \subsection*{Halbwertszeit}
 \ifisHALBWERTSZEITMITTAU%%
-\FAKTORBA{$\frac12 \cdot{} b = f(t) = b\cdot{}a^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t= \tau\cdot{}\log_a\left(\frac12\right)$}
-\FAKTORAQ{$\frac12 \cdot{} a = f(t) = a\cdot{}q^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t= \tau\cdot{}\log_q\left(\frac12\right)$}
+\FAKTORBA{$\frac12 \cdot{} b = f(t) = b\cdot{}a^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}T_{1/2}= \tau\cdot{}\log_a\left(\frac12\right)$}
+\FAKTORAQ{$\frac12 \cdot{} a = f(t) = a\cdot{}q^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}T_{1/2}= \tau\cdot{}\log_q\left(\frac12\right)$}
 \else
-\FAKTORBA{$\frac12 \cdot{} b = f(t) = b\cdot{}a^t\phantom{xxx}\Longrightarrow\phantom{xxx}t= \log_a\left(\frac12\right)$}
-\FAKTORAQ{$\frac12 \cdot{} a = f(t) = a\cdot{}q^t\phantom{xxx}\Longrightarrow\phantom{xxx}t= \log_q\left(\frac12\right)$}
+\FAKTORBA{$\frac12 \cdot{} b = f(t) = b\cdot{}a^t\phantom{xxx}\Longrightarrow\phantom{xxx}T_{1/2}= \log_a\left(\frac12\right)$}
+\FAKTORAQ{$\frac12 \cdot{} a = f(t) = a\cdot{}q^t\phantom{xxx}\Longrightarrow\phantom{xxx}T_{1/2}= \log_q\left(\frac12\right)$}
 \fi
 
 \headerUndFooterJedeSeite{}
 
 \subsection*{Verdopplungszeit}
 \ifisHALBWERTSZEITMITTAU%%
-\FAKTORBA{$2\cdot{}b = f(t) = b\cdot{}a^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t = \tau\cdot{}\log_a(2)$}
-\FAKTORAQ{$2\cdot{}a = f(t) = a\cdot{}q^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}t = \tau\cdot{}\log_q(2)$}
+\FAKTORBA{$2\cdot{}b = f(t) = b\cdot{}a^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}T_2 = \tau\cdot{}\log_a(2)$}
+\FAKTORAQ{$2\cdot{}a = f(t) = a\cdot{}q^{\frac{t}{\tau}}\phantom{xxx}\Longrightarrow\phantom{xxx}T_2 = \tau\cdot{}\log_q(2)$}
 \else
-\FAKTORBA{$2\cdot{}b = f(t) = b\cdot{}a^t\phantom{xxx}\Longrightarrow\phantom{xxx}t = \log_a(2)$}
-\FAKTORAQ{$2\cdot{}a = f(t) = a\cdot{}q^t\phantom{xxx}\Longrightarrow\phantom{xxx}t = \log_q(2)$}
+\FAKTORBA{$2\cdot{}b = f(t) = b\cdot{}a^t\phantom{xxx}\Longrightarrow\phantom{xxx}T_{2} = \log_a(2)$}
+\FAKTORAQ{$2\cdot{}a = f(t) = a\cdot{}q^t\phantom{xxx}\Longrightarrow\phantom{xxx}T_2 = \log_q(2)$}
 \fi
 
 
@@ -867,7 +863,7 @@ $p_i = f_i\cdot{}100\,\%$ &$=$& prozentuale Häufigkeit%%\\
   zu den Häufigkeiten.
 \item Die Regeln für die Klassengrenzen müssen festgelegt werden. Zum
   Beispiel Klasse 1: $[160; 170[$
-\item Das obige Histogramm ist \textbf{linksschief} und rechtssteil.
+\item Das obige Histogramm ist unimodal, \textbf{linksschief} (und rechtssteil).
 \end{itemize}
 
 
@@ -1215,25 +1211,29 @@ $$P(G | F) = \frac{\textrm{Anzahl gesunde Frauen}}{\textrm{Anzahl Frauen}}=  \fr
 \newpage
 \headerUndFooterJedeSeite{}
 
-\section{Hypothesentest}
+\section*{Hypothesentest}
 Einseitiger Hypothesentest mit vorgegebenem Signifikanzniveau.
 
 \textbf{Gegeben}:
 
+Trefferwahrscheinlichkeit pro Versuch: $p$ (Beispiel $p=0.7$)
 
 Anzahl Versuche, Anzahl Beobachtungen: $n$ (Beispiel $n=30$)
 
-Trefferwahrscheinlichkeit pro Versuch: $p$ (Beispiel $p=0.7$)
+Signifikanzniveau $\alpha$ (Beispiel $\alpha \le 10\,\%$)
 
-Nullhyphthese: mindestens. 70\% «Treffer»
+\textbf{Hypothesen}
 
-Typische Alternativhypothese: Weniger als 70\% «Treffer»
+Nullhyphthese: 70\% «Treffer»
 
-Signifikanzniveau $\alpha$ \zB  $\alpha = 10\,\%$
+Typische Alternativhypothese: Wir \textbf{vermuten mehr} als 70\,\% «Treffer»
 
-\textbf{Gesucht}: Annahmebereich [0;k], Ablehnungsbereich [k+1; n]
 
-Tabelle TR mit «BinomialCdf»
+\textbf{Gesucht}:
+
+Annahmebereich der Nullhypothese [0;k] bzw. Ablehnungsbereich [k+1; n]
+
+Tabelle TR mit «BinomialCdf» (n=30, p=0.70)
 
 \begin{tabular}{ccc}\hline
   $k$ & CDF \\\hline
@@ -1242,9 +1242,18 @@ Tabelle TR mit «BinomialCdf»
   25  & 0.96
   \end{tabular}
 
-Annahmebereich: 0..24 (mit 92\,\% Wahrscheinlichkeit)
+Annahmebereich: 0..24
 
-Ablehnugsbereich 25..30 (mit 7.66\,\% Wahrscheinlichkeit)
+\textit{Mit 92\,\% Wahrscheinlichkeit lande ich im Annahmebereich der Nullhypothese}
+
+Ablehnungsbereich: 25..30 
+
+\textit{Mit 7.66\,\% ($\le \alpha$) liegen wir bei 25 bis 30
+  «Treffern» im Ablehnungsbereich der Nullhypothese
+  und vermuten ``zu recht'', dass die Nullhypothese falsch war.}
+
+
+\textbf{Fehler:}
 
 Fehler 1. Art: Ein in Realität faires Ergebnis wird als «gezinkt» taxiert.
 
