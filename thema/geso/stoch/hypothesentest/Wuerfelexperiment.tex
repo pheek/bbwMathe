@@ -11,10 +11,11 @@
 %\weblink{Würfelexperiment}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/107682584460080}
 
 \subsubsection{\epsdice{3} werfen}
+
 \TRAINER{Die Würfel werden vorab so sortiert, dass die Hälfte der
 Klasse einen gezinkten Würfel mit doppelter \epsdice{3} erhalten wird.}
 
-Werfen Sie den Würfel 29 Mal und notieren Sie das Ergebnis wie folgt:
+Werfen Sie den Würfel 29 Mal\footnote{Idee: W. Pfalzgraf} und notieren Sie das Ergebnis wie folgt:
 \begin{itemize}
 \item Wie oft kommt die \epsdice{3},
 \item wie oft mehr als die \epsdice{2}?
@@ -25,18 +26,21 @@ $\epsdice{3}$ & \\\hline
 $\epsdice{3},\epsdice{4},\epsdice{5}$ oder $\epsdice{6}$ & \\\hline
 \epsdice{1} oder \epsdice{2} & \\\hline
 \end{bbwFillInTabular}
+
 \newpage
 
 \subsubsection{Begriffe}
 
 Die Anzahl der geworfenen \epsdice{3}-ern nennen wir
 
-\TNT{1.2}{\textbf{Testgröße} und bezeichnen diese \textbf{Zufallsvariable} mit $X$}
+\TNT{2}{\textbf{Testgröße} und bezeichnen diese
+
+\textbf{Zufallsvariable} mit $X$}
 
 Die erwartete Anzahl an \epsdice{3}-ern bei 29x Werfen ist
-$\frac{29}{6}\approx 4.8$. Diese Größe nennen wir den
+$\frac{29}{6} = 4.8\overline{3}$. Diese Größe nennen wir den
 
-\TNT{2.4}{... \textbf{Erwartungswert}  $\mathbb{E}(X)$}
+\TNT{1.2}{... \textbf{Erwartungswert}  $\mu = \mathbb{E}(X)$}
 
 
 Wer hat nun mehr als 5 mal eine \epsdice{3} geworfen?
@@ -83,12 +87,12 @@ Wenn wir \textbf{mehr} vermuten, so sprechen wir hier von einem
 
 \newpage
 
-\subsubsection*{Bernoulli}
+\subsubsection*{Bernoulli}\label{hypothesentest-bernoulli}
 \TRAINER{Lüften wir spätestens jetzt das Mysterium der gezinkten
   Würfel. Sie haben teilweise normale und teilweise gezinkte Würfel erhalten.
 }%% end TRAINER
 
-\bbwCenterGraphic{12cm}{geso/stoch/img/wuerfeltabelle.png}
+\bbwCenterGraphic{12cm}{geso/stoch/hypothesentest/img/wuerfeltabelle.png}
 
 \newpage
 
@@ -202,6 +206,8 @@ sprechen wir von einem ...
 
   Wir lassen den «Betrüger» laufen.
 }
+
+\TRAINER{Zurück zu Seite \pageref{hypothesentest-bernoulli}. Zeige $\alpha$- und $\beta$-Feler-Bereiche.}
 
 
 
