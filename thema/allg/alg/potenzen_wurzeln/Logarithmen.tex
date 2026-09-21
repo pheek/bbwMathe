@@ -29,12 +29,14 @@ angegeben werden; dann wird $\log_{10}(\,\,)$ anstelle von $\lg(\,\,)$ geschrieb
 
 \subsection{Andere Basis als Basis 10}\index{Logarithmus!beliebige Basis}
 
-Wir können bereits $$x^5=32$$ lösen, indem wir beidseitig die
+\subsubsection*{Voraussetzungen}
+
+a) Wir können bereits $$x^5=32$$ lösen, indem wir beidseitig die
 5. Wurzel ziehen:
 
 $$x = \LoesungsRaum{\sqrt[5]{32}} = \LoesungsRaum{\sqrt[5]{2^5}} = \LoesungsRaum{2}$$
 
-Ebenso können wir Probleme mit der Unbekannten im Exponenten lösen,
+b) Ebenso können wir Probleme mit der Unbekannten im Exponenten lösen,
 wenn die Basis 10 beträgt. Bestimmen Sie $x$:
 
 $$10^x = 1000$$
@@ -62,7 +64,7 @@ $$2^x = 128$$
 \textbf{Die harte Tour}\label{harteTourLogarithmen}\footnote{Müssen Sie nicht herleiten können,
   doch daraus ergibt sich ein brauchbares Gesetz.}:\\
 
-\TNT{12}{
+\TNTeop{
 Nach obigem Gesetz können wir $2$ und $128$ anders schreiben:
 
 $$2= 10^{\lg(2)} \text{ und } 128 = 10^{\lg(128)}$$
@@ -86,18 +88,6 @@ $$10^{\lg(2)\cdot{}x} = 10^{\lg(128)}$$
 
 }%% END TNT
 
-  \textbf{... die sanfte Tour}:\\
-
- Das Problem $$2^x=128$$ unterscheidet sich vom bisher bekannten nur
- dadurch, dass die Basis nicht 10, sondern 2 ist. Dies kann der
- Taschenrechner auch: 
-
-\TNTeop{
- $$2^x = 128 \Longleftrightarrow  x = \log_2(128) = \LoesungsRaum{7}$$
-}%% END TNTeop
-%%  \newpage
-
-
 \subsection{Definition zu anderer Basis}
  
 \begin{bemerkung}{Zehnerlog.}{}
@@ -118,18 +108,47 @@ Diese Definition können wir auf jede andere Basis als 10 ausweiten:
 $$   {\color{blue}5}^{\color{red}3} = {\color{ForestGreen}125}
    \Longleftrightarrow \LoesungsRaumLang{{\color{blue}\log_5}({\color{ForestGreen}125}) = {\color{red}3}}$$
    \end{beispiel}
+
+
+
+\subsection*{Aufgaben}
+
+\DeclareRobustCommand{\tempA}{6. (ohne TR)}
+
+\GESO{
+  \olatLinkArbeitsblatt{A2Log}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/110436259154906}{\tempA}
+}%% end GESO
+\TALS{
+  \olatLinkArbeitsblatt{A2Log}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/110436259219039}{\tempA}
+}%% ent TALS
+
+
+\newpage{}
+ 
+ 
  
 %%\TALS{\subsection*{Aufgaben}}
 %%\TALS{Andere Basis:\\}
 %%\TALSAadBMTA{62ff}{184. a), 185. a) b) c) g), 186. a) d) f) h), 187. a) c) e)  und
 %%  (optional mit TR) 188.}
 
-\subsection*{Aufgaben}
-%%\TALSAadBMTA{64ff}{191. a) b) e), 192. c), 193. a) c) e),
-%%  194. a) c) d), 195. d) g) k), 196. a) b), 197. b) e) f), 198. a) b) f),
-%%  202. a) b), 203. b) d) 204. c), 206. a) f) i) und 208. a) b)}
 
-Vieles ist mit dem Taschenrechner lösbar. Denken Sie jedoch immer
+
+\textbf{... die sanfte Tour}:\\
+
+ Das Problem $$2^x=128$$ unterscheidet sich vom bisher bekannten nur
+ dadurch, dass die Basis nicht 10, sondern 2 ist. Dies kann der
+ Taschenrechner auch: 
+
+\TNT{4}{
+  $$2^x = 128 \Longleftrightarrow  x = \log_2(128) = \LoesungsRaum{7}$$
+  \vspace{2cm}
+}%% END TNTeop
+%%  \newpage
+
+
+
+Vieles ist mit dem \textbf{Taschenrechner} lösbar. Denken Sie jedoch immer
 daran, dass der Logarithmus nur eine andere Schreibweise ist für «hoch
 wie viel ist...»:
 
@@ -138,18 +157,25 @@ $$x=\log_a(p) \Longleftrightarrow  a^x=p$$
 Je nach Aufgabe ist die linke oder die rechte Notation einfacher.
 
 
+\begin{beispiel}{Taschenrechner}{}
+  $$7^x = 250$$
+
+  \TNT{3.2}{TR: $\log_{\Box}(\Box) \approx 2.837$}
+  \TRAINER{\vspace{15mm}}
+\end{beispiel}
+
+\subsection*{Aufgaben}
+
+\DeclareRobustCommand{\tempA}{7. (mit TR)}
+
 \GESO{
-  \olatLinkArbeitsblatt{A2Log}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/110436259154906}{6. und 7.}
+  \olatLinkArbeitsblatt{A2Log}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/110436259154906}{\tempA}
 }%% end GESO
 \TALS{
-  \olatLinkArbeitsblatt{A2Log}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/110436259219039}{6. und 7.}
+  \olatLinkArbeitsblatt{A2Log}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/110436259219039}{\tempA}
 }%% ent TALS
 %%\olatLinkGESOKompendium{1.5}{9}{20}
 
-
-%\AadBMTA{102ff}{2. b), 8. a) b) c) f), 9., 10. a), 13. [von Hand!] a)
-%  c) d) f) g), 14. a) g), 15. a) c) d) e) f), 16. a) c) d) e) und
-%  17. a) b) und mit Taschenrechner: 29. a) d) g) h)}
 
 \newpage
 
