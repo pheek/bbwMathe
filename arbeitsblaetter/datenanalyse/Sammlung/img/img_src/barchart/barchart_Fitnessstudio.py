@@ -37,5 +37,5 @@ b.text(-1.2, 10, 'Anzahl Teilnehmende', rotation=90)
 #b.legend(["Teilnehmer"], loc='center right')
 
 ## save (optional) and show
-b.save_system("pdf")
+b.save_system("png")
 b.show()
