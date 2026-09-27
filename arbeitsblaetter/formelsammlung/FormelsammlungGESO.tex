@@ -143,7 +143,7 @@ $0.004$ &=& $\mathbf{\color{blue}4}\cdot{}10^{-3}$ &=& \textbf{\color{blue}4}E-3
 
 \begin{tabular}{rlrl}
 $a+3x$  &Summe  & $5b^2-b$ & Differenz\\
-$x(3-a)$&Produkt& $7:(b+1)$& Quotient\\
+$x\cdot{}(3-a)$&Produkt& $7:(b+1)$& Quotient\\
 $(3x)^4$&Potenz &          &
 \end{tabular}
 
@@ -191,10 +191,10 @@ Geometrisch: Abstand zum Nullpunkt.
 \item gemeinsame Faktoren ausklammern:
 \begin{itemize}
 \item Zahlen und Variable ausklammern
-$$ax + ay = a(x+y)$$
+$$ax + ay = a\cdot{}(x+y)$$
 \item
 Teilsummen ausklammern
-$$3(7r+6) - b(7r+6) = (3-b)(7r+6)$$
+$$3(7r+6) - b\cdot{}(7r+6) = (3-b)(7r+6)$$
 \begin{tabular}{rcl}
 $ac+bc+ad+bd$ &=& $(a+b)c+(a+b)d$ \\
               &=& $(a+b)(c+d)$
@@ -414,7 +414,7 @@ $$5^4 = 5^{2x+1} \Longrightarrow  4=2x+1$$
 \item Additionsverfahren
 \item Einsetzungsverfahren
 \item Gleichsetzungsverfahren
-\item Graphisch oder \textbf{Taschenrechner}
+\item Graphisch
 \end{itemize}
 Die Lösung ist ein geordnetes Zahlenpaar:
 $$\LoesungsMenge{}_{(x | y)} = \{(8 | -3)\}$$
@@ -434,15 +434,6 @@ $$\LoesungsMenge{}_{(x | y)} = \{(8 | -3)\}$$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Textaufgaben}
 
-\subsection*{Leistungsaufgaben}
-Bei $x$ Zeiteinheiten für die ganze Arbeit:
-
-Leistung = Arbeit pro Zeiteinheit
-
-Leistung = $\frac{1 \textrm{ [Arbeit]}}{x \textrm{ [Zeiteinheiten]}}$
-
-%%hysik: Leistung = $\frac{\textrm{[Joule]}}{\textrm{[Sekunde]}} = [\textrm{Watt}]$ \TRAINER{Watt ev weglassen?}
-
 \subsection*{Zinseszins}
 \begin{itemize}
 \item $K_0$ = Startkapital; $K_n$ = Endkapital
@@ -455,7 +446,7 @@ Beispiele:
 $$p = 2.5\,\% \Longleftrightarrow{} a = 1.025$$
 $$p = -3\,\% \Longleftrightarrow{}  a = 0.97 $$
 
-\subsection*{Weitere Aufgabentypen} Mischaufgaben und Zahlenrätsel.
+\subsection*{Weitere Aufgabentypen} Prozent- und Mischaufgaben.
 
 \subsection*{Vorgehen}
 
@@ -522,7 +513,7 @@ $$g\-:\,\,\,  y=0\cdot{}x+b \Rightarrow y=b$$
 \ifdefined\versionHECH%%
 \subsubsection*{Punkt- / Steigungsform}
 Gerade durch Punkt $P=(x_P|y_P)$ mit gegebener Steigung $a$:
-$$y = a(x-x_P) + y_P$$
+$$y = a\cdot{}(x-x_P) + y_P$$
 \fi
 
 \subsection*{Achsenschnittpunkte}
@@ -1015,7 +1006,7 @@ $\overline{A}$ sprich «nicht» $A$.
 Es gilt $A \cup \overline{A} = \Omega$
 
 \textbf{Elementarereignis}: Ereignis bestehend aus einem einzigen
-Ergebnis aus $\Omega$. Beispiel: $E_1$ = Wirf eine \textbf{Eins}: $E_1
+Ergebnis aus $\Omega$. Beispiel: $E_1$ = Wirf eine Eins: $E_1
 = \left\{\epsdice{1}\right\}$.
 
 %%\forceCB
@@ -1209,7 +1200,7 @@ Mit den Zahlen aus obigem Beispiel gilt:
 $$P(G) = \frac{\textrm{Anzahl Gesunde}}{\textrm{Alle}} =  \frac{55}{130}$$
 
 \textbf{Wahrscheinlichkeit der Schnittmenge}\\
-«Wie gross ist hier die Wahrscheinlichkeit, eine gesunde Frau anzutreffen treffen?»
+«Wie gross ist hier die Wahrscheinlichkeit, eine gesunde Frau anzutreffen?»
 $$P(G\cap F) = \frac{\textrm{\ Anzahl gesunde Frauen}}{\textrm{Alle}}= \frac{30}{130}$$
 
 \textbf{Bedingte Wahrscheinlichkeit}\\
@@ -1225,7 +1216,7 @@ $$P(G | F) = \frac{\textrm{Anzahl gesunde Frauen}}{\textrm{Anzahl Frauen}}=  \fr
 \headerUndFooterJedeSeite{}
 
 \section*{Hypothesentest}
-Einseitiger Hypothesentest mit vorgegebenem Signifikanzniveau.
+Einseitiger Hypothesentest an der Binomialverteilung mit vorgegebenem Signifikanzniveau.
 
 \textbf{Gegeben}:
 
@@ -1237,7 +1228,7 @@ Signifikanzniveau $\alpha$ (Beispiel $\alpha \le 10\,\%$)
 
 \textbf{Hypothesen}
 
-Nullhyphthese: 70\% «Treffer»
+Nullhypothese: 70\% «Treffer»
 
 Typische Alternativhypothese: Wir \textbf{vermuten mehr} als 70\,\% «Treffer»
 
@@ -1263,15 +1254,17 @@ Ablehnungsbereich: 25..30
 
 \textit{Mit 7.66\,\% ($\le \alpha$) liegen wir bei 25 bis 30
   «Treffern» im Ablehnungsbereich der Nullhypothese
-  und vermuten ``zu recht'', dass die Nullhypothese falsch war.}
+  und vermuten, dass die Nullhypothese falsch war.}
 
 \bbwCenterGraphic{160mm}{img/Binomialtest_FoSa_GeSo.pdf}
 
 \textbf{Fehler:}
 
-Fehler 1. Art: Ein in Realität faires Ergebnis wird als «gezinkt» taxiert.
+Fehler 1. Art: Ein in Realität faires Ergebnis landet im
+Ablehnungsbereich von $H_0$ und wird als «gezinkt» taxiert.
 
-Fehler 2. Art: Ein in Realität «gezinktes» Ergebnis wird als fair taxiert.
+Fehler 2. Art: Ein in Realität «gezinktes» Ergebnis landet im
+Annahmebereich von $H_0$ und wird als fair taxiert.
 
 
 
