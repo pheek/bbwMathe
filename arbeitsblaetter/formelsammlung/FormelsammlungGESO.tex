@@ -192,6 +192,12 @@ Geometrisch: Abstand zum Nullpunkt.
 \begin{itemize}
 \item Zahlen und Variable ausklammern
 $$ax + ay = a\cdot{}(x+y)$$
+
+
+\item $(-1)$ ausklammern
+  $$(b-a)=(-1)\cdot{}(a-b)$$
+  $$(b-a)^2 = \left((-1)\cdot{}(a-b)\right)^2 = (a-b)^2$$
+
 \item
 Teilsummen ausklammern
 $$3(7r+6) - b\cdot{}(7r+6) = (3-b)(7r+6)$$
@@ -199,10 +205,6 @@ $$3(7r+6) - b\cdot{}(7r+6) = (3-b)(7r+6)$$
 $ac+bc+ad+bd$ &=& $(a+b)c+(a+b)d$ \\
               &=& $(a+b)(c+d)$
 \end{tabular}              
-
-\item $(-1)$ ausklammern
-  $$(b-a)=(-1)\cdot{}(a-b)$$
-  $$(b-a)^2 = \left((-1)\cdot{}(a-b)\right)^2 = (a-b)^2$$
 \end{itemize}
 
 \item Binomische Formeln anwenden:
@@ -319,7 +321,7 @@ Logarithmen sind Exponenten zu einer fest gewählten Basis. Häufige Basen:
 
 $$\lg = \log_{10} $$
 $$\ln = \log_{\e}$$
-$$\e \approx 2.71828 \textrm{ = Eulersche Konstante}$$
+$$\e \approx 2.71828 \textrm{ = Eulersche Zahl}$$
 
 
 \begin{tcolorbox}[colback=white]
@@ -381,18 +383,18 @@ $$\frac5{x+2}=\frac{7+x}{x-3} \Rightarrow{} \DefinitionsMenge{}_x=\mathbb{R}\bac
 %%  \TRAINER{ev. nur letztes Gesetz: $x^a = c$ und $x^\frac1b =c$ sind darin enthalten.  }
 
 \begin{tabular}{lcl}
-$k$ gerade:   $x^k=c$ & $\Leftrightarrow$ & $x=\pm\sqrt[k]{c}$\\
-$k$ ungerade: $x^k=c$ & $\Leftrightarrow$ & $x=\sqrt[k]{c}$\\
+%$k$ gerade:   $x^k=c$ & $\Leftrightarrow$ & $x=\pm\sqrt[k]{c}$\\
+$x^k=c$ & $\Leftrightarrow$ & $x=\sqrt[k]{c}$\\
 %%$x^\frac1b=c$&$\Leftrightarrow$&$x=c^b$\\
 %%$x^{\frac{a}b} = c$&$\Leftrightarrow{}$&$x=c^{\frac{b}a}
 %%= \sqrt[a]{c^b}$
 \end{tabular}
 
-Beispiele
+Beispiel
 
 \begin{tabular}{rcl}
-$x^4=16$ & $\Longrightarrow$ & $\lx=\{-2; 2\}  $ \\
-$x^5=32$ & $\Longrightarrow$ & $\lx=\{+2\}  $ \\
+%$x^4=16$ & $\Longrightarrow$ & $\lx=\{-2; 2\}  $ \\
+$x^5=32$ & $\Longrightarrow$ & $x=\sqrt[5]{32} \Longrightarrow \lx=\{+2\}  $ \\
 
 \end{tabular}
 
@@ -404,6 +406,7 @@ $$5^4 = 5^{2x+1} \Longrightarrow  4=2x+1$$
 \subsubsection*{durch Logarithmieren}
 \FAKTORBA{$$a^x=b \Rightarrow{} x=\log_a(b) = \frac{\lg(b)}{\lg(a)}$$}
 \FAKTORAQ{$$b^x=a \Rightarrow{} x=\log_b(a) = \frac{\lg(a)}{\lg(b)}$$}
+
 
 
 \subsection*{Lineare Gleichungssysteme}
@@ -543,7 +546,7 @@ Gleichsetzen: $ax+b = cx+d$ und nach $x$ auflösen.
 
 %%\headerUndFooterJedeSeite{}
 
-\subsection*{Zweipunkte Aufgaben}
+\subsection*{Zweipunkte-Aufgaben}
 
 
 Gesucht Gerade $g\-: \,\,\, y=ax+b$ durch zwei gegebene Punkte $A=(x_A|y_A)$ und $B=(x_B|y_B)$
@@ -556,10 +559,10 @@ $y=ax+b$ einsetzen, um $b$ zu finden.
 \textbf{Variante 2}: Gleichungssystem nach $a$ und $b$ auf\/lösen:
 \gleichungZZ{y_A}{a\cdot{}x_A+b}{y_B}{a\cdot{}x_B + b}
 
-\textbf{Variante 3}: Punkte in \texttt{L1}=$x$ und \texttt{L2}=$y$
-unter \tiprobutton{data} eingeben. Danach unter
-\tiprobutton{2nd}\tiprobutton{data_stat-reg-distr} die «4» wählen:
-\texttt{LinReg ax+b}.
+%\textbf{Variante 3}: Punkte in \texttt{L1}=$x$ und \texttt{L2}=$y$
+%unter \tiprobutton{data} eingeben. Danach unter
+%\tiprobutton{2nd}\tiprobutton{data_stat-reg-distr} die «4» wählen:
+%\texttt{LinReg ax+b}.
 
 \end{multicols}
 %%
@@ -625,8 +628,8 @@ sich alle {\color{dunklesGruen}fünf} Tage:\\
 ${\color{blue}\FAKTORBA{b}\FAKTORAQ{a}}={\color{blue}3}$, ${\color{red}\FAKTORBA{a}\FAKTORAQ{q}}={\color{red}4}$, ${\color{dunklesGruen}\tau}={\color{dunklesGruen}5}$
 $$f(t)= {\color{blue}3}\cdot{}{\color{red}4}^\frac{t}{\color{dunklesGruen}5}$$
 \end{tcolorbox}
-\FAKTORAQ{\bbwCenterGraphic{8cm}{ExponentialfctAQ.png}}
-\FAKTORBA{\bbwCenterGraphic{8cm}{ExponentialfctAB.png}}
+%\FAKTORAQ{\bbwCenterGraphic{8cm}{ExponentialfctAQ.png}}
+%\FAKTORBA{\bbwCenterGraphic{8cm}{ExponentialfctAB.png}}
 
 \subsection*{Zeitvariable $x$}
 %%$\e$ = Eulersche Konstante $\approx 2.71828$
@@ -867,7 +870,7 @@ $p_i = f_i\cdot{}100\,\%$ &$=$& prozentuale Häufigkeit%%\\
   zu den Häufigkeiten.
 \item Die Regeln für die Klassengrenzen müssen festgelegt werden. Zum
   Beispiel Klasse 1: $[160; 170[$
-\item Das obige Histogramm ist unimodal, \textbf{linksschief} (und rechtssteil).
+\item Das obige Histogramm ist unimodal und \textbf{linksschief} (= rechtssteil).
 \end{itemize}
 
 
@@ -1253,8 +1256,8 @@ Annahmebereich: 0..24
 Ablehnungsbereich: 25..30 
 
 \textit{Mit 7.66\,\% ($\le \alpha$) liegen wir bei 25 bis 30
-  «Treffern» im Ablehnungsbereich der Nullhypothese
-  und vermuten, dass die Nullhypothese falsch war.}
+  «Treffern» im Ablehnungsbereich der Nullhypothese $H_0$
+  und vermuten, dass die Nullhypothese für unser Experiment nicht zutrifft.}
 
 \bbwCenterGraphic{160mm}{img/Binomialtest_FoSa_GeSo.pdf}
 
@@ -1265,9 +1268,6 @@ Ablehnungsbereich von $H_0$ und wird als «gezinkt» taxiert.
 
 Fehler 2. Art: Ein in Realität «gezinktes» Ergebnis landet im
 Annahmebereich von $H_0$ und wird als fair taxiert.
-
-
-
 
 
 %% Leerseiten für Notizen
