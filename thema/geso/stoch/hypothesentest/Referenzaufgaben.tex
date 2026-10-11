@@ -34,7 +34,6 @@ Ablehnungsbereich an.
  }
 \newpage
 
-
 \subsubsection{Referenzaufgabe: Rechtsseitiger Hypothesentest}
 Ein Hersteller von Kanülen behauptet, dass maximal 0.1\,\% seiner
 Verpackungen beschädigt seien. Wir glauben, dass mehr defekt sind. Sie wollen einen Test mit 1000 Verpackungen durchführen.
@@ -58,13 +57,13 @@ Binomialverteilung aus und geben Sie Annahme- und Ablehnungsbereich an.
   \end{tabular}
   
   Naiv könnte man auf die Idee kommen bei $k=3$ haben wir das linksseitige Intervall gefunden. Doch wenn wir nun das Intervall $[0;3]$ als Annahmebereich festlegen, wäre $[4;1000]$ unser Ablehnungsbereich.
-  der Annhmebereich von $[0;3]$ hat aber eine Wahrscheinlichkeit von 98.11\,\%, was dem Ablehnungsbereich eine Wahrscheinlichkeit von $1-0.9811$, also von 1.9\,\% gibt. Damit ist unser $k=3$ noch zu klein. Da binomialcdf immer von links rechnet, müssen wir noch eins dazunehmen, damit wir im Ablehnungsbereich definitiv unter 1\,\% fallen.
+  der Annahmebereich von $[0;3]$ hat aber eine Wahrscheinlichkeit von 98.11\,\%, was dem Ablehnungsbereich eine Wahrscheinlichkeit von $1-0.9811$, also von 1.9\,\% gibt. Damit ist unser $k=3$ noch zu klein. Da binomialcdf immer von links rechnet, müssen wir noch eins dazu nehmen, damit wir im Ablehnungsbereich definitiv unter 1\,\% fallen.
 
   Unser $k$ ist 4, der Annahmebereich ist $[0;4]$ und der Ablehnungsbereich liegt bei $[5;1000]$. Wenn also mehr als vier Verpackungen defekt sind, haben wir Grund zur Annahme, dass etwas an den 0.1\,\% nicht stimmt.
   }
 
 \begin{rezept}{Rechtsseitiger Ablehnungsbereich}{}
-  Beim rechtsseitigen Ablehnungsbereich ist typischerweie unser $k$ eins höher zu wählen, da \texttt{binomial\textbf{c}df} immer von links her addiert.
+  Beim rechtsseitigen Ablehnungsbereich ist typischerweise unser $k$ eins höher zu wählen, da \texttt{binomial\textbf{c}df} immer von links her addiert.
 
   Im Zweifelsfalle machen Sie die Probe: Wie viel Prozent liegt denn nun im Ablehnungsbereich?
 \end{rezept}
@@ -75,5 +74,45 @@ ist ja nicht 0\,\%. $\le$ zählt immer von 0 und inklusive die
 Grenze. Am sichersten fährt man jedoch, indem man schaut, wie viel \%
 denn nun effektiv in den Annahmebereich und wie viel \% in den
 Ablehnungsbereich fallen.}
+
+\newpage
+
+ 
+\subsubsection{Referenzaufgabe: Roulette}
+
+Ein Kasinobetreiber sagt, dass sein Roulette-Tisch ausgewogen ist und
+alle Zahlen von 0 bis 36 gleich häufig auftreten.
+
+Sie beobachten einen Spieler, der immer auf die 0 setzt, welche somit
+mit Wahrscheinlichkeit von $\frac1{37}$ auftreten soll.
+
+Nach 100 Spielen ist die 0 aber nur gerade einmal aufgetreten. Sie
+haben nun die Annahme, dass die 0 weniger häufig als mit
+Wahrscheinlichkeit von $\frac1{37}$ auftritt.
+
+a) Formulieren Sie die Nullhypothese für einen ausgewogenen Roulette-Tisch und
+die Alternativhypothese für einen «manipulierten» Roulette-Tisch.
+\TNT{2}{$H_0$: Die Null kommt mit Wahrscheinlichkeit von
+  $\frac1{37}$. $H_1$: Die Null kommt seltener als mit
+  Wahrscheinlichkeit $\frac1{37}$.}
+
+b) Wie groß ist der Erwartungswert bei 100 Spielen, dass die 0
+auftritt?
+\TNT{2}{$\mathbb{E}\approx 2.70$ mal die 0.}
+
+c) Geben Sie den Ablehnungsbereich auf einem Signifikanzniveau von 1
+\% an.
+\TNT{2}{Nur 0 mal die 0 liegt im Ablehnungsbereich.}
+
+d) Mit obigem Ablehnungsbereich können wir sehr wenig anfangen. Sie
+lassen den Roulette-Tisch nun während einem Winter während 1000
+Spielen beobachten. Wie groß ist nun der Erwartungswert für die Anzahl
+der Nullen? Bestimmen Sie den Ablehnungsbereich auf einem
+Signifikanzniveau von $\alpha = 0.1\,\%$?
+
+\TNTeop{Der Erwartungswert
+  liegt nun bei ca. 27 mal die 0. Der Ablehnungsbereich auf einem 0.1
+  \% Signifikanzniveau ist [0,12]. Und somit der Annahmebereich der
+  Nullhypothese [13, 1000].}
 
 \newpage
