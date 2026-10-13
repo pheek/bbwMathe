@@ -209,33 +209,33 @@ oder Spiegelpunkte?
   Potenzfunktionen finden Sie im Buch \cite{marthaler21alg} Seite 296 oben.}
 \newpage
 
-\subsubsection{Referenzaufgabe}
+\subsubsection{Referenzaufgabe\GESO{ (optional)}}
 
-Bestimmen Sie $a$ und $k$ so, dass der Graph von $y = a \cdot{} x^k$
+Bestimmen Sie $a$ und $n$ so, dass der Graph von $y = a \cdot{} x^n$
 durch die Punkte $P=\left(3 \middle| 1458\right)$ und
 $Q=\left(-4\middle|8192\right)$ verläuft.
 
 \TNTeop{ Punkte einsetzen in die Funktionsgleichung:
-  \gleichungZZ{1458}{a\cdot{}3^k}{8192}{a\cdot{}(-4)^k}
-  Aus der oberen Gleichung das $a$ ermitteln ($a=\frac{1458}{3^k}$)
+  \gleichungZZ{1458}{a\cdot{}3^n}{8192}{a\cdot{}(-4)^n}
+  Aus der oberen Gleichung das $a$ ermitteln ($a=\frac{1458}{3^n}$)
   (I) und in die zweite
-  Gleichung einsetzen: $$8192 = \frac{1458}{3^k} \cdot{} (-4) ^k$$
+  Gleichung einsetzen: $$8192 = \frac{1458}{3^n} \cdot{} (-4) ^n$$
   Exponent $k$ separieren:
-  $$\frac{8192}{1458} = \left(\frac{-4}3\right)^k$$
+  $$\frac{8192}{1458} = \left(\frac{-4}3\right)^n$$
   Problem: Logarithmen mit negativen Basen (hier $\frac{-4}3$)
   funktionieren nicht!
 
   Weil aber $\frac{8192}{1458} > 0$ ist, folgt, dass $k$ gerade ist.
   
-  Und weil nun $k$ gerade ist, folgt dass $\left(\frac{-4}3\right)^k
-  = \left(\frac43\right)^k$.
+  Und weil nun $k$ gerade ist, folgt dass $\left(\frac{-4}3\right)^n
+  = \left(\frac43\right)^n$.
 
   Daraus ergibt sich
-  $$\frac{8192}{1458} = \left(\frac{-4}3\right)^k \Longrightarrow  \frac{8192}{1458} = \left(\frac{4}3\right)^k \Longrightarrow k =
+  $$\frac{8192}{1458} = \left(\frac{-4}3\right)^n \Longrightarrow  \frac{8192}{1458} = \left(\frac{4}3\right)^n \Longrightarrow n =
   \log_{\frac43}\left(\frac{8192}{1458}\right) = 6$$
-  Dieses $k$ nun in die Gleichung (I) einsetzen; dies
+  Dieses $n$ nun in die Gleichung (I) einsetzen; dies
   liefert
-  $$a=\frac{1458}{3^k} = 2.$$
+  $$a=\frac{1458}{3^n} = 2.$$
 }%% end TNTeop
 %% implicit \newpage
 
@@ -312,7 +312,7 @@ $d$: \TRAINER{Verschiebung entlang der $x$-Achse (Verschiebung nach
 
 
 Wir betrachten die verschiedenen geometrischen
-Funktions-«Manipulationen» (Abbildungen) am Beispiel {\color{red}$y =f(x) = \frac18 x^3$}.
+Funktions-«Manipulationen» (Abbildungen) am Beispiel {\color{blue}$y =f(x) = \frac18 x^3$}.
 
 
 \newcommand{\graphTranslationMultiColumn}[5]{%
