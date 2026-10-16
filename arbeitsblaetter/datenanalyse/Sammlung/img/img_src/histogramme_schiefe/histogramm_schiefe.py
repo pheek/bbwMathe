@@ -19,19 +19,19 @@ werte3 = [1, 2, 2, 3, 4, 5, 5, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9
 b.draw_system(1, 12, 0, 14)
 b.draw_histogram(werte1, bin_width=1, start_value=1)
 b.text(-1.2, 1, "absolute Häufigkeiten", rotation=90)
+b.save_system("HistogrammRechtsschief.png")
 
 # B
 b.draw_system(1, 12, 0, 14)
 b.draw_histogram(werte2, bin_width=1, start_value=1)
 b.text(-1.2, 1, "absolute Häufigkeiten", rotation=90)
+b.save_system("HistogrammSymmetrisch.png")
 
 # B
 b.draw_system(1, 12, 0, 14)
 b.draw_histogram(werte3, bin_width=1, start_value=1)
 b.text(-1.2, 1, "absolute Häufigkeiten", rotation=90)
-
-
-
+b.save_system("HistogrammLinksschief.png")
 
 #b.save_system("eps")
 #b.save_system("png")

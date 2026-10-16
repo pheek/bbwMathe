@@ -53,6 +53,7 @@ class BmswGraphLib:
 		self.base_fontsize = 12  # Standard-Schriftgröße
 		# Delegation an NumPy für Vektorfähigkeit
 		self.log   = np.log
+		self.ln    = np.log
 		self.log10 = np.log10
 		self.sin   = np.sin
 		self.cos   = np.cos
@@ -61,6 +62,10 @@ class BmswGraphLib:
 		self.exp   = np.exp
 		self.pi    = np.pi
 
+	##
+	# fontsize muss vor dem zeichnen des systems (draw_system(...))
+	# aufgerufen werden. Danach ist eine Änderung der Schriftgröße für die
+	# Achsen und Achsenbeschriftungen nicht mehr möglich.
 	def set_fontsize(self, size):
 		""" Setzt die globale Schriftgröße für alle Elemente. """
 		self.base_fontsize = size
@@ -69,11 +74,18 @@ class BmswGraphLib:
 	# bmsw Koordinatensystem
 	# Abgesehen vom Kreisdiagramm sollte immer ein Koordinatensystem
 	# zugrunde liegen.
-	# x_min, ... geben den Ausschnitt im kartesischen Koordinatensystem an.
+	# x_min, x_max, y_min, y_max
+	#... geben den Ausschnitt im kartesischen Koordinatensystem an.
 	# show_y_axis sollte beim Boxplot auf False gesetzt werden.
+	# trig erstellt ein trigonometrisches System mit \varphi als x-Achse
+	# step_x, grid_x (analog y) geben an, wo Hilfslinien (grid) gemalt
+	#   und wo Achsenbeschriftungen (fette Hilfslinien + Zahlen) (step) vorkommen. 
+	# figsize gibt das Verhältnis breite zu höhe der Graphik an.
+	# y_axis_at sagt, wo die y-Achse gezeichnet wird (default bei x=0)
 	#
+	# Das System muss immer vor den Funktionen, Punkten, Linie etc. erstellt werden.
 
-	def draw_system(self, x_min, x_max, y_min, y_max, show_y_axis=True, trig=False, step_x=1.0, step_y=1.0, grid_x=None, grid_y=None, figsize=(10,8)):
+	def draw_system(self, x_min, x_max, y_min, y_max, show_y_axis=True, trig=False, step_x=1.0, step_y=1.0, grid_x=None, grid_y=None, figsize=(10,8), y_axis_at=0.0):
 		"""
 		Factory-Methode: Erstellt das System basierend auf dem Modus (Standard oder Trig).
 		"""
@@ -85,7 +97,7 @@ class BmswGraphLib:
 		else:
 			impl = _BmswStandardImpl(self, step_x=step_x, step_y=step_y, grid_x=grid_x, grid_y=grid_y)
 
-		impl.setup(x_min, x_max, y_min, y_max, show_y_axis)
+		impl.setup(x_min, x_max, y_min, y_max, show_y_axis, y_axis_at=y_axis_at)
 
 # END bmswCoordinateSystem
 
@@ -175,7 +187,7 @@ class BmswGraphLib:
 	# mit "set_custom_labels" können die Säulen einzeln beschriftet werden.
 	# siehe folder /examples/
 	#
-	def draw_bar_chart(self, x_values, y_values, label=None, color=BMSW_COLOR, width=0.8):
+	def draw_bar_chart(self, x_values, y_values, label=None, color=BMSW_COLOR, width=0.8, withNumbers=True, number_shift=0.5):
 		"""
 		Zeichnet ein Säulendiagramm in das bestehende System.
 		width=1.0 würde bedeuten, dass die Säulen einander berühren.
@@ -189,6 +201,9 @@ class BmswGraphLib:
 		                   edgecolor='black',
 		                   linewidth=1,
 		                   zorder=3)
+		if withNumbers:
+			for i, value in enumerate(y_values):
+				self.ax.text(x_values[i], value + number_shift, str(value), ha='center', va='bottom', fontsize=self.base_fontsize)
 		return bars
 
 
@@ -411,14 +426,19 @@ class _BmswBaseImpl:
 	def __init__(self, parent):
 		self.p = parent
 
-	def setup(self, x_min, x_max, y_min, y_max, show_y_axis):
+	def setup(self, x_min, x_max, y_min, y_max, show_y_axis, axis_lw=2.5, y_axis_at=0.0):
 		puffer = 0.7
 		self.p.ax.set_xlim(x_min - puffer, x_max + puffer)
 		self.p.ax.set_ylim(y_min - puffer, y_max + puffer)
+		
+		# KORREKTUR: X-Achse bleibt auf der horizontalen Nulllinie (bzw. 'zero')
 		self.p.ax.spines['bottom'].set_position('zero')
+		self.p.ax.spines['bottom'].set_linewidth(axis_lw)
 
 		if show_y_axis:
-			self.p.ax.spines['left'].set_position('zero')
+			# KORREKTUR: Y-Achse verschiebt sich dynamisch auf den X-Wert 'y_axis_at'
+			self.p.ax.spines['left'].set_position(('data', y_axis_at))
+			self.p.ax.spines['left'].set_linewidth(axis_lw)
 		else:
 			self.p.ax.spines['left'].set_color('none')
 
@@ -426,21 +446,22 @@ class _BmswBaseImpl:
 		self.p.ax.spines['top'].set_color('none')
 
 		self.draw_grid(x_min, x_max, y_min, y_max)
-		self.setup_ticks(x_min, x_max, y_min, y_max, show_y_axis)
-		self.draw_arrows(x_max, y_max, show_y_axis, puffer)
+		# HIER: y_axis_at wird an setup_ticks übergeben, um die 0-Ausblendung sauber zu regeln
+		self.setup_ticks(x_min, x_max, y_min, y_max, show_y_axis, y_axis_at)
+		self.draw_arrows(x_max, y_max, show_y_axis, puffer, y_axis_at)
 
-	def draw_arrows(self, x_max, y_max, show_y_axis, puffer):
+	def draw_arrows(self, x_max, y_max, show_y_axis, puffer, y_axis_at):
 		# X-Achse
 		self.p.ax.plot(x_max + puffer, 0, ">k", clip_on=False, zorder=5)
 		x_off = offset_copy(self.p.ax.transData, fig=self.p.fig, x=0, y=-4, units='points')
 		self.p.ax.text(x_max + puffer, 0, self.get_x_name(), fontsize=self.p.base_fontsize+2, fontweight='bold', ha='center', va='top', transform=x_off)
 		# Y-Achse
 		if show_y_axis:
-			self.p.ax.plot(0, y_max + puffer, "^k", clip_on=False, zorder=5)
+			self.p.ax.plot(y_axis_at, y_max + puffer, "^k", clip_on=False, zorder=5)
 			y_off = offset_copy(self.p.ax.transData, fig=self.p.fig, x=4, y=3, units='points')
-			self.p.ax.text(0, y_max + puffer, 'y', fontsize=self.p.base_fontsize+2, fontweight='bold', va='center', transform=y_off)
+			self.p.ax.text(y_axis_at, y_max + puffer, 'y', fontsize=self.p.base_fontsize+2, fontweight='bold', va='center', transform=y_off)
 
-
+	
 ##############################################################################
 
 class _BmswStandardImpl(_BmswBaseImpl):
@@ -480,11 +501,10 @@ class _BmswStandardImpl(_BmswBaseImpl):
 		for y in np.arange(y_start_major, y_max + 0.01, self.step_y):
 			self.p.ax.plot([x_min, x_max], [y, y], color='#9090c0', lw=0.8, zorder=0)
 
-	def setup_ticks(self, x_min, x_max, y_min, y_max, show_y_axis):
+	def setup_ticks(self, x_min, x_max, y_min, y_max, show_y_axis, y_axis_at=0.0):
 		from matplotlib.ticker import MultipleLocator
         
 		self.p.ax.xaxis.set_major_locator(MultipleLocator(self.step_x))
-		# Schriftgröße für X- und Y-Achse (Zahlen) anpassen
 		self.p.ax.tick_params(axis='both', which='major', labelsize=self.p.base_fontsize)
 
 		self.p.ax.xaxis.set_major_formatter(FuncFormatter(
@@ -493,21 +513,21 @@ class _BmswStandardImpl(_BmswBaseImpl):
 
 		# Y-Achse
 		if show_y_axis:
-			y_ticks = np.arange(y_min, y_max + 0.1, 1.0)
-			#self.p.ax.set_yticks(y_ticks)
 			self.p.ax.yaxis.set_major_locator(MultipleLocator(self.step_y))
+			# KORREKTUR: Wir prüfen einfach direkt, ob y_axis_at == 0 ist. Das verhindert den Absturz komplett!
 			self.p.ax.yaxis.set_major_formatter(FuncFormatter(
-				lambda v, p: '' if np.isclose(v, 0) or v < y_min or v > y_max else f'{v:g}'
+				lambda v, p: '' if (np.isclose(v, 0) and np.isclose(y_axis_at, 0)) or v < y_min or v > y_max else f'{v:g}'
 			))
 		else:
 			self.p.ax.set_yticks([])
 			self.p.ax.yaxis.set_major_formatter(plt.NullFormatter())
 
 
+			
 class _BmswTrigImpl(_BmswBaseImpl):
 	def get_x_name(self): return r"$\varphi$"
 
-	def draw_grid(self, x_min, x_max, y_min, y_max):
+	def draw_grid(self, x_min, x_max, y_min, y_max, y_axis_at=0.0):
 		# Hilfsfunktion für "saubere" Gitterstarts (verhindert Verschiebung)
 		def get_clean_range(start, end, step):
 			first_tick = np.ceil(start / step) * step
@@ -528,7 +548,7 @@ class _BmswTrigImpl(_BmswBaseImpl):
 		for y in np.arange(np.floor(y_min), y_max + 0.01, 1.0):
 			self.p.ax.plot([x_min, x_max], [y, y], color='#e0e0f5', lw=0.7, zorder=0)
 
-	def setup_ticks(self, x_min, x_max, y_min, y_max, show_y_axis):
+	def setup_ticks(self, x_min, x_max, y_min, y_max, show_y_axis, y_axis_at=0.0):
 		# X-Achse (Winkel)
 		start_x = np.ceil(x_min / (np.pi/2)) * (np.pi/2)
 		positions = np.arange(start_x, x_max + 0.01, np.pi/2)
