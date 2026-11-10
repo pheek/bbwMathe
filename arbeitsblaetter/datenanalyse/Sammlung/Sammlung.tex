@@ -778,7 +778,7 @@ Obere Ausreißerschwelle: Q3 + MWL = 37.25 > Maximum
 
 
 
-\section{Weitere Kennzahlen (Maßzahlen)}
+\section{Weitere Kennzahlen (, Maßzahlen)}
 
 \subsection{Lage und Streumaße}
 Gegeben sind die vier folgenden Messreihen
@@ -861,20 +861,148 @@ b) ... genau 70 \% der Zahlen kleiner oder gleich dem Median sind und genau 60 \
 
 \TNTeop{
 a)
-Beispiel:  1, 2, 3, 4, 5 oder  10, 20, 30, 40, 50, 50, 60, 70, 80, 90
+Beispiel:  1, 2, 3, 4, 5 oder
+
+10, 20, 30, 40, 50, 50, 60, 70, 80, 90
 
 b)
-Beispiel: 1,2,3,4,7,7,7,8,9,10 oder 10, 10, 10, 10, 20, 20, 20, 30, 30, 30
+Beispiel: 1,2,3,4,7,7,7,8,9,10 oder
+
+10, 10, 10, 10, 20, 20, 20, 30, 30, 30
 
 
 
-}%% implicit \\newpage
+}%% implicit \newpage
 
 
+\subsection{Mittelwert und Standardabweichung}
+(I) Bei einem systematschen Fehler wurde jeder Datensatz um 3mm zu klein
+gemessen und a) arithmetisches Mittel $\overline{x}$ und b) die
+Standardabweichung $S$ bereits gerechnet. Angenommen, jeder Wert wird nun 3mm korrigiert,
+also wieder vergrößert.
+
+Wie verändert sich
+
+I a) der Mittelwert und
+
+I b) die Standardaweichung?
+
+(II) Bei einem (anderen) systematschen Fehler wurde jeder Datensatz um
+Faktor 1.2 zu groß
+gemessen und a) arithmetisches Mittel $\overline{x} $ und b) die Standardabweichung
+bereits gerechnet. Angenommen, jeder Wert wird nun wieder korrigiert
+und durch Faktor 1.2 geteilt.
+
+Wie verändert sich
+
+II a) der Mittelwert und
+
+II b) die Standardaweichung?
+
+\TNTeop{
+I a) Das arithmetische Mittel $\overline{x} $ (Mittelwert) wird um 3mm
+größer werden.
+
+I b) Die Standardabweichung bleibt identisch.
+
+II a) Das arithmetische Mittel $\overline{x}$ (Mittelwert) wird mit
+Faktor 1.2 multipliziert.
+
+II b) Auch die Standardabweichung wird um Faktor 1.2 vergrößert.
+}%% implicit \newpage
 
 
+\section{Robustheit}
 
-\subsection{Kennzahlen aus Diagrammen lesen}
+\subsection{Körpertemperaturen}
+
+Folgende Körpertemperaturen (Grad Celsius) wurden bei einer Patientin gemessen:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}\hline
+38.6 & 37.2  & 36.9 & 39.6 & 37.8 & 38.4\\\hline
+ \end{tabular}
+ \end{center}
+ 
+Dabei wurde aber anstelle von 37.2\degre C fälschlicherweise 32.7\degre C in die Tabelle eingetragen:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}\hline
+38.6 & \textbf{32.7}  & 36.9 & 39.6 & 37.8 & 38.4\\\hline
+ \end{tabular}
+\end{center}
+
+Nach sechs Messungen wird jeweils ein mittlerer Wert gebildet. Ist
+dieser größer als 38 Grad, müssen Maßnahmen diskutiert werden.
+
+Bestimmen Sie jeweils Mittelwert (arithmetisches Mittel) und Median
+(Zentralwert) der Datenreihe mit und der Datenreihe 
+ohne den Übertragungsfehler und diskutieren Sie das Resultat.
+
+
+\TNTeop{Ohne Übertragungsfehler:
+
+Mittelwert = 38.08 Median: 38.1
+
+Mit Übertragungsfehler:
+
+Mittelwert: 37.33 Median = 38.1
+
+Der Median bei «ohne» bzw. «mit» Übertragungsfehler unterscheidet sich
+hier nicht von den korrekten Körpertemperaturen. Hingegen der
+Mittelwert ist ca. 0.8\degre C 
+kleiner, nur wegen der einen falsch übertragenen Messung.
+
+Daher sagt man: Der Median ist \textbf{robust}er als das arithmetische
+Mittel (Durchschnitt). Einzelne Messfehler werden mit dem Median
+i.\,d.\,R. ausgeglichen.
+
+}%% implicit \newpage
+
+\subsection{Robustheit}
+
+Berechnen Sie Mittelwert und Median der beiden folgenden Messreihen (blau, rot)
+und tragen Sie diese Kenngrößen gleich auf der entsprechenden Geraden
+ein.
+
+\bbwCenterGraphic{15cm}{img/mittelwert_median.eps}
+
+\TNTeop{
+Beide Messreihen: Median = 7
+
+Mittelwert (arithmetisches Mittel):
+
+{\color{blue} Blaue Messreihe}: 6.1
+
+{\color{red} Rote Messreihe}: 6.9
+
+Median ist robust. Mittelwert ist «fragil».
+
+}%% implicit \newpage
+
+\subsection{Robustheit erkennen}
+
+Geben Sie bei den folgenden Kennzahlen jeweils an, ob sie robust sind:
+
+
+\begin{tabular}{c|c|c}
+ & robust & nicht robust «fragil»\\\hline
+
+Mittelwert (arithmetisch) & $\Box{}$ & $\noTRAINER{\Box{}}\TRAINER{x}$ \\
+IQR (Quartilsdifferenz)   & $\noTRAINER{\Box{}}\TRAINER{x}$ & $\Box{}$ \\
+Median (Zentralwert)      & $\noTRAINER{\Box{}}\TRAINER{x}$ & $\Box{}$ \\
+Modus                     & $\noTRAINER{\Box{}}\TRAINER{x}$ & $\Box{}$ \\
+Minimum/Maximum           & $\Box{}$ & $\noTRAINER{\Box{}}\TRAINER{x}$ \\
+Standardabweichung        & $\Box{}$ & $\noTRAINER{\Box{}}\TRAINER{x}$ \\
+obere Ausreißerschwelle   & $\noTRAINER{\Box{}}\TRAINER{x}$ & $\Box{}$ \\
+Quartile (Q1, Q3)         & $\noTRAINER{\Box{}}\TRAINER{x}$ & $\Box{}$ \\
+
+\end{tabular}
+
+
+\newpage
+
+\section{Kennzahlen aus Diagrammen lesen}
 Lesen Sie, falls möglich, die geforderten Informationen aus den
 Diagrammen heraus und berechnen Sie \textbf{falls möglich} die gewünschten Kennzahlen.
 
@@ -1021,8 +1149,36 @@ C) \TRAINER{nicht möglich für nominale Daten}
 D) \TRAINER{nicht möglich für klassierte Daten}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
-
+\newpage
 \section{Manipulation}
+Diskutieren Sie (in der Klasse) die manipulierten Graphiken im OLAT.
+
+\subsection{Kindergeld}
+
+In einer Broschüre des Bundesfinanzministeriums der Bundesrepublik
+Deutschland (Antworten zur Agenda 2010) wurde der Anstiegs des
+Kindergelds durch Piktogramme dargestellt.
+
+Beurteilen Sie die Darstellung. Fertigen Sie anschließend für den
+Sachverhalt eine angemessene Diagrammdarstellung an.
+
+\TRAINER{\bbwCenterGraphic{5cm}{img/Kindergeld.png}}
+\noTRAINER{\bbwCenterGraphic{10cm}{img/Kindergeld.png}}
+
+(Quelle: Algebra, Frommenwiler)
+
+\TNTeop{
+Die $y$-Abstände (Intervall) als einziges korrekt,
+jedoch sieht das Auge die Fläche.
+
+Die Fläche ist jedoch nicht proportional zur Zunahme. Zudem wurde die
+$y$-Achse zwischen 0 und 100 gestaucht und keine Maßeinheit angegeben.
+
+
+Eine «faire» Darstellung wäre folgendes:
+
+\bbwCenterGraphic{8cm}{img/manipulation/Kindergeld.png}
+}
 
 
 
