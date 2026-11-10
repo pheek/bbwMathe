@@ -57,7 +57,7 @@ Zeichnen Sie zu jedem angegebenen Winkel von $-270\degre - 450\degre$ den zugeh�
 
 \newpage
 
-\subsection{Tangensfunktion}
+\subsection{Tangensfunktion}\label{tangensfunktion}
 Die folgende Graphik zeigt die Tangensfunktion.
 
 \bbwCenterGraphic{15cm}{tals/trig4/img/tangensGeogebra.png}
@@ -95,6 +95,23 @@ Wertebereiche an:
     z\cdot{}180\degre| z\in\mathbb{Z} \}$} & \TRAINER{$\mathbb{R}$} & \TRAINER{$z\cdot{}180\degre| z\in\mathbb{Z}$}\\ \hline
 \end{bbwFillInTabular}
 
+\newpage
+
+\subsection*{Referenzaufgabe}
+Berechnen Sie $\tan(150\degre)$ von Hand.
+
+\TNT{6}{Wir sehen in der Skizze von S. \pageref{tangensfunktion}, dass
+der Tangens von $150\degre$ $30\degre$ links von der
+$180\degre$-Markierung im negativen Bereich ist.
+
+Wegen den Symmetrien muss somit $\tan(150\degre) = -\tan(30\degre)$
+sein. Das letztere kennen wir schon: $$\tan(30\degre) = \frac{\sin(30\degre)}{\cos(30\degre)} = \frac{\sqrt{3}}2 : \frac{1}{2} = \sqrt{3}$$
+
+Damit ist $\tan(150\degre) = - \frac{\sqrt{3}}2$
+
+}%% end TNT
+
+
 \subsection*{Aufgaben}
 \AadBMTG{138}{3. a) b) c)}
 
@@ -124,7 +141,7 @@ a) Wie sieht die Funktion aus?
 
 b) Wie lautet die Funktionsgleichung
 
-$$y = \LoesungsRaum{1.2 \cdot{} \sin(x - 30\degre)}$$
+$$y = \LoesungsRaum{1.2 \cdot{} \sin(\varphi - 30\degre)}$$
 \newpage
 
 
@@ -156,11 +173,12 @@ Machen sie eine Skizze
 
 %%%\noTRAINER{\trigsysDsin{}}\TRAINER{\trigsysDFct{2*0.7*sin(1.5*(50*\x-20))}}
 
-\noTRAINER{\trigsysDcos{}}{\TRAINER{\trigsysDFct{ 2*0.7*cos(1.5*(50*\x))  }}
+\noTRAINER{\trigsysDcos{}}
+\TRAINER{\trigsysDFct{ 2*1.0*cos(1.5*(50*\x))}}
 
 Wie lautet die Funktionsgleichung?
 
-$$y = \LoesungsRaum{\cos\left(x\cdot\frac{90\degre}{60\degre}\right)}$$
+$$y = \LoesungsRaum{\cos\left(\varphi \cdot \frac{90\degre}{60\degre}\right)}$$
 \newpage
 
 
@@ -226,7 +244,7 @@ Was fällt Ihnen auf?
 }%% END TNTeop
 %%\newpage
 
-\subsubsection{Referenzaufgaben}
+\subsubsection{Referenzaufgaben / Skizzieren}
 
 Skizzieren Sie die Funktionen und geben sie explizit zwei
 charakteristische Punkte an:
@@ -254,7 +272,18 @@ $y = -1.8 \cdot{} \cos(1.2\cdot{}(\varphi+50\degre))$
 
 \newpage
 
+\subsection*{Aufgaben}
 
+\aufgabenFarbe{Zeichnen Sie die Funktion $y=\sin\left(x+\frac{3\pi}{2}\right)\TRAINER{=-\cos(x)}$.}
+\TNT{4}{
+  ... das ist die $-\cos(x)$-Funktion ...
+}
+
+\TALSAadBMTG{140ff}{15., 18. b) [b) mit \texttt{geogebra.org}] 18. a)}
+
+
+
+\newpage
 
 \subsubsection{Allgemeine Form der Sinusfunktion}\index{Sinusfunktion!allgemeine Form}
 
@@ -276,7 +305,7 @@ Wird zusätzlich eine Phasenverschiebung in $x$-Richtung vorgenommen, so lautet 
 
 \begin{gesetz}{}{}
   Es gilt
-  $$y=\widehat{y}\cdot{}\sin(\omega\cdot{}(x-\varphi))$$
+  $$y=\widehat{y}\cdot{}\sin(\omega\cdot{}(x-\varphi)) + x$$
 
 mit
 \begin{itemize}
@@ -285,22 +314,27 @@ mit
   Amplitude $\widehat{y}$
 \item
   Frequenz $\omega$
+
 \item
-  Phasenverschiebung\footnote{Dabei wird der Funktionsgraph in positiver $x$-Richtung um
-    $\varphi$ verschoben.} $\varphi$
-  \item Periode (Wellenlänge) = Abstand von Hochpunkt bis Hochpunkt
+  Peridonelänge $p$ ist der Abstand von «Gipfel» bis «Gipfel». Es gilt $p=\frac{360\degre}{\omega}=\frac{2\pi}{\omega}$
+\item
+  Phasenverschiebung\footnote{Mit der Differenz $x-\varphi$ wird der
+  Funktionsgraph in positiver $x$-Richtung um $\varphi$ verschoben.} $\varphi$
+\item Periode (Wellenlänge) = Abstand von Hochpunkt bis Hochpunkt
+
+\item Das \textit{offset} $c$ hat keine offizielle Bezeichnung; wird jedoch
+  manchmal als «Mittellinie» bezeichnet.
 \end{itemize}
 \end{gesetz}
+
+\newpage
+
 
 
 \subsection*{Aufgaben}
 
-\aufgabenFarbe{Zeichnen Sie die Funktion $y=\sin\left(x+\frac{3\pi}{2}\right)\TRAINER{=-\cos(x)}$.}
-
-
 %%\TALSAadBFWG{116ff}{165. a) e) g), 167., 179.}
-\TALSAadBMTG{140ff}{13. a) b) , 15., 18. b) [b) mit
-    \texttt{geogebra.org}] 18. a) , 23. und 21. b) c) e) challenge: d)}
+\TALSAadBMTG{140ff}{13. a) b), 23. und 21. b) c) e) challenge: d)}
 
 \TALSAadBMTG{175}{16. a) b) e)}
 
