@@ -238,6 +238,9 @@ cp -f ./stochastik/hypothesentest/*.ods ${BBW_WEBDAV_PATH}/lehrperson/fp/i_geso/
 echo "  copying Optimierungsaufgaben (TALS)"
 cp -f ./funktionen/extremwert/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_tals/thema/optimieren/
 
+echo "  copying Datenanalyse Aufgabensammlung (ALLG)"
+cp -f ./datenanalyse/Sammlung/*.pdf ${BBW_WEBDAV_PATH}/lehrperson/fp/i_allg/thema/datenanalyse/sammlung/
+
 
 
 

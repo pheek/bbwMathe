@@ -876,7 +876,7 @@ Beispiel: 1,2,3,4,7,7,7,8,9,10 oder
 
 
 \subsection{Mittelwert und Standardabweichung}
-(I) Bei einem systematschen Fehler wurde jeder Datensatz um 3mm zu klein
+(I) Bei einem systematischen Fehler wurde jeder Datensatz um 3mm zu klein
 gemessen und a) arithmetisches Mittel $\overline{x}$ und b) die
 Standardabweichung $S$ bereits gerechnet. Angenommen, jeder Wert wird nun 3mm korrigiert,
 also wieder vergrößert.
@@ -885,9 +885,9 @@ Wie verändert sich
 
 I a) der Mittelwert und
 
-I b) die Standardaweichung?
+I b) die Standardabweichung?
 
-(II) Bei einem (anderen) systematschen Fehler wurde jeder Datensatz um
+(II) Bei einem (anderen) systematischen Fehler wurde jeder Datensatz um
 Faktor 1.2 zu groß
 gemessen und a) arithmetisches Mittel $\overline{x} $ und b) die Standardabweichung
 bereits gerechnet. Angenommen, jeder Wert wird nun wieder korrigiert
@@ -897,7 +897,7 @@ Wie verändert sich
 
 II a) der Mittelwert und
 
-II b) die Standardaweichung?
+II b) die Standardabweichung?
 
 \TNTeop{
 I a) Das arithmetische Mittel $\overline{x} $ (Mittelwert) wird um 3mm
@@ -1151,7 +1151,7 @@ D) \TRAINER{nicht möglich für klassierte Daten}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 \newpage
 \section{Manipulation}
-Diskutieren Sie (in der Klasse) die manipulierten Graphiken im OLAT.
+Voraussetzung: Diskutieren Sie (in der Klasse) die manipulierten Graphiken im OLAT.
 
 \subsection{Kindergeld}
 
@@ -1181,5 +1181,94 @@ Eine «faire» Darstellung wäre folgendes:
 }
 
 
+\subsection{Kreisdiagramm I}
 
+Irgend etwas stimmt da nicht: 
+
+\noTRAINER{\bbwCenterGraphic{8cm}{img/NichtGanzHundert.png}}
+\TRAINER{\bbwCenterGraphic{5cm}{img/NichtGanzHundert.png}}
+\begin{center}Quelle Marthaler Algebra HEP-Verlag\end{center}
+
+Aber was?
+
+\TNTeop{Die Summe der Prozentzahlen ergibt nicht 100 \%. Die 27 \% dürften eigentlich nur ganz wenig mehr als 90\degre ausmachen.
+
+Exakt wären das für den 27 \% Anteil unten links 97.2\degre.}%% end TNT
+
+\subsection{Kreisdiagramm II}
+
+Welches Kreisdiagramm ist «besser»? Was würden Sie anders zeichnen.
+
+
+\begin{tabular}{ccc}
+\includegraphics[width=40mm]{img/perspektive/1.png} &%
+\includegraphics[width=40mm]{img/perspektive/2.png}&%
+\includegraphics[width=40mm]{img/perspektive/Legende.png}\\
+A & B & Legende \\
+ \end{tabular}
+
+\TNTeop{
+Effektiv sollte ein Kreisdiagramm nicht in Perspektive gezeichnet werden. Die Sektoren vorne in der Mitte erscheinen dadurch größer. Ebenso mach die zusätzlich Erhöhung einen erheblichen Anteil der Fläche aus.
+
+Korrekt sind Kreisdiagramme immer von senkrecht oben zu zeichnen:
+
+\bbwCenterGraphic{40mm}{img/perspektive/lsg.png}
+}%% end TNT
+
+
+\subsection{Spielplätze}
+
+Das Angebot an Spielplätzen konnte verdoppelt werden (Quelle Webseite \texttt{kapiert.de} (2026)):
+
+\bbwCenterGraphic{14cm}{img/Spielplaetze.png}
+
+Was halten Sie von der Graphik?
+
+\TNTeop{
+ Die Längen wurden auch in der Graphik verdoppelt. Das Auge sieht jedoch die Flächen, daher wird vorgegaukelt, dass das Angebot an Spielplätzen vervierfacht wurde.
+}%% end TNTeop
+
+
+\subsection{absolute Häufigkeit}
+
+Vier Klassen (A, B, C und D) werden einander gegenüber gestellt. Die $y$-Achse zeigt die absolute Häufigkeit.
+
+\bbwCenterGraphic{5cm}{img/absoluteHaeufigkeit.png}
+\begin{center}Quelle: Marthaler Algebra, hep verlag\end{center}
+
+Um wie viel \% überragt die größte Klasse (C) die kleinste (B)?
+
+\TNTeop{
+Den Zahlen zu urteilen ist Klasse C mit ca. 224 Elementen gerade mal ca 28 \% größer als Klasse B mit ca. 175 Elementen.
+
+Die Skala ist nicht linear. Ab 200 (absolute Häufigkeit) werden plötzlich nur noch 10er Schritte gemacht, damit Klasse C viel größer aussieht.
+
+}%% end TNT
+
+
+\subsection{Histogramm}
+
+Warum ist das folgende Histogramm kritisch zu betrachten?
+
+\bbwCenterGraphic{7cm}{img/Histogramm.png}
+
+\TNTeop{
+Es sind nicht alle Säulen gleich breit. Es ist nun nicht klar, ob zwischen 15 und 30 der $x$-Achse tatsächlich 25 Werte ($y$-Achse) liegen, oder ob hier, da die Fläche ja dreimal so groß ist, effektiv die Fläche schon korrigiert wurde.
+
+Wenn die Fläch jedoch nicht korrigiert ist und tatsächlich nur 25 Werte zwischen
+ Markierung 15 und Markierung 30 liegen, dann scheinen die 25 Werte effektiv viel zu groß verglichen mit den 20 Werten zwischen Markierung 30 und 40.
+
+Daher: Alle Säulen im Hisgoramm sind immer gleich breit.
+}%% end TNT eop
+
+\subsection{Search Engines}
+
+Suchmaschinen (sog. «search engines») werde öfter mal miteinander verglichen, wer denn nun den höchsten Maktanteil genießt. Betrachten Sie folgendes Diagramm:
+
+\bbwCenterGraphic{8cm}{img/SearchEngine.png}
+\begin{center}Quelle \texttt{callingbullshit.org} (2026)\end{center}
+
+Was fällt auf?
+
+\TNTeop{Durch die Perspektive und die 3D-Darstellung erscheinen die Flächen von Yahoo, Bing und Excite immer noch relativ groß. Die Fläche, die zum Wert 7 gehört dürfte in echt nicht ca 50 \% der Fläche von Baidu ausmachen. Wieder: Das Auge sieht die Fläche, somit hier auch die Deckfläche der Säulen. Diese Deckfläche hat jedoch gar keinen Einfluss auf die angegebenen Prozentzahlen.}%% end TNTeop
 \end{document}
