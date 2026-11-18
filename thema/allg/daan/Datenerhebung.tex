@@ -147,7 +147,7 @@ Das Vorgehen von den Rohdaten bis zur Interpretation kann grob wie folgt zusamme
 \newpage
 
 
-\subsection{Fehlerarten}\index{Fehlerarten!in der Datengewinnung}
+\subsection{Fehlerarten (optional)}\index{Fehlerarten!in der Datengewinnung}
 
 
 Die \textbf{Datenqualität}\index{Datenqualität} kann durch minimieren
@@ -200,8 +200,21 @@ Bei vielen Messungen interessiert uns in erster Linie das
   \end{definition}
 
 \TRAINER{Die Aufgabe ist schon hier, denn der Mittelwert sollte allen
-  schon bekannt sein (nur die Notation viellicht nicht) und so haben
+  schon bekannt sein (nur die Notation vielleicht nicht) und so haben
   wir schon etwas zum Rechnen.}
+
+\begin{gesetz}{Summe aller Werte}{}
+  $$\overline{x} \cdot{} n = \text{ Summe aller Werte}$$
+\end{gesetz}
+
+\subsection*{Referenzaufgabe}
+Von einer Messreihe sind bekannt:
+
+$$\overline{x}_{\text{alt}} = 35 \text{ und } n=17$$
+Wenn ich von der Messreihe den fälschlich gemessenen Wert 44 entferne und den korrekten Wert 33 hinzunehme, erhalte ich den neuen korrekten Mittelwert:
+
+$$\overline{x}_{\text{neu}} = \frac{\text{neue Summe}}{17} = \LoesungsRaumLen{50mm}{\frac{\overline{x}_{\text{alt}} \cdot{} 17 - 44 + 33}{17} \approx 34.35}$$
+
 \subsection*{Aufgaben}
 
 %% diese Aufgaben gibt es nicht mehr im neuen Kompendium
@@ -209,7 +222,6 @@ Bei vielen Messungen interessiert uns in erster Linie das
 \DeclareRobustCommand{\tempA}{Aufg. 2.5 bis 2.9 (Mittelwerte)}
 \GESO{\olatLinkArbeitsblatt{Aufgabensammlung Datenanalyse}{https://olat.bms-w.ch/auth/RepositoryEntry/6029794/CourseNode/114810427204690}{\tempA}}
 \TALS{\olatLinkArbeitsblatt{Aufgabensammlung Datenanalyse}{https://olat.bms-w.ch/auth/RepositoryEntry/6029786/CourseNode/114810427263485}{\tempA}}
-
 
 \olatLinkTALSStrukturaufgabenGLF{GLF Teil 1}{10}{6.}
 \olatLinkTALSStrukturaufgabenSPF{GLF Teil 2}{22}{36. a) b)}
